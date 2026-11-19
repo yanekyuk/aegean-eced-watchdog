@@ -11,7 +11,21 @@ from typing import Any, Literal
 import pymupdf as fitz
 from pydantic import BaseModel, Field
 
-DEFAULT_GEMINI_MODEL = "gemini-4-hydrogen"
+DEFAULT_EK1_MODEL = "gemini-4-hydrogen"
+DEFAULT_EK2_MODEL = "gemini-3.5-flash-lite"
+DEFAULT_GEMINI_MODEL = DEFAULT_EK1_MODEL
+
+
+def choose_gemini_model(filing: dict[str, Any], explicit_model: str | None = None) -> str:
+    """Use explicit/env model if set; otherwise route Ek-1 to Gemini 4 Hydrogen and Ek-2 to 3.5 Flash-Lite."""
+    if explicit_model:
+        return explicit_model
+    env_model = os.environ.get("GEMINI_MODEL")
+    if env_model:
+        return env_model
+    if (filing.get("project_type") or "").strip().lower() == "ek-1":
+        return DEFAULT_EK1_MODEL
+    return DEFAULT_EK2_MODEL
 
 
 class CitedFact(BaseModel):
@@ -194,7 +208,7 @@ def synthesize_with_gemini(
     from google import genai
     from google.genai import types
 
-    chosen_model = model or os.environ.get("GEMINI_MODEL") or DEFAULT_GEMINI_MODEL
+    chosen_model = choose_gemini_model(filing, model)
     used_pages, excerpt_blob = select_high_signal_pages(pdf_path, analysis)
 
     system_instruction = (

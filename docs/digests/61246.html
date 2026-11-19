@@ -3,7 +3,8 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>e-ÇED Ön Özet #61246 — SALİHLİ</title>
+  <title>e-ÇED Ön Özet #61246 — MANİSA / SALİHLİ</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
   <style>
 :root {
   --bg: #0f1216;
@@ -37,31 +38,53 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
   background: var(--bg);
   color: var(--text);
-  line-height: 1.5;
+  line-height: 1.6;
 }
-.wrap { max-width: 1220px; margin: 0 auto; padding: 24px 18px 64px; }
+.wrap { max-width: 1240px; margin: 0 auto; padding: 24px 18px 64px; }
 a { color: var(--accent); text-decoration: none; }
 a:hover { text-decoration: underline; }
 header { border-bottom: 1px solid var(--border); padding-bottom: 16px; margin-bottom: 20px; }
 h1 { margin: 0 0 6px; font-size: 1.55rem; }
+h2 { margin: 26px 0 10px; font-size: 1.2rem; }
+h3 { margin: 16px 0 8px; font-size: 1rem; }
 .sub { color: var(--muted); font-size: 0.92rem; margin: 0; }
-.meta-bar { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 12px; font-size: 0.85rem; color: var(--muted); }
-.stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 10px; margin: 16px 0 20px; }
+.meta-bar { display: flex; flex-wrap: wrap; gap: 14px; margin-top: 12px; font-size: 0.85rem; color: var(--muted); }
+.stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 10px; margin: 16px 0 18px; }
 .stat { background: var(--surface); border: 1px solid var(--border); border-radius: 8px; padding: 12px 14px; }
 .stat .num { font-size: 1.45rem; font-weight: 700; }
 .stat .lbl { font-size: 0.78rem; color: var(--muted); }
+.map-box {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 18px;
+}
+#map { width: 100%; height: 420px; background: var(--badge-bg); }
+#digest-map { width: 100%; height: 320px; background: var(--badge-bg); }
+.map-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  padding: 9px 14px;
+  font-size: 0.8rem;
+  color: var(--muted);
+  border-top: 1px solid var(--border);
+}
+.dot { display: inline-block; width: 10px; height: 10px; border-radius: 50%; margin-right: 5px; vertical-align: middle; }
 .controls { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; margin-bottom: 16px; }
-input[type="search"] {
-  flex: 1 1 240px;
+input[type="search"], select.filter-select {
   padding: 8px 12px;
   border-radius: 6px;
   border: 1px solid var(--border);
   background: var(--surface);
   color: var(--text);
-  font-size: 0.92rem;
+  font-size: 0.9rem;
 }
+input[type="search"] { flex: 1 1 240px; }
+select.filter-select { min-width: 170px; }
 button.pill {
-  padding: 6px 11px;
+  padding: 7px 12px;
   border-radius: 999px;
   border: 1px solid var(--border);
   background: var(--surface);
@@ -75,12 +98,12 @@ button.pill.active { background: var(--accent); border-color: var(--accent); col
   background: var(--surface);
   border: 1px solid var(--border);
   border-radius: 8px;
-  padding: 14px 16px;
+  padding: 15px 17px;
 }
-.card.prio { border-left: 4px solid var(--accent); }
+.card.ek1 { border-left: 4px solid var(--accent); }
 .row-top { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px; align-items: baseline; }
 .title { font-weight: 600; font-size: 0.98rem; }
-.badges { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 6px; }
+.badges { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 7px; }
 .badge {
   display: inline-block;
   padding: 2px 8px;
@@ -93,30 +116,31 @@ button.pill.active { background: var(--accent); border-color: var(--accent); col
 .badge.warn { border-color: var(--amber); color: var(--amber); font-weight: 600; }
 .badge.ok { border-color: var(--green); color: var(--green); }
 .badge.muted { color: var(--muted); }
-.detail { font-size: 0.86rem; color: var(--muted); margin: 8px 0; }
+.detail { font-size: 0.87rem; color: var(--muted); margin: 8px 0; }
 .actions { display: flex; flex-wrap: wrap; gap: 12px; font-size: 0.84rem; margin-top: 8px; }
 .notice {
   margin-top: 28px;
-  padding: 12px 14px;
+  padding: 14px 16px;
   border: 1px solid var(--border);
   border-radius: 8px;
-  font-size: 0.82rem;
+  font-size: 0.84rem;
   color: var(--muted);
 }
 table.kv { width: 100%; border-collapse: collapse; margin: 12px 0; font-size: 0.9rem; }
-table.kv th, table.kv td { border: 1px solid var(--border); padding: 8px 10px; text-align: left; vertical-align: top; }
-table.kv th { width: 220px; background: var(--badge-bg); }
+table.kv th, table.kv td { border: 1px solid var(--border); padding: 8px 11px; text-align: left; vertical-align: top; }
+table.kv th { width: 240px; background: var(--badge-bg); }
 code { background: var(--badge-bg); padding: 1px 5px; border-radius: 4px; font-size: 0.85em; }
-blockquote { margin: 10px 0; padding: 10px 14px; border-left: 3px solid var(--accent); background: var(--surface); font-size: 0.9rem; }
-.hit { margin: 6px 0; font-size: 0.88rem; }
+blockquote { margin: 10px 0; padding: 11px 15px; border-left: 3px solid var(--accent); background: var(--surface); font-size: 0.9rem; }
+.hit { margin: 7px 0; font-size: 0.88rem; }
 .pno { font-weight: 700; color: var(--accent); }
+.leaflet-popup-content { color: #1f2328; font-size: 0.85rem; line-height: 1.45; }
 </style>
 </head>
 <body>
 <div class="wrap">
   <header>
-    <div style="font-size:0.85rem;margin-bottom:8px;"><a href="../index.html">← Ege e-ÇED İzleme listesine dön</a> · <a href="../rehber.html">Nasıl Kullanılır? (Rehber)</a> · <a href="61246.md">Ham Markdown (.md)</a></div>
-    <h1>e-ÇED Ön Özet #61246 — SALİHLİ / MANİSA</h1>
+    <div style="font-size:0.85rem;margin-bottom:8px;"><a href="../index.html">← Türkiye e-ÇED İzleme listesine dön</a> · <a href="../rehber.html">Kullanım ve İnceleme Rehberi</a> · <a href="61246.md">Ham Markdown (.md)</a></div>
+    <h1>e-ÇED Ön Özet #61246 — MANİSA / SALİHLİ</h1>
     <p class="sub">Elektrolitik Çinko Kaplama, Elektrolitik Çinko Alaşımlı Kaplama, İnorganik Çinko Ana Kat Kaplama ve İnorganik Çinko Üst Lak Kaplama (Toplam Havuz Hacmi: 726,475 m3)</p>
     <div class="badges" style="margin-top:10px;">
       <span class="badge">ÇED Gerekli Değil/ÇED Olumlu</span>
@@ -129,21 +153,27 @@ blockquote { margin: 10px 0; padding: 10px 14px; border-left: 3px solid var(--ac
     <tr><th>Proje Sahibi</th><td>UYSAL MAKİNA SANAYİ İTHALAT İHRACAT VE TİCARET ANONİM ŞİRKETİ SALİHLİ 2 ŞUBESİ</td></tr>
     <tr><th>Hazırlayan Kuruluş</th><td>AQUA ÇEVRE DANIŞMANLIK MÜHENDİSLİK İŞ GÜVENLİĞİ MAKİNA SANAYİ VE TİCARET LİMİTED ŞİRKETİ</td></tr>
     <tr><th>Sektör / Alt Sektör</th><td>Sanayi / Kaplama/Yüzey Temizleme</td></tr>
-    <tr><th>Duyuru Tarihi</th><td><code>02.11.2026</code> (yükleme: <code>23/09/2026 08:08:14</code>)</td></tr>
-    <tr><th>PDF Kapsamı</th><td>32.77 MB · 270 sayfa (270 metin / 0 taranmış-görüntü) · SHA-256 <code>8de6bfd76098887f…</code></td></tr>
-    <tr><th>Resmi Bağlantılar</th><td><a href="http://eced.csb.gov.tr/jsp/ek1/61246" target="_blank" rel="noopener">e-ÇED Portal Kaydı</a> · <a href="http://eced.csb.gov.tr/jsp/dosya/dosyaGoster.htm?tempAd=sign6386905884950108608.pdf&amp;orjinalAd=e-imza.pdf&amp;yuklemeTarihi=2026-09-23" target="_blank" rel="noopener">Resmi PDF Dosyası</a></td></tr>
+    <tr><th>Duyuru Tarihi</th><td><code>02.11.2026</code> (belge yükleme tarihi: <code>23/09/2026 08:08:14</code>)</td></tr>
+    <tr><th>PDF Kapsamı</th><td>32.77 MB · 270 sayfa (270 metin sayfası / 0 taranmış veya görüntü sayfası) · SHA-256 <code>8de6bfd76098887f…</code></td></tr>
+    <tr><th>Resmi Bağlantılar</th><td><a href="http://eced.csb.gov.tr/jsp/ek1/61246" target="_blank" rel="noopener">e-ÇED Portal Kaydı</a> · <a href="http://eced.csb.gov.tr/jsp/dosya/dosyaGoster.htm?tempAd=sign6386905884950108608.pdf&amp;orjinalAd=e-imza.pdf&amp;yuklemeTarihi=2026-09-23" target="_blank" rel="noopener">Resmi PDF Dosyası</a> · <a href="https://www.openstreetmap.org/?mlat=38.6191&amp;mlon=27.4289#map=8/38.6191/27.4289" target="_blank" rel="noopener">OpenStreetMap</a> · <a href="https://www.google.com/maps/search/?api=1&amp;query=38.6191,27.4289" target="_blank" rel="noopener">Google Haritalar</a></td></tr>
   </table>
+
+  <h2>Konum Haritası</h2>
+  <div class="map-box">
+    <div id="digest-map"></div>
+    <div class="map-legend"><span>PDF dosyasında metin olarak okunabilir koordinat tablosu tespit edilemediği için il merkezi yaklaşık konum olarak gösterilmektedir.</span></div>
+  </div>
 
   
   <h2>Yapay Zeka Destekli Bilimsel Ön Değerlendirme <span class="badge">gemini-4-hydrogen</span></h2>
-  <p class="sub">PDF içinden seçilen 26 sayfadan (s.1, s.2, s.3, s.6, s.7, s.8, s.9, s.10, s.16, s.24, s.25, s.26, s.33, s.34, s.35, s.37, s.48, s.50, s.51, s.70, s.71, s.75, s.132, s.133, s.134, s.141) üretilmiştir. Tüm sayısal verileri resmi PDF'teki <code>[s. N]</code> sayfalarından doğrulayın.</p>
-  <section class="card prio">
+  <p class="sub">Bu değerlendirme, resmi PDF dosyasından seçilen 26 sayfa (s.1, s.2, s.3, s.6, s.7, s.8, s.9, s.10, s.16, s.24, s.25, s.26, s.33, s.34, s.35, s.37, s.48, s.50, s.51, s.70, s.71, s.75, s.132, s.133, s.134, s.141) esas alınarak hazırlanmıştır. Tüm sayısal verilerin ve tespitlerin resmi PDF belgesindeki ilgili <code>[s. N]</code> sayfalarından doğrulanması gerekir.</p>
+  <section class="card ek1">
     <p><strong>Özet:</strong> Uysal Makina San. İth. İhr. ve Tic. A.Ş. Salihli 2 Şubesi tarafından Manisa ili, Salihli ilçesi, Torunlu Mahallesi, Salihli Organize Sanayi Bölgesi 105 Ada 15 Parsel üzerindeki mevcut fabrika binasında kiralanan 3.140 m² alanda toplam 726,475 m³ havuz hacmine sahip elektrolitik ve inorganik çinko/çinko alaşım kaplama ve üst lak kaplama tesisi kurulması planlanmaktadır. 79.500.000 TL yatırım bedelli ve işletmede 33 personelin çalışacağı proje kapsamında yeni bina inşaatı yapılmayacak, mevcut parseldeki sanayi tesisi içinde yılda 300 gün faaliyet yürütülecektir. Başlıca çevresel unsurlar; günlük 18,74 m³ olarak hesaplanan atıksu, yıllık 242.166 m³ doğalgaz tüketimine bağlı emisyonlar, yıllık on binlerce kilogram düzeyindeki boya, vernik, kontamine ambalaj ve arıtma çamuru gibi tehlikeli atıklar ile aynı parselde bulunan çok sayıda diğer metal işleme/yüzey işlem tesisiyle oluşabilecek kümülatif etkilerdir.</p>
-    <details style="margin-top:8px;font-size:0.86rem;color:var(--muted);"><summary style="cursor:pointer;">English summary</summary><p style="margin:6px 0 0;">Uysal Makina San. İth. İhr. ve Tic. A.Ş. Salihli 2 Branch proposes to establish an electrolytic and inorganic zinc, zinc-alloy, and topcoat plating facility with a total bath volume of 726.475 m³ inside a leased 3,140 m² section of an existing factory building on Parcel 105/15 in the Salihli Organized Industrial Zone, Manisa. With a projected investment of 79,500,000 TL and 33 operational staff, the project requires no new building construction and will operate 300 days per year. Primary environmental stakes involve a calculated 18.74 m³/day wastewater discharge, natural gas combustion emissions from 242,166 m³/year consumption, substantial annual hazardous waste streams including waste paints, contaminated packaging, and treatment sludge, and potential cumulative burdens alongside five previously approved or exempted industrial activities on the exact same parcel.</p></details>
+    <details style="margin-top:8px;font-size:0.86rem;color:var(--muted);"><summary style="cursor:pointer;">İngilizce özet (English summary)</summary><p style="margin:6px 0 0;">Uysal Makina San. İth. İhr. ve Tic. A.Ş. Salihli 2 Branch proposes to establish an electrolytic and inorganic zinc, zinc-alloy, and topcoat plating facility with a total bath volume of 726.475 m³ inside a leased 3,140 m² section of an existing factory building on Parcel 105/15 in the Salihli Organized Industrial Zone, Manisa. With a projected investment of 79,500,000 TL and 33 operational staff, the project requires no new building construction and will operate 300 days per year. Primary environmental stakes involve a calculated 18.74 m³/day wastewater discharge, natural gas combustion emissions from 242,166 m³/year consumption, substantial annual hazardous waste streams including waste paints, contaminated packaging, and treatment sludge, and potential cumulative burdens alongside five previously approved or exempted industrial activities on the exact same parcel.</p></details>
     <div class="badges" style="margin-top:10px;">
-      <span class="badge">Saha çalışması: Bulunamadı</span>
-      <span class="badge">Mevsimsel örnekleme: Bulunamadı</span>
-      <span class="badge">Kümülatif etki: Eksik / bulunamadı</span>
+      <span class="badge">Saha çalışması: İncelenen sayfalarda tespit edilemedi</span>
+      <span class="badge">Mevsimsel örnekleme: İncelenen sayfalarda tespit edilemedi</span>
+      <span class="badge">Kümülatif etki: Eksik veya tespit edilemedi</span>
     </div>
     <p class="detail" style="margin-top:10px;"><strong>Zeytinlik ve Korunan Alanlar:</strong> 3573 sayılı Zeytincilik Kanunu, 4342 sayılı Mera Kanunu, 2872 sayılı Çevre Kanunu kapsamındaki ÖÇK alanları, sulak alanlar, Ramsar ve Bern sözleşmesi kapsamındaki koruma alanları, ormanlar, I-IV. sınıf tarım alanları, göl/akarsu/yeraltı suyu işletme sahaları ile nadir veya endemik türlerin bulunmadığı; sahanın 1/100.000 ölçekli Çevre Düzeni Planı&#x27;nda Organize Sanayi Bölgesi içinde kaldığı beyan edilmiştir [s. 50, 51, 141].<br/>Sunulan PDF kesitlerinde proje alanı ve etki çevresine yönelik proje öncesi arazi sörveyi, flora/fauna gözlem tarihi, uzman değerlendirmesi veya mevsimsel çevresel örnekleme çalışmasına ilişkin herhangi bir veri bulunmamaktadır; yalnızca alanın OSB sınırları içinde kaldığı ve korunan alanlar ile Bern Ek-I veya endemik türlerin bulunmadığı yönünde genel beyanlara yer verilmiştir [s. 50, 51, 141]. Benzer şekilde, aynı parsel üzerinde daha önce onaylanmış veya kapsam dışı bırakılmış beş farklı sanayi faaliyeti listelenmesine karşın kesitlerde kümülatif etki değerlendirmesi yer almamaktadır [s. 7, 8]. Çevre İzleme Planı kapsamında da yalnızca işletme aşamasında günlük gözlemsel toz kontrolü ve atık kayıtlarının tutulması gibi rutin izleme adımları tanımlanmıştır [s. 71].</p>
   </section>
@@ -157,32 +187,32 @@ blockquote { margin: 10px 0; padding: 10px 14px; border-left: 3px solid var(--ac
 <tr><th>Yıllık Doğalgaz Tüketimi ve Çalışma Günü</th><td>242.166 m³/yıl doğalgaz; 300 gün/yıl <span class="pno">[s. 37]</span></td></tr>
 <tr><th>Başlıca Tehlikeli Atık Miktarları</th><td>20.000 kg/yıl kontamine ambalaj; 20.000 kg/yıl atık boya/vernik; 10.000 kg/yıl kontamine bez/eldiven; 5.000 kg/yıl boya/vernik çamuru; 3.000 kg/yıl kumlama atığı <span class="pno">[s. 37]</span></td></tr>
 <tr><th>Aynı Parseldeki Önceki Yüzey İşlem Projesi</th><td>264 m³ tank/havuz hacimli yüzey işlem ve cıvata üretim tesisi (ÇED Gerekli Değildir, 2021) <span class="pno">[s. 7]</span></td></tr></table>
-  <h3>Bilimsel ve Metodolojik Uyarılar</h3><section class="card"><div class="hit"><span class="badge urgent">YÜKSEK</span> <strong>Aynı parseldeki yoğun sanayi faaliyetlerine rağmen kümülatif etki değerlendirmesi eksikliği</strong> <span class="pno">[s. 7, s. 8, s. 48]</span> — 105 Ada 15 Parsel üzerinde daha önce depo (2021), 264 m³ havuz hacimli yüzey işlem ve cıvata tesisi (2021), ayıklama-paketleme (2024), sıcak dövme/cıvata imalatı (2026) ve 22 pres ile 3 elektrikli fırın içeren rondela üretimi (2026) için ÇED Gerekli Değildir ve Kapsam Dışı kararları alındığı belirtilmiştir. Buna rağmen incelenen sayfalarda, 726,475 m³ ek havuz hacmiyle toplamda 990,475 m³ yüzey işlem tank kapasitesine ulaşan parseldeki toplam su tüketimi, atıksu arıtma yükü, tehlikeli atık ve hava emisyonlarının kümülatif etkisine dair nicel bir analiz sunulmamıştır.</div>
+  <h3>Bilimsel ve Metodolojik Bulgular</h3><section class="card"><div class="hit"><span class="badge urgent">YÜKSEK</span> <strong>Aynı parseldeki yoğun sanayi faaliyetlerine rağmen kümülatif etki değerlendirmesi eksikliği</strong> <span class="pno">[s. 7, s. 8, s. 48]</span> — 105 Ada 15 Parsel üzerinde daha önce depo (2021), 264 m³ havuz hacimli yüzey işlem ve cıvata tesisi (2021), ayıklama-paketleme (2024), sıcak dövme/cıvata imalatı (2026) ve 22 pres ile 3 elektrikli fırın içeren rondela üretimi (2026) için ÇED Gerekli Değildir ve Kapsam Dışı kararları alındığı belirtilmiştir. Buna rağmen incelenen sayfalarda, 726,475 m³ ek havuz hacmiyle toplamda 990,475 m³ yüzey işlem tank kapasitesine ulaşan parseldeki toplam su tüketimi, atıksu arıtma yükü, tehlikeli atık ve hava emisyonlarının kümülatif etkisine dair nicel bir analiz sunulmamıştır.</div>
 <div class="hit"><span class="badge warn">ORTA</span> <strong>Arıtma çamuru hesabında tesise özgü veri yerine 2008 tarihli genel literatür kabulü</strong> <span class="pno">[s. 33, s. 34]</span> — Günlük 19,50 kg (yıllık 5.850 kg) tehlikeli arıtma tesisi çamuru miktarı, tesisin planlanan elektrolitik çinko, çinko alaşım ve inorganik kaplama banyolarının kimyasal bileşimi veya proses kütle dengesi yerine 2008 tarihli bir yüksek lisans tezinden alınan 1.600 mg/L AKM ve %65 giderim verimi kabulleriyle hesaplanmıştır. Öte yandan, kaplama banyolarında dip çamuru oluşmayacağı teknik bir gerekçe sunulmadan doğrudan kabul edilmiştir.</div>
 <div class="hit"><span class="badge warn">ORTA</span> <strong>Durulama, atıksu oluşumu ve yıllık kimyasal banyo boşaltım beyanları arasındaki uyumsuzluk riski</strong> <span class="pno">[s. 16, s. 25, s. 35, s. 37]</span> — 25. sayfada kaplaması yapılan ürünlerin yıkamasının yapılmayacağı ve havuzların aynı anda boşaltılmayacağı ifade edilirken, 16. sayfadaki Şekil 3 iş akım şemasında iki ayrı durulama banyosu ve buradan kaynaklanan atıksu çıkışı gösterilmektedir. Ayrıca 35. sayfada %100 kimyasal içeren havuzların özellik yitirmesi veya arıza durumunda yılda 1 kez tamamen boşaltılacağı belirtilmesine karşın, bu tam boşaltımdan doğacak sıvı tehlikeli atık hacmi Tablo 9 tehlikeli atık listesinde ayrı bir kalem olarak yer almamaktadır.</div>
 <div class="hit"><span class="badge warn">ORTA</span> <strong>Çevre İzleme Planı&#x27;nın analitik ölçümler yerine görsel kontrollere dayanması</strong> <span class="pno">[s. 16, s. 71]</span> — Bölüm 5.1&#x27;deki Tablo 16 Çevresel İzleme Planı&#x27;nda toz emisyonları için günlük gözlemsel izleme, tehlikeli ve evsel atıklar için ise sürekli görsel tetkik ve kayıt tutma öngörülmüştür. Yüzey kaplama ve boya/lak kurutma proseslerinden kaynaklanabilecek baca gazı kirleticileri, uçucu organik bileşikler (VOC) veya atıksu deşarjındaki ağır metal/çinko parametreleri için periyodik laboratuvar analiz sıklığı ve yöntemleri tabloda belirtilmemiştir.</div>
 <div class="hit"><span class="badge muted">DÜŞÜK</span> <strong>Yıllık 242.166 m³ doğalgaz tüketimine rağmen sera gazı emisyonlarının yok sayılması</strong> <span class="pno">[s. 26, s. 37, s. 75]</span> — Banyo kurutmaları, hidrojen gevrekliği giderme fırını ve ısıtma için yılda 242.166 m³ doğalgaz tüketileceği öngörülmesine karşın, yalnızca faaliyetin Sera Gazı Emisyonlarının Takibi Hakkında Yönetmelik Ek-1 listesinde yer almaması gerekçe gösterilerek &#x27;sera gazı ve iklim değişikliğine sebep olacak bir husus bulunmamaktadır&#x27; ifadesi kullanılmış ve yanma kaynaklı CO₂ emisyonu hesaplanmamıştır.</div>
 <div class="hit"><span class="badge muted">DÜŞÜK</span> <strong>Ekolojik duyarlılık ve biyolojik çeşitlilik beyanlarının alan etüdü olmaksızın verilmesi</strong> <span class="pno">[s. 50, s. 51, s. 141]</span> — Proje alanı ve çevresinde Bern Sözleşmesi kapsamındaki türlerin, endemik bitkilerin, sulak alanların ve hassas bölgelerin bulunmadığı kesin ifadelerle belirtilmiştir; ancak incelenen sayfalarda bu sonuca hangi tarihte, hangi uzmanlar tarafından ve hangi arazi/tampon bölge incelemesiyle ulaşıldığına dair yöntem veya saha bulgusu sunulmamıştır.</div></section>
-  <h3>HKT ve İYUK 20/A İçin Taslak Teknik Sorular</h3><ul><li>105 Ada 15 Parsel üzerinde daha önce karar verilen 264 m³ havuz hacimli yüzey işlem tesisi ve diğer dört sanayi faaliyeti ile birlikte değerlendirildiğinde, parselin toplam su ihtiyacı, atıksu arıtma kapasitesi, hava emisyonu ve tehlikeli atık yükü açısından kümülatif bir çevresel etki hesabı yapılmış mıdır? <span class="pno">[s. 7, s. 8, s. 48]</span></li>
+  <h3>HKT Tutanakları ve İdari Başvurular İçin Taslak Teknik Sorular</h3><ul><li>105 Ada 15 Parsel üzerinde daha önce karar verilen 264 m³ havuz hacimli yüzey işlem tesisi ve diğer dört sanayi faaliyeti ile birlikte değerlendirildiğinde, parselin toplam su ihtiyacı, atıksu arıtma kapasitesi, hava emisyonu ve tehlikeli atık yükü açısından kümülatif bir çevresel etki hesabı yapılmış mıdır? <span class="pno">[s. 7, s. 8, s. 48]</span></li>
 <li>25. sayfada kaplanan ürünlerin yıkanmayacağı belirtilmesine rağmen Şekil 3&#x27;te iki adet durulama banyosu ve atıksu çıkışı yer almasının, ayrıca 35. sayfada yılda bir kez tamamen boşaltılacağı ifade edilen %100 kimyasal banyolardan çıkacak sıvı tehlikeli atık miktarının Tablo 9&#x27;da gösterilmemesinin gerekçesi nedir? <span class="pno">[s. 16, s. 25, s. 35, s. 37]</span></li>
 <li>Arıtma tesisi çamuru hesabında tesisteki elektrolitik ve inorganik çinko kaplama banyolarının gerçek kirletici yükü yerine neden 2008 tarihli bir tezden alınan genel 1.600 mg/L AKM değeri esas alınmıştır ve banyolarda dip çamuru oluşmayacağı kabulü hangi teknik veriye dayanmaktadır? <span class="pno">[s. 33, s. 34]</span></li>
 <li>Tablo 16 Çevresel İzleme Planı&#x27;nda toz ve atıklar için yalnızca gözlemsel/görsel denetim tanımlanmıştır; tesisin kurutma fırınları, gaz yıkama (scrubber) üniteleri ve atıksu çıkışı için çinko, ağır metal ve VOC parametrelerini kapsayan hangi periyodik akredite ölçümler yapılacaktır? <span class="pno">[s. 16, s. 25, s. 71]</span></li>
 <li>Yılda 242.166 m³ doğalgaz tüketimi öngörülen tesiste, yasal raporlama kapsamı dışında kalınsa dahi yakma kaynaklı karbon dioksit (CO₂) emisyon miktarı neden hesaplanmamış ve &#x27;sera gazına sebep olacak bir husus bulunmadığı&#x27; şeklinde değerlendirilmiştir? <span class="pno">[s. 26, s. 37, s. 75]</span></li></ul>
-  <p class="sub"><em>Kapsam sınırları:</em> Toplam 270 sayfalık PTD dosyasının yalnızca 26 sayfası (1, 2, 3, 6, 7, 8, 9, 10, 16, 24, 25, 26, 33, 34, 35, 37, 48, 50, 51, 70, 71, 75, 132, 133, 134 ve 141. PDF sayfaları) incelenebilmiştir. Dosyadaki havuz ebatları ve kimyasal hammadde listesi (Tablo 2-5), detaylı banyo atıksu bilançosu (Tablo 6-7), emisyon, gürültü ve kaza riski hesapları, jeolojik/hidrojeolojik veriler, en yakın yerleşim yeri uydu görüntüsü (Şekil 7), atıksu arıtma tesisi iş akım şeması (Tablo 17) ile koordinat, harita ve resmi kurum görüşlerini içeren ekler sunulan kesitlerin dışında kaldığından doğrulanamamıştır.</p>
+  <p class="sub"><em>İnceleme sınırları:</em> Toplam 270 sayfalık PTD dosyasının yalnızca 26 sayfası (1, 2, 3, 6, 7, 8, 9, 10, 16, 24, 25, 26, 33, 34, 35, 37, 48, 50, 51, 70, 71, 75, 132, 133, 134 ve 141. PDF sayfaları) incelenebilmiştir. Dosyadaki havuz ebatları ve kimyasal hammadde listesi (Tablo 2-5), detaylı banyo atıksu bilançosu (Tablo 6-7), emisyon, gürültü ve kaza riski hesapları, jeolojik/hidrojeolojik veriler, en yakın yerleşim yeri uydu görüntüsü (Şekil 7), atıksu arıtma tesisi iş akım şeması (Tablo 17) ile koordinat, harita ve resmi kurum görüşlerini içeren ekler sunulan kesitlerin dışında kaldığından doğrulanamamıştır.</p>
 
 
   <h2>Resmi Duyuru Metni</h2>
   <blockquote>MANİSA ili SALİHLİ,  ilcesinde MANİSA ili SALİHLİ,  ilcesi Torunlu Mahallesi, Kazançukuru Mevkii 105 Ada 15 Parsel   Salihli Organize Sanayi Bölgesi Salihli/MANİSA mevkiindeki UYSAL MAKİNA SANAYİ İTHALAT İHRACAT VE TİCARET ANONİM ŞİRKETİ SALİHLİ 2 ŞUBESİ tarafından yapılması planlanan Elektrolitik Çinko Kaplama, Elektrolitik Çinko Alaşımlı Kaplama, İnorganik Çinko Ana Kat Kaplama ve İnorganik Çinko Üst Lak Kaplama (Toplam Havuz Hacmi: 726,475 m3) projesi ile ilgili olarak Bakanlığımıza sunulan PTD Dosyası incelenmiş ve değerlendirilmiştir  ÇED Yönetmeliği&#x27;nin 17. maddesi gereğince Elektrolitik Çinko Kaplama, Elektrolitik Çinko Alaşımlı Kaplama, İnorganik Çinko Ana Kat Kaplama ve İnorganik Çinko Üst Lak Kaplama (Toplam Havuz Hacmi: 726,475 m3) projesi&#x27;ne Valiliğimizce &#x27;ÇED Olumlu (Kapsam Ek-2)&#x27; kararı verilmiştir.</blockquote>
 
   <h2>Otomatik Metin Taraması (Deterministik)</h2>
-  <table class="kv"><tr><th>Saha / arazi çalışması geçiyor mu</th><td><span class="badge urgent">BULUNAMADI (elle kontrol edin)</span></td></tr>
-<tr><th>Literatür taraması ifadesi geçiyor mu</th><td><span class="badge urgent">BULUNAMADI (elle kontrol edin)</span></td></tr>
-<tr><th>Mevsimsel örnekleme geçiyor mu</th><td><span class="badge urgent">BULUNAMADI (elle kontrol edin)</span></td></tr>
-<tr><th>Kümülatif etki değerlendirmesi geçiyor mu</th><td><span class="badge ok">Metinde var</span></td></tr>
-<tr><th>Zeytincilik Kanunu (3573 / zeytinlik)</th><td><span class="badge ok">Metinde var</span></td></tr>
-<tr><th>Yeraltı suyu / akifer / hidrojeoloji</th><td><span class="badge ok">Metinde var</span></td></tr>
-<tr><th>Endemik tür / IUCN / Bern Sözleşmesi</th><td><span class="badge ok">Metinde var</span></td></tr></table>
-  <p class="sub">OCR içermeyen taranmış harita ve ekler otomatik metin taramasına dahil değildir.</p>
+  <table class="kv"><tr><th>Saha veya arazi çalışması ifadesi</th><td><span class="badge urgent">Metinde tespit edilemedi; doğrudan PDF üzerinden kontrol ediniz</span></td></tr>
+<tr><th>Literatür taraması ifadesi</th><td><span class="badge urgent">Metinde tespit edilemedi; doğrudan PDF üzerinden kontrol ediniz</span></td></tr>
+<tr><th>Mevsimsel örnekleme ifadesi</th><td><span class="badge urgent">Metinde tespit edilemedi; doğrudan PDF üzerinden kontrol ediniz</span></td></tr>
+<tr><th>Kümülatif etki değerlendirmesi ifadesi</th><td><span class="badge ok">Metinde yer almaktadır</span></td></tr>
+<tr><th>3573 sayılı Zeytincilik Kanunu veya zeytinlik ifadesi</th><td><span class="badge ok">Metinde yer almaktadır</span></td></tr>
+<tr><th>Yeraltı suyu, akifer veya hidrojeoloji ifadesi</th><td><span class="badge ok">Metinde yer almaktadır</span></td></tr>
+<tr><th>Endemik tür, IUCN veya Bern Sözleşmesi ifadesi</th><td><span class="badge ok">Metinde yer almaktadır</span></td></tr></table>
+  <p class="sub">Metin katmanı (OCR) bulunmayan taranmış harita ve kurum görüşü ekleri otomatik metin taramasına dahil edilmemiştir.</p>
 
   <h2>Sayfa Kaynaklı Çıkarılan Bulgular</h2>
   <div class="cards"><section class="card"><h3>Koordinatlar, Parsel ve Alan Büyüklüğü <span style="color:var(--muted);font-weight:400;font-size:0.85rem">(32 sayfa: s.1, s.2, s.7, s.8, s.12, s.16, s.17, s.22, s.23, s.24, s.26, s.37, s.38, s.46 (+18 sayfa))</span></h3><div class="hit"><span class="pno">[s. 1]</span> <code>Ada 15 Parsel</code> — …ama ve İnorganik Çinko Üst Lak Kaplama (Toplam Havuz Hacmi: 726,475 m3) Torunlu Mahallesi, Kazançukuru Mevkii 105 Ada 15 Parsel Salihli Organize Sanayi Bölgesi Salihli/MANİSA AQUA ÇEVRE DANIŞMANLIK MÜHENDİSLİK İŞ GÜVENLİĞİ MAK. SAN. VE Tİ…</div>
@@ -222,8 +252,36 @@ blockquote { margin: 10px 0; padding: 10px 14px; border-left: 3px solid var(--ac
 <li><span class="pno">[s. 133]</span> ÇEVRESEL VE SOSYAL YÖNETİM PLANI</li></ul>
 
   <div class="notice">
-    Çevre, Şehircilik ve İklim Değişikliği Bakanlığı'nın kamuya açık <code>eced-duyuru.csb.gov.tr</code> portalından üretilen bilgilendirme amaçlı şeffaflık aracıdır. Tüm alıntılar 1 tabanlı PDF sayfa numarasıyla <code>[s. N]</code> gösterilir. Yasal süreler otomatik hesaplanır; kesin süre ve hukuki işlem için mutlaka avukat/hukukçu doğrulaması alın.
+    Bu sayfa, T.C. Çevre, Şehircilik ve İklim Değişikliği Bakanlığı'nın kamuya açık <code>eced-duyuru.csb.gov.tr</code> duyuru portalındaki kayıtlar esas alınarak bilgilendirme amacıyla hazırlanmıştır. Alıntıların tamamı 1 tabanlı PDF sayfa numarasıyla (<code>[s. N]</code>) gösterilmektedir. Yasal süreler otomatik olarak hesaplanır; kesin sürelerin ve hukuki başvuru yollarının yetkili hukukçular tarafından teyit edilmesi gerekir.
   </div>
 </div>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script>
+(() => {
+  if (typeof L === 'undefined') return;
+  const g = {"lat": 38.6191, "lon": 27.4289, "zoom": 8, "precision": "province_centroid", "points": [], "label": "MANİSA / SALİHLİ — Elektrolitik Çinko Kaplama, Elektrolitik Çinko Alaşımlı Kaplama, İnorganik Çinko Ana Kat K"};
+  const map = L.map('digest-map').setView([g.lat, g.lon], g.zoom);
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    maxZoom: 18,
+    attribution: '&copy; OpenStreetMap katkıda bulunanları'
+  }).addTo(map);
+  if (g.precision === 'exact_pdf' && g.points.length > 1) {
+    const latlngs = g.points.map(p => [p[0], p[1]]);
+    const poly = L.polyline(latlngs, { color: '#58a6ff', weight: 3, opacity: 0.85 }).addTo(map);
+    for (const ll of latlngs.slice(0, 30)) {
+      L.circleMarker(ll, { radius: 4, color: '#ffffff', fillColor: '#f85149', fillOpacity: 0.9, weight: 1 }).addTo(map);
+    }
+    map.fitBounds(poly.getBounds().pad(0.25));
+  } else {
+    L.circleMarker([g.lat, g.lon], {
+      radius: g.precision === 'exact_pdf' ? 8 : 11,
+      color: '#ffffff',
+      fillColor: g.precision === 'exact_pdf' ? '#f85149' : '#58a6ff',
+      fillOpacity: g.precision === 'exact_pdf' ? 0.9 : 0.45,
+      weight: 2
+    }).bindPopup(g.label).addTo(map).openPopup();
+  }
+})();
+</script>
 </body>
 </html>

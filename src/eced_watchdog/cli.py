@@ -1,4 +1,4 @@
-"""Unified CLI (`eced-watch`) for incremental polling, PDF digesting, and static site/RSS builds."""
+"""Unified CLI (`eced-watch`) for Türkiye-wide e-ÇED polling, PDF digesting, and static site/map/RSS builds."""
 
 from __future__ import annotations
 
@@ -10,18 +10,17 @@ from typing import Any
 
 from .digest import ensure_digest_for_filing
 from .fetcher import (
-    DEFAULT_PROVINCES,
     _quick_row_signature,
-    fetch_province,
+    fetch_announcements,
     merge_filings,
 )
-from .llm import DEFAULT_GEMINI_MODEL, resolve_api_key
+from .llm import DEFAULT_EK1_MODEL, DEFAULT_EK2_MODEL, resolve_api_key
 from .site import build_site
 
 
 def parse_provinces(raw: list[str] | None) -> list[tuple[str, str]]:
     if not raw:
-        return DEFAULT_PROVINCES
+        return []
     out: list[tuple[str, str]] = []
     for item in raw:
         code, label = item.split(":", 1)
@@ -34,15 +33,15 @@ def select_digest_candidates(
     digests_dir: Path,
     max_new: int,
 ) -> list[dict[str, Any]]:
-    """Prioritize un-digested priority-corridor + Ek-1 + active-clock filings."""
-    existing_ids = {
-        p.name.replace("_analysis.json", "")
-        for p in digests_dir.glob("*_analysis.json")
-    } if digests_dir.exists() else set()
+    """Refresh existing digests and prioritize new Ek-1 + active-clock + newest filings."""
+    existing_ids = (
+        {p.name.replace("_analysis.json", "") for p in digests_dir.glob("*_analysis.json")}
+        if digests_dir.exists()
+        else set()
+    )
 
-    # Always refresh markdown countdowns for already-digested filings first (instant, cached)
     already: list[dict[str, Any]] = []
-    fresh: list[tuple[tuple[int, int, int, str], dict[str, Any]]] = []
+    fresh: list[tuple[tuple[int, int, str], dict[str, Any]]] = []
     seen_ids: set[str] = set()
 
     for f in filings:
@@ -58,14 +57,17 @@ def select_digest_candidates(
             already.append(f)
             continue
 
-        is_prio = 1 if f.get("priority_district") else 0
         is_ek1 = 1 if f.get("project_type") == "Ek-1" else 0
-        is_active = 1 if any(
-            c.get("days_remaining") is None or c.get("days_remaining", -1) >= 0
-            for c in f.get("statutory_clocks") or []
-        ) else 0
+        is_active = (
+            1
+            if any(
+                c.get("days_remaining") is None or c.get("days_remaining", -1) >= 0
+                for c in f.get("statutory_clocks") or []
+            )
+            else 0
+        )
         ann = f.get("announcement_date") or "0000-00-00"
-        fresh.append(((is_active, is_prio, is_ek1, ann), f))
+        fresh.append(((is_active, is_ek1, ann), f))
 
     fresh.sort(key=lambda x: x[0], reverse=True)
     return already + [f for _, f in fresh[:max_new]]
@@ -74,27 +76,37 @@ def select_digest_candidates(
 def main() -> None:
     parser = argparse.ArgumentParser(
         prog="eced-watch",
-        description="Aegean e-ÇED Ecological Watchdog — incremental poll, digest & static site builder",
+        description="Türkiye e-ÇED İzleme Platformu — artımlı tarama, PDF ön özet ve statik site/harita üreticisi",
     )
     parser.add_argument("--root", type=Path, default=Path.cwd(), help="Project root directory")
-    parser.add_argument("--days", type=int, default=30, help="Lookback window in days")
+    parser.add_argument("--days", type=int, default=7, help="Lookback window in days (default: 7 nationwide)")
     parser.add_argument(
         "--provinces",
         nargs="+",
-        help="Provinces as CODE:LABEL (default: 35:İZMİR 45:MANİSA)",
+        help="Optional province filter as CODE:LABEL (omit for all 81 provinces / Türkiye geneli)",
+    )
+    parser.add_argument(
+        "--max-records",
+        type=int,
+        default=None,
+        help="Optional cap on records fetched per query",
     )
     parser.add_argument(
         "--max-digests",
         type=int,
-        default=4,
+        default=5,
         help="Max new PDFs to download and digest per run",
     )
     parser.add_argument("--skip-fetch", action="store_true", help="Rebuild site/digests from existing data/filings.json")
     parser.add_argument("--skip-digests", action="store_true", help="Skip downloading/digesting new PDFs")
     parser.add_argument("--skip-llm", action="store_true", help="Disable Gemini API synthesis even if GEMINI_API_KEY is set")
     parser.add_argument("--re-synthesize", action="store_true", help="Re-run Gemini synthesis even on already-synthesized digests")
-    parser.add_argument("--gemini-model", default=None, help=f"Gemini model ID (default: GEMINI_MODEL env or {DEFAULT_GEMINI_MODEL})")
-    parser.add_argument("--drop-pdfs", action="store_true", help="Delete downloaded PDFs after digesting (for CI)")
+    parser.add_argument(
+        "--gemini-model",
+        default=None,
+        help=f"Override Gemini model ID (default: Ek-1 -> {DEFAULT_EK1_MODEL}, Ek-2 -> {DEFAULT_EK2_MODEL})",
+    )
+    parser.add_argument("--drop-pdfs", action="store_true", help="Delete downloaded PDFs after digesting")
     parser.add_argument(
         "--site-url",
         default="https://yanekyuk.github.io/aegean-eced-watchdog/",
@@ -114,32 +126,41 @@ def main() -> None:
     if filings_path.exists():
         loaded = json.loads(filings_path.read_text(encoding="utf-8"))
         existing = loaded.get("filings", [])
-    elif (data_dir / "izmir_last_30d.json").exists():
-        # Bootstrap cleanly from Spike 1 dump if filings.json does not exist yet
-        loaded = json.loads((data_dir / "izmir_last_30d.json").read_text(encoding="utf-8"))
-        existing = loaded.get("filings", [])
 
     new_count = 0
     if not args.skip_fetch:
         existing_by_sig = {_quick_row_signature(f): f for f in existing}
         provinces = parse_provinces(args.provinces)
         incoming: list[dict[str, Any]] = []
-        for code, label in provinces:
-            rows = fetch_province(
-                code,
-                label,
+        if provinces:
+            for code, label in provinces:
+                incoming.extend(
+                    fetch_announcements(
+                        province_code=code,
+                        province_label=label,
+                        days=args.days,
+                        cert_path=cert_path,
+                        existing_by_sig=existing_by_sig,
+                        max_records=args.max_records,
+                    )
+                )
+            scope_meta = [f"{c}:{l}" for c, l in provinces]
+        else:
+            incoming = fetch_announcements(
                 days=args.days,
                 cert_path=cert_path,
                 existing_by_sig=existing_by_sig,
+                max_records=args.max_records,
             )
-            incoming.extend(rows)
+            scope_meta = ["ALL:TÜRKİYE"]
+
         filings, new_count = merge_filings(existing, incoming)
         data_dir.mkdir(parents=True, exist_ok=True)
         filings_path.write_text(
             json.dumps(
                 {
                     "updated_at": datetime.now().isoformat(timespec="seconds"),
-                    "provinces": [f"{c}:{l}" for c, l in provinces],
+                    "scope": scope_meta,
                     "count": len(filings),
                     "filings": filings,
                 },
@@ -175,16 +196,17 @@ def main() -> None:
                 )
                 if res and not res["cached"]:
                     digested_new += 1
+                    geo = res["analysis"].get("geo") or {}
                     print(
-                        f"  Digested NEW #{fid} ({f['district']}): "
+                        f"  Digested NEW #{fid} ({f['province']}/{f['district']}): "
                         f"{res['analysis']['page_count']}p "
-                        f"({res['pdf_info']['bytes'] / 1024 / 1024:.1f} MB)"
+                        f"({res['pdf_info']['bytes'] / 1024 / 1024:.1f} MB, geo={geo.get('precision')})"
                     )
                 if res and res.get("synthesized_now"):
                     synthesized_new += 1
                     llm_m = res["llm_synthesis"]["model"]
                     n_flags = len(res["llm_synthesis"]["result"].get("red_flags") or [])
-                    print(f"  Synthesized #{fid} via {llm_m} ({n_flags} red flags)")
+                    print(f"  Synthesized #{fid} via {llm_m} ({n_flags} findings)")
             except Exception as exc:
                 print(f"  WARN: failed to digest #{fid}: {exc}")
         print(f"Digests ready ({digested_new} newly extracted, {synthesized_new} newly synthesized)")
@@ -196,8 +218,9 @@ def main() -> None:
         site_url=args.site_url,
     )
     print(
-        f"Built site: {stats['total']} filings ({stats['priority']} priority, "
-        f"{stats['active']} active, {stats['digests_rendered']} digests) -> {stats['index_path']}"
+        f"Built site: {stats['total']} filings ({stats['provinces']} provinces, "
+        f"{stats['active']} active, {stats['digests_rendered']} digests, "
+        f"{stats['exact_geo']} exact-coord) -> {stats['index_path']}"
     )
 
 

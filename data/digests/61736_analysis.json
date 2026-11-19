@@ -1,0 +1,982 @@
+{
+  "filing": {
+    "province": "YALOVA",
+    "district": "ÇIFTLIKKÖY",
+    "project_name": "MEMPORT LİMAN",
+    "project_owner": "MEM GEMİ SANAYİ VE TİCARET A.Ş.",
+    "sector": "Kıyı",
+    "sub_sector": "Limanlar (Yat Limanları Dahil)",
+    "decision_type": "HKT",
+    "announcement_date_tr": "19.11.2026",
+    "project_type": "Ek-1",
+    "detail_text": "YALOVA ili ÇIFTLIKKÖY,  ilcesinde YALOVA ili ÇIFTLIKKÖY ilçesi sınırları içerisinde MEM GEMİ SANAYİ VE TİCARET A.Ş. tarafından yapılması planlanan MEMPORT LİMAN projesi ile ilgili Çevresel Etki Değerlendirme süreci başlamış ve Çevresel Etki Değerlendirmesi Başvuru Dosyası halkın görüşüne açılmıştır.Söz konusu projeye ilişkin, halkı proje hakkında bilgilendirmek, görüş ve önerilerini almak amacıyla ÇED Yönetmeliğinin 9. maddesi gereğince 15/12/2026 tarihinde Halkın Katılım Toplantısı düzenlenecektir.ÇED Başvuru Dosyasını İncelemek isteyenler Bakanlık Merkezinde veya YALOVA Çevre ve Şehircilik İl Müdürlüklerinde duyuru tarihinden itibaren raporu inceleyerek, zamanlama takvimi içerisinde proje hakkında Bakanlığa veya Valiliğe görüş bildirebilirler. Halkın Katılımı Toplantısı yeri ve saati ile ilgili ÇED İzin Denetim Genel Müdürlüğü ve YALOVA Çevre, Şehircilik ve İklim Değişikliği İl Müdürlüğünden bilgi alınabilir. İlgililere ve kamuoyuna duyurulur.",
+    "detail_links": [
+      {
+        "text": "Başvuru Dosyası",
+        "href": "http://eced.csb.gov.tr/jsp/ek1/61736"
+      }
+    ],
+    "documents": [
+      {
+        "portal_doc_url": "http://eced.csb.gov.tr/jsp/ek1/61736",
+        "filing_id": "61736",
+        "consulting_firm": "GİSAŞ GEMİ İNŞA SANAYİ A.Ş.",
+        "submitted_at": "17/11/2026 03:05:21",
+        "pdf_urls": [
+          {
+            "label": "Dosya Göster",
+            "url": "http://eced.csb.gov.tr/jsp/dosya/dosyaGoster.htm?tempAd=sign5861658199507577599.pdf&orjinalAd=e-imza.pdf&yuklemeTarihi=2026-11-17"
+          }
+        ]
+      }
+    ],
+    "announcement_date": "2026-11-19",
+    "statutory_clocks": [
+      {
+        "code": "hkt",
+        "kind": "Halkın Katılımı Toplantısı (HKT) duyurusu; toplantı tarihi resmi metinde yer alır",
+        "deadline": null,
+        "days_remaining": null
+      }
+    ],
+    "filing_key": "61736:19.11.2026:HKT",
+    "first_seen_at": "2026-11-20T02:10:44"
+  },
+  "pdf_info": {
+    "filename": "61736.pdf",
+    "bytes": 87752613,
+    "sha256": "e2168d63b0d197a2c2455fd65a73f8fdc1f1afad99b8cd8431f897dc8898cd19",
+    "cached": false
+  },
+  "analysis": {
+    "page_count": 396,
+    "total_chars": 558939,
+    "text_pages": 351,
+    "scanned_or_blank_pages": 45,
+    "scanned_page_sample": [
+      11,
+      18,
+      206,
+      218,
+      220,
+      224,
+      226,
+      227,
+      228,
+      230,
+      232,
+      234,
+      236,
+      238,
+      239
+    ],
+    "headings": [
+      [
+        4,
+        "ŞEKİLLER LİSTESİ"
+      ],
+      [
+        7,
+        "TABLOLAR LİSTESİ"
+      ],
+      [
+        9,
+        "EKLER LİSTESİ"
+      ],
+      [
+        10,
+        "KISALTMALAR LİSTESİ"
+      ],
+      [
+        12,
+        "PROJENİN TEKNİK OLMAYAN ÖZETİ"
+      ],
+      [
+        19,
+        "BÖLÜM I: PROJENİN TANIMI VE ÖZELİKLERİ"
+      ],
+      [
+        19,
+        "a) Proje konusu yatırımın tanımı, özellikleri, ömrü, hizmet maksatları, önem ve gerekliliği."
+      ],
+      [
+        61,
+        "b) Projenin yer ve teknoloji alternatifleri, proje için seçilen yerin koordinatları."
+      ],
+      [
+        78,
+        "BÖLÜM II: PROJE YERİ VE ETKİ ALANININ MEVCUT ÇEVRESEL ÖZELLİKLERİ"
+      ],
+      [
+        78,
+        "Proje alanının ve önerilen proje nedeniyle etkilenmesi muhtemel olan çevrenin; nüfus, fauna, flora, jeolojik ve hidrojeolojik özellikler, doğal afet durumu, toprak, su, hava, atmosferik koşullar, iklimsel faktörler, mülkiyet durumu, kültür varlığı ve ..."
+      ],
+      [
+        167,
+        "BÖLÜM III: PROJENİN İNŞAAT VE İŞLETME AŞAMASINDA ÇEVRESEL ETKİLERİ VE ALINACAK ÖNLEMLER"
+      ],
+      [
+        167,
+        "Projenin; a) Çevreyi etkileyebilecek olası sorunların belirlenmesi, kirleticilerin miktarı, alıcı ortamla etkileşimi, kümülatif etkilerin belirlenmesi."
+      ],
+      [
+        180,
+        "b) Projenin iklim üzerindeki etkisi (sera gazı emisyonlarının niteliği ve büyüklüğü) ve projenin iklim değişikliğinden nasıl etkileneceği."
+      ],
+      [
+        180,
+        "c) İklim değişikliğine bağlı projeyle ilgili afet veya kaza riski."
+      ],
+      [
+        182,
+        "ç) Projenin çevreye olabilecek olumsuz etkilerinin azaltılması için alınacak önlemler."
+      ],
+      [
+        186,
+        "BÖLÜM IV: KÜMÜLATİF ÇEVRESEL ETKİ DEĞERLENDİRME"
+      ],
+      [
+        196,
+        "BÖLÜM V: ÇEVRESEL VE SOSYAL EYLEM PLANI"
+      ],
+      [
+        196,
+        "V-1: Çevre İzleme Planı."
+      ],
+      [
+        203,
+        "V-2: Sürdürülebilirlik Planı (Sıfır Atık Planı, Trafik Yönetim Planı, Sera Gazı Azaltım Planı, Çevresel ve Sosyal Yönetim Planı vb.)."
+      ],
+      [
+        205,
+        "BÖLÜM VI HALKIN BİLGİLENDİRİLMESİ VE SÜRECE KATILIMI İLE PAYDAŞ KATILIM PLANI"
+      ],
+      [
+        205,
+        "a) Projeden etkilenmesi muhtemel ilgili halkın belirlenmesi ve halkın görüşlerinin çevresel etki değerlendirmesi çalışmasına yansıtılması için önerilen yöntemler."
+      ],
+      [
+        205,
+        "b) Görüşlerine başvurulması öngörülen diğer taraflar."
+      ],
+      [
+        205,
+        "c) Paydaş Katılım Planı."
+      ],
+      [
+        207,
+        "BÖLÜM VII NOTLAR, KAYNAKLAR VE EKLER"
+      ]
+    ],
+    "geo": {
+      "precision": "exact_pdf",
+      "lat": 40.69199,
+      "lon": 29.41711,
+      "point_count": 80,
+      "points": [
+        [
+          40.69887,
+          29.41984
+        ],
+        [
+          40.69871,
+          29.42027
+        ],
+        [
+          40.69626,
+          29.41878
+        ],
+        [
+          40.69543,
+          29.42114
+        ],
+        [
+          40.69788,
+          29.42263
+        ],
+        [
+          40.69773,
+          29.42306
+        ],
+        [
+          40.69528,
+          29.42157
+        ],
+        [
+          40.69519,
+          29.42184
+        ],
+        [
+          40.69472,
+          29.42156
+        ],
+        [
+          40.69335,
+          29.42072
+        ],
+        [
+          40.69089,
+          29.41922
+        ],
+        [
+          40.69068,
+          29.41909
+        ],
+        [
+          40.69053,
+          29.41903
+        ],
+        [
+          40.69049,
+          29.41901
+        ],
+        [
+          40.69003,
+          29.41882
+        ],
+        [
+          40.68995,
+          29.41868
+        ],
+        [
+          40.68976,
+          29.41846
+        ],
+        [
+          40.68962,
+          29.4183
+        ],
+        [
+          40.68963,
+          29.41748
+        ],
+        [
+          40.68917,
+          29.41762
+        ],
+        [
+          40.68902,
+          29.41756
+        ],
+        [
+          40.6888,
+          29.41734
+        ],
+        [
+          40.68871,
+          29.41687
+        ],
+        [
+          40.68847,
+          29.41606
+        ],
+        [
+          40.6883,
+          29.41539
+        ],
+        [
+          40.68822,
+          29.41508
+        ],
+        [
+          40.68814,
+          29.41477
+        ],
+        [
+          40.68806,
+          29.41447
+        ],
+        [
+          40.68792,
+          29.41402
+        ],
+        [
+          40.68779,
+          29.41361
+        ],
+        [
+          40.68774,
+          29.41346
+        ],
+        [
+          40.68755,
+          29.41287
+        ],
+        [
+          40.68752,
+          29.41277
+        ],
+        [
+          40.68745,
+          29.41252
+        ],
+        [
+          40.6874,
+          29.41235
+        ],
+        [
+          40.6874,
+          29.41233
+        ],
+        [
+          40.68729,
+          29.41201
+        ],
+        [
+          40.6872,
+          29.41174
+        ],
+        [
+          40.68659,
+          29.40983
+        ],
+        [
+          40.68653,
+          29.40965
+        ]
+      ],
+      "datum": "UTM-Z35/WGS84",
+      "pages": [
+        63,
+        64,
+        65,
+        215
+      ]
+    },
+    "signals": {
+      "coordinates_and_footprint": {
+        "label": "Coordinates, Parcel & Footprint",
+        "page_count": 75,
+        "pages": [
+          9,
+          10,
+          12,
+          17,
+          19,
+          22,
+          30,
+          41,
+          42,
+          47,
+          49,
+          58,
+          61,
+          62,
+          63,
+          64,
+          65,
+          93,
+          97,
+          98,
+          102,
+          104,
+          112,
+          113,
+          118
+        ],
+        "samples": [
+          {
+            "page": 9,
+            "match": "KOORDİNAT",
+            "snippet": "…E BELGELER İLE RAPORDA KULLANILAN TEKNİKLERDEN RAPOR METNİNDE SUNULAMAYAN BELGELER EK-2 PROJE İÇİN SEÇİLEN YERİN KOORDİNATLARI EK-3 PROJE İÇİN BELİRLENEN YER VE ALTERNATİFLERİNİN VARSA; ÇEVRE DÜZENİ, NAZIM, UYGULAMA İMAR PLANI, VAZİYET PL…"
+          },
+          {
+            "page": 10,
+            "match": "ED-50",
+            "snippet": "…, Şehircilik ve İklim Değişikliği İl Müdürlüğü DGM Denizcilik Genel Müdürlüğü DSİ Devlet Su İşleri Genel Müdürlüğü ED-50 European Datum 1950 – Avrupa Datumu 1950 GİSAŞ Gemi İnşa Sanayi A.Ş. GPS Global Positioning System – Küresel Konum…"
+          },
+          {
+            "page": 10,
+            "match": "UTM",
+            "snippet": "…ğı Denizcilik Genel Müdürlüğü UNCTAD United Nations Trade and Development – Birleşmiş Milletler Ticaret ve Kalkınma UTM Universal Transverse Mercator – Evrensel Enine Merkator Koordinat Sistemi WGS 84 World Geodetic System 1984 – Dünya…"
+          },
+          {
+            "page": 10,
+            "match": "Koordinat",
+            "snippet": "…nd Development – Birleşmiş Milletler Ticaret ve Kalkınma UTM Universal Transverse Mercator – Evrensel Enine Merkator Koordinat Sistemi WGS 84 World Geodetic System 1984 – Dünya Jeodezik Sistemi 1984"
+          },
+          {
+            "page": 10,
+            "match": "WGS 84",
+            "snippet": "…leşmiş Milletler Ticaret ve Kalkınma UTM Universal Transverse Mercator – Evrensel Enine Merkator Koordinat Sistemi WGS 84 World Geodetic System 1984 – Dünya Jeodezik Sistemi 1984"
+          },
+          {
+            "page": 12,
+            "match": "536,86 m2",
+            "snippet": "…Ada, 22-24-26-29 Parsel ve Deniz Kesiminde “MEMPORT Liman Projesi” planlanmaktadır. Söz konusu liman projesinin 251.536,86 m2 geri saha, 222.924,79 m2 deniz dolgusu olmak üzere toplam 474.461,65 m2 alandan meydana gelmektedir. Tesisin konumu…"
+          },
+          {
+            "page": 12,
+            "match": "924,79 m2",
+            "snippet": "…e Deniz Kesiminde “MEMPORT Liman Projesi” planlanmaktadır. Söz konusu liman projesinin 251.536,86 m2 geri saha, 222.924,79 m2 deniz dolgusu olmak üzere toplam 474.461,65 m2 alandan meydana gelmektedir. Tesisin konumunun gösterildiği uydu gör…"
+          },
+          {
+            "page": 12,
+            "match": "461,65 m2",
+            "snippet": "…anmaktadır. Söz konusu liman projesinin 251.536,86 m2 geri saha, 222.924,79 m2 deniz dolgusu olmak üzere toplam 474.461,65 m2 alandan meydana gelmektedir. Tesisin konumunun gösterildiği uydu görüntüsü aşağıda yer alan şekilde verilmektedir.…"
+          }
+        ]
+      },
+      "water_and_discharge": {
+        "label": "Water Use, Hydrogeology & Discharge",
+        "page_count": 47,
+        "pages": [
+          7,
+          106,
+          112,
+          113,
+          114,
+          115,
+          117,
+          118,
+          122,
+          123,
+          148,
+          149,
+          150,
+          151,
+          152,
+          153,
+          161,
+          165,
+          168,
+          169,
+          174,
+          175,
+          176,
+          182,
+          183
+        ],
+        "samples": [
+          {
+            "page": 7,
+            "match": "Yeraltı Suyu",
+            "snippet": "…altı Suyu Potansiyeli (Yalova İl Tarım ve Orman Müdürlüğü, 2025) .......... 101 Tablo 23. Alüvyon Akiferlerinin Yıllık Yeraltı Suyu Potansiyeli (DSİ Genel Müdürlüğü 1. Bölge Müdürlüğü, 2025) ...........................................................…"
+          },
+          {
+            "page": 106,
+            "match": "deşarj",
+            "snippet": "…nelde düzgün bir yapıda olduğu görülmüş, Deniz tabanı üzerinde doğal olmayan yapı olarak bazı yerleri batık iskele ve deşarj boru hattı olduğu gözlenmiştir. Elde edilen tüm yandan taramalı sonar hatlarına ait kayıtlar resim ve sayısal ortam…"
+          },
+          {
+            "page": 112,
+            "match": "70 l/s",
+            "snippet": "…ezervuar yüzey alanı yaklaşık 5,5 ha ve drenaj alanı 17,80 km²’dir. Dolusavak kapasitesi 85 m³/s, isale kapasitesi ise 70 l/s’dir. Gölete bağlı arıtma tesisinin kapasitesi 70 l/s veya yaklaşık 6.048 m³/gün olarak belirtilmektedir. Armutlu G…"
+          },
+          {
+            "page": 112,
+            "match": "6.048 m³/gün",
+            "snippet": "…vak kapasitesi 85 m³/s, isale kapasitesi ise 70 l/s’dir. Gölete bağlı arıtma tesisinin kapasitesi 70 l/s veya yaklaşık 6.048 m³/gün olarak belirtilmektedir. Armutlu Göleti, Armutlu ilçesinin içme suyu ihtiyacının karşılanması amacıyla kullanılmak…"
+          },
+          {
+            "page": 113,
+            "match": "yeraltı suyu",
+            "snippet": "…dere Göleti Kaya 882*103 192 664.103 Sulama Hidrojeolojik Özellikler Yalova Merkez ilçesi ve yakın çevresi, yeraltı suyu potansiyeli bakımından genel olarak verimli bir bölge değildir. Bu alanlarda yaygın olarak gözlenen fliş birimleri, g…"
+          },
+          {
+            "page": 113,
+            "match": "akifer",
+            "snippet": "…birimleri, gözeneklilik ve geçirgenlik özellikleri bakımından önemli miktarda yeraltı suyu depolayabilecek nitelikte akifer birimleri oluşturmamaktadır. Buna karşılık Yalova, Taşköprü ve Hersek ovalarında bulunan alüvyon birimleri, yeraltı…"
+          },
+          {
+            "page": 114,
+            "match": "yeraltı suyu",
+            "snippet": "…lova İl Tarım ve Orman Müdürlüğü tarafından sağlanan 2025 yılı verilerine göre Yalova, Hersek ve Taşköprü bölgelerinin yeraltı suyu potansiyelleri belirlenmiş olup, söz konusu değerler aşağıdaki tabloda verilmiştir. Tablo 22. Yeraltı Suyu Potansiy…"
+          },
+          {
+            "page": 114,
+            "match": "akifer",
+            "snippet": "…asında özellikle Taşköprü bölgesi bakımından farklılık bulunduğu görülmektedir. Bu farklılığın; değerlendirmeye alınan akifer sınırları, ölçüm dönemleri, hesaplama yöntemleri veya emniyetli işletme rezervi ile toplam yeraltı suyu potansiyelini…"
+          }
+        ]
+      },
+      "protected_land_and_olive": {
+        "label": "Protected Zones, Forests & Olive Groves",
+        "page_count": 23,
+        "pages": [
+          10,
+          19,
+          49,
+          61,
+          83,
+          115,
+          160,
+          161,
+          163,
+          165,
+          167,
+          174,
+          175,
+          183,
+          188,
+          191,
+          192,
+          194,
+          199,
+          209,
+          375,
+          380,
+          381
+        ],
+        "samples": [
+          {
+            "page": 10,
+            "match": "Özel Çevre Koruma",
+            "snippet": "…Zonu MGM Meteoroloji Genel Müdürlüğü MTA Maden Tetkik ve Arama Genel Müdürlüğü NO₂ Azot Dioksit O₃ Ozon ÖÇKB Özel Çevre Koruma Bölgesi PM₁₀ Aerodinamik çapı 10 µm ve daha küçük partikül madde PM₂,₅ Aerodinamik çapı 2,5 µm ve daha küçük partik…"
+          },
+          {
+            "page": 19,
+            "match": "kıyı kenar",
+            "snippet": "…sislerin oluşturulması planlanmaktadır. Proje Alanı yaklaşık 47,4 ha olarak belirlenmiş olup proje alanı içerisinde; kıyı kenar çizgisi, Proje/ÇED alanı, ön izin talep edilen dolgu alanı, tapu alanları, İskele-1 alanı, İskele- 2 alanı, otopark al…"
+          },
+          {
+            "page": 49,
+            "match": "Kıyı kenar",
+            "snippet": "…140 22 79.962,53 m² 140 24 132.203,85 m² 140 26 25.199,07 m² 140 29 14.171,41 m² Toplam 251.536,86 m² Kıyı kenar çizgisinin deniz tarafında kalan ve Devletin hüküm ve tasarrufu altında bulunan 222.924,79 m² büyüklüğündeki alan için…"
+          },
+          {
+            "page": 61,
+            "match": "kıyı kenar",
+            "snippet": "…decek kıyı yapılarının oluşturulması planlanmaktadır. Proje için hazırlanan Genel Vaziyet Planında; Proje/ÇED Alanı, kıyı kenar çizgisi, ön izin talep edilen dolgu alanı, tapu alanları, İskele-1 Alanı, İskele-2 Alanı, Rıhtım Alanları, rampa alan…"
+          },
+          {
+            "page": 83,
+            "match": "Özel Çevre Koruma",
+            "snippet": "…Gazete’de yayımlanan 04.11.2021 tarihli ve 4758 sayılı Cumhurbaşkanı Kararı ile ilan edilen Marmara Denizi ve Adalar Özel Çevre Koruma Bölgesi sınırları içerisinde yer almaktadır. Bu kapsamda, MEM Gemi Sanayi ve Ticaret A.Ş. tarafından planlanan MEMPO…"
+          },
+          {
+            "page": 115,
+            "match": "kıyı kenar",
+            "snippet": "…t Raporu” kapsamında proje sahasının hidrojeolojik özellikleri ayrıca değerlendirilmiştir. Rapora göre inceleme alanı kıyı kenar çizgisinin deniz tarafında kalmakta olup, deniz sondajlarında deniz suyu derinlikleri 2,30 m ile 25,50 m arasında deği…"
+          },
+          {
+            "page": 160,
+            "match": "kıyı kenar",
+            "snippet": "…yer alan deniz alanı içerisinde planlanmaktadır. Proje alanının kara kesimi söz konusu parsellerden, deniz kesimi ise kıyı kenar çizgisinin deniz tarafında kalan Devletin hüküm ve tasarrufu altındaki alandan oluşmaktadır. Proje kapsamında yer a…"
+          },
+          {
+            "page": 160,
+            "match": "doğal sit",
+            "snippet": "…I VE SİT ÖZELLİKLERİ Yalova ili, farklı tarihsel dönemlere ait taşınmaz kültür varlıkları ile arkeolojik, tarihî ve doğal sit alanları bakımından zengin bir kültürel mirasa sahiptir. İlde tarihî yapılar, sivil mimarlık örnekleri, dinsel yapılar…"
+          }
+        ]
+      },
+      "ecology_and_baseline": {
+        "label": "Flora, Fauna & Baseline Methodology",
+        "page_count": 19,
+        "pages": [
+          83,
+          108,
+          110,
+          117,
+          118,
+          122,
+          153,
+          164,
+          165,
+          168,
+          174,
+          191,
+          198,
+          200,
+          313,
+          318,
+          379,
+          380,
+          390
+        ],
+        "samples": [
+          {
+            "page": 83,
+            "match": "arazi çalışması",
+            "snippet": "…tirilmiştir. Söz konusu çalışma kapsamında 17.11.2025 tarihinde saat 13:30’da proje sahasında uzman ekip tarafından arazi çalışması gerçekleştirilmiştir. Arazi çalışmasına uzman olarak Prof. Dr. Aydın Akbulut, Dr. Öğr. Üyesi Uğur Erdem Dokuz ve Dr. Ö…"
+          },
+          {
+            "page": 83,
+            "match": "örnekleme",
+            "snippet": "…denizel biyolojik bileşenlerin ve habitat özelliklerinin belirlenmesine yönelik dalış/sualtı gözlemleri ile gözlem ve örnekleme çalışmaları yürütülmüştür. Düzenlenen Arazi Tutanağında, çalışma bölgesinin deniz canlılarına ilişkin gözlem ve örnek…"
+          },
+          {
+            "page": 108,
+            "match": "mevsimsel",
+            "snippet": "…En düşük akış değerleri genellikle yaz sonuna rastlamaktadır. Bunların dışında, yaz aylarında genellikle su bulunmayan mevsimsel dereler de bulunmaktadır. Yalova ili sınırları içerisinde yer alan başlıca akarsular aşağıda sıralanmaktadır1. 1. K…"
+          },
+          {
+            "page": 110,
+            "match": "mevsimsel",
+            "snippet": "…çevresinin yüzeysel drenaj özelliklerinin ortaya konulması amacıyla, proje sınırları ile birlikte bölgedeki akarsular, mevsimsel dereler, kuru dereler ile kaynak-pınar, çeşme, su yapısı, kuyu ve keson kuyu gibi su unsurlarının gösterildiği Hidrol…"
+          },
+          {
+            "page": 117,
+            "match": "mevsimsel",
+            "snippet": "…ojik birimlerin litolojik özelliklerine, gözeneklilik ve geçirgenlik durumuna, topografik koşullara, yağış miktarına, mevsimsel beslenime ve yeraltı suyu kullanım miktarına bağlı olarak değişiklik göstermektedir. Yeraltı suyu seviyeleri yağışl…"
+          },
+          {
+            "page": 118,
+            "match": "örnekleme",
+            "snippet": "…OORDİNAT (WGS-84) E DERİNLİK (m) AK-1 40° 41' 44.59\" N 29° 25' 12.39\" E 18,51 Akıntı ölçümlerinde, veri toplama örnekleme aralığı 15 dakika olarak seçilmiş ve cihazın hafızasına kayıt edilmiştir."
+          },
+          {
+            "page": 122,
+            "match": "örnekleme",
+            "snippet": "…-5 40° 41' 41.50\" 29° 25' 10.84\" 10,91 CTD-6 40° 41' 50.25\" 29° 25' 16.36\" 25,12 Ölçüm sırasında veri toplama örnekleme aralığı 1 saniye olarak seçilmiş ve ölçüm sonuçları birer metre aralıklarla verilmiştir. CTD verileri içinde anomali g…"
+          },
+          {
+            "page": 153,
+            "match": "mevsimsel",
+            "snippet": "…’nda yer alan değerlendirmelere göre il genelinde belirgin ve sürekli bir hava kirliliği sorunu bulunmamakla birlikte, mevsimsel partikül madde taşınımları nedeniyle PM₁₀ sınır değerlerinde dönemsel aşımlar meydana gelmektedir. Motorlu taşıtlarda…"
+          }
+        ]
+      },
+      "pollutants_and_hazards": {
+        "label": "Emissions, Geochemistry & Waste",
+        "page_count": 61,
+        "pages": [
+          6,
+          97,
+          104,
+          118,
+          131,
+          133,
+          139,
+          140,
+          141,
+          142,
+          143,
+          144,
+          145,
+          146,
+          147,
+          148,
+          149,
+          154,
+          155,
+          157,
+          167,
+          168,
+          170,
+          173,
+          174
+        ],
+        "samples": [
+          {
+            "page": 6,
+            "match": "PM10",
+            "snippet": "…e Bulunan Hava Kirliliği Ölçüm Cihazlarının Yerleri .................. 141 Şekil 101. 2024 Yılında Yalova İstasyonları PM10 Parametresi Günlük Ortalama Değerler Grafiği (Marmara Temiz Hava Merkezi, 2025) ......................................…"
+          },
+          {
+            "page": 6,
+            "match": "PM2.5",
+            "snippet": "…2025) ............................................................... 143 Şekil 104. 2024 yılında Yalova İstasyonları PM2.5 Parametresi Günlük Ortalama Değerler Grafiği (Marmara Temiz Hava Merkezi, 2025) ......................................…"
+          },
+          {
+            "page": 97,
+            "match": "gürültü",
+            "snippet": "…istemi ile mühendislik sismiği çalışması gerçekleştirilmiştir. Kötü deniz ve hava şartları sismik sinyaller üzerinde gürültü oluşturarak sinyalin kalitesini etkileyeceğinden, ölçümler mümkün olan en sakin deniz ve hava şartlarında gerçekleşti…"
+          },
+          {
+            "page": 104,
+            "match": "Gürültü",
+            "snippet": "…arına PCIWorks adlı yazılımın, resim işleme (image processing) fonksiyonu kullanılarak sonar verilerine sırasıyla; Gürültü kaldırma (Remove niose) 3x3 Gaussian filtre Sharpening filtre Uygulanarak sonar verilerinin görüntü kalitesi yük…"
+          },
+          {
+            "page": 118,
+            "match": "ağır metal",
+            "snippet": "…apsamda yeraltı sularının pH, elektriksel iletkenlik, toplam çözünmüş madde, klorür, sülfat, nitrat, nitrit, amonyum, ağır metal ve mikrobiyolojik parametreler bakımından analiz edilmesi gerekmektedir. Yeraltı sularının kullanım amacına uygunlu…"
+          },
+          {
+            "page": 131,
+            "match": "deprem",
+            "snippet": "…k-Jeoteknik Zemin Etüt Raporu” hazırlanmıştır. Söz konusu çalışma kapsamında proje sahasının doğal afet tehlikeleri ve deprem durumu ile heyelan, kaya düşmesi ve diğer jeolojik kökenli afet tehlikeleri proje sahasına özgü olarak değerlendirilm…"
+          },
+          {
+            "page": 133,
+            "match": "deprem",
+            "snippet": "…5). Kaya düşmelerinde, süreksizlik yüzeylerindeki suların donma-çözülme etkileri, ağaç köklerinin büyümesi, ayrışma ve deprem dalgaları gibi faktörlerin etkisi altında tetiklenen kaya blokları, dik yamaçlardan aşağı doğru serbest düşerek, eğimi…"
+          },
+          {
+            "page": 139,
+            "match": "deprem",
+            "snippet": "…lova ili, Marmara Bölgesi’nin tektonik bakımdan en etkin kesimlerinden birinde bulunmakta olup ilin ve proje alanının deprem tehlikesi esas olarak Kuzey Anadolu Fay Zonu’nun Marmara Denizi ve Güney Marmara’daki kolları tarafından denetlenmekte…"
+          }
+        ]
+      },
+      "cost_and_capacity": {
+        "label": "Project Cost, Power & Capacity",
+        "page_count": 29,
+        "pages": [
+          2,
+          4,
+          13,
+          16,
+          22,
+          23,
+          30,
+          31,
+          32,
+          33,
+          34,
+          50,
+          51,
+          56,
+          57,
+          58,
+          59,
+          60,
+          62,
+          110,
+          112,
+          113,
+          117,
+          137,
+          190
+        ],
+        "samples": [
+          {
+            "page": 2,
+            "match": "PROJE BEDELİ",
+            "snippet": "…0 (344) 236 28 14 GSM: +90 (532) 745 88 06 E-POSTA: memgemisanayi@hs01.kep.tr PROJENİN ADI: MEMPORT LİMAN PROJESİ PROJE BEDELİ: 8.127.130.000 TL PROJE İÇİN SEÇİLEN YERİN AÇIK ADRESİ (İLİ, İLÇESİ, MEVKİ): YALOVA İLİ, ÇİFTLİKKÖY İLÇESİ, DENİZÇ…"
+          },
+          {
+            "page": 2,
+            "match": "8.127.130.000 TL",
+            "snippet": "…14 GSM: +90 (532) 745 88 06 E-POSTA: memgemisanayi@hs01.kep.tr PROJENİN ADI: MEMPORT LİMAN PROJESİ PROJE BEDELİ: 8.127.130.000 TL PROJE İÇİN SEÇİLEN YERİN AÇIK ADRESİ (İLİ, İLÇESİ, MEVKİ): YALOVA İLİ, ÇİFTLİKKÖY İLÇESİ, DENİZÇALI MAHALLESİ, TOP…"
+          },
+          {
+            "page": 4,
+            "match": "Kapasite",
+            "snippet": "…B-DGM, 2026c) .............................................................................. 44 Şekil 31. Modern Liman Kapasitesinin Temel Bileşenleri ve Genişletilmiş Kapasite Yaklaşımı (Kaynak: TÜRKLİM, 2026b'den uyarlanmıştır) ................…"
+          },
+          {
+            "page": 13,
+            "match": "kapasite",
+            "snippet": "…l-off) araç taşımacılığında CEU, Car Equivalent Unit (Otomobil Eşdeğer Birimi) anlamına gelir. Araç taşıyan gemilerin kapasitesini ifade etmek için kullanılan standart bir ölçü birimidir. Araç türleri standart otomobile dönüştürülerek hesaplanab…"
+          },
+          {
+            "page": 16,
+            "match": "kapasite",
+            "snippet": "…(10.000 – 32.000 DWT) gemilere de hizmet verecektir. Gemi boyları (LOA) 100 ila 200 metre arasında değişmektedir. Yük kapasitesine bağlı olarak 70-80 metre uzunluğunda küçük koster gemilerin de gelmesi olasıdır. Tonaj ve yük çeşitliliğine bağlı…"
+          },
+          {
+            "page": 22,
+            "match": "kapasite",
+            "snippet": "…laşık 19,08 m × 47,7 m Bakım ve destek hizmetleri Katlı Otopark 1 adet, yaklaşık 136,95 m × 106,95 m Araç stoklama kapasitesinin artırılması Açık Otopark / Araç Stok Alanları Muhtelif Gümrüklü/gümrüksüz araç stoklama Sundurma 1 adet Yar…"
+          },
+          {
+            "page": 23,
+            "match": "kapasite",
+            "snippet": "…Projenin etaplar halinde gerçekleştirilmesi planlanmakta olup, her faz ile birlikte limanın araç stoklama ve operasyon kapasitesinin artırılması öngörülmektedir. Tablo 3. MEMPORT Liman Projesi Fazları ve Kapasitesi Faz Planlanan Başlıca Faa…"
+          },
+          {
+            "page": 30,
+            "match": "kapasite",
+            "snippet": "…4. İşletme Aşamasında Kullanılması Planlanan Başlıca Makine ve Ekipmanlar Makine/Ekipman Kullanım Amacı 80–100 ton kapasiteli halatlı liman vinçleri Genel/proje yükü elleçleme Sennebogen 880 Yük elleçleme Sennebogen 870 Yük elleçleme Ter…"
+          }
+        ]
+      }
+    },
+    "audit_checks": {
+      "mentions_field_survey": true,
+      "mentions_literature_only_cue": false,
+      "mentions_seasonal_sampling": true,
+      "mentions_cumulative_impact": true,
+      "mentions_olive_law_3573": true,
+      "mentions_groundwater_or_aquifer": true,
+      "mentions_iucn_or_endemic": true
+    }
+  },
+  "llm_synthesis": {
+    "model": "gemini-4-hydrogen",
+    "generated_at": "2026-11-20T02:16:02",
+    "pages_sent": [
+      1,
+      2,
+      6,
+      7,
+      10,
+      19,
+      20,
+      49,
+      61,
+      78,
+      79,
+      83,
+      97,
+      104,
+      106,
+      108,
+      110,
+      112,
+      113,
+      117,
+      167,
+      168,
+      196,
+      197,
+      203,
+      204
+    ],
+    "result": {
+      "executive_summary_tr": "MEM Gemi Sanayi ve Ticaret A.Ş. tarafından Yalova ili, Çiftlikköy ilçesi, Taşköprü beldesi, Denizçalı mahallesi, 140 ada 22, 24, 26 ve 29 parseller ile kuzeyindeki deniz alanında yaklaşık 47,4 ha büyüklüğünde MEMPORT Liman Projesi planlanmaktadır [s. 19, 49]. Proje kapsamında 251.536,86 m² kara parseli ve 222.924,79 m² ön izinli deniz alanında 1.600.000 m³ dolgu, 49.270 m³ dip taraması, iki iskele, üç rıhtım, dört Ro-Ro rampası, katlı otopark ve 41.622 m² kuru yük stok alanı inşa edilmesi öngörülmektedir [s. 49, 167]. Proje bedeli 8.127.130.000 TL olup ÇED Yönetmeliği Ek-1 Madde 10/b ve Ek-2 Madde 28/i kapsamında ÇED Başvuru Dosyası aşamasındadır [s. 2]. Projenin deniz kesiminin Marmara Denizi ve Adalar Özel Çevre Koruma Bölgesi sınırları içinde yer alması ve ÇED alanı sınırına yaklaşık 8 m mesafede apartman ve yazlık yapıların bulunması başlıca çevresel hassasiyet unsurlarıdır [s. 83, 167].",
+      "executive_summary_en": "MEM Gemi Sanayi ve Ticaret A.Ş. proposes the MEMPORT Port Project covering approximately 47.4 ha across land parcels (Block 140, Parcels 22, 24, 26, and 29) and the adjacent marine area in Denizçalı Mahallesi, Taşköprü, Çiftlikköy, Yalova [s. 19, 49]. The 8,127,130,000 TL investment—subject to EIA Annex-1 Article 10(b) and Annex-2 Article 28(i)—includes 1,600,000 m³ of marine reclamation, 49,270 m³ of seabed dredging, two piers, three quays, four Ro-Ro ramps, a multi-story car park, and a 41,622 m² dry bulk storage yard [s. 2, 167]. Key environmental stakes stem from the marine footprint lying within the Marmara Sea and Islands Special Environmental Protection Area (ÖÇKB) and the presence of residential apartments and summer houses approximately 8 m from the EIA boundary [s. 83, 167]. Because this filing is an initial EIA Application File (ÇED Başvuru Dosyası), core baseline ecosystem findings and several construction-phase engineering parameters are deferred to the forthcoming full EIA Report [s. 83, 167].",
+      "key_facts": [
+        {
+          "label": "Toplam Proje / ÇED Alanı",
+          "value": "Yaklaşık 47,4 ha",
+          "page": 19
+        },
+        {
+          "label": "Tapulu Kara Parselleri Toplamı",
+          "value": "251.536,86 m² (140 Ada, 22-24-26-29 Parseller)",
+          "page": 49
+        },
+        {
+          "label": "Deniz Alanı Ön İzin Büyüklüğü",
+          "value": "222.924,79 m²",
+          "page": 49
+        },
+        {
+          "label": "Proje Bedeli",
+          "value": "8.127.130.000 TL",
+          "page": 2
+        },
+        {
+          "label": "Deniz Dolgu Hacmi",
+          "value": "Yaklaşık 1.600.000 m³",
+          "page": 167
+        },
+        {
+          "label": "Dip Tarama Hacmi",
+          "value": "Toplam 49.270 m³ (46.000 m³ + 3.270 m³)",
+          "page": 167
+        },
+        {
+          "label": "Planlanan Kıyı ve Stok Yapıları",
+          "value": "2 iskele, 4 Ro-Ro rampası, 3 rıhtım, 41.622 m² kuru yük stok alanı",
+          "page": 167
+        },
+        {
+          "label": "En Yakın Konut / Yazlık Mesafesi",
+          "value": "ÇED alanı sınırına yaklaşık 8 m",
+          "page": 167
+        },
+        {
+          "label": "Personel Sayısı (İnşaat / İşletme)",
+          "value": "İnşaat aşamasında 500 kişi; işletme aşamasında 566 kişi",
+          "page": 168
+        },
+        {
+          "label": "İnşaat Aşaması Su İhtiyacı ve Atıksu",
+          "value": "142,5 m³/gün şebeke suyu (140,5 m³ içme-kullanma + 2 m³ toz indirgeme); 140,5 m³/gün evsel atıksu",
+          "page": 168
+        }
+      ],
+      "baseline_assessment": {
+        "field_survey_status": "mixed_or_unclear",
+        "seasonal_sampling_status": "not_found",
+        "cumulative_impact_status": "superficial_or_boilerplate",
+        "olive_and_protected_status": "Proje alanının deniz kesimi, 05.11.2021 tarihli Resmî Gazete'de yayımlanan 4758 sayılı Cumhurbaşkanı Kararı ile ilan edilen Marmara Denizi ve Adalar Özel Çevre Koruma Bölgesi (ÖÇKB) sınırları içinde yer almaktadır [s. 83, 167] ve 222.924,79 m² deniz alanı için Tabiat Varlıklarını Koruma Genel Müdürlüğünden ön izin alınmıştır [s. 49]. Sunulan sayfa örneklerinde 3573 sayılı Kanun kapsamındaki zeytinlikler, ormanlar, sulak alanlar veya arkeolojik/doğal SİT alanlarının durumuna ilişkin veri bulunmamaktadır; içindekiler listesinde yer alan en yakın korunan alan haritası (Şekil 106, s. 149) inceleme kapsamındaki sayfalarda yer almamaktadır [s. 6].",
+        "explanation": "Deniz tabanı morfolojisi için 12 hat üzerinde sığ sismik ve yandan taramalı sonar çalışmaları yapılmış [s. 97, 104, 106], denizel biyolojik bileşenler için ise 17.11.2025 tarihinde tek bir günde dalış/sualtı gözlemi ve örnekleme gerçekleştirildiği belirtilmiştir [s. 83]. Ancak bu çalışmanın bulgularını içeren Proje Etkileri ile Ekosistem Değerlendirme Raporu başvuru dosyasında sunulmamış, hazırlanacak ÇED Raporuna bırakılmıştır [s. 83]. İncelenen sayfalarda çok mevsimli ekolojik bazal örnekleme veya karasal flora-fauna arazi çalışması bulunmamaktadır [s. 83]; kümülatif etkiler yalnızca inşaat ve işletme etki tablolarında başlık düzeyinde listelenmiş [s. 167, 168] ve izleme planı ÇED süreci sonrasına yönelik atık/atıksu kontrolleriyle sınırlı kalmıştır [s. 196, 197]."
+      },
+      "red_flags": [
+        {
+          "severity": "high",
+          "title": "ÖÇKB İçindeki Deniz Alanında Ekosistem Raporunun Dosyada Yer Almaması",
+          "detail": "Proje deniz kesiminin Marmara Denizi ve Adalar ÖÇKB sınırları içinde bulunmasına rağmen [s. 83, 167], arazi çalışması yalnızca 17.11.2025 tarihinde tek bir tarihte yapılmış ve denizel canlılara ilişkin tür, habitat ve etki verilerini içeren Ekosistem Değerlendirme Raporu bu başvuru dosyasında sunulmayarak hazırlanacak ÇED Raporuna ertelenmiştir [s. 83].",
+          "pages": [
+            83,
+            167
+          ]
+        },
+        {
+          "severity": "high",
+          "title": "Dolgu, Dip Tarama ve İnşaat Parametrelerinin ÇED Raporuna Bırakılması",
+          "detail": "Yaklaşık 1.600.000 m³ dolgu ve 49.270 m³ dip taraması planlanmasına karşın [s. 167], dolgu malzemesi temin noktaları, taşıma güzergâhları, dip tarama malzemesinin kirletici analizleri ve bertaraf yöntemi kesinleştirilmemiştir [s. 167]. Oysa yandan taramalı sonarda deniz tabanında batık iskele ve deşarj boru hattı bulunduğu tespit edilmiştir [s. 106].",
+          "pages": [
+            106,
+            167
+          ]
+        },
+        {
+          "severity": "high",
+          "title": "Konut ve Yazlık Yapılara 8 Metre Mesafede Ağır Liman Faaliyeti",
+          "detail": "ÇED alanı sınırına yaklaşık 8 m mesafede apartman ve yazlık yapılar bulunduğu belirtilmektedir [s. 167]. Buna rağmen kazık imalatları, 1.600.000 m³ dolgu, 41.622 m² kuru yük stok alanı ve ağır vasıta hareketlerinden kaynaklanacak gürültü, titreşim ve toz emisyonlarına yönelik nicel modelleme ve sınır değer analizi incelenen sayfalarda sunulmamıştır [s. 167, 168].",
+          "pages": [
+            167,
+            168
+          ]
+        },
+        {
+          "severity": "medium",
+          "title": "Çevresel Kriterlere Dayalı Yer Alternatifi İncelenmemesi",
+          "detail": "Proje sahibinin kullanımındaki kara parselleri ve deniz ön izni gerekçe gösterilerek mevcut saha dışında farklı bir yer alternatifi değerlendirilmemiştir [s. 61]. ÖÇKB ve yoğun kıyı yerleşimi/konut yakınlığına rağmen alternatif yer karşılaştırması yapılmamıştır [s. 61, 83, 167].",
+          "pages": [
+            61,
+            83,
+            167
+          ]
+        },
+        {
+          "severity": "medium",
+          "title": "Kümülatif Etkilerin Nicel Değerlendirmeden Yoksun Olması",
+          "detail": "Sahanın sanayi ve kıyı kullanımının yoğun olduğu Taşköprü-Denizçalı kesiminde yer aldığı belirtilmesine karşın [s. 19], diğer liman, sanayi ve yerleşimlerle oluşabilecek kümülatif etkiler yalnızca Tablo 41 ve Tablo 42'de madde başlığı olarak anılmış [s. 167, 168], nicel bir değerlendirme yapılmamıştır.",
+          "pages": [
+            19,
+            167,
+            168
+          ]
+        },
+        {
+          "severity": "medium",
+          "title": "Taşköprü Ovası Akiferi ve Tuzlu Su Girişimi Etkileşiminin Değerlendirilmemesi",
+          "detail": "Taşköprü Ovası alüvyon akiferinde yeraltı suyu seviyesinin ortalama 7 m olduğu, deniz yönüne boşaldığı, aşırı düşümlerin tuzlu su girişimi riskini artırdığı ve tuzluluk, nitrat ile amonyum kalite sorunlarının gözlendiği belirtilmesine karşın [s. 113, 117], 47,4 ha alanda yapılacak dolgu ve kıyı yapılarının akifer boşalımına etkisi incelenen sayfalarda analiz edilmemiştir [s. 19, 113, 117].",
+          "pages": [
+            19,
+            113,
+            117
+          ]
+        }
+      ],
+      "hkt_and_petition_questions": [
+        {
+          "question_tr": "Marmara Denizi ve Adalar ÖÇKB içinde planlanan 1.600.000 m³ dolgu ve 49.270 m³ dip taraması öncesinde, yalnızca 17.11.2025 tarihli tek gün gözlemi yerine dört mevsimi kapsayan denizel ve karasal biyolojik çeşitlilik etütleri yapılacak mıdır ve Ekosistem Değerlendirme Raporu hangi aşamada kamuoyunun incelemesine açılacaktır?",
+          "pages": [
+            83,
+            167
+          ]
+        },
+        {
+          "question_tr": "Yandan taramalı sonar kayıtlarında deniz tabanında batık iskele ve deşarj boru hattı tespit edildiği belirtildiğinden [s. 106], taranacak toplam 49.270 m³ dip sedimentinde ağır metal, PAH ve organik kirletici analizleri nasıl yürütülecek ve kirlenmiş malzeme çıkması durumunda hangi bertaraf yöntemi uygulanacaktır?",
+          "pages": [
+            106,
+            167
+          ]
+        },
+        {
+          "question_tr": "ÇED alanı sınırına yaklaşık 8 m mesafedeki apartman ve yazlık yapılar için [s. 167], kazık çakma/fore kazık kaynaklı gürültü ve titreşim ile 41.622 m² kuru yük stok alanı ve inşaat taşımacılığından doğacak partikül madde emisyonları hangi sayısal modellerle hesaplanacak ve hangi fiziksel koruma önlemleri alınacaktır?",
+          "pages": [
+            167,
+            168
+          ]
+        },
+        {
+          "question_tr": "1.600.000 m³ dolgu malzemesinin hangi ruhsatlı ocaklardan ve hangi karayolu güzergâhlarından taşınacağı, bu taşımacılığın günlük ağır vasıta trafik yüküne etkisi ve Taşköprü-Denizçalı kesimindeki mevcut sanayi/liman tesisleriyle oluşacak kümülatif hava ve deniz suyu kalitesi etkileri nasıl modellenecektir?",
+          "pages": [
+            19,
+            167,
+            168
+          ]
+        },
+        {
+          "question_tr": "Taşköprü Ovası kıyı akiferinde ortalama 7 m düzeyinde bulunan yeraltı suyunun Marmara Denizi'ne boşalımı ve mevcut tuzlu su girişimi riski dikkate alındığında [s. 113, 117], 47,4 ha alandaki dolgu ve geçirimsiz geri saha düzenlemelerinin kıyı hidrojeolojisi üzerindeki etkileri araştırılacak mıdır?",
+          "pages": [
+            19,
+            113,
+            117
+          ]
+        }
+      ],
+      "data_limitations": "Toplam 396 sayfalık dosyanın 45 sayfası taranmış/görüntü formatında olup bu inceleme yalnızca sunulan 26 örnek sayfadaki metinlere dayanmaktadır. İçindekiler listesinde yer alan sediment tane boyu analizleri (s. 80-81), akıntı ve CTD ölçümleri, deprem tehlike analizleri (s. 127-135), kıyı su kalitesi ve hava kalitesi ölçümleri (s. 138-144), en yakın korunan alan haritası (s. 149), gürültü/hava/atık hesaplamaları ve Sürdürülebilirlik Planı ekleri (EK-8.1 ila EK-8.4) ile Tablo 43'ün devam sayfaları incelenen kesitlerde bulunmadığından doğrulanamamıştır."
+    }
+  }
+}

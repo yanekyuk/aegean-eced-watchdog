@@ -1,0 +1,289 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>e-ÇED Ön Özet #61813 — İSTANBUL / ESENYURT</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <style>
+:root {
+  --bg: #0f1216;
+  --surface: #171c22;
+  --border: #262e38;
+  --text: #e6edf3;
+  --muted: #8b949e;
+  --accent: #58a6ff;
+  --red: #f85149;
+  --amber: #d29922;
+  --green: #3fb950;
+  --badge-bg: #212830;
+}
+@media (prefers-color-scheme: light) {
+  :root {
+    --bg: #f6f8fa;
+    --surface: #ffffff;
+    --border: #d0d7de;
+    --text: #1f2328;
+    --muted: #656d76;
+    --accent: #0969da;
+    --red: #cf222e;
+    --amber: #9a6700;
+    --green: #1a7f37;
+    --badge-bg: #eef2f6;
+  }
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+}
+.wrap { max-width: 1240px; margin: 0 auto; padding: 24px 18px 64px; }
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+header { border-bottom: 1px solid var(--border); padding-bottom: 16px; margin-bottom: 20px; }
+h1 { margin: 0 0 6px; font-size: 1.55rem; }
+h2 { margin: 26px 0 10px; font-size: 1.2rem; }
+h3 { margin: 16px 0 8px; font-size: 1rem; }
+.sub { color: var(--muted); font-size: 0.92rem; margin: 0; }
+.meta-bar { display: flex; flex-wrap: wrap; gap: 14px; margin-top: 12px; font-size: 0.85rem; color: var(--muted); }
+.stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 10px; margin: 16px 0 18px; }
+.stat { background: var(--surface); border: 1px solid var(--border); border-radius: 8px; padding: 12px 14px; }
+.stat .num { font-size: 1.45rem; font-weight: 700; }
+.stat .lbl { font-size: 0.78rem; color: var(--muted); }
+.map-box {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 18px;
+}
+#map { width: 100%; height: 420px; background: var(--badge-bg); }
+#digest-map { width: 100%; height: 320px; background: var(--badge-bg); }
+.map-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  padding: 9px 14px;
+  font-size: 0.8rem;
+  color: var(--muted);
+  border-top: 1px solid var(--border);
+}
+.dot { display: inline-block; width: 10px; height: 10px; border-radius: 50%; margin-right: 5px; vertical-align: middle; }
+.controls { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; margin-bottom: 16px; }
+input[type="search"], select.filter-select {
+  padding: 8px 12px;
+  border-radius: 6px;
+  border: 1px solid var(--border);
+  background: var(--surface);
+  color: var(--text);
+  font-size: 0.9rem;
+}
+input[type="search"] { flex: 1 1 240px; }
+select.filter-select { min-width: 170px; }
+button.pill {
+  padding: 7px 12px;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: var(--surface);
+  color: var(--text);
+  cursor: pointer;
+  font-size: 0.82rem;
+}
+button.pill.active { background: var(--accent); border-color: var(--accent); color: #fff; font-weight: 600; }
+.cards { display: flex; flex-direction: column; gap: 10px; }
+.card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 15px 17px;
+}
+.card.ek1 { border-left: 4px solid var(--accent); }
+.row-top { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px; align-items: baseline; }
+.title { font-weight: 600; font-size: 0.98rem; }
+.badges { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 7px; }
+.badge {
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  background: var(--badge-bg);
+  border: 1px solid var(--border);
+}
+.badge.urgent { border-color: var(--red); color: var(--red); font-weight: 600; }
+.badge.warn { border-color: var(--amber); color: var(--amber); font-weight: 600; }
+.badge.ok { border-color: var(--green); color: var(--green); }
+.badge.muted { color: var(--muted); }
+.detail { font-size: 0.87rem; color: var(--muted); margin: 8px 0; }
+.actions { display: flex; flex-wrap: wrap; gap: 12px; font-size: 0.84rem; margin-top: 8px; }
+.notice {
+  margin-top: 28px;
+  padding: 14px 16px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  font-size: 0.84rem;
+  color: var(--muted);
+}
+table.kv { width: 100%; border-collapse: collapse; margin: 12px 0; font-size: 0.9rem; }
+table.kv th, table.kv td { border: 1px solid var(--border); padding: 8px 11px; text-align: left; vertical-align: top; }
+table.kv th { width: 240px; background: var(--badge-bg); }
+code { background: var(--badge-bg); padding: 1px 5px; border-radius: 4px; font-size: 0.85em; }
+blockquote { margin: 10px 0; padding: 11px 15px; border-left: 3px solid var(--accent); background: var(--surface); font-size: 0.9rem; }
+.hit { margin: 7px 0; font-size: 0.88rem; }
+.pno { font-weight: 700; color: var(--accent); }
+.leaflet-popup-content { color: #1f2328; font-size: 0.85rem; line-height: 1.45; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div style="font-size:0.85rem;margin-bottom:8px;"><a href="../index.html">← Türkiye e-ÇED İzleme listesine dön</a> · <a href="../rehber.html">Kullanım ve İnceleme Rehberi</a> · <a href="61813.md">Ham Markdown (.md)</a></div>
+    <h1>e-ÇED Ön Özet #61813 — İSTANBUL / ESENYURT</h1>
+    <p class="sub">Tehlikesiz ve Tehlikeli Atık Değerli Metal (Maden) Geri Kazanım Tesisi</p>
+    <div class="badges" style="margin-top:10px;">
+      <span class="badge">ÇED Süreci Başlayan</span>
+      <span class="badge">Ek-1</span>
+      <span class="badge warn">10 Günlük Askı · 9 gün kaldı (2026-11-29)</span>
+    </div>
+  </header>
+
+  <table class="kv">
+    <tr><th>Proje Sahibi</th><td>Atuksan Geri Kazanım Sanayi ve Ticaret Anonim Şirketi</td></tr>
+    <tr><th>Hazırlayan Kuruluş</th><td>PPM KİR.ÖNL.VE YÖN. DAN. MÜH. İNŞ. TAAH. SAN.VE.TİC. LTD.ŞTİ.</td></tr>
+    <tr><th>Sektör / Alt Sektör</th><td>Atık / Atık Bertaraf /Geri Kazanım/ Depolama Tesisi Projeleri</td></tr>
+    <tr><th>Duyuru Tarihi</th><td><code>19.11.2026</code> (belge yükleme tarihi: <code>17/11/2026 03:41:09</code>)</td></tr>
+    <tr><th>PDF Kapsamı</th><td>176.21 MB · 152 sayfa (113 metin sayfası / 39 taranmış veya görüntü sayfası) · SHA-256 <code>9dd9dc5284a8080e…</code></td></tr>
+    <tr><th>Resmi Bağlantılar</th><td><a href="http://eced.csb.gov.tr/jsp/ek1/61813" target="_blank" rel="noopener">e-ÇED Portal Kaydı</a> · <a href="http://eced.csb.gov.tr/jsp/dosya/dosyaGoster.htm?tempAd=sign7251349666506548810.pdf&amp;orjinalAd=CEDBASVURUDOSYASI.pdf&amp;yuklemeTarihi=2026-11-17" target="_blank" rel="noopener">Resmi PDF Dosyası</a> · <a href="https://www.openstreetmap.org/?mlat=41.06288&amp;mlon=28.6319#map=12/41.06288/28.6319" target="_blank" rel="noopener">OpenStreetMap</a> · <a href="https://www.google.com/maps/search/?api=1&amp;query=41.06288,28.6319" target="_blank" rel="noopener">Google Haritalar</a></td></tr>
+  </table>
+
+  <h2>Konum Haritası</h2>
+  <div class="map-box">
+    <div id="digest-map"></div>
+    <div class="map-legend"><span>PDF metninden çıkarılan kesin proje koordinatları (9 nokta, datum: UTM-Z35/ED50, sayfa: s.25).</span></div>
+  </div>
+
+  
+  <h2>Yapay Zeka Destekli Bilimsel Ön Değerlendirme <span class="badge">gemini-4-hydrogen</span></h2>
+  <p class="sub">Bu değerlendirme, resmi PDF dosyasından seçilen 26 sayfa (s.1, s.2, s.3, s.4, s.5, s.6, s.7, s.8, s.9, s.10, s.19, s.20, s.21, s.29, s.30, s.42, s.43, s.44, s.45, s.47, s.48, s.65, s.66, s.103, s.104, s.107) esas alınarak hazırlanmıştır. Tüm sayısal verilerin ve tespitlerin resmi PDF belgesindeki ilgili <code>[s. N]</code> sayfalarından doğrulanması gerekir.</p>
+  <section class="card ek1">
+    <p><strong>Özet:</strong> Atuksan Geri Kazanım Sanayi ve Ticaret Anonim Şirketi tarafından İstanbul İli, Esenyurt İlçesi, Akçaburgaz Mahallesi, 3114. Sokak No:4 (1120 parsel) adresindeki mevcut bina içerisinde Tehlikesiz ve Tehlikeli Atık Değerli Metal (Maden) Geri Kazanım Tesisi kurulması planlanmaktadır [s. 1, 5, 47]. ÇED Yönetmeliği Ek-1 Madde 11(a) ve Ek-2 Madde 5(e) kapsamındaki tesisin proje bedeli 49.780.000 TL olup, yılda 2.442.087,5 kg tehlikeli ve tehlikesiz atıktan 4.140 kg/yıl altın ve 56.919 kg/yıl diğer değerli metallerin (gümüş, bakır, paladyum, platin, rodyum, rutenyum, osmiyum, iridyum) geri kazanılması hedeflenmektedir [s. 2, 5, 21]. Proje alanı en yakın konutlara (Büyükçekmece Çakmaklı Mahallesi) yaklaşık 750 m, Küçükçekmece Gölü Sulak Alanı&#x27;na 8,25 km ve Şamlar Tabiat Parkı&#x27;na 11,9 km mesafede yer almaktadır [s. 29, 42, 44]. Başlıca çevresel hususlar arasında yılda 900 ton kurşun, 1.000 ton hidroklorik asit ve 300 ton nitrik asit kullanımı, siyanür içeren ve asidik tehlikeli atıkların işlenmesi, baca gazı emisyonları ile endüstriyel atıksu ve tehlikeli cüruf/çamur yönetimi bulunmaktadır [s. 9, 21, 47, 66].</p>
+    <details style="margin-top:8px;font-size:0.86rem;color:var(--muted);"><summary style="cursor:pointer;">İngilizce özet (English summary)</summary><p style="margin:6px 0 0;">Atuksan Geri Kazanım Sanayi ve Ticaret Anonim Şirketi proposes to establish a Non-Hazardous and Hazardous Waste Precious Metal Recovery Facility inside an existing building at Akçaburgaz Mahallesi, 3114. Sokak No:4 (Parcel 1120) in Esenyurt, Istanbul [p. 1, 5, 47]. Subject to EIA Regulation Annex-1 Article 11(a) and Annex-2 Article 5(e) with a project cost of 49,780,000 TL, the facility plans to accept 2,442,087.5 kg/year of hazardous and non-hazardous waste to recover 4,140 kg/year of gold and 56,919 kg/year of other precious metals [p. 2, 5, 21]. The site is located approximately 750 m from the nearest residences (Çakmaklı Mahallesi), 8.25 km from the Küçükçekmece Lake Wetland, and 11.9 km from Şamlar Nature Park [p. 29, 42, 44]. Primary environmental stakes involve the annual use of 900 tonnes of lead, 1,000 tonnes of hydrochloric acid, and 300 tonnes of nitric acid, processing of cyanide- and acid-bearing hazardous wastes, flue gas emissions, and industrial wastewater and slag management [p. 9, 21, 47, 66].</p></details>
+    <div class="badges" style="margin-top:10px;">
+      <span class="badge">Saha çalışması: İncelenen sayfalarda tespit edilemedi</span>
+      <span class="badge">Mevsimsel örnekleme: Yalnızca onay sonrasına ertelenmiş</span>
+      <span class="badge">Kümülatif etki: Eksik veya tespit edilemedi</span>
+    </div>
+    <p class="detail" style="margin-top:10px;"><strong>Zeytinlik ve Korunan Alanlar:</strong> Ek-5 Duyarlı Yöreler listesi uyarınca proje alanının 3573 sayılı Zeytinciliğin Islahı ve Yabanilerinin Aşılattırılması Hakkında Kanun kapsamındaki alanlar, orman alanları, sulak alanlar, SİT/kültür ve tabiat varlıkları, ÖÇK bölgeleri ve içme-kullanma suyu havzaları içerisinde kalmadığı beyan edilmiştir [s. 42, 43, 44, 45]. En yakın korunan alan yaklaşık 11,9 km mesafedeki Şamlar Tabiat Parkı, en yakın sulak alan ise 8,25 km mesafedeki Küçükçekmece Gölü Sulak Alanıdır [s. 42, 44].<br/>Sunulan dosya alıntılarında mevcut çevresel durum kapsamında yalnızca TÜİK nüfus verileri, en yakın yerleşim ve korunan alanlara ilişkin uydu mesafe ölçümleri ile Ek-5 Duyarlı Yöreler kontrol listesi yer almakta olup [s. 29, 42, 43, 44, 45], tamamlanmış bir saha araştırması veya proje öncesi mevsimsel örnekleme verisi görülmemektedir. Çevre İzleme Planı yalnızca ÇED Olumlu Kararı ve işletme aşaması sonrasına yönelik aylık atıksu ve atık izleme taahhütlerini içermektedir [s. 65, 66]. İçindekiler dizininde yer alan jeoloji, hidrojeoloji, hava kalitesi, flora-fauna bölümleri (rapor s. 27-37) ile Kümülatif Çevresel Etki Değerlendirme bölümü (rapor s. 59-60) incelenen sayfa alıntıları dışında kaldığından bu kısımlar doğrulanamamıştır [s. 3, 4].</p>
+  </section>
+  <h3>Öne Çıkan Sayısal Bulgular</h3><table class="kv"><tr><th>Proje Bedeli</th><td>49.780.000 TL <span class="pno">[s. 2]</span></td></tr>
+<tr><th>Yıllık Atık Kabul Kapasitesi</th><td>2.442.087,5 kg/yıl tehlikeli ve tehlikesiz atık <span class="pno">[s. 5]</span></td></tr>
+<tr><th>Yıllık Altın Geri Kazanım Kapasitesi</th><td>4.140 kg/yıl <span class="pno">[s. 21]</span></td></tr>
+<tr><th>Diğer Değerli Maden Üretimi</th><td>56.919 kg/yıl (gümüş, bakır, paladyum, platin, rodyum, rutenyum, osmiyum, iridyum) <span class="pno">[s. 21]</span></td></tr>
+<tr><th>Yıllık Kurşun ve Asit Tüketimi</th><td>900.000 kg/yıl kurşun, 1.000.000 kg/yıl hidroklorik asit, 300.000 kg/yıl nitrik asit <span class="pno">[s. 21]</span></td></tr>
+<tr><th>Yıllık Diğer Kimyasal Tüketimi</th><td>800.000 kg/yıl boraks, 800.000 kg/yıl karbonat, 150.000 kg/yıl demir sülfat, 100.000 kg/yıl alüminyum levha, 1.080.000 kg/yıl çözelti <span class="pno">[s. 21]</span></td></tr>
+<tr><th>Çalışma Düzeni ve Personel</th><td>Yılda 300 gün, günde 24 saat (3 vardiya), 17 personel <span class="pno">[s. 47]</span></td></tr>
+<tr><th>En Yakın Yerleşim Mesafesi</th><td>Kuzeybatıda yaklaşık 750 m (Büyükçekmece, Çakmaklı Mah.); 1 km kuzeyde Akçaburgaz Mah. <span class="pno">[s. 29]</span></td></tr>
+<tr><th>En Yakın Korunan Alan</th><td>Kuzeydoğuda yaklaşık 11,9 km mesafede Şamlar Tabiat Parkı <span class="pno">[s. 42]</span></td></tr>
+<tr><th>En Yakın Sulak Alan</th><td>Güneydoğuda yaklaşık 8,25 km mesafede Küçükçekmece Gölü Sulak Alanı <span class="pno">[s. 44]</span></td></tr></table>
+  <h3>Bilimsel ve Metodolojik Bulgular</h3><section class="card"><div class="hit"><span class="badge urgent">YÜKSEK</span> <strong>Başka Bir Sektöre Ait Kopyala-Yapıştır Metin Hatası (Su Ürünleri Yetiştiriciliği)</strong> <span class="pno">[s. 47, s. 104, s. 107]</span> — Çevresel ve Sosyal Yönetim Planı&#x27;nın &#x27;Toplum sağlığı ve güvenliği&#x27; başlığı altında değerli metal geri kazanım tesisi ile ilgisiz olarak &#x27;Yetiştiricilik faaliyetinde modern teknikler, araç ve gereçler kullanılacaktır. İşletmeler bünyesinde çalışacak uzman su ürünleri mühendisleri, balıkların kuluçkahane aşamasından hasat ve pazara sevkine kadar kontrol ve denetimlerini sürdüreceklerdir.&#x27; ifadeleri yer almaktadır. Ayrıca tesiste inşaat aşaması bulunmadığı belirtilmesine rağmen aynı planda &#x27;arazi hazırlık&#x27; aşamasına atıf yapılmaktadır.</div>
+<div class="hit"><span class="badge urgent">YÜKSEK</span> <strong>Proses Kimyasal ve Kütle Dengesi Hesaplamalarında Birim ve Aritmetik Tutarsızlıklar</strong> <span class="pno">[s. 19, s. 20]</span> — Kapasite hesabında ergitme ocağı için metinde &#x27;10 kg atık için 2 gr kurşun&#x27; yazılmasına rağmen hesaplamada 2 kg oranı kullanılarak 64.800 kg/yıl kurşun bulunmuştur. Döner ocak hesabında ise 720.000 kg boraks, 720.000 kg karbonat ve 900.000 kg kurşun hesaplanmasına karşın ergitilen atık miktarı denkleminde &#x27;3.600.000 - 240.000 - 240.000 - 300.000 = 1.260.000 kg/yıl&#x27; şeklinde aritmetik açıdan tutarsız bir ifade yazılmıştır. Ayrıca geri kazanılan metal dağılımında &#x27;%95 altın, %0,5 gümüş&#x27; yazılarak toplamı %100&#x27;ü vermeyen oran verilmiş, hesapta ise %5 (0,05) kullanılmıştır.</div>
+<div class="hit"><span class="badge urgent">YÜKSEK</span> <strong>Tehlikeli Atık ve Kimyasal Yüküne Karşın Proses Atık Miktar ve Bertarafının Ertelenmesi</strong> <span class="pno">[s. 9, s. 21, s. 47]</span> — Tesise siyanür içeren atıklar (110301) dahil geniş bir tehlikeli atık yelpazesi kabul edileceği ve yılda 900.000 kg kurşun, 1.000.000 kg hidroklorik asit ile 300.000 kg nitrik asit tüketileceği belirtilmektedir. Buna karşın tesiste oluşacak cüruf, baca gazı arıtım atıkları ve asidik sıvı atıkların miktarları ile bertaraf yöntemleri bu başvuruda sunulmayıp &#x27;ÇED Raporu&#x27;nda detaylı olarak irdelenecektir&#x27; denilerek sonraya bırakılmıştır.</div>
+<div class="hit"><span class="badge warn">ORTA</span> <strong>Endüstriyel Atıksu İzleme Planında Kirletici Parametre Eksikliği</strong> <span class="pno">[s. 66]</span> — Çevre İzleme Planı&#x27;nda proses kaynaklı endüstriyel atıksuların kurulması planlanan arıtma tesisinde arıtıldıktan sonra İSKİ kanalizasyon şebekesine verileceği belirtilmiş, ancak izlenecek spesifik kirletici parametreler (kurşun ve diğer ağır metaller, siyanür, pH, sülfat vb.) ile arıtma tesisinin kapasite ve verimi yerine yalnızca genel &#x27;Atıksu&#x27; kriteri ve &#x27;Aylık&#x27; izleme sıklığı yazılmıştır.</div>
+<div class="hit"><span class="badge warn">ORTA</span> <strong>Proje Öncesi Saha ve Mevsimsel Baseline Verilerinin Sunulan Sayfalarda Bulunmaması</strong> <span class="pno">[s. 42, s. 43, s. 44, s. 45, s. 65, s. 66]</span> — Sunulan sayfalarda proje sahasına yönelik tamamlanmış bir saha gözlemi veya mevsimsel hava/su/toprak örneklemesi yer almamakta, yalnızca masa başı Ek-5 kontrol listesi ve uydu mesafe ölçümleri bulunmaktadır. İzleme yükümlülükleri yalnızca proje onayı sonrası işletme aşamasına yönelik aylık taahhütlerden oluşmaktadır.</div>
+<div class="hit"><span class="badge warn">ORTA</span> <strong>Atık Listesi İşaretleme ve Toplam Kapasite Uyumsuzluğu</strong> <span class="pno">[s. 9, s. 19, s. 20, s. 21, s. 47]</span> — Tablo 1&#x27;de &#x27;Tehlikeli Atık Geri Kazanım&#x27; başlığı altında yer alan 100808, 100815, 100817, 101011, 110207, 110301, 110302, 150110, 160802 ve 161103 atık kodları yıldız (*) işareti olmadan gösterilmişken Tablo 10&#x27;da 10 08 08* ve 15 01 10* yıldızlı olarak verilmiştir. Ayrıca ergitme (162.000 kg/yıl), döner ocak (1.260.000 kg/yıl) ve kral suyu (993.000 kg/yıl) proseslerinin işlediği atık toplamı 2.415.000 kg/yıl iken Tablo 2&#x27;de toplam kapasite 2.442.087,5 kg/yıl olarak belirtilmiştir.</div></section>
+  <h3>HKT Tutanakları ve İdari Başvurular İçin Taslak Teknik Sorular</h3><ul><li>Yılda 900.000 kg kurşun, 1.000.000 kg hidroklorik asit ve 300.000 kg nitrik asit kullanılacağı ile siyanür içeren atıkların (110301) kabul edileceği belirtilen proseste, ergitme ve döner ocak bölümlerindeki birim/aritmetik tutarsızlıklar (2 gr/2 kg kurşun oranı ve 3.600.000 kg üzerinden yapılan çıkarma hatası) nasıl düzeltilecek ve tüm prosesler için doğrulanmış kütle dengesi nasıl kurulacaktır? <span class="pno">[s. 9, s. 19, s. 20, s. 21]</span></li>
+<li>En yakın konut alanlarına yaklaşık 750 m mesafede bulunan tesiste kurulması planlanan endüstriyel atıksu arıtma tesisinin arıtma teknolojisi, kapasitesi ve İSKİ kanalizasyon şebekesine deşarj öncesinde izlenecek kurşun, diğer ağır metaller, siyanür ve pH parametreleri ile sınır değerleri nelerdir? <span class="pno">[s. 29, s. 66]</span></li>
+<li>Tesiste değerli metal geri kazanımı sonucunda oluşacağı belirtilen tuz cürufu (10 08 08*), baca gazı arıtım toz/çamurları ve sulu sıvı atıkların yıllık tahmini miktarları ile lisanslı bertaraf/geri kazanım tesislerine gönderim planı ÇED Raporu aşamasında hangi nicel verilerle ortaya konulacaktır? <span class="pno">[s. 6, s. 47]</span></li>
+<li>Çevresel ve Sosyal Yönetim Planı&#x27;nda yer alan su ürünleri mühendisleri ve balık kuluçkahanesi ifadeleri ile tesiste inşaat aşaması bulunmadığı beyan edilmesine karşın &#x27;arazi hazırlık&#x27; aşamasına yapılan atıfların gerekçesi nedir ve bu yönetim planı tesisin gerçek kimyasal ve metalürjik proses risklerine göre yenilenecek midir? <span class="pno">[s. 47, s. 104, s. 107]</span></li></ul>
+  <p class="sub"><em>İnceleme sınırları:</em> Toplam 152 sayfalık PDF dosyasının 39 sayfası taranmış/görüntü formatında olup inceleme yalnızca sağlanan 26 seçili sayfa üzerinden yapılmıştır. Proses iş akım şemalarını ve elektroliz detaylarını içeren 11-18, jeoloji, hidrojeoloji, hava kalitesi, flora ve fauna bölümlerini kapsayan 31-41, emisyon miktarları, iklim değişikliği ve kümülatif etki değerlendirmesini (Bölüm IV) içeren 49-64 ile paydaş katılımı ve eklerin yer aldığı 67-102 ve 108-152 arasındaki sayfalar sunulan alıntılar arasında bulunmadığından bu bölümlerdeki veriler doğrulanamamıştır.</p>
+
+
+  <h2>Resmi Duyuru Metni</h2>
+  <blockquote>İSTANBUL ili ESENYURT,  ilcesinde İSTANBUL il ESENYURT,  ilce Akçaburgaz Mahallesi, 3114. Sokak No:4 adresinde (1120 parsel)  mevkiinde Atuksan Geri Kazanım Sanayi ve Ticaret Anonim Şirketi  tarafından yapılması planlanan Tehlikesiz ve Tehlikeli Atık Değerli Metal (Maden) Geri Kazanım Tesisi projesi ile ilgili olarak Bakanlığımıza sunulan ÇED Başvuru Dosyası Çevresel Etki Değerlendirmesi Yönetmeliği&#x27;nin 8. maddesi doğrultusunda incelenmiş ve başvurunun ÇED Genel Formatına uygun hazırlandığı anlaşılmış olup, projeye ilişkin ÇED Süreci başlatılmıştır. Çevresel Etki Değerlendirmesi süreci tamamlanana kadar, süreç ile ilgili her türlü bilgiler ve projeye ilişkin görüş, soru ve öneriler İSTANBUL Valiliğine (Çevre, Şehircilik ve İklim Değişikliği İl Müdürlüğü) veya Çevre, Şehircilik ve İklim Değişikliği Bakanlığına gönderilebilir.İlgililere ve kamuoyuna duyurulur.</blockquote>
+
+  <h2>Otomatik Metin Taraması (Deterministik)</h2>
+  <table class="kv"><tr><th>Saha veya arazi çalışması ifadesi</th><td><span class="badge ok">Metinde yer almaktadır</span></td></tr>
+<tr><th>Literatür taraması ifadesi</th><td><span class="badge urgent">Metinde tespit edilemedi; doğrudan PDF üzerinden kontrol ediniz</span></td></tr>
+<tr><th>Mevsimsel örnekleme ifadesi</th><td><span class="badge urgent">Metinde tespit edilemedi; doğrudan PDF üzerinden kontrol ediniz</span></td></tr>
+<tr><th>Kümülatif etki değerlendirmesi ifadesi</th><td><span class="badge ok">Metinde yer almaktadır</span></td></tr>
+<tr><th>3573 sayılı Zeytincilik Kanunu veya zeytinlik ifadesi</th><td><span class="badge urgent">Metinde tespit edilemedi; doğrudan PDF üzerinden kontrol ediniz</span></td></tr>
+<tr><th>Yeraltı suyu, akifer veya hidrojeoloji ifadesi</th><td><span class="badge ok">Metinde yer almaktadır</span></td></tr>
+<tr><th>Endemik tür, IUCN veya Bern Sözleşmesi ifadesi</th><td><span class="badge ok">Metinde yer almaktadır</span></td></tr></table>
+  <p class="sub">Metin katmanı (OCR) bulunmayan taranmış harita ve kurum görüşü ekleri otomatik metin taramasına dahil edilmemiştir.</p>
+
+  <h2>Sayfa Kaynaklı Çıkarılan Bulgular</h2>
+  <div class="cards"><section class="card"><h3>Koordinatlar, Parsel ve Alan Büyüklüğü <span style="color:var(--muted);font-weight:400;font-size:0.85rem">(24 sayfa: s.2, s.5, s.9, s.10, s.12, s.13, s.16, s.24, s.25, s.29, s.37, s.42, s.43, s.44 (+10 sayfa))</span></h3><div class="hit"><span class="pno">[s. 2]</span> <code>utm</code> — …kesiz atıkların ve/veya belediye atıklarının geri kazanıldığı ve/veya biyobozunur atık işleme (mekanik ayırma, biyokurutma, biyometanizasyon, kompost) tesisleri, Projenin Ana NACE Kodu: Projenin İlgili Faaliyetlerinin NACE Kodları:…</div>
+<div class="hit"><span class="pno">[s. 5]</span> <code>utm</code> — …ikesiz atıkların ve/veya belediye atıklarının geri kazanıldığı ve/veya biyobozunur atık işleme (mekanik ayırma, biyokurutma, biyometanizasyon, kompost) tesisleri,” kapsamında değerlendirilerek, Çevresel Etki Değerlendirmesi Yönetmeliği Ek…</div>
+<div class="hit"><span class="pno">[s. 9]</span> <code>utm</code> — …IK DEĞERLİ METAL (MADEN) GERİ KAZANIM TESİSİ ÇED BAŞVURU DOSYASI 5 Tehlikeli Atık Geri Kazanım 100707 * Soğutma suyunun arıtılmasından kaynaklanan yağ içeren atıklar Tehlikeli Atık Geri Kazanım 100808 Birincil ve ikincil üreti…</div>
+<div class="hit"><span class="pno">[s. 10]</span> <code>utm</code> — …5 Gaz arıtımından kaynaklanan çamurlar ve filtre kekleri Tehlikesiz Atık Geri Kazanım 100708 10 07 07 dışındaki soğutma suyu atıkları Tehlikesiz Atık Geri Kazanım 100814 Anot hurdası Tehlikesiz Atık Geri Kazanım 110110 11 01 09 d…</div>
+<div class="hit"><span class="pno">[s. 12]</span> <code>utm</code> — …epolanması planlanmaktadır. Ergitme işlemi sonucu oluşan emisyon davlumbaz sistemi ile toplanarak önce torbalı toz tutma filtreden geçirilir ve atmosfere verilir. Çıkan 10 08 15* kodlu atık değerli metal içerdiğinden geri kazanım yapılma…</div>
+<div class="hit"><span class="pno">[s. 13]</span> <code>utm</code> — …tekrar kullanılması planlanmaktadır. Kal işlemi sonucu oluşan emisyon davlumbaz sistemi ile toplanarak torbalı toz tutma filtresi geçirilir ve atmosfere verilir. Çıkan 10 08 15* kodlu atık değerli metal içerdiğinden geri kazanım yapılmak…</div></section><section class="card"><h3>Su Kullanımı, Hidrojeoloji ve Deşarj <span style="color:var(--muted);font-weight:400;font-size:0.85rem">(10 sayfa: s.2, s.5, s.8, s.44, s.45, s.52, s.66, s.75, s.106, s.124)</span></h3><div class="hit"><span class="pno">[s. 2]</span> <code>1 ton/gün</code> — …ye Tabi Projeler, , Madde 5-Atık Geri Kazanım ve /veya Bertaraf Tesisleri (hafriyat toprağı hariç olmak üzere); e) 1 ton/gün ve üzeri tehlikesiz atıkların ve/veya belediye atıklarının geri kazanıldığı ve/veya biyobozunur atık işleme (mekanik…</div>
+<div class="hit"><span class="pno">[s. 5]</span> <code>1 ton/gün</code> — …a tesisleri; a) Tehlikeli ve/veya özel işleme tabi atıkların geri kazanıldığı tesisler EK-2 Listesi, Madde 5-e) 1 ton/gün ve üzeri tehlikesiz atıkların ve/veya belediye atıklarının geri kazanıldığı ve/veya biyobozunur atık işleme (mekanik a…</div>
+<div class="hit"><span class="pno">[s. 8]</span> <code>atıksu</code> — …t ve nitröz asit Tehlikeli Atık Geri Kazanım 60106 * Diğer asitler Tehlikeli Atık Geri Kazanım 60502 * Saha içi atıksu arıtımından kaynaklanan tehlikeli maddeler içeren çamurlar Tehlikeli Atık Geri Kazanım 61302 * Kullanılmış aktif ka…</div>
+<div class="hit"><span class="pno">[s. 44]</span> <code>sulak alan</code> — …ar, bataklık sazlık ve turbiyeler ile bu alanların kıyı kenar çizgisinden itibaren kara tarafına doğru ekolojik açıdan sulak alan kalan yerler içerisinde kalmamaktadır. ÇED alanına en yakın sulak alan güneydoğu yönünde yaklaşık olarak 8,25 km m…</div>
+<div class="hit"><span class="pno">[s. 45]</span> <code>yeraltı suyu</code> — …İZ VE TEHLİKELİ ATIK DEĞERLİ METAL (MADEN) GERİ KAZANIM TESİSİ ÇED BAŞVURU DOSYASI 41 ç) Göller, akarsular ve yeraltı suyu işletme sahaları içerisinde kalmamaktadır. d) Bilimsel araştırmalar için önem arzeden ve/veya nesli tehlikeye düşmü…</div>
+<div class="hit"><span class="pno">[s. 52]</span> <code>atıksu</code> — …(yemek, wc, ofis vb.) tesis alanı içerisinde karşılanacak olup personel kullanımından kaynaklı olarak evsel nitelikli atıksu oluşumu söz konusu olacaktır. TÜİK Belediye Atıksu İstatistikleri verileri dikkate alınarak günlük ortalama deşarj…</div></section><section class="card"><h3>Korunan Alanlar, Orman ve Zeytinlikler <span style="color:var(--muted);font-weight:400;font-size:0.85rem">(3 sayfa: s.42, s.43, s.44)</span></h3><div class="hit"><span class="pno">[s. 42]</span> <code>Tabiat Parkı</code> — …t Koruma Alanları” içerisinde kalmamaktadır. ÇED alanının kuzeydoğusunda yaklaşık olarak 11,9 km mesafedeki Şamlar Tabiat Parkı, en yakın mesafede bulunan korunması gerekli alan olup proje alanına konumu aşağıdaki uydu görüntüsünde yer almaktadı…</div>
+<div class="hit"><span class="pno">[s. 43]</span> <code>Özel Çevre Koruma</code> — …tanımlanan alanlar içerisinde kalmamaktadır. f) Çevre Kanununun 9 uncu maddesi uyarınca Cumhurbaşkanı tarafından &quot;Özel Çevre Koruma Bölgeleri&quot; olarak tespit ve ilan edilen alanlar içerisinde kalmamaktadır. g) Boğaziçi Kanununa göre koruma altına…</div>
+<div class="hit"><span class="pno">[s. 44]</span> <code>orman alanı</code> — …Z VE TEHLİKELİ ATIK DEĞERLİ METAL (MADEN) GERİ KAZANIM TESİSİ ÇED BAŞVURU DOSYASI 40 ğ) Orman Kanunu uyarınca orman alanı sayılan yerler içerisinde kalmamaktadır. h) Kıyı Kanunu gereğince yapı yasağı getirilen alanlar içerisinde kalmamak…</div>
+<div class="hit"><span class="pno">[s. 44]</span> <code>kıyı kenar</code> — …ı olmak üzere canlıların yaşama ortamı olarak önem taşıyan bütün sular, bataklık sazlık ve turbiyeler ile bu alanların kıyı kenar çizgisinden itibaren kara tarafına doğru ekolojik açıdan sulak alan kalan yerler içerisinde kalmamaktadır. ÇED ala…</div>
+<div class="hit"><span class="pno">[s. 44]</span> <code>sulak alan</code> — …ar, bataklık sazlık ve turbiyeler ile bu alanların kıyı kenar çizgisinden itibaren kara tarafına doğru ekolojik açıdan sulak alan kalan yerler içerisinde kalmamaktadır. ÇED alanına en yakın sulak alan güneydoğu yönünde yaklaşık olarak 8,25 km m…</div></section><section class="card"><h3>Flora, Fauna ve Saha Metodolojisi <span style="color:var(--muted);font-weight:400;font-size:0.85rem">(3 sayfa: s.44, s.45, s.107)</span></h3><div class="hit"><span class="pno">[s. 44]</span> <code>BERN Sözleşmesi</code> — …sözleşmeler uyarınca korunması gerekli alanlar a)&quot;Avrupa’nın Yaban Hayatı ve Yaşama Ortamlarını Koruma Sözleşmesi&quot; (BERN Sözleşmesi) uyarınca koruma altına alınmış alanlardan &quot;Önemli Deniz Kaplumbağası Üreme Alanlarında belirtilen I. ve II. Koruma B…</div>
+<div class="hit"><span class="pno">[s. 45]</span> <code>endemik</code> — …r. d) Bilimsel araştırmalar için önem arzeden ve/veya nesli tehlikeye düşmüş veya düşebilir türler ve ülkemiz için endemik olan türlerin yaşama ortamı olan alanlar, biyosfer rezervi, biyotoplar, biyogenetik rezerv alanları, benzersiz özellik…</div>
+<div class="hit"><span class="pno">[s. 107]</span> <code>biyoçeşitlilik</code> — …i olması durumunda hedeflere yönelik uygulamaları değiştirmek Çevre, İş Sağlığı ve Güvenliği Birim Müdürü Personele biyoçeşitlilik ve ekosistem üzerine eğitimlerin verilmesini sağlamak Projeden kaynaklı atıkların doğal ortama atılmasını önlemek</div></section><section class="card"><h3>Emisyonlar, Jeokimya ve Atıklar <span style="color:var(--muted);font-weight:400;font-size:0.85rem">(83 sayfa: s.1, s.2, s.5, s.6, s.7, s.8, s.9, s.10, s.11, s.12, s.13, s.14, s.15, s.16 (+69 sayfa))</span></h3><div class="hit"><span class="pno">[s. 1]</span> <code>TEHLİKELİ ATIK</code> — ATUKSAN GERİ KAZANIM SANAYİ VE TİCARET ANONİM ŞİRKETİ TEHLİKESİZ VE TEHLİKELİ ATIK DEĞERLİ METAL (MADEN) GERİ KAZANIM TESİSİ İstanbul İli, Esenyurt İlçesi, Akçaburgaz Mahallesi, 3114. Sokak No:4…</div>
+<div class="hit"><span class="pno">[s. 2]</span> <code>Tehlikeli Atık</code> — …, GSM ve Faks Numarası: Tel: - GSM: 0530 066 44 01 Faks: - e posta: bilgi@ppm.com.tr Projenin Adı: Tehlikesiz ve Tehlikeli Atık Değerli Metal (Maden) Geri Kazanım Tesisi Proje Bedeli: 49.780.000 TL Proje İçin Seçilen Yerin Açık Adresi (İli, İ…</div>
+<div class="hit"><span class="pno">[s. 5]</span> <code>TEHLİKELİ ATIK</code> — ATUKSAN GERİ KAZANIM SANAYİ VE TİCARET ANONİM ŞİRKETİ TEHLİKESİZ VE TEHLİKELİ ATIK DEĞERLİ METAL (MADEN) GERİ KAZANIM TESİSİ ÇED BAŞVURU DOSYASI 1 PROJENIN TEKNIK OLMAYAN ÖZETİ İstanbul İli…</div>
+<div class="hit"><span class="pno">[s. 5]</span> <code>Tehlikeli Atık</code> — …14. Sokak No:4 adresinde (1120 parsel) Atuksan Geri Kazanım Sanayi ve Ticaret Anonim Şirketi tarafından &quot;Tehlikesiz ve Tehlikeli Atık Değerli Metal (Maden) Geri Kazanım Tesisi” Projesi planlanmaktadır. Tesise 2.442.087,5 kg/yıl tehlikeli ve tehlikes…</div>
+<div class="hit"><span class="pno">[s. 6]</span> <code>TEHLİKELİ ATIK</code> — ATUKSAN GERİ KAZANIM SANAYİ VE TİCARET ANONİM ŞİRKETİ TEHLİKESİZ VE TEHLİKELİ ATIK DEĞERLİ METAL (MADEN) GERİ KAZANIM TESİSİ ÇED BAŞVURU DOSYASI 2 arasındaki deliklerden vakumlanarak emilir. C…</div>
+<div class="hit"><span class="pno">[s. 6]</span> <code>Tehlikeli Atık</code> — …rli madenler (Gümüş, bakır, paladyum, platin, rodyum, rutenyum, osmiyum, iridyum) elde edilmektedir. Tehlikesiz Ve Tehlikeli Atık Değerli Metal (Maden) Geri Kazanım faaliyeti ile tehlikesiz atıkların geri kazanım işlemi gerçekleştirilecektir. Bu iş…</div></section><section class="card"><h3>Proje Bedeli, Güç ve Kapasite <span style="color:var(--muted);font-weight:400;font-size:0.85rem">(12 sayfa: s.2, s.19, s.20, s.21, s.23, s.24, s.51, s.61, s.63, s.89, s.90, s.92)</span></h3><div class="hit"><span class="pno">[s. 2]</span> <code>Proje Bedeli</code> — …- e posta: bilgi@ppm.com.tr Projenin Adı: Tehlikesiz ve Tehlikeli Atık Değerli Metal (Maden) Geri Kazanım Tesisi Proje Bedeli: 49.780.000 TL Proje İçin Seçilen Yerin Açık Adresi (İli, İlçesi, Mevki): İstanbul İli, Esenyurt İlçesi, Akçaburgaz…</div>
+<div class="hit"><span class="pno">[s. 2]</span> <code>49.780.000 TL</code> — …ilgi@ppm.com.tr Projenin Adı: Tehlikesiz ve Tehlikeli Atık Değerli Metal (Maden) Geri Kazanım Tesisi Proje Bedeli: 49.780.000 TL Proje İçin Seçilen Yerin Açık Adresi (İli, İlçesi, Mevki): İstanbul İli, Esenyurt İlçesi, Akçaburgaz Mahallesi, 3114…</div>
+<div class="hit"><span class="pno">[s. 19]</span> <code>Kapasite</code> — …ANONİM ŞİRKETİ TEHLİKESİZ VE TEHLİKELİ ATIK DEĞERLİ METAL (MADEN) GERİ KAZANIM TESİSİ ÇED BAŞVURU DOSYASI 15 Kapasite Tesise 1 adet 100 kg’lık ergitme ocağı alınması planlanmaktadır. Bir ocakta 90 kg atık+yardımcı kimyasal madde 2 s…</div>
+<div class="hit"><span class="pno">[s. 20]</span> <code>kapasite</code> — …det doğalgazlı yakma fırınında (2 gözlü ) her bir gözde 6 kg atık 2 saatte yakıldığına göre, yakma fırınlarının yıllık kapasitesi: [(4*4) x 15 x (8/2) x 300] + [(3*2) x 6 x (8/2) x 300] *3 = 993.000 kg/yıl 10 kg atık malzeme için 10 kg hidro…</div>
+<div class="hit"><span class="pno">[s. 21]</span> <code>Kapasite</code> — …İZ VE TEHLİKELİ ATIK DEĞERLİ METAL (MADEN) GERİ KAZANIM TESİSİ ÇED BAŞVURU DOSYASI 17 Tablo 2. Yıllık Tüketim Kapasitesi PROSES ÜÇ VARDİYA TOPLAM ( KG/YIL ) Ramat atıklar(tehlikeli tehlikesiz durulama sıvıları, patlatma sıvıları, y…</div>
+<div class="hit"><span class="pno">[s. 23]</span> <code>Proje Bedeli</code> — …kazanımının yapıldığı yerdir. Değerli metallerin ülke ekonomisine katılması açısından proje son derece önemlidir. Proje Bedeli Proje kapsamında Tehlikesiz Ve Tehlikeli Atık Değerli Metal (Maden) Geri Kazanım Tesisi faaliyeti planlanmaktadır.…</div></section></div>
+
+  <h2>Belge Bölüm Haritası</h2>
+  <ul><li><span class="pno">[s. 3]</span> BÖLÜM III. PROJENİN İNŞAAT VE İŞLETME AŞAMASINDA ÇEVRESEL ETKİLERİ VE ALINACAK</li>
+<li><span class="pno">[s. 8]</span> BÖLÜM I. PROJENİN TANIMI VE ÖZELLİKLERİ</li>
+<li><span class="pno">[s. 29]</span> BÖLÜM II. PROJE YERİ VE ETKİ ALANININ MEVCUT ÇEVRESEL ÖZELLİKLERİ</li>
+<li><span class="pno">[s. 47]</span> BÖLÜM III. PROJENİN İNŞAAT VE İŞLETME AŞAMASINDA ÇEVRESEL ETKİLERİ VE</li>
+<li><span class="pno">[s. 63]</span> BÖLÜM IV. KÜMÜLATİF ÇEVRESEL ETKİ DEĞERLENDİRME</li>
+<li><span class="pno">[s. 65]</span> BÖLÜM V. ÇEVRESEL VE SOSYAL EYLEM PLANI</li>
+<li><span class="pno">[s. 71]</span> BÖLÜM VI: HALKIN BİLGİLENDİRİLMESİ VE SÜRECE KATILIMI İLE PAYDAŞ KATILIM</li>
+<li><span class="pno">[s. 75]</span> BÖLÜM VII. NOTLAR, KAYNAKLAR VE EKLER</li>
+<li><span class="pno">[s. 103]</span> ÇEVRESEL VE SOSYAL YÖNETİM PLANI</li></ul>
+
+  <div class="notice">
+    Bu sayfa, T.C. Çevre, Şehircilik ve İklim Değişikliği Bakanlığı'nın kamuya açık <code>eced-duyuru.csb.gov.tr</code> duyuru portalındaki kayıtlar esas alınarak bilgilendirme amacıyla hazırlanmıştır. Alıntıların tamamı 1 tabanlı PDF sayfa numarasıyla (<code>[s. N]</code>) gösterilmektedir. Yasal süreler otomatik olarak hesaplanır; kesin sürelerin ve hukuki başvuru yollarının yetkili hukukçular tarafından teyit edilmesi gerekir.
+  </div>
+</div>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script>
+(() => {
+  if (typeof L === 'undefined') return;
+  const g = {"lat": 41.06288, "lon": 28.6319, "zoom": 12, "precision": "exact_pdf", "points": [[41.06267, 28.63155], [41.06311, 28.63151], [41.06312, 28.63188], [41.06312, 28.63203], [41.06312, 28.63226], [41.06271, 28.6323], [41.06269, 28.63192], [41.06269, 28.63188], [41.06268, 28.63176]], "label": "İSTANBUL / ESENYURT — Tehlikesiz ve Tehlikeli Atık Değerli Metal (Maden) Geri Kazanım Tesisi"};
+  const map = L.map('digest-map').setView([g.lat, g.lon], g.zoom);
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    maxZoom: 18,
+    attribution: '&copy; OpenStreetMap katkıda bulunanları'
+  }).addTo(map);
+  if (g.precision === 'exact_pdf' && g.points.length > 1) {
+    const latlngs = g.points.map(p => [p[0], p[1]]);
+    const poly = L.polyline(latlngs, { color: '#58a6ff', weight: 3, opacity: 0.85 }).addTo(map);
+    for (const ll of latlngs.slice(0, 30)) {
+      L.circleMarker(ll, { radius: 4, color: '#ffffff', fillColor: '#f85149', fillOpacity: 0.9, weight: 1 }).addTo(map);
+    }
+    map.fitBounds(poly.getBounds().pad(0.25));
+  } else {
+    L.circleMarker([g.lat, g.lon], {
+      radius: g.precision === 'exact_pdf' ? 8 : 11,
+      color: '#ffffff',
+      fillColor: g.precision === 'exact_pdf' ? '#f85149' : '#58a6ff',
+      fillOpacity: g.precision === 'exact_pdf' ? 0.9 : 0.45,
+      weight: 2
+    }).bindPopup(g.label).addTo(map).openPopup();
+  }
+})();
+</script>
+</body>
+</html>

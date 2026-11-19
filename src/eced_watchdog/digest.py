@@ -12,6 +12,7 @@ import httpx
 import pymupdf as fitz
 
 from .fetcher import USER_AGENT, build_ssl_context
+from .geo import extract_pdf_coordinates
 from .llm import synthesize_with_gemini
 
 SIGNAL_SPECS: list[tuple[str, str, str]] = [
@@ -145,7 +146,7 @@ def _extract_headings(doc: fitz.Document, page_texts: list[str]) -> list[tuple[i
     return headings
 
 
-def analyze_pdf(pdf_path: Path) -> dict[str, Any]:
+def analyze_pdf(pdf_path: Path, province: str = "") -> dict[str, Any]:
     doc = fitz.open(pdf_path)
     page_texts: list[str] = []
     scanned_pages: list[int] = []
@@ -160,6 +161,7 @@ def analyze_pdf(pdf_path: Path) -> dict[str, Any]:
             scanned_pages.append(i)
 
     headings = _extract_headings(doc, page_texts)
+    geo = extract_pdf_coordinates(page_texts, province)
 
     signals: dict[str, dict[str, Any]] = {}
     for key, label, pattern in SIGNAL_SPECS:
@@ -207,6 +209,7 @@ def analyze_pdf(pdf_path: Path) -> dict[str, Any]:
         "scanned_or_blank_pages": len(scanned_pages),
         "scanned_page_sample": scanned_pages[:15],
         "headings": headings,
+        "geo": geo,
         "signals": signals,
         "audit_checks": checks,
     }
@@ -407,7 +410,7 @@ def ensure_digest_for_filing(
         cached = True
     else:
         pdf_info = download_pdf(pdf_url, pdf_path, cert_path)
-        analysis = analyze_pdf(pdf_path)
+        analysis = analyze_pdf(pdf_path, province=filing.get("province", ""))
         cached = False
 
     need_llm = bool(gemini_api_key) and (re_synthesize or not llm_synthesis)

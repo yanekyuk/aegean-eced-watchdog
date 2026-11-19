@@ -3,7 +3,8 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>e-ÇED Ön Özet #61323 — SALİHLİ</title>
+  <title>e-ÇED Ön Özet #61323 — MANİSA / SALİHLİ</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
   <style>
 :root {
   --bg: #0f1216;
@@ -37,31 +38,53 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
   background: var(--bg);
   color: var(--text);
-  line-height: 1.5;
+  line-height: 1.6;
 }
-.wrap { max-width: 1220px; margin: 0 auto; padding: 24px 18px 64px; }
+.wrap { max-width: 1240px; margin: 0 auto; padding: 24px 18px 64px; }
 a { color: var(--accent); text-decoration: none; }
 a:hover { text-decoration: underline; }
 header { border-bottom: 1px solid var(--border); padding-bottom: 16px; margin-bottom: 20px; }
 h1 { margin: 0 0 6px; font-size: 1.55rem; }
+h2 { margin: 26px 0 10px; font-size: 1.2rem; }
+h3 { margin: 16px 0 8px; font-size: 1rem; }
 .sub { color: var(--muted); font-size: 0.92rem; margin: 0; }
-.meta-bar { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 12px; font-size: 0.85rem; color: var(--muted); }
-.stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 10px; margin: 16px 0 20px; }
+.meta-bar { display: flex; flex-wrap: wrap; gap: 14px; margin-top: 12px; font-size: 0.85rem; color: var(--muted); }
+.stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 10px; margin: 16px 0 18px; }
 .stat { background: var(--surface); border: 1px solid var(--border); border-radius: 8px; padding: 12px 14px; }
 .stat .num { font-size: 1.45rem; font-weight: 700; }
 .stat .lbl { font-size: 0.78rem; color: var(--muted); }
+.map-box {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 18px;
+}
+#map { width: 100%; height: 420px; background: var(--badge-bg); }
+#digest-map { width: 100%; height: 320px; background: var(--badge-bg); }
+.map-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  padding: 9px 14px;
+  font-size: 0.8rem;
+  color: var(--muted);
+  border-top: 1px solid var(--border);
+}
+.dot { display: inline-block; width: 10px; height: 10px; border-radius: 50%; margin-right: 5px; vertical-align: middle; }
 .controls { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; margin-bottom: 16px; }
-input[type="search"] {
-  flex: 1 1 240px;
+input[type="search"], select.filter-select {
   padding: 8px 12px;
   border-radius: 6px;
   border: 1px solid var(--border);
   background: var(--surface);
   color: var(--text);
-  font-size: 0.92rem;
+  font-size: 0.9rem;
 }
+input[type="search"] { flex: 1 1 240px; }
+select.filter-select { min-width: 170px; }
 button.pill {
-  padding: 6px 11px;
+  padding: 7px 12px;
   border-radius: 999px;
   border: 1px solid var(--border);
   background: var(--surface);
@@ -75,12 +98,12 @@ button.pill.active { background: var(--accent); border-color: var(--accent); col
   background: var(--surface);
   border: 1px solid var(--border);
   border-radius: 8px;
-  padding: 14px 16px;
+  padding: 15px 17px;
 }
-.card.prio { border-left: 4px solid var(--accent); }
+.card.ek1 { border-left: 4px solid var(--accent); }
 .row-top { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px; align-items: baseline; }
 .title { font-weight: 600; font-size: 0.98rem; }
-.badges { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 6px; }
+.badges { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 7px; }
 .badge {
   display: inline-block;
   padding: 2px 8px;
@@ -93,35 +116,36 @@ button.pill.active { background: var(--accent); border-color: var(--accent); col
 .badge.warn { border-color: var(--amber); color: var(--amber); font-weight: 600; }
 .badge.ok { border-color: var(--green); color: var(--green); }
 .badge.muted { color: var(--muted); }
-.detail { font-size: 0.86rem; color: var(--muted); margin: 8px 0; }
+.detail { font-size: 0.87rem; color: var(--muted); margin: 8px 0; }
 .actions { display: flex; flex-wrap: wrap; gap: 12px; font-size: 0.84rem; margin-top: 8px; }
 .notice {
   margin-top: 28px;
-  padding: 12px 14px;
+  padding: 14px 16px;
   border: 1px solid var(--border);
   border-radius: 8px;
-  font-size: 0.82rem;
+  font-size: 0.84rem;
   color: var(--muted);
 }
 table.kv { width: 100%; border-collapse: collapse; margin: 12px 0; font-size: 0.9rem; }
-table.kv th, table.kv td { border: 1px solid var(--border); padding: 8px 10px; text-align: left; vertical-align: top; }
-table.kv th { width: 220px; background: var(--badge-bg); }
+table.kv th, table.kv td { border: 1px solid var(--border); padding: 8px 11px; text-align: left; vertical-align: top; }
+table.kv th { width: 240px; background: var(--badge-bg); }
 code { background: var(--badge-bg); padding: 1px 5px; border-radius: 4px; font-size: 0.85em; }
-blockquote { margin: 10px 0; padding: 10px 14px; border-left: 3px solid var(--accent); background: var(--surface); font-size: 0.9rem; }
-.hit { margin: 6px 0; font-size: 0.88rem; }
+blockquote { margin: 10px 0; padding: 11px 15px; border-left: 3px solid var(--accent); background: var(--surface); font-size: 0.9rem; }
+.hit { margin: 7px 0; font-size: 0.88rem; }
 .pno { font-weight: 700; color: var(--accent); }
+.leaflet-popup-content { color: #1f2328; font-size: 0.85rem; line-height: 1.45; }
 </style>
 </head>
 <body>
 <div class="wrap">
   <header>
-    <div style="font-size:0.85rem;margin-bottom:8px;"><a href="../index.html">← Ege e-ÇED İzleme listesine dön</a> · <a href="../rehber.html">Nasıl Kullanılır? (Rehber)</a> · <a href="61323.md">Ham Markdown (.md)</a></div>
-    <h1>e-ÇED Ön Özet #61323 — SALİHLİ / MANİSA</h1>
+    <div style="font-size:0.85rem;margin-bottom:8px;"><a href="../index.html">← Türkiye e-ÇED İzleme listesine dön</a> · <a href="../rehber.html">Kullanım ve İnceleme Rehberi</a> · <a href="61323.md">Ham Markdown (.md)</a></div>
+    <h1>e-ÇED Ön Özet #61323 — MANİSA / SALİHLİ</h1>
     <p class="sub">ETLİK PİLİÇ YETİŞTİRME TESİSİ</p>
     <div class="badges" style="margin-top:10px;">
       <span class="badge">HKT</span>
       <span class="badge">Ek-1</span>
-      <span class="badge warn">HKT · tarihi kontrol et</span>
+      <span class="badge warn">HKT Duyurusu · Tarih duyuru metnindedir</span>
     </div>
   </header>
 
@@ -129,21 +153,27 @@ blockquote { margin: 10px 0; padding: 10px 14px; border-left: 3px solid var(--ac
     <tr><th>Proje Sahibi</th><td>OLA TARIM HAYVANCILIK VE İNŞAAT A.Ş.</td></tr>
     <tr><th>Hazırlayan Kuruluş</th><td>CANÇED ÇEVRE DANIŞMANLIK VE MÜHENDİSLİK SAN. TİC. LTD. ŞTİ.</td></tr>
     <tr><th>Sektör / Alt Sektör</th><td>Hayvancılık / Kümes Hayvanları  Yetiştirme Tesisleri</td></tr>
-    <tr><th>Duyuru Tarihi</th><td><code>03.11.2026</code> (yükleme: <code>22/10/2026 04:16:22</code>)</td></tr>
-    <tr><th>PDF Kapsamı</th><td>30.19 MB · 143 sayfa (114 metin / 29 taranmış-görüntü) · SHA-256 <code>3a7d31de20198090…</code></td></tr>
-    <tr><th>Resmi Bağlantılar</th><td><a href="http://eced.csb.gov.tr/jsp/ek1/61323" target="_blank" rel="noopener">e-ÇED Portal Kaydı</a> · <a href="http://eced.csb.gov.tr/jsp/dosya/dosyaGoster.htm?tempAd=sign3055728179534886572.pdf&amp;orjinalAd=e-imza.pdf&amp;yuklemeTarihi=2026-10-22" target="_blank" rel="noopener">Resmi PDF Dosyası</a></td></tr>
+    <tr><th>Duyuru Tarihi</th><td><code>03.11.2026</code> (belge yükleme tarihi: <code>22/10/2026 04:16:22</code>)</td></tr>
+    <tr><th>PDF Kapsamı</th><td>30.19 MB · 143 sayfa (114 metin sayfası / 29 taranmış veya görüntü sayfası) · SHA-256 <code>3a7d31de20198090…</code></td></tr>
+    <tr><th>Resmi Bağlantılar</th><td><a href="http://eced.csb.gov.tr/jsp/ek1/61323" target="_blank" rel="noopener">e-ÇED Portal Kaydı</a> · <a href="http://eced.csb.gov.tr/jsp/dosya/dosyaGoster.htm?tempAd=sign3055728179534886572.pdf&amp;orjinalAd=e-imza.pdf&amp;yuklemeTarihi=2026-10-22" target="_blank" rel="noopener">Resmi PDF Dosyası</a> · <a href="https://www.openstreetmap.org/?mlat=38.6191&amp;mlon=27.4289#map=8/38.6191/27.4289" target="_blank" rel="noopener">OpenStreetMap</a> · <a href="https://www.google.com/maps/search/?api=1&amp;query=38.6191,27.4289" target="_blank" rel="noopener">Google Haritalar</a></td></tr>
   </table>
+
+  <h2>Konum Haritası</h2>
+  <div class="map-box">
+    <div id="digest-map"></div>
+    <div class="map-legend"><span>PDF dosyasında metin olarak okunabilir koordinat tablosu tespit edilemediği için il merkezi yaklaşık konum olarak gösterilmektedir.</span></div>
+  </div>
 
   
   <h2>Yapay Zeka Destekli Bilimsel Ön Değerlendirme <span class="badge">gemini-4-hydrogen</span></h2>
-  <p class="sub">PDF içinden seçilen 25 sayfadan (s.1, s.2, s.3, s.4, s.6, s.7, s.8, s.9, s.10, s.11, s.12, s.16, s.17, s.18, s.20, s.27, s.32, s.34, s.35, s.36, s.43, s.44, s.65, s.66, s.111) üretilmiştir. Tüm sayısal verileri resmi PDF'teki <code>[s. N]</code> sayfalarından doğrulayın.</p>
-  <section class="card prio">
+  <p class="sub">Bu değerlendirme, resmi PDF dosyasından seçilen 25 sayfa (s.1, s.2, s.3, s.4, s.6, s.7, s.8, s.9, s.10, s.11, s.12, s.16, s.17, s.18, s.20, s.27, s.32, s.34, s.35, s.36, s.43, s.44, s.65, s.66, s.111) esas alınarak hazırlanmıştır. Tüm sayısal verilerin ve tespitlerin resmi PDF belgesindeki ilgili <code>[s. N]</code> sayfalarından doğrulanması gerekir.</p>
+  <section class="card ek1">
     <p><strong>Özet:</strong> Manisa ili Salihli ilçesi Gökeyüp Mahallesi 179 Ada 2 Parsel (117.840,08 m2) üzerinde OLA Tarım Hayvancılık ve İnşaat A.Ş. tarafından dönem başına 160.454 adet kapasiteli (45 gün yetiştirme + 2 hafta hazırlık, 7 adet kümes) Etlik Piliç Yetiştirme Tesisi kurulması planlanmaktadır [s. 6, 8, 10]. ÇED Yönetmeliği Ek-1 Madde 17-d kapsamındaki tesisin toplam yapılaşma alanı 9.858,31 m2, proje bedeli 105.852.311 TL ve ekonomik ömrü 40 yıl olarak öngörülmektedir [s. 6, 8, 11]. Başlıca çevresel riskler arasında alanın 1/100.000 ölçekli Çevre Düzeni Planında &#x27;Orman Alanı&#x27; içinde yer alması [s. 16, 36], yılda 200 ton kömür kullanımı beyanı [s. 44], 1. Derece Deprem Bölgesi&#x27;nde (PGA 0,334 g) yer alan gübre, ölü tavuk ve fosseptik çukurları [s. 6, 34, 35] ile çok mevsimli arazi etüdü sunulmaması yer almaktadır.</p>
-    <details style="margin-top:8px;font-size:0.86rem;color:var(--muted);"><summary style="cursor:pointer;">English summary</summary><p style="margin:6px 0 0;">OLA Tarım Hayvancılık ve İnşaat A.Ş. proposes to construct a 160,454-bird/cycle broiler chicken farming facility (7 coops totaling 8,914.08 m2; 45-day rearing plus 2-week preparation) on parcel 179/2 (117,840.08 m2) in Gökeyüp Neighborhood, Salihli District, Manisa [s. 6, 8, 10]. Subject to EIA Annex-1 Article 17-d, the project has a total built footprint of 9,858.31 m2, an estimated cost of 105,852,311 TL, and a 40-year economic life [s. 6, 8, 11]. Primary environmental stakes include the site&#x27;s designation as &#x27;Forest Area&#x27; in the 1/100,000 Environmental Plan [s. 16, 36], declared coal consumption of 200 tons/year [s. 44], waste pits (manure, mortality, septic) located in a 1st Degree Earthquake Zone (PGA 0.334 g) [s. 6, 34, 35], and the lack of documented multi-season baseline ecological surveys.</p></details>
+    <details style="margin-top:8px;font-size:0.86rem;color:var(--muted);"><summary style="cursor:pointer;">İngilizce özet (English summary)</summary><p style="margin:6px 0 0;">OLA Tarım Hayvancılık ve İnşaat A.Ş. proposes to construct a 160,454-bird/cycle broiler chicken farming facility (7 coops totaling 8,914.08 m2; 45-day rearing plus 2-week preparation) on parcel 179/2 (117,840.08 m2) in Gökeyüp Neighborhood, Salihli District, Manisa [s. 6, 8, 10]. Subject to EIA Annex-1 Article 17-d, the project has a total built footprint of 9,858.31 m2, an estimated cost of 105,852,311 TL, and a 40-year economic life [s. 6, 8, 11]. Primary environmental stakes include the site&#x27;s designation as &#x27;Forest Area&#x27; in the 1/100,000 Environmental Plan [s. 16, 36], declared coal consumption of 200 tons/year [s. 44], waste pits (manure, mortality, septic) located in a 1st Degree Earthquake Zone (PGA 0.334 g) [s. 6, 34, 35], and the lack of documented multi-season baseline ecological surveys.</p></details>
     <div class="badges" style="margin-top:10px;">
-      <span class="badge">Saha çalışması: Karışık / belirsiz</span>
-      <span class="badge">Mevsimsel örnekleme: Bulunamadı</span>
-      <span class="badge">Kümülatif etki: Eksik / bulunamadı</span>
+      <span class="badge">Saha çalışması: Karışık veya yöntemi belirsiz</span>
+      <span class="badge">Mevsimsel örnekleme: İncelenen sayfalarda tespit edilemedi</span>
+      <span class="badge">Kümülatif etki: Eksik veya tespit edilemedi</span>
     </div>
     <p class="detail" style="margin-top:10px;"><strong>Zeytinlik ve Korunan Alanlar:</strong> Sunulan sayfalarda 3573 sayılı Zeytincilik Kanunu kapsamında zeytinlik mesafe bilgisine rastlanmamıştır. Dosyada proje alanının Yaban Hayatı Geliştirme Sahası, Milli Park, Tabiat Parkı, Özel Koruma Alanı [s. 32], sulak alan, göl/akarsu veya endemik tür yaşam ortamı içinde yer almadığı beyan edilmektedir [s. 43]; ancak alanın 1/100.000 ölçekli İzmir-Manisa Çevre Düzeni Planında &#x27;Orman Alanı&#x27; içinde kaldığı belirtilmektedir [s. 16, 36].<br/>Proje sahası için 21.09.2026 tarihinde tek bir yer incelemesi yapıldığı belirtilmiş [s. 6], flora çalışmasının arazi faaliyetleri ve literatür taramasıyla oluşturulduğu ifade edilerek tür tablosunda gözlem (G) ve literatür (L) kaynakları gösterilmiştir [s. 20, 27]. Buna karşın flora, sürüngen, kuş ve memeli tabloları &#x27;bulunma olasılığı yüksek olan / bulunması muhtemel&#x27; tür listeleri olarak hazırlanmış [s. 4, 32], Davis, Tübives ve bölgedeki diğer projelerin verilerinden yararlanıldığı belirtilmiştir [s. 18]; çok mevsimli bir arazi örneklemesi belgelenmemiştir. İçindekiler dizininde raporun 61. sayfasında yer aldığı görülen Bölüm IV Kümülatif Çevresel Etki Değerlendirmesi ise sunulan sayfa kesitlerinde bulunmamaktadır [s. 3].</p>
   </section>
@@ -157,32 +187,32 @@ blockquote { margin: 10px 0; padding: 10px 14px; border-left: 3px solid var(--ac
 <tr><th>Personel Su İhtiyacı / Staff Water Use</th><td>2,86 m3/gün (2.865 lt/gün; 15 kişi için piyasadan satın alma) <span class="pno">[s. 44]</span></td></tr>
 <tr><th>Merkezlere Uzaklık / Distance to Centers</th><td>Salihli ilçe merkezine 27 km, Manisa il merkezine 74 km <span class="pno">[s. 6]</span></td></tr>
 <tr><th>Deprem Tehlikesi / Seismic Hazard</th><td>1. Derece Deprem Bölgesi; en büyük yer ivmesi (PGA 475) 0,334 g <span class="pno">[s. 35]</span></td></tr></table>
-  <h3>Bilimsel ve Metodolojik Uyarılar</h3><section class="card"><div class="hit"><span class="badge urgent">YÜKSEK</span> <strong>1/100.000 Ölçekli Çevre Düzeni Planında &#x27;Orman Alanı&#x27; Konumu</strong> <span class="pno">[s. 6, s. 16, s. 36]</span> — Proje alanının 1/100.000 ölçekli İzmir-Manisa Bölgesi Çevre Düzeni Planında &#x27;Orman Alanı&#x27; içerisinde kaldığı açıkça belirtilmektedir [s. 16, 36]. Buna rağmen 117.840,08 m2&#x27;lik parselde kiracı sıfatıyla 9.858,31 m2 yapılaşma planlanırken [s. 6, 36] sunulan sayfalarda orman izni, tahsis durumu veya ağaç/habitat kaybına yönelik teknik bir değerlendirme yer almamaktadır.</div>
+  <h3>Bilimsel ve Metodolojik Bulgular</h3><section class="card"><div class="hit"><span class="badge urgent">YÜKSEK</span> <strong>1/100.000 Ölçekli Çevre Düzeni Planında &#x27;Orman Alanı&#x27; Konumu</strong> <span class="pno">[s. 6, s. 16, s. 36]</span> — Proje alanının 1/100.000 ölçekli İzmir-Manisa Bölgesi Çevre Düzeni Planında &#x27;Orman Alanı&#x27; içerisinde kaldığı açıkça belirtilmektedir [s. 16, 36]. Buna rağmen 117.840,08 m2&#x27;lik parselde kiracı sıfatıyla 9.858,31 m2 yapılaşma planlanırken [s. 6, 36] sunulan sayfalarda orman izni, tahsis durumu veya ağaç/habitat kaybına yönelik teknik bir değerlendirme yer almamaktadır.</div>
 <div class="hit"><span class="badge urgent">YÜKSEK</span> <strong>Boş Arazi Beyanı ile Mevcut Kömür Yakıtı ve Ekipman Çelişkisi</strong> <span class="pno">[s. 6, s. 8, s. 10, s. 44]</span> — Teknik Olmayan Özet ve Bölüm I&#x27;de &#x27;yatırıma başlanmamış olup arazi tamamen boştur&#x27; denilmesine rağmen [s. 6, 8], Bölüm III&#x27;te &#x27;Tesiste hem mevcut durumda yakıt olarak kömür kullanılmakta olup... 200 ton/yıl kömür kullanıldığı beyan edilmektedir&#x27; ifadeleri yer almaktadır [s. 44]. Ayrıca Tablo 2&#x27;de 7 kümes için yalnızca 2 adet &#x27;2.2 kcal kömürlü soba&#x27; yazılmıştır [s. 10]; bu değer hem 200 ton/yıl kömür tüketimi hem de 8.914,08 m2 kümes ısıtma ihtiyacı ile fiziksel olarak tutarsızdır.</div>
 <div class="hit"><span class="badge urgent">YÜKSEK</span> <strong>Çok Mevsimli Arazi Çalışması Eksikliği ve Literatüre Dayalı Biyoçeşitlilik Listeleri</strong> <span class="pno">[s. 4, s. 6, s. 18, s. 20, s. 27, s. 32]</span> — Saha incelemesi yalnızca 21.09.2026 tarihli tek bir yer görme çalışması olarak anılmaktadır [s. 6]. Flora ve fauna tabloları &#x27;bulunma olasılığı yüksek / bulunması muhtemel&#x27; türleri listelemekte olup literatür ve bölgedeki diğer projelerin verilerine dayanmaktadır [s. 4, 18, 27, 32]; mevsimsel gözlem eforu, örnekleme noktaları ve arazi protokolü sunulmamıştır.</div>
 <div class="hit"><span class="badge warn">ORTA</span> <strong>Arazi Dağılımı Bölümünde Yanlış İlçe (Saruhanlı) Verisi Kullanımı</strong> <span class="pno">[s. 1, s. 6, s. 36]</span> — Proje Salihli ilçesi Gökeyüp Mahallesi sınırlarında planlanmasına karşın [s. 1, 6], Toprak bölümünde ilçelere göre arazi dağılımı anlatılırken Salihli yerine &#x27;Saruhanlı İlçesinin yüzölçümü 785.000 Da...&#x27; verileri aktarılmıştır [s. 36]. Bu durum başka bir projeden kopyala-yapıştır yapıldığına işaret etmektedir.</div>
 <div class="hit"><span class="badge warn">ORTA</span> <strong>Yılda 200 Ton Kömür Tüketimine Rağmen Sera Gazı Azaltım Planı Hazırlanmaması</strong> <span class="pno">[s. 8, s. 44, s. 66]</span> — Tesiste yılda 200 ton kömür yakılacağı [s. 44] ve dönem başına 160.454 etlik piliç yetiştirileceği [s. 8] belirtilmesine rağmen, faaliyetin Sera Gazı Emisyonlarının Takibi Hakkında Yönetmelik Ek-1 kapsamında olmadığı gerekçesiyle Sera Gazı Azaltım Planı hazırlanmadığı beyan edilmiştir [s. 66].</div>
 <div class="hit"><span class="badge warn">ORTA</span> <strong>1. Derece Deprem Bölgesinde Atık Çukurları ve Akifer Riski</strong> <span class="pno">[s. 6, s. 8, s. 34, s. 35]</span> — Proje sahası 1. Derece Deprem Bölgesi olup PGA 475 yer ivmesi değeri 0,334 g&#x27;dir [s. 34, 35]. Sahada 42,9 m2 ölü çukuru, 57,75 m2 gübre çukuru ve 16,5 m2 fosseptik planlanmaktadır [s. 6, 8]; ancak sunulan sayfalarda Gediz Havzası akiferlerine yönelik sızdırmazlık ve deprem güvenliği analizi görülmemektedir.</div></section>
-  <h3>HKT ve İYUK 20/A İçin Taslak Teknik Sorular</h3><ul><li>Proje sahası 1/100.000 ölçekli İzmir-Manisa Çevre Düzeni Planında &#x27;Orman Alanı&#x27; içinde yer almaktadır [s. 16, 36]; bu alanda 9.858,31 m2 yapılaşma için Orman Kanunu kapsamında alınmış izin/tahsis bulunmakta mıdır ve kesilecek/etkilenecek ağaç varlığı tespit edilmiş midir? <span class="pno">[s. 6, s. 8, s. 16, s. 36]</span></li>
+  <h3>HKT Tutanakları ve İdari Başvurular İçin Taslak Teknik Sorular</h3><ul><li>Proje sahası 1/100.000 ölçekli İzmir-Manisa Çevre Düzeni Planında &#x27;Orman Alanı&#x27; içinde yer almaktadır [s. 16, 36]; bu alanda 9.858,31 m2 yapılaşma için Orman Kanunu kapsamında alınmış izin/tahsis bulunmakta mıdır ve kesilecek/etkilenecek ağaç varlığı tespit edilmiş midir? <span class="pno">[s. 6, s. 8, s. 16, s. 36]</span></li>
 <li>Dosyada sahanın tamamen boş olduğu belirtilirken [s. 6, 8] başka bir bölümde &#x27;mevcut durumda 200 ton/yıl kömür kullanıldığı&#x27; yazılmakta [s. 44] ve ekipman listesinde yalnızca 2 adet &#x27;2.2 kcal kömürlü soba&#x27; yer almaktadır [s. 10]; tesisin gerçek ısıtma kapasitesi, yakıt tüketimi ve baca gazı emisyon hesapları hangi doğrulanmış verilere dayanmaktadır? <span class="pno">[s. 6, s. 8, s. 10, s. 44]</span></li>
 <li>Biyoçeşitlilik bölümünde yalnızca 21.09.2026 tarihli yer incelemesi bildirilmiş [s. 6] ve diğer projeler ile literatürden derlenen &#x27;bulunma olasılığı yüksek&#x27; tür listeleri sunulmuştur [s. 4, 18, 32]; tüm mevsimleri kapsayan özgün arazi etüdü yapılmadan Bern Sözleşmesi ek listelerindeki türler üzerindeki etkiler nasıl değerlendirilmiştir? <span class="pno">[s. 4, s. 6, s. 18, s. 27, s. 32]</span></li>
 <li>En büyük yer ivmesi (PGA 475) 0,334 g olan 1. Derece Deprem Bölgesi&#x27;ndeki tesiste [s. 34, 35] inşa edilecek 42,9 m2 ölü çukuru, 57,75 m2 gübre çukuru ve 16,5 m2 fosseptik yapılarının [s. 6, 8] sızdırmazlık ve deprem dayanımı önlemleri ile Gediz Havzası yeraltı sularını koruma tedbirleri nelerdir? <span class="pno">[s. 6, s. 8, s. 34, s. 35]</span></li>
 <li>Yılda 200 ton kömür yakılması [s. 44] ve dönem başına 160.454 kanatlı üretimi [s. 8] öngörülmesine rağmen Sera Gazı Azaltım Planı hazırlanmamıştır [s. 66]; yakıt ve hayvancılık kaynaklı sera gazı ile koku/amonyak emisyonlarını azaltmak için hangi bağlayıcı teknik önlemler uygulanacaktır? <span class="pno">[s. 8, s. 44, s. 66]</span></li></ul>
-  <p class="sub"><em>Kapsam sınırları:</em> Toplam 143 sayfalık ÇED Başvuru Dosyasının (114 metin, 29 taranmış/görsel sayfa) yalnızca 25 seçili sayfası incelenebilmiştir. İçindekiler dizininde yer alan koordinatlar ve yer/teknoloji alternatifleri (rapor s. 10-12), tam flora-fauna tabloları (rapor s. 21-29), yerleşim yeri mesafeleri ve Ek-5 duyarlı yöreler incelemesinin başlangıcı (rapor s. 35-40), hayvan içme ve kümes yıkama suyu tüketimi (Tablo 14, rapor s. 43), gübre/ölü tavuk bertarafı, toz/emisyon/gürültü/koku modellemeleri ve iklim değişikliği bölümü (rapor s. 43-60), Bölüm IV Kümülatif Çevresel Etki Değerlendirme (rapor s. 61-62) ile Ek-1, Ek-4, Ek-5, Ek-7 ve Ek-11/12/13 gibi taranmış ekler sağlanan kesitler dışında kaldığından doğrulanamamıştır.</p>
+  <p class="sub"><em>İnceleme sınırları:</em> Toplam 143 sayfalık ÇED Başvuru Dosyasının (114 metin, 29 taranmış/görsel sayfa) yalnızca 25 seçili sayfası incelenebilmiştir. İçindekiler dizininde yer alan koordinatlar ve yer/teknoloji alternatifleri (rapor s. 10-12), tam flora-fauna tabloları (rapor s. 21-29), yerleşim yeri mesafeleri ve Ek-5 duyarlı yöreler incelemesinin başlangıcı (rapor s. 35-40), hayvan içme ve kümes yıkama suyu tüketimi (Tablo 14, rapor s. 43), gübre/ölü tavuk bertarafı, toz/emisyon/gürültü/koku modellemeleri ve iklim değişikliği bölümü (rapor s. 43-60), Bölüm IV Kümülatif Çevresel Etki Değerlendirme (rapor s. 61-62) ile Ek-1, Ek-4, Ek-5, Ek-7 ve Ek-11/12/13 gibi taranmış ekler sağlanan kesitler dışında kaldığından doğrulanamamıştır.</p>
 
 
   <h2>Resmi Duyuru Metni</h2>
   <blockquote>MANİSA ili SALİHLİ,  ilcesinde MANİSA ili SALİHLİ ilçesi sınırları içerisinde OLA TARIM HAYVANCILIK VE İNŞAAT A.Ş. tarafından yapılması planlanan ETLİK PİLİÇ YETİŞTİRME TESİSİ projesi ile ilgili Çevresel Etki Değerlendirme süreci başlamış ve Çevresel Etki Değerlendirmesi Başvuru Dosyası halkın görüşüne açılmıştır.Söz konusu projeye ilişkin, halkı proje hakkında bilgilendirmek, görüş ve önerilerini almak amacıyla ÇED Yönetmeliğinin 9. maddesi gereğince 27/11/2026 tarihinde Halkın Katılım Toplantısı düzenlenecektir.ÇED Başvuru Dosyasını İncelemek isteyenler Bakanlık Merkezinde veya MANİSA Çevre ve Şehircilik İl Müdürlüklerinde duyuru tarihinden itibaren raporu inceleyerek, zamanlama takvimi içerisinde proje hakkında Bakanlığa veya Valiliğe görüş bildirebilirler. Halkın Katılımı Toplantısı yeri ve saati ile ilgili ÇED İzin Denetim Genel Müdürlüğü ve MANİSA Çevre, Şehircilik ve İklim Değişikliği İl Müdürlüğünden bilgi alınabilir. İlgililere ve kamuoyuna duyurulur.</blockquote>
 
   <h2>Otomatik Metin Taraması (Deterministik)</h2>
-  <table class="kv"><tr><th>Saha / arazi çalışması geçiyor mu</th><td><span class="badge ok">Metinde var</span></td></tr>
-<tr><th>Literatür taraması ifadesi geçiyor mu</th><td><span class="badge ok">Metinde var</span></td></tr>
-<tr><th>Mevsimsel örnekleme geçiyor mu</th><td><span class="badge ok">Metinde var</span></td></tr>
-<tr><th>Kümülatif etki değerlendirmesi geçiyor mu</th><td><span class="badge ok">Metinde var</span></td></tr>
-<tr><th>Zeytincilik Kanunu (3573 / zeytinlik)</th><td><span class="badge ok">Metinde var</span></td></tr>
-<tr><th>Yeraltı suyu / akifer / hidrojeoloji</th><td><span class="badge ok">Metinde var</span></td></tr>
-<tr><th>Endemik tür / IUCN / Bern Sözleşmesi</th><td><span class="badge ok">Metinde var</span></td></tr></table>
-  <p class="sub">OCR içermeyen taranmış harita ve ekler otomatik metin taramasına dahil değildir.</p>
+  <table class="kv"><tr><th>Saha veya arazi çalışması ifadesi</th><td><span class="badge ok">Metinde yer almaktadır</span></td></tr>
+<tr><th>Literatür taraması ifadesi</th><td><span class="badge ok">Metinde yer almaktadır</span></td></tr>
+<tr><th>Mevsimsel örnekleme ifadesi</th><td><span class="badge ok">Metinde yer almaktadır</span></td></tr>
+<tr><th>Kümülatif etki değerlendirmesi ifadesi</th><td><span class="badge ok">Metinde yer almaktadır</span></td></tr>
+<tr><th>3573 sayılı Zeytincilik Kanunu veya zeytinlik ifadesi</th><td><span class="badge ok">Metinde yer almaktadır</span></td></tr>
+<tr><th>Yeraltı suyu, akifer veya hidrojeoloji ifadesi</th><td><span class="badge ok">Metinde yer almaktadır</span></td></tr>
+<tr><th>Endemik tür, IUCN veya Bern Sözleşmesi ifadesi</th><td><span class="badge ok">Metinde yer almaktadır</span></td></tr></table>
+  <p class="sub">Metin katmanı (OCR) bulunmayan taranmış harita ve kurum görüşü ekleri otomatik metin taramasına dahil edilmemiştir.</p>
 
   <h2>Sayfa Kaynaklı Çıkarılan Bulgular</h2>
   <div class="cards"><section class="card"><h3>Koordinatlar, Parsel ve Alan Büyüklüğü <span style="color:var(--muted);font-weight:400;font-size:0.85rem">(36 sayfa: s.3, s.6, s.7, s.8, s.10, s.11, s.12, s.13, s.34, s.35, s.36, s.39, s.44, s.45 (+22 sayfa))</span></h3><div class="hit"><span class="pno">[s. 3]</span> <code>Koordinat</code> — ….............................................. 6 b) Projenin Yer ve Teknoloji Alternatifleri, Proje İçin Seçilen Yerin Koordinatları 10 BÖLÜM II: PROJE YERİ VE ETKİ ALANININ MEVCUT ÇEVRESEL ÖZELLİKLERİ ............................................…</div>
@@ -230,8 +260,36 @@ blockquote { margin: 10px 0; padding: 10px 14px; border-left: 3px solid var(--ac
 <li><span class="pno">[s. 110]</span> ÇEVRESEL VE SOSYAL YÖNETİM PLANI</li></ul>
 
   <div class="notice">
-    Çevre, Şehircilik ve İklim Değişikliği Bakanlığı'nın kamuya açık <code>eced-duyuru.csb.gov.tr</code> portalından üretilen bilgilendirme amaçlı şeffaflık aracıdır. Tüm alıntılar 1 tabanlı PDF sayfa numarasıyla <code>[s. N]</code> gösterilir. Yasal süreler otomatik hesaplanır; kesin süre ve hukuki işlem için mutlaka avukat/hukukçu doğrulaması alın.
+    Bu sayfa, T.C. Çevre, Şehircilik ve İklim Değişikliği Bakanlığı'nın kamuya açık <code>eced-duyuru.csb.gov.tr</code> duyuru portalındaki kayıtlar esas alınarak bilgilendirme amacıyla hazırlanmıştır. Alıntıların tamamı 1 tabanlı PDF sayfa numarasıyla (<code>[s. N]</code>) gösterilmektedir. Yasal süreler otomatik olarak hesaplanır; kesin sürelerin ve hukuki başvuru yollarının yetkili hukukçular tarafından teyit edilmesi gerekir.
   </div>
 </div>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script>
+(() => {
+  if (typeof L === 'undefined') return;
+  const g = {"lat": 38.6191, "lon": 27.4289, "zoom": 8, "precision": "province_centroid", "points": [], "label": "MANİSA / SALİHLİ — ETLİK PİLİÇ YETİŞTİRME TESİSİ"};
+  const map = L.map('digest-map').setView([g.lat, g.lon], g.zoom);
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    maxZoom: 18,
+    attribution: '&copy; OpenStreetMap katkıda bulunanları'
+  }).addTo(map);
+  if (g.precision === 'exact_pdf' && g.points.length > 1) {
+    const latlngs = g.points.map(p => [p[0], p[1]]);
+    const poly = L.polyline(latlngs, { color: '#58a6ff', weight: 3, opacity: 0.85 }).addTo(map);
+    for (const ll of latlngs.slice(0, 30)) {
+      L.circleMarker(ll, { radius: 4, color: '#ffffff', fillColor: '#f85149', fillOpacity: 0.9, weight: 1 }).addTo(map);
+    }
+    map.fitBounds(poly.getBounds().pad(0.25));
+  } else {
+    L.circleMarker([g.lat, g.lon], {
+      radius: g.precision === 'exact_pdf' ? 8 : 11,
+      color: '#ffffff',
+      fillColor: g.precision === 'exact_pdf' ? '#f85149' : '#58a6ff',
+      fillOpacity: g.precision === 'exact_pdf' ? 0.9 : 0.45,
+      weight: 2
+    }).bindPopup(g.label).addTo(map).openPopup();
+  }
+})();
+</script>
 </body>
 </html>

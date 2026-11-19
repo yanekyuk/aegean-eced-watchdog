@@ -36,7 +36,7 @@
     "statutory_clocks": [
       {
         "code": "hkt",
-        "kind": "HKT public participation notice (verify date in full text)",
+        "kind": "Halkın Katılımı Toplantısı (HKT) duyurusu; toplantı tarihi resmi metinde yer alır",
         "deadline": null,
         "days_remaining": null
       }

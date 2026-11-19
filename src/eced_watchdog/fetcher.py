@@ -1,4 +1,4 @@
-"""Polite pure-HTTP/1.1 JSF/PrimeFaces fetcher for Turkey's public e-ÇED registry."""
+"""Polite pure-HTTP/1.1 JSF/PrimeFaces fetcher for Turkey's public e-ÇED registry (nationwide or per-province)."""
 
 from __future__ import annotations
 
@@ -26,39 +26,6 @@ AJAX_HEADERS = {
     "Content-Type": "application/x-www-form-urlencoded; charset=UTF-8",
 }
 
-DEFAULT_PROVINCES: list[tuple[str, str]] = [
-    ("35", "İZMİR"),
-    ("45", "MANİSA"),
-]
-
-# Northern & western İzmir + Gediz Basin priority corridor
-PRIORITY_DISTRICTS: dict[str, set[str]] = {
-    "İZMİR": {
-        "ALİAĞA",
-        "BERGAMA",
-        "DİKİLİ",
-        "FOÇA",
-        "KARABURUN",
-        "MENEMEN",
-        "URLA",
-        "ÇEŞME",
-        "SEFERİHİSAR",
-        "KINIK",
-    },
-    "MANİSA": {
-        "YUNUSEMRE",
-        "ŞEHZADELER",
-        "SARUHANLI",
-        "TURGUTLU",
-        "SALİHLİ",
-        "AKHİSAR",
-        "SOMA",
-        "KIRKAĞAÇ",
-        "AHMETLİ",
-        "GÖLMARMARA",
-    },
-}
-
 
 def build_ssl_context(cert_path: Path | None) -> ssl.SSLContext:
     ctx = ssl.create_default_context(cafile=certifi.where())
@@ -69,12 +36,6 @@ def build_ssl_context(cert_path: Path | None) -> ssl.SSLContext:
 
 def normalize_tr_upper(text: str) -> str:
     return text.replace("i", "İ").replace("ı", "I").upper().strip()
-
-
-def is_priority_district(province: str, district: str) -> bool:
-    p = normalize_tr_upper(province)
-    d = normalize_tr_upper(district)
-    return d in PRIORITY_DISTRICTS.get(p, set())
 
 
 def compute_deadlines(decision_type: str, date_str: str, today: date) -> dict[str, Any]:
@@ -91,7 +52,7 @@ def compute_deadlines(decision_type: str, date_str: str, today: date) -> dict[st
         clocks.append(
             {
                 "code": "iyuk_20a",
-                "kind": "İYUK 20/A annulment lawsuit (30d; İYUK 11 does not toll)",
+                "kind": "İYUK Madde 20/A iptal davası süresi (30 gün; İYUK 11 süreyi durdurmaz)",
                 "deadline": cutoff.isoformat(),
                 "days_remaining": (cutoff - today).days,
             }
@@ -100,7 +61,7 @@ def compute_deadlines(decision_type: str, date_str: str, today: date) -> dict[st
         clocks.append(
             {
                 "code": "hkt",
-                "kind": "HKT public participation notice (verify date in full text)",
+                "kind": "Halkın Katılımı Toplantısı (HKT) duyurusu; toplantı tarihi resmi metinde yer alır",
                 "deadline": None,
                 "days_remaining": None,
             }
@@ -110,7 +71,7 @@ def compute_deadlines(decision_type: str, date_str: str, today: date) -> dict[st
         clocks.append(
             {
                 "code": "aski_10d",
-                "kind": "10-day public review/comment window (askı süresi)",
+                "kind": "10 günlük halkın görüş ve önerilerine açılma (askı) süresi",
                 "deadline": cutoff.isoformat(),
                 "days_remaining": (cutoff - today).days,
             }
@@ -119,7 +80,7 @@ def compute_deadlines(decision_type: str, date_str: str, today: date) -> dict[st
         clocks.append(
             {
                 "code": "idk",
-                "kind": "İDK review commission (verify meeting date in full text)",
+                "kind": "İnceleme Değerlendirme Komisyonu (İDK) süreci; toplantı tarihi resmi metinde yer alır",
                 "deadline": None,
                 "days_remaining": None,
             }
@@ -252,16 +213,17 @@ def _quick_row_signature(row: dict[str, Any]) -> str:
     )
 
 
-def fetch_province(
-    province_code: str,
-    province_label: str,
+def fetch_announcements(
     *,
-    days: int = 30,
+    province_code: str | None = None,
+    province_label: str | None = None,
+    days: int = 7,
     cert_path: Path | None = None,
     existing_by_sig: dict[str, dict[str, Any]] | None = None,
-    delay_sec: float = 0.25,
+    delay_sec: float = 0.2,
+    max_records: int | None = None,
 ) -> list[dict[str, Any]]:
-    """Fetch filings for one province, reusing cached Detay/PDF metadata when unchanged."""
+    """Fetch e-ÇED filings nationwide (when province_code is None) or for a single province."""
     ssl_ctx = build_ssl_context(cert_path)
     today = date.today()
     start_date = today - timedelta(days=days)
@@ -269,6 +231,7 @@ def fetch_province(
     end_str = today.strftime("%d.%m.%Y")
 
     existing_by_sig = existing_by_sig or {}
+    scope_name = province_label or "TÜRKİYE GENELİ"
 
     client = httpx.Client(
         verify=ssl_ctx,
@@ -294,33 +257,34 @@ def fetch_province(
             raise RuntimeError("Could not locate javax.faces.ViewState on e-ÇED landing page")
         vs = vs_input["value"]
 
-        r_sel = client.post(
-            BASE_URL,
-            headers=AJAX_HEADERS,
-            data={
-                "javax.faces.partial.ajax": "true",
-                "javax.faces.source": "form:duyuru-arama-fieldset:j_idt26",
-                "javax.faces.partial.execute": "form:duyuru-arama-fieldset:j_idt26",
-                "javax.faces.partial.render": "form:duyuru-arama-fieldset:duyuru-ilce",
-                "javax.faces.behavior.event": "itemSelect",
-                "javax.faces.partial.event": "itemSelect",
-                "form:duyuru-arama-fieldset:j_idt26_itemSelect": province_code,
-                "form:duyuru-arama-fieldset:j_idt26_input": province_label,
-                "form:duyuru-arama-fieldset:j_idt26_hinput": province_code,
-                "form": "form",
-                "javax.faces.ViewState": vs,
-            },
-        )
-        r_sel.raise_for_status()
-        vs = _extract_viewstate(r_sel.text) or vs
+        if province_code and province_label:
+            r_sel = client.post(
+                BASE_URL,
+                headers=AJAX_HEADERS,
+                data={
+                    "javax.faces.partial.ajax": "true",
+                    "javax.faces.source": "form:duyuru-arama-fieldset:j_idt26",
+                    "javax.faces.partial.execute": "form:duyuru-arama-fieldset:j_idt26",
+                    "javax.faces.partial.render": "form:duyuru-arama-fieldset:duyuru-ilce",
+                    "javax.faces.behavior.event": "itemSelect",
+                    "javax.faces.partial.event": "itemSelect",
+                    "form:duyuru-arama-fieldset:j_idt26_itemSelect": province_code,
+                    "form:duyuru-arama-fieldset:j_idt26_input": province_label,
+                    "form:duyuru-arama-fieldset:j_idt26_hinput": province_code,
+                    "form": "form",
+                    "javax.faces.ViewState": vs,
+                },
+            )
+            r_sel.raise_for_status()
+            vs = _extract_viewstate(r_sel.text) or vs
 
         base_form = {
             "form": "form",
             "form:duyuru-arama-fieldset:j_idt20": "",
             "form:duyuru-arama-fieldset:j_idt23_input": start_str,
             "form:duyuru-arama-fieldset:j_idt24_input": end_str,
-            "form:duyuru-arama-fieldset:j_idt26_input": province_label,
-            "form:duyuru-arama-fieldset:j_idt26_hinput": province_code,
+            "form:duyuru-arama-fieldset:j_idt26_input": province_label or "",
+            "form:duyuru-arama-fieldset:j_idt26_hinput": province_code or "",
             "form:duyuru-arama-fieldset:j_idt28_input": "",
             "form:duyuru-arama-fieldset:j_idt28_hinput": "",
             "form:duyuru-arama-fieldset:duyuru-ilce_input": "",
@@ -354,11 +318,12 @@ def fetch_province(
         vs = _extract_viewstate(r_search.text) or vs
 
         total_records = _parse_total_records(r_search.text) or 0
+        limit = min(total_records, max_records) if max_records else total_records
         table_html = _extract_update_cdata(r_search.text, "form:duyurTable") or r_search.text
         first_page_rows = _parse_table_rows(table_html)
         page_size = len(first_page_rows) or 10
 
-        print(f"[{province_label}] {start_str}..{end_str}: reported={total_records}")
+        print(f"[{scope_name}] {start_str}..{end_str}: reported={total_records} (fetching up to {limit})")
 
         def enrich_row(row: dict[str, Any]) -> dict[str, Any]:
             nonlocal vs
@@ -367,7 +332,6 @@ def fetch_province(
             if cached and cached.get("detail_text") and cached.get("documents"):
                 merged = {**cached, **{k: v for k, v in row.items() if k not in {"row_index", "button_id"}}}
                 merged.update(compute_deadlines(merged["decision_type"], merged["announcement_date_tr"], today))
-                merged["priority_district"] = is_priority_district(merged["province"], merged["district"])
                 merged["filing_key"] = make_filing_key(merged)
                 return merged
 
@@ -406,7 +370,6 @@ def fetch_province(
                     docs.append(_resolve_document_page(doc_client, lk["href"]))
             row["documents"] = docs
             row.update(compute_deadlines(row["decision_type"], row["announcement_date_tr"], today))
-            row["priority_district"] = is_priority_district(row["province"], row["district"])
             row["filing_key"] = make_filing_key(row)
             row["first_seen_at"] = datetime.now().isoformat(timespec="seconds")
             row.pop("row_index", None)
@@ -416,7 +379,7 @@ def fetch_province(
         all_rows: list[dict[str, Any]] = [enrich_row(r) for r in first_page_rows]
 
         first_offset = page_size
-        while total_records and len(all_rows) < total_records:
+        while limit and len(all_rows) < limit:
             time.sleep(delay_sec)
             r_page = client.post(
                 BASE_URL,
@@ -443,9 +406,11 @@ def fetch_province(
             if not page_rows:
                 break
             for r in page_rows:
+                if len(all_rows) >= limit:
+                    break
                 all_rows.append(enrich_row(r))
             first_offset += len(page_rows)
-            print(f"  [{province_label}] {len(all_rows)}/{total_records}...")
+            print(f"  [{scope_name}] {len(all_rows)}/{limit}...")
 
         return all_rows
     finally:
@@ -480,7 +445,6 @@ def merge_filings(
     merged = list(by_key.values())
     for f in merged:
         f.update(compute_deadlines(f.get("decision_type", ""), f.get("announcement_date_tr", ""), today))
-        f["priority_district"] = is_priority_district(f.get("province", ""), f.get("district", ""))
 
     merged.sort(
         key=lambda x: (

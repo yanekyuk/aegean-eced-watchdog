@@ -1,4 +1,4 @@
-"""Static HTML dashboard, per-filing digest HTML renderer, and RSS 2.0 feed builder."""
+"""Static HTML dashboard with interactive Türkiye Leaflet map, per-filing digests, Turkish guide, and RSS 2.0 feed."""
 
 from __future__ import annotations
 
@@ -10,6 +10,11 @@ from email.utils import format_datetime
 from pathlib import Path
 from typing import Any
 from xml.etree import ElementTree as ET
+
+from .geo import province_centroid
+
+LEAFLET_CSS = "https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+LEAFLET_JS = "https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
 
 BASE_CSS = """
 :root {
@@ -44,31 +49,53 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
   background: var(--bg);
   color: var(--text);
-  line-height: 1.5;
+  line-height: 1.6;
 }
-.wrap { max-width: 1220px; margin: 0 auto; padding: 24px 18px 64px; }
+.wrap { max-width: 1240px; margin: 0 auto; padding: 24px 18px 64px; }
 a { color: var(--accent); text-decoration: none; }
 a:hover { text-decoration: underline; }
 header { border-bottom: 1px solid var(--border); padding-bottom: 16px; margin-bottom: 20px; }
 h1 { margin: 0 0 6px; font-size: 1.55rem; }
+h2 { margin: 26px 0 10px; font-size: 1.2rem; }
+h3 { margin: 16px 0 8px; font-size: 1rem; }
 .sub { color: var(--muted); font-size: 0.92rem; margin: 0; }
-.meta-bar { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 12px; font-size: 0.85rem; color: var(--muted); }
-.stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 10px; margin: 16px 0 20px; }
+.meta-bar { display: flex; flex-wrap: wrap; gap: 14px; margin-top: 12px; font-size: 0.85rem; color: var(--muted); }
+.stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 10px; margin: 16px 0 18px; }
 .stat { background: var(--surface); border: 1px solid var(--border); border-radius: 8px; padding: 12px 14px; }
 .stat .num { font-size: 1.45rem; font-weight: 700; }
 .stat .lbl { font-size: 0.78rem; color: var(--muted); }
+.map-box {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 18px;
+}
+#map { width: 100%; height: 420px; background: var(--badge-bg); }
+#digest-map { width: 100%; height: 320px; background: var(--badge-bg); }
+.map-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  padding: 9px 14px;
+  font-size: 0.8rem;
+  color: var(--muted);
+  border-top: 1px solid var(--border);
+}
+.dot { display: inline-block; width: 10px; height: 10px; border-radius: 50%; margin-right: 5px; vertical-align: middle; }
 .controls { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; margin-bottom: 16px; }
-input[type="search"] {
-  flex: 1 1 240px;
+input[type="search"], select.filter-select {
   padding: 8px 12px;
   border-radius: 6px;
   border: 1px solid var(--border);
   background: var(--surface);
   color: var(--text);
-  font-size: 0.92rem;
+  font-size: 0.9rem;
 }
+input[type="search"] { flex: 1 1 240px; }
+select.filter-select { min-width: 170px; }
 button.pill {
-  padding: 6px 11px;
+  padding: 7px 12px;
   border-radius: 999px;
   border: 1px solid var(--border);
   background: var(--surface);
@@ -82,12 +109,12 @@ button.pill.active { background: var(--accent); border-color: var(--accent); col
   background: var(--surface);
   border: 1px solid var(--border);
   border-radius: 8px;
-  padding: 14px 16px;
+  padding: 15px 17px;
 }
-.card.prio { border-left: 4px solid var(--accent); }
+.card.ek1 { border-left: 4px solid var(--accent); }
 .row-top { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px; align-items: baseline; }
 .title { font-weight: 600; font-size: 0.98rem; }
-.badges { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 6px; }
+.badges { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 7px; }
 .badge {
   display: inline-block;
   padding: 2px 8px;
@@ -100,24 +127,53 @@ button.pill.active { background: var(--accent); border-color: var(--accent); col
 .badge.warn { border-color: var(--amber); color: var(--amber); font-weight: 600; }
 .badge.ok { border-color: var(--green); color: var(--green); }
 .badge.muted { color: var(--muted); }
-.detail { font-size: 0.86rem; color: var(--muted); margin: 8px 0; }
+.detail { font-size: 0.87rem; color: var(--muted); margin: 8px 0; }
 .actions { display: flex; flex-wrap: wrap; gap: 12px; font-size: 0.84rem; margin-top: 8px; }
 .notice {
   margin-top: 28px;
-  padding: 12px 14px;
+  padding: 14px 16px;
   border: 1px solid var(--border);
   border-radius: 8px;
-  font-size: 0.82rem;
+  font-size: 0.84rem;
   color: var(--muted);
 }
 table.kv { width: 100%; border-collapse: collapse; margin: 12px 0; font-size: 0.9rem; }
-table.kv th, table.kv td { border: 1px solid var(--border); padding: 8px 10px; text-align: left; vertical-align: top; }
-table.kv th { width: 220px; background: var(--badge-bg); }
+table.kv th, table.kv td { border: 1px solid var(--border); padding: 8px 11px; text-align: left; vertical-align: top; }
+table.kv th { width: 240px; background: var(--badge-bg); }
 code { background: var(--badge-bg); padding: 1px 5px; border-radius: 4px; font-size: 0.85em; }
-blockquote { margin: 10px 0; padding: 10px 14px; border-left: 3px solid var(--accent); background: var(--surface); font-size: 0.9rem; }
-.hit { margin: 6px 0; font-size: 0.88rem; }
+blockquote { margin: 10px 0; padding: 11px 15px; border-left: 3px solid var(--accent); background: var(--surface); font-size: 0.9rem; }
+.hit { margin: 7px 0; font-size: 0.88rem; }
 .pno { font-weight: 700; color: var(--accent); }
+.leaflet-popup-content { color: #1f2328; font-size: 0.85rem; line-height: 1.45; }
 """
+
+TR_SIGNAL_LABELS = {
+    "coordinates_and_footprint": "Koordinatlar, Parsel ve Alan Büyüklüğü",
+    "water_and_discharge": "Su Kullanımı, Hidrojeoloji ve Deşarj",
+    "protected_land_and_olive": "Korunan Alanlar, Orman ve Zeytinlikler",
+    "ecology_and_baseline": "Flora, Fauna ve Saha Metodolojisi",
+    "pollutants_and_hazards": "Emisyonlar, Jeokimya ve Atıklar",
+    "cost_and_capacity": "Proje Bedeli, Güç ve Kapasite",
+}
+
+TR_BASELINE_STATUS = {
+    "field_survey_documented": "Belgelenmiş saha çalışması mevcut",
+    "literature_only": "Yalnızca literatür taramasına dayalı",
+    "mixed_or_unclear": "Karışık veya yöntemi belirsiz",
+    "not_found": "İncelenen sayfalarda tespit edilemedi",
+    "completed_pre_project": "Başvuru öncesinde tamamlanmış",
+    "promised_post_approval_only": "Yalnızca onay sonrasına ertelenmiş",
+    "unclear": "Belirsiz",
+    "quantitatively_assessed": "Nicel değerlendirme yapılmış",
+    "superficial_or_boilerplate": "Yüzeysel veya şablon düzeyinde",
+    "omitted_or_not_found": "Eksik veya tespit edilemedi",
+}
+
+TR_SEVERITY = {
+    "high": "YÜKSEK",
+    "medium": "ORTA",
+    "low": "DÜŞÜK",
+}
 
 
 def _esc(val: Any) -> str:
@@ -140,14 +196,14 @@ def _clock_badge_html(clock: dict[str, Any] | None) -> str:
     code = clock.get("code", "")
     label = {
         "iyuk_20a": "İYUK 20/A",
-        "aski_10d": "10g Askı",
-        "hkt": "HKT",
-        "idk": "İDK",
-    }.get(code, "Süre")
+        "aski_10d": "10 Günlük Askı",
+        "hkt": "HKT Duyurusu",
+        "idk": "İDK İncelemesi",
+    }.get(code, "Yasal Süre")
     if dr is None:
-        return f'<span class="badge warn">{_esc(label)} · tarihi kontrol et</span>'
+        return f'<span class="badge warn">{_esc(label)} · Tarih duyuru metnindedir</span>'
     if dr < 0:
-        return f'<span class="badge muted">{_esc(label)} · süre doldu ({clock["deadline"]})</span>'
+        return f'<span class="badge muted">{_esc(label)} · Süresi doldu ({clock["deadline"]})</span>'
     if dr <= 7:
         return f'<span class="badge urgent">{_esc(label)} · {dr} gün kaldı ({clock["deadline"]})</span>'
     if dr <= 15:
@@ -155,33 +211,22 @@ def _clock_badge_html(clock: dict[str, Any] | None) -> str:
     return f'<span class="badge ok">{_esc(label)} · {dr} gün kaldı ({clock["deadline"]})</span>'
 
 
-TR_SIGNAL_LABELS = {
-    "coordinates_and_footprint": "Koordinatlar, Parsel ve Alan Büyüklüğü",
-    "water_and_discharge": "Su Kullanımı, Hidrojeoloji ve Deşarj",
-    "protected_land_and_olive": "Korunan Alanlar, Orman ve Zeytinlikler",
-    "ecology_and_baseline": "Flora, Fauna ve Saha Metodolojisi",
-    "pollutants_and_hazards": "Emisyonlar, Jeokimya ve Atıklar",
-    "cost_and_capacity": "Proje Bedeli, Güç ve Kapasite",
-}
-
-TR_BASELINE_STATUS = {
-    "field_survey_documented": "Belgelenmiş saha çalışması",
-    "literature_only": "Yalnızca literatür",
-    "mixed_or_unclear": "Karışık / belirsiz",
-    "not_found": "Bulunamadı",
-    "completed_pre_project": "Önceden tamamlanmış",
-    "promised_post_approval_only": "Yalnızca onay sonrasına taahhüt",
-    "unclear": "Belirsiz",
-    "quantitatively_assessed": "Nicel değerlendirme var",
-    "superficial_or_boilerplate": "Yüzeysel / şablon",
-    "omitted_or_not_found": "Eksik / bulunamadı",
-}
-
-TR_SEVERITY = {
-    "high": "YÜKSEK",
-    "medium": "ORTA",
-    "low": "DÜŞÜK",
-}
+def _marker_color(filing: dict[str, Any], has_digest: bool) -> str:
+    clock = _best_active_clock(filing)
+    if clock and clock.get("days_remaining") is not None:
+        dr = clock["days_remaining"]
+        if 0 <= dr <= 7:
+            return "#f85149"  # urgent red
+        if 8 <= dr <= 15:
+            return "#d29922"  # amber
+        if dr > 15:
+            return "#3fb950"  # green active
+        return "#6e7681"  # expired
+    if clock:
+        return "#d29922"  # HKT/IDK active
+    if filing.get("project_type") == "Ek-1" or has_digest:
+        return "#58a6ff"
+    return "#6e7681"
 
 
 def render_digest_html(saved: dict[str, Any], raw_md_filename: str) -> str:
@@ -190,22 +235,42 @@ def render_digest_html(saved: dict[str, Any], raw_md_filename: str) -> str:
     doc_meta = docs[0]
     pdf_info = saved["pdf_info"]
     analysis = saved["analysis"]
-    filing_id = doc_meta.get("filing_id") or "unknown"
+    filing_id = doc_meta.get("filing_id") or "bilinmiyor"
     pdf_url = doc_meta["pdf_urls"][0]["url"] if doc_meta.get("pdf_urls") else ""
+
+    geo = analysis.get("geo") or {}
+    if geo.get("lat") and geo.get("lon"):
+        g_lat, g_lon = geo["lat"], geo["lon"]
+        g_prec = geo.get("precision", "province_centroid")
+        g_pts = geo.get("points") or []
+    else:
+        g_lat, g_lon = province_centroid(filing.get("province", ""))
+        g_prec = "province_centroid"
+        g_pts = []
+
+    geo_caption = (
+        f"PDF metninden çıkarılan kesin proje koordinatları ({geo.get('point_count', len(g_pts))} nokta, "
+        f"datum: {geo.get('datum') or 'WGS84'}, sayfa: {', '.join(f's.{p}' for p in (geo.get('pages') or [])[:6])})."
+        if g_prec == "exact_pdf"
+        else "PDF dosyasında metin olarak okunabilir koordinat tablosu tespit edilemediği için il merkezi yaklaşık konum olarak gösterilmektedir."
+    )
+    zoom_lvl = 12 if g_prec == "exact_pdf" else 8
+    osm_url = f"https://www.openstreetmap.org/?mlat={g_lat}&mlon={g_lon}#map={zoom_lvl}/{g_lat}/{g_lon}"
+    gmaps_url = f"https://www.google.com/maps/search/?api=1&query={g_lat},{g_lon}"
 
     checks = analysis["audit_checks"]
     check_rows = [
-        ("Saha / arazi çalışması geçiyor mu", checks["mentions_field_survey"]),
-        ("Literatür taraması ifadesi geçiyor mu", checks["mentions_literature_only_cue"]),
-        ("Mevsimsel örnekleme geçiyor mu", checks["mentions_seasonal_sampling"]),
-        ("Kümülatif etki değerlendirmesi geçiyor mu", checks["mentions_cumulative_impact"]),
-        ("Zeytincilik Kanunu (3573 / zeytinlik)", checks["mentions_olive_law_3573"]),
-        ("Yeraltı suyu / akifer / hidrojeoloji", checks["mentions_groundwater_or_aquifer"]),
-        ("Endemik tür / IUCN / Bern Sözleşmesi", checks["mentions_iucn_or_endemic"]),
+        ("Saha veya arazi çalışması ifadesi", checks["mentions_field_survey"]),
+        ("Literatür taraması ifadesi", checks["mentions_literature_only_cue"]),
+        ("Mevsimsel örnekleme ifadesi", checks["mentions_seasonal_sampling"]),
+        ("Kümülatif etki değerlendirmesi ifadesi", checks["mentions_cumulative_impact"]),
+        ("3573 sayılı Zeytincilik Kanunu veya zeytinlik ifadesi", checks["mentions_olive_law_3573"]),
+        ("Yeraltı suyu, akifer veya hidrojeoloji ifadesi", checks["mentions_groundwater_or_aquifer"]),
+        ("Endemik tür, IUCN veya Bern Sözleşmesi ifadesi", checks["mentions_iucn_or_endemic"]),
     ]
     checks_html = "\n".join(
         f"<tr><th>{_esc(lbl)}</th><td>"
-        + ('<span class="badge ok">Metinde var</span>' if ok else '<span class="badge urgent">BULUNAMADI (elle kontrol edin)</span>')
+        + ('<span class="badge ok">Metinde yer almaktadır</span>' if ok else '<span class="badge urgent">Metinde tespit edilemedi; doğrudan PDF üzerinden kontrol ediniz</span>')
         + "</td></tr>"
         for lbl, ok in check_rows
     )
@@ -219,7 +284,7 @@ def render_digest_html(saved: dict[str, Any], raw_md_filename: str) -> str:
         hits_html = "\n".join(
             f'<div class="hit"><span class="pno">[s. {h["page"]}]</span> <code>{_esc(h["match"])}</code> — {_esc(h["snippet"])}</div>'
             for h in sig["samples"][:6]
-        ) or '<div class="hit" style="color:var(--muted)">Eşleşen metin bulunamadı.</div>'
+        ) or '<div class="hit" style="color:var(--muted)">İlgili başlık altında metin eşleşmesi bulunamamıştır.</div>'
         sig_blocks.append(
             f'<section class="card"><h3>{_esc(tr_label)} '
             f'<span style="color:var(--muted);font-weight:400;font-size:0.85rem">({sig["page_count"]} sayfa: {_esc(pages_preview or "yok")})</span></h3>'
@@ -258,13 +323,13 @@ def render_digest_html(saved: dict[str, Any], raw_md_filename: str) -> str:
         if res.get("executive_summary_en"):
             en_details = (
                 f'<details style="margin-top:8px;font-size:0.86rem;color:var(--muted);">'
-                f'<summary style="cursor:pointer;">English summary</summary>'
+                f'<summary style="cursor:pointer;">İngilizce özet (English summary)</summary>'
                 f'<p style="margin:6px 0 0;">{_esc(res["executive_summary_en"])}</p></details>'
             )
         llm_block = f"""
   <h2>Yapay Zeka Destekli Bilimsel Ön Değerlendirme <span class="badge">{_esc(llm.get('model'))}</span></h2>
-  <p class="sub">PDF içinden seçilen {len(llm.get('pages_sent') or [])} sayfadan ({_esc(pages_used)}) üretilmiştir. Tüm sayısal verileri resmi PDF'teki <code>[s. N]</code> sayfalarından doğrulayın.</p>
-  <section class="card prio">
+  <p class="sub">Bu değerlendirme, resmi PDF dosyasından seçilen {len(llm.get('pages_sent') or [])} sayfa ({_esc(pages_used)}) esas alınarak hazırlanmıştır. Tüm sayısal verilerin ve tespitlerin resmi PDF belgesindeki ilgili <code>[s. N]</code> sayfalarından doğrulanması gerekir.</p>
+  <section class="card ek1">
     <p><strong>Özet:</strong> {_esc(res['executive_summary_tr'])}</p>
     {en_details}
     <div class="badges" style="margin-top:10px;">
@@ -275,24 +340,37 @@ def render_digest_html(saved: dict[str, Any], raw_md_filename: str) -> str:
     <p class="detail" style="margin-top:10px;"><strong>Zeytinlik ve Korunan Alanlar:</strong> {_esc(ba['olive_and_protected_status'])}<br/>{_esc(ba['explanation'])}</p>
   </section>
   {f'<h3>Öne Çıkan Sayısal Bulgular</h3><table class="kv">{facts_html}</table>' if facts_html else ''}
-  {f'<h3>Bilimsel ve Metodolojik Uyarılar</h3><section class="card">{flags_html}</section>' if flags_html else ''}
-  {f'<h3>HKT ve İYUK 20/A İçin Taslak Teknik Sorular</h3><ul>{qs_html}</ul>' if qs_html else ''}
-  <p class="sub"><em>Kapsam sınırları:</em> {_esc(res.get('data_limitations', ''))}</p>
+  {f'<h3>Bilimsel ve Metodolojik Bulgular</h3><section class="card">{flags_html}</section>' if flags_html else ''}
+  {f'<h3>HKT Tutanakları ve İdari Başvurular İçin Taslak Teknik Sorular</h3><ul>{qs_html}</ul>' if qs_html else ''}
+  <p class="sub"><em>İnceleme sınırları:</em> {_esc(res.get('data_limitations', ''))}</p>
 """
+
+    map_payload = json.dumps(
+        {
+            "lat": g_lat,
+            "lon": g_lon,
+            "zoom": zoom_lvl,
+            "precision": g_prec,
+            "points": g_pts,
+            "label": f"{filing['province']} / {filing['district']} — {filing['project_name'][:90]}",
+        },
+        ensure_ascii=False,
+    )
 
     return f"""<!doctype html>
 <html lang="tr">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>e-ÇED Ön Özet #{_esc(filing_id)} — {_esc(filing['district'])}</title>
+  <title>e-ÇED Ön Özet #{_esc(filing_id)} — {_esc(filing['province'])} / {_esc(filing['district'])}</title>
+  <link rel="stylesheet" href="{LEAFLET_CSS}" />
   <style>{BASE_CSS}</style>
 </head>
 <body>
 <div class="wrap">
   <header>
-    <div style="font-size:0.85rem;margin-bottom:8px;"><a href="../index.html">← Ege e-ÇED İzleme listesine dön</a> · <a href="../rehber.html">Nasıl Kullanılır? (Rehber)</a> · <a href="{_esc(raw_md_filename)}">Ham Markdown (.md)</a></div>
-    <h1>e-ÇED Ön Özet #{_esc(filing_id)} — {_esc(filing['district'])} / {_esc(filing['province'])}</h1>
+    <div style="font-size:0.85rem;margin-bottom:8px;"><a href="../index.html">← Türkiye e-ÇED İzleme listesine dön</a> · <a href="../rehber.html">Kullanım ve İnceleme Rehberi</a> · <a href="{_esc(raw_md_filename)}">Ham Markdown (.md)</a></div>
+    <h1>e-ÇED Ön Özet #{_esc(filing_id)} — {_esc(filing['province'])} / {_esc(filing['district'])}</h1>
     <p class="sub">{_esc(filing['project_name'])}</p>
     <div class="badges" style="margin-top:10px;">
       <span class="badge">{_esc(filing['decision_type'])}</span>
@@ -305,10 +383,16 @@ def render_digest_html(saved: dict[str, Any], raw_md_filename: str) -> str:
     <tr><th>Proje Sahibi</th><td>{_esc(filing['project_owner'])}</td></tr>
     <tr><th>Hazırlayan Kuruluş</th><td>{_esc(doc_meta.get('consulting_firm') or '—')}</td></tr>
     <tr><th>Sektör / Alt Sektör</th><td>{_esc(filing['sector'])} / {_esc(filing['sub_sector'])}</td></tr>
-    <tr><th>Duyuru Tarihi</th><td><code>{_esc(filing['announcement_date_tr'])}</code> (yükleme: <code>{_esc(doc_meta.get('submitted_at') or '—')}</code>)</td></tr>
-    <tr><th>PDF Kapsamı</th><td>{pdf_info['bytes'] / 1024 / 1024:.2f} MB · {analysis['page_count']} sayfa ({analysis['text_pages']} metin / {analysis['scanned_or_blank_pages']} taranmış-görüntü) · SHA-256 <code>{_esc(pdf_info['sha256'][:16])}…</code></td></tr>
-    <tr><th>Resmi Bağlantılar</th><td><a href="{_esc(doc_meta.get('portal_doc_url', ''))}" target="_blank" rel="noopener">e-ÇED Portal Kaydı</a> · <a href="{_esc(pdf_url)}" target="_blank" rel="noopener">Resmi PDF Dosyası</a></td></tr>
+    <tr><th>Duyuru Tarihi</th><td><code>{_esc(filing['announcement_date_tr'])}</code> (belge yükleme tarihi: <code>{_esc(doc_meta.get('submitted_at') or '—')}</code>)</td></tr>
+    <tr><th>PDF Kapsamı</th><td>{pdf_info['bytes'] / 1024 / 1024:.2f} MB · {analysis['page_count']} sayfa ({analysis['text_pages']} metin sayfası / {analysis['scanned_or_blank_pages']} taranmış veya görüntü sayfası) · SHA-256 <code>{_esc(pdf_info['sha256'][:16])}…</code></td></tr>
+    <tr><th>Resmi Bağlantılar</th><td><a href="{_esc(doc_meta.get('portal_doc_url', ''))}" target="_blank" rel="noopener">e-ÇED Portal Kaydı</a> · <a href="{_esc(pdf_url)}" target="_blank" rel="noopener">Resmi PDF Dosyası</a> · <a href="{_esc(osm_url)}" target="_blank" rel="noopener">OpenStreetMap</a> · <a href="{_esc(gmaps_url)}" target="_blank" rel="noopener">Google Haritalar</a></td></tr>
   </table>
+
+  <h2>Konum Haritası</h2>
+  <div class="map-box">
+    <div id="digest-map"></div>
+    <div class="map-legend"><span>{_esc(geo_caption)}</span></div>
+  </div>
 
   {llm_block}
 
@@ -317,18 +401,46 @@ def render_digest_html(saved: dict[str, Any], raw_md_filename: str) -> str:
 
   <h2>Otomatik Metin Taraması (Deterministik)</h2>
   <table class="kv">{checks_html}</table>
-  <p class="sub">OCR içermeyen taranmış harita ve ekler otomatik metin taramasına dahil değildir.</p>
+  <p class="sub">Metin katmanı (OCR) bulunmayan taranmış harita ve kurum görüşü ekleri otomatik metin taramasına dahil edilmemiştir.</p>
 
   <h2>Sayfa Kaynaklı Çıkarılan Bulgular</h2>
   <div class="cards">{''.join(sig_blocks)}</div>
 
   <h2>Belge Bölüm Haritası</h2>
-  <ul>{headings_html or '<li style="color:var(--muted)">Yapılandırılmış bölüm başlığı tespit edilemedi.</li>'}</ul>
+  <ul>{headings_html or '<li style="color:var(--muted)">Belge içinde yapılandırılmış bölüm başlığı tespit edilememiştir.</li>'}</ul>
 
   <div class="notice">
-    Çevre, Şehircilik ve İklim Değişikliği Bakanlığı'nın kamuya açık <code>eced-duyuru.csb.gov.tr</code> portalından üretilen bilgilendirme amaçlı şeffaflık aracıdır. Tüm alıntılar 1 tabanlı PDF sayfa numarasıyla <code>[s. N]</code> gösterilir. Yasal süreler otomatik hesaplanır; kesin süre ve hukuki işlem için mutlaka avukat/hukukçu doğrulaması alın.
+    Bu sayfa, T.C. Çevre, Şehircilik ve İklim Değişikliği Bakanlığı'nın kamuya açık <code>eced-duyuru.csb.gov.tr</code> duyuru portalındaki kayıtlar esas alınarak bilgilendirme amacıyla hazırlanmıştır. Alıntıların tamamı 1 tabanlı PDF sayfa numarasıyla (<code>[s. N]</code>) gösterilmektedir. Yasal süreler otomatik olarak hesaplanır; kesin sürelerin ve hukuki başvuru yollarının yetkili hukukçular tarafından teyit edilmesi gerekir.
   </div>
 </div>
+<script src="{LEAFLET_JS}"></script>
+<script>
+(() => {{
+  if (typeof L === 'undefined') return;
+  const g = {map_payload};
+  const map = L.map('digest-map').setView([g.lat, g.lon], g.zoom);
+  L.tileLayer('https://{{s}}.tile.openstreetmap.org/{{z}}/{{x}}/{{y}}.png', {{
+    maxZoom: 18,
+    attribution: '&copy; OpenStreetMap katkıda bulunanları'
+  }}).addTo(map);
+  if (g.precision === 'exact_pdf' && g.points.length > 1) {{
+    const latlngs = g.points.map(p => [p[0], p[1]]);
+    const poly = L.polyline(latlngs, {{ color: '#58a6ff', weight: 3, opacity: 0.85 }}).addTo(map);
+    for (const ll of latlngs.slice(0, 30)) {{
+      L.circleMarker(ll, {{ radius: 4, color: '#ffffff', fillColor: '#f85149', fillOpacity: 0.9, weight: 1 }}).addTo(map);
+    }}
+    map.fitBounds(poly.getBounds().pad(0.25));
+  }} else {{
+    L.circleMarker([g.lat, g.lon], {{
+      radius: g.precision === 'exact_pdf' ? 8 : 11,
+      color: '#ffffff',
+      fillColor: g.precision === 'exact_pdf' ? '#f85149' : '#58a6ff',
+      fillOpacity: g.precision === 'exact_pdf' ? 0.9 : 0.45,
+      weight: 2
+    }}).bindPopup(g.label).addTo(map).openPopup();
+  }}
+}})();
+</script>
 </body>
 </html>
 """
@@ -337,16 +449,16 @@ def render_digest_html(saved: dict[str, Any], raw_md_filename: str) -> str:
 def build_rss(filings: list[dict[str, Any]], digests_index: set[str], site_url: str) -> str:
     rss = ET.Element("rss", version="2.0")
     channel = ET.SubElement(rss, "channel")
-    ET.SubElement(channel, "title").text = "Ege e-ÇED İzleme (İzmir ve Manisa)"
+    ET.SubElement(channel, "title").text = "Türkiye e-ÇED İzleme Platformu"
     ET.SubElement(channel, "link").text = site_url
     ET.SubElement(channel, "description").text = (
-        "İzmir ve Manisa (Gediz Havzası) için kamuya açık e-ÇED duyuruları, "
-        "10 günlük askı ve 30 günlük İYUK 20/A yasal süre takibi ile sayfa kaynaklı PDF ön özetleri."
+        "T.C. Çevre, Şehircilik ve İklim Değişikliği Bakanlığı'nın 81 ildeki kamuya açık e-ÇED duyuruları, "
+        "10 günlük askı ve 30 günlük İYUK Madde 20/A süre takibi ile sayfa kaynaklı teknik ön özetler."
     )
     ET.SubElement(channel, "language").text = "tr"
     ET.SubElement(channel, "lastBuildDate").text = format_datetime(datetime.now(timezone.utc))
 
-    for f in filings[:50]:
+    for f in filings[:80]:
         docs = f.get("documents") or []
         doc_meta = docs[0] if docs else {}
         filing_id = doc_meta.get("filing_id")
@@ -354,9 +466,8 @@ def build_rss(filings: list[dict[str, Any]], digests_index: set[str], site_url: 
         pdf_url = doc_meta["pdf_urls"][0]["url"] if doc_meta.get("pdf_urls") else None
 
         item = ET.SubElement(channel, "item")
-        prio_prefix = "[ÖNCELİKLİ] " if f.get("priority_district") else ""
         ET.SubElement(item, "title").text = (
-            f"{prio_prefix}[{f['province']}/{f['district']}] {f['decision_type']} — {f['project_name']}"
+            f"[{f['province']}/{f['district']}] {f['decision_type']} ({f['project_type']}) — {f['project_name']}"
         )
         if filing_id and filing_id in digests_index and site_url.startswith("http"):
             ET.SubElement(item, "link").text = f"{site_url.rstrip('/')}/digests/{filing_id}.html"
@@ -380,13 +491,13 @@ def build_rss(filings: list[dict[str, Any]], digests_index: set[str], site_url: 
         desc_parts = [
             f"Proje Sahibi: {f.get('project_owner', '')}",
             f"Sektör: {f.get('sector', '')} / {f.get('sub_sector', '')} ({f.get('project_type', '')})",
-            f"Yasal Süreler: {clocks_txt or '—'}",
+            f"Yasal Süreler: {clocks_txt or 'Belirtilmemiş'}",
             f"Resmi Kayıt: {portal_url}",
         ]
         if pdf_url:
             desc_parts.append(f"Resmi PDF: {pdf_url}")
         if filing_id and filing_id in digests_index:
-            desc_parts.append(f"Sayfa Kaynaklı Ön Özet: digests/{filing_id}.html")
+            desc_parts.append(f"Sayfa Kaynaklı Ön Özet: {site_url.rstrip('/')}/digests/{filing_id}.html")
         if f.get("detail_text"):
             desc_parts.append("")
             desc_parts.append(f["detail_text"])
@@ -397,43 +508,44 @@ def build_rss(filings: list[dict[str, Any]], digests_index: set[str], site_url: 
 
 
 def render_guide_html() -> str:
-    template_text = """# Teknik İnceleme Notu — e-ÇED #[DOSYA_NO] ([İLÇE] / [İL])
+    template_text = """# Teknik İnceleme Notu — e-ÇED #[DOSYA_NO] ([İL] / [İLÇE])
 
-- Resmi kayıt: [e-ÇED portal bağlantısı]
-- Aşama ve yasal son tarih: [10 günlük askı / HKT tarihi / 30 günlük İYUK 20/A son günü]
+- Resmi e-ÇED Kaydı: [e-ÇED portal bağlantısı]
+- Aşama ve Yasal Son Tarih: [10 günlük askı süresi / HKT tarihi / 30 günlük İYUK Madde 20/A son günü]
 
-1. Başlangıç verisi ve örnekleme eksikleri ([s. N]):
-   - ...
+1. Başlangıç Verisi ve Örnekleme Eksiklikleri ([s. N]):
+   - Raporda saha çalışması tarihleri, mevsimsel tekrar durumu veya örnekleme yöntemine ilişkin tespit edilen eksiklikleri sayfa numarasıyla belirtiniz.
 
-2. Ekolojik, hidrolojik veya jeokimyasal çelişkiler ([s. N]):
-   - ...
+2. Ekolojik, Hidrolojik veya Jeokimyasal Çelişkiler ([s. N]):
+   - Su kaynakları, denizel/karasal ekosistemler, atık yönetimi veya emisyon varsayımlarındaki bilimsel tutarsızlıkları sayfa numarasıyla özetleyiniz.
 
-3. Kümülatif bölgesel etki ve mevzuat boşlukları (3573 / 5403 / ÖÇK) ([s. N]):
-   - ...
+3. Kümülatif Bölgesel Etki ve Mevzuat Boşlukları ([s. N]):
+   - Çevredeki mevcut tesislerle birlikte ortaya çıkacak birikimli etkiler ile 3573 sayılı Zeytincilik Kanunu, 5403 sayılı Toprak Koruma Kanunu veya korunan alan statüsüne ilişkin eksiklikleri yazınız.
 
-4. HKT tutanağı veya İYUK 20/A dilekçesi için 3–5 somut teknik soru:
-   - ... ([s. N])
-   - ... ([s. N])
+4. HKT Tutanağı veya İdari Başvuru İçin Taslak Teknik Sorular:
+   - [Somut, tarafsız ve ölçülebilir teknik soru 1] ([s. N])
+   - [Somut, tarafsız ve ölçülebilir teknik soru 2] ([s. N])
+   - [Somut, tarafsız ve ölçülebilir teknik soru 3] ([s. N])
 
-5. Önerilen iletim kanalı:
-   - İzmir Barosu Çevre Komisyonu / TMMOB İzmir İKK / EGEÇEP / İlçe İnisiyatifi / Yerel Basın"""
+5. İletilmesi Önerilen Kurum ve Paydaşlar:
+   - İlgili İl Barosu Çevre ve Kent Hukuku Komisyonu / TMMOB İl Koordinasyon Kurulu / Yerel Çevre Platformu / Belediye Çevre Birimi / Yerel Basın"""
 
     return f"""<!doctype html>
 <html lang="tr">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Nasıl Kullanılır? — Ege e-ÇED İzleme</title>
+  <title>Kullanım ve Bilimsel İnceleme Rehberi — Türkiye e-ÇED İzleme Platformu</title>
   <style>
 {BASE_CSS}
 pre {{
   background: var(--surface);
   border: 1px solid var(--border);
   border-radius: 8px;
-  padding: 14px 16px;
+  padding: 15px 17px;
   overflow-x: auto;
   font-size: 0.85rem;
-  line-height: 1.5;
+  line-height: 1.55;
   white-space: pre-wrap;
 }}
 .step-grid {{
@@ -456,77 +568,78 @@ pre {{
 <body>
 <div class="wrap">
   <header>
-    <div style="font-size:0.85rem;margin-bottom:8px;"><a href="index.html">← Ege e-ÇED İzleme listesine dön</a> · <a href="feed.xml">RSS 2.0 Akışı</a></div>
-    <h1>Bu Site Ne İşe Yarar ve Nasıl Kullanılır?</h1>
-    <p class="sub">Çevre bilimciler, ekologlar, mühendisler, hukukçular ve yerel gönüllüler için sürdürülebilir, sayfa kaynaklı ÇED inceleme rehberi.</p>
+    <div style="font-size:0.85rem;margin-bottom:8px;"><a href="index.html">← Türkiye e-ÇED İzleme listesine dön</a> · <a href="feed.xml">RSS 2.0 Akışı</a></div>
+    <h1>Platformun Amacı ve Bilimsel İnceleme Rehberi</h1>
+    <p class="sub">Çevre bilimciler, ekologlar, mühendisler, hukukçular, yerel gazeteciler ve yurttaşlar için sayfa kaynaklı ÇED inceleme kılavuzu.</p>
   </header>
 
-  <section class="card prio">
-    <h2 style="margin-top:0;">1. Sorun ve Nihai Hedef</h2>
-    <p>Çevre, Şehircilik ve İklim Değişikliği Bakanlığı tüm ÇED başvurularını, Halkın Katılımı Toplantılarını (HKT) ve kararları kamuya açık olarak yayımlar. Ancak gerçek hayatta iki büyük engel vardır:</p>
+  <section class="card ek1">
+    <h2 style="margin-top:0;">1. Karşılaşılan Temel Sorun ve Nihai Amaç</h2>
+    <p>T.C. Çevre, Şehircilik ve İklim Değişikliği Bakanlığı, Türkiye genelindeki tüm Çevresel Etki Değerlendirmesi (ÇED) başvurularını, Halkın Katılımı Toplantısı (HKT) ilanlarını ve nihai kararları kamuya açık biçimde yayımlamaktadır. Buna karşın, kamusal denetimin etkili biçimde yürütülmesini zorlaştıran iki temel yapısal engel bulunmaktadır:</p>
     <ul>
-      <li><strong>Süreler çok kısadır:</strong> Askı/görüş ve HKT duyuruları genellikle <strong>10 takvim günü</strong>, <em>ÇED Olumlu</em> veya <em>ÇED Gerekli Değildir</em> kararlarına karşı iptal davası açma süresi ise <strong>İYUK Madde 20/A</strong> gereği yalnızca <strong>30 takvim günüdür</strong> (ve idareye yapılan İYUK 11 başvuruları bu süreyi durdurmaz).</li>
-      <li><strong>Dosyalar çok ağırdır:</strong> Tek bir Ek-2 Proje Tanıtım Dosyası 300+ sayfa, bir Ek-1 ÇED Raporu 600–900+ sayfa ve 100–200 MB boyutundadır. Yerel sakinler, küçük haber merkezleri ve gönüllü avukatlar süre dolmadan bu raporların içindeki bilimsel eksikleri yakalayamaz.</li>
+      <li><strong>Yasal sürelerin son derece kısa olması:</strong> Projelerin halkın görüş ve önerilerine açılma (askı) ve HKT duyuru süreleri kural olarak <strong>10 takvim günüdür</strong>. <em>ÇED Olumlu</em> veya <em>ÇED Gerekli Değildir</em> kararlarına karşı açılacak iptal davaları ise 2577 sayılı İdari Yargılama Usulü Kanunu'nun (İYUK) <strong>20/A maddesi</strong> uyarınca ivedi yargılama usulüne tabidir. Bu kapsamda dava açma süresi yalnızca <strong>30 takvim günüdür</strong> ve idareye yapılan İYUK Madde 11 başvuruları bu süreyi durdurmaz.</li>
+      <li><strong>Dosyaların yüksek teknik hacmi:</strong> Ek-2 kapsamındaki Proje Tanıtım Dosyaları (PTD) çoğunlukla 200 ila 400 sayfa, Ek-1 kapsamındaki ÇED Raporları ise 600 ila 1.000 sayfa uzunluğunda ve yüzlerce megabayt boyutundadır. Yerel halkın, bağımsız gazetecilerin ve gönüllü avukatların kısa yasal süreler dolmadan bu belgelerdeki bilimsel ve metodolojik eksiklikleri tespit etmesi fiilen güçleşmektedir.</li>
     </ul>
-    <p><strong>Nihai hedef:</strong> Sosyal medyada öfke üretmek değil; <strong>resmi PDF sayfa numaralarına (<code>[s. N]</code>) dayanan, salt bilimsel ve tarafsız 1 sayfalık teknik inceleme notlarını</strong> yasal süre dolmadan dava ehliyeti ve yerel gücü olan kurumlara (barolar, meslek odaları, belediyeler, yerel platformlar ve gazeteciler) ulaştırmaktır. İdare mahkemelerinde kararların iptali soyut itirazlarla değil; raporun kendi içindeki metodolojik çelişkiler somut sayfa numaralarıyla gösterildiğinde gerçekleşir.</p>
+    <p><strong>Bu platformun nihai amacı</strong>, tartışma veya polemik üretmek değil; resmi PDF belgelerindeki sayfa numaralarına (<code>[s. N]</code>) dayanan, nesnel ve bilimsel olarak doğrulanmış <strong>bir sayfalık teknik inceleme notlarının</strong> yasal süreler dolmadan önce dava ehliyetine ve kurumsal kapasiteye sahip aktörlere ulaştırılmasını kolaylaştırmaktır. İdari yargıda ÇED kararlarının iptali genel ve soyut itirazlarla değil; raporun kendi içindeki başlangıç verisi eksikliklerinin, mevsimsel örnekleme boşluklarının ve mevzuat çelişkilerinin somut sayfa numaralarıyla ortaya konulmasıyla mümkün olmaktadır.</p>
   </section>
 
-  <h2>2. Bu Site Sizin Yerinizde Neyi Otomatik Yapar?</h2>
+  <h2>2. Platform Hangi İşlemleri Otomatik Olarak Yürütür?</h2>
   <table class="kv">
-    <tr><th>Günlük Tarama</th><td>İzmir ve Manisa (Gediz Havzası) duyurularını resmi <code>eced-duyuru.csb.gov.tr</code> portalından otomatik çeker, öncelikli ekolojik koridorları (Aliağa, Foça, Bergama, Dikili, Karaburun, Menemen, Urla, Çeşme, Gediz) öne çıkarır.</td></tr>
-    <tr><th>Yasal Süre Sayacı</th><td>Her duyuru için 10 günlük askı ve 30 günlük İYUK 20/A son tarihlerini deterministik olarak hesaplar; yaklaşan dosyaları kırmızı/sarı etiketlerle işaretler.</td></tr>
-    <tr><th>Sayfa Kaynaklı PDF Ön Özeti</th><td>Yüzlerce sayfalık resmi PDF'leri tarar; taranmış sayfa sayısını, su/deşarj, zeytinlik (3573), korunan alan, flora/fauna ve kümülatif etki verilerini <code>[s. N]</code> sayfa numaralarıyla çıkarır.</td></tr>
-    <tr><th>Yapay Zeka Ön Taraması</th><td>Öne çıkan sayfalardan Türkçe özet, başlangıç etüdü değerlendirmesi (saha çalışması mı, yalnızca literatür mü, mevsimsel örnekleme önceden mi yapılmış yoksa onay sonrasına mı ertelenmiş?) ve taslak teknik sorular üretir. <em>Bu katman hızlandırıcıdır; nihai kaynak her zaman resmi PDF'in kendisidir.</em></td></tr>
+    <tr><th>Türkiye Geneli Tarama</th><td>Bakanlığın resmi <code>eced-duyuru.csb.gov.tr</code> duyuru portalındaki 81 ile ait kayıtları düzenli olarak tarar, proje detaylarını ve resmi PDF bağlantılarını tek bir dizinde toplar.</td></tr>
+    <tr><th>Konum Haritası</th><td>Metin katmanında koordinat tablosu bulunan PDF dosyalarındaki UTM/ED50 ve WGS84 koordinatlarını haritaya aktarır; koordinat çıkarılamayan dosyaları ise yaklaşık il merkezi üzerinden görünür kılar.</td></tr>
+    <tr><th>Yasal Süre Hesaplama</th><td>Her duyuru için 10 günlük askı süresini ve 30 günlük İYUK Madde 20/A dava açma son tarihini otomatik olarak hesaplayarak süresi yaklaşan dosyaları önceliklendirir.</td></tr>
+    <tr><th>Sayfa Kaynaklı Ön Özet</th><td>Yüzlerce sayfalık PDF dosyalarını tarayarak taranmış sayfa oranını, su kullanımı, deşarj, zeytinlik, orman, korunan alan, flora/fauna ve kümülatif etki verilerini <code>[s. N]</code> sayfa numaralarıyla listeler.</td></tr>
+    <tr><th>Yapay Zeka Destekli Ön Değerlendirme</th><td>Raporun en yüksek bilgi yoğunluğuna sahip sayfalarından Türkçe özet, başlangıç etüdü değerlendirmesi ve taslak teknik sorular oluşturur. Bu aşama yalnızca ön taramayı hızlandırmak içindir; nihai doğrulama kaynağı her zaman resmi PDF belgesinin kendisidir.</td></tr>
   </table>
 
-  <h2>3. Bir Uzman / Bilim İnsanı Olarak Ne Yapabilirsiniz? (Ayda 1–2 Saat)</h2>
-  <p class="sub">Sıfırdan bir dernek kurmanıza, her gün siteyi takip etmenize veya kodla uğraşmanıza gerek yoktur. Yalnızca kendi uzmanlık alanınıza giren bir dosya düştüğünde şu 4 adımı uygulamanız yeterlidir:</p>
+  <h2>3. Bir Uzman veya Bilim İnsanı Olarak Nasıl Katkı Sunabilirsiniz?</h2>
+  <p class="sub">Bu sürece katılmak için yeni bir dernek kurmanız, yazılım bilgisine sahip olmanız ya da platformu her gün izlemeniz gerekmez. Yalnızca kendi uzmanlık alanınızla doğrudan örtüşen bir dosya yayımlandığında, ayda bir veya iki saat ayırarak aşağıdaki dört adımı izleyebilirsiniz:</p>
 
   <div class="step-grid">
     <div class="card">
-      <div class="step-num">Adım 1 · 5 dk</div>
-      <div class="title">Tek Bir Dosya Seçin</div>
-      <p class="detail">Ana sayfada <strong>Aktif Süreler</strong> ve <strong>Öncelikli Koridor</strong> filtrelerini açın. Kendi alanınıza giren (deniz/kıyı ekolojisi, su/hidrojeoloji, flora/fauna, tarım/zeytinlik, emisyon) ve süresi dolmamış tek bir dosyaya tıklayın.</p>
+      <div class="step-num">Adım 1 · Yaklaşık 5 dakika</div>
+      <div class="title">İlgili Dosyayı Seçiniz</div>
+      <p class="detail">Ana sayfada <strong>Yasal Süresi Devam Edenler</strong> filtresini ve il seçicisini kullanınız. Uzmanlık alanınıza giren (örneğin hidrojeoloji, kıyı ekolojisi, flora/fauna, tarım veya hava kalitesi) ve başvuru süresi henüz dolmamış tek bir dosyayı açınız.</p>
     </div>
     <div class="card">
-      <div class="step-num">Adım 2 · 30–60 dk</div>
-      <div class="title">[s. N] Üzerinden Doğrulayın</div>
-      <p class="detail">Ön özetteki <strong>Bilimsel Uyarılar</strong> ve <strong>Öne Çıkan Sayısal Bulgular</strong> listesini okuyun. Her maddedeki <code>[s. N]</code> sayfa numarasından doğrudan <strong>Resmi PDF</strong>'teki ilgili sayfayı açarak verinin doğruluğunu ve eksiklerini uzman gözüyle teyit edin.</p>
+      <div class="step-num">Adım 2 · 30–60 dakika</div>
+      <div class="title">Bulguları Resmi PDF Üzerinden Doğrulayınız</div>
+      <p class="detail">Ön özette yer alan sayısal verileri ve bilimsel bulguları inceleyiniz. Her maddenin yanında belirtilen <code>[s. N]</code> sayfa numarasından doğrudan <strong>Resmi PDF Dosyası</strong> üzerindeki ilgili sayfayı açarak bilgileri ve olası metodolojik eksiklikleri kendi uzmanlık süzgecinizden geçiriniz.</p>
     </div>
     <div class="card">
-      <div class="step-num">Adım 3 · 30 dk</div>
-      <div class="title">1 Sayfalık Teknik Not Yazın</div>
-      <p class="detail">Aşağıdaki 5 maddelik şablonu doldurun: eksik başlangıç verileri, tek mevsim/literatür boşlukları, kümülatif etki eksikleri ve 3–5 net teknik soru. Sadece doğrulanmış olgular ve sayfa numaraları — yorum veya polemik yok.</p>
+      <div class="step-num">Adım 3 · Yaklaşık 30 dakika</div>
+      <div class="title">Bir Sayfalık Teknik İnceleme Notu Hazırlayınız</div>
+      <p class="detail">Aşağıdaki beş maddelik şablonu kullanarak kısa bir teknik not oluşturunuz. Metnin yalnızca belgeden doğrulanmış olgulara, sayfa numaralarına ve hakemli bilimsel ölçütlere dayanmasına özen gösteriniz; öznel değerlendirmelerden ve polemik dilinden kaçınınız.</p>
     </div>
     <div class="card">
-      <div class="step-num">Adım 4 · 5 dk</div>
-      <div class="title">Mevcut Aktörlere İletin</div>
-      <p class="detail">Notu aşağıda listelenen mevcut hukuk, meslek odası veya yerel ağlardan birine e-posta/mesajla iletin. Dilerseniz adınızla uzman görüşü olarak, dilerseniz kurum/komisyon üzerinden paylaşabilirsiniz.</p>
+      <div class="step-num">Adım 4 · Yaklaşık 5 dakika</div>
+      <div class="title">Notu Yetkili Kurum ve Paydaşlara İletiniz</div>
+      <p class="detail">Hazırladığınız teknik notu aşağıdaki hukuk, meslek odası veya yerel izleme ağlarından birine iletiniz. Notunuzu dilerseniz kendi adınızla uzman görüşü olarak, dilerseniz ilgili oda veya komisyonun kurumsal çalışmasına katkı biçiminde paylaşabilirsiniz.</p>
     </div>
   </div>
 
-  <h2>4. Hazır Notu Kime İletebilirsiniz? (İzmir &amp; Ege Ağı)</h2>
+  <h2>4. Hazırlanan Teknik Notlar Hangi Kanallara İletilebilir?</h2>
   <table class="kv">
-    <tr><th>Hukuki Başvuru ve İYUK 20/A</th><td><strong>İzmir Barosu Çevre ve Kent Hukuku Komisyonu</strong> (ve Manisa Barosu Çevre Komisyonu) — 30 günlük iptal davası dilekçelerinde teknik dayanak olarak kullanılır.</td></tr>
-    <tr><th>Meslek Odaları</th><td><strong>TMMOB İzmir İl Koordinasyon Kurulu</strong> (Çevre, Ziraat, Jeoloji, Orman, Kimya ve Şehir Plancıları Odaları İzmir Şubeleri) — kurumsal itiraz ve bilirkişi süreçleri için doğrudan yetkilidir.</td></tr>
-    <tr><th>Bölgesel ve Yerel Platformlar</th><td><strong>EGEÇEP</strong> (Ege Çevre ve Kültür Platformu), <em>Karaburun Sivil İnisiyatif</em>, <em>Foça / Aliağa / Bergama / Dikili</em> çevre platformları ve ilgili ilçe belediyelerinin çevre birimleri.</td></tr>
-    <tr><th>Resmi Katılım Kanalları</th><td>10 günlük askı süresinde <strong>ÇŞİD İl Müdürlüğü</strong>'ne yazılı görüş dilekçesi verilebilir; <strong>HKT (Halkın Katılımı Toplantısı)</strong> sırasında teknik soruların tutanağa geçmesi sağlanabilir.</td></tr>
-    <tr><th>Yerel Basın</th><td>İzmir ve Ege'de çevre haberciliği yapan bağımsız yerel gazeteciler — sayfa numaralı 1 sayfalık net özet, 400 sayfalık PDF'ten çok daha hızlı haberleşir.</td></tr>
+    <tr><th>Baro Çevre Komisyonları</th><td>İlgili il barolarının Çevre ve Kent Hukuku Komisyonları (örneğin İzmir, İstanbul, Muğla, Ankara, Antalya ve Manisa Baroları), 30 günlük İYUK Madde 20/A iptal davası dilekçelerinde bilimsel dayanak olarak bu notlardan doğrudan yararlanabilmektedir.</td></tr>
+    <tr><th>Meslek Odaları (TMMOB)</th><td>TMMOB İl Koordinasyon Kurulları ile Çevre, Ziraat, Jeoloji, Orman, Kimya ve Şehir Plancıları Odalarının ilgili şubeleri kurumsal itiraz, teknik raporlama ve bilirkişi süreçlerinde doğrudan yetkilidir.</td></tr>
+    <tr><th>Resmi Katılım Mekanizmaları</th><td>10 günlük askı süresi içinde ilgili Çevre, Şehircilik ve İklim Değişikliği İl Müdürlüğüne yazılı görüş dilekçesi sunulabilir. Ek-1 kapsamındaki projelerde ise Halkın Katılımı Toplantısı (HKT) tutanaklarına somut teknik soruların geçirilmesi sağlanabilir.</td></tr>
+    <tr><th>Bölgesel Platformlar ve Belediyeler</th><td>EGEÇEP, Kazdağları, Marmara, Karadeniz ve Akdeniz çevre platformları, ilçe düzeyindeki sivil inisiyatifler ile ilgili büyükşehir veya ilçe belediyelerinin çevre koruma birimleri yerel süreçleri takip etmektedir.</td></tr>
+    <tr><th>Bağımsız Yerel Basın</th><td>Çevre haberciliği yapan yerel ve ulusal muhabirler için 500 sayfalık bir PDF yerine sayfa numaraları doğrulanmış bir sayfalık teknik özet, kamuoyunun doğru bilgilendirilmesini önemli ölçüde kolaylaştırır.</td></tr>
   </table>
 
-  <h2>5. Kopyalanabilir 1 Sayfalık Teknik İnceleme Şablonu</h2>
+  <h2>5. Bir Sayfalık Teknik İnceleme Notu Şablonu</h2>
   <pre>{_esc(template_text)}</pre>
 
-  <h2>6. Sürdürülebilirlik ve Güvenlik İlkeleri</h2>
+  <h2>6. Çalışma İlkeleri ve Sürdürülebilirlik</h2>
   <ul>
-    <li><strong>%100 kamuya açık resmi kaynak:</strong> Tüm veriler Bakanlığın kendi e-ÇED duyurularına dayanır; bilgi edinme, askı görüşü ve HKT katılımı yasal anayasal haklardır.</li>
-    <li><strong>Bilimsel tarafsızlık:</strong> Siyasi slogan veya doğrulanmamış iddia yerine yalnızca raporun kendi içindeki sayfa numaralı eksikler ve hakemli bilim literatürüyle çelişen noktalar yazılır.</li>
-    <li><strong>Düşük tükenmişlik, esnek katılım:</strong> Hiçbir gönüllünün düzenli kota tutması gerekmez. Ayda tek bir kritik dosyayı 1–2 saatte doğrulayıp ilgili baro/odaya ulaştırmak bile uzun vadede somut sonuç üretir.</li>
-    <li><strong>Bireysel güvenlik:</strong> Kurumsal veya akademik güvencesi hassas olan uzmanlar, teknik notlarını kişisel görünürlük almadan doğrudan meslek odaları veya baro komisyonları aracılığıyla paylaşabilir.</li>
+    <li><strong>Kamuya açık ve yasal veri zemini:</strong> Platformda kullanılan tüm kayıtlar Bakanlığın kamuya açık duyuru sisteminden elde edilir. Askı sürecinde görüş bildirmek, HKT toplantılarına katılmak ve idari yargı yoluna başvurmak hukuk düzeninin tanıdığı yasal katılım haklarıdır.</li>
+    <li><strong>Bilimsel nesnellik ve doğrulanabilirlik:</strong> Her tespit, doğrudan resmi raporun sayfa numarasıyla ilişkilendirilir. Amaç siyasi değerlendirme yapmak değil, çevresel etki değerlendirme belgelerinin bilimsel yeterliliğini şeffaf biçimde incelemektir.</li>
+    <li><strong>Tükenmişlikten uzak, esnek katkı:</strong> Hiçbir uzmanın düzenli bir görev kotası üstlenmesi gerekmez. Kendi alanınızla örtüşen tek bir dosyaya ayda bir ya da iki saat ayırmak bile uzun vadede kalıcı ve ölçülebilir kamusal fayda üretir.</li>
+    <li><strong>Kurumsal güvence ve gizlilik tercihi:</strong> Akademik veya mesleki güvencesi nedeniyle bireysel görünürlük almak istemeyen uzmanlar, hazırladıkları teknik incelemeleri doğrudan meslek odaları, baro komisyonları veya sivil platformlar aracılığıyla paylaşabilirler.</li>
   </ul>
 
   <div class="notice">
-    <strong>Yasal uyarı:</strong> Bu platform bilgilendirme ve kamuoyu şeffaflığı amacı taşır; hukuki danışmanlık yerine geçmez. Tüm süreler ve mevzuat hükümleri işlem öncesinde avukat tarafından teyit edilmelidir.
+    <strong>Yasal Bilgilendirme:</strong> Bu platform yalnızca kamuoyu şeffaflığı ve bilgilendirme amacıyla hazırlanmış olup hukuki danışmanlık niteliği taşımaz. Tüm yasal sürelerin, yetki kurallarının ve mevzuat hükümlerinin herhangi bir başvuru öncesinde avukat tarafından doğrulanması gerekmektedir.
   </div>
 </div>
 </body>
@@ -539,15 +652,17 @@ def build_site(
     *,
     digests_dir: Path,
     docs_dir: Path,
-    site_url: str = "https://eced-duyuru.csb.gov.tr/eced-prod/duyurular.xhtml",
+    site_url: str = "https://yanekyuk.github.io/aegean-eced-watchdog/",
+    max_cards: int = 300,
 ) -> dict[str, Any]:
     docs_dir.mkdir(parents=True, exist_ok=True)
     docs_digests = docs_dir / "digests"
     docs_digests.mkdir(parents=True, exist_ok=True)
 
-    # Render HTML + copy MD for every available digest
     digests_index: set[str] = set()
     llm_summaries: dict[str, dict[str, Any]] = {}
+    geo_by_fid: dict[str, dict[str, Any]] = {}
+
     if digests_dir.exists():
         for json_file in sorted(digests_dir.glob("*_analysis.json")):
             saved = json.loads(json_file.read_text(encoding="utf-8"))
@@ -561,26 +676,32 @@ def build_site(
             digests_index.add(fid)
             if saved.get("llm_synthesis") and saved["llm_synthesis"].get("result"):
                 llm_summaries[fid] = saved["llm_synthesis"]
+            if saved.get("analysis") and saved["analysis"].get("geo"):
+                geo_by_fid[fid] = saved["analysis"]["geo"]
 
-    # Stats
-    total = len(filings)
-    prio_count = sum(1 for f in filings if f.get("priority_district"))
+    shown_filings = filings[:max_cards]
+    total = len(shown_filings)
+    provinces_present = sorted({f.get("province", "") for f in shown_filings if f.get("province")})
     active_count = sum(
         1
-        for f in filings
+        for f in shown_filings
         if any(
             c.get("days_remaining") is None or c.get("days_remaining", -1) >= 0
             for c in f.get("statutory_clocks") or []
         )
     )
+    ek1_count = sum(1 for f in shown_filings if f.get("project_type") == "Ek-1")
     digested_count = sum(
         1
-        for f in filings
+        for f in shown_filings
         if (f.get("documents") or [{}])[0].get("filing_id") in digests_index
     )
 
     cards_html: list[str] = []
-    for f in filings:
+    map_items: list[dict[str, Any]] = []
+    exact_geo_count = 0
+
+    for idx, f in enumerate(shown_filings):
         docs = f.get("documents") or []
         doc_meta = docs[0] if docs else {}
         fid = doc_meta.get("filing_id") or ""
@@ -592,7 +713,16 @@ def build_site(
             c.get("days_remaining") is None or c.get("days_remaining", -1) >= 0
             for c in f.get("statutory_clocks") or []
         )
-        prio = bool(f.get("priority_district"))
+        is_ek1 = f.get("project_type") == "Ek-1"
+
+        geo = geo_by_fid.get(fid)
+        if geo and geo.get("precision") == "exact_pdf" and geo.get("lat") and geo.get("lon"):
+            lat, lon = geo["lat"], geo["lon"]
+            precision = "exact_pdf"
+            exact_geo_count += 1
+        else:
+            lat, lon = province_centroid(f.get("province", ""), jitter_key=f.get("filing_key") or str(idx))
+            precision = "province_centroid"
 
         search_blob = " ".join(
             [
@@ -611,7 +741,7 @@ def build_site(
         actions = []
         if has_digest:
             actions.append(f'<a href="digests/{_esc(fid)}.html"><strong>Sayfa Kaynaklı Ön Özet</strong></a>')
-            actions.append(f'<a href="digests/{_esc(fid)}.md">Ham .md</a>')
+            actions.append(f'<a href="digests/{_esc(fid)}.md">Ham Markdown (.md)</a>')
         if portal_url:
             actions.append(f'<a href="{_esc(portal_url)}" target="_blank" rel="noopener">e-ÇED Kaydı #{_esc(fid)}</a>')
         if pdf_url:
@@ -629,20 +759,39 @@ def build_site(
             high_flags = sum(1 for rf in lres.get("red_flags") or [] if rf.get("severity") == "high")
             total_flags = len(lres.get("red_flags") or [])
             if high_flags:
-                llm_badge = f'<span class="badge urgent">YZ İnceleme · {high_flags} yüksek / {total_flags} uyarı</span>'
+                llm_badge = f'<span class="badge urgent">Teknik Ön İnceleme · {high_flags} yüksek / {total_flags} bulgu</span>'
             else:
-                llm_badge = f'<span class="badge ok">YZ İnceleme · {total_flags} uyarı</span>'
+                llm_badge = f'<span class="badge ok">Teknik Ön İnceleme · {total_flags} bulgu</span>'
             llm_preview = (
                 f'<div class="detail" style="color:var(--text);">'
                 f'<strong>Özet:</strong> {_esc(lres.get("executive_summary_tr", ""))}</div>'
             )
 
+        map_items.append(
+            {
+                "idx": idx,
+                "lat": lat,
+                "lon": lon,
+                "precision": precision,
+                "color": _marker_color(f, has_digest),
+                "province": f.get("province", ""),
+                "district": f.get("district", ""),
+                "title": (f.get("project_name") or "")[:120],
+                "stage": f.get("decision_type", ""),
+                "annex": f.get("project_type", ""),
+                "date": f.get("announcement_date_tr", ""),
+                "digest_url": f"digests/{fid}.html" if has_digest else None,
+                "portal_url": portal_url or None,
+            }
+        )
+
         cards_html.append(
-            f"""<article class="card {'prio' if prio else ''}"
+            f"""<article class="card {'ek1' if is_ek1 else ''}"
+  data-idx="{idx}"
   data-province="{_esc(f.get('province', ''))}"
-  data-prio="{'1' if prio else '0'}"
   data-active="{'1' if is_active else '0'}"
   data-digest="{'1' if has_digest else '0'}"
+  data-exactgeo="{'1' if precision == 'exact_pdf' else '0'}"
   data-annex="{_esc(f.get('project_type', ''))}"
   data-search="{_esc(search_blob)}">
   <div class="row-top">
@@ -651,10 +800,10 @@ def build_site(
   </div>
   <div class="badges">
     <span class="badge">{_esc(f.get('province', ''))} · {_esc(f.get('district', ''))}</span>
-    {'<span class="badge ok">Öncelikli Koridor</span>' if prio else ''}
     <span class="badge">{_esc(f.get('decision_type', ''))}</span>
     <span class="badge">{_esc(f.get('project_type', ''))}</span>
     <span class="badge muted">{_esc(f.get('sector', ''))}</span>
+    {'<span class="badge ok">PDF Koordinatı</span>' if precision == 'exact_pdf' else ''}
     {_clock_badge_html(clock)}
     {llm_badge}
   </div>
@@ -664,29 +813,30 @@ def build_site(
 </article>"""
         )
 
-    provinces_present = sorted({f.get("province", "") for f in filings if f.get("province")})
-    prov_buttons = "\n".join(
-        f'<button class="pill" data-filter="prov:{_esc(p)}">{_esc(p)}</button>'
-        for p in provinces_present
+    prov_options = "\n".join(
+        f'<option value="{_esc(p)}">{_esc(p)}</option>' for p in provinces_present
     )
 
     built_at = datetime.now().strftime("%Y-%m-%d %H:%M")
+    map_json = json.dumps(map_items, ensure_ascii=False)
+
     index_html = f"""<!doctype html>
 <html lang="tr">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Ege e-ÇED İzleme</title>
-  <link rel="alternate" type="application/rss+xml" title="Ege e-ÇED İzleme RSS" href="feed.xml" />
+  <title>Türkiye e-ÇED İzleme Platformu</title>
+  <link rel="alternate" type="application/rss+xml" title="Türkiye e-ÇED İzleme RSS" href="feed.xml" />
+  <link rel="stylesheet" href="{LEAFLET_CSS}" />
   <style>{BASE_CSS}</style>
 </head>
 <body>
 <div class="wrap">
   <header>
-    <h1>Ege e-ÇED İzleme</h1>
-    <p class="sub">İzmir ve Manisa (Gediz Havzası) için kamuya açık e-ÇED duyuru takibi, yasal süre sayacı (10 günlük askı ve 30 günlük İYUK 20/A) ve sayfa kaynaklı PDF ön özetleri.</p>
+    <h1>Türkiye e-ÇED İzleme Platformu</h1>
+    <p class="sub">T.C. Çevre, Şehircilik ve İklim Değişikliği Bakanlığı'nın 81 ildeki kamuya açık ÇED duyuruları için yasal süre sayacı (10 günlük askı ve 30 günlük İYUK Madde 20/A), etkileşimli harita ve sayfa kaynaklı teknik ön özetler.</p>
     <div class="meta-bar">
-      <span><strong><a href="rehber.html">Nasıl Kullanılır? (Bilimsel İnceleme Rehberi)</a></strong></span>
+      <span><strong><a href="rehber.html">Kullanım ve Bilimsel İnceleme Rehberi</a></strong></span>
       <span>Son güncelleme: <code>{_esc(built_at)}</code></span>
       <span><a href="feed.xml">RSS 2.0 Akışı (feed.xml)</a></span>
       <span>Resmi kaynak: <a href="https://eced-duyuru.csb.gov.tr/eced-prod/duyurular.xhtml" target="_blank" rel="noopener">eced-duyuru.csb.gov.tr</a></span>
@@ -694,54 +844,121 @@ def build_site(
   </header>
 
   <section class="stats">
-    <div class="stat"><div class="num">{total}</div><div class="lbl">Takip Edilen Dosya</div></div>
-    <div class="stat"><div class="num">{prio_count}</div><div class="lbl">Öncelikli Koridor</div></div>
-    <div class="stat"><div class="num">{active_count}</div><div class="lbl">Aktif Yasal Süre</div></div>
-    <div class="stat"><div class="num">{digested_count}</div><div class="lbl">Sayfa Kaynaklı Ön Özet</div></div>
+    <div class="stat"><div class="num">{total}</div><div class="lbl">Listelenen Duyuru ({len(provinces_present)} il)</div></div>
+    <div class="stat"><div class="num">{active_count}</div><div class="lbl">Yasal Süresi Devam Eden</div></div>
+    <div class="stat"><div class="num">{ek1_count}</div><div class="lbl">Ek-1 (ÇED Raporu)</div></div>
+    <div class="stat"><div class="num">{digested_count}</div><div class="lbl">Ön Özeti Hazır Dosya</div></div>
+  </section>
+
+  <section class="map-box">
+    <div id="map"></div>
+    <div class="map-legend">
+      <span><span class="dot" style="background:#f85149"></span>Acil süre (≤ 7 gün)</span>
+      <span><span class="dot" style="background:#d29922"></span>Yaklaşan süre / HKT / İDK</span>
+      <span><span class="dot" style="background:#3fb950"></span>Devam eden süre (&gt; 15 gün)</span>
+      <span><span class="dot" style="background:#6e7681"></span>Süresi dolmuş kayıt</span>
+      <span><strong>Beyaz çerçeveli nokta:</strong> PDF'ten çıkarılmış kesin koordinat · <strong>Yarı saydam nokta:</strong> Yaklaşık il merkezi</span>
+    </div>
   </section>
 
   <section class="controls">
-    <input id="q" type="search" placeholder="İlçe, proje adı, şirket, sektör veya dosya no ara…" />
+    <input id="q" type="search" placeholder="İl, ilçe, proje adı, şirket, sektör veya dosya numarası arayınız…" />
+    <select id="prov" class="filter-select" aria-label="İl filtresi">
+      <option value="">Tüm İller ({len(provinces_present)})</option>
+      {prov_options}
+    </select>
     <button class="pill active" data-filter="all">Tümü</button>
-    <button class="pill" data-filter="prio">Öncelikli Koridor</button>
-    <button class="pill" data-filter="active">Aktif Süreler</button>
-    <button class="pill" data-filter="digest">Ön Özetli</button>
+    <button class="pill" data-filter="active">Yasal Süresi Devam Edenler</button>
+    <button class="pill" data-filter="digest">Ön Özeti Hazır Olanlar</button>
     <button class="pill" data-filter="ek1">Yalnızca Ek-1</button>
-    {prov_buttons}
   </section>
 
-  <div id="count" class="sub" style="margin-bottom:10px;">Toplam {total} dosya gösteriliyor</div>
+  <div id="count" class="sub" style="margin-bottom:10px;">Toplam {total} duyuru gösterilmektedir.</div>
   <main class="cards" id="cards">
     {''.join(cards_html)}
   </main>
 
   <div class="notice">
-    <strong>Yalnızca bilgilendirme amaçlıdır:</strong> Tüm kayıtlar T.C. Çevre, Şehircilik ve İklim Değişikliği Bakanlığı'nın kamuya açık e-ÇED duyuru portalından alınır. 2577 sayılı İYUK Madde 20/A uyarınca ÇED kararlarına karşı iptal davası açma süresi <strong>30 gündür</strong> ve <em>İYUK Madde 11 başvuruları bu süreyi durdurmaz</em>. Kesin tarih ve hukuki süreçler için mutlaka yetkili hukukçulara danışın.
+    <strong>Yasal Bilgilendirme:</strong> Bu platformda yer alan tüm kayıtlar T.C. Çevre, Şehircilik ve İklim Değişikliği Bakanlığı'nın kamuya açık e-ÇED duyuru portalından alınmaktadır. 2577 sayılı İdari Yargılama Usulü Kanunu'nun (İYUK) 20/A maddesi uyarınca ÇED kararlarına karşı iptal davası açma süresi <strong>30 gündür</strong> ve <em>İYUK Madde 11 kapsamında idareye yapılan başvurular bu süreyi durdurmaz</em>. Kesin tarih ve hukuki süreçler için yetkili hukukçulardan görüş alınması gerekmektedir.
   </div>
 </div>
+<script src="{LEAFLET_JS}"></script>
 <script>
 (() => {{
   const cards = [...document.querySelectorAll('#cards article')];
   const pills = [...document.querySelectorAll('button.pill')];
   const q = document.getElementById('q');
+  const prov = document.getElementById('prov');
   const countEl = document.getElementById('count');
+  const mapItems = {map_json};
   let mode = 'all';
+
+  let map = null;
+  let layerGroup = null;
+  if (typeof L !== 'undefined') {{
+    map = L.map('map').setView([39.0, 35.2], 6);
+    L.tileLayer('https://{{s}}.tile.openstreetmap.org/{{z}}/{{x}}/{{y}}.png', {{
+      maxZoom: 18,
+      attribution: '&copy; OpenStreetMap katkıda bulunanları'
+    }}).addTo(map);
+    layerGroup = L.layerGroup().addTo(map);
+  }}
+
+  function escHtml(s) {{
+    return String(s || '').replace(/[&<>"']/g, m => ({{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}}[m]));
+  }}
+
+  function renderMap(visibleIdxSet) {{
+    if (!layerGroup) return;
+    layerGroup.clearLayers();
+    const bounds = [];
+    for (const item of mapItems) {{
+      if (!visibleIdxSet.has(item.idx)) continue;
+      const isExact = item.precision === 'exact_pdf';
+      const marker = L.circleMarker([item.lat, item.lon], {{
+        radius: isExact ? 7 : 6,
+        color: isExact ? '#ffffff' : item.color,
+        weight: isExact ? 2 : 1,
+        fillColor: item.color,
+        fillOpacity: isExact ? 0.92 : 0.55
+      }});
+      const links = [];
+      if (item.digest_url) links.push(`<a href="${{item.digest_url}}"><strong>Sayfa Kaynaklı Ön Özet</strong></a>`);
+      if (item.portal_url) links.push(`<a href="${{item.portal_url}}" target="_blank" rel="noopener">Resmi e-ÇED Kaydı</a>`);
+      const locNote = isExact ? 'PDF metninden çıkarılan kesin koordinat' : 'Yaklaşık il merkezi konumu';
+      marker.bindPopup(
+        `<strong>${{escHtml(item.province)}} / ${{escHtml(item.district)}}</strong><br/>` +
+        `${{escHtml(item.title)}}<br/>` +
+        `<span style="color:#57606a">${{escHtml(item.stage)}} · ${{escHtml(item.annex)}} · ${{escHtml(item.date)}}</span><br/>` +
+        `<small style="color:#57606a">${{locNote}}</small><br/>` +
+        links.join(' · ')
+      );
+      marker.addTo(layerGroup);
+      bounds.push([item.lat, item.lon]);
+    }}
+    if (prov.value && bounds.length > 0) {{
+      map.fitBounds(bounds, {{ maxZoom: 10, padding: [30, 30] }});
+    }} else if (!prov.value && !q.value.trim()) {{
+      map.setView([39.0, 35.2], 6);
+    }}
+  }}
 
   function apply() {{
     const term = q.value.trim().toLowerCase();
-    let shown = 0;
+    const selectedProv = prov.value;
+    const visibleSet = new Set();
     for (const c of cards) {{
       let ok = true;
-      if (mode === 'prio') ok = c.dataset.prio === '1';
-      else if (mode === 'active') ok = c.dataset.active === '1';
+      if (mode === 'active') ok = c.dataset.active === '1';
       else if (mode === 'digest') ok = c.dataset.digest === '1';
       else if (mode === 'ek1') ok = c.dataset.annex === 'Ek-1';
-      else if (mode.startsWith('prov:')) ok = c.dataset.province === mode.slice(5);
+      if (ok && selectedProv) ok = c.dataset.province === selectedProv;
       if (ok && term) ok = c.dataset.search.includes(term);
       c.style.display = ok ? '' : 'none';
-      if (ok) shown++;
+      if (ok) visibleSet.add(Number(c.dataset.idx));
     }}
-    countEl.textContent = `${{cards.length}} dosyadan ${{shown}} tanesi gösteriliyor`;
+    countEl.textContent = `Toplam ${{cards.length}} duyurudan ${{visibleSet.size}} tanesi gösterilmektedir.`;
+    renderMap(visibleSet);
   }}
 
   pills.forEach(p => p.addEventListener('click', () => {{
@@ -751,6 +968,8 @@ def build_site(
     apply();
   }}));
   q.addEventListener('input', apply);
+  prov.addEventListener('change', apply);
+  apply();
 }})();
 </script>
 </body>
@@ -758,14 +977,15 @@ def build_site(
 """
     (docs_dir / "index.html").write_text(index_html, encoding="utf-8")
     (docs_dir / "rehber.html").write_text(render_guide_html(), encoding="utf-8")
-    rss_xml = build_rss(filings, digests_index, site_url)
+    rss_xml = build_rss(shown_filings, digests_index, site_url)
     (docs_dir / "feed.xml").write_text(rss_xml, encoding="utf-8")
 
     return {
         "total": total,
-        "priority": prio_count,
+        "provinces": len(provinces_present),
         "active": active_count,
         "digests_rendered": len(digests_index),
+        "exact_geo": exact_geo_count,
         "index_path": str(docs_dir / "index.html"),
         "feed_path": str(docs_dir / "feed.xml"),
     }

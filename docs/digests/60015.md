@@ -16,7 +16,7 @@
 | **Announcement Date** | `16.11.2026` (uploaded `09/06/2026 04:17:08`) |
 
 **Statutory Deadlines (informational aid — verify with legal counsel):**
-- **İDK review commission (verify meeting date in full text):** `see text` 
+- **İnceleme Değerlendirme Komisyonu (İDK) süreci; toplantı tarihi resmi metinde yer alır:** `see text` 
 
 ## 2. AI-Assisted Scientific Synthesis (`gemini-3.8-flash`)
 

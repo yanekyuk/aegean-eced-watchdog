@@ -3,7 +3,8 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>e-ÇED Ön Özet #61335 — AKHİSAR</title>
+  <title>e-ÇED Ön Özet #61335 — MANİSA / AKHİSAR</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
   <style>
 :root {
   --bg: #0f1216;
@@ -37,31 +38,53 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
   background: var(--bg);
   color: var(--text);
-  line-height: 1.5;
+  line-height: 1.6;
 }
-.wrap { max-width: 1220px; margin: 0 auto; padding: 24px 18px 64px; }
+.wrap { max-width: 1240px; margin: 0 auto; padding: 24px 18px 64px; }
 a { color: var(--accent); text-decoration: none; }
 a:hover { text-decoration: underline; }
 header { border-bottom: 1px solid var(--border); padding-bottom: 16px; margin-bottom: 20px; }
 h1 { margin: 0 0 6px; font-size: 1.55rem; }
+h2 { margin: 26px 0 10px; font-size: 1.2rem; }
+h3 { margin: 16px 0 8px; font-size: 1rem; }
 .sub { color: var(--muted); font-size: 0.92rem; margin: 0; }
-.meta-bar { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 12px; font-size: 0.85rem; color: var(--muted); }
-.stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 10px; margin: 16px 0 20px; }
+.meta-bar { display: flex; flex-wrap: wrap; gap: 14px; margin-top: 12px; font-size: 0.85rem; color: var(--muted); }
+.stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 10px; margin: 16px 0 18px; }
 .stat { background: var(--surface); border: 1px solid var(--border); border-radius: 8px; padding: 12px 14px; }
 .stat .num { font-size: 1.45rem; font-weight: 700; }
 .stat .lbl { font-size: 0.78rem; color: var(--muted); }
+.map-box {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 18px;
+}
+#map { width: 100%; height: 420px; background: var(--badge-bg); }
+#digest-map { width: 100%; height: 320px; background: var(--badge-bg); }
+.map-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  padding: 9px 14px;
+  font-size: 0.8rem;
+  color: var(--muted);
+  border-top: 1px solid var(--border);
+}
+.dot { display: inline-block; width: 10px; height: 10px; border-radius: 50%; margin-right: 5px; vertical-align: middle; }
 .controls { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; margin-bottom: 16px; }
-input[type="search"] {
-  flex: 1 1 240px;
+input[type="search"], select.filter-select {
   padding: 8px 12px;
   border-radius: 6px;
   border: 1px solid var(--border);
   background: var(--surface);
   color: var(--text);
-  font-size: 0.92rem;
+  font-size: 0.9rem;
 }
+input[type="search"] { flex: 1 1 240px; }
+select.filter-select { min-width: 170px; }
 button.pill {
-  padding: 6px 11px;
+  padding: 7px 12px;
   border-radius: 999px;
   border: 1px solid var(--border);
   background: var(--surface);
@@ -75,12 +98,12 @@ button.pill.active { background: var(--accent); border-color: var(--accent); col
   background: var(--surface);
   border: 1px solid var(--border);
   border-radius: 8px;
-  padding: 14px 16px;
+  padding: 15px 17px;
 }
-.card.prio { border-left: 4px solid var(--accent); }
+.card.ek1 { border-left: 4px solid var(--accent); }
 .row-top { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px; align-items: baseline; }
 .title { font-weight: 600; font-size: 0.98rem; }
-.badges { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 6px; }
+.badges { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 7px; }
 .badge {
   display: inline-block;
   padding: 2px 8px;
@@ -93,30 +116,31 @@ button.pill.active { background: var(--accent); border-color: var(--accent); col
 .badge.warn { border-color: var(--amber); color: var(--amber); font-weight: 600; }
 .badge.ok { border-color: var(--green); color: var(--green); }
 .badge.muted { color: var(--muted); }
-.detail { font-size: 0.86rem; color: var(--muted); margin: 8px 0; }
+.detail { font-size: 0.87rem; color: var(--muted); margin: 8px 0; }
 .actions { display: flex; flex-wrap: wrap; gap: 12px; font-size: 0.84rem; margin-top: 8px; }
 .notice {
   margin-top: 28px;
-  padding: 12px 14px;
+  padding: 14px 16px;
   border: 1px solid var(--border);
   border-radius: 8px;
-  font-size: 0.82rem;
+  font-size: 0.84rem;
   color: var(--muted);
 }
 table.kv { width: 100%; border-collapse: collapse; margin: 12px 0; font-size: 0.9rem; }
-table.kv th, table.kv td { border: 1px solid var(--border); padding: 8px 10px; text-align: left; vertical-align: top; }
-table.kv th { width: 220px; background: var(--badge-bg); }
+table.kv th, table.kv td { border: 1px solid var(--border); padding: 8px 11px; text-align: left; vertical-align: top; }
+table.kv th { width: 240px; background: var(--badge-bg); }
 code { background: var(--badge-bg); padding: 1px 5px; border-radius: 4px; font-size: 0.85em; }
-blockquote { margin: 10px 0; padding: 10px 14px; border-left: 3px solid var(--accent); background: var(--surface); font-size: 0.9rem; }
-.hit { margin: 6px 0; font-size: 0.88rem; }
+blockquote { margin: 10px 0; padding: 11px 15px; border-left: 3px solid var(--accent); background: var(--surface); font-size: 0.9rem; }
+.hit { margin: 7px 0; font-size: 0.88rem; }
 .pno { font-weight: 700; color: var(--accent); }
+.leaflet-popup-content { color: #1f2328; font-size: 0.85rem; line-height: 1.45; }
 </style>
 </head>
 <body>
 <div class="wrap">
   <header>
-    <div style="font-size:0.85rem;margin-bottom:8px;"><a href="../index.html">← Ege e-ÇED İzleme listesine dön</a> · <a href="../rehber.html">Nasıl Kullanılır? (Rehber)</a> · <a href="61335.md">Ham Markdown (.md)</a></div>
-    <h1>e-ÇED Ön Özet #61335 — AKHİSAR / MANİSA</h1>
+    <div style="font-size:0.85rem;margin-bottom:8px;"><a href="../index.html">← Türkiye e-ÇED İzleme listesine dön</a> · <a href="../rehber.html">Kullanım ve İnceleme Rehberi</a> · <a href="61335.md">Ham Markdown (.md)</a></div>
+    <h1>e-ÇED Ön Özet #61335 — MANİSA / AKHİSAR</h1>
     <p class="sub">ZEYTİN İŞLEME TESİSİ KAPASİTE ARTIŞI</p>
     <div class="badges" style="margin-top:10px;">
       <span class="badge">ÇED Gerekli Değil/ÇED Olumlu</span>
@@ -129,21 +153,27 @@ blockquote { margin: 10px 0; padding: 10px 14px; border-left: 3px solid var(--ac
     <tr><th>Proje Sahibi</th><td>PEYBA GIDA TARIM TUR. HAYV. İNŞ. SAN. VE TİC. LTD. ŞTİ.</td></tr>
     <tr><th>Hazırlayan Kuruluş</th><td>CANÇED ÇEVRE DANIŞMANLIK VE MÜHENDİSLİK SAN. TİC. LTD. ŞTİ.</td></tr>
     <tr><th>Sektör / Alt Sektör</th><td>Gıda / Zeytin İşleme  Tesisleri</td></tr>
-    <tr><th>Duyuru Tarihi</th><td><code>09.11.2026</code> (yükleme: <code>13/10/2026 04:04:51</code>)</td></tr>
-    <tr><th>PDF Kapsamı</th><td>53.18 MB · 194 sayfa (134 metin / 60 taranmış-görüntü) · SHA-256 <code>6cb8de043440c8ce…</code></td></tr>
-    <tr><th>Resmi Bağlantılar</th><td><a href="http://eced.csb.gov.tr/jsp/ek1/61335" target="_blank" rel="noopener">e-ÇED Portal Kaydı</a> · <a href="http://eced.csb.gov.tr/jsp/dosya/dosyaGoster.htm?tempAd=sign2021536094849303535.pdf&amp;orjinalAd=e-imza.pdf&amp;yuklemeTarihi=2026-10-13" target="_blank" rel="noopener">Resmi PDF Dosyası</a></td></tr>
+    <tr><th>Duyuru Tarihi</th><td><code>09.11.2026</code> (belge yükleme tarihi: <code>13/10/2026 04:04:51</code>)</td></tr>
+    <tr><th>PDF Kapsamı</th><td>53.18 MB · 194 sayfa (134 metin sayfası / 60 taranmış veya görüntü sayfası) · SHA-256 <code>6cb8de043440c8ce…</code></td></tr>
+    <tr><th>Resmi Bağlantılar</th><td><a href="http://eced.csb.gov.tr/jsp/ek1/61335" target="_blank" rel="noopener">e-ÇED Portal Kaydı</a> · <a href="http://eced.csb.gov.tr/jsp/dosya/dosyaGoster.htm?tempAd=sign2021536094849303535.pdf&amp;orjinalAd=e-imza.pdf&amp;yuklemeTarihi=2026-10-13" target="_blank" rel="noopener">Resmi PDF Dosyası</a> · <a href="https://www.openstreetmap.org/?mlat=38.6191&amp;mlon=27.4289#map=8/38.6191/27.4289" target="_blank" rel="noopener">OpenStreetMap</a> · <a href="https://www.google.com/maps/search/?api=1&amp;query=38.6191,27.4289" target="_blank" rel="noopener">Google Haritalar</a></td></tr>
   </table>
+
+  <h2>Konum Haritası</h2>
+  <div class="map-box">
+    <div id="digest-map"></div>
+    <div class="map-legend"><span>PDF dosyasında metin olarak okunabilir koordinat tablosu tespit edilemediği için il merkezi yaklaşık konum olarak gösterilmektedir.</span></div>
+  </div>
 
   
   <h2>Yapay Zeka Destekli Bilimsel Ön Değerlendirme <span class="badge">gemini-4-hydrogen</span></h2>
-  <p class="sub">PDF içinden seçilen 26 sayfadan (s.1, s.2, s.3, s.5, s.6, s.7, s.8, s.12, s.14, s.16, s.18, s.26, s.37, s.38, s.39, s.42, s.43, s.52, s.53, s.54, s.55, s.71, s.72, s.82, s.83, s.84) üretilmiştir. Tüm sayısal verileri resmi PDF'teki <code>[s. N]</code> sayfalarından doğrulayın.</p>
-  <section class="card prio">
+  <p class="sub">Bu değerlendirme, resmi PDF dosyasından seçilen 26 sayfa (s.1, s.2, s.3, s.5, s.6, s.7, s.8, s.12, s.14, s.16, s.18, s.26, s.37, s.38, s.39, s.42, s.43, s.52, s.53, s.54, s.55, s.71, s.72, s.82, s.83, s.84) esas alınarak hazırlanmıştır. Tüm sayısal verilerin ve tespitlerin resmi PDF belgesindeki ilgili <code>[s. N]</code> sayfalarından doğrulanması gerekir.</p>
+  <section class="card ek1">
     <p><strong>Özet:</strong> PEYBA Gıda Tarım Tur. Hayv. İnş. San. ve Tic. Ltd. Şti. tarafından Manisa İli, Akhisar İlçesi, Eroğlu Mahallesi, 0 ada, 588 parseldeki 44.600,00 m2 büyüklüğündeki alanda mevcut 1.460 ton/yıl ÇED muafiyetli zeytin işleme tesisinde kapasite artışı ile birlikte siyah/yeşil salamura zeytin işleme ve yıllık 2.000 ton konserve üretimi yapılması planlanmaktadır [s. 2, 5, 7, 8, 12]. Yatırım bedeli 80.000.000 TL olarak bildirilen proje, İzmir-Manisa 1/100.000 ölçekli Çevre Düzeni Planı&#x27;nda Tarım Arazisi lejantında ve İl Tarım ve Orman Müdürlüğü değerlendirmesine göre Kuru Mutlak Tarım Arazisi sınıfında yer almakta olup, A ve B bloklar halinde toplam yaklaşık 19.904 m2 kapalı alan öngörülmektedir [s. 2, 5, 12, 43]. Başlıca çevresel risk odakları; günde 23,3 m3 yüksek tuzluluk ve sitrik asit içerikli salamura proses atıksuyunun bertarafındaki tutarsızlıklar, ~500 m mesafedeki Medar Çayı ve tarım topraklarının korunması ile diri fay/deprem tehlikesi, biyolojik çeşitlilik ve kümülatif etki değerlendirmelerindeki metodolojik eksikliklerdir [s. 7, 8, 26, 43, 55, 72, 83].</p>
-    <details style="margin-top:8px;font-size:0.86rem;color:var(--muted);"><summary style="cursor:pointer;">English summary</summary><p style="margin:6px 0 0;">PEYBA Gıda Tarım Tur. Hayv. İnş. San. ve Tic. Ltd. Şti. proposes a capacity expansion of its existing olive processing facility (previously granted an EIA exemption for 1,460 tonnes/year) on a 44,600.00 m2 parcel (parcel 588) in Eroğlu Neighborhood, Akhisar District, Manisa Province, adding black and green brined olive processing and 2,000 tonnes/year of canned food production [s. 2, 5, 7, 8, 12]. With an estimated project cost of 80,000,000 TRY, the site is designated as Agricultural Land in the 1/100,000 Environmental Plan and classified as Dry Absolute Agricultural Land, featuring two enclosed blocks totaling roughly 19,904 m2 [s. 2, 5, 12, 43]. Primary environmental stakes center on inconsistencies in managing 23.3 m3/day of saline and acidic brining wastewater, potential impacts on the Medar Stream (~500 m away) and surrounding farmland, and baseline gaps regarding literature-only biodiversity lists, seismic fault risk, and post-approval-only monitoring commitments [s. 7, 8, 26, 43, 55, 72, 83].</p></details>
+    <details style="margin-top:8px;font-size:0.86rem;color:var(--muted);"><summary style="cursor:pointer;">İngilizce özet (English summary)</summary><p style="margin:6px 0 0;">PEYBA Gıda Tarım Tur. Hayv. İnş. San. ve Tic. Ltd. Şti. proposes a capacity expansion of its existing olive processing facility (previously granted an EIA exemption for 1,460 tonnes/year) on a 44,600.00 m2 parcel (parcel 588) in Eroğlu Neighborhood, Akhisar District, Manisa Province, adding black and green brined olive processing and 2,000 tonnes/year of canned food production [s. 2, 5, 7, 8, 12]. With an estimated project cost of 80,000,000 TRY, the site is designated as Agricultural Land in the 1/100,000 Environmental Plan and classified as Dry Absolute Agricultural Land, featuring two enclosed blocks totaling roughly 19,904 m2 [s. 2, 5, 12, 43]. Primary environmental stakes center on inconsistencies in managing 23.3 m3/day of saline and acidic brining wastewater, potential impacts on the Medar Stream (~500 m away) and surrounding farmland, and baseline gaps regarding literature-only biodiversity lists, seismic fault risk, and post-approval-only monitoring commitments [s. 7, 8, 26, 43, 55, 72, 83].</p></details>
     <div class="badges" style="margin-top:10px;">
-      <span class="badge">Saha çalışması: Yalnızca literatür</span>
-      <span class="badge">Mevsimsel örnekleme: Yalnızca onay sonrasına taahhüt</span>
-      <span class="badge">Kümülatif etki: Eksik / bulunamadı</span>
+      <span class="badge">Saha çalışması: Yalnızca literatür taramasına dayalı</span>
+      <span class="badge">Mevsimsel örnekleme: Yalnızca onay sonrasına ertelenmiş</span>
+      <span class="badge">Kümülatif etki: Eksik veya tespit edilemedi</span>
     </div>
     <p class="detail" style="margin-top:10px;"><strong>Zeytinlik ve Korunan Alanlar:</strong> Proje alanı 1/100.000 ölçekli Çevre Düzeni Planı&#x27;nda Tarım Arazisi içinde yer almakta olup [s. 5, 53], İl Tarım ve Orman Müdürlüğü görüşüne göre Kuru Mutlak Tarım Arazisi sınıfındadır ve 5403 sayılı Kanun kapsamında 2,1346 ha&#x27;lık kısmı için tarım dışı kullanım izni verilmiştir [s. 43]. Parselin 2863 sayılı Kanun kapsamındaki arkeolojik veya doğal sit alanları, tescilli tabiat varlıkları ve 2872 sayılı Kanun kapsamındaki Özel Çevre Koruma Bölgeleri ile uluslararası sözleşme alanları dışında kaldığı bildirilmiştir [s. 14, 18, 52]. ÇDP Uygulama Hükümleri 8.7.6. maddesinde zeytinlik alanlarda 3573 sayılı Kanun hükümlerinin geçerli olduğu hatırlatılmış olmakla birlikte parselin fiilen zeytinlik vasfında olup olmadığına dair tespit aktarılmamış; 1 km2 etki alanında orman veya planlı alan bulunmadığı, en yakın su yüzeyinin ise ~500 m mesafedeki Medar Çayı olduğu belirtilmiştir [s. 16, 18, 43].<br/>Yeterlik Belgesi Tebliği uyarınca 20.07.2026 tarihinde yalnızca tek günlük yer görme incelemesi yapıldığı belirtilse de [s. 5], flora ve fauna değerlendirmesinin münhasıran Davis&#x27;in eseri, yayımlanmış literatür, TÜBİVES ve bölgedeki diğer projelerin verilerinden derlendiği açıkça ifade edilmiştir [s. 55]. Su kalitesi, hava/emisyon ve gürültü parametreleri için proje öncesi mevsimsel saha örneklemesi belgelenmemiş; izleme yükümlülükleri Çevre İzleme Planı&#x27;nda faaliyet sonrası döneme ve kurumların talep etmesi şartına bağlanmıştır [s. 82, 83]. İçindekiler tablosunda Kümülatif Etki Değerlendirme bölümünün yalnızca 1 sayfa (iç sayfa 79) olduğu görülmekle birlikte [s. 3] ilgili sayfa sunulan metin alıntıları arasında yer almadığından değerlendirilememiştir.</p>
   </section>
@@ -157,31 +187,31 @@ blockquote { margin: 10px 0; padding: 10px 14px; border-left: 3px solid var(--ac
 <tr><th>İşletme Aşaması Atıksu Debileri</th><td>23,3 m3/gün proses, 1,91 m3/gün evsel, 0,15 m3/gün temizlik (toplam 25,36 m3/gün) <span class="pno">[s. 72]</span></td></tr>
 <tr><th>Organik Artık ve Kül Atığı Miktarı</th><td>14,6 kg/gün yaprak ve dal artığı; 26,05 kg/gün kül atığı <span class="pno">[s. 71]</span></td></tr>
 <tr><th>İnşaat Aşaması Toplam Ses Gücü Düzeyi</th><td>96,102 dBA (150 m mesafede &lt;40 dBA [s. 39]) <span class="pno">[s. 38]</span></td></tr></table>
-  <h3>Bilimsel ve Metodolojik Uyarılar</h3><section class="card"><div class="hit"><span class="badge urgent">YÜKSEK</span> <strong>Atıksu Bertaraf Yöntemi Çelişkisi ve Proses Atıksuyunun İzleme Planında Yer Almaması</strong> <span class="pno">[s. 7, s. 8, s. 72, s. 83]</span> — Bölüm III&#x27;te işletme aşamasında 23,3 m3/gün proses, 1,91 m3/gün evsel ve 0,15 m3/gün temizlik kaynaklı olmak üzere toplam 25,36 m3/gün atıksu oluşacağı ve personel ile proses atıksularının MASKİ&#x27;den alınacak kanal bağlantı yazısı ile kanalizasyona bağlanacağı belirtilmektedir [s. 72]. Buna karşılık Çevre İzleme Planı&#x27;nda (Tablo 19) işletme aşamasında yalnızca evsel atıksuların fosseptikte biriktirilip vidanjörle uzaklaştırılacağı yazılmış; 8 ay boyunca tuzlu su ve sitrik asitli salamura havuzlarından kaynaklanacak yüksek tuzluluk ve organik yüklü proses atıksuyunun [s. 7, 8] ön arıtımı, deşarj standartları ve izlenmesine dair herhangi bir hükme yer verilmemiştir [s. 83].</div>
+  <h3>Bilimsel ve Metodolojik Bulgular</h3><section class="card"><div class="hit"><span class="badge urgent">YÜKSEK</span> <strong>Atıksu Bertaraf Yöntemi Çelişkisi ve Proses Atıksuyunun İzleme Planında Yer Almaması</strong> <span class="pno">[s. 7, s. 8, s. 72, s. 83]</span> — Bölüm III&#x27;te işletme aşamasında 23,3 m3/gün proses, 1,91 m3/gün evsel ve 0,15 m3/gün temizlik kaynaklı olmak üzere toplam 25,36 m3/gün atıksu oluşacağı ve personel ile proses atıksularının MASKİ&#x27;den alınacak kanal bağlantı yazısı ile kanalizasyona bağlanacağı belirtilmektedir [s. 72]. Buna karşılık Çevre İzleme Planı&#x27;nda (Tablo 19) işletme aşamasında yalnızca evsel atıksuların fosseptikte biriktirilip vidanjörle uzaklaştırılacağı yazılmış; 8 ay boyunca tuzlu su ve sitrik asitli salamura havuzlarından kaynaklanacak yüksek tuzluluk ve organik yüklü proses atıksuyunun [s. 7, 8] ön arıtımı, deşarj standartları ve izlenmesine dair herhangi bir hükme yer verilmemiştir [s. 83].</div>
 <div class="hit"><span class="badge urgent">YÜKSEK</span> <strong>Tarım Dışı Kullanım İzninin İki Yıllık Süresi ve Proje Kapsamıyla Uyum Sorunu</strong> <span class="pno">[s. 1, s. 5, s. 12, s. 14, s. 16, s. 43]</span> — İl Tarım ve Orman Müdürlüğü&#x27;nün 04.04.2024 tarihli görüşünde, Kuru Mutlak Tarım Arazisi üzerindeki 2,1346 ha&#x27;lık alanda &#x27;Zeytin ve Zeytinyağı İşleme Tesisi&#x27; yapılmasına izin verildiği ve ilgili yönetmelik uyarınca izin tarihinden itibaren iki yıl içinde tarım dışı amaçlı kullanımın gerçekleştirilmesi gerektiği belirtilmiştir [s. 43]. Ekim 2026 tarihli bu raporda [s. 1] söz konusu iki yıllık sürenin dolup dolmadığı açıklanmadığı gibi, 2023 tarihli diğer bazı kurum görüşlerinin 588 ve 672 parselleri birlikte kapsadığı [s. 14, 16] ve mevcut kapasite artışının konserve üretimini de içerdiği [s. 5, 12] görülmektedir.</div>
 <div class="hit"><span class="badge warn">ORTA</span> <strong>Biyolojik Çeşitlilik Değerlendirmesinin Saha Örneklemesinden Yoksun Olması</strong> <span class="pno">[s. 43, s. 55]</span> — Tesis ~500 m mesafedeki Medar Çayı [s. 43] ve tarım ekosistemleriyle çevrili olmasına rağmen, flora ve fauna bölümü oluşturulurken yerinde mevsimsel biyolojik arazi çalışması yapıldığına dair bir veri sunulmamış, yalnızca literatür ve ikincil veri kaynaklarının kullanıldığı beyan edilmiştir [s. 55].</div>
 <div class="hit"><span class="badge warn">ORTA</span> <strong>İşletme Aşaması Gürültü ve Emisyon Varsayımlarındaki İç Tutarsızlıklar</strong> <span class="pno">[s. 5, s. 12, s. 37, s. 39, s. 71]</span> — Raporda işletme aşamasında gürültüye sebebiyet verebilecek makine, ekipman veya proses bulunmadığı iddia edilmekte [s. 39] ve Çevre İzin ve Lisans Yönetmeliği&#x27;nden muafiyet başvurusu yapılacağı belirtilmektedir [s. 37]. Ancak tesiste ilave makine-ekipmanla kapasite artışı ve yılda 2.000 ton konserve üretimi planlanmakta [s. 5, 12], ayrıca bir yakma ünitesi varlığına işaret eden 26,05 kg/gün kül atığı öngörülmektedir [s. 71].</div>
 <div class="hit"><span class="badge warn">ORTA</span> <strong>Yer Alternatifi İncelenmemesi ve Diri Fay/Deprem Riski Analizi Eksikliği</strong> <span class="pno">[s. 6, s. 26]</span> — Proje sahibinin parsel mülkiyetine sahip olması gerekçesiyle başka hiçbir yer veya teknoloji alternatifi düşünülmediği ifade edilmiştir [s. 6]. MTA görüşünde 1/25.000 ölçekli K19-b1 paftasında diri fay haritalarının mevcut olduğu ve başta deprem olmak üzere doğa kaynaklı afet riskinin dikkate alınması önerilmesine karşın [s. 26], incelenen sayfalarda diri faylara mesafe veya sismik tehlike değerlendirmesi yer almamaktadır.</div>
 <div class="hit"><span class="badge muted">DÜŞÜK</span> <strong>İzleme Planının Koşullu İfadeler ve Şablon İbareler İçermesi</strong> <span class="pno">[s. 83]</span> — Çevre İzleme Planı&#x27;nda atıksu ve gürültü izlemeleri &#x27;kurumlarca talep edilmesi halinde&#x27; veya &#x27;mevzuat gereği yapılması istenen durum olursa&#x27; ifadelerine bağlanmış olup düzenli ölçüm periyotları belirlenmemiştir; ayrıca Ek-2 ÇED Olumlu kararı sürecine rağmen tabloda &#x27;ÇED Gerekli Değildir Belgesi Alındıktan Sonra&#x27; şeklinde hatalı şablon ibare kullanılmıştır [s. 83].</div></section>
-  <h3>HKT ve İYUK 20/A İçin Taslak Teknik Sorular</h3><ul><li>Siyah ve yeşil zeytinlerin 8 ay boyunca tuzlu su ve sitrik asitli salamura havuzlarında bekletilmesi sonucu oluşacak günlük 23,3 m3 proses atıksuyu [s. 7, 8, 72] için Bölüm III&#x27;te öngörülen MASKİ kanalizasyon bağlantısı [s. 72] ile Tablo 19&#x27;daki fosseptik/vidanjör beyanı [s. 83] arasındaki çelişkinin nedeni nedir; parselde aktif kanalizasyon hattı ve yüksek tuzluluğu giderecek bir ön arıtma tesisi mevcut mudur? <span class="pno">[s. 7, s. 8, s. 72, s. 83]</span></li>
+  <h3>HKT Tutanakları ve İdari Başvurular İçin Taslak Teknik Sorular</h3><ul><li>Siyah ve yeşil zeytinlerin 8 ay boyunca tuzlu su ve sitrik asitli salamura havuzlarında bekletilmesi sonucu oluşacak günlük 23,3 m3 proses atıksuyu [s. 7, 8, 72] için Bölüm III&#x27;te öngörülen MASKİ kanalizasyon bağlantısı [s. 72] ile Tablo 19&#x27;daki fosseptik/vidanjör beyanı [s. 83] arasındaki çelişkinin nedeni nedir; parselde aktif kanalizasyon hattı ve yüksek tuzluluğu giderecek bir ön arıtma tesisi mevcut mudur? <span class="pno">[s. 7, s. 8, s. 72, s. 83]</span></li>
 <li>İl Tarım ve Orman Müdürlüğü&#x27;nün 04.04.2024 tarihli ve &#x27;Kuru Mutlak Tarım Arazisi&#x27; üzerindeki 2,1346 ha alan için verdiği &#x27;Zeytin ve Zeytinyağı İşleme Tesisi&#x27; izni [s. 43], Ekim 2026 tarihli bu dosya [s. 1] bakımından iki yıllık yasal süresini doldurmuş mudur ve yıllık 2.000 tonluk konserve üretimini [s. 12] kapsamakta mıdır? <span class="pno">[s. 1, s. 12, s. 43]</span></li>
 <li>Tesiste günlük 26,05 kg kül atığı oluşacağı bildirilmesine [s. 71], ilave makine-ekipman kurulmasına [s. 5] ve konserve üretimi yapılmasına [s. 12] rağmen işletme aşamasında gürültü yaratacak hiçbir makine/proses bulunmadığı [s. 39] ve çevre izninden muafiyet alınacağı [s. 37] hangi teknik verilere dayanılarak kabul edilmiştir? <span class="pno">[s. 5, s. 12, s. 37, s. 39, s. 71]</span></li>
 <li>Tesisin ~500 m yakınındaki Medar Çayı [s. 43] ile çevresindeki tarım alanları ve ~925 m mesafedeki Eroğlu Mahallesi [s. 12] açısından neden proje öncesi mevsimsel saha örneklemesi yapılmamıştır [s. 55] ve MTA&#x27;nın belirttiği K19-b1 paftasındaki diri faylara göre [s. 26] salamura havuzlarının sızdırmazlığına yönelik deprem güvenliği nasıl sağlanacaktır? <span class="pno">[s. 12, s. 26, s. 43, s. 55]</span></li></ul>
-  <p class="sub"><em>Kapsam sınırları:</em> Toplam 194 sayfalık PTD dosyasının 60 sayfası taranmış/görüntü formatında olup metni çıkarılamamıştır; bu inceleme dosyadan alıntılanan 26 sayfa ile sınırlıdır. Mevcut ve artış sonrası toplam zeytin işleme kapasitesi ile su/enerji bütçesini içeren 9-11. ve 13-36. sayfaların bir bölümü, jeolojik verileri içeren 44-51. sayfalar, flora-fauna tür listelerinin devamı (s. 56-70), Bölüm III&#x27;ün devamı (s. 73-80), İçindekiler&#x27;de 1 sayfa olarak görülen Kümülatif Etki Değerlendirme bölümü (Bölüm IV, iç s. 79 / PDF s. 81) ile harita, vaziyet planı ve resmi kurum görüşlerinin tamamını içeren Ekler bölümü (s. 85-194) sunulan alıntılarda yer almadığından doğrulanamamıştır.</p>
+  <p class="sub"><em>İnceleme sınırları:</em> Toplam 194 sayfalık PTD dosyasının 60 sayfası taranmış/görüntü formatında olup metni çıkarılamamıştır; bu inceleme dosyadan alıntılanan 26 sayfa ile sınırlıdır. Mevcut ve artış sonrası toplam zeytin işleme kapasitesi ile su/enerji bütçesini içeren 9-11. ve 13-36. sayfaların bir bölümü, jeolojik verileri içeren 44-51. sayfalar, flora-fauna tür listelerinin devamı (s. 56-70), Bölüm III&#x27;ün devamı (s. 73-80), İçindekiler&#x27;de 1 sayfa olarak görülen Kümülatif Etki Değerlendirme bölümü (Bölüm IV, iç s. 79 / PDF s. 81) ile harita, vaziyet planı ve resmi kurum görüşlerinin tamamını içeren Ekler bölümü (s. 85-194) sunulan alıntılarda yer almadığından doğrulanamamıştır.</p>
 
 
   <h2>Resmi Duyuru Metni</h2>
   <blockquote>MANİSA ili AKHİSAR,  ilcesinde MANİSA ili AKHİSAR,  ilcesi Eroğlu Mahallesi, 0 ada, 588 no&#x27;lu parsel mevkiindeki PEYBA GIDA TARIM TUR. HAYV. İNŞ. SAN. VE TİC. LTD. ŞTİ. tarafından yapılması planlanan ZEYTİN İŞLEME TESİSİ KAPASİTE ARTIŞI projesi ile ilgili olarak Bakanlığımıza sunulan PTD Dosyası incelenmiş ve değerlendirilmiştir  ÇED Yönetmeliği&#x27;nin 17. maddesi gereğince ZEYTİN İŞLEME TESİSİ KAPASİTE ARTIŞI projesi&#x27;ne Valiliğimizce &#x27;ÇED Olumlu (Kapsam Ek-2)&#x27; kararı verilmiştir.</blockquote>
 
   <h2>Otomatik Metin Taraması (Deterministik)</h2>
-  <table class="kv"><tr><th>Saha / arazi çalışması geçiyor mu</th><td><span class="badge ok">Metinde var</span></td></tr>
-<tr><th>Literatür taraması ifadesi geçiyor mu</th><td><span class="badge ok">Metinde var</span></td></tr>
-<tr><th>Mevsimsel örnekleme geçiyor mu</th><td><span class="badge ok">Metinde var</span></td></tr>
-<tr><th>Kümülatif etki değerlendirmesi geçiyor mu</th><td><span class="badge ok">Metinde var</span></td></tr>
-<tr><th>Zeytincilik Kanunu (3573 / zeytinlik)</th><td><span class="badge ok">Metinde var</span></td></tr>
-<tr><th>Yeraltı suyu / akifer / hidrojeoloji</th><td><span class="badge ok">Metinde var</span></td></tr>
-<tr><th>Endemik tür / IUCN / Bern Sözleşmesi</th><td><span class="badge ok">Metinde var</span></td></tr></table>
-  <p class="sub">OCR içermeyen taranmış harita ve ekler otomatik metin taramasına dahil değildir.</p>
+  <table class="kv"><tr><th>Saha veya arazi çalışması ifadesi</th><td><span class="badge ok">Metinde yer almaktadır</span></td></tr>
+<tr><th>Literatür taraması ifadesi</th><td><span class="badge ok">Metinde yer almaktadır</span></td></tr>
+<tr><th>Mevsimsel örnekleme ifadesi</th><td><span class="badge ok">Metinde yer almaktadır</span></td></tr>
+<tr><th>Kümülatif etki değerlendirmesi ifadesi</th><td><span class="badge ok">Metinde yer almaktadır</span></td></tr>
+<tr><th>3573 sayılı Zeytincilik Kanunu veya zeytinlik ifadesi</th><td><span class="badge ok">Metinde yer almaktadır</span></td></tr>
+<tr><th>Yeraltı suyu, akifer veya hidrojeoloji ifadesi</th><td><span class="badge ok">Metinde yer almaktadır</span></td></tr>
+<tr><th>Endemik tür, IUCN veya Bern Sözleşmesi ifadesi</th><td><span class="badge ok">Metinde yer almaktadır</span></td></tr></table>
+  <p class="sub">Metin katmanı (OCR) bulunmayan taranmış harita ve kurum görüşü ekleri otomatik metin taramasına dahil edilmemiştir.</p>
 
   <h2>Sayfa Kaynaklı Çıkarılan Bulgular</h2>
   <div class="cards"><section class="card"><h3>Koordinatlar, Parsel ve Alan Büyüklüğü <span style="color:var(--muted);font-weight:400;font-size:0.85rem">(32 sayfa: s.5, s.12, s.14, s.16, s.22, s.24, s.27, s.37, s.42, s.43, s.44, s.46, s.47, s.77 (+18 sayfa))</span></h3><div class="hit"><span class="pno">[s. 5]</span> <code>600,00 m2</code> — …apu proje tanıtım dosyası eklerinde yer almaktadır (Bkz. Ek.2-ç). Projenin gerçekleştirileceği parselin büyüklüğü 44.600,00 m2 olup, proje alanına ait koordinatlar proje tanıtım dosyası eklerinde yer almaktadır (Bkz. Ek.1). İşletmenin 1.460 t…</div>
@@ -239,8 +269,36 @@ blockquote { margin: 10px 0; padding: 10px 14px; border-left: 3px solid var(--ac
 <li><span class="pno">[s. 88]</span> 3.Vekaletname, İmza Sirküleri ve Ticari Sicil Gazetesi</li></ul>
 
   <div class="notice">
-    Çevre, Şehircilik ve İklim Değişikliği Bakanlığı'nın kamuya açık <code>eced-duyuru.csb.gov.tr</code> portalından üretilen bilgilendirme amaçlı şeffaflık aracıdır. Tüm alıntılar 1 tabanlı PDF sayfa numarasıyla <code>[s. N]</code> gösterilir. Yasal süreler otomatik hesaplanır; kesin süre ve hukuki işlem için mutlaka avukat/hukukçu doğrulaması alın.
+    Bu sayfa, T.C. Çevre, Şehircilik ve İklim Değişikliği Bakanlığı'nın kamuya açık <code>eced-duyuru.csb.gov.tr</code> duyuru portalındaki kayıtlar esas alınarak bilgilendirme amacıyla hazırlanmıştır. Alıntıların tamamı 1 tabanlı PDF sayfa numarasıyla (<code>[s. N]</code>) gösterilmektedir. Yasal süreler otomatik olarak hesaplanır; kesin sürelerin ve hukuki başvuru yollarının yetkili hukukçular tarafından teyit edilmesi gerekir.
   </div>
 </div>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script>
+(() => {
+  if (typeof L === 'undefined') return;
+  const g = {"lat": 38.6191, "lon": 27.4289, "zoom": 8, "precision": "province_centroid", "points": [], "label": "MANİSA / AKHİSAR — ZEYTİN İŞLEME TESİSİ KAPASİTE ARTIŞI"};
+  const map = L.map('digest-map').setView([g.lat, g.lon], g.zoom);
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    maxZoom: 18,
+    attribution: '&copy; OpenStreetMap katkıda bulunanları'
+  }).addTo(map);
+  if (g.precision === 'exact_pdf' && g.points.length > 1) {
+    const latlngs = g.points.map(p => [p[0], p[1]]);
+    const poly = L.polyline(latlngs, { color: '#58a6ff', weight: 3, opacity: 0.85 }).addTo(map);
+    for (const ll of latlngs.slice(0, 30)) {
+      L.circleMarker(ll, { radius: 4, color: '#ffffff', fillColor: '#f85149', fillOpacity: 0.9, weight: 1 }).addTo(map);
+    }
+    map.fitBounds(poly.getBounds().pad(0.25));
+  } else {
+    L.circleMarker([g.lat, g.lon], {
+      radius: g.precision === 'exact_pdf' ? 8 : 11,
+      color: '#ffffff',
+      fillColor: g.precision === 'exact_pdf' ? '#f85149' : '#58a6ff',
+      fillOpacity: g.precision === 'exact_pdf' ? 0.9 : 0.45,
+      weight: 2
+    }).bindPopup(g.label).addTo(map).openPopup();
+  }
+})();
+</script>
 </body>
 </html>

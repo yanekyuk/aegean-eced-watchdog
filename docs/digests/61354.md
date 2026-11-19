@@ -1,4 +1,4 @@
-# e-ÇED Pre-Digest — #61354 (BERGAMA / İZMİR)
+# e-ÇED Pre-Digest — #61354 (BURHANİYE / BALIKESİR)
 
 > **Official Portal:** http://eced.csb.gov.tr/jsp/ek1/61354
 > **Direct PDF:** http://eced.csb.gov.tr/jsp/dosya/dosyaGoster.htm?tempAd=sign4195618410608326396.pdf&orjinalAd=KaraburunEIHPTD...pdf&yuklemeTarihi=2026-11-16
@@ -11,12 +11,12 @@
 | **Project** | 154 kV (Alibey RES TM - Bergama Vento RES TM EİH) Brş.N. - 154 kV İvrindi RES TM (Karaburun RES) EİH (Girdi-Çıktı) |
 | **Owner** | TÜRKİYE ELEKTRİK İLETİM ANONİM ŞİRKETİ |
 | **Consulting Firm** | EN-ÇEV ENERJİ ÇEVRE YATIRIMLARI DANIŞMANLIĞI HARİTACILIK İMAR İNŞAAT A.Ş |
-| **District / Sector** | BERGAMA · Turizm / Enerji İletim Hatları |
+| **District / Sector** | BURHANİYE · Turizm / Enerji İletim Hatları |
 | **Stage / Annex** | `ÇED Süreci Başlayan` · `Ek-2` |
 | **Announcement Date** | `19.11.2026` (uploaded `16/11/2026 04:19:09`) |
 
 **Statutory Deadlines (informational aid — verify with legal counsel):**
-- **10-day public review/comment window (askı süresi):** `2026-11-29` (`9 days remaining`)
+- **10 günlük halkın görüş ve önerilerine açılma (askı) süresi:** `2026-11-29` (`9 days remaining`)
 
 ## 2. AI-Assisted Scientific Synthesis (`gemini-3.8-flash`)
 
@@ -65,7 +65,7 @@
 
 ## Official Announcement Text
 
-> İZMİR ili BERGAMA,  ilcesinde İZMİR ili BERGAMA,  ilçesi Balıkesir İli, Burhaniye İlçesi, Yaylacık Köyü ve İzmir İli, Bergama İlçesi, Güneşli, Çamavlu, Kıranlı, Çobanlar ve Hacılar Mahalleleri Mevkii mevkiindeki TÜRKİYE ELEKTRİK İLETİM ANONİM ŞİRKETİ tarafından yapılması planlanan 154 kV (Alibey RES TM - Bergama Vento RES TM EİH) Brş.N. - 154 kV İvrindi RES TM (Karaburun RES) EİH (Girdi-Çıktı) projesi ile ilgili olarak İZMİR Valiliğimize sunulan P.T.D. Dosyası Çevresel Etki Değerlendirmesi Yönetmeliği'nin 16. maddesi doğrultusunda incelenmiş ve projeye ilişkin ÇED Süreci başlamıştır. İlgililere ve kamuoyuna duyurulur.
+> BALIKESİR ili BURHANİYE,  ilcesinde BALIKESİR ili BURHANİYE,  ilçesi Balıkesir İli, Burhaniye İlçesi, Yaylacık Köyü ve İzmir İli, Bergama İlçesi, Güneşli, Çamavlu, Kıranlı, Çobanlar ve Hacılar Mahalleleri Mevkii mevkiindeki TÜRKİYE ELEKTRİK İLETİM ANONİM ŞİRKETİ tarafından yapılması planlanan 154 kV (Alibey RES TM - Bergama Vento RES TM EİH) Brş.N. - 154 kV İvrindi RES TM (Karaburun RES) EİH (Girdi-Çıktı) projesi ile ilgili olarak BALIKESİR Valiliğimize sunulan P.T.D. Dosyası Çevresel Etki Değerlendirmesi Yönetmeliği'nin 16. maddesi doğrultusunda incelenmiş ve projeye ilişkin ÇED Süreci başlamıştır. İlgililere ve kamuoyuna duyurulur.
 
 ## Deterministic Baseline & Red-Flag Scan
 

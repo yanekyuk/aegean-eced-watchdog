@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Nasıl Kullanılır? — Ege e-ÇED İzleme</title>
+  <title>Kullanım ve Bilimsel İnceleme Rehberi — Türkiye e-ÇED İzleme Platformu</title>
   <style>
 
 :root {
@@ -38,31 +38,53 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
   background: var(--bg);
   color: var(--text);
-  line-height: 1.5;
+  line-height: 1.6;
 }
-.wrap { max-width: 1220px; margin: 0 auto; padding: 24px 18px 64px; }
+.wrap { max-width: 1240px; margin: 0 auto; padding: 24px 18px 64px; }
 a { color: var(--accent); text-decoration: none; }
 a:hover { text-decoration: underline; }
 header { border-bottom: 1px solid var(--border); padding-bottom: 16px; margin-bottom: 20px; }
 h1 { margin: 0 0 6px; font-size: 1.55rem; }
+h2 { margin: 26px 0 10px; font-size: 1.2rem; }
+h3 { margin: 16px 0 8px; font-size: 1rem; }
 .sub { color: var(--muted); font-size: 0.92rem; margin: 0; }
-.meta-bar { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 12px; font-size: 0.85rem; color: var(--muted); }
-.stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 10px; margin: 16px 0 20px; }
+.meta-bar { display: flex; flex-wrap: wrap; gap: 14px; margin-top: 12px; font-size: 0.85rem; color: var(--muted); }
+.stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 10px; margin: 16px 0 18px; }
 .stat { background: var(--surface); border: 1px solid var(--border); border-radius: 8px; padding: 12px 14px; }
 .stat .num { font-size: 1.45rem; font-weight: 700; }
 .stat .lbl { font-size: 0.78rem; color: var(--muted); }
+.map-box {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 18px;
+}
+#map { width: 100%; height: 420px; background: var(--badge-bg); }
+#digest-map { width: 100%; height: 320px; background: var(--badge-bg); }
+.map-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  padding: 9px 14px;
+  font-size: 0.8rem;
+  color: var(--muted);
+  border-top: 1px solid var(--border);
+}
+.dot { display: inline-block; width: 10px; height: 10px; border-radius: 50%; margin-right: 5px; vertical-align: middle; }
 .controls { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; margin-bottom: 16px; }
-input[type="search"] {
-  flex: 1 1 240px;
+input[type="search"], select.filter-select {
   padding: 8px 12px;
   border-radius: 6px;
   border: 1px solid var(--border);
   background: var(--surface);
   color: var(--text);
-  font-size: 0.92rem;
+  font-size: 0.9rem;
 }
+input[type="search"] { flex: 1 1 240px; }
+select.filter-select { min-width: 170px; }
 button.pill {
-  padding: 6px 11px;
+  padding: 7px 12px;
   border-radius: 999px;
   border: 1px solid var(--border);
   background: var(--surface);
@@ -76,12 +98,12 @@ button.pill.active { background: var(--accent); border-color: var(--accent); col
   background: var(--surface);
   border: 1px solid var(--border);
   border-radius: 8px;
-  padding: 14px 16px;
+  padding: 15px 17px;
 }
-.card.prio { border-left: 4px solid var(--accent); }
+.card.ek1 { border-left: 4px solid var(--accent); }
 .row-top { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px; align-items: baseline; }
 .title { font-weight: 600; font-size: 0.98rem; }
-.badges { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 6px; }
+.badges { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 7px; }
 .badge {
   display: inline-block;
   padding: 2px 8px;
@@ -94,32 +116,33 @@ button.pill.active { background: var(--accent); border-color: var(--accent); col
 .badge.warn { border-color: var(--amber); color: var(--amber); font-weight: 600; }
 .badge.ok { border-color: var(--green); color: var(--green); }
 .badge.muted { color: var(--muted); }
-.detail { font-size: 0.86rem; color: var(--muted); margin: 8px 0; }
+.detail { font-size: 0.87rem; color: var(--muted); margin: 8px 0; }
 .actions { display: flex; flex-wrap: wrap; gap: 12px; font-size: 0.84rem; margin-top: 8px; }
 .notice {
   margin-top: 28px;
-  padding: 12px 14px;
+  padding: 14px 16px;
   border: 1px solid var(--border);
   border-radius: 8px;
-  font-size: 0.82rem;
+  font-size: 0.84rem;
   color: var(--muted);
 }
 table.kv { width: 100%; border-collapse: collapse; margin: 12px 0; font-size: 0.9rem; }
-table.kv th, table.kv td { border: 1px solid var(--border); padding: 8px 10px; text-align: left; vertical-align: top; }
-table.kv th { width: 220px; background: var(--badge-bg); }
+table.kv th, table.kv td { border: 1px solid var(--border); padding: 8px 11px; text-align: left; vertical-align: top; }
+table.kv th { width: 240px; background: var(--badge-bg); }
 code { background: var(--badge-bg); padding: 1px 5px; border-radius: 4px; font-size: 0.85em; }
-blockquote { margin: 10px 0; padding: 10px 14px; border-left: 3px solid var(--accent); background: var(--surface); font-size: 0.9rem; }
-.hit { margin: 6px 0; font-size: 0.88rem; }
+blockquote { margin: 10px 0; padding: 11px 15px; border-left: 3px solid var(--accent); background: var(--surface); font-size: 0.9rem; }
+.hit { margin: 7px 0; font-size: 0.88rem; }
 .pno { font-weight: 700; color: var(--accent); }
+.leaflet-popup-content { color: #1f2328; font-size: 0.85rem; line-height: 1.45; }
 
 pre {
   background: var(--surface);
   border: 1px solid var(--border);
   border-radius: 8px;
-  padding: 14px 16px;
+  padding: 15px 17px;
   overflow-x: auto;
   font-size: 0.85rem;
-  line-height: 1.5;
+  line-height: 1.55;
   white-space: pre-wrap;
 }
 .step-grid {
@@ -142,96 +165,98 @@ pre {
 <body>
 <div class="wrap">
   <header>
-    <div style="font-size:0.85rem;margin-bottom:8px;"><a href="index.html">← Ege e-ÇED İzleme listesine dön</a> · <a href="feed.xml">RSS 2.0 Akışı</a></div>
-    <h1>Bu Site Ne İşe Yarar ve Nasıl Kullanılır?</h1>
-    <p class="sub">Çevre bilimciler, ekologlar, mühendisler, hukukçular ve yerel gönüllüler için sürdürülebilir, sayfa kaynaklı ÇED inceleme rehberi.</p>
+    <div style="font-size:0.85rem;margin-bottom:8px;"><a href="index.html">← Türkiye e-ÇED İzleme listesine dön</a> · <a href="feed.xml">RSS 2.0 Akışı</a></div>
+    <h1>Platformun Amacı ve Bilimsel İnceleme Rehberi</h1>
+    <p class="sub">Çevre bilimciler, ekologlar, mühendisler, hukukçular, yerel gazeteciler ve yurttaşlar için sayfa kaynaklı ÇED inceleme kılavuzu.</p>
   </header>
 
-  <section class="card prio">
-    <h2 style="margin-top:0;">1. Sorun ve Nihai Hedef</h2>
-    <p>Çevre, Şehircilik ve İklim Değişikliği Bakanlığı tüm ÇED başvurularını, Halkın Katılımı Toplantılarını (HKT) ve kararları kamuya açık olarak yayımlar. Ancak gerçek hayatta iki büyük engel vardır:</p>
+  <section class="card ek1">
+    <h2 style="margin-top:0;">1. Karşılaşılan Temel Sorun ve Nihai Amaç</h2>
+    <p>T.C. Çevre, Şehircilik ve İklim Değişikliği Bakanlığı, Türkiye genelindeki tüm Çevresel Etki Değerlendirmesi (ÇED) başvurularını, Halkın Katılımı Toplantısı (HKT) ilanlarını ve nihai kararları kamuya açık biçimde yayımlamaktadır. Buna karşın, kamusal denetimin etkili biçimde yürütülmesini zorlaştıran iki temel yapısal engel bulunmaktadır:</p>
     <ul>
-      <li><strong>Süreler çok kısadır:</strong> Askı/görüş ve HKT duyuruları genellikle <strong>10 takvim günü</strong>, <em>ÇED Olumlu</em> veya <em>ÇED Gerekli Değildir</em> kararlarına karşı iptal davası açma süresi ise <strong>İYUK Madde 20/A</strong> gereği yalnızca <strong>30 takvim günüdür</strong> (ve idareye yapılan İYUK 11 başvuruları bu süreyi durdurmaz).</li>
-      <li><strong>Dosyalar çok ağırdır:</strong> Tek bir Ek-2 Proje Tanıtım Dosyası 300+ sayfa, bir Ek-1 ÇED Raporu 600–900+ sayfa ve 100–200 MB boyutundadır. Yerel sakinler, küçük haber merkezleri ve gönüllü avukatlar süre dolmadan bu raporların içindeki bilimsel eksikleri yakalayamaz.</li>
+      <li><strong>Yasal sürelerin son derece kısa olması:</strong> Projelerin halkın görüş ve önerilerine açılma (askı) ve HKT duyuru süreleri kural olarak <strong>10 takvim günüdür</strong>. <em>ÇED Olumlu</em> veya <em>ÇED Gerekli Değildir</em> kararlarına karşı açılacak iptal davaları ise 2577 sayılı İdari Yargılama Usulü Kanunu'nun (İYUK) <strong>20/A maddesi</strong> uyarınca ivedi yargılama usulüne tabidir. Bu kapsamda dava açma süresi yalnızca <strong>30 takvim günüdür</strong> ve idareye yapılan İYUK Madde 11 başvuruları bu süreyi durdurmaz.</li>
+      <li><strong>Dosyaların yüksek teknik hacmi:</strong> Ek-2 kapsamındaki Proje Tanıtım Dosyaları (PTD) çoğunlukla 200 ila 400 sayfa, Ek-1 kapsamındaki ÇED Raporları ise 600 ila 1.000 sayfa uzunluğunda ve yüzlerce megabayt boyutundadır. Yerel halkın, bağımsız gazetecilerin ve gönüllü avukatların kısa yasal süreler dolmadan bu belgelerdeki bilimsel ve metodolojik eksiklikleri tespit etmesi fiilen güçleşmektedir.</li>
     </ul>
-    <p><strong>Nihai hedef:</strong> Sosyal medyada öfke üretmek değil; <strong>resmi PDF sayfa numaralarına (<code>[s. N]</code>) dayanan, salt bilimsel ve tarafsız 1 sayfalık teknik inceleme notlarını</strong> yasal süre dolmadan dava ehliyeti ve yerel gücü olan kurumlara (barolar, meslek odaları, belediyeler, yerel platformlar ve gazeteciler) ulaştırmaktır. İdare mahkemelerinde kararların iptali soyut itirazlarla değil; raporun kendi içindeki metodolojik çelişkiler somut sayfa numaralarıyla gösterildiğinde gerçekleşir.</p>
+    <p><strong>Bu platformun nihai amacı</strong>, tartışma veya polemik üretmek değil; resmi PDF belgelerindeki sayfa numaralarına (<code>[s. N]</code>) dayanan, nesnel ve bilimsel olarak doğrulanmış <strong>bir sayfalık teknik inceleme notlarının</strong> yasal süreler dolmadan önce dava ehliyetine ve kurumsal kapasiteye sahip aktörlere ulaştırılmasını kolaylaştırmaktır. İdari yargıda ÇED kararlarının iptali genel ve soyut itirazlarla değil; raporun kendi içindeki başlangıç verisi eksikliklerinin, mevsimsel örnekleme boşluklarının ve mevzuat çelişkilerinin somut sayfa numaralarıyla ortaya konulmasıyla mümkün olmaktadır.</p>
   </section>
 
-  <h2>2. Bu Site Sizin Yerinizde Neyi Otomatik Yapar?</h2>
+  <h2>2. Platform Hangi İşlemleri Otomatik Olarak Yürütür?</h2>
   <table class="kv">
-    <tr><th>Günlük Tarama</th><td>İzmir ve Manisa (Gediz Havzası) duyurularını resmi <code>eced-duyuru.csb.gov.tr</code> portalından otomatik çeker, öncelikli ekolojik koridorları (Aliağa, Foça, Bergama, Dikili, Karaburun, Menemen, Urla, Çeşme, Gediz) öne çıkarır.</td></tr>
-    <tr><th>Yasal Süre Sayacı</th><td>Her duyuru için 10 günlük askı ve 30 günlük İYUK 20/A son tarihlerini deterministik olarak hesaplar; yaklaşan dosyaları kırmızı/sarı etiketlerle işaretler.</td></tr>
-    <tr><th>Sayfa Kaynaklı PDF Ön Özeti</th><td>Yüzlerce sayfalık resmi PDF'leri tarar; taranmış sayfa sayısını, su/deşarj, zeytinlik (3573), korunan alan, flora/fauna ve kümülatif etki verilerini <code>[s. N]</code> sayfa numaralarıyla çıkarır.</td></tr>
-    <tr><th>Yapay Zeka Ön Taraması</th><td>Öne çıkan sayfalardan Türkçe özet, başlangıç etüdü değerlendirmesi (saha çalışması mı, yalnızca literatür mü, mevsimsel örnekleme önceden mi yapılmış yoksa onay sonrasına mı ertelenmiş?) ve taslak teknik sorular üretir. <em>Bu katman hızlandırıcıdır; nihai kaynak her zaman resmi PDF'in kendisidir.</em></td></tr>
+    <tr><th>Türkiye Geneli Tarama</th><td>Bakanlığın resmi <code>eced-duyuru.csb.gov.tr</code> duyuru portalındaki 81 ile ait kayıtları düzenli olarak tarar, proje detaylarını ve resmi PDF bağlantılarını tek bir dizinde toplar.</td></tr>
+    <tr><th>Konum Haritası</th><td>Metin katmanında koordinat tablosu bulunan PDF dosyalarındaki UTM/ED50 ve WGS84 koordinatlarını haritaya aktarır; koordinat çıkarılamayan dosyaları ise yaklaşık il merkezi üzerinden görünür kılar.</td></tr>
+    <tr><th>Yasal Süre Hesaplama</th><td>Her duyuru için 10 günlük askı süresini ve 30 günlük İYUK Madde 20/A dava açma son tarihini otomatik olarak hesaplayarak süresi yaklaşan dosyaları önceliklendirir.</td></tr>
+    <tr><th>Sayfa Kaynaklı Ön Özet</th><td>Yüzlerce sayfalık PDF dosyalarını tarayarak taranmış sayfa oranını, su kullanımı, deşarj, zeytinlik, orman, korunan alan, flora/fauna ve kümülatif etki verilerini <code>[s. N]</code> sayfa numaralarıyla listeler.</td></tr>
+    <tr><th>Yapay Zeka Destekli Ön Değerlendirme</th><td>Raporun en yüksek bilgi yoğunluğuna sahip sayfalarından Türkçe özet, başlangıç etüdü değerlendirmesi ve taslak teknik sorular oluşturur. Bu aşama yalnızca ön taramayı hızlandırmak içindir; nihai doğrulama kaynağı her zaman resmi PDF belgesinin kendisidir.</td></tr>
   </table>
 
-  <h2>3. Bir Uzman / Bilim İnsanı Olarak Ne Yapabilirsiniz? (Ayda 1–2 Saat)</h2>
-  <p class="sub">Sıfırdan bir dernek kurmanıza, her gün siteyi takip etmenize veya kodla uğraşmanıza gerek yoktur. Yalnızca kendi uzmanlık alanınıza giren bir dosya düştüğünde şu 4 adımı uygulamanız yeterlidir:</p>
+  <h2>3. Bir Uzman veya Bilim İnsanı Olarak Nasıl Katkı Sunabilirsiniz?</h2>
+  <p class="sub">Bu sürece katılmak için yeni bir dernek kurmanız, yazılım bilgisine sahip olmanız ya da platformu her gün izlemeniz gerekmez. Yalnızca kendi uzmanlık alanınızla doğrudan örtüşen bir dosya yayımlandığında, ayda bir veya iki saat ayırarak aşağıdaki dört adımı izleyebilirsiniz:</p>
 
   <div class="step-grid">
     <div class="card">
-      <div class="step-num">Adım 1 · 5 dk</div>
-      <div class="title">Tek Bir Dosya Seçin</div>
-      <p class="detail">Ana sayfada <strong>Aktif Süreler</strong> ve <strong>Öncelikli Koridor</strong> filtrelerini açın. Kendi alanınıza giren (deniz/kıyı ekolojisi, su/hidrojeoloji, flora/fauna, tarım/zeytinlik, emisyon) ve süresi dolmamış tek bir dosyaya tıklayın.</p>
+      <div class="step-num">Adım 1 · Yaklaşık 5 dakika</div>
+      <div class="title">İlgili Dosyayı Seçiniz</div>
+      <p class="detail">Ana sayfada <strong>Yasal Süresi Devam Edenler</strong> filtresini ve il seçicisini kullanınız. Uzmanlık alanınıza giren (örneğin hidrojeoloji, kıyı ekolojisi, flora/fauna, tarım veya hava kalitesi) ve başvuru süresi henüz dolmamış tek bir dosyayı açınız.</p>
     </div>
     <div class="card">
-      <div class="step-num">Adım 2 · 30–60 dk</div>
-      <div class="title">[s. N] Üzerinden Doğrulayın</div>
-      <p class="detail">Ön özetteki <strong>Bilimsel Uyarılar</strong> ve <strong>Öne Çıkan Sayısal Bulgular</strong> listesini okuyun. Her maddedeki <code>[s. N]</code> sayfa numarasından doğrudan <strong>Resmi PDF</strong>'teki ilgili sayfayı açarak verinin doğruluğunu ve eksiklerini uzman gözüyle teyit edin.</p>
+      <div class="step-num">Adım 2 · 30–60 dakika</div>
+      <div class="title">Bulguları Resmi PDF Üzerinden Doğrulayınız</div>
+      <p class="detail">Ön özette yer alan sayısal verileri ve bilimsel bulguları inceleyiniz. Her maddenin yanında belirtilen <code>[s. N]</code> sayfa numarasından doğrudan <strong>Resmi PDF Dosyası</strong> üzerindeki ilgili sayfayı açarak bilgileri ve olası metodolojik eksiklikleri kendi uzmanlık süzgecinizden geçiriniz.</p>
     </div>
     <div class="card">
-      <div class="step-num">Adım 3 · 30 dk</div>
-      <div class="title">1 Sayfalık Teknik Not Yazın</div>
-      <p class="detail">Aşağıdaki 5 maddelik şablonu doldurun: eksik başlangıç verileri, tek mevsim/literatür boşlukları, kümülatif etki eksikleri ve 3–5 net teknik soru. Sadece doğrulanmış olgular ve sayfa numaraları — yorum veya polemik yok.</p>
+      <div class="step-num">Adım 3 · Yaklaşık 30 dakika</div>
+      <div class="title">Bir Sayfalık Teknik İnceleme Notu Hazırlayınız</div>
+      <p class="detail">Aşağıdaki beş maddelik şablonu kullanarak kısa bir teknik not oluşturunuz. Metnin yalnızca belgeden doğrulanmış olgulara, sayfa numaralarına ve hakemli bilimsel ölçütlere dayanmasına özen gösteriniz; öznel değerlendirmelerden ve polemik dilinden kaçınınız.</p>
     </div>
     <div class="card">
-      <div class="step-num">Adım 4 · 5 dk</div>
-      <div class="title">Mevcut Aktörlere İletin</div>
-      <p class="detail">Notu aşağıda listelenen mevcut hukuk, meslek odası veya yerel ağlardan birine e-posta/mesajla iletin. Dilerseniz adınızla uzman görüşü olarak, dilerseniz kurum/komisyon üzerinden paylaşabilirsiniz.</p>
+      <div class="step-num">Adım 4 · Yaklaşık 5 dakika</div>
+      <div class="title">Notu Yetkili Kurum ve Paydaşlara İletiniz</div>
+      <p class="detail">Hazırladığınız teknik notu aşağıdaki hukuk, meslek odası veya yerel izleme ağlarından birine iletiniz. Notunuzu dilerseniz kendi adınızla uzman görüşü olarak, dilerseniz ilgili oda veya komisyonun kurumsal çalışmasına katkı biçiminde paylaşabilirsiniz.</p>
     </div>
   </div>
 
-  <h2>4. Hazır Notu Kime İletebilirsiniz? (İzmir &amp; Ege Ağı)</h2>
+  <h2>4. Hazırlanan Teknik Notlar Hangi Kanallara İletilebilir?</h2>
   <table class="kv">
-    <tr><th>Hukuki Başvuru ve İYUK 20/A</th><td><strong>İzmir Barosu Çevre ve Kent Hukuku Komisyonu</strong> (ve Manisa Barosu Çevre Komisyonu) — 30 günlük iptal davası dilekçelerinde teknik dayanak olarak kullanılır.</td></tr>
-    <tr><th>Meslek Odaları</th><td><strong>TMMOB İzmir İl Koordinasyon Kurulu</strong> (Çevre, Ziraat, Jeoloji, Orman, Kimya ve Şehir Plancıları Odaları İzmir Şubeleri) — kurumsal itiraz ve bilirkişi süreçleri için doğrudan yetkilidir.</td></tr>
-    <tr><th>Bölgesel ve Yerel Platformlar</th><td><strong>EGEÇEP</strong> (Ege Çevre ve Kültür Platformu), <em>Karaburun Sivil İnisiyatif</em>, <em>Foça / Aliağa / Bergama / Dikili</em> çevre platformları ve ilgili ilçe belediyelerinin çevre birimleri.</td></tr>
-    <tr><th>Resmi Katılım Kanalları</th><td>10 günlük askı süresinde <strong>ÇŞİD İl Müdürlüğü</strong>'ne yazılı görüş dilekçesi verilebilir; <strong>HKT (Halkın Katılımı Toplantısı)</strong> sırasında teknik soruların tutanağa geçmesi sağlanabilir.</td></tr>
-    <tr><th>Yerel Basın</th><td>İzmir ve Ege'de çevre haberciliği yapan bağımsız yerel gazeteciler — sayfa numaralı 1 sayfalık net özet, 400 sayfalık PDF'ten çok daha hızlı haberleşir.</td></tr>
+    <tr><th>Baro Çevre Komisyonları</th><td>İlgili il barolarının Çevre ve Kent Hukuku Komisyonları (örneğin İzmir, İstanbul, Muğla, Ankara, Antalya ve Manisa Baroları), 30 günlük İYUK Madde 20/A iptal davası dilekçelerinde bilimsel dayanak olarak bu notlardan doğrudan yararlanabilmektedir.</td></tr>
+    <tr><th>Meslek Odaları (TMMOB)</th><td>TMMOB İl Koordinasyon Kurulları ile Çevre, Ziraat, Jeoloji, Orman, Kimya ve Şehir Plancıları Odalarının ilgili şubeleri kurumsal itiraz, teknik raporlama ve bilirkişi süreçlerinde doğrudan yetkilidir.</td></tr>
+    <tr><th>Resmi Katılım Mekanizmaları</th><td>10 günlük askı süresi içinde ilgili Çevre, Şehircilik ve İklim Değişikliği İl Müdürlüğüne yazılı görüş dilekçesi sunulabilir. Ek-1 kapsamındaki projelerde ise Halkın Katılımı Toplantısı (HKT) tutanaklarına somut teknik soruların geçirilmesi sağlanabilir.</td></tr>
+    <tr><th>Bölgesel Platformlar ve Belediyeler</th><td>EGEÇEP, Kazdağları, Marmara, Karadeniz ve Akdeniz çevre platformları, ilçe düzeyindeki sivil inisiyatifler ile ilgili büyükşehir veya ilçe belediyelerinin çevre koruma birimleri yerel süreçleri takip etmektedir.</td></tr>
+    <tr><th>Bağımsız Yerel Basın</th><td>Çevre haberciliği yapan yerel ve ulusal muhabirler için 500 sayfalık bir PDF yerine sayfa numaraları doğrulanmış bir sayfalık teknik özet, kamuoyunun doğru bilgilendirilmesini önemli ölçüde kolaylaştırır.</td></tr>
   </table>
 
-  <h2>5. Kopyalanabilir 1 Sayfalık Teknik İnceleme Şablonu</h2>
-  <pre># Teknik İnceleme Notu — e-ÇED #[DOSYA_NO] ([İLÇE] / [İL])
+  <h2>5. Bir Sayfalık Teknik İnceleme Notu Şablonu</h2>
+  <pre># Teknik İnceleme Notu — e-ÇED #[DOSYA_NO] ([İL] / [İLÇE])
 
-- Resmi kayıt: [e-ÇED portal bağlantısı]
-- Aşama ve yasal son tarih: [10 günlük askı / HKT tarihi / 30 günlük İYUK 20/A son günü]
+- Resmi e-ÇED Kaydı: [e-ÇED portal bağlantısı]
+- Aşama ve Yasal Son Tarih: [10 günlük askı süresi / HKT tarihi / 30 günlük İYUK Madde 20/A son günü]
 
-1. Başlangıç verisi ve örnekleme eksikleri ([s. N]):
-   - ...
+1. Başlangıç Verisi ve Örnekleme Eksiklikleri ([s. N]):
+   - Raporda saha çalışması tarihleri, mevsimsel tekrar durumu veya örnekleme yöntemine ilişkin tespit edilen eksiklikleri sayfa numarasıyla belirtiniz.
 
-2. Ekolojik, hidrolojik veya jeokimyasal çelişkiler ([s. N]):
-   - ...
+2. Ekolojik, Hidrolojik veya Jeokimyasal Çelişkiler ([s. N]):
+   - Su kaynakları, denizel/karasal ekosistemler, atık yönetimi veya emisyon varsayımlarındaki bilimsel tutarsızlıkları sayfa numarasıyla özetleyiniz.
 
-3. Kümülatif bölgesel etki ve mevzuat boşlukları (3573 / 5403 / ÖÇK) ([s. N]):
-   - ...
+3. Kümülatif Bölgesel Etki ve Mevzuat Boşlukları ([s. N]):
+   - Çevredeki mevcut tesislerle birlikte ortaya çıkacak birikimli etkiler ile 3573 sayılı Zeytincilik Kanunu, 5403 sayılı Toprak Koruma Kanunu veya korunan alan statüsüne ilişkin eksiklikleri yazınız.
 
-4. HKT tutanağı veya İYUK 20/A dilekçesi için 3–5 somut teknik soru:
-   - ... ([s. N])
-   - ... ([s. N])
+4. HKT Tutanağı veya İdari Başvuru İçin Taslak Teknik Sorular:
+   - [Somut, tarafsız ve ölçülebilir teknik soru 1] ([s. N])
+   - [Somut, tarafsız ve ölçülebilir teknik soru 2] ([s. N])
+   - [Somut, tarafsız ve ölçülebilir teknik soru 3] ([s. N])
 
-5. Önerilen iletim kanalı:
-   - İzmir Barosu Çevre Komisyonu / TMMOB İzmir İKK / EGEÇEP / İlçe İnisiyatifi / Yerel Basın</pre>
+5. İletilmesi Önerilen Kurum ve Paydaşlar:
+   - İlgili İl Barosu Çevre ve Kent Hukuku Komisyonu / TMMOB İl Koordinasyon Kurulu / Yerel Çevre Platformu / Belediye Çevre Birimi / Yerel Basın</pre>
 
-  <h2>6. Sürdürülebilirlik ve Güvenlik İlkeleri</h2>
+  <h2>6. Çalışma İlkeleri ve Sürdürülebilirlik</h2>
   <ul>
-    <li><strong>%100 kamuya açık resmi kaynak:</strong> Tüm veriler Bakanlığın kendi e-ÇED duyurularına dayanır; bilgi edinme, askı görüşü ve HKT katılımı yasal anayasal haklardır.</li>
-    <li><strong>Bilimsel tarafsızlık:</strong> Siyasi slogan veya doğrulanmamış iddia yerine yalnızca raporun kendi içindeki sayfa numaralı eksikler ve hakemli bilim literatürüyle çelişen noktalar yazılır.</li>
-    <li><strong>Düşük tükenmişlik, esnek katılım:</strong> Hiçbir gönüllünün düzenli kota tutması gerekmez. Ayda tek bir kritik dosyayı 1–2 saatte doğrulayıp ilgili baro/odaya ulaştırmak bile uzun vadede somut sonuç üretir.</li>
-    <li><strong>Bireysel güvenlik:</strong> Kurumsal veya akademik güvencesi hassas olan uzmanlar, teknik notlarını kişisel görünürlük almadan doğrudan meslek odaları veya baro komisyonları aracılığıyla paylaşabilir.</li>
+    <li><strong>Kamuya açık ve yasal veri zemini:</strong> Platformda kullanılan tüm kayıtlar Bakanlığın kamuya açık duyuru sisteminden elde edilir. Askı sürecinde görüş bildirmek, HKT toplantılarına katılmak ve idari yargı yoluna başvurmak hukuk düzeninin tanıdığı yasal katılım haklarıdır.</li>
+    <li><strong>Bilimsel nesnellik ve doğrulanabilirlik:</strong> Her tespit, doğrudan resmi raporun sayfa numarasıyla ilişkilendirilir. Amaç siyasi değerlendirme yapmak değil, çevresel etki değerlendirme belgelerinin bilimsel yeterliliğini şeffaf biçimde incelemektir.</li>
+    <li><strong>Tükenmişlikten uzak, esnek katkı:</strong> Hiçbir uzmanın düzenli bir görev kotası üstlenmesi gerekmez. Kendi alanınızla örtüşen tek bir dosyaya ayda bir ya da iki saat ayırmak bile uzun vadede kalıcı ve ölçülebilir kamusal fayda üretir.</li>
+    <li><strong>Kurumsal güvence ve gizlilik tercihi:</strong> Akademik veya mesleki güvencesi nedeniyle bireysel görünürlük almak istemeyen uzmanlar, hazırladıkları teknik incelemeleri doğrudan meslek odaları, baro komisyonları veya sivil platformlar aracılığıyla paylaşabilirler.</li>
   </ul>
 
   <div class="notice">
-    <strong>Yasal uyarı:</strong> Bu platform bilgilendirme ve kamuoyu şeffaflığı amacı taşır; hukuki danışmanlık yerine geçmez. Tüm süreler ve mevzuat hükümleri işlem öncesinde avukat tarafından teyit edilmelidir.
+    <strong>Yasal Bilgilendirme:</strong> Bu platform yalnızca kamuoyu şeffaflığı ve bilgilendirme amacıyla hazırlanmış olup hukuki danışmanlık niteliği taşımaz. Tüm yasal sürelerin, yetki kurallarının ve mevzuat hükümlerinin herhangi bir başvuru öncesinde avukat tarafından doğrulanması gerekmektedir.
   </div>
 </div>
 </body>

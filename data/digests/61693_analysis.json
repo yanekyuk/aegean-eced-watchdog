@@ -36,7 +36,7 @@
     "statutory_clocks": [
       {
         "code": "aski_10d",
-        "kind": "10-day public review/comment window (askı süresi)",
+        "kind": "10 günlük halkın görüş ve önerilerine açılma (askı) süresi",
         "deadline": "2026-11-21",
         "days_remaining": 1
       }

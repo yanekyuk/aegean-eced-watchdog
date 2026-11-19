@@ -1,13 +1,14 @@
-# Aegean e-ÇED Ecological Watchdog
+# Türkiye e-ÇED İzleme Platformu (`aegean-eced-watchdog`)
 
-Lightweight, zero-dependency, open-source watcher and page-cited PDF pre-digest pipeline for Turkey's public Environmental Impact Assessment (*ÇED*) announcements (`https://eced-duyuru.csb.gov.tr/eced-prod/duyurular.xhtml`), tracking **İzmir** and **Manisa (Gediz Basin)**.
+Lightweight, open-source watcher, interactive Türkiye map, statutory deadline tracker, and page-cited PDF pre-digest pipeline for Turkey's public Environmental Impact Assessment (*ÇED*) announcements (`https://eced-duyuru.csb.gov.tr/eced-prod/duyurular.xhtml`) across **all 81 provinces**.
 
 ## Features
 
-- **Pure HTTP/1.1 JSF/PrimeFaces poller:** No Playwright or headless browser required. Uses `httpx` with `javax.faces.ViewState` rotation, incremental caching, and strict TLS verification via Sectigo's official AIA intermediate CA (`certs/ssl2buy-emea-ov.pem`).
-- **Deterministic statutory clocks:** Automatically tracks 10-day *askı*/HKT review windows and the **30-day İYUK Madde 20/A** urgent annulment lawsuit deadline (where İYUK Madde 11 does not pause the clock).
-- **Page-cited PDF pre-digests + optional Gemini synthesis:** Uses `pymupdf` to audit baseline methodology, water/discharge, protected zones, olive groves (*3573*), flora/fauna, and emissions—citing the exact 1-based PDF page (`[s. N]`) for every extracted figure. When `GEMINI_API_KEY` is set (environment or gitignored `.env`), runs an optional schema-constrained **`gemini-4-hydrogen`** synthesis pass (overrideable via `GEMINI_MODEL` or `--gemini-model`) over the top ~26 highest-signal pages to generate plain Turkish/English summaries, baseline assessments, red flags, and draft HKT/İYUK 20/A questions with `[s. N]` citations.
-- **Static dashboard + RSS 2.0:** Generates a zero-CDN filterable HTML dashboard (`docs/index.html`), standalone per-filing digest pages (`docs/digests/*.html` + `.md`), and an RSS 2.0 feed (`docs/feed.xml`) ready for GitHub Pages and RSS/Telegram alert bots.
+- **Türkiye-wide pure HTTP/1.1 JSF/PrimeFaces poller:** Polls all 81 provinces in a single chronological pass (or filters to chosen provinces via `--provinces`), with incremental caching and strict TLS verification via Sectigo's official AIA intermediate CA (`certs/ssl2buy-emea-ov.pem`).
+- **Interactive Leaflet map & PDF coordinate extraction:** Converts UTM/ED50/WGS84 coordinate tables directly out of official PDFs (`src/eced_watchdog/geo.py`) to plot exact project locations/routes, falling back cleanly to province centroids when coordinates live only inside scanned maps.
+- **Deterministic statutory clocks:** Automatically tracks 10-day *askı*/HKT windows and the **30-day İYUK Madde 20/A** urgent annulment lawsuit deadline (where İYUK Madde 11 does not pause the clock).
+- **Tiered Gemini synthesis:** Uses `pymupdf` for exact `[s. N]` page indexing, then runs schema-constrained Gemini synthesis when `GEMINI_API_KEY` is set (`gemini-4-hydrogen` for **Ek-1** full ÇED reports; `gemini-3.5-flash-lite` for **Ek-2** PTD files — overrideable via `GEMINI_MODEL` or `--gemini-model`).
+- **Turkish public site, guide & RSS 2.0:** Generates `docs/index.html` (map + live province/search filters), `docs/rehber.html` (scientific review guide + template), `docs/digests/*.html` + `.md`, and `docs/feed.xml`.
 
 ## Usage
 
@@ -15,14 +16,14 @@ Lightweight, zero-dependency, open-source watcher and page-cited PDF pre-digest 
 # Sync dependencies
 uv sync
 
-# Incremental fetch (İzmir + Manisa), digest up to 4 new priority PDFs, build docs/
-uv run eced-watch --days 30 --max-digests 4
+# Nationwide 7-day incremental fetch (all 81 provinces), digest up to 5 new PDFs, build docs/
+uv run eced-watch --days 7 --max-digests 5 --drop-pdfs
 
-# Rebuild static site & RSS offline from cached data/filings.json
+# Rebuild static site, map & RSS offline from cached data/filings.json
 uv run eced-watch --skip-fetch --skip-digests
 
-# Track additional provinces (standard Turkish plate codes)
-uv run eced-watch --provinces 35:İZMİR 45:MANİSA 09:AYDIN --days 14
+# Optional: restrict polling to specific provinces (Turkish plate codes)
+uv run eced-watch --provinces 35:İZMİR 45:MANİSA 34:İSTANBUL --days 14
 ```
 
 ## Scheduling & Deployment (Turkish IP Note)

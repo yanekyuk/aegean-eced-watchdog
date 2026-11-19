@@ -3,7 +3,8 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>e-ÇED Ön Özet #61112 — SOMA</title>
+  <title>e-ÇED Ön Özet #61112 — MANİSA / SOMA</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
   <style>
 :root {
   --bg: #0f1216;
@@ -37,31 +38,53 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
   background: var(--bg);
   color: var(--text);
-  line-height: 1.5;
+  line-height: 1.6;
 }
-.wrap { max-width: 1220px; margin: 0 auto; padding: 24px 18px 64px; }
+.wrap { max-width: 1240px; margin: 0 auto; padding: 24px 18px 64px; }
 a { color: var(--accent); text-decoration: none; }
 a:hover { text-decoration: underline; }
 header { border-bottom: 1px solid var(--border); padding-bottom: 16px; margin-bottom: 20px; }
 h1 { margin: 0 0 6px; font-size: 1.55rem; }
+h2 { margin: 26px 0 10px; font-size: 1.2rem; }
+h3 { margin: 16px 0 8px; font-size: 1rem; }
 .sub { color: var(--muted); font-size: 0.92rem; margin: 0; }
-.meta-bar { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 12px; font-size: 0.85rem; color: var(--muted); }
-.stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 10px; margin: 16px 0 20px; }
+.meta-bar { display: flex; flex-wrap: wrap; gap: 14px; margin-top: 12px; font-size: 0.85rem; color: var(--muted); }
+.stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 10px; margin: 16px 0 18px; }
 .stat { background: var(--surface); border: 1px solid var(--border); border-radius: 8px; padding: 12px 14px; }
 .stat .num { font-size: 1.45rem; font-weight: 700; }
 .stat .lbl { font-size: 0.78rem; color: var(--muted); }
+.map-box {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 18px;
+}
+#map { width: 100%; height: 420px; background: var(--badge-bg); }
+#digest-map { width: 100%; height: 320px; background: var(--badge-bg); }
+.map-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  padding: 9px 14px;
+  font-size: 0.8rem;
+  color: var(--muted);
+  border-top: 1px solid var(--border);
+}
+.dot { display: inline-block; width: 10px; height: 10px; border-radius: 50%; margin-right: 5px; vertical-align: middle; }
 .controls { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; margin-bottom: 16px; }
-input[type="search"] {
-  flex: 1 1 240px;
+input[type="search"], select.filter-select {
   padding: 8px 12px;
   border-radius: 6px;
   border: 1px solid var(--border);
   background: var(--surface);
   color: var(--text);
-  font-size: 0.92rem;
+  font-size: 0.9rem;
 }
+input[type="search"] { flex: 1 1 240px; }
+select.filter-select { min-width: 170px; }
 button.pill {
-  padding: 6px 11px;
+  padding: 7px 12px;
   border-radius: 999px;
   border: 1px solid var(--border);
   background: var(--surface);
@@ -75,12 +98,12 @@ button.pill.active { background: var(--accent); border-color: var(--accent); col
   background: var(--surface);
   border: 1px solid var(--border);
   border-radius: 8px;
-  padding: 14px 16px;
+  padding: 15px 17px;
 }
-.card.prio { border-left: 4px solid var(--accent); }
+.card.ek1 { border-left: 4px solid var(--accent); }
 .row-top { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px; align-items: baseline; }
 .title { font-weight: 600; font-size: 0.98rem; }
-.badges { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 6px; }
+.badges { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 7px; }
 .badge {
   display: inline-block;
   padding: 2px 8px;
@@ -93,35 +116,36 @@ button.pill.active { background: var(--accent); border-color: var(--accent); col
 .badge.warn { border-color: var(--amber); color: var(--amber); font-weight: 600; }
 .badge.ok { border-color: var(--green); color: var(--green); }
 .badge.muted { color: var(--muted); }
-.detail { font-size: 0.86rem; color: var(--muted); margin: 8px 0; }
+.detail { font-size: 0.87rem; color: var(--muted); margin: 8px 0; }
 .actions { display: flex; flex-wrap: wrap; gap: 12px; font-size: 0.84rem; margin-top: 8px; }
 .notice {
   margin-top: 28px;
-  padding: 12px 14px;
+  padding: 14px 16px;
   border: 1px solid var(--border);
   border-radius: 8px;
-  font-size: 0.82rem;
+  font-size: 0.84rem;
   color: var(--muted);
 }
 table.kv { width: 100%; border-collapse: collapse; margin: 12px 0; font-size: 0.9rem; }
-table.kv th, table.kv td { border: 1px solid var(--border); padding: 8px 10px; text-align: left; vertical-align: top; }
-table.kv th { width: 220px; background: var(--badge-bg); }
+table.kv th, table.kv td { border: 1px solid var(--border); padding: 8px 11px; text-align: left; vertical-align: top; }
+table.kv th { width: 240px; background: var(--badge-bg); }
 code { background: var(--badge-bg); padding: 1px 5px; border-radius: 4px; font-size: 0.85em; }
-blockquote { margin: 10px 0; padding: 10px 14px; border-left: 3px solid var(--accent); background: var(--surface); font-size: 0.9rem; }
-.hit { margin: 6px 0; font-size: 0.88rem; }
+blockquote { margin: 10px 0; padding: 11px 15px; border-left: 3px solid var(--accent); background: var(--surface); font-size: 0.9rem; }
+.hit { margin: 7px 0; font-size: 0.88rem; }
 .pno { font-weight: 700; color: var(--accent); }
+.leaflet-popup-content { color: #1f2328; font-size: 0.85rem; line-height: 1.45; }
 </style>
 </head>
 <body>
 <div class="wrap">
   <header>
-    <div style="font-size:0.85rem;margin-bottom:8px;"><a href="../index.html">← Ege e-ÇED İzleme listesine dön</a> · <a href="../rehber.html">Nasıl Kullanılır? (Rehber)</a> · <a href="61112.md">Ham Markdown (.md)</a></div>
-    <h1>e-ÇED Ön Özet #61112 — SOMA / MANİSA</h1>
+    <div style="font-size:0.85rem;margin-bottom:8px;"><a href="../index.html">← Türkiye e-ÇED İzleme listesine dön</a> · <a href="../rehber.html">Kullanım ve İnceleme Rehberi</a> · <a href="61112.md">Ham Markdown (.md)</a></div>
+    <h1>e-ÇED Ön Özet #61112 — MANİSA / SOMA</h1>
     <p class="sub">400 kV UYGAR RES. TM.- BAYRAMİÇ HAVZA TM. ELEKTRİK ENERJİSİ İLETİM HATTI (122,17741 km)</p>
     <div class="badges" style="margin-top:10px;">
       <span class="badge">HKT</span>
       <span class="badge">Ek-1</span>
-      <span class="badge warn">HKT · tarihi kontrol et</span>
+      <span class="badge warn">HKT Duyurusu · Tarih duyuru metnindedir</span>
     </div>
   </header>
 
@@ -129,21 +153,27 @@ blockquote { margin: 10px 0; padding: 10px 14px; border-left: 3px solid var(--ac
     <tr><th>Proje Sahibi</th><td>TÜRKİYE ELEKTRİK İLETİM  ANONİM ŞİRKETİ GENEL MÜDÜRLÜĞÜ</td></tr>
     <tr><th>Hazırlayan Kuruluş</th><td>EN-ÇEV ENERJİ ÇEVRE YATIRIMLARI DANIŞMANLIĞI HARİTACILIK İMAR İNŞAAT A.Ş</td></tr>
     <tr><th>Sektör / Alt Sektör</th><td>Turizm / Enerji İletim Hatları</td></tr>
-    <tr><th>Duyuru Tarihi</th><td><code>04.11.2026</code> (yükleme: <code>16/10/2026 10:51:45</code>)</td></tr>
-    <tr><th>PDF Kapsamı</th><td>138.61 MB · 656 sayfa (608 metin / 48 taranmış-görüntü) · SHA-256 <code>841128c9252197bc…</code></td></tr>
-    <tr><th>Resmi Bağlantılar</th><td><a href="http://eced.csb.gov.tr/jsp/ek1/61112" target="_blank" rel="noopener">e-ÇED Portal Kaydı</a> · <a href="http://eced.csb.gov.tr/jsp/dosya/dosyaGoster.htm?tempAd=sign1016664841067059309.pdf&amp;orjinalAd=e-imza.pdf&amp;yuklemeTarihi=2026-10-16" target="_blank" rel="noopener">Resmi PDF Dosyası</a></td></tr>
+    <tr><th>Duyuru Tarihi</th><td><code>04.11.2026</code> (belge yükleme tarihi: <code>16/10/2026 10:51:45</code>)</td></tr>
+    <tr><th>PDF Kapsamı</th><td>138.61 MB · 656 sayfa (608 metin sayfası / 48 taranmış veya görüntü sayfası) · SHA-256 <code>841128c9252197bc…</code></td></tr>
+    <tr><th>Resmi Bağlantılar</th><td><a href="http://eced.csb.gov.tr/jsp/ek1/61112" target="_blank" rel="noopener">e-ÇED Portal Kaydı</a> · <a href="http://eced.csb.gov.tr/jsp/dosya/dosyaGoster.htm?tempAd=sign1016664841067059309.pdf&amp;orjinalAd=e-imza.pdf&amp;yuklemeTarihi=2026-10-16" target="_blank" rel="noopener">Resmi PDF Dosyası</a> · <a href="https://www.openstreetmap.org/?mlat=38.6191&amp;mlon=27.4289#map=8/38.6191/27.4289" target="_blank" rel="noopener">OpenStreetMap</a> · <a href="https://www.google.com/maps/search/?api=1&amp;query=38.6191,27.4289" target="_blank" rel="noopener">Google Haritalar</a></td></tr>
   </table>
+
+  <h2>Konum Haritası</h2>
+  <div class="map-box">
+    <div id="digest-map"></div>
+    <div class="map-legend"><span>PDF dosyasında metin olarak okunabilir koordinat tablosu tespit edilemediği için il merkezi yaklaşık konum olarak gösterilmektedir.</span></div>
+  </div>
 
   
   <h2>Yapay Zeka Destekli Bilimsel Ön Değerlendirme <span class="badge">gemini-3.8-flash</span></h2>
-  <p class="sub">PDF içinden seçilen 26 sayfadan (s.1, s.2, s.3, s.4, s.5, s.9, s.18, s.19, s.34, s.40, s.62, s.63, s.121, s.224, s.227, s.259, s.261, s.262, s.263, s.291, s.303, s.304, s.307, s.592, s.593, s.594) üretilmiştir. Tüm sayısal verileri resmi PDF'teki <code>[s. N]</code> sayfalarından doğrulayın.</p>
-  <section class="card prio">
+  <p class="sub">Bu değerlendirme, resmi PDF dosyasından seçilen 26 sayfa (s.1, s.2, s.3, s.4, s.5, s.9, s.18, s.19, s.34, s.40, s.62, s.63, s.121, s.224, s.227, s.259, s.261, s.262, s.263, s.291, s.303, s.304, s.307, s.592, s.593, s.594) esas alınarak hazırlanmıştır. Tüm sayısal verilerin ve tespitlerin resmi PDF belgesindeki ilgili <code>[s. N]</code> sayfalarından doğrulanması gerekir.</p>
+  <section class="card ek1">
     <p><strong>Özet:</strong> TEİAŞ tarafından Çanakkale (Bayramiç, Çan, Yenice), Balıkesir (Balya, Havran, İvrindi), İzmir (Bergama) ve Manisa (Soma) il sınırlarını kapsayan 122,18 km uzunluğunda 400 kV gerilimli Uygar RES TM - Bayramiç Havza TM elektrik iletim hattı ve toplam 76 adet direk (2 nihai, 74 durdurucu) tesisi planlanmaktadır. Projenin toplam yatırım bedeli 1.698.401.872,50 TL olarak hesaplanmıştır. Güzergâh orman, mera, kuru ve sulu tarım alanları ile Bayramiç Barajı (1,3 km) havzası ve heyelan riski bulunan yörelerden geçmektedir. Başvuru dosyasında alternatif güzergâh değerlendirmesi yapılmamış, zeytinlik ve orman izinleri ÇED sonrasına ötelenmiş ve biyolojik etki değerlendirmesi genel beyanlarla sınırlandırılmıştır.</p>
-    <details style="margin-top:8px;font-size:0.86rem;color:var(--muted);"><summary style="cursor:pointer;">English summary</summary><p style="margin:6px 0 0;">TEİAŞ proposes the construction and operation of a 122.18 km-long, 400 kV high-voltage transmission line with 76 towers connecting Uygar WPP Substation to Bayramiç Basin Substation across Çanakkale, Balıkesir, İzmir, and Manisa provinces. The total estimated project investment is 1,698,401,872.50 TRY. The proposed transmission corridor intersects forest, pasture, agricultural lands, landslide risk zones, and passes within 1.3 km of the Bayramiç Dam reservoir. The application explicitly excludes alternative route assessments, defers statutory forestry and olive grove permits to post-EIA stages, and addresses ecological baseline parameters through generic literature statements without detailed seasonal surveys.</p></details>
+    <details style="margin-top:8px;font-size:0.86rem;color:var(--muted);"><summary style="cursor:pointer;">İngilizce özet (English summary)</summary><p style="margin:6px 0 0;">TEİAŞ proposes the construction and operation of a 122.18 km-long, 400 kV high-voltage transmission line with 76 towers connecting Uygar WPP Substation to Bayramiç Basin Substation across Çanakkale, Balıkesir, İzmir, and Manisa provinces. The total estimated project investment is 1,698,401,872.50 TRY. The proposed transmission corridor intersects forest, pasture, agricultural lands, landslide risk zones, and passes within 1.3 km of the Bayramiç Dam reservoir. The application explicitly excludes alternative route assessments, defers statutory forestry and olive grove permits to post-EIA stages, and addresses ecological baseline parameters through generic literature statements without detailed seasonal surveys.</p></details>
     <div class="badges" style="margin-top:10px;">
-      <span class="badge">Saha çalışması: Karışık / belirsiz</span>
-      <span class="badge">Mevsimsel örnekleme: Yalnızca onay sonrasına taahhüt</span>
-      <span class="badge">Kümülatif etki: Yüzeysel / şablon</span>
+      <span class="badge">Saha çalışması: Karışık veya yöntemi belirsiz</span>
+      <span class="badge">Mevsimsel örnekleme: Yalnızca onay sonrasına ertelenmiş</span>
+      <span class="badge">Kümülatif etki: Yüzeysel veya şablon düzeyinde</span>
     </div>
     <p class="detail" style="margin-top:10px;"><strong>Zeytinlik ve Korunan Alanlar:</strong> Hat orman, mera ve tarım arazilerinden geçmekte olup 3573 sayılı Zeytincilik Kanunu, 4342 sayılı Mera Kanunu ve 6831 sayılı Orman Kanunu kapsamındaki görüş ve izinlerin ÇED sonrası planlama aşamasında alınacağı taahhüt edilmektedir [s. 224, 259]. Güzergâh Bayramiç Baraj Gölü&#x27;ne yaklaşık 1,3 km mesafededir [s. 261].<br/>Raporda saha incelemesinin 31.07.2026 tarihinde tek seferlik &#x27;yer görme&#x27; olarak planlandığı belirtilmekte [s. 18], ancak güzergâhtaki flora ve fauna varlığına ilişkin çok mevsimli arazi çalışması verisi sunulmamaktadır. Hat koridorunda endemik ve nesli tehlikedeki türlerin bulunmadığı yönünde toptancı bir beyana yer verilmiş [s. 261], çevresel bileşenlerin takibi ise onay sonrası genel izleme planlarına bırakılmıştır [s. 303, 307].</p>
   </section>
@@ -157,30 +187,30 @@ blockquote { margin: 10px 0; padding: 10px 14px; border-left: 3px solid var(--ac
 <tr><th>Domestic Water Requirement</th><td>36,8 m3/gün (184 L/kişi-gün) <span class="pno">[s. 263]</span></td></tr>
 <tr><th>Distance to Bayramiç Dam Lake</th><td>1,3 km (kuş uçuşu) <span class="pno">[s. 261]</span></td></tr>
 <tr><th>Distance to Koca Çay</th><td>1 km (kuş uçuşu) <span class="pno">[s. 261]</span></td></tr></table>
-  <h3>Bilimsel ve Metodolojik Uyarılar</h3><section class="card"><div class="hit"><span class="badge urgent">YÜKSEK</span> <strong>Zeytinlik ve Mülkiyet/Orman İzinlerinin ÇED Sonrasına Ertelenmesi</strong> <span class="pno">[s. 224]</span> — Projenin 3573 sayılı Zeytincilik Kanunu, 4342 sayılı Mera Kanunu ve 5403 sayılı Toprak Koruma Kanunu kapsamındaki izin ve kurum görüşlerinin ÇED süreci sonrasındaki planlama aşamasında alınacağı belirtilmiş; koridorun zeytinliklerle çakışma boyutu ve olası ağaç kesimleri ÇED aşamasında netleştirilmemiştir.</div>
+  <h3>Bilimsel ve Metodolojik Bulgular</h3><section class="card"><div class="hit"><span class="badge urgent">YÜKSEK</span> <strong>Zeytinlik ve Mülkiyet/Orman İzinlerinin ÇED Sonrasına Ertelenmesi</strong> <span class="pno">[s. 224]</span> — Projenin 3573 sayılı Zeytincilik Kanunu, 4342 sayılı Mera Kanunu ve 5403 sayılı Toprak Koruma Kanunu kapsamındaki izin ve kurum görüşlerinin ÇED süreci sonrasındaki planlama aşamasında alınacağı belirtilmiş; koridorun zeytinliklerle çakışma boyutu ve olası ağaç kesimleri ÇED aşamasında netleştirilmemiştir.</div>
 <div class="hit"><span class="badge urgent">YÜKSEK</span> <strong>Güzergâh ve Teknoloji Alternatiflerinin Değerlendirilmemesi</strong> <span class="pno">[s. 40]</span> — 122 kilometrelik hat için çevresel, jeolojik ve sosyal riskleri asgariye indirebilecek alternatif koridor analizleri yapılmamış, &#x27;proje yerinin başkaca yer alternatifi bulunmamaktadır&#x27; ifadesiyle tek bir hat üzerinden başvuru yapılmıştır.</div>
 <div class="hit"><span class="badge warn">ORTA</span> <strong>Endemik ve Tehlike Altındaki Türler İçin Yetersiz İnceleme</strong> <span class="pno">[s. 261]</span> — Biyolojik çeşitlilik açısından zengin ormanlık ve kırsal alanlardan geçen 122 km&#x27;lik hat boyunca bilimsel araştırmaya değer, nesli tehlikede veya endemik türlerin bulunmadığı peşinen iddia edilmiş, mevsimsel saha örneklemelerine dayalı bir ekolojik envanter sunulmamıştır.</div>
 <div class="hit"><span class="badge warn">ORTA</span> <strong>Heyelan ve Doğal Afet Alanlarıyla Kesişim Riski</strong> <span class="pno">[s. 121]</span> — Güzergâhın geçtiği Bergama gibi ilçelerde Bakanlar Kurulu ve Cumhurbaşkanı Kararları ile ilan edilmiş Afete Maruz Bölge (heyelan ve kaya düşmesi) alanları bulunmasına rağmen, direk lokasyonlarının mikrobölgeleme veya kütle hareketleri açısından zemin risk analizleri ayrıntılandırılmamıştır.</div>
 <div class="hit"><span class="badge muted">DÜŞÜK</span> <strong>Yüzeysel Su Kaynakları ve Baraj Havzası Yakınlığı</strong> <span class="pno">[s. 261, s. 291]</span> — Hat Karapürçek Deresi, Ada Çayı gibi birçok dere yatağını katetmekte ve Bayramiç Baraj Gölü&#x27;ne 1,3 km yaklaşmaktadır; inşaat aşamasındaki hafriyat ve montaj kaynaklı sedimantasyon risklerine karşı yalnızca genel mevzuat taahhütleriyle yetinilmiştir.</div></section>
-  <h3>HKT ve İYUK 20/A İçin Taslak Teknik Sorular</h3><ul><li>3573 sayılı Zeytincilik Kanunu uyarınca zeytinlik alanlara 3 km&#x27;den daha yakın mesafede toz ve duman çıkaran tesis kurulamayacağı ve zeytinliklerin daraltılamayacağı hükmü karşısında, iletim hattı ve direk ayaklarının isabet ettiği zeytinlik parselleri neden ÇED aşamasında tespit edilmeyip izinler onay sonrasına bırakılmıştır? <span class="pno">[s. 224]</span></li>
+  <h3>HKT Tutanakları ve İdari Başvurular İçin Taslak Teknik Sorular</h3><ul><li>3573 sayılı Zeytincilik Kanunu uyarınca zeytinlik alanlara 3 km&#x27;den daha yakın mesafede toz ve duman çıkaran tesis kurulamayacağı ve zeytinliklerin daraltılamayacağı hükmü karşısında, iletim hattı ve direk ayaklarının isabet ettiği zeytinlik parselleri neden ÇED aşamasında tespit edilmeyip izinler onay sonrasına bırakılmıştır? <span class="pno">[s. 224]</span></li>
 <li>122 km boyunca uzanan 400 kV&#x27;luk yüksek gerilim hattı için ÇED Başvuru Dosyası&#x27;nda &#x27;başkaca yer alternatifi bulunmamaktadır&#x27; denilerek orman tahribatını, heyelan riskli bölgeleri ve tarım arazilerini asgariye indirecek alternatif güzergâh çalışmaları neden yapılmamıştır? <span class="pno">[s. 40, s. 121, s. 259]</span></li>
 <li>Bayramiç Barajı&#x27;na 1,3 km ve Koca Çay&#x27;a 1 km mesafede yer alan kısımlar ile hat altındaki onlarca dere geçişinde, kule temeli kazıları ve açılacak servis yollarından kaynaklanacak erozyon ve sediment taşınımını önleyecek sahaya özgü mühendislik tedbirleri nelerdir? <span class="pno">[s. 261, s. 291]</span></li>
 <li>Güzergâhta endemik ve tehdit altındaki türlerin bulunmadığı hükmüne hangi mevsimsel arazi sörveyleri ve bilimsel metodoloji ile varılmıştır; kuş göç yolları ve tel çarpışma risklerine yönelik hangi izleme takvimi öngörülmektedir? <span class="pno">[s. 9, s. 261, s. 307]</span></li></ul>
-  <p class="sub"><em>Kapsam sınırları:</em> Sağlanan 26 sayfalık metin kesitinde flora-fauna sistematik tür listeleri, kuş gözlem raporları, kamulaştırma haritaları ve Bölüm IV altındaki kümülatif etki değerlendirmesinin tam metni (s. 282-285) yer almadığından, kümülatif modelleme derinliği ve detaylı ekolojik etki tespitleri doğrudan doğrulanamamıştır.</p>
+  <p class="sub"><em>İnceleme sınırları:</em> Sağlanan 26 sayfalık metin kesitinde flora-fauna sistematik tür listeleri, kuş gözlem raporları, kamulaştırma haritaları ve Bölüm IV altındaki kümülatif etki değerlendirmesinin tam metni (s. 282-285) yer almadığından, kümülatif modelleme derinliği ve detaylı ekolojik etki tespitleri doğrudan doğrulanamamıştır.</p>
 
 
   <h2>Resmi Duyuru Metni</h2>
   <blockquote>MANİSA ili SOMA,  ilcesinde MANİSA ili SOMA ilçesi sınırları içerisinde TÜRKİYE ELEKTRİK İLETİM  ANONİM ŞİRKETİ GENEL MÜDÜRLÜĞÜ tarafından yapılması planlanan 400 kV UYGAR RES. TM.- BAYRAMİÇ HAVZA TM. ELEKTRİK ENERJİSİ İLETİM HATTI (122,17741 km) projesi ile ilgili Çevresel Etki Değerlendirme süreci başlamış ve Çevresel Etki Değerlendirmesi Başvuru Dosyası halkın görüşüne açılmıştır.Söz konusu projeye ilişkin, halkı proje hakkında bilgilendirmek, görüş ve önerilerini almak amacıyla ÇED Yönetmeliğinin 9. maddesi gereğince 02/12/2026 tarihinde Halkın Katılım Toplantısı düzenlenecektir.ÇED Başvuru Dosyasını İncelemek isteyenler Bakanlık Merkezinde veya MANİSA Çevre ve Şehircilik İl Müdürlüklerinde duyuru tarihinden itibaren raporu inceleyerek, zamanlama takvimi içerisinde proje hakkında Bakanlığa veya Valiliğe görüş bildirebilirler. Halkın Katılımı Toplantısı yeri ve saati ile ilgili ÇED İzin Denetim Genel Müdürlüğü ve MANİSA Çevre, Şehircilik ve İklim Değişikliği İl Müdürlüğünden bilgi alınabilir. İlgililere ve kamuoyuna duyurulur.</blockquote>
 
   <h2>Otomatik Metin Taraması (Deterministik)</h2>
-  <table class="kv"><tr><th>Saha / arazi çalışması geçiyor mu</th><td><span class="badge ok">Metinde var</span></td></tr>
-<tr><th>Literatür taraması ifadesi geçiyor mu</th><td><span class="badge urgent">BULUNAMADI (elle kontrol edin)</span></td></tr>
-<tr><th>Mevsimsel örnekleme geçiyor mu</th><td><span class="badge ok">Metinde var</span></td></tr>
-<tr><th>Kümülatif etki değerlendirmesi geçiyor mu</th><td><span class="badge ok">Metinde var</span></td></tr>
-<tr><th>Zeytincilik Kanunu (3573 / zeytinlik)</th><td><span class="badge ok">Metinde var</span></td></tr>
-<tr><th>Yeraltı suyu / akifer / hidrojeoloji</th><td><span class="badge ok">Metinde var</span></td></tr>
-<tr><th>Endemik tür / IUCN / Bern Sözleşmesi</th><td><span class="badge ok">Metinde var</span></td></tr></table>
-  <p class="sub">OCR içermeyen taranmış harita ve ekler otomatik metin taramasına dahil değildir.</p>
+  <table class="kv"><tr><th>Saha veya arazi çalışması ifadesi</th><td><span class="badge ok">Metinde yer almaktadır</span></td></tr>
+<tr><th>Literatür taraması ifadesi</th><td><span class="badge urgent">Metinde tespit edilemedi; doğrudan PDF üzerinden kontrol ediniz</span></td></tr>
+<tr><th>Mevsimsel örnekleme ifadesi</th><td><span class="badge ok">Metinde yer almaktadır</span></td></tr>
+<tr><th>Kümülatif etki değerlendirmesi ifadesi</th><td><span class="badge ok">Metinde yer almaktadır</span></td></tr>
+<tr><th>3573 sayılı Zeytincilik Kanunu veya zeytinlik ifadesi</th><td><span class="badge ok">Metinde yer almaktadır</span></td></tr>
+<tr><th>Yeraltı suyu, akifer veya hidrojeoloji ifadesi</th><td><span class="badge ok">Metinde yer almaktadır</span></td></tr>
+<tr><th>Endemik tür, IUCN veya Bern Sözleşmesi ifadesi</th><td><span class="badge ok">Metinde yer almaktadır</span></td></tr></table>
+  <p class="sub">Metin katmanı (OCR) bulunmayan taranmış harita ve kurum görüşü ekleri otomatik metin taramasına dahil edilmemiştir.</p>
 
   <h2>Sayfa Kaynaklı Çıkarılan Bulgular</h2>
   <div class="cards"><section class="card"><h3>Koordinatlar, Parsel ve Alan Büyüklüğü <span style="color:var(--muted);font-weight:400;font-size:0.85rem">(448 sayfa: s.1, s.2, s.3, s.4, s.5, s.6, s.7, s.8, s.9, s.10, s.11, s.12, s.13, s.14 (+434 sayfa))</span></h3><div class="hit"><span class="pno">[s. 1]</span> <code>122,17741 km</code> — …LETİM ANONİM ŞİRKETİ GENEL MÜDÜRLÜĞÜ 400 kV UYGAR RES. TM.-BAYRAMİÇ HAVZA TM. ELEKTRİK ENERJİSİ İLETİM HATTI (122,17741 km) ÇANAKKALE İLİ; BAYRAMİÇ, ÇAN, YENİCE BALIKESİR İLİ; BALYA, HAVRAN, İVRİNDİ, İZMİR İLİ; BERGAMA İLE MANİSA İLİ,…</div>
@@ -233,8 +263,36 @@ blockquote { margin: 10px 0; padding: 10px 14px; border-left: 3px solid var(--ac
 <li><span class="pno">[s. 593]</span> ÇEVRESEL VE SOSYAL</li></ul>
 
   <div class="notice">
-    Çevre, Şehircilik ve İklim Değişikliği Bakanlığı'nın kamuya açık <code>eced-duyuru.csb.gov.tr</code> portalından üretilen bilgilendirme amaçlı şeffaflık aracıdır. Tüm alıntılar 1 tabanlı PDF sayfa numarasıyla <code>[s. N]</code> gösterilir. Yasal süreler otomatik hesaplanır; kesin süre ve hukuki işlem için mutlaka avukat/hukukçu doğrulaması alın.
+    Bu sayfa, T.C. Çevre, Şehircilik ve İklim Değişikliği Bakanlığı'nın kamuya açık <code>eced-duyuru.csb.gov.tr</code> duyuru portalındaki kayıtlar esas alınarak bilgilendirme amacıyla hazırlanmıştır. Alıntıların tamamı 1 tabanlı PDF sayfa numarasıyla (<code>[s. N]</code>) gösterilmektedir. Yasal süreler otomatik olarak hesaplanır; kesin sürelerin ve hukuki başvuru yollarının yetkili hukukçular tarafından teyit edilmesi gerekir.
   </div>
 </div>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script>
+(() => {
+  if (typeof L === 'undefined') return;
+  const g = {"lat": 38.6191, "lon": 27.4289, "zoom": 8, "precision": "province_centroid", "points": [], "label": "MANİSA / SOMA — 400 kV UYGAR RES. TM.- BAYRAMİÇ HAVZA TM. ELEKTRİK ENERJİSİ İLETİM HATTI (122,17741 km)"};
+  const map = L.map('digest-map').setView([g.lat, g.lon], g.zoom);
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    maxZoom: 18,
+    attribution: '&copy; OpenStreetMap katkıda bulunanları'
+  }).addTo(map);
+  if (g.precision === 'exact_pdf' && g.points.length > 1) {
+    const latlngs = g.points.map(p => [p[0], p[1]]);
+    const poly = L.polyline(latlngs, { color: '#58a6ff', weight: 3, opacity: 0.85 }).addTo(map);
+    for (const ll of latlngs.slice(0, 30)) {
+      L.circleMarker(ll, { radius: 4, color: '#ffffff', fillColor: '#f85149', fillOpacity: 0.9, weight: 1 }).addTo(map);
+    }
+    map.fitBounds(poly.getBounds().pad(0.25));
+  } else {
+    L.circleMarker([g.lat, g.lon], {
+      radius: g.precision === 'exact_pdf' ? 8 : 11,
+      color: '#ffffff',
+      fillColor: g.precision === 'exact_pdf' ? '#f85149' : '#58a6ff',
+      fillOpacity: g.precision === 'exact_pdf' ? 0.9 : 0.45,
+      weight: 2
+    }).bindPopup(g.label).addTo(map).openPopup();
+  }
+})();
+</script>
 </body>
 </html>

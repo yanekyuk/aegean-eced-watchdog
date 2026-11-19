@@ -3,7 +3,8 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>e-ÇED Ön Özet #58476 — FOÇA</title>
+  <title>e-ÇED Ön Özet #58476 — İZMİR / FOÇA</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
   <style>
 :root {
   --bg: #0f1216;
@@ -37,31 +38,53 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
   background: var(--bg);
   color: var(--text);
-  line-height: 1.5;
+  line-height: 1.6;
 }
-.wrap { max-width: 1220px; margin: 0 auto; padding: 24px 18px 64px; }
+.wrap { max-width: 1240px; margin: 0 auto; padding: 24px 18px 64px; }
 a { color: var(--accent); text-decoration: none; }
 a:hover { text-decoration: underline; }
 header { border-bottom: 1px solid var(--border); padding-bottom: 16px; margin-bottom: 20px; }
 h1 { margin: 0 0 6px; font-size: 1.55rem; }
+h2 { margin: 26px 0 10px; font-size: 1.2rem; }
+h3 { margin: 16px 0 8px; font-size: 1rem; }
 .sub { color: var(--muted); font-size: 0.92rem; margin: 0; }
-.meta-bar { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 12px; font-size: 0.85rem; color: var(--muted); }
-.stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 10px; margin: 16px 0 20px; }
+.meta-bar { display: flex; flex-wrap: wrap; gap: 14px; margin-top: 12px; font-size: 0.85rem; color: var(--muted); }
+.stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 10px; margin: 16px 0 18px; }
 .stat { background: var(--surface); border: 1px solid var(--border); border-radius: 8px; padding: 12px 14px; }
 .stat .num { font-size: 1.45rem; font-weight: 700; }
 .stat .lbl { font-size: 0.78rem; color: var(--muted); }
+.map-box {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 18px;
+}
+#map { width: 100%; height: 420px; background: var(--badge-bg); }
+#digest-map { width: 100%; height: 320px; background: var(--badge-bg); }
+.map-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  padding: 9px 14px;
+  font-size: 0.8rem;
+  color: var(--muted);
+  border-top: 1px solid var(--border);
+}
+.dot { display: inline-block; width: 10px; height: 10px; border-radius: 50%; margin-right: 5px; vertical-align: middle; }
 .controls { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; margin-bottom: 16px; }
-input[type="search"] {
-  flex: 1 1 240px;
+input[type="search"], select.filter-select {
   padding: 8px 12px;
   border-radius: 6px;
   border: 1px solid var(--border);
   background: var(--surface);
   color: var(--text);
-  font-size: 0.92rem;
+  font-size: 0.9rem;
 }
+input[type="search"] { flex: 1 1 240px; }
+select.filter-select { min-width: 170px; }
 button.pill {
-  padding: 6px 11px;
+  padding: 7px 12px;
   border-radius: 999px;
   border: 1px solid var(--border);
   background: var(--surface);
@@ -75,12 +98,12 @@ button.pill.active { background: var(--accent); border-color: var(--accent); col
   background: var(--surface);
   border: 1px solid var(--border);
   border-radius: 8px;
-  padding: 14px 16px;
+  padding: 15px 17px;
 }
-.card.prio { border-left: 4px solid var(--accent); }
+.card.ek1 { border-left: 4px solid var(--accent); }
 .row-top { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px; align-items: baseline; }
 .title { font-weight: 600; font-size: 0.98rem; }
-.badges { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 6px; }
+.badges { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 7px; }
 .badge {
   display: inline-block;
   padding: 2px 8px;
@@ -93,30 +116,31 @@ button.pill.active { background: var(--accent); border-color: var(--accent); col
 .badge.warn { border-color: var(--amber); color: var(--amber); font-weight: 600; }
 .badge.ok { border-color: var(--green); color: var(--green); }
 .badge.muted { color: var(--muted); }
-.detail { font-size: 0.86rem; color: var(--muted); margin: 8px 0; }
+.detail { font-size: 0.87rem; color: var(--muted); margin: 8px 0; }
 .actions { display: flex; flex-wrap: wrap; gap: 12px; font-size: 0.84rem; margin-top: 8px; }
 .notice {
   margin-top: 28px;
-  padding: 12px 14px;
+  padding: 14px 16px;
   border: 1px solid var(--border);
   border-radius: 8px;
-  font-size: 0.82rem;
+  font-size: 0.84rem;
   color: var(--muted);
 }
 table.kv { width: 100%; border-collapse: collapse; margin: 12px 0; font-size: 0.9rem; }
-table.kv th, table.kv td { border: 1px solid var(--border); padding: 8px 10px; text-align: left; vertical-align: top; }
-table.kv th { width: 220px; background: var(--badge-bg); }
+table.kv th, table.kv td { border: 1px solid var(--border); padding: 8px 11px; text-align: left; vertical-align: top; }
+table.kv th { width: 240px; background: var(--badge-bg); }
 code { background: var(--badge-bg); padding: 1px 5px; border-radius: 4px; font-size: 0.85em; }
-blockquote { margin: 10px 0; padding: 10px 14px; border-left: 3px solid var(--accent); background: var(--surface); font-size: 0.9rem; }
-.hit { margin: 6px 0; font-size: 0.88rem; }
+blockquote { margin: 10px 0; padding: 11px 15px; border-left: 3px solid var(--accent); background: var(--surface); font-size: 0.9rem; }
+.hit { margin: 7px 0; font-size: 0.88rem; }
 .pno { font-weight: 700; color: var(--accent); }
+.leaflet-popup-content { color: #1f2328; font-size: 0.85rem; line-height: 1.45; }
 </style>
 </head>
 <body>
 <div class="wrap">
   <header>
-    <div style="font-size:0.85rem;margin-bottom:8px;"><a href="../index.html">← Ege e-ÇED İzleme listesine dön</a> · <a href="../rehber.html">Nasıl Kullanılır? (Rehber)</a> · <a href="58476.md">Ham Markdown (.md)</a></div>
-    <h1>e-ÇED Ön Özet #58476 — FOÇA / İZMİR</h1>
+    <div style="font-size:0.85rem;margin-bottom:8px;"><a href="../index.html">← Türkiye e-ÇED İzleme listesine dön</a> · <a href="../rehber.html">Kullanım ve İnceleme Rehberi</a> · <a href="58476.md">Ham Markdown (.md)</a></div>
+    <h1>e-ÇED Ön Özet #58476 — İZMİR / FOÇA</h1>
     <p class="sub">2155 RUHSAT NUMARALI ALANDA JEOTERMAL REENJEKSİYON KUYU (1 ADET) FAALİYETİ</p>
     <div class="badges" style="margin-top:10px;">
       <span class="badge">ÇED Gerekli Değil/ÇED Olumlu</span>
@@ -129,21 +153,27 @@ blockquote { margin: 10px 0; padding: 10px 14px; border-left: 3px solid var(--ac
     <tr><th>Proje Sahibi</th><td>EGE ÇELİK JEOTERMAL ENERJİ SANTRALİ A.Ş.</td></tr>
     <tr><th>Hazırlayan Kuruluş</th><td>CANÇED ÇEVRE DANIŞMANLIK VE MÜHENDİSLİK SAN. TİC. LTD. ŞTİ.</td></tr>
     <tr><th>Sektör / Alt Sektör</th><td>Enerji / Jeotermal Enerji Santralleri</td></tr>
-    <tr><th>Duyuru Tarihi</th><td><code>11.11.2026</code> (yükleme: <code>30/12/2025 06:09:47</code>)</td></tr>
-    <tr><th>PDF Kapsamı</th><td>62.74 MB · 319 sayfa (255 metin / 64 taranmış-görüntü) · SHA-256 <code>bbe38b0083a35d47…</code></td></tr>
-    <tr><th>Resmi Bağlantılar</th><td><a href="http://eced.csb.gov.tr/jsp/ek1/58476" target="_blank" rel="noopener">e-ÇED Portal Kaydı</a> · <a href="http://eced.csb.gov.tr/jsp/dosya/dosyaGoster.htm?tempAd=sign7504032269344894671.pdf&amp;orjinalAd=e-imza.pdf&amp;yuklemeTarihi=2026-10-28" target="_blank" rel="noopener">Resmi PDF Dosyası</a></td></tr>
+    <tr><th>Duyuru Tarihi</th><td><code>11.11.2026</code> (belge yükleme tarihi: <code>30/12/2025 06:09:47</code>)</td></tr>
+    <tr><th>PDF Kapsamı</th><td>62.74 MB · 319 sayfa (255 metin sayfası / 64 taranmış veya görüntü sayfası) · SHA-256 <code>bbe38b0083a35d47…</code></td></tr>
+    <tr><th>Resmi Bağlantılar</th><td><a href="http://eced.csb.gov.tr/jsp/ek1/58476" target="_blank" rel="noopener">e-ÇED Portal Kaydı</a> · <a href="http://eced.csb.gov.tr/jsp/dosya/dosyaGoster.htm?tempAd=sign7504032269344894671.pdf&amp;orjinalAd=e-imza.pdf&amp;yuklemeTarihi=2026-10-28" target="_blank" rel="noopener">Resmi PDF Dosyası</a> · <a href="https://www.openstreetmap.org/?mlat=38.4237&amp;mlon=27.1428#map=8/38.4237/27.1428" target="_blank" rel="noopener">OpenStreetMap</a> · <a href="https://www.google.com/maps/search/?api=1&amp;query=38.4237,27.1428" target="_blank" rel="noopener">Google Haritalar</a></td></tr>
   </table>
+
+  <h2>Konum Haritası</h2>
+  <div class="map-box">
+    <div id="digest-map"></div>
+    <div class="map-legend"><span>PDF dosyasında metin olarak okunabilir koordinat tablosu tespit edilemediği için il merkezi yaklaşık konum olarak gösterilmektedir.</span></div>
+  </div>
 
   
   <h2>Yapay Zeka Destekli Bilimsel Ön Değerlendirme <span class="badge">gemini-4-hydrogen</span></h2>
-  <p class="sub">PDF içinden seçilen 22 sayfadan (s.1, s.2, s.3, s.4, s.6, s.7, s.8, s.9, s.10, s.11, s.12, s.13, s.14, s.15, s.16, s.17, s.21, s.24, s.28, s.31, s.46, s.53) üretilmiştir. Tüm sayısal verileri resmi PDF'teki <code>[s. N]</code> sayfalarından doğrulayın.</p>
-  <section class="card prio">
+  <p class="sub">Bu değerlendirme, resmi PDF dosyasından seçilen 22 sayfa (s.1, s.2, s.3, s.4, s.6, s.7, s.8, s.9, s.10, s.11, s.12, s.13, s.14, s.15, s.16, s.17, s.21, s.24, s.28, s.31, s.46, s.53) esas alınarak hazırlanmıştır. Tüm sayısal verilerin ve tespitlerin resmi PDF belgesindeki ilgili <code>[s. N]</code> sayfalarından doğrulanması gerekir.</p>
+  <section class="card ek1">
     <p><strong>Özet:</strong> Ege Çelik Jeotermal Enerji Santrali A.Ş. tarafından İzmir ili, Foça ilçesi, Ilıpınar Mahallesi sınırlarındaki 2155 ruhsat numaralı alanda (507132 ada, 643 parsel) 1 adet jeotermal reenjeksiyon kuyusu açılması planlanmaktadır [s. 1, s. 6]. Halihazırda ruhsat sahasında bulunan 6 lt/sn debili İFI 2012/12 kuyusundan elde edilen jeotermal akışkanla 2 MWt ısıl gücündeki sera ısıtılmakta olup, 600 ±50 m derinliğinde planlanan yeni kuyunun bu akışkanın yeraltına geri enjekte edilmesi amacıyla 424 m2’lik ÇED alanında açılması öngörülmektedir [s. 6, s. 15]. Proje bedeli 7.686.000 TL olarak hesaplanan faaliyet için ÇED Yönetmeliği Ek-2 Madde 39 kapsamında Valilikçe &#x27;ÇED Olumlu (Kapsam Ek-2)&#x27; kararı verilmiştir [s. 2, s. 9]. Başlıca çevresel hassasiyetler; sahanın 1/100.000 ölçekli planda Tarım Arazisi içinde yer alması, 5403 sayılı Kanun kapsamında izin gerektirmesi, yüzey ve yeraltı sularının arsenik ve bor gibi parametreler açısından korunması ile erişim yolu için komşu 645 parsel üzerindeki geçit hakkı süreçleridir [s. 7, s. 8, s. 17, s. 28].</p>
-    <details style="margin-top:8px;font-size:0.86rem;color:var(--muted);"><summary style="cursor:pointer;">English summary</summary><p style="margin:6px 0 0;">Ege Çelik Jeotermal Enerji Santrali A.Ş. proposes to drill one geothermal reinjection well (600 ±50 m depth) within License Area 2155 on Parcel 643 (Block 507132) in Ilıpınar Neighborhood, Foça District, İzmir [s. 1, s. 6]. The well is designed to reinject geothermal fluid produced from the existing İFI 2012/12 well (6 L/s flow rate) that currently heats an on-site 2 MWt geothermal greenhouse, utilizing a 424 m2 EIA project footprint [s. 6, s. 15]. Estimated at 7,686,000 TL, the project falls under Annex-2 Article 39 of the Turkish EIA Regulation and received an &#x27;EIA Positive (Scope Annex-2)&#x27; decision [s. 2, s. 9]. Primary environmental stakes involve its location within designated agricultural land requiring permits under Soil Conservation Law No. 5403, protection of surface and groundwater quality (particularly against arsenic and boron contamination), and pending third-party consent on an access easement across neighboring Parcel 645 [s. 7, s. 8, s. 17, s. 28].</p></details>
+    <details style="margin-top:8px;font-size:0.86rem;color:var(--muted);"><summary style="cursor:pointer;">İngilizce özet (English summary)</summary><p style="margin:6px 0 0;">Ege Çelik Jeotermal Enerji Santrali A.Ş. proposes to drill one geothermal reinjection well (600 ±50 m depth) within License Area 2155 on Parcel 643 (Block 507132) in Ilıpınar Neighborhood, Foça District, İzmir [s. 1, s. 6]. The well is designed to reinject geothermal fluid produced from the existing İFI 2012/12 well (6 L/s flow rate) that currently heats an on-site 2 MWt geothermal greenhouse, utilizing a 424 m2 EIA project footprint [s. 6, s. 15]. Estimated at 7,686,000 TL, the project falls under Annex-2 Article 39 of the Turkish EIA Regulation and received an &#x27;EIA Positive (Scope Annex-2)&#x27; decision [s. 2, s. 9]. Primary environmental stakes involve its location within designated agricultural land requiring permits under Soil Conservation Law No. 5403, protection of surface and groundwater quality (particularly against arsenic and boron contamination), and pending third-party consent on an access easement across neighboring Parcel 645 [s. 7, s. 8, s. 17, s. 28].</p></details>
     <div class="badges" style="margin-top:10px;">
-      <span class="badge">Saha çalışması: Karışık / belirsiz</span>
-      <span class="badge">Mevsimsel örnekleme: Yalnızca onay sonrasına taahhüt</span>
-      <span class="badge">Kümülatif etki: Eksik / bulunamadı</span>
+      <span class="badge">Saha çalışması: Karışık veya yöntemi belirsiz</span>
+      <span class="badge">Mevsimsel örnekleme: Yalnızca onay sonrasına ertelenmiş</span>
+      <span class="badge">Kümülatif etki: Eksik veya tespit edilemedi</span>
     </div>
     <p class="detail" style="margin-top:10px;"><strong>Zeytinlik ve Korunan Alanlar:</strong> Proje alanı 1/100.000 ölçekli Çevre Düzeni Planında Tarım Arazisi içinde kalmakta olup İl Tarım ve Orman Müdürlüğü inşaat öncesi 5403 sayılı Kanun kapsamında izin alınmasını şart koşmuştur [s. 8, s. 28]. ÇŞİD İl Müdürlüğü görüşüne göre alanda 2863 sayılı Kanun kapsamında tabiat varlığı veya doğal sit bulunmamaktadır; EK-5 bölümünde milli park, tabiat parkı ve yaban hayatı koruma sahası olmadığı belirtilmiştir [s. 28, s. 53]. Zeytinlik (3573 sayılı Kanun) ve orman durumu sunulan alıntı sayfalarda yer almamaktadır.<br/>Yeterlik Belgesi Tebliği kapsamında 09.12.2025 tarihinde tek bir saha incelemesi yapıldığı belirtilse de, içindekiler tablosunda flora ve fauna listelerinin &#x27;Bulunma Olasılığı Yüksek Olan Türler&#x27; başlığıyla sunulması literatür/olasılık temelli bir derlemeye işaret etmektedir ve ilgili sayfalar (rapor s. 59-68) alıntılarda bulunmamaktadır [s. 4, s. 9]. DSİ 2. Bölge Müdürlüğü faaliyet öncesinde mevcut kuyu ve kaynaklardan kimyasal analiz yapılıp raporda sunulmasını istemiş olsa da, dosyada tamamlanmış başlangıç analiz sonuçları yerine izinler alındıktan sonra başlatılacak 3 aylık periyotlarla izleme ve 3 gözlem kuyusu açılması taahhüt edilmiştir [s. 17, s. 21, s. 24, s. 31]. Kümülatif Etki Değerlendirme bölümü (rapor s. 77) sunulan PDF alıntıları dışında kaldığı için değerlendirilememiştir [s. 3].</p>
   </section>
@@ -157,31 +187,31 @@ blockquote { margin: 10px 0; padding: 10px 14px; border-left: 3px solid var(--ac
 <tr><th>Geçit Hakkı Alanı (645 Parsel)</th><td>201,00 m2 (10 nolu güzergah, mahkeme kararı ile) <span class="pno">[s. 7]</span></td></tr>
 <tr><th>İzmir İl Merkezine Uzaklık</th><td>Foça ilçesi yaklaşık 42 km <span class="pno">[s. 10]</span></td></tr>
 <tr><th>Gözlem Kuyusu Sayısı</th><td>3 adet (1 memba, 2 mansap; yeraltı su seviyesinin 50 m altı) <span class="pno">[s. 31]</span></td></tr></table>
-  <h3>Bilimsel ve Metodolojik Uyarılar</h3><section class="card"><div class="hit"><span class="badge urgent">YÜKSEK</span> <strong>Faaliyet öncesi başlangıç su kalitesi analizlerinin onay sonrasına ertelenmesi</strong> <span class="pno">[s. 17, s. 21, s. 24, s. 31]</span> — DSİ 2. Bölge Müdürlüğü görüşü, faaliyet öncesinde mevcut su sondaj kuyuları, kaynak ve çeşmelerden numune alınarak kimyasal analizlerin raporda sunulmasını şart koşmaktadır [s. 31]. Ancak raporda tamamlanmış başlangıç analiz verileri sunulmamış; numune alımının &#x27;ilki gerekli izinlerin alınmasına takiben faaliyet öncesi alınmak üzere&#x27; mevsimsel (üç ayda bir) izleme programıyla yapılacağı ve 3 gözlem kuyusunun sonradan açılacağı belirtilmiştir [s. 17, s. 21, s. 24].</div>
+  <h3>Bilimsel ve Metodolojik Bulgular</h3><section class="card"><div class="hit"><span class="badge urgent">YÜKSEK</span> <strong>Faaliyet öncesi başlangıç su kalitesi analizlerinin onay sonrasına ertelenmesi</strong> <span class="pno">[s. 17, s. 21, s. 24, s. 31]</span> — DSİ 2. Bölge Müdürlüğü görüşü, faaliyet öncesinde mevcut su sondaj kuyuları, kaynak ve çeşmelerden numune alınarak kimyasal analizlerin raporda sunulmasını şart koşmaktadır [s. 31]. Ancak raporda tamamlanmış başlangıç analiz verileri sunulmamış; numune alımının &#x27;ilki gerekli izinlerin alınmasına takiben faaliyet öncesi alınmak üzere&#x27; mevsimsel (üç ayda bir) izleme programıyla yapılacağı ve 3 gözlem kuyusunun sonradan açılacağı belirtilmiştir [s. 17, s. 21, s. 24].</div>
 <div class="hit"><span class="badge warn">ORTA</span> <strong>Parsel içinde kuyu lokasyonunun kesinleştirilmemesi</strong> <span class="pno">[s. 6, s. 14, s. 15]</span> — Reenjeksiyon Değerlendirme Raporunda SK-1 ve SK-2 noktaları belirtilmekle birlikte, verilen ÇED koordinatlarında kuyu açılamaması halinde 5.907,41 m2 büyüklüğündeki 643 parselin herhangi bir yerinde kuyu ve 424 m2&#x27;lik sondaj alanının kaydırılabileceği ifade edilmiştir [s. 6, s. 14, s. 15]. Kesin mikro-yer seçimi yapılmadan çamur havuzu, drenaj ve komşu parsel mesafelerine ilişkin lokal riskler netleştirilememektedir.</div>
 <div class="hit"><span class="badge warn">ORTA</span> <strong>Yer ve teknoloji alternatiflerinin değerlendirilmemesi</strong> <span class="pno">[s. 11, s. 12]</span> — Bölüm I.a kapsamında yalnızca proje sahibinin aynı ruhsat alanında mülk sahibi olması ve mevcut sera faaliyetini yürütmesi gerekçe gösterilerek &#x27;başka alternatif düşünülmemiştir&#x27; denilmekte; alternatif reenjeksiyon noktaları veya teknik seçenekler karşılaştırmalı olarak incelenmemektedir.</div>
 <div class="hit"><span class="badge warn">ORTA</span> <strong>Erişim yolu için 645 parsel malik muvafakatnamesinin henüz alınmamış olması</strong> <span class="pno">[s. 7, s. 8]</span> — Foça Asliye Hukuk Mahkemesi 2023/457 E., 2024/279 K. sayılı kararıyla 645 parsel üzerinden 201,00 m2 geçit hakkı tesis edilmiş olmasına rağmen, raporun 8. sayfasında 645 parsel maliklerinden muvafakatnamenin şirketçe &#x27;alınacaktır&#x27; şeklinde henüz tamamlanmadığı ve güzergah değişikliği olasılığının açık bırakıldığı görülmektedir.</div>
 <div class="hit"><span class="badge warn">ORTA</span> <strong>Tarım dışı kullanım izninin sonraya bırakılması ve kapasite artışı çelişkisi</strong> <span class="pno">[s. 6, s. 8, s. 12, s. 28]</span> — Proje alanı Tarım Arazisi lejantında olup İl Tarım ve Orman Müdürlüğü 5403 sayılı Kanun izninin tesis edilmeden önce alınmasını bildirmiştir [s. 8, s. 28]. Ayrıca 8. sayfada &#x27;Planlanan kapasite artışı sebebi ile&#x27; ifadesi yer alırken, diğer bölümlerde projenin yalnızca mevcut 6 lt/sn debili İFI 2012/12 kuyusu için 1 adet reenjeksiyon kuyusu olduğu belirtilerek kapasite artışı olup olmadığı konusunda tutarsızlık doğmaktadır [s. 6, s. 8, s. 12].</div>
 <div class="hit"><span class="badge muted">DÜŞÜK</span> <strong>Biyoçeşitlilik tespitlerinin olasılık listelerine dayanması</strong> <span class="pno">[s. 4, s. 9]</span> — 09.12.2025 tarihinde tek bir saha incelemesi yapıldığı belirtilmekle birlikte [s. 9], Tablolar Dizininde flora, sürüngen, kuş ve memeli tablolarının &#x27;Bulunma Olasılığı Yüksek Olan&#x27; türler olarak adlandırılması [s. 4], çok mevsimli doğrudan arazi gözlemi yerine literatür/olasılık listesi kullanıldığına işaret etmektedir.</div></section>
-  <h3>HKT ve İYUK 20/A İçin Taslak Teknik Sorular</h3><ul><li>DSİ 2. Bölge Müdürlüğü görüşünde talep edilen faaliyet öncesi yeraltı ve yerüstü suyu kimyasal analizlerinin (başta arsenik ve bor olmak üzere) PTD dosyası içinde sunulması yerine, numune alımının izinler alındıktan sonraki sürece bırakılmasının gerekçesi nedir ve mevcut İFI 2012/12 kuyusu çevresinde onaylı başlangıç su kalitesi verisi oluşturulmuş mudur? <span class="pno">[s. 17, s. 21, s. 24, s. 31]</span></li>
+  <h3>HKT Tutanakları ve İdari Başvurular İçin Taslak Teknik Sorular</h3><ul><li>DSİ 2. Bölge Müdürlüğü görüşünde talep edilen faaliyet öncesi yeraltı ve yerüstü suyu kimyasal analizlerinin (başta arsenik ve bor olmak üzere) PTD dosyası içinde sunulması yerine, numune alımının izinler alındıktan sonraki sürece bırakılmasının gerekçesi nedir ve mevcut İFI 2012/12 kuyusu çevresinde onaylı başlangıç su kalitesi verisi oluşturulmuş mudur? <span class="pno">[s. 17, s. 21, s. 24, s. 31]</span></li>
 <li>5.907,41 m2 yüzölçümlü 643 parsel içerisinde ÇED koordinatlarında kuyu açılamaması durumunda aynı parselde farklı bir noktada çalışılabileceği belirtilmektedir [s. 6, s. 14]; 100 m3 çamur tankı ve 424 m2 sondaj platformunun olası yer değişikliğinin sızdırmazlık, yüzey drenajı ve komşu parsellere etkisi nasıl modellenmiştir? <span class="pno">[s. 6, s. 14, s. 15]</span></li>
 <li>1/100.000 ölçekli planda Tarım Arazisi içerisinde kalan 643 parsel için İl Tarım ve Orman Müdürlüğünün şart koştuğu 5403 sayılı Toprak Koruma ve Arazi Kullanımı Kanunu kapsamındaki tarım dışı kullanım izni alınmış mıdır; izin süreci tamamlanmadan ÇED Olumlu kararı verilmesinin dayanağı nedir? <span class="pno">[s. 8, s. 28]</span></li>
 <li>Raporun 8. sayfasında &#x27;Planlanan kapasite artışı sebebi ile&#x27; ifadesi kullanılmasına karşın 6. ve 12. sayfalarda yalnızca mevcut 6 lt/sn debili İFI 2012/12 kuyusu için reenjeksiyon kuyusu açılacağı belirtilmektedir; projede üretim debisi veya sera kapasitesi artışı öngörülüp öngörülmediği ve 645 parseldeki geçit hakkı için malik muvafakatnamesinin alınıp alınmadığı açıklanmış mıdır? <span class="pno">[s. 6, s. 7, s. 8, s. 12]</span></li></ul>
-  <p class="sub"><em>Kapsam sınırları:</em> Toplam 319 sayfalık PDF dosyasının 64 sayfası taranmış/görüntü formatında olup yalnızca 22 sayfa alıntılanmıştır (s. 1-4, 6-17, 21, 24, 28, 31, 46, 53). Su tüketimi tablosu (rapor s. 35), atık ve emisyon hesapları (rapor s. 36-43), EK-5 korunan alanların devamı ile zeytinlik/orman durumu (rapor s. 52-58), flora/fauna listeleri (rapor s. 59-68), Kümülatif Etki Değerlendirmesi (Bölüm IV, rapor s. 77), Çevre İzleme Planı (rapor s. 78-79) ve tüm harita, hidrojeoloji raporu ve kurum görüşü ekleri incelenen alıntılar dışında kaldığından doğrulanamamıştır.</p>
+  <p class="sub"><em>İnceleme sınırları:</em> Toplam 319 sayfalık PDF dosyasının 64 sayfası taranmış/görüntü formatında olup yalnızca 22 sayfa alıntılanmıştır (s. 1-4, 6-17, 21, 24, 28, 31, 46, 53). Su tüketimi tablosu (rapor s. 35), atık ve emisyon hesapları (rapor s. 36-43), EK-5 korunan alanların devamı ile zeytinlik/orman durumu (rapor s. 52-58), flora/fauna listeleri (rapor s. 59-68), Kümülatif Etki Değerlendirmesi (Bölüm IV, rapor s. 77), Çevre İzleme Planı (rapor s. 78-79) ve tüm harita, hidrojeoloji raporu ve kurum görüşü ekleri incelenen alıntılar dışında kaldığından doğrulanamamıştır.</p>
 
 
   <h2>Resmi Duyuru Metni</h2>
   <blockquote>İZMİR ili FOÇA,  ilcesinde İZMİR ili FOÇA,  ilcesi 2155 Ruhsat Numaralı alan, Ilıpınar Mahallesi 507132 ada, 643 nolu parsel (eski 0 Ada 643 parsel) mevkiindeki EGE ÇELİK JEOTERMAL ENERJİ SANTRALİ A.Ş. tarafından yapılması planlanan 2155 RUHSAT NUMARALI ALANDA JEOTERMAL REENJEKSİYON KUYU (1 ADET) FAALİYETİ projesi ile ilgili olarak Bakanlığımıza sunulan PTD Dosyası incelenmiş ve değerlendirilmiştir  ÇED Yönetmeliği&#x27;nin 17. maddesi gereğince 2155 RUHSAT NUMARALI ALANDA JEOTERMAL REENJEKSİYON KUYU (1 ADET) FAALİYETİ projesi&#x27;ne Valiliğimizce &#x27;ÇED Olumlu (Kapsam Ek-2)&#x27; kararı verilmiştir.</blockquote>
 
   <h2>Otomatik Metin Taraması (Deterministik)</h2>
-  <table class="kv"><tr><th>Saha / arazi çalışması geçiyor mu</th><td><span class="badge ok">Metinde var</span></td></tr>
-<tr><th>Literatür taraması ifadesi geçiyor mu</th><td><span class="badge ok">Metinde var</span></td></tr>
-<tr><th>Mevsimsel örnekleme geçiyor mu</th><td><span class="badge ok">Metinde var</span></td></tr>
-<tr><th>Kümülatif etki değerlendirmesi geçiyor mu</th><td><span class="badge ok">Metinde var</span></td></tr>
-<tr><th>Zeytincilik Kanunu (3573 / zeytinlik)</th><td><span class="badge urgent">BULUNAMADI (elle kontrol edin)</span></td></tr>
-<tr><th>Yeraltı suyu / akifer / hidrojeoloji</th><td><span class="badge ok">Metinde var</span></td></tr>
-<tr><th>Endemik tür / IUCN / Bern Sözleşmesi</th><td><span class="badge ok">Metinde var</span></td></tr></table>
-  <p class="sub">OCR içermeyen taranmış harita ve ekler otomatik metin taramasına dahil değildir.</p>
+  <table class="kv"><tr><th>Saha veya arazi çalışması ifadesi</th><td><span class="badge ok">Metinde yer almaktadır</span></td></tr>
+<tr><th>Literatür taraması ifadesi</th><td><span class="badge ok">Metinde yer almaktadır</span></td></tr>
+<tr><th>Mevsimsel örnekleme ifadesi</th><td><span class="badge ok">Metinde yer almaktadır</span></td></tr>
+<tr><th>Kümülatif etki değerlendirmesi ifadesi</th><td><span class="badge ok">Metinde yer almaktadır</span></td></tr>
+<tr><th>3573 sayılı Zeytincilik Kanunu veya zeytinlik ifadesi</th><td><span class="badge urgent">Metinde tespit edilemedi; doğrudan PDF üzerinden kontrol ediniz</span></td></tr>
+<tr><th>Yeraltı suyu, akifer veya hidrojeoloji ifadesi</th><td><span class="badge ok">Metinde yer almaktadır</span></td></tr>
+<tr><th>Endemik tür, IUCN veya Bern Sözleşmesi ifadesi</th><td><span class="badge ok">Metinde yer almaktadır</span></td></tr></table>
+  <p class="sub">Metin katmanı (OCR) bulunmayan taranmış harita ve kurum görüşü ekleri otomatik metin taramasına dahil edilmemiştir.</p>
 
   <h2>Sayfa Kaynaklı Çıkarılan Bulgular</h2>
   <div class="cards"><section class="card"><h3>Koordinatlar, Parsel ve Alan Büyüklüğü <span style="color:var(--muted);font-weight:400;font-size:0.85rem">(59 sayfa: s.1, s.2, s.4, s.6, s.7, s.10, s.12, s.14, s.17, s.20, s.23, s.24, s.25, s.26 (+45 sayfa))</span></h3><div class="hit"><span class="pno">[s. 1]</span> <code>Ada 643 parsel</code> — …ıpınar Mahallesi 2155 Ruhsat Numaralı alan (Foça İlçesi, Ilıpınar Mahallesi 507132 ada, 643 nolu parselinde (eski 0 Ada 643 parsel)) Proje Tanıtım Dosyası Nihai Proje Tanıtım Dosyası EKİM-2026 CANÇED Ç…</div>
@@ -239,8 +269,36 @@ blockquote { margin: 10px 0; padding: 10px 14px; border-left: 3px solid var(--ac
 <li><span class="pno">[s. 169]</span> Şekil- 7.1. Thornthwaite Yöntemi ile Beslenim-Buharlaşma Grafiği. 43</li></ul>
 
   <div class="notice">
-    Çevre, Şehircilik ve İklim Değişikliği Bakanlığı'nın kamuya açık <code>eced-duyuru.csb.gov.tr</code> portalından üretilen bilgilendirme amaçlı şeffaflık aracıdır. Tüm alıntılar 1 tabanlı PDF sayfa numarasıyla <code>[s. N]</code> gösterilir. Yasal süreler otomatik hesaplanır; kesin süre ve hukuki işlem için mutlaka avukat/hukukçu doğrulaması alın.
+    Bu sayfa, T.C. Çevre, Şehircilik ve İklim Değişikliği Bakanlığı'nın kamuya açık <code>eced-duyuru.csb.gov.tr</code> duyuru portalındaki kayıtlar esas alınarak bilgilendirme amacıyla hazırlanmıştır. Alıntıların tamamı 1 tabanlı PDF sayfa numarasıyla (<code>[s. N]</code>) gösterilmektedir. Yasal süreler otomatik olarak hesaplanır; kesin sürelerin ve hukuki başvuru yollarının yetkili hukukçular tarafından teyit edilmesi gerekir.
   </div>
 </div>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script>
+(() => {
+  if (typeof L === 'undefined') return;
+  const g = {"lat": 38.4237, "lon": 27.1428, "zoom": 8, "precision": "province_centroid", "points": [], "label": "İZMİR / FOÇA — 2155 RUHSAT NUMARALI ALANDA JEOTERMAL REENJEKSİYON KUYU (1 ADET) FAALİYETİ"};
+  const map = L.map('digest-map').setView([g.lat, g.lon], g.zoom);
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    maxZoom: 18,
+    attribution: '&copy; OpenStreetMap katkıda bulunanları'
+  }).addTo(map);
+  if (g.precision === 'exact_pdf' && g.points.length > 1) {
+    const latlngs = g.points.map(p => [p[0], p[1]]);
+    const poly = L.polyline(latlngs, { color: '#58a6ff', weight: 3, opacity: 0.85 }).addTo(map);
+    for (const ll of latlngs.slice(0, 30)) {
+      L.circleMarker(ll, { radius: 4, color: '#ffffff', fillColor: '#f85149', fillOpacity: 0.9, weight: 1 }).addTo(map);
+    }
+    map.fitBounds(poly.getBounds().pad(0.25));
+  } else {
+    L.circleMarker([g.lat, g.lon], {
+      radius: g.precision === 'exact_pdf' ? 8 : 11,
+      color: '#ffffff',
+      fillColor: g.precision === 'exact_pdf' ? '#f85149' : '#58a6ff',
+      fillOpacity: g.precision === 'exact_pdf' ? 0.9 : 0.45,
+      weight: 2
+    }).bindPopup(g.label).addTo(map).openPopup();
+  }
+})();
+</script>
 </body>
 </html>

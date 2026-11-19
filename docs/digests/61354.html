@@ -3,7 +3,8 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>e-ÇED Ön Özet #61354 — BERGAMA</title>
+  <title>e-ÇED Ön Özet #61354 — BALIKESİR / BURHANİYE</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
   <style>
 :root {
   --bg: #0f1216;
@@ -37,31 +38,53 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
   background: var(--bg);
   color: var(--text);
-  line-height: 1.5;
+  line-height: 1.6;
 }
-.wrap { max-width: 1220px; margin: 0 auto; padding: 24px 18px 64px; }
+.wrap { max-width: 1240px; margin: 0 auto; padding: 24px 18px 64px; }
 a { color: var(--accent); text-decoration: none; }
 a:hover { text-decoration: underline; }
 header { border-bottom: 1px solid var(--border); padding-bottom: 16px; margin-bottom: 20px; }
 h1 { margin: 0 0 6px; font-size: 1.55rem; }
+h2 { margin: 26px 0 10px; font-size: 1.2rem; }
+h3 { margin: 16px 0 8px; font-size: 1rem; }
 .sub { color: var(--muted); font-size: 0.92rem; margin: 0; }
-.meta-bar { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 12px; font-size: 0.85rem; color: var(--muted); }
-.stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 10px; margin: 16px 0 20px; }
+.meta-bar { display: flex; flex-wrap: wrap; gap: 14px; margin-top: 12px; font-size: 0.85rem; color: var(--muted); }
+.stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 10px; margin: 16px 0 18px; }
 .stat { background: var(--surface); border: 1px solid var(--border); border-radius: 8px; padding: 12px 14px; }
 .stat .num { font-size: 1.45rem; font-weight: 700; }
 .stat .lbl { font-size: 0.78rem; color: var(--muted); }
+.map-box {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 18px;
+}
+#map { width: 100%; height: 420px; background: var(--badge-bg); }
+#digest-map { width: 100%; height: 320px; background: var(--badge-bg); }
+.map-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  padding: 9px 14px;
+  font-size: 0.8rem;
+  color: var(--muted);
+  border-top: 1px solid var(--border);
+}
+.dot { display: inline-block; width: 10px; height: 10px; border-radius: 50%; margin-right: 5px; vertical-align: middle; }
 .controls { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; margin-bottom: 16px; }
-input[type="search"] {
-  flex: 1 1 240px;
+input[type="search"], select.filter-select {
   padding: 8px 12px;
   border-radius: 6px;
   border: 1px solid var(--border);
   background: var(--surface);
   color: var(--text);
-  font-size: 0.92rem;
+  font-size: 0.9rem;
 }
+input[type="search"] { flex: 1 1 240px; }
+select.filter-select { min-width: 170px; }
 button.pill {
-  padding: 6px 11px;
+  padding: 7px 12px;
   border-radius: 999px;
   border: 1px solid var(--border);
   background: var(--surface);
@@ -75,12 +98,12 @@ button.pill.active { background: var(--accent); border-color: var(--accent); col
   background: var(--surface);
   border: 1px solid var(--border);
   border-radius: 8px;
-  padding: 14px 16px;
+  padding: 15px 17px;
 }
-.card.prio { border-left: 4px solid var(--accent); }
+.card.ek1 { border-left: 4px solid var(--accent); }
 .row-top { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px; align-items: baseline; }
 .title { font-weight: 600; font-size: 0.98rem; }
-.badges { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 6px; }
+.badges { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 7px; }
 .badge {
   display: inline-block;
   padding: 2px 8px;
@@ -93,35 +116,36 @@ button.pill.active { background: var(--accent); border-color: var(--accent); col
 .badge.warn { border-color: var(--amber); color: var(--amber); font-weight: 600; }
 .badge.ok { border-color: var(--green); color: var(--green); }
 .badge.muted { color: var(--muted); }
-.detail { font-size: 0.86rem; color: var(--muted); margin: 8px 0; }
+.detail { font-size: 0.87rem; color: var(--muted); margin: 8px 0; }
 .actions { display: flex; flex-wrap: wrap; gap: 12px; font-size: 0.84rem; margin-top: 8px; }
 .notice {
   margin-top: 28px;
-  padding: 12px 14px;
+  padding: 14px 16px;
   border: 1px solid var(--border);
   border-radius: 8px;
-  font-size: 0.82rem;
+  font-size: 0.84rem;
   color: var(--muted);
 }
 table.kv { width: 100%; border-collapse: collapse; margin: 12px 0; font-size: 0.9rem; }
-table.kv th, table.kv td { border: 1px solid var(--border); padding: 8px 10px; text-align: left; vertical-align: top; }
-table.kv th { width: 220px; background: var(--badge-bg); }
+table.kv th, table.kv td { border: 1px solid var(--border); padding: 8px 11px; text-align: left; vertical-align: top; }
+table.kv th { width: 240px; background: var(--badge-bg); }
 code { background: var(--badge-bg); padding: 1px 5px; border-radius: 4px; font-size: 0.85em; }
-blockquote { margin: 10px 0; padding: 10px 14px; border-left: 3px solid var(--accent); background: var(--surface); font-size: 0.9rem; }
-.hit { margin: 6px 0; font-size: 0.88rem; }
+blockquote { margin: 10px 0; padding: 11px 15px; border-left: 3px solid var(--accent); background: var(--surface); font-size: 0.9rem; }
+.hit { margin: 7px 0; font-size: 0.88rem; }
 .pno { font-weight: 700; color: var(--accent); }
+.leaflet-popup-content { color: #1f2328; font-size: 0.85rem; line-height: 1.45; }
 </style>
 </head>
 <body>
 <div class="wrap">
   <header>
-    <div style="font-size:0.85rem;margin-bottom:8px;"><a href="../index.html">← Ege e-ÇED İzleme listesine dön</a> · <a href="../rehber.html">Nasıl Kullanılır? (Rehber)</a> · <a href="61354.md">Ham Markdown (.md)</a></div>
-    <h1>e-ÇED Ön Özet #61354 — BERGAMA / İZMİR</h1>
+    <div style="font-size:0.85rem;margin-bottom:8px;"><a href="../index.html">← Türkiye e-ÇED İzleme listesine dön</a> · <a href="../rehber.html">Kullanım ve İnceleme Rehberi</a> · <a href="61354.md">Ham Markdown (.md)</a></div>
+    <h1>e-ÇED Ön Özet #61354 — BALIKESİR / BURHANİYE</h1>
     <p class="sub">154 kV (Alibey RES TM - Bergama Vento RES TM EİH) Brş.N. - 154 kV İvrindi RES TM (Karaburun RES) EİH (Girdi-Çıktı)</p>
     <div class="badges" style="margin-top:10px;">
       <span class="badge">ÇED Süreci Başlayan</span>
       <span class="badge">Ek-2</span>
-      <span class="badge warn">10g Askı · 9 gün kaldı (2026-11-29)</span>
+      <span class="badge warn">10 Günlük Askı · 9 gün kaldı (2026-11-29)</span>
     </div>
   </header>
 
@@ -129,21 +153,27 @@ blockquote { margin: 10px 0; padding: 10px 14px; border-left: 3px solid var(--ac
     <tr><th>Proje Sahibi</th><td>TÜRKİYE ELEKTRİK İLETİM ANONİM ŞİRKETİ</td></tr>
     <tr><th>Hazırlayan Kuruluş</th><td>EN-ÇEV ENERJİ ÇEVRE YATIRIMLARI DANIŞMANLIĞI HARİTACILIK İMAR İNŞAAT A.Ş</td></tr>
     <tr><th>Sektör / Alt Sektör</th><td>Turizm / Enerji İletim Hatları</td></tr>
-    <tr><th>Duyuru Tarihi</th><td><code>19.11.2026</code> (yükleme: <code>16/11/2026 04:19:09</code>)</td></tr>
-    <tr><th>PDF Kapsamı</th><td>98.02 MB · 347 sayfa (318 metin / 29 taranmış-görüntü) · SHA-256 <code>1dab8f6434d08bc9…</code></td></tr>
-    <tr><th>Resmi Bağlantılar</th><td><a href="http://eced.csb.gov.tr/jsp/ek1/61354" target="_blank" rel="noopener">e-ÇED Portal Kaydı</a> · <a href="http://eced.csb.gov.tr/jsp/dosya/dosyaGoster.htm?tempAd=sign4195618410608326396.pdf&amp;orjinalAd=KaraburunEIHPTD...pdf&amp;yuklemeTarihi=2026-11-16" target="_blank" rel="noopener">Resmi PDF Dosyası</a></td></tr>
+    <tr><th>Duyuru Tarihi</th><td><code>19.11.2026</code> (belge yükleme tarihi: <code>16/11/2026 04:19:09</code>)</td></tr>
+    <tr><th>PDF Kapsamı</th><td>98.02 MB · 347 sayfa (318 metin sayfası / 29 taranmış veya görüntü sayfası) · SHA-256 <code>1dab8f6434d08bc9…</code></td></tr>
+    <tr><th>Resmi Bağlantılar</th><td><a href="http://eced.csb.gov.tr/jsp/ek1/61354" target="_blank" rel="noopener">e-ÇED Portal Kaydı</a> · <a href="http://eced.csb.gov.tr/jsp/dosya/dosyaGoster.htm?tempAd=sign4195618410608326396.pdf&amp;orjinalAd=KaraburunEIHPTD...pdf&amp;yuklemeTarihi=2026-11-16" target="_blank" rel="noopener">Resmi PDF Dosyası</a> · <a href="https://www.openstreetmap.org/?mlat=39.6484&amp;mlon=27.8826#map=8/39.6484/27.8826" target="_blank" rel="noopener">OpenStreetMap</a> · <a href="https://www.google.com/maps/search/?api=1&amp;query=39.6484,27.8826" target="_blank" rel="noopener">Google Haritalar</a></td></tr>
   </table>
+
+  <h2>Konum Haritası</h2>
+  <div class="map-box">
+    <div id="digest-map"></div>
+    <div class="map-legend"><span>PDF dosyasında metin olarak okunabilir koordinat tablosu tespit edilemediği için il merkezi yaklaşık konum olarak gösterilmektedir.</span></div>
+  </div>
 
   
   <h2>Yapay Zeka Destekli Bilimsel Ön Değerlendirme <span class="badge">gemini-3.8-flash</span></h2>
-  <p class="sub">PDF içinden seçilen 26 sayfadan (s.1, s.2, s.3, s.4, s.8, s.9, s.11, s.12, s.15, s.16, s.31, s.32, s.36, s.37, s.39, s.76, s.77, s.82, s.83, s.85, s.92, s.93, s.132, s.133, s.247, s.248) üretilmiştir. Tüm sayısal verileri resmi PDF'teki <code>[s. N]</code> sayfalarından doğrulayın.</p>
-  <section class="card prio">
+  <p class="sub">Bu değerlendirme, resmi PDF dosyasından seçilen 26 sayfa (s.1, s.2, s.3, s.4, s.8, s.9, s.11, s.12, s.15, s.16, s.31, s.32, s.36, s.37, s.39, s.76, s.77, s.82, s.83, s.85, s.92, s.93, s.132, s.133, s.247, s.248) esas alınarak hazırlanmıştır. Tüm sayısal verilerin ve tespitlerin resmi PDF belgesindeki ilgili <code>[s. N]</code> sayfalarından doğrulanması gerekir.</p>
+  <section class="card ek1">
     <p><strong>Özet:</strong> TEİAŞ tarafından Balıkesir ili Burhaniye ilçesi ile İzmir ili Bergama ilçesi sınırlarında 185.836.579,48 TL proje bedeli ile 31,52 km uzunluğunda 154 kV gerilimli enerji iletim hattı ve 93 adet direk tesisi planlanmaktadır [s. 2, 9]. Hat güzergahı orman alanları, tarım arazileri, meralar ve dere yatakları üzerinden geçmektedir [s. 15, 32]. Biyolojik çeşitlilik değerlendirmesi büyük oranda bölgesel literatür derlemesine ve metodolojisi belirsiz sınırlı arazi tespitlerine dayandırılmış olup çok mevsimli arazi çalışması bulunmamaktadır [s. 85, 92, 93]. Çevre izleme planında ise gürültü ve toz parametreleri için fiziksel ölçüm yerine yalnızca görsel takip taahhüt edilmiştir [s. 133].</p>
-    <details style="margin-top:8px;font-size:0.86rem;color:var(--muted);"><summary style="cursor:pointer;">English summary</summary><p style="margin:6px 0 0;">TEİAŞ proposes the construction of a 31.52 km, 154 kV power transmission line comprising 93 pylons across Burhaniye (Balıkesir) and Bergama (İzmir) with an investment cost of 185.8 million TL [s. 2, 9]. The planned corridor traverses forestry lands, agricultural areas, pastures, and seasonal creeks [s. 15, 32]. Baseline ecological assessments rely predominantly on broad literature compilations with sparse, methodologically unelaborated field observations and lack multi-seasonal field sampling [s. 85, 92, 93]. Furthermore, the environmental monitoring plan commits solely to visual observations rather than quantitative instrumental measurements for dust and environmental noise [s. 133].</p></details>
+    <details style="margin-top:8px;font-size:0.86rem;color:var(--muted);"><summary style="cursor:pointer;">İngilizce özet (English summary)</summary><p style="margin:6px 0 0;">TEİAŞ proposes the construction of a 31.52 km, 154 kV power transmission line comprising 93 pylons across Burhaniye (Balıkesir) and Bergama (İzmir) with an investment cost of 185.8 million TL [s. 2, 9]. The planned corridor traverses forestry lands, agricultural areas, pastures, and seasonal creeks [s. 15, 32]. Baseline ecological assessments rely predominantly on broad literature compilations with sparse, methodologically unelaborated field observations and lack multi-seasonal field sampling [s. 85, 92, 93]. Furthermore, the environmental monitoring plan commits solely to visual observations rather than quantitative instrumental measurements for dust and environmental noise [s. 133].</p></details>
     <div class="badges" style="margin-top:10px;">
-      <span class="badge">Saha çalışması: Karışık / belirsiz</span>
-      <span class="badge">Mevsimsel örnekleme: Bulunamadı</span>
-      <span class="badge">Kümülatif etki: Yüzeysel / şablon</span>
+      <span class="badge">Saha çalışması: Karışık veya yöntemi belirsiz</span>
+      <span class="badge">Mevsimsel örnekleme: İncelenen sayfalarda tespit edilemedi</span>
+      <span class="badge">Kümülatif etki: Yüzeysel veya şablon düzeyinde</span>
     </div>
     <p class="detail" style="margin-top:10px;"><strong>Zeytinlik ve Korunan Alanlar:</strong> The text documents regional agricultural significance of olive groves (28.1% of Izmir ag land and 83,050 ha in Balikesir, highlighting Burhaniye) but provides no parcel-level inventory or Law 3573 distance evaluations [s. 76, 77]. Forest clearances require OGM permits, while formal national parks or cultural sites are reported absent [s. 9, 82].<br/>Baseline flora and fauna lists are heavily compiled from literature (&#x27;L&#x27;) with occasional literature-plus-field codes (&#x27;A+L&#x27;), but without survey dates, observation effort, or transects [s. 85, 92, 93]. Multi-seasonal baseline field surveys conducted prior to filing are not documented; seasonal species behavior is referenced only generically from academic sources [s. 93]. Cumulative impacts are handled via a placeholder chapter heading without quantitative modeling across overlapping infrastructure in the regional corridor [s. 3].</p>
   </section>
@@ -157,29 +187,29 @@ blockquote { margin: 10px 0; padding: 10px 14px; border-left: 3px solid var(--ac
 <tr><th>Construction Wastewater</th><td>7,24 m3/gün <span class="pno">[s. 39]</span></td></tr>
 <tr><th>Operation Workforce</th><td>10 kişi <span class="pno">[s. 9]</span></td></tr>
 <tr><th>Economic Lifespan</th><td>49 yıl <span class="pno">[s. 9]</span></td></tr></table>
-  <h3>Bilimsel ve Metodolojik Uyarılar</h3><section class="card"><div class="hit"><span class="badge urgent">YÜKSEK</span> <strong>Gürültü ve Toz İzlemesinde Enstrümantal Ölçüm Yerine Yalnızca Görsel Takip Tanımlanması</strong> <span class="pno">[s. 133]</span> — Çevre İzleme Planı Tablo 58&#x27;de toz emisyonu ve gürültü kirliliği izleme yöntemi olarak enstrümantal ölçüm yerine yalnızca &#x27;Görsel Takip&#x27; metodu belirlenmiştir. Akustik gürültü seviyelerinin görsel olarak izlenmesi teknik açıdan imkansızdır ve Çevresel Gürültü Kontrol Yönetmeliği gerekliliklerini karşılamamaktadır.</div>
+  <h3>Bilimsel ve Metodolojik Bulgular</h3><section class="card"><div class="hit"><span class="badge urgent">YÜKSEK</span> <strong>Gürültü ve Toz İzlemesinde Enstrümantal Ölçüm Yerine Yalnızca Görsel Takip Tanımlanması</strong> <span class="pno">[s. 133]</span> — Çevre İzleme Planı Tablo 58&#x27;de toz emisyonu ve gürültü kirliliği izleme yöntemi olarak enstrümantal ölçüm yerine yalnızca &#x27;Görsel Takip&#x27; metodu belirlenmiştir. Akustik gürültü seviyelerinin görsel olarak izlenmesi teknik açıdan imkansızdır ve Çevresel Gürültü Kontrol Yönetmeliği gerekliliklerini karşılamamaktadır.</div>
 <div class="hit"><span class="badge warn">ORTA</span> <strong>Flora ve Fauna Arazi Çalışması Metodolojisinin Belgelenmemesi</strong> <span class="pno">[s. 85, s. 92, s. 93]</span> — Biyolojik çeşitlilik listelerinde türlerin tespit yöntemi ağırlıklı olarak literatür (&#x27;L&#x27;) ve kısmen arazi+literatür (&#x27;A+L&#x27;) olarak işaretlenmiş, ancak arazide hangi takvim günlerinde, hangi istasyonlarda ve hangi yöntemlerle örnekleme yapıldığına dair hiçbir operasyonel detay sunulmamıştır.</div>
 <div class="hit"><span class="badge warn">ORTA</span> <strong>3573 Sayılı Zeytincilik Kanunu Kapsamında Koridor Analizinin Bulunmaması</strong> <span class="pno">[s. 9, s. 15, s. 76, s. 77]</span> — Raporda Burhaniye ve Bergama yörelerinin zeytin üretimi açısından yüksek öneme sahip olduğu belirtilmesine rağmen, 31,52 km uzunluğundaki iletim hattı koridoru ve 93 direk taban alanı için zeytinlik varlığına dair parsel ölçeğinde somut bir tespit veya 3573 sayılı Kanun mesafesi irdelenmemiştir.</div>
 <div class="hit"><span class="badge muted">DÜŞÜK</span> <strong>Çevresel ve Sosyal Yönetim Planında Evsel Atıksu İzleme İhtiyacının Reddedilmesi</strong> <span class="pno">[s. 39, s. 247]</span> — İnşaat aşamasında 7,24 m3/gün evsel atıksu oluşacağı ve sızdırmaz foseptikte toplanacağı belirtilmesine karşın, Çevresel ve Sosyal Yönetim Planı Tablo 5&#x27;te evsel atıksu için &#x27;Proje kapsamında izleme çalışması yapılmasına gerek yoktur&#x27; kararı verilerek vidanjör takip mekanizması izleme dışı bırakılmıştır.</div></section>
-  <h3>HKT ve İYUK 20/A İçin Taslak Teknik Sorular</h3><ul><li>Çevre İzleme Planı Tablo 58&#x27;de şantiye gürültü kirliliği için izleme metodu olarak belirlenen &#x27;Görsel Takip&#x27; yöntemi akustik sınır değerleri nasıl doğrulayacaktır; yönetmelik uyarınca neden dBA cinsinden enstrümantal ses ölçümü planlanmamıştır? <span class="pno">[s. 133]</span></li>
+  <h3>HKT Tutanakları ve İdari Başvurular İçin Taslak Teknik Sorular</h3><ul><li>Çevre İzleme Planı Tablo 58&#x27;de şantiye gürültü kirliliği için izleme metodu olarak belirlenen &#x27;Görsel Takip&#x27; yöntemi akustik sınır değerleri nasıl doğrulayacaktır; yönetmelik uyarınca neden dBA cinsinden enstrümantal ses ölçümü planlanmamıştır? <span class="pno">[s. 133]</span></li>
 <li>Hat güzergahında gerçekleştirildiği belirtilen arazi gözlemleri hangi kesin tarihlerde, hangi fenolojik dönemde ve kaç kişilik biyolog/uzman heyeti tarafından yürütülmüştür? <span class="pno">[s. 85, s. 92, s. 93]</span></li>
 <li>Balıkesir/Burhaniye ve İzmir/Bergama&#x27;da zeytin alanlarının yoğunluğu karşısında, 93 direk yeri ve iletken altı koridorda 3573 sayılı Kanun kapsamında kalan zeytinlik parselleri bulunmakta mıdır ve Tarım ve Orman İl Müdürlüklerinden yasal izin alınmış mıdır? <span class="pno">[s. 9, s. 15, s. 32, s. 76, s. 77]</span></li>
 <li>İnşaat aşamasında oluşacak 7,24 m3/gün evsel atıksuyun foseptikten vidanjörle çekimi ve ruhsatlı arıtma tesisine teslimi sürecinde, ÇSYP Tablo 5&#x27;te &#x27;izleme çalışması yapılmasına gerek yoktur&#x27; hükmü yerine atık bertaraf belgeleri hangi sıklıkla kayıt altına alınacaktır? <span class="pno">[s. 39, s. 247]</span></li></ul>
-  <p class="sub"><em>Kapsam sınırları:</em> The review is constrained to the provided 26 excerpted pages out of 347 total PDF pages. Detailed technical appendices including official institutional opinion letters (Annex 2), cadastral expropriation maps, specific avifauna/mammal inventories, and Chapter IV cumulative impact calculations could not be verified.</p>
+  <p class="sub"><em>İnceleme sınırları:</em> The review is constrained to the provided 26 excerpted pages out of 347 total PDF pages. Detailed technical appendices including official institutional opinion letters (Annex 2), cadastral expropriation maps, specific avifauna/mammal inventories, and Chapter IV cumulative impact calculations could not be verified.</p>
 
 
   <h2>Resmi Duyuru Metni</h2>
-  <blockquote>İZMİR ili BERGAMA,  ilcesinde İZMİR ili BERGAMA,  ilçesi Balıkesir İli, Burhaniye İlçesi, Yaylacık Köyü ve İzmir İli, Bergama İlçesi, Güneşli, Çamavlu, Kıranlı, Çobanlar ve Hacılar Mahalleleri Mevkii mevkiindeki TÜRKİYE ELEKTRİK İLETİM ANONİM ŞİRKETİ tarafından yapılması planlanan 154 kV (Alibey RES TM - Bergama Vento RES TM EİH) Brş.N. - 154 kV İvrindi RES TM (Karaburun RES) EİH (Girdi-Çıktı) projesi ile ilgili olarak İZMİR Valiliğimize sunulan P.T.D. Dosyası Çevresel Etki Değerlendirmesi Yönetmeliği&#x27;nin 16. maddesi doğrultusunda incelenmiş ve projeye ilişkin ÇED Süreci başlamıştır. İlgililere ve kamuoyuna duyurulur.</blockquote>
+  <blockquote>BALIKESİR ili BURHANİYE,  ilcesinde BALIKESİR ili BURHANİYE,  ilçesi Balıkesir İli, Burhaniye İlçesi, Yaylacık Köyü ve İzmir İli, Bergama İlçesi, Güneşli, Çamavlu, Kıranlı, Çobanlar ve Hacılar Mahalleleri Mevkii mevkiindeki TÜRKİYE ELEKTRİK İLETİM ANONİM ŞİRKETİ tarafından yapılması planlanan 154 kV (Alibey RES TM - Bergama Vento RES TM EİH) Brş.N. - 154 kV İvrindi RES TM (Karaburun RES) EİH (Girdi-Çıktı) projesi ile ilgili olarak BALIKESİR Valiliğimize sunulan P.T.D. Dosyası Çevresel Etki Değerlendirmesi Yönetmeliği&#x27;nin 16. maddesi doğrultusunda incelenmiş ve projeye ilişkin ÇED Süreci başlamıştır. İlgililere ve kamuoyuna duyurulur.</blockquote>
 
   <h2>Otomatik Metin Taraması (Deterministik)</h2>
-  <table class="kv"><tr><th>Saha / arazi çalışması geçiyor mu</th><td><span class="badge ok">Metinde var</span></td></tr>
-<tr><th>Literatür taraması ifadesi geçiyor mu</th><td><span class="badge urgent">BULUNAMADI (elle kontrol edin)</span></td></tr>
-<tr><th>Mevsimsel örnekleme geçiyor mu</th><td><span class="badge urgent">BULUNAMADI (elle kontrol edin)</span></td></tr>
-<tr><th>Kümülatif etki değerlendirmesi geçiyor mu</th><td><span class="badge ok">Metinde var</span></td></tr>
-<tr><th>Zeytincilik Kanunu (3573 / zeytinlik)</th><td><span class="badge ok">Metinde var</span></td></tr>
-<tr><th>Yeraltı suyu / akifer / hidrojeoloji</th><td><span class="badge ok">Metinde var</span></td></tr>
-<tr><th>Endemik tür / IUCN / Bern Sözleşmesi</th><td><span class="badge ok">Metinde var</span></td></tr></table>
-  <p class="sub">OCR içermeyen taranmış harita ve ekler otomatik metin taramasına dahil değildir.</p>
+  <table class="kv"><tr><th>Saha veya arazi çalışması ifadesi</th><td><span class="badge ok">Metinde yer almaktadır</span></td></tr>
+<tr><th>Literatür taraması ifadesi</th><td><span class="badge urgent">Metinde tespit edilemedi; doğrudan PDF üzerinden kontrol ediniz</span></td></tr>
+<tr><th>Mevsimsel örnekleme ifadesi</th><td><span class="badge urgent">Metinde tespit edilemedi; doğrudan PDF üzerinden kontrol ediniz</span></td></tr>
+<tr><th>Kümülatif etki değerlendirmesi ifadesi</th><td><span class="badge ok">Metinde yer almaktadır</span></td></tr>
+<tr><th>3573 sayılı Zeytincilik Kanunu veya zeytinlik ifadesi</th><td><span class="badge ok">Metinde yer almaktadır</span></td></tr>
+<tr><th>Yeraltı suyu, akifer veya hidrojeoloji ifadesi</th><td><span class="badge ok">Metinde yer almaktadır</span></td></tr>
+<tr><th>Endemik tür, IUCN veya Bern Sözleşmesi ifadesi</th><td><span class="badge ok">Metinde yer almaktadır</span></td></tr></table>
+  <p class="sub">Metin katmanı (OCR) bulunmayan taranmış harita ve kurum görüşü ekleri otomatik metin taramasına dahil edilmemiştir.</p>
 
   <h2>Sayfa Kaynaklı Çıkarılan Bulgular</h2>
   <div class="cards"><section class="card"><h3>Koordinatlar, Parsel ve Alan Büyüklüğü <span style="color:var(--muted);font-weight:400;font-size:0.85rem">(70 sayfa: s.9, s.11, s.15, s.16, s.17, s.20, s.21, s.22, s.23, s.31, s.40, s.57, s.62, s.63 (+56 sayfa))</span></h3><div class="hit"><span class="pno">[s. 9]</span> <code>15,81 km</code> — …da yer almamaktadır. Proje konusu 154 kV gerilimde 1272 MCM iletkenli enerji iletim hattının uzunluğu Girdi Hattı: 15,81 km (15.812,76 m), Çıktı Hattı: 15,71 km (15.709,18 m) olmak üzere toplam 31,52 km (31.521,94 m) olup; enerji iletim hattı…</div>
@@ -226,8 +256,36 @@ blockquote { margin: 10px 0; padding: 10px 14px; border-left: 3px solid var(--ac
 <li><span class="pno">[s. 247]</span> ÇEVRESEL VE SOSYAL YÖNETİM PLANI</li></ul>
 
   <div class="notice">
-    Çevre, Şehircilik ve İklim Değişikliği Bakanlığı'nın kamuya açık <code>eced-duyuru.csb.gov.tr</code> portalından üretilen bilgilendirme amaçlı şeffaflık aracıdır. Tüm alıntılar 1 tabanlı PDF sayfa numarasıyla <code>[s. N]</code> gösterilir. Yasal süreler otomatik hesaplanır; kesin süre ve hukuki işlem için mutlaka avukat/hukukçu doğrulaması alın.
+    Bu sayfa, T.C. Çevre, Şehircilik ve İklim Değişikliği Bakanlığı'nın kamuya açık <code>eced-duyuru.csb.gov.tr</code> duyuru portalındaki kayıtlar esas alınarak bilgilendirme amacıyla hazırlanmıştır. Alıntıların tamamı 1 tabanlı PDF sayfa numarasıyla (<code>[s. N]</code>) gösterilmektedir. Yasal süreler otomatik olarak hesaplanır; kesin sürelerin ve hukuki başvuru yollarının yetkili hukukçular tarafından teyit edilmesi gerekir.
   </div>
 </div>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script>
+(() => {
+  if (typeof L === 'undefined') return;
+  const g = {"lat": 39.6484, "lon": 27.8826, "zoom": 8, "precision": "province_centroid", "points": [], "label": "BALIKESİR / BURHANİYE — 154 kV (Alibey RES TM - Bergama Vento RES TM EİH) Brş.N. - 154 kV İvrindi RES TM (Karaburu"};
+  const map = L.map('digest-map').setView([g.lat, g.lon], g.zoom);
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    maxZoom: 18,
+    attribution: '&copy; OpenStreetMap katkıda bulunanları'
+  }).addTo(map);
+  if (g.precision === 'exact_pdf' && g.points.length > 1) {
+    const latlngs = g.points.map(p => [p[0], p[1]]);
+    const poly = L.polyline(latlngs, { color: '#58a6ff', weight: 3, opacity: 0.85 }).addTo(map);
+    for (const ll of latlngs.slice(0, 30)) {
+      L.circleMarker(ll, { radius: 4, color: '#ffffff', fillColor: '#f85149', fillOpacity: 0.9, weight: 1 }).addTo(map);
+    }
+    map.fitBounds(poly.getBounds().pad(0.25));
+  } else {
+    L.circleMarker([g.lat, g.lon], {
+      radius: g.precision === 'exact_pdf' ? 8 : 11,
+      color: '#ffffff',
+      fillColor: g.precision === 'exact_pdf' ? '#f85149' : '#58a6ff',
+      fillOpacity: g.precision === 'exact_pdf' ? 0.9 : 0.45,
+      weight: 2
+    }).bindPopup(g.label).addTo(map).openPopup();
+  }
+})();
+</script>
 </body>
 </html>

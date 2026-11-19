@@ -17,7 +17,7 @@ Type=oneshot
 Environment=PYTHONUNBUFFERED=1
 EnvironmentFile=-${REPO_DIR}/.env
 WorkingDirectory=${REPO_DIR}
-ExecStart=${UV_BIN} run eced-watch --days 14 --max-digests 4
+ExecStart=${UV_BIN} run eced-watch --days 7 --max-digests 5 --drop-pdfs
 Nice=10
 EOF
 

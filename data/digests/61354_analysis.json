@@ -2,8 +2,8 @@
   "filing": {
     "row_index": 0,
     "button_id": "form:duyurTable:0:j_idt67",
-    "province": "İZMİR",
-    "district": "BERGAMA",
+    "province": "BALIKESİR",
+    "district": "BURHANİYE",
     "project_name": "154 kV (Alibey RES TM - Bergama Vento RES TM EİH) Brş.N. - 154 kV İvrindi RES TM (Karaburun RES) EİH (Girdi-Çıktı)",
     "project_owner": "TÜRKİYE ELEKTRİK İLETİM ANONİM ŞİRKETİ",
     "sector": "Turizm",
@@ -11,7 +11,7 @@
     "decision_type": "ÇED Süreci Başlayan",
     "announcement_date_tr": "19.11.2026",
     "project_type": "Ek-2",
-    "detail_text": "İZMİR ili BERGAMA,  ilcesinde İZMİR ili BERGAMA,  ilçesi Balıkesir İli, Burhaniye İlçesi, Yaylacık Köyü ve İzmir İli, Bergama İlçesi, Güneşli, Çamavlu, Kıranlı, Çobanlar ve Hacılar Mahalleleri Mevkii mevkiindeki TÜRKİYE ELEKTRİK İLETİM ANONİM ŞİRKETİ tarafından yapılması planlanan 154 kV (Alibey RES TM - Bergama Vento RES TM EİH) Brş.N. - 154 kV İvrindi RES TM (Karaburun RES) EİH (Girdi-Çıktı) projesi ile ilgili olarak İZMİR Valiliğimize sunulan P.T.D. Dosyası Çevresel Etki Değerlendirmesi Yönetmeliği'nin 16. maddesi doğrultusunda incelenmiş ve projeye ilişkin ÇED Süreci başlamıştır. İlgililere ve kamuoyuna duyurulur.",
+    "detail_text": "BALIKESİR ili BURHANİYE,  ilcesinde BALIKESİR ili BURHANİYE,  ilçesi Balıkesir İli, Burhaniye İlçesi, Yaylacık Köyü ve İzmir İli, Bergama İlçesi, Güneşli, Çamavlu, Kıranlı, Çobanlar ve Hacılar Mahalleleri Mevkii mevkiindeki TÜRKİYE ELEKTRİK İLETİM ANONİM ŞİRKETİ tarafından yapılması planlanan 154 kV (Alibey RES TM - Bergama Vento RES TM EİH) Brş.N. - 154 kV İvrindi RES TM (Karaburun RES) EİH (Girdi-Çıktı) projesi ile ilgili olarak BALIKESİR Valiliğimize sunulan P.T.D. Dosyası Çevresel Etki Değerlendirmesi Yönetmeliği'nin 16. maddesi doğrultusunda incelenmiş ve projeye ilişkin ÇED Süreci başlamıştır. İlgililere ve kamuoyuna duyurulur.",
     "detail_links": [
       {
         "text": "P.T.D. Dosyası",
@@ -36,7 +36,7 @@
     "statutory_clocks": [
       {
         "code": "aski_10d",
-        "kind": "10-day public review/comment window (askı süresi)",
+        "kind": "10 günlük halkın görüş ve önerilerine açılma (askı) süresi",
         "deadline": "2026-11-29",
         "days_remaining": 9
       }

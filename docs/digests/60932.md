@@ -16,7 +16,7 @@
 | **Announcement Date** | `04.11.2026` (uploaded `08/09/2026 05:18:55`) |
 
 **Statutory Deadlines (informational aid — verify with legal counsel):**
-- **İYUK 20/A annulment lawsuit (30d; İYUK 11 does not toll):** `2026-12-04` (`14 days remaining`)
+- **İYUK Madde 20/A iptal davası süresi (30 gün; İYUK 11 süreyi durdurmaz):** `2026-12-04` (`14 days remaining`)
 
 ## 2. AI-Assisted Scientific Synthesis (`gemini-4-hydrogen`)
 

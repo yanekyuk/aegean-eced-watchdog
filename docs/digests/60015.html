@@ -3,7 +3,8 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>e-ÇED Ön Özet #60015 — ÇEŞME</title>
+  <title>e-ÇED Ön Özet #60015 — İZMİR / ÇEŞME</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
   <style>
 :root {
   --bg: #0f1216;
@@ -37,31 +38,53 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
   background: var(--bg);
   color: var(--text);
-  line-height: 1.5;
+  line-height: 1.6;
 }
-.wrap { max-width: 1220px; margin: 0 auto; padding: 24px 18px 64px; }
+.wrap { max-width: 1240px; margin: 0 auto; padding: 24px 18px 64px; }
 a { color: var(--accent); text-decoration: none; }
 a:hover { text-decoration: underline; }
 header { border-bottom: 1px solid var(--border); padding-bottom: 16px; margin-bottom: 20px; }
 h1 { margin: 0 0 6px; font-size: 1.55rem; }
+h2 { margin: 26px 0 10px; font-size: 1.2rem; }
+h3 { margin: 16px 0 8px; font-size: 1rem; }
 .sub { color: var(--muted); font-size: 0.92rem; margin: 0; }
-.meta-bar { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 12px; font-size: 0.85rem; color: var(--muted); }
-.stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 10px; margin: 16px 0 20px; }
+.meta-bar { display: flex; flex-wrap: wrap; gap: 14px; margin-top: 12px; font-size: 0.85rem; color: var(--muted); }
+.stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 10px; margin: 16px 0 18px; }
 .stat { background: var(--surface); border: 1px solid var(--border); border-radius: 8px; padding: 12px 14px; }
 .stat .num { font-size: 1.45rem; font-weight: 700; }
 .stat .lbl { font-size: 0.78rem; color: var(--muted); }
+.map-box {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 18px;
+}
+#map { width: 100%; height: 420px; background: var(--badge-bg); }
+#digest-map { width: 100%; height: 320px; background: var(--badge-bg); }
+.map-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  padding: 9px 14px;
+  font-size: 0.8rem;
+  color: var(--muted);
+  border-top: 1px solid var(--border);
+}
+.dot { display: inline-block; width: 10px; height: 10px; border-radius: 50%; margin-right: 5px; vertical-align: middle; }
 .controls { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; margin-bottom: 16px; }
-input[type="search"] {
-  flex: 1 1 240px;
+input[type="search"], select.filter-select {
   padding: 8px 12px;
   border-radius: 6px;
   border: 1px solid var(--border);
   background: var(--surface);
   color: var(--text);
-  font-size: 0.92rem;
+  font-size: 0.9rem;
 }
+input[type="search"] { flex: 1 1 240px; }
+select.filter-select { min-width: 170px; }
 button.pill {
-  padding: 6px 11px;
+  padding: 7px 12px;
   border-radius: 999px;
   border: 1px solid var(--border);
   background: var(--surface);
@@ -75,12 +98,12 @@ button.pill.active { background: var(--accent); border-color: var(--accent); col
   background: var(--surface);
   border: 1px solid var(--border);
   border-radius: 8px;
-  padding: 14px 16px;
+  padding: 15px 17px;
 }
-.card.prio { border-left: 4px solid var(--accent); }
+.card.ek1 { border-left: 4px solid var(--accent); }
 .row-top { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px; align-items: baseline; }
 .title { font-weight: 600; font-size: 0.98rem; }
-.badges { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 6px; }
+.badges { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 7px; }
 .badge {
   display: inline-block;
   padding: 2px 8px;
@@ -93,35 +116,36 @@ button.pill.active { background: var(--accent); border-color: var(--accent); col
 .badge.warn { border-color: var(--amber); color: var(--amber); font-weight: 600; }
 .badge.ok { border-color: var(--green); color: var(--green); }
 .badge.muted { color: var(--muted); }
-.detail { font-size: 0.86rem; color: var(--muted); margin: 8px 0; }
+.detail { font-size: 0.87rem; color: var(--muted); margin: 8px 0; }
 .actions { display: flex; flex-wrap: wrap; gap: 12px; font-size: 0.84rem; margin-top: 8px; }
 .notice {
   margin-top: 28px;
-  padding: 12px 14px;
+  padding: 14px 16px;
   border: 1px solid var(--border);
   border-radius: 8px;
-  font-size: 0.82rem;
+  font-size: 0.84rem;
   color: var(--muted);
 }
 table.kv { width: 100%; border-collapse: collapse; margin: 12px 0; font-size: 0.9rem; }
-table.kv th, table.kv td { border: 1px solid var(--border); padding: 8px 10px; text-align: left; vertical-align: top; }
-table.kv th { width: 220px; background: var(--badge-bg); }
+table.kv th, table.kv td { border: 1px solid var(--border); padding: 8px 11px; text-align: left; vertical-align: top; }
+table.kv th { width: 240px; background: var(--badge-bg); }
 code { background: var(--badge-bg); padding: 1px 5px; border-radius: 4px; font-size: 0.85em; }
-blockquote { margin: 10px 0; padding: 10px 14px; border-left: 3px solid var(--accent); background: var(--surface); font-size: 0.9rem; }
-.hit { margin: 6px 0; font-size: 0.88rem; }
+blockquote { margin: 10px 0; padding: 11px 15px; border-left: 3px solid var(--accent); background: var(--surface); font-size: 0.9rem; }
+.hit { margin: 7px 0; font-size: 0.88rem; }
 .pno { font-weight: 700; color: var(--accent); }
+.leaflet-popup-content { color: #1f2328; font-size: 0.85rem; line-height: 1.45; }
 </style>
 </head>
 <body>
 <div class="wrap">
   <header>
-    <div style="font-size:0.85rem;margin-bottom:8px;"><a href="../index.html">← Ege e-ÇED İzleme listesine dön</a> · <a href="../rehber.html">Nasıl Kullanılır? (Rehber)</a> · <a href="60015.md">Ham Markdown (.md)</a></div>
-    <h1>e-ÇED Ön Özet #60015 — ÇEŞME / İZMİR</h1>
+    <div style="font-size:0.85rem;margin-bottom:8px;"><a href="../index.html">← Türkiye e-ÇED İzleme listesine dön</a> · <a href="../rehber.html">Kullanım ve İnceleme Rehberi</a> · <a href="60015.md">Ham Markdown (.md)</a></div>
+    <h1>e-ÇED Ön Özet #60015 — İZMİR / ÇEŞME</h1>
     <p class="sub">CASTELLO FONTANA OTEL</p>
     <div class="badges" style="margin-top:10px;">
       <span class="badge">IDK</span>
       <span class="badge">Ek-1</span>
-      <span class="badge warn">İDK · tarihi kontrol et</span>
+      <span class="badge warn">İDK İncelemesi · Tarih duyuru metnindedir</span>
     </div>
   </header>
 
@@ -129,21 +153,27 @@ blockquote { margin: 10px 0; padding: 10px 14px; border-left: 3px solid var(--ac
     <tr><th>Proje Sahibi</th><td>ARIKAN PROJE GELİŞTİRME A.Ş.</td></tr>
     <tr><th>Hazırlayan Kuruluş</th><td>ELEMENT ÇEVRE DANIŞMANLIK VE MÜHENDİSLİK A.Ş.</td></tr>
     <tr><th>Sektör / Alt Sektör</th><td>Turizm / Turistik Tesisler</td></tr>
-    <tr><th>Duyuru Tarihi</th><td><code>16.11.2026</code> (yükleme: <code>09/06/2026 04:17:08</code>)</td></tr>
-    <tr><th>PDF Kapsamı</th><td>183.81 MB · 915 sayfa (835 metin / 80 taranmış-görüntü) · SHA-256 <code>c886fcee9d5a36a3…</code></td></tr>
-    <tr><th>Resmi Bağlantılar</th><td><a href="http://eced.csb.gov.tr/jsp/ek1/60015" target="_blank" rel="noopener">e-ÇED Portal Kaydı</a> · <a href="http://eced.csb.gov.tr/jsp/dosya/dosyaGoster.htm?tempAd=sign8235067367368802982.pdf&amp;orjinalAd=60015_CED_Raporu.pdf&amp;yuklemeTarihi=2026-11-10" target="_blank" rel="noopener">Resmi PDF Dosyası</a></td></tr>
+    <tr><th>Duyuru Tarihi</th><td><code>16.11.2026</code> (belge yükleme tarihi: <code>09/06/2026 04:17:08</code>)</td></tr>
+    <tr><th>PDF Kapsamı</th><td>183.81 MB · 915 sayfa (835 metin sayfası / 80 taranmış veya görüntü sayfası) · SHA-256 <code>c886fcee9d5a36a3…</code></td></tr>
+    <tr><th>Resmi Bağlantılar</th><td><a href="http://eced.csb.gov.tr/jsp/ek1/60015" target="_blank" rel="noopener">e-ÇED Portal Kaydı</a> · <a href="http://eced.csb.gov.tr/jsp/dosya/dosyaGoster.htm?tempAd=sign8235067367368802982.pdf&amp;orjinalAd=60015_CED_Raporu.pdf&amp;yuklemeTarihi=2026-11-10" target="_blank" rel="noopener">Resmi PDF Dosyası</a> · <a href="https://www.openstreetmap.org/?mlat=38.4237&amp;mlon=27.1428#map=8/38.4237/27.1428" target="_blank" rel="noopener">OpenStreetMap</a> · <a href="https://www.google.com/maps/search/?api=1&amp;query=38.4237,27.1428" target="_blank" rel="noopener">Google Haritalar</a></td></tr>
   </table>
+
+  <h2>Konum Haritası</h2>
+  <div class="map-box">
+    <div id="digest-map"></div>
+    <div class="map-legend"><span>PDF dosyasında metin olarak okunabilir koordinat tablosu tespit edilemediği için il merkezi yaklaşık konum olarak gösterilmektedir.</span></div>
+  </div>
 
   
   <h2>Yapay Zeka Destekli Bilimsel Ön Değerlendirme <span class="badge">gemini-3.8-flash</span></h2>
-  <p class="sub">PDF içinden seçilen 25 sayfadan (s.1, s.2, s.3, s.5, s.6, s.7, s.8, s.9, s.10, s.11, s.12, s.13, s.14, s.15, s.16, s.17, s.18, s.22, s.23, s.25, s.26, s.27, s.29, s.38, s.45) üretilmiştir. Tüm sayısal verileri resmi PDF'teki <code>[s. N]</code> sayfalarından doğrulayın.</p>
-  <section class="card prio">
+  <p class="sub">Bu değerlendirme, resmi PDF dosyasından seçilen 25 sayfa (s.1, s.2, s.3, s.5, s.6, s.7, s.8, s.9, s.10, s.11, s.12, s.13, s.14, s.15, s.16, s.17, s.18, s.22, s.23, s.25, s.26, s.27, s.29, s.38, s.45) esas alınarak hazırlanmıştır. Tüm sayısal verilerin ve tespitlerin resmi PDF belgesindeki ilgili <code>[s. N]</code> sayfalarından doğrulanması gerekir.</p>
+  <section class="card ek1">
     <p><strong>Özet:</strong> Proje, İzmir ili, Çeşme ilçesi, Çakabey Mahallesi 507 ada 173 parselde yer alan 180.407,15 m² yüzölçümlü taşınmaz üzerinde ARIKAN PROJE GELİŞTİRME A.Ş. tarafından kurulması planlanan 769 oda ve 1.538 yatak kapasiteli Castello Fontana Otel projesidir [s. 2, 23, 29]. Proje alanı, İzmir 2 No&#x27;lu Tabiat Varlıklarını Koruma Komisyonu kararı uyarınca &#x27;Sürdürülebilir Koruma Kontrollü Kullanım Alanı&#x27; statüsündeki Doğal Sit Alanı sınırları içerisinde ve Çevre Düzeni Planı&#x27;nda Turizm Tesis Alanı lejantında kalmaktadır [s. 25, 26, 45]. Tesis kapsamında 272 adet blok, 41 açık yüzme havuzu, 473 araçlık otopark ve 535 m³/gün kapasiteli paket atıksu arıtma tesisi öngörülmektedir [s. 23, 27, 29]. Başlıca çevresel etkenler; doğal sit alanındaki yoğun yapılaşma baskısı, inşaat ve işletme aşamasındaki su temini/tüketimi ve bitişikteki rüzgâr türbinleri ile kümülatif etkileşimdir [s. 25, 27, 45].</p>
-    <details style="margin-top:8px;font-size:0.86rem;color:var(--muted);"><summary style="cursor:pointer;">English summary</summary><p style="margin:6px 0 0;">The proposed project comprises the construction and operation of the 769-room and 1,538-bed &#x27;Castello Fontana Hotel&#x27; by ARIKAN PROJE GELİŞTİRME A.Ş. on a 180,407.15 m² plot in Çakabey District, Çeşme, İzmir [s. 2, 23, 29]. The project footprint falls within a legally designated &#x27;Sustainable Conservation and Controlled Use Area&#x27; Natural Site and is zoned as Tourism Facility Area in the regional environmental master plan [s. 25, 26, 45]. The development includes 272 accommodation blocks, 41 outdoor swimming pools, a 473-vehicle parking lot, and an on-site 535 m³/day wastewater treatment plant designed for irrigation reuse [s. 23, 27, 29]. Key environmental stakes center on large-scale development inside a protected area, high water demand in a water-stressed peninsula, and cumulative interactions with adjacent wind energy installations [s. 25, 27, 45].</p></details>
+    <details style="margin-top:8px;font-size:0.86rem;color:var(--muted);"><summary style="cursor:pointer;">İngilizce özet (English summary)</summary><p style="margin:6px 0 0;">The proposed project comprises the construction and operation of the 769-room and 1,538-bed &#x27;Castello Fontana Hotel&#x27; by ARIKAN PROJE GELİŞTİRME A.Ş. on a 180,407.15 m² plot in Çakabey District, Çeşme, İzmir [s. 2, 23, 29]. The project footprint falls within a legally designated &#x27;Sustainable Conservation and Controlled Use Area&#x27; Natural Site and is zoned as Tourism Facility Area in the regional environmental master plan [s. 25, 26, 45]. The development includes 272 accommodation blocks, 41 outdoor swimming pools, a 473-vehicle parking lot, and an on-site 535 m³/day wastewater treatment plant designed for irrigation reuse [s. 23, 27, 29]. Key environmental stakes center on large-scale development inside a protected area, high water demand in a water-stressed peninsula, and cumulative interactions with adjacent wind energy installations [s. 25, 27, 45].</p></details>
     <div class="badges" style="margin-top:10px;">
-      <span class="badge">Saha çalışması: Karışık / belirsiz</span>
+      <span class="badge">Saha çalışması: Karışık veya yöntemi belirsiz</span>
       <span class="badge">Mevsimsel örnekleme: Belirsiz</span>
-      <span class="badge">Kümülatif etki: Yüzeysel / şablon</span>
+      <span class="badge">Kümülatif etki: Yüzeysel veya şablon düzeyinde</span>
     </div>
     <p class="detail" style="margin-top:10px;"><strong>Zeytinlik ve Korunan Alanlar:</strong> Proje parseli, 24.06.2021 tarihli ve 1133 sayılı İzmir 2 No&#x27;lu TVK kararı uyarınca &#x27;Sürdürülebilir Koruma Kontrollü Kullanım Alanı&#x27; Doğal Sit Alanı statüsündedir [s. 25, 26, 45]. Zeytinlik varlığına ilişkin özel kanuni değerlendirme (3573 sayılı Kanun) sağlanan ilk sayfalarda açıkça belirtilmemiş, genel arazi kullanım başlıklarında bırakılmıştır [s. 8, 16].<br/>Raporda ÇED Yeterlik Belgesi Tebliği gereğince 16.04.2026 tarihinde tek günlük bir faaliyet yeri inceleme çalışması yapıldığı belirtilmektedir [s. 27]. Flora ve fauna bölümlerinde Yelkovan (Puffinus yelkouan) ve Üveyik (Streptopelia turtur) gibi türler için risk matrisleri listelenmekle birlikte, sağlanan metin kısımlarında çok mevsimli arazi örneklemesinin fiilen tamamlandığına dair detaylı metodolojik veriler yer almamaktadır [s. 16, 27]. Projenin doğu sınırında 300-500 m mesafede yer alan 4 adet RES türbini ve şalt merkezi varlığı belirtilmiş olup kümülatif etkilerin kapsamı ana metin sayfalarında irdelenmeyi gerektirmektedir [s. 45].</p>
   </section>
@@ -157,29 +187,29 @@ blockquote { margin: 10px 0; padding: 10px 14px; border-left: 3px solid var(--ac
 <tr><th>En Yakın Yerleşim Birimi Mesafesi</th><td>220 m (tek konut) <span class="pno">[s. 26]</span></td></tr>
 <tr><th>Komşu Rüzgar Türbini ve Şalt Sahası Mesafesi</th><td>300 - 500 m (4 adet rüzgar türbini) <span class="pno">[s. 45]</span></td></tr>
 <tr><th>Toplam Proje Bedeli</th><td>1.993.240.834,20 TL <span class="pno">[s. 2]</span></td></tr></table>
-  <h3>Bilimsel ve Metodolojik Uyarılar</h3><section class="card"><div class="hit"><span class="badge urgent">YÜKSEK</span> <strong>Doğal Sit Alanında Aşırı Yoğun Yapılaşma ve Kapasite Artışı</strong> <span class="pno">[s. 23, s. 25, s. 29]</span> — Proje alanı 24.06.2021 tarihli TVK kararı ile tescil edilen &#x27;Sürdürülebilir Koruma Kontrollü Kullanım Alanı&#x27; Doğal Sit Alanı içerisinde kalmaktadır [s. 25]. Daha önce aynı parselin 10.500 m²&#x27;lik kısmında 20 odalı otel için ÇED muafiyeti/kapsam dışı görüşü alınmışken, revizyonla 272 blok, 769 oda, 1.538 yatak ve 88.393 m² inşaat alanına çıkarılarak koruma altındaki alandaki yapı yoğunluğu dramatik biçimde artırılmıştır [s. 23, 29].</div>
+  <h3>Bilimsel ve Metodolojik Bulgular</h3><section class="card"><div class="hit"><span class="badge urgent">YÜKSEK</span> <strong>Doğal Sit Alanında Aşırı Yoğun Yapılaşma ve Kapasite Artışı</strong> <span class="pno">[s. 23, s. 25, s. 29]</span> — Proje alanı 24.06.2021 tarihli TVK kararı ile tescil edilen &#x27;Sürdürülebilir Koruma Kontrollü Kullanım Alanı&#x27; Doğal Sit Alanı içerisinde kalmaktadır [s. 25]. Daha önce aynı parselin 10.500 m²&#x27;lik kısmında 20 odalı otel için ÇED muafiyeti/kapsam dışı görüşü alınmışken, revizyonla 272 blok, 769 oda, 1.538 yatak ve 88.393 m² inşaat alanına çıkarılarak koruma altındaki alandaki yapı yoğunluğu dramatik biçimde artırılmıştır [s. 23, 29].</div>
 <div class="hit"><span class="badge urgent">YÜKSEK</span> <strong>Su Kıtlığı Yaşanan Yarımadada Taşıma Su ve Şebeke Bağımlılığı</strong> <span class="pno">[s. 23, s. 27]</span> — İnşaat aşamasında su ihtiyacının taşıma su ile, işletme aşamasında ise şebeke suyu üzerinden temin edileceği belirtilmiştir [s. 27]. 1.538 yatak, personel ve 41 açık yüzme havuzu barındıran kompleksin Çeşme gibi kuraklık ve su stresi yaşayan bir bölgede yerel içme ve kullanma suyu şebekesine getireceği hidrolik yük ile şebekenin bunu karşılama kapasitesine dair somut teknik tahsis belgeleri özet bölümlerde sunulmamıştır [s. 23, 27].</div>
 <div class="hit"><span class="badge warn">ORTA</span> <strong>Bitişikteki Rüzgar Enerji Santrali (RES) Türbinleri ile Etkileşim Riski</strong> <span class="pno">[s. 12, s. 45]</span> — Proje alanının sadece 300-500 metre doğusunda 4 adet rüzgar türbini ve bir elektrik şalt merkezinin yer aldığı belirtilmektedir [s. 45]. Bu denli yakın mesafedeki türbinlerin yaratacağı kanat gürültüsü, düşük frekanslı ses, gölge titremesi (shadow flicker) ve buz fırlatma risklerinin 1.538 yataklı turizm tesisi sakinleri üzerindeki etkileri kritik bir kümülatif değerlendirme konusudur [s. 12, 45].</div>
 <div class="hit"><span class="badge warn">ORTA</span> <strong>Arıtılmış Atıksuyun Peyzaj Sulamasında Kullanımının Hidrojeolojik Riski</strong> <span class="pno">[s. 9, s. 27, s. 29]</span> — İşletme aşamasında oluşacak atıksuların 535 m³/gün kapasiteli AAT&#x27;de arıtılarak Sınıf A sulama suyu kriterlerine göre 104.953,54 m² yeşil alanın sulanmasında kullanılacağı taahhüt edilmektedir [s. 27, 29]. Kış aylarında veya turizm sezonu dışındaki düşük buharlaşma/sulama ihtiyacı dönemlerinde arıtılmış suyun nasıl depolanacağı veya alıcı ortama deşarj edilip edilmeyeceği hususunda risk yönetimi eksikliği bulunmaktadır [s. 9, 27].</div></section>
-  <h3>HKT ve İYUK 20/A İçin Taslak Teknik Sorular</h3><ul><li>Sürdürülebilir Koruma Kontrollü Kullanım Doğal Sit Alanı statüsündeki parselde, 20 odalık ilk kapsam dışı projeden 769 oda ve 272 blokluk devasa bir komplekse geçilmesinin doğal sit ekosistemi ve peyzaj bütünlüğü üzerindeki taşıma kapasitesi analizleri hangi bilimsel yöntemlerle yapılmıştır? [s. 23, 25, 29] <span class="pno">[s. 23, s. 25, s. 29]</span></li>
+  <h3>HKT Tutanakları ve İdari Başvurular İçin Taslak Teknik Sorular</h3><ul><li>Sürdürülebilir Koruma Kontrollü Kullanım Doğal Sit Alanı statüsündeki parselde, 20 odalık ilk kapsam dışı projeden 769 oda ve 272 blokluk devasa bir komplekse geçilmesinin doğal sit ekosistemi ve peyzaj bütünlüğü üzerindeki taşıma kapasitesi analizleri hangi bilimsel yöntemlerle yapılmıştır? [s. 23, 25, 29] <span class="pno">[s. 23, s. 25, s. 29]</span></li>
 <li>Yaz aylarında ciddi su stresi ve altyapı yetersizliği çeken Çeşme Yarımadası&#x27;nda, 1.538 misafir ve personelin şebeke suyu tüketimi ile 41 adet açık yüzme havuzunun dolumu için İZSU&#x27;dan debi garantili resmi bağlantı izni alınmış mıdır? [s. 23, 27] <span class="pno">[s. 23, s. 27]</span></li>
 <li>Proje sınırına 300-500 m mesafede yer alan 4 adet rüzgar türbini ve şalt merkezinin konaklama birimlerinde yaratacağı gürültü, alçak frekanslı titreşim ve gölge kırpışması (flicker) etkilerine karşı yapılmış kümülatif modelleme ve akustik etüt çalışması mevcut mudur? [s. 45] <span class="pno">[s. 12, s. 45]</span></li>
 <li>Günlük 535 m³ arıtılmış atıksuyun yeşil alan sulamasında kullanılması planlanırken, bitkilerin su ihtiyacının olmadığı kış aylarında veya aşırı yağış dönemlerinde bu suyun depolanması ya da bertarafı için sahada hangi alternatif altyapı ve deşarj izinleri öngörülmektedir? [s. 9, 27] <span class="pno">[s. 9, s. 27]</span></li></ul>
-  <p class="sub"><em>Kapsam sınırları:</em> Sağlanan metin excerptsleri toplam 915 sayfalık nihai ÇED raporunun ağırlıklı olarak içindekiler listesi, kapak sayfaları, teknik olmayan özet ve Bölüm 1&#x27;in giriş sayfalarından (toplam 25 sayfa) oluşmaktadır. Flora-fauna envanter tablolarının detay metinleri (s. 81-137), hidrojeolojik analizler (s. 167-171), kümülatif etki bölümü (s. 277-284) ve kurum görüş yazılarının yer aldığı ekler sağlanan sayfalar arasında yer almadığı için detaylı teknik hesaplamalar bu sayfalar üzerinden doğrudan doğrulanamamıştır.</p>
+  <p class="sub"><em>İnceleme sınırları:</em> Sağlanan metin excerptsleri toplam 915 sayfalık nihai ÇED raporunun ağırlıklı olarak içindekiler listesi, kapak sayfaları, teknik olmayan özet ve Bölüm 1&#x27;in giriş sayfalarından (toplam 25 sayfa) oluşmaktadır. Flora-fauna envanter tablolarının detay metinleri (s. 81-137), hidrojeolojik analizler (s. 167-171), kümülatif etki bölümü (s. 277-284) ve kurum görüş yazılarının yer aldığı ekler sağlanan sayfalar arasında yer almadığı için detaylı teknik hesaplamalar bu sayfalar üzerinden doğrudan doğrulanamamıştır.</p>
 
 
   <h2>Resmi Duyuru Metni</h2>
   <blockquote>İZMİR ili ÇEŞME,  ilcesinde İZMİR ili ÇEŞME ilçesi sınırları içerisinde ARIKAN PROJE GELİŞTİRME A.Ş. tarafından yapılması planlanan CASTELLO FONTANA OTEL projesi ile ilgili olarak hazırlanan ÇED Raporu, ÇED Yönetmeliği&#x27;nin 11. maddesi kapsamında Bakanlığımıza sunulmuş olup, inceleme değerlendirme süreci başlamıştır. Proje ile ilgili olarak 07/12/2026 tarihinde İDK toplantısı gerçekleştirilecektir. Bakanlığımıza sunulan ÇED Raporu https://eced-duyuru.csb.gov.tr/eced-prod/duyurular.xhtml adresinde yer almaktadır. ÇED Raporu ilgililere ve kamuoyuna duyurulur.</blockquote>
 
   <h2>Otomatik Metin Taraması (Deterministik)</h2>
-  <table class="kv"><tr><th>Saha / arazi çalışması geçiyor mu</th><td><span class="badge ok">Metinde var</span></td></tr>
-<tr><th>Literatür taraması ifadesi geçiyor mu</th><td><span class="badge ok">Metinde var</span></td></tr>
-<tr><th>Mevsimsel örnekleme geçiyor mu</th><td><span class="badge ok">Metinde var</span></td></tr>
-<tr><th>Kümülatif etki değerlendirmesi geçiyor mu</th><td><span class="badge ok">Metinde var</span></td></tr>
-<tr><th>Zeytincilik Kanunu (3573 / zeytinlik)</th><td><span class="badge ok">Metinde var</span></td></tr>
-<tr><th>Yeraltı suyu / akifer / hidrojeoloji</th><td><span class="badge ok">Metinde var</span></td></tr>
-<tr><th>Endemik tür / IUCN / Bern Sözleşmesi</th><td><span class="badge ok">Metinde var</span></td></tr></table>
-  <p class="sub">OCR içermeyen taranmış harita ve ekler otomatik metin taramasına dahil değildir.</p>
+  <table class="kv"><tr><th>Saha veya arazi çalışması ifadesi</th><td><span class="badge ok">Metinde yer almaktadır</span></td></tr>
+<tr><th>Literatür taraması ifadesi</th><td><span class="badge ok">Metinde yer almaktadır</span></td></tr>
+<tr><th>Mevsimsel örnekleme ifadesi</th><td><span class="badge ok">Metinde yer almaktadır</span></td></tr>
+<tr><th>Kümülatif etki değerlendirmesi ifadesi</th><td><span class="badge ok">Metinde yer almaktadır</span></td></tr>
+<tr><th>3573 sayılı Zeytincilik Kanunu veya zeytinlik ifadesi</th><td><span class="badge ok">Metinde yer almaktadır</span></td></tr>
+<tr><th>Yeraltı suyu, akifer veya hidrojeoloji ifadesi</th><td><span class="badge ok">Metinde yer almaktadır</span></td></tr>
+<tr><th>Endemik tür, IUCN veya Bern Sözleşmesi ifadesi</th><td><span class="badge ok">Metinde yer almaktadır</span></td></tr></table>
+  <p class="sub">Metin katmanı (OCR) bulunmayan taranmış harita ve kurum görüşü ekleri otomatik metin taramasına dahil edilmemiştir.</p>
 
   <h2>Sayfa Kaynaklı Çıkarılan Bulgular</h2>
   <div class="cards"><section class="card"><h3>Koordinatlar, Parsel ve Alan Büyüklüğü <span style="color:var(--muted);font-weight:400;font-size:0.85rem">(225 sayfa: s.1, s.9, s.10, s.23, s.29, s.30, s.32, s.35, s.40, s.42, s.44, s.45, s.46, s.48 (+211 sayfa))</span></h3><div class="hit"><span class="pno">[s. 1]</span> <code>ada 173 parsel</code> — …ARIKAN PROJE GELİŞTİRME A.Ş. CASTELLO FONTANA OTEL İzmir İli, Çeşme ilçesi, Çakabey Mahallesi, 507 ada 173 parsel ELEMENT ÇEVRE DANIŞMANLIK VE MÜHENDİSLİK A.Ş. Mansuroğlu Mah. 1593/1 Sok. No:2 Lider Centrio A Blok No: 78 Bay…</div>
@@ -231,8 +261,36 @@ blockquote { margin: 10px 0; padding: 10px 14px; border-left: 3px solid var(--ac
 <li><span class="pno">[s. 878]</span> GidecegiYerAdresBM</li></ul>
 
   <div class="notice">
-    Çevre, Şehircilik ve İklim Değişikliği Bakanlığı'nın kamuya açık <code>eced-duyuru.csb.gov.tr</code> portalından üretilen bilgilendirme amaçlı şeffaflık aracıdır. Tüm alıntılar 1 tabanlı PDF sayfa numarasıyla <code>[s. N]</code> gösterilir. Yasal süreler otomatik hesaplanır; kesin süre ve hukuki işlem için mutlaka avukat/hukukçu doğrulaması alın.
+    Bu sayfa, T.C. Çevre, Şehircilik ve İklim Değişikliği Bakanlığı'nın kamuya açık <code>eced-duyuru.csb.gov.tr</code> duyuru portalındaki kayıtlar esas alınarak bilgilendirme amacıyla hazırlanmıştır. Alıntıların tamamı 1 tabanlı PDF sayfa numarasıyla (<code>[s. N]</code>) gösterilmektedir. Yasal süreler otomatik olarak hesaplanır; kesin sürelerin ve hukuki başvuru yollarının yetkili hukukçular tarafından teyit edilmesi gerekir.
   </div>
 </div>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script>
+(() => {
+  if (typeof L === 'undefined') return;
+  const g = {"lat": 38.4237, "lon": 27.1428, "zoom": 8, "precision": "province_centroid", "points": [], "label": "İZMİR / ÇEŞME — CASTELLO FONTANA OTEL"};
+  const map = L.map('digest-map').setView([g.lat, g.lon], g.zoom);
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    maxZoom: 18,
+    attribution: '&copy; OpenStreetMap katkıda bulunanları'
+  }).addTo(map);
+  if (g.precision === 'exact_pdf' && g.points.length > 1) {
+    const latlngs = g.points.map(p => [p[0], p[1]]);
+    const poly = L.polyline(latlngs, { color: '#58a6ff', weight: 3, opacity: 0.85 }).addTo(map);
+    for (const ll of latlngs.slice(0, 30)) {
+      L.circleMarker(ll, { radius: 4, color: '#ffffff', fillColor: '#f85149', fillOpacity: 0.9, weight: 1 }).addTo(map);
+    }
+    map.fitBounds(poly.getBounds().pad(0.25));
+  } else {
+    L.circleMarker([g.lat, g.lon], {
+      radius: g.precision === 'exact_pdf' ? 8 : 11,
+      color: '#ffffff',
+      fillColor: g.precision === 'exact_pdf' ? '#f85149' : '#58a6ff',
+      fillOpacity: g.precision === 'exact_pdf' ? 0.9 : 0.45,
+      weight: 2
+    }).bindPopup(g.label).addTo(map).openPopup();
+  }
+})();
+</script>
 </body>
 </html>

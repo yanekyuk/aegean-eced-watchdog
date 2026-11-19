@@ -3,7 +3,8 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>e-ÇED Ön Özet #60932 — AKHİSAR</title>
+  <title>e-ÇED Ön Özet #60932 — MANİSA / AKHİSAR</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
   <style>
 :root {
   --bg: #0f1216;
@@ -37,31 +38,53 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
   background: var(--bg);
   color: var(--text);
-  line-height: 1.5;
+  line-height: 1.6;
 }
-.wrap { max-width: 1220px; margin: 0 auto; padding: 24px 18px 64px; }
+.wrap { max-width: 1240px; margin: 0 auto; padding: 24px 18px 64px; }
 a { color: var(--accent); text-decoration: none; }
 a:hover { text-decoration: underline; }
 header { border-bottom: 1px solid var(--border); padding-bottom: 16px; margin-bottom: 20px; }
 h1 { margin: 0 0 6px; font-size: 1.55rem; }
+h2 { margin: 26px 0 10px; font-size: 1.2rem; }
+h3 { margin: 16px 0 8px; font-size: 1rem; }
 .sub { color: var(--muted); font-size: 0.92rem; margin: 0; }
-.meta-bar { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 12px; font-size: 0.85rem; color: var(--muted); }
-.stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 10px; margin: 16px 0 20px; }
+.meta-bar { display: flex; flex-wrap: wrap; gap: 14px; margin-top: 12px; font-size: 0.85rem; color: var(--muted); }
+.stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 10px; margin: 16px 0 18px; }
 .stat { background: var(--surface); border: 1px solid var(--border); border-radius: 8px; padding: 12px 14px; }
 .stat .num { font-size: 1.45rem; font-weight: 700; }
 .stat .lbl { font-size: 0.78rem; color: var(--muted); }
+.map-box {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 18px;
+}
+#map { width: 100%; height: 420px; background: var(--badge-bg); }
+#digest-map { width: 100%; height: 320px; background: var(--badge-bg); }
+.map-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  padding: 9px 14px;
+  font-size: 0.8rem;
+  color: var(--muted);
+  border-top: 1px solid var(--border);
+}
+.dot { display: inline-block; width: 10px; height: 10px; border-radius: 50%; margin-right: 5px; vertical-align: middle; }
 .controls { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; margin-bottom: 16px; }
-input[type="search"] {
-  flex: 1 1 240px;
+input[type="search"], select.filter-select {
   padding: 8px 12px;
   border-radius: 6px;
   border: 1px solid var(--border);
   background: var(--surface);
   color: var(--text);
-  font-size: 0.92rem;
+  font-size: 0.9rem;
 }
+input[type="search"] { flex: 1 1 240px; }
+select.filter-select { min-width: 170px; }
 button.pill {
-  padding: 6px 11px;
+  padding: 7px 12px;
   border-radius: 999px;
   border: 1px solid var(--border);
   background: var(--surface);
@@ -75,12 +98,12 @@ button.pill.active { background: var(--accent); border-color: var(--accent); col
   background: var(--surface);
   border: 1px solid var(--border);
   border-radius: 8px;
-  padding: 14px 16px;
+  padding: 15px 17px;
 }
-.card.prio { border-left: 4px solid var(--accent); }
+.card.ek1 { border-left: 4px solid var(--accent); }
 .row-top { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px; align-items: baseline; }
 .title { font-weight: 600; font-size: 0.98rem; }
-.badges { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 6px; }
+.badges { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 7px; }
 .badge {
   display: inline-block;
   padding: 2px 8px;
@@ -93,30 +116,31 @@ button.pill.active { background: var(--accent); border-color: var(--accent); col
 .badge.warn { border-color: var(--amber); color: var(--amber); font-weight: 600; }
 .badge.ok { border-color: var(--green); color: var(--green); }
 .badge.muted { color: var(--muted); }
-.detail { font-size: 0.86rem; color: var(--muted); margin: 8px 0; }
+.detail { font-size: 0.87rem; color: var(--muted); margin: 8px 0; }
 .actions { display: flex; flex-wrap: wrap; gap: 12px; font-size: 0.84rem; margin-top: 8px; }
 .notice {
   margin-top: 28px;
-  padding: 12px 14px;
+  padding: 14px 16px;
   border: 1px solid var(--border);
   border-radius: 8px;
-  font-size: 0.82rem;
+  font-size: 0.84rem;
   color: var(--muted);
 }
 table.kv { width: 100%; border-collapse: collapse; margin: 12px 0; font-size: 0.9rem; }
-table.kv th, table.kv td { border: 1px solid var(--border); padding: 8px 10px; text-align: left; vertical-align: top; }
-table.kv th { width: 220px; background: var(--badge-bg); }
+table.kv th, table.kv td { border: 1px solid var(--border); padding: 8px 11px; text-align: left; vertical-align: top; }
+table.kv th { width: 240px; background: var(--badge-bg); }
 code { background: var(--badge-bg); padding: 1px 5px; border-radius: 4px; font-size: 0.85em; }
-blockquote { margin: 10px 0; padding: 10px 14px; border-left: 3px solid var(--accent); background: var(--surface); font-size: 0.9rem; }
-.hit { margin: 6px 0; font-size: 0.88rem; }
+blockquote { margin: 10px 0; padding: 11px 15px; border-left: 3px solid var(--accent); background: var(--surface); font-size: 0.9rem; }
+.hit { margin: 7px 0; font-size: 0.88rem; }
 .pno { font-weight: 700; color: var(--accent); }
+.leaflet-popup-content { color: #1f2328; font-size: 0.85rem; line-height: 1.45; }
 </style>
 </head>
 <body>
 <div class="wrap">
   <header>
-    <div style="font-size:0.85rem;margin-bottom:8px;"><a href="../index.html">← Ege e-ÇED İzleme listesine dön</a> · <a href="../rehber.html">Nasıl Kullanılır? (Rehber)</a> · <a href="60932.md">Ham Markdown (.md)</a></div>
-    <h1>e-ÇED Ön Özet #60932 — AKHİSAR / MANİSA</h1>
+    <div style="font-size:0.85rem;margin-bottom:8px;"><a href="../index.html">← Türkiye e-ÇED İzleme listesine dön</a> · <a href="../rehber.html">Kullanım ve İnceleme Rehberi</a> · <a href="60932.md">Ham Markdown (.md)</a></div>
+    <h1>e-ÇED Ön Özet #60932 — MANİSA / AKHİSAR</h1>
     <p class="sub">Zeytinyağı Üretim Tesisi (80 ton/gün zeytin işleme, 20 ton/gün zeytinyağı üretimi) ve Sofralık  Zeytin ( 276 ton/yıl )</p>
     <div class="badges" style="margin-top:10px;">
       <span class="badge">ÇED Gerekli Değil/ÇED Olumlu</span>
@@ -129,21 +153,27 @@ blockquote { margin: 10px 0; padding: 10px 14px; border-left: 3px solid var(--ac
     <tr><th>Proje Sahibi</th><td>Adnan ÇİÇER</td></tr>
     <tr><th>Hazırlayan Kuruluş</th><td>YEŞİLMAVI MÜH. ÇEVRE YÖN. VE DAN. HİZ. LTD. ŞTİ.</td></tr>
     <tr><th>Sektör / Alt Sektör</th><td>Gıda / Bitkisel, Hayvansal Yağ Üretimi</td></tr>
-    <tr><th>Duyuru Tarihi</th><td><code>04.11.2026</code> (yükleme: <code>08/09/2026 05:18:55</code>)</td></tr>
-    <tr><th>PDF Kapsamı</th><td>12.21 MB · 165 sayfa (120 metin / 45 taranmış-görüntü) · SHA-256 <code>12fec09d072dc4b4…</code></td></tr>
-    <tr><th>Resmi Bağlantılar</th><td><a href="http://eced.csb.gov.tr/jsp/ek1/60932" target="_blank" rel="noopener">e-ÇED Portal Kaydı</a> · <a href="http://eced.csb.gov.tr/jsp/dosya/dosyaGoster.htm?tempAd=sign3212377813301395117.pdf&amp;orjinalAd=e-imza.pdf&amp;yuklemeTarihi=2026-10-23" target="_blank" rel="noopener">Resmi PDF Dosyası</a></td></tr>
+    <tr><th>Duyuru Tarihi</th><td><code>04.11.2026</code> (belge yükleme tarihi: <code>08/09/2026 05:18:55</code>)</td></tr>
+    <tr><th>PDF Kapsamı</th><td>12.21 MB · 165 sayfa (120 metin sayfası / 45 taranmış veya görüntü sayfası) · SHA-256 <code>12fec09d072dc4b4…</code></td></tr>
+    <tr><th>Resmi Bağlantılar</th><td><a href="http://eced.csb.gov.tr/jsp/ek1/60932" target="_blank" rel="noopener">e-ÇED Portal Kaydı</a> · <a href="http://eced.csb.gov.tr/jsp/dosya/dosyaGoster.htm?tempAd=sign3212377813301395117.pdf&amp;orjinalAd=e-imza.pdf&amp;yuklemeTarihi=2026-10-23" target="_blank" rel="noopener">Resmi PDF Dosyası</a> · <a href="https://www.openstreetmap.org/?mlat=38.6191&amp;mlon=27.4289#map=8/38.6191/27.4289" target="_blank" rel="noopener">OpenStreetMap</a> · <a href="https://www.google.com/maps/search/?api=1&amp;query=38.6191,27.4289" target="_blank" rel="noopener">Google Haritalar</a></td></tr>
   </table>
+
+  <h2>Konum Haritası</h2>
+  <div class="map-box">
+    <div id="digest-map"></div>
+    <div class="map-legend"><span>PDF dosyasında metin olarak okunabilir koordinat tablosu tespit edilemediği için il merkezi yaklaşık konum olarak gösterilmektedir.</span></div>
+  </div>
 
   
   <h2>Yapay Zeka Destekli Bilimsel Ön Değerlendirme <span class="badge">gemini-4-hydrogen</span></h2>
-  <p class="sub">PDF içinden seçilen 26 sayfadan (s.1, s.2, s.3, s.4, s.5, s.6, s.7, s.8, s.9, s.10, s.11, s.13, s.22, s.30, s.31, s.37, s.38, s.40, s.41, s.48, s.52, s.53, s.62, s.63, s.102, s.103) üretilmiştir. Tüm sayısal verileri resmi PDF'teki <code>[s. N]</code> sayfalarından doğrulayın.</p>
-  <section class="card prio">
+  <p class="sub">Bu değerlendirme, resmi PDF dosyasından seçilen 26 sayfa (s.1, s.2, s.3, s.4, s.5, s.6, s.7, s.8, s.9, s.10, s.11, s.13, s.22, s.30, s.31, s.37, s.38, s.40, s.41, s.48, s.52, s.53, s.62, s.63, s.102, s.103) esas alınarak hazırlanmıştır. Tüm sayısal verilerin ve tespitlerin resmi PDF belgesindeki ilgili <code>[s. N]</code> sayfalarından doğrulanması gerekir.</p>
+  <section class="card ek1">
     <p><strong>Özet:</strong> Manisa İli, Akhisar İlçesi, Kayalıoğlu Mahallesi, Tamburlu Mevkii, 269 ada, 46 parseldeki 2.797,11 m2 alanda Adnan ÇİÇER tarafından 80 ton/gün zeytin işleme ve 20 ton/gün zeytinyağı üretimi kapasiteli 2 fazlı Zeytinyağı Üretim Tesisi ile 276 ton/yıl kapasiteli Sofralık Zeytin işleme faaliyeti planlanmaktadır [s. 5, 10]. Mevcut 789 m2 kapalı alan ve 32 m2 pirina havuzuyla toplam 821 m2 kullanım alanına sahip olacak tesiste ilave bina inşaatı öngörülmemekte, sezonluk 100 gün ve günde 24 saat çalışma düzeniyle faaliyet yürütülmesi hedeflenmektedir [s. 5, 10]. Çevre Düzeni Planı&#x27;nda Tarım Arazisi olarak görünen parsel, Rahmiye Mahallesi yerleşiminin yaklaşık 50 m kuzeyinde ve 1. derece deprem kuşağında yer almaktadır [s. 11, 30, 48]. Başlıca çevresel riskler arasında konutlara olan yakınlık, günlük 76,6 m3/gün düzeyindeki sulu pirina ve proses atık suyunun yönetimi, evsel atık su bertarafı ile kazan yakıtına dair rapor içi teknik çelişkiler ve tamamlanmış mevsimsel saha verilerinin eksikliği bulunmaktadır [s. 11, 22, 37, 52, 63].</p>
-    <details style="margin-top:8px;font-size:0.86rem;color:var(--muted);"><summary style="cursor:pointer;">English summary</summary><p style="margin:6px 0 0;">Adnan ÇİÇER proposes to operate a two-phase olive oil production facility (80 tonnes/day olive processing, 20 tonnes/day olive oil output) alongside a table olive processing unit (276 tonnes/year) on parcel 269/46 (2,797.11 m2) in Kayalıoğlu Neighborhood, Akhisar District, Manisa [s. 5, 10]. Utilizing existing structures totaling 789 m2 of enclosed space and a 32 m2 pomace (pirina) pit without new building construction, the facility is scheduled to operate seasonally for 100 days per year on a 24-hour basis [s. 5, 10]. Designated as Agricultural Land in the regional spatial plan, the site lies approximately 50 meters north of Rahmiye Neighborhood residences within a first-degree seismic zone [s. 11, 30, 48]. Primary environmental stakes involve close proximity to dwellings, handling and daily transport of 76.6 m3/day of wet pomace and process wastewater, internal technical contradictions regarding domestic wastewater disposal and boiler fuel, and the absence of documented pre-project seasonal ecological baseline surveys [s. 11, 22, 37, 52, 63].</p></details>
+    <details style="margin-top:8px;font-size:0.86rem;color:var(--muted);"><summary style="cursor:pointer;">İngilizce özet (English summary)</summary><p style="margin:6px 0 0;">Adnan ÇİÇER proposes to operate a two-phase olive oil production facility (80 tonnes/day olive processing, 20 tonnes/day olive oil output) alongside a table olive processing unit (276 tonnes/year) on parcel 269/46 (2,797.11 m2) in Kayalıoğlu Neighborhood, Akhisar District, Manisa [s. 5, 10]. Utilizing existing structures totaling 789 m2 of enclosed space and a 32 m2 pomace (pirina) pit without new building construction, the facility is scheduled to operate seasonally for 100 days per year on a 24-hour basis [s. 5, 10]. Designated as Agricultural Land in the regional spatial plan, the site lies approximately 50 meters north of Rahmiye Neighborhood residences within a first-degree seismic zone [s. 11, 30, 48]. Primary environmental stakes involve close proximity to dwellings, handling and daily transport of 76.6 m3/day of wet pomace and process wastewater, internal technical contradictions regarding domestic wastewater disposal and boiler fuel, and the absence of documented pre-project seasonal ecological baseline surveys [s. 11, 22, 37, 52, 63].</p></details>
     <div class="badges" style="margin-top:10px;">
-      <span class="badge">Saha çalışması: Karışık / belirsiz</span>
-      <span class="badge">Mevsimsel örnekleme: Bulunamadı</span>
-      <span class="badge">Kümülatif etki: Eksik / bulunamadı</span>
+      <span class="badge">Saha çalışması: Karışık veya yöntemi belirsiz</span>
+      <span class="badge">Mevsimsel örnekleme: İncelenen sayfalarda tespit edilemedi</span>
+      <span class="badge">Kümülatif etki: Eksik veya tespit edilemedi</span>
     </div>
     <p class="detail" style="margin-top:10px;"><strong>Zeytinlik ve Korunan Alanlar:</strong> Proje alanı 1/100.000 ölçekli Çevre Düzeni Planı&#x27;nda Tarım Arazisi olarak belirtilen alanda yer almakta olup tarım dışı kullanım izni alınmadan faaliyet gösterilmeyeceği beyan edilmiştir [s. 11, 31]. Sahada orman alanı bulunmadığı ve alanın milli park, av/yaban hayvanı sahası, turizm alanı ile Özel Çevre Koruma Bölgesi dışında kaldığı ifade edilmiştir [s. 31, 48, 103]. Sunulan sayfalarda 3573 sayılı Zeytincilik Kanunu kapsamında çevredeki zeytinliklere olan mesafe analizine rastlanmamıştır.<br/>Flora-fauna bölümünde TUBİVES, Davis ve Türkiye Bitkileri Kırmızı Kitabı gibi literatür kaynaklarının yanı sıra proje alanı çevresindeki 5 km&#x27;lik alanda doğrudan ve dolaylı gözlem teknikleriyle inceleme yapıldığı belirtilmiştir [s. 37, 38]. Ancak incelenen dosya kesitinde saha gözlemlerinin tarihi, mevsimi, araştırmacı ekibi veya tespit edilen tür listelerini içeren tablolar yer almamakta; sunulan metin genel yöntem ve fitocoğrafik tanımlarla sınırlı kalmaktadır [s. 37, 38, 40, 41]. Proje öncesi tamamlanmış mevsimsel bir örnekleme çalışması bulunmazken, Çevresel İzleme Planı yalnızca işletme aşaması atık ve izin taahhütlerini içermektedir [s. 63]. Kümülatif etki değerlendirmesi bölümü sunulan sayfalar dışında kaldığından bölgesel kümülatif etkilerin nasıl değerlendirildiği doğrulanamamıştır [s. 3].</p>
   </section>
@@ -157,31 +187,31 @@ blockquote { margin: 10px 0; padding: 10px 14px; border-left: 3px solid var(--ac
 <tr><th>Kömür Tüketimi ve Kül Oluşumu</th><td>1 MW altı sıcak su kazanında 25 ton/yıl (250 kg/gün) kömür yakıtı ve 13 kg/gün kül <span class="pno">[s. 22]</span></td></tr>
 <tr><th>Katı ve Organik Atıklar</th><td>15,34 kg/gün evsel nitelikli katı atık ve 0,8 kg/gün yaprak/dal organik atığı <span class="pno">[s. 52]</span></td></tr>
 <tr><th>Ekonomik Ömür</th><td>25 yıl <span class="pno">[s. 6]</span></td></tr></table>
-  <h3>Bilimsel ve Metodolojik Uyarılar</h3><section class="card"><div class="hit"><span class="badge urgent">YÜKSEK</span> <strong>Evsel atık su bertarafında MASKİ altyapısına ilişkin doğrudan çelişki</strong> <span class="pno">[s. 37, s. 63]</span> — Raporun 2. bölümünde proje alanında MASKİ kanalizasyon ve yağmur suyu altyapı tesislerinin bulunmadığı belirtilerek kanalizasyon şebekesi bulunmayan yerlere ilişkin hükümlere uyulacağı yazılırken, V-1 Çevresel İzleme Planı&#x27;nda işletme aşamasında oluşacak evsel nitelikli atık suların MASKİ kanalizasyonuna verileceği taahhüt edilmiştir.</div>
+  <h3>Bilimsel ve Metodolojik Bulgular</h3><section class="card"><div class="hit"><span class="badge urgent">YÜKSEK</span> <strong>Evsel atık su bertarafında MASKİ altyapısına ilişkin doğrudan çelişki</strong> <span class="pno">[s. 37, s. 63]</span> — Raporun 2. bölümünde proje alanında MASKİ kanalizasyon ve yağmur suyu altyapı tesislerinin bulunmadığı belirtilerek kanalizasyon şebekesi bulunmayan yerlere ilişkin hükümlere uyulacağı yazılırken, V-1 Çevresel İzleme Planı&#x27;nda işletme aşamasında oluşacak evsel nitelikli atık suların MASKİ kanalizasyonuna verileceği taahhüt edilmiştir.</div>
 <div class="hit"><span class="badge urgent">YÜKSEK</span> <strong>Sıcak su kazanının yakıt türünde rapor içi tutarsızlık</strong> <span class="pno">[s. 11, s. 22, s. 53]</span> — Ekipman listesini içeren Tablo-2&#x27;de 4-6 ton/saat kapasiteli kazan &#x27;Sıcak su Kazan(Pirina)&#x27; olarak tanımlanmışken, gaz atık ve kül bölümlerinde aynı kazanda yılda 25 ton (250 kg/gün) kömür yakılacağı ve tesisin kendi ürettiği pirinanın kesinlikle yakıt olarak kullanılmayacağı belirtilmiştir.</div>
 <div class="hit"><span class="badge urgent">YÜKSEK</span> <strong>Günlük pirina ve proses atık suyu miktarlarındaki hesap tutarsızlıkları</strong> <span class="pno">[s. 10, s. 13, s. 52]</span> — Zeytinin %75&#x27;i üzerinden 60 ton/gün pirina beklendiği belirtilirken aynı sayfadaki Tablo-1&#x27;de karasulu pirina miktarı 45 ton/gün olarak verilmiştir [s. 10]. Ayrıca 2 fazlı üretimde sıvı faz (karasu) oluşmadığı savunulmasına rağmen 56,6 m3/gün sulu pirinaya ek olarak 5,6 m3/gün seperatör suyu ve 14,4 m3/gün yıkama suyu ile toplam 76,6 m3/gün sulu pirina oluştuğu belirtilmiş; havuz depolama süresi hesabında ise paydaya hatalı biçimde &#x27;576,6 m3/gün&#x27; yazılmıştır [s. 13, 52].</div>
 <div class="hit"><span class="badge urgent">YÜKSEK</span> <strong>Yerleşim yerine 50 m mesafede 24 saat çalışma ve tarım dışı kullanım izni eksikliği</strong> <span class="pno">[s. 5, s. 10, s. 11, s. 30, s. 31, s. 103]</span> — Proje alanı Rahmiye Mahallesi konutlarının yaklaşık 50 m kuzeyinde bulunmasına ve sezonda günde 24 saat çalışma planlanmasına karşın, tesis gürültü konulu çevre izninden muaf değerlendirilmiştir [s. 5, 10, 30, 103]. Ayrıca Çevre Düzeni Planı&#x27;nda Tarım Arazisi görünen parsel için tarım dışı kullanım izni henüz alınmamıştır [s. 11, 31].</div>
 <div class="hit"><span class="badge warn">ORTA</span> <strong>Su temin kaynağının belirsizliği ve Gediz Havzası baskısı</strong> <span class="pno">[s. 52, s. 103]</span> — Çevresel ve Sosyal Yönetim Planı&#x27;nda yeraltı suyu kullanılmayacağı belirtilmesine ve Gediz Nehri su kalitesinin düşük kalite olarak tespit edildiği aktarılmasına karşın [s. 103], günlük toplam 20 m3&#x27;ü aşan yıkama ve seperatör suyu [s. 52] ile evsel su ihtiyacının hangi kaynaktan temin edileceği sunulan sayfalarda açıklanmamıştır.</div>
 <div class="hit"><span class="badge warn">ORTA</span> <strong>Flora-fauna saha çalışması kanıtlarının ve 3573 sayılı Kanun analizinin eksikliği</strong> <span class="pno">[s. 37, s. 38, s. 40, s. 41]</span> — Proje alanı çevresindeki 5 km&#x27;lik alanda doğrudan ve dolaylı gözlem yapıldığı ifade edilmesine rağmen sunulan sayfalarda saha çalışması tarihleri, mevsimsel tekrarlar ve tür listeleri bulunmamakta; çevredeki olası zeytinliklere (3573 sayılı Kanun) ilişkin mesafe değerlendirmesi de yer almamaktadır.</div></section>
-  <h3>HKT ve İYUK 20/A İçin Taslak Teknik Sorular</h3><ul><li>Raporun 2. bölümünde sahada MASKİ kanalizasyon ve yağmur suyu altyapısının bulunmadığı belirtilmesine rağmen V-1 Çevresel İzleme Planı&#x27;nda evsel atık suların MASKİ kanalizasyonuna verileceğinin yazılması arasındaki çelişki nasıl açıklanmaktadır ve evsel atık sular fiilen hangi sızdırmaz sistemle bertaraf edilecektir? <span class="pno">[s. 37, s. 63]</span></li>
+  <h3>HKT Tutanakları ve İdari Başvurular İçin Taslak Teknik Sorular</h3><ul><li>Raporun 2. bölümünde sahada MASKİ kanalizasyon ve yağmur suyu altyapısının bulunmadığı belirtilmesine rağmen V-1 Çevresel İzleme Planı&#x27;nda evsel atık suların MASKİ kanalizasyonuna verileceğinin yazılması arasındaki çelişki nasıl açıklanmaktadır ve evsel atık sular fiilen hangi sızdırmaz sistemle bertaraf edilecektir? <span class="pno">[s. 37, s. 63]</span></li>
 <li>Tablo-2&#x27;de pirina yakıtlı olarak gösterilen sıcak su kazanının gaz atık bölümünde yılda 25 ton kömür yakıtlı olarak belirtilmesinin gerekçesi nedir; 1. derece deprem kuşağındaki sahada Rahmiye Mahallesi konutlarına yaklaşık 50 m mesafede günde 24 saat çalışacak kazanın ve zeytin/pirina depolamasının emisyon, koku ve gürültü etkileri nasıl kontrol edilecektir? <span class="pno">[s. 10, s. 11, s. 22, s. 30, s. 48]</span></li>
 <li>Günlük zeytin işleme kapasitesine bağlı pirina ve proses suyu miktarlarının 60 ton/gün, 45 ton/gün ve 76,6 m3/gün şeklinde farklı değerlerle raporlanmasının nedeni nedir ve 160 m3&#x27;lük pirina havuzunda günlük 6 seferlik silobas sevkiyatının aksaması durumunda sızıntı veya taşmayı önleyecek hangi yedek kapasite bulunmaktadır? <span class="pno">[s. 10, s. 52]</span></li>
 <li>Çevre Düzeni Planı&#x27;nda Tarım Arazisi niteliğindeki parsel için tarım dışı kullanım izni ve 3573 sayılı Zeytincilik Kanunu kapsamında çevre zeytinliklere uygunluk görüşü alınmış mıdır; ayrıca yeraltı suyu kullanılmayacağı beyan edilen tesiste günlük en az 20 m3&#x27;lük proses suyu ihtiyacı hangi şebekeden veya kaynaktan karşılanacaktır? <span class="pno">[s. 11, s. 31, s. 52, s. 103]</span></li></ul>
-  <p class="sub"><em>Kapsam sınırları:</em> Toplam 165 sayfalık PTD dosyasının 45 sayfası taranmış/görüntü formatında olup yalnızca metni çıkarılabilen 26 sayfalık kesit incelenebilmiştir. İçindekiler ve Tablolar Dizini&#x27;nde yer alan su kullanım tablosu (Tablo 4), gürültü dağılım tabloları (Tablo 6-9), flora-fauna tür listeleri (Tablo 12-16), Bölüm 4 Kümülatif Etki Değerlendirmesi (sayfa 60), vaziyet planı, tapu, ÇED kapsam dışı yazısı ve pirina bertaraf belgesi gibi ekler sunulan metin kesiti dışında kaldığından doğrudan doğrulanamamıştır [s. 3, 4].</p>
+  <p class="sub"><em>İnceleme sınırları:</em> Toplam 165 sayfalık PTD dosyasının 45 sayfası taranmış/görüntü formatında olup yalnızca metni çıkarılabilen 26 sayfalık kesit incelenebilmiştir. İçindekiler ve Tablolar Dizini&#x27;nde yer alan su kullanım tablosu (Tablo 4), gürültü dağılım tabloları (Tablo 6-9), flora-fauna tür listeleri (Tablo 12-16), Bölüm 4 Kümülatif Etki Değerlendirmesi (sayfa 60), vaziyet planı, tapu, ÇED kapsam dışı yazısı ve pirina bertaraf belgesi gibi ekler sunulan metin kesiti dışında kaldığından doğrudan doğrulanamamıştır [s. 3, 4].</p>
 
 
   <h2>Resmi Duyuru Metni</h2>
   <blockquote>MANİSA ili AKHİSAR,  ilcesinde MANİSA ili AKHİSAR,  ilcesi Kayalıoğlu mah.,Tamburlu mevkii, 269 ada, 46 nolu parsel mevkiindeki Adnan ÇİÇER tarafından yapılması planlanan Zeytinyağı Üretim Tesisi (80 ton/gün zeytin işleme, 20 ton/gün zeytinyağı üretimi) ve Sofralık  Zeytin ( 276 ton/yıl )  projesi ile ilgili olarak Bakanlığımıza sunulan PTD Dosyası incelenmiş ve değerlendirilmiştir  ÇED Yönetmeliği&#x27;nin 17. maddesi gereğince Zeytinyağı Üretim Tesisi (80 ton/gün zeytin işleme, 20 ton/gün zeytinyağı üretimi) ve Sofralık  Zeytin ( 276 ton/yıl )  projesi&#x27;ne Valiliğimizce &#x27;ÇED Olumlu (Kapsam Ek-2)&#x27; kararı verilmiştir.</blockquote>
 
   <h2>Otomatik Metin Taraması (Deterministik)</h2>
-  <table class="kv"><tr><th>Saha / arazi çalışması geçiyor mu</th><td><span class="badge ok">Metinde var</span></td></tr>
-<tr><th>Literatür taraması ifadesi geçiyor mu</th><td><span class="badge urgent">BULUNAMADI (elle kontrol edin)</span></td></tr>
-<tr><th>Mevsimsel örnekleme geçiyor mu</th><td><span class="badge urgent">BULUNAMADI (elle kontrol edin)</span></td></tr>
-<tr><th>Kümülatif etki değerlendirmesi geçiyor mu</th><td><span class="badge ok">Metinde var</span></td></tr>
-<tr><th>Zeytincilik Kanunu (3573 / zeytinlik)</th><td><span class="badge ok">Metinde var</span></td></tr>
-<tr><th>Yeraltı suyu / akifer / hidrojeoloji</th><td><span class="badge ok">Metinde var</span></td></tr>
-<tr><th>Endemik tür / IUCN / Bern Sözleşmesi</th><td><span class="badge ok">Metinde var</span></td></tr></table>
-  <p class="sub">OCR içermeyen taranmış harita ve ekler otomatik metin taramasına dahil değildir.</p>
+  <table class="kv"><tr><th>Saha veya arazi çalışması ifadesi</th><td><span class="badge ok">Metinde yer almaktadır</span></td></tr>
+<tr><th>Literatür taraması ifadesi</th><td><span class="badge urgent">Metinde tespit edilemedi; doğrudan PDF üzerinden kontrol ediniz</span></td></tr>
+<tr><th>Mevsimsel örnekleme ifadesi</th><td><span class="badge urgent">Metinde tespit edilemedi; doğrudan PDF üzerinden kontrol ediniz</span></td></tr>
+<tr><th>Kümülatif etki değerlendirmesi ifadesi</th><td><span class="badge ok">Metinde yer almaktadır</span></td></tr>
+<tr><th>3573 sayılı Zeytincilik Kanunu veya zeytinlik ifadesi</th><td><span class="badge ok">Metinde yer almaktadır</span></td></tr>
+<tr><th>Yeraltı suyu, akifer veya hidrojeoloji ifadesi</th><td><span class="badge ok">Metinde yer almaktadır</span></td></tr>
+<tr><th>Endemik tür, IUCN veya Bern Sözleşmesi ifadesi</th><td><span class="badge ok">Metinde yer almaktadır</span></td></tr></table>
+  <p class="sub">Metin katmanı (OCR) bulunmayan taranmış harita ve kurum görüşü ekleri otomatik metin taramasına dahil edilmemiştir.</p>
 
   <h2>Sayfa Kaynaklı Çıkarılan Bulgular</h2>
   <div class="cards"><section class="card"><h3>Koordinatlar, Parsel ve Alan Büyüklüğü <span style="color:var(--muted);font-weight:400;font-size:0.85rem">(17 sayfa: s.5, s.7, s.11, s.13, s.16, s.23, s.30, s.31, s.42, s.60, s.67, s.68, s.69, s.83 (+3 sayfa))</span></h3><div class="hit"><span class="pno">[s. 5]</span> <code>2797,11 m2</code> — …KNİK OLMAYAN ÖZETİ: Manisa İli, Akhisar İlçesi, Kayalıoğlu mah.,Tamburlu mevkii, 269 ada, 46 parsel üzerinde toplam 2797,11 m2 alanda Adnan ÇİÇER tarafından Zeytinyağı Üretim Tesisi (80 ton/gün zeytin işleme, 20 ton/gün zeytinyağı üretimi) ve 27…</div>
@@ -225,8 +255,36 @@ blockquote { margin: 10px 0; padding: 10px 14px; border-left: 3px solid var(--ac
 <li><span class="pno">[s. 102]</span> ÇEVRESEL VE SOSYAL YÖNETİM PLANI</li></ul>
 
   <div class="notice">
-    Çevre, Şehircilik ve İklim Değişikliği Bakanlığı'nın kamuya açık <code>eced-duyuru.csb.gov.tr</code> portalından üretilen bilgilendirme amaçlı şeffaflık aracıdır. Tüm alıntılar 1 tabanlı PDF sayfa numarasıyla <code>[s. N]</code> gösterilir. Yasal süreler otomatik hesaplanır; kesin süre ve hukuki işlem için mutlaka avukat/hukukçu doğrulaması alın.
+    Bu sayfa, T.C. Çevre, Şehircilik ve İklim Değişikliği Bakanlığı'nın kamuya açık <code>eced-duyuru.csb.gov.tr</code> duyuru portalındaki kayıtlar esas alınarak bilgilendirme amacıyla hazırlanmıştır. Alıntıların tamamı 1 tabanlı PDF sayfa numarasıyla (<code>[s. N]</code>) gösterilmektedir. Yasal süreler otomatik olarak hesaplanır; kesin sürelerin ve hukuki başvuru yollarının yetkili hukukçular tarafından teyit edilmesi gerekir.
   </div>
 </div>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script>
+(() => {
+  if (typeof L === 'undefined') return;
+  const g = {"lat": 38.6191, "lon": 27.4289, "zoom": 8, "precision": "province_centroid", "points": [], "label": "MANİSA / AKHİSAR — Zeytinyağı Üretim Tesisi (80 ton/gün zeytin işleme, 20 ton/gün zeytinyağı üretimi) ve Sofr"};
+  const map = L.map('digest-map').setView([g.lat, g.lon], g.zoom);
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    maxZoom: 18,
+    attribution: '&copy; OpenStreetMap katkıda bulunanları'
+  }).addTo(map);
+  if (g.precision === 'exact_pdf' && g.points.length > 1) {
+    const latlngs = g.points.map(p => [p[0], p[1]]);
+    const poly = L.polyline(latlngs, { color: '#58a6ff', weight: 3, opacity: 0.85 }).addTo(map);
+    for (const ll of latlngs.slice(0, 30)) {
+      L.circleMarker(ll, { radius: 4, color: '#ffffff', fillColor: '#f85149', fillOpacity: 0.9, weight: 1 }).addTo(map);
+    }
+    map.fitBounds(poly.getBounds().pad(0.25));
+  } else {
+    L.circleMarker([g.lat, g.lon], {
+      radius: g.precision === 'exact_pdf' ? 8 : 11,
+      color: '#ffffff',
+      fillColor: g.precision === 'exact_pdf' ? '#f85149' : '#58a6ff',
+      fillOpacity: g.precision === 'exact_pdf' ? 0.9 : 0.45,
+      weight: 2
+    }).bindPopup(g.label).addTo(map).openPopup();
+  }
+})();
+</script>
 </body>
 </html>

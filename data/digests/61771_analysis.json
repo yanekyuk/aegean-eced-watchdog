@@ -1,0 +1,844 @@
+{
+  "filing": {
+    "province": "MALATYA",
+    "district": "BATTALGAZİ",
+    "project_name": "91064 (ER: 3478799) Ruhsat Numaralı Kalker Ocağı ve Kırma Eleme Tesisi Kapasite Artışına İlave Yıkama Tesisi, Plentmiks Tesisi, Asfalt Plent Tesisi ve Hazır Beton Üretim Tesisi",
+    "project_owner": "Canoğulları Madencilik Nakliye İnş. A.Ş.",
+    "sector": "I., II. ve V. Grup Madenler",
+    "sub_sector": "I., II. ve V. Grup Maden Kırma Eleme Yıkama",
+    "decision_type": "ÇED Süreci Başlayan",
+    "announcement_date_tr": "19.11.2026",
+    "project_type": "Ek-1",
+    "detail_text": "MALATYA ili BATTALGAZİ,  ilcesinde MALATYA il BATTALGAZİ,  ilce Üzümlü Mahallesi mevkiinde Canoğulları Madencilik Nakliye İnş. A.Ş. tarafından yapılması planlanan 91064 (ER: 3478799) Ruhsat Numaralı Kalker Ocağı ve Kırma Eleme Tesisi Kapasite Artışına İlave Yıkama Tesisi, Plentmiks Tesisi, Asfalt Plent Tesisi ve Hazır Beton Üretim Tesisi projesi ile ilgili olarak Bakanlığımıza sunulan ÇED Başvuru Dosyası Çevresel Etki Değerlendirmesi Yönetmeliği'nin 8. maddesi doğrultusunda incelenmiş ve başvurunun ÇED Genel Formatına uygun hazırlandığı anlaşılmış olup, projeye ilişkin ÇED Süreci başlatılmıştır. Çevresel Etki Değerlendirmesi süreci tamamlanana kadar, süreç ile ilgili her türlü bilgiler ve projeye ilişkin görüş, soru ve öneriler MALATYA Valiliğine (Çevre, Şehircilik ve İklim Değişikliği İl Müdürlüğü) veya Çevre, Şehircilik ve İklim Değişikliği Bakanlığına gönderilebilir.İlgililere ve kamuoyuna duyurulur.",
+    "detail_links": [
+      {
+        "text": "ÇED Başvuru Dosyası",
+        "href": "http://eced.csb.gov.tr/jsp/ek1/61771"
+      }
+    ],
+    "documents": [
+      {
+        "portal_doc_url": "http://eced.csb.gov.tr/jsp/ek1/61771",
+        "filing_id": "61771",
+        "consulting_firm": "GAİA ÇEVRE DANIŞMANLIK A.Ş.",
+        "submitted_at": "13/11/2026 02:49:58",
+        "pdf_urls": [
+          {
+            "label": "Dosya Göster",
+            "url": "http://eced.csb.gov.tr/jsp/dosya/dosyaGoster.htm?tempAd=sign1507507940130905256.pdf&orjinalAd=CANOGULLARICBDREV.pdf&yuklemeTarihi=2026-11-18"
+          }
+        ]
+      }
+    ],
+    "announcement_date": "2026-11-19",
+    "statutory_clocks": [
+      {
+        "code": "aski_10d",
+        "kind": "10 günlük halkın görüş ve önerilerine açılma (askı) süresi",
+        "deadline": "2026-11-29",
+        "days_remaining": 9
+      }
+    ],
+    "filing_key": "61771:19.11.2026:ÇED Süreci Başlayan",
+    "first_seen_at": "2026-11-20T02:10:52"
+  },
+  "pdf_info": {
+    "filename": "61771.pdf",
+    "bytes": 73665290,
+    "sha256": "17bfd790a4ad9e0febf90645855c11fa1b82b28c406e2790c880359391b54690",
+    "cached": false
+  },
+  "analysis": {
+    "page_count": 320,
+    "total_chars": 330913,
+    "text_pages": 184,
+    "scanned_or_blank_pages": 136,
+    "scanned_page_sample": [
+      109,
+      120,
+      124,
+      126,
+      128,
+      130,
+      132,
+      134,
+      135,
+      136,
+      137,
+      138,
+      142,
+      146,
+      147
+    ],
+    "headings": [
+      [
+        8,
+        "PROJENİN TEKNİK OLMAYAN ÖZETİ:"
+      ],
+      [
+        15,
+        "BÖLÜM I: PROJENİN ÖZELLİKLERİ"
+      ],
+      [
+        15,
+        "a) Proje Konusu Yatırımın Tanımı, Özellikleri, Bedeli, Ömrü, Hizmet Maksatları, Önem ve Gerekliliği"
+      ],
+      [
+        35,
+        "b) Projenin Yer ve Teknoloji Alternatifleri, Proje İçin Seçilen Yerin Koordinatları"
+      ],
+      [
+        41,
+        "BÖLÜM II: PROJE YERİ VE ETKİ ALANININ MEVCUT ÇEVRESEL ÖZELLİKLERİ"
+      ],
+      [
+        62,
+        "Hassasiyet Derecesi, Tarihi Çevreler ve Sit Bölgelerini Etkileyecek Su Tabanı Değişiklikleri (Ek-5’deki Duyarlı Yöreler Listesi De Dikkate Alınarak)"
+      ],
+      [
+        67,
+        "BÖLÜM III. PROJENİN İNŞAAT VE İŞLETME AŞAMASINDA ÇEVRESEL ETKİLERİ VE ALINACAK ÖNLEMLER"
+      ],
+      [
+        67,
+        "Projenin;"
+      ],
+      [
+        67,
+        "a) Çevreyi Etkileyebilecek Olası Sorunların Belirlenmesi, Kirleticilerin Miktarı, Alıcı Ortamla Etkileşimi, Kümülatif Etkilerin Belirlenmesi"
+      ],
+      [
+        78,
+        "b) Projenin İklim Üzerindeki Etkisi (Sera Gazı Emisyonlarının Niteliği ve Büyüklüğü) ve Projenin İklim Değişikliğinden Nasıl Etkileneceği"
+      ],
+      [
+        79,
+        "c) İklim Değişikliğine Bağlı Projeyle İlgili Afet veya Kaza Riski"
+      ],
+      [
+        80,
+        "ç) Projenin Çevreye Olabilecek Olumsuz Etkilerinin Azaltılması İçin Alınacak Önlemler"
+      ],
+      [
+        89,
+        "BÖLÜM IV: KÜMÜLATİF ÇEVRESEL ETKİ DEĞERLENDİRME"
+      ],
+      [
+        92,
+        "BÖLÜM V: ÇEVRESEL VE SOSYAL EYLEM PLANI"
+      ],
+      [
+        92,
+        "V-1: Çevre İzleme Planı"
+      ],
+      [
+        96,
+        "V-2: Sürdürülebilirlik Planı (Sıfır Atık Planı, Trafik Yönetim Planı, Sera Gazı Azaltım Planı, Çevresel ve Sosyal Yönetim Planı vb.)."
+      ],
+      [
+        103,
+        "BÖLÜM VI. HALKIN BİLGİLENDİRİLMESİ VE SÜRECE KATILIMI İLE PAYDAŞ KATILIM PLANI"
+      ],
+      [
+        103,
+        "a) Projeden Etkilenmesi Muhtemel İlgili Halkın Belirlenmesi ve Halkın Görüşlerinin Çevresel Etki Değerlendirmesi Çalışmasına Yansıtılması İçin Önerilen Yöntemler."
+      ],
+      [
+        104,
+        "b) Görüşlerine Başvurulması Öngörülen Diğer Taraflar."
+      ],
+      [
+        104,
+        "c) Paydaş Katılım Planı."
+      ],
+      [
+        105,
+        "BÖLÜM VII. NOTLAR, KAYNAKLAR VE EKLER"
+      ],
+      [
+        1,
+        "T.C. ENERJİ VE TABİİ KAYNAKLAR BAKANLIĞI Maden ve Petrol İşleri Genel Müdürlüğü İhale Ve Proje Geliştirme Dairesi Başkanlığı"
+      ],
+      [
+        1,
+        "DAĞITIM YERLERİNE"
+      ],
+      [
+        282,
+        "SÜRDÜRÜLEBİLİRLİK PLANI (SIFIR ATIK PLANI, TRAFİK YÖNETİM PLANI, SERA GAZI AZALTIM PLANI, ÇEVRESEL VE SOSYAL YÖNETİM PLANI VB.)"
+      ],
+      [
+        282,
+        "SIFIR ATIK PLANI"
+      ]
+    ],
+    "geo": {
+      "precision": "exact_pdf",
+      "lat": 38.27015,
+      "lon": 38.44961,
+      "point_count": 11,
+      "points": [
+        [
+          38.28705,
+          38.4177
+        ],
+        [
+          38.28575,
+          38.42857
+        ],
+        [
+          38.28193,
+          38.42946
+        ],
+        [
+          38.27786,
+          38.4272
+        ],
+        [
+          38.27939,
+          38.4169
+        ],
+        [
+          38.28208,
+          38.41431
+        ],
+        [
+          38.25184,
+          38.46178
+        ],
+        [
+          38.27872,
+          38.42728
+        ],
+        [
+          38.26096,
+          38.48457
+        ],
+        [
+          38.21634,
+          38.59912
+        ],
+        [
+          38.26976,
+          38.43878
+        ]
+      ],
+      "datum": "UTM-Z37/ED50",
+      "pages": [
+        110,
+        121,
+        125,
+        133,
+        139,
+        143
+      ]
+    },
+    "signals": {
+      "coordinates_and_footprint": {
+        "label": "Coordinates, Parcel & Footprint",
+        "page_count": 47,
+        "pages": [
+          2,
+          4,
+          7,
+          8,
+          9,
+          12,
+          13,
+          21,
+          31,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39,
+          40,
+          54,
+          59,
+          60,
+          63,
+          89,
+          107,
+          110,
+          112,
+          113
+        ],
+        "samples": [
+          {
+            "page": 2,
+            "match": "utm",
+            "snippet": "…Yüzeyinde (Kazı ve Döküm Alanı Dâhil) Planlanan Açık İşletmeler, c) 400.000 ton/yıl ve üzeri kırma, eleme, yıkama, kurutma, cevher hazırlama işlemlerinden en az birini yapan tesisler, EK-2, ÇEVRESEL ETKİLERİ ÖN İNCELEME VE DEĞERLENDİRMEYE…"
+          },
+          {
+            "page": 4,
+            "match": "Koordinat",
+            "snippet": "…............................................. 14 b) Projenin Yer ve Teknoloji Alternatifleri, Proje İçin Seçilen Yerin Koordinatları ..................................................................................................................…"
+          },
+          {
+            "page": 7,
+            "match": "Koordinat",
+            "snippet": "…niklerden Rapor Metninde Sunulamayan Belgeler Ek-1.1 İşletme Ruhsatı ve İşletme İzni Ek-2 Proje İçin Seçilen Yerin Koordinatları Ek-3 Proje İçin Belirlenen Yer ve Alternatiflerinin Varsa; Çevre Düzeni, Nazım, Uygulama İmar Planı, Vaziyet Pla…"
+          },
+          {
+            "page": 8,
+            "match": "24,89 hektar",
+            "snippet": "…-1.1’de verilmiştir. 91064 ruhsat sahası ile ilgili olarak; o Kalker ocağı ve kırma eleme tesisi faaliyeti için 24,89 hektar ÇED Alanı için 22.01.2025 tarih 202521 Karar No’lu ÇED Gerekli Değildir kararı bulunmaktadır. 22.01.2025 tarihli ve 2…"
+          },
+          {
+            "page": 8,
+            "match": "koordinat",
+            "snippet": "….01.2025 tarihli ve 202521 Karar No.lu ÇED Gerekli Değildir Kararı’na esas Nihai Proje Tanıtım Dosyası’nda belirtilen koordinatlarda kurulmadığı için “vaziyet planı” değişikliği başvurusu yapılmıştır. Malatya Valiliği Çevre, Şehircilik ve İklim D…"
+          },
+          {
+            "page": 8,
+            "match": "73,14 hektar",
+            "snippet": "…antiye alanı planlanan ÇED alanı içine dahil edilmiştir. İşbu proje kapsamında; o Mevcut 24,89 hektar ÇED Alanı, 73,14 hektar artış ile ruhsat alanının tamamına 98,03 hektara çıkarılacaktır. o 1.525.249,44 ton/yıl olan mevcut Kalker Ocağı kapa…"
+          },
+          {
+            "page": 8,
+            "match": "98,03 hektar",
+            "snippet": "…lmiştir. İşbu proje kapsamında; o Mevcut 24,89 hektar ÇED Alanı, 73,14 hektar artış ile ruhsat alanının tamamına 98,03 hektara çıkarılacaktır. o 1.525.249,44 ton/yıl olan mevcut Kalker Ocağı kapasitesi 4.474.750,56 artış ile 6.000.000 ton/yıla…"
+          },
+          {
+            "page": 9,
+            "match": "24,89 ha",
+            "snippet": "…ileri Mevcut Durum* Kapasite Artış Miktarı Nihai Durum Alan Kapasite Alan Kapasite Alan Kapasite ÇED Alanı 24,89 ha - 73,14 ha - 98,03 ha - Kalker Ocağı 16,73 ha 1.525.249,44 ton/yıl 67,84 ha 4.474.750,56 ton/yıl 84,57 ha 6…"
+          }
+        ]
+      },
+      "water_and_discharge": {
+        "label": "Water Use, Hydrogeology & Discharge",
+        "page_count": 26,
+        "pages": [
+          2,
+          8,
+          9,
+          12,
+          13,
+          23,
+          24,
+          26,
+          30,
+          52,
+          65,
+          66,
+          68,
+          69,
+          70,
+          71,
+          72,
+          80,
+          81,
+          82,
+          94,
+          241,
+          296,
+          297,
+          299
+        ],
+        "samples": [
+          {
+            "page": 2,
+            "match": "100 m3/saat",
+            "snippet": "…tede Üst Sınır Olarak Alınır) 18- Çimento Bazlı Yapı Elemanları ve/veya Hazır Beton Tesisleri; b) Üretim kapasitesi 100 m3/saat veya üzerinde olan hazır beton tesisleri, 22-Asfalt plent tesisleri,"
+          },
+          {
+            "page": 8,
+            "match": "130 m3/saat",
+            "snippet": "…500.000 ton/yıl kapasiteli Plentmiks Tesisi kurulacaktır. o 130.000 ton/yıl kapasiteli Yıkama Tesisi kurulacaktır. o 130 m3/saat kapasiteli Hazır Beton Üretim Tesisi kurulacaktır. o 450 ton/saat kapasiteli Asfalt Plent Tesisi kurulacaktır."
+          },
+          {
+            "page": 9,
+            "match": "130 m3/saat",
+            "snippet": "…tmiks Tesisi 0,31 ha 500.000 ton/yıl Asfalt Plent Tesisi 0,55 ha 450 ton/saat Hazır Beton Üretim Tesisi 0,40 ha 130 m3/saat"
+          },
+          {
+            "page": 12,
+            "match": "312.000 m3/yıl",
+            "snippet": "…8,33 ton/saat) Asfalt Plent Tesisi Kapasitesi 1.080.000 ton/yıl (450 ton/saat) Hazır Beton Üretim Tesisi Kapasitesi 312.000 m3/yıl (130 m3/saat) Proje kapsamında mevcut durumda işletme aşamasında yılda 12 ay, ayda 25 gün ve günde 8 saat tek vardi…"
+          },
+          {
+            "page": 12,
+            "match": "130 m3/saat",
+            "snippet": "…Asfalt Plent Tesisi Kapasitesi 1.080.000 ton/yıl (450 ton/saat) Hazır Beton Üretim Tesisi Kapasitesi 312.000 m3/yıl (130 m3/saat) Proje kapsamında mevcut durumda işletme aşamasında yılda 12 ay, ayda 25 gün ve günde 8 saat tek vardiya şeklinde ç…"
+          },
+          {
+            "page": 13,
+            "match": "100 m3/saat",
+            "snippet": "…istede Üst Sınır Olarak Alınır) 18- Çimento Bazlı Yapı Elemanları ve/veya Hazır Beton Tesisleri; b) Üretim kapasitesi 100 m3/saat veya üzerinde olan hazır beton tesisleri, 22-Asfalt plent tesisleri, kapsamında değerlendirilerek işbu ÇED Başvuru Dos…"
+          },
+          {
+            "page": 23,
+            "match": "atıksu",
+            "snippet": "…Tesis bünyesinde kullanılacak su, karışım içerisinde değerlendirilerek ürün bünyesinde kalacağından proses kaynaklı atıksu oluşumu söz konusu olmayacaktır. Plentmiks Tesisine ait iş akım şeması aşağıda verilmiştir. Şekil 8. Plent…"
+          },
+          {
+            "page": 23,
+            "match": "130 m3/saat",
+            "snippet": "…ekil 8. Plentmiks Tesisi İş Akım Şeması Hazır Beton Üretim Tesisi İş Akım Şeması ve Teknolojisi Proje kapsamında 130 m3/saat kapasiteli Hazır Beton Üretim Tesisi kurulacaktır. Kırma eleme tesisinde boyutlandırılan kalker, Hazır Beton Üretim Te…"
+          }
+        ]
+      },
+      "protected_land_and_olive": {
+        "label": "Protected Zones, Forests & Olive Groves",
+        "page_count": 5,
+        "pages": [
+          34,
+          60,
+          63,
+          65,
+          133
+        ],
+        "samples": [
+          {
+            "page": 34,
+            "match": "mera alanı",
+            "snippet": "…14.000 x 731,4 = 10.239.600 TL Toplam Bedel 20.479.200 TL *ÇED Alanı içerisinde yaklaşık 731,4 dekar izin alınmayan mera alanı bulunmaktadır. ** Mevcut ve ıslah edilmiş durumdaki kuru ot verimi değerleri, bölgesel mera verimlilikleri dikkate alı…"
+          },
+          {
+            "page": 60,
+            "match": "Özel Çevre Koruma",
+            "snippet": "…nları, Kültür Varlıkları, Tabiat Varlıkları, Sit ve Koruma Alanları, Biyogenetik Rezerv Alanları, Biyosfer Rezervleri, Özel Çevre Koruma Bölgeleri, Özel Koruma Alanları bulunmamaktadır (Bkz. Şekil 22). Proje Alanının 5,9 km kuzey-kuzeydoğusunda 1.Derece…"
+          },
+          {
+            "page": 60,
+            "match": "Sit alanı",
+            "snippet": "…Bölgeleri, Özel Koruma Alanları bulunmamaktadır (Bkz. Şekil 22). Proje Alanının 5,9 km kuzey-kuzeydoğusunda 1.Derece Sit alanı ve 7,3 km doğusunda ise 1.Derece Arkeolojik Sit bulunmaktadır (Bkz. Şekil 22). 6 https://tr.climate-data.org/asya/…"
+          },
+          {
+            "page": 60,
+            "match": "Arkeolojik Sit",
+            "snippet": "…ır (Bkz. Şekil 22). Proje Alanının 5,9 km kuzey-kuzeydoğusunda 1.Derece Sit alanı ve 7,3 km doğusunda ise 1.Derece Arkeolojik Sit bulunmaktadır (Bkz. Şekil 22). 6 https://tr.climate-data.org/asya/tuerkiye/malatya/malatya-281/#climate-graph"
+          },
+          {
+            "page": 63,
+            "match": "Özel Çevre Koruma",
+            "snippet": "…N ÜRETİM TESİSİ ÇED BAŞVURU DOSYASI 62 f) Çevre Kanunu’nun 9 uncu maddesi uyarınca Bakanlar Kurulu tarafından \"Özel Çevre Koruma Bölgeleri\" olarak tespit ve ilan edilen alanlar, Proje Alanı üzerinde, Özel Çevre Koruma Bölgeleri olarak tespit ve…"
+          },
+          {
+            "page": 63,
+            "match": "orman alanı",
+            "snippet": "…roje Alanı üzerinde, Boğaziçi Kanunu’na göre koruma altına alınan alanlar bulunmamaktadır. ğ) Orman Kanunu uyarınca orman alanı sayılan yerler, Proje Alanı üzerinde, Orman Kanunu uyarınca orman alanı sayılan yerler bulunmamaktadır. h) Kıyı…"
+          },
+          {
+            "page": 65,
+            "match": "kıyı kenar",
+            "snippet": "…ı olmak üzere canlıların yaşama ortamı olarak önem taşıyan bütün sular, bataklık sazlık ve turbiyeler ile bu alanların kıyı kenar çizgisinden itibaren kara tarafına doğru ekolojik açıdan sulak alan kalan yerler, Proje Alanı üzerinde, “Sulak Alan…"
+          },
+          {
+            "page": 65,
+            "match": "sulak alan",
+            "snippet": "…ar, bataklık sazlık ve turbiyeler ile bu alanların kıyı kenar çizgisinden itibaren kara tarafına doğru ekolojik açıdan sulak alan kalan yerler, Proje Alanı üzerinde, “Sulak Alanlar: Doğal veya yapay, devamlı veya geçici, suların durgun veya akın…"
+          }
+        ]
+      },
+      "ecology_and_baseline": {
+        "label": "Flora, Fauna & Baseline Methodology",
+        "page_count": 8,
+        "pages": [
+          44,
+          51,
+          64,
+          66,
+          69,
+          81,
+          297,
+          300
+        ],
+        "samples": [
+          {
+            "page": 44,
+            "match": "Flora ve Fauna",
+            "snippet": "…16 2018 797.036 295.821 424 2017 786.676 307.067 398 Şekil 13. Malatya İli Yıllara Göre Nüfus Grafiği3 Flora ve Fauna Proje alanına ait flora ve fauna özellikleri, arazi çalışmaları ve literatür incelemeleri kapsamında belirlenecek o…"
+          },
+          {
+            "page": 51,
+            "match": "mevsimsel",
+            "snippet": "…amaktadır. Ruhsat sahası yakın dolayının en önemli akarsuyu, alanın yaklaşık 600 m kadar doğusundan GB-KD yönlü olarak mevsimsel akış gösteren Balık Dere’dir. Balık Dere’yi besleyen Kurt Dere ruhsat sahasının kuzeyinden, Geyik Dere ise güneyinden…"
+          },
+          {
+            "page": 64,
+            "match": "BERN Sözleşmesi",
+            "snippet": "…özleşmeler Uyarınca Korunması Gerekli Alanlar a) \"Avrupa’nın Yaban Hayatı ve Yaşama Ortamlarını Koruma Sözleşmesi\" (BERN Sözleşmesi) uyarınca koruma altına alınmış alanlardan \"Önemli Deniz Kaplumbağası Üreme Alanları\"nda belirtilen I. ve II. Koruma B…"
+          },
+          {
+            "page": 66,
+            "match": "endemik",
+            "snippet": "…65 d) Bilimsel araştırmalar için önem arz eden ve/veya nesli tehlikeye düşmüş veya düşebilir türler ve ülkemiz için endemik olan türlerin yaşama ortamı olan alanlar, biyosfer rezervi, biyotoplar, biyogenetik rezerv alanları, benzersiz özellik…"
+          },
+          {
+            "page": 69,
+            "match": "mevsimsel",
+            "snippet": "…ak İçi ve Stabilize Nakliye Yollarında Toz Kontrolü Kaynaklı Atıksu Toz oluşumunun kontrol altına alınması amacıyla, mevsimsel koşullar dikkate alınarak gerçekleştirilecek sulama ve spreyleme çalışmalarında kullanılacak su buharlaşma yoluyla…"
+          },
+          {
+            "page": 81,
+            "match": "mevsimsel",
+            "snippet": "…ak İçi ve Stabilize Nakliye Yollarında Toz Kontrolü Kaynaklı Atıksu Toz oluşumunun kontrol altına alınması amacıyla, mevsimsel koşullar dikkate alınarak gerçekleştirilecek sulama ve spreyleme çalışmalarında kullanılacak su buharlaşma yoluyla or…"
+          },
+          {
+            "page": 297,
+            "match": "flora ve fauna",
+            "snippet": "…arından kaçınılacak ve çevresel etkilerin en aza indirilmesine yönelik gerekli tedbirler alınacaktır. Proje kapsamında flora ve fauna unsurlarına yönelik değerlendirmeler ÇED Raporu içerisinde detaylı olarak ele alınacak olup ilgili mevzuat hükümlerine…"
+          },
+          {
+            "page": 300,
+            "match": "Biyoçeşitlilik",
+            "snippet": "…nda kullanılması 2872 Sayılı Çevre Kanunu Faaliyet Sahibi Sürekli Rehabilitasyon çalışmaları takip edilecektir Biyoçeşitlilik Doğal çevre üzerindeki etkiler Proje alanı dışına müdahale edilmemesi 2872 Sayılı Çevre Kanunu Faaliyet Sahibi…"
+          }
+        ]
+      },
+      "pollutants_and_hazards": {
+        "label": "Emissions, Geochemistry & Waste",
+        "page_count": 27,
+        "pages": [
+          7,
+          17,
+          35,
+          52,
+          53,
+          55,
+          67,
+          76,
+          77,
+          78,
+          88,
+          89,
+          91,
+          92,
+          94,
+          95,
+          99,
+          102,
+          105,
+          106,
+          107,
+          290,
+          294,
+          297,
+          298
+        ],
+        "samples": [
+          {
+            "page": 7,
+            "match": "Deprem",
+            "snippet": "…ritası Ek-3.8 Jeoloji Haritası Ek-3.9 Hidrojeoloji Haritası Ek-3.10 Dirifay ve Heyelan Haritası Ek-3.11 Türkiye Deprem Tehlike Haritası Ek-3.12 Uydu Haritası Ek-4 Faaliyet Alanında Bakanlıkça Yeterlik Verilmiş Kurum/Kuruluş Tarafından…"
+          },
+          {
+            "page": 17,
+            "match": "Gürültü",
+            "snippet": "…m Şeması aşağıda verilmiştir. Şekil 5. Kalker Ocağına Ait İş Akım Şeması Deliklerin Delinmesi Toz – Spreyleme Gürültü Toz –Ayna Önünde ve Üstünde Spreyleme Gürültü- Hava Şoku Titreşim-Taş Savrulması Patlatma Toz –Savurma Yapmadan…"
+          },
+          {
+            "page": 35,
+            "match": "deprem",
+            "snippet": "…2023 tarihinde Malatya İli ve çevre illerde meydana gelen ve ülkemizin 10 ilini etkileyerek büyük hasarlara sebep olan deprem meydana gelmiştir. Günümüzde Malatya İlinde hala alt yapı, kentselleşme, yol çalışmaları tüm hızıyla devam etmektedir…"
+          },
+          {
+            "page": 52,
+            "match": "Deprem",
+            "snippet": "…uyu Havzalarının Korunmasına Dair Yönetmelik hükümlerine eksiksiz olarak uyulacaktır. Doğal Afet Durumu Türkiye Deprem Tehlike Haritası ve buna ilişkin deprem tehlike parametreleri, Afet ve Acil Durum Yönetimi Başkanlığı (AFAD) tarafında…"
+          },
+          {
+            "page": 53,
+            "match": "Deprem",
+            "snippet": "…DOSYASI 52 Kaynak: http://www.afad.gov.tr Kaynak: https://tdth.afad.gov.tr/TDTH/main.xhtml Şekil 18. Türkiye Deprem Tehlike Haritası PROJE ALANI"
+          },
+          {
+            "page": 55,
+            "match": "deprem",
+            "snippet": "…ının %69 ile ilk sırada, su baskınlarının %23 ile ikinci sırada yer aldığı görülmektedir. Bunu sırasıyla heyelan (%4), deprem (%3) ve çığ/aşırı kar tipi yağışı (%1) olayları izlemektedir. Bu veriler, doğal afetlerin yalnızca depremden ibaret o…"
+          },
+          {
+            "page": 67,
+            "match": "Kümülatif",
+            "snippet": "…Projenin; a) Çevreyi Etkileyebilecek Olası Sorunların Belirlenmesi, Kirleticilerin Miktarı, Alıcı Ortamla Etkileşimi, Kümülatif Etkilerin Belirlenmesi Mevcut durumda faaliyet kapsamında 15 personel çalışmakta olup işbu proje ile çalışacak pers…"
+          },
+          {
+            "page": 76,
+            "match": "kümülatif",
+            "snippet": "…faaliyetlerinden kaynaklanabilecektir. Proje kapsamında meydana gelecek toz emisyonlarına ilişkin hesaplamalar ile kümülatif etki değerlendirmeleri hazırlanacak ÇED Raporu kapsamında detaylı olarak ele alınacak olup faaliyet süresince toz olu…"
+          }
+        ]
+      },
+      "cost_and_capacity": {
+        "label": "Project Cost, Power & Capacity",
+        "page_count": 120,
+        "pages": [
+          1,
+          2,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26
+        ],
+        "samples": [
+          {
+            "page": 1,
+            "match": "KAPASİTE",
+            "snippet": "…MADENCİLİK NAKLİYE İNŞAAT ANONİM ŞİRKETİ 91064 (ER: 3478799) RUHSAT NUMARALI KALKER OCAĞI VE KIRMA ELEME TESİSİ KAPASİTE ARTIŞINA İLAVE YIKAMA TESİSİ, PLENTMİKS TESİSİ, ASFALT PLENT TESİSİ VE HAZIR BETON ÜRETİM TESİSİ MALATYA İLİ, B…"
+          },
+          {
+            "page": 2,
+            "match": "KAPASİTE",
+            "snippet": "…LARI MADENCİLİK NAKLİYE İNŞAAT ANONİM ŞİRKETİ 91064 (ER: 3478799) RUHSAT NUMARALI KALKER OCAĞI VE KIRMA ELEME TESİSİ KAPASİTE ARTIŞINA İLAVE YIKAMA TESİSİ, PLENTMİKS TESİSİ, ASFALT PLENT TESİSİ VE HAZIR BETON ÜRETİM TESİSİ ÇED BAŞVURU DOSYA…"
+          },
+          {
+            "page": 2,
+            "match": "PROJE BEDELİ",
+            "snippet": "…TESİSİ KAPASİTE ARTIŞINA İLAVE YIKAMA TESİSİ, PLENTMİKS TESİSİ, ASFALT PLENT TESİSİ VE HAZIR BETON ÜRETİM TESİSİ PROJE BEDELİ 294.999.992,00 TL PROJE İÇİN SEÇİLEN YERİN AÇIK ADRESİ (İLİ, İLÇESİ, MEVKİİ) MALATYA İLİ, BATTALGAZİ İLÇESİ, ÜZÜML…"
+          },
+          {
+            "page": 2,
+            "match": "kapasite",
+            "snippet": "…Ğİ, MADDE 20 - \"ÇED Olumlu\" (Mülga ibare:RG- 5/3/2026- 33187) kararı bulunan ve eşik değeri olan projelerde yapılacak kapasite artışı ve/veya alan genişletilmesinin planlanması durumunda, her bir kapasite artışı miktarının mevcut proje kapasite…"
+          },
+          {
+            "page": 2,
+            "match": "400.000 ton/yıl",
+            "snippet": "…adencilik Projeleri: a) 25 Hektar ve Üzeri Arazi Yüzeyinde (Kazı ve Döküm Alanı Dâhil) Planlanan Açık İşletmeler, c) 400.000 ton/yıl ve üzeri kırma, eleme, yıkama, kurutma, cevher hazırlama işlemlerinden en az birini yapan tesisler, EK-2, ÇEVRESEL ET…"
+          },
+          {
+            "page": 4,
+            "match": "KAPASİTE",
+            "snippet": "…LARI MADENCİLİK NAKLİYE İNŞAAT ANONİM ŞİRKETİ 91064 (ER: 3478799) RUHSAT NUMARALI KALKER OCAĞI VE KIRMA ELEME TESİSİ KAPASİTE ARTIŞINA İLAVE YIKAMA TESİSİ, PLENTMİKS TESİSİ, ASFALT PLENT TESİSİ VE HAZIR BETON ÜRETİM TESİSİ ÇED BAŞVURU DOSYA…"
+          },
+          {
+            "page": 5,
+            "match": "KAPASİTE",
+            "snippet": "…LARI MADENCİLİK NAKLİYE İNŞAAT ANONİM ŞİRKETİ 91064 (ER: 3478799) RUHSAT NUMARALI KALKER OCAĞI VE KIRMA ELEME TESİSİ KAPASİTE ARTIŞINA İLAVE YIKAMA TESİSİ, PLENTMİKS TESİSİ, ASFALT PLENT TESİSİ VE HAZIR BETON ÜRETİM TESİSİ ÇED BAŞVURU DOSYA…"
+          },
+          {
+            "page": 5,
+            "match": "Kapasite",
+            "snippet": "…................................. 8 Tablo 2. Yıkama, Plentmiks, Asfalt Plent ve Hazır Beton Üretim Tesisleri;Planlanan Kapasiteleri ve Alan Bilgileri.................................................................................................…"
+          }
+        ]
+      }
+    },
+    "audit_checks": {
+      "mentions_field_survey": true,
+      "mentions_literature_only_cue": false,
+      "mentions_seasonal_sampling": true,
+      "mentions_cumulative_impact": true,
+      "mentions_olive_law_3573": false,
+      "mentions_groundwater_or_aquifer": true,
+      "mentions_iucn_or_endemic": true
+    }
+  },
+  "llm_synthesis": {
+    "model": "gemini-4-hydrogen",
+    "generated_at": "2026-11-20T02:14:43",
+    "pages_sent": [
+      1,
+      2,
+      7,
+      8,
+      9,
+      12,
+      15,
+      16,
+      34,
+      41,
+      42,
+      44,
+      51,
+      60,
+      63,
+      64,
+      65,
+      66,
+      67,
+      68,
+      92,
+      93,
+      96,
+      97,
+      282,
+      283
+    ],
+    "result": {
+      "executive_summary_tr": "Canoğulları Madencilik Nakliye İnş. A.Ş. tarafından Malatya ili, Battalgazi ilçesi, Üzümlü Mahallesi sınırlarındaki 91064 (ER: 3478799) ruhsat numaralı 98,03 hektarlık sahada kalker ocağı ve kırma-eleme tesisi kapasite artışı ile ilave yıkama, plentmiks, asfalt plent ve hazır beton üretim tesisleri planlanmaktadır [s. 2, 8, 9]. Mevcut 24,89 hektarlık ÇED alanının 98,03 hektara, ocak kapasitesinin 1,52 milyon ton/yıldan 6 milyon ton/yıla ve kırma-eleme kapasitesinin 380 bin ton/yıldan 7 milyon ton/yıla çıkarılması öngörülmektedir [s. 8, 9, 12]. Projenin temel çevresel riskleri; tamamı mera vasıflı 483 nolu parsel üzerinde yer alması, konutlara (425 m), tarım alanlarına (580 m) ve mevsimsel Balık Dere'yi besleyen dere yataklarına yakınlığı ile patlatma, toz ve asfalt/beton tesisi emisyonlarıdır [s. 12, 34, 41, 51]. Başvuru dosyasında flora-fauna arazi çalışmaları, su bütçesi ve kümülatif etki hesaplamaları henüz yapılmamış olup ileriki ÇED Raporu aşamasına ertelenmiştir [s. 44, 67].",
+      "executive_summary_en": "Canoğulları Madencilik Nakliye İnş. A.Ş. proposes expanding an existing limestone quarry and crushing-screening plant while adding washing, plentmix, asphalt plant, and ready-mix concrete facilities at license area 91064 (ER: 3478799) in Üzümlü Mahallesi, Battalgazi, Malatya [s. 2, 8, 9]. The project expands the EIA boundary from 24.89 ha to the full 98.03 ha license area, raising annual quarry extraction from 1.52 million tons to 6.0 million tons and crushing-screening capacity from 380,000 tons to 7.0 million tons [s. 8, 9, 12]. Key environmental stakes include siting entirely within pasture parcel 483, proximity to residential structures (425 m), cultivated land (580 m), and dry/seasonal watercourses feeding Balık Dere (600 m), alongside blasting, dust, and asphalt/concrete emissions [s. 12, 34, 41, 51]. At this ÇED Başvuru Dosyası stage, baseline flora-fauna surveys, detailed water demand calculations, and quantitative cumulative impact assessments are omitted and deferred to the forthcoming EIA Report [s. 44, 67].",
+      "key_facts": [
+        {
+          "label": "Proje Bedeli",
+          "value": "294.999.992,00 TL",
+          "page": 2
+        },
+        {
+          "label": "Nihai ÇED ve Ruhsat Alanı",
+          "value": "98,03 ha (Mevcut 24,89 ha + 73,14 ha artış)",
+          "page": 9
+        },
+        {
+          "label": "Kalker Ocağı Alanı ve Kapasitesi",
+          "value": "84,57 ha; 6.000.000 ton/yıl (2.500 ton/saat)",
+          "page": 12
+        },
+        {
+          "label": "Kırma-Eleme Tesisi Kapasitesi",
+          "value": "7.000.000 ton/yıl (1.000.000 ton/yıl dışarıdan temin dahil)",
+          "page": 12
+        },
+        {
+          "label": "İlave Tesis Kapasiteleri",
+          "value": "Yıkama: 130.000 ton/yıl; Plentmiks: 500.000 ton/yıl; Asfalt Plent: 1.080.000 ton/yıl (450 ton/saat); Hazır Beton: 312.000 m³/yıl (130 m³/saat)",
+          "page": 12
+        },
+        {
+          "label": "Mera Vasıflı Alan ve İzinsiz Kısım",
+          "value": "Ruhsat alanının tamamı 483 nolu mera parselinde; 73,14 ha (731,4 dekar) için mera izni henüz alınmamış",
+          "page": 34
+        },
+        {
+          "label": "En Yakın Yapı ve Yerleşim",
+          "value": "En yakın konut (Yapı-1) 425 m doğuda; Ekili Arazi 580 m güneydoğuda; Üzümlü Mahallesi 1.650 m kuzeyde",
+          "page": 41
+        },
+        {
+          "label": "Su Depoları ve Üniversiteye Mesafe",
+          "value": "MASKİ Su Depoları 1.750-2.440 m kuzey/kuzeydoğuda; İnönü Üniversitesi 5.000 m kuzeyde",
+          "page": 41
+        },
+        {
+          "label": "Yüzey Sularına Mesafe",
+          "value": "Mevsimsel Balık Dere 600 m doğuda; Kurt Dere kuzeyden, Geyik Dere (derivasyon projeli) güneyden geçmekte",
+          "page": 51
+        },
+        {
+          "label": "İdari Yaptırım Geçmişi",
+          "value": "10.11.2026 tarihli iki ayrı idari yaptırım kararı (kırma-eleme ve şantiyenin izinsiz/farklı koordinata kurulması nedeniyle)",
+          "page": 8
+        }
+      ],
+      "baseline_assessment": {
+        "field_survey_status": "not_found",
+        "seasonal_sampling_status": "not_found",
+        "cumulative_impact_status": "omitted_or_not_found",
+        "olive_and_protected_status": "Dosyada proje alanı üzerinde 3573 sayılı Kanun kapsamında zeytinlik, orman, sulak alan, ÖÇK, RAMSAR, BERN veya I-IV. sınıf tarım arazisi bulunmadığı, 1/100.000 ÇDP'ye göre alanın Kayalık-Taşlık ve Kumul Alan lejantında kaldığı ve en yakın sit alanının 5,9 km kuzey-kuzeydoğuda (1. Derece Sit) yer aldığı beyan edilmektedir [s. 60, 63, 64, 65]. Ancak ruhsat alanının tamamı 4342 sayılı Mera Kanunu kapsamındaki 483 nolu mera parselinde kalmakta olup, 73,14 ha artış alanı için mera tahsis amacı değişikliği izni henüz alınmamıştır [s. 34, 63].",
+        "explanation": "Sunulan ÇED Başvuru Dosyası aşamasında proje alanına ilişkin tamamlanmış herhangi bir arazi çalışması, tür listesi veya mevsimsel biyolojik örnekleme sunulmamıştır [s. 44]. Dosyada flora ve fauna özelliklerinin arazi çalışmaları ve literatür incelemeleri ile belirlenerek ileride hazırlanacak ÇED Raporu'nda sunulacağı ifade edilmektedir [s. 44]. Mevcut Çevre İzleme Planı ise inşaat ve işletme sonrası dönemler için yalnızca toz, egzoz ve atık takibine yönelik genel taahhütler içermekte olup ekolojik izleme veya kümülatif etki değerlendirmesi sunmamaktadır [s. 67, 92, 93]."
+      },
+      "red_flags": [
+        {
+          "severity": "high",
+          "title": "Mevcut Tesislerde ÇED Sınırı Dışı Kurulum ve İdari Yaptırım Geçmişi",
+          "detail": "22.01.2025 tarihli ÇED Gerekli Değildir kararına esas PTD koordinatlarına uyulmayarak kırma-eleme tesisinin farklı bir alana ve şantiyenin bir kısmının ÇED alanı dışına kurulması nedeniyle Malatya Valiliğince 10.11.2026 tarihinde iki ayrı idari yaptırım kararı uygulanmıştır [s. 8]. Mevcut uyumsuzluğun yeni kapasite artışı dosyası içine dahil edilerek giderilmesi amaçlanmaktadır [s. 8].",
+          "pages": [
+            8
+          ]
+        },
+        {
+          "severity": "high",
+          "title": "Flora ve Fauna Temel Veri Eksikliği (Arazi Çalışması Yok)",
+          "detail": "Proje alanındaki mevcut ekosistem, tür kompozisyonu ve olası endemik/tehlike altındaki türlere yönelik saha ve literatür verileri başvuru dosyasında bulunmamaktadır; tüm incelemeler hazırlanacak ÇED Raporu aşamasına bırakılmıştır [s. 44].",
+          "pages": [
+            44
+          ]
+        },
+        {
+          "severity": "high",
+          "title": "Su Tüketim Miktarlarının Hesaplanmamış Olması ve Su Kaynağı Belirsizliği",
+          "detail": "Yıkama (130.000 ton/yıl), plentmiks (500.000 ton/yıl), hazır beton (312.000 m³/yıl) tesisleri ile ocak/yol toz bastırma faaliyetlerinin toplam su ihtiyacı hesaplanmamış ve ÇED Raporu sürecine ertelenmiştir [s. 12, 67]. İhtiyacın satın alma yoluyla karşılanacağı belirtilmekle birlikte ileride kuyu açılması ihtimaline de yer verilmiştir [s. 68].",
+          "pages": [
+            12,
+            67,
+            68
+          ]
+        },
+        {
+          "severity": "medium",
+          "title": "73,14 Hektar İzinsiz Mera Alanı ve Bitkisel Toprak Sıyırmama İddiası",
+          "detail": "Ruhsat sahasının tamamı 483 nolu mera parselinde yer almakta olup 73,14 hektarlık genişleme alanı için 4342 sayılı Mera Kanunu izinleri alınmamıştır [s. 34, 63]. Ayrıca 84,57 hektarlık açık ocak alanında kalkerin yüzeyde olduğu gerekçesiyle hiç bitkisel toprak sıyırma işlemi yapılmayacağı beyan edilmektedir [s. 12, 15].",
+          "pages": [
+            12,
+            15,
+            34,
+            63
+          ]
+        },
+        {
+          "severity": "medium",
+          "title": "Hassas Alıcılara ve Dere Yataklarına Yakınlık ile Kümülatif Etki Eksikliği",
+          "detail": "En yakın konutun 425 m, ekili arazinin 580 m, ağılın 660 m ve Balık Dere'nin 600 m mesafede bulunmasına, ayrıca güneyden geçen Geyik Dere için derivasyon kanalı planlanmasına karşın [s. 41, 51], patlatma, 7 milyon ton/yıl kırma-eleme tozu ve 450 ton/saat asfalt plenti emisyonlarının kümülatif etkileri sunulan bölümlerde nicel olarak değerlendirilmemiştir [s. 12, 67].",
+          "pages": [
+            12,
+            41,
+            51,
+            67
+          ]
+        },
+        {
+          "severity": "low",
+          "title": "Yatırım Maliyeti Kaynağı ve Ölçümsüz Gözleme Dayalı İzleme Planı",
+          "detail": "Tesis yatırım gideri tablosundaki (77.000.000 TL) makine maliyetlerinin Sahibinden.com ikinci el ilan fiyatlarına dayandırıldığı görülmektedir [s. 34]. Çevresel İzleme Planı'nda ise toz emisyonu için bağlayıcı periyodik ölçüm yerine yalnızca gözlem ve gerekli görülmesi halinde ölçüm öngörülmektedir [s. 93].",
+          "pages": [
+            34,
+            93
+          ]
+        }
+      ],
+      "hkt_and_petition_questions": [
+        {
+          "question_tr": "10.11.2026 tarihli iki ayrı idari yaptırım kararına konu olan ÇED alanı dışı şantiye ve hatalı koordinatlı kırma-eleme tesisi kurulumlarının sahada oluşturduğu mevcut çevresel etkiler (toz, toprak bozulması, gürültü) nasıl tespit edilmiştir ve bu geçmiş ihlallere yönelik hangi ıslah işlemleri uygulanacaktır?",
+          "pages": [
+            8
+          ]
+        },
+        {
+          "question_tr": "Yıkama, plentmiks, hazır beton (130 m³/saat) tesisleri ile 84,57 hektarlık ocak ve nakliye yollarında toz bastırma için gerekecek toplam su miktarı nedir; suyun hangi onaylı kaynaktan temin edileceği ve olası yeraltı suyu kullanımının civardaki MASKİ su depoları (1.750-2.440 m) ile yerel su rejimine etkisi nasıl modellenecektir?",
+          "pages": [
+            12,
+            41,
+            67,
+            68
+          ]
+        },
+        {
+          "question_tr": "Tamamı 483 nolu mera parselinde kalan sahada, mera otlatma bütünlüğü ve 425 m mesafedeki konut, 580 m mesafedeki ekili arazi ve 660 m mesafedeki ağıl üzerinde 6.000.000 ton/yıl patlatmalı üretim, 7.000.000 ton/yıl kırma-eleme ve 450 ton/saat asfalt plenti faaliyetlerinin yaratacağı kümülatif PM10/PM2.5, VOC/PAH, gürültü ve titreşim etkileri nasıl hesaplanacaktır?",
+          "pages": [
+            12,
+            34,
+            41,
+            67
+          ]
+        },
+        {
+          "question_tr": "Sahadan bitkisel toprak sıyırma işlemi yapılmayacağı belirtilmekle birlikte, 73,14 hektarlık mera genişleme alanında mevcut toprak profili ve rehabilitasyon/doğaya yeniden kazandırma sürecinde kullanılacak örtü toprağı ihtiyacı nasıl karşılanacaktır?",
+          "pages": [
+            15,
+            34
+          ]
+        },
+        {
+          "question_tr": "Kuzeyden geçen Kurt Dere ve güneyden geçen Geyik Dere ile 600 m doğudaki mevsimsel Balık Dere'ye patlatmalı madencilik ve yıkama/beton proseslerinden kaynaklanabilecek rüsubat, yıkama çamuru ve yüzey akışı taşınımını önlemek için taşkın ve sızdırmazlık güvenlik katsayıları nasıl belirlenmiştir?",
+          "pages": [
+            51,
+            68
+          ]
+        }
+      ],
+      "data_limitations": "Toplam 320 sayfalık dosyanın 136 sayfası taranmış/görüntü formatında olup yalnızca metni çıkarılabilen 26 sayfalık kesit incelenebilmiştir. Ek-3 haritaları, Ek-4 yer inceleme raporu, Ek-5 kurum görüşleri, DSİ onaylı derivasyon projesi, idari yaptırım metinleri ile 69-91 ve 98-281. sayfalar arasındaki teknik etki hesaplamaları (hava kalitesi modellemesi, patlatma titreşimi, gürültü ve hidrojeoloji detayları) sağlanan kesitlerde yer almadığından doğrulanamamıştır."
+    }
+  }
+}
