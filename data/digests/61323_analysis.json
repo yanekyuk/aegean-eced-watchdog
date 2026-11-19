@@ -1,0 +1,513 @@
+{
+  "filing": {
+    "province": "MANİSA",
+    "district": "SALİHLİ",
+    "project_name": "ETLİK PİLİÇ YETİŞTİRME TESİSİ",
+    "project_owner": "OLA TARIM HAYVANCILIK VE İNŞAAT A.Ş.",
+    "sector": "Hayvancılık",
+    "sub_sector": "Kümes Hayvanları  Yetiştirme Tesisleri",
+    "decision_type": "HKT",
+    "announcement_date_tr": "03.11.2026",
+    "project_type": "Ek-1",
+    "detail_text": "MANİSA ili SALİHLİ,  ilcesinde MANİSA ili SALİHLİ ilçesi sınırları içerisinde OLA TARIM HAYVANCILIK VE İNŞAAT A.Ş. tarafından yapılması planlanan ETLİK PİLİÇ YETİŞTİRME TESİSİ projesi ile ilgili Çevresel Etki Değerlendirme süreci başlamış ve Çevresel Etki Değerlendirmesi Başvuru Dosyası halkın görüşüne açılmıştır.Söz konusu projeye ilişkin, halkı proje hakkında bilgilendirmek, görüş ve önerilerini almak amacıyla ÇED Yönetmeliğinin 9. maddesi gereğince 27/11/2026 tarihinde Halkın Katılım Toplantısı düzenlenecektir.ÇED Başvuru Dosyasını İncelemek isteyenler Bakanlık Merkezinde veya MANİSA Çevre ve Şehircilik İl Müdürlüklerinde duyuru tarihinden itibaren raporu inceleyerek, zamanlama takvimi içerisinde proje hakkında Bakanlığa veya Valiliğe görüş bildirebilirler. Halkın Katılımı Toplantısı yeri ve saati ile ilgili ÇED İzin Denetim Genel Müdürlüğü ve MANİSA Çevre, Şehircilik ve İklim Değişikliği İl Müdürlüğünden bilgi alınabilir. İlgililere ve kamuoyuna duyurulur.",
+    "detail_links": [
+      {
+        "text": "Başvuru Dosyası",
+        "href": "http://eced.csb.gov.tr/jsp/ek1/61323"
+      }
+    ],
+    "documents": [
+      {
+        "portal_doc_url": "http://eced.csb.gov.tr/jsp/ek1/61323",
+        "filing_id": "61323",
+        "consulting_firm": "CANÇED ÇEVRE DANIŞMANLIK VE MÜHENDİSLİK SAN. TİC. LTD. ŞTİ.",
+        "submitted_at": "22/10/2026 04:16:22",
+        "pdf_urls": [
+          {
+            "label": "Dosya Göster",
+            "url": "http://eced.csb.gov.tr/jsp/dosya/dosyaGoster.htm?tempAd=sign3055728179534886572.pdf&orjinalAd=e-imza.pdf&yuklemeTarihi=2026-10-22"
+          }
+        ]
+      }
+    ],
+    "announcement_date": "2026-11-03",
+    "statutory_clocks": [
+      {
+        "code": "hkt",
+        "kind": "HKT public participation notice (verify date in full text)",
+        "deadline": null,
+        "days_remaining": null
+      }
+    ],
+    "priority_district": true,
+    "filing_key": "61323:03.11.2026:HKT",
+    "first_seen_at": "2026-11-20T00:44:20"
+  },
+  "pdf_info": {
+    "filename": "61323.pdf",
+    "bytes": 31655885,
+    "sha256": "3a7d31de20198090ef284ff9b411aa51a177ebb3d236113ca05cd6c6ea82fcf6",
+    "cached": false
+  },
+  "analysis": {
+    "page_count": 143,
+    "total_chars": 201830,
+    "text_pages": 114,
+    "scanned_or_blank_pages": 29,
+    "scanned_page_sample": [
+      77,
+      79,
+      80,
+      81,
+      82,
+      83,
+      84,
+      89,
+      90,
+      91,
+      92,
+      93,
+      95,
+      96,
+      97
+    ],
+    "headings": [
+      [
+        3,
+        "BÖLÜM II: PROJE YERİ VE ETKİ ALANININ MEVCUT ÇEVRESEL"
+      ],
+      [
+        3,
+        "BÖLÜM III. PROJENİN İNŞAAT VE İŞLETME AŞAMASINDA ÇEVRESEL"
+      ],
+      [
+        3,
+        "BÖLÜM VI: HALKIN BİLGİLENDİRİLMESİ VE SÜRECE KATILIMI İLE"
+      ],
+      [
+        6,
+        "PROJENİN TEKNİK OLMAYAN ÖZETİ:"
+      ],
+      [
+        8,
+        "BÖLÜM I: PROJENİN TANIMI VE ÖZELLİKLERİ"
+      ],
+      [
+        16,
+        "FLORA VE FAUNA İÇEREN SÖZLEŞMELER VE KATEGORİLER"
+      ],
+      [
+        63,
+        "BÖLÜM IV: KÜMÜLATİF ÇEVRESEL ETKİ DEĞERLENDİRME"
+      ],
+      [
+        65,
+        "BÖLÜM V: ÇEVRESEL VE SOSYAL EYLEM PLANI"
+      ],
+      [
+        69,
+        "BÖLÜM VII: NOTLAR, KAYNAKLAR VE EKLER"
+      ],
+      [
+        110,
+        "ÇEVRESEL VE SOSYAL YÖNETİM PLANI"
+      ]
+    ],
+    "signals": {
+      "coordinates_and_footprint": {
+        "label": "Coordinates, Parcel & Footprint",
+        "page_count": 36,
+        "pages": [
+          3,
+          6,
+          7,
+          8,
+          10,
+          11,
+          12,
+          13,
+          34,
+          35,
+          36,
+          39,
+          44,
+          45,
+          47,
+          49,
+          51,
+          54,
+          59,
+          60,
+          61,
+          63,
+          69,
+          70,
+          71
+        ],
+        "samples": [
+          {
+            "page": 3,
+            "match": "Koordinat",
+            "snippet": "….............................................. 6 b) Projenin Yer ve Teknoloji Alternatifleri, Proje İçin Seçilen Yerin Koordinatları 10 BÖLÜM II: PROJE YERİ VE ETKİ ALANININ MEVCUT ÇEVRESEL ÖZELLİKLERİ ............................................…"
+          },
+          {
+            "page": 6,
+            "match": "840.08 m2",
+            "snippet": "…ştirme Tesisi (160.454 adet/dönem)” yapılması planlanmaktadır. Projenin gerçekleştirileceği parselin büyüklüğü 117.840.08 m2 olup, alanda her biri 1.273.44 m2’lik toplam 8.914,08 m2 7 adet kümes, 75 şer m2’lik 2 adet bakıcı evi toplamda 150 m…"
+          },
+          {
+            "page": 6,
+            "match": "273.44 m2",
+            "snippet": "…” yapılması planlanmaktadır. Projenin gerçekleştirileceği parselin büyüklüğü 117.840.08 m2 olup, alanda her biri 1.273.44 m2’lik toplam 8.914,08 m2 7 adet kümes, 75 şer m2’lik 2 adet bakıcı evi toplamda 150 m2, 134,40 m2’lik idari bina, 120 m2…"
+          },
+          {
+            "page": 6,
+            "match": "914,08 m2",
+            "snippet": "…adır. Projenin gerçekleştirileceği parselin büyüklüğü 117.840.08 m2 olup, alanda her biri 1.273.44 m2’lik toplam 8.914,08 m2 7 adet kümes, 75 şer m2’lik 2 adet bakıcı evi toplamda 150 m2, 134,40 m2’lik idari bina, 120 m2’lik makine ekipman dep…"
+          },
+          {
+            "page": 6,
+            "match": "134,40 m2",
+            "snippet": "…up, alanda her biri 1.273.44 m2’lik toplam 8.914,08 m2 7 adet kümes, 75 şer m2’lik 2 adet bakıcı evi toplamda 150 m2, 134,40 m2’lik idari bina, 120 m2’lik makine ekipman deposu, 42,9 m2’lik ölü çukuru, 16,5 m2’lik fosseptik, 32 m2’lik su deposu,…"
+          },
+          {
+            "page": 6,
+            "match": "42,9 m2",
+            "snippet": "…et kümes, 75 şer m2’lik 2 adet bakıcı evi toplamda 150 m2, 134,40 m2’lik idari bina, 120 m2’lik makine ekipman deposu, 42,9 m2’lik ölü çukuru, 16,5 m2’lik fosseptik, 32 m2’lik su deposu, 390,68 m2’lik yem deposu ve 57,75 m2’lik gübre çukuru ile…"
+          },
+          {
+            "page": 6,
+            "match": "16,5 m2",
+            "snippet": "…adet bakıcı evi toplamda 150 m2, 134,40 m2’lik idari bina, 120 m2’lik makine ekipman deposu, 42,9 m2’lik ölü çukuru, 16,5 m2’lik fosseptik, 32 m2’lik su deposu, 390,68 m2’lik yem deposu ve 57,75 m2’lik gübre çukuru ile beraber 9.858,31 m2’lik…"
+          },
+          {
+            "page": 6,
+            "match": "390,68 m2",
+            "snippet": "…’lik idari bina, 120 m2’lik makine ekipman deposu, 42,9 m2’lik ölü çukuru, 16,5 m2’lik fosseptik, 32 m2’lik su deposu, 390,68 m2’lik yem deposu ve 57,75 m2’lik gübre çukuru ile beraber 9.858,31 m2’lik yapı yapılması planlanmaktadır. Projeye konu…"
+          }
+        ]
+      },
+      "water_and_discharge": {
+        "label": "Water Use, Hydrogeology & Discharge",
+        "page_count": 16,
+        "pages": [
+          27,
+          34,
+          43,
+          44,
+          45,
+          50,
+          51,
+          59,
+          62,
+          71,
+          76,
+          98,
+          99,
+          100,
+          114,
+          115
+        ],
+        "samples": [
+          {
+            "page": 27,
+            "match": "sulak alan",
+            "snippet": "…4. Kültür alanları (bağ, bahçe vb.) Y: Yaygın endemik 4. Bol 5. Kum çayır 5. Çok bol 6. Nemli çayır, bataklık, sulak alan 7. Yol kenarı 8. Kayalık Kaynak: AKMAN, Y. 1995, Türkiye Orman Vejetasyonu, Ank. Üniv. Fen Fakültesi Botanik A.B.D…"
+          },
+          {
+            "page": 34,
+            "match": "yeraltı suyu",
+            "snippet": "…y aracılığıyla Ege Denizi’ne boşalan havzada 904.000 ha üzerinde ovalık alan vardır. Gediz Havzası’ndaki en önemli yeraltı suyu çekimi taneli birimlerden gerçekleşmekle birlikte havza çevresindeki temel birimlerdeki karstik kireçtaşları önemli a…"
+          },
+          {
+            "page": 43,
+            "match": "sulak alan",
+            "snippet": "…ar, bataklık sazlık ve turbiyeler ile bu alanların kıyı kenar çizgisinden itibaren kara tarafına doğru ekolojik açıdan sulak alan kalan yerler, bulunmamaktadır. ç) Göller, akarsular, yeraltı suyu işletme sahaları, içerisinde yer almamaktadır. d)…"
+          },
+          {
+            "page": 43,
+            "match": "yeraltı suyu",
+            "snippet": "…gisinden itibaren kara tarafına doğru ekolojik açıdan sulak alan kalan yerler, bulunmamaktadır. ç) Göller, akarsular, yeraltı suyu işletme sahaları, içerisinde yer almamaktadır. d) Bilimsel araştırmalar için önem arzeden ve/veya nesli tehlikeye düşm…"
+          },
+          {
+            "page": 44,
+            "match": "2,86 m3/gün",
+            "snippet": "…esabı 191 lt/N-gün kabulü 6 alınarak yapıldığında; Günlük Su İhtiyacı = 191 lt kişi.gün x 15 kişi = 2.865 lt/gün = 2,86 m3/gün dür. 6 TÜİK, Belediye Su İstatistikleri, Manisa İli 2022 Yılı Verileri"
+          },
+          {
+            "page": 45,
+            "match": "Yeraltısuyu",
+            "snippet": "…da ihtiyaç duyulacak olan su ise İzmir DSİ 2. Bölge Müdürlüğü tarafından 24.09.2026 tarihli ve 2.45.K.10013 belge nolu Yeraltısuyu Kullanma Belgesine istinaden açılacak olan kuyudan temin edilecektir. Yeraltı Suyu Kullanma Belgesi ÇED Başvuru Dosya…"
+          },
+          {
+            "page": 45,
+            "match": "Yeraltı Suyu",
+            "snippet": "…6 tarihli ve 2.45.K.10013 belge nolu Yeraltısuyu Kullanma Belgesine istinaden açılacak olan kuyudan temin edilecektir. Yeraltı Suyu Kullanma Belgesi ÇED Başvuru Dosyası eklerinde yer almaktadır (Bkz. Ek-9). Proje kapsamında kullanılan su miktarı a…"
+          },
+          {
+            "page": 45,
+            "match": "35,30 m3/gün",
+            "snippet": "…vlerin tüketeceği su miktarı 0,22 lt/hafta7 olarak kabul edilmiştir. 160.454 adet x 0,22 lt = 35.299,88 litre/gün = 35,30 m3/gün Soğutma Sistemi Su İhtiyacı; Tesiste kurulacak kümeslerde özellikle yaz aylarında ortam sıcaklığının istenen seviy…"
+          }
+        ]
+      },
+      "protected_land_and_olive": {
+        "label": "Protected Zones, Forests & Olive Groves",
+        "page_count": 11,
+        "pages": [
+          16,
+          27,
+          32,
+          36,
+          39,
+          41,
+          42,
+          43,
+          63,
+          114,
+          116
+        ],
+        "samples": [
+          {
+            "page": 16,
+            "match": "Orman Alanı",
+            "snippet": "…üfus Artış Grafiği 2.2. Flora Fauna Proje alanı, 1/100.000 ölçekli İzmir – Manisa Bölgesi Çevre Düzeni Planında “Orman Alanı” içerisinde kalmaktadır (Bkz. Ek.1). FLORA VE FAUNA İÇEREN SÖZLEŞMELER VE KATEGORİLER 1. IUCN Red List Kategor…"
+          },
+          {
+            "page": 27,
+            "match": "sulak alan",
+            "snippet": "…4. Kültür alanları (bağ, bahçe vb.) Y: Yaygın endemik 4. Bol 5. Kum çayır 5. Çok bol 6. Nemli çayır, bataklık, sulak alan 7. Yol kenarı 8. Kayalık Kaynak: AKMAN, Y. 1995, Türkiye Orman Vejetasyonu, Ank. Üniv. Fen Fakültesi Botanik A.B.D…"
+          },
+          {
+            "page": 32,
+            "match": "Tabiat Parkı",
+            "snippet": "…ldir. Faaliyet alanı ve çevresi; Yaban Hayatı Geliştirme ve Yetiştirme Sahası, Milli Parklar, Tabiatı Koruma Alanı, Tabiat Parkı, Ava Yasak Alan, Özel Koruma Alanı bölgelerine girmemektedir. 2.3. Jeolojik ve Hidrojeolojik Özellikler Proje a…"
+          },
+          {
+            "page": 36,
+            "match": "Orman Alanı",
+            "snippet": "…ı ekte sunulmuştur (Bkz.Ek-5). Proje alanı, İzmir-Manisa Planlama Bölgesi 1/100.000 Ölçekli Çevre Düzeni Planında Orman Alanı olarak yer almaktadır. (Bkz. Ek.1). 2 https://manisa.tarimorman.gov.tr/"
+          },
+          {
+            "page": 39,
+            "match": "Orman Alanı",
+            "snippet": "…faaliyeti geçekleştirilecektir. Proje alanı, İzmir-Manisa Planlama Bölgesi 1/100.000 Ölçekli Çevre Düzeni Planında Orman Alanı olarak yer almaktadır. (Bkz. Ek.1). 2.8. Kültür Varlığı Ve Sit Özellikleri Proje alanı, İzmir-Manisa Planlama Bölg…"
+          },
+          {
+            "page": 39,
+            "match": "özel çevre koruma",
+            "snippet": "…koruma alanları, Boğaziçi Kanuna göre koruma altına alınan alanlar, biyogenetik rezerv alanları, biyosfer rezervleri, özel çevre koruma bölgeleri, özel koruma alanları, turizm bölgeleri ve koruma altına alınmış diğer alanlar bulunmamaktadır. Proje al…"
+          },
+          {
+            "page": 41,
+            "match": "Özel Çevre Koruma",
+            "snippet": "…liği’nde tanımlanan alanlar, bulunmamaktadır. f) Çevre Kanunu’nun 9 uncu maddesi uyarınca Cumhurbaşkanı tarafından \"Özel Çevre Koruma Bölgeleri\" olarak tespit ve ilan edilen alanlar, bulunmamaktadır. g) Boğaziçi Kanunu’na göre koruma altına alınan al…"
+          },
+          {
+            "page": 41,
+            "match": "orman alanı",
+            "snippet": "…lunmamaktadır. g) Boğaziçi Kanunu’na göre koruma altına alınan alanlar, bulunmamaktadır. ğ) Orman Kanunu uyarınca orman alanı sayılan yerler, bulunmamaktadır. h) Kıyı Kanunu gereğince yapı yasağı getirilen alanlar, bulunmamaktadır. ı) Zeyt…"
+          }
+        ]
+      },
+      "ecology_and_baseline": {
+        "label": "Flora, Fauna & Baseline Methodology",
+        "page_count": 14,
+        "pages": [
+          16,
+          17,
+          18,
+          20,
+          21,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          41,
+          43,
+          116
+        ],
+        "samples": [
+          {
+            "page": 16,
+            "match": "FLORA VE FAUNA",
+            "snippet": "…, 1/100.000 ölçekli İzmir – Manisa Bölgesi Çevre Düzeni Planında “Orman Alanı” içerisinde kalmaktadır (Bkz. Ek.1). FLORA VE FAUNA İÇEREN SÖZLEŞMELER VE KATEGORİLER 1. IUCN Red List Kategorileri IUCN (The World Conservation Union: The Inte…"
+          },
+          {
+            "page": 16,
+            "match": "IUCN",
+            "snippet": "…lanında “Orman Alanı” içerisinde kalmaktadır (Bkz. Ek.1). FLORA VE FAUNA İÇEREN SÖZLEŞMELER VE KATEGORİLER 1. IUCN Red List Kategorileri IUCN (The World Conservation Union: The International Union for the Conservation of Nature…"
+          },
+          {
+            "page": 17,
+            "match": "IUCN",
+            "snippet": "…SI 15 Şekil 5. IUCN Red List Kategorileri Kaynak: www.iucnredlist.org Tablo 5. IUCN red List Kategorileri ve Türkçe Karşılıkları Kateg…"
+          },
+          {
+            "page": 17,
+            "match": "BERN SÖZLEŞMESİ",
+            "snippet": "…n henüz tehlike altında değil Out of danger O Takson tehlike dışı Rare R Nadir Vulnerable V Zarar görebilir BERN SÖZLEŞMESİ"
+          },
+          {
+            "page": 18,
+            "match": "Bern Sözleşmesi",
+            "snippet": "…ŞVURU DOSYASI 16 Bern Sözleşmesi, yaban hayatı ve yaşama ortamlarının korunmasına ilişkin bir sözleşmedir. Sözleşmede korunan türler üç ayrı ek liste o…"
+          },
+          {
+            "page": 18,
+            "match": "Flora ve fauna",
+            "snippet": "…, Davis tarafından araştırmak üzere ayrılmış Grid Kareleme sistemine göre faaliyet alanı B2 karesinde yer almaktadır. Flora ve fauna kısmını oluşturulurken; - Davis’in “Flora of Turkey and East Aegean Islands” adlı eserinden, - Türkiye Florası il…"
+          },
+          {
+            "page": 20,
+            "match": "literatür taraması",
+            "snippet": "…ırlıklı yer almakta olup, alanda ayrıca ruderal bitkiler de yer almaktadır. Proje kapsamında arazi faaliyetleri ve literatür taraması ile oluşturulan floristik çalışmalar sunulmaktadır. - Flora Türlerinin Endemizm ve Tehlike Sınıfları Açısından Duru…"
+          },
+          {
+            "page": 20,
+            "match": "IUCN",
+            "snippet": "…emizm ve Tehlike Sınıfları Açısından Durumu Flora listesinde tür ve tür altı düzeyde yer alan 164 adet bitki taksonu IUCN Red List Kategorilerinde bulunmamaktadır."
+          }
+        ]
+      },
+      "pollutants_and_hazards": {
+        "label": "Emissions, Geochemistry & Waste",
+        "page_count": 18,
+        "pages": [
+          4,
+          34,
+          35,
+          44,
+          55,
+          57,
+          60,
+          63,
+          64,
+          66,
+          73,
+          75,
+          113,
+          115,
+          116,
+          121,
+          122,
+          124
+        ],
+        "samples": [
+          {
+            "page": 4,
+            "match": "Gürültü",
+            "snippet": "…Kömür Yakıtının Genel Özellikleri .............................................................. 51 Tablo 19. Çevresel Gürültü Kontrol Yönetmeliği Ek-1 Tablo.1 Çevresel Gürültü Düzeyi Sınır Değerleri .............................................…"
+          },
+          {
+            "page": 34,
+            "match": "Deprem",
+            "snippet": "…, Nif Çayı ve Bakırçay’dır. 2.4. Doğal Afet durumu Proje alanı Manisa İlinde yer almakla birlikte bölge 1.Derece Deprem Bölgesi’dir. Söz konusu bölge, Mülga Bayındırlık İskân Bakanlığı Türkiye Deprem Bölgeleri Haritasına göre 1. derece d…"
+          },
+          {
+            "page": 35,
+            "match": "Deprem",
+            "snippet": "…33 Şekil 10. Türkiye Deprem Tehlike Haritası Yeni Deprem Tehlike Haritasına göre proje sahasına ait en büyük ivme değeri (PGA 475) 0,334 g’dir.…"
+          },
+          {
+            "page": 44,
+            "match": "Kümülatif",
+            "snippet": "…anmaktadır. a) Çevreyi Etkileyecek Olası Sorunların Belirlenmesi, Kirleticilerin Miktarı, Alıcı Ortamla Etkileşimi, Kümülatif Etkilerin Belirlenmesi Söz konusu projenin muhtemel çevresel etkilerine karşı alınacak önlemler ve tedbirler bu baş…"
+          },
+          {
+            "page": 44,
+            "match": "gürültü",
+            "snippet": "…olan başlıca sorunlar doğal kaynakların tüketimi, kirleticiler, gübre ve ölü tavuk oluşumları, toz ve emisyon oluşumu, gürültü ve koku problemidir. DOĞAL KAYNAKLARIN KULLANIMI Manisa İli, Salihli İlçesi, Gökeyüp Mahallesi, 179 Ada, 2 parse…"
+          },
+          {
+            "page": 55,
+            "match": "GÜRÜLTÜ",
+            "snippet": "…lanarak yürürlüğe giren “Çevre İzin ve Lisans Yönetmeliği” hükümleri doğrultusunda gerekli başvurular yapılacaktır. GÜRÜLTÜ Proje sahasında Çevresel Gürültü Kontrol Yönetmeliği’ne ve Ek-1’de yer alan Tablo 1.’de verilen Endüstri tesisleri,…"
+          },
+          {
+            "page": 57,
+            "match": "CO2",
+            "snippet": "…da Yönetmelik’in Ek-2 Sera Gazı Emisyonları listesinde aşağıda yer alan gazlar yer almaktadır: 1. Karbon Dioksit (CO2) 2. Metan (CH4) 3. Diazot Oksit (N2O) 4. Hidroflorokarbonlar (HFC’ler) 5. Perflorokarbonlar (PFC’ler) 6. Sülfür He…"
+          },
+          {
+            "page": 60,
+            "match": "Gürültü",
+            "snippet": "…lanarak yürürlüğe giren “Çevre İzin ve Lisans Yönetmeliği” hükümleri doğrultusunda gerekli başvurular yapılacaktır. Gürültü Çalışanların kişisel koruyucu ekipman kullanmaları sağlanacaktır. Makine ekipmanların bakımları da düzenli olarak yap…"
+          }
+        ]
+      },
+      "cost_and_capacity": {
+        "label": "Project Cost, Power & Capacity",
+        "page_count": 13,
+        "pages": [
+          2,
+          6,
+          10,
+          11,
+          15,
+          52,
+          53,
+          86,
+          113,
+          114,
+          133,
+          134,
+          138
+        ],
+        "samples": [
+          {
+            "page": 2,
+            "match": "PROJE BEDELİ",
+            "snippet": "…ergi Dairesi : Salihli Adil Oral E-POSTA gyildirim_21@hotmail.com PROJENİN ADI ETLİK PİLİÇ YETİŞTİRME TESİSİ PROJE BEDELİ 105.852.311 TL PROJE İÇİN SEÇİLEN YERİN AÇIK ADRESİ (İLİ, İLÇESİ, MEVKİİ) Manisa İli, Salihli İlçesi, Gökeyüp Maha…"
+          },
+          {
+            "page": 2,
+            "match": "105.852.311 TL",
+            "snippet": "…: Salihli Adil Oral E-POSTA gyildirim_21@hotmail.com PROJENİN ADI ETLİK PİLİÇ YETİŞTİRME TESİSİ PROJE BEDELİ 105.852.311 TL PROJE İÇİN SEÇİLEN YERİN AÇIK ADRESİ (İLİ, İLÇESİ, MEVKİİ) Manisa İli, Salihli İlçesi, Gökeyüp Mahallesi, 179 Ada,…"
+          },
+          {
+            "page": 6,
+            "match": "105.852.311 TL",
+            "snippet": "…amamen boştur. Projede gerçekleştirilecek inşaat yatırımı, makine ekipmanın, kira ve diğer giderler yaklaşık olarak 105.852.311 TL olacağı öngörülmektedir. Proje alanı; Salihli İlçe merkezine 27 km, Manisa İl merkezine ise 74 km mesafede yer alma…"
+          },
+          {
+            "page": 10,
+            "match": "Kapasite",
+            "snippet": "…an kümes hazırlık ve temizlik işlemleri tekrarlanarak yeni dönem civcivlerin gelmesine hazırlık yapılır. • Projenin Kapasitesi: Proje alanında her biri 1.273.44 m2’lik 7 adet kümes planlanmaktadır. Tesiste kümeslerde metrekare başına düşen…"
+          },
+          {
+            "page": 10,
+            "match": "proje bedeli",
+            "snippet": "…20 minimum havalandırma fanı 12 2.2 kcal kömürlü soba 2 Bedeli Tesiste gerçekleştirilecek faaliyetin proje bedeli hesaplanırken; arazi hazırlık giderleri, kurulacak makine ekipman bedelleri, mühendislik hizmet bedelleri ve kira gid…"
+          },
+          {
+            "page": 11,
+            "match": "8.100 TL",
+            "snippet": "…9 TL olarak yer almaktadır. Bu durumda inşaat maliyetleri aşağıdaki şekilde hesaplanabilmektedir. 8.100 TL/m2 x (9.858,31) m2 = 79.852.311 TL Tablo 3. Proje Bedeli Maliyet Tablosu Maliyet Kalemi Tutar (TL) Makine ekipman…"
+          },
+          {
+            "page": 11,
+            "match": "79.852.311 TL",
+            "snippet": "…yer almaktadır. Bu durumda inşaat maliyetleri aşağıdaki şekilde hesaplanabilmektedir. 8.100 TL/m2 x (9.858,31) m2 = 79.852.311 TL Tablo 3. Proje Bedeli Maliyet Tablosu Maliyet Kalemi Tutar (TL) Makine ekipman bedeli 20.000.000 İnşaat Giderle…"
+          },
+          {
+            "page": 11,
+            "match": "Proje Bedeli",
+            "snippet": "…inşaat maliyetleri aşağıdaki şekilde hesaplanabilmektedir. 8.100 TL/m2 x (9.858,31) m2 = 79.852.311 TL Tablo 3. Proje Bedeli Maliyet Tablosu Maliyet Kalemi Tutar (TL) Makine ekipman bedeli 20.000.000 İnşaat Giderleri 79.852.311 Kira Gide…"
+          }
+        ]
+      }
+    },
+    "audit_checks": {
+      "mentions_field_survey": true,
+      "mentions_literature_only_cue": true,
+      "mentions_seasonal_sampling": true,
+      "mentions_cumulative_impact": true,
+      "mentions_olive_law_3573": true,
+      "mentions_groundwater_or_aquifer": true,
+      "mentions_iucn_or_endemic": true
+    }
+  }
+}

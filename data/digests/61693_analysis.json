@@ -1,0 +1,565 @@
+{
+  "filing": {
+    "row_index": 11,
+    "button_id": "form:duyurTable:11:j_idt67",
+    "province": "İZMİR",
+    "district": "ALİAĞA",
+    "project_name": "Çelik Konstrüksiyon Ürünleri Üretimi Faaliyetine Deniz Araçlarının Parça ve Aksamlarının Üretimi İlavesi",
+    "project_owner": "BRONTES MAKİNE SANAYİ VE TİCARET ANONİM ŞİRKETİ",
+    "sector": "Kıyı",
+    "sub_sector": "Yat veya Tekne İmalat, Bakım ve Onarım Faaliyetleri",
+    "decision_type": "ÇED Süreci Başlayan",
+    "announcement_date_tr": "11.11.2026",
+    "project_type": "Ek-2",
+    "detail_text": "İZMİR ili ALİAĞA,  ilcesinde İZMİR ili ALİAĞA,  ilçesi İzmir İli, Aliağa İlçesi, Aliağa Organize Sanayi Bölgesi, Çoraklar Mah. 5000 Sk. No:24, 24/1,24/2,24/3 (Tapunun 133 Ada 12 Nolu Parseli) mevkiindeki BRONTES MAKİNE SANAYİ VE TİCARET ANONİM ŞİRKETİ  tarafından yapılması planlanan Çelik Konstrüksiyon Ürünleri Üretimi Faaliyetine Deniz Araçlarının Parça ve Aksamlarının Üretimi İlavesi projesi ile ilgili olarak İZMİR Valiliğimize sunulan P.T.D. Dosyası Çevresel Etki Değerlendirmesi Yönetmeliği'nin 16. maddesi doğrultusunda incelenmiş ve projeye ilişkin ÇED Süreci başlamıştır. İlgililere ve kamuoyuna duyurulur.",
+    "detail_links": [
+      {
+        "text": "P.T.D. Dosyası",
+        "href": "http://eced.csb.gov.tr/jsp/ek1/61693"
+      }
+    ],
+    "documents": [
+      {
+        "portal_doc_url": "http://eced.csb.gov.tr/jsp/ek1/61693",
+        "filing_id": "61693",
+        "consulting_firm": "PROÇED ÇEVRE DANIŞMANLIĞI MÜHENDİSLİK SAN.TİC.LTD.ŞTİ",
+        "submitted_at": "09/11/2026 11:29:48",
+        "pdf_urls": [
+          {
+            "label": "Dosya Göster",
+            "url": "http://eced.csb.gov.tr/jsp/dosya/dosyaGoster.htm?tempAd=sign3001897172830461903.pdf&orjinalAd=e-imza.pdf&yuklemeTarihi=2026-11-09"
+          }
+        ]
+      }
+    ],
+    "announcement_date": "2026-11-11",
+    "statutory_clocks": [
+      {
+        "code": "aski_10d",
+        "kind": "10-day public review/comment window (askı süresi)",
+        "deadline": "2026-11-21",
+        "days_remaining": 1
+      }
+    ],
+    "priority_district": true,
+    "filing_key": "61693:11.11.2026:ÇED Süreci Başlayan",
+    "first_seen_at": null
+  },
+  "pdf_info": {
+    "filename": "61693.pdf",
+    "bytes": 61351316,
+    "sha256": "61292982c886fef4bc3e61259150f4fc8007eb256243679a7c4bda2172236d6e",
+    "cached": false
+  },
+  "analysis": {
+    "page_count": 290,
+    "total_chars": 365706,
+    "text_pages": 193,
+    "scanned_or_blank_pages": 97,
+    "scanned_page_sample": [
+      78,
+      79,
+      80,
+      81,
+      82,
+      83,
+      84,
+      85,
+      86,
+      87,
+      88,
+      89,
+      90,
+      98,
+      100
+    ],
+    "headings": [
+      [
+        94,
+        "Model"
+      ],
+      [
+        95,
+        "Model"
+      ],
+      [
+        264,
+        "İçindekiler Listesi"
+      ],
+      [
+        265,
+        "1. ATIK YÖNETİMİ"
+      ],
+      [
+        265,
+        "1.1 Atık Önleme ve Minimizasyon"
+      ],
+      [
+        266,
+        "1.2 Atıkların Kaynağında Ayrı Biriktirilmesi ve Toplanması"
+      ],
+      [
+        266,
+        "1.3. Atıkların Proje Alanından Geçici Depolama Alanına Taşınması"
+      ],
+      [
+        267,
+        "1.4. Atık Toplama, Biriktirme ve Taşıma Ekipmanlarının/Malzemelerinin Bulunduğu Yerler ve Özellikleri ile Toplama Programı ve Taşıma Güzergâhı"
+      ],
+      [
+        268,
+        "1.5. Atık Geçici Depolama Alanı Yeri, Özellikleri ve Depolanacak Atık Kodları"
+      ],
+      [
+        268,
+        "1.6. Atık Toplama, Taşıma Ekipmanlarının ve Araçlarının Temizliği ve Dezenfeksiyonu"
+      ],
+      [
+        269,
+        "1.7 Kaza Anında Alınacak Önlemler ve Yapılacak İşlemler"
+      ],
+      [
+        269,
+        "1.8 Kaynağında Ayrı Toplanan Atıkların Değerlendirilmesi Konusunda Yapılan Çalışmalar"
+      ],
+      [
+        270,
+        "1.9 Atıkların Toplanmasında, Taşınmasında ve Geçici Depolanmasında Görevlendirilen Personel Bilgileri"
+      ],
+      [
+        270,
+        "1.10 Atıkların Beyanından Sorumlu Personel Bilgileri"
+      ],
+      [
+        271,
+        "1.11 Atıkların Teslim Edildiği Tesis Bilgileri"
+      ],
+      [
+        272,
+        "2. EĞİTİM VE BİLGİLENDİRME FAALİYETLERİ"
+      ],
+      [
+        272,
+        "3. KAYIT TUTMA VE RAPORLAMA"
+      ],
+      [
+        275,
+        "İçindekiler Listesi"
+      ],
+      [
+        276,
+        "GİRİŞ"
+      ],
+      [
+        276,
+        "1. AMAÇ VE KAPSAM"
+      ],
+      [
+        276,
+        "2. SORUMLULUKLAR"
+      ],
+      [
+        277,
+        "3. YOL VE ARAÇ BAKIMI"
+      ],
+      [
+        277,
+        "4. İŞLETME AŞAMASI TRAFİK YÖNETİMİ"
+      ],
+      [
+        280,
+        "İçindekiler Listesi"
+      ],
+      [
+        281,
+        "GİRİŞ"
+      ]
+    ],
+    "signals": {
+      "coordinates_and_footprint": {
+        "label": "Coordinates, Parcel & Footprint",
+        "page_count": 37,
+        "pages": [
+          1,
+          2,
+          6,
+          8,
+          16,
+          17,
+          18,
+          19,
+          33,
+          34,
+          42,
+          60,
+          71,
+          72,
+          73,
+          75,
+          77,
+          92,
+          95,
+          124,
+          126,
+          130,
+          213,
+          214,
+          218
+        ],
+        "samples": [
+          {
+            "page": 1,
+            "match": "Ada 12 Nolu Parsel",
+            "snippet": "…amlarının Üretimi İlavesi (Çoraklar Osb. Mahallesi, 5000 Sokak, No:24, 24/1,24/2,24/3 Aliağa/ İzmir) (Tapunun 133 Ada 12 Nolu Parseli) PROÇED ÇEVRE DANIŞMANLIĞI MÜHENDİSLİK İNŞ. SAN. VE TİC. LTD. ŞTİ. Mansuroğlu Mah. Ankara Cad. Bayraklı Tow…"
+          },
+          {
+            "page": 2,
+            "match": "Ada 12 Nolu Parsel",
+            "snippet": "…İzmir İli, Aliağa İlçesi, Aliağa Organize Sanayi Bölgesi, Çoraklar Mah. 5000 Sk. No:24, 24/1,24/2,24/3 (Tapunun 133 Ada 12 Nolu Parseli) Projenin ÇED Yönetmeliği Kapsamındaki Yeri (Sektör, Alt Sektör): 29.07.2022 tarih ve 31907 sayılı Çevresel…"
+          },
+          {
+            "page": 6,
+            "match": "20.748 m2",
+            "snippet": "…ir İli, Aliağa İlçesi, Çoraklar Mah., 5000 Sok. No: 24, 24/1, 24/2, 24/3 (tapunun 133 ada 12 no’lu parseli) adresinde 20.748 m2 toplam yüzölçümlü 13.800 m2 kapalı alan üzerinde Çelik Konstrüksiyon Ürünleri Üretimi yapılmakta olup mevcut faaliyeti…"
+          },
+          {
+            "page": 6,
+            "match": "13.800 m2",
+            "snippet": "…klar Mah., 5000 Sok. No: 24, 24/1, 24/2, 24/3 (tapunun 133 ada 12 no’lu parseli) adresinde 20.748 m2 toplam yüzölçümlü 13.800 m2 kapalı alan üzerinde Çelik Konstrüksiyon Ürünleri Üretimi yapılmakta olup mevcut faaliyetine ilave olarak “Deniz Araç…"
+          },
+          {
+            "page": 8,
+            "match": "20.748 m2",
+            "snippet": "…ir İli, Aliağa İlçesi, Çoraklar Mah., 5000 Sok. No: 24, 24/1, 24/2, 24/3 (tapunun 133 ada 12 no’lu parseli) adresinde 20.748 m2 toplam yüzölçümlü 13.800 m2 kapalı alan üzerinde Çelik Konstrüksiyon Ürünleri Üretimi yapılmakta olup mevcut faaliyeti…"
+          },
+          {
+            "page": 8,
+            "match": "13.800 m2",
+            "snippet": "…klar Mah., 5000 Sok. No: 24, 24/1, 24/2, 24/3 (tapunun 133 ada 12 no’lu parseli) adresinde 20.748 m2 toplam yüzölçümlü 13.800 m2 kapalı alan üzerinde Çelik Konstrüksiyon Ürünleri Üretimi yapılmakta olup mevcut faaliyetine ilave olarak “Deniz Araç…"
+          },
+          {
+            "page": 16,
+            "match": "20.748 m2",
+            "snippet": "…ir İli, Aliağa İlçesi, Çoraklar Mah., 5000 Sok. No: 24, 24/1, 24/2, 24/3 (tapunun 133 ada 12 no’lu parseli) adresinde 20.748 m2 toplam yüzölçümlü 13.800 m2 kapalı alan üzerinde Çelik Konstrüksiyon Ürünleri Üretimi yapılmakta olup mevcut faaliyeti…"
+          },
+          {
+            "page": 16,
+            "match": "13.800 m2",
+            "snippet": "…klar Mah., 5000 Sok. No: 24, 24/1, 24/2, 24/3 (tapunun 133 ada 12 no’lu parseli) adresinde 20.748 m2 toplam yüzölçümlü 13.800 m2 kapalı alan üzerinde Çelik Konstrüksiyon Ürünleri Üretimi yapılmakta olup mevcut faaliyetine ilave olarak “Deniz Araç…"
+          }
+        ]
+      },
+      "water_and_discharge": {
+        "label": "Water Use, Hydrogeology & Discharge",
+        "page_count": 18,
+        "pages": [
+          19,
+          20,
+          21,
+          26,
+          42,
+          45,
+          47,
+          48,
+          49,
+          55,
+          56,
+          57,
+          69,
+          218,
+          238,
+          252,
+          284,
+          285
+        ],
+        "samples": [
+          {
+            "page": 19,
+            "match": "sulak alan",
+            "snippet": "…im yeri kuzeydoğu yönünde 3,66 km uzaklıktaki Çoraklar Mahallesidir. Araziler tarım alanı, orman alanı, koruma alanı, sulak alan, vb. sahalar dışındadır. Proje sahasına, mevcut yollar üzerinden ulaşım sağlamak mümkündür. Tesisin güneydoğusunda…"
+          },
+          {
+            "page": 20,
+            "match": "11,76 m3/gün",
+            "snippet": "…su kullanım miktarı) x (personel sayısı) Personelin su kullanım miktarı = 210 litre/kişi-gün0F1 x (56 personel) = 11,76 m3/gün olarak hesaplanır. Tesiste personel kullanımı haricinde bir su kullanımı beklenmemektedir. Ürün yıkama, temizlik, b…"
+          },
+          {
+            "page": 21,
+            "match": "deşarj",
+            "snippet": "…erine uyulacaktır. İşletme aşamasında, tesisten kaynaklanan her türlü atık/atıksuyun dere yataklarına ulaşması veya deşarj edilmesi önlenecek, bu atıkların mevzuata uygun bertarafı sağlanacaktır. Kullanılacak Enerji Türü: Tesiste idari…"
+          },
+          {
+            "page": 26,
+            "match": "Atıksu",
+            "snippet": "…leri Üretimi Faaliyetine Deniz Araçlarının Parça ve Aksamlarının Üretimi İlavesi PROJE TANITIM DOSYASI 19 1.ç.2. Atıksu Evsel Nitelikli Atıksular Proje kapsamında tesiste mevcut durumda 56 çalışan personel bulunmaktadır. İzmir ili k…"
+          },
+          {
+            "page": 26,
+            "match": "11,76 m3/gün",
+            "snippet": "…su kullanım miktarı) x (personel sayısı) Personelin su kullanım miktarı = 210 litre/kişi-gün0F3 x (56 personel) = 11,76 m3/gün olarak hesaplanır. İşletme aşamasında personel tarafından kullanılacak suyun %100’ünün atık su olarak geri döneceği…"
+          },
+          {
+            "page": 26,
+            "match": "deşarj",
+            "snippet": "…63; 16.06.2012-28325; 10.11.2012- 28463; 20.12.2014-29211; 06.11.2020-31296) belirtilen tüm hususlara uygun ve emisyon deşarj standartlarını sağlayacak şekilde yürütülecektir. 1.ç.4. Gürültü Planlanan proje kapsamında herhangi bir arazi h…"
+          },
+          {
+            "page": 42,
+            "match": "yeraltı suyu",
+            "snippet": "…t sahibi tarafından alınacaktır. Tesise ait tüm birimlerde sızdırmazlık (geçirimsizlik) önlemleri alınarak yüzey ve yeraltı suyu kaynaklarının kirlenmesi engellenecektir. Faaliyet sonucu sıvı fazda ve katı fazda oluşacak atıkların geçirimsizliği s…"
+          },
+          {
+            "page": 45,
+            "match": "Sulak Alan",
+            "snippet": "…j) Sulak Alanların Korunması Yönetmeliği'nde belirtilen alanlar Türkiye’de 14 Ramsar Alanı, 59 Ulusal Öneme Haiz Sulak Alan, 22 Mahalli Öneme Haiz Sulak Alan bulunmaktadır. Diğer sulak alanlarımızdaki tescil çalışmaları Doğa Koruma ve Milli…"
+          }
+        ]
+      },
+      "protected_land_and_olive": {
+        "label": "Protected Zones, Forests & Olive Groves",
+        "page_count": 9,
+        "pages": [
+          3,
+          19,
+          33,
+          43,
+          44,
+          45,
+          47,
+          48,
+          70
+        ],
+        "samples": [
+          {
+            "page": 3,
+            "match": "orman alanı",
+            "snippet": "…ut Çevresel Özellikleri ........................................26 a) Mevcut Arazi Kullanımı ve Kalitesi (tarım alanı, orman alanı, planlı alan, su yüzeyi ve benzeri)...................................................................................…"
+          },
+          {
+            "page": 19,
+            "match": "orman alanı",
+            "snippet": "…is sahasına en yakın yerleşim yeri kuzeydoğu yönünde 3,66 km uzaklıktaki Çoraklar Mahallesidir. Araziler tarım alanı, orman alanı, koruma alanı, sulak alan, vb. sahalar dışındadır. Proje sahasına, mevcut yollar üzerinden ulaşım sağlamak mümkündür…"
+          },
+          {
+            "page": 19,
+            "match": "sulak alan",
+            "snippet": "…im yeri kuzeydoğu yönünde 3,66 km uzaklıktaki Çoraklar Mahallesidir. Araziler tarım alanı, orman alanı, koruma alanı, sulak alan, vb. sahalar dışındadır. Proje sahasına, mevcut yollar üzerinden ulaşım sağlamak mümkündür. Tesisin güneydoğusunda…"
+          },
+          {
+            "page": 33,
+            "match": "orman alanı",
+            "snippet": "…ASI 26 Bölüm II. Proje Yeri ve Etki Alanın Mevcut Çevresel Özellikleri a) Mevcut arazi kullanımı (tarım alanı, orman alanı, planlı alan, su yüzeyi ve benzeri) ve kalitesi, jeolojik ve hidrojeolojik özellikleri. BRONTES MAKİNE SANAYİ VE Tİ…"
+          },
+          {
+            "page": 43,
+            "match": "Milli Park",
+            "snippet": "…Tabiat Koruma Alanları\", İzmir ili sınırları içindeki korunan alanlar ile ilgili bilgiler aşağıda verilmiştir. -Milli Park (MP): Türkiye’de 50 adet Milli Park bulunmakta olup, projenin gerçekleşeceği İzmir İli sınırları içinde milli park…"
+          },
+          {
+            "page": 43,
+            "match": "Tabiat Parkı",
+            "snippet": "…in gerçekleşeceği İzmir İli sınırları içinde milli park bulunmamaktadır. Şekil 21. Türkiye’deki Milli Parklar -Tabiat Parkı (TP): Projenin gerçekleştirileceği İzmir İli sınırları içinde 8 adet tabiat parkı bulunmaktadır. Bu alanlardan hiç…"
+          },
+          {
+            "page": 43,
+            "match": "TABİAT PARKI",
+            "snippet": "…projenin yer aldığı Aliağa ilçe sınırları içerisinde değildir. Tablo 6. İzmir İlinde Yer Alan Tabiat Parkları NO TABİAT PARKI İLİ İLÇESİ 1 Efeoğlu TP İzmir Buca 2 Ekmeksiz Plajı TP İzmir Seferihisar 3 Gümüldür TP İzmir Menderes 4…"
+          },
+          {
+            "page": 44,
+            "match": "Sit Alanı",
+            "snippet": "…li maddeleri uyarınca tespiti ve tescili yapılan alanlar, Proje alanında; \"Kültür Varlıkları\", \"Tabiat Varlıkları\", \"Sit Alanı\" ve \"Koruma Alanı\" olarak tanımlanan özel alanlardan hiçbiri bulunmamaktadır. ç) Su Ürünleri Kanunu kapsamında ola…"
+          }
+        ]
+      },
+      "ecology_and_baseline": {
+        "label": "Flora, Fauna & Baseline Methodology",
+        "page_count": 4,
+        "pages": [
+          46,
+          48,
+          49,
+          286
+        ],
+        "samples": [
+          {
+            "page": 46,
+            "match": "BERN Sözleşmesi",
+            "snippet": "…özleşmeler uyarınca korunması gerekli alanlar a) \"Avrupa’nın Yaban Hayatı ve Yaşama Ortamlarını Koruma Sözleşmesi\" (BERN Sözleşmesi) uyarınca koruma altına alınmış alanlardan \"Önemli Deniz Kaplumbağası Üreme Alanları\"nda belirtilen I. ve II. Koruma B…"
+          },
+          {
+            "page": 48,
+            "match": "endemik",
+            "snippet": "…tır. d) Bilimsel araştırmalar için önem arz eden ve/veya nesli tehlikeye düşmüş veya düşebilir türler ve ülkemiz için endemik olan türlerin yaşama ortamı olan alanlar, biyosfer rezervi, biyotoplar, biyogenetik rezerv alanları, benzersiz özellik…"
+          },
+          {
+            "page": 49,
+            "match": "Flora ve Fauna",
+            "snippet": "…proje konusu faaliyetlerin gerçekleştirilmesi aşamasında bu alanlara bir etkisinin olması beklenmemektedir. Flora ve Fauna Proje alanı, Aliağa Organize Sanayi Bölgesi sınırları içerisinde yer almaktadır. Faaliyetin yer aldığı parsel, daha…"
+          },
+          {
+            "page": 286,
+            "match": "Bern Sözleşmesi",
+            "snippet": "…alanı ile çevresinde; nadir, nesli tehlikede olan ve “Avrupa’nın Yaban Hayatı ve Yaşama Ortamlarını Koruma Sözleşmesi (Bern Sözleşmesi)” Ek-I listesine göre koruma altına alınması gereken bir bitki türü bulunmamaktadır. Faaliyet alanı ve çevresinde ende…"
+          },
+          {
+            "page": 286,
+            "match": "endemik",
+            "snippet": "…mesi)” Ek-I listesine göre koruma altına alınması gereken bir bitki türü bulunmamaktadır. Faaliyet alanı ve çevresinde endemik tür bulunmamaktadır."
+          }
+        ]
+      },
+      "pollutants_and_hazards": {
+        "label": "Emissions, Geochemistry & Waste",
+        "page_count": 35,
+        "pages": [
+          5,
+          23,
+          24,
+          26,
+          27,
+          35,
+          37,
+          38,
+          39,
+          40,
+          52,
+          53,
+          56,
+          57,
+          58,
+          59,
+          60,
+          63,
+          64,
+          67,
+          69,
+          70,
+          71,
+          142,
+          143
+        ],
+        "samples": [
+          {
+            "page": 5,
+            "match": "Deprem",
+            "snippet": "…emlerin Büyüklük-Sayı Diyagramı, (Kaynak: https://deprem.afad.gov.tr/depremkatalogu) ...........32 Şekil 16. Türkiye Deprem Tehlike Haritası (Kaynak: https://deprem.afad.gov.tr/deprem- tehlike-haritasi) ........................................…"
+          },
+          {
+            "page": 23,
+            "match": "tehlikeli atık",
+            "snippet": "…in bölmeleri bulunacak şekilde inşa edilen geçici atık depolama alanında depolanacak ve Çevre İzin ve Lisansı bulunan tehlikeli atık geri kazanım/bertaraf tesislerine gönderilecektir. Projenin işletme aşamasında oluşması muhtemel atık yağlar için ya…"
+          },
+          {
+            "page": 23,
+            "match": "bor",
+            "snippet": "…tehlikeli maddelerle kontamine olmuş ambalajlar) kontamine ambalajlar oluşmaktadır. Tesiste bulunan CNC makinelerinde bor yağlı- su karışımı kullanılmakta olup, işlem sonrasında 12 01 09* atık kodlu halojen içermeyen emülsiyon ve solüsyon a…"
+          },
+          {
+            "page": 24,
+            "match": "bor",
+            "snippet": "…08 03 17* atık kodu ile kartuş - toner atıkları oluşabilmektedir. Tesiste CNC makinelerinde kesimi yapılan metallerin bor yağı teması sonucunda 12 01 20* atık kodu ile Tehlikeli maddeler içeren öğütme parçaları ve öğütme maddeleri oluşabil…"
+          },
+          {
+            "page": 24,
+            "match": "tehlikeli atık",
+            "snippet": "…in bölmeleri bulunacak şekilde inşa edilen geçici atık depolama alanında depolanacak ve Çevre İzin ve Lisansı bulunan tehlikeli atık geri kazanım/bertaraf tesislerine gönderilecektir. Söz konusu tehlikeli atıklar 02.04.2015 tarih ve 29314 sayılı Res…"
+          },
+          {
+            "page": 26,
+            "match": "Gürültü",
+            "snippet": "…0-31296) belirtilen tüm hususlara uygun ve emisyon deşarj standartlarını sağlayacak şekilde yürütülecektir. 1.ç.4. Gürültü Planlanan proje kapsamında herhangi bir arazi hazırlık ve inşaat aşaması yürütülmeyecek olup, sadece işletme dönemi…"
+          },
+          {
+            "page": 27,
+            "match": "gürültü",
+            "snippet": "…almaktadır ve tamamen kapalı bir alanda faaliyetini sürdürmektedir. Dolayısıyla, proje kapsamında önemli bir çevresel gürültü oluşması beklenmemektedir. Tesiste yürütülen faaliyetlerde 30.11.2022 tarih ve 32029 sayılı Resmi Gazete’de yayınl…"
+          },
+          {
+            "page": 35,
+            "match": "Deprem",
+            "snippet": "…eozoyik yaşlı temel kayaçlar ve onların üzerinde Tersiyer tortuları izlenir. Bilindiği gibi İzmir kenti 1.Derecede Deprem kuşağında yer almaktadır. İzmir yöresinde üç farklı tektonik kuşak yer alır. Bu kuşaklardan “Menderes Masifi”, tabanda…"
+          }
+        ]
+      },
+      "cost_and_capacity": {
+        "label": "Project Cost, Power & Capacity",
+        "page_count": 21,
+        "pages": [
+          2,
+          3,
+          6,
+          10,
+          16,
+          18,
+          24,
+          25,
+          42,
+          54,
+          71,
+          124,
+          126,
+          128,
+          129,
+          131,
+          132,
+          134,
+          276,
+          281,
+          282
+        ],
+        "samples": [
+          {
+            "page": 2,
+            "match": "Proje Bedeli",
+            "snippet": "…ojenin Adı: Çelik Konstrüksiyon Ürünleri Üretimi Faaliyetine Deniz Araçlarının Parça ve Aksamlarının Üretimi İlavesi Proje Bedeli: 27.820.519,55 TL Proje İçin Seçilen Yerin Açık Adresi (İli, İlçesi, Mevkii): İzmir İli, Aliağa İlçesi, Aliağa Org…"
+          },
+          {
+            "page": 3,
+            "match": "kapasite",
+            "snippet": "…jenin ve Yerin Alternatifleri (proje teknolojisinin ve proje alanının seçilme nedenleri) 1 b) Projenin iş akım şeması, kapasitesi, kapladığı alan, teknolojisi, çalışacak personel sayısı, ...........................................................…"
+          },
+          {
+            "page": 6,
+            "match": "Kapasite",
+            "snippet": "…için İl Müdürlüğünden 11.08.2025 tarih ve 13260984 sayılı yazı ile ÇED Kapsamdışı görüşü bulunmaktadır. Ancak güncel Kapasite Raporunda faaliyet konusu olarak belirtilen \"Araç Üstü Mobil Vinç ile Endüstriyel Sınai Tesisler (Çelik Yapılar, Taşıy…"
+          },
+          {
+            "page": 10,
+            "match": "kapasite",
+            "snippet": "…tine Deniz Araçlarının Parça ve Aksamlarının Üretimi İlavesi PROJE TANITIM DOSYASI 3 b) Projenin iş akım şeması, kapasitesi, kapladığı alan, yatırım bedeli, teknolojisi, çalışacak personel sayısı. 1.b.1. Projenin İş Akım Şeması Brontes…"
+          },
+          {
+            "page": 16,
+            "match": "Kapasite",
+            "snippet": "…timi Faaliyetine Deniz Araçlarının Parça ve Aksamlarının Üretimi İlavesi PROJE TANITIM DOSYASI 9 1.b.2. Projenin Kapasitesi İşletmede; Araç üstü mobil vinçler, Endüstriyel sınai tesisler (Çelik yapılar, taşıyıcı bant konveyör, karıştırıc…"
+          },
+          {
+            "page": 18,
+            "match": "1.500.000 TL",
+            "snippet": "…1 Kaynak ağzı açma makinası 2 Dekupaj testere tezgahı 1 Elektrot kurutma fırını 2 Kira Sözleşmesi (1 yıl) 1 1.500.000 TL x 12 =18.000.000 TL Nakliye, Montaj vb. Diğer Giderler 1 500.000 TL TOPLAM YATIRIM BEDELİ 27.820.519,55 TL *…"
+          },
+          {
+            "page": 18,
+            "match": "18.000.000 TL",
+            "snippet": "…makinası 2 Dekupaj testere tezgahı 1 Elektrot kurutma fırını 2 Kira Sözleşmesi (1 yıl) 1 1.500.000 TL x 12 =18.000.000 TL Nakliye, Montaj vb. Diğer Giderler 1 500.000 TL TOPLAM YATIRIM BEDELİ 27.820.519,55 TL **25.09.2026 tarih ve…"
+          },
+          {
+            "page": 18,
+            "match": "500.000 TL",
+            "snippet": "…ma fırını 2 Kira Sözleşmesi (1 yıl) 1 1.500.000 TL x 12 =18.000.000 TL Nakliye, Montaj vb. Diğer Giderler 1 500.000 TL TOPLAM YATIRIM BEDELİ 27.820.519,55 TL **25.09.2026 tarih ve 73664 sayılı 01.05.2028 tarihine kadar geçerli kapasi…"
+          }
+        ]
+      }
+    },
+    "audit_checks": {
+      "mentions_field_survey": true,
+      "mentions_literature_only_cue": false,
+      "mentions_seasonal_sampling": false,
+      "mentions_cumulative_impact": true,
+      "mentions_olive_law_3573": false,
+      "mentions_groundwater_or_aquifer": true,
+      "mentions_iucn_or_endemic": true
+    }
+  }
+}

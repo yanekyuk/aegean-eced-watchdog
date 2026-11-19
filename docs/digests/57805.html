@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>e-ÇED Pre-Digest #57805 — AKHİSAR</title>
+  <style>
+:root {
+  --bg: #0f1216;
+  --surface: #171c22;
+  --border: #262e38;
+  --text: #e6edf3;
+  --muted: #8b949e;
+  --accent: #58a6ff;
+  --red: #f85149;
+  --amber: #d29922;
+  --green: #3fb950;
+  --badge-bg: #212830;
+}
+@media (prefers-color-scheme: light) {
+  :root {
+    --bg: #f6f8fa;
+    --surface: #ffffff;
+    --border: #d0d7de;
+    --text: #1f2328;
+    --muted: #656d76;
+    --accent: #0969da;
+    --red: #cf222e;
+    --amber: #9a6700;
+    --green: #1a7f37;
+    --badge-bg: #eef2f6;
+  }
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.5;
+}
+.wrap { max-width: 1220px; margin: 0 auto; padding: 24px 18px 64px; }
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+header { border-bottom: 1px solid var(--border); padding-bottom: 16px; margin-bottom: 20px; }
+h1 { margin: 0 0 6px; font-size: 1.55rem; }
+.sub { color: var(--muted); font-size: 0.92rem; margin: 0; }
+.meta-bar { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 12px; font-size: 0.85rem; color: var(--muted); }
+.stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 10px; margin: 16px 0 20px; }
+.stat { background: var(--surface); border: 1px solid var(--border); border-radius: 8px; padding: 12px 14px; }
+.stat .num { font-size: 1.45rem; font-weight: 700; }
+.stat .lbl { font-size: 0.78rem; color: var(--muted); }
+.controls { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; margin-bottom: 16px; }
+input[type="search"] {
+  flex: 1 1 240px;
+  padding: 8px 12px;
+  border-radius: 6px;
+  border: 1px solid var(--border);
+  background: var(--surface);
+  color: var(--text);
+  font-size: 0.92rem;
+}
+button.pill {
+  padding: 6px 11px;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: var(--surface);
+  color: var(--text);
+  cursor: pointer;
+  font-size: 0.82rem;
+}
+button.pill.active { background: var(--accent); border-color: var(--accent); color: #fff; font-weight: 600; }
+.cards { display: flex; flex-direction: column; gap: 10px; }
+.card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 14px 16px;
+}
+.card.prio { border-left: 4px solid var(--accent); }
+.row-top { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px; align-items: baseline; }
+.title { font-weight: 600; font-size: 0.98rem; }
+.badges { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 6px; }
+.badge {
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  background: var(--badge-bg);
+  border: 1px solid var(--border);
+}
+.badge.urgent { border-color: var(--red); color: var(--red); font-weight: 600; }
+.badge.warn { border-color: var(--amber); color: var(--amber); font-weight: 600; }
+.badge.ok { border-color: var(--green); color: var(--green); }
+.badge.muted { color: var(--muted); }
+.detail { font-size: 0.86rem; color: var(--muted); margin: 8px 0; }
+.actions { display: flex; flex-wrap: wrap; gap: 12px; font-size: 0.84rem; margin-top: 8px; }
+.notice {
+  margin-top: 28px;
+  padding: 12px 14px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  font-size: 0.82rem;
+  color: var(--muted);
+}
+table.kv { width: 100%; border-collapse: collapse; margin: 12px 0; font-size: 0.9rem; }
+table.kv th, table.kv td { border: 1px solid var(--border); padding: 8px 10px; text-align: left; vertical-align: top; }
+table.kv th { width: 220px; background: var(--badge-bg); }
+code { background: var(--badge-bg); padding: 1px 5px; border-radius: 4px; font-size: 0.85em; }
+blockquote { margin: 10px 0; padding: 10px 14px; border-left: 3px solid var(--accent); background: var(--surface); font-size: 0.9rem; }
+.hit { margin: 6px 0; font-size: 0.88rem; }
+.pno { font-weight: 700; color: var(--accent); }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div style="font-size:0.85rem;margin-bottom:8px;"><a href="../index.html">← Back to Aegean e-ÇED Watchdog</a> · <a href="57805.md">Raw Markdown (.md)</a></div>
+    <h1>e-ÇED Pre-Digest #57805 — AKHİSAR / MANİSA</h1>
+    <p class="sub">45/2012-11 HAMMADDE ÜRETİM İZİN BELGELİ DOĞANKAYA KALKER OCAĞI, KIRMA-ELEME TESİSİ, MEKANİK PLENT TESİSİ KAPASİTE ARTIŞI VE İLAVE ASFALT PLENT TESİSİ, HAZIR BETON SANTRALİ</p>
+    <div class="badges" style="margin-top:10px;">
+      <span class="badge">ÇED Gerekli Değil/ÇED Olumlu</span>
+      <span class="badge">Ek-2</span>
+      <span class="badge ok">İYUK 20/A · 20d left (2026-12-10)</span>
+    </div>
+  </header>
+
+  <table class="kv">
+    <tr><th>Project Owner</th><td>KARAYOLLARI GENEL MÜDÜRLÜĞÜ 2. BÖLGE MÜDÜRLÜĞÜ</td></tr>
+    <tr><th>Consulting Firm</th><td>BERKA MÜH. ÇEVRE MADENCİLİK VE DAN. HİZMETLERİ   LTD. ŞTİ.</td></tr>
+    <tr><th>Sector</th><td>I., II. ve V. Grup Madenler / II. Grup Madenler</td></tr>
+    <tr><th>Announcement Date</th><td><code>10.11.2026</code> (uploaded <code>26/02/2026 11:59:22</code>)</td></tr>
+    <tr><th>PDF Coverage</th><td>77.10 MB · 675 pages (629 text / 46 scanned-or-image) · SHA-256 <code>6866d69bc31d3c15…</code></td></tr>
+    <tr><th>Official Links</th><td><a href="http://eced.csb.gov.tr/jsp/ek1/57805" target="_blank" rel="noopener">e-ÇED Portal Record</a> · <a href="http://eced.csb.gov.tr/jsp/dosya/dosyaGoster.htm?tempAd=sign3370288994246805858.pdf&amp;orjinalAd=e-imza.pdf&amp;yuklemeTarihi=2026-10-30" target="_blank" rel="noopener">Official PDF</a></td></tr>
+  </table>
+
+  <h2>Official Announcement Text</h2>
+  <blockquote>MANİSA ili AKHİSAR,  ilcesinde MANİSA ili AKHİSAR,  ilcesi DOĞANKAYA MAHALLESİ mevkiindeki KARAYOLLARI GENEL MÜDÜRLÜĞÜ 2. BÖLGE MÜDÜRLÜĞÜ  tarafından yapılması planlanan 45/2012-11 HAMMADDE ÜRETİM İZİN BELGELİ DOĞANKAYA KALKER OCAĞI, KIRMA-ELEME TESİSİ, MEKANİK PLENT TESİSİ KAPASİTE ARTIŞI VE İLAVE ASFALT PLENT TESİSİ, HAZIR BETON SANTRALİ  projesi ile ilgili olarak Bakanlığımıza sunulan PTD Dosyası incelenmiş ve değerlendirilmiştir  ÇED Yönetmeliği&#x27;nin 17. maddesi gereğince 45/2012-11 HAMMADDE ÜRETİM İZİN BELGELİ DOĞANKAYA KALKER OCAĞI, KIRMA-ELEME TESİSİ, MEKANİK PLENT TESİSİ KAPASİTE ARTIŞI VE İLAVE ASFALT PLENT TESİSİ, HAZIR BETON SANTRALİ  projesi&#x27;ne Valiliğimizce &#x27;ÇED Olumlu (Kapsam Ek-2)&#x27; kararı verilmiştir.</blockquote>
+
+  <h2>Automated Baseline &amp; Red-Flag Scan</h2>
+  <table class="kv"><tr><th>Field survey (*arazi/saha çalışması*)</th><td><span class="badge ok">Present</span></td></tr>
+<tr><th>Literature review (*literatür taraması*)</th><td><span class="badge ok">Present</span></td></tr>
+<tr><th>Seasonal sampling (*mevsimsel*)</th><td><span class="badge ok">Present</span></td></tr>
+<tr><th>Cumulative impact (*kümülatif*)</th><td><span class="badge ok">Present</span></td></tr>
+<tr><th>Olive Law / groves (*3573 / zeytinlik*)</th><td><span class="badge ok">Present</span></td></tr>
+<tr><th>Groundwater / aquifer (*akifer / yeraltı suyu*)</th><td><span class="badge ok">Present</span></td></tr>
+<tr><th>Endemic / IUCN / Bern Convention</th><td><span class="badge ok">Present</span></td></tr></table>
+  <p class="sub">Scanned annex maps/letters without OCR are excluded from automated text scan.</p>
+
+  <h2>Page-Cited Extracted Evidence</h2>
+  <div class="cards"><section class="card"><h3>Coordinates, Parcel &amp; Footprint <span style="color:var(--muted);font-weight:400;font-size:0.85rem">(98 pages: s.3, s.11, s.13, s.14, s.19, s.20, s.27, s.32, s.33, s.34, s.35, s.36, s.57, s.58 (+84 more))</span></h3><div class="hit"><span class="pno">[s. 3]</span> <code>utm</code> — …45- Madencilik projeleri; a) Madenlerin çıkarılması (Ek-1 listesinde yer almayanlar), e) Kırma, eleme, yıkama, kurutma ve cevher hazırlama işlemlerinden en az birini yapan tesisler, sınıfında yer almaktadır. Sektör: I., II. ve V.…</div>
+<div class="hit"><span class="pno">[s. 11]</span> <code>KOORDİNAT</code> — …BETON SATRALİ PROJESİ 2. BÖLGE MÜDÜRLÜĞÜ PROJE TANITIM DOSYASI 1 EKLER DİZİNİ EK-1 PROJE İÇİN SEÇİLEN YERİN KOORDİNATLARI EK-2 PROJE ALANI VE YAKIN ÇEVRESİNİN MEVCUT ARAZİ KULLANIMINI DEĞERLENDİRMEK İÇİN; YERLEŞİM ALANLARININ, ULAŞIM…</div>
+<div class="hit"><span class="pno">[s. 13]</span> <code>9,96 ha</code> — …li Değildir Kararı verilmiştir (Bkz. Ek-7.2). 45/2012-11 Hammadde Üretim İzin Belgeli sahada geçmiş dönemde alınmış 9,96 ha’lık alan için “ÇED Gerekli Değildir” kararı bulunmaktadır. İşbu proje kapsamında mevcut ocak alanında kapasite artışı…</div>
+<div class="hit"><span class="pno">[s. 13]</span> <code>5,88 ha</code> — …ı planlanmaktadır. ÇED kararına göre ocak sahası içerisinde yer alan mekanik plent tesisinin yer değişikliği yapılarak 5,88 ha büyüklüğündeki ilave ÇED talep alanı içerisinde işletilmesi ve kapasitesinin artırılması planlanmaktadır. Ayrıca söz…</div>
+<div class="hit"><span class="pno">[s. 13]</span> <code>15,84 ha</code> — …azır beton tesisinin işletilmesi ve ürün stok, pasa stok alanı planlanmaktadır. Bu kapsamında Nihai durumda ÇED alanı 15,84 ha’dır. İlave ÇED talep alanı olarak değerlendirilen 5,88 ha büyüklüğündeki saha, 45/2012- 11 Hammadde Üretim İzin Bel…</div>
+<div class="hit"><span class="pno">[s. 14]</span> <code>1,65 km</code> — …uçuşu yaklaşık 63 km güneydoğusunda, Akhisar İlçesinin yaklaşık 15 km güneydoğusunda, Doğankaya Mahallesinin yaklaşık 1,65 km güneydoğusunda bulunmaktadır. Akhisar Gördes ile ulaşımın sağlandığı proje alanına en yakın yerleşim alanı Doğankaya M…</div></section><section class="card"><h3>Water Use, Hydrogeology &amp; Discharge <span style="color:var(--muted);font-weight:400;font-size:0.85rem">(45 pages: s.2, s.10, s.14, s.19, s.24, s.25, s.30, s.37, s.48, s.54, s.57, s.58, s.59, s.60 (+31 more))</span></h3><div class="hit"><span class="pno">[s. 2]</span> <code>100 m3/saat</code> — …Değerlendirmeye Tabi Projeler 18-Çimento bazlı yapı elemanları ve/veya hazır beton tesisleri; b) Üretim kapasitesi 100 m3/saat veya üzerinde olan hazır beton tesisleri 22- Asfalt Plent Tesisleri</div>
+<div class="hit"><span class="pno">[s. 10]</span> <code>Yeraltı Suyu</code> — …rliliğinin Kontrolü Yönetmeliği sn Saniye UVS Uzun Vadeli Sınır Değer vb. ve benzeri vs. Vesaire YAS Yeraltı Suyu YHGS Yaban Hayatı Geliştirme Sahası % Yüzde ‰ Binde 0C Santigrat derece</div>
+<div class="hit"><span class="pno">[s. 14]</span> <code>100 m3/saat</code> — …ASFALT PLENT TESİSİ, HAZIR BETON SATRALİ PROJESİ 2. BÖLGE MÜDÜRLÜĞÜ PROJE TANITIM DOSYASI 4 HAZIR BETON - 100 m3/saat 100 m3/saat ASFALT PLENT - 300 ton/saat 300 ton/saat Proje alanında çalışma süresi mevsim koşulları göz önün…</div>
+<div class="hit"><span class="pno">[s. 19]</span> <code>100 m3/saat</code> — ….000 ton/yıl - 390.000 ton/yıl MEKANİK PLENT 200.000 ton/yıl 190.000 ton/yıl 390.000 ton/yıl HAZIR BETON - 100 m3/saat 100 m3/saat ASFALT PLENT - 300 ton/saat 300 ton/saat</div>
+<div class="hit"><span class="pno">[s. 24]</span> <code>atıksu</code> — …i ile elde edilen karışım ürün silosuna alınır. Mekanik plent tesisinde kullanılacak su ürün bünyesinde kalacağı için atıksu oluşmayacaktır. Mekanik plent tesisi iş akım şeması aşağıda verilmiştir. Şekil 3. Mekanik Plent Tesisi İş Akım Şe…</div>
+<div class="hit"><span class="pno">[s. 25]</span> <code>100 m3/saat</code> — …ullarına göre yılda 10 ay, ayda 24 gün, günde 8 saat bir vardiya çalışılacaktır. Proje kapsamında hazır beton santrali 100 m3/saat işletilmesi planlanmaktadır. Hazır Beton üretiminin, su ölçme ve karıştırma işlemlerinin santralde veya transmiks…</div></section><section class="card"><h3>Protected Zones, Forests &amp; Olive Groves <span style="color:var(--muted);font-weight:400;font-size:0.85rem">(16 pages: s.4, s.14, s.53, s.120, s.123, s.134, s.137, s.152, s.153, s.159, s.185, s.241, s.345, s.354 (+2 more))</span></h3><div class="hit"><span class="pno">[s. 4]</span> <code>orman alanı</code> — ….............................................................. 114 a) Mevcut arazi kullanımı ve kalitesi (tarım alanı, orman alanı, planlı alan, su yüzeyi ve benzeri). .................................................................................…</div>
+<div class="hit"><span class="pno">[s. 14]</span> <code>Orman Alanı</code> — …ine bağlı evlerdir. Proje sahası İzmir-Manisa Planlama Bölgesi 1/100.000 Ölçekli Çevre Düzeni Planı K19 paftasında “Orman Alanı” kullanımında yer almaktadır. Planlanan faaliyet kapsamında</div>
+<div class="hit"><span class="pno">[s. 53]</span> <code>Orman Alanı</code> — …Çevre Düzeni Planı Proje sahası İzmir-Manisa Planlama Bölgesi 1/100.000 Ölçekli Çevre Düzeni Planı K19 paftasında “Orman Alanı” kullanımında yer almaktadır. Planlanan faaliyet kapsamında İzmir-Manisa Planlama Bölgesi 1/100.000 Ölçekli Çevre Düze…</div>
+<div class="hit"><span class="pno">[s. 120]</span> <code>orman alanı</code> — …nlar ve ormancılık çalışmalarına olumsuz etkisi bulunmamaktadır.” belirtilmiştir. Proje kapsamında 6392 m2 verimli orman alanı çıkartılmıştır. İzmir Orman Bölge Müdürlüğü 21550574 sayılı görüş yazısında “ÇED görüşüne konu 152.000,00 m² tal…</div>
+<div class="hit"><span class="pno">[s. 120]</span> <code>Milli Park</code> — …“Yapılan inceleme sonucunda; söz konusu alan 2873 sayılı Milli Parklar Kanunu kapsamında yer alan korunan alanlarda (Milli Park, Tabiat Parkı, Tabiat Koruma Alanı, Tabiat Anıtı), 4915 sayılı Kara Avcılığı Kanunu kapsamındaki kısıtlı alanlarda (Ya…</div>
+<div class="hit"><span class="pno">[s. 120]</span> <code>Tabiat Parkı</code> — …nceleme sonucunda; söz konusu alan 2873 sayılı Milli Parklar Kanunu kapsamında yer alan korunan alanlarda (Milli Park, Tabiat Parkı, Tabiat Koruma Alanı, Tabiat Anıtı), 4915 sayılı Kara Avcılığı Kanunu kapsamındaki kısıtlı alanlarda (Yaban Hayatı Ko…</div></section><section class="card"><h3>Flora, Fauna &amp; Baseline Methodology <span style="color:var(--muted);font-weight:400;font-size:0.85rem">(31 pages: s.138, s.152, s.154, s.156, s.157, s.159, s.160, s.161, s.162, s.163, s.164, s.165, s.166, s.168 (+17 more))</span></h3><div class="hit"><span class="pno">[s. 138]</span> <code>endemik</code> — …t ormanları sınırları içindeki tohum meşcereleri, gen koruma alanları, muhafaza ormanları, orman içi dinlenme yerleri, endemik ve korunması gereken nadir ekosistemlerin bulunduğu alanlarda maden aranması ve işletilmesi, Çevre ve Orman Bakanlığı…</div>
+<div class="hit"><span class="pno">[s. 152]</span> <code>BERN Sözleşmesi</code> — …özleşmeler uyarınca korunması gerekli alanlar a) &quot;Avrupa’nın Yaban Hayatı ve Yaşama Ortamlarını Koruma Sözleşmesi&quot; (BERN Sözleşmesi) uyarınca koruma altına alınmış alanlardan &quot;Önemli Deniz Kaplumbağası Üreme Alanlarında belirtilen I. ve II. Koruma Bö…</div>
+<div class="hit"><span class="pno">[s. 154]</span> <code>endemik</code> — …r. d) Bilimsel araştırmalar için önem arz eden ve/veya nesli tehlikeye düşmüş veya düşebilir türler ve ülkemiz için endemik olan türlerin yaşama ortamı olan alanlar, biyosfer rezervi, biyotoplar, biyogenetik rezerv alanları, benzersiz özellik…</div>
+<div class="hit"><span class="pno">[s. 154]</span> <code>Flora ve Fauna</code> — …yerüstü ve yeraltı suyu kaynaklarının tabii su toplama alanı içerisinde kalan alanlar, içerisinde bulunmamaktadır. Flora ve Fauna Proje alanı ve çevresine ait flora ve fauna çalışması Biyolog Togay YENİDOĞAN tarafından 2025 Yılı Temmuz ayı içeri…</div>
+<div class="hit"><span class="pno">[s. 154]</span> <code>arazi çalışması</code> — …oje alanı ve çevresine ait flora ve fauna çalışması Biyolog Togay YENİDOĞAN tarafından 2025 Yılı Temmuz ayı içerisinde arazi çalışması gerçekleştirilmiştir. Flora-fauna çalışmasını gerçekleştiren uzmana ait bilgiler (özgeçmiş, diploma vb.) EK-7.3 de ver…</div>
+<div class="hit"><span class="pno">[s. 156]</span> <code>arazi çalışması</code> — …Listesi web sitesinden yararlanılmıştır. Proje alanı ve etki alanı fauna türlerinin belirlenebilmesi için, alanda arazi çalışması yapılmış ancak fauna türleri hareketliliklerinden dolayı tespit edilememiştir. Bu doğrultuda proje alanı ve çevresini…</div></section><section class="card"><h3>Emissions, Geochemistry &amp; Waste <span style="color:var(--muted);font-weight:400;font-size:0.85rem">(115 pages: s.2, s.6, s.10, s.18, s.62, s.66, s.74, s.79, s.81, s.83, s.84, s.86, s.87, s.89 (+101 more))</span></h3><div class="hit"><span class="pno">[s. 2]</span> <code>kümülatif</code> — …genişletilmesinin planlanması halinde, planlanan projenin etkileri, mevcut karara esas çevresel etkiler ile birlikte kümülatif olarak değerlendirilir EK-2 Listesi Çevresel Etkileri Ön İnceleme Ve Değerlendirmeye Tabi Projeler 18-Çimento ba…</div>
+<div class="hit"><span class="pno">[s. 6]</span> <code>Gürültü</code> — …eri ............................................ 89 Tablo 57. Ocak Alanı ve Kırma Eleme Tesisi İşletme Aşaması Eşdeğer Gürültü Düzeyi . 90 Tablo 58. Mekanik Plent Tesisi ve Hazır Beton Santralinde İşletme Aşaması Eşdeğer Gürültü Düzeyi ........…</div>
+<div class="hit"><span class="pno">[s. 10]</span> <code>CO2</code> — …z. Bakınız cc Kübik Santimetre (“Cubic Centimetre”) ÇED Çevresel Etki Değerlendirmesi CO Karbonmonoksit CO2 Karbondioksit DSİ Devlet Su İşleri ha Hektar HKKD Hava Kirlenmesi Katkı Değeri HÜİB Hammadde Üretim İz…</div>
+<div class="hit"><span class="pno">[s. 10]</span> <code>Karbondioksit</code> — …akınız cc Kübik Santimetre (“Cubic Centimetre”) ÇED Çevresel Etki Değerlendirmesi CO Karbonmonoksit CO2 Karbondioksit DSİ Devlet Su İşleri ha Hektar HKKD Hava Kirlenmesi Katkı Değeri HÜİB Hammadde Üretim İzin Belgesi Kcal/…</div>
+<div class="hit"><span class="pno">[s. 10]</span> <code>PM10</code> — …en Tetkik ve Arama µg/m3 Mikrogram/metreküp µm Mikrometre No Numara NOx Azot Oksitler O2 Oksijen PM10 Partikül Madde PTD Proje Tanıtım Dosyası R.N. Ruhsat Numaralı SKKY Su Kirliliği Kontrol Yönetmeliği SKHKKY…</div>
+<div class="hit"><span class="pno">[s. 18]</span> <code>CO2</code> — …ayrı kristal şekli, doğada hiç bir zaman saf halde bulunmayan Kalsit ve Aragonit&#x27; dir. Teorik olarak % 56 CaO ve % 44 CO2 ihtiva ederler. Kalsitin rhombohedral yapıda ve sertliğinin 3 Mohs olmasına karşın, 400 °C&#x27; de kalsite dönüşen Aragon…</div></section><section class="card"><h3>Project Cost, Power &amp; Capacity <span style="color:var(--muted);font-weight:400;font-size:0.85rem">(105 pages: s.1, s.2, s.4, s.13, s.14, s.16, s.17, s.19, s.20, s.21, s.24, s.27, s.28, s.29 (+91 more))</span></h3><div class="hit"><span class="pno">[s. 1]</span> <code>KAPASİTE</code> — …45/2012-11 HAMMADDE ÜRETİM İZİN BELGELİ DOĞANKAYA KALKER OCAĞI, KIRMA-ELEME TESİSİ, MEKANİK PLENT TESİSİ KAPASİTE ARTIŞI VE İLAVE ASFALT PLENT TESİSİ, HAZIR BETON SANTRALİ PROJESİ MANİSA İLİ, AKHİSAR İLÇESİ, DOĞANKAYA…</div>
+<div class="hit"><span class="pno">[s. 2]</span> <code>KAPASİTE</code> — …n Adı 45/2012-11 HAMMADDE ÜRETİM İZİN BELGELİ DOĞANKAYA KALKER OCAĞI, KIRMA- ELEME TES İS İ, MEKANİK PLENT TESİSİ KAPASİTE ARTIŞ I VE İLAVE ASFALT PLENT TESİSİ, HAZIR BETON SANTRALİ Proje Bedeli 2.500.000 TL Proje İçin Seçilen Yerin Açık…</div>
+<div class="hit"><span class="pno">[s. 2]</span> <code>Proje Bedeli</code> — …ĞI, KIRMA- ELEME TES İS İ, MEKANİK PLENT TESİSİ KAPASİTE ARTIŞ I VE İLAVE ASFALT PLENT TESİSİ, HAZIR BETON SANTRALİ Proje Bedeli 2.500.000 TL Proje İçin Seçilen Yerin Açık Adresi (İli, İlçesi, Mevkii) MANİSA İLİ, AKHİSAR İLÇESİ, DOĞANKAYA MAH…</div>
+<div class="hit"><span class="pno">[s. 2]</span> <code>2.500.000 TL</code> — …EME TES İS İ, MEKANİK PLENT TESİSİ KAPASİTE ARTIŞ I VE İLAVE ASFALT PLENT TESİSİ, HAZIR BETON SANTRALİ Proje Bedeli 2.500.000 TL Proje İçin Seçilen Yerin Açık Adresi (İli, İlçesi, Mevkii) MANİSA İLİ, AKHİSAR İLÇESİ, DOĞANKAYA MAHALLESİ Projen…</div>
+<div class="hit"><span class="pno">[s. 2]</span> <code>Kapasite</code> — …lt Sektör) 29.07.2022 Tarih 31907 sayılı Resmi Gazetede yayımlanan “Çevresel Etki Değerlendirmesi Yönetmeliği” Kapasite Artışları MADDE 20- (1) &quot;ÇED Olumlu&quot; veya &quot;ÇED Gerekli Değildir&quot; kararı bulunan ve eşik değeri olan projelerde yap…</div>
+<div class="hit"><span class="pno">[s. 4]</span> <code>kapasite</code> — …........................................................................................ 6 b) Projenin iş akım şeması, kapasitesi, kapladığı alan, teknolojisi, çalışacak personel sayısı. ...........................................................…</div></section></div>
+
+  <h2>Document Navigation Map</h2>
+  <ul><li><span class="pno">[s. 318]</span> GidenEvrakKGM</li>
+<li><span class="pno">[s. 318]</span> KayitTarihi</li>
+<li><span class="pno">[s. 318]</span> GidecegiYerAdiBM</li>
+<li><span class="pno">[s. 318]</span> GidecegiAltYerAdiBM</li>
+<li><span class="pno">[s. 318]</span> GidecegiYerAdresBM</li></ul>
+
+  <div class="notice">
+    Informational civic transparency aid generated from official public Ministry announcements at <code>eced-duyuru.csb.gov.tr</code>. Every figure cites its 1-based PDF page <code>[s. N]</code>. Statutory deadlines are computed automatically and must be verified by qualified legal counsel.
+  </div>
+</div>
+</body>
+</html>

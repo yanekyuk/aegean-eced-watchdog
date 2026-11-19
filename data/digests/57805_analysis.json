@@ -1,0 +1,537 @@
+{
+  "filing": {
+    "province": "MANİSA",
+    "district": "AKHİSAR",
+    "project_name": "45/2012-11 HAMMADDE ÜRETİM İZİN BELGELİ DOĞANKAYA KALKER OCAĞI, KIRMA-ELEME TESİSİ, MEKANİK PLENT TESİSİ KAPASİTE ARTIŞI VE İLAVE ASFALT PLENT TESİSİ, HAZIR BETON SANTRALİ",
+    "project_owner": "KARAYOLLARI GENEL MÜDÜRLÜĞÜ 2. BÖLGE MÜDÜRLÜĞÜ",
+    "sector": "I., II. ve V. Grup Madenler",
+    "sub_sector": "II. Grup Madenler",
+    "decision_type": "ÇED Gerekli Değil/ÇED Olumlu",
+    "announcement_date_tr": "10.11.2026",
+    "project_type": "Ek-2",
+    "detail_text": "MANİSA ili AKHİSAR,  ilcesinde MANİSA ili AKHİSAR,  ilcesi DOĞANKAYA MAHALLESİ mevkiindeki KARAYOLLARI GENEL MÜDÜRLÜĞÜ 2. BÖLGE MÜDÜRLÜĞÜ  tarafından yapılması planlanan 45/2012-11 HAMMADDE ÜRETİM İZİN BELGELİ DOĞANKAYA KALKER OCAĞI, KIRMA-ELEME TESİSİ, MEKANİK PLENT TESİSİ KAPASİTE ARTIŞI VE İLAVE ASFALT PLENT TESİSİ, HAZIR BETON SANTRALİ  projesi ile ilgili olarak Bakanlığımıza sunulan PTD Dosyası incelenmiş ve değerlendirilmiştir  ÇED Yönetmeliği'nin 17. maddesi gereğince 45/2012-11 HAMMADDE ÜRETİM İZİN BELGELİ DOĞANKAYA KALKER OCAĞI, KIRMA-ELEME TESİSİ, MEKANİK PLENT TESİSİ KAPASİTE ARTIŞI VE İLAVE ASFALT PLENT TESİSİ, HAZIR BETON SANTRALİ  projesi'ne Valiliğimizce 'ÇED Olumlu (Kapsam Ek-2)' kararı verilmiştir.",
+    "detail_links": [
+      {
+        "text": "PTD Dosyası",
+        "href": "http://eced.csb.gov.tr/jsp/ek1/57805"
+      }
+    ],
+    "documents": [
+      {
+        "portal_doc_url": "http://eced.csb.gov.tr/jsp/ek1/57805",
+        "filing_id": "57805",
+        "consulting_firm": "BERKA MÜH. ÇEVRE MADENCİLİK VE DAN. HİZMETLERİ   LTD. ŞTİ.",
+        "submitted_at": "26/02/2026 11:59:22",
+        "pdf_urls": [
+          {
+            "label": "Dosya Göster",
+            "url": "http://eced.csb.gov.tr/jsp/dosya/dosyaGoster.htm?tempAd=sign3370288994246805858.pdf&orjinalAd=e-imza.pdf&yuklemeTarihi=2026-10-30"
+          }
+        ]
+      }
+    ],
+    "announcement_date": "2026-11-10",
+    "statutory_clocks": [
+      {
+        "code": "iyuk_20a",
+        "kind": "İYUK 20/A annulment lawsuit (30d; İYUK 11 does not toll)",
+        "deadline": "2026-12-10",
+        "days_remaining": 20
+      }
+    ],
+    "priority_district": true,
+    "filing_key": "57805:10.11.2026:ÇED Gerekli Değil/ÇED Olumlu",
+    "first_seen_at": "2026-11-20T00:44:16"
+  },
+  "pdf_info": {
+    "filename": "57805.pdf",
+    "bytes": 80848664,
+    "sha256": "6866d69bc31d3c15320194589a0e81aafe36c66bce5b82f5502291457c83c6ed",
+    "cached": false
+  },
+  "analysis": {
+    "page_count": 675,
+    "total_chars": 1330857,
+    "text_pages": 629,
+    "scanned_or_blank_pages": 46,
+    "scanned_page_sample": [
+      218,
+      220,
+      223,
+      226,
+      227,
+      228,
+      229,
+      230,
+      231,
+      234,
+      236,
+      238,
+      240,
+      242,
+      244
+    ],
+    "headings": [
+      [
+        318,
+        "GidenEvrakKGM"
+      ],
+      [
+        318,
+        "KayitTarihi"
+      ],
+      [
+        318,
+        "GidecegiYerAdiBM"
+      ],
+      [
+        318,
+        "GidecegiAltYerAdiBM"
+      ],
+      [
+        318,
+        "GidecegiYerAdresBM"
+      ]
+    ],
+    "signals": {
+      "coordinates_and_footprint": {
+        "label": "Coordinates, Parcel & Footprint",
+        "page_count": 98,
+        "pages": [
+          3,
+          11,
+          13,
+          14,
+          19,
+          20,
+          27,
+          32,
+          33,
+          34,
+          35,
+          36,
+          57,
+          58,
+          60,
+          71,
+          72,
+          74,
+          76,
+          81,
+          82,
+          120,
+          121,
+          124,
+          127
+        ],
+        "samples": [
+          {
+            "page": 3,
+            "match": "utm",
+            "snippet": "…45- Madencilik projeleri; a) Madenlerin çıkarılması (Ek-1 listesinde yer almayanlar), e) Kırma, eleme, yıkama, kurutma ve cevher hazırlama işlemlerinden en az birini yapan tesisler, sınıfında yer almaktadır. Sektör: I., II. ve V.…"
+          },
+          {
+            "page": 11,
+            "match": "KOORDİNAT",
+            "snippet": "…BETON SATRALİ PROJESİ 2. BÖLGE MÜDÜRLÜĞÜ PROJE TANITIM DOSYASI 1 EKLER DİZİNİ EK-1 PROJE İÇİN SEÇİLEN YERİN KOORDİNATLARI EK-2 PROJE ALANI VE YAKIN ÇEVRESİNİN MEVCUT ARAZİ KULLANIMINI DEĞERLENDİRMEK İÇİN; YERLEŞİM ALANLARININ, ULAŞIM…"
+          },
+          {
+            "page": 13,
+            "match": "9,96 ha",
+            "snippet": "…li Değildir Kararı verilmiştir (Bkz. Ek-7.2). 45/2012-11 Hammadde Üretim İzin Belgeli sahada geçmiş dönemde alınmış 9,96 ha’lık alan için “ÇED Gerekli Değildir” kararı bulunmaktadır. İşbu proje kapsamında mevcut ocak alanında kapasite artışı…"
+          },
+          {
+            "page": 13,
+            "match": "5,88 ha",
+            "snippet": "…ı planlanmaktadır. ÇED kararına göre ocak sahası içerisinde yer alan mekanik plent tesisinin yer değişikliği yapılarak 5,88 ha büyüklüğündeki ilave ÇED talep alanı içerisinde işletilmesi ve kapasitesinin artırılması planlanmaktadır. Ayrıca söz…"
+          },
+          {
+            "page": 13,
+            "match": "15,84 ha",
+            "snippet": "…azır beton tesisinin işletilmesi ve ürün stok, pasa stok alanı planlanmaktadır. Bu kapsamında Nihai durumda ÇED alanı 15,84 ha’dır. İlave ÇED talep alanı olarak değerlendirilen 5,88 ha büyüklüğündeki saha, 45/2012- 11 Hammadde Üretim İzin Bel…"
+          },
+          {
+            "page": 14,
+            "match": "1,65 km",
+            "snippet": "…uçuşu yaklaşık 63 km güneydoğusunda, Akhisar İlçesinin yaklaşık 15 km güneydoğusunda, Doğankaya Mahallesinin yaklaşık 1,65 km güneydoğusunda bulunmaktadır. Akhisar Gördes ile ulaşımın sağlandığı proje alanına en yakın yerleşim alanı Doğankaya M…"
+          },
+          {
+            "page": 19,
+            "match": "9,96 ha",
+            "snippet": "…li Değildir Kararı verilmiştir (Bkz. Ek-7.2). 45/2012-11 Hammadde Üretim İzin Belgeli sahada geçmiş dönemde alınmış 9,96 ha’lık alan için “ÇED Gerekli Değildir” kararı bulunmaktadır. İşbu proje kapsamında mevcut ocak alanında kapasite artışı…"
+          },
+          {
+            "page": 19,
+            "match": "5,88 ha",
+            "snippet": "…ı planlanmaktadır. ÇED kararına göre ocak sahası içerisinde yer alan mekanik plent tesisinin yer değişikliği yapılarak 5,88 ha büyüklüğündeki ilave ÇED talep alanı içerisinde işletilmesi ve kapasitesinin artırılması planlanmaktadır. Ayrıca söz…"
+          }
+        ]
+      },
+      "water_and_discharge": {
+        "label": "Water Use, Hydrogeology & Discharge",
+        "page_count": 45,
+        "pages": [
+          2,
+          10,
+          14,
+          19,
+          24,
+          25,
+          30,
+          37,
+          48,
+          54,
+          57,
+          58,
+          59,
+          60,
+          64,
+          65,
+          66,
+          72,
+          107,
+          118,
+          119,
+          122,
+          144,
+          145,
+          146
+        ],
+        "samples": [
+          {
+            "page": 2,
+            "match": "100 m3/saat",
+            "snippet": "…Değerlendirmeye Tabi Projeler 18-Çimento bazlı yapı elemanları ve/veya hazır beton tesisleri; b) Üretim kapasitesi 100 m3/saat veya üzerinde olan hazır beton tesisleri 22- Asfalt Plent Tesisleri"
+          },
+          {
+            "page": 10,
+            "match": "Yeraltı Suyu",
+            "snippet": "…rliliğinin Kontrolü Yönetmeliği sn Saniye UVS Uzun Vadeli Sınır Değer vb. ve benzeri vs. Vesaire YAS Yeraltı Suyu YHGS Yaban Hayatı Geliştirme Sahası % Yüzde ‰ Binde 0C Santigrat derece"
+          },
+          {
+            "page": 14,
+            "match": "100 m3/saat",
+            "snippet": "…ASFALT PLENT TESİSİ, HAZIR BETON SATRALİ PROJESİ 2. BÖLGE MÜDÜRLÜĞÜ PROJE TANITIM DOSYASI 4 HAZIR BETON - 100 m3/saat 100 m3/saat ASFALT PLENT - 300 ton/saat 300 ton/saat Proje alanında çalışma süresi mevsim koşulları göz önün…"
+          },
+          {
+            "page": 19,
+            "match": "100 m3/saat",
+            "snippet": "….000 ton/yıl - 390.000 ton/yıl MEKANİK PLENT 200.000 ton/yıl 190.000 ton/yıl 390.000 ton/yıl HAZIR BETON - 100 m3/saat 100 m3/saat ASFALT PLENT - 300 ton/saat 300 ton/saat"
+          },
+          {
+            "page": 24,
+            "match": "atıksu",
+            "snippet": "…i ile elde edilen karışım ürün silosuna alınır. Mekanik plent tesisinde kullanılacak su ürün bünyesinde kalacağı için atıksu oluşmayacaktır. Mekanik plent tesisi iş akım şeması aşağıda verilmiştir. Şekil 3. Mekanik Plent Tesisi İş Akım Şe…"
+          },
+          {
+            "page": 25,
+            "match": "100 m3/saat",
+            "snippet": "…ullarına göre yılda 10 ay, ayda 24 gün, günde 8 saat bir vardiya çalışılacaktır. Proje kapsamında hazır beton santrali 100 m3/saat işletilmesi planlanmaktadır. Hazır Beton üretiminin, su ölçme ve karıştırma işlemlerinin santralde veya transmiks…"
+          },
+          {
+            "page": 30,
+            "match": "100 m3/saat",
+            "snippet": "…sinde üretilecek malzemenin hazır beton santralinde işleme tabi tutulacağı öngörülerek hazır beton santrali kapasitesi 100 m3/saat olarak belirlenmiştir. Bu kapsamda tesisin yıllık üretim miktarı tablosu aşağıda verilmiştir. Tablo 7. Hazır Beton…"
+          },
+          {
+            "page": 37,
+            "match": "yeraltısuyu",
+            "snippet": "…ğı olarak işletilmesi planlanan litolojik birimin yayılımı, kalınlığı, topoğrafik konumu, diğer birimlerle ilişkisi ve yeraltısuyu potansiyeli gibi verilerin birlikte değerlendirilmesi sonucunda yapılarak olan işletmenin çevrede var olan kaynak vey…"
+          }
+        ]
+      },
+      "protected_land_and_olive": {
+        "label": "Protected Zones, Forests & Olive Groves",
+        "page_count": 16,
+        "pages": [
+          4,
+          14,
+          53,
+          120,
+          123,
+          134,
+          137,
+          152,
+          153,
+          159,
+          185,
+          241,
+          345,
+          354,
+          372,
+          653
+        ],
+        "samples": [
+          {
+            "page": 4,
+            "match": "orman alanı",
+            "snippet": "….............................................................. 114 a) Mevcut arazi kullanımı ve kalitesi (tarım alanı, orman alanı, planlı alan, su yüzeyi ve benzeri). .................................................................................…"
+          },
+          {
+            "page": 14,
+            "match": "Orman Alanı",
+            "snippet": "…ine bağlı evlerdir. Proje sahası İzmir-Manisa Planlama Bölgesi 1/100.000 Ölçekli Çevre Düzeni Planı K19 paftasında “Orman Alanı” kullanımında yer almaktadır. Planlanan faaliyet kapsamında"
+          },
+          {
+            "page": 53,
+            "match": "Orman Alanı",
+            "snippet": "…Çevre Düzeni Planı Proje sahası İzmir-Manisa Planlama Bölgesi 1/100.000 Ölçekli Çevre Düzeni Planı K19 paftasında “Orman Alanı” kullanımında yer almaktadır. Planlanan faaliyet kapsamında İzmir-Manisa Planlama Bölgesi 1/100.000 Ölçekli Çevre Düze…"
+          },
+          {
+            "page": 120,
+            "match": "orman alanı",
+            "snippet": "…nlar ve ormancılık çalışmalarına olumsuz etkisi bulunmamaktadır.” belirtilmiştir. Proje kapsamında 6392 m2 verimli orman alanı çıkartılmıştır. İzmir Orman Bölge Müdürlüğü 21550574 sayılı görüş yazısında “ÇED görüşüne konu 152.000,00 m² tal…"
+          },
+          {
+            "page": 120,
+            "match": "Milli Park",
+            "snippet": "…“Yapılan inceleme sonucunda; söz konusu alan 2873 sayılı Milli Parklar Kanunu kapsamında yer alan korunan alanlarda (Milli Park, Tabiat Parkı, Tabiat Koruma Alanı, Tabiat Anıtı), 4915 sayılı Kara Avcılığı Kanunu kapsamındaki kısıtlı alanlarda (Ya…"
+          },
+          {
+            "page": 120,
+            "match": "Tabiat Parkı",
+            "snippet": "…nceleme sonucunda; söz konusu alan 2873 sayılı Milli Parklar Kanunu kapsamında yer alan korunan alanlarda (Milli Park, Tabiat Parkı, Tabiat Koruma Alanı, Tabiat Anıtı), 4915 sayılı Kara Avcılığı Kanunu kapsamındaki kısıtlı alanlarda (Yaban Hayatı Ko…"
+          },
+          {
+            "page": 123,
+            "match": "doğal sit",
+            "snippet": "…be Müdürlüğü 16.03.2026 tarih ve 15175793 sayılı görüş yazısında; “İl Müdürlüğümüzce tescilli tabiat varlıkları ve doğal sit envanterinde yapılan inceleme neticesinde; ilgi yazınız eki haritalarda sınırları gösterilen talep sahasının 2863 say…"
+          },
+          {
+            "page": 123,
+            "match": "Özel Çevre Koruma",
+            "snippet": "…t Varlıklarını Koruma Kanunu kapsamında ilan edilen doğal sit alanı ve 2872 sayılı Çevre Kanunu kapsamında ilan edilen Özel Çevre Koruma Bölgesi sınırları dışında kaldığı tespit edilmiş olup bahse konu talep sahası içerisinde tescilli tabiat varlığı bulu…"
+          }
+        ]
+      },
+      "ecology_and_baseline": {
+        "label": "Flora, Fauna & Baseline Methodology",
+        "page_count": 31,
+        "pages": [
+          138,
+          152,
+          154,
+          156,
+          157,
+          159,
+          160,
+          161,
+          162,
+          163,
+          164,
+          165,
+          166,
+          168,
+          169,
+          170,
+          171,
+          172,
+          173,
+          174,
+          177,
+          178,
+          181,
+          183,
+          186
+        ],
+        "samples": [
+          {
+            "page": 138,
+            "match": "endemik",
+            "snippet": "…t ormanları sınırları içindeki tohum meşcereleri, gen koruma alanları, muhafaza ormanları, orman içi dinlenme yerleri, endemik ve korunması gereken nadir ekosistemlerin bulunduğu alanlarda maden aranması ve işletilmesi, Çevre ve Orman Bakanlığı…"
+          },
+          {
+            "page": 152,
+            "match": "BERN Sözleşmesi",
+            "snippet": "…özleşmeler uyarınca korunması gerekli alanlar a) \"Avrupa’nın Yaban Hayatı ve Yaşama Ortamlarını Koruma Sözleşmesi\" (BERN Sözleşmesi) uyarınca koruma altına alınmış alanlardan \"Önemli Deniz Kaplumbağası Üreme Alanlarında belirtilen I. ve II. Koruma Bö…"
+          },
+          {
+            "page": 154,
+            "match": "endemik",
+            "snippet": "…r. d) Bilimsel araştırmalar için önem arz eden ve/veya nesli tehlikeye düşmüş veya düşebilir türler ve ülkemiz için endemik olan türlerin yaşama ortamı olan alanlar, biyosfer rezervi, biyotoplar, biyogenetik rezerv alanları, benzersiz özellik…"
+          },
+          {
+            "page": 154,
+            "match": "Flora ve Fauna",
+            "snippet": "…yerüstü ve yeraltı suyu kaynaklarının tabii su toplama alanı içerisinde kalan alanlar, içerisinde bulunmamaktadır. Flora ve Fauna Proje alanı ve çevresine ait flora ve fauna çalışması Biyolog Togay YENİDOĞAN tarafından 2025 Yılı Temmuz ayı içeri…"
+          },
+          {
+            "page": 154,
+            "match": "arazi çalışması",
+            "snippet": "…oje alanı ve çevresine ait flora ve fauna çalışması Biyolog Togay YENİDOĞAN tarafından 2025 Yılı Temmuz ayı içerisinde arazi çalışması gerçekleştirilmiştir. Flora-fauna çalışmasını gerçekleştiren uzmana ait bilgiler (özgeçmiş, diploma vb.) EK-7.3 de ver…"
+          },
+          {
+            "page": 156,
+            "match": "arazi çalışması",
+            "snippet": "…Listesi web sitesinden yararlanılmıştır. Proje alanı ve etki alanı fauna türlerinin belirlenebilmesi için, alanda arazi çalışması yapılmış ancak fauna türleri hareketliliklerinden dolayı tespit edilememiştir. Bu doğrultuda proje alanı ve çevresini…"
+          },
+          {
+            "page": 156,
+            "match": "IUCN",
+            "snippet": "…n türler tehlike kategorileri ve koruma statülerine göre Uluslararası Doğal Hayatı ve Doğal Kaynakları Koruma Birliği (IUCN) Kırmızı Listesi Kategorileri, Bern Sözleşmesi EK II ve EK III, 2025-2026 Merkez Av Komisyonu Kararları ile 29.04.201…"
+          },
+          {
+            "page": 156,
+            "match": "Bern Sözleşmesi",
+            "snippet": "…ma statülerine göre Uluslararası Doğal Hayatı ve Doğal Kaynakları Koruma Birliği (IUCN) Kırmızı Listesi Kategorileri, Bern Sözleşmesi EK II ve EK III, 2025-2026 Merkez Av Komisyonu Kararları ile 29.04.2015 tarih ve 29341 sayılı Resmi Gazete’de yayımlan…"
+          }
+        ]
+      },
+      "pollutants_and_hazards": {
+        "label": "Emissions, Geochemistry & Waste",
+        "page_count": 115,
+        "pages": [
+          2,
+          6,
+          10,
+          18,
+          62,
+          66,
+          74,
+          79,
+          81,
+          83,
+          84,
+          86,
+          87,
+          89,
+          90,
+          92,
+          93,
+          95,
+          96,
+          97,
+          99,
+          100,
+          101,
+          102,
+          103
+        ],
+        "samples": [
+          {
+            "page": 2,
+            "match": "kümülatif",
+            "snippet": "…genişletilmesinin planlanması halinde, planlanan projenin etkileri, mevcut karara esas çevresel etkiler ile birlikte kümülatif olarak değerlendirilir EK-2 Listesi Çevresel Etkileri Ön İnceleme Ve Değerlendirmeye Tabi Projeler 18-Çimento ba…"
+          },
+          {
+            "page": 6,
+            "match": "Gürültü",
+            "snippet": "…eri ............................................ 89 Tablo 57. Ocak Alanı ve Kırma Eleme Tesisi İşletme Aşaması Eşdeğer Gürültü Düzeyi . 90 Tablo 58. Mekanik Plent Tesisi ve Hazır Beton Santralinde İşletme Aşaması Eşdeğer Gürültü Düzeyi ........…"
+          },
+          {
+            "page": 10,
+            "match": "CO2",
+            "snippet": "…z. Bakınız cc Kübik Santimetre (“Cubic Centimetre”) ÇED Çevresel Etki Değerlendirmesi CO Karbonmonoksit CO2 Karbondioksit DSİ Devlet Su İşleri ha Hektar HKKD Hava Kirlenmesi Katkı Değeri HÜİB Hammadde Üretim İz…"
+          },
+          {
+            "page": 10,
+            "match": "Karbondioksit",
+            "snippet": "…akınız cc Kübik Santimetre (“Cubic Centimetre”) ÇED Çevresel Etki Değerlendirmesi CO Karbonmonoksit CO2 Karbondioksit DSİ Devlet Su İşleri ha Hektar HKKD Hava Kirlenmesi Katkı Değeri HÜİB Hammadde Üretim İzin Belgesi Kcal/…"
+          },
+          {
+            "page": 10,
+            "match": "PM10",
+            "snippet": "…en Tetkik ve Arama µg/m3 Mikrogram/metreküp µm Mikrometre No Numara NOx Azot Oksitler O2 Oksijen PM10 Partikül Madde PTD Proje Tanıtım Dosyası R.N. Ruhsat Numaralı SKKY Su Kirliliği Kontrol Yönetmeliği SKHKKY…"
+          },
+          {
+            "page": 18,
+            "match": "CO2",
+            "snippet": "…ayrı kristal şekli, doğada hiç bir zaman saf halde bulunmayan Kalsit ve Aragonit' dir. Teorik olarak % 56 CaO ve % 44 CO2 ihtiva ederler. Kalsitin rhombohedral yapıda ve sertliğinin 3 Mohs olmasına karşın, 400 °C' de kalsite dönüşen Aragon…"
+          },
+          {
+            "page": 62,
+            "match": "gürültü",
+            "snippet": "…eğerlendirmeler. Projenin arazi hazırlık/inşaat aşaması ve işletilmesi sırasında katı, sıvı, gaz atıklar ile toz ve gürültü meydana gelecektir. Ortaya çıkacak olan çevresel etkiler aşağıda başlıklar halinde irdelenmiştir. Projeye konu fa…"
+          },
+          {
+            "page": 66,
+            "match": "Tehlikeli Atık",
+            "snippet": "…ana gelecek sıvı atıklarının atıkların bertaraf yöntemi ve alınacak önlemler Bölüm 3’te değerlendirilmiştir. 1.ç.4. Tehlikeli Atık, Atık Piller ve Akümülatörler Proje kapsamında arazi hazırlık/inşaat aşaması söz konusu olmayacaktır. Projenin…"
+          }
+        ]
+      },
+      "cost_and_capacity": {
+        "label": "Project Cost, Power & Capacity",
+        "page_count": 105,
+        "pages": [
+          1,
+          2,
+          4,
+          13,
+          14,
+          16,
+          17,
+          19,
+          20,
+          21,
+          24,
+          27,
+          28,
+          29,
+          30,
+          31,
+          37,
+          38,
+          47,
+          51,
+          52,
+          54,
+          56,
+          57,
+          58
+        ],
+        "samples": [
+          {
+            "page": 1,
+            "match": "KAPASİTE",
+            "snippet": "…45/2012-11 HAMMADDE ÜRETİM İZİN BELGELİ DOĞANKAYA KALKER OCAĞI, KIRMA-ELEME TESİSİ, MEKANİK PLENT TESİSİ KAPASİTE ARTIŞI VE İLAVE ASFALT PLENT TESİSİ, HAZIR BETON SANTRALİ PROJESİ MANİSA İLİ, AKHİSAR İLÇESİ, DOĞANKAYA…"
+          },
+          {
+            "page": 2,
+            "match": "KAPASİTE",
+            "snippet": "…n Adı 45/2012-11 HAMMADDE ÜRETİM İZİN BELGELİ DOĞANKAYA KALKER OCAĞI, KIRMA- ELEME TES İS İ, MEKANİK PLENT TESİSİ KAPASİTE ARTIŞ I VE İLAVE ASFALT PLENT TESİSİ, HAZIR BETON SANTRALİ Proje Bedeli 2.500.000 TL Proje İçin Seçilen Yerin Açık…"
+          },
+          {
+            "page": 2,
+            "match": "Proje Bedeli",
+            "snippet": "…ĞI, KIRMA- ELEME TES İS İ, MEKANİK PLENT TESİSİ KAPASİTE ARTIŞ I VE İLAVE ASFALT PLENT TESİSİ, HAZIR BETON SANTRALİ Proje Bedeli 2.500.000 TL Proje İçin Seçilen Yerin Açık Adresi (İli, İlçesi, Mevkii) MANİSA İLİ, AKHİSAR İLÇESİ, DOĞANKAYA MAH…"
+          },
+          {
+            "page": 2,
+            "match": "2.500.000 TL",
+            "snippet": "…EME TES İS İ, MEKANİK PLENT TESİSİ KAPASİTE ARTIŞ I VE İLAVE ASFALT PLENT TESİSİ, HAZIR BETON SANTRALİ Proje Bedeli 2.500.000 TL Proje İçin Seçilen Yerin Açık Adresi (İli, İlçesi, Mevkii) MANİSA İLİ, AKHİSAR İLÇESİ, DOĞANKAYA MAHALLESİ Projen…"
+          },
+          {
+            "page": 2,
+            "match": "Kapasite",
+            "snippet": "…lt Sektör) 29.07.2022 Tarih 31907 sayılı Resmi Gazetede yayımlanan “Çevresel Etki Değerlendirmesi Yönetmeliği” Kapasite Artışları MADDE 20- (1) \"ÇED Olumlu\" veya \"ÇED Gerekli Değildir\" kararı bulunan ve eşik değeri olan projelerde yap…"
+          },
+          {
+            "page": 4,
+            "match": "kapasite",
+            "snippet": "…........................................................................................ 6 b) Projenin iş akım şeması, kapasitesi, kapladığı alan, teknolojisi, çalışacak personel sayısı. ...........................................................…"
+          },
+          {
+            "page": 13,
+            "match": "Kapasite",
+            "snippet": "…rı dahilinde “45/2012-11 Hammadde Üretim İzin Belgeli Doğankaya Kalker Ocağı, Kırma-Eleme Tesisi, Mekanik Plent Tesisi Kapasite Artışı ve İlave Asfalt Plent Tesisi, Hazır Beton Santrali” projesinin gerçekleştirilmesi planlanmaktadır. Proje ala…"
+          },
+          {
+            "page": 13,
+            "match": "KAPASİTE",
+            "snippet": "…mına ait bilgiler Tablo 2’de verilmiştir. Tablo 1. Proje Alanı Kapasite ve Alan Bilgileri ÇED GEREKLİ DEĞİLDİR KAPASİTESİ (2018 YILI) PLANLANAN KAPASİTE ARTIŞI BİLGİSİ NİHAİ DURUM ÇED ALANI 9,96 Ha 5,88 Ha 15,84 Ha OCAK KAPASİTESİ…"
+          }
+        ]
+      }
+    },
+    "audit_checks": {
+      "mentions_field_survey": true,
+      "mentions_literature_only_cue": true,
+      "mentions_seasonal_sampling": true,
+      "mentions_cumulative_impact": true,
+      "mentions_olive_law_3573": true,
+      "mentions_groundwater_or_aquifer": true,
+      "mentions_iucn_or_endemic": true
+    }
+  }
+}

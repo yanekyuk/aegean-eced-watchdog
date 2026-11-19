@@ -14,6 +14,7 @@ After=network-online.target
 
 [Service]
 Type=oneshot
+Environment=PYTHONUNBUFFERED=1
 WorkingDirectory=${REPO_DIR}
 ExecStart=${UV_BIN} run eced-watch --days 14 --max-digests 4
 Nice=10

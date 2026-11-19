@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>e-ÇED Pre-Digest #61583 — YUNUSEMRE</title>
+  <style>
+:root {
+  --bg: #0f1216;
+  --surface: #171c22;
+  --border: #262e38;
+  --text: #e6edf3;
+  --muted: #8b949e;
+  --accent: #58a6ff;
+  --red: #f85149;
+  --amber: #d29922;
+  --green: #3fb950;
+  --badge-bg: #212830;
+}
+@media (prefers-color-scheme: light) {
+  :root {
+    --bg: #f6f8fa;
+    --surface: #ffffff;
+    --border: #d0d7de;
+    --text: #1f2328;
+    --muted: #656d76;
+    --accent: #0969da;
+    --red: #cf222e;
+    --amber: #9a6700;
+    --green: #1a7f37;
+    --badge-bg: #eef2f6;
+  }
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.5;
+}
+.wrap { max-width: 1220px; margin: 0 auto; padding: 24px 18px 64px; }
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+header { border-bottom: 1px solid var(--border); padding-bottom: 16px; margin-bottom: 20px; }
+h1 { margin: 0 0 6px; font-size: 1.55rem; }
+.sub { color: var(--muted); font-size: 0.92rem; margin: 0; }
+.meta-bar { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 12px; font-size: 0.85rem; color: var(--muted); }
+.stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 10px; margin: 16px 0 20px; }
+.stat { background: var(--surface); border: 1px solid var(--border); border-radius: 8px; padding: 12px 14px; }
+.stat .num { font-size: 1.45rem; font-weight: 700; }
+.stat .lbl { font-size: 0.78rem; color: var(--muted); }
+.controls { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; margin-bottom: 16px; }
+input[type="search"] {
+  flex: 1 1 240px;
+  padding: 8px 12px;
+  border-radius: 6px;
+  border: 1px solid var(--border);
+  background: var(--surface);
+  color: var(--text);
+  font-size: 0.92rem;
+}
+button.pill {
+  padding: 6px 11px;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: var(--surface);
+  color: var(--text);
+  cursor: pointer;
+  font-size: 0.82rem;
+}
+button.pill.active { background: var(--accent); border-color: var(--accent); color: #fff; font-weight: 600; }
+.cards { display: flex; flex-direction: column; gap: 10px; }
+.card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 14px 16px;
+}
+.card.prio { border-left: 4px solid var(--accent); }
+.row-top { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px; align-items: baseline; }
+.title { font-weight: 600; font-size: 0.98rem; }
+.badges { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 6px; }
+.badge {
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  background: var(--badge-bg);
+  border: 1px solid var(--border);
+}
+.badge.urgent { border-color: var(--red); color: var(--red); font-weight: 600; }
+.badge.warn { border-color: var(--amber); color: var(--amber); font-weight: 600; }
+.badge.ok { border-color: var(--green); color: var(--green); }
+.badge.muted { color: var(--muted); }
+.detail { font-size: 0.86rem; color: var(--muted); margin: 8px 0; }
+.actions { display: flex; flex-wrap: wrap; gap: 12px; font-size: 0.84rem; margin-top: 8px; }
+.notice {
+  margin-top: 28px;
+  padding: 12px 14px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  font-size: 0.82rem;
+  color: var(--muted);
+}
+table.kv { width: 100%; border-collapse: collapse; margin: 12px 0; font-size: 0.9rem; }
+table.kv th, table.kv td { border: 1px solid var(--border); padding: 8px 10px; text-align: left; vertical-align: top; }
+table.kv th { width: 220px; background: var(--badge-bg); }
+code { background: var(--badge-bg); padding: 1px 5px; border-radius: 4px; font-size: 0.85em; }
+blockquote { margin: 10px 0; padding: 10px 14px; border-left: 3px solid var(--accent); background: var(--surface); font-size: 0.9rem; }
+.hit { margin: 6px 0; font-size: 0.88rem; }
+.pno { font-weight: 700; color: var(--accent); }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div style="font-size:0.85rem;margin-bottom:8px;"><a href="../index.html">← Back to Aegean e-ÇED Watchdog</a> · <a href="61583.md">Raw Markdown (.md)</a></div>
+    <h1>e-ÇED Pre-Digest #61583 — YUNUSEMRE / MANİSA</h1>
+    <p class="sub">TEHLİKELİ VE TEHLİKESİZ ATIKLARIN FİZİKSEL YÖNTEMİ İLE GERİ KAZANIMI/ ÖN İŞLEMİ (Metal Varil Temizleme: 1.728 ton/yıl, Plastik Varil/IBC Temizleme: 4.014 ton/yıl, Yağlı Kablo: 4.800 ton/yıl, Yağlı Talaş, Metal Ve Metal Tozu: 240.480 ton/yıl, Yağsız Kablo: 6.000 ton/yıl, Filtre:2.400 ton/yıl, Basınçlı Kap: 90 ton/yıl, Yağ Filtresi: 1.440 ton/yıl), ATIK ELEKTRİKLİ VE ELEKTRONİK EŞYA GERİ KAZANIM FAALİYETİ (AEEE İşleme Kapasitesi: 2.640 ton/yıl), VE TEHLİKESİZ ATIK TOPLAMA AYIRMA FAALİYETİ (Toplama Ayırma: 500.000 ton/yıl)</p>
+    <div class="badges" style="margin-top:10px;">
+      <span class="badge">ÇED Süreci Başlayan</span>
+      <span class="badge">Ek-2</span>
+      <span class="badge urgent">10d Askı · 2d left (2026-11-22)</span>
+    </div>
+  </header>
+
+  <table class="kv">
+    <tr><th>Project Owner</th><td>PAŞAOĞLU METAL GERİ DÖNÜŞÜM DEMİR ÇELİK İNŞAAT ODUN KÖMÜR HAFRİYAT NAKLİYAT TURİZM İTHALAT İHRACAT SANAYİ VE TİCARET LİMİTED ŞİRKETİ</td></tr>
+    <tr><th>Consulting Firm</th><td>REEL ÇEVRE MÜHENDİSLİK  DANIŞMANLIK İNŞAAT SANAYİ VE TİCARET LİMİTED ŞİRKETİ</td></tr>
+    <tr><th>Sector</th><td>Atık / Atık Bertaraf /Geri Kazanım/ Depolama Tesisi Projeleri</td></tr>
+    <tr><th>Announcement Date</th><td><code>12.11.2026</code> (uploaded <code>10/11/2026 05:29:46</code>)</td></tr>
+    <tr><th>PDF Coverage</th><td>44.73 MB · 277 pages (178 text / 99 scanned-or-image) · SHA-256 <code>6865bd4090160a16…</code></td></tr>
+    <tr><th>Official Links</th><td><a href="http://eced.csb.gov.tr/jsp/ek1/61583" target="_blank" rel="noopener">e-ÇED Portal Record</a> · <a href="http://eced.csb.gov.tr/jsp/dosya/dosyaGoster.htm?tempAd=sign6235221016051739887.pdf&amp;orjinalAd=e-imza.pdf&amp;yuklemeTarihi=2026-11-10" target="_blank" rel="noopener">Official PDF</a></td></tr>
+  </table>
+
+  <h2>Official Announcement Text</h2>
+  <blockquote>MANİSA ili YUNUSEMRE,  ilcesinde MANİSA ili YUNUSEMRE,  ilçesi MURADİYE MAHALLESİ, 28 SOKAK, NO:18, 163 ADA VE 1 PARSEL mevkiindeki PAŞAOĞLU METAL GERİ DÖNÜŞÜM DEMİR ÇELİK İNŞAAT ODUN KÖMÜR HAFRİYAT NAKLİYAT TURİZM İTHALAT İHRACAT SANAYİ VE TİCARET LİMİTED ŞİRKETİ tarafından yapılması planlanan TEHLİKELİ VE TEHLİKESİZ ATIKLARIN FİZİKSEL YÖNTEMİ İLE GERİ KAZANIMI/ ÖN İŞLEMİ (Metal Varil Temizleme: 1.728 ton/yıl, Plastik Varil/IBC Temizleme: 4.014 ton/yıl, Yağlı Kablo: 4.800 ton/yıl, Yağlı Talaş, Metal Ve Metal Tozu: 240.480 ton/yıl, Yağsız Kablo: 6.000 ton/yıl, Filtre:2.400 ton/yıl, Basınçlı Kap: 90 ton/yıl, Yağ Filtresi: 1.440 ton/yıl), ATIK ELEKTRİKLİ VE ELEKTRONİK EŞYA GERİ KAZANIM FAALİYETİ (AEEE İşleme Kapasitesi: 2.640 ton/yıl), VE TEHLİKESİZ ATIK TOPLAMA AYIRMA FAALİYETİ (Toplama Ayırma: 500.000 ton/yıl)   projesi ile ilgili olarak MANİSA Valiliğimize sunulan P.T.D. Dosyası Çevresel Etki Değerlendirmesi Yönetmeliği&#x27;nin 16. maddesi doğrultusunda incelenmiş ve projeye ilişkin ÇED Süreci başlamıştır. İlgililere ve kamuoyuna duyurulur.</blockquote>
+
+  <h2>Automated Baseline &amp; Red-Flag Scan</h2>
+  <table class="kv"><tr><th>Field survey (*arazi/saha çalışması*)</th><td><span class="badge urgent">NOT FOUND (check manually)</span></td></tr>
+<tr><th>Literature review (*literatür taraması*)</th><td><span class="badge urgent">NOT FOUND (check manually)</span></td></tr>
+<tr><th>Seasonal sampling (*mevsimsel*)</th><td><span class="badge ok">Present</span></td></tr>
+<tr><th>Cumulative impact (*kümülatif*)</th><td><span class="badge ok">Present</span></td></tr>
+<tr><th>Olive Law / groves (*3573 / zeytinlik*)</th><td><span class="badge ok">Present</span></td></tr>
+<tr><th>Groundwater / aquifer (*akifer / yeraltı suyu*)</th><td><span class="badge ok">Present</span></td></tr>
+<tr><th>Endemic / IUCN / Bern Convention</th><td><span class="badge ok">Present</span></td></tr></table>
+  <p class="sub">Scanned annex maps/letters without OCR are excluded from automated text scan.</p>
+
+  <h2>Page-Cited Extracted Evidence</h2>
+  <div class="cards"><section class="card"><h3>Coordinates, Parcel &amp; Footprint <span style="color:var(--muted);font-weight:400;font-size:0.85rem">(23 pages: s.2, s.6, s.9, s.11, s.17, s.18, s.43, s.46, s.51, s.59, s.60, s.61, s.73, s.75 (+9 more))</span></h3><div class="hit"><span class="pno">[s. 2]</span> <code>utm</code> — …ik, tekstil, cam, ahşap atıkları toplama, ayırma, kesme, parçalama, öğütme ve granül elde etme işlemleri ile solar kurutma işlemleri hariç)i” kapsamında değerlendirilmektedir. PROJENİN ANA NACE KODU 38.32 “Tasnif edilmiş materyalleri…</div>
+<div class="hit"><span class="pno">[s. 6]</span> <code>utm</code> — …ik, tekstil, cam, ahşap atıkları toplama, ayırma, kesme, parçalama, öğütme ve granül elde etme işlemleri ile solar kurutma işlemleri hariç) ” kapsamında değerlendirilmekte olup, yönetmeliğin Ek-4 formatı esas alınarak Proje Tanıtım Dosyası…</div>
+<div class="hit"><span class="pno">[s. 6]</span> <code>koordinat</code> — …rganize Sanayi Bölgesi” sınırları içerisinde kalmaktadır. Faaliyetin gerçekleştirileceği 163 ada, 1 parsel alanına ait koordinatlar (Bkz.Ek.1), işletmenin yerini gösterir 1/1.000 Ölçekli İmar Planı, 1/1.000 ölçekli Uygulama İmar Planı, 1/5.000 Ölç…</div>
+<div class="hit"><span class="pno">[s. 9]</span> <code>utm</code> — …un görüş almakla yükümlüdür. Değişiklik olması halinde işletme planları yenilenir ve Bakanlığa sunulur. (3) Biyo-kurutma, kompost ve biyo-metanizasyon tesisleri; a) Bu maddenin birinci fıkrasının (a), (b), (c), (ç), (d), (f), (g), (ğ) v…</div>
+<div class="hit"><span class="pno">[s. 11]</span> <code>utm</code> — …bir kimyasal ilavesi yapılmayacaktır. Ayrıca tesisi kabul edilmesi planlanan tehlikeli ve tehlikesiz atıklara nem, kurutma vb. gibi işlemler yapılmayacaktır. İşletme, tehlikeli atıkların fiziksel yöntemlerle geri kazanımı (metal varil te…</div>
+<div class="hit"><span class="pno">[s. 17]</span> <code>utm</code> — …ekrar Kullanılmaz Kırma Sentetik Tiner Atık Tiner 07 01 04 Lisanslı firma Atık Tiner 07 01 04 Santrifüjle Kurutma Metal Çapak/Presleme Satış</div></section><section class="card"><h3>Water Use, Hydrogeology &amp; Discharge <span style="color:var(--muted);font-weight:400;font-size:0.85rem">(28 pages: s.7, s.13, s.26, s.27, s.38, s.42, s.45, s.47, s.51, s.56, s.61, s.62, s.64, s.79 (+14 more))</span></h3><div class="hit"><span class="pno">[s. 7]</span> <code>atıksu</code> — …ton/yıl), VE TEHLİKESİZ ATIK TOPLAMA AYIRMA FAALİYETİ (Toplama Ayırma: 500.000 ton/yıl) 3 Tesiste atık olarak, atıksu, katı atık, ambalaj atığı, tehlikesiz atık, tehlikeli atık, bitkisel yağ atığı ve atık piller oluşmaktadır. Söz konusu…</div>
+<div class="hit"><span class="pno">[s. 13]</span> <code>yeraltı suyu</code> — …lığı sağlayacak şekilde geçirimsiz beton ve tutuşmaz malzemeden yapılmıştır. -Atıktan kaynaklanabilecek sızıntıların yeraltı suyu, kanalizasyon veya yerüstü suyuyla temasını veya sızmasını engelleyecek şekilde toplanabilmesi için tabanda uygun eğim…</div>
+<div class="hit"><span class="pno">[s. 26]</span> <code>yeraltı suyu</code> — …lığı sağlayacak şekilde geçirimsiz beton ve tutuşmaz malzemeden yapılmıştır. -Atıktan kaynaklanabilecek sızıntıların yeraltı suyu, kanalizasyon veya yerüstü suyuyla temasını veya sızmasını engelleyecek şekilde toplanabilmesi için tabanda uygun eğim…</div>
+<div class="hit"><span class="pno">[s. 27]</span> <code>yeraltı suyu</code> — …zlığı sağlayacak şekilde geçirimsiz beton ve tutuşmaz malzemeden yapılmıştır. -Atıktan kaynaklanabilecek sızıntıların yeraltı suyu, kanalizasyon veya yerüstü suyuyla temasını veya sızmasını engelleyecek şekilde toplanabilmesi için tabanda uygun eğim…</div>
+<div class="hit"><span class="pno">[s. 38]</span> <code>Deşarj</code> — …Bromlu Alev Geciktirici İçeren Plastikler  Asbestli Atıklar ve Asbest İçeren Bileşenler  Katot Işın Tüpleri  Gaz Deşarj Lambaları  Yanmaz Seramik İçeren Lifler İhtiva Eden Bileşenler Atığın asbest içeren parçaları işlemeye tabi tutulm…</div>
+<div class="hit"><span class="pno">[s. 42]</span> <code>Deşarj</code> — …Bromlu Alev Geciktirici İçeren Plastikler  Asbestli Atıklar ve Asbest İçeren Bileşenler  Katot Işın Tüpleri  Gaz Deşarj Lambaları  Yanmaz Seramik İçeren Lifler İhtiva Eden Bileşenler Atığın asbest içeren parçaları işlemeye tabi tutulm…</div></section><section class="card"><h3>Protected Zones, Forests &amp; Olive Groves <span style="color:var(--muted);font-weight:400;font-size:0.85rem">(13 pages: s.3, s.6, s.61, s.73, s.85, s.86, s.87, s.93, s.106, s.183, s.243, s.265, s.266)</span></h3><div class="hit"><span class="pno">[s. 3]</span> <code>Orman Alanı</code> — …ETKİ ALANININ MEVCUT ÇEVRESEL ÖZELLİKLERİ .................... 69 a) Mevcut Arazi Kullanımı ve Kalitesi (Tarım Alanı, Orman Alanı, Planlı Alan, Su Yüzeyi ve benzeri) ..................................................................................…</div>
+<div class="hit"><span class="pno">[s. 6]</span> <code>özel çevre koruma</code> — ….Ek.2) Faaliyet sahasının 2 km’lik etki alanı içerisinde milli parklar, tabiat parkları, tabiat koruma parkları, özel çevre koruma alanları ve sit alanları bulunmamaktadır. (Bkz. Ek.7.9)</div>
+<div class="hit"><span class="pno">[s. 61]</span> <code>özel çevre koruma</code> — …mektedir. Faaliyet sahasının 2 km’lik etki alanı içerisinde milli parklar, tabiat parkları, tabiat koruma parkları, özel çevre koruma alanları ve sit alanları bulunmamaktadır. (Bkz Ek.7.9) Tesise en yakın yerleşim yeri Güzelyurt mahallesi olup, 1,66…</div>
+<div class="hit"><span class="pno">[s. 73]</span> <code>Orman Alanı</code> — …M II: PROJENİN YERİ VE ETKİ ALANININ MEVCUT ÇEVRESEL ÖZELLİKLERİ a) Mevcut Arazi Kullanımı ve Kalitesi (Tarım Alanı, Orman Alanı, Planlı Alan, Su Yüzeyi ve benzeri) İşletme Manisa ili, Yunusemre ilçesi, Muradiye mahallesi, 28 Sokak, No:18 adr…</div>
+<div class="hit"><span class="pno">[s. 73]</span> <code>özel çevre koruma</code> — …kz.Ek.2) Faaliyet sahasının 2 km’lik etki alanı içerisinde milli parklar, tabiat parkları, tabiat koruma parkları, özel çevre koruma alanları ve sit alanları bulunmamaktadır. (Bkz.Ek.7.9) Tesise en yakın korunan alan 7,8 km mesafede bulunan Spil Dağı…</div>
+<div class="hit"><span class="pno">[s. 85]</span> <code>Özel Çevre Koruma</code> — …f) Proje Sahası, 9.8.1983 tarihli ve 2872 sayılı Çevre Kanunu’nun 9’uncu maddesi uyarınca Cumhurbaşkanı tarafından &quot;Özel Çevre Koruma Bölgeleri&quot; olarak tespit ve ilan edilen alanlar içerisinde bulunmamaktadır. g) Proje Sahası, 18.11.1983 tarihli ve…</div></section><section class="card"><h3>Flora, Fauna &amp; Baseline Methodology <span style="color:var(--muted);font-weight:400;font-size:0.85rem">(5 pages: s.80, s.85, s.86, s.87, s.243)</span></h3><div class="hit"><span class="pno">[s. 80]</span> <code>mevsimsel</code> — …lojik birimlerin hidrojeolojik özellikleri ve topoğrafik koşullar tarafından belirlenmekte olup, yeraltı suyu seviyesi mevsimsel yağış miktarı, buharlaşma, tarımsal sulama ve diğer su kullanımlarına bağlı olarak değişkenlik gösterebilmektedir.…</div>
+<div class="hit"><span class="pno">[s. 85]</span> <code>Flora ve Fauna</code> — …e Kapasitesi: 2.640 ton/yıl), VE TEHLİKESİZ ATIK TOPLAMA AYIRMA FAALİYETİ (Toplama Ayırma: 500.000 ton/yıl) 81 Flora ve Fauna: İşletmenin gerçekleştirmekte olduğu faaliyet Manisa ili, Yunusemre ilçesi, Muradiye Organize Sanayi Bölgesi’nde ol…</div>
+<div class="hit"><span class="pno">[s. 86]</span> <code>BERN Sözleşmesi</code> — …ayılı Resmi Gazete’ de yayımlanarak yürürlüğe giren &quot;Avrupa’nın Yaban Hayatı ve Yaşama Ortamlarını Koruma Sözleşmesi&quot; (BERN Sözleşmesi) uyarınca koruma altına alınmış alanlardan &quot;Önemli Deniz Kaplumbağası Üreme Alanları&quot;nda belirtilen I. ve II. Koruma…</div>
+<div class="hit"><span class="pno">[s. 87]</span> <code>endemik</code> — …Sahası, Bilimsel araştırmalar için önem arz eden ve/veya nesli tehlikeye düşmüş veya düşebilir türler ve ülkemiz için endemik olan türlerin yaşama ortamı olan alanlar, biyosfer rezervi, biyotoplar, biyogenetik rezerv alanları, benzersiz özellik…</div>
+<div class="hit"><span class="pno">[s. 243]</span> <code>Flora ve Fauna</code> — …İYETİ (Toplama Ayırma: 500.000 ton/yıl) ÇEVRESEL VE SOSYAL EYLEM PLANI önlemler alınmaktadır ve alınacaktır. 13 Flora ve Fauna Etkisi Çevre Kanunu Barcelona Sözleşmesi Sosyal Etki - 14 Çevre Kanunu Kara Avcılığı Kanunu Tesisin 2…</div></section><section class="card"><h3>Emissions, Geochemistry &amp; Waste <span style="color:var(--muted);font-weight:400;font-size:0.85rem">(78 pages: s.3, s.5, s.6, s.7, s.9, s.12, s.13, s.14, s.15, s.16, s.19, s.20, s.22, s.23 (+64 more))</span></h3><div class="hit"><span class="pno">[s. 3]</span> <code>Gürültü</code> — …............................................ 63 Tablo 16. Mevcut Durumda Kullanılan Makine ve Ekipmanların Motor Gücü, Gürültü Düzeyi ve Eş Gürültü Seviyesi ........................................................................................…</div>
+<div class="hit"><span class="pno">[s. 5]</span> <code>tehlikeli atık</code> — …Muradiye mahallesi, 28 Sokak, No:18 adresi; tapunun 163 ada ve 1 parsel adresinde, tehlikesiz atık toplama- ayırma ve tehlikeli atık ön işlem konusunda faaliyet göstermektedir. İşletme, mevcut durumdaki üretimlerinde kapasite artışı gerçekleştirmeyi…</div>
+<div class="hit"><span class="pno">[s. 6]</span> <code>tehlikeli atık</code> — …dan tesise söz konusu atıkları kabul etmeyeceğini taahhüt etmektedir. İşletmenin tehlikesiz atık toplama- ayırma ve tehlikeli atık geri kazanım faaliyeti ile ilgili olarak Çevre, Şehircilik ve İklim Değişikliği İl Müdürlüğünden almış olduğu 07.01.20…</div>
+<div class="hit"><span class="pno">[s. 7]</span> <code>tehlikeli atık</code> — …ETİ (Toplama Ayırma: 500.000 ton/yıl) 3 Tesiste atık olarak, atıksu, katı atık, ambalaj atığı, tehlikesiz atık, tehlikeli atık, bitkisel yağ atığı ve atık piller oluşmaktadır. Söz konusu atıkların miktarları Bölüm I.ç’ de, çevresel etkileri ise…</div>
+<div class="hit"><span class="pno">[s. 9]</span> <code>Tehlikeli Atık</code> — …ık Kodu Atık Kodu Tanımı Tehlikesiz Atık Geri Kazanım (Tehlikesiz Atık Ön İşlem) 17 04 11 Yağsız kablo atıkları Tehlikeli Atık Geri Kazanım (Tehlikeli Atık Ön İşlem) 15 01 10 Tehlikeli maddelerin kalıntılarını içeren ya da tehlikeli maddelerle…</div>
+<div class="hit"><span class="pno">[s. 12]</span> <code>Tehlikeli Atık</code> — …gerçekleştirilmesi planlanan proseslerle ilgili ayrıntılı iş akış şeması ve proses anlatımı aşağıda verilmektedir. Tehlikeli Atık Geri Kazanım Faaliyeti: (Tehlikeli Atık Ön İşlem) Tesisin Fiziki Şartları:  12 01 16- Kumlama Atığı  12 01 2…</div></section><section class="card"><h3>Project Cost, Power &amp; Capacity <span style="color:var(--muted);font-weight:400;font-size:0.85rem">(127 pages: s.1, s.2, s.3, s.4, s.5, s.6, s.7, s.8, s.9, s.10, s.11, s.12, s.13, s.14 (+113 more))</span></h3><div class="hit"><span class="pno">[s. 1]</span> <code>4.000 ton/yıl</code> — …Rİ KAZANIMI/ ÖN İŞLEMİ (Metal Varil Temizleme: 1.728 ton/yıl, Plastik Varil/IBC Temizleme: 4.014 ton/yıl, Yağlı Kablo: 4.000 ton/yıl, Yağlı Talaş, Metal Ve Metal Tozu: 120.000 ton/yıl, Yağsız Kablo: 6.000 ton/yıl, Filtre:1.200 ton/yıl, Basınçlı Kap:…</div>
+<div class="hit"><span class="pno">[s. 1]</span> <code>120.000 ton/yıl</code> — …28 ton/yıl, Plastik Varil/IBC Temizleme: 4.014 ton/yıl, Yağlı Kablo: 4.000 ton/yıl, Yağlı Talaş, Metal Ve Metal Tozu: 120.000 ton/yıl, Yağsız Kablo: 6.000 ton/yıl, Filtre:1.200 ton/yıl, Basınçlı Kap: 36 ton/yıl, Yağ Filtresi: 99 ton/yıl), ATIK ELEKTRİ…</div>
+<div class="hit"><span class="pno">[s. 1]</span> <code>6.000 ton/yıl</code> — …emizleme: 4.014 ton/yıl, Yağlı Kablo: 4.000 ton/yıl, Yağlı Talaş, Metal Ve Metal Tozu: 120.000 ton/yıl, Yağsız Kablo: 6.000 ton/yıl, Filtre:1.200 ton/yıl, Basınçlı Kap: 36 ton/yıl, Yağ Filtresi: 99 ton/yıl), ATIK ELEKTRİKLİ VE ELEKTRONİK EŞYA GERİ K…</div>
+<div class="hit"><span class="pno">[s. 1]</span> <code>1.200 ton/yıl</code> — …l, Yağlı Kablo: 4.000 ton/yıl, Yağlı Talaş, Metal Ve Metal Tozu: 120.000 ton/yıl, Yağsız Kablo: 6.000 ton/yıl, Filtre:1.200 ton/yıl, Basınçlı Kap: 36 ton/yıl, Yağ Filtresi: 99 ton/yıl), ATIK ELEKTRİKLİ VE ELEKTRONİK EŞYA GERİ KAZANIM FAALİYETİ (AEEE…</div>
+<div class="hit"><span class="pno">[s. 1]</span> <code>Kapasite</code> — …lı Kap: 36 ton/yıl, Yağ Filtresi: 99 ton/yıl), ATIK ELEKTRİKLİ VE ELEKTRONİK EŞYA GERİ KAZANIM FAALİYETİ (AEEE İşleme Kapasitesi: 1.440 ton/yıl), VE TEHLİKESİZ ATIK TOPLAMA AYIRMA FAALİYETİ (Toplama Ayırma: 100.000 ton/yıl) MANİSA İLİ,…</div>
+<div class="hit"><span class="pno">[s. 1]</span> <code>1.440 ton/yıl</code> — …on/yıl, Yağ Filtresi: 99 ton/yıl), ATIK ELEKTRİKLİ VE ELEKTRONİK EŞYA GERİ KAZANIM FAALİYETİ (AEEE İşleme Kapasitesi: 1.440 ton/yıl), VE TEHLİKESİZ ATIK TOPLAMA AYIRMA FAALİYETİ (Toplama Ayırma: 100.000 ton/yıl) MANİSA İLİ, YUNUSEMRE İLÇESİ,…</div></section></div>
+
+  <h2>Document Navigation Map</h2>
+  <ul><li><span class="pno">[s. 5]</span> PROJENİN TEKNİK OLMAYAN ÖZETİ</li>
+<li><span class="pno">[s. 7]</span> BÖLÜM I: PROJENİN ÖZELLİKLERİ</li>
+<li><span class="pno">[s. 7]</span> a) Projenin ve Yerin Alternatifleri (Proje Teknolojisinin ve Proje Alanının Seçilme Nedenleri):</li>
+<li><span class="pno">[s. 7]</span> b) Projenin İş Akım Şeması, Kapasitesi, Kapladığı Alan, Teknolojisi, Çalışacak Personel Sayısı:</li>
+<li><span class="pno">[s. 60]</span> c) Doğal Kaynakların Kullanımı (Arazi Kullanımı, Su Kullanımı, Kullanılan Enerji Türü vb.):</li>
+<li><span class="pno">[s. 62]</span> ç) Projenin İnşaat ve İşletme Aşamasında Oluşan Her Türlü Atığın Özelliği (cinsi, türü, miktarı, vb.), Bertarafı ve Geri Kazanımına Yönelik Değerlendirmeler</li>
+<li><span class="pno">[s. 72]</span> d) Kullanılan Teknoloji ve Malzemelerden Kaynaklanabilecek Kaza Riski</li>
+<li><span class="pno">[s. 73]</span> BÖLÜM II: PROJENİN YERİ VE ETKİ ALANININ MEVCUT ÇEVRESEL ÖZELLİKLERİ</li>
+<li><span class="pno">[s. 73]</span> a) Mevcut Arazi Kullanımı ve Kalitesi (Tarım Alanı, Orman Alanı, Planlı Alan, Su Yüzeyi ve benzeri)</li>
+<li><span class="pno">[s. 85]</span> b) Ek 5’deki Duyarlı Yöreler Listesi Dikkate Alınarak Korunması Gereken Alanlar</li>
+<li><span class="pno">[s. 87]</span> BÖLÜM III: PROJENİN İNŞAAT VE İŞLETME AŞAMASINDA ÇEVRESEL ETKİLERİ, ÖNCELİKLİ ETKİLERİN BELİRLENMESİ VE ALINACAK ÖNLEMLER</li>
+<li><span class="pno">[s. 92]</span> BÖLÜM IV: KÜMÜLATİF ETKİ DEĞERLENDİRME</li>
+<li><span class="pno">[s. 93]</span> BÖLÜM V: ÇEVRESEL VE SOSYAL EYLEM PLANI</li>
+<li><span class="pno">[s. 93]</span> V-1: Çevre İzleme Planı</li>
+<li><span class="pno">[s. 94]</span> V-2: Sürdürülebilirlik Planı (Sıfır Atık Planı, Trafik Yönetim Planı, Sera Gazı Azaltım Planı, Çevresel ve Sosyal Yönetim Planı, vb.)</li>
+<li><span class="pno">[s. 94]</span> BÖLÜM VI: NOTLAR, KAYNAKLAR, EKLER:</li>
+<li><span class="pno">[s. 1]</span> EKLER.pdf</li>
+<li><span class="pno">[s. 146]</span> Model</li>
+<li><span class="pno">[s. 147]</span> Model</li>
+<li><span class="pno">[s. 1]</span> Sıfır Atık Planı.pdf</li></ul>
+
+  <div class="notice">
+    Informational civic transparency aid generated from official public Ministry announcements at <code>eced-duyuru.csb.gov.tr</code>. Every figure cites its 1-based PDF page <code>[s. N]</code>. Statutory deadlines are computed automatically and must be verified by qualified legal counsel.
+  </div>
+</div>
+</body>
+</html>
