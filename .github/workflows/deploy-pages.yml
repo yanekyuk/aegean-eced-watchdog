@@ -1,0 +1,48 @@
+name: Validate & Deploy Static Site
+
+on:
+  push:
+    branches: ["main"]
+    paths:
+      - "docs/**"
+      - ".github/workflows/deploy-pages.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Validate docs/index.html and RSS 2.0 feed.xml
+        run: |
+          test -s docs/index.html
+          python3 -c "import xml.etree.ElementTree as ET; t = ET.parse('docs/feed.xml'); print('RSS valid, items:', len(t.findall('./channel/item')))"
+
+      - name: Upload Pages artifact (public repos or manual dispatch)
+        if: github.event.repository.private == false || github.event_name == 'workflow_dispatch'
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: docs/
+
+  deploy-pages:
+    needs: validate
+    if: github.event.repository.private == false
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

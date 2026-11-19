@@ -25,10 +25,19 @@ uv run eced-watch --skip-fetch --skip-digests
 uv run eced-watch --provinces 35:İZMİR 45:MANİSA 09:AYDIN --days 14
 ```
 
-## Automated Daily Deployment (GitHub Actions + Pages)
+## Scheduling & Deployment (Turkish IP Note)
 
-1. Push this repo to GitHub.
-2. Under **Settings → Pages**, set **Source** to **GitHub Actions**.
-3. `.github/workflows/daily-watch.yml` runs daily at **07:15 TRT (04:15 UTC)** (and on manual `workflow_dispatch`), commits updated `data/filings.json`, `data/digests/`, and `docs/`, and deploys `docs/` to GitHub Pages.
+`eced-duyuru.csb.gov.tr` silently drops TCP connections from foreign datacenter IP ranges (such as GitHub Actions' US Azure runners), so polling should run from a **Turkish IP** (a local Linux machine or a Turkish VPS):
+
+```bash
+# Install daily local systemd user timer (09:00 local, Persistent=true)
+chmod +x scripts/install-systemd-timer.sh
+./scripts/install-systemd-timer.sh
+
+# Check logs
+journalctl --user -u aegean-eced-watchdog.service -n 50
+```
+
+When you commit and push updated `data/` + `docs/` to GitHub, `.github/workflows/deploy-pages.yml` validates `docs/index.html` and `docs/feed.xml` and deploys `docs/` to GitHub Pages automatically once the repository is public (or on GitHub Pro).
 
 > **Disclaimer:** Informational transparency aid generated from official public Ministry announcements. Always verify statutory deadlines and legal standing with qualified legal counsel.
