@@ -1,0 +1,782 @@
+{
+  "filing": {
+    "province": "MANİSA",
+    "district": "SALİHLİ",
+    "project_name": "Büyükbaş Hayvan Yetiştirme Tesisi Kapasite Artışı (224 adet büyükbaştan 1.000 adet büyükbaşa artış)",
+    "project_owner": "Sardova Tarım ve Hayvancılık Tic. Ltd. Şti.",
+    "sector": "Hayvancılık",
+    "sub_sector": "Büyükbaş-Küçükbaş Hayvan Besi Tesisleri",
+    "decision_type": "ÇED Gerekli Değil/ÇED Olumlu",
+    "announcement_date_tr": "28.10.2026",
+    "project_type": "Ek-2",
+    "detail_text": "MANİSA ili SALİHLİ,  ilcesinde MANİSA ili SALİHLİ,  ilcesi Dombaylı Mah., Tapunun 124 Ada, 71 Nolu Parseli mevkiindeki Sardova Tarım ve Hayvancılık Tic. Ltd. Şti. tarafından yapılması planlanan Büyükbaş Hayvan Yetiştirme Tesisi Kapasite Artışı (224 adet büyükbaştan 1.000 adet büyükbaşa artış) projesi ile ilgili olarak Bakanlığımıza sunulan PTD Dosyası incelenmiş ve değerlendirilmiştir  ÇED Yönetmeliği'nin 17. maddesi gereğince Büyükbaş Hayvan Yetiştirme Tesisi Kapasite Artışı (224 adet büyükbaştan 1.000 adet büyükbaşa artış) projesi'ne Valiliğimizce 'ÇED Olumlu (Kapsam Ek-2)' kararı verilmiştir.",
+    "detail_links": [
+      {
+        "text": "PTD Dosyası",
+        "href": "http://eced.csb.gov.tr/jsp/ek1/61259"
+      }
+    ],
+    "documents": [
+      {
+        "portal_doc_url": "http://eced.csb.gov.tr/jsp/ek1/61259",
+        "filing_id": "61259",
+        "consulting_firm": "ASİL ÇEVRE MÜHENDİSLİK VE ATIK YÖNETİMİ HİZMETLERİ LİMİTED ŞİRKETİ",
+        "submitted_at": "02/10/2026 12:14:04",
+        "pdf_urls": [
+          {
+            "label": "Dosya Göster",
+            "url": "http://eced.csb.gov.tr/jsp/dosya/dosyaGoster.htm?tempAd=sign5849588052928662607.pdf&orjinalAd=SARDOVAPTD.pdf&yuklemeTarihi=2026-10-01"
+          }
+        ]
+      }
+    ],
+    "announcement_date": "2026-10-28",
+    "statutory_clocks": [
+      {
+        "code": "iyuk_20a",
+        "kind": "İYUK 20/A annulment lawsuit (30d; İYUK 11 does not toll)",
+        "deadline": "2026-11-27",
+        "days_remaining": 7
+      }
+    ],
+    "priority_district": true,
+    "filing_key": "61259:28.10.2026:ÇED Gerekli Değil/ÇED Olumlu",
+    "first_seen_at": "2026-11-20T00:44:23"
+  },
+  "pdf_info": {
+    "filename": "61259.pdf",
+    "bytes": 88315218,
+    "sha256": "1041ca4efb581eb02ef03c5c4bbf55c6a6e89821196b3b3ff80b9860b8091e39",
+    "cached": false
+  },
+  "analysis": {
+    "page_count": 199,
+    "total_chars": 332884,
+    "text_pages": 174,
+    "scanned_or_blank_pages": 25,
+    "scanned_page_sample": [
+      95,
+      96,
+      97,
+      98,
+      99,
+      100,
+      101,
+      108,
+      109,
+      112,
+      114,
+      117,
+      118,
+      119,
+      137
+    ],
+    "headings": [
+      [
+        4,
+        "BÖLÜM III. PROJENİN İNŞAAT VE İŞLETME AŞAMASINDA ÇEVRESEL ETKİLERİ,"
+      ],
+      [
+        7,
+        "PROJENİN TEKNİK OLMAYAN ÖZETİ"
+      ],
+      [
+        9,
+        "BÖLÜM I"
+      ],
+      [
+        10,
+        "BÖLÜM I. PROJENİN ÖZELLİKLERİ"
+      ],
+      [
+        45,
+        "BÖLÜM II"
+      ],
+      [
+        46,
+        "BÖLÜM II. PROJE YERİ VE ETKİ ALANIN MEVCUT ÇEVRESEL ÖZELLİKLERİ"
+      ],
+      [
+        70,
+        "BÖLÜM III"
+      ],
+      [
+        71,
+        "BÖLÜM III. PROJENİN İNŞAAT VE İŞLETME AŞAMASINDA ÇEVRESEL"
+      ],
+      [
+        76,
+        "BÖLÜM IV"
+      ],
+      [
+        76,
+        "KÜMÜLATİF ETKİ"
+      ],
+      [
+        77,
+        "BÖLÜM IV. KÜMÜLATİF ETKİ DEĞERLENDİRME"
+      ],
+      [
+        79,
+        "BÖLÜM V"
+      ],
+      [
+        79,
+        "ÇEVRESEL VE SOSYAL"
+      ],
+      [
+        80,
+        "BÖLÜM V. ÇEVRESEL VE SOSYAL EYLEM PLANI"
+      ],
+      [
+        83,
+        "BÖLÜM VI"
+      ],
+      [
+        84,
+        "BÖLÜM VI. NOTLAR, KAYNAKLAR VE EKLER"
+      ],
+      [
+        190,
+        "ÇEVRESEL VE SOSYAL YÖNETİM PLANI (ÇSYP)"
+      ],
+      [
+        191,
+        "ÇEVRESEL VE SOSYAL YÖNETİM PLANI"
+      ]
+    ],
+    "signals": {
+      "coordinates_and_footprint": {
+        "label": "Coordinates, Parcel & Footprint",
+        "page_count": 40,
+        "pages": [
+          7,
+          13,
+          14,
+          17,
+          19,
+          20,
+          23,
+          25,
+          26,
+          27,
+          28,
+          29,
+          34,
+          36,
+          48,
+          55,
+          73,
+          87,
+          88,
+          89,
+          94,
+          103,
+          124,
+          135,
+          141
+        ],
+        "samples": [
+          {
+            "page": 7,
+            "match": "817,35 m2",
+            "snippet": "…anına ait Tapu belgesi Ek-2.4’de yer almaktadır. Proje kapsamında kullanılacak 124 ada, 71 nolu parselin büyüklüğü 39.817,35 m2 olup, sözkonusu büyükbaş hayvan yetiştirme tesisi toplamda 4.887,7 m2 alanda faaliyet gösterecektir. Projenin plan…"
+          },
+          {
+            "page": 7,
+            "match": "887,7 m2",
+            "snippet": "…nılacak 124 ada, 71 nolu parselin büyüklüğü 39.817,35 m2 olup, sözkonusu büyükbaş hayvan yetiştirme tesisi toplamda 4.887,7 m2 alanda faaliyet gösterecektir. Projenin planlandığı 124 Ada, 71 nolu parsel alanı üzerinde mevcut durumda herhangi…"
+          },
+          {
+            "page": 13,
+            "match": "817,35 m2",
+            "snippet": "…anına ait Tapu belgesi Ek-2.4’te yer almaktadır. Proje kapsamında kullanılacak 124 ada, 71 nolu parselin büyüklüğü 39.817,35 m2 olup, sözkonusu büyükbaş hayvan yetiştirme tesisi toplamda 4.887,7 m2 alanda faaliyet gösterecektir. Projenin plan…"
+          },
+          {
+            "page": 13,
+            "match": "887,7 m2",
+            "snippet": "…nılacak 124 ada, 71 nolu parselin büyüklüğü 39.817,35 m2 olup, sözkonusu büyükbaş hayvan yetiştirme tesisi toplamda 4.887,7 m2 alanda faaliyet gösterecektir. Projenin planlandığı 124 Ada, 71 nolu parsel alanı üzerinde mevcut durumda herhangi…"
+          },
+          {
+            "page": 13,
+            "match": "883,30m2",
+            "snippet": "…arında belirtilen hususlara aynen uyulması şartıyla ve ekte gönderilen vaziyet planında belirtildiği üzere, \"Ahır-1\" 1.883,30m2 , \"Ahır-2\" 1.883,30m2, \"Gübre Çukuru-1\" 258,10m2, \" Gübre Çukuru-2 \"258,10m2, \"Yem Deposu\" 368,90m2, \" Malzeme Deposu…"
+          },
+          {
+            "page": 13,
+            "match": "258,10m2",
+            "snippet": "…la ve ekte gönderilen vaziyet planında belirtildiği üzere, \"Ahır-1\" 1.883,30m2 , \"Ahır-2\" 1.883,30m2, \"Gübre Çukuru-1\" 258,10m2, \" Gübre Çukuru-2 \"258,10m2, \"Yem Deposu\" 368,90m2, \" Malzeme Deposu \" (zemin kat)117,00m2, \" Bakıcı Evi \" (1. kat )11…"
+          },
+          {
+            "page": 13,
+            "match": "368,90m2",
+            "snippet": "…üzere, \"Ahır-1\" 1.883,30m2 , \"Ahır-2\" 1.883,30m2, \"Gübre Çukuru-1\" 258,10m2, \" Gübre Çukuru-2 \"258,10m2, \"Yem Deposu\" 368,90m2, \" Malzeme Deposu \" (zemin kat)117,00m2, \" Bakıcı Evi \" (1. kat )117,00m2, \"Fosseptik Çukuru\" 2,00m2 olmak üzere zemin…"
+          },
+          {
+            "page": 13,
+            "match": "117,00m2",
+            "snippet": "….883,30m2, \"Gübre Çukuru-1\" 258,10m2, \" Gübre Çukuru-2 \"258,10m2, \"Yem Deposu\" 368,90m2, \" Malzeme Deposu \" (zemin kat)117,00m2, \" Bakıcı Evi \" (1. kat )117,00m2, \"Fosseptik Çukuru\" 2,00m2 olmak üzere zeminde toplam 4.887,70m2 büyüklükte parselin…"
+          }
+        ]
+      },
+      "water_and_discharge": {
+        "label": "Water Use, Hydrogeology & Discharge",
+        "page_count": 20,
+        "pages": [
+          17,
+          18,
+          24,
+          25,
+          48,
+          49,
+          50,
+          55,
+          58,
+          59,
+          64,
+          67,
+          68,
+          73,
+          81,
+          85,
+          138,
+          165,
+          167,
+          195
+        ],
+        "samples": [
+          {
+            "page": 17,
+            "match": "0,95 m3/gün",
+            "snippet": "…Su İhtiyacı = (Kişi başına su kullanım mik.) x (personel sayısı) = (191 lt/kişi-gün) x (5 kişi) ≈ 0,95 m3/gün olmaktadır. Proje kapsamında araçların manevralarından kaynaklı toz oluşumunun oluşabileceği yolların gidiş-dönüş t…"
+          },
+          {
+            "page": 17,
+            "match": "1,87 m3/gün",
+            "snippet": "…m x Kullanılan Yolun Alanı x Günlük Sulama Sayısı = (1,5 lt/m2) x (500 m) x (2,5 m) x (1 sefer/gün) = 1875 lt/gün = 1,87 m3/gün olarak hesaplanmıştır. İşletme Aşaması İşletme aşamasında tesiste 3 personel görev alacaktır. Kişi başına kullanı…"
+          },
+          {
+            "page": 17,
+            "match": "0,57 m3/gün",
+            "snippet": "…Su İhtiyacı = (Kişi başına su kullanım mik.) x (personel sayısı) = (191 lt/kişi-gün) x (3 kişi) ≈ 0,57 m3/gün olmaktadır. Tesiste yetiştirilecek büyükbaş hayvanların günde ortalama 23-33 litre2 su tükettikleri kabul edildiğ…"
+          },
+          {
+            "page": 17,
+            "match": "33 m3/gün",
+            "snippet": "…tükettikleri kabul edildiğinde günlük toplam su tüketimi; Hayvanların Günlük Su İhtiyacı = 1.000 adet x 0,033 m3 = 33 m3/gün olarak hesaplanmıştır. DSİ 2. Bölge Müdürlüğü’nün 18.11.2025 tarih ve 6530995 sayılı yazısında “… Görüş istenen al…"
+          },
+          {
+            "page": 17,
+            "match": "yeraltı suyu",
+            "snippet": "…ük Oluru ile tahsise kapatılan \"Turgutlu-Ahmetli Alt Havzası YAS Alanı\" içerisinde kalmaktadır. Bahsi geçen bu alanda yeraltı suyu tahsisi yapılmamakta olup, derin yeraltı suyu kuyusu açılmasına izin verilmemektedir. Ayrıca görüş istenen alan Domba…"
+          },
+          {
+            "page": 18,
+            "match": "yeraltı suyu",
+            "snippet": "…lanacak olup içme suyu ihtiyacı ise piyasada satılan hazır sulardan karşılanacaktır. Faaliyet kapsamında herhangi bir yeraltı suyu tahsisi ve kullanımı olmayacaktır. Planlanan faaliyetle ilgili olarak personelin içme ve kullanma suyu ihtiyacı, ye…"
+          },
+          {
+            "page": 18,
+            "match": "0,95 m3/gün",
+            "snippet": "…blo 5. Tesise Ait Su Kullanım Miktarları AŞAMASI KULLANIM YERİ MİKTARI TEMİN ŞEKLİ İNŞAAT Personel Kullanım Suyu 0,95 m3/gün S.S Dombaylı Sulama Kooperatifinden temin edilecektir. Tozuma Önleme 1,87 m3/gün TOPLAM 2,82 m3/gün İŞLETME Pe…"
+          },
+          {
+            "page": 18,
+            "match": "1,87 m3/gün",
+            "snippet": "…İ İNŞAAT Personel Kullanım Suyu 0,95 m3/gün S.S Dombaylı Sulama Kooperatifinden temin edilecektir. Tozuma Önleme 1,87 m3/gün TOPLAM 2,82 m3/gün İŞLETME Personel Kullanım Suyu 0,57 m3/gün Hayvanların İçme Suyu 33 m3/gün TOPLAM 33,57 m3…"
+          }
+        ]
+      },
+      "protected_land_and_olive": {
+        "label": "Protected Zones, Forests & Olive Groves",
+        "page_count": 13,
+        "pages": [
+          4,
+          46,
+          54,
+          56,
+          58,
+          64,
+          67,
+          68,
+          86,
+          135,
+          150,
+          151,
+          193
+        ],
+        "samples": [
+          {
+            "page": 4,
+            "match": "orman alanı",
+            "snippet": "…LÜM II. PROJE YERİ VE ETKİ ALANIN MEVCUT ÇEVRESEL ÖZELLİKLERİ ...........36 II.a) Mevcut Arazi Kullanımı (tarım alanı, orman alanı, planlı alan, su yüzeyi ve benzeri) ve Kalitesi, Jeolojik ve Hidrojeolojik Özellikleri ...............................…"
+          },
+          {
+            "page": 46,
+            "match": "orman alanı",
+            "snippet": "…36 BÖLÜM II. PROJE YERİ VE ETKİ ALANIN MEVCUT ÇEVRESEL ÖZELLİKLERİ II.a) Mevcut Arazi Kullanımı (tarım alanı, orman alanı, planlı alan, su yüzeyi ve benzeri) ve Kalitesi, Jeolojik ve Hidrojeolojik Özellikleri Manisa İli, Salihli İlçesi,…"
+          },
+          {
+            "page": 54,
+            "match": "Milli Park",
+            "snippet": "…biat Koruma Alanları\", Manisa ili sınırları içindeki korunan alanlar ile ilgili bilgiler aşağıda verilmiştir.  Milli Park (MP): Projenin gerçekleşeceği Manisa İli, Salihli İlçesi sınırları içinde milli park bulunmamaktadır. Manisa İli sı…"
+          },
+          {
+            "page": 54,
+            "match": "Tabiat Parkı",
+            "snippet": "…li sınırları içinde 1 adet milli park (Spil Dağı) bulunmakta olup; tesise uzaklığı yaklaşık 75 km civarındadır.  Tabiat Parkı (TP): Projenin gerçekleştirileceği Manisa İli, Salihli İlçesi sınırları içerisinde tabiat parkı bulunmamaktadır. F…"
+          },
+          {
+            "page": 56,
+            "match": "Özel Çevre Koruma",
+            "snippet": "…ce hassas kirlenme bölgeleri bulunmamaktadır. f) Çevre Kanunu’nun 9 uncu maddesi uyarınca Cumhurbaşkanı tarafından \"Özel Çevre Koruma Bölgeleri\" olarak tespit ve ilan edilen alanlar Manisa ili sınırları içinde Özel Çevre Koruma Bölgesi bulunmamaktadı…"
+          },
+          {
+            "page": 56,
+            "match": "orman alanı",
+            "snippet": "…lanının Boğaziçi Kanunu'na Göre Koruma Altına Alınan Alanlar ile ilişkisi bulunmamaktadır. ğ) Orman Kanunu uyarınca orman alanı sayılan yerler İzmir-Manisa Planlama Bölgesi 1/100.000 Ölçekli Çevre Düzeni Planı K20 paftası içerisinde “Tarım Ala…"
+          },
+          {
+            "page": 58,
+            "match": "kıyı kenar",
+            "snippet": "…ı olmak üzere canlıların yaşama ortamı olarak önem taşıyan bütün sular, bataklık sazlık ve turbiyeler ile bu alanların kıyı kenar çizgisinden itibaren kara tarafına doğru ekolojik açıdan sulak alan kalan yerler, Proje alanının Sulak Alanlar: Doğ…"
+          },
+          {
+            "page": 58,
+            "match": "sulak alan",
+            "snippet": "…ar, bataklık sazlık ve turbiyeler ile bu alanların kıyı kenar çizgisinden itibaren kara tarafına doğru ekolojik açıdan sulak alan kalan yerler, Proje alanının Sulak Alanlar: Doğal veya yapay, devamlı veya geçici, suların durgun veya akıntılı, ta…"
+          }
+        ]
+      },
+      "ecology_and_baseline": {
+        "label": "Flora, Fauna & Baseline Methodology",
+        "page_count": 13,
+        "pages": [
+          5,
+          49,
+          55,
+          57,
+          59,
+          60,
+          61,
+          62,
+          63,
+          64,
+          65,
+          67,
+          68
+        ],
+        "samples": [
+          {
+            "page": 5,
+            "match": "IUCN",
+            "snippet": "…lo 15. Proje Alanı ve Çevresinde Bulunma Olasılığı Yüksek Olan Kuş Türleri, Latince, Türkçe ve İngilizce Adları, Bern, IUCN Red Data Book ve Korunma Statüleri ve MAK Kategorileri ...............................................................…"
+          },
+          {
+            "page": 49,
+            "match": "mevsimsel",
+            "snippet": "…örüşü alınmıştır (Bkz.Ek-7.3). Faaliyet alanına en yakın yüzeysel su kaynağı alana yaklaşık 400 m mesafede yer alan mevsimsel akışlı Üşümüş Deresi’dir. Şekil 9. Proje Alanı ve Civarındaki Su Kaynakları Kaynak: DSİ Genel Müdürlüğü 2. Bölge…"
+          },
+          {
+            "page": 55,
+            "match": "mevsimsel",
+            "snippet": "…örüşü alınmıştır (Bkz.Ek-7.3). Faaliyet alanına en yakın yüzeysel su kaynağı alana yaklaşık 400 m mesafede yer alan mevsimsel akışlı Üşümüş Deresi’dir."
+          },
+          {
+            "page": 57,
+            "match": "BERN Sözleşmesi",
+            "snippet": "…özleşmeler Uyarınca Korunması Gerekli Alanlar a) \"Avrupa’nın Yaban Hayatı ve Yaşama Ortamlarını Koruma Sözleşmesi\" (BERN Sözleşmesi) uyarınca koruma altına alınmış alanlardan \"Önemli Deniz Kaplumbağası Üreme Alanları\"nda belirtilen I. ve II. Koruma B…"
+          },
+          {
+            "page": 59,
+            "match": "endemik",
+            "snippet": "…d) Bilimsel araştırmalar için önem arz eden ve/veya nesli tehlikeye düşmüş veya düşebilir türler ve ülkemiz için endemik olan türlerin yaşama ortamı olan alanlar, biyosfer rezervi, biyotoplar, biyogenetik rezerv alanları, benzersiz özellik…"
+          },
+          {
+            "page": 59,
+            "match": "Flora ve Fauna",
+            "snippet": "…üstü ve yeraltı suyu kaynaklarının tabii su toplama alanı içerisinde kalan alanlar ile ilişkisi bulunmamaktadır. 4.Flora ve Fauna  Flora Bitki coğrafyası bitki türlerinin dünyadaki dağılış biçimleri ile coğrafik özellikler arasındaki ilişkil…"
+          },
+          {
+            "page": 60,
+            "match": "IUCN",
+            "snippet": "…tam olarak bilinmeyenler için (x) işareti konmuştur. Flora listesinde tür düzeyinde yer alan bitki taksonlarından IUCN (The World Conservation Union: The International Union for the Conservation of Nature and Natural Resources = Doğayı…"
+          },
+          {
+            "page": 60,
+            "match": "Bern Sözleşmesi",
+            "snippet": "…alanı ile çevresinde; nadir, nesli tehlikede olan ve “Avrupa’nın Yaban Hayatı ve Yaşama Ortamlarını Koruma Sözleşmesi (Bern Sözleşmesi)” Ek-I listesine göre koruma altına alınması gereken bir bitki türü bulunmamaktadır."
+          }
+        ]
+      },
+      "pollutants_and_hazards": {
+        "label": "Emissions, Geochemistry & Waste",
+        "page_count": 30,
+        "pages": [
+          6,
+          21,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35,
+          39,
+          42,
+          47,
+          50,
+          52,
+          53,
+          72,
+          73,
+          75,
+          76,
+          77,
+          78,
+          80,
+          81,
+          84,
+          86,
+          128
+        ],
+        "samples": [
+          {
+            "page": 6,
+            "match": "Gürültü",
+            "snippet": "…anına Ait 1/100.000 Ölçekli Çevre Düzeni Planı Görüntüsü ..................... 7 Şekil 4. Ekipmanlardan Kaynaklanacak Gürültü Seviyesinin Mesafeye Bağlı Değişim Grafiği ...........................................................................…"
+          },
+          {
+            "page": 21,
+            "match": "tehlikeli atık",
+            "snippet": "…RG-11.7.2013-28704) hükümlerine göre de hareket edilecektir.  Tehlikeli Atıklar Proje kapsamında ortaya çıkacak tehlikeli atık kapsamındaki atıklar cinslerine göre ayrılarak, sızdırmazlığı sağlanmış, üstü kapalı ve her atık türü için bölmeleri b…"
+          },
+          {
+            "page": 30,
+            "match": "Gürültü",
+            "snippet": "…rlüğe giren Koku Oluşturan Emisyonların Kontrolü Hakkında Yönetmelik hükümlerine uygun hareket edilecektir. I.ç.5. Gürültü İnşaat Aşaması Proje kapsamında inşaat aşamasında kullanılacak iş makinelerinden kaynaklı çevresel gürültü oluşa…"
+          },
+          {
+            "page": 31,
+            "match": "gürültü",
+            "snippet": "…ARTIŞI (224 adet büyükbaştan 1.000 adet büyükbaşa artış) PROJE TANITIM DOSYASI 22 Oluşacak gürültünün, muhtemel gürültü kaynaklarının gürültü seviyeleri; 30.12.2006 tarih ve 26392 sayılı Resmi Gazete’de yayımlanarak yürürlüğe giren “Açık…"
+          },
+          {
+            "page": 32,
+            "match": "gürültü",
+            "snippet": "…İTE ARTIŞI (224 adet büyükbaştan 1.000 adet büyükbaşa artış) PROJE TANITIM DOSYASI 23 Tesiste oluşacak çevresel gürültü seviyelerinin belirlenmesinde literatür verileri, üretici katalogları ve benzer tesislerde yapılan ölçüm sonuçlarından…"
+          },
+          {
+            "page": 33,
+            "match": "Gürültü",
+            "snippet": "…adet büyükbaştan 1.000 adet büyükbaşa artış) PROJE TANITIM DOSYASI 24 Şekil 4. Ekipmanlardan Kaynaklanacak Gürültü Seviyesinin Mesafeye Bağlı Değişim Grafiği 30.11.2022 tarih ve 32029 sayılı Resmi Gazete’de yayımlanarak yürürlüğe g…"
+          },
+          {
+            "page": 34,
+            "match": "gürültü",
+            "snippet": "…PROJE TANITIM DOSYASI 25 Dolayısıyla projenin arazi hazırlık ve inşaat çalışmaları esnasında hesapla elde edilen gürültü düzeylerinden daha düşük seviyelerde gürültü oluşması beklenmektedir. İşletme Aşaması Sözkonusu projenin işletme…"
+          },
+          {
+            "page": 35,
+            "match": "gürültü",
+            "snippet": "…e çalışan işçilerin kişisel koruyucu ekipman (kulaklık vb.) kullanması sağlanacak olup, belirli periyotlarda iç ortam gürültü ölçümü yaptırılarak da sürekli kontrol sağlanacaktır. Faaliyet alanında, \"İş Kanunu\"nda belirtilen koruyucu gereçler…"
+          }
+        ]
+      },
+      "cost_and_capacity": {
+        "label": "Project Cost, Power & Capacity",
+        "page_count": 140,
+        "pages": [
+          1,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26
+        ],
+        "samples": [
+          {
+            "page": 1,
+            "match": "KAPASİTE",
+            "snippet": "SARDOVA TARIM VE HAYVANCILIK TİC. LTD. ŞTİ. BÜYÜKBAŞ HAYVAN YETİŞTİRME TESİSİ KAPASİTE ARTIŞI (224 adet büyükbaştan 1.000 adet büyükbaşa artış) PROJE TANITIM DOSYASI Manisa İli, Salihli İlçes…"
+          },
+          {
+            "page": 3,
+            "match": "KAPASİTE",
+            "snippet": "SARDOVA TARIM VE HAYVANCILIK TİC. LTD. ŞTİ. BÜYÜKBAŞ HAYVAN YETİŞTİRME TESİSİ KAPASİTE ARTIŞI (224 adet büyükbaştan 1.000 adet büyükbaşa artış) PROJE TANITIM DOSYASI i Proje Sahibinin Adı: SARDOVA…"
+          },
+          {
+            "page": 3,
+            "match": "Proje Bedeli",
+            "snippet": "…m Projenin Adı: BÜYÜKBAŞ HAYVAN YETİŞTİRME TESİSİ KAPASİTE ARTIŞI (224 adet büyükbaştan 1.000 adet büyükbaşa artış) Proje Bedeli: 27.177.550 TL Proje İçin Seçilen Yerin Açık Adresi (İli, İlçesi, Mevkii): Manisa İli, Salihli İlçesi, Dombaylı Ma…"
+          },
+          {
+            "page": 3,
+            "match": "27.177.550 TL",
+            "snippet": "…: BÜYÜKBAŞ HAYVAN YETİŞTİRME TESİSİ KAPASİTE ARTIŞI (224 adet büyükbaştan 1.000 adet büyükbaşa artış) Proje Bedeli: 27.177.550 TL Proje İçin Seçilen Yerin Açık Adresi (İli, İlçesi, Mevkii): Manisa İli, Salihli İlçesi, Dombaylı Mah., Tapunun 124…"
+          },
+          {
+            "page": 4,
+            "match": "KAPASİTE",
+            "snippet": "SARDOVA TARIM VE HAYVANCILIK TİC. LTD. ŞTİ. BÜYÜKBAŞ HAYVAN YETİŞTİRME TESİSİ KAPASİTE ARTIŞI (224 adet büyükbaştan 1.000 adet büyükbaşa artış) PROJE TANITIM DOSYASI ii İçindekiler Listesi…"
+          },
+          {
+            "page": 4,
+            "match": "kapasite",
+            "snippet": "…...................................................................................... 1 I.b) Projenin iş akım şeması, kapasitesi, kapladığı alan, yatırım bedeli, teknolojisi, çalışacak personel sayısı, ...........................................…"
+          },
+          {
+            "page": 5,
+            "match": "KAPASİTE",
+            "snippet": "SARDOVA TARIM VE HAYVANCILIK TİC. LTD. ŞTİ. BÜYÜKBAŞ HAYVAN YETİŞTİRME TESİSİ KAPASİTE ARTIŞI (224 adet büyükbaştan 1.000 adet büyükbaşa artış) PROJE TANITIM DOSYASI iii Tablolar Dizini…"
+          },
+          {
+            "page": 6,
+            "match": "KAPASİTE",
+            "snippet": "SARDOVA TARIM VE HAYVANCILIK TİC. LTD. ŞTİ. BÜYÜKBAŞ HAYVAN YETİŞTİRME TESİSİ KAPASİTE ARTIŞI (224 adet büyükbaştan 1.000 adet büyükbaşa artış) PROJE TANITIM DOSYASI iv Şekiller Dizini…"
+          }
+        ]
+      }
+    },
+    "audit_checks": {
+      "mentions_field_survey": true,
+      "mentions_literature_only_cue": true,
+      "mentions_seasonal_sampling": true,
+      "mentions_cumulative_impact": true,
+      "mentions_olive_law_3573": true,
+      "mentions_groundwater_or_aquifer": true,
+      "mentions_iucn_or_endemic": true
+    }
+  },
+  "llm_synthesis": {
+    "model": "gemini-4-hydrogen",
+    "generated_at": "2026-11-20T01:49:44",
+    "pages_sent": [
+      1,
+      2,
+      4,
+      5,
+      6,
+      17,
+      18,
+      24,
+      25,
+      45,
+      46,
+      47,
+      49,
+      54,
+      55,
+      56,
+      57,
+      70,
+      71,
+      72,
+      79,
+      80,
+      81,
+      190,
+      191,
+      192
+    ],
+    "result": {
+      "executive_summary_tr": "Sardova Tarım ve Hayvancılık Tic. Ltd. Şti. tarafından Manisa ili, Salihli ilçesi, Dombaylı Mahallesi 124 ada, 71 parselde mevcut 224 büyükbaş kapasiteli tesisin 1.000 büyükbaş kapasiteye çıkarılması planlanmaktadır. Proje alanı 1/100.000 ölçekli Çevre Düzeni Planı'nda Tarım Alanı olarak işaretli olup en yakın konut yaklaşık 750 m güneyde, mevsimsel akışlı Üşümüş Deresi ise yaklaşık 400 m mesafede yer almaktadır. Alanın yeraltı suyu tahsisine kapatılan Turgutlu-Ahmetli Alt Havzası YAS Alanı içinde kalması nedeniyle işletme aşamasındaki 33,57 m3/gün kullanım suyu ihtiyacının S.S. Dombaylı Sulama Kooperatifi'nden karşılanması öngörülmektedir. Sunulan sayfalarda inşaat çalışması yapılıp yapılmayacağına dair rapor içi çelişkiler, karar sonrasına bırakılan zemin etüdü ile yalnızca şikâyete bağlı koku, gürültü ve emisyon izlemesi öngörülmesi temel teknik inceleme başlıklarını oluşturmaktadır.",
+      "executive_summary_en": "Sardova Tarım ve Hayvancılık Tic. Ltd. Şti. proposes a capacity expansion of a cattle breeding facility from 224 to 1,000 head on Parcel 124/71 in Dombaylı Neighborhood, Salihli District, Manisa Province. The site is designated as Agricultural Land on the 1/100,000 Environmental Plan, with the nearest residence located approximately 750 m to the south and the seasonal Üşümüş Stream roughly 400 m away. Because the parcel lies within the Turgutlu-Ahmetli Sub-basin Groundwater Area where new groundwater allocations are closed, the operational water demand of 33.57 m3/day is planned to be sourced from the Dombaylı Irrigation Cooperative. Key technical issues observed in the excerpted pages include internal contradictions regarding whether construction will take place, deferral of geotechnical soil surveys to post-approval design, and reactive complaint-only monitoring for odor, noise, and air emissions.",
+      "key_facts": [
+        {
+          "label": "Kapasite Artışı",
+          "value": "224 adet büyükbaştan 1.000 adet büyükbaşa artış",
+          "page": 1
+        },
+        {
+          "label": "İşletme Aşaması Su Kullanımı",
+          "value": "33,57 m3/gün (33 m3/gün hayvan içme suyu, 0,57 m3/gün personel)",
+          "page": 18
+        },
+        {
+          "label": "İnşaat Aşaması Su Kullanımı",
+          "value": "2,82 m3/gün (0,95 m3/gün personel, 1,87 m3/gün toz önleme)",
+          "page": 18
+        },
+        {
+          "label": "Personel Sayısı",
+          "value": "İnşaat aşamasında 5 kişi, işletme aşamasında 3 kişi",
+          "page": 17
+        },
+        {
+          "label": "Evsel Atıksu ve Fosseptik",
+          "value": "İnşaatta 0,95 m3/gün, işletmede 0,57 m3/gün; 4 m3 hacimli sızdırmaz betonarme fosseptik",
+          "page": 24
+        },
+        {
+          "label": "Bitkisel Toprak Sıyırma ve Hafriyat",
+          "value": "4.770,7 m2 alanda 15 cm derinlikte 716 m3 (1.146 ton) bitkisel toprak; toplam 6 ay (1 ay sıyırma, 5 ay hafriyat)",
+          "page": 25
+        },
+        {
+          "label": "En Yakın Konut Mesafesi",
+          "value": "Yaklaşık 750 m güneyde (Dombaylı Mahallesi)",
+          "page": 46
+        },
+        {
+          "label": "En Yakın Yüzeysel Su Kaynağı",
+          "value": "Yaklaşık 400 m mesafede mevsimsel akışlı Üşümüş Deresi",
+          "page": 49
+        },
+        {
+          "label": "En Yakın Korunan Alanlar",
+          "value": "Kula Peribacaları Tabiat Anıtı ~45 km, Spil Dağı Milli Parkı ~75 km, Mesir Tabiat Parkı ~80 km",
+          "page": 54
+        },
+        {
+          "label": "İşletme Katı ve Ambalaj Atığı",
+          "value": "3,63 kg/gün evsel nitelikli katı atık, 1,08 kg/gün ambalaj atığı",
+          "page": 72
+        }
+      ],
+      "baseline_assessment": {
+        "field_survey_status": "not_found",
+        "seasonal_sampling_status": "promised_post_approval_only",
+        "cumulative_impact_status": "omitted_or_not_found",
+        "olive_and_protected_status": "Proje alanı 1/100.000 ölçekli planda Tarım Alanı içinde yer almakta olup orman, mera, sulak alan/Ramsar, Özel Çevre Koruma Bölgesi veya 3573 sayılı Zeytincilik Kanunu kapsamındaki alanlarla ilişkisi bulunmadığı beyan edilmiştir [s. 46, 56]. İzmir 2 Numaralı Kültür Varlıklarını Koruma Bölge Kurulu Müdürlüğü'nün 18.02.2026 tarihli yazısına göre taşınmaz herhangi bir sit veya koruma alanı içinde kalmamakta olup yerinde incelemede kültür varlığına rastlanmamıştır [s. 55]. En yakın korunan alanlar Kula Peribacaları Tabiat Anıtı (~45 km), Spil Dağı Milli Parkı (~75 km) ve Mesir Tabiat Parkı'dır (~80 km) [s. 54]; ayrıca Bern, Barcelona ve Dünya Mirası listeleriyle ilişkisi olmadığı belirtilmiştir [s. 57].",
+        "explanation": "Sunulan PDF sayfalarında proje öncesinde gerçekleştirilmiş ekolojik arazi sörveyi veya hava, su, gürültü ve koku bileşenlerine yönelik mevsimsel taban çizgisi ölçümü yer almamaktadır. Tablolar Dizini'nde yer alan flora ve fauna başlıkları 'Bulunma Olasılığı Yüksek Olan' tür listelerine işaret etmekte olup [s. 5], bu tabloların yer aldığı sayfalar ile Bölüm IV Kümülatif Etki Değerlendirme bölümü sağlanan alıntılar arasında bulunmamaktadır [s. 4, 6]. Çevre İzleme Planı'nda yer alan tüm izleme faaliyetleri onay sonrası döneme yönelik taahhütlerden oluşmakta ve emisyon, gürültü ile koku ölçümleri yalnızca şikâyet oluşması koşuluna bağlanmaktadır [s. 80, 81]."
+      },
+      "red_flags": [
+        {
+          "severity": "high",
+          "title": "İnşaat Çalışması Yapılıp Yapılmayacağına İlişkin Rapor İçi Çelişki",
+          "detail": "Bölüm III'te 'Proje kapsamında herhangi bir inşaat çalışması olmayacağı için sadece işletme aşamasında beklenen çevresel etkiler' değerlendirildiği belirtilmesine karşın [s. 71], diğer bölümlerde 5 kişilik inşaat personeli, 4.770,7 m2 alanda 6 ay sürecek toprak sıyırma ve hafriyat çalışmaları, inşaat su/atıksu hesapları ile Tablo 18 ve Tablo 19'da inşaat aşaması atık miktarları tanımlanmıştır [s. 17, 18, 24, 25, 72, 80, 192].",
+          "pages": [
+            17,
+            18,
+            24,
+            25,
+            71,
+            72,
+            80,
+            192
+          ]
+        },
+        {
+          "severity": "high",
+          "title": "Tahsise Kapalı YAS Havzasında Su Arz Güvenliği ve Kalite Belirsizliği",
+          "detail": "DSİ 2. Bölge Müdürlüğü yazısına göre saha, tahsise kapatılan Turgutlu-Ahmetli Alt Havzası YAS Alanı içinde kalmaktadır [s. 17, 55]. İşletme aşamasında günde 33 m3 hayvan içme suyu olmak üzere toplam 33,57 m3/gün suyun S.S. Dombaylı Sulama Kooperatifi'nden alınacağı belirtilmiş [s. 18, 49]; ancak tarımsal sulama kooperatifi suyunun yılın tüm dönemlerinde (özellikle sulama dışı ve kurak dönemlerde) kesintisiz temin edilip edilemeyeceği ve hayvancılık içme suyu kalite standartlarına uygunluğu analiz edilmemiştir.",
+          "pages": [
+            17,
+            18,
+            49,
+            55
+          ]
+        },
+        {
+          "severity": "high",
+          "title": "Koku, Gürültü ve Emisyon İzlemesinin Şikâyete Bağlanması ve Su İzlemesi Eksikliği",
+          "detail": "Tablo 19 Çevre İzleme Planı'nda emisyon, gürültü ve koku ölçümlerinin yalnızca 'Şikâyet olması durumunda' yapılacağı taahhüt edilmiştir [s. 81]. Yaklaşık 400 m mesafede mevsimsel Üşümüş Deresi yer almasına ve parselin yüzey sularından etkilenme ihtimali vurgulanmasına rağmen [s. 18, 49], izleme planında yüzey suyu veya yeraltı suyu kalite izlemesine yer verilmemiştir [s. 80, 81].",
+          "pages": [
+            18,
+            49,
+            80,
+            81
+          ]
+        },
+        {
+          "severity": "medium",
+          "title": "Kapasite Artışı Beyanı ile Mevcut Faaliyet/Vidanjör İfadesi Arasındaki Uyumsuzluk",
+          "detail": "Proje 224 adet büyükbaştan 1.000 adet büyükbaşa kapasite artışı olarak sunulmasına rağmen [s. 1, 46], I.ç.2 bölümünde 'henüz faaliyete geçilmediğinden bugüne kadar herhangi bir vidanjör çekimi yaptırılmamıştır' denilmektedir [s. 24]. Mevcut 224 başlık tesisin fiili atıksu, fosseptik ve atık yönetim durumu açıklığa kavuşturulmamıştır.",
+          "pages": [
+            1,
+            24,
+            46
+          ]
+        },
+        {
+          "severity": "medium",
+          "title": "Aktif Fay Sisteminde Zemin Etüdünün Proje Onayı Sonrasına Bırakılması",
+          "detail": "Sahanın aktif Gediz Graben Fay Sistemi etki bölgesinde yer aldığı ifade edilmesine karşın, detaylı Jeoteknik / Zemin Etüt Raporunun henüz hazırlanmadığı ve yapıların ileride 'sahada yaptırılacak' rapor parametrelerine göre tasarlanacağı belirtilmiştir [s. 47].",
+          "pages": [
+            47
+          ]
+        },
+        {
+          "severity": "low",
+          "title": "Tablo Başlıklarında Şablon Uyumsuzluğu ve Tarım Alanı Değerlendirme Eksikliği",
+          "detail": "Büyükbaş hayvan yetiştirme tesisi projesinin Tablolar Dizini'nde 'Tablo 12. Kümes Hayvanları Cinsinden, Hayvan Yeri Sayısını Canlı Hayvan Kütlesine Dönüştürme Faktörleri' başlığının bulunması şablon uyarlama hatasına işaret etmektedir [s. 5]. Ayrıca 1/100.000 ölçekli planda Tarım Alanı olarak işaretli sahada [s. 46, 56] 5403 sayılı Kanun kapsamında tarım dışı kullanım izni veya toprak sınıfı değerlendirmesi sunulan sayfalarda yer almamaktadır.",
+          "pages": [
+            5,
+            46,
+            56
+          ]
+        }
+      ],
+      "hkt_and_petition_questions": [
+        {
+          "question_tr": "Bölüm III'te proje kapsamında inşaat çalışması yapılmayacağı belirtilirken [s. 71], I.c, I.ç.2, I.ç.4, Tablo 18, Tablo 19 ve ÇSYP bölümlerinde 5 kişilik inşaat ekibi, 4.770,7 m2 alanda 6 aylık sıyırma/hafriyat ve inşaat atıkları neden tanımlanmıştır; kapasite artışı fiilen yeni inşaat içermekte midir?",
+          "pages": [
+            17,
+            18,
+            24,
+            25,
+            71,
+            72,
+            80,
+            192
+          ]
+        },
+        {
+          "question_tr": "Yeraltı suyu tahsisine kapalı Turgutlu-Ahmetli Alt Havzası YAS Alanı'nda yer alan tesiste [s. 17, 55], 1.000 büyükbaş hayvanın günlük 33 m3 içme suyu ihtiyacının S.S. Dombaylı Sulama Kooperatifi'nden yıl boyu kesintisiz ve hayvan sağlığına uygun kalitede nasıl temin edileceği neden teknik verilerle belgelenmemiştir?",
+          "pages": [
+            17,
+            18,
+            49,
+            55
+          ]
+        },
+        {
+          "question_tr": "Proje 224 büyükbaştan 1.000 büyükbaşa kapasite artışı niteliğinde olduğu halde neden 'henüz faaliyete geçilmediğinden bugüne kadar herhangi bir vidanjör çekimi yaptırılmamıştır' ifadesine yer verilmiştir [s. 24] ve mevcut 224 başlık kapasitenin atıksu/gübre altyapısı nedir?",
+          "pages": [
+            1,
+            24,
+            46
+          ]
+        },
+        {
+          "question_tr": "Yaklaşık 750 m mesafede Dombaylı Mahallesi konutları ve 400 m mesafede Üşümüş Deresi bulunmasına rağmen [s. 46, 49], Çevre İzleme Planı'nda emisyon, gürültü ve koku ölçümlerinin neden yalnızca şikâyete bağlandığı ve yüzey/yeraltı suyu izlemesinin neden planlanmadığı açıklanabilir mi?",
+          "pages": [
+            18,
+            46,
+            49,
+            80,
+            81
+          ]
+        },
+        {
+          "question_tr": "Aktif Gediz Graben Fay Sistemi etki bölgesindeki parselde detaylı Jeoteknik / Zemin Etüt Raporunun ÇED/PTD değerlendirme süreci öncesinde hazırlanarak yapılar ve atık depolama sızdırmazlık önlemlerinin bu verilerle doğrulamasının yapılmama gerekçesi nedir?",
+          "pages": [
+            18,
+            25,
+            47
+          ]
+        }
+      ],
+      "data_limitations": "Toplam 199 PDF sayfasından (174 metin çıkarılabilir, 25 taranmış/görüntü) oluşan dosyanın yalnızca 26 sayfası inceleme alıntılarında sunulmuştur. Projenin kapasite ve yatırım bilgileri (Bölüm I.b), hayvan gübresi yönetim ve bertaraf detayları, koku/emisyon/gürültü modelleme hesapları (Bölüm I.ç), flora-fauna tür tabloları (Tablo 13-17), Bölüm IV Kümülatif Etki Değerlendirme sayfaları ve DSİ, MASKİ ile Dombaylı Sulama Kooperatifi'ne ait resmi yazı ekleri (Ek-7.3) sağlanan sayfa aralığı dışında kaldığından doğrulanamamıştır."
+    }
+  }
+}

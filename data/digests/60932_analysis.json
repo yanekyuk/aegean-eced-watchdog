@@ -1,0 +1,694 @@
+{
+  "filing": {
+    "province": "MANİSA",
+    "district": "AKHİSAR",
+    "project_name": "Zeytinyağı Üretim Tesisi (80 ton/gün zeytin işleme, 20 ton/gün zeytinyağı üretimi) ve Sofralık  Zeytin ( 276 ton/yıl )",
+    "project_owner": "Adnan ÇİÇER",
+    "sector": "Gıda",
+    "sub_sector": "Bitkisel, Hayvansal Yağ Üretimi",
+    "decision_type": "ÇED Gerekli Değil/ÇED Olumlu",
+    "announcement_date_tr": "04.11.2026",
+    "project_type": "Ek-2",
+    "detail_text": "MANİSA ili AKHİSAR,  ilcesinde MANİSA ili AKHİSAR,  ilcesi Kayalıoğlu mah.,Tamburlu mevkii, 269 ada, 46 nolu parsel mevkiindeki Adnan ÇİÇER tarafından yapılması planlanan Zeytinyağı Üretim Tesisi (80 ton/gün zeytin işleme, 20 ton/gün zeytinyağı üretimi) ve Sofralık  Zeytin ( 276 ton/yıl )  projesi ile ilgili olarak Bakanlığımıza sunulan PTD Dosyası incelenmiş ve değerlendirilmiştir  ÇED Yönetmeliği'nin 17. maddesi gereğince Zeytinyağı Üretim Tesisi (80 ton/gün zeytin işleme, 20 ton/gün zeytinyağı üretimi) ve Sofralık  Zeytin ( 276 ton/yıl )  projesi'ne Valiliğimizce 'ÇED Olumlu (Kapsam Ek-2)' kararı verilmiştir.",
+    "detail_links": [
+      {
+        "text": "PTD Dosyası",
+        "href": "http://eced.csb.gov.tr/jsp/ek1/60932"
+      }
+    ],
+    "documents": [
+      {
+        "portal_doc_url": "http://eced.csb.gov.tr/jsp/ek1/60932",
+        "filing_id": "60932",
+        "consulting_firm": "YEŞİLMAVI MÜH. ÇEVRE YÖN. VE DAN. HİZ. LTD. ŞTİ.",
+        "submitted_at": "08/09/2026 05:18:55",
+        "pdf_urls": [
+          {
+            "label": "Dosya Göster",
+            "url": "http://eced.csb.gov.tr/jsp/dosya/dosyaGoster.htm?tempAd=sign3212377813301395117.pdf&orjinalAd=e-imza.pdf&yuklemeTarihi=2026-10-23"
+          }
+        ]
+      }
+    ],
+    "announcement_date": "2026-11-04",
+    "statutory_clocks": [
+      {
+        "code": "iyuk_20a",
+        "kind": "İYUK 20/A annulment lawsuit (30d; İYUK 11 does not toll)",
+        "deadline": "2026-12-04",
+        "days_remaining": 14
+      }
+    ],
+    "priority_district": true,
+    "filing_key": "60932:04.11.2026:ÇED Gerekli Değil/ÇED Olumlu",
+    "first_seen_at": "2026-11-20T00:44:19"
+  },
+  "pdf_info": {
+    "filename": "60932.pdf",
+    "bytes": 12808153,
+    "sha256": "12fec09d072dc4b425c9faa505731af748df1db4145d669d6d3e149249052e9a",
+    "cached": false
+  },
+  "analysis": {
+    "page_count": 165,
+    "total_chars": 210212,
+    "text_pages": 120,
+    "scanned_or_blank_pages": 45,
+    "scanned_page_sample": [
+      72,
+      73,
+      80,
+      82,
+      108,
+      109,
+      114,
+      118,
+      120,
+      121,
+      123,
+      124,
+      126,
+      128,
+      130
+    ],
+    "headings": [
+      [
+        5,
+        "PROJENİN TEKNİK OLMAYAN ÖZETİ:"
+      ],
+      [
+        7,
+        "BÖLÜM I: .PROJENİN ÖZELLİKLERİ:"
+      ],
+      [
+        52,
+        "BÖLÜM III: PROJENİN İNŞAAT VE İŞLETME AŞAMASINDA ÇEVRESEL"
+      ],
+      [
+        61,
+        "BÖLÜM IV: KÜMÜLATİF ETKİ DEĞERLENDİRME"
+      ],
+      [
+        62,
+        "BÖLÜM V: ÇEVRESEL VE SOSYAL EYLEM PLANI"
+      ],
+      [
+        102,
+        "ÇEVRESEL VE SOSYAL YÖNETİM PLANI"
+      ]
+    ],
+    "signals": {
+      "coordinates_and_footprint": {
+        "label": "Coordinates, Parcel & Footprint",
+        "page_count": 17,
+        "pages": [
+          5,
+          7,
+          11,
+          13,
+          16,
+          23,
+          30,
+          31,
+          42,
+          60,
+          67,
+          68,
+          69,
+          83,
+          96,
+          103,
+          165
+        ],
+        "samples": [
+          {
+            "page": 5,
+            "match": "2797,11 m2",
+            "snippet": "…KNİK OLMAYAN ÖZETİ: Manisa İli, Akhisar İlçesi, Kayalıoğlu mah.,Tamburlu mevkii, 269 ada, 46 parsel üzerinde toplam 2797,11 m2 alanda Adnan ÇİÇER tarafından Zeytinyağı Üretim Tesisi (80 ton/gün zeytin işleme, 20 ton/gün zeytinyağı üretimi) ve 27…"
+          },
+          {
+            "page": 7,
+            "match": "2797,11 m2",
+            "snippet": "…erin alternatifleri Manisa İli, Akhisar İlçesi, Kayalıoğlu mah.,Tamburlu mevkii, 269 ada, 46 parsel üzerinde toplam 2797,11 m2 alanda Adnan ÇİÇER tarafından Zeytinyağı Üretim Tesisi (80 ton/gün zeytin işleme, 20 ton/gün zeytinyağı üretimi) ve 27…"
+          },
+          {
+            "page": 11,
+            "match": "2797,11 m2",
+            "snippet": "…Kapladığı Alan Manisa İli, Akhisar İlçesi, Kayalıoğlu mah.,Tamburlu mevkii, 269 ada, 46 parselin toplam alanı 2797,11 m2 olup bu alanda 342 m2 zeytinyağı işletmesi, 415 m2 zeytin kuyusu ve deposu ve 32 m2 idari bina için toplam 789 m2 ka…"
+          },
+          {
+            "page": 13,
+            "match": "2797,11 m2",
+            "snippet": "…Arazi kullanımı Manisa İli, Akhisar İlçesi, Kayalıoğlu mah.,Tamburlu mevkii, 269 ada, 46 parselin toplam alanı 2797,11 m2 olup bu alanda 342 m2 zeytinyağı işletmesi, 415 m2 zeytin kuyusu ve deposu ve 32 m2 idari bina için toplam 789 m2 ka…"
+          },
+          {
+            "page": 16,
+            "match": "ada 46 parsel",
+            "snippet": "…yer almaktadır. Bu doğrultuda Planlama Şube Müdürlüğümüzce yapılan incelemede; Akhisar ilçesi Kayalıoğlu Mahallesi 269 ada 46 parselin 1/5000 ölçekli Nazım İmar Planı bilgisinin bulunmadığı tespit edilmiştir. 1/1000 ölçekli Uygulama İmar Planı bilgis…"
+          },
+          {
+            "page": 23,
+            "match": "utm",
+            "snippet": "…0 MW’a kadar olan tesislerde %10’a, yanma öncesi,yanma esnasında veya yanma sonrasında tatbik edilebilecek bir kükürt tutma işlemi uygulanarak paragraf (2.1.4.1.) deki sınırların altında kalınmaya çalışılır. Buna rağmen (2.1.4.1.) deki sını…"
+          },
+          {
+            "page": 30,
+            "match": "2797,11 m2",
+            "snippet": "…lojik özellikleri Manisa İli, Akhisar İlçesi, Kayalıoğlu mah.,Tamburlu mevkii, 269 ada, 46 parsel üzerinde toplam 2797,11 m2 alanda Adnan ÇİÇER tarafından Zeytinyağı Üretim Tesisi (80 ton/gün zeytin işleme, 20 ton/gün zeytinyağı üretimi)” plan…"
+          },
+          {
+            "page": 31,
+            "match": "2797,11 m2",
+            "snippet": "…ş, cami, okul, mezarlık, hastane vb mesafeleri gösteren uygu görüntüleri 269 ada, 46 parselin toplam alanı 2797,11 m2 olup bu alanda 342 m2 zeytinyağı işletmesi, 415 m2 zeytin kuyusu ve deposu ve 32 m2 idari bina için toplam 789 m2 ka…"
+          }
+        ]
+      },
+      "water_and_discharge": {
+        "label": "Water Use, Hydrogeology & Discharge",
+        "page_count": 36,
+        "pages": [
+          1,
+          2,
+          5,
+          7,
+          10,
+          12,
+          13,
+          14,
+          15,
+          16,
+          18,
+          19,
+          20,
+          21,
+          23,
+          30,
+          32,
+          33,
+          36,
+          37,
+          49,
+          50,
+          51,
+          52,
+          54
+        ],
+        "samples": [
+          {
+            "page": 1,
+            "match": "80 ton/gün",
+            "snippet": "ADNAN ÇİÇER Zeytinyağı Üretim Tesisi (80 ton/gün zeytin işleme, 20 ton/gün zeytinyağı üretimi) ve Sofralık Zeytin ( 276 ton/yıl ) PROJE TANITIM DOSYASI…"
+          },
+          {
+            "page": 1,
+            "match": "20 ton/gün",
+            "snippet": "ADNAN ÇİÇER Zeytinyağı Üretim Tesisi (80 ton/gün zeytin işleme, 20 ton/gün zeytinyağı üretimi) ve Sofralık Zeytin ( 276 ton/yıl ) PROJE TANITIM DOSYASI MANİSA…"
+          },
+          {
+            "page": 2,
+            "match": "80 ton/gün",
+            "snippet": "…NİSA Telefon, GSM ve Faks Numarası: 05355708169 36541915688 e-posta: - Projenin Adı: Zeytinyağı Üretim Tesisi (80 ton/gün zeytin işleme, 20 ton/gün zeytinyağı üretimi) ve Sofralık Zeytin ( 276 ton/yıl ) Proje Bedeli: 9.900.000 TL…"
+          },
+          {
+            "page": 2,
+            "match": "20 ton/gün",
+            "snippet": "…s Numarası: 05355708169 36541915688 e-posta: - Projenin Adı: Zeytinyağı Üretim Tesisi (80 ton/gün zeytin işleme, 20 ton/gün zeytinyağı üretimi) ve Sofralık Zeytin ( 276 ton/yıl ) Proje Bedeli: 9.900.000 TL Proje İçin Seçilen Yerin…"
+          },
+          {
+            "page": 5,
+            "match": "80 ton/gün",
+            "snippet": "…Tamburlu mevkii, 269 ada, 46 parsel üzerinde toplam 2797,11 m2 alanda Adnan ÇİÇER tarafından Zeytinyağı Üretim Tesisi (80 ton/gün zeytin işleme, 20 ton/gün zeytinyağı üretimi) ve 276 ton/yıl Sofralık Zeytin işleme faaliyeti planlanmaktadır. P…"
+          },
+          {
+            "page": 5,
+            "match": "20 ton/gün",
+            "snippet": "…6 parsel üzerinde toplam 2797,11 m2 alanda Adnan ÇİÇER tarafından Zeytinyağı Üretim Tesisi (80 ton/gün zeytin işleme, 20 ton/gün zeytinyağı üretimi) ve 276 ton/yıl Sofralık Zeytin işleme faaliyeti planlanmaktadır. Proje kapsamında Zeytinyağı…"
+          },
+          {
+            "page": 7,
+            "match": "80 ton/gün",
+            "snippet": "…Tamburlu mevkii, 269 ada, 46 parsel üzerinde toplam 2797,11 m2 alanda Adnan ÇİÇER tarafından Zeytinyağı Üretim Tesisi (80 ton/gün zeytin işleme, 20 ton/gün zeytinyağı üretimi) ve 276 ton/yıl Sofralık Zeytin işleme faaliyeti planlanmaktadır. Te…"
+          },
+          {
+            "page": 7,
+            "match": "20 ton/gün",
+            "snippet": "…6 parsel üzerinde toplam 2797,11 m2 alanda Adnan ÇİÇER tarafından Zeytinyağı Üretim Tesisi (80 ton/gün zeytin işleme, 20 ton/gün zeytinyağı üretimi) ve 276 ton/yıl Sofralık Zeytin işleme faaliyeti planlanmaktadır. Tesisin 2 fazlı yöntem üreti…"
+          }
+        ]
+      },
+      "protected_land_and_olive": {
+        "label": "Protected Zones, Forests & Olive Groves",
+        "page_count": 7,
+        "pages": [
+          3,
+          30,
+          31,
+          48,
+          49,
+          50,
+          101
+        ],
+        "samples": [
+          {
+            "page": 3,
+            "match": "Orman Alanı",
+            "snippet": "…Proje Yeri Ve Etki Alanın Mevcut Çevresel Özellikleri: 29 a) Mevcut Arazi Kullanımı Ve Kalitesi (Tarım Alanı, Orman Alanı, Planlı Alan, Su Yüzeyi Ve Benzeri), 29 b) Ek-5’deki Duyarlı Yöreler Listesi Dikkate Alınarak Korunması Gereken…"
+          },
+          {
+            "page": 30,
+            "match": "orman alanı",
+            "snippet": "…YERİ VE ETKİ ALANIN MEVCUT ÇEVRESEL ÖZELLİKLERİ: 2.a) (Değişik:RG-5/3/2026-33187) Mevcut arazi kullanımı (tarım alanı, orman alanı, planlı alan, su yüzeyi ve benzeri) ve kalitesi, jeolojik ve hidrojeolojik özellikleri Manisa İli, Akhisar İlçesi,…"
+          },
+          {
+            "page": 31,
+            "match": "Orman Alanı",
+            "snippet": "…iştir. Faaliyet ile ilgili olarak tarım dışı kullanım izni alınmadan sahada faaliyet gösterilmeyecektir. Orman Alanı Proje alanı tapulu arazi olup, Proje alanında, orman alanı bulunmamaktadır."
+          },
+          {
+            "page": 48,
+            "match": "milli park",
+            "snippet": "…Bern Sözleşmesine ve Av Komisyon kararlarına uyulacaktır. Faaliyet alanı milli park, av, yaban hayvanı, av üretme sahası, turizm alanı, özel çevre koruma bölgesi, askeri yasak bölge dışında kalmaktadır.…"
+          },
+          {
+            "page": 48,
+            "match": "özel çevre koruma",
+            "snippet": "…e Av Komisyon kararlarına uyulacaktır. Faaliyet alanı milli park, av, yaban hayvanı, av üretme sahası, turizm alanı, özel çevre koruma bölgesi, askeri yasak bölge dışında kalmaktadır. Üretim faaliyetleri sırasında 2863 ve 33386 sayılı Kültür ve Tabiat…"
+          },
+          {
+            "page": 49,
+            "match": "milli park",
+            "snippet": "…Parklar”, “Tabiat Parkları”, “Tabiat Anıtları” ve “Tabiat Koruma Alanları”, Spil dağı Milli Parkı, Proje alanında milli park, tabiat parkı, tabiat anıtı ve tabiat koruma alanı bulunmamaktadır. b) Kara Avcılığı Kanunu uyarınca Çe…"
+          },
+          {
+            "page": 49,
+            "match": "tabiat parkı",
+            "snippet": "…at Parkları”, “Tabiat Anıtları” ve “Tabiat Koruma Alanları”, Spil dağı Milli Parkı, Proje alanında milli park, tabiat parkı, tabiat anıtı ve tabiat koruma alanı bulunmamaktadır. b) Kara Avcılığı Kanunu uyarınca Çevre ve Orman Bakan…"
+          },
+          {
+            "page": 49,
+            "match": "Özel Çevre Koruma",
+            "snippet": "…anımlanan alanlar kapsamında yer almamaktadır. f) Çevre Kanunu’nun 9 uncu maddesi uyarınca Bakanlar Kurulu tarafından “Özel Çevre Koruma Bölgeleri” olarak tespit ve ilan edilen alanlar, Tesis alanı ve yakın çevresinde yukarıda belirtilen alanlar bulunmama…"
+          }
+        ]
+      },
+      "ecology_and_baseline": {
+        "label": "Flora, Fauna & Baseline Methodology",
+        "page_count": 13,
+        "pages": [
+          37,
+          38,
+          40,
+          41,
+          42,
+          43,
+          44,
+          45,
+          46,
+          47,
+          50,
+          51,
+          63
+        ],
+        "samples": [
+          {
+            "page": 37,
+            "match": "IUCN",
+            "snippet": "…d the East Aegean Islands,P. H Davis” (Davis,1965-1988). kaynak olarak kullanılmıştır. Tespit Edilen Bitki Türleri IUCN Kategorisi İçin “Türkiye Bitkileri Kırmızı Kitabı (Eğrelti ve Tohumlu Bitkiler) Red Data Book Of Turkish Plants (Pteri…"
+          },
+          {
+            "page": 38,
+            "match": "endemik",
+            "snippet": "…n önemli habitatlarının belirlenmesi amaçlanmıştır. Bu aşamada özellikle bitki çeşitliliğini ve korunması gerekli olan endemik ve nadir olan türler ile endemik olmayan fakat korunması gereken bitki türlerinin tespitine ağırlık verilmiştir. Diğe…"
+          },
+          {
+            "page": 38,
+            "match": "örnekleme",
+            "snippet": "…var ise endemik ve nadir türler belirtilmiştir. Proje alanının 5 km lik mesafeyi içine alacak şekilde planlanan örnekleme düzeni, hedef türlerin tipik habitatlarının ele alınmasını sağlayacak şekilde çalışma yapılmıştır. Başlıca vejetasyon…"
+          },
+          {
+            "page": 40,
+            "match": "IUCN",
+            "snippet": "…Şekil.11. Proje Alanının Davis Grid Kareleme Sistemine Göre Yeri Flora Türlerinin Endemizm, IUCN Red Data Book, Bern Sözleşmesi ve CITES Sözleşmesine Göre Değerlendirilmesi Floristik türlerin korunma durumları iç…"
+          },
+          {
+            "page": 40,
+            "match": "Bern Sözleşmesi",
+            "snippet": "…Şekil.11. Proje Alanının Davis Grid Kareleme Sistemine Göre Yeri Flora Türlerinin Endemizm, IUCN Red Data Book, Bern Sözleşmesi ve CITES Sözleşmesine Göre Değerlendirilmesi Floristik türlerin korunma durumları için kullanılan sözleşmeler, koru…"
+          },
+          {
+            "page": 40,
+            "match": "CITES",
+            "snippet": "…Alanının Davis Grid Kareleme Sistemine Göre Yeri Flora Türlerinin Endemizm, IUCN Red Data Book, Bern Sözleşmesi ve CITES Sözleşmesine Göre Değerlendirilmesi Floristik türlerin korunma durumları için kullanılan sözleşmeler, korunma stat…"
+          },
+          {
+            "page": 40,
+            "match": "endemik",
+            "snippet": "…enebilen türler “kozmopolit” türler olarak adlandırılırken, dar yayılışa ve sadece belli bölgelerde yaşayan türler de “endemik” türler olarak adlandırılır. Sınırlı bir bölgede görülen endemik türler “lokal endemik” olarak isimlendirilirken, geni…"
+          },
+          {
+            "page": 41,
+            "match": "IUCN",
+            "snippet": "…i Türkiye Bitkileri Kırmızı Kitabı içerisinde kullanılan IUCN Red Data Book Kategorileri ve açıklamaları aşağıdaki şekildedir. EX-Extinct (Tükenmiş): Şayet son ferdinin öldüğü k…"
+          }
+        ]
+      },
+      "pollutants_and_hazards": {
+        "label": "Emissions, Geochemistry & Waste",
+        "page_count": 18,
+        "pages": [
+          3,
+          4,
+          8,
+          22,
+          24,
+          25,
+          26,
+          33,
+          34,
+          48,
+          54,
+          61,
+          63,
+          64,
+          65,
+          66,
+          95,
+          103
+        ],
+        "samples": [
+          {
+            "page": 3,
+            "match": "Kümülatif",
+            "snippet": "…ojenin İnşaat Ve İşletme Aşamasında Çevresel Etkileri, Öncelikli Etkilerin Belirlenmesi Ve Alınacak Önlemler 51 4 Kümülatif Etki Değerlendirme 60 5 Çevresel ve Sosyal Eylem Planı 61 V-1: Çevre İzleme Planı 62 V-2: Sürdürülebilir…"
+          },
+          {
+            "page": 4,
+            "match": "gürültü",
+            "snippet": "…İş Akış Şeması 8 Şekil-4: Zeytinyağı üretim prosesleri (Demicheli ve Bontoux, 1996) 11 Şekil–5: Faaliyet esnasında gürültü dağılımı 23 Şekil 6 Proje alanı en yakın konut, tarım arazisi, kreş, cami, okul, mezarlık, hastane vb mesafeleri gö…"
+          },
+          {
+            "page": 4,
+            "match": "Deprem",
+            "snippet": "…nut, tarım arazisi, kreş, cami, okul, mezarlık, hastane vb mesafeleri gösteren uygu görüntüleri 30 Şekil 7. Türkiye Deprem Tehlike Haritası 33 Şekil 8. Manisa İli Depremsellik Haritası 33 Şekil.9: Türkiye Fitocoğrafik Bölgeler Haritası…"
+          },
+          {
+            "page": 8,
+            "match": "Gürültü",
+            "snippet": "…r Seperatör Naturel Zeytinyağı Yaprak Atığı Yıkama Suyu Emisyon Sulu Prina Atık Su Sıcak Su Yıkama Suyu Kırma Gürültü Gürültü Pirina havuzu Pirina işleme tesisi Müşteriye teslimat"
+          },
+          {
+            "page": 22,
+            "match": "tehlikeli atık",
+            "snippet": "…hangi bir atık pil ve akümülatör oluşması söz konusu olmayacaktır. Tehlikeli Atıklar Tesiste işletme aşamasında tehlikeli atık oluşması beklenmemektedir. Ancak oluşması durumunda tehlikeli atıklar, sızdırmaz alan üzerinde özel bidonlarda birikti…"
+          },
+          {
+            "page": 24,
+            "match": "Gürültü",
+            "snippet": "…netmeliğine göre Ek-5’inde yer alan “2.1 Katı yakıtlı yakma tesisleri” kapsamında belirtilen hükümlere uyulacaktır. Gürültü İşletme aşamasında; Tesisin çalışması sırasında kullanılacak olan makine ve ekipmanlar aşağıda verilmiştir.…"
+          },
+          {
+            "page": 25,
+            "match": "gürültü",
+            "snippet": "…Zeytinyağı Üretim Tesisi Tablo–8:. Çevresel gürültü düzeyi sınır değerleri Gürültü Kaynağı Ölçülen Parametre Çevresel Gürültü Düzeyi Gündüz Akşam Gece Endüst…"
+          },
+          {
+            "page": 26,
+            "match": "gürültü",
+            "snippet": "…tları) işyeri genel çalışma kuralları konularında eğitimler periyodik olarak verilecektir. Çalışma ortamında gürültü, hammadde ve katkı malzemelerinden kaynaklı toz ve alerjen maddeler bulunabilir. İş sürecinde, vardiyalı ve esnek süre…"
+          }
+        ]
+      },
+      "cost_and_capacity": {
+        "label": "Project Cost, Power & Capacity",
+        "page_count": 19,
+        "pages": [
+          2,
+          3,
+          4,
+          5,
+          8,
+          10,
+          11,
+          12,
+          13,
+          18,
+          20,
+          23,
+          31,
+          52,
+          56,
+          57,
+          59,
+          61,
+          116
+        ],
+        "samples": [
+          {
+            "page": 2,
+            "match": "Proje Bedeli",
+            "snippet": "…nyağı Üretim Tesisi (80 ton/gün zeytin işleme, 20 ton/gün zeytinyağı üretimi) ve Sofralık Zeytin ( 276 ton/yıl ) Proje Bedeli: 9.900.000 TL Proje İçin Seçilen Yerin Açık Adresi (İli, İlçesi, Mevkii): Manisa İli, Akhisar İlçesi, Kayalıo…"
+          },
+          {
+            "page": 2,
+            "match": "9.900.000 TL",
+            "snippet": "…si (80 ton/gün zeytin işleme, 20 ton/gün zeytinyağı üretimi) ve Sofralık Zeytin ( 276 ton/yıl ) Proje Bedeli: 9.900.000 TL Proje İçin Seçilen Yerin Açık Adresi (İli, İlçesi, Mevkii): Manisa İli, Akhisar İlçesi, Kayalıoğlu mah.,Tamburlu…"
+          },
+          {
+            "page": 3,
+            "match": "Kapasite",
+            "snippet": "…Ve Yerin Alternatifleri (Proje Teknolojisinin Ve Proje Alanının Seçilme Nedenleri), 6 b)Projenin İş Akım Şeması, Kapasitesi, Kapladığı Alan, Teknolojisi, Çalışacak Personel Sayısı, 7 c)Doğal Kaynakların Kullanımı (Arazi Kullanımı, Su…"
+          },
+          {
+            "page": 4,
+            "match": "Kapasite",
+            "snippet": "…, hastane vb mesafeleri gösteren uygu görüntüleri 61 Tablolar Dizini Sayfa Tablo 1. Tesiste Planlanan Üretim Kapasitesi 9 Tablo–2: Tesiste Kullanılacak Ekipman Cinsi ve Sayısı 10 Tablo- 3: Tesiste çalışacak Personel Sayısı 12 Tablo…"
+          },
+          {
+            "page": 5,
+            "match": "kapasite",
+            "snippet": "…zeytin işlenerek 20 ton/gün zeytinyağı üretimi yapılacaktır. 46 parsel üzerinde \"Zeytin İşleme Tesisi (276 ton/yıl kapasiteli)\" konusunda faaliyet gösterilmesi ile ilgili olarak Manisa Çevre Şehircilik ve İklim Değişikliği Müdürlüğünün 0…"
+          },
+          {
+            "page": 8,
+            "match": "kapasite",
+            "snippet": "…Zeytinyağı Üretim Tesisi 1. b) Projenin iş akım şeması, kapasitesi, kapladığı alan, (Ek ibare: RG-5/3/2026- 33187) yatırım bedeli, teknolojisi, çalışacak personel sayısı; Projenin İş…"
+          },
+          {
+            "page": 10,
+            "match": "Kapasite",
+            "snippet": "…lajlama yapılmayacaktır Kapasitesi 46 parsel üzerinde \"Zeytin İşleme Tesisi (276 ton/yıl kapasiteli)\" konusunda faaliyet gösterilmesi ile ilgili ol…"
+          },
+          {
+            "page": 11,
+            "match": "kapasite",
+            "snippet": "…siste Kullanılacak Ekipman Cinsi ve Sayısı Zeytin İşleme Atölyesi -Makina /Ekipman Zeytin işleme tesisi ,16 ton kapasiteli beton zeytin kuyusu 20 Adet 6,28 ton kapasiteli plastik zeytin kuyusu 18 adet Zeytinyağı üretim tsisi Dekant…"
+          }
+        ]
+      }
+    },
+    "audit_checks": {
+      "mentions_field_survey": true,
+      "mentions_literature_only_cue": false,
+      "mentions_seasonal_sampling": false,
+      "mentions_cumulative_impact": true,
+      "mentions_olive_law_3573": true,
+      "mentions_groundwater_or_aquifer": true,
+      "mentions_iucn_or_endemic": true
+    }
+  },
+  "llm_synthesis": {
+    "model": "gemini-4-hydrogen",
+    "generated_at": "2026-11-20T01:46:33",
+    "pages_sent": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      13,
+      22,
+      30,
+      31,
+      37,
+      38,
+      40,
+      41,
+      48,
+      52,
+      53,
+      62,
+      63,
+      102,
+      103
+    ],
+    "result": {
+      "executive_summary_tr": "Manisa İli, Akhisar İlçesi, Kayalıoğlu Mahallesi, Tamburlu Mevkii, 269 ada, 46 parseldeki 2.797,11 m2 alanda Adnan ÇİÇER tarafından 80 ton/gün zeytin işleme ve 20 ton/gün zeytinyağı üretimi kapasiteli 2 fazlı Zeytinyağı Üretim Tesisi ile 276 ton/yıl kapasiteli Sofralık Zeytin işleme faaliyeti planlanmaktadır [s. 5, 10]. Mevcut 789 m2 kapalı alan ve 32 m2 pirina havuzuyla toplam 821 m2 kullanım alanına sahip olacak tesiste ilave bina inşaatı öngörülmemekte, sezonluk 100 gün ve günde 24 saat çalışma düzeniyle faaliyet yürütülmesi hedeflenmektedir [s. 5, 10]. Çevre Düzeni Planı'nda Tarım Arazisi olarak görünen parsel, Rahmiye Mahallesi yerleşiminin yaklaşık 50 m kuzeyinde ve 1. derece deprem kuşağında yer almaktadır [s. 11, 30, 48]. Başlıca çevresel riskler arasında konutlara olan yakınlık, günlük 76,6 m3/gün düzeyindeki sulu pirina ve proses atık suyunun yönetimi, evsel atık su bertarafı ile kazan yakıtına dair rapor içi teknik çelişkiler ve tamamlanmış mevsimsel saha verilerinin eksikliği bulunmaktadır [s. 11, 22, 37, 52, 63].",
+      "executive_summary_en": "Adnan ÇİÇER proposes to operate a two-phase olive oil production facility (80 tonnes/day olive processing, 20 tonnes/day olive oil output) alongside a table olive processing unit (276 tonnes/year) on parcel 269/46 (2,797.11 m2) in Kayalıoğlu Neighborhood, Akhisar District, Manisa [s. 5, 10]. Utilizing existing structures totaling 789 m2 of enclosed space and a 32 m2 pomace (pirina) pit without new building construction, the facility is scheduled to operate seasonally for 100 days per year on a 24-hour basis [s. 5, 10]. Designated as Agricultural Land in the regional spatial plan, the site lies approximately 50 meters north of Rahmiye Neighborhood residences within a first-degree seismic zone [s. 11, 30, 48]. Primary environmental stakes involve close proximity to dwellings, handling and daily transport of 76.6 m3/day of wet pomace and process wastewater, internal technical contradictions regarding domestic wastewater disposal and boiler fuel, and the absence of documented pre-project seasonal ecological baseline surveys [s. 11, 22, 37, 52, 63].",
+      "key_facts": [
+        {
+          "label": "Proje Bedeli",
+          "value": "9.900.000 TL",
+          "page": 2
+        },
+        {
+          "label": "Parsel ve Kullanım Alanı",
+          "value": "2.797,11 m2 parselde 789 m2 kapalı alan ve 32 m2 pirina havuzu ile toplam 821 m2 kullanım alanı",
+          "page": 5
+        },
+        {
+          "label": "Üretim Kapasitesi",
+          "value": "80 ton/gün zeytin işleme, 20 ton/gün zeytinyağı üretimi ve 276 ton/yıl sofralık siyah zeytin",
+          "page": 10
+        },
+        {
+          "label": "Çalışma Süresi ve İstihdam",
+          "value": "Sezonda 100 gün/yıl, günde 24 saat çalışma; toplam 13 personel",
+          "page": 10
+        },
+        {
+          "label": "En Yakın Yerleşim Mesafesi",
+          "value": "Rahmiye Mahallesi konutlarının yaklaşık 50 m kuzeyinde",
+          "page": 5
+        },
+        {
+          "label": "Hassas Yapılara Mesafe",
+          "value": "Köy mezarlığı 430 m güneybatıda; en yakın aile sağlık merkezi ve okul 2.600 m kuzeybatıda",
+          "page": 62
+        },
+        {
+          "label": "Sulu Pirina ve Atık Su Oluşumu",
+          "value": "56,6 m3/gün sulu pirina, 5,6 m3/gün seperatör suyu ve 14,4 m3/gün yıkama suyu ile toplam 76,6 m3/gün; 160 m3 (2,08 günlük) havuz hacmi",
+          "page": 52
+        },
+        {
+          "label": "Kömür Tüketimi ve Kül Oluşumu",
+          "value": "1 MW altı sıcak su kazanında 25 ton/yıl (250 kg/gün) kömür yakıtı ve 13 kg/gün kül",
+          "page": 22
+        },
+        {
+          "label": "Katı ve Organik Atıklar",
+          "value": "15,34 kg/gün evsel nitelikli katı atık ve 0,8 kg/gün yaprak/dal organik atığı",
+          "page": 52
+        },
+        {
+          "label": "Ekonomik Ömür",
+          "value": "25 yıl",
+          "page": 6
+        }
+      ],
+      "baseline_assessment": {
+        "field_survey_status": "mixed_or_unclear",
+        "seasonal_sampling_status": "not_found",
+        "cumulative_impact_status": "omitted_or_not_found",
+        "olive_and_protected_status": "Proje alanı 1/100.000 ölçekli Çevre Düzeni Planı'nda Tarım Arazisi olarak belirtilen alanda yer almakta olup tarım dışı kullanım izni alınmadan faaliyet gösterilmeyeceği beyan edilmiştir [s. 11, 31]. Sahada orman alanı bulunmadığı ve alanın milli park, av/yaban hayvanı sahası, turizm alanı ile Özel Çevre Koruma Bölgesi dışında kaldığı ifade edilmiştir [s. 31, 48, 103]. Sunulan sayfalarda 3573 sayılı Zeytincilik Kanunu kapsamında çevredeki zeytinliklere olan mesafe analizine rastlanmamıştır.",
+        "explanation": "Flora-fauna bölümünde TUBİVES, Davis ve Türkiye Bitkileri Kırmızı Kitabı gibi literatür kaynaklarının yanı sıra proje alanı çevresindeki 5 km'lik alanda doğrudan ve dolaylı gözlem teknikleriyle inceleme yapıldığı belirtilmiştir [s. 37, 38]. Ancak incelenen dosya kesitinde saha gözlemlerinin tarihi, mevsimi, araştırmacı ekibi veya tespit edilen tür listelerini içeren tablolar yer almamakta; sunulan metin genel yöntem ve fitocoğrafik tanımlarla sınırlı kalmaktadır [s. 37, 38, 40, 41]. Proje öncesi tamamlanmış mevsimsel bir örnekleme çalışması bulunmazken, Çevresel İzleme Planı yalnızca işletme aşaması atık ve izin taahhütlerini içermektedir [s. 63]. Kümülatif etki değerlendirmesi bölümü sunulan sayfalar dışında kaldığından bölgesel kümülatif etkilerin nasıl değerlendirildiği doğrulanamamıştır [s. 3]."
+      },
+      "red_flags": [
+        {
+          "severity": "high",
+          "title": "Evsel atık su bertarafında MASKİ altyapısına ilişkin doğrudan çelişki",
+          "detail": "Raporun 2. bölümünde proje alanında MASKİ kanalizasyon ve yağmur suyu altyapı tesislerinin bulunmadığı belirtilerek kanalizasyon şebekesi bulunmayan yerlere ilişkin hükümlere uyulacağı yazılırken, V-1 Çevresel İzleme Planı'nda işletme aşamasında oluşacak evsel nitelikli atık suların MASKİ kanalizasyonuna verileceği taahhüt edilmiştir.",
+          "pages": [
+            37,
+            63
+          ]
+        },
+        {
+          "severity": "high",
+          "title": "Sıcak su kazanının yakıt türünde rapor içi tutarsızlık",
+          "detail": "Ekipman listesini içeren Tablo-2'de 4-6 ton/saat kapasiteli kazan 'Sıcak su Kazan(Pirina)' olarak tanımlanmışken, gaz atık ve kül bölümlerinde aynı kazanda yılda 25 ton (250 kg/gün) kömür yakılacağı ve tesisin kendi ürettiği pirinanın kesinlikle yakıt olarak kullanılmayacağı belirtilmiştir.",
+          "pages": [
+            11,
+            22,
+            53
+          ]
+        },
+        {
+          "severity": "high",
+          "title": "Günlük pirina ve proses atık suyu miktarlarındaki hesap tutarsızlıkları",
+          "detail": "Zeytinin %75'i üzerinden 60 ton/gün pirina beklendiği belirtilirken aynı sayfadaki Tablo-1'de karasulu pirina miktarı 45 ton/gün olarak verilmiştir [s. 10]. Ayrıca 2 fazlı üretimde sıvı faz (karasu) oluşmadığı savunulmasına rağmen 56,6 m3/gün sulu pirinaya ek olarak 5,6 m3/gün seperatör suyu ve 14,4 m3/gün yıkama suyu ile toplam 76,6 m3/gün sulu pirina oluştuğu belirtilmiş; havuz depolama süresi hesabında ise paydaya hatalı biçimde '576,6 m3/gün' yazılmıştır [s. 13, 52].",
+          "pages": [
+            10,
+            13,
+            52
+          ]
+        },
+        {
+          "severity": "high",
+          "title": "Yerleşim yerine 50 m mesafede 24 saat çalışma ve tarım dışı kullanım izni eksikliği",
+          "detail": "Proje alanı Rahmiye Mahallesi konutlarının yaklaşık 50 m kuzeyinde bulunmasına ve sezonda günde 24 saat çalışma planlanmasına karşın, tesis gürültü konulu çevre izninden muaf değerlendirilmiştir [s. 5, 10, 30, 103]. Ayrıca Çevre Düzeni Planı'nda Tarım Arazisi görünen parsel için tarım dışı kullanım izni henüz alınmamıştır [s. 11, 31].",
+          "pages": [
+            5,
+            10,
+            11,
+            30,
+            31,
+            103
+          ]
+        },
+        {
+          "severity": "medium",
+          "title": "Su temin kaynağının belirsizliği ve Gediz Havzası baskısı",
+          "detail": "Çevresel ve Sosyal Yönetim Planı'nda yeraltı suyu kullanılmayacağı belirtilmesine ve Gediz Nehri su kalitesinin düşük kalite olarak tespit edildiği aktarılmasına karşın [s. 103], günlük toplam 20 m3'ü aşan yıkama ve seperatör suyu [s. 52] ile evsel su ihtiyacının hangi kaynaktan temin edileceği sunulan sayfalarda açıklanmamıştır.",
+          "pages": [
+            52,
+            103
+          ]
+        },
+        {
+          "severity": "medium",
+          "title": "Flora-fauna saha çalışması kanıtlarının ve 3573 sayılı Kanun analizinin eksikliği",
+          "detail": "Proje alanı çevresindeki 5 km'lik alanda doğrudan ve dolaylı gözlem yapıldığı ifade edilmesine rağmen sunulan sayfalarda saha çalışması tarihleri, mevsimsel tekrarlar ve tür listeleri bulunmamakta; çevredeki olası zeytinliklere (3573 sayılı Kanun) ilişkin mesafe değerlendirmesi de yer almamaktadır.",
+          "pages": [
+            37,
+            38,
+            40,
+            41
+          ]
+        }
+      ],
+      "hkt_and_petition_questions": [
+        {
+          "question_tr": "Raporun 2. bölümünde sahada MASKİ kanalizasyon ve yağmur suyu altyapısının bulunmadığı belirtilmesine rağmen V-1 Çevresel İzleme Planı'nda evsel atık suların MASKİ kanalizasyonuna verileceğinin yazılması arasındaki çelişki nasıl açıklanmaktadır ve evsel atık sular fiilen hangi sızdırmaz sistemle bertaraf edilecektir?",
+          "pages": [
+            37,
+            63
+          ]
+        },
+        {
+          "question_tr": "Tablo-2'de pirina yakıtlı olarak gösterilen sıcak su kazanının gaz atık bölümünde yılda 25 ton kömür yakıtlı olarak belirtilmesinin gerekçesi nedir; 1. derece deprem kuşağındaki sahada Rahmiye Mahallesi konutlarına yaklaşık 50 m mesafede günde 24 saat çalışacak kazanın ve zeytin/pirina depolamasının emisyon, koku ve gürültü etkileri nasıl kontrol edilecektir?",
+          "pages": [
+            10,
+            11,
+            22,
+            30,
+            48
+          ]
+        },
+        {
+          "question_tr": "Günlük zeytin işleme kapasitesine bağlı pirina ve proses suyu miktarlarının 60 ton/gün, 45 ton/gün ve 76,6 m3/gün şeklinde farklı değerlerle raporlanmasının nedeni nedir ve 160 m3'lük pirina havuzunda günlük 6 seferlik silobas sevkiyatının aksaması durumunda sızıntı veya taşmayı önleyecek hangi yedek kapasite bulunmaktadır?",
+          "pages": [
+            10,
+            52
+          ]
+        },
+        {
+          "question_tr": "Çevre Düzeni Planı'nda Tarım Arazisi niteliğindeki parsel için tarım dışı kullanım izni ve 3573 sayılı Zeytincilik Kanunu kapsamında çevre zeytinliklere uygunluk görüşü alınmış mıdır; ayrıca yeraltı suyu kullanılmayacağı beyan edilen tesiste günlük en az 20 m3'lük proses suyu ihtiyacı hangi şebekeden veya kaynaktan karşılanacaktır?",
+          "pages": [
+            11,
+            31,
+            52,
+            103
+          ]
+        }
+      ],
+      "data_limitations": "Toplam 165 sayfalık PTD dosyasının 45 sayfası taranmış/görüntü formatında olup yalnızca metni çıkarılabilen 26 sayfalık kesit incelenebilmiştir. İçindekiler ve Tablolar Dizini'nde yer alan su kullanım tablosu (Tablo 4), gürültü dağılım tabloları (Tablo 6-9), flora-fauna tür listeleri (Tablo 12-16), Bölüm 4 Kümülatif Etki Değerlendirmesi (sayfa 60), vaziyet planı, tapu, ÇED kapsam dışı yazısı ve pirina bertaraf belgesi gibi ekler sunulan metin kesiti dışında kaldığından doğrudan doğrulanamamıştır [s. 3, 4]."
+    }
+  }
+}

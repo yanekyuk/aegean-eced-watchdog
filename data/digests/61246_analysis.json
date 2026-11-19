@@ -1,0 +1,640 @@
+{
+  "filing": {
+    "province": "MANİSA",
+    "district": "SALİHLİ",
+    "project_name": "Elektrolitik Çinko Kaplama, Elektrolitik Çinko Alaşımlı Kaplama, İnorganik Çinko Ana Kat Kaplama ve İnorganik Çinko Üst Lak Kaplama (Toplam Havuz Hacmi: 726,475 m3)",
+    "project_owner": "UYSAL MAKİNA SANAYİ İTHALAT İHRACAT VE TİCARET ANONİM ŞİRKETİ SALİHLİ 2 ŞUBESİ",
+    "sector": "Sanayi",
+    "sub_sector": "Kaplama/Yüzey Temizleme",
+    "decision_type": "ÇED Gerekli Değil/ÇED Olumlu",
+    "announcement_date_tr": "02.11.2026",
+    "project_type": "Ek-2",
+    "detail_text": "MANİSA ili SALİHLİ,  ilcesinde MANİSA ili SALİHLİ,  ilcesi Torunlu Mahallesi, Kazançukuru Mevkii 105 Ada 15 Parsel   Salihli Organize Sanayi Bölgesi Salihli/MANİSA mevkiindeki UYSAL MAKİNA SANAYİ İTHALAT İHRACAT VE TİCARET ANONİM ŞİRKETİ SALİHLİ 2 ŞUBESİ tarafından yapılması planlanan Elektrolitik Çinko Kaplama, Elektrolitik Çinko Alaşımlı Kaplama, İnorganik Çinko Ana Kat Kaplama ve İnorganik Çinko Üst Lak Kaplama (Toplam Havuz Hacmi: 726,475 m3) projesi ile ilgili olarak Bakanlığımıza sunulan PTD Dosyası incelenmiş ve değerlendirilmiştir  ÇED Yönetmeliği'nin 17. maddesi gereğince Elektrolitik Çinko Kaplama, Elektrolitik Çinko Alaşımlı Kaplama, İnorganik Çinko Ana Kat Kaplama ve İnorganik Çinko Üst Lak Kaplama (Toplam Havuz Hacmi: 726,475 m3) projesi'ne Valiliğimizce 'ÇED Olumlu (Kapsam Ek-2)' kararı verilmiştir.",
+    "detail_links": [
+      {
+        "text": "PTD Dosyası",
+        "href": "http://eced.csb.gov.tr/jsp/ek1/61246"
+      }
+    ],
+    "documents": [
+      {
+        "portal_doc_url": "http://eced.csb.gov.tr/jsp/ek1/61246",
+        "filing_id": "61246",
+        "consulting_firm": "AQUA ÇEVRE DANIŞMANLIK MÜHENDİSLİK İŞ GÜVENLİĞİ MAKİNA SANAYİ VE TİCARET LİMİTED ŞİRKETİ",
+        "submitted_at": "23/09/2026 08:08:14",
+        "pdf_urls": [
+          {
+            "label": "Dosya Göster",
+            "url": "http://eced.csb.gov.tr/jsp/dosya/dosyaGoster.htm?tempAd=sign6386905884950108608.pdf&orjinalAd=e-imza.pdf&yuklemeTarihi=2026-09-23"
+          }
+        ]
+      }
+    ],
+    "announcement_date": "2026-11-02",
+    "statutory_clocks": [
+      {
+        "code": "iyuk_20a",
+        "kind": "İYUK 20/A annulment lawsuit (30d; İYUK 11 does not toll)",
+        "deadline": "2026-12-02",
+        "days_remaining": 12
+      }
+    ],
+    "priority_district": true,
+    "filing_key": "61246:02.11.2026:ÇED Gerekli Değil/ÇED Olumlu",
+    "first_seen_at": "2026-11-20T00:44:21"
+  },
+  "pdf_info": {
+    "filename": "61246.pdf",
+    "bytes": 34358542,
+    "sha256": "8de6bfd76098887f98c36a48cef8d1b6fbcdaf2013bf3504e7dfab04c41dc5bf",
+    "cached": false
+  },
+  "analysis": {
+    "page_count": 270,
+    "total_chars": 240744,
+    "text_pages": 270,
+    "scanned_or_blank_pages": 0,
+    "scanned_page_sample": [],
+    "headings": [
+      [
+        67,
+        "KÜMÜLATİF ETKİ"
+      ],
+      [
+        70,
+        "ÇEVRESEL VE SOSYAL EYLEM"
+      ],
+      [
+        132,
+        "ÇEVRESEL VE SOSYAL YÖNETİM"
+      ],
+      [
+        133,
+        "ÇEVRESEL VE SOSYAL YÖNETİM PLANI"
+      ]
+    ],
+    "signals": {
+      "coordinates_and_footprint": {
+        "label": "Coordinates, Parcel & Footprint",
+        "page_count": 32,
+        "pages": [
+          1,
+          2,
+          7,
+          8,
+          12,
+          16,
+          17,
+          22,
+          23,
+          24,
+          26,
+          37,
+          38,
+          46,
+          48,
+          53,
+          63,
+          64,
+          65,
+          75,
+          82,
+          84,
+          85,
+          87,
+          88
+        ],
+        "samples": [
+          {
+            "page": 1,
+            "match": "Ada 15 Parsel",
+            "snippet": "…ama ve İnorganik Çinko Üst Lak Kaplama (Toplam Havuz Hacmi: 726,475 m3) Torunlu Mahallesi, Kazançukuru Mevkii 105 Ada 15 Parsel Salihli Organize Sanayi Bölgesi Salihli/MANİSA AQUA ÇEVRE DANIŞMANLIK MÜHENDİSLİK İŞ GÜVENLİĞİ MAK. SAN. VE Tİ…"
+          },
+          {
+            "page": 2,
+            "match": "Ada 15 Parsel",
+            "snippet": "…n Yerin Açık Adresi (İli, İlçesi, Mevki) Torunlu Mahallesi, Kazançukuru Mevkii, Salihli Organize Sanayi Bölgesi, 105 Ada 15 Parsel Salihli/MANİSA Projenin ÇED Yönetmeliği Kapsamındaki Yeri (Sektör, Alt Sektör): ÇEVRESEL ETKİ DEĞERLENDİRMESİ YÖ…"
+          },
+          {
+            "page": 7,
+            "match": "3.140 m²",
+            "snippet": "…runlu Mahallesi, Salihli Organize Sanayi Bölgesi tapunun K20-C-22-D-3-C pafta, 105 nolu ada, 15 nolu parselinde toplam 3.140 m²'lik alanda Uysal Makina San. İth. İhr. ve Tic. A.Ş. Salihli 2 Şubesi tarafından \" Elektrolitik Çinko Kaplama, Elektro…"
+          },
+          {
+            "page": 8,
+            "match": "Ada 15 Parsel",
+            "snippet": "…yazının geçerliliğini koruduğu bildirilmiştir. Ek-2.6'da ÇED Yönetmeliği Kapsam Dışı yazıları verilmiştir. Proje 105 Ada 15 Parsel’de mevcut durumda bulunan üç katlı prefabrik fabrika binası içerisinde gerçekleştirilecek olup, proje kapsamında yeni…"
+          },
+          {
+            "page": 8,
+            "match": "3.140 m²",
+            "snippet": "…tedir. Tapu maliki NORM SALİHLİ VİDA VE CİVATA MAKİNE SANAYİ VE TİCARET ANONİM ŞİRKETİ olup, mevcut bina içerisindeki 3.140 m²’lik alan, tapu maliki tarafından Uysal Makina San. İth. İhr. ve Tic. A.Ş.’ye kiralanmaktadır. Söz konusu alana ait kir…"
+          },
+          {
+            "page": 12,
+            "match": "koordinat",
+            "snippet": "…tasında “Organize Sanayi Bölgesi Alanı” içerisinde yer almaktadır. Proje tanıtım dosyasına esas olan faaliyet alanının koordinatları ve 1/25.000 ölçekli topografik haritası eklerde verilmektedir (Bkz. Ek- 2.3). b) Projenin iş akım şeması, kapas…"
+          },
+          {
+            "page": 16,
+            "match": "utm",
+            "snippet": "…ım Şeması Mal Kabul Yükleme Sıcak Yağ Alma Durulama Banyosu Durulama Banyosu Kumlama Kumlama 1. Ana Kat Kurutma 2. Ana Kat Kurutma Boşaltma Ayıklama/Paketleme/Sevkiyat Atıksu Atıksu Kontamine Atık Kontamine Atık Kontamine…"
+          },
+          {
+            "page": 17,
+            "match": "utm",
+            "snippet": "…onumlarının çeşitli kombinasyonlarından geçirilerek yüzeydeki lak yoğunluğu kontrol altına alınır. Ardından malzeme kurutma fırınına alınır; kurutma tamamlandıktan sonra parçalar konteynıra boşaltılır. Üst lak kaplama, elektrolitik çinko ka…"
+          }
+        ]
+      },
+      "water_and_discharge": {
+        "label": "Water Use, Hydrogeology & Discharge",
+        "page_count": 34,
+        "pages": [
+          16,
+          24,
+          25,
+          26,
+          27,
+          29,
+          30,
+          31,
+          32,
+          33,
+          37,
+          38,
+          51,
+          53,
+          54,
+          55,
+          56,
+          57,
+          59,
+          64,
+          65,
+          66,
+          68,
+          79,
+          81
+        ],
+        "samples": [
+          {
+            "page": 16,
+            "match": "Atıksu",
+            "snippet": "…u Durulama Banyosu Kumlama Kumlama 1. Ana Kat Kurutma 2. Ana Kat Kurutma Boşaltma Ayıklama/Paketleme/Sevkiyat Atıksu Atıksu Kontamine Atık Kontamine Atık Kontamine Atık Hava Emisyonu Kontamine Atık Hava Emisyonu"
+          },
+          {
+            "page": 24,
+            "match": "1,29 m3/gün",
+            "snippet": "…ilerek, gerekli su miktarı aşağıda hesaplanmıştır: İnşaat aşamasında günlük su ihtiyacı: 6 kişi x 215* lt/kişi.gün= 1,29 m3/gün"
+          },
+          {
+            "page": 25,
+            "match": "7,095 m3/gün",
+            "snippet": "…ihtiyaçları için gerekli olacak su miktarı aşağıda hesaplanmıştır: Günlük su ihtiyacı: 33 kişi x 215* lt/kişi.gün= 7,095 m3/gün *Kaynak: (09.12.2025 tarih ve 54109 sayılı TÜİK Haber Bülteni, Su ve Atıksu İstatistikleri 2024) b) Proses Suyu: Tesi…"
+          },
+          {
+            "page": 25,
+            "match": "Atıksu",
+            "snippet": "…htiyacı: 33 kişi x 215* lt/kişi.gün= 7,095 m3/gün *Kaynak: (09.12.2025 tarih ve 54109 sayılı TÜİK Haber Bülteni, Su ve Atıksu İstatistikleri 2024) b) Proses Suyu: Tesisin atıksu miktarları hesaplanırken; doldur boşalt periyotları ve havuzların…"
+          },
+          {
+            "page": 25,
+            "match": "2,5 m3/gün",
+            "snippet": "…madde kullanılmayacağından oluşacak atık su evsel vasfını kaybetmeyecektir. Zemin temizliğinde kullanılacak su miktarı 2,5 m3/gün su sarfiyatı olacaktır. c)Kirli Gazın Toplandığı Gaz Yıkama (Scrubber) Sisteminde Kullanılacak Su Miktarı: 30 m3/ay ÷…"
+          },
+          {
+            "page": 25,
+            "match": "2,4 m3/gün",
+            "snippet": "…steminde Kullanılacak Su Miktarı: 30 m3/ay ÷ 25 gün/ay (yıllık 300 çalışma günü üzerinden hesaplanmıştır) x 2 sistem = 2,4 m3/gün"
+          },
+          {
+            "page": 26,
+            "match": "1,29 m3/gün",
+            "snippet": "…personel sayısı) x (kişi başına su kullanım miktarı) Kurulum aşamasında günlük su ihtiyacı: 6 kişi x 215* lt/kişi.gün= 1,29 m3/gün Tesiste işletme aşamasında 33 kişi çalışacaktır. Kişi başına kullanılacak su miktarı 215 lt/kişi.gün kabul edilerek,…"
+          },
+          {
+            "page": 26,
+            "match": "7,095 m3/gün",
+            "snippet": "…lük su ihtiyacı: (personel sayısı) x (kişi başına su kullanım miktarı) Günlük su ihtiyacı: 33 kişi x 215* lt/kişi.gün= 7,095 m3/gün *Kaynak: (09.12.2025 tarih ve 54109 sayılı TÜİK Haber Bülteni, Su ve Atıksu İstatistikleri 2024)"
+          }
+        ]
+      },
+      "protected_land_and_olive": {
+        "label": "Protected Zones, Forests & Olive Groves",
+        "page_count": 4,
+        "pages": [
+          3,
+          48,
+          50,
+          51
+        ],
+        "samples": [
+          {
+            "page": 3,
+            "match": "orman alanı",
+            "snippet": "…. 33 2. PROJE YERİ VE ETKİ ALANININ MEVCUT ÇEVRESEL ÖZELLİKLERİ ......... 42 a) Mevcut arazi kullanımı (tarım alanı, orman alanı, planlı alan, su yüzeyi ve benzeri) ve kalitesi, jeolojik ve hidrojeolojik özellikler ................................…"
+          },
+          {
+            "page": 48,
+            "match": "orman alanı",
+            "snippet": "…726,475 m3) 42 2. PROJE YERİ VE ETKİ ALANININ MEVCUT ÇEVRESEL ÖZELLİKLERİ a) Mevcut arazi kullanımı (tarım alanı, orman alanı, planlı alan, su yüzeyi ve benzeri) ve kalitesi, jeolojik ve hidrojeolojik özellikler Manisa İli, Salihli İlçesi, Tor…"
+          },
+          {
+            "page": 50,
+            "match": "Özel Çevre Koruma",
+            "snippet": "…sas Kirlenme Bölgeleri\" bulunmamaktadır, f) 9/8/1983 tarihli ve 2872 sayılı Çevre Kanunu'nun 9 uncu maddesi uyarınca \"Özel Çevre Koruma Bölgeleri\" olarak tespit ve ilan edilen alanlar bulunmamaktadır, g) 18/11/1983 tarihli ve 2960 sayılı Boğaziçi Kanunu'…"
+          },
+          {
+            "page": 50,
+            "match": "3573 sayılı",
+            "snippet": "…0 tarihli ve 3621 sayılı Kıyı Kanunu gereğince yapı yasağı getirilen alanlar bulunmamaktadır, ı) 26/1/1939 tarihli ve 3573 sayılı Zeytinciliğin Islahı ve Yabanilerinin Aşılattırılması Hakkında Kanun'da belirtilen alanlar bulunmamaktadır, i) 25/2/1…"
+          },
+          {
+            "page": 51,
+            "match": "sulak alan",
+            "snippet": "…lı veya geçici, durgun veya akıntılı, tatlı, acı veya tuzlu sular, bataklık, sazlık ve turbalıklar ile ekolojik açıdan sulak alan niteliğindeki yerler bulunmamaktadır, ç) Göller, akarsular, yeraltı suyu işletme sahaları bulunmamaktadır, d) Bilims…"
+          }
+        ]
+      },
+      "ecology_and_baseline": {
+        "label": "Flora, Fauna & Baseline Methodology",
+        "page_count": 4,
+        "pages": [
+          50,
+          51,
+          75,
+          141
+        ],
+        "samples": [
+          {
+            "page": 50,
+            "match": "BERN Sözleşmesi",
+            "snippet": "…sayılı Resmî Gazete'de yayımlanarak yürürlüğe giren \"Avrupa'nın Yaban Hayatı ve Yaşama Ortamlarını Koruma Sözleşmesi\" (BERN Sözleşmesi) uyarınca koruma altına alınmış \"Önemli Deniz Kaplumbağası Üreme Alanları\", \"Akdeniz Foku Yaşama ve Üreme Alanları\" b…"
+          },
+          {
+            "page": 51,
+            "match": "endemik",
+            "snippet": "…dır, d) Bilimsel araştırmalar için önem arz eden ve/veya nesli tehlikeye düşmüş veya düşebilir türler ve ülkemiz için endemik olan türlerin yaşama ortamı olan alanlar, biyosfer rezervi, biyotoplar, biyogenetik rezerv alanları, benzersiz özellik…"
+          },
+          {
+            "page": 75,
+            "match": "biyoçeşitlilik",
+            "snippet": "…amayacağı belirlenmektedir. Faaliyetin genel çevresel etkileri; arazi kullanımı, su kalitesi, hava kalitesi, gürültü, biyoçeşitlilik ve atık yönetimi başlıkları altında; sosyal etkileri ise toplum sağlığı, iş sağlığı ve güvenliği, istihdam ve kültürel…"
+          },
+          {
+            "page": 141,
+            "match": "Bern Sözleşmesi",
+            "snippet": "…alanı ile çevresinde; nadir, nesli tehlikede olan ve “Avrupa’nın Yaban Hayatı ve Yaşama Ortamlarını Koruma Sözleşmesi (Bern Sözleşmesi)” Ek-I listesine göre koruma altına alınması gereken bir bitki türü bulunmamaktadır. Faaliyet alanı ve çevresinde ende…"
+          },
+          {
+            "page": 141,
+            "match": "endemik",
+            "snippet": "…mesi)” Ek-I listesine göre koruma altına alınması gereken bir bitki türü bulunmamaktadır. Faaliyet alanı ve çevresinde endemik tür bulunmamaktadır. 12. GÖRSEL ETKİ Faaliyet alanı, Salihli OSB içerisinde yer almakta olup, yakın çevresinde ço…"
+          }
+        ]
+      },
+      "pollutants_and_hazards": {
+        "label": "Emissions, Geochemistry & Waste",
+        "page_count": 34,
+        "pages": [
+          33,
+          34,
+          35,
+          37,
+          39,
+          42,
+          43,
+          44,
+          45,
+          53,
+          59,
+          60,
+          61,
+          63,
+          65,
+          66,
+          67,
+          68,
+          69,
+          72,
+          74,
+          75,
+          78,
+          79,
+          81
+        ],
+        "samples": [
+          {
+            "page": 33,
+            "match": "Ağır Metal",
+            "snippet": "…g/mg x 1000 L/m³ x 18,74 m³/gün Çamur miktarı: 19,49 ⁓ 19,50 kg/gün *Kaynak: (Arslan, T., 2008, Kompleks Olarak Bağlı Ağır Metal İçerikli Atıksuların Elektrokoagülasyon ile Arıtımı, İTÜ Fen Bilimleri Enstitüsü Yüksek Lisans Tezi, Tablo 2.10, metal…"
+          },
+          {
+            "page": 34,
+            "match": "tehlikeli atık",
+            "snippet": "…300 gün/yıl = 5.847 ≈ 5.850 kg/yıl (≈ 5,85 ton/yıl) olacaktır. Arıtma çamuru, filtre preste susuzlaştırıldıktan sonra tehlikeli atık geçici depolama alanında biriktirilecek ve lisanslı geri kazanım/bertaraf firmalarına gönderilecektir. • Kontamine Am…"
+          },
+          {
+            "page": 35,
+            "match": "tehlikeli atık",
+            "snippet": "…paletli sızdırmasız IBC tanklara alınacaktır. IBC tanklara alınan sıvı atıklar tesiste mevzuata uygun şekilde yer alan tehlikeli atık geçici depolama alanına alınarak, 02.04.2015 tarih ve 29314 sayılı Resmi Gazetede yayımlanarak yürürlüğe giren “Atık Y…"
+          },
+          {
+            "page": 37,
+            "match": "Tehlikeli Atık",
+            "snippet": "…na Kat Kaplama ve İnorganik Çinko Üst Lak Kaplama (Toplam Havuz Hacmi: 726,475 m3) 31 Tablo 9. İşletemede Oluşacak Tehlikeli Atık Miktarı Adı Kaynaklandığı Yer Miktar Kartuş Toner Atığı İdari Bina 5 kg/yıl Kontamine Ambalaj Hammadde Ambalajl…"
+          },
+          {
+            "page": 39,
+            "match": "Gürültü",
+            "snippet": "…ama, İnorganik Çinko Ana Kat Kaplama ve İnorganik Çinko Üst Lak Kaplama (Toplam Havuz Hacmi: 726,475 m3) 33 1.ç.5. Gürültü Proje sahası organize sanayi bölgesi alanında yer almakta olup, Çevresel Gürültü Kontrol Yönetmeliği’ne göre ve yöne…"
+          },
+          {
+            "page": 42,
+            "match": "Deprem",
+            "snippet": "…ar tespit edilerek bir yangın raporu düzenlenecektir. Yangın söndürme kuralları aşağıda gösterilmiştir. Doğal Afet (Deprem, Sel Baskını vb.) Durumu ile Kurtarma Ekibinin Görev ve Sorumlulukları Deprem anında yapılması gerekenler aşağıda ayr…"
+          },
+          {
+            "page": 43,
+            "match": "Deprem",
+            "snippet": "…kapan-tutun hareketiyle baş ve boyun korunmalıdır. • Pencerelerden ve camdan üretilmiş eşyalardan uzak durulmalıdır. Deprem Sırasında Açık Alandaysanız: • Enerji hatları ve direkleri, ağaçlar, diğer binalar ve duvar diplerinden uzaklaşılmal…"
+          },
+          {
+            "page": 44,
+            "match": "Deprem",
+            "snippet": "…ndan kaynaklanabilecek tehlikelere karşı dikkatli olunmalıdır. • Yakınında ise deniz kıyısından uzaklaşılmalıdır. Deprem Sırasında Araç Kullanıyorsanız: • Bulunulan konum güvenliyse yolu kapatmadan sağa yanaşılıp durulmalıdır. Kontak ana…"
+          }
+        ]
+      },
+      "cost_and_capacity": {
+        "label": "Project Cost, Power & Capacity",
+        "page_count": 12,
+        "pages": [
+          2,
+          3,
+          8,
+          9,
+          12,
+          18,
+          30,
+          38,
+          64,
+          130,
+          135,
+          145
+        ],
+        "samples": [
+          {
+            "page": 2,
+            "match": "Proje Bedeli",
+            "snippet": "…laşımlı Kaplama, İnorganik Çinko Ana Kat Kaplama ve İnorganik Çinko Üst Lak Kaplama (Toplam Havuz Hacmi: 726,475 m3) Proje Bedeli 79.500.000,00 Proje İçin Seçilen Yerin Açık Adresi (İli, İlçesi, Mevki) Torunlu Mahallesi, Kazançukuru Mevkii, Sali…"
+          },
+          {
+            "page": 3,
+            "match": "kapasite",
+            "snippet": "…........................................................................................ 6 b) Projenin iş akım şeması, kapasitesi, kapladığı alan, yatırım bedeli, teknolojisi, çalışacak personel sayısı ............................................…"
+          },
+          {
+            "page": 8,
+            "match": "Proje bedeli",
+            "snippet": "…an. İth. İhr. ve Tic. A.Ş.’ye kiralanmaktadır. Söz konusu alana ait kira sözleşmesi ekte verilmiştir. (Bkz. Ek- 7.1.) Proje bedelini tesiste kullanılacak makine-ekipman bedeli ve bunların nakliye/montaj giderleri oluşturmakta olup, bu kalemler Tablo…"
+          },
+          {
+            "page": 9,
+            "match": "Proje Bedeli",
+            "snippet": "…ma, İnorganik Çinko Ana Kat Kaplama ve İnorganik Çinko Üst Lak Kaplama (Toplam Havuz Hacmi: 726,475 m3) 3 Tablo 1. Proje Bedeline Ait Yatırım Maliyetleri Tablosu Makine ve Tesisat Listesi Adet Maliyet (TL) Elektrolitik Çinko Kaplama Tesisi 1…"
+          },
+          {
+            "page": 12,
+            "match": "kapasite",
+            "snippet": "…dinatları ve 1/25.000 ölçekli topografik haritası eklerde verilmektedir (Bkz. Ek- 2.3). b) Projenin iş akım şeması, kapasitesi, kapladığı alan, yatırım bedeli, teknolojisi, çalışacak personel sayısı Proje kapsamında “Elektrolitik Çinko Kaplam…"
+          },
+          {
+            "page": 18,
+            "match": "Kapasite",
+            "snippet": "…ama, İnorganik Çinko Ana Kat Kaplama ve İnorganik Çinko Üst Lak Kaplama (Toplam Havuz Hacmi: 726,475 m3) 12 1.b.2. Kapasitesi Tesiste, yılda 300 gün, günde 24 saat ve üç vardiya halinde, “Elektrolitik Çinko Kaplama, Elektrolitik Çinko Alaşım…"
+          },
+          {
+            "page": 30,
+            "match": "kapasite",
+            "snippet": "…mine deşarj edilmesi planlanmaktadır. Tesiste kurulması planlanan Atıksu Arıtma Tesisi (AAT), 50 m³/sa (1200 m³/gün) kapasiteye sahip olacak şekilde tasarlanmıştır. Söz konusu kapasitenin, planlanan ekipmanların devreye alınması sonrasında oluş…"
+          },
+          {
+            "page": 38,
+            "match": "322,277 KW",
+            "snippet": "…akıtın ısıl değeri: 8250 kcal/m3 1KW: 861 kcal/h 33,6341 m3/saat x 8250 kcal/m3 = 277.481,325 kcal/h / 861 kcal/h = 322,277 KW = 0,3222 MW Tesiste proses kaynaklı emisyonlar kapsamında, özellikle asidik karakterdeki kaplama banyolarından kayna…"
+          }
+        ]
+      }
+    },
+    "audit_checks": {
+      "mentions_field_survey": false,
+      "mentions_literature_only_cue": false,
+      "mentions_seasonal_sampling": false,
+      "mentions_cumulative_impact": true,
+      "mentions_olive_law_3573": true,
+      "mentions_groundwater_or_aquifer": true,
+      "mentions_iucn_or_endemic": true
+    }
+  },
+  "llm_synthesis": {
+    "model": "gemini-4-hydrogen",
+    "generated_at": "2026-11-20T01:48:00",
+    "pages_sent": [
+      1,
+      2,
+      3,
+      6,
+      7,
+      8,
+      9,
+      10,
+      16,
+      24,
+      25,
+      26,
+      33,
+      34,
+      35,
+      37,
+      48,
+      50,
+      51,
+      70,
+      71,
+      75,
+      132,
+      133,
+      134,
+      141
+    ],
+    "result": {
+      "executive_summary_tr": "Uysal Makina San. İth. İhr. ve Tic. A.Ş. Salihli 2 Şubesi tarafından Manisa ili, Salihli ilçesi, Torunlu Mahallesi, Salihli Organize Sanayi Bölgesi 105 Ada 15 Parsel üzerindeki mevcut fabrika binasında kiralanan 3.140 m² alanda toplam 726,475 m³ havuz hacmine sahip elektrolitik ve inorganik çinko/çinko alaşım kaplama ve üst lak kaplama tesisi kurulması planlanmaktadır. 79.500.000 TL yatırım bedelli ve işletmede 33 personelin çalışacağı proje kapsamında yeni bina inşaatı yapılmayacak, mevcut parseldeki sanayi tesisi içinde yılda 300 gün faaliyet yürütülecektir. Başlıca çevresel unsurlar; günlük 18,74 m³ olarak hesaplanan atıksu, yıllık 242.166 m³ doğalgaz tüketimine bağlı emisyonlar, yıllık on binlerce kilogram düzeyindeki boya, vernik, kontamine ambalaj ve arıtma çamuru gibi tehlikeli atıklar ile aynı parselde bulunan çok sayıda diğer metal işleme/yüzey işlem tesisiyle oluşabilecek kümülatif etkilerdir.",
+      "executive_summary_en": "Uysal Makina San. İth. İhr. ve Tic. A.Ş. Salihli 2 Branch proposes to establish an electrolytic and inorganic zinc, zinc-alloy, and topcoat plating facility with a total bath volume of 726.475 m³ inside a leased 3,140 m² section of an existing factory building on Parcel 105/15 in the Salihli Organized Industrial Zone, Manisa. With a projected investment of 79,500,000 TL and 33 operational staff, the project requires no new building construction and will operate 300 days per year. Primary environmental stakes involve a calculated 18.74 m³/day wastewater discharge, natural gas combustion emissions from 242,166 m³/year consumption, substantial annual hazardous waste streams including waste paints, contaminated packaging, and treatment sludge, and potential cumulative burdens alongside five previously approved or exempted industrial activities on the exact same parcel.",
+      "key_facts": [
+        {
+          "label": "Toplam Havuz Hacmi",
+          "value": "726,475 m³",
+          "page": 1
+        },
+        {
+          "label": "Proje Yatırım Bedeli",
+          "value": "79.500.000,00 TL",
+          "page": 2
+        },
+        {
+          "label": "Faaliyet Alanı ve Parsel Büyüklüğü",
+          "value": "97.552,14 m² parsel içinde 3.140 m² kiralanan alan",
+          "page": 48
+        },
+        {
+          "label": "En Yakın İlçe Merkezine Mesafe",
+          "value": "Salihli ilçe merkezine yaklaşık 17 km (kuş uçuşu)",
+          "page": 48
+        },
+        {
+          "label": "Personel Sayısı",
+          "value": "Kurulum aşamasında 6 kişi, işletme aşamasında 33 kişi",
+          "page": 25
+        },
+        {
+          "label": "Günlük Su Kullanımı (Personel, Temizlik, Scrubber)",
+          "value": "Personel 7,095 m³/gün; zemin temizliği 2,5 m³/gün; gaz yıkama 2,4 m³/gün",
+          "page": 25
+        },
+        {
+          "label": "Günlük Atıksu Debisi ve Arıtma Çamuru",
+          "value": "18,74 m³/gün atıksu debisi; 19,50 kg/gün (5.850 kg/yıl) arıtma çamuru",
+          "page": 33
+        },
+        {
+          "label": "Yıllık Doğalgaz Tüketimi ve Çalışma Günü",
+          "value": "242.166 m³/yıl doğalgaz; 300 gün/yıl",
+          "page": 37
+        },
+        {
+          "label": "Başlıca Tehlikeli Atık Miktarları",
+          "value": "20.000 kg/yıl kontamine ambalaj; 20.000 kg/yıl atık boya/vernik; 10.000 kg/yıl kontamine bez/eldiven; 5.000 kg/yıl boya/vernik çamuru; 3.000 kg/yıl kumlama atığı",
+          "page": 37
+        },
+        {
+          "label": "Aynı Parseldeki Önceki Yüzey İşlem Projesi",
+          "value": "264 m³ tank/havuz hacimli yüzey işlem ve cıvata üretim tesisi (ÇED Gerekli Değildir, 2021)",
+          "page": 7
+        }
+      ],
+      "baseline_assessment": {
+        "field_survey_status": "not_found",
+        "seasonal_sampling_status": "not_found",
+        "cumulative_impact_status": "omitted_or_not_found",
+        "olive_and_protected_status": "3573 sayılı Zeytincilik Kanunu, 4342 sayılı Mera Kanunu, 2872 sayılı Çevre Kanunu kapsamındaki ÖÇK alanları, sulak alanlar, Ramsar ve Bern sözleşmesi kapsamındaki koruma alanları, ormanlar, I-IV. sınıf tarım alanları, göl/akarsu/yeraltı suyu işletme sahaları ile nadir veya endemik türlerin bulunmadığı; sahanın 1/100.000 ölçekli Çevre Düzeni Planı'nda Organize Sanayi Bölgesi içinde kaldığı beyan edilmiştir [s. 50, 51, 141].",
+        "explanation": "Sunulan PDF kesitlerinde proje alanı ve etki çevresine yönelik proje öncesi arazi sörveyi, flora/fauna gözlem tarihi, uzman değerlendirmesi veya mevsimsel çevresel örnekleme çalışmasına ilişkin herhangi bir veri bulunmamaktadır; yalnızca alanın OSB sınırları içinde kaldığı ve korunan alanlar ile Bern Ek-I veya endemik türlerin bulunmadığı yönünde genel beyanlara yer verilmiştir [s. 50, 51, 141]. Benzer şekilde, aynı parsel üzerinde daha önce onaylanmış veya kapsam dışı bırakılmış beş farklı sanayi faaliyeti listelenmesine karşın kesitlerde kümülatif etki değerlendirmesi yer almamaktadır [s. 7, 8]. Çevre İzleme Planı kapsamında da yalnızca işletme aşamasında günlük gözlemsel toz kontrolü ve atık kayıtlarının tutulması gibi rutin izleme adımları tanımlanmıştır [s. 71]."
+      },
+      "red_flags": [
+        {
+          "severity": "high",
+          "title": "Aynı parseldeki yoğun sanayi faaliyetlerine rağmen kümülatif etki değerlendirmesi eksikliği",
+          "detail": "105 Ada 15 Parsel üzerinde daha önce depo (2021), 264 m³ havuz hacimli yüzey işlem ve cıvata tesisi (2021), ayıklama-paketleme (2024), sıcak dövme/cıvata imalatı (2026) ve 22 pres ile 3 elektrikli fırın içeren rondela üretimi (2026) için ÇED Gerekli Değildir ve Kapsam Dışı kararları alındığı belirtilmiştir. Buna rağmen incelenen sayfalarda, 726,475 m³ ek havuz hacmiyle toplamda 990,475 m³ yüzey işlem tank kapasitesine ulaşan parseldeki toplam su tüketimi, atıksu arıtma yükü, tehlikeli atık ve hava emisyonlarının kümülatif etkisine dair nicel bir analiz sunulmamıştır.",
+          "pages": [
+            7,
+            8,
+            48
+          ]
+        },
+        {
+          "severity": "medium",
+          "title": "Arıtma çamuru hesabında tesise özgü veri yerine 2008 tarihli genel literatür kabulü",
+          "detail": "Günlük 19,50 kg (yıllık 5.850 kg) tehlikeli arıtma tesisi çamuru miktarı, tesisin planlanan elektrolitik çinko, çinko alaşım ve inorganik kaplama banyolarının kimyasal bileşimi veya proses kütle dengesi yerine 2008 tarihli bir yüksek lisans tezinden alınan 1.600 mg/L AKM ve %65 giderim verimi kabulleriyle hesaplanmıştır. Öte yandan, kaplama banyolarında dip çamuru oluşmayacağı teknik bir gerekçe sunulmadan doğrudan kabul edilmiştir.",
+          "pages": [
+            33,
+            34
+          ]
+        },
+        {
+          "severity": "medium",
+          "title": "Durulama, atıksu oluşumu ve yıllık kimyasal banyo boşaltım beyanları arasındaki uyumsuzluk riski",
+          "detail": "25. sayfada kaplaması yapılan ürünlerin yıkamasının yapılmayacağı ve havuzların aynı anda boşaltılmayacağı ifade edilirken, 16. sayfadaki Şekil 3 iş akım şemasında iki ayrı durulama banyosu ve buradan kaynaklanan atıksu çıkışı gösterilmektedir. Ayrıca 35. sayfada %100 kimyasal içeren havuzların özellik yitirmesi veya arıza durumunda yılda 1 kez tamamen boşaltılacağı belirtilmesine karşın, bu tam boşaltımdan doğacak sıvı tehlikeli atık hacmi Tablo 9 tehlikeli atık listesinde ayrı bir kalem olarak yer almamaktadır.",
+          "pages": [
+            16,
+            25,
+            35,
+            37
+          ]
+        },
+        {
+          "severity": "medium",
+          "title": "Çevre İzleme Planı'nın analitik ölçümler yerine görsel kontrollere dayanması",
+          "detail": "Bölüm 5.1'deki Tablo 16 Çevresel İzleme Planı'nda toz emisyonları için günlük gözlemsel izleme, tehlikeli ve evsel atıklar için ise sürekli görsel tetkik ve kayıt tutma öngörülmüştür. Yüzey kaplama ve boya/lak kurutma proseslerinden kaynaklanabilecek baca gazı kirleticileri, uçucu organik bileşikler (VOC) veya atıksu deşarjındaki ağır metal/çinko parametreleri için periyodik laboratuvar analiz sıklığı ve yöntemleri tabloda belirtilmemiştir.",
+          "pages": [
+            16,
+            71
+          ]
+        },
+        {
+          "severity": "low",
+          "title": "Yıllık 242.166 m³ doğalgaz tüketimine rağmen sera gazı emisyonlarının yok sayılması",
+          "detail": "Banyo kurutmaları, hidrojen gevrekliği giderme fırını ve ısıtma için yılda 242.166 m³ doğalgaz tüketileceği öngörülmesine karşın, yalnızca faaliyetin Sera Gazı Emisyonlarının Takibi Hakkında Yönetmelik Ek-1 listesinde yer almaması gerekçe gösterilerek 'sera gazı ve iklim değişikliğine sebep olacak bir husus bulunmamaktadır' ifadesi kullanılmış ve yanma kaynaklı CO₂ emisyonu hesaplanmamıştır.",
+          "pages": [
+            26,
+            37,
+            75
+          ]
+        },
+        {
+          "severity": "low",
+          "title": "Ekolojik duyarlılık ve biyolojik çeşitlilik beyanlarının alan etüdü olmaksızın verilmesi",
+          "detail": "Proje alanı ve çevresinde Bern Sözleşmesi kapsamındaki türlerin, endemik bitkilerin, sulak alanların ve hassas bölgelerin bulunmadığı kesin ifadelerle belirtilmiştir; ancak incelenen sayfalarda bu sonuca hangi tarihte, hangi uzmanlar tarafından ve hangi arazi/tampon bölge incelemesiyle ulaşıldığına dair yöntem veya saha bulgusu sunulmamıştır.",
+          "pages": [
+            50,
+            51,
+            141
+          ]
+        }
+      ],
+      "hkt_and_petition_questions": [
+        {
+          "question_tr": "105 Ada 15 Parsel üzerinde daha önce karar verilen 264 m³ havuz hacimli yüzey işlem tesisi ve diğer dört sanayi faaliyeti ile birlikte değerlendirildiğinde, parselin toplam su ihtiyacı, atıksu arıtma kapasitesi, hava emisyonu ve tehlikeli atık yükü açısından kümülatif bir çevresel etki hesabı yapılmış mıdır?",
+          "pages": [
+            7,
+            8,
+            48
+          ]
+        },
+        {
+          "question_tr": "25. sayfada kaplanan ürünlerin yıkanmayacağı belirtilmesine rağmen Şekil 3'te iki adet durulama banyosu ve atıksu çıkışı yer almasının, ayrıca 35. sayfada yılda bir kez tamamen boşaltılacağı ifade edilen %100 kimyasal banyolardan çıkacak sıvı tehlikeli atık miktarının Tablo 9'da gösterilmemesinin gerekçesi nedir?",
+          "pages": [
+            16,
+            25,
+            35,
+            37
+          ]
+        },
+        {
+          "question_tr": "Arıtma tesisi çamuru hesabında tesisteki elektrolitik ve inorganik çinko kaplama banyolarının gerçek kirletici yükü yerine neden 2008 tarihli bir tezden alınan genel 1.600 mg/L AKM değeri esas alınmıştır ve banyolarda dip çamuru oluşmayacağı kabulü hangi teknik veriye dayanmaktadır?",
+          "pages": [
+            33,
+            34
+          ]
+        },
+        {
+          "question_tr": "Tablo 16 Çevresel İzleme Planı'nda toz ve atıklar için yalnızca gözlemsel/görsel denetim tanımlanmıştır; tesisin kurutma fırınları, gaz yıkama (scrubber) üniteleri ve atıksu çıkışı için çinko, ağır metal ve VOC parametrelerini kapsayan hangi periyodik akredite ölçümler yapılacaktır?",
+          "pages": [
+            16,
+            25,
+            71
+          ]
+        },
+        {
+          "question_tr": "Yılda 242.166 m³ doğalgaz tüketimi öngörülen tesiste, yasal raporlama kapsamı dışında kalınsa dahi yakma kaynaklı karbon dioksit (CO₂) emisyon miktarı neden hesaplanmamış ve 'sera gazına sebep olacak bir husus bulunmadığı' şeklinde değerlendirilmiştir?",
+          "pages": [
+            26,
+            37,
+            75
+          ]
+        }
+      ],
+      "data_limitations": "Toplam 270 sayfalık PTD dosyasının yalnızca 26 sayfası (1, 2, 3, 6, 7, 8, 9, 10, 16, 24, 25, 26, 33, 34, 35, 37, 48, 50, 51, 70, 71, 75, 132, 133, 134 ve 141. PDF sayfaları) incelenebilmiştir. Dosyadaki havuz ebatları ve kimyasal hammadde listesi (Tablo 2-5), detaylı banyo atıksu bilançosu (Tablo 6-7), emisyon, gürültü ve kaza riski hesapları, jeolojik/hidrojeolojik veriler, en yakın yerleşim yeri uydu görüntüsü (Şekil 7), atıksu arıtma tesisi iş akım şeması (Tablo 17) ile koordinat, harita ve resmi kurum görüşlerini içeren ekler sunulan kesitlerin dışında kaldığından doğrulanamamıştır."
+    }
+  }
+}

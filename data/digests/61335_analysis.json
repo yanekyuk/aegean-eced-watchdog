@@ -1,0 +1,795 @@
+{
+  "filing": {
+    "province": "MANİSA",
+    "district": "AKHİSAR",
+    "project_name": "ZEYTİN İŞLEME TESİSİ KAPASİTE ARTIŞI",
+    "project_owner": "PEYBA GIDA TARIM TUR. HAYV. İNŞ. SAN. VE TİC. LTD. ŞTİ.",
+    "sector": "Gıda",
+    "sub_sector": "Zeytin İşleme  Tesisleri",
+    "decision_type": "ÇED Gerekli Değil/ÇED Olumlu",
+    "announcement_date_tr": "09.11.2026",
+    "project_type": "Ek-2",
+    "detail_text": "MANİSA ili AKHİSAR,  ilcesinde MANİSA ili AKHİSAR,  ilcesi Eroğlu Mahallesi, 0 ada, 588 no'lu parsel mevkiindeki PEYBA GIDA TARIM TUR. HAYV. İNŞ. SAN. VE TİC. LTD. ŞTİ. tarafından yapılması planlanan ZEYTİN İŞLEME TESİSİ KAPASİTE ARTIŞI projesi ile ilgili olarak Bakanlığımıza sunulan PTD Dosyası incelenmiş ve değerlendirilmiştir  ÇED Yönetmeliği'nin 17. maddesi gereğince ZEYTİN İŞLEME TESİSİ KAPASİTE ARTIŞI projesi'ne Valiliğimizce 'ÇED Olumlu (Kapsam Ek-2)' kararı verilmiştir.",
+    "detail_links": [
+      {
+        "text": "PTD Dosyası",
+        "href": "http://eced.csb.gov.tr/jsp/ek1/61335"
+      }
+    ],
+    "documents": [
+      {
+        "portal_doc_url": "http://eced.csb.gov.tr/jsp/ek1/61335",
+        "filing_id": "61335",
+        "consulting_firm": "CANÇED ÇEVRE DANIŞMANLIK VE MÜHENDİSLİK SAN. TİC. LTD. ŞTİ.",
+        "submitted_at": "13/10/2026 04:04:51",
+        "pdf_urls": [
+          {
+            "label": "Dosya Göster",
+            "url": "http://eced.csb.gov.tr/jsp/dosya/dosyaGoster.htm?tempAd=sign2021536094849303535.pdf&orjinalAd=e-imza.pdf&yuklemeTarihi=2026-10-13"
+          }
+        ]
+      }
+    ],
+    "announcement_date": "2026-11-09",
+    "statutory_clocks": [
+      {
+        "code": "iyuk_20a",
+        "kind": "İYUK 20/A annulment lawsuit (30d; İYUK 11 does not toll)",
+        "deadline": "2026-12-09",
+        "days_remaining": 19
+      }
+    ],
+    "priority_district": true,
+    "filing_key": "61335:09.11.2026:ÇED Gerekli Değil/ÇED Olumlu",
+    "first_seen_at": "2026-11-20T00:44:16"
+  },
+  "pdf_info": {
+    "filename": "61335.pdf",
+    "bytes": 55760387,
+    "sha256": "6cb8de043440c8ced6bb7c67e270899a398d7e7b2465806d7c5febc1a8c0729b",
+    "cached": false
+  },
+  "analysis": {
+    "page_count": 194,
+    "total_chars": 273870,
+    "text_pages": 134,
+    "scanned_or_blank_pages": 60,
+    "scanned_page_sample": [
+      90,
+      94,
+      96,
+      97,
+      98,
+      99,
+      100,
+      101,
+      102,
+      103,
+      104,
+      105,
+      106,
+      107,
+      108
+    ],
+    "headings": [
+      [
+        5,
+        "PROJENİN TEKNİK OLMAYAN ÖZETİ:"
+      ],
+      [
+        6,
+        "BÖLÜM I: PROJENİN ÖZELLİKLERİ"
+      ],
+      [
+        6,
+        "a) Projenin ve yerin alternatifleri (Proje teknolojisinin ve proje alanının seçilme nedenleri)"
+      ],
+      [
+        7,
+        "b) Projenin iş akım şeması, kapasitesi, kapladığı alan, teknolojisi, çalışacak personel sayısı"
+      ],
+      [
+        13,
+        "c) Doğal kaynakların kullanımı (arazi kullanımı, su kullanımı, kullanılan enerji türü vb.)"
+      ],
+      [
+        30,
+        "ç) Projenin inşaat ve işletme aşamasında oluşan her türlü atığın özelliği (cinsi, türü, miktarı vb.) bertarafı ve geri kazanımına yönelik değerlendirmeler"
+      ],
+      [
+        40,
+        "d) Kullanılan teknoloji ve malzemelerden kaynaklanabilecek kaza riski"
+      ],
+      [
+        42,
+        "BÖLÜM II: PROJE YERİ VE ETKİ ALANININ MEVCUT ÇEVRESEL ÖZELLİKLERİ"
+      ],
+      [
+        42,
+        "a) Mevcut arazi kullanımı ve kalitesi (tarım alanı, orman alanı, planlı alan, su yüzeyi ve benzeri)"
+      ],
+      [
+        46,
+        "Jeolojik Özellikler"
+      ],
+      [
+        49,
+        "b) EK-5’deki Duyarlı Yöreler Listesi dikkate alınarak korunması gereken alanlar"
+      ],
+      [
+        71,
+        "BÖLÜM III. PROJENİN İNŞAAT VE İŞLETME AŞAMASINDA ÇEVRESEL ETKİLERİ, ÖNCELİKLİ ETKİLERİN BELİRLENMESİ VE ALINACAK ÖNLEMLER"
+      ],
+      [
+        81,
+        "BÖLÜM IV: KÜMÜLATİF ETKİ DEĞERLENDİRME"
+      ],
+      [
+        82,
+        "BÖLÜM V: ÇEVRESEL VE SOSYAL EYLEM PLANI"
+      ],
+      [
+        82,
+        "V-1: Çevre İzleme Planı"
+      ],
+      [
+        83,
+        "V-2: Sürdürülebilirlik Planı (Sıfır Atık Planı, Trafik Yönetim Planı, Sera Gazı Azaltım Planı, Çevresel ve Sosyal Yönetim Planı vb.)"
+      ],
+      [
+        87,
+        "BÖLÜM VI: NOTLAR VE KAYNAKLAR VE EKLER"
+      ],
+      [
+        88,
+        "1.Proje İçin Seçilen Yerin Koordinatları"
+      ],
+      [
+        88,
+        "2.Proje alanı ve yakın çevresinin mevcut arazi kullanımını değerlendirmek için; yerleşim alanlarının, ulaşım ağlarının, enerji nakit hatlarının, mevcut tesislerin ve Ek-5’te yer alan Duyarlı yöreler Listesinde belirtilen diğer alanların (proje alanı v..."
+      ],
+      [
+        88,
+        "3.Vekaletname, İmza Sirküleri ve Ticari Sicil Gazetesi"
+      ],
+      [
+        88,
+        "4. Proje Sahibince Onaylı Taahhüt Yazısı"
+      ],
+      [
+        88,
+        "5.Başvuru Bedelinin Ödendiğine Dair Dekont"
+      ],
+      [
+        88,
+        "6.Faaliyet Alanında Yetkili Müşavir Firma Tarafından Yer İncelemesi Yapıldığını Gösterir Tutanak"
+      ],
+      [
+        88,
+        "7.Diğer Bilgi ve Belgeler"
+      ],
+      [
+        1,
+        "ekler.pdf"
+      ]
+    ],
+    "signals": {
+      "coordinates_and_footprint": {
+        "label": "Coordinates, Parcel & Footprint",
+        "page_count": 32,
+        "pages": [
+          5,
+          12,
+          14,
+          16,
+          22,
+          24,
+          27,
+          37,
+          42,
+          43,
+          44,
+          46,
+          47,
+          77,
+          78,
+          81,
+          88,
+          89,
+          91,
+          92,
+          110,
+          131,
+          135,
+          153,
+          160
+        ],
+        "samples": [
+          {
+            "page": 5,
+            "match": "600,00 m2",
+            "snippet": "…apu proje tanıtım dosyası eklerinde yer almaktadır (Bkz. Ek.2-ç). Projenin gerçekleştirileceği parselin büyüklüğü 44.600,00 m2 olup, proje alanına ait koordinatlar proje tanıtım dosyası eklerinde yer almaktadır (Bkz. Ek.1). İşletmenin 1.460 t…"
+          },
+          {
+            "page": 5,
+            "match": "koordinat",
+            "snippet": "…yer almaktadır (Bkz. Ek.2-ç). Projenin gerçekleştirileceği parselin büyüklüğü 44.600,00 m2 olup, proje alanına ait koordinatlar proje tanıtım dosyası eklerinde yer almaktadır (Bkz. Ek.1). İşletmenin 1.460 ton/yıl kapasitesi için Çevre, Şehir…"
+          },
+          {
+            "page": 12,
+            "match": "787,31 m2",
+            "snippet": "…ır. Proje kapsamında inşaa edilecek tesis A ve B blok olmak üzere 2 kapalı alan içerecektir. A blok kapalı alanı 7.787,31 m2 ve B blok kapalı alanı 12.117,02 m olarak planlanmaktadır. Şekil 5. Proje Alanının Çevre Düzeni Planı Üzerinde…"
+          },
+          {
+            "page": 12,
+            "match": "600,00 m2",
+            "snippet": "…maktadır. Şekil 5. Proje Alanının Çevre Düzeni Planı Üzerinde Gösterimi Yapılması planlanan projenin alanı 44.600,00 m2 olup tek parselden oluşmaktadır. Alanda faaliyet sahibi mülk sahibi konumundadır. Alana ait tapu proje tanıtım dosyası…"
+          },
+          {
+            "page": 12,
+            "match": "UTM",
+            "snippet": "…ahibi mülk sahibi konumundadır. Alana ait tapu proje tanıtım dosyası eklerinde yer almaktadır (Bkz. Ek.2-ç). Alana ait UTM ve Coğrafi Koordinatlar ekte yer almaktadır (Bkz. Ek.1). Tesise en yakın yerleşim yerlerini gösteren uydu görüntüs…"
+          },
+          {
+            "page": 12,
+            "match": "Koordinat",
+            "snippet": "…bi konumundadır. Alana ait tapu proje tanıtım dosyası eklerinde yer almaktadır (Bkz. Ek.2-ç). Alana ait UTM ve Coğrafi Koordinatlar ekte yer almaktadır (Bkz. Ek.1). Tesise en yakın yerleşim yerlerini gösteren uydu görüntüsü aşağıdaki şekilde…"
+          },
+          {
+            "page": 14,
+            "match": "ada 588 ve 672 parsel",
+            "snippet": "…ga Bakanlar Kurulu tarafından alınan Afete Maruz Bölge Kararına rastlanılmamıştır. Akhisar ilçesi, Eroğlu mahallesi 0 ada 588 ve 672 parsel numaralı taşınmazlar üzerinde Zeytin İşleme Tesisi yapılmasında kurumumuz mevzuatları gereği bir sakınca bulunmamakta…"
+          },
+          {
+            "page": 16,
+            "match": "Ada 588 ve 672 numaralı parsel",
+            "snippet": "…timi Şube Müdürlüğü’nün 27.03.2023 tarih ve 272607 sayılı yazısında “… Manisa İli Akhisar ilçesi, Eroğlu Mahallesi, 0 Ada 588 ve 672 numaralı parsellerde Daire Başkanlığımızın herhangi bir çalışması olamamakla birlikte 2872 sayılı Çevre Kanunu ilgili yönetmelik hükü…"
+          }
+        ]
+      },
+      "water_and_discharge": {
+        "label": "Water Use, Hydrogeology & Discharge",
+        "page_count": 26,
+        "pages": [
+          2,
+          5,
+          6,
+          8,
+          9,
+          19,
+          20,
+          21,
+          25,
+          26,
+          28,
+          29,
+          34,
+          35,
+          53,
+          64,
+          72,
+          73,
+          74,
+          75,
+          76,
+          80,
+          83,
+          153,
+          154
+        ],
+        "samples": [
+          {
+            "page": 2,
+            "match": "100 ton/gün",
+            "snippet": "…ndirmeye Tabi Projeler Listesi Madde 26- d) 1.500 ton/yıl ve üzeri zeytin işleme tesisleri, t) Nihai ürün kapasitesi 100 ton/gün ve üzeri bitkisel ve hayvansal ürünlerin konserve yapılması ve ambalajlanması,” PROJENİN ANA NACE KODU 10.39.04- Tuzl…"
+          },
+          {
+            "page": 5,
+            "match": "100 ton/gün",
+            "snippet": "…- d) 1.500 ton/yıl ve üzeri zeytin işleme tesisleri,” maddesi ile “Ek-2. Listesi, Madde 26- t) Nihai ürün kapasitesi 100 ton/gün ve üzeri bitkisel ve hayvansal ürünlerin konserve yapılması ve ambalajlanması,” maddesi kapsamında yer aldığı düşünüle…"
+          },
+          {
+            "page": 6,
+            "match": "100 ton/gün",
+            "snippet": "…- d) 1.500 ton/yıl ve üzeri zeytin işleme tesisleri,” maddesi ile “Ek-2. Listesi, Madde 26- t) Nihai ürün kapasitesi 100 ton/gün ve üzeri bitkisel ve hayvansal ürünlerin konserve yapılması ve ambalajlanması,” maddesi kapsamında yer aldığı düşünüle…"
+          },
+          {
+            "page": 8,
+            "match": "Atıksu",
+            "snippet": "…a Kalibrasyon Ham Zeytinlerin Temini Havuz ve Polyester Yıkama Seçme Yağlama Dolum ve Ambalajlama Kanalizasyon Atıksu Su Girişi Sevkiyat Tuzlu Suda Bekletme Havuzdan Çıkarma Bekletme Kalibrasyon Atıksu Su Girişi Su Girişi Üreti…"
+          },
+          {
+            "page": 9,
+            "match": "Atıksu",
+            "snippet": "…Dolum ve Ambalajlama Kanalizasyon Sevkiyat Sitrik Asitli Salamura Havuzda Bekletme Havuzdan Çıkarma Kalibrasyon Atıksu Su Girişi Üretime alınmayan Zeytinler Çizme Şekil 2. Yeşil Zeytin İş Akım Şeması"
+          },
+          {
+            "page": 19,
+            "match": "DERE YATAĞI",
+            "snippet": "…etre genişliğinde yol şeridi ayrılmalı, sürekliliği olan bu şeritvari alanlar tüm planlarda üzeri açık olacak şekilde \"DERE YATAĞI\" ve \"YOL ŞERİDİ\" olarak işlenmelidir. Dere yatağı içinde ve yol şeridi için ayrılan sahalarda yapılaşmaya izin veril…"
+          },
+          {
+            "page": 19,
+            "match": "Dere yatağı",
+            "snippet": "…olan bu şeritvari alanlar tüm planlarda üzeri açık olacak şekilde \"DERE YATAĞI\" ve \"YOL ŞERİDİ\" olarak işlenmelidir. Dere yatağı içinde ve yol şeridi için ayrılan sahalarda yapılaşmaya izin verilmemelidir. Dere yatakları, yol şeridi için ayrılan…"
+          },
+          {
+            "page": 20,
+            "match": "Dere yatağı",
+            "snippet": "…sorumlu tutulmayacağı ve sorumluluğun talep sahibinde (talep sahibi kişi/belediye) olacağı hususu kabul edilmelidir. Dere yatağı ile irtibatı olan/olacak her türlü yapı \"Taşkın ve Rusubat Kontrolü Yönetmeliği\"ne uygun olacak şekilde planlanmalı, p…"
+          }
+        ]
+      },
+      "protected_land_and_olive": {
+        "label": "Protected Zones, Forests & Olive Groves",
+        "page_count": 14,
+        "pages": [
+          3,
+          14,
+          16,
+          18,
+          22,
+          42,
+          43,
+          49,
+          51,
+          53,
+          64,
+          70,
+          161,
+          178
+        ],
+        "samples": [
+          {
+            "page": 3,
+            "match": "orman alanı",
+            "snippet": "….............................................................. 40 a) Mevcut arazi kullanımı ve kalitesi (tarım alanı, orman alanı, planlı alan, su yüzeyi ve benzeri) ..................................................................................…"
+          },
+          {
+            "page": 14,
+            "match": "arkeolojik sit",
+            "snippet": "…da 588 ve 672 numaralı taşınmazların bugüne kadar 2863 sayılı yasa kapsamında tespit ve tescili yapılmış herhangi bir arkeolojik sit veya kültür varlığı korunma alanı içerisinde kalmadığı tespit edilmiştir. Ancak yapılacak olan çalışmalar esnasında h…"
+          },
+          {
+            "page": 16,
+            "match": "Zeytinlik",
+            "snippet": "…ırım programına alınmış/alınacak tarım arazilerinin tarımsal üretim amaçlı korunması esastır.” Ve 8.7.6. Maddesinde; “Zeytinlik alanlarda, 3573 sayılı “Zeytinciliğin Islahı ve Yabanilerinin Araştırılması Hakkında Kanun” hükümleri geçerlidir. Bu a…"
+          },
+          {
+            "page": 16,
+            "match": "3573 sayılı",
+            "snippet": "…mış/alınacak tarım arazilerinin tarımsal üretim amaçlı korunması esastır.” Ve 8.7.6. Maddesinde; “Zeytinlik alanlarda, 3573 sayılı “Zeytinciliğin Islahı ve Yabanilerinin Araştırılması Hakkında Kanun” hükümleri geçerlidir. Bu alanlarda, zeytinyağı f…"
+          },
+          {
+            "page": 18,
+            "match": "doğal sit",
+            "snippet": "…5951 sayılı görüşünde aşağıdaki değerlendirmeler yapılmıştır: “… 1-) İl Müdürlüğümüzce tescilli tabiat varlıkları ve doğal sit envanterinde yapılan inceleme neticesinde; İlimiz, Akhisar İlçesi, Eroğlu Mahallesi, 588 parselde kayıtlı taşınmazın,…"
+          },
+          {
+            "page": 18,
+            "match": "Özel Çevre Koruma",
+            "snippet": "…Varlıklarını Koruma Kanunu kapsamında ilan edilen doğal sit alanı ve 2872 sayılı Çevre Kanunu kapsamında ilan edilen Özel Çevre Koruma Bölgesi sınırları dışında kaldığı tespit edilmiş olup bahse konu talep sahası içerisinde tescilli tabiat varlığı bulun…"
+          },
+          {
+            "page": 18,
+            "match": "Zeytinlik",
+            "snippet": "…olarak hazırlanması gerektiği belirtilmektedir. 1/100.000 ölçekli Çevre Düzeni Planı Plan Hükümlerinin madde 8.7.6. “Zeytinlik Alanlarda, 3573 Sayılı “Zeytinciliğin Islahı ve Yabanilerinin Aşılattırılması Hakkında Kanun” Hükümleri Uygulanır. Bu…"
+          },
+          {
+            "page": 18,
+            "match": "3573 Sayılı",
+            "snippet": "…erektiği belirtilmektedir. 1/100.000 ölçekli Çevre Düzeni Planı Plan Hükümlerinin madde 8.7.6. “Zeytinlik Alanlarda, 3573 Sayılı “Zeytinciliğin Islahı ve Yabanilerinin Aşılattırılması Hakkında Kanun” Hükümleri Uygulanır. Bu Alanlarda Ve 5403 Sayıl…"
+          }
+        ]
+      },
+      "ecology_and_baseline": {
+        "label": "Flora, Fauna & Baseline Methodology",
+        "page_count": 13,
+        "pages": [
+          52,
+          53,
+          54,
+          55,
+          57,
+          58,
+          64,
+          66,
+          67,
+          68,
+          69,
+          70,
+          179
+        ],
+        "samples": [
+          {
+            "page": 52,
+            "match": "BERN Sözleşmesi",
+            "snippet": "…sözleşmeler uyarınca korunması gerekli alanlar: a) \"Avrupa’nın Yaban Hayatı ve Yaşama Ortamlarını Koruma Sözleşmesi\" (BERN Sözleşmesi) uyarınca koruma altına alınmış alanlardan \"Önemli Deniz Kaplumbağası Üreme Alanları\"nda belirtilen I. ve II. Koruma B…"
+          },
+          {
+            "page": 53,
+            "match": "endemik",
+            "snippet": "…adır. d) Bilimsel araştırmalar için önem arzeden ve/veya nesli tehlikeye düşmüş veya düşebilir türler ve ülkemiz için endemik olan türlerin yaşama ortamı olan alanlar, biyosfer rezervi, biyotoplar, biyogenetik rezerv alanları, benzersiz özellik…"
+          },
+          {
+            "page": 53,
+            "match": "FLORA VE FAUNA",
+            "snippet": "…100.000 ölçekli İzmir – Manisa Bölgesi Çevre Düzeni Planında “Tarım arazisi” içerisinde kalmaktadır (Bkz. Ek.2-a). FLORA VE FAUNA İÇEREN SÖZLEŞMELER VE KATEGORİLER 1. IUCN Red List Kategorileri IUCN (The World Conservation Union: The Inte…"
+          },
+          {
+            "page": 53,
+            "match": "IUCN",
+            "snippet": "…nda “Tarım arazisi” içerisinde kalmaktadır (Bkz. Ek.2-a). FLORA VE FAUNA İÇEREN SÖZLEŞMELER VE KATEGORİLER 1. IUCN Red List Kategorileri IUCN (The World Conservation Union: The International Union for the Conservation of Nature…"
+          },
+          {
+            "page": 54,
+            "match": "IUCN",
+            "snippet": "…52 Avrupa ülkelerinde IUCN risk sınıflarına göre flora ve fauna türlerinin sınıflandırılması 1970’li yıllardan itibaren gerçekleştirilmeye başlan…"
+          },
+          {
+            "page": 54,
+            "match": "flora ve fauna",
+            "snippet": "…52 Avrupa ülkelerinde IUCN risk sınıflarına göre flora ve fauna türlerinin sınıflandırılması 1970’li yıllardan itibaren gerçekleştirilmeye başlanmıştır. IUCN kategorileri 9 grupta i…"
+          },
+          {
+            "page": 55,
+            "match": "BERN SÖZLEŞMESİ",
+            "snippet": "…n henüz tehlike altında değil Out of danger O Takson tehlike dışı Rare R Nadir Vulnerable V Zarar görebilir BERN SÖZLEŞMESİ Bern Sözleşmesi, yaban hayatı ve yaşama ortamlarının korunmasına ilişkin bir sözleşmedir. Sözleşmede korunan türler…"
+          },
+          {
+            "page": 55,
+            "match": "Bern Sözleşmesi",
+            "snippet": "…ında değil Out of danger O Takson tehlike dışı Rare R Nadir Vulnerable V Zarar görebilir BERN SÖZLEŞMESİ Bern Sözleşmesi, yaban hayatı ve yaşama ortamlarının korunmasına ilişkin bir sözleşmedir. Sözleşmede korunan türler üç ayrı ek liste o…"
+          }
+        ]
+      },
+      "pollutants_and_hazards": {
+        "label": "Emissions, Geochemistry & Waste",
+        "page_count": 19,
+        "pages": [
+          26,
+          37,
+          38,
+          39,
+          44,
+          45,
+          48,
+          78,
+          81,
+          82,
+          83,
+          85,
+          87,
+          169,
+          179,
+          180,
+          184,
+          185,
+          187
+        ],
+        "samples": [
+          {
+            "page": 26,
+            "match": "deprem",
+            "snippet": "…rına Genel Müdürlüğümüz WEB sayfası, E-Ticaret Portal'ından ulaşılabilir ve ücreti karşılığı satın alınabilir. Başta deprem olmak üzere, Ülkemizin doğa kaynaklı afet riski dikkate alınarak işlem tesis edilmesi önerilmektedir. Belirtilen alan…"
+          },
+          {
+            "page": 37,
+            "match": "GÜRÜLTÜ",
+            "snippet": "…de yayımlanarak yürürlüğe giren “Çevre İzin ve Lisans Yönetmeliği” kapsamında muafiyet için başvuru yapılacaktır. • GÜRÜLTÜ: Proje sahasında inşaat çalışmaları geçekleştirilecek olup, Çevresel Gürültünün Değerlendirmesi ve Yönetimi Yönetme…"
+          },
+          {
+            "page": 38,
+            "match": "Gürültü",
+            "snippet": "…36 Şantiye Alanı İçin Çevresel Gürültü Sınır Değerlerine uyularak 70 dB sınır değerinin altında olacak şekilde çalışacaktır. Tablo 10. Gürültü Kaynaklar…"
+          },
+          {
+            "page": 39,
+            "match": "Gürültü",
+            "snippet": "…ışı 37 Tablo 11. Gürültü Seviyesinin Mesafeye Göre Dağılımı R LPT 10 62,10 20 56,08 50 48,12 60 46,54 80 44,04 100 42,10 125 40,…"
+          },
+          {
+            "page": 44,
+            "match": "Deprem",
+            "snippet": "…sisi\" bir sakınca yoktur…’’ denilmektedir. Kurum görüşü proje tanıtım dosyası eklerinde sunulmaktadır. (Bkz. Ek- 8) Deprem Durumu Proje alanı Manisa İlinde yer almakla birlikte bölge 1. Derece Deprem Bölgesi’dir. Söz konusu bölge, Mülga Bay…"
+          },
+          {
+            "page": 45,
+            "match": "Deprem",
+            "snippet": "…43 1996 yılında yürürlüğe giren Türkiye Deprem Bölgeleri Haritası AFAD Deprem Dairesi Başkanlığı tarafından yenilenmiş olup 18.03.2018 tarih ve 30364 sayılı Resmi G…"
+          },
+          {
+            "page": 48,
+            "match": "deprem",
+            "snippet": "…nümüzde de aktif olması nedeniyle Akhisar ve çevresi sismotektonik açıdan hareketli bir bölge niteliğindedir. Bölgenin deprem tehlikesinin değerlendirilmesinde, Türkiye Diri Fay Haritası kapsamında belirlenen aktif faylar ile proje alanına ili…"
+          },
+          {
+            "page": 78,
+            "match": "GÜRÜLTÜ",
+            "snippet": "…lüğe giren “Sanayi Kaynaklı Hava Kirliliğinin Kontrolü Yönetmeliği”nde belirtilen sınır değerlere uyulacaktır. 3.4.GÜRÜLTÜ: Çalışanların kişisel koruyucu ekipman kullanmaları sağlanacaktır. Makine ekipmanların bakımları da düzenli olarak…"
+          }
+        ]
+      },
+      "cost_and_capacity": {
+        "label": "Project Cost, Power & Capacity",
+        "page_count": 43,
+        "pages": [
+          1,
+          2,
+          3,
+          5,
+          6,
+          7,
+          11,
+          12,
+          13,
+          23,
+          28,
+          29,
+          30,
+          32,
+          35,
+          36,
+          42,
+          89,
+          92,
+          120,
+          124,
+          131,
+          164,
+          175,
+          176
+        ],
+        "samples": [
+          {
+            "page": 1,
+            "match": "KAPASİTE",
+            "snippet": "PEYBA GIDA TARIM TUR. HAYV. İNŞ. SAN. VE TİC. LTD. ŞTİ. ZEYTİN İŞLEME TESİSİ KAPASİTE ARTIŞI PROJE TANITIM DOSYASI Manisa İli, Akhisar İlçesinde, Eroğlu Mahallesi, 588 Parsel Proje Tanıtım Dosyası…"
+          },
+          {
+            "page": 2,
+            "match": "KAPASİTE",
+            "snippet": "…01501290 İlyasbey Vergi Dairesi Müd. / 7290576085 E-POSTA info@cancedcevre.com.tr PROJENİN ADI ZEYTİN İŞLEME TESİSİ KAPASİTE ARTIŞI PROJE BEDELİ 80.000.000 TL PROJE İÇİN SEÇİLEN YERİN AÇIK ADRESİ (İLİ, İLÇESİ, MEVKİİ) Manisa İli, Akhisar…"
+          },
+          {
+            "page": 2,
+            "match": "PROJE BEDELİ",
+            "snippet": "…y Vergi Dairesi Müd. / 7290576085 E-POSTA info@cancedcevre.com.tr PROJENİN ADI ZEYTİN İŞLEME TESİSİ KAPASİTE ARTIŞI PROJE BEDELİ 80.000.000 TL PROJE İÇİN SEÇİLEN YERİN AÇIK ADRESİ (İLİ, İLÇESİ, MEVKİİ) Manisa İli, Akhisar İlçesinde, Eroğlu Mah…"
+          },
+          {
+            "page": 2,
+            "match": "80.000.000 TL",
+            "snippet": "…i Müd. / 7290576085 E-POSTA info@cancedcevre.com.tr PROJENİN ADI ZEYTİN İŞLEME TESİSİ KAPASİTE ARTIŞI PROJE BEDELİ 80.000.000 TL PROJE İÇİN SEÇİLEN YERİN AÇIK ADRESİ (İLİ, İLÇESİ, MEVKİİ) Manisa İli, Akhisar İlçesinde, Eroğlu Mahallesi, 588 Par…"
+          },
+          {
+            "page": 2,
+            "match": "1.500 ton/yıl",
+            "snippet": "…endirmesi Yönetmeliği; “Ek II - Çevresel Etkileri Ön İnceleme Ve Değerlendirmeye Tabi Projeler Listesi Madde 26- d) 1.500 ton/yıl ve üzeri zeytin işleme tesisleri, t) Nihai ürün kapasitesi 100 ton/gün ve üzeri bitkisel ve hayvansal ürünlerin konser…"
+          },
+          {
+            "page": 2,
+            "match": "kapasite",
+            "snippet": "…Ve Değerlendirmeye Tabi Projeler Listesi Madde 26- d) 1.500 ton/yıl ve üzeri zeytin işleme tesisleri, t) Nihai ürün kapasitesi 100 ton/gün ve üzeri bitkisel ve hayvansal ürünlerin konserve yapılması ve ambalajlanması,” PROJENİN ANA NACE KODU…"
+          },
+          {
+            "page": 3,
+            "match": "kapasite",
+            "snippet": "…........................................................................................ 4 b) Projenin iş akım şeması, kapasitesi, kapladığı alan, teknolojisi, çalışacak personel sayısı ............................................................…"
+          },
+          {
+            "page": 5,
+            "match": "KAPASİTE",
+            "snippet": "…i, 0 ada, 588 no'lu parselde PEYBA GIDA TARIM TUR. HAYV. İNŞ. SAN. VE TİC. LTD. ŞTİ. tarafından “ZEYTİN İŞLEME TESİSİ KAPASİTE ARTIŞI” yapılması planlanmaktadır. Projeye konu parselde faaliyet sahibi mülk sahibi konumunda olup proje alanına…"
+          }
+        ]
+      }
+    },
+    "audit_checks": {
+      "mentions_field_survey": true,
+      "mentions_literature_only_cue": true,
+      "mentions_seasonal_sampling": true,
+      "mentions_cumulative_impact": true,
+      "mentions_olive_law_3573": true,
+      "mentions_groundwater_or_aquifer": true,
+      "mentions_iucn_or_endemic": true
+    }
+  },
+  "llm_synthesis": {
+    "model": "gemini-4-hydrogen",
+    "generated_at": "2026-11-20T01:42:45",
+    "pages_sent": [
+      1,
+      2,
+      3,
+      5,
+      6,
+      7,
+      8,
+      12,
+      14,
+      16,
+      18,
+      26,
+      37,
+      38,
+      39,
+      42,
+      43,
+      52,
+      53,
+      54,
+      55,
+      71,
+      72,
+      82,
+      83,
+      84
+    ],
+    "result": {
+      "executive_summary_tr": "PEYBA Gıda Tarım Tur. Hayv. İnş. San. ve Tic. Ltd. Şti. tarafından Manisa İli, Akhisar İlçesi, Eroğlu Mahallesi, 0 ada, 588 parseldeki 44.600,00 m2 büyüklüğündeki alanda mevcut 1.460 ton/yıl ÇED muafiyetli zeytin işleme tesisinde kapasite artışı ile birlikte siyah/yeşil salamura zeytin işleme ve yıllık 2.000 ton konserve üretimi yapılması planlanmaktadır [s. 2, 5, 7, 8, 12]. Yatırım bedeli 80.000.000 TL olarak bildirilen proje, İzmir-Manisa 1/100.000 ölçekli Çevre Düzeni Planı'nda Tarım Arazisi lejantında ve İl Tarım ve Orman Müdürlüğü değerlendirmesine göre Kuru Mutlak Tarım Arazisi sınıfında yer almakta olup, A ve B bloklar halinde toplam yaklaşık 19.904 m2 kapalı alan öngörülmektedir [s. 2, 5, 12, 43]. Başlıca çevresel risk odakları; günde 23,3 m3 yüksek tuzluluk ve sitrik asit içerikli salamura proses atıksuyunun bertarafındaki tutarsızlıklar, ~500 m mesafedeki Medar Çayı ve tarım topraklarının korunması ile diri fay/deprem tehlikesi, biyolojik çeşitlilik ve kümülatif etki değerlendirmelerindeki metodolojik eksikliklerdir [s. 7, 8, 26, 43, 55, 72, 83].",
+      "executive_summary_en": "PEYBA Gıda Tarım Tur. Hayv. İnş. San. ve Tic. Ltd. Şti. proposes a capacity expansion of its existing olive processing facility (previously granted an EIA exemption for 1,460 tonnes/year) on a 44,600.00 m2 parcel (parcel 588) in Eroğlu Neighborhood, Akhisar District, Manisa Province, adding black and green brined olive processing and 2,000 tonnes/year of canned food production [s. 2, 5, 7, 8, 12]. With an estimated project cost of 80,000,000 TRY, the site is designated as Agricultural Land in the 1/100,000 Environmental Plan and classified as Dry Absolute Agricultural Land, featuring two enclosed blocks totaling roughly 19,904 m2 [s. 2, 5, 12, 43]. Primary environmental stakes center on inconsistencies in managing 23.3 m3/day of saline and acidic brining wastewater, potential impacts on the Medar Stream (~500 m away) and surrounding farmland, and baseline gaps regarding literature-only biodiversity lists, seismic fault risk, and post-approval-only monitoring commitments [s. 7, 8, 26, 43, 55, 72, 83].",
+      "key_facts": [
+        {
+          "label": "Proje Parsel Alanı",
+          "value": "44.600,00 m2 (0 ada, 588 parsel)",
+          "page": 5
+        },
+        {
+          "label": "Proje Bedeli",
+          "value": "80.000.000 TL",
+          "page": 2
+        },
+        {
+          "label": "Mevcut Muafiyet Kapasitesi",
+          "value": "1.460 ton/yıl (11911444 sayılı ÇED Muafiyet Görüşü)",
+          "page": 5
+        },
+        {
+          "label": "Hedeflenen Konserve Kapasitesi ve Çalışma Süresi",
+          "value": "2.000 ton/yıl konserve, yılda 300 gün çalışma",
+          "page": 12
+        },
+        {
+          "label": "Planlanan Kapalı Alanlar",
+          "value": "A blok 7.787,31 m2 ve B blok 12.117,02 m (m2)",
+          "page": 12
+        },
+        {
+          "label": "Tarım Dışı Kullanım İzni Verilen Alan",
+          "value": "2,1346 ha (Kuru Mutlak Tarım Arazisi sınıfı)",
+          "page": 43
+        },
+        {
+          "label": "En Yakın Yerleşim ve Su Yüzeyi Mesafesi",
+          "value": "Eroğlu Mahallesi en yakın hane ~925 m [s. 12]; Medar Çayı ~500 m [s. 43]",
+          "page": 43
+        },
+        {
+          "label": "İşletme Aşaması Atıksu Debileri",
+          "value": "23,3 m3/gün proses, 1,91 m3/gün evsel, 0,15 m3/gün temizlik (toplam 25,36 m3/gün)",
+          "page": 72
+        },
+        {
+          "label": "Organik Artık ve Kül Atığı Miktarı",
+          "value": "14,6 kg/gün yaprak ve dal artığı; 26,05 kg/gün kül atığı",
+          "page": 71
+        },
+        {
+          "label": "İnşaat Aşaması Toplam Ses Gücü Düzeyi",
+          "value": "96,102 dBA (150 m mesafede <40 dBA [s. 39])",
+          "page": 38
+        }
+      ],
+      "baseline_assessment": {
+        "field_survey_status": "literature_only",
+        "seasonal_sampling_status": "promised_post_approval_only",
+        "cumulative_impact_status": "omitted_or_not_found",
+        "olive_and_protected_status": "Proje alanı 1/100.000 ölçekli Çevre Düzeni Planı'nda Tarım Arazisi içinde yer almakta olup [s. 5, 53], İl Tarım ve Orman Müdürlüğü görüşüne göre Kuru Mutlak Tarım Arazisi sınıfındadır ve 5403 sayılı Kanun kapsamında 2,1346 ha'lık kısmı için tarım dışı kullanım izni verilmiştir [s. 43]. Parselin 2863 sayılı Kanun kapsamındaki arkeolojik veya doğal sit alanları, tescilli tabiat varlıkları ve 2872 sayılı Kanun kapsamındaki Özel Çevre Koruma Bölgeleri ile uluslararası sözleşme alanları dışında kaldığı bildirilmiştir [s. 14, 18, 52]. ÇDP Uygulama Hükümleri 8.7.6. maddesinde zeytinlik alanlarda 3573 sayılı Kanun hükümlerinin geçerli olduğu hatırlatılmış olmakla birlikte parselin fiilen zeytinlik vasfında olup olmadığına dair tespit aktarılmamış; 1 km2 etki alanında orman veya planlı alan bulunmadığı, en yakın su yüzeyinin ise ~500 m mesafedeki Medar Çayı olduğu belirtilmiştir [s. 16, 18, 43].",
+        "explanation": "Yeterlik Belgesi Tebliği uyarınca 20.07.2026 tarihinde yalnızca tek günlük yer görme incelemesi yapıldığı belirtilse de [s. 5], flora ve fauna değerlendirmesinin münhasıran Davis'in eseri, yayımlanmış literatür, TÜBİVES ve bölgedeki diğer projelerin verilerinden derlendiği açıkça ifade edilmiştir [s. 55]. Su kalitesi, hava/emisyon ve gürültü parametreleri için proje öncesi mevsimsel saha örneklemesi belgelenmemiş; izleme yükümlülükleri Çevre İzleme Planı'nda faaliyet sonrası döneme ve kurumların talep etmesi şartına bağlanmıştır [s. 82, 83]. İçindekiler tablosunda Kümülatif Etki Değerlendirme bölümünün yalnızca 1 sayfa (iç sayfa 79) olduğu görülmekle birlikte [s. 3] ilgili sayfa sunulan metin alıntıları arasında yer almadığından değerlendirilememiştir."
+      },
+      "red_flags": [
+        {
+          "severity": "high",
+          "title": "Atıksu Bertaraf Yöntemi Çelişkisi ve Proses Atıksuyunun İzleme Planında Yer Almaması",
+          "detail": "Bölüm III'te işletme aşamasında 23,3 m3/gün proses, 1,91 m3/gün evsel ve 0,15 m3/gün temizlik kaynaklı olmak üzere toplam 25,36 m3/gün atıksu oluşacağı ve personel ile proses atıksularının MASKİ'den alınacak kanal bağlantı yazısı ile kanalizasyona bağlanacağı belirtilmektedir [s. 72]. Buna karşılık Çevre İzleme Planı'nda (Tablo 19) işletme aşamasında yalnızca evsel atıksuların fosseptikte biriktirilip vidanjörle uzaklaştırılacağı yazılmış; 8 ay boyunca tuzlu su ve sitrik asitli salamura havuzlarından kaynaklanacak yüksek tuzluluk ve organik yüklü proses atıksuyunun [s. 7, 8] ön arıtımı, deşarj standartları ve izlenmesine dair herhangi bir hükme yer verilmemiştir [s. 83].",
+          "pages": [
+            7,
+            8,
+            72,
+            83
+          ]
+        },
+        {
+          "severity": "high",
+          "title": "Tarım Dışı Kullanım İzninin İki Yıllık Süresi ve Proje Kapsamıyla Uyum Sorunu",
+          "detail": "İl Tarım ve Orman Müdürlüğü'nün 04.04.2024 tarihli görüşünde, Kuru Mutlak Tarım Arazisi üzerindeki 2,1346 ha'lık alanda 'Zeytin ve Zeytinyağı İşleme Tesisi' yapılmasına izin verildiği ve ilgili yönetmelik uyarınca izin tarihinden itibaren iki yıl içinde tarım dışı amaçlı kullanımın gerçekleştirilmesi gerektiği belirtilmiştir [s. 43]. Ekim 2026 tarihli bu raporda [s. 1] söz konusu iki yıllık sürenin dolup dolmadığı açıklanmadığı gibi, 2023 tarihli diğer bazı kurum görüşlerinin 588 ve 672 parselleri birlikte kapsadığı [s. 14, 16] ve mevcut kapasite artışının konserve üretimini de içerdiği [s. 5, 12] görülmektedir.",
+          "pages": [
+            1,
+            5,
+            12,
+            14,
+            16,
+            43
+          ]
+        },
+        {
+          "severity": "medium",
+          "title": "Biyolojik Çeşitlilik Değerlendirmesinin Saha Örneklemesinden Yoksun Olması",
+          "detail": "Tesis ~500 m mesafedeki Medar Çayı [s. 43] ve tarım ekosistemleriyle çevrili olmasına rağmen, flora ve fauna bölümü oluşturulurken yerinde mevsimsel biyolojik arazi çalışması yapıldığına dair bir veri sunulmamış, yalnızca literatür ve ikincil veri kaynaklarının kullanıldığı beyan edilmiştir [s. 55].",
+          "pages": [
+            43,
+            55
+          ]
+        },
+        {
+          "severity": "medium",
+          "title": "İşletme Aşaması Gürültü ve Emisyon Varsayımlarındaki İç Tutarsızlıklar",
+          "detail": "Raporda işletme aşamasında gürültüye sebebiyet verebilecek makine, ekipman veya proses bulunmadığı iddia edilmekte [s. 39] ve Çevre İzin ve Lisans Yönetmeliği'nden muafiyet başvurusu yapılacağı belirtilmektedir [s. 37]. Ancak tesiste ilave makine-ekipmanla kapasite artışı ve yılda 2.000 ton konserve üretimi planlanmakta [s. 5, 12], ayrıca bir yakma ünitesi varlığına işaret eden 26,05 kg/gün kül atığı öngörülmektedir [s. 71].",
+          "pages": [
+            5,
+            12,
+            37,
+            39,
+            71
+          ]
+        },
+        {
+          "severity": "medium",
+          "title": "Yer Alternatifi İncelenmemesi ve Diri Fay/Deprem Riski Analizi Eksikliği",
+          "detail": "Proje sahibinin parsel mülkiyetine sahip olması gerekçesiyle başka hiçbir yer veya teknoloji alternatifi düşünülmediği ifade edilmiştir [s. 6]. MTA görüşünde 1/25.000 ölçekli K19-b1 paftasında diri fay haritalarının mevcut olduğu ve başta deprem olmak üzere doğa kaynaklı afet riskinin dikkate alınması önerilmesine karşın [s. 26], incelenen sayfalarda diri faylara mesafe veya sismik tehlike değerlendirmesi yer almamaktadır.",
+          "pages": [
+            6,
+            26
+          ]
+        },
+        {
+          "severity": "low",
+          "title": "İzleme Planının Koşullu İfadeler ve Şablon İbareler İçermesi",
+          "detail": "Çevre İzleme Planı'nda atıksu ve gürültü izlemeleri 'kurumlarca talep edilmesi halinde' veya 'mevzuat gereği yapılması istenen durum olursa' ifadelerine bağlanmış olup düzenli ölçüm periyotları belirlenmemiştir; ayrıca Ek-2 ÇED Olumlu kararı sürecine rağmen tabloda 'ÇED Gerekli Değildir Belgesi Alındıktan Sonra' şeklinde hatalı şablon ibare kullanılmıştır [s. 83].",
+          "pages": [
+            83
+          ]
+        }
+      ],
+      "hkt_and_petition_questions": [
+        {
+          "question_tr": "Siyah ve yeşil zeytinlerin 8 ay boyunca tuzlu su ve sitrik asitli salamura havuzlarında bekletilmesi sonucu oluşacak günlük 23,3 m3 proses atıksuyu [s. 7, 8, 72] için Bölüm III'te öngörülen MASKİ kanalizasyon bağlantısı [s. 72] ile Tablo 19'daki fosseptik/vidanjör beyanı [s. 83] arasındaki çelişkinin nedeni nedir; parselde aktif kanalizasyon hattı ve yüksek tuzluluğu giderecek bir ön arıtma tesisi mevcut mudur?",
+          "pages": [
+            7,
+            8,
+            72,
+            83
+          ]
+        },
+        {
+          "question_tr": "İl Tarım ve Orman Müdürlüğü'nün 04.04.2024 tarihli ve 'Kuru Mutlak Tarım Arazisi' üzerindeki 2,1346 ha alan için verdiği 'Zeytin ve Zeytinyağı İşleme Tesisi' izni [s. 43], Ekim 2026 tarihli bu dosya [s. 1] bakımından iki yıllık yasal süresini doldurmuş mudur ve yıllık 2.000 tonluk konserve üretimini [s. 12] kapsamakta mıdır?",
+          "pages": [
+            1,
+            12,
+            43
+          ]
+        },
+        {
+          "question_tr": "Tesiste günlük 26,05 kg kül atığı oluşacağı bildirilmesine [s. 71], ilave makine-ekipman kurulmasına [s. 5] ve konserve üretimi yapılmasına [s. 12] rağmen işletme aşamasında gürültü yaratacak hiçbir makine/proses bulunmadığı [s. 39] ve çevre izninden muafiyet alınacağı [s. 37] hangi teknik verilere dayanılarak kabul edilmiştir?",
+          "pages": [
+            5,
+            12,
+            37,
+            39,
+            71
+          ]
+        },
+        {
+          "question_tr": "Tesisin ~500 m yakınındaki Medar Çayı [s. 43] ile çevresindeki tarım alanları ve ~925 m mesafedeki Eroğlu Mahallesi [s. 12] açısından neden proje öncesi mevsimsel saha örneklemesi yapılmamıştır [s. 55] ve MTA'nın belirttiği K19-b1 paftasındaki diri faylara göre [s. 26] salamura havuzlarının sızdırmazlığına yönelik deprem güvenliği nasıl sağlanacaktır?",
+          "pages": [
+            12,
+            26,
+            43,
+            55
+          ]
+        }
+      ],
+      "data_limitations": "Toplam 194 sayfalık PTD dosyasının 60 sayfası taranmış/görüntü formatında olup metni çıkarılamamıştır; bu inceleme dosyadan alıntılanan 26 sayfa ile sınırlıdır. Mevcut ve artış sonrası toplam zeytin işleme kapasitesi ile su/enerji bütçesini içeren 9-11. ve 13-36. sayfaların bir bölümü, jeolojik verileri içeren 44-51. sayfalar, flora-fauna tür listelerinin devamı (s. 56-70), Bölüm III'ün devamı (s. 73-80), İçindekiler'de 1 sayfa olarak görülen Kümülatif Etki Değerlendirme bölümü (Bölüm IV, iç s. 79 / PDF s. 81) ile harita, vaziyet planı ve resmi kurum görüşlerinin tamamını içeren Ekler bölümü (s. 85-194) sunulan alıntılarda yer almadığından doğrulanamamıştır."
+    }
+  }
+}

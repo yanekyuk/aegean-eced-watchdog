@@ -1,0 +1,784 @@
+{
+  "filing": {
+    "province": "MANİSA",
+    "district": "YUNUSEMRE",
+    "project_name": "Tehlikesiz Atık Geri Kazanımı ve Tehlikeli Atık Ön İşlem Prosesi İlavesi (Toplam Kapasite: 87,555 ton/gün)",
+    "project_owner": "MAXİON İNCİ JANT SANAYİ ANONİM ŞİRKETİ ALÜMİNYUM JANT İŞLETMESİ ŞUBESİ",
+    "sector": "Atık",
+    "sub_sector": "Atık Bertaraf /Geri Kazanım/ Depolama Tesisi Projeleri",
+    "decision_type": "ÇED Gerekli Değil/ÇED Olumlu",
+    "announcement_date_tr": "02.11.2026",
+    "project_type": "Ek-2",
+    "detail_text": "MANİSA ili YUNUSEMRE,  ilcesinde MANİSA ili YUNUSEMRE,  ilcesi tapunun Kayapınar Mahallesi, 3311 Ada, 18 parseli mevkiindeki MAXİON İNCİ JANT SANAYİ ANONİM ŞİRKETİ ALÜMİNYUM JANT İŞLETMESİ ŞUBESİ tarafından yapılması planlanan Tehlikesiz Atık Geri Kazanımı ve Tehlikeli Atık Ön İşlem Prosesi İlavesi (Toplam Kapasite: 87,555 ton/gün) projesi ile ilgili olarak Bakanlığımıza sunulan PTD Dosyası incelenmiş ve değerlendirilmiştir  ÇED Yönetmeliği'nin 17. maddesi gereğince Tehlikesiz Atık Geri Kazanımı ve Tehlikeli Atık Ön İşlem Prosesi İlavesi (Toplam Kapasite: 87,555 ton/gün) projesi'ne Valiliğimizce 'ÇED Olumlu (Kapsam Ek-2)' kararı verilmiştir.",
+    "detail_links": [
+      {
+        "text": "PTD Dosyası",
+        "href": "http://eced.csb.gov.tr/jsp/ek1/61193"
+      }
+    ],
+    "documents": [
+      {
+        "portal_doc_url": "http://eced.csb.gov.tr/jsp/ek1/61193",
+        "filing_id": "61193",
+        "consulting_firm": "CANÇED ÇEVRE DANIŞMANLIK VE MÜHENDİSLİK SAN. TİC. LTD. ŞTİ.",
+        "submitted_at": "29/09/2026 01:19:52",
+        "pdf_urls": [
+          {
+            "label": "Dosya Göster",
+            "url": "http://eced.csb.gov.tr/jsp/dosya/dosyaGoster.htm?tempAd=sign2428537268534369520.pdf&orjinalAd=e-imza.pdf&yuklemeTarihi=2026-10-16"
+          }
+        ]
+      }
+    ],
+    "announcement_date": "2026-11-02",
+    "statutory_clocks": [
+      {
+        "code": "iyuk_20a",
+        "kind": "İYUK 20/A annulment lawsuit (30d; İYUK 11 does not toll)",
+        "deadline": "2026-12-02",
+        "days_remaining": 12
+      }
+    ],
+    "priority_district": true,
+    "filing_key": "61193:02.11.2026:ÇED Gerekli Değil/ÇED Olumlu",
+    "first_seen_at": "2026-11-20T00:44:21"
+  },
+  "pdf_info": {
+    "filename": "61193.pdf",
+    "bytes": 46616067,
+    "sha256": "2a2d260713b44b5596e08e8a162ae3023239c0a0bf0727397a13df77693cedbc",
+    "cached": false
+  },
+  "analysis": {
+    "page_count": 258,
+    "total_chars": 454989,
+    "text_pages": 212,
+    "scanned_or_blank_pages": 46,
+    "scanned_page_sample": [
+      85,
+      89,
+      90,
+      91,
+      92,
+      93,
+      94,
+      95,
+      96,
+      97,
+      98,
+      99,
+      100,
+      101,
+      106
+    ],
+    "headings": [
+      [
+        1,
+        "PROJENİN TEKNİK OLMAYAN ÖZETİ:"
+      ],
+      [
+        1,
+        "BÖLÜM I: PROJENİN ÖZELLİKLERİ"
+      ],
+      [
+        1,
+        "a) Projenin ve yerin alternatifleri (Proje teknolojisinin ve proje alanının seçilme nedenleri)"
+      ],
+      [
+        1,
+        "b) Projenin iş akım şeması, kapasitesi, kapladığı alan, yatırım bedeli, teknolojisi, çalışacak personel sayısı"
+      ],
+      [
+        1,
+        "c) Doğal kaynakların kullanımı (arazi kullanımı, su kullanımı, kullanılan enerji türü vb.)"
+      ],
+      [
+        1,
+        "ç) Projenin inşaat ve işletme aşamasında oluşan her türlü atığın özelliği (cinsi, türü, miktarı vb.) bertarafı ve geri kazanımına yönelik değerlendirmeler"
+      ],
+      [
+        1,
+        "d) Kullanılan teknoloji ve malzemelerden kaynaklanabilecek kaza riski"
+      ],
+      [
+        1,
+        "BÖLÜM II: PROJE YERİ VE ETKİ ALANININ MEVCUT ÇEVRESEL ÖZELLİKLERİ"
+      ],
+      [
+        1,
+        "a) Mevcut arazi kullanımı (tarım alanı, orman alanı, planlı alan, su yüzeyi ve benzeri) ve kalitesi, jeolojik ve hidrojeolojik özellikleri"
+      ],
+      [
+        1,
+        "b) EK-5’deki Duyarlı Yöreler Listesi dikkate alınarak korunması gereken alanlar"
+      ],
+      [
+        1,
+        "BÖLÜM III. PROJENİN İNŞAAT VE İŞLETME AŞAMASINDA ÇEVRESEL ETKİLERİ, ÖNCELİKLİ ETKİLERİN BELİRLENMESİ VE ALINACAK ÖNLEMLER"
+      ],
+      [
+        1,
+        "BÖLÜM IV: KÜMÜLATİF ETKİ DEĞERLENDİRME"
+      ],
+      [
+        1,
+        "BÖLÜM V: ÇEVRESEL VE SOSYAL EYLEM PLANI"
+      ],
+      [
+        1,
+        "BÖLÜM VI: NOTLAR VE KAYNAKLAR VE EKLER"
+      ],
+      [
+        1,
+        "1.Proje İçin Seçilen Yerin Koordinatları"
+      ],
+      [
+        1,
+        "2.Proje alanı ve yakın çevresinin mevcut arazi kullanımını değerlendirmek için; yerleşim alanlarının, ulaşım ağlarının, enerji nakit hatlarının, mevcut tesislerin ve Ek-5’te yer alan Duyarlı yöreler Listesinde belirtilen diğer alanların (proje alanı v..."
+      ],
+      [
+        1,
+        "3.Vekaletname, İmza Sirküleri ve Türkiye Ticaret Sicili Gazetesi"
+      ],
+      [
+        1,
+        "4. Proje Sahibince Onaylı Taahhüt Yazısı"
+      ],
+      [
+        1,
+        "5.Başvuru Bedelinin Ödendiğine Dair Dekont"
+      ],
+      [
+        1,
+        "6.Faaliyet Alanında Bakanlıkça Yeterlik Verilmiş Kurum/Kuruluş Tarafından Yer İncelemesi Yapıldığını Gösterir Rapor"
+      ],
+      [
+        1,
+        "7. Diğer Bilgi Ve Belgeler."
+      ],
+      [
+        5,
+        "PROJENİN TEKNİK OLMAYAN ÖZETİ:"
+      ],
+      [
+        9,
+        "BÖLÜM I: PROJENİN ÖZELLİKLERİ"
+      ],
+      [
+        9,
+        "a) Projenin ve yerin alternatifleri (Proje teknolojisinin ve proje alanının seçilme nedenleri)"
+      ],
+      [
+        10,
+        "b) Projenin iş akım şeması, kapasitesi, kapladığı alan, yatırım bedeli, teknolojisi, çalışacak personel sayısı"
+      ]
+    ],
+    "signals": {
+      "coordinates_and_footprint": {
+        "label": "Coordinates, Parcel & Footprint",
+        "page_count": 40,
+        "pages": [
+          2,
+          5,
+          6,
+          7,
+          8,
+          10,
+          15,
+          17,
+          27,
+          29,
+          30,
+          42,
+          45,
+          74,
+          76,
+          83,
+          84,
+          86,
+          87,
+          103,
+          104,
+          119,
+          134,
+          146,
+          147
+        ],
+        "samples": [
+          {
+            "page": 2,
+            "match": "utm",
+            "snippet": "…likesiz atıkların ve/veya belediye atıklarının geri kazanıldığı ve/veya biyobozunur atık işleme (mekanik ayırma, biyokurutma, biyometanizasyon, kompost) tesisleri, PROJENİN ANA NACE KODU 29.32.20- Motorlu kara taşıtları için diğer parça ve a…"
+          },
+          {
+            "page": 5,
+            "match": "Ada 9 parsel",
+            "snippet": "…7). Hayes Lemmerz İnci Jant San. A.Ş. tarafından Manisa İli Merkez İlçesi, Organize Sanayi Bölgesi III. Kısım, 3311 Ada 9 parselde “29.000 ton/yıl kapasiteli Alüminyum Jant Üretim Tesisi Kapasite Artışı Projesi” planlanmış olup 01.04.2011 tarih ve…"
+          },
+          {
+            "page": 5,
+            "match": "Ada 17 parsel",
+            "snippet": "…Değerlendirmesi Gerekli Değildir Kararı alınmıştır. Manisa İli Merkez İlçesi, Organize Sanayi Bölgesi III. Kısım, 3311 Ada 17 parselde “23.320 ton/yıl Ergitme kapasiteli Alüminyum Jant Üretim Tesisi-2” planlanmış olup 19.09.2011 tarih ve 76 Karar Nol…"
+          },
+          {
+            "page": 6,
+            "match": "Ada 18 parsel",
+            "snippet": "…ş olup proje tanıtım dosyası eklerinde sunulmuştur (Bkz. Ek-7). Manisa İli, Organize Sanayi Bölgesi III. Kısım, 3311 Ada 18 parselde doğal kaynak kullanımını azaltıp döngüsel ekonomiye katkı sağlamak ve sürdürülebilir üretimi mümkün kılmak için Hur…"
+          },
+          {
+            "page": 7,
+            "match": "058,03 m2",
+            "snippet": "…ini değiştirmeyecek olup tesis aynı kapasitede Jant İmali üretimine devam edecektir. Planlanan proje kapsamında 72.058,03 m2 alana sahip parsel içerisinde bulunan 52.000 m2 yüzölçümlü kapalı alanda faaliyetler gerçekleştirilecek olup ilave inş…"
+          },
+          {
+            "page": 7,
+            "match": "52.000 m2",
+            "snippet": "…ant İmali üretimine devam edecektir. Planlanan proje kapsamında 72.058,03 m2 alana sahip parsel içerisinde bulunan 52.000 m2 yüzölçümlü kapalı alanda faaliyetler gerçekleştirilecek olup ilave inşaat yapılması planlanmamaktadır. Tapu, proje tan…"
+          },
+          {
+            "page": 7,
+            "match": "ada 18 parsel daha önceden 3311 ada 9 parsel",
+            "snippet": "…oluşacak vaziyet planı proje tanıtım dosyası eklerinde sunulmuştur (Bkz. Ek-2-d). İşletmenin kurulu bulunduğu 3311 ada 18 parsel daha önceden 3311 ada 9 parsel ve 3311 ada 17 parsel olmak üzere iki ayrı parselden oluşmakta idi. Ancak 2024 yılında parseller birleştirilerek tevh…"
+          },
+          {
+            "page": 7,
+            "match": "ada 17 parsel olmak üzere iki ayrı parsel",
+            "snippet": "…de sunulmuştur (Bkz. Ek-2-d). İşletmenin kurulu bulunduğu 3311 ada 18 parsel daha önceden 3311 ada 9 parsel ve 3311 ada 17 parsel olmak üzere iki ayrı parselden oluşmakta idi. Ancak 2024 yılında parseller birleştirilerek tevhit edilmiştir. 3311 ada 18 parsele ait tapu proje t…"
+          }
+        ]
+      },
+      "water_and_discharge": {
+        "label": "Water Use, Hydrogeology & Discharge",
+        "page_count": 97,
+        "pages": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25
+        ],
+        "samples": [
+          {
+            "page": 1,
+            "match": "87,555 ton/gün",
+            "snippet": "…UM JANT İŞLETMESİ ŞUBESİ Tehlikesiz Atık Geri Kazanımı ve Tehlikeli Atık Ön İşlem Prosesi İlavesi (Toplam Kapasite: 87,555 ton/gün) PROJE TANITIM DOSYASI Manisa İli, Yunusemre İlçesi, Organize Sanayi Bölgesi III. Kısım Keçiliköy OSB Mahallesi Must…"
+          },
+          {
+            "page": 2,
+            "match": "87,555 ton/gün",
+            "snippet": "…cevre.com.tr PROJENİN ADI Tehlikesiz Atık Geri Kazanımı ve Tehlikeli Atık Ön İşlem Prosesi İlavesi (Toplam Kapasite: 87,555 ton/gün) PROJE BEDELİ 65.595.465 TL PROJE İÇİN SEÇİLEN YERİN AÇIK ADRESİ (İLİ, İLÇESİ, MEVKİİ) Manisa İli, Yunusemre İlçe…"
+          },
+          {
+            "page": 2,
+            "match": "1 ton/gün",
+            "snippet": "…cam, ahşap atıkları toplama, ayırma, kesme, parçalama, öğütme, granül elde etme hariç) 5-e)(Değişik:RG-5/3/2026-33187) 1 ton/gün ve üzeri tehlikesiz atıkların ve/veya belediye atıklarının geri kazanıldığı ve/veya biyobozunur atık işleme (mekanik ay…"
+          },
+          {
+            "page": 3,
+            "match": "87,555 ton/gün",
+            "snippet": "…NYUM JANT İŞLETMESİ ŞUBESİ Tehlikesiz Atık Geri Kazanımı ve Tehlikeli Atık Ön İşlem Prosesi İlavesi (Toplam Kapasite: 87,555 ton/gün) i İÇİNDEKİLER…"
+          },
+          {
+            "page": 4,
+            "match": "87,555 ton/gün",
+            "snippet": "…NYUM JANT İŞLETMESİ ŞUBESİ Tehlikesiz Atık Geri Kazanımı ve Tehlikeli Atık Ön İşlem Prosesi İlavesi (Toplam Kapasite: 87,555 ton/gün) ii TABLOLAR D…"
+          },
+          {
+            "page": 5,
+            "match": "87,555 ton/gün",
+            "snippet": "…NYUM JANT İŞLETMESİ ŞUBESİ Tehlikesiz Atık Geri Kazanımı ve Tehlikeli Atık Ön İşlem Prosesi İlavesi (Toplam Kapasite: 87,555 ton/gün) iii PROJENİN TE…"
+          },
+          {
+            "page": 6,
+            "match": "87,555 ton/gün",
+            "snippet": "…NYUM JANT İŞLETMESİ ŞUBESİ Tehlikesiz Atık Geri Kazanımı ve Tehlikeli Atık Ön İşlem Prosesi İlavesi (Toplam Kapasite: 87,555 ton/gün) iv sayılı ÇED G…"
+          },
+          {
+            "page": 7,
+            "match": "87,555 ton/gün",
+            "snippet": "…NYUM JANT İŞLETMESİ ŞUBESİ Tehlikesiz Atık Geri Kazanımı ve Tehlikeli Atık Ön İşlem Prosesi İlavesi (Toplam Kapasite: 87,555 ton/gün) v İşletmenin ha…"
+          }
+        ]
+      },
+      "protected_land_and_olive": {
+        "label": "Protected Zones, Forests & Olive Groves",
+        "page_count": 8,
+        "pages": [
+          3,
+          42,
+          47,
+          48,
+          50,
+          61,
+          67,
+          183
+        ],
+        "samples": [
+          {
+            "page": 3,
+            "match": "orman alanı",
+            "snippet": "….......................................................................... 40 a) Mevcut arazi kullanımı (tarım alanı, orman alanı, planlı alan, su yüzeyi ve benzeri) ve kalitesi, jeolojik ve hidrojeolojik özellikleri ...............................…"
+          },
+          {
+            "page": 42,
+            "match": "orman alanı",
+            "snippet": "…40 BÖLÜM II: PROJE YERİ VE ETKİ ALANININ MEVCUT ÇEVRESEL ÖZELLİKLERİ a) Mevcut arazi kullanımı (tarım alanı, orman alanı, planlı alan, su yüzeyi ve benzeri) ve kalitesi, jeolojik ve hidrojeolojik özellikleri Manisa İli, Yunusemre İlçesi…"
+          },
+          {
+            "page": 47,
+            "match": "özel çevre koruma",
+            "snippet": "…koruma alanları, Boğaziçi Kanuna göre koruma altına alınan alanlar, biyogenetik rezerv alanları, biyosfer rezervleri, özel çevre koruma bölgeleri, özel koruma alanları, turizm bölgeleri ve koruma altına alınmış diğer alanlar bulunmamaktadır. Proje al…"
+          },
+          {
+            "page": 48,
+            "match": "Özel Çevre Koruma",
+            "snippet": "…liği’nde tanımlanan alanlar, bulunmamaktadır. f) Çevre Kanunu’nun 9 uncu maddesi uyarınca Cumhurbaşkanı tarafından \"Özel Çevre Koruma Bölgeleri\" olarak tespit ve ilan edilen alanlar, bulunmamaktadır. g) Boğaziçi Kanunu’na göre koruma altına alınan al…"
+          },
+          {
+            "page": 48,
+            "match": "orman alanı",
+            "snippet": "…lunmamaktadır. g) Boğaziçi Kanunu’na göre koruma altına alınan alanlar, bulunmamaktadır. ğ) Orman Kanunu uyarınca orman alanı sayılan yerler, bulunmamaktadır. h) Kıyı Kanunu gereğince yapı yasağı getirilen alanlar, bulunmamaktadır. ı) Zeyt…"
+          },
+          {
+            "page": 50,
+            "match": "kıyı kenar",
+            "snippet": "…ı olmak üzere canlıların yaşama ortamı olarak önem taşıyan bütün sular, bataklık sazlık ve turbiyeler ile bu alanların kıyı kenar çizgisinden itibaren kara tarafına doğru ekolojik açıdan sulak alan kalan yerler, bulunmamaktadır. ç) Göller, akarsu…"
+          },
+          {
+            "page": 50,
+            "match": "sulak alan",
+            "snippet": "…ar, bataklık sazlık ve turbiyeler ile bu alanların kıyı kenar çizgisinden itibaren kara tarafına doğru ekolojik açıdan sulak alan kalan yerler, bulunmamaktadır. ç) Göller, akarsular, yeraltı suyu işletme sahaları, içerisinde yer almamaktadır. d)…"
+          },
+          {
+            "page": 61,
+            "match": "sulak alan",
+            "snippet": "…4. Kültür alanları (bağ, bahçe vb.) Y: Yaygın endemik 4. Bol 5. Kum çayır 5. Çok bol 6. Nemli çayır, bataklık, sulak alan 7. Yol kenarı 8. Kayalık Kaynak: AKMAN, Y. 1995, Türkiye Orman Vejetasyonu, Ank. Üniv. Fen Fakültesi Botanik A.B.D…"
+          }
+        ]
+      },
+      "ecology_and_baseline": {
+        "label": "Flora, Fauna & Baseline Methodology",
+        "page_count": 13,
+        "pages": [
+          48,
+          50,
+          51,
+          52,
+          54,
+          55,
+          61,
+          63,
+          64,
+          65,
+          66,
+          67,
+          185
+        ],
+        "samples": [
+          {
+            "page": 48,
+            "match": "BERN Sözleşmesi",
+            "snippet": "…sözleşmeler uyarınca korunması gerekli alanlar: a) \"Avrupa’nın Yaban Hayatı ve Yaşama Ortamlarını Koruma Sözleşmesi\" (BERN Sözleşmesi) uyarınca koruma altına alınmış alanlardan \"Önemli Deniz Kaplumbağası Üreme Alanları\"nda belirtilen I. ve II. Koruma B…"
+          },
+          {
+            "page": 50,
+            "match": "endemik",
+            "snippet": "…adır. d) Bilimsel araştırmalar için önem arzeden ve/veya nesli tehlikeye düşmüş veya düşebilir türler ve ülkemiz için endemik olan türlerin yaşama ortamı olan alanlar, biyosfer rezervi, biyotoplar, biyogenetik rezerv alanları, benzersiz özellik…"
+          },
+          {
+            "page": 50,
+            "match": "FLORA VE FAUNA",
+            "snippet": "…çekli İzmir – Manisa Bölgesi Çevre Düzeni Planında “Organize Sanayi Bölgesi” içerisinde kalmaktadır (Bkz. Ek.2-a). FLORA VE FAUNA İÇEREN SÖZLEŞMELER VE KATEGORİLER 1. IUCN Red List Kategorileri IUCN (The World Conservation Union: The Inte…"
+          },
+          {
+            "page": 50,
+            "match": "IUCN",
+            "snippet": "…nize Sanayi Bölgesi” içerisinde kalmaktadır (Bkz. Ek.2-a). FLORA VE FAUNA İÇEREN SÖZLEŞMELER VE KATEGORİLER 1. IUCN Red List Kategorileri IUCN (The World Conservation Union: The International Union for the Conservation of Nature…"
+          },
+          {
+            "page": 51,
+            "match": "IUCN",
+            "snippet": "…49 Şekil 18. IUCN Red List Kategorileri Kaynak: www.iucnredlist.org Tablo 9. IUCN red List Kategorileri ve Türkçe Karşılıkları Kat…"
+          },
+          {
+            "page": 52,
+            "match": "BERN SÖZLEŞMESİ",
+            "snippet": "…5 ton/gün) 50 BERN SÖZLEŞMESİ Bern Sözleşmesi, yaban hayatı ve yaşama ortamlarının korunmasına ilişkin bir sözleşmedir. Sözleşmede korunan türler…"
+          },
+          {
+            "page": 52,
+            "match": "Bern Sözleşmesi",
+            "snippet": "…50 BERN SÖZLEŞMESİ Bern Sözleşmesi, yaban hayatı ve yaşama ortamlarının korunmasına ilişkin bir sözleşmedir. Sözleşmede korunan türler üç ayrı ek liste o…"
+          },
+          {
+            "page": 52,
+            "match": "Flora ve fauna",
+            "snippet": "…, Davis tarafından araştırmak üzere ayrılmış Grid Kareleme sistemine göre faaliyet alanı B2 karesinde yer almaktadır. Flora ve fauna kısmını oluşturulurken; - Davis’in “Flora of Turkey and East Aegean Islands” adlı eserinden, - Türkiye Florası il…"
+          }
+        ]
+      },
+      "pollutants_and_hazards": {
+        "label": "Emissions, Geochemistry & Waste",
+        "page_count": 50,
+        "pages": [
+          1,
+          2,
+          5,
+          9,
+          10,
+          18,
+          25,
+          26,
+          29,
+          32,
+          35,
+          39,
+          40,
+          42,
+          46,
+          47,
+          69,
+          71,
+          74,
+          76,
+          77,
+          78,
+          80,
+          81,
+          82
+        ],
+        "samples": [
+          {
+            "page": 1,
+            "match": "Tehlikeli Atık",
+            "snippet": "MAXİON İNCİ JANT SANAYİ ANONİM ŞİRKETİ ALÜMİNYUM JANT İŞLETMESİ ŞUBESİ Tehlikesiz Atık Geri Kazanımı ve Tehlikeli Atık Ön İşlem Prosesi İlavesi (Toplam Kapasite: 87,555 ton/gün) PROJE TANITIM DOSYASI Manisa İli, Yunusemre İlçesi, Org…"
+          },
+          {
+            "page": 2,
+            "match": "Tehlikeli Atık",
+            "snippet": "…02362261630 Mesir V.D. - 6080032815 E-POSTA info@cancedcevre.com.tr PROJENİN ADI Tehlikesiz Atık Geri Kazanımı ve Tehlikeli Atık Ön İşlem Prosesi İlavesi (Toplam Kapasite: 87,555 ton/gün) PROJE BEDELİ 65.595.465 TL PROJE İÇİN SEÇİLEN YERİN AÇI…"
+          },
+          {
+            "page": 5,
+            "match": "Tehlikeli Atık",
+            "snippet": "…de MAXİON İNCİ JANT SANAYİ ANONİM ŞİRKETİ ALÜMİNYUM JANT İŞLETMESİ ŞUBESİ tarafından “Tehlikesiz Atık Geri Kazanımı ve Tehlikeli Atık Ön İşlem Prosesi İlavesi (Toplam Kapasite: 87,555 ton/gün)” yapılması planlanmaktadır. Mülga Çevre Bakanlığı taraf…"
+          },
+          {
+            "page": 9,
+            "match": "Tehlikeli Atık",
+            "snippet": "…de MAXİON İNCİ JANT SANAYİ ANONİM ŞİRKETİ ALÜMİNYUM JANT İŞLETMESİ ŞUBESİ tarafından “Tehlikesiz Atık Geri Kazanımı ve Tehlikeli Atık Ön İşlem Prosesi İlavesi (Toplam Kapasite: 87,555 ton/gün)” yapılması planlanmaktadır. Tesise en yakın yerleşim ye…"
+          },
+          {
+            "page": 10,
+            "match": "Tehlikeli Atık",
+            "snippet": "…de MAXİON İNCİ JANT SANAYİ ANONİM ŞİRKETİ ALÜMİNYUM JANT İŞLETMESİ ŞUBESİ tarafından “Tehlikesiz Atık Geri Kazanımı ve Tehlikeli Atık Ön İşlem Prosesi İlavesi (Toplam Kapasite: 87,555 ton/gün)” yapılması planlanmaktadır. Gerçekleştirilen faaliyet s…"
+          },
+          {
+            "page": 18,
+            "match": "Bor",
+            "snippet": "…um jantların, porya delikleri, bijon saplama delikleri, lastik oturma yüzeyleri ve kampana yüzeyleri işlenmektedir. Bor yağı kullanılarak gerçekleştirilen işlemler sırasında jantın kenarları parlatılmakta, çapakları alınmakta, içi ve dışı…"
+          },
+          {
+            "page": 25,
+            "match": "Tehlikeli Atık",
+            "snippet": "…a tesis kapasitesi; 4 ton/saat x 8 saat/vardiya x 3 vardiya/gün 0,85 = 81,6 ton/gün olarak hesaplanabilmektedir. Tehlikeli Atık Ön İşlem Kapasitesi İşletmeye kabul edilecek talaş atıklarından tehlikeli özelikte olanların santrifüj birimine kad…"
+          },
+          {
+            "page": 26,
+            "match": "Tehlikeli Atık",
+            "snippet": "…de MAXİON İNCİ JANT SANAYİ ANONİM ŞİRKETİ ALÜMİNYUM JANT İŞLETMESİ ŞUBESİ tarafından “Tehlikesiz Atık Geri Kazanımı ve Tehlikeli Atık Ön İşlem Prosesi İlavesi (Toplam Kapasite: 87,555 ton/gün)” yapılması planlanmaktadır."
+          }
+        ]
+      },
+      "cost_and_capacity": {
+        "label": "Project Cost, Power & Capacity",
+        "page_count": 101,
+        "pages": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25
+        ],
+        "samples": [
+          {
+            "page": 1,
+            "match": "Kapasite",
+            "snippet": "…İ ALÜMİNYUM JANT İŞLETMESİ ŞUBESİ Tehlikesiz Atık Geri Kazanımı ve Tehlikeli Atık Ön İşlem Prosesi İlavesi (Toplam Kapasite: 87,555 ton/gün) PROJE TANITIM DOSYASI Manisa İli, Yunusemre İlçesi, Organize Sanayi Bölgesi III. Kısım Keçiliköy OS…"
+          },
+          {
+            "page": 1,
+            "match": "87,555 ton/gün",
+            "snippet": "…UM JANT İŞLETMESİ ŞUBESİ Tehlikesiz Atık Geri Kazanımı ve Tehlikeli Atık Ön İşlem Prosesi İlavesi (Toplam Kapasite: 87,555 ton/gün) PROJE TANITIM DOSYASI Manisa İli, Yunusemre İlçesi, Organize Sanayi Bölgesi III. Kısım Keçiliköy OSB Mahallesi Must…"
+          },
+          {
+            "page": 2,
+            "match": "Kapasite",
+            "snippet": "…nfo@cancedcevre.com.tr PROJENİN ADI Tehlikesiz Atık Geri Kazanımı ve Tehlikeli Atık Ön İşlem Prosesi İlavesi (Toplam Kapasite: 87,555 ton/gün) PROJE BEDELİ 65.595.465 TL PROJE İÇİN SEÇİLEN YERİN AÇIK ADRESİ (İLİ, İLÇESİ, MEVKİİ) Manisa İli…"
+          },
+          {
+            "page": 2,
+            "match": "87,555 ton/gün",
+            "snippet": "…cevre.com.tr PROJENİN ADI Tehlikesiz Atık Geri Kazanımı ve Tehlikeli Atık Ön İşlem Prosesi İlavesi (Toplam Kapasite: 87,555 ton/gün) PROJE BEDELİ 65.595.465 TL PROJE İÇİN SEÇİLEN YERİN AÇIK ADRESİ (İLİ, İLÇESİ, MEVKİİ) Manisa İli, Yunusemre İlçe…"
+          },
+          {
+            "page": 2,
+            "match": "PROJE BEDELİ",
+            "snippet": "…JENİN ADI Tehlikesiz Atık Geri Kazanımı ve Tehlikeli Atık Ön İşlem Prosesi İlavesi (Toplam Kapasite: 87,555 ton/gün) PROJE BEDELİ 65.595.465 TL PROJE İÇİN SEÇİLEN YERİN AÇIK ADRESİ (İLİ, İLÇESİ, MEVKİİ) Manisa İli, Yunusemre İlçesi, tapunun Kay…"
+          },
+          {
+            "page": 2,
+            "match": "65.595.465 TL",
+            "snippet": "…likesiz Atık Geri Kazanımı ve Tehlikeli Atık Ön İşlem Prosesi İlavesi (Toplam Kapasite: 87,555 ton/gün) PROJE BEDELİ 65.595.465 TL PROJE İÇİN SEÇİLEN YERİN AÇIK ADRESİ (İLİ, İLÇESİ, MEVKİİ) Manisa İli, Yunusemre İlçesi, tapunun Kayapınar Mahalles…"
+          },
+          {
+            "page": 2,
+            "match": "1.000 ton/yıl",
+            "snippet": "…öntemlerle geri kazanıldığı tesisler (ömrünü tamamlamış lastiklerin, kabloların kırma ve parçalama işlemleri hariç), 2) 1.000 ton/yıl ve üzeri tehlikesiz atıkların fiziksel yöntemlerle geri kazanıldığı tesisler (metal, kâğıt, plastik, tekstil, cam, ahşa…"
+          },
+          {
+            "page": 3,
+            "match": "87,555 ton/gün",
+            "snippet": "…NYUM JANT İŞLETMESİ ŞUBESİ Tehlikesiz Atık Geri Kazanımı ve Tehlikeli Atık Ön İşlem Prosesi İlavesi (Toplam Kapasite: 87,555 ton/gün) i İÇİNDEKİLER…"
+          }
+        ]
+      }
+    },
+    "audit_checks": {
+      "mentions_field_survey": true,
+      "mentions_literature_only_cue": true,
+      "mentions_seasonal_sampling": true,
+      "mentions_cumulative_impact": true,
+      "mentions_olive_law_3573": false,
+      "mentions_groundwater_or_aquifer": true,
+      "mentions_iucn_or_endemic": true
+    }
+  },
+  "llm_synthesis": {
+    "model": "gemini-4-hydrogen",
+    "generated_at": "2026-11-20T01:48:44",
+    "pages_sent": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      42,
+      47,
+      48,
+      50,
+      51,
+      52
+    ],
+    "result": {
+      "executive_summary_tr": "Maxion İnci Jant Sanayi A.Ş. Alüminyum Jant İşletmesi Şubesi tarafından Manisa İli, Yunusemre İlçesi, Organize Sanayi Bölgesi III. Kısım (Kayapınar Mahallesi, 3311 Ada, 18 parsel) sınırları içinde mevcut 72.058,03 m² parsel ve 52.000 m² kapalı alanda toplam 87,555 ton/gün kapasiteli Tehlikesiz Atık Geri Kazanımı ve Tehlikeli Atık Ön İşlem Prosesi İlavesi planlanmaktadır. Proje bedeli 65.595.465 TL olarak beyan edilmiş olup ilave inşaat yapılmadan mevcut bina içinde hurda alüminyum jant kırma ünitesi kurulması, mevcut ergitme makinesinde talaş geri kazanımı ve tehlikeli özellikteki talaşların solventsiz santrifüj işlemiyle yağ oranının %1'in altına düşürülerek ön işleme tabi tutulması öngörülmektedir. Tesisin mevcut jant üretim kapasitesini değiştirmeyeceği, 955 mevcut personele ek 3 kişi istihdam edileceği ve yılın 300 günü 3 vardiya (24 saat/gün) çalışılacağı belirtilmektedir. Başlıca çevresel konular; tehlikeli ve tehlikesiz metal atıkların yüksek sıcaklıktaki (760-1.000 °C) fırınlarda ergitilmesi ve Sb/Na tabletlerle temizlenmesi sırasındaki hava emisyonları, yağdan arındırma eşiğinin (%1) denetimi ile geçmişten bu yana parça parça verilen ÇED kararlarının kümülatif etkisidir.",
+      "executive_summary_en": "Maxion İnci Jant Sanayi A.Ş. Aluminum Wheel Plant Branch proposes adding a Non-Hazardous Waste Recovery and Hazardous Waste Pre-Treatment Process with a total capacity of 87.555 tons/day within its existing 72,058.03 m² parcel (52,000 m² enclosed area) in Manisa Organized Industrial Zone Part III (Yunusemre, Kayapınar Mah., Block 3311, Parcel 18). With a declared investment cost of 65,595,465 TL and no new building construction, the project includes installing a scrap aluminum wheel crushing unit, recovering swarf in an existing melting furnace, and physically de-oiling hazardous swarf via centrifugation without solvents until oil content drops below 1%. The additions will not alter existing wheel manufacturing capacity, will add 3 workers to the current 955-person workforce, and will operate 300 days/year across three shifts (24 hours/day). Key environmental considerations involve air emissions from high-temperature (760-1,000 °C) melting and Sb/Na refining of scrap and de-oiled swarf, verification of the <1% residual oil threshold, and the cumulative implications of numerous fragmented EIA decisions issued for the site since 2001.",
+      "key_facts": [
+        {
+          "label": "Planlanan Proje Kapasitesi",
+          "value": "87,555 ton/gün (Tehlikesiz Atık Geri Kazanımı ve Tehlikeli Atık Ön İşlem)",
+          "page": 2
+        },
+        {
+          "label": "Proje Bedeli",
+          "value": "65.595.465 TL",
+          "page": 2
+        },
+        {
+          "label": "Parsel ve Kapalı Alan Büyüklüğü",
+          "value": "72.058,03 m² parsel içinde 52.000 m² kapalı alan (ilave inşaat yok)",
+          "page": 7
+        },
+        {
+          "label": "Mevcut Üretim Kapasitesi",
+          "value": "17.971.296 kg/yıl (1.579.200 adet/yıl) Alüminyum Jant İmali",
+          "page": 6
+        },
+        {
+          "label": "İstihdam ve Çalışma Düzeni",
+          "value": "Mevcut 955 + ilave 3 personel; 300 gün/yıl, 3 vardiya (24 saat/gün)",
+          "page": 7
+        },
+        {
+          "label": "Ön İşlem Yağ Sınırı",
+          "value": "Solvent kullanılmadan santrifüj ile yağ oranının %1'in altına düşürülmesi",
+          "page": 7
+        },
+        {
+          "label": "Ergitme Fırını Sıcaklık Aralığı",
+          "value": "Ortalama 900 °C (üst kısım 1.000 °C, alt kısım 760 °C)",
+          "page": 14
+        },
+        {
+          "label": "Baca Gazı ve Metal Temizleme Sistemi",
+          "value": "Toz tutucu siklon (SKHKKY Ek-5 (G) 7. Grup); Sb veya Na içeren 25-50 gr tablet, azot gazı ve TiBor çubuk",
+          "page": 15
+        },
+        {
+          "label": "ÇED Yönetmeliği Kapsamı",
+          "value": "Ek-2 Madde 5-b(1), Madde 5-b(2) ve Madde 5-e",
+          "page": 2
+        },
+        {
+          "label": "Saha İnceleme Tarihi",
+          "value": "18.09.2026 (Yeterlik Belgesi Tebliği uyarınca yer incelemesi)",
+          "page": 8
+        }
+      ],
+      "baseline_assessment": {
+        "field_survey_status": "literature_only",
+        "seasonal_sampling_status": "not_found",
+        "cumulative_impact_status": "omitted_or_not_found",
+        "olive_and_protected_status": "İncelenen sayfalarda, proje alanının 1/100.000 ölçekli Çevre Düzeni Planında Organize Sanayi Bölgesi içinde yer aldığı [s. 8, 42, 50] ve ÇED Yönetmeliği EK-5 Duyarlı Yöreler listesi kapsamında 3573 sayılı Zeytincilik Kanunu kapsamındaki alanlar ile milli parklar, tabiat parkları, sit/koruma alanları, ÖÇK bölgeleri, orman alanları, mera alanları ve sulak alanların bulunmadığı beyan edilmektedir [s. 47, 48, 50].",
+        "explanation": "Yeterlik Belgesi Tebliği kapsamında 18.09.2026 tarihinde genel bir saha incelemesi yapıldığı belirtilmekle birlikte [s. 8], flora ve fauna bölümü Davis'in eseri, yayımlanmış literatür, TÜBİVES veri servisi ve bölgedeki diğer projelerin verileri esas alınarak hazırlanmıştır [s. 52]. Tablolar dizininde flora ve fauna listelerinin 'Bulunma Olasılığı Yüksek Olan' türler olarak adlandırıldığı görülmekte olup [s. 4], sunulan sayfalarda proje öncesi tamamlanmış mevsimsel arazi örneklemesine rastlanmamıştır [s. 50-52]. İçindekiler dizininde Bölüm IV (Kümülatif Etki Değerlendirme) yalnızca 1 sayfa (sayfa 74) olarak görünmekte olup [s. 3], bu sayfa sunulan kesitler arasında yer almadığından değerlendirilememiştir."
+      },
+      "red_flags": [
+        {
+          "severity": "high",
+          "title": "Parçalı ÇED Geçmişi ve Kümülatif Değerlendirme Eksikliği Riski",
+          "detail": "Tesis için 2001'den 2026'ya kadar çok sayıda ayrı 'ÇED Gerekli Değildir' kararı ve 'ÇED Görüşü' alınmış (2015'te 52.320 ton/yıldan 248.188 ton/yıla ergitme kapasite artışı, 2017 fırın ilaveleri, 2024'te 1.786,5 ton/yıl hurda alüminyum jant kararı, parsel tevhidi) ve 2024 tarihli hurda jant kırma ünitesi henüz faaliyete geçmeden yeni atık geri kazanım/ön işlem prosesleri eklenmiştir [s. 5, 6, 7]. Buna karşın İçindekiler dizininde Kümülatif Etki Değerlendirme (Bölüm IV) yalnızca 1 sayfa (s. 74) olarak yer almaktadır [s. 3].",
+          "pages": [
+            3,
+            5,
+            6,
+            7
+          ]
+        },
+        {
+          "severity": "high",
+          "title": "Ergitme Emisyon Kontrolü ve Kalıntı Yağ/Ağır Metal Riski",
+          "detail": "Ergitme fırınlarında 760-1.000 °C sıcaklıkta çalışıldığı [s. 14], yağ oranı %1'in altına düşürülen tehlikeli talaşların ergitileceği [s. 7] ve potada Sb veya Na içeren tabletler ile TiBor çubuklarının kullanıldığı belirtilmektedir [s. 15]. Ancak proses tanımında fırın emisyon çıkışı öncesinde yalnızca 'toz tutucu siklon' bulunduğu ifade edilmekte [s. 15], ince partikül, ağır metal veya kalıntı yağ yanma ürünlerine (VOC vb.) yönelik torbalı filtre veya yıkayıcı sistemlerden söz edilmemektedir.",
+          "pages": [
+            7,
+            14,
+            15
+          ]
+        },
+        {
+          "severity": "medium",
+          "title": "Biyoçeşitlilik Temel Durumunun Yalnızca Literatüre Dayanması",
+          "detail": "Flora ve fauna değerlendirmesi arazi içi sistematik biyolojik örneklemelere değil, literatür taramasına, TÜBİVES kayıtlarına ve bölgedeki diğer projelerin verilerine dayandırılmıştır [s. 52]. Tablolar dizininde tür listeleri 'Bulunma Olasılığı Yüksek Olan' başlığıyla verilmiştir [s. 4].",
+          "pages": [
+            4,
+            52
+          ]
+        },
+        {
+          "severity": "medium",
+          "title": "Tehlikeli Talaşta %1 Yağ Sınırının Doğrulama Protokolü Belirsizliği",
+          "detail": "Tehlikeli özellikteki metal talaşların santrifüj ile yağdan arındırılıp yağ oranının %1'in altına düşmesi kaydıyla ergitme prosesine alınacağı belirtilmektedir [s. 7]. Ancak sunulan proses kesitlerinde her parti için %1 sınırının nasıl ölçülüp doğrulanacağına ve eşik üstü partilerin yönetimine ilişkin teknik detay yer almamaktadır [s. 7, 13, 14].",
+          "pages": [
+            7,
+            13,
+            14
+          ]
+        },
+        {
+          "severity": "medium",
+          "title": "Hassas Alan ve Yerleşim Yeri Mesafe Verilerinin Metinde Eksikliği",
+          "detail": "EK-5 Duyarlı Yöreler kapsamındaki zeytinlik (3573 sayılı Kanun), orman ve sulak alanlar için yalnızca 'bulunmamaktadır' ifadesi kullanılmış [s. 48, 50], en yakın yerleşim yeri uydu görüntüsüyle gösterilmiş ancak [s. 9] sunulan metin sayfalarında en yakın konuta ve hassas alıcı ortamlara olan sayısal mesafeler ile hakim rüzgar yönü belirtilmemiştir.",
+          "pages": [
+            9,
+            48,
+            50
+          ]
+        },
+        {
+          "severity": "low",
+          "title": "Yer ve Teknoloji Alternatiflerinin Değerlendirilmemesi",
+          "detail": "Projenin halihazırda kurulu binada ve OSB içinde olması ve inşaat aşaması bulunmaması gerekçe gösterilerek faaliyet alanı veya teknoloji için hiçbir alternatif değerlendirilmediği açıkça ifade edilmiştir [s. 9, 10].",
+          "pages": [
+            9,
+            10
+          ]
+        }
+      ],
+      "hkt_and_petition_questions": [
+        {
+          "question_tr": "Tesiste 2001 yılından bu yana alınan çok sayıda 'ÇED Gerekli Değildir' kararı ve henüz faaliyete geçmemiş 2024 tarihli hurda jant kırma projesi [s. 5-7] dikkate alındığında, tüm bu ünitelerin toplam hava emisyonu ve atık yükü açısından kümülatif etkisi ÇED Yönetmeliği Ek-1 eşikleri ve bölge hava kalitesi çerçevesinde neden yalnızca 1 sayfalık bir bölümde [s. 3] ele alınmıştır?",
+          "pages": [
+            3,
+            5,
+            6,
+            7
+          ]
+        },
+        {
+          "question_tr": "Yağ oranı %1'e kadar kalabilen santrifüj edilmiş tehlikeli talaşların [s. 7] 760-1.000 °C sıcaklıktaki kule fırınlarda ergitilmesi ve Sb/Na tabletlerle temizlenmesi sırasında oluşabilecek ince partikül, ağır metal ve organik yanma emisyonları için yalnızca 'toz tutucu siklon' [s. 15] yeterli midir; torbalı filtre veya aktif karbon gibi ilave arıtma üniteleri neden proses akımında yer almamaktadır?",
+          "pages": [
+            7,
+            14,
+            15
+          ]
+        },
+        {
+          "question_tr": "Tehlikeli talaşların ergitme fırınına verilmesinden önce yağ içeriğinin %1'in altına düştüğü [s. 7] hangi standart analiz yöntemiyle, hangi sıklıkta ve kim tarafından doğrulanacaktır; eşik değerin aşıldığı partiler için karantina veya geri çevirme prosedürü nedir?",
+          "pages": [
+            7,
+            12,
+            14
+          ]
+        },
+        {
+          "question_tr": "EK-5 Duyarlı Yöreler listesinde 3573 sayılı Zeytincilik Kanunu kapsamındaki alanlar, sulak alanlar ve yerleşim yerleri için yalnızca 'bulunmamaktadır' beyanı verilmiş [s. 48, 50] ve en yakın yerleşim yeri haritasında mesafe yazılmamıştır [s. 9]; parsel sınırından itibaren 3 km yarıçap içindeki zeytinlik, tarım alanı ve konutların kesin mesafeleri ile hakim rüzgar yönüne göre etki analizi neden sunulmamıştır?",
+          "pages": [
+            9,
+            48,
+            50
+          ]
+        }
+      ],
+      "data_limitations": "Toplam 258 sayfalık PTD dosyasının 46 sayfası taranmış/görüntü formatında olup yalnızca 21 sayfalık seçilmiş metin kesiti ([1-15, 42, 47, 48, 50-52]) incelenebilmiştir. Kapasite tabloları (s. 22-24), su tüketimi ve atıksu bilgileri (s. 27-28, 35), baca emisyon ve ısıl güç tabloları (s. 36-37), atık yönetimi (s. 29-38, 73), çevresel etkiler ve önlemler (Bölüm III, s. 66-73), kümülatif etki bölümü (Bölüm IV, s. 74), çevre izleme planı (Bölüm V, s. 75-79) ve ek belgeler (s. 80-258) inceleme dışı kaldığından bu bölümlerdeki sayısal emisyon değerleri, arıtma detayları ve izleme taahhütleri doğrulanamamıştır."
+    }
+  }
+}

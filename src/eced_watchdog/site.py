@@ -291,7 +291,7 @@ def render_digest_html(saved: dict[str, Any], raw_md_filename: str) -> str:
 <body>
 <div class="wrap">
   <header>
-    <div style="font-size:0.85rem;margin-bottom:8px;"><a href="../index.html">← Ege e-ÇED İzleme listesine dön</a> · <a href="{_esc(raw_md_filename)}">Ham Markdown (.md)</a></div>
+    <div style="font-size:0.85rem;margin-bottom:8px;"><a href="../index.html">← Ege e-ÇED İzleme listesine dön</a> · <a href="../rehber.html">Nasıl Kullanılır? (Rehber)</a> · <a href="{_esc(raw_md_filename)}">Ham Markdown (.md)</a></div>
     <h1>e-ÇED Ön Özet #{_esc(filing_id)} — {_esc(filing['district'])} / {_esc(filing['province'])}</h1>
     <p class="sub">{_esc(filing['project_name'])}</p>
     <div class="badges" style="margin-top:10px;">
@@ -394,6 +394,144 @@ def build_rss(filings: list[dict[str, Any]], digests_index: set[str], site_url: 
 
     ET.indent(rss, space="  ")
     return '<?xml version="1.0" encoding="UTF-8"?>\n' + ET.tostring(rss, encoding="unicode")
+
+
+def render_guide_html() -> str:
+    template_text = """# Teknik İnceleme Notu — e-ÇED #[DOSYA_NO] ([İLÇE] / [İL])
+
+- Resmi kayıt: [e-ÇED portal bağlantısı]
+- Aşama ve yasal son tarih: [10 günlük askı / HKT tarihi / 30 günlük İYUK 20/A son günü]
+
+1. Başlangıç verisi ve örnekleme eksikleri ([s. N]):
+   - ...
+
+2. Ekolojik, hidrolojik veya jeokimyasal çelişkiler ([s. N]):
+   - ...
+
+3. Kümülatif bölgesel etki ve mevzuat boşlukları (3573 / 5403 / ÖÇK) ([s. N]):
+   - ...
+
+4. HKT tutanağı veya İYUK 20/A dilekçesi için 3–5 somut teknik soru:
+   - ... ([s. N])
+   - ... ([s. N])
+
+5. Önerilen iletim kanalı:
+   - İzmir Barosu Çevre Komisyonu / TMMOB İzmir İKK / EGEÇEP / İlçe İnisiyatifi / Yerel Basın"""
+
+    return f"""<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Nasıl Kullanılır? — Ege e-ÇED İzleme</title>
+  <style>
+{BASE_CSS}
+pre {{
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 14px 16px;
+  overflow-x: auto;
+  font-size: 0.85rem;
+  line-height: 1.5;
+  white-space: pre-wrap;
+}}
+.step-grid {{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 12px;
+  margin: 14px 0 22px;
+}}
+.step-num {{
+  display: inline-block;
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--accent);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  margin-bottom: 4px;
+}}
+  </style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div style="font-size:0.85rem;margin-bottom:8px;"><a href="index.html">← Ege e-ÇED İzleme listesine dön</a> · <a href="feed.xml">RSS 2.0 Akışı</a></div>
+    <h1>Bu Site Ne İşe Yarar ve Nasıl Kullanılır?</h1>
+    <p class="sub">Çevre bilimciler, ekologlar, mühendisler, hukukçular ve yerel gönüllüler için sürdürülebilir, sayfa kaynaklı ÇED inceleme rehberi.</p>
+  </header>
+
+  <section class="card prio">
+    <h2 style="margin-top:0;">1. Sorun ve Nihai Hedef</h2>
+    <p>Çevre, Şehircilik ve İklim Değişikliği Bakanlığı tüm ÇED başvurularını, Halkın Katılımı Toplantılarını (HKT) ve kararları kamuya açık olarak yayımlar. Ancak gerçek hayatta iki büyük engel vardır:</p>
+    <ul>
+      <li><strong>Süreler çok kısadır:</strong> Askı/görüş ve HKT duyuruları genellikle <strong>10 takvim günü</strong>, <em>ÇED Olumlu</em> veya <em>ÇED Gerekli Değildir</em> kararlarına karşı iptal davası açma süresi ise <strong>İYUK Madde 20/A</strong> gereği yalnızca <strong>30 takvim günüdür</strong> (ve idareye yapılan İYUK 11 başvuruları bu süreyi durdurmaz).</li>
+      <li><strong>Dosyalar çok ağırdır:</strong> Tek bir Ek-2 Proje Tanıtım Dosyası 300+ sayfa, bir Ek-1 ÇED Raporu 600–900+ sayfa ve 100–200 MB boyutundadır. Yerel sakinler, küçük haber merkezleri ve gönüllü avukatlar süre dolmadan bu raporların içindeki bilimsel eksikleri yakalayamaz.</li>
+    </ul>
+    <p><strong>Nihai hedef:</strong> Sosyal medyada öfke üretmek değil; <strong>resmi PDF sayfa numaralarına (<code>[s. N]</code>) dayanan, salt bilimsel ve tarafsız 1 sayfalık teknik inceleme notlarını</strong> yasal süre dolmadan dava ehliyeti ve yerel gücü olan kurumlara (barolar, meslek odaları, belediyeler, yerel platformlar ve gazeteciler) ulaştırmaktır. İdare mahkemelerinde kararların iptali soyut itirazlarla değil; raporun kendi içindeki metodolojik çelişkiler somut sayfa numaralarıyla gösterildiğinde gerçekleşir.</p>
+  </section>
+
+  <h2>2. Bu Site Sizin Yerinizde Neyi Otomatik Yapar?</h2>
+  <table class="kv">
+    <tr><th>Günlük Tarama</th><td>İzmir ve Manisa (Gediz Havzası) duyurularını resmi <code>eced-duyuru.csb.gov.tr</code> portalından otomatik çeker, öncelikli ekolojik koridorları (Aliağa, Foça, Bergama, Dikili, Karaburun, Menemen, Urla, Çeşme, Gediz) öne çıkarır.</td></tr>
+    <tr><th>Yasal Süre Sayacı</th><td>Her duyuru için 10 günlük askı ve 30 günlük İYUK 20/A son tarihlerini deterministik olarak hesaplar; yaklaşan dosyaları kırmızı/sarı etiketlerle işaretler.</td></tr>
+    <tr><th>Sayfa Kaynaklı PDF Ön Özeti</th><td>Yüzlerce sayfalık resmi PDF'leri tarar; taranmış sayfa sayısını, su/deşarj, zeytinlik (3573), korunan alan, flora/fauna ve kümülatif etki verilerini <code>[s. N]</code> sayfa numaralarıyla çıkarır.</td></tr>
+    <tr><th>Yapay Zeka Ön Taraması</th><td>Öne çıkan sayfalardan Türkçe özet, başlangıç etüdü değerlendirmesi (saha çalışması mı, yalnızca literatür mü, mevsimsel örnekleme önceden mi yapılmış yoksa onay sonrasına mı ertelenmiş?) ve taslak teknik sorular üretir. <em>Bu katman hızlandırıcıdır; nihai kaynak her zaman resmi PDF'in kendisidir.</em></td></tr>
+  </table>
+
+  <h2>3. Bir Uzman / Bilim İnsanı Olarak Ne Yapabilirsiniz? (Ayda 1–2 Saat)</h2>
+  <p class="sub">Sıfırdan bir dernek kurmanıza, her gün siteyi takip etmenize veya kodla uğraşmanıza gerek yoktur. Yalnızca kendi uzmanlık alanınıza giren bir dosya düştüğünde şu 4 adımı uygulamanız yeterlidir:</p>
+
+  <div class="step-grid">
+    <div class="card">
+      <div class="step-num">Adım 1 · 5 dk</div>
+      <div class="title">Tek Bir Dosya Seçin</div>
+      <p class="detail">Ana sayfada <strong>Aktif Süreler</strong> ve <strong>Öncelikli Koridor</strong> filtrelerini açın. Kendi alanınıza giren (deniz/kıyı ekolojisi, su/hidrojeoloji, flora/fauna, tarım/zeytinlik, emisyon) ve süresi dolmamış tek bir dosyaya tıklayın.</p>
+    </div>
+    <div class="card">
+      <div class="step-num">Adım 2 · 30–60 dk</div>
+      <div class="title">[s. N] Üzerinden Doğrulayın</div>
+      <p class="detail">Ön özetteki <strong>Bilimsel Uyarılar</strong> ve <strong>Öne Çıkan Sayısal Bulgular</strong> listesini okuyun. Her maddedeki <code>[s. N]</code> sayfa numarasından doğrudan <strong>Resmi PDF</strong>'teki ilgili sayfayı açarak verinin doğruluğunu ve eksiklerini uzman gözüyle teyit edin.</p>
+    </div>
+    <div class="card">
+      <div class="step-num">Adım 3 · 30 dk</div>
+      <div class="title">1 Sayfalık Teknik Not Yazın</div>
+      <p class="detail">Aşağıdaki 5 maddelik şablonu doldurun: eksik başlangıç verileri, tek mevsim/literatür boşlukları, kümülatif etki eksikleri ve 3–5 net teknik soru. Sadece doğrulanmış olgular ve sayfa numaraları — yorum veya polemik yok.</p>
+    </div>
+    <div class="card">
+      <div class="step-num">Adım 4 · 5 dk</div>
+      <div class="title">Mevcut Aktörlere İletin</div>
+      <p class="detail">Notu aşağıda listelenen mevcut hukuk, meslek odası veya yerel ağlardan birine e-posta/mesajla iletin. Dilerseniz adınızla uzman görüşü olarak, dilerseniz kurum/komisyon üzerinden paylaşabilirsiniz.</p>
+    </div>
+  </div>
+
+  <h2>4. Hazır Notu Kime İletebilirsiniz? (İzmir &amp; Ege Ağı)</h2>
+  <table class="kv">
+    <tr><th>Hukuki Başvuru ve İYUK 20/A</th><td><strong>İzmir Barosu Çevre ve Kent Hukuku Komisyonu</strong> (ve Manisa Barosu Çevre Komisyonu) — 30 günlük iptal davası dilekçelerinde teknik dayanak olarak kullanılır.</td></tr>
+    <tr><th>Meslek Odaları</th><td><strong>TMMOB İzmir İl Koordinasyon Kurulu</strong> (Çevre, Ziraat, Jeoloji, Orman, Kimya ve Şehir Plancıları Odaları İzmir Şubeleri) — kurumsal itiraz ve bilirkişi süreçleri için doğrudan yetkilidir.</td></tr>
+    <tr><th>Bölgesel ve Yerel Platformlar</th><td><strong>EGEÇEP</strong> (Ege Çevre ve Kültür Platformu), <em>Karaburun Sivil İnisiyatif</em>, <em>Foça / Aliağa / Bergama / Dikili</em> çevre platformları ve ilgili ilçe belediyelerinin çevre birimleri.</td></tr>
+    <tr><th>Resmi Katılım Kanalları</th><td>10 günlük askı süresinde <strong>ÇŞİD İl Müdürlüğü</strong>'ne yazılı görüş dilekçesi verilebilir; <strong>HKT (Halkın Katılımı Toplantısı)</strong> sırasında teknik soruların tutanağa geçmesi sağlanabilir.</td></tr>
+    <tr><th>Yerel Basın</th><td>İzmir ve Ege'de çevre haberciliği yapan bağımsız yerel gazeteciler — sayfa numaralı 1 sayfalık net özet, 400 sayfalık PDF'ten çok daha hızlı haberleşir.</td></tr>
+  </table>
+
+  <h2>5. Kopyalanabilir 1 Sayfalık Teknik İnceleme Şablonu</h2>
+  <pre>{_esc(template_text)}</pre>
+
+  <h2>6. Sürdürülebilirlik ve Güvenlik İlkeleri</h2>
+  <ul>
+    <li><strong>%100 kamuya açık resmi kaynak:</strong> Tüm veriler Bakanlığın kendi e-ÇED duyurularına dayanır; bilgi edinme, askı görüşü ve HKT katılımı yasal anayasal haklardır.</li>
+    <li><strong>Bilimsel tarafsızlık:</strong> Siyasi slogan veya doğrulanmamış iddia yerine yalnızca raporun kendi içindeki sayfa numaralı eksikler ve hakemli bilim literatürüyle çelişen noktalar yazılır.</li>
+    <li><strong>Düşük tükenmişlik, esnek katılım:</strong> Hiçbir gönüllünün düzenli kota tutması gerekmez. Ayda tek bir kritik dosyayı 1–2 saatte doğrulayıp ilgili baro/odaya ulaştırmak bile uzun vadede somut sonuç üretir.</li>
+    <li><strong>Bireysel güvenlik:</strong> Kurumsal veya akademik güvencesi hassas olan uzmanlar, teknik notlarını kişisel görünürlük almadan doğrudan meslek odaları veya baro komisyonları aracılığıyla paylaşabilir.</li>
+  </ul>
+
+  <div class="notice">
+    <strong>Yasal uyarı:</strong> Bu platform bilgilendirme ve kamuoyu şeffaflığı amacı taşır; hukuki danışmanlık yerine geçmez. Tüm süreler ve mevzuat hükümleri işlem öncesinde avukat tarafından teyit edilmelidir.
+  </div>
+</div>
+</body>
+</html>
+"""
 
 
 def build_site(
@@ -548,6 +686,7 @@ def build_site(
     <h1>Ege e-ÇED İzleme</h1>
     <p class="sub">İzmir ve Manisa (Gediz Havzası) için kamuya açık e-ÇED duyuru takibi, yasal süre sayacı (10 günlük askı ve 30 günlük İYUK 20/A) ve sayfa kaynaklı PDF ön özetleri.</p>
     <div class="meta-bar">
+      <span><strong><a href="rehber.html">Nasıl Kullanılır? (Bilimsel İnceleme Rehberi)</a></strong></span>
       <span>Son güncelleme: <code>{_esc(built_at)}</code></span>
       <span><a href="feed.xml">RSS 2.0 Akışı (feed.xml)</a></span>
       <span>Resmi kaynak: <a href="https://eced-duyuru.csb.gov.tr/eced-prod/duyurular.xhtml" target="_blank" rel="noopener">eced-duyuru.csb.gov.tr</a></span>
@@ -618,6 +757,7 @@ def build_site(
 </html>
 """
     (docs_dir / "index.html").write_text(index_html, encoding="utf-8")
+    (docs_dir / "rehber.html").write_text(render_guide_html(), encoding="utf-8")
     rss_xml = build_rss(filings, digests_index, site_url)
     (docs_dir / "feed.xml").write_text(rss_xml, encoding="utf-8")
 
