@@ -1,0 +1,548 @@
+{
+  "filing": {
+    "row_index": 0,
+    "button_id": "form:duyurTable:0:j_idt67",
+    "province": "İZMİR",
+    "district": "BERGAMA",
+    "project_name": "154 kV (Alibey RES TM - Bergama Vento RES TM EİH) Brş.N. - 154 kV İvrindi RES TM (Karaburun RES) EİH (Girdi-Çıktı)",
+    "project_owner": "TÜRKİYE ELEKTRİK İLETİM ANONİM ŞİRKETİ",
+    "sector": "Turizm",
+    "sub_sector": "Enerji İletim Hatları",
+    "decision_type": "ÇED Süreci Başlayan",
+    "announcement_date_tr": "19.11.2026",
+    "project_type": "Ek-2",
+    "detail_text": "İZMİR ili BERGAMA,  ilcesinde İZMİR ili BERGAMA,  ilçesi Balıkesir İli, Burhaniye İlçesi, Yaylacık Köyü ve İzmir İli, Bergama İlçesi, Güneşli, Çamavlu, Kıranlı, Çobanlar ve Hacılar Mahalleleri Mevkii mevkiindeki TÜRKİYE ELEKTRİK İLETİM ANONİM ŞİRKETİ tarafından yapılması planlanan 154 kV (Alibey RES TM - Bergama Vento RES TM EİH) Brş.N. - 154 kV İvrindi RES TM (Karaburun RES) EİH (Girdi-Çıktı) projesi ile ilgili olarak İZMİR Valiliğimize sunulan P.T.D. Dosyası Çevresel Etki Değerlendirmesi Yönetmeliği'nin 16. maddesi doğrultusunda incelenmiş ve projeye ilişkin ÇED Süreci başlamıştır. İlgililere ve kamuoyuna duyurulur.",
+    "detail_links": [
+      {
+        "text": "P.T.D. Dosyası",
+        "href": "http://eced.csb.gov.tr/jsp/ek1/61354"
+      }
+    ],
+    "documents": [
+      {
+        "portal_doc_url": "http://eced.csb.gov.tr/jsp/ek1/61354",
+        "filing_id": "61354",
+        "consulting_firm": "EN-ÇEV ENERJİ ÇEVRE YATIRIMLARI DANIŞMANLIĞI HARİTACILIK İMAR İNŞAAT A.Ş",
+        "submitted_at": "16/11/2026 04:19:09",
+        "pdf_urls": [
+          {
+            "label": "Dosya Göster",
+            "url": "http://eced.csb.gov.tr/jsp/dosya/dosyaGoster.htm?tempAd=sign4195618410608326396.pdf&orjinalAd=KaraburunEIHPTD...pdf&yuklemeTarihi=2026-11-16"
+          }
+        ]
+      }
+    ],
+    "announcement_date": "2026-11-19",
+    "statutory_clocks": [
+      {
+        "kind": "10-day public review/comment window (askı süresi)",
+        "deadline": "2026-11-29",
+        "days_remaining": 9
+      }
+    ],
+    "priority_district": true
+  },
+  "pdf_info": {
+    "bytes": 102777657,
+    "sha256": "1dab8f6434d08bc93da6a280dc49d0284acfec7cc6ce310a99ddaa26dc7a6b74",
+    "cached": true,
+    "filename": "61354.pdf"
+  },
+  "analysis": {
+    "page_count": 347,
+    "total_chars": 747491,
+    "text_pages": 318,
+    "scanned_or_blank_pages": 29,
+    "scanned_page_sample": [
+      160,
+      183,
+      222,
+      223,
+      224,
+      226,
+      227,
+      228,
+      229,
+      230,
+      257,
+      258,
+      259,
+      260,
+      261
+    ],
+    "headings": [
+      [
+        3,
+        "BÖLÜM III: PROJENİN İNŞAAT VE İŞLETME AŞAMASINDA ÇEVRESEL ETKİLERİ, ÖNCELİKLİ"
+      ],
+      [
+        9,
+        "PROJENİN TEKNİK OLMAYAN ÖZETİ:"
+      ],
+      [
+        11,
+        "BÖLÜM I: PROJENİN ÖZELLİKLERİ:"
+      ],
+      [
+        76,
+        "BÖLÜM II: PROJE YERİ VE ETKİ ALANININ MEVCUT ÇEVRESEL ÖZELLİKLERİ:"
+      ],
+      [
+        82,
+        "FLORA ve FAUNA"
+      ],
+      [
+        127,
+        "BÖLÜM IV: KÜMÜLATİF ETKİ DEĞERLENDİRME"
+      ],
+      [
+        132,
+        "BÖLÜM V: ÇEVRESEL VE SOSYAL EYLEM PLANI"
+      ],
+      [
+        142,
+        "BÖLÜM VI: NOTLAR, KAYNAKLAR VE EKLER:"
+      ],
+      [
+        247,
+        "ÇEVRESEL VE SOSYAL YÖNETİM PLANI"
+      ]
+    ],
+    "signals": {
+      "coordinates_and_footprint": {
+        "label": "Coordinates, Parcel & Footprint",
+        "page_count": 70,
+        "pages": [
+          9,
+          11,
+          15,
+          16,
+          17,
+          20,
+          21,
+          22,
+          23,
+          31,
+          40,
+          57,
+          62,
+          63,
+          76,
+          77,
+          78,
+          100,
+          104,
+          107,
+          114,
+          146,
+          149,
+          150,
+          151
+        ],
+        "samples": [
+          {
+            "page": 9,
+            "match": "15,81 km",
+            "snippet": "…da yer almamaktadır. Proje konusu 154 kV gerilimde 1272 MCM iletkenli enerji iletim hattının uzunluğu Girdi Hattı: 15,81 km (15.812,76 m), Çıktı Hattı: 15,71 km (15.709,18 m) olmak üzere toplam 31,52 km (31.521,94 m) olup; enerji iletim hattı…"
+          },
+          {
+            "page": 9,
+            "match": "15,71 km",
+            "snippet": "…154 kV gerilimde 1272 MCM iletkenli enerji iletim hattının uzunluğu Girdi Hattı: 15,81 km (15.812,76 m), Çıktı Hattı: 15,71 km (15.709,18 m) olmak üzere toplam 31,52 km (31.521,94 m) olup; enerji iletim hattı Balıkesir ve İzmir ili sınırları içe…"
+          },
+          {
+            "page": 9,
+            "match": "31,52 km",
+            "snippet": "…i iletim hattının uzunluğu Girdi Hattı: 15,81 km (15.812,76 m), Çıktı Hattı: 15,71 km (15.709,18 m) olmak üzere toplam 31,52 km (31.521,94 m) olup; enerji iletim hattı Balıkesir ve İzmir ili sınırları içerisinde yer almaktadır. Bahse konu EİH içi…"
+          },
+          {
+            "page": 9,
+            "match": "koordinat",
+            "snippet": "…ı\", “Sit” ve “Koruma Alanı” olarak tanımlanan özel alanlardan hiçbiri bulunmamaktadır. Söz konusu proje alanına ait koordinatlar Ek-1’de verilmiştir. Faaliyetin gerçekleştirileceği alanla ilgili olarak proje alanını gösterir Yer Bulduru Haritas…"
+          },
+          {
+            "page": 11,
+            "match": "15,81 km",
+            "snippet": "…da yer almamaktadır. Proje konusu 154 kV gerilimde 1272 MCM iletkenli enerji iletim hattının uzunluğu Girdi Hattı: 15,81 km (15.812,76 m), Çıktı Hattı: 15,71 km (15.709,18 m) olmak üzere toplam 31,52 km (31.521,94 m) olup; enerji iletim hattı…"
+          },
+          {
+            "page": 11,
+            "match": "15,71 km",
+            "snippet": "…154 kV gerilimde 1272 MCM iletkenli enerji iletim hattının uzunluğu Girdi Hattı: 15,81 km (15.812,76 m), Çıktı Hattı: 15,71 km (15.709,18 m) olmak üzere toplam 31,52 km (31.521,94 m) olup; enerji iletim hattı Balıkesir ve İzmir ili sınırları içe…"
+          },
+          {
+            "page": 11,
+            "match": "31,52 km",
+            "snippet": "…i iletim hattının uzunluğu Girdi Hattı: 15,81 km (15.812,76 m), Çıktı Hattı: 15,71 km (15.709,18 m) olmak üzere toplam 31,52 km (31.521,94 m) olup; enerji iletim hattı Balıkesir ve İzmir ili sınırları içerisinde yer almaktadır. Bahse konu EİH içi…"
+          },
+          {
+            "page": 15,
+            "match": "koordinat",
+            "snippet": "…sağından ve solundan 1’er km olmak üzere 2 km’lik koridor inceleme alanı olarak belirlenmiştir. Proje alanına ilişkin koordinatlara EK-1’de yer verilmiştir. b) Projenin İş Akım Şeması, Kapasitesi, Kapladığı Alan, Yatırım Bedeli, Teknolojisi…"
+          }
+        ]
+      },
+      "water_and_discharge": {
+        "label": "Water Use, Hydrogeology & Discharge",
+        "page_count": 29,
+        "pages": [
+          31,
+          36,
+          37,
+          39,
+          40,
+          43,
+          108,
+          109,
+          110,
+          120,
+          121,
+          134,
+          136,
+          140,
+          156,
+          159,
+          212,
+          213,
+          216,
+          217,
+          218,
+          219,
+          245,
+          247,
+          250
+        ],
+        "samples": [
+          {
+            "page": 31,
+            "match": "deşarj",
+            "snippet": "…, depo, idari ve/veya sosyal bina, köprü, alt ve üst yapılar (arıtma, kanalizasyon, içme/kullanma su hatları, su alma/deşarj hatları vb. dahil) viyadük vb. sanat yapıları, drenaj, tesviye vb. gibi araziyi kullanılabilir duruma getirmek için y…"
+          },
+          {
+            "page": 36,
+            "match": "8,4 m3/gün",
+            "snippet": "…dığında toplam kullanılacak su miktarı; Personel su kullanım miktarı = 40 kişi x 210 lt/kişi.gün = 8.400 lt/gün = 8,4 m3/gün olacaktır. Tozuma Önleme Amaçlı Gerekli Sulama Suyu İnşaat aşamasında çalışma alanlarında tozumayı önlemek için i…"
+          },
+          {
+            "page": 36,
+            "match": "18,4 m3/gün",
+            "snippet": "…i kabul edilmiştir. Toplam Su İhtiyacı Projenin inşaat aşamasında ihtiyaç duyulacak toplam su ihtiyacı en fazla 18,4 m3/gün olacaktır. Su Temini İçme ve kullanma suyu piyasadan satın alınacak olup, içme suyu damacanalar ile temin edile…"
+          },
+          {
+            "page": 37,
+            "match": "2,1 m3/gün",
+            "snippet": "…su kullanım miktarı = 210 lt/gün x 10 kişi = 2.100 litre/gün = 2,1 m3/gün olacaktır. İçme ve kullanma suyu piyasadan satın alınacak olup, içme suyu damacanalar ile işletme yerine getirilece…"
+          },
+          {
+            "page": 39,
+            "match": "Atıksu",
+            "snippet": "…Vento RES TM EİH) Brş.N. – 154 kV İvrindi RES TM (Karaburun RES) EİH (Girdi-Çıktı) Proje Tanıtım Dosyası 31 Atıksu İnşaat Aşaması Çalışacak Personel Kaynaklı Oluşan Atıksu İnşaat aşamasında çalışacak 40 personelden kaynaklı…"
+          },
+          {
+            "page": 39,
+            "match": "deşarj",
+            "snippet": "…a günlük oluşacak atıksu miktarı 181 lt/kişi-gün6 TÜİK verisi ile; Personel kaynaklı atıksu miktarı = (Kişi başına deşarj edilen atıksu mik.) x (Personel sayısı) = 40 kişi x 181 lt/kişi.gün = 7.240 lt/gün = 7,24 m3/gün olacaktır. Sulam…"
+          },
+          {
+            "page": 39,
+            "match": "7,24 m3/gün",
+            "snippet": "…miktarı = (Kişi başına deşarj edilen atıksu mik.) x (Personel sayısı) = 40 kişi x 181 lt/kişi.gün = 7.240 lt/gün = 7,24 m3/gün olacaktır. Sulama Kaynaklı Oluşan Atıksu Arazi hazırlık sırasında mevsim şartlarına göre tozumayı engellemek için…"
+          },
+          {
+            "page": 40,
+            "match": "Atıksu",
+            "snippet": "…M (Karaburun RES) EİH (Girdi-Çıktı) Proje Tanıtım Dosyası 32 İşletme Aşaması Çalışacak Personelden Kaynaklı Atıksu İşletme aşamasında çalışacak 10 personelden kaynaklı oluşacak atıksu miktarı ise kişi başına günlük oluşacak atıksu…"
+          }
+        ]
+      },
+      "protected_land_and_olive": {
+        "label": "Protected Zones, Forests & Olive Groves",
+        "page_count": 24,
+        "pages": [
+          3,
+          9,
+          15,
+          32,
+          35,
+          76,
+          77,
+          79,
+          81,
+          113,
+          114,
+          116,
+          118,
+          119,
+          120,
+          156,
+          159,
+          199,
+          276,
+          284,
+          294,
+          298,
+          323,
+          332
+        ],
+        "samples": [
+          {
+            "page": 3,
+            "match": "orman alanı",
+            "snippet": "…JE YERİ VE ETKİ ALANININ MEVCUT ÇEVRESEL ÖZELLİKLERİ: ..................... 68 a) Mevcut arazi kullanımı (tarım alanı, orman alanı, planlı alan, su yüzeyi ve benzeri) ve kalitesi, jeolojik ve hidrojeolojik özellikleri. ..............................…"
+          },
+          {
+            "page": 9,
+            "match": "Milli Park",
+            "snippet": "…ge ekonomisini hem de Türkiye ekonomisini, olumlu yönde etkileyecektir. Proje alanı içerisinde ve yakın çevresinde \"Milli Park Alanı\", \"Tabiat Koruma Alanı\", \"Tabiat Parkı\" ve \"Tabiat Anıtı\" bulunmamaktadır. Ayrıca proje alanı içerisinde \"Kültür…"
+          },
+          {
+            "page": 9,
+            "match": "Tabiat Parkı",
+            "snippet": "…olumlu yönde etkileyecektir. Proje alanı içerisinde ve yakın çevresinde \"Milli Park Alanı\", \"Tabiat Koruma Alanı\", \"Tabiat Parkı\" ve \"Tabiat Anıtı\" bulunmamaktadır. Ayrıca proje alanı içerisinde \"Kültür Varlıkları\", \"Tabiat Varlıkları\", “Sit” ve…"
+          },
+          {
+            "page": 15,
+            "match": "Orman Alanı",
+            "snippet": "….N. – 154 kV İvrindi RES TM (Karaburun RES) EİH (Girdi-Çıktı) Proje Tanıtım Dosyası 7 Enerji iletim hattı “Orman Alanı”, “Tarım Arazisi”, “Çayır-Mera” ve “Nehir/Dere” nitelikli alanlardan geçmekte olup, güzergah tespit çalışmalarında müm…"
+          },
+          {
+            "page": 32,
+            "match": "Orman Alanı",
+            "snippet": "…r-Manisa Planlama Bölgesi ve Balıkesir-Çanakkale Planlama Bölgesi 1/100.000 ölçekli Çevre Düzeni Planı J18 paftasında “Orman Alanı”, “Tarım Arazisi”, “Çayır- Mera”, “Nehir/Dere” nitelikli alanlar içerisinde yer almaktadır. Şekil 20. Proje Alanı…"
+          },
+          {
+            "page": 35,
+            "match": "3573 sayılı",
+            "snippet": "…oje Alanı ve Etrafının Arazi Varlığı Haritası Proje kapsamında 5403 sayılı “Toprak Koruma ve Arazi Kullanımı Kanunu” 3573 sayılı (4086 Sayılı Kanunla değişiklik) “Zeytincilik Islahı ve Yabanilerinin Aşılattırılması Hakkındaki Kanun”, 3083 Sayılı…"
+          },
+          {
+            "page": 76,
+            "match": "orman alanı",
+            "snippet": "…68 BÖLÜM II: PROJE YERİ VE ETKİ ALANININ MEVCUT ÇEVRESEL ÖZELLİKLERİ: a) Mevcut arazi kullanımı (tarım alanı, orman alanı, planlı alan, su yüzeyi ve benzeri) ve kalitesi, jeolojik ve hidrojeolojik özellikleri. Arazi Kullanım Durumu: İ…"
+          },
+          {
+            "page": 77,
+            "match": "orman alanı",
+            "snippet": "…çi ÇKS kayıtlıdır. İzmir’in 3.255.000 da tarım arazisi, 1.097.220 da mera arazisi, 23.000 da nadas alanı, 4.757.790 da orman alanı ve 8.636.000 da diğer alanlar yer almakta olup toplam yüzölçümü 11.891.000 da’dır. Tarımsal arazi dağılımları aşağıda…"
+          }
+        ]
+      },
+      "ecology_and_baseline": {
+        "label": "Flora, Fauna & Baseline Methodology",
+        "page_count": 20,
+        "pages": [
+          82,
+          85,
+          92,
+          93,
+          94,
+          95,
+          96,
+          97,
+          98,
+          99,
+          100,
+          101,
+          102,
+          103,
+          104,
+          119,
+          120,
+          137,
+          251,
+          302
+        ],
+        "samples": [
+          {
+            "page": 82,
+            "match": "FLORA ve FAUNA",
+            "snippet": "…dürlüğü’nden (İzmir Orman Bölge Müdürlüğü ve Balıkesir Orman Bölge Müdürlüğü) gerekli görüş ve izinler alınacaktır. FLORA ve FAUNA Proje alanı İzmir ili Bergama ilçesi ve Balıkesir ili Burhaniye ilçesi J18-A2, J18-A3, J18-B4 No.lu topografik hari…"
+          },
+          {
+            "page": 85,
+            "match": "IUCN",
+            "snippet": "…ıtım Dosyası 77 Tablo 42. Proje Alanı ve Yakın Çevresinin Flora Listesi TÜR ADI TÜRKÇE ADI FİTOCOĞRAFİK B. IUCN- GLOBAL IUCN- EUROPE IUCN- MEDİTERRANEAN BERN (B) CİTES (C) ENDEMİZM NİSBİ BOLLUK TESPİT ŞEKLİ AMARYLLIDACE…"
+          },
+          {
+            "page": 85,
+            "match": "CİTES",
+            "snippet": "…sinin Flora Listesi TÜR ADI TÜRKÇE ADI FİTOCOĞRAFİK B. IUCN- GLOBAL IUCN- EUROPE IUCN- MEDİTERRANEAN BERN (B) CİTES (C) ENDEMİZM NİSBİ BOLLUK TESPİT ŞEKLİ AMARYLLIDACEAE Allium pallens L. nur soğanı - - - 2 L…"
+          },
+          {
+            "page": 92,
+            "match": "Endemik",
+            "snippet": "…çıklaması 1- Çok Nadir 2- Nadir 3- Orta Derecede Bolluk 4- Bol 5- Çok Bol Kod Endemizm Açıklaması L Lokal Endemik B Bölgesel Endemik Y Yaygın Endemik Flora Türleri İçin Hedef Türler Proje alanı ve yakın çevresinde için gerç…"
+          },
+          {
+            "page": 92,
+            "match": "IUCN",
+            "snippet": "…ırmalarına bakıldığında 130 flora türünün bulunması muhtemeldir. Hem bölgesel Endemizm/Lokal Endemizm açısından hemde IUCN; International Union for Conservation of Nature (Uluslararası Doğal Hayatı ve Doğal Kaynakları Koruma Birliği) tarafın…"
+          },
+          {
+            "page": 92,
+            "match": "Kırmızı Liste",
+            "snippet": "…Conservation of Nature (Uluslararası Doğal Hayatı ve Doğal Kaynakları Koruma Birliği) tarafından yayınlanan Red List – Kırmızı Liste’deki durumu açısından değerlendirildiğinde hedef tür olarak belirlenecek bir tür tespit edilememiştir. Floristik D…"
+          },
+          {
+            "page": 93,
+            "match": "IUCN",
+            "snippet": "…ki alanlarda kaydedilen türlerle ilgili olarak ulusal ve uluslararası koruma statüleri değerlendirilmiştir. Bu amaçla IUCN tarafından hazırlanan ve 2026 yılı içerisinde güncellenen Kırmızı Liste (IUCN-RedList 2026.1); Bern Sözleşmesi kriterl…"
+          },
+          {
+            "page": 93,
+            "match": "Kırmızı Liste",
+            "snippet": "…ararası koruma statüleri değerlendirilmiştir. Bu amaçla IUCN tarafından hazırlanan ve 2026 yılı içerisinde güncellenen Kırmızı Liste (IUCN-RedList 2026.1); Bern Sözleşmesi kriterleri ve koruma listelerinin en son güncellenmiş hallerinden yararlanılmış…"
+          }
+        ]
+      },
+      "pollutants_and_hazards": {
+        "label": "Emissions, Geochemistry & Waste",
+        "page_count": 62,
+        "pages": [
+          4,
+          8,
+          16,
+          38,
+          46,
+          47,
+          49,
+          50,
+          51,
+          52,
+          53,
+          54,
+          55,
+          56,
+          57,
+          59,
+          60,
+          61,
+          62,
+          63,
+          64,
+          65,
+          67,
+          69,
+          101
+        ],
+        "samples": [
+          {
+            "page": 4,
+            "match": "Gürültü",
+            "snippet": "…osferik Yutuş Değerleri .......................................... 43 Tablo 18. Faaliyet Alanında Kullanılacak Her Bir Gürültü Kaynağının Mesafeye Bağlı Ses Basınç Düzeyleri .......................................................................…"
+          },
+          {
+            "page": 4,
+            "match": "Elektromanyetik",
+            "snippet": "…lan Toplam Kütlesel Debi Değerleri ............. 51 Tablo 29. 0 Hz-300 GHz Frekans Bantlarındaki Elektrik, Manyetik ve Elektromanyetik Alanlar İçin Limit Değerler ..........................................................................................…"
+          },
+          {
+            "page": 8,
+            "match": "Elektromanyetik",
+            "snippet": "…emi AYY Atık Yönetimi Yönetmeliği Bkz. Bakınız ÇED Çevresel Etki Değerlendirmesi EİH Enerji İletim Hattı EMA Elektromanyetik Alan Ha Hektar HKDY Hava Kalitesi Değerlendirme ve Yönetimi Yönetmeliği Kg Kilogram kV Kilovolt km Kilometre…"
+          },
+          {
+            "page": 8,
+            "match": "PM10",
+            "snippet": "…Metrekare m3 Metreküp mm Milimetre µm Mikrometre MCM Mega Dairesel Mil (1000000 dairesel mil) Ort. Ortalama PM10 Partiküler madde RES Rüzgar Enerji Santrali SKHKKY Sanayi Kaynaklı Hava Kirliliğinin Kontrolü Yönetmeliği sn. Sa…"
+          },
+          {
+            "page": 16,
+            "match": "TEHLİKELİ ATIK",
+            "snippet": "…leri Direk Ayaklarının Yerleştirilmesi ÜST MONTAJ TEL ÇEKİMİ Kalıp Betonların Dökülmesi Mekanik Montajlama TOZ TEHLİKELİ ATIK VE ATIK YAĞLAR BELEDİYE ATIKLARI GÜRÜLTÜ TEHLİKELİ ATIK VE ATIK YAĞLAR BELEDİYE ATIKLARI GÜRÜLTÜ TEHLİKELİ ATIK V…"
+          },
+          {
+            "page": 16,
+            "match": "GÜRÜLTÜ",
+            "snippet": "…J TEL ÇEKİMİ Kalıp Betonların Dökülmesi Mekanik Montajlama TOZ TEHLİKELİ ATIK VE ATIK YAĞLAR BELEDİYE ATIKLARI GÜRÜLTÜ TEHLİKELİ ATIK VE ATIK YAĞLAR BELEDİYE ATIKLARI GÜRÜLTÜ TEHLİKELİ ATIK VE ATIK YAĞLAR BELEDİYE ATIKLARI KABUL Ke…"
+          },
+          {
+            "page": 38,
+            "match": "Tehlikeli Atık",
+            "snippet": "…1 11 Tekstil ürünleri 20 01 25 Yenilebilir sıvı ve katı yağlar 20 01 30 20 01 29 dışındaki deterjanlar A: Tehlikeli Atık M: Tehlikeli Atık Olma İhtimali Olan Atık * : Tehlikeli Atık Kodu Altı haneli atık kodunun yanında yıldız (*) işar…"
+          },
+          {
+            "page": 46,
+            "match": "tehlikeli atık",
+            "snippet": "…meyecektir. İzinli ruhsatlı bakım onarım istasyonlarında ya da en yakın sanayi sitesinde gerçekleştirilecektir. Sahada tehlikeli atık oluşması durumunda, oluşan tehlikeli atıklar (yağlı üstübüler, boş yağ tenekeleri ile araçlardan oluşabilecek yağlı fi…"
+          }
+        ]
+      },
+      "cost_and_capacity": {
+        "label": "Project Cost, Power & Capacity",
+        "page_count": 18,
+        "pages": [
+          2,
+          3,
+          9,
+          15,
+          20,
+          30,
+          31,
+          42,
+          43,
+          47,
+          49,
+          100,
+          108,
+          123,
+          133,
+          174,
+          216,
+          248
+        ],
+        "samples": [
+          {
+            "page": 2,
+            "match": "Proje Bedeli",
+            "snippet": "…154 kV (Alibey RES TM – Bergama Vento RES TM EİH) Brş.N. – 154 kV İvrindi RES TM (Karaburun RES) EİH (Girdi- Çıktı) Proje Bedeli: 185.836.579,48 TL Proje İçin Seçilen Yerin Açık Adresi (İli, İlçesi, Mevki): Balıkesir İli, Burhaniye İlçesi, Yayl…"
+          },
+          {
+            "page": 3,
+            "match": "Kapasite",
+            "snippet": "…in Alternatifleri (Proje Teknolojisinin ve Proje Alanının Seçilme Nedenleri). .......... 6 b) Projenin İş Akım Şeması, Kapasitesi, Kapladığı Alan, Yatırım Bedeli, Teknolojisi, Çalışacak Personel Sayısı. ...........................................…"
+          },
+          {
+            "page": 9,
+            "match": "Proje bedeli",
+            "snippet": "…lüğü ile İvrindi RES Elektrik Üretim A.Ş. arasında imzalanan Tesis Öncesi İşler Protokolü EK- 2.11’de verilmektedir. Proje bedeli hesaplamalarında TEİAŞ Genel Müdürlüğü’nün 3544665 sayılı yazı ekinde yer alan “2026 Yılı EİH ve Yeraltı Güç Kablosu K…"
+          },
+          {
+            "page": 15,
+            "match": "Kapasite",
+            "snippet": "…olarak belirlenmiştir. Proje alanına ilişkin koordinatlara EK-1’de yer verilmiştir. b) Projenin İş Akım Şeması, Kapasitesi, Kapladığı Alan, Yatırım Bedeli, Teknolojisi, Çalışacak Personel Sayısı. Projenin İş Akım Şeması ve Teknolojisi…"
+          },
+          {
+            "page": 20,
+            "match": "Kapasite",
+            "snippet": "…larda depolanarak ilgili mer-i mevzuat kapsamında lisanslı firmalara gönderilerek bertarafı sağlanacaktır. Projenin Kapasitesi Proje konusu enerji iletim hattı 154 kV gerilimde 1272 MCM iletkenli, Girdi: 15,81 km (15.812,76 m), Çıktı: 15,7…"
+          },
+          {
+            "page": 30,
+            "match": "Proje bedeli",
+            "snippet": "…etmelikler ile karayolları ile ilgili çıkarılan tüm kanun ve yönetmeliklere uyulacaktır. Projenin Yatırım Bedeli Proje bedeli hesaplamalarında TEİAŞ Genel Müdürlüğü’nün 3544665 sayılı yazı ekinde yer alan “2026 Yılı EİH ve Yeraltı Güç Kablosu K…"
+          },
+          {
+            "page": 31,
+            "match": "Proje Bedeli",
+            "snippet": "…S TM EİH) Brş.N. – 154 kV İvrindi RES TM (Karaburun RES) EİH (Girdi-Çıktı) Proje Tanıtım Dosyası 23 Tablo 4. Proje Bedeli Analizi Tablosu Yatırım Giderleri Açıklama Tahmini Bedel Arazi Edinimi (Satış/Kiralama/İrtifak Hakkı vb.) Proje i…"
+          },
+          {
+            "page": 31,
+            "match": "PROJE BEDELİ",
+            "snippet": "…ın KDV dâhil fiyatı) Diğer (varsa) Eğitim, yazılım, donanım, otomasyon, sertifikalandırma vb. idari giderler TOPLAM PROJE BEDELİ (KDV dâhil) 185.836.579,48 TL Proje konusu yatırımın bedeli 185.836.579,48 TL’dir. Söz konusu proje için yapılacak…"
+          }
+        ]
+      }
+    },
+    "audit_checks": {
+      "mentions_field_survey": true,
+      "mentions_literature_only_cue": false,
+      "mentions_seasonal_sampling": false,
+      "mentions_cumulative_impact": true,
+      "mentions_olive_law_3573": true,
+      "mentions_groundwater_or_aquifer": true,
+      "mentions_iucn_or_endemic": true
+    }
+  }
+}

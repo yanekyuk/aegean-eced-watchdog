@@ -1,0 +1,577 @@
+{
+  "filing": {
+    "row_index": 12,
+    "button_id": "form:duyurTable:12:j_idt67",
+    "province": "MANİSA",
+    "district": "SOMA",
+    "project_name": "400 kV UYGAR RES. TM.- BAYRAMİÇ HAVZA TM. ELEKTRİK ENERJİSİ İLETİM HATTI (122,17741 km)",
+    "project_owner": "TÜRKİYE ELEKTRİK İLETİM  ANONİM ŞİRKETİ GENEL MÜDÜRLÜĞÜ",
+    "sector": "Turizm",
+    "sub_sector": "Enerji İletim Hatları",
+    "decision_type": "HKT",
+    "announcement_date_tr": "04.11.2026",
+    "project_type": "Ek-1",
+    "detail_text": "MANİSA ili SOMA,  ilcesinde MANİSA ili SOMA ilçesi sınırları içerisinde TÜRKİYE ELEKTRİK İLETİM  ANONİM ŞİRKETİ GENEL MÜDÜRLÜĞÜ tarafından yapılması planlanan 400 kV UYGAR RES. TM.- BAYRAMİÇ HAVZA TM. ELEKTRİK ENERJİSİ İLETİM HATTI (122,17741 km) projesi ile ilgili Çevresel Etki Değerlendirme süreci başlamış ve Çevresel Etki Değerlendirmesi Başvuru Dosyası halkın görüşüne açılmıştır.Söz konusu projeye ilişkin, halkı proje hakkında bilgilendirmek, görüş ve önerilerini almak amacıyla ÇED Yönetmeliğinin 9. maddesi gereğince 02/12/2026 tarihinde Halkın Katılım Toplantısı düzenlenecektir.ÇED Başvuru Dosyasını İncelemek isteyenler Bakanlık Merkezinde veya MANİSA Çevre ve Şehircilik İl Müdürlüklerinde duyuru tarihinden itibaren raporu inceleyerek, zamanlama takvimi içerisinde proje hakkında Bakanlığa veya Valiliğe görüş bildirebilirler. Halkın Katılımı Toplantısı yeri ve saati ile ilgili ÇED İzin Denetim Genel Müdürlüğü ve MANİSA Çevre, Şehircilik ve İklim Değişikliği İl Müdürlüğünden bilgi alınabilir. İlgililere ve kamuoyuna duyurulur.",
+    "detail_links": [
+      {
+        "text": "Başvuru Dosyası",
+        "href": "http://eced.csb.gov.tr/jsp/ek1/61112"
+      }
+    ],
+    "documents": [
+      {
+        "portal_doc_url": "http://eced.csb.gov.tr/jsp/ek1/61112",
+        "filing_id": "61112",
+        "consulting_firm": "EN-ÇEV ENERJİ ÇEVRE YATIRIMLARI DANIŞMANLIĞI HARİTACILIK İMAR İNŞAAT A.Ş",
+        "submitted_at": "16/10/2026 10:51:45",
+        "pdf_urls": [
+          {
+            "label": "Dosya Göster",
+            "url": "http://eced.csb.gov.tr/jsp/dosya/dosyaGoster.htm?tempAd=sign1016664841067059309.pdf&orjinalAd=e-imza.pdf&yuklemeTarihi=2026-10-16"
+          }
+        ]
+      }
+    ],
+    "announcement_date": "2026-11-04",
+    "statutory_clocks": [
+      {
+        "code": "hkt",
+        "kind": "HKT public participation notice (verify date in full text)",
+        "deadline": null,
+        "days_remaining": null
+      }
+    ],
+    "priority_district": true,
+    "filing_key": "61112:04.11.2026:HKT",
+    "first_seen_at": null
+  },
+  "pdf_info": {
+    "bytes": 145348025,
+    "sha256": "841128c9252197bc395db1222b5886ffb1f09e49b5bd65a5be5499aad33a7342",
+    "cached": false,
+    "filename": "61112.pdf"
+  },
+  "analysis": {
+    "page_count": 656,
+    "total_chars": 1159901,
+    "text_pages": 608,
+    "scanned_or_blank_pages": 48,
+    "scanned_page_sample": [
+      323,
+      335,
+      337,
+      338,
+      339,
+      340,
+      341,
+      342,
+      343,
+      344,
+      345,
+      346,
+      347,
+      348,
+      349
+    ],
+    "headings": [
+      [
+        3,
+        "BÖLÜM III: PROJENİN İNŞAAT VE İŞLETME AŞAMASINDA ÇEVRESEL ETKİLERİ VE ALINACAK"
+      ],
+      [
+        13,
+        "PROJENİN TEKNİK OLMAYAN ÖZETİ:"
+      ],
+      [
+        18,
+        "BÖLÜM I: PROJENİN TANIMI VE ÖZELİKLERİ"
+      ],
+      [
+        62,
+        "BÖLÜM II: PROJE YERİ VE ETKİ ALANININ MEVCUT ÇEVRESEL"
+      ],
+      [
+        262,
+        "BÖLÜM III: PROJENİN İNŞAAT VE İŞLETME AŞAMASINDA ÇEVRESEL"
+      ],
+      [
+        299,
+        "BÖLÜM IV: KÜMÜLATİF ÇEVRESEL ETKİ DEĞERLENDİRME"
+      ],
+      [
+        303,
+        "BÖLÜM V: ÇEVRESEL VE SOSYAL EYLEM PLANI"
+      ],
+      [
+        314,
+        "BÖLÜM VI HALKIN BİLGİLENDİRİLMESİ VE SÜRECE KATILIMI İLE PAYDAŞ"
+      ],
+      [
+        318,
+        "BÖLÜM VII NOTLAR, KAYNAKLAR VE EKLER"
+      ],
+      [
+        321,
+        "BÖLÜM I-II-III-IV-V-VI-"
+      ],
+      [
+        321,
+        "BÖLÜM I-II-III"
+      ],
+      [
+        321,
+        "BÖLÜM IV"
+      ],
+      [
+        321,
+        "BÖLÜM I-II"
+      ],
+      [
+        592,
+        "ÇEVRESEL VE SOSYAL YÖNETİM PLANI"
+      ],
+      [
+        593,
+        "ÇEVRESEL VE SOSYAL"
+      ]
+    ],
+    "signals": {
+      "coordinates_and_footprint": {
+        "label": "Coordinates, Parcel & Footprint",
+        "page_count": 448,
+        "pages": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25
+        ],
+        "samples": [
+          {
+            "page": 1,
+            "match": "122,17741 km",
+            "snippet": "…LETİM ANONİM ŞİRKETİ GENEL MÜDÜRLÜĞÜ 400 kV UYGAR RES. TM.-BAYRAMİÇ HAVZA TM. ELEKTRİK ENERJİSİ İLETİM HATTI (122,17741 km) ÇANAKKALE İLİ; BAYRAMİÇ, ÇAN, YENİCE BALIKESİR İLİ; BALYA, HAVRAN, İVRİNDİ, İZMİR İLİ; BERGAMA İLE MANİSA İLİ,…"
+          },
+          {
+            "page": 2,
+            "match": "122,17741 km",
+            "snippet": "…RİK İLETİM ANONİM ŞİRKETİ GENEL MÜDÜRLÜĞÜ 400 kV UYGAR RES. TM.- BAYRAMİÇ HAVZA TM. ELEKTRİK ENERJİSİ İLETİM HATTI (122,17741 km) ÇED BAŞVURU DOSYASI A PROJE SAHİBİNİN ADI: TÜRKİYE ELEKTRİK İLETİM ANONİM ŞİRKETİ GENEL MÜDÜRLÜĞÜ ADRESİ: Na…"
+          },
+          {
+            "page": 3,
+            "match": "122,17741 km",
+            "snippet": "…RİK İLETİM ANONİM ŞİRKETİ GENEL MÜDÜRLÜĞÜ 400 kV UYGAR RES. TM.- BAYRAMİÇ HAVZA TM. ELEKTRİK ENERJİSİ İLETİM HATTI (122,17741 km) ÇED BAŞVURU DOSYASI II İÇİNDEKİLER LİSTESİ: İÇİNDEKİLER LİSTESİ: ..........................................…"
+          },
+          {
+            "page": 4,
+            "match": "122,17741 km",
+            "snippet": "…RİK İLETİM ANONİM ŞİRKETİ GENEL MÜDÜRLÜĞÜ 400 kV UYGAR RES. TM.- BAYRAMİÇ HAVZA TM. ELEKTRİK ENERJİSİ İLETİM HATTI (122,17741 km) ÇED BAŞVURU DOSYASI III TABLOLAR LİSTESİ Tablo- 1 400 kV Uygar RES. TM.- Bayramiç Havza TM. Elektrik Enerjisi…"
+          },
+          {
+            "page": 5,
+            "match": "122,17741 km",
+            "snippet": "…RİK İLETİM ANONİM ŞİRKETİ GENEL MÜDÜRLÜĞÜ 400 kV UYGAR RES. TM.- BAYRAMİÇ HAVZA TM. ELEKTRİK ENERJİSİ İLETİM HATTI (122,17741 km) ÇED BAŞVURU DOSYASI IV Tablo- 38 Çanakkale İlinin Mevcut Göl, Gölet ve Rezervuarlar (DSİ, 2025) ..............…"
+          },
+          {
+            "page": 6,
+            "match": "122,17741 km",
+            "snippet": "…RİK İLETİM ANONİM ŞİRKETİ GENEL MÜDÜRLÜĞÜ 400 kV UYGAR RES. TM.- BAYRAMİÇ HAVZA TM. ELEKTRİK ENERJİSİ İLETİM HATTI (122,17741 km) ÇED BAŞVURU DOSYASI V Tablo- 70 İzmir İli, Hava Kalitesi İzleme İstasyonları 2024 yılı Maksimum Değer ve Sınır…"
+          },
+          {
+            "page": 7,
+            "match": "122,17741 km",
+            "snippet": "…RİK İLETİM ANONİM ŞİRKETİ GENEL MÜDÜRLÜĞÜ 400 kV UYGAR RES. TM.- BAYRAMİÇ HAVZA TM. ELEKTRİK ENERJİSİ İLETİM HATTI (122,17741 km) ÇED BAŞVURU DOSYASI VI Tablo- 100 1960-2022 Yılları Arası Çanakkale Meteoroloji İstasyonu Sıcaklık Değerleri…"
+          },
+          {
+            "page": 8,
+            "match": "122,17741 km",
+            "snippet": "…RİK İLETİM ANONİM ŞİRKETİ GENEL MÜDÜRLÜĞÜ 400 kV UYGAR RES. TM.- BAYRAMİÇ HAVZA TM. ELEKTRİK ENERJİSİ İLETİM HATTI (122,17741 km) ÇED BAŞVURU DOSYASI VII Tablo- 137 Çanakkale İli Taşınmaz Kültür Varlıkları ..................................…"
+          }
+        ]
+      },
+      "water_and_discharge": {
+        "label": "Water Use, Hydrogeology & Discharge",
+        "page_count": 37,
+        "pages": [
+          5,
+          9,
+          34,
+          40,
+          86,
+          106,
+          108,
+          125,
+          127,
+          129,
+          130,
+          131,
+          132,
+          133,
+          138,
+          139,
+          140,
+          141,
+          142,
+          143,
+          144,
+          233,
+          260,
+          261,
+          263
+        ],
+        "samples": [
+          {
+            "page": 5,
+            "match": "atıksu",
+            "snippet": "…e-ÇBS, 2025) ..................................... 115 Tablo- 52 2024 yılı OSB, Serbest Bölgeler ve Sanayi Sitelerinde atıksu arıtma tesislerinin (AAT) durumu (e- ÇBS,2025) ........................................................................…"
+          },
+          {
+            "page": 9,
+            "match": "atıksu",
+            "snippet": "…......................................................................................... 113 Şekil- 48 Yıllar bazında atıksu arıtma tesisi ile hizmet verilen belediye nüfusunun toplam belediye nüfusuna oranı (tuik.gov.tr, 2025) ...............…"
+          },
+          {
+            "page": 34,
+            "match": "deşarj",
+            "snippet": "…depo, idari ve/veya sosyal bina, köprü, alt ve üst yapılar (arıtma, kanalizasyon, içme/kullanma su hatları, su alma/deşarj hatları vb dahil) viyadük vb. sanat yapıları Makine ve Teçhizat Giderleri Temel üretim sürecindeki makinaların KDV…"
+          },
+          {
+            "page": 40,
+            "match": "sulak alan",
+            "snippet": "…ulaşım durumu, Ek- 5 Duyarlı Yörelere olan mesafesi (tarım, orman, çevre düzeni planı, koruma alanı, tabiat, kültür, sulak alan vb), devletin hüküm ve tasarrufu altında kalan arazilerden olup olmadığı; askeri sahalara yakın olup olmadığı , karay…"
+          },
+          {
+            "page": 86,
+            "match": "yeraltısuyu",
+            "snippet": "…km) ÇED BAŞVURU DOSYASI 69 Manisa İlinin Jeolojisi 7 Gediz Havzası içerdiği yapısal unsurlar nedeniyle gerek yeraltısuyu gerekse jeotermal su potansiyeli açısından oldukça önemli bir havzadır. Bölgedeki kayaçların içerdiği tabakalanma, şi…"
+          },
+          {
+            "page": 86,
+            "match": "yeraltı suyu",
+            "snippet": "…oldukça önemli bir havzadır. Bölgedeki kayaçların içerdiği tabakalanma, şistozite ve foliasyon düzlemlerine ek olarak yeraltı suyu dolaşımını büyük ölçüde kontrol eden graben fay sistemleri en önemli yapısal unsurlar olarak karşımıza çıkmaktadır. Ö…"
+          },
+          {
+            "page": 86,
+            "match": "akifer",
+            "snippet": "…fay sistemleri en önemli yapısal unsurlar olarak karşımıza çıkmaktadır. Özellikle graben faylarına yakın kesimlerinde akifer malzemesinin iri taneli olması, tali fayların ovaya birleştirdiği noktalarda meydana getirdiği alüvyonel yelpazeler ö…"
+          },
+          {
+            "page": 106,
+            "match": "Yeraltı Suyu",
+            "snippet": "…ERJİSİ İLETİM HATTI (122,17741 km) ÇED BAŞVURU DOSYASI 89 İzmir İlinin Yeraltı Suları 21 Tablo- 39 İzmir İli Yeraltı Suyu Potansiyeli (DSİ,2025) Havza İli Ova ve/veya İlçe Adı YAS İşletme Rezervi (hm3/yıl) Küçük Menderes İzmir Merke…"
+          }
+        ]
+      },
+      "protected_land_and_olive": {
+        "label": "Protected Zones, Forests & Olive Groves",
+        "page_count": 29,
+        "pages": [
+          40,
+          121,
+          224,
+          227,
+          230,
+          231,
+          232,
+          233,
+          234,
+          235,
+          237,
+          239,
+          240,
+          245,
+          246,
+          254,
+          258,
+          260,
+          307,
+          319,
+          393,
+          402,
+          403,
+          465,
+          515
+        ],
+        "samples": [
+          {
+            "page": 40,
+            "match": "sulak alan",
+            "snippet": "…ulaşım durumu, Ek- 5 Duyarlı Yörelere olan mesafesi (tarım, orman, çevre düzeni planı, koruma alanı, tabiat, kültür, sulak alan vb), devletin hüküm ve tasarrufu altında kalan arazilerden olup olmadığı; askeri sahalara yakın olup olmadığı , karay…"
+          },
+          {
+            "page": 121,
+            "match": "Zeytinlik",
+            "snippet": "…Vezirağa, 19 Mayıs, İmariye, Kosova, Altay Mah.; Yeşildere, Kadriye, Altay, Yeşiltepe, Ferahlı, Gürçeşme, İstikbal, Zeytinlik Mah. Heyelan 04.05.1998 / 98/11100 BKK 31.03.1978 / 7/15319 BKK (R.G. 17.05.1978/16290) Konak Kadifekale Heye…"
+          },
+          {
+            "page": 224,
+            "match": "3573 sayılı",
+            "snippet": "…yatı üzerinden hak sahiplerine ödenecektir. Proje kapsamında; 5403 sayılı “Toprak Koruma ve Arazi Kullanımı Kanunu” 3573 sayılı (4086 Sayılı Kanun’la değişiklik) “Zeytincilik Islahı ve Yabanilerinin Aşılattırılması Hakkındaki Kanun”, 3083 Sayılı…"
+          },
+          {
+            "page": 227,
+            "match": "Arkeolojik Sit",
+            "snippet": "…n sit alanları aşağıda yer almaktadır (Tablo- 118). Tablo- 138 Çanakkale İli Sit Alanları49 SİT ALANLARI SAYISI Arkeolojik Sit Alanı 543 Kentsel Sit Alanı 16 Tarihi Sit Alanı 12 KARMA SİT ALANLARI SAYISI Arkeolojik ve Kentsel Sit Alanı 3…"
+          },
+          {
+            "page": 227,
+            "match": "Sit Alanı",
+            "snippet": "…dır (Tablo- 118). Tablo- 138 Çanakkale İli Sit Alanları49 SİT ALANLARI SAYISI Arkeolojik Sit Alanı 543 Kentsel Sit Alanı 16 Tarihi Sit Alanı 12 KARMA SİT ALANLARI SAYISI Arkeolojik ve Kentsel Sit Alanı 3 Arkeolojik-Tarihi-Kentsel Si…"
+          },
+          {
+            "page": 230,
+            "match": "Arkeolojik Sit",
+            "snippet": "…n sit alanları aşağıda yer almaktadır (Tablo- 140). Tablo- 140 Balıkesir İli Sit Alanları52 SİT ALANLARI SAYISI Arkeolojik Sit Alanı 360 Kentsel Sit Alanı 15 Kentsel Arkeolojik Sit Alanı 1 KARMA SİT ALANLARI SAYISI Tarihi ve Kentsel Sit A…"
+          },
+          {
+            "page": 230,
+            "match": "Sit Alanı",
+            "snippet": "…dır (Tablo- 140). Tablo- 140 Balıkesir İli Sit Alanları52 SİT ALANLARI SAYISI Arkeolojik Sit Alanı 360 Kentsel Sit Alanı 15 Kentsel Arkeolojik Sit Alanı 1 KARMA SİT ALANLARI SAYISI Tarihi ve Kentsel Sit Alanı 1 TOPLAM 377 Proje…"
+          },
+          {
+            "page": 231,
+            "match": "Arkeolojik Sit",
+            "snippet": "…unan sit alanları aşağıda yer almaktadır (Tablo- 142). Tablo- 142 Manisa İli Sit Alanları55 SİT ALANLARI SAYISI Arkeolojik Sit Alanı 675 Kentsel Sit Alanı 9 Tarihi Sit Alanı 4 KARMA SİT ALANLARI SAYISI Arkeolojik ve Kentsel Sit Alanı 2…"
+          }
+        ]
+      },
+      "ecology_and_baseline": {
+        "label": "Flora, Fauna & Baseline Methodology",
+        "page_count": 46,
+        "pages": [
+          259,
+          261,
+          291,
+          307,
+          308,
+          473,
+          475,
+          476,
+          478,
+          479,
+          480,
+          481,
+          482,
+          483,
+          484,
+          485,
+          486,
+          487,
+          488,
+          489,
+          490,
+          491,
+          492,
+          493,
+          494
+        ],
+        "samples": [
+          {
+            "page": 259,
+            "match": "BERN Sözleşmesi",
+            "snippet": "…özleşmeler uyarınca korunması gerekli alanlar a) \"Avrupa’nın Yaban Hayatı ve Yaşama Ortamlarını Koruma Sözleşmesi\" (BERN Sözleşmesi) uyarınca koruma altına alınmış alanlardan \"Önemli Deniz Kaplumbağası Üreme Alanları\"nda belirtilen I. ve II. Koruma B…"
+          },
+          {
+            "page": 261,
+            "match": "endemik",
+            "snippet": "…. d) Bilimsel araştırmalar için önem arz eden ve/veya nesli tehlikeye düşmüş veya düşebilir türler ve ülkemiz için endemik olan türlerin yaşama ortamı olan alanlar, biyosfer rezervi, biyotoplar, biyogenetik rezerv alanları, benzersiz özellik…"
+          },
+          {
+            "page": 291,
+            "match": "mevsimsel",
+            "snippet": "…eminde evsel nitelikli atık su oluşumu söz konusu değildir. Proje kapsamında; proje alanı yakın çevresinde bulunan mevsimsel akışa sahip veya akar durumdaki bütün yerüstü su kaynaklarında, su kalitesinin korunması ve su kalitesinin kötüleşmes…"
+          },
+          {
+            "page": 307,
+            "match": "Biyoçeşitlilik",
+            "snippet": "…nedeni ile proses atıksuları oluşumu söz konusu değildir. - - - Arazi Kullanım, Orman- Biyoçeşitlilik İnşaat-İşletme (Proje Alanı ve Etki Alanı) Yürürlükteki Balıkesir-Çanakkale Planlama Bölgesi ve İzmir-Manisa…"
+          },
+          {
+            "page": 308,
+            "match": "Kuş Göç",
+            "snippet": "…e Sahibi, Yerel/Ulusal Otorite, Danışman Firma vb), İzleme Metodu ve Sıklığı Hedef ve Değerlendirme Kriteri Kuş Göç Yolları İnşaat-İşletme Proje Sahası ve Etki Alanı Proje alanının göç dönemi boyunca izlenmesi ve olası etkileri…"
+          },
+          {
+            "page": 473,
+            "match": "kuş göç",
+            "snippet": "…i Gazete'de yayımlanan Sulak Alanların Korunması Yönetmeliği kapsamında yer almadığı, ancak, sahanın bir kısmının kuş göç yolları üzerinde ve Kurumumuzca yapılan çalışmalar çerçevesinde Karasal Hassas Alan olarak Bakanlığımıza teklif edilen…"
+          },
+          {
+            "page": 473,
+            "match": "endemik",
+            "snippet": "…rilmesi, - Faaliyet alanında yapılacak tüm çalışma dönemlerinde nesli tehlike altında, dar yayılışlı veya ülkemiz için endemik olan bir flora veya fauna türüne rastlanması durumunda Bakanlığımız 2. Bölge Müdürlüğü ile irtibata geçilerek yetkilile…"
+          },
+          {
+            "page": 475,
+            "match": "arazi çalışması",
+            "snippet": "…ağıdaki hususlarla ilgili çalışmaların yapılması gerekmektedir: 1. Proje alanını ve etki alanı üzerinde kapsamlı bir arazi çalışması yapılarak fauna ve flora türlerinin belirlenmesi, araştırılan türlerin tehlike kategorileri, endemiklik durumları, nis…"
+          }
+        ]
+      },
+      "pollutants_and_hazards": {
+        "label": "Emissions, Geochemistry & Waste",
+        "page_count": 59,
+        "pages": [
+          3,
+          6,
+          8,
+          9,
+          14,
+          15,
+          17,
+          27,
+          123,
+          124,
+          145,
+          146,
+          152,
+          158,
+          159,
+          160,
+          161,
+          162,
+          262,
+          268,
+          269,
+          270,
+          271,
+          273,
+          274
+        ],
+        "samples": [
+          {
+            "page": 3,
+            "match": "kümülatif",
+            "snippet": "…...... 245 a) Çevreyi etkileyebilecek olası sorunların belirlenmesi, kirleticilerin miktarı, alıcı ortamla etkileşimi, kümülatif etkilerin belirlenmesi. ..............................................................................................…"
+          },
+          {
+            "page": 6,
+            "match": "PM10",
+            "snippet": "…........................ 134 Tablo- 71 Büyükşehir Belediyesi Hava Kalitesi İzleme İstasyonu 2020-2024 yılları arasında PM10 8 Saatlik Maksimum Değer ve Sınır Aşım Sayıları (μg/m3) ..............................................................…"
+          },
+          {
+            "page": 8,
+            "match": "Elektromanyetik",
+            "snippet": "…................................... 261 Tablo- 169 Yüksek Gerilimli Elektrik İletim Tesislerinden Kaynaklı Elektrik ve Elektromanyetik Alanlar (Havai Hattın Tam Altında, Yer Altı Hattının Tam Üstünde, TM’ nin Çitinde Yaklaşık Ölçüm Aralığı) ......... 26…"
+          },
+          {
+            "page": 9,
+            "match": "PM10",
+            "snippet": "…........................................................................... 123 Şekil- 50 Balıkesir’de Partikül Madde (PM10) Kirliliğinin Yıllara Göre Değişimi (https://sim.csb.gov.tr, 2024) ...................................................…"
+          },
+          {
+            "page": 14,
+            "match": "gürültü",
+            "snippet": "…konusu değildir. Proje kapsamında inşaat döneminde iş makinelerinin ve makine-ekipmanların çalışmasından kaynaklı gürültü oluşumu söz konusu olacaktır."
+          },
+          {
+            "page": 15,
+            "match": "gürültü",
+            "snippet": "…ahında direklerin ve tellerin arasından esen rüzgârın gürültüsü, ağaç yapraklarından kaynaklı sesler gibi doğal rüzgâr gürültü etkenlerinin arasında kaybolabilmektedir. Proje kapsamında işletme döneminde elektrik ve elektromanyetik alan oluşu…"
+          },
+          {
+            "page": 15,
+            "match": "elektromanyetik",
+            "snippet": "…gibi doğal rüzgâr gürültü etkenlerinin arasında kaybolabilmektedir. Proje kapsamında işletme döneminde elektrik ve elektromanyetik alan oluşumu söz konusudur. Bir iletken üzerinden geçen akım şiddeti ve gerilim seviyesine bağlı olarak, bu iletkenin…"
+          },
+          {
+            "page": 17,
+            "match": "gürültü",
+            "snippet": "…122,17741 km) ÇED BAŞVURU DOSYASI - 5 - Proje yeri ve etki alanının mevcut kirlilik yükü (toprak, hava, su ve gürültü vb. kirlilik açısından değerlendirmesi), proje sahası çevresinde mevcut ve planlanan tesislerde esas alınarak kümülat…"
+          }
+        ]
+      },
+      "cost_and_capacity": {
+        "label": "Project Cost, Power & Capacity",
+        "page_count": 14,
+        "pages": [
+          2,
+          33,
+          34,
+          36,
+          37,
+          39,
+          42,
+          133,
+          144,
+          264,
+          512,
+          582,
+          616,
+          640
+        ],
+        "samples": [
+          {
+            "page": 2,
+            "match": "PROJE BEDELİ",
+            "snippet": "…eias.gov.tr PROJENİN ADI: 400 kV UYGAR RES. TM.- BAYRAMİÇ HAVZA TM. ELEKTRİK ENERJİSİ İLETİM HATTI (122,17741 KM) PROJE BEDELİ: 1.698.401.872,50 ₺ PROJE İÇİN SEÇİLEN YERİN AÇIK ADRESİ (İLİ, İLÇESİ, MEVKİ): İLİ, İLÇESİ ÇANAKKALE İLİ; BAYRAMİÇ…"
+          },
+          {
+            "page": 33,
+            "match": "Proje bedeli",
+            "snippet": "…. ELEKTRİK ENERJİSİ İLETİM HATTI (122,17741 km) ÇED BAŞVURU DOSYASI 16 (Ek İbare:RG-5/3/2026-33187) Bedeli, Proje bedeli hesaplamalarında; TEİAŞ Genel Müdürlüğü’nün 14.01.2026 tarih ve E- 9806693-755.03.06-3544665 sayılı yazı ekinde yer al…"
+          },
+          {
+            "page": 34,
+            "match": "proje bedeli",
+            "snippet": "…M karakteristikli yaklaşık 122,17741 km lik hat için km birim fiyatı 13.901.112,10 ₺ olarak belirlenmiştir. Buna göre proje bedeli 1.698.401.872,50 ₺ şeklindedir. Toplam proje bedeli hesaplamaları Tablo-3’ de verilmiştir. Tablo- 3 Proje Bedeli Ka…"
+          },
+          {
+            "page": 34,
+            "match": "PROJE BEDELİ",
+            "snippet": "…camaların tamamı Diğer(varsa) Eğitim, yazılım, donanım, otomasyon, sertifikalandırma vb. idari giderler TOPLAM PROJE BEDELİ 1.698.401.872,497661 ₺"
+          },
+          {
+            "page": 36,
+            "match": "kapasite",
+            "snippet": "…. Maddesi uyarınca TEİAŞ her sene iletim sistemi için takip eden beş ve on yıllık bağlanabilir bölgesel üretim tesisi kapasitelerini açıklamaktadır. İletim şebekesinin arz talep dengeleri, şebeke altyapısı ve şebeke gelişimi dikkate alınarak bö…"
+          },
+          {
+            "page": 37,
+            "match": "Kapasite",
+            "snippet": "…iye Elektrik İletim A.Ş. (TEİAŞ) 2022-2031 yılları arasına yönelik, 5 ve 10 Yıllık Bağlanabilir Bölgesel Üretim Tesisi Kapasiteleri Raporu’nu yayınladı. Türkiye Elektrik İletim A.Ş. (TEİAŞ) 2022-2031 yılları arasına yönelik, 5 ve 10 Yıllık Bağlan…"
+          },
+          {
+            "page": 37,
+            "match": "19.329 MW",
+            "snippet": "…5 ve 10 Yıllık Bağlanabilir Bölgesel Üretim Tesisi Kapasiteleri Raporu’na göre 15 ayrı bölgede 2022-2026 dönemi için 19.329 MW, 2027-2031 dönemi için ise 4.014 MW bağlanabilir kapasite belirlenmiş durumdadır. Türkiye Elektrik İletim A.Ş. (TEİAŞ)…"
+          },
+          {
+            "page": 37,
+            "match": "4.014 MW",
+            "snippet": "…l Üretim Tesisi Kapasiteleri Raporu’na göre 15 ayrı bölgede 2022-2026 dönemi için 19.329 MW, 2027-2031 dönemi için ise 4.014 MW bağlanabilir kapasite belirlenmiş durumdadır. Türkiye Elektrik İletim A.Ş. (TEİAŞ) 2022-2031 yılları arasına yönelik,…"
+          }
+        ]
+      }
+    },
+    "audit_checks": {
+      "mentions_field_survey": true,
+      "mentions_literature_only_cue": false,
+      "mentions_seasonal_sampling": true,
+      "mentions_cumulative_impact": true,
+      "mentions_olive_law_3573": true,
+      "mentions_groundwater_or_aquifer": true,
+      "mentions_iucn_or_endemic": true
+    }
+  }
+}

@@ -1,0 +1,22 @@
+[project]
+name = "aegean-eced-watchdog"
+version = "0.1.0"
+description = "Open-source e-ÇED watcher, statutory deadline tracker, and page-cited ecological PDF pre-digest for İzmir & the Aegean"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "beautifulsoup4>=4.15.0",
+    "httpx>=0.28.1",
+    "lxml>=6.1.3",
+    "pymupdf>=2.1",
+]
+
+[project.scripts]
+eced-watch = "eced_watchdog.cli:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/eced_watchdog"]

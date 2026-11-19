@@ -1,0 +1,189 @@
+"""Unified CLI (`eced-watch`) for incremental polling, PDF digesting, and static site/RSS builds."""
+
+from __future__ import annotations
+
+import argparse
+import json
+from datetime import datetime
+from pathlib import Path
+from typing import Any
+
+from .digest import ensure_digest_for_filing
+from .fetcher import (
+    DEFAULT_PROVINCES,
+    _quick_row_signature,
+    fetch_province,
+    merge_filings,
+)
+from .site import build_site
+
+
+def parse_provinces(raw: list[str] | None) -> list[tuple[str, str]]:
+    if not raw:
+        return DEFAULT_PROVINCES
+    out: list[tuple[str, str]] = []
+    for item in raw:
+        code, label = item.split(":", 1)
+        out.append((code.strip(), label.strip()))
+    return out
+
+
+def select_digest_candidates(
+    filings: list[dict[str, Any]],
+    digests_dir: Path,
+    max_new: int,
+) -> list[dict[str, Any]]:
+    """Prioritize un-digested priority-corridor + Ek-1 + active-clock filings."""
+    existing_ids = {
+        p.name.replace("_analysis.json", "")
+        for p in digests_dir.glob("*_analysis.json")
+    } if digests_dir.exists() else set()
+
+    # Always refresh markdown countdowns for already-digested filings first (instant, cached)
+    already: list[dict[str, Any]] = []
+    fresh: list[tuple[tuple[int, int, int, str], dict[str, Any]]] = []
+    seen_ids: set[str] = set()
+
+    for f in filings:
+        docs = f.get("documents") or []
+        if not docs or not docs[0].get("pdf_urls"):
+            continue
+        fid = docs[0].get("filing_id")
+        if not fid or fid in seen_ids:
+            continue
+        seen_ids.add(fid)
+
+        if fid in existing_ids:
+            already.append(f)
+            continue
+
+        is_prio = 1 if f.get("priority_district") else 0
+        is_ek1 = 1 if f.get("project_type") == "Ek-1" else 0
+        is_active = 1 if any(
+            c.get("days_remaining") is None or c.get("days_remaining", -1) >= 0
+            for c in f.get("statutory_clocks") or []
+        ) else 0
+        ann = f.get("announcement_date") or "0000-00-00"
+        fresh.append(((is_active, is_prio, is_ek1, ann), f))
+
+    fresh.sort(key=lambda x: x[0], reverse=True)
+    return already + [f for _, f in fresh[:max_new]]
+
+
+def main() -> None:
+    parser = argparse.ArgumentParser(
+        prog="eced-watch",
+        description="Aegean e-ÇED Ecological Watchdog — incremental poll, digest & static site builder",
+    )
+    parser.add_argument("--root", type=Path, default=Path.cwd(), help="Project root directory")
+    parser.add_argument("--days", type=int, default=30, help="Lookback window in days")
+    parser.add_argument(
+        "--provinces",
+        nargs="+",
+        help="Provinces as CODE:LABEL (default: 35:İZMİR 45:MANİSA)",
+    )
+    parser.add_argument(
+        "--max-digests",
+        type=int,
+        default=4,
+        help="Max new PDFs to download and digest per run",
+    )
+    parser.add_argument("--skip-fetch", action="store_true", help="Rebuild site/digests from existing data/filings.json")
+    parser.add_argument("--skip-digests", action="store_true", help="Skip downloading/digesting new PDFs")
+    parser.add_argument("--drop-pdfs", action="store_true", help="Delete downloaded PDFs after digesting (for CI)")
+    parser.add_argument(
+        "--site-url",
+        default="https://eced-duyuru.csb.gov.tr/eced-prod/duyurular.xhtml",
+        help="Public GitHub Pages base URL for RSS feed links",
+    )
+    args = parser.parse_args()
+
+    root = args.root.resolve()
+    cert_path = root / "certs" / "ssl2buy-emea-ov.pem"
+    data_dir = root / "data"
+    filings_path = data_dir / "filings.json"
+    digests_dir = data_dir / "digests"
+    pdfs_dir = data_dir / "pdfs"
+    docs_dir = root / "docs"
+
+    existing: list[dict[str, Any]] = []
+    if filings_path.exists():
+        loaded = json.loads(filings_path.read_text(encoding="utf-8"))
+        existing = loaded.get("filings", [])
+    elif (data_dir / "izmir_last_30d.json").exists():
+        # Bootstrap cleanly from Spike 1 dump if filings.json does not exist yet
+        loaded = json.loads((data_dir / "izmir_last_30d.json").read_text(encoding="utf-8"))
+        existing = loaded.get("filings", [])
+
+    new_count = 0
+    if not args.skip_fetch:
+        existing_by_sig = {_quick_row_signature(f): f for f in existing}
+        provinces = parse_provinces(args.provinces)
+        incoming: list[dict[str, Any]] = []
+        for code, label in provinces:
+            rows = fetch_province(
+                code,
+                label,
+                days=args.days,
+                cert_path=cert_path,
+                existing_by_sig=existing_by_sig,
+            )
+            incoming.extend(rows)
+        filings, new_count = merge_filings(existing, incoming)
+        data_dir.mkdir(parents=True, exist_ok=True)
+        filings_path.write_text(
+            json.dumps(
+                {
+                    "updated_at": datetime.now().isoformat(timespec="seconds"),
+                    "provinces": [f"{c}:{l}" for c, l in provinces],
+                    "count": len(filings),
+                    "filings": filings,
+                },
+                ensure_ascii=False,
+                indent=2,
+            ),
+            encoding="utf-8",
+        )
+        print(f"Merged registry: {len(filings)} total filings ({new_count} new) -> {filings_path}")
+    else:
+        filings, _ = merge_filings(existing, [])
+        print(f"Loaded {len(filings)} existing filings (fetch skipped)")
+
+    if not args.skip_digests:
+        candidates = select_digest_candidates(filings, digests_dir, args.max_digests)
+        digested_new = 0
+        for f in candidates:
+            fid = f["documents"][0]["filing_id"]
+            try:
+                res = ensure_digest_for_filing(
+                    f,
+                    digests_dir=digests_dir,
+                    pdfs_dir=pdfs_dir,
+                    cert_path=cert_path,
+                    keep_pdf=not args.drop_pdfs,
+                )
+                if res and not res["cached"]:
+                    digested_new += 1
+                    print(
+                        f"  Digested NEW #{fid} ({f['district']}): "
+                        f"{res['analysis']['page_count']}p "
+                        f"({res['pdf_info']['bytes'] / 1024 / 1024:.1f} MB)"
+                    )
+            except Exception as exc:
+                print(f"  WARN: failed to digest #{fid}: {exc}")
+        print(f"Digests ready ({digested_new} newly generated)")
+
+    stats = build_site(
+        filings,
+        digests_dir=digests_dir,
+        docs_dir=docs_dir,
+        site_url=args.site_url,
+    )
+    print(
+        f"Built site: {stats['total']} filings ({stats['priority']} priority, "
+        f"{stats['active']} active, {stats['digests_rendered']} digests) -> {stats['index_path']}"
+    )
+
+
+if __name__ == "__main__":
+    main()

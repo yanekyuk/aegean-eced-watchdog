@@ -1,0 +1,2205 @@
+{
+  "updated_at": "2026-11-20T00:44:28",
+  "provinces": [
+    "35:İZMİR",
+    "45:MANİSA"
+  ],
+  "count": 49,
+  "filings": [
+    {
+      "row_index": 0,
+      "button_id": "form:duyurTable:0:j_idt67",
+      "province": "İZMİR",
+      "district": "BERGAMA",
+      "project_name": "154 kV (Alibey RES TM - Bergama Vento RES TM EİH) Brş.N. - 154 kV İvrindi RES TM (Karaburun RES) EİH (Girdi-Çıktı)",
+      "project_owner": "TÜRKİYE ELEKTRİK İLETİM ANONİM ŞİRKETİ",
+      "sector": "Turizm",
+      "sub_sector": "Enerji İletim Hatları",
+      "decision_type": "ÇED Süreci Başlayan",
+      "announcement_date_tr": "19.11.2026",
+      "project_type": "Ek-2",
+      "detail_text": "İZMİR ili BERGAMA,  ilcesinde İZMİR ili BERGAMA,  ilçesi Balıkesir İli, Burhaniye İlçesi, Yaylacık Köyü ve İzmir İli, Bergama İlçesi, Güneşli, Çamavlu, Kıranlı, Çobanlar ve Hacılar Mahalleleri Mevkii mevkiindeki TÜRKİYE ELEKTRİK İLETİM ANONİM ŞİRKETİ tarafından yapılması planlanan 154 kV (Alibey RES TM - Bergama Vento RES TM EİH) Brş.N. - 154 kV İvrindi RES TM (Karaburun RES) EİH (Girdi-Çıktı) projesi ile ilgili olarak İZMİR Valiliğimize sunulan P.T.D. Dosyası Çevresel Etki Değerlendirmesi Yönetmeliği'nin 16. maddesi doğrultusunda incelenmiş ve projeye ilişkin ÇED Süreci başlamıştır. İlgililere ve kamuoyuna duyurulur.",
+      "detail_links": [
+        {
+          "text": "P.T.D. Dosyası",
+          "href": "http://eced.csb.gov.tr/jsp/ek1/61354"
+        }
+      ],
+      "documents": [
+        {
+          "portal_doc_url": "http://eced.csb.gov.tr/jsp/ek1/61354",
+          "filing_id": "61354",
+          "consulting_firm": "EN-ÇEV ENERJİ ÇEVRE YATIRIMLARI DANIŞMANLIĞI HARİTACILIK İMAR İNŞAAT A.Ş",
+          "submitted_at": "16/11/2026 04:19:09",
+          "pdf_urls": [
+            {
+              "label": "Dosya Göster",
+              "url": "http://eced.csb.gov.tr/jsp/dosya/dosyaGoster.htm?tempAd=sign4195618410608326396.pdf&orjinalAd=KaraburunEIHPTD...pdf&yuklemeTarihi=2026-11-16"
+            }
+          ]
+        }
+      ],
+      "announcement_date": "2026-11-19",
+      "statutory_clocks": [
+        {
+          "code": "aski_10d",
+          "kind": "10-day public review/comment window (askı süresi)",
+          "deadline": "2026-11-29",
+          "days_remaining": 9
+        }
+      ],
+      "priority_district": true,
+      "filing_key": "61354:19.11.2026:ÇED Süreci Başlayan",
+      "first_seen_at": null
+    },
+    {
+      "province": "MANİSA",
+      "district": "KÖPRÜBAŞI",
+      "project_name": "3 adet (5499,84 m2 )  kümeste planlanan 54998 adet/dönem kapasiteli ?Etlik Piliç Yetiştirme Tesisi",
+      "project_owner": "Ökkeş SARI",
+      "sector": "Hayvancılık",
+      "sub_sector": "Kümes Hayvanları  Yetiştirme Tesisleri",
+      "decision_type": "ÇED Gerekli Değil/ÇED Olumlu",
+      "announcement_date_tr": "19.11.2026",
+      "project_type": "Ek-2",
+      "detail_text": "MANİSA ili KÖPRÜBAŞI,  ilcesinde MANİSA ili KÖPRÜBAŞI,  ilcesi Kavakyeri Mahallesi, Bakacak mevkii, 101 ada 35 parsel mevkiindeki Ökkeş SARI   tarafından yapılması planlanan 3 adet (5499,84 m2 )  kümeste planlanan 54998 adet/dönem kapasiteli ?Etlik Piliç Yetiştirme Tesisi  projesi ile ilgili olarak Bakanlığımıza sunulan PTD Dosyası incelenmiş ve değerlendirilmiştir  ÇED Yönetmeliği'nin 17. maddesi gereğince 3 adet (5499,84 m2 )  kümeste planlanan 54998 adet/dönem kapasiteli ?Etlik Piliç Yetiştirme Tesisi  projesi'ne Valiliğimizce 'ÇED Olumlu (Kapsam Ek-2)' kararı verilmiştir.",
+      "detail_links": [
+        {
+          "text": "PTD Dosyası",
+          "href": "http://eced.csb.gov.tr/jsp/ek1/60905"
+        }
+      ],
+      "documents": [
+        {
+          "portal_doc_url": "http://eced.csb.gov.tr/jsp/ek1/60905",
+          "filing_id": "60905",
+          "consulting_firm": "YEŞİLMAVI MÜH. ÇEVRE YÖN. VE DAN. HİZ. LTD. ŞTİ.",
+          "submitted_at": "21/10/2026 10:32:09",
+          "pdf_urls": [
+            {
+              "label": "Dosya Göster",
+              "url": "http://eced.csb.gov.tr/jsp/dosya/dosyaGoster.htm?tempAd=sign7345092088675286714.pdf&orjinalAd=e-imza.pdf&yuklemeTarihi=2026-10-21"
+            }
+          ]
+        }
+      ],
+      "announcement_date": "2026-11-19",
+      "statutory_clocks": [
+        {
+          "code": "iyuk_20a",
+          "kind": "İYUK 20/A annulment lawsuit (30d; İYUK 11 does not toll)",
+          "deadline": "2026-12-19",
+          "days_remaining": 29
+        }
+      ],
+      "priority_district": false,
+      "filing_key": "60905:19.11.2026:ÇED Gerekli Değil/ÇED Olumlu",
+      "first_seen_at": "2026-11-20T00:44:13"
+    },
+    {
+      "province": "MANİSA",
+      "district": "YUNUSEMRE",
+      "project_name": "ÇOLAK-1 DEPOLAMALI GES  GÜNEŞ ENERJİ SANTRALİ (19 MWe/19 MWm)  VE ELEKTRİK DEPOLAMA TESİSİ (19 MWe/19 MWh)  (Santral Alanı: 21,41 Ha)",
+      "project_owner": "ÇOLAK ENERJİ ANONİM ŞİRKETİ",
+      "sector": "Enerji",
+      "sub_sector": "Güneş Enerji Santralleri",
+      "decision_type": "İptal/İade",
+      "announcement_date_tr": "18.11.2026",
+      "project_type": "Ek-2",
+      "detail_text": "MANİSA ili YUNUSEMRE,  ilcesinde MANİSA ili YUNUSEMRE,  ilcesi Sarınasuhlar Mahallesi,  101 Ada-20 Parsel, 101 Ada-23 Parsel, 101 Ada-68 Parsel, 139 Ada-1 Parsel, 139 Ada-2 Parsel, 139 Ada-3 Parsel, 139 Ada-4 Parsel, 139 Ada-5 Parsel, 102 Ada-2 Parsel ve 115 Ada-3 Parsel sınırları içerisinde, ÇOLAK ENERJİ ANONİM ŞİRKETİ tarafından yapılması planlanan ÇOLAK-1 DEPOLAMALI GES  GÜNEŞ ENERJİ SANTRALİ (19 MWe/19 MWm)  VE ELEKTRİK DEPOLAMA TESİSİ (19 MWe/19 MWh)  (Santral Alanı: 21,41 Ha) projesi iptal edilmiştir. İptal Raporu: İptal Raporu",
+      "detail_links": [
+        {
+          "text": "İptal Raporu",
+          "href": "http://eced.csb.gov.tr/jsp/ek1/57503"
+        }
+      ],
+      "documents": [
+        {
+          "portal_doc_url": "http://eced.csb.gov.tr/jsp/ek1/57503",
+          "filing_id": "57503",
+          "consulting_firm": "LEORA ÇEVRE VE ENERJİ YATIRIMLARI A.Ş.",
+          "submitted_at": "21/10/2025 12:54:04",
+          "pdf_urls": [
+            {
+              "label": "Dosya Göster",
+              "url": "http://eced.csb.gov.tr/jsp/dosya/dosyaGoster.htm?tempAd=sign4965530792051384272.pdf&orjinalAd=e-imza.pdf&yuklemeTarihi=2026-09-01"
+            }
+          ]
+        }
+      ],
+      "announcement_date": "2026-11-18",
+      "statutory_clocks": [],
+      "priority_district": true,
+      "filing_key": "57503:18.11.2026:İptal/İade",
+      "first_seen_at": "2026-11-20T00:44:13"
+    },
+    {
+      "row_index": 1,
+      "button_id": "form:duyurTable:1:j_idt67",
+      "province": "İZMİR",
+      "district": "BORNOVA",
+      "project_name": "İNŞAAT VE YIKINTI ATIĞI GERİ KAZANIM TESİSİ (KAPASİTE: 228.000TON/YIL)",
+      "project_owner": "EGEŞEHİR YAPI PLANLAMA MÜŞAVİRLİK VE TEKNOLOJİ A.Ş.",
+      "sector": "Atık",
+      "sub_sector": "Atık Bertaraf /Geri Kazanım/ Depolama Tesisi Projeleri",
+      "decision_type": "ÇED Süreci Başlayan",
+      "announcement_date_tr": "17.11.2026",
+      "project_type": "Ek-2",
+      "detail_text": "İZMİR ili BORNOVA,  ilcesinde İZMİR ili BORNOVA,  ilçesi IŞIKLAR MAHALLESİ, 6044 SOKAK NO:3 (TAPUNUN 11128 ADA, 13 PARSELİ) mevkiindeki EGEŞEHİR YAPI PLANLAMA MÜŞAVİRLİK VE TEKNOLOJİ A.Ş. tarafından yapılması planlanan İNŞAAT VE YIKINTI ATIĞI GERİ KAZANIM TESİSİ (KAPASİTE: 228.000TON/YIL) projesi ile ilgili olarak İZMİR Valiliğimize sunulan P.T.D. Dosyası Çevresel Etki Değerlendirmesi Yönetmeliği'nin 16. maddesi doğrultusunda incelenmiş ve projeye ilişkin ÇED Süreci başlamıştır. İlgililere ve kamuoyuna duyurulur.",
+      "detail_links": [
+        {
+          "text": "P.T.D. Dosyası",
+          "href": "http://eced.csb.gov.tr/jsp/ek1/61559"
+        }
+      ],
+      "documents": [
+        {
+          "portal_doc_url": "http://eced.csb.gov.tr/jsp/ek1/61559",
+          "filing_id": "61559",
+          "consulting_firm": "PROÇED ÇEVRE DANIŞMANLIĞI MÜHENDİSLİK SAN.TİC.LTD.ŞTİ",
+          "submitted_at": "06/11/2026 08:24:29",
+          "pdf_urls": [
+            {
+              "label": "Dosya Göster",
+              "url": "http://eced.csb.gov.tr/jsp/dosya/dosyaGoster.htm?tempAd=sign1387365109553622469.pdf&orjinalAd=e-imza.pdf&yuklemeTarihi=2026-11-16"
+            }
+          ]
+        }
+      ],
+      "announcement_date": "2026-11-17",
+      "statutory_clocks": [
+        {
+          "code": "aski_10d",
+          "kind": "10-day public review/comment window (askı süresi)",
+          "deadline": "2026-11-27",
+          "days_remaining": 7
+        }
+      ],
+      "priority_district": false,
+      "filing_key": "61559:17.11.2026:ÇED Süreci Başlayan",
+      "first_seen_at": null
+    },
+    {
+      "province": "MANİSA",
+      "district": "GÖRDES",
+      "project_name": "ETLİK PİLİÇ YETİŞTİRME TESİSİ KAPASİTE ARTIŞI (1 adet 1.919,96 m2 Kümes ilavesi ile 19.285 Adet/Dönemden 57.600 Adet/Döneme)",
+      "project_owner": "RIZA ZEYBEK",
+      "sector": "Hayvancılık",
+      "sub_sector": "Kümes Hayvanları  Yetiştirme Tesisleri",
+      "decision_type": "ÇED Süreci Başlayan",
+      "announcement_date_tr": "16.11.2026",
+      "project_type": "Ek-2",
+      "detail_text": "MANİSA ili GÖRDES,  ilcesinde MANİSA ili GÖRDES,  ilçesi Fundacık Mahallesi, Davutlar Mevkii, 156 parsel mevkiindeki RIZA ZEYBEK tarafından yapılması planlanan ETLİK PİLİÇ YETİŞTİRME TESİSİ KAPASİTE ARTIŞI (1 adet 1.919,96 m2 Kümes ilavesi ile 19.285 Adet/Dönemden 57.600 Adet/Döneme) projesi ile ilgili olarak MANİSA Valiliğimize sunulan P.T.D. Dosyası Çevresel Etki Değerlendirmesi Yönetmeliği'nin 16. maddesi doğrultusunda incelenmiş ve projeye ilişkin ÇED Süreci başlamıştır. İlgililere ve kamuoyuna duyurulur.",
+      "detail_links": [
+        {
+          "text": "P.T.D. Dosyası",
+          "href": "http://eced.csb.gov.tr/jsp/ek1/61441"
+        }
+      ],
+      "documents": [
+        {
+          "portal_doc_url": "http://eced.csb.gov.tr/jsp/ek1/61441",
+          "filing_id": "61441",
+          "consulting_firm": "CANÇED ÇEVRE DANIŞMANLIK VE MÜHENDİSLİK SAN. TİC. LTD. ŞTİ.",
+          "submitted_at": "09/11/2026 08:14:22",
+          "pdf_urls": [
+            {
+              "label": "Dosya Göster",
+              "url": "http://eced.csb.gov.tr/jsp/dosya/dosyaGoster.htm?tempAd=sign5568938027536374493.pdf&orjinalAd=e-imza.pdf&yuklemeTarihi=2026-11-13"
+            }
+          ]
+        }
+      ],
+      "announcement_date": "2026-11-16",
+      "statutory_clocks": [
+        {
+          "code": "aski_10d",
+          "kind": "10-day public review/comment window (askı süresi)",
+          "deadline": "2026-11-26",
+          "days_remaining": 6
+        }
+      ],
+      "priority_district": false,
+      "filing_key": "61441:16.11.2026:ÇED Süreci Başlayan",
+      "first_seen_at": "2026-11-20T00:44:14"
+    },
+    {
+      "row_index": 2,
+      "button_id": "form:duyurTable:2:j_idt67",
+      "province": "İZMİR",
+      "district": "ÇEŞME",
+      "project_name": "CASTELLO FONTANA OTEL",
+      "project_owner": "ARIKAN PROJE GELİŞTİRME A.Ş.",
+      "sector": "Turizm",
+      "sub_sector": "Turistik Tesisler",
+      "decision_type": "IDK",
+      "announcement_date_tr": "16.11.2026",
+      "project_type": "Ek-1",
+      "detail_text": "İZMİR ili ÇEŞME,  ilcesinde İZMİR ili ÇEŞME ilçesi sınırları içerisinde ARIKAN PROJE GELİŞTİRME A.Ş. tarafından yapılması planlanan CASTELLO FONTANA OTEL projesi ile ilgili olarak hazırlanan ÇED Raporu, ÇED Yönetmeliği'nin 11. maddesi kapsamında Bakanlığımıza sunulmuş olup, inceleme değerlendirme süreci başlamıştır. Proje ile ilgili olarak 07/12/2026 tarihinde İDK toplantısı gerçekleştirilecektir. Bakanlığımıza sunulan ÇED Raporu https://eced-duyuru.csb.gov.tr/eced-prod/duyurular.xhtml adresinde yer almaktadır. ÇED Raporu ilgililere ve kamuoyuna duyurulur.",
+      "detail_links": [
+        {
+          "text": "ÇED Raporu",
+          "href": "http://eced.csb.gov.tr/jsp/ek1/60015"
+        }
+      ],
+      "documents": [
+        {
+          "portal_doc_url": "http://eced.csb.gov.tr/jsp/ek1/60015",
+          "filing_id": "60015",
+          "consulting_firm": "ELEMENT ÇEVRE DANIŞMANLIK VE MÜHENDİSLİK A.Ş.",
+          "submitted_at": "09/06/2026 04:17:08",
+          "pdf_urls": [
+            {
+              "label": "60015_CED_Raporu.pdf",
+              "url": "http://eced.csb.gov.tr/jsp/dosya/dosyaGoster.htm?tempAd=sign8235067367368802982.pdf&orjinalAd=60015_CED_Raporu.pdf&yuklemeTarihi=2026-11-10"
+            }
+          ]
+        }
+      ],
+      "announcement_date": "2026-11-16",
+      "statutory_clocks": [
+        {
+          "code": "idk",
+          "kind": "İDK review commission (verify meeting date in full text)",
+          "deadline": null,
+          "days_remaining": null
+        }
+      ],
+      "priority_district": true,
+      "filing_key": "60015:16.11.2026:IDK",
+      "first_seen_at": null
+    },
+    {
+      "row_index": 3,
+      "button_id": "form:duyurTable:3:j_idt67",
+      "province": "İZMİR",
+      "district": "Ödemiş",
+      "project_name": "Süt İşleme Tesisi (450.000 lt/gün Çiğ Süt, 650.000 lt/gün Peyniraltı Suyu)",
+      "project_owner": "Sayer Gıda İç ve Dış Ticaret A.Ş.",
+      "sector": "Gıda",
+      "sub_sector": "Süt İşleme Tesisleri",
+      "decision_type": "Nihai Karar",
+      "announcement_date_tr": "16.11.2026",
+      "project_type": "Ek-1",
+      "detail_text": "İZMİR ili Ödemiş,  ilcesinde İZMİR İli Ödemiş,  ilcesinde Sayer Gıda İç ve Dış Ticaret A.Ş. tarafından yapılması planlanan Süt İşleme Tesisi (450.000 lt/gün Çiğ Süt, 650.000 lt/gün Peyniraltı Suyu) projesi ile ilgili olarak hazırlanan ÇED Raporu , İnceleme ve Değerlendirme Komisyonu (İDK) tarafından incelenerek son şekli verilmiş olup, söz konusu rapor halkın görüş ve önerilerini almak üzere ÇED Yönetmeliği'nin 14.Maddesi (1) no'lu bendi kapsamında Bakanlıkta ve Çevre, Şehircilik ve İklim Değişikliği İl Müdürlüğü'nde on (10) takvim günü görüşe açılmıştır. Bakanlığa/Çevre, Şehircilik ve İklim Değişikliği İl Müdürlüğü'ne iletilen görüşler projeyle ilgili karar alma sürecinde dikkate alınacaktır. Görüş ve öneriler için bu süreç içerisinde Çevre, Şehircilik ve İklim Değişikliği Bakanlığı'na veya İZMİR Çevre ve Şehircilik İl Müdürlüklerine müracaat edilebilir. İlgililere ve kamuoyuna duyurulur.",
+      "detail_links": [
+        {
+          "text": "ÇED Raporu",
+          "href": "http://eced.csb.gov.tr/jsp/ek1/57477"
+        }
+      ],
+      "documents": [
+        {
+          "portal_doc_url": "http://eced.csb.gov.tr/jsp/ek1/57477",
+          "filing_id": "57477",
+          "consulting_firm": "ÇEVTAŞ ARAŞTIRMA TEKNOLOJİ MADENCİLİK MÜHENDİSLİK MÜŞAVİRLİK PEYZAJ EĞİTİM DANIŞMANLIK TAAHHÜT TİCARET LİMİTED ŞİRKETİ",
+          "submitted_at": "09/10/2025 06:28:17",
+          "pdf_urls": [
+            {
+              "label": "57477_Son_Sekli_Verilen_Rapor.pdf",
+              "url": "http://eced.csb.gov.tr/jsp/dosya/dosyaGoster.htm?tempAd=sign2023591123295745630.pdf&orjinalAd=57477_Son_Sekli_Verilen_Rapor.pdf&yuklemeTarihi=2026-11-16"
+            }
+          ]
+        }
+      ],
+      "announcement_date": "2026-11-16",
+      "statutory_clocks": [
+        {
+          "code": "aski_10d",
+          "kind": "10-day public review/comment window (askı süresi)",
+          "deadline": "2026-11-26",
+          "days_remaining": 6
+        }
+      ],
+      "priority_district": false,
+      "filing_key": "57477:16.11.2026:Nihai Karar",
+      "first_seen_at": null
+    },
+    {
+      "row_index": 4,
+      "button_id": "form:duyurTable:4:j_idt67",
+      "province": "İZMİR",
+      "district": "BORNOVA",
+      "project_name": "Tehlikeli  ve Tehlikesiz Atıkların Geri Kazanımı",
+      "project_owner": "ÇEVKİM ATIK YÖNETİMİ SANAYİ TİCARET VE LİMİTED ŞİRKETİ",
+      "sector": "Atık",
+      "sub_sector": "Atık Bertaraf /Geri Kazanım/ Depolama Tesisi Projeleri",
+      "decision_type": "HKT",
+      "announcement_date_tr": "16.11.2026",
+      "project_type": "Ek-1",
+      "detail_text": "İZMİR ili BORNOVA,  ilcesinde İZMİR ili BORNOVA ilçesi sınırları içerisinde ÇEVKİM ATIK YÖNETİMİ SANAYİ TİCARET VE LİMİTED ŞİRKETİ tarafından yapılması planlanan Tehlikeli  ve Tehlikesiz Atıkların Geri Kazanımı projesi ile ilgili Çevresel Etki Değerlendirme süreci başlamış ve Çevresel Etki Değerlendirmesi Başvuru Dosyası halkın görüşüne açılmıştır.Söz konusu projeye ilişkin, halkı proje hakkında bilgilendirmek, görüş ve önerilerini almak amacıyla ÇED Yönetmeliğinin 9. maddesi gereğince 03/12/2026 tarihinde Halkın Katılım Toplantısı düzenlenecektir.ÇED Başvuru Dosyasını İncelemek isteyenler Bakanlık Merkezinde veya İZMİR Çevre ve Şehircilik İl Müdürlüklerinde duyuru tarihinden itibaren raporu inceleyerek, zamanlama takvimi içerisinde proje hakkında Bakanlığa veya Valiliğe görüş bildirebilirler. Halkın Katılımı Toplantısı yeri ve saati ile ilgili ÇED İzin Denetim Genel Müdürlüğü ve İZMİR Çevre, Şehircilik ve İklim Değişikliği İl Müdürlüğünden bilgi alınabilir. İlgililere ve kamuoyuna duyurulur.",
+      "detail_links": [
+        {
+          "text": "Başvuru Dosyası",
+          "href": "http://eced.csb.gov.tr/jsp/ek1/27708"
+        }
+      ],
+      "documents": [
+        {
+          "portal_doc_url": "http://eced.csb.gov.tr/jsp/ek1/27708",
+          "filing_id": "27708",
+          "consulting_firm": "ENVON ÇEVRE DANIŞMANLIK MÜH. İNŞ. TAAH. SAN. TİC. LTD. ŞTİ.",
+          "submitted_at": "20/10/2026 09:07:01",
+          "pdf_urls": [
+            {
+              "label": "Dosya Göster",
+              "url": "http://eced.csb.gov.tr/jsp/dosya/dosyaGoster.htm?tempAd=sign3751441153432936660.pdf&orjinalAd=e-imza.pdf&yuklemeTarihi=2026-11-13"
+            }
+          ]
+        }
+      ],
+      "announcement_date": "2026-11-16",
+      "statutory_clocks": [
+        {
+          "code": "hkt",
+          "kind": "HKT public participation notice (verify date in full text)",
+          "deadline": null,
+          "days_remaining": null
+        }
+      ],
+      "priority_district": false,
+      "filing_key": "27708:16.11.2026:HKT",
+      "first_seen_at": null
+    },
+    {
+      "province": "MANİSA",
+      "district": "TURGUTLU",
+      "project_name": "2026/1 (ER:3550556) Ruhsat Numaralı I.(a) Grubu Kum-Çakıl Ocağı",
+      "project_owner": "İHSANOĞULALLARI HAFRİYAT NAKLİYAT İNŞAAT PETROL ÜRÜNLERİ OTO ALIM SATIM SANAYİ VE TİCARET ANONİM ŞİRKETİ",
+      "sector": "I., II. ve V. Grup Madenler",
+      "sub_sector": "Kum Ocakları",
+      "decision_type": "İptal/İade",
+      "announcement_date_tr": "13.11.2026",
+      "project_type": "Ek-2",
+      "detail_text": "MANİSA ili TURGUTLU,  ilcesinde MANİSA ili TURGUTLU,  ilcesi Çampınar Mahallesi, K19d3 Pafta sınırları içerisinde, İHSANOĞULALLARI HAFRİYAT NAKLİYAT İNŞAAT PETROL ÜRÜNLERİ OTO ALIM SATIM SANAYİ VE TİCARET ANONİM ŞİRKETİ tarafından yapılması planlanan 2026/1 (ER:3550556) Ruhsat Numaralı I.(a) Grubu Kum-Çakıl Ocağı projesi iptal edilmiştir. İptal Raporu: İptal Raporu",
+      "detail_links": [
+        {
+          "text": "İptal Raporu",
+          "href": "http://eced.csb.gov.tr/jsp/ek1/61047"
+        }
+      ],
+      "documents": [
+        {
+          "portal_doc_url": "http://eced.csb.gov.tr/jsp/ek1/61047",
+          "filing_id": "61047",
+          "consulting_firm": "ALTA ÇED PROJE MÜHENDİSLİK A.Ş.",
+          "submitted_at": "01/10/2026 11:40:25",
+          "pdf_urls": [
+            {
+              "label": "İptal Dosya Göster (ek2)",
+              "url": "http://eced.csb.gov.tr/jsp/dosya/dosyaGoster.htm?tempAd=dosya_2561627205360535380.tmp&orjinalAd=61047_projeIptalDosya.pdf&yuklemeTarihi=2026-11-12"
+            },
+            {
+              "label": "Dosya Göster",
+              "url": "http://eced.csb.gov.tr/jsp/dosya/dosyaGoster.htm?tempAd=sign4968240417659320854.pdf&orjinalAd=e-imza.pdf&yuklemeTarihi=2026-10-01"
+            }
+          ]
+        }
+      ],
+      "announcement_date": "2026-11-13",
+      "statutory_clocks": [],
+      "priority_district": true,
+      "filing_key": "61047:13.11.2026:İptal/İade",
+      "first_seen_at": "2026-11-20T00:44:14"
+    },
+    {
+      "row_index": 5,
+      "button_id": "form:duyurTable:5:j_idt67",
+      "province": "İZMİR",
+      "district": "TİRE",
+      "project_name": "Tire Süt ve Süt Ürünleri Üretim Tesisi İlave Buhar Kazanı (15 MWt) ve İlave İndirekt Hava Isıtıcı (7,5 MWt)",
+      "project_owner": "SÜTAŞ Süt Ürünleri A.Ş.",
+      "sector": "Gıda",
+      "sub_sector": "Süt İşleme Tesisleri",
+      "decision_type": "ÇED Gerekli Değil/ÇED Olumlu",
+      "announcement_date_tr": "13.11.2026",
+      "project_type": "Ek-2",
+      "detail_text": "İZMİR ili TİRE,  ilcesinde İZMİR ili TİRE,  ilcesi İbni Melek OSB Mahallesi, TOSBİ Yol 2 Sokak, No:12A (1272 Ada, 9 Numaralı Parsel) mevkiindeki SÜTAŞ Süt Ürünleri A.Ş.  tarafından yapılması planlanan Tire Süt ve Süt Ürünleri Üretim Tesisi İlave Buhar Kazanı (15 MWt) ve İlave İndirekt Hava Isıtıcı (7,5 MWt) projesi ile ilgili olarak Bakanlığımıza sunulan PTD Dosyası incelenmiş ve değerlendirilmiştir  ÇED Yönetmeliği'nin 17. maddesi gereğince Tire Süt ve Süt Ürünleri Üretim Tesisi İlave Buhar Kazanı (15 MWt) ve İlave İndirekt Hava Isıtıcı (7,5 MWt) projesi'ne Valiliğimizce 'ÇED Olumlu (Kapsam Ek-2)' kararı verilmiştir.",
+      "detail_links": [
+        {
+          "text": "PTD Dosyası",
+          "href": "http://eced.csb.gov.tr/jsp/ek1/60764"
+        }
+      ],
+      "documents": [
+        {
+          "portal_doc_url": "http://eced.csb.gov.tr/jsp/ek1/60764",
+          "filing_id": "60764",
+          "consulting_firm": "ALMER ÇEVRE DENETİM MÜŞ. İŞ. SAĞ. VE GÜV. PROJE TİC. LTD. ŞTİ.",
+          "submitted_at": "12/08/2026 02:44:50",
+          "pdf_urls": [
+            {
+              "label": "Dosya Göster",
+              "url": "http://eced.csb.gov.tr/jsp/dosya/dosyaGoster.htm?tempAd=sign5642539473485077420.pdf&orjinalAd=e-imza.pdf&yuklemeTarihi=2026-10-05"
+            }
+          ]
+        }
+      ],
+      "announcement_date": "2026-11-13",
+      "statutory_clocks": [
+        {
+          "code": "iyuk_20a",
+          "kind": "İYUK 20/A annulment lawsuit (30d; İYUK 11 does not toll)",
+          "deadline": "2026-12-13",
+          "days_remaining": 23
+        }
+      ],
+      "priority_district": false,
+      "filing_key": "60764:13.11.2026:ÇED Gerekli Değil/ÇED Olumlu",
+      "first_seen_at": null
+    },
+    {
+      "row_index": 6,
+      "button_id": "form:duyurTable:6:j_idt67",
+      "province": "İZMİR",
+      "district": "BORNOVA",
+      "project_name": "Tehlikeli  ve Tehlikesiz Atıkların Geri Kazanımı",
+      "project_owner": "ÇEVKİM ATIK YÖNETİMİ SANAYİ TİCARET VE LİMİTED ŞİRKETİ",
+      "sector": "Atık",
+      "sub_sector": "Atık Bertaraf /Geri Kazanım/ Depolama Tesisi Projeleri",
+      "decision_type": "ÇED Süreci Başlayan",
+      "announcement_date_tr": "13.11.2026",
+      "project_type": "Ek-1",
+      "detail_text": "İZMİR ili BORNOVA,  ilcesinde İZMİR il BORNOVA,  ilce İzmir İli, Bornova İlçesi, Egemenlik Mah. 6106 Sok. No:113 ,Tapu kaydına göre; Işıklar Mah., 11085 Ada 11 Parselde, L18 Paftasında, 772,26 m2 lik tapu alanı içerisinde mevkiinde ÇEVKİM ATIK YÖNETİMİ SANAYİ TİCARET VE LİMİTED ŞİRKETİ tarafından yapılması planlanan Tehlikeli  ve Tehlikesiz Atıkların Geri Kazanımı projesi ile ilgili olarak Bakanlığımıza sunulan ÇED Başvuru Dosyası Çevresel Etki Değerlendirmesi Yönetmeliği'nin 8. maddesi doğrultusunda incelenmiş ve başvurunun ÇED Genel Formatına uygun hazırlandığı anlaşılmış olup, projeye ilişkin ÇED Süreci başlatılmıştır. Çevresel Etki Değerlendirmesi süreci tamamlanana kadar, süreç ile ilgili her türlü bilgiler ve projeye ilişkin görüş, soru ve öneriler İZMİR Valiliğine (Çevre, Şehircilik ve İklim Değişikliği İl Müdürlüğü) veya Çevre, Şehircilik ve İklim Değişikliği Bakanlığına gönderilebilir.İlgililere ve kamuoyuna duyurulur.",
+      "detail_links": [
+        {
+          "text": "ÇED Başvuru Dosyası",
+          "href": "http://eced.csb.gov.tr/jsp/ek1/27708"
+        }
+      ],
+      "documents": [
+        {
+          "portal_doc_url": "http://eced.csb.gov.tr/jsp/ek1/27708",
+          "filing_id": "27708",
+          "consulting_firm": "ENVON ÇEVRE DANIŞMANLIK MÜH. İNŞ. TAAH. SAN. TİC. LTD. ŞTİ.",
+          "submitted_at": "20/10/2026 09:07:01",
+          "pdf_urls": [
+            {
+              "label": "Dosya Göster",
+              "url": "http://eced.csb.gov.tr/jsp/dosya/dosyaGoster.htm?tempAd=sign3751441153432936660.pdf&orjinalAd=e-imza.pdf&yuklemeTarihi=2026-11-13"
+            }
+          ]
+        }
+      ],
+      "announcement_date": "2026-11-13",
+      "statutory_clocks": [
+        {
+          "code": "aski_10d",
+          "kind": "10-day public review/comment window (askı süresi)",
+          "deadline": "2026-11-23",
+          "days_remaining": 3
+        }
+      ],
+      "priority_district": false,
+      "filing_key": "27708:13.11.2026:ÇED Süreci Başlayan",
+      "first_seen_at": null
+    },
+    {
+      "province": "MANİSA",
+      "district": "YUNUSEMRE",
+      "project_name": "TEHLİKELİ VE TEHLİKESİZ ATIKLARIN FİZİKSEL YÖNTEMİ İLE GERİ KAZANIMI/ ÖN İŞLEMİ (Metal Varil Temizleme: 1.728 ton/yıl, Plastik Varil/IBC Temizleme: 4.014 ton/yıl, Yağlı Kablo: 4.800 ton/yıl, Yağlı Talaş, Metal Ve Metal Tozu: 240.480 ton/yıl, Yağsız Kablo: 6.000 ton/yıl, Filtre:2.400 ton/yıl, Basınçlı Kap: 90 ton/yıl, Yağ Filtresi: 1.440 ton/yıl), ATIK ELEKTRİKLİ VE ELEKTRONİK EŞYA GERİ KAZANIM FAALİYETİ (AEEE İşleme Kapasitesi: 2.640 ton/yıl), VE TEHLİKESİZ ATIK TOPLAMA AYIRMA FAALİYETİ (Toplama Ayırma: 500.000 ton/yıl)",
+      "project_owner": "PAŞAOĞLU METAL GERİ DÖNÜŞÜM DEMİR ÇELİK İNŞAAT ODUN KÖMÜR HAFRİYAT NAKLİYAT TURİZM İTHALAT İHRACAT SANAYİ VE TİCARET LİMİTED ŞİRKETİ",
+      "sector": "Atık",
+      "sub_sector": "Atık Bertaraf /Geri Kazanım/ Depolama Tesisi Projeleri",
+      "decision_type": "ÇED Süreci Başlayan",
+      "announcement_date_tr": "12.11.2026",
+      "project_type": "Ek-2",
+      "detail_text": "MANİSA ili YUNUSEMRE,  ilcesinde MANİSA ili YUNUSEMRE,  ilçesi MURADİYE MAHALLESİ, 28 SOKAK, NO:18, 163 ADA VE 1 PARSEL mevkiindeki PAŞAOĞLU METAL GERİ DÖNÜŞÜM DEMİR ÇELİK İNŞAAT ODUN KÖMÜR HAFRİYAT NAKLİYAT TURİZM İTHALAT İHRACAT SANAYİ VE TİCARET LİMİTED ŞİRKETİ tarafından yapılması planlanan TEHLİKELİ VE TEHLİKESİZ ATIKLARIN FİZİKSEL YÖNTEMİ İLE GERİ KAZANIMI/ ÖN İŞLEMİ (Metal Varil Temizleme: 1.728 ton/yıl, Plastik Varil/IBC Temizleme: 4.014 ton/yıl, Yağlı Kablo: 4.800 ton/yıl, Yağlı Talaş, Metal Ve Metal Tozu: 240.480 ton/yıl, Yağsız Kablo: 6.000 ton/yıl, Filtre:2.400 ton/yıl, Basınçlı Kap: 90 ton/yıl, Yağ Filtresi: 1.440 ton/yıl), ATIK ELEKTRİKLİ VE ELEKTRONİK EŞYA GERİ KAZANIM FAALİYETİ (AEEE İşleme Kapasitesi: 2.640 ton/yıl), VE TEHLİKESİZ ATIK TOPLAMA AYIRMA FAALİYETİ (Toplama Ayırma: 500.000 ton/yıl)   projesi ile ilgili olarak MANİSA Valiliğimize sunulan P.T.D. Dosyası Çevresel Etki Değerlendirmesi Yönetmeliği'nin 16. maddesi doğrultusunda incelenmiş ve projeye ilişkin ÇED Süreci başlamıştır. İlgililere ve kamuoyuna duyurulur.",
+      "detail_links": [
+        {
+          "text": "P.T.D. Dosyası",
+          "href": "http://eced.csb.gov.tr/jsp/ek1/61583"
+        }
+      ],
+      "documents": [
+        {
+          "portal_doc_url": "http://eced.csb.gov.tr/jsp/ek1/61583",
+          "filing_id": "61583",
+          "consulting_firm": "REEL ÇEVRE MÜHENDİSLİK  DANIŞMANLIK İNŞAAT SANAYİ VE TİCARET LİMİTED ŞİRKETİ",
+          "submitted_at": "10/11/2026 05:29:46",
+          "pdf_urls": [
+            {
+              "label": "Dosya Göster",
+              "url": "http://eced.csb.gov.tr/jsp/dosya/dosyaGoster.htm?tempAd=sign6235221016051739887.pdf&orjinalAd=e-imza.pdf&yuklemeTarihi=2026-11-10"
+            }
+          ]
+        }
+      ],
+      "announcement_date": "2026-11-12",
+      "statutory_clocks": [
+        {
+          "code": "aski_10d",
+          "kind": "10-day public review/comment window (askı süresi)",
+          "deadline": "2026-11-22",
+          "days_remaining": 2
+        }
+      ],
+      "priority_district": true,
+      "filing_key": "61583:12.11.2026:ÇED Süreci Başlayan",
+      "first_seen_at": "2026-11-20T00:44:15"
+    },
+    {
+      "row_index": 7,
+      "button_id": "form:duyurTable:7:j_idt67",
+      "province": "İZMİR",
+      "district": "CUMAOVASI(MENDERES)",
+      "project_name": "Alüminyum Biyetten Profil Üretimine Yüzey İşlem Üniteleri Eklenmesi (Toplam Yüzey İşlem Havuz Hacmi: 99,03 m³)",
+      "project_owner": "Rigel Alüminyum San. ve Tic. A.Ş. Menderes Şubesi",
+      "sector": "Sanayi",
+      "sub_sector": "Kaplama/Yüzey Temizleme",
+      "decision_type": "ÇED Süreci Başlayan",
+      "announcement_date_tr": "12.11.2026",
+      "project_type": "Ek-2",
+      "detail_text": "İZMİR ili CUMAOVASI(MENDERES),  ilcesinde İZMİR ili CUMAOVASI(MENDERES),  ilçesi İTOB OSB Mahallesi, 10030 Sokak, No: 7 (241 Ada, 18 Parsel) mevkiindeki Rigel Alüminyum San. ve Tic. A.Ş. Menderes Şubesi tarafından yapılması planlanan Alüminyum Biyetten Profil Üretimine Yüzey İşlem Üniteleri Eklenmesi (Toplam Yüzey İşlem Havuz Hacmi: 99,03 m³) projesi ile ilgili olarak İZMİR Valiliğimize sunulan P.T.D. Dosyası Çevresel Etki Değerlendirmesi Yönetmeliği'nin 16. maddesi doğrultusunda incelenmiş ve projeye ilişkin ÇED Süreci başlamıştır. İlgililere ve kamuoyuna duyurulur.",
+      "detail_links": [
+        {
+          "text": "P.T.D. Dosyası",
+          "href": "http://eced.csb.gov.tr/jsp/ek1/61572"
+        }
+      ],
+      "documents": [
+        {
+          "portal_doc_url": "http://eced.csb.gov.tr/jsp/ek1/61572",
+          "filing_id": "61572",
+          "consulting_firm": "RESİF ÇEVRE MÜH. İNŞ. MAK. TUR. GIDA TEKSTİL SAN. VE TİC. LTD.ŞTİ.",
+          "submitted_at": "09/11/2026 04:06:10",
+          "pdf_urls": [
+            {
+              "label": "Dosya Göster",
+              "url": "http://eced.csb.gov.tr/jsp/dosya/dosyaGoster.htm?tempAd=sign7921784382102515452.pdf&orjinalAd=e-imza.pdf&yuklemeTarihi=2026-11-09"
+            }
+          ]
+        }
+      ],
+      "announcement_date": "2026-11-12",
+      "statutory_clocks": [
+        {
+          "code": "aski_10d",
+          "kind": "10-day public review/comment window (askı süresi)",
+          "deadline": "2026-11-22",
+          "days_remaining": 2
+        }
+      ],
+      "priority_district": false,
+      "filing_key": "61572:12.11.2026:ÇED Süreci Başlayan",
+      "first_seen_at": null
+    },
+    {
+      "row_index": 11,
+      "button_id": "form:duyurTable:11:j_idt67",
+      "province": "İZMİR",
+      "district": "ALİAĞA",
+      "project_name": "Çelik Konstrüksiyon Ürünleri Üretimi Faaliyetine Deniz Araçlarının Parça ve Aksamlarının Üretimi İlavesi",
+      "project_owner": "BRONTES MAKİNE SANAYİ VE TİCARET ANONİM ŞİRKETİ",
+      "sector": "Kıyı",
+      "sub_sector": "Yat veya Tekne İmalat, Bakım ve Onarım Faaliyetleri",
+      "decision_type": "ÇED Süreci Başlayan",
+      "announcement_date_tr": "11.11.2026",
+      "project_type": "Ek-2",
+      "detail_text": "İZMİR ili ALİAĞA,  ilcesinde İZMİR ili ALİAĞA,  ilçesi İzmir İli, Aliağa İlçesi, Aliağa Organize Sanayi Bölgesi, Çoraklar Mah. 5000 Sk. No:24, 24/1,24/2,24/3 (Tapunun 133 Ada 12 Nolu Parseli) mevkiindeki BRONTES MAKİNE SANAYİ VE TİCARET ANONİM ŞİRKETİ  tarafından yapılması planlanan Çelik Konstrüksiyon Ürünleri Üretimi Faaliyetine Deniz Araçlarının Parça ve Aksamlarının Üretimi İlavesi projesi ile ilgili olarak İZMİR Valiliğimize sunulan P.T.D. Dosyası Çevresel Etki Değerlendirmesi Yönetmeliği'nin 16. maddesi doğrultusunda incelenmiş ve projeye ilişkin ÇED Süreci başlamıştır. İlgililere ve kamuoyuna duyurulur.",
+      "detail_links": [
+        {
+          "text": "P.T.D. Dosyası",
+          "href": "http://eced.csb.gov.tr/jsp/ek1/61693"
+        }
+      ],
+      "documents": [
+        {
+          "portal_doc_url": "http://eced.csb.gov.tr/jsp/ek1/61693",
+          "filing_id": "61693",
+          "consulting_firm": "PROÇED ÇEVRE DANIŞMANLIĞI MÜHENDİSLİK SAN.TİC.LTD.ŞTİ",
+          "submitted_at": "09/11/2026 11:29:48",
+          "pdf_urls": [
+            {
+              "label": "Dosya Göster",
+              "url": "http://eced.csb.gov.tr/jsp/dosya/dosyaGoster.htm?tempAd=sign3001897172830461903.pdf&orjinalAd=e-imza.pdf&yuklemeTarihi=2026-11-09"
+            }
+          ]
+        }
+      ],
+      "announcement_date": "2026-11-11",
+      "statutory_clocks": [
+        {
+          "code": "aski_10d",
+          "kind": "10-day public review/comment window (askı süresi)",
+          "deadline": "2026-11-21",
+          "days_remaining": 1
+        }
+      ],
+      "priority_district": true,
+      "filing_key": "61693:11.11.2026:ÇED Süreci Başlayan",
+      "first_seen_at": null
+    },
+    {
+      "row_index": 10,
+      "button_id": "form:duyurTable:10:j_idt67",
+      "province": "İZMİR",
+      "district": "KEMALPAŞA",
+      "project_name": "Zeytinyağı Üretim Tesisi (Zeytin İşleme Kapasitesi 120 Ton/Gün, Zeytinyağı Üretim Kapasitesi 24 Ton/Gün)",
+      "project_owner": "Muhsin Bayraktar Tarım Ürünl. Gıda Paz. San. Ve Tic. Ltd. Şti.",
+      "sector": "Gıda",
+      "sub_sector": "Bitkisel, Hayvansal Yağ Üretimi",
+      "decision_type": "ÇED Gerekli Değil/ÇED Olumlu",
+      "announcement_date_tr": "11.11.2026",
+      "project_type": "Ek-2",
+      "detail_text": "İZMİR ili KEMALPAŞA,  ilcesinde İZMİR ili KEMALPAŞA,  ilcesi Çınarköy Mahallesi, 131 Ada, 2 Nolu Parsel mevkiindeki Muhsin Bayraktar Tarım Ürünl. Gıda Paz. San. Ve Tic. Ltd. Şti. tarafından yapılması planlanan Zeytinyağı Üretim Tesisi (Zeytin İşleme Kapasitesi 120 Ton/Gün, Zeytinyağı Üretim Kapasitesi 24 Ton/Gün) projesi ile ilgili olarak Bakanlığımıza sunulan PTD Dosyası incelenmiş ve değerlendirilmiştir  ÇED Yönetmeliği'nin 17. maddesi gereğince Zeytinyağı Üretim Tesisi (Zeytin İşleme Kapasitesi 120 Ton/Gün, Zeytinyağı Üretim Kapasitesi 24 Ton/Gün) projesi'ne Valiliğimizce 'ÇED Olumlu (Kapsam Ek-2)' kararı verilmiştir.",
+      "detail_links": [
+        {
+          "text": "PTD Dosyası",
+          "href": "http://eced.csb.gov.tr/jsp/ek1/61496"
+        }
+      ],
+      "documents": [
+        {
+          "portal_doc_url": "http://eced.csb.gov.tr/jsp/ek1/61496",
+          "filing_id": "61496",
+          "consulting_firm": "ASİL ÇEVRE MÜHENDİSLİK VE ATIK YÖNETİMİ HİZMETLERİ LİMİTED ŞİRKETİ",
+          "submitted_at": "23/10/2026 08:49:29",
+          "pdf_urls": [
+            {
+              "label": "Dosya Göster",
+              "url": "http://eced.csb.gov.tr/jsp/dosya/dosyaGoster.htm?tempAd=sign3585574172226204266.pdf&orjinalAd=MuhsinBay.PTDnihai.pdf&yuklemeTarihi=2026-11-04"
+            }
+          ]
+        }
+      ],
+      "announcement_date": "2026-11-11",
+      "statutory_clocks": [
+        {
+          "code": "iyuk_20a",
+          "kind": "İYUK 20/A annulment lawsuit (30d; İYUK 11 does not toll)",
+          "deadline": "2026-12-11",
+          "days_remaining": 21
+        }
+      ],
+      "priority_district": false,
+      "filing_key": "61496:11.11.2026:ÇED Gerekli Değil/ÇED Olumlu",
+      "first_seen_at": null
+    },
+    {
+      "row_index": 8,
+      "button_id": "form:duyurTable:8:j_idt67",
+      "province": "İZMİR",
+      "district": "FOÇA",
+      "project_name": "2155 RUHSAT NUMARALI ALANDA JEOTERMAL REENJEKSİYON KUYU (1 ADET) FAALİYETİ",
+      "project_owner": "EGE ÇELİK JEOTERMAL ENERJİ SANTRALİ A.Ş.",
+      "sector": "Enerji",
+      "sub_sector": "Jeotermal Enerji Santralleri",
+      "decision_type": "ÇED Gerekli Değil/ÇED Olumlu",
+      "announcement_date_tr": "11.11.2026",
+      "project_type": "Ek-2",
+      "detail_text": "İZMİR ili FOÇA,  ilcesinde İZMİR ili FOÇA,  ilcesi 2155 Ruhsat Numaralı alan, Ilıpınar Mahallesi 507132 ada, 643 nolu parsel (eski 0 Ada 643 parsel) mevkiindeki EGE ÇELİK JEOTERMAL ENERJİ SANTRALİ A.Ş. tarafından yapılması planlanan 2155 RUHSAT NUMARALI ALANDA JEOTERMAL REENJEKSİYON KUYU (1 ADET) FAALİYETİ projesi ile ilgili olarak Bakanlığımıza sunulan PTD Dosyası incelenmiş ve değerlendirilmiştir  ÇED Yönetmeliği'nin 17. maddesi gereğince 2155 RUHSAT NUMARALI ALANDA JEOTERMAL REENJEKSİYON KUYU (1 ADET) FAALİYETİ projesi'ne Valiliğimizce 'ÇED Olumlu (Kapsam Ek-2)' kararı verilmiştir.",
+      "detail_links": [
+        {
+          "text": "PTD Dosyası",
+          "href": "http://eced.csb.gov.tr/jsp/ek1/58476"
+        }
+      ],
+      "documents": [
+        {
+          "portal_doc_url": "http://eced.csb.gov.tr/jsp/ek1/58476",
+          "filing_id": "58476",
+          "consulting_firm": "CANÇED ÇEVRE DANIŞMANLIK VE MÜHENDİSLİK SAN. TİC. LTD. ŞTİ.",
+          "submitted_at": "30/12/2025 06:09:47",
+          "pdf_urls": [
+            {
+              "label": "Dosya Göster",
+              "url": "http://eced.csb.gov.tr/jsp/dosya/dosyaGoster.htm?tempAd=sign7504032269344894671.pdf&orjinalAd=e-imza.pdf&yuklemeTarihi=2026-10-28"
+            }
+          ]
+        }
+      ],
+      "announcement_date": "2026-11-11",
+      "statutory_clocks": [
+        {
+          "code": "iyuk_20a",
+          "kind": "İYUK 20/A annulment lawsuit (30d; İYUK 11 does not toll)",
+          "deadline": "2026-12-11",
+          "days_remaining": 21
+        }
+      ],
+      "priority_district": true,
+      "filing_key": "58476:11.11.2026:ÇED Gerekli Değil/ÇED Olumlu",
+      "first_seen_at": null
+    },
+    {
+      "row_index": 9,
+      "button_id": "form:duyurTable:9:j_idt67",
+      "province": "İZMİR",
+      "district": "SELÇUK",
+      "project_name": "ZEYTİNYAĞI ÜRETİM TESİSİ KAPASİTE ARTIŞ (160 ton/gün zeytin sıkım ile 36,32 ton/gün zeytinyağı üretimi)",
+      "project_owner": "ADNAN KUL",
+      "sector": "Gıda",
+      "sub_sector": "Bitkisel, Hayvansal Yağ Üretimi",
+      "decision_type": "İptal/İade",
+      "announcement_date_tr": "11.11.2026",
+      "project_type": "Ek-2",
+      "detail_text": "İZMİR ili SELÇUK,  ilcesinde İZMİR ili SELÇUK,  ilcesi ÇAMLIK MAHALLESİ, KAZINTIYERİ MEVKİİ, 109 ADA 17 PARSELDE 8 EYLÜL SOKAK NO:27 sınırları içerisinde, ADNAN KUL tarafından yapılması planlanan ZEYTİNYAĞI ÜRETİM TESİSİ KAPASİTE ARTIŞ (160 ton/gün zeytin sıkım ile 36,32 ton/gün zeytinyağı üretimi) projesi iptal edilmiştir. İptal Raporu: İptal Raporu",
+      "detail_links": [
+        {
+          "text": "İptal Raporu",
+          "href": "http://eced.csb.gov.tr/jsp/ek1/52417"
+        }
+      ],
+      "documents": [
+        {
+          "portal_doc_url": "http://eced.csb.gov.tr/jsp/ek1/52417",
+          "filing_id": "52417",
+          "consulting_firm": "SİSTEM MÜH. DAN.İNŞ.  MAD. ORM. NAK.  İTH. İHR. EML. SAN. VE TİC. LTD. ŞTİ.",
+          "submitted_at": "09/09/2024 05:34:56",
+          "pdf_urls": [
+            {
+              "label": "İptal Dosya Göster (ek2)",
+              "url": "http://eced.csb.gov.tr/jsp/dosya/dosyaGoster.htm?tempAd=dosya_4391071207200921273.tmp&orjinalAd=52417_projeIptalDosya.pdf&yuklemeTarihi=2026-11-09"
+            },
+            {
+              "label": "Dosya Göster",
+              "url": "http://eced.csb.gov.tr/jsp/dosya/dosyaGoster.htm?tempAd=sign2379196073181222053.pdf&orjinalAd=ADNAN.KUL.PTD.FORMAT.pdf&yuklemeTarihi=2024-09-19"
+            }
+          ]
+        }
+      ],
+      "announcement_date": "2026-11-11",
+      "statutory_clocks": [],
+      "priority_district": false,
+      "filing_key": "52417:11.11.2026:İptal/İade",
+      "first_seen_at": null
+    },
+    {
+      "province": "MANİSA",
+      "district": "AKHİSAR",
+      "project_name": "45/2012-11 HAMMADDE ÜRETİM İZİN BELGELİ DOĞANKAYA KALKER OCAĞI, KIRMA-ELEME TESİSİ, MEKANİK PLENT TESİSİ KAPASİTE ARTIŞI VE İLAVE ASFALT PLENT TESİSİ, HAZIR BETON SANTRALİ",
+      "project_owner": "KARAYOLLARI GENEL MÜDÜRLÜĞÜ 2. BÖLGE MÜDÜRLÜĞÜ",
+      "sector": "I., II. ve V. Grup Madenler",
+      "sub_sector": "II. Grup Madenler",
+      "decision_type": "ÇED Gerekli Değil/ÇED Olumlu",
+      "announcement_date_tr": "10.11.2026",
+      "project_type": "Ek-2",
+      "detail_text": "MANİSA ili AKHİSAR,  ilcesinde MANİSA ili AKHİSAR,  ilcesi DOĞANKAYA MAHALLESİ mevkiindeki KARAYOLLARI GENEL MÜDÜRLÜĞÜ 2. BÖLGE MÜDÜRLÜĞÜ  tarafından yapılması planlanan 45/2012-11 HAMMADDE ÜRETİM İZİN BELGELİ DOĞANKAYA KALKER OCAĞI, KIRMA-ELEME TESİSİ, MEKANİK PLENT TESİSİ KAPASİTE ARTIŞI VE İLAVE ASFALT PLENT TESİSİ, HAZIR BETON SANTRALİ  projesi ile ilgili olarak Bakanlığımıza sunulan PTD Dosyası incelenmiş ve değerlendirilmiştir  ÇED Yönetmeliği'nin 17. maddesi gereğince 45/2012-11 HAMMADDE ÜRETİM İZİN BELGELİ DOĞANKAYA KALKER OCAĞI, KIRMA-ELEME TESİSİ, MEKANİK PLENT TESİSİ KAPASİTE ARTIŞI VE İLAVE ASFALT PLENT TESİSİ, HAZIR BETON SANTRALİ  projesi'ne Valiliğimizce 'ÇED Olumlu (Kapsam Ek-2)' kararı verilmiştir.",
+      "detail_links": [
+        {
+          "text": "PTD Dosyası",
+          "href": "http://eced.csb.gov.tr/jsp/ek1/57805"
+        }
+      ],
+      "documents": [
+        {
+          "portal_doc_url": "http://eced.csb.gov.tr/jsp/ek1/57805",
+          "filing_id": "57805",
+          "consulting_firm": "BERKA MÜH. ÇEVRE MADENCİLİK VE DAN. HİZMETLERİ   LTD. ŞTİ.",
+          "submitted_at": "26/02/2026 11:59:22",
+          "pdf_urls": [
+            {
+              "label": "Dosya Göster",
+              "url": "http://eced.csb.gov.tr/jsp/dosya/dosyaGoster.htm?tempAd=sign3370288994246805858.pdf&orjinalAd=e-imza.pdf&yuklemeTarihi=2026-10-30"
+            }
+          ]
+        }
+      ],
+      "announcement_date": "2026-11-10",
+      "statutory_clocks": [
+        {
+          "code": "iyuk_20a",
+          "kind": "İYUK 20/A annulment lawsuit (30d; İYUK 11 does not toll)",
+          "deadline": "2026-12-10",
+          "days_remaining": 20
+        }
+      ],
+      "priority_district": true,
+      "filing_key": "57805:10.11.2026:ÇED Gerekli Değil/ÇED Olumlu",
+      "first_seen_at": "2026-11-20T00:44:16"
+    },
+    {
+      "province": "MANİSA",
+      "district": "KIRKAGAÇ",
+      "project_name": "ETLİK PİLİÇ YETİŞTİRME TESİSİ",
+      "project_owner": "Altavin İnşaat Hayvancılık San. ve Tic. Ltd. Şti.",
+      "sector": "Hayvancılık",
+      "sub_sector": "Kümes Hayvanları  Yetiştirme Tesisleri",
+      "decision_type": "ÇED Süreci Başlayan",
+      "announcement_date_tr": "09.11.2026",
+      "project_type": "Ek-2",
+      "detail_text": "MANİSA ili KIRKAGAÇ,  ilcesinde MANİSA ili KIRKAGAÇ,  ilçesi Alacalar Mahallesi, Çamaltı Mevkii, 758 parsel mevkiindeki Altavin İnşaat Hayvancılık San. ve Tic. Ltd. Şti. tarafından yapılması planlanan ETLİK PİLİÇ YETİŞTİRME TESİSİ  projesi ile ilgili olarak MANİSA Valiliğimize sunulan P.T.D. Dosyası Çevresel Etki Değerlendirmesi Yönetmeliği'nin 16. maddesi doğrultusunda incelenmiş ve projeye ilişkin ÇED Süreci başlamıştır. İlgililere ve kamuoyuna duyurulur.",
+      "detail_links": [
+        {
+          "text": "P.T.D. Dosyası",
+          "href": "http://eced.csb.gov.tr/jsp/ek1/61581"
+        }
+      ],
+      "documents": [
+        {
+          "portal_doc_url": "http://eced.csb.gov.tr/jsp/ek1/61581",
+          "filing_id": "61581",
+          "consulting_firm": "CANÇED ÇEVRE DANIŞMANLIK VE MÜHENDİSLİK SAN. TİC. LTD. ŞTİ.",
+          "submitted_at": "28/10/2026 10:12:35",
+          "pdf_urls": [
+            {
+              "label": "Dosya Göster",
+              "url": "http://eced.csb.gov.tr/jsp/dosya/dosyaGoster.htm?tempAd=sign4375961281656511905.pdf&orjinalAd=e-imza.pdf&yuklemeTarihi=2026-11-06"
+            }
+          ]
+        }
+      ],
+      "announcement_date": "2026-11-09",
+      "statutory_clocks": [
+        {
+          "code": "aski_10d",
+          "kind": "10-day public review/comment window (askı süresi)",
+          "deadline": "2026-11-19",
+          "days_remaining": -1
+        }
+      ],
+      "priority_district": false,
+      "filing_key": "61581:09.11.2026:ÇED Süreci Başlayan",
+      "first_seen_at": "2026-11-20T00:44:17"
+    },
+    {
+      "province": "MANİSA",
+      "district": "AKHİSAR",
+      "project_name": "ZEYTİN İŞLEME TESİSİ KAPASİTE ARTIŞI",
+      "project_owner": "PEYBA GIDA TARIM TUR. HAYV. İNŞ. SAN. VE TİC. LTD. ŞTİ.",
+      "sector": "Gıda",
+      "sub_sector": "Zeytin İşleme  Tesisleri",
+      "decision_type": "ÇED Gerekli Değil/ÇED Olumlu",
+      "announcement_date_tr": "09.11.2026",
+      "project_type": "Ek-2",
+      "detail_text": "MANİSA ili AKHİSAR,  ilcesinde MANİSA ili AKHİSAR,  ilcesi Eroğlu Mahallesi, 0 ada, 588 no'lu parsel mevkiindeki PEYBA GIDA TARIM TUR. HAYV. İNŞ. SAN. VE TİC. LTD. ŞTİ. tarafından yapılması planlanan ZEYTİN İŞLEME TESİSİ KAPASİTE ARTIŞI projesi ile ilgili olarak Bakanlığımıza sunulan PTD Dosyası incelenmiş ve değerlendirilmiştir  ÇED Yönetmeliği'nin 17. maddesi gereğince ZEYTİN İŞLEME TESİSİ KAPASİTE ARTIŞI projesi'ne Valiliğimizce 'ÇED Olumlu (Kapsam Ek-2)' kararı verilmiştir.",
+      "detail_links": [
+        {
+          "text": "PTD Dosyası",
+          "href": "http://eced.csb.gov.tr/jsp/ek1/61335"
+        }
+      ],
+      "documents": [
+        {
+          "portal_doc_url": "http://eced.csb.gov.tr/jsp/ek1/61335",
+          "filing_id": "61335",
+          "consulting_firm": "CANÇED ÇEVRE DANIŞMANLIK VE MÜHENDİSLİK SAN. TİC. LTD. ŞTİ.",
+          "submitted_at": "13/10/2026 04:04:51",
+          "pdf_urls": [
+            {
+              "label": "Dosya Göster",
+              "url": "http://eced.csb.gov.tr/jsp/dosya/dosyaGoster.htm?tempAd=sign2021536094849303535.pdf&orjinalAd=e-imza.pdf&yuklemeTarihi=2026-10-13"
+            }
+          ]
+        }
+      ],
+      "announcement_date": "2026-11-09",
+      "statutory_clocks": [
+        {
+          "code": "iyuk_20a",
+          "kind": "İYUK 20/A annulment lawsuit (30d; İYUK 11 does not toll)",
+          "deadline": "2026-12-09",
+          "days_remaining": 19
+        }
+      ],
+      "priority_district": true,
+      "filing_key": "61335:09.11.2026:ÇED Gerekli Değil/ÇED Olumlu",
+      "first_seen_at": "2026-11-20T00:44:16"
+    },
+    {
+      "province": "MANİSA",
+      "district": "ALAŞEHİR",
+      "project_name": "SİRKE, NAR EKŞİSİ, SALATA SOSU VE SALAMURA ASMA YAPRAĞI İLE TURŞU YAP SUYU ÜRETİMİ TESİSİ",
+      "project_owner": "FERLİVA GIDA TARIM ÜRÜNLERİ SAN. VE TİC. A.Ş.",
+      "sector": "Gıda",
+      "sub_sector": "Şekerleme ve/veya Şeker Şurubu Ürün Üretimi",
+      "decision_type": "ÇED Süreci Başlayan",
+      "announcement_date_tr": "06.11.2026",
+      "project_type": "Ek-2",
+      "detail_text": "MANİSA ili ALAŞEHİR,  ilcesinde MANİSA ili ALAŞEHİR,  ilçesi KAVAKLIDERE/CUMHURİYET MAHALLESİ, BALKAN MEVKİİ, 383 ADA, 1 PARSEL mevkiindeki FERLİVA GIDA TARIM ÜRÜNLERİ SAN. VE TİC. A.Ş.  tarafından yapılması planlanan SİRKE, NAR EKŞİSİ, SALATA SOSU VE SALAMURA ASMA YAPRAĞI İLE TURŞU YAP SUYU ÜRETİMİ TESİSİ  projesi ile ilgili olarak MANİSA Valiliğimize sunulan P.T.D. Dosyası Çevresel Etki Değerlendirmesi Yönetmeliği'nin 16. maddesi doğrultusunda incelenmiş ve projeye ilişkin ÇED Süreci başlamıştır. İlgililere ve kamuoyuna duyurulur.",
+      "detail_links": [
+        {
+          "text": "P.T.D. Dosyası",
+          "href": "http://eced.csb.gov.tr/jsp/ek1/61334"
+        }
+      ],
+      "documents": [
+        {
+          "portal_doc_url": "http://eced.csb.gov.tr/jsp/ek1/61334",
+          "filing_id": "61334",
+          "consulting_firm": "REEL ÇEVRE MÜHENDİSLİK  DANIŞMANLIK İNŞAAT SANAYİ VE TİCARET LİMİTED ŞİRKETİ",
+          "submitted_at": "26/10/2026 07:43:19",
+          "pdf_urls": [
+            {
+              "label": "Dosya Göster",
+              "url": "http://eced.csb.gov.tr/jsp/dosya/dosyaGoster.htm?tempAd=sign6352894860505750980.pdf&orjinalAd=e-imza.pdf&yuklemeTarihi=2026-10-26"
+            }
+          ]
+        }
+      ],
+      "announcement_date": "2026-11-06",
+      "statutory_clocks": [
+        {
+          "code": "aski_10d",
+          "kind": "10-day public review/comment window (askı süresi)",
+          "deadline": "2026-11-16",
+          "days_remaining": -4
+        }
+      ],
+      "priority_district": false,
+      "filing_key": "61334:06.11.2026:ÇED Süreci Başlayan",
+      "first_seen_at": "2026-11-20T00:44:17"
+    },
+    {
+      "province": "MANİSA",
+      "district": "YUNUSEMRE",
+      "project_name": "Yıkama İstasyonları Kapasite Artışı (56,2 m3 hacimden 90,14 m3 hacme artış)",
+      "project_owner": "DÖKTAŞ DÖKÜMCÜLÜK TİCARET VE SANAYİ ANONİM ŞİRKETİ MANİSA ALÜMİNYUM DÖKÜM TESİSLERİ ŞUBESİ",
+      "sector": "Sanayi",
+      "sub_sector": "Kaplama/Yüzey Temizleme",
+      "decision_type": "ÇED Süreci Başlayan",
+      "announcement_date_tr": "06.11.2026",
+      "project_type": "Ek-2",
+      "detail_text": "MANİSA ili YUNUSEMRE,  ilcesinde MANİSA ili YUNUSEMRE,  ilçesi  Emlakdere Mahallesi, 3511 Ada, 5 parsel mevkiindeki DÖKTAŞ DÖKÜMCÜLÜK TİCARET VE SANAYİ ANONİM ŞİRKETİ MANİSA ALÜMİNYUM DÖKÜM TESİSLERİ ŞUBESİ tarafından yapılması planlanan Yıkama İstasyonları Kapasite Artışı (56,2 m3 hacimden 90,14 m3 hacme artış) projesi ile ilgili olarak MANİSA Valiliğimize sunulan P.T.D. Dosyası Çevresel Etki Değerlendirmesi Yönetmeliği'nin 16. maddesi doğrultusunda incelenmiş ve projeye ilişkin ÇED Süreci başlamıştır. İlgililere ve kamuoyuna duyurulur.",
+      "detail_links": [
+        {
+          "text": "P.T.D. Dosyası",
+          "href": "http://eced.csb.gov.tr/jsp/ek1/60081"
+        }
+      ],
+      "documents": [
+        {
+          "portal_doc_url": "http://eced.csb.gov.tr/jsp/ek1/60081",
+          "filing_id": "60081",
+          "consulting_firm": "CANÇED ÇEVRE DANIŞMANLIK VE MÜHENDİSLİK SAN. TİC. LTD. ŞTİ.",
+          "submitted_at": "03/11/2026 01:22:56",
+          "pdf_urls": [
+            {
+              "label": "Dosya Göster",
+              "url": "http://eced.csb.gov.tr/jsp/dosya/dosyaGoster.htm?tempAd=sign4124947250555212112.pdf&orjinalAd=e-imza.pdf&yuklemeTarihi=2026-11-03"
+            }
+          ]
+        }
+      ],
+      "announcement_date": "2026-11-06",
+      "statutory_clocks": [
+        {
+          "code": "aski_10d",
+          "kind": "10-day public review/comment window (askı süresi)",
+          "deadline": "2026-11-16",
+          "days_remaining": -4
+        }
+      ],
+      "priority_district": true,
+      "filing_key": "60081:06.11.2026:ÇED Süreci Başlayan",
+      "first_seen_at": "2026-11-20T00:44:18"
+    },
+    {
+      "row_index": 12,
+      "button_id": "form:duyurTable:12:j_idt67",
+      "province": "MANİSA",
+      "district": "SOMA",
+      "project_name": "400 kV UYGAR RES. TM.- BAYRAMİÇ HAVZA TM. ELEKTRİK ENERJİSİ İLETİM HATTI (122,17741 km)",
+      "project_owner": "TÜRKİYE ELEKTRİK İLETİM  ANONİM ŞİRKETİ GENEL MÜDÜRLÜĞÜ",
+      "sector": "Turizm",
+      "sub_sector": "Enerji İletim Hatları",
+      "decision_type": "HKT",
+      "announcement_date_tr": "04.11.2026",
+      "project_type": "Ek-1",
+      "detail_text": "MANİSA ili SOMA,  ilcesinde MANİSA ili SOMA ilçesi sınırları içerisinde TÜRKİYE ELEKTRİK İLETİM  ANONİM ŞİRKETİ GENEL MÜDÜRLÜĞÜ tarafından yapılması planlanan 400 kV UYGAR RES. TM.- BAYRAMİÇ HAVZA TM. ELEKTRİK ENERJİSİ İLETİM HATTI (122,17741 km) projesi ile ilgili Çevresel Etki Değerlendirme süreci başlamış ve Çevresel Etki Değerlendirmesi Başvuru Dosyası halkın görüşüne açılmıştır.Söz konusu projeye ilişkin, halkı proje hakkında bilgilendirmek, görüş ve önerilerini almak amacıyla ÇED Yönetmeliğinin 9. maddesi gereğince 02/12/2026 tarihinde Halkın Katılım Toplantısı düzenlenecektir.ÇED Başvuru Dosyasını İncelemek isteyenler Bakanlık Merkezinde veya MANİSA Çevre ve Şehircilik İl Müdürlüklerinde duyuru tarihinden itibaren raporu inceleyerek, zamanlama takvimi içerisinde proje hakkında Bakanlığa veya Valiliğe görüş bildirebilirler. Halkın Katılımı Toplantısı yeri ve saati ile ilgili ÇED İzin Denetim Genel Müdürlüğü ve MANİSA Çevre, Şehircilik ve İklim Değişikliği İl Müdürlüğünden bilgi alınabilir. İlgililere ve kamuoyuna duyurulur.",
+      "detail_links": [
+        {
+          "text": "Başvuru Dosyası",
+          "href": "http://eced.csb.gov.tr/jsp/ek1/61112"
+        }
+      ],
+      "documents": [
+        {
+          "portal_doc_url": "http://eced.csb.gov.tr/jsp/ek1/61112",
+          "filing_id": "61112",
+          "consulting_firm": "EN-ÇEV ENERJİ ÇEVRE YATIRIMLARI DANIŞMANLIĞI HARİTACILIK İMAR İNŞAAT A.Ş",
+          "submitted_at": "16/10/2026 10:51:45",
+          "pdf_urls": [
+            {
+              "label": "Dosya Göster",
+              "url": "http://eced.csb.gov.tr/jsp/dosya/dosyaGoster.htm?tempAd=sign1016664841067059309.pdf&orjinalAd=e-imza.pdf&yuklemeTarihi=2026-10-16"
+            }
+          ]
+        }
+      ],
+      "announcement_date": "2026-11-04",
+      "statutory_clocks": [
+        {
+          "code": "hkt",
+          "kind": "HKT public participation notice (verify date in full text)",
+          "deadline": null,
+          "days_remaining": null
+        }
+      ],
+      "priority_district": true,
+      "filing_key": "61112:04.11.2026:HKT",
+      "first_seen_at": null
+    },
+    {
+      "province": "MANİSA",
+      "district": "AKHİSAR",
+      "project_name": "Zeytinyağı Üretim Tesisi (80 ton/gün zeytin işleme, 20 ton/gün zeytinyağı üretimi) ve Sofralık  Zeytin ( 276 ton/yıl )",
+      "project_owner": "Adnan ÇİÇER",
+      "sector": "Gıda",
+      "sub_sector": "Bitkisel, Hayvansal Yağ Üretimi",
+      "decision_type": "ÇED Gerekli Değil/ÇED Olumlu",
+      "announcement_date_tr": "04.11.2026",
+      "project_type": "Ek-2",
+      "detail_text": "MANİSA ili AKHİSAR,  ilcesinde MANİSA ili AKHİSAR,  ilcesi Kayalıoğlu mah.,Tamburlu mevkii, 269 ada, 46 nolu parsel mevkiindeki Adnan ÇİÇER tarafından yapılması planlanan Zeytinyağı Üretim Tesisi (80 ton/gün zeytin işleme, 20 ton/gün zeytinyağı üretimi) ve Sofralık  Zeytin ( 276 ton/yıl )  projesi ile ilgili olarak Bakanlığımıza sunulan PTD Dosyası incelenmiş ve değerlendirilmiştir  ÇED Yönetmeliği'nin 17. maddesi gereğince Zeytinyağı Üretim Tesisi (80 ton/gün zeytin işleme, 20 ton/gün zeytinyağı üretimi) ve Sofralık  Zeytin ( 276 ton/yıl )  projesi'ne Valiliğimizce 'ÇED Olumlu (Kapsam Ek-2)' kararı verilmiştir.",
+      "detail_links": [
+        {
+          "text": "PTD Dosyası",
+          "href": "http://eced.csb.gov.tr/jsp/ek1/60932"
+        }
+      ],
+      "documents": [
+        {
+          "portal_doc_url": "http://eced.csb.gov.tr/jsp/ek1/60932",
+          "filing_id": "60932",
+          "consulting_firm": "YEŞİLMAVI MÜH. ÇEVRE YÖN. VE DAN. HİZ. LTD. ŞTİ.",
+          "submitted_at": "08/09/2026 05:18:55",
+          "pdf_urls": [
+            {
+              "label": "Dosya Göster",
+              "url": "http://eced.csb.gov.tr/jsp/dosya/dosyaGoster.htm?tempAd=sign3212377813301395117.pdf&orjinalAd=e-imza.pdf&yuklemeTarihi=2026-10-23"
+            }
+          ]
+        }
+      ],
+      "announcement_date": "2026-11-04",
+      "statutory_clocks": [
+        {
+          "code": "iyuk_20a",
+          "kind": "İYUK 20/A annulment lawsuit (30d; İYUK 11 does not toll)",
+          "deadline": "2026-12-04",
+          "days_remaining": 14
+        }
+      ],
+      "priority_district": true,
+      "filing_key": "60932:04.11.2026:ÇED Gerekli Değil/ÇED Olumlu",
+      "first_seen_at": "2026-11-20T00:44:19"
+    },
+    {
+      "province": "MANİSA",
+      "district": "SALİHLİ",
+      "project_name": "ETLİK PİLİÇ YETİŞTİRME TESİSİ",
+      "project_owner": "OLA TARIM HAYVANCILIK VE İNŞAAT A.Ş.",
+      "sector": "Hayvancılık",
+      "sub_sector": "Kümes Hayvanları  Yetiştirme Tesisleri",
+      "decision_type": "HKT",
+      "announcement_date_tr": "03.11.2026",
+      "project_type": "Ek-1",
+      "detail_text": "MANİSA ili SALİHLİ,  ilcesinde MANİSA ili SALİHLİ ilçesi sınırları içerisinde OLA TARIM HAYVANCILIK VE İNŞAAT A.Ş. tarafından yapılması planlanan ETLİK PİLİÇ YETİŞTİRME TESİSİ projesi ile ilgili Çevresel Etki Değerlendirme süreci başlamış ve Çevresel Etki Değerlendirmesi Başvuru Dosyası halkın görüşüne açılmıştır.Söz konusu projeye ilişkin, halkı proje hakkında bilgilendirmek, görüş ve önerilerini almak amacıyla ÇED Yönetmeliğinin 9. maddesi gereğince 27/11/2026 tarihinde Halkın Katılım Toplantısı düzenlenecektir.ÇED Başvuru Dosyasını İncelemek isteyenler Bakanlık Merkezinde veya MANİSA Çevre ve Şehircilik İl Müdürlüklerinde duyuru tarihinden itibaren raporu inceleyerek, zamanlama takvimi içerisinde proje hakkında Bakanlığa veya Valiliğe görüş bildirebilirler. Halkın Katılımı Toplantısı yeri ve saati ile ilgili ÇED İzin Denetim Genel Müdürlüğü ve MANİSA Çevre, Şehircilik ve İklim Değişikliği İl Müdürlüğünden bilgi alınabilir. İlgililere ve kamuoyuna duyurulur.",
+      "detail_links": [
+        {
+          "text": "Başvuru Dosyası",
+          "href": "http://eced.csb.gov.tr/jsp/ek1/61323"
+        }
+      ],
+      "documents": [
+        {
+          "portal_doc_url": "http://eced.csb.gov.tr/jsp/ek1/61323",
+          "filing_id": "61323",
+          "consulting_firm": "CANÇED ÇEVRE DANIŞMANLIK VE MÜHENDİSLİK SAN. TİC. LTD. ŞTİ.",
+          "submitted_at": "22/10/2026 04:16:22",
+          "pdf_urls": [
+            {
+              "label": "Dosya Göster",
+              "url": "http://eced.csb.gov.tr/jsp/dosya/dosyaGoster.htm?tempAd=sign3055728179534886572.pdf&orjinalAd=e-imza.pdf&yuklemeTarihi=2026-10-22"
+            }
+          ]
+        }
+      ],
+      "announcement_date": "2026-11-03",
+      "statutory_clocks": [
+        {
+          "code": "hkt",
+          "kind": "HKT public participation notice (verify date in full text)",
+          "deadline": null,
+          "days_remaining": null
+        }
+      ],
+      "priority_district": true,
+      "filing_key": "61323:03.11.2026:HKT",
+      "first_seen_at": "2026-11-20T00:44:20"
+    },
+    {
+      "row_index": 13,
+      "button_id": "form:duyurTable:13:j_idt67",
+      "province": "İZMİR",
+      "district": "DİKİLİ",
+      "project_name": "Zeytinyağı Üretim Tesisi (Zeytin İşleme Kapasitesi 60 Ton/Gün, Zeytinyağı Üretim Kapasitesi 12 Ton/Gün)",
+      "project_owner": "S.S. Yahşibey Köyü Tarımsal Kalkınma Kooperatifi",
+      "sector": "Gıda",
+      "sub_sector": "Bitkisel, Hayvansal Yağ Üretimi",
+      "decision_type": "ÇED Gerekli Değil/ÇED Olumlu",
+      "announcement_date_tr": "03.11.2026",
+      "project_type": "Ek-2",
+      "detail_text": "İZMİR ili DİKİLİ,  ilcesinde İZMİR ili DİKİLİ,  ilcesi Yahşibey Mahallesi, Yahşibey 1 Sokak, No:1/1 (123 Ada, 1 Nolu Parsel) mevkiindeki S.S. Yahşibey Köyü Tarımsal Kalkınma Kooperatifi  tarafından yapılması planlanan Zeytinyağı Üretim Tesisi (Zeytin İşleme Kapasitesi 60 Ton/Gün, Zeytinyağı Üretim Kapasitesi 12 Ton/Gün) projesi ile ilgili olarak Bakanlığımıza sunulan PTD Dosyası incelenmiş ve değerlendirilmiştir  ÇED Yönetmeliği'nin 17. maddesi gereğince Zeytinyağı Üretim Tesisi (Zeytin İşleme Kapasitesi 60 Ton/Gün, Zeytinyağı Üretim Kapasitesi 12 Ton/Gün) projesi'ne Valiliğimizce 'ÇED Olumlu (Kapsam Ek-2)' kararı verilmiştir.",
+      "detail_links": [
+        {
+          "text": "PTD Dosyası",
+          "href": "http://eced.csb.gov.tr/jsp/ek1/58406"
+        }
+      ],
+      "documents": [
+        {
+          "portal_doc_url": "http://eced.csb.gov.tr/jsp/ek1/58406",
+          "filing_id": "58406",
+          "consulting_firm": "ASİL ÇEVRE MÜHENDİSLİK VE ATIK YÖNETİMİ HİZMETLERİ LİMİTED ŞİRKETİ",
+          "submitted_at": "22/12/2025 08:56:49",
+          "pdf_urls": [
+            {
+              "label": "Dosya Göster",
+              "url": "http://eced.csb.gov.tr/jsp/dosya/dosyaGoster.htm?tempAd=sign6309021473773004002.pdf&orjinalAd=YahsibeyPTDnihai.pdf&yuklemeTarihi=2026-10-12"
+            }
+          ]
+        }
+      ],
+      "announcement_date": "2026-11-03",
+      "statutory_clocks": [
+        {
+          "code": "iyuk_20a",
+          "kind": "İYUK 20/A annulment lawsuit (30d; İYUK 11 does not toll)",
+          "deadline": "2026-12-03",
+          "days_remaining": 13
+        }
+      ],
+      "priority_district": true,
+      "filing_key": "58406:03.11.2026:ÇED Gerekli Değil/ÇED Olumlu",
+      "first_seen_at": null
+    },
+    {
+      "row_index": 15,
+      "button_id": "form:duyurTable:15:j_idt67",
+      "province": "İZMİR",
+      "district": "KEMALPAŞA",
+      "project_name": "BOYAHANE VE YÜZEY İŞLEM  ÜNİTESİ İLAVESİ (Toplam Havuz Hacmi: 27,852 m3)",
+      "project_owner": "RENKLER MAKİNA VE YEDEK PARÇA SANAYİ VE TİCARET ANONİM ŞİRKETİ",
+      "sector": "Sanayi",
+      "sub_sector": "Kaplama/Yüzey Temizleme",
+      "decision_type": "ÇED Süreci Başlayan",
+      "announcement_date_tr": "02.11.2026",
+      "project_type": "Ek-2",
+      "detail_text": "İZMİR ili KEMALPAŞA,  ilcesinde İZMİR ili KEMALPAŞA,  ilçesi İzmir ili, Kemalpaşa ilçesi, Kemalpaşa Osb Mah. İzmir Kemalpaşa Asfaltı Cad. No:46 (Tapunun 2300 Ada 5 Parsel/ Eski 495 ada 13 numaralı parsel) mevkiindeki RENKLER MAKİNA VE YEDEK PARÇA SANAYİ VE TİCARET ANONİM ŞİRKETİ tarafından yapılması planlanan BOYAHANE VE YÜZEY İŞLEM  ÜNİTESİ İLAVESİ (Toplam Havuz Hacmi: 27,852 m3) projesi ile ilgili olarak İZMİR Valiliğimize sunulan P.T.D. Dosyası Çevresel Etki Değerlendirmesi Yönetmeliği'nin 16. maddesi doğrultusunda incelenmiş ve projeye ilişkin ÇED Süreci başlamıştır. İlgililere ve kamuoyuna duyurulur.",
+      "detail_links": [
+        {
+          "text": "P.T.D. Dosyası",
+          "href": "http://eced.csb.gov.tr/jsp/ek1/61526"
+        }
+      ],
+      "documents": [
+        {
+          "portal_doc_url": "http://eced.csb.gov.tr/jsp/ek1/61526",
+          "filing_id": "61526",
+          "consulting_firm": "PROÇED ÇEVRE DANIŞMANLIĞI MÜHENDİSLİK SAN.TİC.LTD.ŞTİ",
+          "submitted_at": "26/10/2026 03:35:46",
+          "pdf_urls": [
+            {
+              "label": "Dosya Göster",
+              "url": "http://eced.csb.gov.tr/jsp/dosya/dosyaGoster.htm?tempAd=sign1289855223982997711.pdf&orjinalAd=e-imza.pdf&yuklemeTarihi=2026-10-26"
+            }
+          ]
+        }
+      ],
+      "announcement_date": "2026-11-02",
+      "statutory_clocks": [
+        {
+          "code": "aski_10d",
+          "kind": "10-day public review/comment window (askı süresi)",
+          "deadline": "2026-11-12",
+          "days_remaining": -8
+        }
+      ],
+      "priority_district": false,
+      "filing_key": "61526:02.11.2026:ÇED Süreci Başlayan",
+      "first_seen_at": null
+    },
+    {
+      "row_index": 14,
+      "button_id": "form:duyurTable:14:j_idt67",
+      "province": "İZMİR",
+      "district": "KEMALPAŞA",
+      "project_name": "Tehlikeli Atıkların Fiziksel Yöntemlerle Geri Kazanımı (Ön İşlem) Tesisi (64.000 ton/yıl) ve Tehlikesiz Kablo Geri Kazanımı Tesisi (40.000 ton/yıl)",
+      "project_owner": "DAŞDAN METAL HURDACILIK GERİ DÖNÜŞÜM VE NAKLİYAT SANAYİ TİCARET LİMİTED ŞİRKETİ KEMALPAŞA ŞUBESİ",
+      "sector": "Atık",
+      "sub_sector": "Atık Bertaraf /Geri Kazanım/ Depolama Tesisi Projeleri",
+      "decision_type": "ÇED Süreci Başlayan",
+      "announcement_date_tr": "02.11.2026",
+      "project_type": "Ek-2",
+      "detail_text": "İZMİR ili KEMALPAŞA,  ilcesinde İZMİR ili KEMALPAŞA,  ilçesi İzmir İli, Kemalpaşa İlçesi, Ulucak mahallesi, 2216 Ada, 4 Parsel mevkiindeki DAŞDAN METAL HURDACILIK GERİ DÖNÜŞÜM VE NAKLİYAT SANAYİ TİCARET LİMİTED ŞİRKETİ KEMALPAŞA ŞUBESİ tarafından yapılması planlanan Tehlikeli Atıkların Fiziksel Yöntemlerle Geri Kazanımı (Ön İşlem) Tesisi (64.000 ton/yıl) ve Tehlikesiz Kablo Geri Kazanımı Tesisi (40.000 ton/yıl) projesi ile ilgili olarak İZMİR Valiliğimize sunulan P.T.D. Dosyası Çevresel Etki Değerlendirmesi Yönetmeliği'nin 16. maddesi doğrultusunda incelenmiş ve projeye ilişkin ÇED Süreci başlamıştır. İlgililere ve kamuoyuna duyurulur.",
+      "detail_links": [
+        {
+          "text": "P.T.D. Dosyası",
+          "href": "http://eced.csb.gov.tr/jsp/ek1/61413"
+        }
+      ],
+      "documents": [
+        {
+          "portal_doc_url": "http://eced.csb.gov.tr/jsp/ek1/61413",
+          "filing_id": "61413",
+          "consulting_firm": "AQUA ÇEVRE DANIŞMANLIK MÜHENDİSLİK İŞ GÜVENLİĞİ MAKİNA SANAYİ VE TİCARET LİMİTED ŞİRKETİ",
+          "submitted_at": "16/10/2026 07:35:18",
+          "pdf_urls": [
+            {
+              "label": "Dosya Göster",
+              "url": "http://eced.csb.gov.tr/jsp/dosya/dosyaGoster.htm?tempAd=sign5869933994450322927.pdf&orjinalAd=e-imza.pdf&yuklemeTarihi=2026-10-16"
+            }
+          ]
+        }
+      ],
+      "announcement_date": "2026-11-02",
+      "statutory_clocks": [
+        {
+          "code": "aski_10d",
+          "kind": "10-day public review/comment window (askı süresi)",
+          "deadline": "2026-11-12",
+          "days_remaining": -8
+        }
+      ],
+      "priority_district": false,
+      "filing_key": "61413:02.11.2026:ÇED Süreci Başlayan",
+      "first_seen_at": null
+    },
+    {
+      "province": "MANİSA",
+      "district": "SALİHLİ",
+      "project_name": "ETLİK PİLİÇ YETİŞTİRME TESİSİ",
+      "project_owner": "OLA TARIM HAYVANCILIK VE İNŞAAT A.Ş.",
+      "sector": "Hayvancılık",
+      "sub_sector": "Kümes Hayvanları  Yetiştirme Tesisleri",
+      "decision_type": "ÇED Süreci Başlayan",
+      "announcement_date_tr": "02.11.2026",
+      "project_type": "Ek-1",
+      "detail_text": "MANİSA ili SALİHLİ,  ilcesinde MANİSA il SALİHLİ,  ilce Gökeyüp Mahallesi, 179 Ada, 2 Parsel mevkiinde OLA TARIM HAYVANCILIK VE İNŞAAT A.Ş. tarafından yapılması planlanan ETLİK PİLİÇ YETİŞTİRME TESİSİ projesi ile ilgili olarak Bakanlığımıza sunulan ÇED Başvuru Dosyası Çevresel Etki Değerlendirmesi Yönetmeliği'nin 8. maddesi doğrultusunda incelenmiş ve başvurunun ÇED Genel Formatına uygun hazırlandığı anlaşılmış olup, projeye ilişkin ÇED Süreci başlatılmıştır. Çevresel Etki Değerlendirmesi süreci tamamlanana kadar, süreç ile ilgili her türlü bilgiler ve projeye ilişkin görüş, soru ve öneriler MANİSA Valiliğine (Çevre, Şehircilik ve İklim Değişikliği İl Müdürlüğü) veya Çevre, Şehircilik ve İklim Değişikliği Bakanlığına gönderilebilir.İlgililere ve kamuoyuna duyurulur.",
+      "detail_links": [
+        {
+          "text": "ÇED Başvuru Dosyası",
+          "href": "http://eced.csb.gov.tr/jsp/ek1/61323"
+        }
+      ],
+      "documents": [
+        {
+          "portal_doc_url": "http://eced.csb.gov.tr/jsp/ek1/61323",
+          "filing_id": "61323",
+          "consulting_firm": "CANÇED ÇEVRE DANIŞMANLIK VE MÜHENDİSLİK SAN. TİC. LTD. ŞTİ.",
+          "submitted_at": "22/10/2026 04:16:22",
+          "pdf_urls": [
+            {
+              "label": "Dosya Göster",
+              "url": "http://eced.csb.gov.tr/jsp/dosya/dosyaGoster.htm?tempAd=sign3055728179534886572.pdf&orjinalAd=e-imza.pdf&yuklemeTarihi=2026-10-22"
+            }
+          ]
+        }
+      ],
+      "announcement_date": "2026-11-02",
+      "statutory_clocks": [
+        {
+          "code": "aski_10d",
+          "kind": "10-day public review/comment window (askı süresi)",
+          "deadline": "2026-11-12",
+          "days_remaining": -8
+        }
+      ],
+      "priority_district": true,
+      "filing_key": "61323:02.11.2026:ÇED Süreci Başlayan",
+      "first_seen_at": "2026-11-20T00:44:22"
+    },
+    {
+      "province": "MANİSA",
+      "district": "SALİHLİ",
+      "project_name": "Elektrolitik Çinko Kaplama, Elektrolitik Çinko Alaşımlı Kaplama, İnorganik Çinko Ana Kat Kaplama ve İnorganik Çinko Üst Lak Kaplama (Toplam Havuz Hacmi: 726,475 m3)",
+      "project_owner": "UYSAL MAKİNA SANAYİ İTHALAT İHRACAT VE TİCARET ANONİM ŞİRKETİ SALİHLİ 2 ŞUBESİ",
+      "sector": "Sanayi",
+      "sub_sector": "Kaplama/Yüzey Temizleme",
+      "decision_type": "ÇED Gerekli Değil/ÇED Olumlu",
+      "announcement_date_tr": "02.11.2026",
+      "project_type": "Ek-2",
+      "detail_text": "MANİSA ili SALİHLİ,  ilcesinde MANİSA ili SALİHLİ,  ilcesi Torunlu Mahallesi, Kazançukuru Mevkii 105 Ada 15 Parsel   Salihli Organize Sanayi Bölgesi Salihli/MANİSA mevkiindeki UYSAL MAKİNA SANAYİ İTHALAT İHRACAT VE TİCARET ANONİM ŞİRKETİ SALİHLİ 2 ŞUBESİ tarafından yapılması planlanan Elektrolitik Çinko Kaplama, Elektrolitik Çinko Alaşımlı Kaplama, İnorganik Çinko Ana Kat Kaplama ve İnorganik Çinko Üst Lak Kaplama (Toplam Havuz Hacmi: 726,475 m3) projesi ile ilgili olarak Bakanlığımıza sunulan PTD Dosyası incelenmiş ve değerlendirilmiştir  ÇED Yönetmeliği'nin 17. maddesi gereğince Elektrolitik Çinko Kaplama, Elektrolitik Çinko Alaşımlı Kaplama, İnorganik Çinko Ana Kat Kaplama ve İnorganik Çinko Üst Lak Kaplama (Toplam Havuz Hacmi: 726,475 m3) projesi'ne Valiliğimizce 'ÇED Olumlu (Kapsam Ek-2)' kararı verilmiştir.",
+      "detail_links": [
+        {
+          "text": "PTD Dosyası",
+          "href": "http://eced.csb.gov.tr/jsp/ek1/61246"
+        }
+      ],
+      "documents": [
+        {
+          "portal_doc_url": "http://eced.csb.gov.tr/jsp/ek1/61246",
+          "filing_id": "61246",
+          "consulting_firm": "AQUA ÇEVRE DANIŞMANLIK MÜHENDİSLİK İŞ GÜVENLİĞİ MAKİNA SANAYİ VE TİCARET LİMİTED ŞİRKETİ",
+          "submitted_at": "23/09/2026 08:08:14",
+          "pdf_urls": [
+            {
+              "label": "Dosya Göster",
+              "url": "http://eced.csb.gov.tr/jsp/dosya/dosyaGoster.htm?tempAd=sign6386905884950108608.pdf&orjinalAd=e-imza.pdf&yuklemeTarihi=2026-09-23"
+            }
+          ]
+        }
+      ],
+      "announcement_date": "2026-11-02",
+      "statutory_clocks": [
+        {
+          "code": "iyuk_20a",
+          "kind": "İYUK 20/A annulment lawsuit (30d; İYUK 11 does not toll)",
+          "deadline": "2026-12-02",
+          "days_remaining": 12
+        }
+      ],
+      "priority_district": true,
+      "filing_key": "61246:02.11.2026:ÇED Gerekli Değil/ÇED Olumlu",
+      "first_seen_at": "2026-11-20T00:44:21"
+    },
+    {
+      "province": "MANİSA",
+      "district": "YUNUSEMRE",
+      "project_name": "Tehlikesiz Atık Geri Kazanımı ve Tehlikeli Atık Ön İşlem Prosesi İlavesi (Toplam Kapasite: 87,555 ton/gün)",
+      "project_owner": "MAXİON İNCİ JANT SANAYİ ANONİM ŞİRKETİ ALÜMİNYUM JANT İŞLETMESİ ŞUBESİ",
+      "sector": "Atık",
+      "sub_sector": "Atık Bertaraf /Geri Kazanım/ Depolama Tesisi Projeleri",
+      "decision_type": "ÇED Gerekli Değil/ÇED Olumlu",
+      "announcement_date_tr": "02.11.2026",
+      "project_type": "Ek-2",
+      "detail_text": "MANİSA ili YUNUSEMRE,  ilcesinde MANİSA ili YUNUSEMRE,  ilcesi tapunun Kayapınar Mahallesi, 3311 Ada, 18 parseli mevkiindeki MAXİON İNCİ JANT SANAYİ ANONİM ŞİRKETİ ALÜMİNYUM JANT İŞLETMESİ ŞUBESİ tarafından yapılması planlanan Tehlikesiz Atık Geri Kazanımı ve Tehlikeli Atık Ön İşlem Prosesi İlavesi (Toplam Kapasite: 87,555 ton/gün) projesi ile ilgili olarak Bakanlığımıza sunulan PTD Dosyası incelenmiş ve değerlendirilmiştir  ÇED Yönetmeliği'nin 17. maddesi gereğince Tehlikesiz Atık Geri Kazanımı ve Tehlikeli Atık Ön İşlem Prosesi İlavesi (Toplam Kapasite: 87,555 ton/gün) projesi'ne Valiliğimizce 'ÇED Olumlu (Kapsam Ek-2)' kararı verilmiştir.",
+      "detail_links": [
+        {
+          "text": "PTD Dosyası",
+          "href": "http://eced.csb.gov.tr/jsp/ek1/61193"
+        }
+      ],
+      "documents": [
+        {
+          "portal_doc_url": "http://eced.csb.gov.tr/jsp/ek1/61193",
+          "filing_id": "61193",
+          "consulting_firm": "CANÇED ÇEVRE DANIŞMANLIK VE MÜHENDİSLİK SAN. TİC. LTD. ŞTİ.",
+          "submitted_at": "29/09/2026 01:19:52",
+          "pdf_urls": [
+            {
+              "label": "Dosya Göster",
+              "url": "http://eced.csb.gov.tr/jsp/dosya/dosyaGoster.htm?tempAd=sign2428537268534369520.pdf&orjinalAd=e-imza.pdf&yuklemeTarihi=2026-10-16"
+            }
+          ]
+        }
+      ],
+      "announcement_date": "2026-11-02",
+      "statutory_clocks": [
+        {
+          "code": "iyuk_20a",
+          "kind": "İYUK 20/A annulment lawsuit (30d; İYUK 11 does not toll)",
+          "deadline": "2026-12-02",
+          "days_remaining": 12
+        }
+      ],
+      "priority_district": true,
+      "filing_key": "61193:02.11.2026:ÇED Gerekli Değil/ÇED Olumlu",
+      "first_seen_at": "2026-11-20T00:44:21"
+    },
+    {
+      "province": "MANİSA",
+      "district": "DEMİRCİ",
+      "project_name": "R26 - Manisa Rüzgar Enerji Santrali (34 adet Türbin - 238 MWm / 235 MWe)",
+      "project_owner": "Enerji İşleri Genel Müdürlüğü",
+      "sector": "Enerji",
+      "sub_sector": "Rüzgar Enerji Santralleri",
+      "decision_type": "HKT",
+      "announcement_date_tr": "30.10.2026",
+      "project_type": "Ek-1",
+      "detail_text": "MANİSA ili DEMİRCİ,  ilcesinde MANİSA ili DEMİRCİ ilçesi sınırları içerisinde Enerji İşleri Genel Müdürlüğü tarafından yapılması planlanan R26 - Manisa Rüzgar Enerji Santrali (34 adet Türbin - 238 MWm / 235 MWe) projesi ile ilgili Çevresel Etki Değerlendirme süreci başlamış ve Çevresel Etki Değerlendirmesi Başvuru Dosyası halkın görüşüne açılmıştır.Söz konusu projeye ilişkin, halkı proje hakkında bilgilendirmek, görüş ve önerilerini almak amacıyla ÇED Yönetmeliğinin 9. maddesi gereğince 03/12/2026 tarihinde Halkın Katılım Toplantısı düzenlenecektir.ÇED Başvuru Dosyasını İncelemek isteyenler Bakanlık Merkezinde veya MANİSA Çevre ve Şehircilik İl Müdürlüklerinde duyuru tarihinden itibaren raporu inceleyerek, zamanlama takvimi içerisinde proje hakkında Bakanlığa veya Valiliğe görüş bildirebilirler. Halkın Katılımı Toplantısı yeri ve saati ile ilgili ÇED İzin Denetim Genel Müdürlüğü ve MANİSA Çevre, Şehircilik ve İklim Değişikliği İl Müdürlüğünden bilgi alınabilir. İlgililere ve kamuoyuna duyurulur.",
+      "detail_links": [
+        {
+          "text": "Başvuru Dosyası",
+          "href": "http://eced.csb.gov.tr/jsp/ek1/61433"
+        }
+      ],
+      "documents": [
+        {
+          "portal_doc_url": "http://eced.csb.gov.tr/jsp/ek1/61433",
+          "filing_id": "61433",
+          "consulting_firm": "ELTEM-TEK ELEKTRİK TESİSLERİ MÜHENDİSLİK MÜTEAHHİTLİK DANIŞMANLIK VE TİCARET ANONİM ŞİRKETİ",
+          "submitted_at": "14/10/2026 05:41:51",
+          "pdf_urls": [
+            {
+              "label": "Dosya Göster",
+              "url": "http://eced.csb.gov.tr/jsp/dosya/dosyaGoster.htm?tempAd=sign4663532461169896688.pdf&orjinalAd=e-imza.pdf&yuklemeTarihi=2026-10-14"
+            }
+          ]
+        }
+      ],
+      "announcement_date": "2026-10-30",
+      "statutory_clocks": [
+        {
+          "code": "hkt",
+          "kind": "HKT public participation notice (verify date in full text)",
+          "deadline": null,
+          "days_remaining": null
+        }
+      ],
+      "priority_district": false,
+      "filing_key": "61433:30.10.2026:HKT",
+      "first_seen_at": "2026-11-20T00:44:22"
+    },
+    {
+      "province": "MANİSA",
+      "district": "SALİHLİ",
+      "project_name": "Büyükbaş Hayvan Yetiştirme Tesisi Kapasite Artışı (224 adet büyükbaştan 1.000 adet büyükbaşa artış)",
+      "project_owner": "Sardova Tarım ve Hayvancılık Tic. Ltd. Şti.",
+      "sector": "Hayvancılık",
+      "sub_sector": "Büyükbaş-Küçükbaş Hayvan Besi Tesisleri",
+      "decision_type": "ÇED Gerekli Değil/ÇED Olumlu",
+      "announcement_date_tr": "28.10.2026",
+      "project_type": "Ek-2",
+      "detail_text": "MANİSA ili SALİHLİ,  ilcesinde MANİSA ili SALİHLİ,  ilcesi Dombaylı Mah., Tapunun 124 Ada, 71 Nolu Parseli mevkiindeki Sardova Tarım ve Hayvancılık Tic. Ltd. Şti. tarafından yapılması planlanan Büyükbaş Hayvan Yetiştirme Tesisi Kapasite Artışı (224 adet büyükbaştan 1.000 adet büyükbaşa artış) projesi ile ilgili olarak Bakanlığımıza sunulan PTD Dosyası incelenmiş ve değerlendirilmiştir  ÇED Yönetmeliği'nin 17. maddesi gereğince Büyükbaş Hayvan Yetiştirme Tesisi Kapasite Artışı (224 adet büyükbaştan 1.000 adet büyükbaşa artış) projesi'ne Valiliğimizce 'ÇED Olumlu (Kapsam Ek-2)' kararı verilmiştir.",
+      "detail_links": [
+        {
+          "text": "PTD Dosyası",
+          "href": "http://eced.csb.gov.tr/jsp/ek1/61259"
+        }
+      ],
+      "documents": [
+        {
+          "portal_doc_url": "http://eced.csb.gov.tr/jsp/ek1/61259",
+          "filing_id": "61259",
+          "consulting_firm": "ASİL ÇEVRE MÜHENDİSLİK VE ATIK YÖNETİMİ HİZMETLERİ LİMİTED ŞİRKETİ",
+          "submitted_at": "02/10/2026 12:14:04",
+          "pdf_urls": [
+            {
+              "label": "Dosya Göster",
+              "url": "http://eced.csb.gov.tr/jsp/dosya/dosyaGoster.htm?tempAd=sign5849588052928662607.pdf&orjinalAd=SARDOVAPTD.pdf&yuklemeTarihi=2026-10-01"
+            }
+          ]
+        }
+      ],
+      "announcement_date": "2026-10-28",
+      "statutory_clocks": [
+        {
+          "code": "iyuk_20a",
+          "kind": "İYUK 20/A annulment lawsuit (30d; İYUK 11 does not toll)",
+          "deadline": "2026-11-27",
+          "days_remaining": 7
+        }
+      ],
+      "priority_district": true,
+      "filing_key": "61259:28.10.2026:ÇED Gerekli Değil/ÇED Olumlu",
+      "first_seen_at": "2026-11-20T00:44:23"
+    },
+    {
+      "province": "MANİSA",
+      "district": "DEMİRCİ",
+      "project_name": "ZEYTİNYAĞI ÜRETİM TESİSİ KAPASİTE ARTIŞI",
+      "project_owner": "Kadim Zeytin Zeytinyağı Sanayi ve Ticaret Limited Şirketi",
+      "sector": "Gıda",
+      "sub_sector": "Bitkisel, Hayvansal Yağ Üretimi",
+      "decision_type": "ÇED Gerekli Değil/ÇED Olumlu",
+      "announcement_date_tr": "28.10.2026",
+      "project_type": "Ek-2",
+      "detail_text": "MANİSA ili DEMİRCİ,  ilcesinde MANİSA ili DEMİRCİ,  ilcesi Yeşildere Mahallesi, Cumaalanı Mevkii (K21A-01B Pafta, 114 Ada, 13 parsel- 9.213,69 m2) mevkiindeki Kadim Zeytin Zeytinyağı Sanayi ve Ticaret Limited Şirketi tarafından yapılması planlanan ZEYTİNYAĞI ÜRETİM TESİSİ KAPASİTE ARTIŞI projesi ile ilgili olarak Bakanlığımıza sunulan PTD Dosyası incelenmiş ve değerlendirilmiştir  ÇED Yönetmeliği'nin 17. maddesi gereğince ZEYTİNYAĞI ÜRETİM TESİSİ KAPASİTE ARTIŞI projesi'ne Valiliğimizce 'ÇED Olumlu (Kapsam Ek-2)' kararı verilmiştir.",
+      "detail_links": [
+        {
+          "text": "PTD Dosyası",
+          "href": "http://eced.csb.gov.tr/jsp/ek1/60788"
+        }
+      ],
+      "documents": [
+        {
+          "portal_doc_url": "http://eced.csb.gov.tr/jsp/ek1/60788",
+          "filing_id": "60788",
+          "consulting_firm": "NİLÇEM ÇEVRE DAN. MÜH. HİZ. İNŞ. TAAH. SAN. VE TİC. LTD. ŞTİ",
+          "submitted_at": "07/09/2026 10:40:09",
+          "pdf_urls": [
+            {
+              "label": "Dosya Göster",
+              "url": "http://eced.csb.gov.tr/jsp/dosya/dosyaGoster.htm?tempAd=sign4416924258751231173.pdf&orjinalAd=e-imza.pdf&yuklemeTarihi=2026-10-15"
+            }
+          ]
+        }
+      ],
+      "announcement_date": "2026-10-28",
+      "statutory_clocks": [
+        {
+          "code": "iyuk_20a",
+          "kind": "İYUK 20/A annulment lawsuit (30d; İYUK 11 does not toll)",
+          "deadline": "2026-11-27",
+          "days_remaining": 7
+        }
+      ],
+      "priority_district": false,
+      "filing_key": "60788:28.10.2026:ÇED Gerekli Değil/ÇED Olumlu",
+      "first_seen_at": "2026-11-20T00:44:24"
+    },
+    {
+      "province": "MANİSA",
+      "district": "KÖPRÜBAŞI",
+      "project_name": "2 adet (3565 m2 )  kümeste planlanan 57.040 adet/dönem kapasiteli ?Etlik Piliç Yetiştirme Tesisi",
+      "project_owner": "Anemis Taşımacılık Turizm. Gıda ve San. Dış Ticaret Ltd. Şti",
+      "sector": "Hayvancılık",
+      "sub_sector": "Kümes Hayvanları  Yetiştirme Tesisleri",
+      "decision_type": "ÇED Süreci Başlayan",
+      "announcement_date_tr": "27.10.2026",
+      "project_type": "Ek-2",
+      "detail_text": "MANİSA ili KÖPRÜBAŞI,  ilcesinde MANİSA ili KÖPRÜBAŞI,  ilçesi Döğüşören Mahallesi, Kocaharman mevkii, 0 ada 518 parsel mevkiindeki Anemis Taşımacılık Turizm. Gıda ve San. Dış Ticaret Ltd. Şti tarafından yapılması planlanan 2 adet (3565 m2 )  kümeste planlanan 57.040 adet/dönem kapasiteli ?Etlik Piliç Yetiştirme Tesisi  projesi ile ilgili olarak MANİSA Valiliğimize sunulan P.T.D. Dosyası Çevresel Etki Değerlendirmesi Yönetmeliği'nin 16. maddesi doğrultusunda incelenmiş ve projeye ilişkin ÇED Süreci başlamıştır. İlgililere ve kamuoyuna duyurulur.",
+      "detail_links": [
+        {
+          "text": "P.T.D. Dosyası",
+          "href": "http://eced.csb.gov.tr/jsp/ek1/61558"
+        }
+      ],
+      "documents": [
+        {
+          "portal_doc_url": "http://eced.csb.gov.tr/jsp/ek1/61558",
+          "filing_id": "61558",
+          "consulting_firm": "YEŞİLMAVI MÜH. ÇEVRE YÖN. VE DAN. HİZ. LTD. ŞTİ.",
+          "submitted_at": "23/10/2026 05:47:25",
+          "pdf_urls": [
+            {
+              "label": "Dosya Göster",
+              "url": "http://eced.csb.gov.tr/jsp/dosya/dosyaGoster.htm?tempAd=sign740350934612764753.pdf&orjinalAd=e-imza.pdf&yuklemeTarihi=2026-10-23"
+            }
+          ]
+        }
+      ],
+      "announcement_date": "2026-10-27",
+      "statutory_clocks": [
+        {
+          "code": "aski_10d",
+          "kind": "10-day public review/comment window (askı süresi)",
+          "deadline": "2026-11-06",
+          "days_remaining": -14
+        }
+      ],
+      "priority_district": false,
+      "filing_key": "61558:27.10.2026:ÇED Süreci Başlayan",
+      "first_seen_at": "2026-11-20T00:44:24"
+    },
+    {
+      "province": "MANİSA",
+      "district": "DEMİRCİ",
+      "project_name": "R26 - Manisa Rüzgar Enerji Santrali (34 adet Türbin - 238 MWm / 235 MWe)",
+      "project_owner": "Enerji İşleri Genel Müdürlüğü",
+      "sector": "Enerji",
+      "sub_sector": "Rüzgar Enerji Santralleri",
+      "decision_type": "ÇED Süreci Başlayan",
+      "announcement_date_tr": "27.10.2026",
+      "project_type": "Ek-1",
+      "detail_text": "MANİSA ili DEMİRCİ,  ilcesinde MANİSA il DEMİRCİ,  ilce Arküstü, Hışıköyü, Sütpınarı, Kocahisar, Başalan, Ahlatlı Kuz, Büyükyayla-Kavaklıdere, Akıncıbaşı mevkiinde Enerji İşleri Genel Müdürlüğü tarafından yapılması planlanan R26 - Manisa Rüzgar Enerji Santrali (34 adet Türbin - 238 MWm / 235 MWe) projesi ile ilgili olarak Bakanlığımıza sunulan ÇED Başvuru Dosyası Çevresel Etki Değerlendirmesi Yönetmeliği'nin 8. maddesi doğrultusunda incelenmiş ve başvurunun ÇED Genel Formatına uygun hazırlandığı anlaşılmış olup, projeye ilişkin ÇED Süreci başlatılmıştır. Çevresel Etki Değerlendirmesi süreci tamamlanana kadar, süreç ile ilgili her türlü bilgiler ve projeye ilişkin görüş, soru ve öneriler MANİSA Valiliğine (Çevre, Şehircilik ve İklim Değişikliği İl Müdürlüğü) veya Çevre, Şehircilik ve İklim Değişikliği Bakanlığına gönderilebilir.İlgililere ve kamuoyuna duyurulur.",
+      "detail_links": [
+        {
+          "text": "ÇED Başvuru Dosyası",
+          "href": "http://eced.csb.gov.tr/jsp/ek1/61433"
+        }
+      ],
+      "documents": [
+        {
+          "portal_doc_url": "http://eced.csb.gov.tr/jsp/ek1/61433",
+          "filing_id": "61433",
+          "consulting_firm": "ELTEM-TEK ELEKTRİK TESİSLERİ MÜHENDİSLİK MÜTEAHHİTLİK DANIŞMANLIK VE TİCARET ANONİM ŞİRKETİ",
+          "submitted_at": "14/10/2026 05:41:51",
+          "pdf_urls": [
+            {
+              "label": "Dosya Göster",
+              "url": "http://eced.csb.gov.tr/jsp/dosya/dosyaGoster.htm?tempAd=sign4663532461169896688.pdf&orjinalAd=e-imza.pdf&yuklemeTarihi=2026-10-14"
+            }
+          ]
+        }
+      ],
+      "announcement_date": "2026-10-27",
+      "statutory_clocks": [
+        {
+          "code": "aski_10d",
+          "kind": "10-day public review/comment window (askı süresi)",
+          "deadline": "2026-11-06",
+          "days_remaining": -14
+        }
+      ],
+      "priority_district": false,
+      "filing_key": "61433:27.10.2026:ÇED Süreci Başlayan",
+      "first_seen_at": "2026-11-20T00:44:25"
+    },
+    {
+      "row_index": 16,
+      "button_id": "form:duyurTable:16:j_idt67",
+      "province": "İZMİR",
+      "district": "KEMALPAŞA",
+      "project_name": "Bitkisel Ve Hayvansal Ham Yağların İşlenerek Nötr Yağ Üretimi (14.131,2 Ton/Yıl)",
+      "project_owner": "3F Biyokimya Yağ Ve Yem Ham Maddeleri San. Tic. Ltd. Şti.",
+      "sector": "Gıda",
+      "sub_sector": "Bitkisel, Hayvansal Yağ Üretimi",
+      "decision_type": "ÇED Gerekli Değil/ÇED Olumlu",
+      "announcement_date_tr": "27.10.2026",
+      "project_type": "Ek-2",
+      "detail_text": "İZMİR ili KEMALPAŞA,  ilcesinde İZMİR ili KEMALPAŞA,  ilcesi  Armutlu 85. Yıl Cumhuriyet Mahallesi, 283 Ada, 4 Nolu Parsel mevkiindeki 3F Biyokimya Yağ Ve Yem Ham Maddeleri San. Tic. Ltd. Şti. tarafından yapılması planlanan Bitkisel Ve Hayvansal Ham Yağların İşlenerek Nötr Yağ Üretimi (14.131,2 Ton/Yıl) projesi ile ilgili olarak Bakanlığımıza sunulan PTD Dosyası incelenmiş ve değerlendirilmiştir  ÇED Yönetmeliği'nin 17. maddesi gereğince Bitkisel Ve Hayvansal Ham Yağların İşlenerek Nötr Yağ Üretimi (14.131,2 Ton/Yıl) projesi'ne Valiliğimizce 'ÇED Olumlu (Kapsam Ek-2)' kararı verilmiştir.",
+      "detail_links": [
+        {
+          "text": "PTD Dosyası",
+          "href": "http://eced.csb.gov.tr/jsp/ek1/61063"
+        }
+      ],
+      "documents": [
+        {
+          "portal_doc_url": "http://eced.csb.gov.tr/jsp/ek1/61063",
+          "filing_id": "61063",
+          "consulting_firm": "ASİL ÇEVRE MÜHENDİSLİK VE ATIK YÖNETİMİ HİZMETLERİ LİMİTED ŞİRKETİ",
+          "submitted_at": "11/09/2026 09:17:14",
+          "pdf_urls": [
+            {
+              "label": "Dosya Göster",
+              "url": "http://eced.csb.gov.tr/jsp/dosya/dosyaGoster.htm?tempAd=sign6003100229897066927.pdf&orjinalAd=FBIYOKIMYAPTDnihai.pdf&yuklemeTarihi=2026-10-21"
+            }
+          ]
+        }
+      ],
+      "announcement_date": "2026-10-27",
+      "statutory_clocks": [
+        {
+          "code": "iyuk_20a",
+          "kind": "İYUK 20/A annulment lawsuit (30d; İYUK 11 does not toll)",
+          "deadline": "2026-11-26",
+          "days_remaining": 6
+        }
+      ],
+      "priority_district": false,
+      "filing_key": "61063:27.10.2026:ÇED Gerekli Değil/ÇED Olumlu",
+      "first_seen_at": null
+    },
+    {
+      "row_index": 17,
+      "button_id": "form:duyurTable:17:j_idt67",
+      "province": "İZMİR",
+      "district": "KEMALPAŞA",
+      "project_name": "Zeytinyağı Üretim Tesisi (Zeytin İşleme Kapasitesi 120 Ton/Gün, Zeytinyağı Üretim Kapasitesi 24 Ton/Gün)",
+      "project_owner": "Muhsin Bayraktar Tarım Ürünl. Gıda Paz. San. Ve Tic. Ltd. Şti.",
+      "sector": "Gıda",
+      "sub_sector": "Bitkisel, Hayvansal Yağ Üretimi",
+      "decision_type": "ÇED Süreci Başlayan",
+      "announcement_date_tr": "26.10.2026",
+      "project_type": "Ek-2",
+      "detail_text": "İZMİR ili KEMALPAŞA,  ilcesinde İZMİR ili KEMALPAŞA,  ilçesi Çınarköy Mahallesi, 131 Ada, 2 Nolu Parsel mevkiindeki Muhsin Bayraktar Tarım Ürünl. Gıda Paz. San. Ve Tic. Ltd. Şti. tarafından yapılması planlanan Zeytinyağı Üretim Tesisi (Zeytin İşleme Kapasitesi 120 Ton/Gün, Zeytinyağı Üretim Kapasitesi 24 Ton/Gün) projesi ile ilgili olarak İZMİR Valiliğimize sunulan P.T.D. Dosyası Çevresel Etki Değerlendirmesi Yönetmeliği'nin 16. maddesi doğrultusunda incelenmiş ve projeye ilişkin ÇED Süreci başlamıştır. İlgililere ve kamuoyuna duyurulur.",
+      "detail_links": [
+        {
+          "text": "P.T.D. Dosyası",
+          "href": "http://eced.csb.gov.tr/jsp/ek1/61496"
+        }
+      ],
+      "documents": [
+        {
+          "portal_doc_url": "http://eced.csb.gov.tr/jsp/ek1/61496",
+          "filing_id": "61496",
+          "consulting_firm": "ASİL ÇEVRE MÜHENDİSLİK VE ATIK YÖNETİMİ HİZMETLERİ LİMİTED ŞİRKETİ",
+          "submitted_at": "23/10/2026 08:49:29",
+          "pdf_urls": [
+            {
+              "label": "Dosya Göster",
+              "url": "http://eced.csb.gov.tr/jsp/dosya/dosyaGoster.htm?tempAd=sign3585574172226204266.pdf&orjinalAd=MuhsinBay.PTDnihai.pdf&yuklemeTarihi=2026-11-04"
+            }
+          ]
+        }
+      ],
+      "announcement_date": "2026-10-26",
+      "statutory_clocks": [
+        {
+          "code": "aski_10d",
+          "kind": "10-day public review/comment window (askı süresi)",
+          "deadline": "2026-11-05",
+          "days_remaining": -15
+        }
+      ],
+      "priority_district": false,
+      "filing_key": "61496:26.10.2026:ÇED Süreci Başlayan",
+      "first_seen_at": null
+    },
+    {
+      "row_index": 18,
+      "button_id": "form:duyurTable:18:j_idt67",
+      "province": "İZMİR",
+      "district": "KONAK",
+      "project_name": "Turizm Konaklama Tesisi (110 Oda Kapasiteli Otel)",
+      "project_owner": "ORAN OTEL VE TURİZM A.Ş.",
+      "sector": "Turizm",
+      "sub_sector": "Turistik Tesisler",
+      "decision_type": "ÇED Gerekli Değil/ÇED Olumlu",
+      "announcement_date_tr": "26.10.2026",
+      "project_type": "Ek-2",
+      "detail_text": "İZMİR ili KONAK,  ilcesinde İZMİR ili KONAK,  ilcesi İzmir İli, Konak İlçesi, Akdeniz Mah. Gazi Osman Paşa Blv. Renaissance No:16/Z01 (Tapunun 997 ada 11 nolu parseli) mevkiindeki ORAN OTEL VE TURİZM A.Ş. tarafından yapılması planlanan Turizm Konaklama Tesisi (110 Oda Kapasiteli Otel) projesi ile ilgili olarak Bakanlığımıza sunulan PTD Dosyası incelenmiş ve değerlendirilmiştir  ÇED Yönetmeliği'nin 17. maddesi gereğince Turizm Konaklama Tesisi (110 Oda Kapasiteli Otel) projesi'ne Valiliğimizce 'ÇED Olumlu (Kapsam Ek-2)' kararı verilmiştir.",
+      "detail_links": [
+        {
+          "text": "PTD Dosyası",
+          "href": "http://eced.csb.gov.tr/jsp/ek1/61052"
+        }
+      ],
+      "documents": [
+        {
+          "portal_doc_url": "http://eced.csb.gov.tr/jsp/ek1/61052",
+          "filing_id": "61052",
+          "consulting_firm": "PROÇED ÇEVRE DANIŞMANLIĞI MÜHENDİSLİK SAN.TİC.LTD.ŞTİ",
+          "submitted_at": "11/09/2026 03:45:10",
+          "pdf_urls": [
+            {
+              "label": "Dosya Göster",
+              "url": "http://eced.csb.gov.tr/jsp/dosya/dosyaGoster.htm?tempAd=sign878812613125647858.pdf&orjinalAd=e-imza.pdf&yuklemeTarihi=2026-10-12"
+            }
+          ]
+        }
+      ],
+      "announcement_date": "2026-10-26",
+      "statutory_clocks": [
+        {
+          "code": "iyuk_20a",
+          "kind": "İYUK 20/A annulment lawsuit (30d; İYUK 11 does not toll)",
+          "deadline": "2026-11-25",
+          "days_remaining": 5
+        }
+      ],
+      "priority_district": false,
+      "filing_key": "61052:26.10.2026:ÇED Gerekli Değil/ÇED Olumlu",
+      "first_seen_at": null
+    },
+    {
+      "row_index": 19,
+      "button_id": "form:duyurTable:19:j_idt67",
+      "province": "İZMİR",
+      "district": "TORBALI",
+      "project_name": "Alkolsüz, Aromalı Gazlı İçecek ve Enerji İçeceği Üretimi Kapasite Artışı Projesi (960 m3/yıl'dan 29.875,200 m3/yıl'a artış)",
+      "project_owner": "HEMA İÇECEK PAZARLAMA GIDA SANAYİ VE TİCARET LİMİTED ŞİRKETİ",
+      "sector": "Gıda",
+      "sub_sector": "Meyve Türevli içecekler",
+      "decision_type": "ÇED Gerekli Değil/ÇED Olumlu",
+      "announcement_date_tr": "26.10.2026",
+      "project_type": "Ek-2",
+      "detail_text": "İZMİR ili TORBALI,  ilcesinde İZMİR ili TORBALI,  ilcesi Yazıbaşı Mah. 9222/2 Sok. No: 4 Torbalı/İZMİR  mevkiindeki HEMA İÇECEK PAZARLAMA GIDA SANAYİ VE TİCARET LİMİTED ŞİRKETİ  tarafından yapılması planlanan Alkolsüz, Aromalı Gazlı İçecek ve Enerji İçeceği Üretimi Kapasite Artışı Projesi (960 m3/yıl'dan 29.875,200 m3/yıl'a artış) projesi ile ilgili olarak Bakanlığımıza sunulan PTD Dosyası incelenmiş ve değerlendirilmiştir  ÇED Yönetmeliği'nin 17. maddesi gereğince Alkolsüz, Aromalı Gazlı İçecek ve Enerji İçeceği Üretimi Kapasite Artışı Projesi (960 m3/yıl'dan 29.875,200 m3/yıl'a artış) projesi'ne Valiliğimizce 'ÇED Olumlu (Kapsam Ek-2)' kararı verilmiştir.",
+      "detail_links": [
+        {
+          "text": "PTD Dosyası",
+          "href": "http://eced.csb.gov.tr/jsp/ek1/60185"
+        }
+      ],
+      "documents": [
+        {
+          "portal_doc_url": "http://eced.csb.gov.tr/jsp/ek1/60185",
+          "filing_id": "60185",
+          "consulting_firm": "ENVON ÇEVRE DANIŞMANLIK MÜH. İNŞ. TAAH. SAN. TİC. LTD. ŞTİ.",
+          "submitted_at": "16/06/2026 07:04:07",
+          "pdf_urls": [
+            {
+              "label": "Dosya Göster",
+              "url": "http://eced.csb.gov.tr/jsp/dosya/dosyaGoster.htm?tempAd=sign9216224860494607408.pdf&orjinalAd=e-imza.pdf&yuklemeTarihi=2026-10-15"
+            }
+          ]
+        }
+      ],
+      "announcement_date": "2026-10-26",
+      "statutory_clocks": [
+        {
+          "code": "iyuk_20a",
+          "kind": "İYUK 20/A annulment lawsuit (30d; İYUK 11 does not toll)",
+          "deadline": "2026-11-25",
+          "days_remaining": 5
+        }
+      ],
+      "priority_district": false,
+      "filing_key": "60185:26.10.2026:ÇED Gerekli Değil/ÇED Olumlu",
+      "first_seen_at": null
+    },
+    {
+      "row_index": 21,
+      "button_id": "form:duyurTable:21:j_idt67",
+      "province": "İZMİR",
+      "district": "GAZİEMİR",
+      "project_name": "Muhtelif Temizlik Ürünleri, El ve Cilt Arındırıcıları Üretimi Kapasite Artışı Projesi [18.564 ton/yıldan 55.442,88 ton/yıl?a Artış (Kimyasal Reaksiyonla Gerçekleştirilen Üretimler: 4.230,144 ton/yıl Bulaşık Makinesi Sıvı Deterjanı; 2.115,072 ton/yıl Çamaşır Suyu; 2.115,072 ton/yıl Kireç ve Pas Çözücü; 4.230,144 ton/yıl Elde Yıkama Bulaşık Deterjanı; 2.115,072 ton/yıl Şampuan; 2.115,072 ton/yıl Banyo-WC Temizleyicisi) ve 14,1 ton/gün Kimyasal Reaksiyonla Gerçekleştirilen Sıvı Sabun Üretimi]",
+      "project_owner": "WORLDCHEM KİMYASAL ÜRÜNLER VE TEMİZLİK MALZEMELERİ GIDA TURİZM SANAYİ TİCARET LİMİTED ŞİRKETİ",
+      "sector": "Kimya",
+      "sub_sector": "Kimyasal Üretim Yapan Tesis Projeleri",
+      "decision_type": "ÇED Gerekli Değil/ÇED Olumlu",
+      "announcement_date_tr": "26.10.2026",
+      "project_type": "Ek-2",
+      "detail_text": "İZMİR ili GAZİEMİR,  ilcesinde İZMİR ili GAZİEMİR,  ilcesi Fatih Mah. 1191 Sokak No:11, 18.N.III.A Pafta, 11104 Ada, 5 Parsel, 3.500 m2 yüzölçümüne sahip alanının 3.483 m2 kapalı alanında  mevkiindeki WORLDCHEM KİMYASAL ÜRÜNLER VE TEMİZLİK MALZEMELERİ GIDA TURİZM SANAYİ TİCARET LİMİTED ŞİRKETİ tarafından yapılması planlanan Muhtelif Temizlik Ürünleri, El ve Cilt Arındırıcıları Üretimi Kapasite Artışı Projesi [18.564 ton/yıldan 55.442,88 ton/yıl?a Artış (Kimyasal Reaksiyonla Gerçekleştirilen Üretimler: 4.230,144 ton/yıl Bulaşık Makinesi Sıvı Deterjanı; 2.115,072 ton/yıl Çamaşır Suyu; 2.115,072 ton/yıl Kireç ve Pas Çözücü; 4.230,144 ton/yıl Elde Yıkama Bulaşık Deterjanı; 2.115,072 ton/yıl Şampuan; 2.115,072 ton/yıl Banyo-WC Temizleyicisi) ve 14,1 ton/gün Kimyasal Reaksiyonla Gerçekleştirilen Sıvı Sabun Üretimi] projesi ile ilgili olarak Bakanlığımıza sunulan PTD Dosyası incelenmiş ve değerlendirilmiştir  ÇED Yönetmeliği'nin 17. maddesi gereğince Muhtelif Temizlik Ürünleri, El ve Cilt Arındırıcıları Üretimi Kapasite Artışı Projesi [18.564 ton/yıldan 55.442,88 ton/yıl?a Artış (Kimyasal Reaksiyonla Gerçekleştirilen Üretimler: 4.230,144 ton/yıl Bulaşık Makinesi Sıvı Deterjanı; 2.115,072 ton/yıl Çamaşır Suyu; 2.115,072 ton/yıl Kireç ve Pas Çözücü; 4.230,144 ton/yıl Elde Yıkama Bulaşık Deterjanı; 2.115,072 ton/yıl Şampuan; 2.115,072 ton/yıl Banyo-WC Temizleyicisi) ve 14,1 ton/gün Kimyasal Reaksiyonla Gerçekleştirilen Sıvı Sabun Üretimi] projesi'ne Valiliğimizce 'ÇED Olumlu (Kapsam Ek-2)' kararı verilmiştir.",
+      "detail_links": [
+        {
+          "text": "PTD Dosyası",
+          "href": "http://eced.csb.gov.tr/jsp/ek1/59690"
+        }
+      ],
+      "documents": [
+        {
+          "portal_doc_url": "http://eced.csb.gov.tr/jsp/ek1/59690",
+          "filing_id": "59690",
+          "consulting_firm": "CNR ÇED ÇEVRE HİZMETLERİ TİC. LTD. ŞTİ.",
+          "submitted_at": "29/04/2026 06:07:52",
+          "pdf_urls": [
+            {
+              "label": "Dosya Göster",
+              "url": "http://eced.csb.gov.tr/jsp/dosya/dosyaGoster.htm?tempAd=sign1337375265171045554.pdf&orjinalAd=e-imza.pdf&yuklemeTarihi=2026-10-13"
+            }
+          ]
+        }
+      ],
+      "announcement_date": "2026-10-26",
+      "statutory_clocks": [
+        {
+          "code": "iyuk_20a",
+          "kind": "İYUK 20/A annulment lawsuit (30d; İYUK 11 does not toll)",
+          "deadline": "2026-11-25",
+          "days_remaining": 5
+        }
+      ],
+      "priority_district": false,
+      "filing_key": "59690:26.10.2026:ÇED Gerekli Değil/ÇED Olumlu",
+      "first_seen_at": null
+    },
+    {
+      "row_index": 24,
+      "button_id": "form:duyurTable:24:j_idt67",
+      "province": "İZMİR",
+      "district": "MENEMEN",
+      "project_name": "KÜÇÜKBAŞ YAŞ HAM DERİ İŞLEME (1.113,75 TON/YIL)",
+      "project_owner": "A.Z.D DERİ SAN. VE TİC. LTD. ŞTİ.",
+      "sector": "Sanayi",
+      "sub_sector": "Deri İşleme Tesisleri",
+      "decision_type": "ÇED Gerekli Değil/ÇED Olumlu",
+      "announcement_date_tr": "25.10.2026",
+      "project_type": "Ek-2",
+      "detail_text": "İZMİR ili MENEMEN,  ilcesinde İZMİR ili MENEMEN,  ilcesi KESİK KÖYÜ, PANAZ MEVKİİ, 169 NOLU ADA, 4 NOLU PARSEL mevkiindeki A.Z.D DERİ SAN. VE TİC. LTD. ŞTİ. tarafından yapılması planlanan KÜÇÜKBAŞ YAŞ HAM DERİ İŞLEME (1.113,75 TON/YIL) projesi ile ilgili olarak Bakanlığımıza sunulan PTD Dosyası incelenmiş ve değerlendirilmiştir  ÇED Yönetmeliği'nin 17. maddesi gereğince KÜÇÜKBAŞ YAŞ HAM DERİ İŞLEME (1.113,75 TON/YIL) projesi'ne Valiliğimizce 'ÇED Olumlu (Kapsam Ek-2)' kararı verilmiştir.",
+      "detail_links": [
+        {
+          "text": "PTD Dosyası",
+          "href": "http://eced.csb.gov.tr/jsp/ek1/60840"
+        }
+      ],
+      "documents": [
+        {
+          "portal_doc_url": "http://eced.csb.gov.tr/jsp/ek1/60840",
+          "filing_id": "60840",
+          "consulting_firm": "İzmir Doğa Çevre Danışmanlık İş Sağlığı ve Güvenliği Kalite ve Atık Yönetimi Müh. Tic. Ltd. Şti.",
+          "submitted_at": "03/09/2026 05:01:34",
+          "pdf_urls": [
+            {
+              "label": "Dosya Göster",
+              "url": "http://eced.csb.gov.tr/jsp/dosya/dosyaGoster.htm?tempAd=sign4569664276425852094.pdf&orjinalAd=e-imza.pdf&yuklemeTarihi=2026-10-14"
+            }
+          ]
+        }
+      ],
+      "announcement_date": "2026-10-25",
+      "statutory_clocks": [
+        {
+          "code": "iyuk_20a",
+          "kind": "İYUK 20/A annulment lawsuit (30d; İYUK 11 does not toll)",
+          "deadline": "2026-11-24",
+          "days_remaining": 4
+        }
+      ],
+      "priority_district": true,
+      "filing_key": "60840:25.10.2026:ÇED Gerekli Değil/ÇED Olumlu",
+      "first_seen_at": null
+    },
+    {
+      "row_index": 22,
+      "button_id": "form:duyurTable:22:j_idt67",
+      "province": "İZMİR",
+      "district": "BORNOVA",
+      "project_name": "Turizm Konaklama Tesisi (186 Oda Kapasiteli Otel)",
+      "project_owner": "İBRAHİM BABAK",
+      "sector": "Turizm",
+      "sub_sector": "Turistik Tesisler",
+      "decision_type": "ÇED Gerekli Değil/ÇED Olumlu",
+      "announcement_date_tr": "25.10.2026",
+      "project_type": "Ek-2",
+      "detail_text": "İZMİR ili BORNOVA,  ilcesinde İZMİR ili BORNOVA,  ilcesi İzmir İli, Bornova İlçesi, Kazımdirik Mah.,Tapunun 8060 Ada, 7 Nolu Parsel mevkiindeki İBRAHİM BABAK tarafından yapılması planlanan Turizm Konaklama Tesisi (186 Oda Kapasiteli Otel) projesi ile ilgili olarak Bakanlığımıza sunulan PTD Dosyası incelenmiş ve değerlendirilmiştir  ÇED Yönetmeliği'nin 17. maddesi gereğince Turizm Konaklama Tesisi (186 Oda Kapasiteli Otel) projesi'ne Valiliğimizce 'ÇED Olumlu (Kapsam Ek-2)' kararı verilmiştir.",
+      "detail_links": [
+        {
+          "text": "PTD Dosyası",
+          "href": "http://eced.csb.gov.tr/jsp/ek1/60420"
+        }
+      ],
+      "documents": [
+        {
+          "portal_doc_url": "http://eced.csb.gov.tr/jsp/ek1/60420",
+          "filing_id": "60420",
+          "consulting_firm": "PROÇED ÇEVRE DANIŞMANLIĞI MÜHENDİSLİK SAN.TİC.LTD.ŞTİ",
+          "submitted_at": "25/08/2026 04:44:59",
+          "pdf_urls": [
+            {
+              "label": "Dosya Göster",
+              "url": "http://eced.csb.gov.tr/jsp/dosya/dosyaGoster.htm?tempAd=sign4232577329601774977.pdf&orjinalAd=e-imza.pdf&yuklemeTarihi=2026-09-18"
+            }
+          ]
+        }
+      ],
+      "announcement_date": "2026-10-25",
+      "statutory_clocks": [
+        {
+          "code": "iyuk_20a",
+          "kind": "İYUK 20/A annulment lawsuit (30d; İYUK 11 does not toll)",
+          "deadline": "2026-11-24",
+          "days_remaining": 4
+        }
+      ],
+      "priority_district": false,
+      "filing_key": "60420:25.10.2026:ÇED Gerekli Değil/ÇED Olumlu",
+      "first_seen_at": null
+    },
+    {
+      "row_index": 23,
+      "button_id": "form:duyurTable:23:j_idt67",
+      "province": "İZMİR",
+      "district": "MENEMEN",
+      "project_name": "BATI ANADOLU JEOTERMAL ENERJİ ARAMALARI (1693 No.'lu Ruhsat Sahasında 1 Adet Sondaj)",
+      "project_owner": "MADEN TETKİK VE ARAMA GENEL MÜDÜRLÜĞÜ",
+      "sector": "I., II. ve V. Grup Madenler",
+      "sub_sector": "II. ve V. Grup Maden Arama",
+      "decision_type": "ÇED Gerekli Değil/ÇED Olumlu",
+      "announcement_date_tr": "25.10.2026",
+      "project_type": "Ek-2",
+      "detail_text": "İZMİR ili MENEMEN,  ilcesinde İZMİR ili MENEMEN,  ilcesi Buruncuk Köyü 386 numaralı parsel mevkiindeki MADEN TETKİK VE ARAMA GENEL MÜDÜRLÜĞÜ tarafından yapılması planlanan BATI ANADOLU JEOTERMAL ENERJİ ARAMALARI (1693 No.'lu Ruhsat Sahasında 1 Adet Sondaj) projesi ile ilgili olarak Bakanlığımıza sunulan PTD Dosyası incelenmiş ve değerlendirilmiştir  ÇED Yönetmeliği'nin 17. maddesi gereğince BATI ANADOLU JEOTERMAL ENERJİ ARAMALARI (1693 No.'lu Ruhsat Sahasında 1 Adet Sondaj) projesi'ne Valiliğimizce 'ÇED Olumlu (Kapsam Ek-2)' kararı verilmiştir.",
+      "detail_links": [
+        {
+          "text": "PTD Dosyası",
+          "href": "http://eced.csb.gov.tr/jsp/ek1/59056"
+        }
+      ],
+      "documents": [
+        {
+          "portal_doc_url": "http://eced.csb.gov.tr/jsp/ek1/59056",
+          "filing_id": "59056",
+          "consulting_firm": "MADEN TETKİK VE ARAMA GENEL MÜDÜRLÜĞÜ",
+          "submitted_at": "03/02/2026 02:57:19",
+          "pdf_urls": [
+            {
+              "label": "Dosya Göster",
+              "url": "http://eced.csb.gov.tr/jsp/dosya/dosyaGoster.htm?tempAd=sign2686353531905689867.pdf&orjinalAd=e-imza.pdf&yuklemeTarihi=2026-10-13"
+            }
+          ]
+        }
+      ],
+      "announcement_date": "2026-10-25",
+      "statutory_clocks": [
+        {
+          "code": "iyuk_20a",
+          "kind": "İYUK 20/A annulment lawsuit (30d; İYUK 11 does not toll)",
+          "deadline": "2026-11-24",
+          "days_remaining": 4
+        }
+      ],
+      "priority_district": true,
+      "filing_key": "59056:25.10.2026:ÇED Gerekli Değil/ÇED Olumlu",
+      "first_seen_at": null
+    },
+    {
+      "row_index": 25,
+      "button_id": "form:duyurTable:25:j_idt67",
+      "province": "İZMİR",
+      "district": "DİKİLİ",
+      "project_name": "10/2026-12 (ER: 3534428) İZİN NUMARALI ANDEZİT OCAĞI",
+      "project_owner": "DİKİLİ BELEDİYE BAŞKANLIĞI",
+      "sector": "I., II. ve V. Grup Madenler",
+      "sub_sector": "II. Grup Madenler",
+      "decision_type": "ÇED Süreci Başlayan",
+      "announcement_date_tr": "23.10.2026",
+      "project_type": "Ek-2",
+      "detail_text": "İZMİR ili DİKİLİ,  ilcesinde İZMİR ili DİKİLİ,  ilçesi Bahçeli Mahallesi, 108 Ada, 122 Parsel, J17c1 Pafta mevkiindeki DİKİLİ BELEDİYE BAŞKANLIĞI tarafından yapılması planlanan 10/2026-12 (ER: 3534428) İZİN NUMARALI ANDEZİT OCAĞI projesi ile ilgili olarak İZMİR Valiliğimize sunulan P.T.D. Dosyası Çevresel Etki Değerlendirmesi Yönetmeliği'nin 16. maddesi doğrultusunda incelenmiş ve projeye ilişkin ÇED Süreci başlamıştır. İlgililere ve kamuoyuna duyurulur.",
+      "detail_links": [
+        {
+          "text": "P.T.D. Dosyası",
+          "href": "http://eced.csb.gov.tr/jsp/ek1/61046"
+        }
+      ],
+      "documents": [
+        {
+          "portal_doc_url": "http://eced.csb.gov.tr/jsp/ek1/61046",
+          "filing_id": "61046",
+          "consulting_firm": "ALTA ÇED PROJE MÜHENDİSLİK A.Ş.",
+          "submitted_at": "19/10/2026 04:22:03",
+          "pdf_urls": [
+            {
+              "label": "Dosya Göster",
+              "url": "http://eced.csb.gov.tr/jsp/dosya/dosyaGoster.htm?tempAd=sign3128394585887822133.pdf&orjinalAd=e-imza.pdf&yuklemeTarihi=2026-11-09"
+            }
+          ]
+        }
+      ],
+      "announcement_date": "2026-10-23",
+      "statutory_clocks": [
+        {
+          "code": "aski_10d",
+          "kind": "10-day public review/comment window (askı süresi)",
+          "deadline": "2026-11-02",
+          "days_remaining": -18
+        }
+      ],
+      "priority_district": true,
+      "filing_key": "61046:23.10.2026:ÇED Süreci Başlayan",
+      "first_seen_at": null
+    },
+    {
+      "province": "MANİSA",
+      "district": "KÖPRÜBAŞI",
+      "project_name": "2 adet (3289,5 m2 )  kümeste planlanan 55.900 adet/dönem kapasiteli ?Etlik Piliç Yetiştirme Tesisi",
+      "project_owner": "Vahap AYDOĞDU",
+      "sector": "Hayvancılık",
+      "sub_sector": "Kümes Hayvanları  Yetiştirme Tesisleri",
+      "decision_type": "ÇED Süreci Başlayan",
+      "announcement_date_tr": "22.10.2026",
+      "project_type": "Ek-2",
+      "detail_text": "MANİSA ili KÖPRÜBAŞI,  ilcesinde MANİSA ili KÖPRÜBAŞI,  ilçesi Arpacı Mahallesi, 119 ada, 3 parsel mevkiindeki Vahap AYDOĞDU   tarafından yapılması planlanan 2 adet (3289,5 m2 )  kümeste planlanan 55.900 adet/dönem kapasiteli ?Etlik Piliç Yetiştirme Tesisi  projesi ile ilgili olarak MANİSA Valiliğimize sunulan P.T.D. Dosyası Çevresel Etki Değerlendirmesi Yönetmeliği'nin 16. maddesi doğrultusunda incelenmiş ve projeye ilişkin ÇED Süreci başlamıştır. İlgililere ve kamuoyuna duyurulur.",
+      "detail_links": [
+        {
+          "text": "P.T.D. Dosyası",
+          "href": "http://eced.csb.gov.tr/jsp/ek1/61488"
+        }
+      ],
+      "documents": [
+        {
+          "portal_doc_url": "http://eced.csb.gov.tr/jsp/ek1/61488",
+          "filing_id": "61488",
+          "consulting_firm": "YEŞİLMAVI MÜH. ÇEVRE YÖN. VE DAN. HİZ. LTD. ŞTİ.",
+          "submitted_at": "20/10/2026 03:08:30",
+          "pdf_urls": [
+            {
+              "label": "Dosya Göster",
+              "url": "http://eced.csb.gov.tr/jsp/dosya/dosyaGoster.htm?tempAd=sign7866353803873798692.pdf&orjinalAd=e-imza.pdf&yuklemeTarihi=2026-10-20"
+            }
+          ]
+        }
+      ],
+      "announcement_date": "2026-10-22",
+      "statutory_clocks": [
+        {
+          "code": "aski_10d",
+          "kind": "10-day public review/comment window (askı süresi)",
+          "deadline": "2026-11-01",
+          "days_remaining": -19
+        }
+      ],
+      "priority_district": false,
+      "filing_key": "61488:22.10.2026:ÇED Süreci Başlayan",
+      "first_seen_at": "2026-11-20T00:44:28"
+    },
+    {
+      "row_index": 26,
+      "button_id": "form:duyurTable:26:j_idt67",
+      "province": "MANİSA",
+      "district": "SOMA",
+      "project_name": "400 kV UYGAR RES. TM.- BAYRAMİÇ HAVZA TM. ELEKTRİK ENERJİSİ İLETİM HATTI (122,17741 km)",
+      "project_owner": "TÜRKİYE ELEKTRİK İLETİM  ANONİM ŞİRKETİ GENEL MÜDÜRLÜĞÜ",
+      "sector": "Turizm",
+      "sub_sector": "Enerji İletim Hatları",
+      "decision_type": "ÇED Süreci Başlayan",
+      "announcement_date_tr": "22.10.2026",
+      "project_type": "Ek-1",
+      "detail_text": "MANİSA ili SOMA,  ilcesinde MANİSA il SOMA,  ilce Bıyıklı, Çiftlikköy, Doğancı, Karaköy, Kaykılar, Korucak, Osmaniye, Saraycık, Sarıot, Köylü, Tongurlu, Tülüler, Yaylacık, Yenice, Yeşilköy, Yiğitaliler, Kızılelma, Akköy, Akçakoyun, Aşağıçavuş, Bağlı, Çukuroba, Kalabakbaşı, Karaaydın, Kırıklar, Kıraçoba, Oğlanalanı, Örencik, Yağdıran, Yarış ve Yukarıçavuş Köyleri ile Hüseyinbeşeler, Kobaklar, Küçükşapçı, Ayaklı, Büyükılıca, Büyükyenice, İkizce, Geçmiş, Hüseyinbeyobası, Kocaoba, Korucu, Taşdibi, Yürekli, Alhatlı, Çamoba, Durmuşlar, İneşir, Kaplan (Göçbeyli Bucağı) , Muratlar, Yalnızdam, Çamucu, Farsak, Duğla, Kaplan, Kiraz, Yayladalı, Dörtyol, Menderes Mahalleleri ile Kalkım Beldesi  mevkiinde TÜRKİYE ELEKTRİK İLETİM  ANONİM ŞİRKETİ GENEL MÜDÜRLÜĞÜ tarafından yapılması planlanan 400 kV UYGAR RES. TM.- BAYRAMİÇ HAVZA TM. ELEKTRİK ENERJİSİ İLETİM HATTI (122,17741 km) projesi ile ilgili olarak Bakanlığımıza sunulan ÇED Başvuru Dosyası Çevresel Etki Değerlendirmesi Yönetmeliği'nin 8. maddesi doğrultusunda incelenmiş ve başvurunun ÇED Genel Formatına uygun hazırlandığı anlaşılmış olup, projeye ilişkin ÇED Süreci başlatılmıştır. Çevresel Etki Değerlendirmesi süreci tamamlanana kadar, süreç ile ilgili her türlü bilgiler ve projeye ilişkin görüş, soru ve öneriler MANİSA Valiliğine (Çevre, Şehircilik ve İklim Değişikliği İl Müdürlüğü) veya Çevre, Şehircilik ve İklim Değişikliği Bakanlığına gönderilebilir.İlgililere ve kamuoyuna duyurulur.",
+      "detail_links": [
+        {
+          "text": "ÇED Başvuru Dosyası",
+          "href": "http://eced.csb.gov.tr/jsp/ek1/61112"
+        }
+      ],
+      "documents": [
+        {
+          "portal_doc_url": "http://eced.csb.gov.tr/jsp/ek1/61112",
+          "filing_id": "61112",
+          "consulting_firm": "EN-ÇEV ENERJİ ÇEVRE YATIRIMLARI DANIŞMANLIĞI HARİTACILIK İMAR İNŞAAT A.Ş",
+          "submitted_at": "16/10/2026 10:51:45",
+          "pdf_urls": [
+            {
+              "label": "Dosya Göster",
+              "url": "http://eced.csb.gov.tr/jsp/dosya/dosyaGoster.htm?tempAd=sign1016664841067059309.pdf&orjinalAd=e-imza.pdf&yuklemeTarihi=2026-10-16"
+            }
+          ]
+        }
+      ],
+      "announcement_date": "2026-10-22",
+      "statutory_clocks": [
+        {
+          "code": "aski_10d",
+          "kind": "10-day public review/comment window (askı süresi)",
+          "deadline": "2026-11-01",
+          "days_remaining": -19
+        }
+      ],
+      "priority_district": true,
+      "filing_key": "61112:22.10.2026:ÇED Süreci Başlayan",
+      "first_seen_at": null
+    },
+    {
+      "province": "MANİSA",
+      "district": "KÖPRÜBAŞI",
+      "project_name": "3 adet (5499,84 m2 )  kümeste planlanan 54998 adet/dönem kapasiteli ?Etlik Piliç Yetiştirme Tesisi",
+      "project_owner": "Ökkeş SARI",
+      "sector": "Hayvancılık",
+      "sub_sector": "Kümes Hayvanları  Yetiştirme Tesisleri",
+      "decision_type": "ÇED Süreci Başlayan",
+      "announcement_date_tr": "22.10.2026",
+      "project_type": "Ek-2",
+      "detail_text": "MANİSA ili KÖPRÜBAŞI,  ilcesinde MANİSA ili KÖPRÜBAŞI,  ilçesi Kavakyeri Mahallesi, Bakacak mevkii, 101 ada 35 parsel mevkiindeki Ökkeş SARI   tarafından yapılması planlanan 3 adet (5499,84 m2 )  kümeste planlanan 54998 adet/dönem kapasiteli ?Etlik Piliç Yetiştirme Tesisi  projesi ile ilgili olarak MANİSA Valiliğimize sunulan P.T.D. Dosyası Çevresel Etki Değerlendirmesi Yönetmeliği'nin 16. maddesi doğrultusunda incelenmiş ve projeye ilişkin ÇED Süreci başlamıştır. İlgililere ve kamuoyuna duyurulur.",
+      "detail_links": [
+        {
+          "text": "P.T.D. Dosyası",
+          "href": "http://eced.csb.gov.tr/jsp/ek1/60905"
+        }
+      ],
+      "documents": [
+        {
+          "portal_doc_url": "http://eced.csb.gov.tr/jsp/ek1/60905",
+          "filing_id": "60905",
+          "consulting_firm": "YEŞİLMAVI MÜH. ÇEVRE YÖN. VE DAN. HİZ. LTD. ŞTİ.",
+          "submitted_at": "21/10/2026 10:32:09",
+          "pdf_urls": [
+            {
+              "label": "Dosya Göster",
+              "url": "http://eced.csb.gov.tr/jsp/dosya/dosyaGoster.htm?tempAd=sign7345092088675286714.pdf&orjinalAd=e-imza.pdf&yuklemeTarihi=2026-10-21"
+            }
+          ]
+        }
+      ],
+      "announcement_date": "2026-10-22",
+      "statutory_clocks": [
+        {
+          "code": "aski_10d",
+          "kind": "10-day public review/comment window (askı süresi)",
+          "deadline": "2026-11-01",
+          "days_remaining": -19
+        }
+      ],
+      "priority_district": false,
+      "filing_key": "60905:22.10.2026:ÇED Süreci Başlayan",
+      "first_seen_at": "2026-11-20T00:44:26"
+    },
+    {
+      "province": "MANİSA",
+      "district": "SALİHLİ",
+      "project_name": "Zeytinyağı Üretim Tesisi (140 ton/gün zeytin işleme, 28 ton/gün zeytinyağı üretimi",
+      "project_owner": "Suhbel ÖZDOĞAN",
+      "sector": "Gıda",
+      "sub_sector": "Bitkisel, Hayvansal Yağ Üretimi",
+      "decision_type": "ÇED Gerekli Değil/ÇED Olumlu",
+      "announcement_date_tr": "22.10.2026",
+      "project_type": "Ek-2",
+      "detail_text": "MANİSA ili SALİHLİ,  ilcesinde MANİSA ili SALİHLİ,  ilcesi Kemerdamları   Mahallesi, Kepez  mevkii, 149 ada, 13 parsel mevkiindeki Suhbel ÖZDOĞAN tarafından yapılması planlanan Zeytinyağı Üretim Tesisi (140 ton/gün zeytin işleme, 28 ton/gün zeytinyağı üretimi projesi ile ilgili olarak Bakanlığımıza sunulan PTD Dosyası incelenmiş ve değerlendirilmiştir  ÇED Yönetmeliği'nin 17. maddesi gereğince Zeytinyağı Üretim Tesisi (140 ton/gün zeytin işleme, 28 ton/gün zeytinyağı üretimi projesi'ne Valiliğimizce 'ÇED Olumlu (Kapsam Ek-2)' kararı verilmiştir.",
+      "detail_links": [
+        {
+          "text": "PTD Dosyası",
+          "href": "http://eced.csb.gov.tr/jsp/ek1/60085"
+        }
+      ],
+      "documents": [
+        {
+          "portal_doc_url": "http://eced.csb.gov.tr/jsp/ek1/60085",
+          "filing_id": "60085",
+          "consulting_firm": "YEŞİLMAVI MÜH. ÇEVRE YÖN. VE DAN. HİZ. LTD. ŞTİ.",
+          "submitted_at": "16/06/2026 05:27:10",
+          "pdf_urls": [
+            {
+              "label": "Dosya Göster",
+              "url": "http://eced.csb.gov.tr/jsp/dosya/dosyaGoster.htm?tempAd=sign6440568334513395276.pdf&orjinalAd=e-imza.pdf&yuklemeTarihi=2026-10-09"
+            }
+          ]
+        }
+      ],
+      "announcement_date": "2026-10-22",
+      "statutory_clocks": [
+        {
+          "code": "iyuk_20a",
+          "kind": "İYUK 20/A annulment lawsuit (30d; İYUK 11 does not toll)",
+          "deadline": "2026-11-21",
+          "days_remaining": 1
+        }
+      ],
+      "priority_district": true,
+      "filing_key": "60085:22.10.2026:ÇED Gerekli Değil/ÇED Olumlu",
+      "first_seen_at": "2026-11-20T00:44:26"
+    }
+  ]
+}

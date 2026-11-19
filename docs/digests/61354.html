@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>e-ÇED Pre-Digest #61354 — BERGAMA</title>
+  <style>
+:root {
+  --bg: #0f1216;
+  --surface: #171c22;
+  --border: #262e38;
+  --text: #e6edf3;
+  --muted: #8b949e;
+  --accent: #58a6ff;
+  --red: #f85149;
+  --amber: #d29922;
+  --green: #3fb950;
+  --badge-bg: #212830;
+}
+@media (prefers-color-scheme: light) {
+  :root {
+    --bg: #f6f8fa;
+    --surface: #ffffff;
+    --border: #d0d7de;
+    --text: #1f2328;
+    --muted: #656d76;
+    --accent: #0969da;
+    --red: #cf222e;
+    --amber: #9a6700;
+    --green: #1a7f37;
+    --badge-bg: #eef2f6;
+  }
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.5;
+}
+.wrap { max-width: 1220px; margin: 0 auto; padding: 24px 18px 64px; }
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+header { border-bottom: 1px solid var(--border); padding-bottom: 16px; margin-bottom: 20px; }
+h1 { margin: 0 0 6px; font-size: 1.55rem; }
+.sub { color: var(--muted); font-size: 0.92rem; margin: 0; }
+.meta-bar { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 12px; font-size: 0.85rem; color: var(--muted); }
+.stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 10px; margin: 16px 0 20px; }
+.stat { background: var(--surface); border: 1px solid var(--border); border-radius: 8px; padding: 12px 14px; }
+.stat .num { font-size: 1.45rem; font-weight: 700; }
+.stat .lbl { font-size: 0.78rem; color: var(--muted); }
+.controls { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; margin-bottom: 16px; }
+input[type="search"] {
+  flex: 1 1 240px;
+  padding: 8px 12px;
+  border-radius: 6px;
+  border: 1px solid var(--border);
+  background: var(--surface);
+  color: var(--text);
+  font-size: 0.92rem;
+}
+button.pill {
+  padding: 6px 11px;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: var(--surface);
+  color: var(--text);
+  cursor: pointer;
+  font-size: 0.82rem;
+}
+button.pill.active { background: var(--accent); border-color: var(--accent); color: #fff; font-weight: 600; }
+.cards { display: flex; flex-direction: column; gap: 10px; }
+.card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 14px 16px;
+}
+.card.prio { border-left: 4px solid var(--accent); }
+.row-top { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px; align-items: baseline; }
+.title { font-weight: 600; font-size: 0.98rem; }
+.badges { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 6px; }
+.badge {
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  background: var(--badge-bg);
+  border: 1px solid var(--border);
+}
+.badge.urgent { border-color: var(--red); color: var(--red); font-weight: 600; }
+.badge.warn { border-color: var(--amber); color: var(--amber); font-weight: 600; }
+.badge.ok { border-color: var(--green); color: var(--green); }
+.badge.muted { color: var(--muted); }
+.detail { font-size: 0.86rem; color: var(--muted); margin: 8px 0; }
+.actions { display: flex; flex-wrap: wrap; gap: 12px; font-size: 0.84rem; margin-top: 8px; }
+.notice {
+  margin-top: 28px;
+  padding: 12px 14px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  font-size: 0.82rem;
+  color: var(--muted);
+}
+table.kv { width: 100%; border-collapse: collapse; margin: 12px 0; font-size: 0.9rem; }
+table.kv th, table.kv td { border: 1px solid var(--border); padding: 8px 10px; text-align: left; vertical-align: top; }
+table.kv th { width: 220px; background: var(--badge-bg); }
+code { background: var(--badge-bg); padding: 1px 5px; border-radius: 4px; font-size: 0.85em; }
+blockquote { margin: 10px 0; padding: 10px 14px; border-left: 3px solid var(--accent); background: var(--surface); font-size: 0.9rem; }
+.hit { margin: 6px 0; font-size: 0.88rem; }
+.pno { font-weight: 700; color: var(--accent); }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div style="font-size:0.85rem;margin-bottom:8px;"><a href="../index.html">← Back to Aegean e-ÇED Watchdog</a> · <a href="61354.md">Raw Markdown (.md)</a></div>
+    <h1>e-ÇED Pre-Digest #61354 — BERGAMA / İZMİR</h1>
+    <p class="sub">154 kV (Alibey RES TM - Bergama Vento RES TM EİH) Brş.N. - 154 kV İvrindi RES TM (Karaburun RES) EİH (Girdi-Çıktı)</p>
+    <div class="badges" style="margin-top:10px;">
+      <span class="badge">ÇED Süreci Başlayan</span>
+      <span class="badge">Ek-2</span>
+      <span class="badge warn">Clock · 9d left (2026-11-29)</span>
+    </div>
+  </header>
+
+  <table class="kv">
+    <tr><th>Project Owner</th><td>TÜRKİYE ELEKTRİK İLETİM ANONİM ŞİRKETİ</td></tr>
+    <tr><th>Consulting Firm</th><td>EN-ÇEV ENERJİ ÇEVRE YATIRIMLARI DANIŞMANLIĞI HARİTACILIK İMAR İNŞAAT A.Ş</td></tr>
+    <tr><th>Sector</th><td>Turizm / Enerji İletim Hatları</td></tr>
+    <tr><th>Announcement Date</th><td><code>19.11.2026</code> (uploaded <code>16/11/2026 04:19:09</code>)</td></tr>
+    <tr><th>PDF Coverage</th><td>98.02 MB · 347 pages (318 text / 29 scanned-or-image) · SHA-256 <code>1dab8f6434d08bc9…</code></td></tr>
+    <tr><th>Official Links</th><td><a href="http://eced.csb.gov.tr/jsp/ek1/61354" target="_blank" rel="noopener">e-ÇED Portal Record</a> · <a href="http://eced.csb.gov.tr/jsp/dosya/dosyaGoster.htm?tempAd=sign4195618410608326396.pdf&amp;orjinalAd=KaraburunEIHPTD...pdf&amp;yuklemeTarihi=2026-11-16" target="_blank" rel="noopener">Official PDF</a></td></tr>
+  </table>
+
+  <h2>Official Announcement Text</h2>
+  <blockquote>İZMİR ili BERGAMA,  ilcesinde İZMİR ili BERGAMA,  ilçesi Balıkesir İli, Burhaniye İlçesi, Yaylacık Köyü ve İzmir İli, Bergama İlçesi, Güneşli, Çamavlu, Kıranlı, Çobanlar ve Hacılar Mahalleleri Mevkii mevkiindeki TÜRKİYE ELEKTRİK İLETİM ANONİM ŞİRKETİ tarafından yapılması planlanan 154 kV (Alibey RES TM - Bergama Vento RES TM EİH) Brş.N. - 154 kV İvrindi RES TM (Karaburun RES) EİH (Girdi-Çıktı) projesi ile ilgili olarak İZMİR Valiliğimize sunulan P.T.D. Dosyası Çevresel Etki Değerlendirmesi Yönetmeliği&#x27;nin 16. maddesi doğrultusunda incelenmiş ve projeye ilişkin ÇED Süreci başlamıştır. İlgililere ve kamuoyuna duyurulur.</blockquote>
+
+  <h2>Automated Baseline &amp; Red-Flag Scan</h2>
+  <table class="kv"><tr><th>Field survey (*arazi/saha çalışması*)</th><td><span class="badge ok">Present</span></td></tr>
+<tr><th>Literature review (*literatür taraması*)</th><td><span class="badge urgent">NOT FOUND (check manually)</span></td></tr>
+<tr><th>Seasonal sampling (*mevsimsel*)</th><td><span class="badge urgent">NOT FOUND (check manually)</span></td></tr>
+<tr><th>Cumulative impact (*kümülatif*)</th><td><span class="badge ok">Present</span></td></tr>
+<tr><th>Olive Law / groves (*3573 / zeytinlik*)</th><td><span class="badge ok">Present</span></td></tr>
+<tr><th>Groundwater / aquifer (*akifer / yeraltı suyu*)</th><td><span class="badge ok">Present</span></td></tr>
+<tr><th>Endemic / IUCN / Bern Convention</th><td><span class="badge ok">Present</span></td></tr></table>
+  <p class="sub">Scanned annex maps/letters without OCR are excluded from automated text scan.</p>
+
+  <h2>Page-Cited Extracted Evidence</h2>
+  <div class="cards"><section class="card"><h3>Coordinates, Parcel &amp; Footprint <span style="color:var(--muted);font-weight:400;font-size:0.85rem">(70 pages: s.9, s.11, s.15, s.16, s.17, s.20, s.21, s.22, s.23, s.31, s.40, s.57, s.62, s.63 (+56 more))</span></h3><div class="hit"><span class="pno">[s. 9]</span> <code>15,81 km</code> — …da yer almamaktadır. Proje konusu 154 kV gerilimde 1272 MCM iletkenli enerji iletim hattının uzunluğu Girdi Hattı: 15,81 km (15.812,76 m), Çıktı Hattı: 15,71 km (15.709,18 m) olmak üzere toplam 31,52 km (31.521,94 m) olup; enerji iletim hattı…</div>
+<div class="hit"><span class="pno">[s. 9]</span> <code>15,71 km</code> — …154 kV gerilimde 1272 MCM iletkenli enerji iletim hattının uzunluğu Girdi Hattı: 15,81 km (15.812,76 m), Çıktı Hattı: 15,71 km (15.709,18 m) olmak üzere toplam 31,52 km (31.521,94 m) olup; enerji iletim hattı Balıkesir ve İzmir ili sınırları içe…</div>
+<div class="hit"><span class="pno">[s. 9]</span> <code>31,52 km</code> — …i iletim hattının uzunluğu Girdi Hattı: 15,81 km (15.812,76 m), Çıktı Hattı: 15,71 km (15.709,18 m) olmak üzere toplam 31,52 km (31.521,94 m) olup; enerji iletim hattı Balıkesir ve İzmir ili sınırları içerisinde yer almaktadır. Bahse konu EİH içi…</div>
+<div class="hit"><span class="pno">[s. 9]</span> <code>koordinat</code> — …ı&quot;, “Sit” ve “Koruma Alanı” olarak tanımlanan özel alanlardan hiçbiri bulunmamaktadır. Söz konusu proje alanına ait koordinatlar Ek-1’de verilmiştir. Faaliyetin gerçekleştirileceği alanla ilgili olarak proje alanını gösterir Yer Bulduru Haritas…</div>
+<div class="hit"><span class="pno">[s. 11]</span> <code>15,81 km</code> — …da yer almamaktadır. Proje konusu 154 kV gerilimde 1272 MCM iletkenli enerji iletim hattının uzunluğu Girdi Hattı: 15,81 km (15.812,76 m), Çıktı Hattı: 15,71 km (15.709,18 m) olmak üzere toplam 31,52 km (31.521,94 m) olup; enerji iletim hattı…</div>
+<div class="hit"><span class="pno">[s. 11]</span> <code>15,71 km</code> — …154 kV gerilimde 1272 MCM iletkenli enerji iletim hattının uzunluğu Girdi Hattı: 15,81 km (15.812,76 m), Çıktı Hattı: 15,71 km (15.709,18 m) olmak üzere toplam 31,52 km (31.521,94 m) olup; enerji iletim hattı Balıkesir ve İzmir ili sınırları içe…</div></section><section class="card"><h3>Water Use, Hydrogeology &amp; Discharge <span style="color:var(--muted);font-weight:400;font-size:0.85rem">(29 pages: s.31, s.36, s.37, s.39, s.40, s.43, s.108, s.109, s.110, s.120, s.121, s.134, s.136, s.140 (+15 more))</span></h3><div class="hit"><span class="pno">[s. 31]</span> <code>deşarj</code> — …, depo, idari ve/veya sosyal bina, köprü, alt ve üst yapılar (arıtma, kanalizasyon, içme/kullanma su hatları, su alma/deşarj hatları vb. dahil) viyadük vb. sanat yapıları, drenaj, tesviye vb. gibi araziyi kullanılabilir duruma getirmek için y…</div>
+<div class="hit"><span class="pno">[s. 36]</span> <code>8,4 m3/gün</code> — …dığında toplam kullanılacak su miktarı; Personel su kullanım miktarı = 40 kişi x 210 lt/kişi.gün = 8.400 lt/gün = 8,4 m3/gün olacaktır. Tozuma Önleme Amaçlı Gerekli Sulama Suyu İnşaat aşamasında çalışma alanlarında tozumayı önlemek için i…</div>
+<div class="hit"><span class="pno">[s. 36]</span> <code>18,4 m3/gün</code> — …i kabul edilmiştir. Toplam Su İhtiyacı Projenin inşaat aşamasında ihtiyaç duyulacak toplam su ihtiyacı en fazla 18,4 m3/gün olacaktır. Su Temini İçme ve kullanma suyu piyasadan satın alınacak olup, içme suyu damacanalar ile temin edile…</div>
+<div class="hit"><span class="pno">[s. 37]</span> <code>2,1 m3/gün</code> — …su kullanım miktarı = 210 lt/gün x 10 kişi = 2.100 litre/gün = 2,1 m3/gün olacaktır. İçme ve kullanma suyu piyasadan satın alınacak olup, içme suyu damacanalar ile işletme yerine getirilece…</div>
+<div class="hit"><span class="pno">[s. 39]</span> <code>Atıksu</code> — …Vento RES TM EİH) Brş.N. – 154 kV İvrindi RES TM (Karaburun RES) EİH (Girdi-Çıktı) Proje Tanıtım Dosyası 31 Atıksu İnşaat Aşaması Çalışacak Personel Kaynaklı Oluşan Atıksu İnşaat aşamasında çalışacak 40 personelden kaynaklı…</div>
+<div class="hit"><span class="pno">[s. 39]</span> <code>deşarj</code> — …a günlük oluşacak atıksu miktarı 181 lt/kişi-gün6 TÜİK verisi ile; Personel kaynaklı atıksu miktarı = (Kişi başına deşarj edilen atıksu mik.) x (Personel sayısı) = 40 kişi x 181 lt/kişi.gün = 7.240 lt/gün = 7,24 m3/gün olacaktır. Sulam…</div></section><section class="card"><h3>Protected Zones, Forests &amp; Olive Groves <span style="color:var(--muted);font-weight:400;font-size:0.85rem">(24 pages: s.3, s.9, s.15, s.32, s.35, s.76, s.77, s.79, s.81, s.113, s.114, s.116, s.118, s.119 (+10 more))</span></h3><div class="hit"><span class="pno">[s. 3]</span> <code>orman alanı</code> — …JE YERİ VE ETKİ ALANININ MEVCUT ÇEVRESEL ÖZELLİKLERİ: ..................... 68 a) Mevcut arazi kullanımı (tarım alanı, orman alanı, planlı alan, su yüzeyi ve benzeri) ve kalitesi, jeolojik ve hidrojeolojik özellikleri. ..............................…</div>
+<div class="hit"><span class="pno">[s. 9]</span> <code>Milli Park</code> — …ge ekonomisini hem de Türkiye ekonomisini, olumlu yönde etkileyecektir. Proje alanı içerisinde ve yakın çevresinde &quot;Milli Park Alanı&quot;, &quot;Tabiat Koruma Alanı&quot;, &quot;Tabiat Parkı&quot; ve &quot;Tabiat Anıtı&quot; bulunmamaktadır. Ayrıca proje alanı içerisinde &quot;Kültür…</div>
+<div class="hit"><span class="pno">[s. 9]</span> <code>Tabiat Parkı</code> — …olumlu yönde etkileyecektir. Proje alanı içerisinde ve yakın çevresinde &quot;Milli Park Alanı&quot;, &quot;Tabiat Koruma Alanı&quot;, &quot;Tabiat Parkı&quot; ve &quot;Tabiat Anıtı&quot; bulunmamaktadır. Ayrıca proje alanı içerisinde &quot;Kültür Varlıkları&quot;, &quot;Tabiat Varlıkları&quot;, “Sit” ve…</div>
+<div class="hit"><span class="pno">[s. 15]</span> <code>Orman Alanı</code> — ….N. – 154 kV İvrindi RES TM (Karaburun RES) EİH (Girdi-Çıktı) Proje Tanıtım Dosyası 7 Enerji iletim hattı “Orman Alanı”, “Tarım Arazisi”, “Çayır-Mera” ve “Nehir/Dere” nitelikli alanlardan geçmekte olup, güzergah tespit çalışmalarında müm…</div>
+<div class="hit"><span class="pno">[s. 32]</span> <code>Orman Alanı</code> — …r-Manisa Planlama Bölgesi ve Balıkesir-Çanakkale Planlama Bölgesi 1/100.000 ölçekli Çevre Düzeni Planı J18 paftasında “Orman Alanı”, “Tarım Arazisi”, “Çayır- Mera”, “Nehir/Dere” nitelikli alanlar içerisinde yer almaktadır. Şekil 20. Proje Alanı…</div>
+<div class="hit"><span class="pno">[s. 35]</span> <code>3573 sayılı</code> — …oje Alanı ve Etrafının Arazi Varlığı Haritası Proje kapsamında 5403 sayılı “Toprak Koruma ve Arazi Kullanımı Kanunu” 3573 sayılı (4086 Sayılı Kanunla değişiklik) “Zeytincilik Islahı ve Yabanilerinin Aşılattırılması Hakkındaki Kanun”, 3083 Sayılı…</div></section><section class="card"><h3>Flora, Fauna &amp; Baseline Methodology <span style="color:var(--muted);font-weight:400;font-size:0.85rem">(20 pages: s.82, s.85, s.92, s.93, s.94, s.95, s.96, s.97, s.98, s.99, s.100, s.101, s.102, s.103 (+6 more))</span></h3><div class="hit"><span class="pno">[s. 82]</span> <code>FLORA ve FAUNA</code> — …dürlüğü’nden (İzmir Orman Bölge Müdürlüğü ve Balıkesir Orman Bölge Müdürlüğü) gerekli görüş ve izinler alınacaktır. FLORA ve FAUNA Proje alanı İzmir ili Bergama ilçesi ve Balıkesir ili Burhaniye ilçesi J18-A2, J18-A3, J18-B4 No.lu topografik hari…</div>
+<div class="hit"><span class="pno">[s. 85]</span> <code>IUCN</code> — …ıtım Dosyası 77 Tablo 42. Proje Alanı ve Yakın Çevresinin Flora Listesi TÜR ADI TÜRKÇE ADI FİTOCOĞRAFİK B. IUCN- GLOBAL IUCN- EUROPE IUCN- MEDİTERRANEAN BERN (B) CİTES (C) ENDEMİZM NİSBİ BOLLUK TESPİT ŞEKLİ AMARYLLIDACE…</div>
+<div class="hit"><span class="pno">[s. 85]</span> <code>CİTES</code> — …sinin Flora Listesi TÜR ADI TÜRKÇE ADI FİTOCOĞRAFİK B. IUCN- GLOBAL IUCN- EUROPE IUCN- MEDİTERRANEAN BERN (B) CİTES (C) ENDEMİZM NİSBİ BOLLUK TESPİT ŞEKLİ AMARYLLIDACEAE Allium pallens L. nur soğanı - - - 2 L…</div>
+<div class="hit"><span class="pno">[s. 92]</span> <code>Endemik</code> — …çıklaması 1- Çok Nadir 2- Nadir 3- Orta Derecede Bolluk 4- Bol 5- Çok Bol Kod Endemizm Açıklaması L Lokal Endemik B Bölgesel Endemik Y Yaygın Endemik Flora Türleri İçin Hedef Türler Proje alanı ve yakın çevresinde için gerç…</div>
+<div class="hit"><span class="pno">[s. 92]</span> <code>IUCN</code> — …ırmalarına bakıldığında 130 flora türünün bulunması muhtemeldir. Hem bölgesel Endemizm/Lokal Endemizm açısından hemde IUCN; International Union for Conservation of Nature (Uluslararası Doğal Hayatı ve Doğal Kaynakları Koruma Birliği) tarafın…</div>
+<div class="hit"><span class="pno">[s. 92]</span> <code>Kırmızı Liste</code> — …Conservation of Nature (Uluslararası Doğal Hayatı ve Doğal Kaynakları Koruma Birliği) tarafından yayınlanan Red List – Kırmızı Liste’deki durumu açısından değerlendirildiğinde hedef tür olarak belirlenecek bir tür tespit edilememiştir. Floristik D…</div></section><section class="card"><h3>Emissions, Geochemistry &amp; Waste <span style="color:var(--muted);font-weight:400;font-size:0.85rem">(62 pages: s.4, s.8, s.16, s.38, s.46, s.47, s.49, s.50, s.51, s.52, s.53, s.54, s.55, s.56 (+48 more))</span></h3><div class="hit"><span class="pno">[s. 4]</span> <code>Gürültü</code> — …osferik Yutuş Değerleri .......................................... 43 Tablo 18. Faaliyet Alanında Kullanılacak Her Bir Gürültü Kaynağının Mesafeye Bağlı Ses Basınç Düzeyleri .......................................................................…</div>
+<div class="hit"><span class="pno">[s. 4]</span> <code>Elektromanyetik</code> — …lan Toplam Kütlesel Debi Değerleri ............. 51 Tablo 29. 0 Hz-300 GHz Frekans Bantlarındaki Elektrik, Manyetik ve Elektromanyetik Alanlar İçin Limit Değerler ..........................................................................................…</div>
+<div class="hit"><span class="pno">[s. 8]</span> <code>Elektromanyetik</code> — …emi AYY Atık Yönetimi Yönetmeliği Bkz. Bakınız ÇED Çevresel Etki Değerlendirmesi EİH Enerji İletim Hattı EMA Elektromanyetik Alan Ha Hektar HKDY Hava Kalitesi Değerlendirme ve Yönetimi Yönetmeliği Kg Kilogram kV Kilovolt km Kilometre…</div>
+<div class="hit"><span class="pno">[s. 8]</span> <code>PM10</code> — …Metrekare m3 Metreküp mm Milimetre µm Mikrometre MCM Mega Dairesel Mil (1000000 dairesel mil) Ort. Ortalama PM10 Partiküler madde RES Rüzgar Enerji Santrali SKHKKY Sanayi Kaynaklı Hava Kirliliğinin Kontrolü Yönetmeliği sn. Sa…</div>
+<div class="hit"><span class="pno">[s. 16]</span> <code>TEHLİKELİ ATIK</code> — …leri Direk Ayaklarının Yerleştirilmesi ÜST MONTAJ TEL ÇEKİMİ Kalıp Betonların Dökülmesi Mekanik Montajlama TOZ TEHLİKELİ ATIK VE ATIK YAĞLAR BELEDİYE ATIKLARI GÜRÜLTÜ TEHLİKELİ ATIK VE ATIK YAĞLAR BELEDİYE ATIKLARI GÜRÜLTÜ TEHLİKELİ ATIK V…</div>
+<div class="hit"><span class="pno">[s. 16]</span> <code>GÜRÜLTÜ</code> — …J TEL ÇEKİMİ Kalıp Betonların Dökülmesi Mekanik Montajlama TOZ TEHLİKELİ ATIK VE ATIK YAĞLAR BELEDİYE ATIKLARI GÜRÜLTÜ TEHLİKELİ ATIK VE ATIK YAĞLAR BELEDİYE ATIKLARI GÜRÜLTÜ TEHLİKELİ ATIK VE ATIK YAĞLAR BELEDİYE ATIKLARI KABUL Ke…</div></section><section class="card"><h3>Project Cost, Power &amp; Capacity <span style="color:var(--muted);font-weight:400;font-size:0.85rem">(18 pages: s.2, s.3, s.9, s.15, s.20, s.30, s.31, s.42, s.43, s.47, s.49, s.100, s.108, s.123 (+4 more))</span></h3><div class="hit"><span class="pno">[s. 2]</span> <code>Proje Bedeli</code> — …154 kV (Alibey RES TM – Bergama Vento RES TM EİH) Brş.N. – 154 kV İvrindi RES TM (Karaburun RES) EİH (Girdi- Çıktı) Proje Bedeli: 185.836.579,48 TL Proje İçin Seçilen Yerin Açık Adresi (İli, İlçesi, Mevki): Balıkesir İli, Burhaniye İlçesi, Yayl…</div>
+<div class="hit"><span class="pno">[s. 3]</span> <code>Kapasite</code> — …in Alternatifleri (Proje Teknolojisinin ve Proje Alanının Seçilme Nedenleri). .......... 6 b) Projenin İş Akım Şeması, Kapasitesi, Kapladığı Alan, Yatırım Bedeli, Teknolojisi, Çalışacak Personel Sayısı. ...........................................…</div>
+<div class="hit"><span class="pno">[s. 9]</span> <code>Proje bedeli</code> — …lüğü ile İvrindi RES Elektrik Üretim A.Ş. arasında imzalanan Tesis Öncesi İşler Protokolü EK- 2.11’de verilmektedir. Proje bedeli hesaplamalarında TEİAŞ Genel Müdürlüğü’nün 3544665 sayılı yazı ekinde yer alan “2026 Yılı EİH ve Yeraltı Güç Kablosu K…</div>
+<div class="hit"><span class="pno">[s. 15]</span> <code>Kapasite</code> — …olarak belirlenmiştir. Proje alanına ilişkin koordinatlara EK-1’de yer verilmiştir. b) Projenin İş Akım Şeması, Kapasitesi, Kapladığı Alan, Yatırım Bedeli, Teknolojisi, Çalışacak Personel Sayısı. Projenin İş Akım Şeması ve Teknolojisi…</div>
+<div class="hit"><span class="pno">[s. 20]</span> <code>Kapasite</code> — …larda depolanarak ilgili mer-i mevzuat kapsamında lisanslı firmalara gönderilerek bertarafı sağlanacaktır. Projenin Kapasitesi Proje konusu enerji iletim hattı 154 kV gerilimde 1272 MCM iletkenli, Girdi: 15,81 km (15.812,76 m), Çıktı: 15,7…</div>
+<div class="hit"><span class="pno">[s. 30]</span> <code>Proje bedeli</code> — …etmelikler ile karayolları ile ilgili çıkarılan tüm kanun ve yönetmeliklere uyulacaktır. Projenin Yatırım Bedeli Proje bedeli hesaplamalarında TEİAŞ Genel Müdürlüğü’nün 3544665 sayılı yazı ekinde yer alan “2026 Yılı EİH ve Yeraltı Güç Kablosu K…</div></section></div>
+
+  <h2>Document Navigation Map</h2>
+  <ul><li><span class="pno">[s. 3]</span> BÖLÜM III: PROJENİN İNŞAAT VE İŞLETME AŞAMASINDA ÇEVRESEL ETKİLERİ, ÖNCELİKLİ</li>
+<li><span class="pno">[s. 9]</span> PROJENİN TEKNİK OLMAYAN ÖZETİ:</li>
+<li><span class="pno">[s. 11]</span> BÖLÜM I: PROJENİN ÖZELLİKLERİ:</li>
+<li><span class="pno">[s. 76]</span> BÖLÜM II: PROJE YERİ VE ETKİ ALANININ MEVCUT ÇEVRESEL ÖZELLİKLERİ:</li>
+<li><span class="pno">[s. 82]</span> FLORA ve FAUNA</li>
+<li><span class="pno">[s. 127]</span> BÖLÜM IV: KÜMÜLATİF ETKİ DEĞERLENDİRME</li>
+<li><span class="pno">[s. 132]</span> BÖLÜM V: ÇEVRESEL VE SOSYAL EYLEM PLANI</li>
+<li><span class="pno">[s. 142]</span> BÖLÜM VI: NOTLAR, KAYNAKLAR VE EKLER:</li>
+<li><span class="pno">[s. 247]</span> ÇEVRESEL VE SOSYAL YÖNETİM PLANI</li></ul>
+
+  <div class="notice">
+    Informational civic transparency aid generated from official public Ministry announcements at <code>eced-duyuru.csb.gov.tr</code>. Every figure cites its 1-based PDF page <code>[s. N]</code>. Statutory deadlines are computed automatically and must be verified by qualified legal counsel.
+  </div>
+</div>
+</body>
+</html>

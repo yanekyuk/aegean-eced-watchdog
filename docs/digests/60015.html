@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>e-ÇED Pre-Digest #60015 — ÇEŞME</title>
+  <style>
+:root {
+  --bg: #0f1216;
+  --surface: #171c22;
+  --border: #262e38;
+  --text: #e6edf3;
+  --muted: #8b949e;
+  --accent: #58a6ff;
+  --red: #f85149;
+  --amber: #d29922;
+  --green: #3fb950;
+  --badge-bg: #212830;
+}
+@media (prefers-color-scheme: light) {
+  :root {
+    --bg: #f6f8fa;
+    --surface: #ffffff;
+    --border: #d0d7de;
+    --text: #1f2328;
+    --muted: #656d76;
+    --accent: #0969da;
+    --red: #cf222e;
+    --amber: #9a6700;
+    --green: #1a7f37;
+    --badge-bg: #eef2f6;
+  }
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.5;
+}
+.wrap { max-width: 1220px; margin: 0 auto; padding: 24px 18px 64px; }
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+header { border-bottom: 1px solid var(--border); padding-bottom: 16px; margin-bottom: 20px; }
+h1 { margin: 0 0 6px; font-size: 1.55rem; }
+.sub { color: var(--muted); font-size: 0.92rem; margin: 0; }
+.meta-bar { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 12px; font-size: 0.85rem; color: var(--muted); }
+.stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 10px; margin: 16px 0 20px; }
+.stat { background: var(--surface); border: 1px solid var(--border); border-radius: 8px; padding: 12px 14px; }
+.stat .num { font-size: 1.45rem; font-weight: 700; }
+.stat .lbl { font-size: 0.78rem; color: var(--muted); }
+.controls { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; margin-bottom: 16px; }
+input[type="search"] {
+  flex: 1 1 240px;
+  padding: 8px 12px;
+  border-radius: 6px;
+  border: 1px solid var(--border);
+  background: var(--surface);
+  color: var(--text);
+  font-size: 0.92rem;
+}
+button.pill {
+  padding: 6px 11px;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: var(--surface);
+  color: var(--text);
+  cursor: pointer;
+  font-size: 0.82rem;
+}
+button.pill.active { background: var(--accent); border-color: var(--accent); color: #fff; font-weight: 600; }
+.cards { display: flex; flex-direction: column; gap: 10px; }
+.card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 14px 16px;
+}
+.card.prio { border-left: 4px solid var(--accent); }
+.row-top { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px; align-items: baseline; }
+.title { font-weight: 600; font-size: 0.98rem; }
+.badges { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 6px; }
+.badge {
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  background: var(--badge-bg);
+  border: 1px solid var(--border);
+}
+.badge.urgent { border-color: var(--red); color: var(--red); font-weight: 600; }
+.badge.warn { border-color: var(--amber); color: var(--amber); font-weight: 600; }
+.badge.ok { border-color: var(--green); color: var(--green); }
+.badge.muted { color: var(--muted); }
+.detail { font-size: 0.86rem; color: var(--muted); margin: 8px 0; }
+.actions { display: flex; flex-wrap: wrap; gap: 12px; font-size: 0.84rem; margin-top: 8px; }
+.notice {
+  margin-top: 28px;
+  padding: 12px 14px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  font-size: 0.82rem;
+  color: var(--muted);
+}
+table.kv { width: 100%; border-collapse: collapse; margin: 12px 0; font-size: 0.9rem; }
+table.kv th, table.kv td { border: 1px solid var(--border); padding: 8px 10px; text-align: left; vertical-align: top; }
+table.kv th { width: 220px; background: var(--badge-bg); }
+code { background: var(--badge-bg); padding: 1px 5px; border-radius: 4px; font-size: 0.85em; }
+blockquote { margin: 10px 0; padding: 10px 14px; border-left: 3px solid var(--accent); background: var(--surface); font-size: 0.9rem; }
+.hit { margin: 6px 0; font-size: 0.88rem; }
+.pno { font-weight: 700; color: var(--accent); }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div style="font-size:0.85rem;margin-bottom:8px;"><a href="../index.html">← Back to Aegean e-ÇED Watchdog</a> · <a href="60015.md">Raw Markdown (.md)</a></div>
+    <h1>e-ÇED Pre-Digest #60015 — ÇEŞME / İZMİR</h1>
+    <p class="sub">CASTELLO FONTANA OTEL</p>
+    <div class="badges" style="margin-top:10px;">
+      <span class="badge">IDK</span>
+      <span class="badge">Ek-1</span>
+      <span class="badge warn">İDK · check date</span>
+    </div>
+  </header>
+
+  <table class="kv">
+    <tr><th>Project Owner</th><td>ARIKAN PROJE GELİŞTİRME A.Ş.</td></tr>
+    <tr><th>Consulting Firm</th><td>ELEMENT ÇEVRE DANIŞMANLIK VE MÜHENDİSLİK A.Ş.</td></tr>
+    <tr><th>Sector</th><td>Turizm / Turistik Tesisler</td></tr>
+    <tr><th>Announcement Date</th><td><code>16.11.2026</code> (uploaded <code>09/06/2026 04:17:08</code>)</td></tr>
+    <tr><th>PDF Coverage</th><td>183.81 MB · 915 pages (835 text / 80 scanned-or-image) · SHA-256 <code>c886fcee9d5a36a3…</code></td></tr>
+    <tr><th>Official Links</th><td><a href="http://eced.csb.gov.tr/jsp/ek1/60015" target="_blank" rel="noopener">e-ÇED Portal Record</a> · <a href="http://eced.csb.gov.tr/jsp/dosya/dosyaGoster.htm?tempAd=sign8235067367368802982.pdf&amp;orjinalAd=60015_CED_Raporu.pdf&amp;yuklemeTarihi=2026-11-10" target="_blank" rel="noopener">Official PDF</a></td></tr>
+  </table>
+
+  <h2>Official Announcement Text</h2>
+  <blockquote>İZMİR ili ÇEŞME,  ilcesinde İZMİR ili ÇEŞME ilçesi sınırları içerisinde ARIKAN PROJE GELİŞTİRME A.Ş. tarafından yapılması planlanan CASTELLO FONTANA OTEL projesi ile ilgili olarak hazırlanan ÇED Raporu, ÇED Yönetmeliği&#x27;nin 11. maddesi kapsamında Bakanlığımıza sunulmuş olup, inceleme değerlendirme süreci başlamıştır. Proje ile ilgili olarak 07/12/2026 tarihinde İDK toplantısı gerçekleştirilecektir. Bakanlığımıza sunulan ÇED Raporu https://eced-duyuru.csb.gov.tr/eced-prod/duyurular.xhtml adresinde yer almaktadır. ÇED Raporu ilgililere ve kamuoyuna duyurulur.</blockquote>
+
+  <h2>Automated Baseline &amp; Red-Flag Scan</h2>
+  <table class="kv"><tr><th>Field survey (*arazi/saha çalışması*)</th><td><span class="badge ok">Present</span></td></tr>
+<tr><th>Literature review (*literatür taraması*)</th><td><span class="badge ok">Present</span></td></tr>
+<tr><th>Seasonal sampling (*mevsimsel*)</th><td><span class="badge ok">Present</span></td></tr>
+<tr><th>Cumulative impact (*kümülatif*)</th><td><span class="badge ok">Present</span></td></tr>
+<tr><th>Olive Law / groves (*3573 / zeytinlik*)</th><td><span class="badge ok">Present</span></td></tr>
+<tr><th>Groundwater / aquifer (*akifer / yeraltı suyu*)</th><td><span class="badge ok">Present</span></td></tr>
+<tr><th>Endemic / IUCN / Bern Convention</th><td><span class="badge ok">Present</span></td></tr></table>
+  <p class="sub">Scanned annex maps/letters without OCR are excluded from automated text scan.</p>
+
+  <h2>Page-Cited Extracted Evidence</h2>
+  <div class="cards"><section class="card"><h3>Coordinates, Parcel &amp; Footprint <span style="color:var(--muted);font-weight:400;font-size:0.85rem">(225 pages: s.1, s.9, s.10, s.23, s.29, s.30, s.32, s.35, s.40, s.42, s.44, s.45, s.46, s.48 (+211 more))</span></h3><div class="hit"><span class="pno">[s. 1]</span> <code>ada 173 parsel</code> — …ARIKAN PROJE GELİŞTİRME A.Ş. CASTELLO FONTANA OTEL İzmir İli, Çeşme ilçesi, Çakabey Mahallesi, 507 ada 173 parsel ELEMENT ÇEVRE DANIŞMANLIK VE MÜHENDİSLİK A.Ş. Mansuroğlu Mah. 1593/1 Sok. No:2 Lider Centrio A Blok No: 78 Bay…</div>
+<div class="hit"><span class="pno">[s. 9]</span> <code>koordinat</code> — …i Amaçlar İçin Kullanılacakları (kazı fazlası malzeme ve bitkisel toprak miktarı ayrı ayrı hesaplanmalı, depo alanları koordinatlarıyla birlikte gösterilmeli, bitkisel toprağın ne şekilde depolanacağı ve nasıl değerlendirileceği açıklanmalıdır.) .…</div>
+<div class="hit"><span class="pno">[s. 10]</span> <code>utm</code> — …............. 199 3.6. İnşaat ve İşletme Aşamasında Oluşacak Emisyon Kaynakları (toz emisyonu, ısınma, aydınlanma, soğutma vb. amaçlı kullanılacak yakıt cinsine bağlı olarak oluşacak misyonlar vb.) ve Alınacak Önlemler (Hesaplamaların inşaa…</div>
+<div class="hit"><span class="pno">[s. 23]</span> <code>407,15 m2</code> — …N PROJE GELİŞTİRME A.Ş.1 tarafından İzmir ili, Çeşme ilçesi, Çakabey Mahallesi, 507 ada ve 173 parselinde yer alan 180.407,15 m2’lik taşınmaz üzerinde “CASTELLO FONTANA OTEL” projesinin gerçekleştirilmesi planlanmaktadır. Proje alanında 180.407,1…</div>
+<div class="hit"><span class="pno">[s. 23]</span> <code>10.500 m2</code> — …e “CASTELLO FONTANA OTEL” projesinin gerçekleştirilmesi planlanmaktadır. Proje alanında 180.407,15 m2 parsel alanının 10.500 m2 lik kısmında “Otel (20 Oda)” projesi planlanmakta idi. Planlanan projeye ilişkin 06.10.2025 tarih ve 13734597 sayı ile…</div>
+<div class="hit"><span class="pno">[s. 23]</span> <code>393,02 m2</code> — …Tablo 1.Tapu Alanı Ada Parsel Tapu Alanı (m2) Niteliği 507 173 180.407,15 Arsa Planlanan proje kapsamında, 88.393,02 m2lik inşaat alanı olacaktır. Söz konusu proje kapsamında otel ve apart oteller yapılacak olup bloklar A, C, D, E, E2, F,…</div></section><section class="card"><h3>Water Use, Hydrogeology &amp; Discharge <span style="color:var(--muted);font-weight:400;font-size:0.85rem">(105 pages: s.9, s.11, s.16, s.18, s.27, s.38, s.49, s.50, s.52, s.54, s.59, s.72, s.73, s.87 (+91 more))</span></h3><div class="hit"><span class="pno">[s. 9]</span> <code>Deşarj</code> — …rı (her atıksu kaynağı için ayrı ayrı hesaplanmalıdır) .............. 186 3.3.3. Sıvı Atıkların Bertaraf Yöntemleri ve Deşarj Edileceği Ortamlar (Evsel atık su, hamam, sauna ve havuz suyu ve diğer sıvı atıkların bertaraf şekli, deşarj edildiği/…</div>
+<div class="hit"><span class="pno">[s. 11]</span> <code>Yeraltı Suyu</code> — …....................................... 224 3.9. Proje Kapsamında Gerçekleştirilecek Faaliyetler Sonucunda Yüzeysel ve Yeraltı Suyu Kaynaklarının Etkilenme Durumları ve Alınacak Tedbirler (Yeraltısuyu Akiferlerine, Su Kaynaklarına Olan Etkisi İle İl…</div>
+<div class="hit"><span class="pno">[s. 11]</span> <code>Yeraltısuyu</code> — …ekleştirilecek Faaliyetler Sonucunda Yüzeysel ve Yeraltı Suyu Kaynaklarının Etkilenme Durumları ve Alınacak Tedbirler (Yeraltısuyu Akiferlerine, Su Kaynaklarına Olan Etkisi İle İlgili Değerlendirmeler) ...............................................…</div>
+<div class="hit"><span class="pno">[s. 16]</span> <code>Atıksu</code> — …........................................................................................................ 187 Tablo 40. Atıksu Arıtma Tesisleri Teknik Usuller Tebliğ “Tablo E7.1 Sulamada Geri Kullanılacak Arıtılmış ..............................…</div>
+<div class="hit"><span class="pno">[s. 18]</span> <code>Yeraltısuyu</code> — …....................................... 139 Şekil 42. Bölgesel Jeoloji (Kazanasmaz, E. (2008), “Kentimiz ve Çevresinin Yeraltısuyu Kaynakları, Yeraltısuyunu Kirletici Etkenler ve Su Kıtlığı Riski”, TMMOB İzmir Kent Sempozyumu) .....................…</div>
+<div class="hit"><span class="pno">[s. 27]</span> <code>atıksu</code> — …en temin edilecektir. Projenin inşaat ve işletme aşamalarında çalışacak personelden kaynaklı olarak evsel nitelikli atıksu oluşması beklenmektedir. İnşaat aşamasında oluşacak evsel nitelikli atıksular, proje alanında oluşturulacak 80 m³ kapa…</div></section><section class="card"><h3>Protected Zones, Forests &amp; Olive Groves <span style="color:var(--muted);font-weight:400;font-size:0.85rem">(90 pages: s.6, s.25, s.26, s.45, s.55, s.56, s.60, s.62, s.73, s.74, s.75, s.76, s.77, s.79 (+76 more))</span></h3><div class="hit"><span class="pno">[s. 6]</span> <code>Doğal Sit</code> — …IKAN PROJE GELİŞTİRME A.Ş. CASTELLO FONTANA OTEL 2.3.2. Var İse Proje Alanı ve Çevresinde Bulunan Tabiat Varlığı ve Doğal Sit Alanları (Tabiat Varlıklarını Koruma Genel Müdürlüğü’nün 16166497 sayılı görüşleri kapsamında yapılacak iş ve işlemle…</div>
+<div class="hit"><span class="pno">[s. 25]</span> <code>Doğal Sit</code> — …parsel 24.06.2021 tarih ve 1133 sayılı İzmir 2 No’lu TVK kararı gereği Sürdürülebilir Koruma Kontrollü Kullanım Alanı Doğal Sit Alanında kalmaktadır. 1/1000 ölçekli Koruma Amaçlı İmar Planında Otel Alanında kalmaktadır. Proje kapsamında 769 oda…</div>
+<div class="hit"><span class="pno">[s. 26]</span> <code>Doğal Sit</code> — …e alanı, İzmir - Manisa İli 1/100.000 ölçekli Çevre Düzeni Planı’nın L16 paftasında kalmakta ve “Turizm Tesis Alanı ve Doğal Sit Alanı” olarak belirlenen sınırlar içerisinde yer almaktadır. (Bkz.Ek-2.3). Proje alanını gösterir 1/25.000 Ölçekli To…</div>
+<div class="hit"><span class="pno">[s. 45]</span> <code>Doğal Sit</code> — …e alanı, İzmir - Manisa İli 1/100.000 ölçekli Çevre Düzeni Planı’nın L16 paftasında kalmakta ve “Turizm Tesis Alanı ve Doğal Sit Alanı” olarak belirlenen sınırlar içerisinde yer almaktadır. (Bkz.Ek-2.2). Proje alanına ulaşım problemi bulunmamakt…</div>
+<div class="hit"><span class="pno">[s. 55]</span> <code>Doğal Sit</code> — …parsel 24.06.2021 tarih ve 1133 sayılı İzmir 2 No’lu TVK kararı gereği Sürdürülebilir Koruma Kontrollü Kullanım Alanı Doğal Sit Alanında kalmaktadır. 1/1000 ölçekli Koruma Amaçlı İmar Planında Otel Alanında kalmaktadır. 14.07.2026 tarih ve 30848…</div>
+<div class="hit"><span class="pno">[s. 56]</span> <code>doğal sit</code> — …k Planlara Dair Yönetmelik’in 5/d maddesinde yer alan &quot;Koruma amaçlı imar planlarının varsa etkileşim-geçiş sahası ile doğal sit alanının bütününü kapsayacak şekilde veya Genel Müdürlükçe uygun görülen etaplar halinde, içinde bulunduğu yerleşme il…</div></section><section class="card"><h3>Flora, Fauna &amp; Baseline Methodology <span style="color:var(--muted);font-weight:400;font-size:0.85rem">(114 pages: s.7, s.10, s.22, s.38, s.52, s.72, s.86, s.88, s.92, s.93, s.104, s.106, s.107, s.109 (+100 more))</span></h3><div class="hit"><span class="pno">[s. 7]</span> <code>IUCN</code> — vi ARIKAN PROJE GELİŞTİRME A.Ş. CASTELLO FONTANA OTEL IUCN ve Türkiye Bitkileri Kırmızı Kitabı Tehlike Kategorilerine göre değerlendirme yapılması, tespit şeklinin arazi/literat…</div>
+<div class="hit"><span class="pno">[s. 7]</span> <code>Bern Sözleşmesi</code> — …Türleri (türlerinin tehlike kategorileri, endemiklik durumları, nispi bolluk dereceleri, Uluslararası Antlaşmalar İle (Bern Sözleşmesi vb.) Koruma Altına Alınan Tür Olup Olmadığı) .........................................................................…</div>
+<div class="hit"><span class="pno">[s. 10]</span> <code>mevsimsel</code> — …ücadele ve Su Kaynaklarının Verimli Kullanılması İçin Alınacak Önlemler ve Yapılacak Çalışmalar (Projenin bölgede mevsimsel değişikliğe olan etkileri konusunda kıyı erozyonu, plaj alanı kaybına neden olup olmayacağı, bölgenin yer…</div>
+<div class="hit"><span class="pno">[s. 22]</span> <code>CITES</code> — …EL KISALTMALAR Bkz. Bakınız ºC Santigrat derece CBS Coğrafi Bilgi Sistemi ÇED Çevresel Etki Değerlendirme CITES Nesli Tehlikedeki Yabani Hayvan ve Bitki Türlerinin Uluslararası Ticaretine İlişkin Sözleşme (Convention on Internati…</div>
+<div class="hit"><span class="pno">[s. 22]</span> <code>IUCN</code> — …liği cm Santimetre dB Desibel dba A-Ağırlıklı Desibel DSİ Devlet Su İşleri GPS Küresel Yer Belirleme Sistemi IUCN Dünya Doğayı Koruma Birliği kg Kilogram km Kilometre km2 Kilometrekare KVS Kısa Vadeli Sınır Değer m Metre…</div>
+<div class="hit"><span class="pno">[s. 38]</span> <code>mevsimsel</code> — …ım Süresi ve İşletme Süresi Planlanan turizm konaklama tesisinin işletme faaliyetleri, bölgenin turizm potansiyeli, mevsimsel talep ve konaklama ihtiyaçları doğrultusunda şekillenecektir. Tesisin hizmet vereceği dönemler ve işletme düzeni, turi…</div></section><section class="card"><h3>Emissions, Geochemistry &amp; Waste <span style="color:var(--muted);font-weight:400;font-size:0.85rem">(131 pages: s.5, s.8, s.12, s.17, s.18, s.19, s.22, s.38, s.56, s.57, s.59, s.60, s.63, s.72 (+117 more))</span></h3><div class="hit"><span class="pno">[s. 5]</span> <code>Deprem</code> — …...... 42 2.1.3. Proje Alanı ve Yakın Çevresinde Bulunan Diğer Kullanımların (Tarım Arazisi, Yeraltı ve Yüzey Suları, Deprem Kuşakları, Jeolojik Yapı, Yerleşim Alanları, Ulaşım Ağı, Enerji İletim Hatları, Boru Hatları, Sanayi Bölgeleri vb.) 1/…</div>
+<div class="hit"><span class="pno">[s. 8]</span> <code>deprem</code> — …GELİŞTİRME A.Ş. CASTELLO FONTANA OTEL 2.9. Proje ve Etki Alanının Doğal Afet Durumu (7269 sayılı yasada belirtilen deprem dışındaki heyelan, su baskını, çığ, kaya düşmesi, vb. afet riskleri hakkında bilgi verilmeli. Proje alanında daha önc…</div>
+<div class="hit"><span class="pno">[s. 12]</span> <code>Deprem</code> — …emin Emniyetinin Sağlanması İçin Yapılacak İşlemler .......................................... 249 3.21. Doğal Afet ve Deprem Durumuna İlişkin Alınacak Koruyucu ve Önleyici Tedbirler ............................................................…</div>
+<div class="hit"><span class="pno">[s. 12]</span> <code>KÜMÜLATİF</code> — …kurum/kuruluşlar tarafından talep edilenler. (Uyulması Gereken Mevzuatlar Dışındaki Özel Taahhütler)... 253 BÖLÜM 4: KÜMÜLATİF ETKİ DEĞERLENDİRME (Projenin geçmişteki, mevcuttaki veya gelecekteki etki alanı içerisinde kalan başka faaliyet…</div>
+<div class="hit"><span class="pno">[s. 17]</span> <code>Gürültü</code> — ….İnşaat Aşamasında Sahada Kullanılacak Makine-Ekipman Oktav Bandı Dağılımı 212 Tablo 57.İnşaat Aşamasında Kullanılacak Gürültü Kaynaklarının Mesafelere Göre Ses Basınç Düzeyleri(dBA) ..............................................................…</div>
+<div class="hit"><span class="pno">[s. 18]</span> <code>Deprem</code> — …je Alanının En Yakın Camiye Olan Konumunu Gösterir Uydu Görüntüsü ........ 49 Şekil 23. Proje Alanını Gösterir Türkiye Deprem Tehlike Haritası ve Proje Alanına En Yakın Diri Fayın Konumu ve Mesafesi .............................................…</div></section><section class="card"><h3>Project Cost, Power &amp; Capacity <span style="color:var(--muted);font-weight:400;font-size:0.85rem">(60 pages: s.2, s.3, s.27, s.29, s.32, s.46, s.48, s.49, s.50, s.53, s.54, s.90, s.97, s.189 (+46 more))</span></h3><div class="hit"><span class="pno">[s. 2]</span> <code>PROJE BEDELİ</code> — …AKS NUMARASI TEL : +90 532 271 14 09 FAKS : - E-POSTA ozlemcesme@gmail.com PROJENİN ADI CASTELLO FONTANA OTEL PROJE BEDELİ 1.993.240.834,20 TL PROJE İÇİN SEÇİLEN YERİN AÇIK ADRESİ (İLİ, İLÇESİ, MEVKİİ) İzmir ili, Çeşme ilçesi, Çakabey M…</div>
+<div class="hit"><span class="pno">[s. 3]</span> <code>Kapasite</code> — …................................................... 23 1.2.3. Kara Alanında Yapılması Planlanan Üniteler, Özellikleri, Kapasiteleri, Bu Ünitelerde Verilecek Olan Hizmetler (Otel İçin Yapılması Planlanan Bina Sayısı, Binalardaki Kat Adedi, Oda Sa…</div>
+<div class="hit"><span class="pno">[s. 27]</span> <code>kapasite</code> — …ıksu oluşması beklenmektedir. İnşaat aşamasında oluşacak evsel nitelikli atıksular, proje alanında oluşturulacak 80 m³ kapasiteli sızdırmaz fosseptikte toplanacak, vidanjör ile çektirilerek İZSU Atıksu Arıtma Tesislerine gönderilecektir. Bu husus…</div>
+<div class="hit"><span class="pno">[s. 29]</span> <code>kapasite</code> — …ktedir. Söz konusu yapılaşma kapsamında 34 odalı butik otel ile apart otel birimlerinde toplam 769 oda ve 1.538 yatak kapasitesi oluşturulacaktır. Yapılaşma dışında kalan alanlarda ise açık yüzme havuzları, otopark alanları ve peyzaj düzenlemele…</div>
+<div class="hit"><span class="pno">[s. 32]</span> <code>Kapasite</code> — …1 Blok) 1 adet Apart Otel Kapalı Otopark (G Blok) 2 adet Apart Otel Kapalı Otopark (I Blok) 4 adet Toplam Otopark Kapasitesi 473 adet Yüzme Havuzları F Tipi Açık Yüzme Havuzu 14 adet H Tipi Açık Yüzme Havuzu 2 adet G Tipi Açık Yüzme…</div>
+<div class="hit"><span class="pno">[s. 46]</span> <code>Kapasite</code> — …arsel Sorgu Uygulaması 507 Ada ve 173 Parsel Görüntüsü 1.2.3. Kara Alanında Yapılması Planlanan Üniteler, Özellikleri, Kapasiteleri, Bu Ünitelerde Verilecek Olan Hizmetler (Otel İçin Yapılması Planlanan Bina Sayısı, Binalardaki Kat Adedi, Oda Sa…</div></section></div>
+
+  <h2>Document Navigation Map</h2>
+  <ul><li><span class="pno">[s. 365]</span> 25000</li>
+<li><span class="pno">[s. 369]</span> 100000</li>
+<li><span class="pno">[s. 366]</span> 25000</li>
+<li><span class="pno">[s. 401]</span> 25000</li>
+<li><span class="pno">[s. 367]</span> 25000</li>
+<li><span class="pno">[s. 793]</span> DUYURU</li>
+<li><span class="pno">[s. 793]</span> CASTELLO FONTANA OTEL PROJESİ</li>
+<li><span class="pno">[s. 793]</span> Halkın Bilgilendirilmesi ve Sürece Katılımı Toplantısı Servis Duyurusu</li>
+<li><span class="pno">[s. 390]</span> ÇIKTI</li>
+<li><span class="pno">[s. 878]</span> IcYazismaKGM</li>
+<li><span class="pno">[s. 878]</span> KayitTarihi</li>
+<li><span class="pno">[s. 878]</span> GidecegiYerAdiBM</li>
+<li><span class="pno">[s. 878]</span> GidecegiAltYerAdiBM</li>
+<li><span class="pno">[s. 878]</span> GidecegiYerAdresBM</li></ul>
+
+  <div class="notice">
+    Informational civic transparency aid generated from official public Ministry announcements at <code>eced-duyuru.csb.gov.tr</code>. Every figure cites its 1-based PDF page <code>[s. N]</code>. Statutory deadlines are computed automatically and must be verified by qualified legal counsel.
+  </div>
+</div>
+</body>
+</html>
