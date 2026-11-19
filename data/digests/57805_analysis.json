@@ -533,5 +533,175 @@
       "mentions_groundwater_or_aquifer": true,
       "mentions_iucn_or_endemic": true
     }
+  },
+  "llm_synthesis": {
+    "model": "gemini-3.8-flash",
+    "generated_at": "2026-11-20T01:27:23",
+    "pages_sent": [
+      1,
+      2,
+      3,
+      4,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      18,
+      19,
+      53,
+      120,
+      138,
+      152,
+      154,
+      156
+    ],
+    "result": {
+      "executive_summary_tr": "Karayolları Genel Müdürlüğü 2. Bölge Müdürlüğü tarafından Manisa ili, Akhisar ilçesi, Doğankaya Mahallesi mevkiinde mevcut kalker ocağı ve tesislerin kapasite artışı ile ilave asfalt plent ve hazır beton santrali kurulması planlanmaktadır. Proje kapsamında mevcut 9,96 hektarlık alana 5,88 hektar ilave edilerek toplam ÇED alanının 15,84 hektara, kalker ocağı üretiminin ise yıllık 600.000 tondan 1.000.000 tona çıkarılması hedeflenmektedir. Sahaya en yakın yerleşim biriminin yalnızca 80 metre mesafede bulunması, sahanın orman ve tarım arazisi vasfı taşıması, patlatma kaynaklı titreşim ve gürültü ile toz ve asfalt emisyonlarının kümülatif baskı yaratma potansiyeli temel çevresel riskleri oluşturmaktadır.",
+      "executive_summary_en": "The 2nd Regional Directorate of Highways proposes a capacity increase for the existing Doğankaya limestone quarry, crushing-screening, and mechanical plant, alongside the addition of an asphalt plant and a ready-mix concrete batching plant in Akhisar District, Manisa Province. The project intends to expand the licensed EIA area by 5.88 ha to 15.84 ha and elevate extraction capacity from 600,000 tons/year to 1,000,000 tons/year. Primary environmental sensitivities include the close proximity to residential dwellings (80 meters), operations within designated forest and agricultural land, and localized impacts from blasting vibrations, fugitive dust, and asphalt plant emissions.",
+      "key_facts": [
+        {
+          "label": "Proje Bedeli",
+          "value": "2.500.000 TL",
+          "page": 2
+        },
+        {
+          "label": "Mevcut ÇED Alanı",
+          "value": "9,96 ha",
+          "page": 13
+        },
+        {
+          "label": "İlave ÇED Talep Alanı",
+          "value": "5,88 ha",
+          "page": 13
+        },
+        {
+          "label": "Nihai ÇED Alanı",
+          "value": "15,84 ha (Tablo 2'de 15,83 ha)",
+          "page": 13
+        },
+        {
+          "label": "Ocak Nihai Kapasitesi",
+          "value": "1.000.000 ton/yıl (artış: 400.000 ton/yıl)",
+          "page": 13
+        },
+        {
+          "label": "Kırma-Eleme Tesisi Kapasitesi",
+          "value": "390.000 ton/yıl",
+          "page": 13
+        },
+        {
+          "label": "Mekanik Plent Kapasitesi",
+          "value": "390.000 ton/yıl (artış: 190.000 ton/yıl)",
+          "page": 13
+        },
+        {
+          "label": "İlave Tesisler Kapasitesi",
+          "value": "Hazır Beton: 100 m3/saat; Asfalt Plent: 300 ton/saat",
+          "page": 14
+        },
+        {
+          "label": "En Yakın Konut Mesafesi",
+          "value": "80 m (Doğankaya Mahallesi)",
+          "page": 14
+        },
+        {
+          "label": "Çalışma Süresi",
+          "value": "10 ay/yıl, 24 gün/ay, 8 saat/gün",
+          "page": 14
+        }
+      ],
+      "baseline_assessment": {
+        "field_survey_status": "mixed_or_unclear",
+        "seasonal_sampling_status": "not_found",
+        "cumulative_impact_status": "superficial_or_boilerplate",
+        "olive_and_protected_status": "Proje alanında 3573 sayılı Zeytinciliğin Islahı ve Yabanilerinin Aşılattırılması Hakkında Kanun kapsamında alan bulunmadığı [s. 152], alanın 1/100.000 ölçekli Çevre Düzeni Planında 'Orman Alanı' ve meşcere haritasında 'OT-1, OT-2, Z, Arb1-T' olarak tarım ve orman arazisinde kaldığı belirtilmiştir [s. 14, 15, 152].",
+        "explanation": "Biyolojik temel çalışmalar, Temmuz 2025'te tek bir uzman tarafından yapılan tek dönemlik arazi gözlemine dayanmaktadır [s. 154]. Raporda, fauna türlerinin hareketlilikleri nedeniyle arazi çalışmasında doğrudan tespit edilemediği, bu sebeple fauna listesinin tamamen literatür taraması ile oluşturulduğu açıkça ifade edilmektedir [s. 156]. Çok mevsimli veya vejetasyon döngüsünü kapsayan bir arazi örnekleme çalışması yürütülmemiştir [s. 154, 156]."
+      },
+      "red_flags": [
+        {
+          "severity": "high",
+          "title": "Hazır Beton Santralinin ÇED Süreci Öncesinde Sahada Kurulu Olması",
+          "detail": "Proje tanıtım dosyasında, ilave edilmesi planlanan 100 m3/saat kapasiteli Hazır Beton Santralinin 'sahada mevcutta kurulu olup üretime geçilmemiştir' ifadesi yer almaktadır. ÇED süreci ve izinler tamamlanmadan tesisin fiziki olarak sahaya kurulmuş olması mevzuat prosedürleri açısından fiili durum yaratmaktadır.",
+          "pages": [
+            14
+          ]
+        },
+        {
+          "severity": "high",
+          "title": "Yerleşim Birimine ve En Yakın Konuta Aşırı Yakınlık (80 Metre)",
+          "detail": "Kalker ocağında patlatma yapılması, 300 ton/saatlik asfalt plent tesisi ve kırma-eleme işlemleri planlanmasına karşın en yakın konutun sahaya yalnızca 80 m mesafede yer aldığı belirtilmiştir. Bu durum, gürültü, hava şoku, titreşim ve toz emisyonları açısından hassas alıcı üzerinde ciddi risk teşkil etmektedir.",
+          "pages": [
+            6,
+            14,
+            19
+          ]
+        },
+        {
+          "severity": "medium",
+          "title": "Fauna Tespitinin Sahada Yapılamaması ve Salt Literatüre Dayanması",
+          "detail": "Proje dosyasında fauna türlerinin arazi çalışmasında hareketlilikleri gerekçesiyle tespit edilemediği, liste ve değerlendirmelerin sadece literatür varsayımları üzerinden doldurulduğu kabul edilmiştir. Gerçek bir faunistik arazi envanteri sunulmamıştır.",
+          "pages": [
+            154,
+            156
+          ]
+        },
+        {
+          "severity": "medium",
+          "title": "Saha Alan Metrajlarında Dosya İçi Çelişki",
+          "detail": "Metin içerisinde ve Tablo 1'de ilave alan 5,88 ha ve nihai ÇED alanı 15,84 ha olarak sunulurken, Tablo 2'de ilave alan 5,87 ha ve nihai alan 15,83 ha olarak yazılmıştır. Ayrıca orman izin yazısında 152.000 m2 (15,2 ha) ve 6.392 m2 verimli orman alanının çıkarıldığı belirtilerek farklı alan verileri paylaşılmıştır.",
+          "pages": [
+            13,
+            19,
+            120
+          ]
+        },
+        {
+          "severity": "low",
+          "title": "Biyolojik İncelemenin Tek Bir Ay (Temmuz) ile Sınırlı Olması",
+          "detail": "Flora ve vejetasyon tespiti yalnızca Temmuz 2025'te yapılmış olup ilkbahar efemeralleri ile kuş göç dönemlerini kapsayan mevsimsel döngüler incelenmemiştir.",
+          "pages": [
+            154
+          ]
+        }
+      ],
+      "hkt_and_petition_questions": [
+        {
+          "question_tr": "En yakın konutun proje sahasına yalnızca 80 metre mesafede olduğu dikkate alındığında, açık ocak patlatmalarından kaynaklanacak titreşim ve hava şoku ile asfalt plenti ve kırma-eleme toz emisyonlarının bu konut üzerindeki kümülatif etkileri hangi anlık izleme istasyonları ile denetlenecektir?",
+          "pages": [
+            6,
+            14,
+            19
+          ]
+        },
+        {
+          "question_tr": "Proje Tanıtım Dosyası'nda 'Hazır Beton Santrali sahada mevcutta kurulu olup üretime geçilmemiştir' denilmektedir; ÇED kararı alınmadan önce yapılan bu inşai ve kurulum faaliyetleri hangi yasal izin ve denetim kapsamında gerçekleştirilmiştir?",
+          "pages": [
+            14
+          ]
+        },
+        {
+          "question_tr": "Arazi çalışmasında fauna türlerinin hareketlilikleri nedeniyle sahada hiçbir şekilde tespit edilemediği ve sadece literatürden aktarıldığı belirtildiğine göre, patlatma ve ağır tesis faaliyetlerinin nesli tehlike altındaki yerel fauna üzerindeki etkileri sahada doğrulanmadan nasıl önlenecektir?",
+          "pages": [
+            154,
+            156
+          ]
+        },
+        {
+          "question_tr": "Dosyada ÇED nihai alanı kimi bölümlerde 15,84 ha, kimi tablolarda 15,83 ha, orman idaresi görüşlerinde ise 152.000 m² (15,2 ha) olarak geçmektedir; resmi ÇED iznine konu net koordinatlı orman ve tarım alanı sınırları nedir?",
+          "pages": [
+            13,
+            19,
+            120
+          ]
+        }
+      ],
+      "data_limitations": "Verilen PDF kesitleri Ekler bölümündeki haritaları, Orman Rehabilitasyon Projesini (EK-12), Hava Kalitesi Modelleme Raporunu (EK-10) ve akustik/titreşim hesaplama tablolarının arka plan girdi verilerini içermediğinden, hava dağılım ve gürültü modellemelerinin hassas alıcı üzerindeki mutlak doğrulaması yapılamamıştır."
+    }
   }
 }

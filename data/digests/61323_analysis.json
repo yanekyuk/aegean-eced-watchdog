@@ -509,5 +509,214 @@
       "mentions_groundwater_or_aquifer": true,
       "mentions_iucn_or_endemic": true
     }
+  },
+  "llm_synthesis": {
+    "model": "gemini-4-hydrogen",
+    "generated_at": "2026-11-20T01:32:29",
+    "pages_sent": [
+      1,
+      2,
+      3,
+      4,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      16,
+      17,
+      18,
+      20,
+      27,
+      32,
+      34,
+      35,
+      36,
+      43,
+      44,
+      65,
+      66,
+      111
+    ],
+    "result": {
+      "executive_summary_tr": "Manisa ili Salihli ilçesi Gökeyüp Mahallesi 179 Ada 2 Parsel (117.840,08 m2) üzerinde OLA Tarım Hayvancılık ve İnşaat A.Ş. tarafından dönem başına 160.454 adet kapasiteli (45 gün yetiştirme + 2 hafta hazırlık, 7 adet kümes) Etlik Piliç Yetiştirme Tesisi kurulması planlanmaktadır [s. 6, 8, 10]. ÇED Yönetmeliği Ek-1 Madde 17-d kapsamındaki tesisin toplam yapılaşma alanı 9.858,31 m2, proje bedeli 105.852.311 TL ve ekonomik ömrü 40 yıl olarak öngörülmektedir [s. 6, 8, 11]. Başlıca çevresel riskler arasında alanın 1/100.000 ölçekli Çevre Düzeni Planında 'Orman Alanı' içinde yer alması [s. 16, 36], yılda 200 ton kömür kullanımı beyanı [s. 44], 1. Derece Deprem Bölgesi'nde (PGA 0,334 g) yer alan gübre, ölü tavuk ve fosseptik çukurları [s. 6, 34, 35] ile çok mevsimli arazi etüdü sunulmaması yer almaktadır.",
+      "executive_summary_en": "OLA Tarım Hayvancılık ve İnşaat A.Ş. proposes to construct a 160,454-bird/cycle broiler chicken farming facility (7 coops totaling 8,914.08 m2; 45-day rearing plus 2-week preparation) on parcel 179/2 (117,840.08 m2) in Gökeyüp Neighborhood, Salihli District, Manisa [s. 6, 8, 10]. Subject to EIA Annex-1 Article 17-d, the project has a total built footprint of 9,858.31 m2, an estimated cost of 105,852,311 TL, and a 40-year economic life [s. 6, 8, 11]. Primary environmental stakes include the site's designation as 'Forest Area' in the 1/100,000 Environmental Plan [s. 16, 36], declared coal consumption of 200 tons/year [s. 44], waste pits (manure, mortality, septic) located in a 1st Degree Earthquake Zone (PGA 0.334 g) [s. 6, 34, 35], and the lack of documented multi-season baseline ecological surveys.",
+      "key_facts": [
+        {
+          "label": "Kapasite / Capacity",
+          "value": "160.454 adet/dönem (8.914,08 m2 kümes alanı, 18 hayvan/m2)",
+          "page": 10
+        },
+        {
+          "label": "Parsel Büyüklüğü / Parcel Area",
+          "value": "117.840,08 m2 (Gökeyüp Mah., 179 Ada, 2 Parsel; kiracı statüsü)",
+          "page": 6
+        },
+        {
+          "label": "Toplam Yapı Alanı / Total Footprint",
+          "value": "9.858,31 m2 (7 kümes, 2 bakıcı evi, idari bina, depolar, ölü/gübre çukuru, fosseptik)",
+          "page": 8
+        },
+        {
+          "label": "Üretim Periyodu / Production Cycle",
+          "value": "45 gün yetiştirme + 2 hafta temizlik/dezenfeksiyon; yılda 300 gün, günde 24 saat",
+          "page": 6
+        },
+        {
+          "label": "Proje Bedeli / Project Cost",
+          "value": "105.852.311 TL (inşaat bedeli 79.852.311 TL dahil)",
+          "page": 11
+        },
+        {
+          "label": "Ekonomik Ömür ve İstihdam / Life & Staff",
+          "value": "40 yıl ekonomik ömür; 15 çalışan",
+          "page": 11
+        },
+        {
+          "label": "Kömür Kullanımı / Coal Consumption",
+          "value": "200 ton/yıl (tesis yetkililerince beyan edilen)",
+          "page": 44
+        },
+        {
+          "label": "Personel Su İhtiyacı / Staff Water Use",
+          "value": "2,86 m3/gün (2.865 lt/gün; 15 kişi için piyasadan satın alma)",
+          "page": 44
+        },
+        {
+          "label": "Merkezlere Uzaklık / Distance to Centers",
+          "value": "Salihli ilçe merkezine 27 km, Manisa il merkezine 74 km",
+          "page": 6
+        },
+        {
+          "label": "Deprem Tehlikesi / Seismic Hazard",
+          "value": "1. Derece Deprem Bölgesi; en büyük yer ivmesi (PGA 475) 0,334 g",
+          "page": 35
+        }
+      ],
+      "baseline_assessment": {
+        "field_survey_status": "mixed_or_unclear",
+        "seasonal_sampling_status": "not_found",
+        "cumulative_impact_status": "omitted_or_not_found",
+        "olive_and_protected_status": "Sunulan sayfalarda 3573 sayılı Zeytincilik Kanunu kapsamında zeytinlik mesafe bilgisine rastlanmamıştır. Dosyada proje alanının Yaban Hayatı Geliştirme Sahası, Milli Park, Tabiat Parkı, Özel Koruma Alanı [s. 32], sulak alan, göl/akarsu veya endemik tür yaşam ortamı içinde yer almadığı beyan edilmektedir [s. 43]; ancak alanın 1/100.000 ölçekli İzmir-Manisa Çevre Düzeni Planında 'Orman Alanı' içinde kaldığı belirtilmektedir [s. 16, 36].",
+        "explanation": "Proje sahası için 21.09.2026 tarihinde tek bir yer incelemesi yapıldığı belirtilmiş [s. 6], flora çalışmasının arazi faaliyetleri ve literatür taramasıyla oluşturulduğu ifade edilerek tür tablosunda gözlem (G) ve literatür (L) kaynakları gösterilmiştir [s. 20, 27]. Buna karşın flora, sürüngen, kuş ve memeli tabloları 'bulunma olasılığı yüksek olan / bulunması muhtemel' tür listeleri olarak hazırlanmış [s. 4, 32], Davis, Tübives ve bölgedeki diğer projelerin verilerinden yararlanıldığı belirtilmiştir [s. 18]; çok mevsimli bir arazi örneklemesi belgelenmemiştir. İçindekiler dizininde raporun 61. sayfasında yer aldığı görülen Bölüm IV Kümülatif Çevresel Etki Değerlendirmesi ise sunulan sayfa kesitlerinde bulunmamaktadır [s. 3]."
+      },
+      "red_flags": [
+        {
+          "severity": "high",
+          "title": "1/100.000 Ölçekli Çevre Düzeni Planında 'Orman Alanı' Konumu",
+          "detail": "Proje alanının 1/100.000 ölçekli İzmir-Manisa Bölgesi Çevre Düzeni Planında 'Orman Alanı' içerisinde kaldığı açıkça belirtilmektedir [s. 16, 36]. Buna rağmen 117.840,08 m2'lik parselde kiracı sıfatıyla 9.858,31 m2 yapılaşma planlanırken [s. 6, 36] sunulan sayfalarda orman izni, tahsis durumu veya ağaç/habitat kaybına yönelik teknik bir değerlendirme yer almamaktadır.",
+          "pages": [
+            6,
+            16,
+            36
+          ]
+        },
+        {
+          "severity": "high",
+          "title": "Boş Arazi Beyanı ile Mevcut Kömür Yakıtı ve Ekipman Çelişkisi",
+          "detail": "Teknik Olmayan Özet ve Bölüm I'de 'yatırıma başlanmamış olup arazi tamamen boştur' denilmesine rağmen [s. 6, 8], Bölüm III'te 'Tesiste hem mevcut durumda yakıt olarak kömür kullanılmakta olup... 200 ton/yıl kömür kullanıldığı beyan edilmektedir' ifadeleri yer almaktadır [s. 44]. Ayrıca Tablo 2'de 7 kümes için yalnızca 2 adet '2.2 kcal kömürlü soba' yazılmıştır [s. 10]; bu değer hem 200 ton/yıl kömür tüketimi hem de 8.914,08 m2 kümes ısıtma ihtiyacı ile fiziksel olarak tutarsızdır.",
+          "pages": [
+            6,
+            8,
+            10,
+            44
+          ]
+        },
+        {
+          "severity": "high",
+          "title": "Çok Mevsimli Arazi Çalışması Eksikliği ve Literatüre Dayalı Biyoçeşitlilik Listeleri",
+          "detail": "Saha incelemesi yalnızca 21.09.2026 tarihli tek bir yer görme çalışması olarak anılmaktadır [s. 6]. Flora ve fauna tabloları 'bulunma olasılığı yüksek / bulunması muhtemel' türleri listelemekte olup literatür ve bölgedeki diğer projelerin verilerine dayanmaktadır [s. 4, 18, 27, 32]; mevsimsel gözlem eforu, örnekleme noktaları ve arazi protokolü sunulmamıştır.",
+          "pages": [
+            4,
+            6,
+            18,
+            20,
+            27,
+            32
+          ]
+        },
+        {
+          "severity": "medium",
+          "title": "Arazi Dağılımı Bölümünde Yanlış İlçe (Saruhanlı) Verisi Kullanımı",
+          "detail": "Proje Salihli ilçesi Gökeyüp Mahallesi sınırlarında planlanmasına karşın [s. 1, 6], Toprak bölümünde ilçelere göre arazi dağılımı anlatılırken Salihli yerine 'Saruhanlı İlçesinin yüzölçümü 785.000 Da...' verileri aktarılmıştır [s. 36]. Bu durum başka bir projeden kopyala-yapıştır yapıldığına işaret etmektedir.",
+          "pages": [
+            1,
+            6,
+            36
+          ]
+        },
+        {
+          "severity": "medium",
+          "title": "Yılda 200 Ton Kömür Tüketimine Rağmen Sera Gazı Azaltım Planı Hazırlanmaması",
+          "detail": "Tesiste yılda 200 ton kömür yakılacağı [s. 44] ve dönem başına 160.454 etlik piliç yetiştirileceği [s. 8] belirtilmesine rağmen, faaliyetin Sera Gazı Emisyonlarının Takibi Hakkında Yönetmelik Ek-1 kapsamında olmadığı gerekçesiyle Sera Gazı Azaltım Planı hazırlanmadığı beyan edilmiştir [s. 66].",
+          "pages": [
+            8,
+            44,
+            66
+          ]
+        },
+        {
+          "severity": "medium",
+          "title": "1. Derece Deprem Bölgesinde Atık Çukurları ve Akifer Riski",
+          "detail": "Proje sahası 1. Derece Deprem Bölgesi olup PGA 475 yer ivmesi değeri 0,334 g'dir [s. 34, 35]. Sahada 42,9 m2 ölü çukuru, 57,75 m2 gübre çukuru ve 16,5 m2 fosseptik planlanmaktadır [s. 6, 8]; ancak sunulan sayfalarda Gediz Havzası akiferlerine yönelik sızdırmazlık ve deprem güvenliği analizi görülmemektedir.",
+          "pages": [
+            6,
+            8,
+            34,
+            35
+          ]
+        }
+      ],
+      "hkt_and_petition_questions": [
+        {
+          "question_tr": "Proje sahası 1/100.000 ölçekli İzmir-Manisa Çevre Düzeni Planında 'Orman Alanı' içinde yer almaktadır [s. 16, 36]; bu alanda 9.858,31 m2 yapılaşma için Orman Kanunu kapsamında alınmış izin/tahsis bulunmakta mıdır ve kesilecek/etkilenecek ağaç varlığı tespit edilmiş midir?",
+          "pages": [
+            6,
+            8,
+            16,
+            36
+          ]
+        },
+        {
+          "question_tr": "Dosyada sahanın tamamen boş olduğu belirtilirken [s. 6, 8] başka bir bölümde 'mevcut durumda 200 ton/yıl kömür kullanıldığı' yazılmakta [s. 44] ve ekipman listesinde yalnızca 2 adet '2.2 kcal kömürlü soba' yer almaktadır [s. 10]; tesisin gerçek ısıtma kapasitesi, yakıt tüketimi ve baca gazı emisyon hesapları hangi doğrulanmış verilere dayanmaktadır?",
+          "pages": [
+            6,
+            8,
+            10,
+            44
+          ]
+        },
+        {
+          "question_tr": "Biyoçeşitlilik bölümünde yalnızca 21.09.2026 tarihli yer incelemesi bildirilmiş [s. 6] ve diğer projeler ile literatürden derlenen 'bulunma olasılığı yüksek' tür listeleri sunulmuştur [s. 4, 18, 32]; tüm mevsimleri kapsayan özgün arazi etüdü yapılmadan Bern Sözleşmesi ek listelerindeki türler üzerindeki etkiler nasıl değerlendirilmiştir?",
+          "pages": [
+            4,
+            6,
+            18,
+            27,
+            32
+          ]
+        },
+        {
+          "question_tr": "En büyük yer ivmesi (PGA 475) 0,334 g olan 1. Derece Deprem Bölgesi'ndeki tesiste [s. 34, 35] inşa edilecek 42,9 m2 ölü çukuru, 57,75 m2 gübre çukuru ve 16,5 m2 fosseptik yapılarının [s. 6, 8] sızdırmazlık ve deprem dayanımı önlemleri ile Gediz Havzası yeraltı sularını koruma tedbirleri nelerdir?",
+          "pages": [
+            6,
+            8,
+            34,
+            35
+          ]
+        },
+        {
+          "question_tr": "Yılda 200 ton kömür yakılması [s. 44] ve dönem başına 160.454 kanatlı üretimi [s. 8] öngörülmesine rağmen Sera Gazı Azaltım Planı hazırlanmamıştır [s. 66]; yakıt ve hayvancılık kaynaklı sera gazı ile koku/amonyak emisyonlarını azaltmak için hangi bağlayıcı teknik önlemler uygulanacaktır?",
+          "pages": [
+            8,
+            44,
+            66
+          ]
+        }
+      ],
+      "data_limitations": "Toplam 143 sayfalık ÇED Başvuru Dosyasının (114 metin, 29 taranmış/görsel sayfa) yalnızca 25 seçili sayfası incelenebilmiştir. İçindekiler dizininde yer alan koordinatlar ve yer/teknoloji alternatifleri (rapor s. 10-12), tam flora-fauna tabloları (rapor s. 21-29), yerleşim yeri mesafeleri ve Ek-5 duyarlı yöreler incelemesinin başlangıcı (rapor s. 35-40), hayvan içme ve kümes yıkama suyu tüketimi (Tablo 14, rapor s. 43), gübre/ölü tavuk bertarafı, toz/emisyon/gürültü/koku modellemeleri ve iklim değişikliği bölümü (rapor s. 43-60), Bölüm IV Kümülatif Çevresel Etki Değerlendirme (rapor s. 61-62) ile Ek-1, Ek-4, Ek-5, Ek-7 ve Ek-11/12/13 gibi taranmış ekler sağlanan kesitler dışında kaldığından doğrulanamamıştır."
+    }
   }
 }

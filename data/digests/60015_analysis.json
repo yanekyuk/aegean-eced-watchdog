@@ -580,5 +580,171 @@
       "mentions_groundwater_or_aquifer": true,
       "mentions_iucn_or_endemic": true
     }
+  },
+  "llm_synthesis": {
+    "model": "gemini-3.8-flash",
+    "generated_at": "2026-11-20T01:22:27",
+    "pages_sent": [
+      1,
+      2,
+      3,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      22,
+      23,
+      25,
+      26,
+      27,
+      29,
+      38,
+      45
+    ],
+    "result": {
+      "executive_summary_tr": "Proje, İzmir ili, Çeşme ilçesi, Çakabey Mahallesi 507 ada 173 parselde yer alan 180.407,15 m² yüzölçümlü taşınmaz üzerinde ARIKAN PROJE GELİŞTİRME A.Ş. tarafından kurulması planlanan 769 oda ve 1.538 yatak kapasiteli Castello Fontana Otel projesidir [s. 2, 23, 29]. Proje alanı, İzmir 2 No'lu Tabiat Varlıklarını Koruma Komisyonu kararı uyarınca 'Sürdürülebilir Koruma Kontrollü Kullanım Alanı' statüsündeki Doğal Sit Alanı sınırları içerisinde ve Çevre Düzeni Planı'nda Turizm Tesis Alanı lejantında kalmaktadır [s. 25, 26, 45]. Tesis kapsamında 272 adet blok, 41 açık yüzme havuzu, 473 araçlık otopark ve 535 m³/gün kapasiteli paket atıksu arıtma tesisi öngörülmektedir [s. 23, 27, 29]. Başlıca çevresel etkenler; doğal sit alanındaki yoğun yapılaşma baskısı, inşaat ve işletme aşamasındaki su temini/tüketimi ve bitişikteki rüzgâr türbinleri ile kümülatif etkileşimdir [s. 25, 27, 45].",
+      "executive_summary_en": "The proposed project comprises the construction and operation of the 769-room and 1,538-bed 'Castello Fontana Hotel' by ARIKAN PROJE GELİŞTİRME A.Ş. on a 180,407.15 m² plot in Çakabey District, Çeşme, İzmir [s. 2, 23, 29]. The project footprint falls within a legally designated 'Sustainable Conservation and Controlled Use Area' Natural Site and is zoned as Tourism Facility Area in the regional environmental master plan [s. 25, 26, 45]. The development includes 272 accommodation blocks, 41 outdoor swimming pools, a 473-vehicle parking lot, and an on-site 535 m³/day wastewater treatment plant designed for irrigation reuse [s. 23, 27, 29]. Key environmental stakes center on large-scale development inside a protected area, high water demand in a water-stressed peninsula, and cumulative interactions with adjacent wind energy installations [s. 25, 27, 45].",
+      "key_facts": [
+        {
+          "label": "Toplam Parsel Alanı",
+          "value": "180.407,15 m²",
+          "page": 23
+        },
+        {
+          "label": "Toplam İnşaat Alanı",
+          "value": "88.393,02 m²",
+          "page": 23
+        },
+        {
+          "label": "Emsale Esas İnşaat Alanı",
+          "value": "53.703,86 m²",
+          "page": 29
+        },
+        {
+          "label": "Toplam Blok Sayısı",
+          "value": "272 adet",
+          "page": 23
+        },
+        {
+          "label": "Toplam Oda ve Yatak Kapasitesi",
+          "value": "769 oda, 1.538 yatak",
+          "page": 23
+        },
+        {
+          "label": "Açık Yüzme Havuzu Sayısı",
+          "value": "41 adet",
+          "page": 23
+        },
+        {
+          "label": "Planlanan Paket AAT Kapasitesi",
+          "value": "535 m³/gün",
+          "page": 27
+        },
+        {
+          "label": "En Yakın Yerleşim Birimi Mesafesi",
+          "value": "220 m (tek konut)",
+          "page": 26
+        },
+        {
+          "label": "Komşu Rüzgar Türbini ve Şalt Sahası Mesafesi",
+          "value": "300 - 500 m (4 adet rüzgar türbini)",
+          "page": 45
+        },
+        {
+          "label": "Toplam Proje Bedeli",
+          "value": "1.993.240.834,20 TL",
+          "page": 2
+        }
+      ],
+      "baseline_assessment": {
+        "field_survey_status": "mixed_or_unclear",
+        "seasonal_sampling_status": "unclear",
+        "cumulative_impact_status": "superficial_or_boilerplate",
+        "olive_and_protected_status": "Proje parseli, 24.06.2021 tarihli ve 1133 sayılı İzmir 2 No'lu TVK kararı uyarınca 'Sürdürülebilir Koruma Kontrollü Kullanım Alanı' Doğal Sit Alanı statüsündedir [s. 25, 26, 45]. Zeytinlik varlığına ilişkin özel kanuni değerlendirme (3573 sayılı Kanun) sağlanan ilk sayfalarda açıkça belirtilmemiş, genel arazi kullanım başlıklarında bırakılmıştır [s. 8, 16].",
+        "explanation": "Raporda ÇED Yeterlik Belgesi Tebliği gereğince 16.04.2026 tarihinde tek günlük bir faaliyet yeri inceleme çalışması yapıldığı belirtilmektedir [s. 27]. Flora ve fauna bölümlerinde Yelkovan (Puffinus yelkouan) ve Üveyik (Streptopelia turtur) gibi türler için risk matrisleri listelenmekle birlikte, sağlanan metin kısımlarında çok mevsimli arazi örneklemesinin fiilen tamamlandığına dair detaylı metodolojik veriler yer almamaktadır [s. 16, 27]. Projenin doğu sınırında 300-500 m mesafede yer alan 4 adet RES türbini ve şalt merkezi varlığı belirtilmiş olup kümülatif etkilerin kapsamı ana metin sayfalarında irdelenmeyi gerektirmektedir [s. 45]."
+      },
+      "red_flags": [
+        {
+          "severity": "high",
+          "title": "Doğal Sit Alanında Aşırı Yoğun Yapılaşma ve Kapasite Artışı",
+          "detail": "Proje alanı 24.06.2021 tarihli TVK kararı ile tescil edilen 'Sürdürülebilir Koruma Kontrollü Kullanım Alanı' Doğal Sit Alanı içerisinde kalmaktadır [s. 25]. Daha önce aynı parselin 10.500 m²'lik kısmında 20 odalı otel için ÇED muafiyeti/kapsam dışı görüşü alınmışken, revizyonla 272 blok, 769 oda, 1.538 yatak ve 88.393 m² inşaat alanına çıkarılarak koruma altındaki alandaki yapı yoğunluğu dramatik biçimde artırılmıştır [s. 23, 29].",
+          "pages": [
+            23,
+            25,
+            29
+          ]
+        },
+        {
+          "severity": "high",
+          "title": "Su Kıtlığı Yaşanan Yarımadada Taşıma Su ve Şebeke Bağımlılığı",
+          "detail": "İnşaat aşamasında su ihtiyacının taşıma su ile, işletme aşamasında ise şebeke suyu üzerinden temin edileceği belirtilmiştir [s. 27]. 1.538 yatak, personel ve 41 açık yüzme havuzu barındıran kompleksin Çeşme gibi kuraklık ve su stresi yaşayan bir bölgede yerel içme ve kullanma suyu şebekesine getireceği hidrolik yük ile şebekenin bunu karşılama kapasitesine dair somut teknik tahsis belgeleri özet bölümlerde sunulmamıştır [s. 23, 27].",
+          "pages": [
+            23,
+            27
+          ]
+        },
+        {
+          "severity": "medium",
+          "title": "Bitişikteki Rüzgar Enerji Santrali (RES) Türbinleri ile Etkileşim Riski",
+          "detail": "Proje alanının sadece 300-500 metre doğusunda 4 adet rüzgar türbini ve bir elektrik şalt merkezinin yer aldığı belirtilmektedir [s. 45]. Bu denli yakın mesafedeki türbinlerin yaratacağı kanat gürültüsü, düşük frekanslı ses, gölge titremesi (shadow flicker) ve buz fırlatma risklerinin 1.538 yataklı turizm tesisi sakinleri üzerindeki etkileri kritik bir kümülatif değerlendirme konusudur [s. 12, 45].",
+          "pages": [
+            12,
+            45
+          ]
+        },
+        {
+          "severity": "medium",
+          "title": "Arıtılmış Atıksuyun Peyzaj Sulamasında Kullanımının Hidrojeolojik Riski",
+          "detail": "İşletme aşamasında oluşacak atıksuların 535 m³/gün kapasiteli AAT'de arıtılarak Sınıf A sulama suyu kriterlerine göre 104.953,54 m² yeşil alanın sulanmasında kullanılacağı taahhüt edilmektedir [s. 27, 29]. Kış aylarında veya turizm sezonu dışındaki düşük buharlaşma/sulama ihtiyacı dönemlerinde arıtılmış suyun nasıl depolanacağı veya alıcı ortama deşarj edilip edilmeyeceği hususunda risk yönetimi eksikliği bulunmaktadır [s. 9, 27].",
+          "pages": [
+            9,
+            27,
+            29
+          ]
+        }
+      ],
+      "hkt_and_petition_questions": [
+        {
+          "question_tr": "Sürdürülebilir Koruma Kontrollü Kullanım Doğal Sit Alanı statüsündeki parselde, 20 odalık ilk kapsam dışı projeden 769 oda ve 272 blokluk devasa bir komplekse geçilmesinin doğal sit ekosistemi ve peyzaj bütünlüğü üzerindeki taşıma kapasitesi analizleri hangi bilimsel yöntemlerle yapılmıştır? [s. 23, 25, 29]",
+          "pages": [
+            23,
+            25,
+            29
+          ]
+        },
+        {
+          "question_tr": "Yaz aylarında ciddi su stresi ve altyapı yetersizliği çeken Çeşme Yarımadası'nda, 1.538 misafir ve personelin şebeke suyu tüketimi ile 41 adet açık yüzme havuzunun dolumu için İZSU'dan debi garantili resmi bağlantı izni alınmış mıdır? [s. 23, 27]",
+          "pages": [
+            23,
+            27
+          ]
+        },
+        {
+          "question_tr": "Proje sınırına 300-500 m mesafede yer alan 4 adet rüzgar türbini ve şalt merkezinin konaklama birimlerinde yaratacağı gürültü, alçak frekanslı titreşim ve gölge kırpışması (flicker) etkilerine karşı yapılmış kümülatif modelleme ve akustik etüt çalışması mevcut mudur? [s. 45]",
+          "pages": [
+            12,
+            45
+          ]
+        },
+        {
+          "question_tr": "Günlük 535 m³ arıtılmış atıksuyun yeşil alan sulamasında kullanılması planlanırken, bitkilerin su ihtiyacının olmadığı kış aylarında veya aşırı yağış dönemlerinde bu suyun depolanması ya da bertarafı için sahada hangi alternatif altyapı ve deşarj izinleri öngörülmektedir? [s. 9, 27]",
+          "pages": [
+            9,
+            27
+          ]
+        }
+      ],
+      "data_limitations": "Sağlanan metin excerptsleri toplam 915 sayfalık nihai ÇED raporunun ağırlıklı olarak içindekiler listesi, kapak sayfaları, teknik olmayan özet ve Bölüm 1'in giriş sayfalarından (toplam 25 sayfa) oluşmaktadır. Flora-fauna envanter tablolarının detay metinleri (s. 81-137), hidrojeolojik analizler (s. 167-171), kümülatif etki bölümü (s. 277-284) ve kurum görüş yazılarının yer aldığı ekler sağlanan sayfalar arasında yer almadığı için detaylı teknik hesaplamalar bu sayfalar üzerinden doğrudan doğrulanamamıştır."
+    }
   }
 }

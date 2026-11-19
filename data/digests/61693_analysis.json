@@ -561,5 +561,153 @@
       "mentions_groundwater_or_aquifer": true,
       "mentions_iucn_or_endemic": true
     }
+  },
+  "llm_synthesis": {
+    "model": "gemini-3.8-flash",
+    "generated_at": "2026-11-20T01:25:28",
+    "pages_sent": [
+      1,
+      2,
+      3,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      19,
+      20,
+      21,
+      23,
+      24,
+      26,
+      33,
+      43,
+      46,
+      48,
+      49,
+      286
+    ],
+    "result": {
+      "executive_summary_tr": "Brontes Makine Sanayi ve Ticaret A.Ş. tarafından İzmir ili, Aliağa ilçesi, Aliağa Organize Sanayi Bölgesi'nde (ALOSBİ, 133 ada 12 parsel) yer alan mevcut 20.748 m2 toplam ve 13.800 m2 kapalı alana sahip tesiste çelik konstrüksiyon imalatına ilave olarak deniz araçlarının parça ve aksamlarının üretimi planlanmaktadır. Proje kapsamında yılda 50 adet muhtelif boyutlarda römorkör, tekne, duba ve katamaran üretilmesi öngörülmektedir. Kapalı bina içerisinde gerçekleştirilecek faaliyet için yeni bir inşaat çalışması planlanmamış olup, ALOSBİ altyapısına deşarj edilecek evsel atıksular, kumlama/CNC baca emisyonları ile metal işleme süreçlerinden kaynaklanacak tehlikeli katı atıklar temel çevresel unsurları oluşturmaktadır.",
+      "executive_summary_en": "Brontes Makine Sanayi ve Ticaret A.Ş. proposes an expansion to add marine vessel parts and components manufacturing to its existing steel construction manufacturing operations within Aliağa Organised Industrial Zone (ALOSBİ, block 133, parcel 12) in Aliağa, İzmir. The facility operates on a 20,748 m2 plot with a 13,800 m2 enclosed footprint, targeting an annual capacity of 50 marine units including tugs, boats, pontoons, and catamarans without new building construction. Primary environmental considerations include domestic wastewater discharged to the ALOSBİ network, industrial air emissions from two stacks (shot blasting and CNC), and dangerous waste generation from metal fabrication operations.",
+      "key_facts": [
+        {
+          "label": "Investment Value / Proje Bedeli",
+          "value": "27.820.519,55 TL",
+          "page": 2
+        },
+        {
+          "label": "Total Plot Area / Parsel Alanı",
+          "value": "20.748 m2",
+          "page": 6
+        },
+        {
+          "label": "Enclosed Facility Area / Kapalı Alan",
+          "value": "13.800 m2",
+          "page": 6
+        },
+        {
+          "label": "Annual Production Capacity / Yıllık Üretim Kapasitesi",
+          "value": "50 adet deniz aracı (7 adet 17,5 m römorkör, 10 adet 7,5 m tekne, 10 adet 9,5 m tekne, 10 adet 14 m tekne, 10 adet katamaran, 3 adet duba)",
+          "page": 6
+        },
+        {
+          "label": "Site Visit Date / Saha İnceleme Tarihi",
+          "value": "06.11.2026",
+          "page": 6
+        },
+        {
+          "label": "Personnel Count / Çalışan Sayısı",
+          "value": "56 personel",
+          "page": 20
+        },
+        {
+          "label": "Domestic Water Use & Wastewater / Su ve Atıksu Debisi",
+          "value": "11,76 m3/gün",
+          "page": 20
+        },
+        {
+          "label": "Nearest Settlement / En Yakın Yerleşim",
+          "value": "Kuzeydoğu yönünde 3,66 km mesafede Çoraklar Mahallesi",
+          "page": 19
+        },
+        {
+          "label": "Distance to Nearest Watercourses / En Yakın Su Kaynakları",
+          "value": "Güzelhisar Çayı (güneyde ~885 m) ve Kunduz Deresi (kuzeybatıda ~1,53 km)",
+          "page": 48
+        },
+        {
+          "label": "Industrial Stacks / Baca Sayısı ve Özelliği",
+          "value": "2 adet baca (1 kumlama, 1 CNC), çatıdan 1,5 metre yükseklikte",
+          "page": 26
+        }
+      ],
+      "baseline_assessment": {
+        "field_survey_status": "literature_only",
+        "seasonal_sampling_status": "not_found",
+        "cumulative_impact_status": "superficial_or_boilerplate",
+        "olive_and_protected_status": "Parsel ALOSBİ sanayi sahası içinde kaldığından tarım, orman, sulak alan veya koruma statüsünde bulunmadığı ve Bern Sözleşmesi kapsamındaki türlerin alanda bulunmadığı ifade edilmiştir; 3573 sayılı Zeytincilik Kanunu'na dair özel bir değerlendirme sunulmamıştır [s. 19, 43, 46, 48, 49, 286].",
+        "explanation": "Proje sahasının ALOSBİ içerisinde kalması ve çevre parsellerde sanayi faaliyetlerinin bulunması gerekçe gösterilerek flora ve fauna tespitinde herhangi bir floristik/faunistik arazi envanteri veya mevsimsel örnekleme yapılmamış, saha toptan 'koruma statüsünde tür yoktur' ifadesiyle geçiştirilmiştir [s. 49, 286]. Benzer şekilde kümülatif etki bölümü yalnızca 500 m yarıçapındaki sanayi tesislerinin uydu görüntüsüyle sınırlandırılmıştır [s. 5]."
+      },
+      "red_flags": [
+        {
+          "severity": "medium",
+          "title": "Flora ve Fauna Envanterinin Tamamen Gerekçesiz Şekilde Boş Geçilmesi",
+          "detail": "Proje tanıtım dosyasında ALOSBİ ve çevre sanayi parselleri gerekçe gösterilerek hiçbir yerinde ekolojik tespit, tür envanteri veya habitat değerlendirmesi yapılmamış; 'proje alanı ve yakın çevresinde koruma statüsünde herhangi bir flora ve fauna türü yer almamaktadır' şeklinde gerekçelendirilmemiş ve kanıtsız bir iddia kullanılmıştır [s. 49, 286].",
+          "pages": [
+            49,
+            286
+          ]
+        },
+        {
+          "severity": "medium",
+          "title": "Hava Emisyonu ve Baca Gazı Ölçümlerinin Süreç Sonrasına Ertelenmesi",
+          "detail": "İşletmede kumlama ve CNC makinelerine ait çatıdan 1,5 metre yüksekliğinde 2 adet emisyon bacası bulunmasına rağmen, başvuru aşamasında mevcut emisyon parametreleri ve toz debilerine ilişkin fiili ölçüm ve kütlesel debi hesabı sunulmamış; ölçüm ve olası modelleme çalışmaları 'Çevre İzin aşamasında yapılacaktır' taahhüdüyle sonraya ertelenmiştir [s. 26].",
+          "pages": [
+            26
+          ]
+        },
+        {
+          "severity": "low",
+          "title": "Boya Prosesinin Dışsallaştırılması ve İkincil Etki Değerlendirme Eksikliği",
+          "detail": "Deniz araçları imalatında pasivasyon ve koruma amacıyla boya uygulanmasının zorunlu olmasına rağmen tesis bünyesinde boya yapılmayacağı, işlemin üçüncü şahıslara fason yaptırılacağı belirtilmiştir [s. 11, 15]. Bu faaliyetin lojistik ve çevresel zincirdeki VOC/atık boya etkileri değerlendirilmemiştir.",
+          "pages": [
+            11,
+            15
+          ]
+        }
+      ],
+      "hkt_and_petition_questions": [
+        {
+          "question_tr": "Kumlama ve CNC ünitelerine ait 2 adet emisyon bacasından kaynaklanacak toz, partikül madde ve diğer hava kirleticilerine dair ÇED sürecinde yürütülmüş fiili bir emisyon ölçümü ve kütlesel debi hesaplaması mevcut mudur; izin aşamasına bırakılan bu emisyonların OSB genelindeki hava kalitesine birikimli etkisi nasıl kontrol edilecektir?",
+          "pages": [
+            26
+          ]
+        },
+        {
+          "question_tr": "Yıllık 50 adet deniz aracı imalatı planlanmasına rağmen tesiste boyahane veya boya hattı bulunmadığı ve boyama işlemlerinin fason olarak dışarıda yaptırılacağı belirtilmiştir; yarı mamul veya tam deniz yapılarının tesis dışına nakliyesi, boyanması ve korozyon önleyici kaplama işlemlerinden doğacak çevresel yükler hangi izin ve lisanslı tesislerde yönetilecektir?",
+          "pages": [
+            11,
+            15
+          ]
+        },
+        {
+          "question_tr": "Tesisin yaklaşık 885 m güneyinde yer alan Güzelhisar Çayı ve 1,53 km mesafedeki Kunduz Deresi yüzeysel su havzaları göz önünde bulundurulduğunda, sahada oluşacak kumlama kumu atığı (12 01 16*), emülsiyon atıkları (12 01 09*) ve atık yağların (13 01 13*) yağmur suyu drenajına karışmasını engelleyecek sızdırmazlık ve toplama altyapısına dair somut proje detayları nelerdir?",
+          "pages": [
+            23,
+            24,
+            48,
+            286
+          ]
+        }
+      ],
+      "data_limitations": "Sağlanan metin kesitleri PTD dosyasının belirli sayfalarını içermekte olup; dosyanın taranmış 97 sayfalık kısmı (ekler, ALOSBİ kanalizasyon bağlantı belgesi, arsa tahsis sözleşmesi ve diğer resmi yazışma ekleri) metin aranamaz durumda olduğundan detaylı teknik parametreleri doğrudan doğrulanamamıştır."
+    }
   }
 }

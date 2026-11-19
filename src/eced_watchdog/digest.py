@@ -12,6 +12,7 @@ import httpx
 import pymupdf as fitz
 
 from .fetcher import USER_AGENT, build_ssl_context
+from .llm import synthesize_with_gemini
 
 SIGNAL_SPECS: list[tuple[str, str, str]] = [
     (
@@ -216,6 +217,7 @@ def render_markdown_digest(
     doc_meta: dict[str, Any],
     pdf_info: dict[str, Any],
     analysis: dict[str, Any],
+    llm_synthesis: dict[str, Any] | None = None,
 ) -> str:
     filing_id = doc_meta.get("filing_id") or "unknown"
     pdf_url = doc_meta["pdf_urls"][0]["url"] if doc_meta.get("pdf_urls") else ""
@@ -253,27 +255,88 @@ def render_markdown_digest(
         "**Statutory Deadlines (informational aid — verify with legal counsel):**",
         clock_lines,
         "",
-        "## 2. Official Announcement Text",
-        "",
-        f"> {filing.get('detail_text', '')}",
-        "",
-        "## 3. Automated Baseline & Red-Flag Scan",
-        "",
-        "| Check | Status in Extractable Text |",
-        "|---|---|",
-        f"| Field survey mentioned (*arazi/saha çalışması*) | {flag(checks['mentions_field_survey'])} |",
-        f"| Literature-review cue (*literatür taraması*) | {flag(checks['mentions_literature_only_cue'])} |",
-        f"| Seasonal sampling mentioned (*mevsimsel*) | {flag(checks['mentions_seasonal_sampling'])} |",
-        f"| Cumulative impact assessed (*kümülatif*) | {flag(checks['mentions_cumulative_impact'])} |",
-        f"| Olive Law / groves (*3573 / zeytinlik*) | {flag(checks['mentions_olive_law_3573'])} |",
-        f"| Groundwater / hydrogeology (*akifer / yeraltı suyu*) | {flag(checks['mentions_groundwater_or_aquifer'])} |",
-        f"| Endemic / IUCN / Bern Convention | {flag(checks['mentions_iucn_or_endemic'])} |",
-        "",
-        "*(Scanned annex maps/appendices without OCR are excluded from text scan; see scanned-page count above.)*",
-        "",
-        "## 4. Page-Cited Extracted Evidence",
-        "",
     ]
+
+    if llm_synthesis and llm_synthesis.get("result"):
+        res = llm_synthesis["result"]
+        ba = res["baseline_assessment"]
+        pages_used = ", ".join(f"s.{p}" for p in llm_synthesis.get("pages_sent") or [])
+        lines.extend(
+            [
+                f"## 2. AI-Assisted Scientific Synthesis (`{llm_synthesis.get('model')}`)",
+                "",
+                f"> *Generated from {len(llm_synthesis.get('pages_sent') or [])} excerpted PDF pages ({pages_used}). Verify every figure against `[s. N]` in the official PDF.*",
+                "",
+                f"**Özet (TR):** {res['executive_summary_tr']}",
+                "",
+                f"**Summary (EN):** {res['executive_summary_en']}",
+                "",
+                "### Key Extracted Figures",
+                "",
+            ]
+        )
+        for kf in res.get("key_facts") or []:
+            lines.append(f"- **{kf['label']}:** {kf['value']} (`[s. {kf['page']}]`)")
+        lines.extend(
+            [
+                "",
+                "### Baseline & Methodology Assessment",
+                "",
+                f"- **Field survey:** `{ba['field_survey_status']}`",
+                f"- **Seasonal sampling:** `{ba['seasonal_sampling_status']}`",
+                f"- **Cumulative impact:** `{ba['cumulative_impact_status']}`",
+                f"- **Olive Law / protected areas:** {ba['olive_and_protected_status']}",
+                f"- **Assessment:** {ba['explanation']}",
+                "",
+                "### Scientific Audit Red Flags",
+                "",
+            ]
+        )
+        for rf in res.get("red_flags") or []:
+            p_tags = ", ".join(f"s.{p}" for p in rf.get("pages") or [])
+            lines.append(f"- **[{rf['severity'].upper()}] {rf['title']}** (`{p_tags}`): {rf['detail']}")
+        lines.extend(
+            [
+                "",
+                "### Draft Technical Questions (HKT / İYUK 20/A)",
+                "",
+            ]
+        )
+        for q in res.get("hkt_and_petition_questions") or []:
+            p_tags = ", ".join(f"s.{p}" for p in q.get("pages") or [])
+            lines.append(f"- {q['question_tr']} (`{p_tags}`)")
+        lines.extend(
+            [
+                "",
+                f"*Limitations:* {res.get('data_limitations', '')}",
+                "",
+            ]
+        )
+
+    lines.extend(
+        [
+            "## Official Announcement Text",
+            "",
+            f"> {filing.get('detail_text', '')}",
+            "",
+            "## Deterministic Baseline & Red-Flag Scan",
+            "",
+            "| Check | Status in Extractable Text |",
+            "|---|---|",
+            f"| Field survey mentioned (*arazi/saha çalışması*) | {flag(checks['mentions_field_survey'])} |",
+            f"| Literature-review cue (*literatür taraması*) | {flag(checks['mentions_literature_only_cue'])} |",
+            f"| Seasonal sampling mentioned (*mevsimsel*) | {flag(checks['mentions_seasonal_sampling'])} |",
+            f"| Cumulative impact assessed (*kümülatif*) | {flag(checks['mentions_cumulative_impact'])} |",
+            f"| Olive Law / groves (*3573 / zeytinlik*) | {flag(checks['mentions_olive_law_3573'])} |",
+            f"| Groundwater / hydrogeology (*akifer / yeraltı suyu*) | {flag(checks['mentions_groundwater_or_aquifer'])} |",
+            f"| Endemic / IUCN / Bern Convention | {flag(checks['mentions_iucn_or_endemic'])} |",
+            "",
+            "*(Scanned annex maps/appendices without OCR are excluded from text scan; see scanned-page count above.)*",
+            "",
+            "## Page-Cited Extracted Evidence",
+            "",
+        ]
+    )
 
     for _key, sig in analysis["signals"].items():
         pages_preview = ", ".join(f"s.{p}" for p in sig["pages"][:12])
@@ -288,7 +351,7 @@ def render_markdown_digest(
         lines.append("")
 
     if analysis["headings"]:
-        lines.append("## 5. Document Navigation Map (Detected Headings)")
+        lines.append("## Document Navigation Map (Detected Headings)")
         lines.append("")
         for pno, h in analysis["headings"][:18]:
             lines.append(f"- **[s. {pno}]** {h}")
@@ -296,7 +359,7 @@ def render_markdown_digest(
 
     lines.extend(
         [
-            "## 6. Scientist Audit Notes (1–2h Async Review Template)",
+            "## Scientist Audit Notes (1–2h Async Review Template)",
             "",
             "- **Baseline & sampling gaps (`[s. N]`):** ",
             "- **Ecological / hydrological contradictions:** ",
@@ -316,6 +379,9 @@ def ensure_digest_for_filing(
     pdfs_dir: Path,
     cert_path: Path | None,
     keep_pdf: bool = True,
+    gemini_api_key: str | None = None,
+    gemini_model: str | None = None,
+    re_synthesize: bool = False,
 ) -> dict[str, Any] | None:
     docs = filing.get("documents") or []
     if not docs or not docs[0].get("pdf_urls"):
@@ -328,43 +394,57 @@ def ensure_digest_for_filing(
     md_path = digests_dir / f"{filing_id}_digest.md"
     json_path = digests_dir / f"{filing_id}_analysis.json"
     pdf_url = doc_meta["pdf_urls"][0]["url"]
+    pdf_path = pdfs_dir / f"{filing_id}.pdf"
+
+    llm_synthesis: dict[str, Any] | None = None
+    synthesized_now = False
 
     if json_path.exists() and md_path.exists():
         saved = json.loads(json_path.read_text(encoding="utf-8"))
-        # Re-render Markdown with refreshed statutory countdowns
-        md = render_markdown_digest(filing, doc_meta, saved["pdf_info"], saved["analysis"])
-        md_path.write_text(md, encoding="utf-8")
-        return {
-            "filing_id": filing_id,
-            "md_path": str(md_path),
-            "json_path": str(json_path),
-            "cached": True,
-            "analysis": saved["analysis"],
-            "pdf_info": saved["pdf_info"],
-        }
+        pdf_info = saved["pdf_info"]
+        analysis = saved["analysis"]
+        llm_synthesis = saved.get("llm_synthesis")
+        cached = True
+    else:
+        pdf_info = download_pdf(pdf_url, pdf_path, cert_path)
+        analysis = analyze_pdf(pdf_path)
+        cached = False
 
-    pdf_path = pdfs_dir / f"{filing_id}.pdf"
-    pdf_info = download_pdf(pdf_url, pdf_path, cert_path)
-    analysis = analyze_pdf(pdf_path)
+    need_llm = bool(gemini_api_key) and (re_synthesize or not llm_synthesis)
+    if need_llm:
+        if not pdf_path.exists():
+            pdf_info = download_pdf(pdf_url, pdf_path, cert_path)
+        llm_synthesis = synthesize_with_gemini(
+            filing,
+            analysis,
+            pdf_path,
+            api_key=gemini_api_key,
+            model=gemini_model,
+        )
+        synthesized_now = True
+
     if not keep_pdf and pdf_path.exists():
         pdf_path.unlink(missing_ok=True)
 
     digests_dir.mkdir(parents=True, exist_ok=True)
-    md = render_markdown_digest(filing, doc_meta, pdf_info, analysis)
+    md = render_markdown_digest(filing, doc_meta, pdf_info, analysis, llm_synthesis=llm_synthesis)
     md_path.write_text(md, encoding="utf-8")
-    json_path.write_text(
-        json.dumps(
-            {"filing": filing, "pdf_info": pdf_info, "analysis": analysis},
-            ensure_ascii=False,
-            indent=2,
-        ),
-        encoding="utf-8",
-    )
+    payload: dict[str, Any] = {
+        "filing": filing,
+        "pdf_info": pdf_info,
+        "analysis": analysis,
+    }
+    if llm_synthesis:
+        payload["llm_synthesis"] = llm_synthesis
+    json_path.write_text(json.dumps(payload, ensure_ascii=False, indent=2), encoding="utf-8")
+
     return {
         "filing_id": filing_id,
         "md_path": str(md_path),
         "json_path": str(json_path),
-        "cached": False,
+        "cached": cached,
+        "synthesized_now": synthesized_now,
         "analysis": analysis,
         "pdf_info": pdf_info,
+        "llm_synthesis": llm_synthesis,
     }

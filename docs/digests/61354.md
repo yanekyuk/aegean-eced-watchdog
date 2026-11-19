@@ -18,11 +18,56 @@
 **Statutory Deadlines (informational aid — verify with legal counsel):**
 - **10-day public review/comment window (askı süresi):** `2026-11-29` (`9 days remaining`)
 
-## 2. Official Announcement Text
+## 2. AI-Assisted Scientific Synthesis (`gemini-3.8-flash`)
+
+> *Generated from 26 excerpted PDF pages (s.1, s.2, s.3, s.4, s.8, s.9, s.11, s.12, s.15, s.16, s.31, s.32, s.36, s.37, s.39, s.76, s.77, s.82, s.83, s.85, s.92, s.93, s.132, s.133, s.247, s.248). Verify every figure against `[s. N]` in the official PDF.*
+
+**Özet (TR):** TEİAŞ tarafından Balıkesir ili Burhaniye ilçesi ile İzmir ili Bergama ilçesi sınırlarında 185.836.579,48 TL proje bedeli ile 31,52 km uzunluğunda 154 kV gerilimli enerji iletim hattı ve 93 adet direk tesisi planlanmaktadır [s. 2, 9]. Hat güzergahı orman alanları, tarım arazileri, meralar ve dere yatakları üzerinden geçmektedir [s. 15, 32]. Biyolojik çeşitlilik değerlendirmesi büyük oranda bölgesel literatür derlemesine ve metodolojisi belirsiz sınırlı arazi tespitlerine dayandırılmış olup çok mevsimli arazi çalışması bulunmamaktadır [s. 85, 92, 93]. Çevre izleme planında ise gürültü ve toz parametreleri için fiziksel ölçüm yerine yalnızca görsel takip taahhüt edilmiştir [s. 133].
+
+**Summary (EN):** TEİAŞ proposes the construction of a 31.52 km, 154 kV power transmission line comprising 93 pylons across Burhaniye (Balıkesir) and Bergama (İzmir) with an investment cost of 185.8 million TL [s. 2, 9]. The planned corridor traverses forestry lands, agricultural areas, pastures, and seasonal creeks [s. 15, 32]. Baseline ecological assessments rely predominantly on broad literature compilations with sparse, methodologically unelaborated field observations and lack multi-seasonal field sampling [s. 85, 92, 93]. Furthermore, the environmental monitoring plan commits solely to visual observations rather than quantitative instrumental measurements for dust and environmental noise [s. 133].
+
+### Key Extracted Figures
+
+- **Total Line Length:** 31,52 km (Girdi Hattı: 15,81 km, Çıktı Hattı: 15,71 km) (`[s. 9]`)
+- **Total Pylon Count:** 93 adet (46 adet Girdi, 47 adet Çıktı) (`[s. 9]`)
+- **Voltage and Conductor:** 154 kV, 1272 MCM (`[s. 9]`)
+- **Project Cost:** 185.836.579,48 TL (`[s. 2]`)
+- **Construction Duration:** 6 ay (`[s. 9]`)
+- **Construction Workforce:** 40 kişi (`[s. 9]`)
+- **Construction Water Demand:** 18,4 m3/gün (8,4 m3/gün personel + 10 m3/gün toz bastırma) (`[s. 36]`)
+- **Construction Wastewater:** 7,24 m3/gün (`[s. 39]`)
+- **Operation Workforce:** 10 kişi (`[s. 9]`)
+- **Economic Lifespan:** 49 yıl (`[s. 9]`)
+
+### Baseline & Methodology Assessment
+
+- **Field survey:** `mixed_or_unclear`
+- **Seasonal sampling:** `not_found`
+- **Cumulative impact:** `superficial_or_boilerplate`
+- **Olive Law / protected areas:** The text documents regional agricultural significance of olive groves (28.1% of Izmir ag land and 83,050 ha in Balikesir, highlighting Burhaniye) but provides no parcel-level inventory or Law 3573 distance evaluations [s. 76, 77]. Forest clearances require OGM permits, while formal national parks or cultural sites are reported absent [s. 9, 82].
+- **Assessment:** Baseline flora and fauna lists are heavily compiled from literature ('L') with occasional literature-plus-field codes ('A+L'), but without survey dates, observation effort, or transects [s. 85, 92, 93]. Multi-seasonal baseline field surveys conducted prior to filing are not documented; seasonal species behavior is referenced only generically from academic sources [s. 93]. Cumulative impacts are handled via a placeholder chapter heading without quantitative modeling across overlapping infrastructure in the regional corridor [s. 3].
+
+### Scientific Audit Red Flags
+
+- **[HIGH] Gürültü ve Toz İzlemesinde Enstrümantal Ölçüm Yerine Yalnızca Görsel Takip Tanımlanması** (`s.133`): Çevre İzleme Planı Tablo 58'de toz emisyonu ve gürültü kirliliği izleme yöntemi olarak enstrümantal ölçüm yerine yalnızca 'Görsel Takip' metodu belirlenmiştir. Akustik gürültü seviyelerinin görsel olarak izlenmesi teknik açıdan imkansızdır ve Çevresel Gürültü Kontrol Yönetmeliği gerekliliklerini karşılamamaktadır.
+- **[MEDIUM] Flora ve Fauna Arazi Çalışması Metodolojisinin Belgelenmemesi** (`s.85, s.92, s.93`): Biyolojik çeşitlilik listelerinde türlerin tespit yöntemi ağırlıklı olarak literatür ('L') ve kısmen arazi+literatür ('A+L') olarak işaretlenmiş, ancak arazide hangi takvim günlerinde, hangi istasyonlarda ve hangi yöntemlerle örnekleme yapıldığına dair hiçbir operasyonel detay sunulmamıştır.
+- **[MEDIUM] 3573 Sayılı Zeytincilik Kanunu Kapsamında Koridor Analizinin Bulunmaması** (`s.9, s.15, s.76, s.77`): Raporda Burhaniye ve Bergama yörelerinin zeytin üretimi açısından yüksek öneme sahip olduğu belirtilmesine rağmen, 31,52 km uzunluğundaki iletim hattı koridoru ve 93 direk taban alanı için zeytinlik varlığına dair parsel ölçeğinde somut bir tespit veya 3573 sayılı Kanun mesafesi irdelenmemiştir.
+- **[LOW] Çevresel ve Sosyal Yönetim Planında Evsel Atıksu İzleme İhtiyacının Reddedilmesi** (`s.39, s.247`): İnşaat aşamasında 7,24 m3/gün evsel atıksu oluşacağı ve sızdırmaz foseptikte toplanacağı belirtilmesine karşın, Çevresel ve Sosyal Yönetim Planı Tablo 5'te evsel atıksu için 'Proje kapsamında izleme çalışması yapılmasına gerek yoktur' kararı verilerek vidanjör takip mekanizması izleme dışı bırakılmıştır.
+
+### Draft Technical Questions (HKT / İYUK 20/A)
+
+- Çevre İzleme Planı Tablo 58'de şantiye gürültü kirliliği için izleme metodu olarak belirlenen 'Görsel Takip' yöntemi akustik sınır değerleri nasıl doğrulayacaktır; yönetmelik uyarınca neden dBA cinsinden enstrümantal ses ölçümü planlanmamıştır? (`s.133`)
+- Hat güzergahında gerçekleştirildiği belirtilen arazi gözlemleri hangi kesin tarihlerde, hangi fenolojik dönemde ve kaç kişilik biyolog/uzman heyeti tarafından yürütülmüştür? (`s.85, s.92, s.93`)
+- Balıkesir/Burhaniye ve İzmir/Bergama'da zeytin alanlarının yoğunluğu karşısında, 93 direk yeri ve iletken altı koridorda 3573 sayılı Kanun kapsamında kalan zeytinlik parselleri bulunmakta mıdır ve Tarım ve Orman İl Müdürlüklerinden yasal izin alınmış mıdır? (`s.9, s.15, s.32, s.76, s.77`)
+- İnşaat aşamasında oluşacak 7,24 m3/gün evsel atıksuyun foseptikten vidanjörle çekimi ve ruhsatlı arıtma tesisine teslimi sürecinde, ÇSYP Tablo 5'te 'izleme çalışması yapılmasına gerek yoktur' hükmü yerine atık bertaraf belgeleri hangi sıklıkla kayıt altına alınacaktır? (`s.39, s.247`)
+
+*Limitations:* The review is constrained to the provided 26 excerpted pages out of 347 total PDF pages. Detailed technical appendices including official institutional opinion letters (Annex 2), cadastral expropriation maps, specific avifauna/mammal inventories, and Chapter IV cumulative impact calculations could not be verified.
+
+## Official Announcement Text
 
 > İZMİR ili BERGAMA,  ilcesinde İZMİR ili BERGAMA,  ilçesi Balıkesir İli, Burhaniye İlçesi, Yaylacık Köyü ve İzmir İli, Bergama İlçesi, Güneşli, Çamavlu, Kıranlı, Çobanlar ve Hacılar Mahalleleri Mevkii mevkiindeki TÜRKİYE ELEKTRİK İLETİM ANONİM ŞİRKETİ tarafından yapılması planlanan 154 kV (Alibey RES TM - Bergama Vento RES TM EİH) Brş.N. - 154 kV İvrindi RES TM (Karaburun RES) EİH (Girdi-Çıktı) projesi ile ilgili olarak İZMİR Valiliğimize sunulan P.T.D. Dosyası Çevresel Etki Değerlendirmesi Yönetmeliği'nin 16. maddesi doğrultusunda incelenmiş ve projeye ilişkin ÇED Süreci başlamıştır. İlgililere ve kamuoyuna duyurulur.
 
-## 3. Automated Baseline & Red-Flag Scan
+## Deterministic Baseline & Red-Flag Scan
 
 | Check | Status in Extractable Text |
 |---|---|
@@ -36,7 +81,7 @@
 
 *(Scanned annex maps/appendices without OCR are excluded from text scan; see scanned-page count above.)*
 
-## 4. Page-Cited Extracted Evidence
+## Page-Cited Extracted Evidence
 
 ### Coordinates, Parcel & Footprint (70 pages: s.9, s.11, s.15, s.16, s.17, s.20, s.21, s.22, s.23, s.31, s.40, s.57 (+58 more))
 - **[s. 9]** `15,81 km` — …da yer almamaktadır. Proje konusu 154 kV gerilimde 1272 MCM iletkenli enerji iletim hattının uzunluğu Girdi Hattı: 15,81 km (15.812,76 m), Çıktı Hattı: 15,71 km (15.709,18 m) olmak üzere toplam 31,52 km (31.521,94 m) olup; enerji iletim hattı…
@@ -80,7 +125,7 @@
 - **[s. 15]** `Kapasite` — …olarak belirlenmiştir. Proje alanına ilişkin koordinatlara EK-1’de yer verilmiştir. b) Projenin İş Akım Şeması, Kapasitesi, Kapladığı Alan, Yatırım Bedeli, Teknolojisi, Çalışacak Personel Sayısı. Projenin İş Akım Şeması ve Teknolojisi…
 - **[s. 20]** `Kapasite` — …larda depolanarak ilgili mer-i mevzuat kapsamında lisanslı firmalara gönderilerek bertarafı sağlanacaktır. Projenin Kapasitesi Proje konusu enerji iletim hattı 154 kV gerilimde 1272 MCM iletkenli, Girdi: 15,81 km (15.812,76 m), Çıktı: 15,7…
 
-## 5. Document Navigation Map (Detected Headings)
+## Document Navigation Map (Detected Headings)
 
 - **[s. 3]** BÖLÜM III: PROJENİN İNŞAAT VE İŞLETME AŞAMASINDA ÇEVRESEL ETKİLERİ, ÖNCELİKLİ
 - **[s. 9]** PROJENİN TEKNİK OLMAYAN ÖZETİ:
@@ -92,7 +137,7 @@
 - **[s. 142]** BÖLÜM VI: NOTLAR, KAYNAKLAR VE EKLER:
 - **[s. 247]** ÇEVRESEL VE SOSYAL YÖNETİM PLANI
 
-## 6. Scientist Audit Notes (1–2h Async Review Template)
+## Scientist Audit Notes (1–2h Async Review Template)
 
 - **Baseline & sampling gaps (`[s. N]`):** 
 - **Ecological / hydrological contradictions:** 

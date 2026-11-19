@@ -18,11 +18,56 @@
 **Statutory Deadlines (informational aid — verify with legal counsel):**
 - **İDK review commission (verify meeting date in full text):** `see text` 
 
-## 2. Official Announcement Text
+## 2. AI-Assisted Scientific Synthesis (`gemini-3.8-flash`)
+
+> *Generated from 25 excerpted PDF pages (s.1, s.2, s.3, s.5, s.6, s.7, s.8, s.9, s.10, s.11, s.12, s.13, s.14, s.15, s.16, s.17, s.18, s.22, s.23, s.25, s.26, s.27, s.29, s.38, s.45). Verify every figure against `[s. N]` in the official PDF.*
+
+**Özet (TR):** Proje, İzmir ili, Çeşme ilçesi, Çakabey Mahallesi 507 ada 173 parselde yer alan 180.407,15 m² yüzölçümlü taşınmaz üzerinde ARIKAN PROJE GELİŞTİRME A.Ş. tarafından kurulması planlanan 769 oda ve 1.538 yatak kapasiteli Castello Fontana Otel projesidir [s. 2, 23, 29]. Proje alanı, İzmir 2 No'lu Tabiat Varlıklarını Koruma Komisyonu kararı uyarınca 'Sürdürülebilir Koruma Kontrollü Kullanım Alanı' statüsündeki Doğal Sit Alanı sınırları içerisinde ve Çevre Düzeni Planı'nda Turizm Tesis Alanı lejantında kalmaktadır [s. 25, 26, 45]. Tesis kapsamında 272 adet blok, 41 açık yüzme havuzu, 473 araçlık otopark ve 535 m³/gün kapasiteli paket atıksu arıtma tesisi öngörülmektedir [s. 23, 27, 29]. Başlıca çevresel etkenler; doğal sit alanındaki yoğun yapılaşma baskısı, inşaat ve işletme aşamasındaki su temini/tüketimi ve bitişikteki rüzgâr türbinleri ile kümülatif etkileşimdir [s. 25, 27, 45].
+
+**Summary (EN):** The proposed project comprises the construction and operation of the 769-room and 1,538-bed 'Castello Fontana Hotel' by ARIKAN PROJE GELİŞTİRME A.Ş. on a 180,407.15 m² plot in Çakabey District, Çeşme, İzmir [s. 2, 23, 29]. The project footprint falls within a legally designated 'Sustainable Conservation and Controlled Use Area' Natural Site and is zoned as Tourism Facility Area in the regional environmental master plan [s. 25, 26, 45]. The development includes 272 accommodation blocks, 41 outdoor swimming pools, a 473-vehicle parking lot, and an on-site 535 m³/day wastewater treatment plant designed for irrigation reuse [s. 23, 27, 29]. Key environmental stakes center on large-scale development inside a protected area, high water demand in a water-stressed peninsula, and cumulative interactions with adjacent wind energy installations [s. 25, 27, 45].
+
+### Key Extracted Figures
+
+- **Toplam Parsel Alanı:** 180.407,15 m² (`[s. 23]`)
+- **Toplam İnşaat Alanı:** 88.393,02 m² (`[s. 23]`)
+- **Emsale Esas İnşaat Alanı:** 53.703,86 m² (`[s. 29]`)
+- **Toplam Blok Sayısı:** 272 adet (`[s. 23]`)
+- **Toplam Oda ve Yatak Kapasitesi:** 769 oda, 1.538 yatak (`[s. 23]`)
+- **Açık Yüzme Havuzu Sayısı:** 41 adet (`[s. 23]`)
+- **Planlanan Paket AAT Kapasitesi:** 535 m³/gün (`[s. 27]`)
+- **En Yakın Yerleşim Birimi Mesafesi:** 220 m (tek konut) (`[s. 26]`)
+- **Komşu Rüzgar Türbini ve Şalt Sahası Mesafesi:** 300 - 500 m (4 adet rüzgar türbini) (`[s. 45]`)
+- **Toplam Proje Bedeli:** 1.993.240.834,20 TL (`[s. 2]`)
+
+### Baseline & Methodology Assessment
+
+- **Field survey:** `mixed_or_unclear`
+- **Seasonal sampling:** `unclear`
+- **Cumulative impact:** `superficial_or_boilerplate`
+- **Olive Law / protected areas:** Proje parseli, 24.06.2021 tarihli ve 1133 sayılı İzmir 2 No'lu TVK kararı uyarınca 'Sürdürülebilir Koruma Kontrollü Kullanım Alanı' Doğal Sit Alanı statüsündedir [s. 25, 26, 45]. Zeytinlik varlığına ilişkin özel kanuni değerlendirme (3573 sayılı Kanun) sağlanan ilk sayfalarda açıkça belirtilmemiş, genel arazi kullanım başlıklarında bırakılmıştır [s. 8, 16].
+- **Assessment:** Raporda ÇED Yeterlik Belgesi Tebliği gereğince 16.04.2026 tarihinde tek günlük bir faaliyet yeri inceleme çalışması yapıldığı belirtilmektedir [s. 27]. Flora ve fauna bölümlerinde Yelkovan (Puffinus yelkouan) ve Üveyik (Streptopelia turtur) gibi türler için risk matrisleri listelenmekle birlikte, sağlanan metin kısımlarında çok mevsimli arazi örneklemesinin fiilen tamamlandığına dair detaylı metodolojik veriler yer almamaktadır [s. 16, 27]. Projenin doğu sınırında 300-500 m mesafede yer alan 4 adet RES türbini ve şalt merkezi varlığı belirtilmiş olup kümülatif etkilerin kapsamı ana metin sayfalarında irdelenmeyi gerektirmektedir [s. 45].
+
+### Scientific Audit Red Flags
+
+- **[HIGH] Doğal Sit Alanında Aşırı Yoğun Yapılaşma ve Kapasite Artışı** (`s.23, s.25, s.29`): Proje alanı 24.06.2021 tarihli TVK kararı ile tescil edilen 'Sürdürülebilir Koruma Kontrollü Kullanım Alanı' Doğal Sit Alanı içerisinde kalmaktadır [s. 25]. Daha önce aynı parselin 10.500 m²'lik kısmında 20 odalı otel için ÇED muafiyeti/kapsam dışı görüşü alınmışken, revizyonla 272 blok, 769 oda, 1.538 yatak ve 88.393 m² inşaat alanına çıkarılarak koruma altındaki alandaki yapı yoğunluğu dramatik biçimde artırılmıştır [s. 23, 29].
+- **[HIGH] Su Kıtlığı Yaşanan Yarımadada Taşıma Su ve Şebeke Bağımlılığı** (`s.23, s.27`): İnşaat aşamasında su ihtiyacının taşıma su ile, işletme aşamasında ise şebeke suyu üzerinden temin edileceği belirtilmiştir [s. 27]. 1.538 yatak, personel ve 41 açık yüzme havuzu barındıran kompleksin Çeşme gibi kuraklık ve su stresi yaşayan bir bölgede yerel içme ve kullanma suyu şebekesine getireceği hidrolik yük ile şebekenin bunu karşılama kapasitesine dair somut teknik tahsis belgeleri özet bölümlerde sunulmamıştır [s. 23, 27].
+- **[MEDIUM] Bitişikteki Rüzgar Enerji Santrali (RES) Türbinleri ile Etkileşim Riski** (`s.12, s.45`): Proje alanının sadece 300-500 metre doğusunda 4 adet rüzgar türbini ve bir elektrik şalt merkezinin yer aldığı belirtilmektedir [s. 45]. Bu denli yakın mesafedeki türbinlerin yaratacağı kanat gürültüsü, düşük frekanslı ses, gölge titremesi (shadow flicker) ve buz fırlatma risklerinin 1.538 yataklı turizm tesisi sakinleri üzerindeki etkileri kritik bir kümülatif değerlendirme konusudur [s. 12, 45].
+- **[MEDIUM] Arıtılmış Atıksuyun Peyzaj Sulamasında Kullanımının Hidrojeolojik Riski** (`s.9, s.27, s.29`): İşletme aşamasında oluşacak atıksuların 535 m³/gün kapasiteli AAT'de arıtılarak Sınıf A sulama suyu kriterlerine göre 104.953,54 m² yeşil alanın sulanmasında kullanılacağı taahhüt edilmektedir [s. 27, 29]. Kış aylarında veya turizm sezonu dışındaki düşük buharlaşma/sulama ihtiyacı dönemlerinde arıtılmış suyun nasıl depolanacağı veya alıcı ortama deşarj edilip edilmeyeceği hususunda risk yönetimi eksikliği bulunmaktadır [s. 9, 27].
+
+### Draft Technical Questions (HKT / İYUK 20/A)
+
+- Sürdürülebilir Koruma Kontrollü Kullanım Doğal Sit Alanı statüsündeki parselde, 20 odalık ilk kapsam dışı projeden 769 oda ve 272 blokluk devasa bir komplekse geçilmesinin doğal sit ekosistemi ve peyzaj bütünlüğü üzerindeki taşıma kapasitesi analizleri hangi bilimsel yöntemlerle yapılmıştır? [s. 23, 25, 29] (`s.23, s.25, s.29`)
+- Yaz aylarında ciddi su stresi ve altyapı yetersizliği çeken Çeşme Yarımadası'nda, 1.538 misafir ve personelin şebeke suyu tüketimi ile 41 adet açık yüzme havuzunun dolumu için İZSU'dan debi garantili resmi bağlantı izni alınmış mıdır? [s. 23, 27] (`s.23, s.27`)
+- Proje sınırına 300-500 m mesafede yer alan 4 adet rüzgar türbini ve şalt merkezinin konaklama birimlerinde yaratacağı gürültü, alçak frekanslı titreşim ve gölge kırpışması (flicker) etkilerine karşı yapılmış kümülatif modelleme ve akustik etüt çalışması mevcut mudur? [s. 45] (`s.12, s.45`)
+- Günlük 535 m³ arıtılmış atıksuyun yeşil alan sulamasında kullanılması planlanırken, bitkilerin su ihtiyacının olmadığı kış aylarında veya aşırı yağış dönemlerinde bu suyun depolanması ya da bertarafı için sahada hangi alternatif altyapı ve deşarj izinleri öngörülmektedir? [s. 9, 27] (`s.9, s.27`)
+
+*Limitations:* Sağlanan metin excerptsleri toplam 915 sayfalık nihai ÇED raporunun ağırlıklı olarak içindekiler listesi, kapak sayfaları, teknik olmayan özet ve Bölüm 1'in giriş sayfalarından (toplam 25 sayfa) oluşmaktadır. Flora-fauna envanter tablolarının detay metinleri (s. 81-137), hidrojeolojik analizler (s. 167-171), kümülatif etki bölümü (s. 277-284) ve kurum görüş yazılarının yer aldığı ekler sağlanan sayfalar arasında yer almadığı için detaylı teknik hesaplamalar bu sayfalar üzerinden doğrudan doğrulanamamıştır.
+
+## Official Announcement Text
 
 > İZMİR ili ÇEŞME,  ilcesinde İZMİR ili ÇEŞME ilçesi sınırları içerisinde ARIKAN PROJE GELİŞTİRME A.Ş. tarafından yapılması planlanan CASTELLO FONTANA OTEL projesi ile ilgili olarak hazırlanan ÇED Raporu, ÇED Yönetmeliği'nin 11. maddesi kapsamında Bakanlığımıza sunulmuş olup, inceleme değerlendirme süreci başlamıştır. Proje ile ilgili olarak 07/12/2026 tarihinde İDK toplantısı gerçekleştirilecektir. Bakanlığımıza sunulan ÇED Raporu https://eced-duyuru.csb.gov.tr/eced-prod/duyurular.xhtml adresinde yer almaktadır. ÇED Raporu ilgililere ve kamuoyuna duyurulur.
 
-## 3. Automated Baseline & Red-Flag Scan
+## Deterministic Baseline & Red-Flag Scan
 
 | Check | Status in Extractable Text |
 |---|---|
@@ -36,7 +81,7 @@
 
 *(Scanned annex maps/appendices without OCR are excluded from text scan; see scanned-page count above.)*
 
-## 4. Page-Cited Extracted Evidence
+## Page-Cited Extracted Evidence
 
 ### Coordinates, Parcel & Footprint (225 pages: s.1, s.9, s.10, s.23, s.29, s.30, s.32, s.35, s.40, s.42, s.44, s.45 (+213 more))
 - **[s. 1]** `ada 173 parsel` — …ARIKAN PROJE GELİŞTİRME A.Ş. CASTELLO FONTANA OTEL İzmir İli, Çeşme ilçesi, Çakabey Mahallesi, 507 ada 173 parsel ELEMENT ÇEVRE DANIŞMANLIK VE MÜHENDİSLİK A.Ş. Mansuroğlu Mah. 1593/1 Sok. No:2 Lider Centrio A Blok No: 78 Bay…
@@ -80,7 +125,7 @@
 - **[s. 29]** `kapasite` — …ktedir. Söz konusu yapılaşma kapsamında 34 odalı butik otel ile apart otel birimlerinde toplam 769 oda ve 1.538 yatak kapasitesi oluşturulacaktır. Yapılaşma dışında kalan alanlarda ise açık yüzme havuzları, otopark alanları ve peyzaj düzenlemele…
 - **[s. 32]** `Kapasite` — …1 Blok) 1 adet Apart Otel Kapalı Otopark (G Blok) 2 adet Apart Otel Kapalı Otopark (I Blok) 4 adet Toplam Otopark Kapasitesi 473 adet Yüzme Havuzları F Tipi Açık Yüzme Havuzu 14 adet H Tipi Açık Yüzme Havuzu 2 adet G Tipi Açık Yüzme…
 
-## 5. Document Navigation Map (Detected Headings)
+## Document Navigation Map (Detected Headings)
 
 - **[s. 365]** 25000
 - **[s. 369]** 100000
@@ -97,7 +142,7 @@
 - **[s. 878]** GidecegiAltYerAdiBM
 - **[s. 878]** GidecegiYerAdresBM
 
-## 6. Scientist Audit Notes (1–2h Async Review Template)
+## Scientist Audit Notes (1–2h Async Review Template)
 
 - **Baseline & sampling gaps (`[s. N]`):** 
 - **Ecological / hydrological contradictions:** 

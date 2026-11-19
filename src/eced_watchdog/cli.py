@@ -15,6 +15,7 @@ from .fetcher import (
     fetch_province,
     merge_filings,
 )
+from .llm import DEFAULT_GEMINI_MODEL, resolve_api_key
 from .site import build_site
 
 
@@ -90,10 +91,13 @@ def main() -> None:
     )
     parser.add_argument("--skip-fetch", action="store_true", help="Rebuild site/digests from existing data/filings.json")
     parser.add_argument("--skip-digests", action="store_true", help="Skip downloading/digesting new PDFs")
+    parser.add_argument("--skip-llm", action="store_true", help="Disable Gemini API synthesis even if GEMINI_API_KEY is set")
+    parser.add_argument("--re-synthesize", action="store_true", help="Re-run Gemini synthesis even on already-synthesized digests")
+    parser.add_argument("--gemini-model", default=None, help=f"Gemini model ID (default: GEMINI_MODEL env or {DEFAULT_GEMINI_MODEL})")
     parser.add_argument("--drop-pdfs", action="store_true", help="Delete downloaded PDFs after digesting (for CI)")
     parser.add_argument(
         "--site-url",
-        default="https://eced-duyuru.csb.gov.tr/eced-prod/duyurular.xhtml",
+        default="https://yanekyuk.github.io/aegean-eced-watchdog/",
         help="Public GitHub Pages base URL for RSS feed links",
     )
     args = parser.parse_args()
@@ -150,8 +154,12 @@ def main() -> None:
         print(f"Loaded {len(filings)} existing filings (fetch skipped)")
 
     if not args.skip_digests:
+        gemini_key = None if args.skip_llm else resolve_api_key(root)
+        if not args.skip_llm and not gemini_key:
+            print("Gemini synthesis skipped (set GEMINI_API_KEY in environment or .env to enable)")
         candidates = select_digest_candidates(filings, digests_dir, args.max_digests)
         digested_new = 0
+        synthesized_new = 0
         for f in candidates:
             fid = f["documents"][0]["filing_id"]
             try:
@@ -161,6 +169,9 @@ def main() -> None:
                     pdfs_dir=pdfs_dir,
                     cert_path=cert_path,
                     keep_pdf=not args.drop_pdfs,
+                    gemini_api_key=gemini_key,
+                    gemini_model=args.gemini_model,
+                    re_synthesize=args.re_synthesize,
                 )
                 if res and not res["cached"]:
                     digested_new += 1
@@ -169,9 +180,14 @@ def main() -> None:
                         f"{res['analysis']['page_count']}p "
                         f"({res['pdf_info']['bytes'] / 1024 / 1024:.1f} MB)"
                     )
+                if res and res.get("synthesized_now"):
+                    synthesized_new += 1
+                    llm_m = res["llm_synthesis"]["model"]
+                    n_flags = len(res["llm_synthesis"]["result"].get("red_flags") or [])
+                    print(f"  Synthesized #{fid} via {llm_m} ({n_flags} red flags)")
             except Exception as exc:
                 print(f"  WARN: failed to digest #{fid}: {exc}")
-        print(f"Digests ready ({digested_new} newly generated)")
+        print(f"Digests ready ({digested_new} newly extracted, {synthesized_new} newly synthesized)")
 
     stats = build_site(
         filings,

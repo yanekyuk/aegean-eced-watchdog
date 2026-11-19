@@ -35,12 +35,15 @@
     "announcement_date": "2026-11-19",
     "statutory_clocks": [
       {
+        "code": "aski_10d",
         "kind": "10-day public review/comment window (askı süresi)",
         "deadline": "2026-11-29",
         "days_remaining": 9
       }
     ],
-    "priority_district": true
+    "priority_district": true,
+    "filing_key": "61354:19.11.2026:ÇED Süreci Başlayan",
+    "first_seen_at": null
   },
   "pdf_info": {
     "bytes": 102777657,
@@ -543,6 +546,175 @@
       "mentions_olive_law_3573": true,
       "mentions_groundwater_or_aquifer": true,
       "mentions_iucn_or_endemic": true
+    }
+  },
+  "llm_synthesis": {
+    "model": "gemini-3.8-flash",
+    "generated_at": "2026-11-20T01:16:26",
+    "pages_sent": [
+      1,
+      2,
+      3,
+      4,
+      8,
+      9,
+      11,
+      12,
+      15,
+      16,
+      31,
+      32,
+      36,
+      37,
+      39,
+      76,
+      77,
+      82,
+      83,
+      85,
+      92,
+      93,
+      132,
+      133,
+      247,
+      248
+    ],
+    "result": {
+      "executive_summary_tr": "TEİAŞ tarafından Balıkesir ili Burhaniye ilçesi ile İzmir ili Bergama ilçesi sınırlarında 185.836.579,48 TL proje bedeli ile 31,52 km uzunluğunda 154 kV gerilimli enerji iletim hattı ve 93 adet direk tesisi planlanmaktadır [s. 2, 9]. Hat güzergahı orman alanları, tarım arazileri, meralar ve dere yatakları üzerinden geçmektedir [s. 15, 32]. Biyolojik çeşitlilik değerlendirmesi büyük oranda bölgesel literatür derlemesine ve metodolojisi belirsiz sınırlı arazi tespitlerine dayandırılmış olup çok mevsimli arazi çalışması bulunmamaktadır [s. 85, 92, 93]. Çevre izleme planında ise gürültü ve toz parametreleri için fiziksel ölçüm yerine yalnızca görsel takip taahhüt edilmiştir [s. 133].",
+      "executive_summary_en": "TEİAŞ proposes the construction of a 31.52 km, 154 kV power transmission line comprising 93 pylons across Burhaniye (Balıkesir) and Bergama (İzmir) with an investment cost of 185.8 million TL [s. 2, 9]. The planned corridor traverses forestry lands, agricultural areas, pastures, and seasonal creeks [s. 15, 32]. Baseline ecological assessments rely predominantly on broad literature compilations with sparse, methodologically unelaborated field observations and lack multi-seasonal field sampling [s. 85, 92, 93]. Furthermore, the environmental monitoring plan commits solely to visual observations rather than quantitative instrumental measurements for dust and environmental noise [s. 133].",
+      "key_facts": [
+        {
+          "label": "Total Line Length",
+          "value": "31,52 km (Girdi Hattı: 15,81 km, Çıktı Hattı: 15,71 km)",
+          "page": 9
+        },
+        {
+          "label": "Total Pylon Count",
+          "value": "93 adet (46 adet Girdi, 47 adet Çıktı)",
+          "page": 9
+        },
+        {
+          "label": "Voltage and Conductor",
+          "value": "154 kV, 1272 MCM",
+          "page": 9
+        },
+        {
+          "label": "Project Cost",
+          "value": "185.836.579,48 TL",
+          "page": 2
+        },
+        {
+          "label": "Construction Duration",
+          "value": "6 ay",
+          "page": 9
+        },
+        {
+          "label": "Construction Workforce",
+          "value": "40 kişi",
+          "page": 9
+        },
+        {
+          "label": "Construction Water Demand",
+          "value": "18,4 m3/gün (8,4 m3/gün personel + 10 m3/gün toz bastırma)",
+          "page": 36
+        },
+        {
+          "label": "Construction Wastewater",
+          "value": "7,24 m3/gün",
+          "page": 39
+        },
+        {
+          "label": "Operation Workforce",
+          "value": "10 kişi",
+          "page": 9
+        },
+        {
+          "label": "Economic Lifespan",
+          "value": "49 yıl",
+          "page": 9
+        }
+      ],
+      "baseline_assessment": {
+        "field_survey_status": "mixed_or_unclear",
+        "seasonal_sampling_status": "not_found",
+        "cumulative_impact_status": "superficial_or_boilerplate",
+        "olive_and_protected_status": "The text documents regional agricultural significance of olive groves (28.1% of Izmir ag land and 83,050 ha in Balikesir, highlighting Burhaniye) but provides no parcel-level inventory or Law 3573 distance evaluations [s. 76, 77]. Forest clearances require OGM permits, while formal national parks or cultural sites are reported absent [s. 9, 82].",
+        "explanation": "Baseline flora and fauna lists are heavily compiled from literature ('L') with occasional literature-plus-field codes ('A+L'), but without survey dates, observation effort, or transects [s. 85, 92, 93]. Multi-seasonal baseline field surveys conducted prior to filing are not documented; seasonal species behavior is referenced only generically from academic sources [s. 93]. Cumulative impacts are handled via a placeholder chapter heading without quantitative modeling across overlapping infrastructure in the regional corridor [s. 3]."
+      },
+      "red_flags": [
+        {
+          "severity": "high",
+          "title": "Gürültü ve Toz İzlemesinde Enstrümantal Ölçüm Yerine Yalnızca Görsel Takip Tanımlanması",
+          "detail": "Çevre İzleme Planı Tablo 58'de toz emisyonu ve gürültü kirliliği izleme yöntemi olarak enstrümantal ölçüm yerine yalnızca 'Görsel Takip' metodu belirlenmiştir. Akustik gürültü seviyelerinin görsel olarak izlenmesi teknik açıdan imkansızdır ve Çevresel Gürültü Kontrol Yönetmeliği gerekliliklerini karşılamamaktadır.",
+          "pages": [
+            133
+          ]
+        },
+        {
+          "severity": "medium",
+          "title": "Flora ve Fauna Arazi Çalışması Metodolojisinin Belgelenmemesi",
+          "detail": "Biyolojik çeşitlilik listelerinde türlerin tespit yöntemi ağırlıklı olarak literatür ('L') ve kısmen arazi+literatür ('A+L') olarak işaretlenmiş, ancak arazide hangi takvim günlerinde, hangi istasyonlarda ve hangi yöntemlerle örnekleme yapıldığına dair hiçbir operasyonel detay sunulmamıştır.",
+          "pages": [
+            85,
+            92,
+            93
+          ]
+        },
+        {
+          "severity": "medium",
+          "title": "3573 Sayılı Zeytincilik Kanunu Kapsamında Koridor Analizinin Bulunmaması",
+          "detail": "Raporda Burhaniye ve Bergama yörelerinin zeytin üretimi açısından yüksek öneme sahip olduğu belirtilmesine rağmen, 31,52 km uzunluğundaki iletim hattı koridoru ve 93 direk taban alanı için zeytinlik varlığına dair parsel ölçeğinde somut bir tespit veya 3573 sayılı Kanun mesafesi irdelenmemiştir.",
+          "pages": [
+            9,
+            15,
+            76,
+            77
+          ]
+        },
+        {
+          "severity": "low",
+          "title": "Çevresel ve Sosyal Yönetim Planında Evsel Atıksu İzleme İhtiyacının Reddedilmesi",
+          "detail": "İnşaat aşamasında 7,24 m3/gün evsel atıksu oluşacağı ve sızdırmaz foseptikte toplanacağı belirtilmesine karşın, Çevresel ve Sosyal Yönetim Planı Tablo 5'te evsel atıksu için 'Proje kapsamında izleme çalışması yapılmasına gerek yoktur' kararı verilerek vidanjör takip mekanizması izleme dışı bırakılmıştır.",
+          "pages": [
+            39,
+            247
+          ]
+        }
+      ],
+      "hkt_and_petition_questions": [
+        {
+          "question_tr": "Çevre İzleme Planı Tablo 58'de şantiye gürültü kirliliği için izleme metodu olarak belirlenen 'Görsel Takip' yöntemi akustik sınır değerleri nasıl doğrulayacaktır; yönetmelik uyarınca neden dBA cinsinden enstrümantal ses ölçümü planlanmamıştır?",
+          "pages": [
+            133
+          ]
+        },
+        {
+          "question_tr": "Hat güzergahında gerçekleştirildiği belirtilen arazi gözlemleri hangi kesin tarihlerde, hangi fenolojik dönemde ve kaç kişilik biyolog/uzman heyeti tarafından yürütülmüştür?",
+          "pages": [
+            85,
+            92,
+            93
+          ]
+        },
+        {
+          "question_tr": "Balıkesir/Burhaniye ve İzmir/Bergama'da zeytin alanlarının yoğunluğu karşısında, 93 direk yeri ve iletken altı koridorda 3573 sayılı Kanun kapsamında kalan zeytinlik parselleri bulunmakta mıdır ve Tarım ve Orman İl Müdürlüklerinden yasal izin alınmış mıdır?",
+          "pages": [
+            9,
+            15,
+            32,
+            76,
+            77
+          ]
+        },
+        {
+          "question_tr": "İnşaat aşamasında oluşacak 7,24 m3/gün evsel atıksuyun foseptikten vidanjörle çekimi ve ruhsatlı arıtma tesisine teslimi sürecinde, ÇSYP Tablo 5'te 'izleme çalışması yapılmasına gerek yoktur' hükmü yerine atık bertaraf belgeleri hangi sıklıkla kayıt altına alınacaktır?",
+          "pages": [
+            39,
+            247
+          ]
+        }
+      ],
+      "data_limitations": "The review is constrained to the provided 26 excerpted pages out of 347 total PDF pages. Detailed technical appendices including official institutional opinion letters (Annex 2), cadastral expropriation maps, specific avifauna/mammal inventories, and Chapter IV cumulative impact calculations could not be verified."
     }
   }
 }

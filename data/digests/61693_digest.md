@@ -18,11 +18,54 @@
 **Statutory Deadlines (informational aid — verify with legal counsel):**
 - **10-day public review/comment window (askı süresi):** `2026-11-21` (`1 days remaining`)
 
-## 2. Official Announcement Text
+## 2. AI-Assisted Scientific Synthesis (`gemini-3.8-flash`)
+
+> *Generated from 26 excerpted PDF pages (s.1, s.2, s.3, s.5, s.6, s.7, s.8, s.9, s.10, s.11, s.12, s.13, s.14, s.15, s.19, s.20, s.21, s.23, s.24, s.26, s.33, s.43, s.46, s.48, s.49, s.286). Verify every figure against `[s. N]` in the official PDF.*
+
+**Özet (TR):** Brontes Makine Sanayi ve Ticaret A.Ş. tarafından İzmir ili, Aliağa ilçesi, Aliağa Organize Sanayi Bölgesi'nde (ALOSBİ, 133 ada 12 parsel) yer alan mevcut 20.748 m2 toplam ve 13.800 m2 kapalı alana sahip tesiste çelik konstrüksiyon imalatına ilave olarak deniz araçlarının parça ve aksamlarının üretimi planlanmaktadır. Proje kapsamında yılda 50 adet muhtelif boyutlarda römorkör, tekne, duba ve katamaran üretilmesi öngörülmektedir. Kapalı bina içerisinde gerçekleştirilecek faaliyet için yeni bir inşaat çalışması planlanmamış olup, ALOSBİ altyapısına deşarj edilecek evsel atıksular, kumlama/CNC baca emisyonları ile metal işleme süreçlerinden kaynaklanacak tehlikeli katı atıklar temel çevresel unsurları oluşturmaktadır.
+
+**Summary (EN):** Brontes Makine Sanayi ve Ticaret A.Ş. proposes an expansion to add marine vessel parts and components manufacturing to its existing steel construction manufacturing operations within Aliağa Organised Industrial Zone (ALOSBİ, block 133, parcel 12) in Aliağa, İzmir. The facility operates on a 20,748 m2 plot with a 13,800 m2 enclosed footprint, targeting an annual capacity of 50 marine units including tugs, boats, pontoons, and catamarans without new building construction. Primary environmental considerations include domestic wastewater discharged to the ALOSBİ network, industrial air emissions from two stacks (shot blasting and CNC), and dangerous waste generation from metal fabrication operations.
+
+### Key Extracted Figures
+
+- **Investment Value / Proje Bedeli:** 27.820.519,55 TL (`[s. 2]`)
+- **Total Plot Area / Parsel Alanı:** 20.748 m2 (`[s. 6]`)
+- **Enclosed Facility Area / Kapalı Alan:** 13.800 m2 (`[s. 6]`)
+- **Annual Production Capacity / Yıllık Üretim Kapasitesi:** 50 adet deniz aracı (7 adet 17,5 m römorkör, 10 adet 7,5 m tekne, 10 adet 9,5 m tekne, 10 adet 14 m tekne, 10 adet katamaran, 3 adet duba) (`[s. 6]`)
+- **Site Visit Date / Saha İnceleme Tarihi:** 06.11.2026 (`[s. 6]`)
+- **Personnel Count / Çalışan Sayısı:** 56 personel (`[s. 20]`)
+- **Domestic Water Use & Wastewater / Su ve Atıksu Debisi:** 11,76 m3/gün (`[s. 20]`)
+- **Nearest Settlement / En Yakın Yerleşim:** Kuzeydoğu yönünde 3,66 km mesafede Çoraklar Mahallesi (`[s. 19]`)
+- **Distance to Nearest Watercourses / En Yakın Su Kaynakları:** Güzelhisar Çayı (güneyde ~885 m) ve Kunduz Deresi (kuzeybatıda ~1,53 km) (`[s. 48]`)
+- **Industrial Stacks / Baca Sayısı ve Özelliği:** 2 adet baca (1 kumlama, 1 CNC), çatıdan 1,5 metre yükseklikte (`[s. 26]`)
+
+### Baseline & Methodology Assessment
+
+- **Field survey:** `literature_only`
+- **Seasonal sampling:** `not_found`
+- **Cumulative impact:** `superficial_or_boilerplate`
+- **Olive Law / protected areas:** Parsel ALOSBİ sanayi sahası içinde kaldığından tarım, orman, sulak alan veya koruma statüsünde bulunmadığı ve Bern Sözleşmesi kapsamındaki türlerin alanda bulunmadığı ifade edilmiştir; 3573 sayılı Zeytincilik Kanunu'na dair özel bir değerlendirme sunulmamıştır [s. 19, 43, 46, 48, 49, 286].
+- **Assessment:** Proje sahasının ALOSBİ içerisinde kalması ve çevre parsellerde sanayi faaliyetlerinin bulunması gerekçe gösterilerek flora ve fauna tespitinde herhangi bir floristik/faunistik arazi envanteri veya mevsimsel örnekleme yapılmamış, saha toptan 'koruma statüsünde tür yoktur' ifadesiyle geçiştirilmiştir [s. 49, 286]. Benzer şekilde kümülatif etki bölümü yalnızca 500 m yarıçapındaki sanayi tesislerinin uydu görüntüsüyle sınırlandırılmıştır [s. 5].
+
+### Scientific Audit Red Flags
+
+- **[MEDIUM] Flora ve Fauna Envanterinin Tamamen Gerekçesiz Şekilde Boş Geçilmesi** (`s.49, s.286`): Proje tanıtım dosyasında ALOSBİ ve çevre sanayi parselleri gerekçe gösterilerek hiçbir yerinde ekolojik tespit, tür envanteri veya habitat değerlendirmesi yapılmamış; 'proje alanı ve yakın çevresinde koruma statüsünde herhangi bir flora ve fauna türü yer almamaktadır' şeklinde gerekçelendirilmemiş ve kanıtsız bir iddia kullanılmıştır [s. 49, 286].
+- **[MEDIUM] Hava Emisyonu ve Baca Gazı Ölçümlerinin Süreç Sonrasına Ertelenmesi** (`s.26`): İşletmede kumlama ve CNC makinelerine ait çatıdan 1,5 metre yüksekliğinde 2 adet emisyon bacası bulunmasına rağmen, başvuru aşamasında mevcut emisyon parametreleri ve toz debilerine ilişkin fiili ölçüm ve kütlesel debi hesabı sunulmamış; ölçüm ve olası modelleme çalışmaları 'Çevre İzin aşamasında yapılacaktır' taahhüdüyle sonraya ertelenmiştir [s. 26].
+- **[LOW] Boya Prosesinin Dışsallaştırılması ve İkincil Etki Değerlendirme Eksikliği** (`s.11, s.15`): Deniz araçları imalatında pasivasyon ve koruma amacıyla boya uygulanmasının zorunlu olmasına rağmen tesis bünyesinde boya yapılmayacağı, işlemin üçüncü şahıslara fason yaptırılacağı belirtilmiştir [s. 11, 15]. Bu faaliyetin lojistik ve çevresel zincirdeki VOC/atık boya etkileri değerlendirilmemiştir.
+
+### Draft Technical Questions (HKT / İYUK 20/A)
+
+- Kumlama ve CNC ünitelerine ait 2 adet emisyon bacasından kaynaklanacak toz, partikül madde ve diğer hava kirleticilerine dair ÇED sürecinde yürütülmüş fiili bir emisyon ölçümü ve kütlesel debi hesaplaması mevcut mudur; izin aşamasına bırakılan bu emisyonların OSB genelindeki hava kalitesine birikimli etkisi nasıl kontrol edilecektir? (`s.26`)
+- Yıllık 50 adet deniz aracı imalatı planlanmasına rağmen tesiste boyahane veya boya hattı bulunmadığı ve boyama işlemlerinin fason olarak dışarıda yaptırılacağı belirtilmiştir; yarı mamul veya tam deniz yapılarının tesis dışına nakliyesi, boyanması ve korozyon önleyici kaplama işlemlerinden doğacak çevresel yükler hangi izin ve lisanslı tesislerde yönetilecektir? (`s.11, s.15`)
+- Tesisin yaklaşık 885 m güneyinde yer alan Güzelhisar Çayı ve 1,53 km mesafedeki Kunduz Deresi yüzeysel su havzaları göz önünde bulundurulduğunda, sahada oluşacak kumlama kumu atığı (12 01 16*), emülsiyon atıkları (12 01 09*) ve atık yağların (13 01 13*) yağmur suyu drenajına karışmasını engelleyecek sızdırmazlık ve toplama altyapısına dair somut proje detayları nelerdir? (`s.23, s.24, s.48, s.286`)
+
+*Limitations:* Sağlanan metin kesitleri PTD dosyasının belirli sayfalarını içermekte olup; dosyanın taranmış 97 sayfalık kısmı (ekler, ALOSBİ kanalizasyon bağlantı belgesi, arsa tahsis sözleşmesi ve diğer resmi yazışma ekleri) metin aranamaz durumda olduğundan detaylı teknik parametreleri doğrudan doğrulanamamıştır.
+
+## Official Announcement Text
 
 > İZMİR ili ALİAĞA,  ilcesinde İZMİR ili ALİAĞA,  ilçesi İzmir İli, Aliağa İlçesi, Aliağa Organize Sanayi Bölgesi, Çoraklar Mah. 5000 Sk. No:24, 24/1,24/2,24/3 (Tapunun 133 Ada 12 Nolu Parseli) mevkiindeki BRONTES MAKİNE SANAYİ VE TİCARET ANONİM ŞİRKETİ  tarafından yapılması planlanan Çelik Konstrüksiyon Ürünleri Üretimi Faaliyetine Deniz Araçlarının Parça ve Aksamlarının Üretimi İlavesi projesi ile ilgili olarak İZMİR Valiliğimize sunulan P.T.D. Dosyası Çevresel Etki Değerlendirmesi Yönetmeliği'nin 16. maddesi doğrultusunda incelenmiş ve projeye ilişkin ÇED Süreci başlamıştır. İlgililere ve kamuoyuna duyurulur.
 
-## 3. Automated Baseline & Red-Flag Scan
+## Deterministic Baseline & Red-Flag Scan
 
 | Check | Status in Extractable Text |
 |---|---|
@@ -36,7 +79,7 @@
 
 *(Scanned annex maps/appendices without OCR are excluded from text scan; see scanned-page count above.)*
 
-## 4. Page-Cited Extracted Evidence
+## Page-Cited Extracted Evidence
 
 ### Coordinates, Parcel & Footprint (37 pages: s.1, s.2, s.6, s.8, s.16, s.17, s.18, s.19, s.33, s.34, s.42, s.60 (+25 more))
 - **[s. 1]** `Ada 12 Nolu Parsel` — …amlarının Üretimi İlavesi (Çoraklar Osb. Mahallesi, 5000 Sokak, No:24, 24/1,24/2,24/3 Aliağa/ İzmir) (Tapunun 133 Ada 12 Nolu Parseli) PROÇED ÇEVRE DANIŞMANLIĞI MÜHENDİSLİK İNŞ. SAN. VE TİC. LTD. ŞTİ. Mansuroğlu Mah. Ankara Cad. Bayraklı Tow…
@@ -80,7 +123,7 @@
 - **[s. 10]** `kapasite` — …tine Deniz Araçlarının Parça ve Aksamlarının Üretimi İlavesi PROJE TANITIM DOSYASI 3 b) Projenin iş akım şeması, kapasitesi, kapladığı alan, yatırım bedeli, teknolojisi, çalışacak personel sayısı. 1.b.1. Projenin İş Akım Şeması Brontes…
 - **[s. 16]** `Kapasite` — …timi Faaliyetine Deniz Araçlarının Parça ve Aksamlarının Üretimi İlavesi PROJE TANITIM DOSYASI 9 1.b.2. Projenin Kapasitesi İşletmede; Araç üstü mobil vinçler, Endüstriyel sınai tesisler (Çelik yapılar, taşıyıcı bant konveyör, karıştırıc…
 
-## 5. Document Navigation Map (Detected Headings)
+## Document Navigation Map (Detected Headings)
 
 - **[s. 94]** Model
 - **[s. 95]** Model
@@ -101,7 +144,7 @@
 - **[s. 272]** 3. KAYIT TUTMA VE RAPORLAMA
 - **[s. 275]** İçindekiler Listesi
 
-## 6. Scientist Audit Notes (1–2h Async Review Template)
+## Scientist Audit Notes (1–2h Async Review Template)
 
 - **Baseline & sampling gaps (`[s. N]`):** 
 - **Ecological / hydrological contradictions:** 

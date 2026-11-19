@@ -140,19 +140,48 @@ def _clock_badge_html(clock: dict[str, Any] | None) -> str:
     code = clock.get("code", "")
     label = {
         "iyuk_20a": "İYUK 20/A",
-        "aski_10d": "10d Askı",
+        "aski_10d": "10g Askı",
         "hkt": "HKT",
         "idk": "İDK",
-    }.get(code, "Clock")
+    }.get(code, "Süre")
     if dr is None:
-        return f'<span class="badge warn">{_esc(label)} · check date</span>'
+        return f'<span class="badge warn">{_esc(label)} · tarihi kontrol et</span>'
     if dr < 0:
-        return f'<span class="badge muted">{_esc(label)} · expired ({clock["deadline"]})</span>'
+        return f'<span class="badge muted">{_esc(label)} · süre doldu ({clock["deadline"]})</span>'
     if dr <= 7:
-        return f'<span class="badge urgent">{_esc(label)} · {dr}d left ({clock["deadline"]})</span>'
+        return f'<span class="badge urgent">{_esc(label)} · {dr} gün kaldı ({clock["deadline"]})</span>'
     if dr <= 15:
-        return f'<span class="badge warn">{_esc(label)} · {dr}d left ({clock["deadline"]})</span>'
-    return f'<span class="badge ok">{_esc(label)} · {dr}d left ({clock["deadline"]})</span>'
+        return f'<span class="badge warn">{_esc(label)} · {dr} gün kaldı ({clock["deadline"]})</span>'
+    return f'<span class="badge ok">{_esc(label)} · {dr} gün kaldı ({clock["deadline"]})</span>'
+
+
+TR_SIGNAL_LABELS = {
+    "coordinates_and_footprint": "Koordinatlar, Parsel ve Alan Büyüklüğü",
+    "water_and_discharge": "Su Kullanımı, Hidrojeoloji ve Deşarj",
+    "protected_land_and_olive": "Korunan Alanlar, Orman ve Zeytinlikler",
+    "ecology_and_baseline": "Flora, Fauna ve Saha Metodolojisi",
+    "pollutants_and_hazards": "Emisyonlar, Jeokimya ve Atıklar",
+    "cost_and_capacity": "Proje Bedeli, Güç ve Kapasite",
+}
+
+TR_BASELINE_STATUS = {
+    "field_survey_documented": "Belgelenmiş saha çalışması",
+    "literature_only": "Yalnızca literatür",
+    "mixed_or_unclear": "Karışık / belirsiz",
+    "not_found": "Bulunamadı",
+    "completed_pre_project": "Önceden tamamlanmış",
+    "promised_post_approval_only": "Yalnızca onay sonrasına taahhüt",
+    "unclear": "Belirsiz",
+    "quantitatively_assessed": "Nicel değerlendirme var",
+    "superficial_or_boilerplate": "Yüzeysel / şablon",
+    "omitted_or_not_found": "Eksik / bulunamadı",
+}
+
+TR_SEVERITY = {
+    "high": "YÜKSEK",
+    "medium": "ORTA",
+    "low": "DÜŞÜK",
+}
 
 
 def render_digest_html(saved: dict[str, Any], raw_md_filename: str) -> str:
@@ -166,33 +195,34 @@ def render_digest_html(saved: dict[str, Any], raw_md_filename: str) -> str:
 
     checks = analysis["audit_checks"]
     check_rows = [
-        ("Field survey (*arazi/saha çalışması*)", checks["mentions_field_survey"]),
-        ("Literature review (*literatür taraması*)", checks["mentions_literature_only_cue"]),
-        ("Seasonal sampling (*mevsimsel*)", checks["mentions_seasonal_sampling"]),
-        ("Cumulative impact (*kümülatif*)", checks["mentions_cumulative_impact"]),
-        ("Olive Law / groves (*3573 / zeytinlik*)", checks["mentions_olive_law_3573"]),
-        ("Groundwater / aquifer (*akifer / yeraltı suyu*)", checks["mentions_groundwater_or_aquifer"]),
-        ("Endemic / IUCN / Bern Convention", checks["mentions_iucn_or_endemic"]),
+        ("Saha / arazi çalışması geçiyor mu", checks["mentions_field_survey"]),
+        ("Literatür taraması ifadesi geçiyor mu", checks["mentions_literature_only_cue"]),
+        ("Mevsimsel örnekleme geçiyor mu", checks["mentions_seasonal_sampling"]),
+        ("Kümülatif etki değerlendirmesi geçiyor mu", checks["mentions_cumulative_impact"]),
+        ("Zeytincilik Kanunu (3573 / zeytinlik)", checks["mentions_olive_law_3573"]),
+        ("Yeraltı suyu / akifer / hidrojeoloji", checks["mentions_groundwater_or_aquifer"]),
+        ("Endemik tür / IUCN / Bern Sözleşmesi", checks["mentions_iucn_or_endemic"]),
     ]
     checks_html = "\n".join(
         f"<tr><th>{_esc(lbl)}</th><td>"
-        + ('<span class="badge ok">Present</span>' if ok else '<span class="badge urgent">NOT FOUND (check manually)</span>')
+        + ('<span class="badge ok">Metinde var</span>' if ok else '<span class="badge urgent">BULUNAMADI (elle kontrol edin)</span>')
         + "</td></tr>"
         for lbl, ok in check_rows
     )
 
     sig_blocks: list[str] = []
-    for _k, sig in analysis["signals"].items():
+    for k, sig in analysis["signals"].items():
+        tr_label = TR_SIGNAL_LABELS.get(k, sig["label"])
         pages_preview = ", ".join(f"s.{p}" for p in sig["pages"][:14])
         if sig["page_count"] > 14:
-            pages_preview += f" (+{sig['page_count'] - 14} more)"
+            pages_preview += f" (+{sig['page_count'] - 14} sayfa)"
         hits_html = "\n".join(
             f'<div class="hit"><span class="pno">[s. {h["page"]}]</span> <code>{_esc(h["match"])}</code> — {_esc(h["snippet"])}</div>'
             for h in sig["samples"][:6]
-        ) or '<div class="hit" style="color:var(--muted)">No text matches found.</div>'
+        ) or '<div class="hit" style="color:var(--muted)">Eşleşen metin bulunamadı.</div>'
         sig_blocks.append(
-            f'<section class="card"><h3>{_esc(sig["label"])} '
-            f'<span style="color:var(--muted);font-weight:400;font-size:0.85rem">({sig["page_count"]} pages: {_esc(pages_preview or "none")})</span></h3>'
+            f'<section class="card"><h3>{_esc(tr_label)} '
+            f'<span style="color:var(--muted);font-weight:400;font-size:0.85rem">({sig["page_count"]} sayfa: {_esc(pages_preview or "yok")})</span></h3>'
             f"{hits_html}</section>"
         )
 
@@ -203,19 +233,66 @@ def render_digest_html(saved: dict[str, Any], raw_md_filename: str) -> str:
 
     clocks_html = " ".join(_clock_badge_html(c) for c in filing.get("statutory_clocks") or [])
 
+    llm_block = ""
+    llm = saved.get("llm_synthesis")
+    if llm and llm.get("result"):
+        res = llm["result"]
+        ba = res["baseline_assessment"]
+        pages_used = ", ".join(f"s.{p}" for p in llm.get("pages_sent") or [])
+        facts_html = "\n".join(
+            f'<tr><th>{_esc(kf["label"])}</th><td>{_esc(kf["value"])} <span class="pno">[s. {kf["page"]}]</span></td></tr>'
+            for kf in res.get("key_facts") or []
+        )
+        sev_cls = {"high": "urgent", "medium": "warn", "low": "muted"}
+        flags_html = "\n".join(
+            f'<div class="hit"><span class="badge {sev_cls.get(rf["severity"], "muted")}">{_esc(TR_SEVERITY.get(rf["severity"], rf["severity"].upper()))}</span> '
+            f'<strong>{_esc(rf["title"])}</strong> '
+            f'<span class="pno">[{", ".join(f"s. {p}" for p in rf.get("pages") or [])}]</span> — {_esc(rf["detail"])}</div>'
+            for rf in res.get("red_flags") or []
+        )
+        qs_html = "\n".join(
+            f'<li>{_esc(q["question_tr"])} <span class="pno">[{", ".join(f"s. {p}" for p in q.get("pages") or [])}]</span></li>'
+            for q in res.get("hkt_and_petition_questions") or []
+        )
+        en_details = ""
+        if res.get("executive_summary_en"):
+            en_details = (
+                f'<details style="margin-top:8px;font-size:0.86rem;color:var(--muted);">'
+                f'<summary style="cursor:pointer;">English summary</summary>'
+                f'<p style="margin:6px 0 0;">{_esc(res["executive_summary_en"])}</p></details>'
+            )
+        llm_block = f"""
+  <h2>Yapay Zeka Destekli Bilimsel Ön Değerlendirme <span class="badge">{_esc(llm.get('model'))}</span></h2>
+  <p class="sub">PDF içinden seçilen {len(llm.get('pages_sent') or [])} sayfadan ({_esc(pages_used)}) üretilmiştir. Tüm sayısal verileri resmi PDF'teki <code>[s. N]</code> sayfalarından doğrulayın.</p>
+  <section class="card prio">
+    <p><strong>Özet:</strong> {_esc(res['executive_summary_tr'])}</p>
+    {en_details}
+    <div class="badges" style="margin-top:10px;">
+      <span class="badge">Saha çalışması: {_esc(TR_BASELINE_STATUS.get(ba['field_survey_status'], ba['field_survey_status']))}</span>
+      <span class="badge">Mevsimsel örnekleme: {_esc(TR_BASELINE_STATUS.get(ba['seasonal_sampling_status'], ba['seasonal_sampling_status']))}</span>
+      <span class="badge">Kümülatif etki: {_esc(TR_BASELINE_STATUS.get(ba['cumulative_impact_status'], ba['cumulative_impact_status']))}</span>
+    </div>
+    <p class="detail" style="margin-top:10px;"><strong>Zeytinlik ve Korunan Alanlar:</strong> {_esc(ba['olive_and_protected_status'])}<br/>{_esc(ba['explanation'])}</p>
+  </section>
+  {f'<h3>Öne Çıkan Sayısal Bulgular</h3><table class="kv">{facts_html}</table>' if facts_html else ''}
+  {f'<h3>Bilimsel ve Metodolojik Uyarılar</h3><section class="card">{flags_html}</section>' if flags_html else ''}
+  {f'<h3>HKT ve İYUK 20/A İçin Taslak Teknik Sorular</h3><ul>{qs_html}</ul>' if qs_html else ''}
+  <p class="sub"><em>Kapsam sınırları:</em> {_esc(res.get('data_limitations', ''))}</p>
+"""
+
     return f"""<!doctype html>
 <html lang="tr">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>e-ÇED Pre-Digest #{_esc(filing_id)} — {_esc(filing['district'])}</title>
+  <title>e-ÇED Ön Özet #{_esc(filing_id)} — {_esc(filing['district'])}</title>
   <style>{BASE_CSS}</style>
 </head>
 <body>
 <div class="wrap">
   <header>
-    <div style="font-size:0.85rem;margin-bottom:8px;"><a href="../index.html">← Back to Aegean e-ÇED Watchdog</a> · <a href="{_esc(raw_md_filename)}">Raw Markdown (.md)</a></div>
-    <h1>e-ÇED Pre-Digest #{_esc(filing_id)} — {_esc(filing['district'])} / {_esc(filing['province'])}</h1>
+    <div style="font-size:0.85rem;margin-bottom:8px;"><a href="../index.html">← Ege e-ÇED İzleme listesine dön</a> · <a href="{_esc(raw_md_filename)}">Ham Markdown (.md)</a></div>
+    <h1>e-ÇED Ön Özet #{_esc(filing_id)} — {_esc(filing['district'])} / {_esc(filing['province'])}</h1>
     <p class="sub">{_esc(filing['project_name'])}</p>
     <div class="badges" style="margin-top:10px;">
       <span class="badge">{_esc(filing['decision_type'])}</span>
@@ -225,29 +302,31 @@ def render_digest_html(saved: dict[str, Any], raw_md_filename: str) -> str:
   </header>
 
   <table class="kv">
-    <tr><th>Project Owner</th><td>{_esc(filing['project_owner'])}</td></tr>
-    <tr><th>Consulting Firm</th><td>{_esc(doc_meta.get('consulting_firm') or '—')}</td></tr>
-    <tr><th>Sector</th><td>{_esc(filing['sector'])} / {_esc(filing['sub_sector'])}</td></tr>
-    <tr><th>Announcement Date</th><td><code>{_esc(filing['announcement_date_tr'])}</code> (uploaded <code>{_esc(doc_meta.get('submitted_at') or '—')}</code>)</td></tr>
-    <tr><th>PDF Coverage</th><td>{pdf_info['bytes'] / 1024 / 1024:.2f} MB · {analysis['page_count']} pages ({analysis['text_pages']} text / {analysis['scanned_or_blank_pages']} scanned-or-image) · SHA-256 <code>{_esc(pdf_info['sha256'][:16])}…</code></td></tr>
-    <tr><th>Official Links</th><td><a href="{_esc(doc_meta.get('portal_doc_url', ''))}" target="_blank" rel="noopener">e-ÇED Portal Record</a> · <a href="{_esc(pdf_url)}" target="_blank" rel="noopener">Official PDF</a></td></tr>
+    <tr><th>Proje Sahibi</th><td>{_esc(filing['project_owner'])}</td></tr>
+    <tr><th>Hazırlayan Kuruluş</th><td>{_esc(doc_meta.get('consulting_firm') or '—')}</td></tr>
+    <tr><th>Sektör / Alt Sektör</th><td>{_esc(filing['sector'])} / {_esc(filing['sub_sector'])}</td></tr>
+    <tr><th>Duyuru Tarihi</th><td><code>{_esc(filing['announcement_date_tr'])}</code> (yükleme: <code>{_esc(doc_meta.get('submitted_at') or '—')}</code>)</td></tr>
+    <tr><th>PDF Kapsamı</th><td>{pdf_info['bytes'] / 1024 / 1024:.2f} MB · {analysis['page_count']} sayfa ({analysis['text_pages']} metin / {analysis['scanned_or_blank_pages']} taranmış-görüntü) · SHA-256 <code>{_esc(pdf_info['sha256'][:16])}…</code></td></tr>
+    <tr><th>Resmi Bağlantılar</th><td><a href="{_esc(doc_meta.get('portal_doc_url', ''))}" target="_blank" rel="noopener">e-ÇED Portal Kaydı</a> · <a href="{_esc(pdf_url)}" target="_blank" rel="noopener">Resmi PDF Dosyası</a></td></tr>
   </table>
 
-  <h2>Official Announcement Text</h2>
+  {llm_block}
+
+  <h2>Resmi Duyuru Metni</h2>
   <blockquote>{_esc(filing.get('detail_text', ''))}</blockquote>
 
-  <h2>Automated Baseline &amp; Red-Flag Scan</h2>
+  <h2>Otomatik Metin Taraması (Deterministik)</h2>
   <table class="kv">{checks_html}</table>
-  <p class="sub">Scanned annex maps/letters without OCR are excluded from automated text scan.</p>
+  <p class="sub">OCR içermeyen taranmış harita ve ekler otomatik metin taramasına dahil değildir.</p>
 
-  <h2>Page-Cited Extracted Evidence</h2>
+  <h2>Sayfa Kaynaklı Çıkarılan Bulgular</h2>
   <div class="cards">{''.join(sig_blocks)}</div>
 
-  <h2>Document Navigation Map</h2>
-  <ul>{headings_html or '<li style="color:var(--muted)">No structured headings detected.</li>'}</ul>
+  <h2>Belge Bölüm Haritası</h2>
+  <ul>{headings_html or '<li style="color:var(--muted)">Yapılandırılmış bölüm başlığı tespit edilemedi.</li>'}</ul>
 
   <div class="notice">
-    Informational civic transparency aid generated from official public Ministry announcements at <code>eced-duyuru.csb.gov.tr</code>. Every figure cites its 1-based PDF page <code>[s. N]</code>. Statutory deadlines are computed automatically and must be verified by qualified legal counsel.
+    Çevre, Şehircilik ve İklim Değişikliği Bakanlığı'nın kamuya açık <code>eced-duyuru.csb.gov.tr</code> portalından üretilen bilgilendirme amaçlı şeffaflık aracıdır. Tüm alıntılar 1 tabanlı PDF sayfa numarasıyla <code>[s. N]</code> gösterilir. Yasal süreler otomatik hesaplanır; kesin süre ve hukuki işlem için mutlaka avukat/hukukçu doğrulaması alın.
   </div>
 </div>
 </body>
@@ -258,11 +337,11 @@ def render_digest_html(saved: dict[str, Any], raw_md_filename: str) -> str:
 def build_rss(filings: list[dict[str, Any]], digests_index: set[str], site_url: str) -> str:
     rss = ET.Element("rss", version="2.0")
     channel = ET.SubElement(rss, "channel")
-    ET.SubElement(channel, "title").text = "Aegean e-ÇED Ecological Watchdog (İzmir & Manisa)"
+    ET.SubElement(channel, "title").text = "Ege e-ÇED İzleme (İzmir ve Manisa)"
     ET.SubElement(channel, "link").text = site_url
     ET.SubElement(channel, "description").text = (
-        "Automated daily tracker for Turkey's public e-ÇED announcements in İzmir and Manisa, "
-        "with statutory 10-day askı and 30-day İYUK 20/A countdowns and page-cited PDF digests."
+        "İzmir ve Manisa (Gediz Havzası) için kamuya açık e-ÇED duyuruları, "
+        "10 günlük askı ve 30 günlük İYUK 20/A yasal süre takibi ile sayfa kaynaklı PDF ön özetleri."
     )
     ET.SubElement(channel, "language").text = "tr"
     ET.SubElement(channel, "lastBuildDate").text = format_datetime(datetime.now(timezone.utc))
@@ -275,7 +354,7 @@ def build_rss(filings: list[dict[str, Any]], digests_index: set[str], site_url: 
         pdf_url = doc_meta["pdf_urls"][0]["url"] if doc_meta.get("pdf_urls") else None
 
         item = ET.SubElement(channel, "item")
-        prio_prefix = "[PRIO] " if f.get("priority_district") else ""
+        prio_prefix = "[ÖNCELİKLİ] " if f.get("priority_district") else ""
         ET.SubElement(item, "title").text = (
             f"{prio_prefix}[{f['province']}/{f['district']}] {f['decision_type']} — {f['project_name']}"
         )
@@ -293,21 +372,21 @@ def build_rss(filings: list[dict[str, Any]], digests_index: set[str], site_url: 
             ET.SubElement(item, "pubDate").text = format_datetime(dt)
 
         clocks_txt = "; ".join(
-            f"{c['kind']}: {c['deadline']} ({c['days_remaining']}d left)"
+            f"{c['kind']}: {c['deadline']} ({c['days_remaining']} gün kaldı)"
             if c.get("deadline")
             else c["kind"]
             for c in f.get("statutory_clocks") or []
         )
         desc_parts = [
-            f"Owner: {f.get('project_owner', '')}",
-            f"Sector: {f.get('sector', '')} / {f.get('sub_sector', '')} ({f.get('project_type', '')})",
-            f"Clocks: {clocks_txt or '—'}",
-            f"Official record: {portal_url}",
+            f"Proje Sahibi: {f.get('project_owner', '')}",
+            f"Sektör: {f.get('sector', '')} / {f.get('sub_sector', '')} ({f.get('project_type', '')})",
+            f"Yasal Süreler: {clocks_txt or '—'}",
+            f"Resmi Kayıt: {portal_url}",
         ]
         if pdf_url:
-            desc_parts.append(f"Official PDF: {pdf_url}")
+            desc_parts.append(f"Resmi PDF: {pdf_url}")
         if filing_id and filing_id in digests_index:
-            desc_parts.append(f"Page-cited digest: digests/{filing_id}.html")
+            desc_parts.append(f"Sayfa Kaynaklı Ön Özet: digests/{filing_id}.html")
         if f.get("detail_text"):
             desc_parts.append("")
             desc_parts.append(f["detail_text"])
@@ -330,6 +409,7 @@ def build_site(
 
     # Render HTML + copy MD for every available digest
     digests_index: set[str] = set()
+    llm_summaries: dict[str, dict[str, Any]] = {}
     if digests_dir.exists():
         for json_file in sorted(digests_dir.glob("*_analysis.json")):
             saved = json.loads(json_file.read_text(encoding="utf-8"))
@@ -341,6 +421,8 @@ def build_site(
             html_out = render_digest_html(saved, md_dst_name)
             (docs_digests / f"{fid}.html").write_text(html_out, encoding="utf-8")
             digests_index.add(fid)
+            if saved.get("llm_synthesis") and saved["llm_synthesis"].get("result"):
+                llm_summaries[fid] = saved["llm_synthesis"]
 
     # Stats
     total = len(filings)
@@ -390,16 +472,32 @@ def build_site(
 
         actions = []
         if has_digest:
-            actions.append(f'<a href="digests/{_esc(fid)}.html"><strong>Page-Cited Digest</strong></a>')
-            actions.append(f'<a href="digests/{_esc(fid)}.md">Raw .md</a>')
+            actions.append(f'<a href="digests/{_esc(fid)}.html"><strong>Sayfa Kaynaklı Ön Özet</strong></a>')
+            actions.append(f'<a href="digests/{_esc(fid)}.md">Ham .md</a>')
         if portal_url:
-            actions.append(f'<a href="{_esc(portal_url)}" target="_blank" rel="noopener">e-ÇED Record #{_esc(fid)}</a>')
+            actions.append(f'<a href="{_esc(portal_url)}" target="_blank" rel="noopener">e-ÇED Kaydı #{_esc(fid)}</a>')
         if pdf_url:
-            actions.append(f'<a href="{_esc(pdf_url)}" target="_blank" rel="noopener">Official PDF</a>')
+            actions.append(f'<a href="{_esc(pdf_url)}" target="_blank" rel="noopener">Resmi PDF</a>')
 
         detail_short = (f.get("detail_text") or "")[:320]
         if len(f.get("detail_text") or "") > 320:
             detail_short += "…"
+
+        llm_info = llm_summaries.get(fid)
+        llm_badge = ""
+        llm_preview = ""
+        if llm_info:
+            lres = llm_info["result"]
+            high_flags = sum(1 for rf in lres.get("red_flags") or [] if rf.get("severity") == "high")
+            total_flags = len(lres.get("red_flags") or [])
+            if high_flags:
+                llm_badge = f'<span class="badge urgent">YZ İnceleme · {high_flags} yüksek / {total_flags} uyarı</span>'
+            else:
+                llm_badge = f'<span class="badge ok">YZ İnceleme · {total_flags} uyarı</span>'
+            llm_preview = (
+                f'<div class="detail" style="color:var(--text);">'
+                f'<strong>Özet:</strong> {_esc(lres.get("executive_summary_tr", ""))}</div>'
+            )
 
         cards_html.append(
             f"""<article class="card {'prio' if prio else ''}"
@@ -415,12 +513,14 @@ def build_site(
   </div>
   <div class="badges">
     <span class="badge">{_esc(f.get('province', ''))} · {_esc(f.get('district', ''))}</span>
-    {'<span class="badge ok">Priority Corridor</span>' if prio else ''}
+    {'<span class="badge ok">Öncelikli Koridor</span>' if prio else ''}
     <span class="badge">{_esc(f.get('decision_type', ''))}</span>
     <span class="badge">{_esc(f.get('project_type', ''))}</span>
     <span class="badge muted">{_esc(f.get('sector', ''))}</span>
     {_clock_badge_html(clock)}
+    {llm_badge}
   </div>
+  {llm_preview}
   <div class="detail"><strong>{_esc(f.get('project_owner', ''))}</strong> — {_esc(detail_short)}</div>
   <div class="actions">{' · '.join(actions)}</div>
 </article>"""
@@ -438,46 +538,46 @@ def build_site(
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Aegean e-ÇED Ecological Watchdog</title>
-  <link rel="alternate" type="application/rss+xml" title="Aegean e-ÇED Watchdog RSS" href="feed.xml" />
+  <title>Ege e-ÇED İzleme</title>
+  <link rel="alternate" type="application/rss+xml" title="Ege e-ÇED İzleme RSS" href="feed.xml" />
   <style>{BASE_CSS}</style>
 </head>
 <body>
 <div class="wrap">
   <header>
-    <h1>Aegean e-ÇED Ecological Watchdog</h1>
-    <p class="sub">Public e-ÇED registry tracker, statutory deadline monitor (10-day askı &amp; 30-day İYUK 20/A), and page-cited PDF pre-digests for İzmir &amp; Manisa (Gediz Basin).</p>
+    <h1>Ege e-ÇED İzleme</h1>
+    <p class="sub">İzmir ve Manisa (Gediz Havzası) için kamuya açık e-ÇED duyuru takibi, yasal süre sayacı (10 günlük askı ve 30 günlük İYUK 20/A) ve sayfa kaynaklı PDF ön özetleri.</p>
     <div class="meta-bar">
-      <span>Updated: <code>{_esc(built_at)}</code></span>
-      <span><a href="feed.xml">RSS 2.0 Feed (feed.xml)</a></span>
-      <span>Source: <a href="https://eced-duyuru.csb.gov.tr/eced-prod/duyurular.xhtml" target="_blank" rel="noopener">eced-duyuru.csb.gov.tr</a></span>
+      <span>Son güncelleme: <code>{_esc(built_at)}</code></span>
+      <span><a href="feed.xml">RSS 2.0 Akışı (feed.xml)</a></span>
+      <span>Resmi kaynak: <a href="https://eced-duyuru.csb.gov.tr/eced-prod/duyurular.xhtml" target="_blank" rel="noopener">eced-duyuru.csb.gov.tr</a></span>
     </div>
   </header>
 
   <section class="stats">
-    <div class="stat"><div class="num">{total}</div><div class="lbl">Tracked Filings</div></div>
-    <div class="stat"><div class="num">{prio_count}</div><div class="lbl">Priority Corridor</div></div>
-    <div class="stat"><div class="num">{active_count}</div><div class="lbl">Active Clocks</div></div>
-    <div class="stat"><div class="num">{digested_count}</div><div class="lbl">Page-Cited Digests</div></div>
+    <div class="stat"><div class="num">{total}</div><div class="lbl">Takip Edilen Dosya</div></div>
+    <div class="stat"><div class="num">{prio_count}</div><div class="lbl">Öncelikli Koridor</div></div>
+    <div class="stat"><div class="num">{active_count}</div><div class="lbl">Aktif Yasal Süre</div></div>
+    <div class="stat"><div class="num">{digested_count}</div><div class="lbl">Sayfa Kaynaklı Ön Özet</div></div>
   </section>
 
   <section class="controls">
-    <input id="q" type="search" placeholder="Search district, project, owner, sector, filing ID…" />
-    <button class="pill active" data-filter="all">All</button>
-    <button class="pill" data-filter="prio">Priority Corridor</button>
-    <button class="pill" data-filter="active">Active Clocks</button>
-    <button class="pill" data-filter="digest">With Digest</button>
-    <button class="pill" data-filter="ek1">Ek-1 Only</button>
+    <input id="q" type="search" placeholder="İlçe, proje adı, şirket, sektör veya dosya no ara…" />
+    <button class="pill active" data-filter="all">Tümü</button>
+    <button class="pill" data-filter="prio">Öncelikli Koridor</button>
+    <button class="pill" data-filter="active">Aktif Süreler</button>
+    <button class="pill" data-filter="digest">Ön Özetli</button>
+    <button class="pill" data-filter="ek1">Yalnızca Ek-1</button>
     {prov_buttons}
   </section>
 
-  <div id="count" class="sub" style="margin-bottom:10px;">Showing {total} filings</div>
+  <div id="count" class="sub" style="margin-bottom:10px;">Toplam {total} dosya gösteriliyor</div>
   <main class="cards" id="cards">
     {''.join(cards_html)}
   </main>
 
   <div class="notice">
-    <strong>Informational aid only:</strong> All entries are fetched verbatim from Turkey's public Ministry of Environment e-ÇED portal. Under İYUK Madde 20/A, annulment lawsuits against ÇED decisions carry a 30-day filing clock that is <em>not</em> paused by İYUK 11 administrative applications. Always verify dates and legal standing with qualified counsel.
+    <strong>Yalnızca bilgilendirme amaçlıdır:</strong> Tüm kayıtlar T.C. Çevre, Şehircilik ve İklim Değişikliği Bakanlığı'nın kamuya açık e-ÇED duyuru portalından alınır. 2577 sayılı İYUK Madde 20/A uyarınca ÇED kararlarına karşı iptal davası açma süresi <strong>30 gündür</strong> ve <em>İYUK Madde 11 başvuruları bu süreyi durdurmaz</em>. Kesin tarih ve hukuki süreçler için mutlaka yetkili hukukçulara danışın.
   </div>
 </div>
 <script>
@@ -502,7 +602,7 @@ def build_site(
       c.style.display = ok ? '' : 'none';
       if (ok) shown++;
     }}
-    countEl.textContent = `Showing ${{shown}} of ${{cards.length}} filings`;
+    countEl.textContent = `${{cards.length}} dosyadan ${{shown}} tanesi gösteriliyor`;
   }}
 
   pills.forEach(p => p.addEventListener('click', () => {{

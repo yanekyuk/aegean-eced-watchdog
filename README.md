@@ -6,7 +6,7 @@ Lightweight, zero-dependency, open-source watcher and page-cited PDF pre-digest 
 
 - **Pure HTTP/1.1 JSF/PrimeFaces poller:** No Playwright or headless browser required. Uses `httpx` with `javax.faces.ViewState` rotation, incremental caching, and strict TLS verification via Sectigo's official AIA intermediate CA (`certs/ssl2buy-emea-ov.pem`).
 - **Deterministic statutory clocks:** Automatically tracks 10-day *askı*/HKT review windows and the **30-day İYUK Madde 20/A** urgent annulment lawsuit deadline (where İYUK Madde 11 does not pause the clock).
-- **Page-cited PDF pre-digests:** Uses `pymupdf` to audit baseline methodology, water/discharge, protected zones, olive groves (*3573*), flora/fauna, and emissions—citing the exact 1-based PDF page (`[s. N]`) for every extracted figure.
+- **Page-cited PDF pre-digests + optional Gemini synthesis:** Uses `pymupdf` to audit baseline methodology, water/discharge, protected zones, olive groves (*3573*), flora/fauna, and emissions—citing the exact 1-based PDF page (`[s. N]`) for every extracted figure. When `GEMINI_API_KEY` is set (environment or gitignored `.env`), runs an optional schema-constrained **`gemini-4-hydrogen`** synthesis pass (overrideable via `GEMINI_MODEL` or `--gemini-model`) over the top ~26 highest-signal pages to generate plain Turkish/English summaries, baseline assessments, red flags, and draft HKT/İYUK 20/A questions with `[s. N]` citations.
 - **Static dashboard + RSS 2.0:** Generates a zero-CDN filterable HTML dashboard (`docs/index.html`), standalone per-filing digest pages (`docs/digests/*.html` + `.md`), and an RSS 2.0 feed (`docs/feed.xml`) ready for GitHub Pages and RSS/Telegram alert bots.
 
 ## Usage

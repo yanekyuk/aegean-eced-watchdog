@@ -18,11 +18,57 @@
 **Statutory Deadlines (informational aid — verify with legal counsel):**
 - **HKT public participation notice (verify date in full text):** `see text` 
 
-## 2. Official Announcement Text
+## 2. AI-Assisted Scientific Synthesis (`gemini-3.8-flash`)
+
+> *Generated from 26 excerpted PDF pages (s.1, s.2, s.3, s.4, s.5, s.9, s.18, s.19, s.34, s.40, s.62, s.63, s.121, s.224, s.227, s.259, s.261, s.262, s.263, s.291, s.303, s.304, s.307, s.592, s.593, s.594). Verify every figure against `[s. N]` in the official PDF.*
+
+**Özet (TR):** TEİAŞ tarafından Çanakkale (Bayramiç, Çan, Yenice), Balıkesir (Balya, Havran, İvrindi), İzmir (Bergama) ve Manisa (Soma) il sınırlarını kapsayan 122,18 km uzunluğunda 400 kV gerilimli Uygar RES TM - Bayramiç Havza TM elektrik iletim hattı ve toplam 76 adet direk (2 nihai, 74 durdurucu) tesisi planlanmaktadır. Projenin toplam yatırım bedeli 1.698.401.872,50 TL olarak hesaplanmıştır. Güzergâh orman, mera, kuru ve sulu tarım alanları ile Bayramiç Barajı (1,3 km) havzası ve heyelan riski bulunan yörelerden geçmektedir. Başvuru dosyasında alternatif güzergâh değerlendirmesi yapılmamış, zeytinlik ve orman izinleri ÇED sonrasına ötelenmiş ve biyolojik etki değerlendirmesi genel beyanlarla sınırlandırılmıştır.
+
+**Summary (EN):** TEİAŞ proposes the construction and operation of a 122.18 km-long, 400 kV high-voltage transmission line with 76 towers connecting Uygar WPP Substation to Bayramiç Basin Substation across Çanakkale, Balıkesir, İzmir, and Manisa provinces. The total estimated project investment is 1,698,401,872.50 TRY. The proposed transmission corridor intersects forest, pasture, agricultural lands, landslide risk zones, and passes within 1.3 km of the Bayramiç Dam reservoir. The application explicitly excludes alternative route assessments, defers statutory forestry and olive grove permits to post-EIA stages, and addresses ecological baseline parameters through generic literature statements without detailed seasonal surveys.
+
+### Key Extracted Figures
+
+- **Total Line Length:** 122,17741 km (`[s. 18]`)
+- **Voltage Level and Conductor:** 400 kV, 3B 1272 MCM (`[s. 18]`)
+- **Total Tower Count:** 76 adet (2 nihai durdurucu, 74 köşe durdurucu) (`[s. 18]`)
+- **Total Investment Cost:** 1.698.401.872,50 TL (`[s. 34]`)
+- **Unit Cost per Kilometer:** 13.901.112,10 TL/km (`[s. 34]`)
+- **Traversed Administrative Jurisdictions:** 4 il, 8 ilçe (Çanakkale: Bayramiç, Çan, Yenice; Balıkesir: Balya, Havran, İvrindi; İzmir: Bergama; Manisa: Soma) (`[s. 18]`)
+- **Construction Personnel:** 200 kişi (`[s. 262]`)
+- **Domestic Water Requirement:** 36,8 m3/gün (184 L/kişi-gün) (`[s. 263]`)
+- **Distance to Bayramiç Dam Lake:** 1,3 km (kuş uçuşu) (`[s. 261]`)
+- **Distance to Koca Çay:** 1 km (kuş uçuşu) (`[s. 261]`)
+
+### Baseline & Methodology Assessment
+
+- **Field survey:** `mixed_or_unclear`
+- **Seasonal sampling:** `promised_post_approval_only`
+- **Cumulative impact:** `superficial_or_boilerplate`
+- **Olive Law / protected areas:** Hat orman, mera ve tarım arazilerinden geçmekte olup 3573 sayılı Zeytincilik Kanunu, 4342 sayılı Mera Kanunu ve 6831 sayılı Orman Kanunu kapsamındaki görüş ve izinlerin ÇED sonrası planlama aşamasında alınacağı taahhüt edilmektedir [s. 224, 259]. Güzergâh Bayramiç Baraj Gölü'ne yaklaşık 1,3 km mesafededir [s. 261].
+- **Assessment:** Raporda saha incelemesinin 31.07.2026 tarihinde tek seferlik 'yer görme' olarak planlandığı belirtilmekte [s. 18], ancak güzergâhtaki flora ve fauna varlığına ilişkin çok mevsimli arazi çalışması verisi sunulmamaktadır. Hat koridorunda endemik ve nesli tehlikedeki türlerin bulunmadığı yönünde toptancı bir beyana yer verilmiş [s. 261], çevresel bileşenlerin takibi ise onay sonrası genel izleme planlarına bırakılmıştır [s. 303, 307].
+
+### Scientific Audit Red Flags
+
+- **[HIGH] Zeytinlik ve Mülkiyet/Orman İzinlerinin ÇED Sonrasına Ertelenmesi** (`s.224`): Projenin 3573 sayılı Zeytincilik Kanunu, 4342 sayılı Mera Kanunu ve 5403 sayılı Toprak Koruma Kanunu kapsamındaki izin ve kurum görüşlerinin ÇED süreci sonrasındaki planlama aşamasında alınacağı belirtilmiş; koridorun zeytinliklerle çakışma boyutu ve olası ağaç kesimleri ÇED aşamasında netleştirilmemiştir.
+- **[HIGH] Güzergâh ve Teknoloji Alternatiflerinin Değerlendirilmemesi** (`s.40`): 122 kilometrelik hat için çevresel, jeolojik ve sosyal riskleri asgariye indirebilecek alternatif koridor analizleri yapılmamış, 'proje yerinin başkaca yer alternatifi bulunmamaktadır' ifadesiyle tek bir hat üzerinden başvuru yapılmıştır.
+- **[MEDIUM] Endemik ve Tehlike Altındaki Türler İçin Yetersiz İnceleme** (`s.261`): Biyolojik çeşitlilik açısından zengin ormanlık ve kırsal alanlardan geçen 122 km'lik hat boyunca bilimsel araştırmaya değer, nesli tehlikede veya endemik türlerin bulunmadığı peşinen iddia edilmiş, mevsimsel saha örneklemelerine dayalı bir ekolojik envanter sunulmamıştır.
+- **[MEDIUM] Heyelan ve Doğal Afet Alanlarıyla Kesişim Riski** (`s.121`): Güzergâhın geçtiği Bergama gibi ilçelerde Bakanlar Kurulu ve Cumhurbaşkanı Kararları ile ilan edilmiş Afete Maruz Bölge (heyelan ve kaya düşmesi) alanları bulunmasına rağmen, direk lokasyonlarının mikrobölgeleme veya kütle hareketleri açısından zemin risk analizleri ayrıntılandırılmamıştır.
+- **[LOW] Yüzeysel Su Kaynakları ve Baraj Havzası Yakınlığı** (`s.261, s.291`): Hat Karapürçek Deresi, Ada Çayı gibi birçok dere yatağını katetmekte ve Bayramiç Baraj Gölü'ne 1,3 km yaklaşmaktadır; inşaat aşamasındaki hafriyat ve montaj kaynaklı sedimantasyon risklerine karşı yalnızca genel mevzuat taahhütleriyle yetinilmiştir.
+
+### Draft Technical Questions (HKT / İYUK 20/A)
+
+- 3573 sayılı Zeytincilik Kanunu uyarınca zeytinlik alanlara 3 km'den daha yakın mesafede toz ve duman çıkaran tesis kurulamayacağı ve zeytinliklerin daraltılamayacağı hükmü karşısında, iletim hattı ve direk ayaklarının isabet ettiği zeytinlik parselleri neden ÇED aşamasında tespit edilmeyip izinler onay sonrasına bırakılmıştır? (`s.224`)
+- 122 km boyunca uzanan 400 kV'luk yüksek gerilim hattı için ÇED Başvuru Dosyası'nda 'başkaca yer alternatifi bulunmamaktadır' denilerek orman tahribatını, heyelan riskli bölgeleri ve tarım arazilerini asgariye indirecek alternatif güzergâh çalışmaları neden yapılmamıştır? (`s.40, s.121, s.259`)
+- Bayramiç Barajı'na 1,3 km ve Koca Çay'a 1 km mesafede yer alan kısımlar ile hat altındaki onlarca dere geçişinde, kule temeli kazıları ve açılacak servis yollarından kaynaklanacak erozyon ve sediment taşınımını önleyecek sahaya özgü mühendislik tedbirleri nelerdir? (`s.261, s.291`)
+- Güzergâhta endemik ve tehdit altındaki türlerin bulunmadığı hükmüne hangi mevsimsel arazi sörveyleri ve bilimsel metodoloji ile varılmıştır; kuş göç yolları ve tel çarpışma risklerine yönelik hangi izleme takvimi öngörülmektedir? (`s.9, s.261, s.307`)
+
+*Limitations:* Sağlanan 26 sayfalık metin kesitinde flora-fauna sistematik tür listeleri, kuş gözlem raporları, kamulaştırma haritaları ve Bölüm IV altındaki kümülatif etki değerlendirmesinin tam metni (s. 282-285) yer almadığından, kümülatif modelleme derinliği ve detaylı ekolojik etki tespitleri doğrudan doğrulanamamıştır.
+
+## Official Announcement Text
 
 > MANİSA ili SOMA,  ilcesinde MANİSA ili SOMA ilçesi sınırları içerisinde TÜRKİYE ELEKTRİK İLETİM  ANONİM ŞİRKETİ GENEL MÜDÜRLÜĞÜ tarafından yapılması planlanan 400 kV UYGAR RES. TM.- BAYRAMİÇ HAVZA TM. ELEKTRİK ENERJİSİ İLETİM HATTI (122,17741 km) projesi ile ilgili Çevresel Etki Değerlendirme süreci başlamış ve Çevresel Etki Değerlendirmesi Başvuru Dosyası halkın görüşüne açılmıştır.Söz konusu projeye ilişkin, halkı proje hakkında bilgilendirmek, görüş ve önerilerini almak amacıyla ÇED Yönetmeliğinin 9. maddesi gereğince 02/12/2026 tarihinde Halkın Katılım Toplantısı düzenlenecektir.ÇED Başvuru Dosyasını İncelemek isteyenler Bakanlık Merkezinde veya MANİSA Çevre ve Şehircilik İl Müdürlüklerinde duyuru tarihinden itibaren raporu inceleyerek, zamanlama takvimi içerisinde proje hakkında Bakanlığa veya Valiliğe görüş bildirebilirler. Halkın Katılımı Toplantısı yeri ve saati ile ilgili ÇED İzin Denetim Genel Müdürlüğü ve MANİSA Çevre, Şehircilik ve İklim Değişikliği İl Müdürlüğünden bilgi alınabilir. İlgililere ve kamuoyuna duyurulur.
 
-## 3. Automated Baseline & Red-Flag Scan
+## Deterministic Baseline & Red-Flag Scan
 
 | Check | Status in Extractable Text |
 |---|---|
@@ -36,7 +82,7 @@
 
 *(Scanned annex maps/appendices without OCR are excluded from text scan; see scanned-page count above.)*
 
-## 4. Page-Cited Extracted Evidence
+## Page-Cited Extracted Evidence
 
 ### Coordinates, Parcel & Footprint (448 pages: s.1, s.2, s.3, s.4, s.5, s.6, s.7, s.8, s.9, s.10, s.11, s.12 (+436 more))
 - **[s. 1]** `122,17741 km` — …LETİM ANONİM ŞİRKETİ GENEL MÜDÜRLÜĞÜ 400 kV UYGAR RES. TM.-BAYRAMİÇ HAVZA TM. ELEKTRİK ENERJİSİ İLETİM HATTI (122,17741 km) ÇANAKKALE İLİ; BAYRAMİÇ, ÇAN, YENİCE BALIKESİR İLİ; BALYA, HAVRAN, İVRİNDİ, İZMİR İLİ; BERGAMA İLE MANİSA İLİ,…
@@ -80,7 +126,7 @@
 - **[s. 34]** `PROJE BEDELİ` — …camaların tamamı Diğer(varsa) Eğitim, yazılım, donanım, otomasyon, sertifikalandırma vb. idari giderler TOPLAM PROJE BEDELİ 1.698.401.872,497661 ₺
 - **[s. 36]** `kapasite` — …. Maddesi uyarınca TEİAŞ her sene iletim sistemi için takip eden beş ve on yıllık bağlanabilir bölgesel üretim tesisi kapasitelerini açıklamaktadır. İletim şebekesinin arz talep dengeleri, şebeke altyapısı ve şebeke gelişimi dikkate alınarak bö…
 
-## 5. Document Navigation Map (Detected Headings)
+## Document Navigation Map (Detected Headings)
 
 - **[s. 3]** BÖLÜM III: PROJENİN İNŞAAT VE İŞLETME AŞAMASINDA ÇEVRESEL ETKİLERİ VE ALINACAK
 - **[s. 13]** PROJENİN TEKNİK OLMAYAN ÖZETİ:
@@ -98,7 +144,7 @@
 - **[s. 592]** ÇEVRESEL VE SOSYAL YÖNETİM PLANI
 - **[s. 593]** ÇEVRESEL VE SOSYAL
 
-## 6. Scientist Audit Notes (1–2h Async Review Template)
+## Scientist Audit Notes (1–2h Async Review Template)
 
 - **Baseline & sampling gaps (`[s. N]`):** 
 - **Ecological / hydrological contradictions:** 

@@ -18,11 +18,57 @@
 **Statutory Deadlines (informational aid — verify with legal counsel):**
 - **10-day public review/comment window (askı süresi):** `2026-11-22` (`2 days remaining`)
 
-## 2. Official Announcement Text
+## 2. AI-Assisted Scientific Synthesis (`gemini-3.8-flash`)
+
+> *Generated from 21 excerpted PDF pages (s.1, s.2, s.3, s.4, s.5, s.6, s.7, s.8, s.9, s.10, s.11, s.12, s.13, s.26, s.27, s.61, s.73, s.74, s.80, s.85, s.86). Verify every figure against `[s. N]` in the official PDF.*
+
+**Özet (TR):** Manisa ili Yunusemre ilçesi Muradiye Organize Sanayi Bölgesi (163 ada, 1 parsel) bünyesindeki 5.818 m²'lik alanda, Paşaoğlu Metal A.Ş. tarafından tehlikeli ve tehlikesiz atıkların fiziksel geri kazanımı/ön işlemi, atık elektrikli ve elektronik eşya (AEEE) geri kazanımı ile tehlikesiz atık toplama-ayırma kapasite artışı planlanmaktadır. Proje kapsamında yıllık 500.000 ton tehlikesiz atık toplama-ayırma, 240.480 ton yağlı talaş/metal tozu, 6.000 ton kablo ve 2.640 ton AEEE dahil olmak üzere yüz binlerce ton endüstriyel atığın işlenmesi öngörülmektedir. Tesiste yağ giderme işlemlerinde su bazlı yağ çözücüler, solvent ve kostik gibi kimyasalların kullanılacağı, proseste su tüketilmeyeceği ve kentsel şebeke yerine taşıma suyu kullanılacağı belirtilmektedir. Faaliyetin Gediz Havzası yeraltı suyu beslenim alanında yer alması, ağır solvent/kimyasal ve tehlikeli atık yönetimi gerektirmesine rağmen OSB gerekçesiyle flora-fauna çalışmalarının tamamen dışlanması başlıca çevresel risk unsurlarını oluşturmaktadır.
+
+**Summary (EN):** In Muradiye Organized Industrial Zone (Yunusemre, Manisa; block 163, parcel 1), Paşaoğlu Metal Ltd. plans a significant capacity expansion for physical recycling/pre-treatment of hazardous and non-hazardous wastes, WEEE processing, and non-hazardous waste sorting over a 5,818 m² parcel. The project proposes sorting 500,000 tons/year of non-hazardous waste and processing 240,480 tons/year of oily swarf/metal dust, 6,000 tons/year of cable, and 2,640 tons/year of WEEE, alongside various contaminated packaging. While the file claims zero industrial process water use by employing industrial solvents, degreasers, and caustic solutions for degreasing, all domestic water is planned to be supplied via tanker hauling. Primary environmental stakes involve hazardous chemical/solvent management and potential runoff risks to regional aquifers in the Gediz Basin, coupled with the complete absence of baseline ecological surveys due to the site's industrial zone status.
+
+### Key Extracted Figures
+
+- **Proje Bedeli:** 705.000 TL (`[s. 2]`)
+- **Toplam Arsa Alanı ve Kapalı Alan:** 5.818 m2 toplam yüzölçümü, 993 m2 kapalı alan (`[s. 73]`)
+- **Tehlikesiz Atık Toplama Ayırma Kapasitesi:** 500.000 ton/yıl (`[s. 2]`)
+- **Yağlı Talaş, Metal ve Metal Tozu Geri Kazanım Kapasitesi:** 240.480 ton/yıl (`[s. 2]`)
+- **AEEE İşleme Kapasitesi:** 2.640 ton/yıl (`[s. 2]`)
+- **Personel Sayısı ve Çalışma Takvimi:** Planlanan 27 personel, 300 gün/yıl (`[s. 61]`)
+- **Toplam Su İhtiyacı ve Temin Yöntemi:** 5,63 m3/gün (1.539 m3/yıl personel + 45 m3/yıl genel temizlik), taşıma suyu (`[s. 61]`)
+- **En Yakın Yerleşim Birimi:** Güzelyurt Mahallesi, 1,66 km (`[s. 61]`)
+- **En Yakın Korunan Alan:** Spil Dağı Milli Parkı, 7,8 km (`[s. 73]`)
+- **Muradiye OSB Parsel Durumu:** 304 Hektar alanda 220 parsel (117 faal, 65 boş, 7 inşaat, 6 kapalı) (`[s. 74]`)
+
+### Baseline & Methodology Assessment
+
+- **Field survey:** `not_found`
+- **Seasonal sampling:** `not_found`
+- **Cumulative impact:** `superficial_or_boilerplate`
+- **Olive Law / protected areas:** Proje sahasının 3573 sayılı Zeytincilik Kanunu, 6831 sayılı Orman Kanunu, 2873 sayılı Milli Parklar Kanunu ve sulak alanlar kapsamında korunan alanlar içerisinde yer almadığı beyan edilmiştir [s. 85-86]. Sahaya 2 km mesafede tescilli korunan alan bulunmadığı, en yakın korunan alanın 7,8 km uzaklıktaki Spil Dağı Milli Parkı olduğu ifade edilmektedir [s. 73].
+- **Assessment:** Proje tanıtım dosyasında, tesisin Muradiye Organize Sanayi Bölgesi sınırları içerisinde bulunması ve 2 km'lik etki alanının tamamen sanayi alanı niteliğinde olması gerekçe gösterilerek saha veya literatüre dayalı hiçbir flora-fauna çalışması yapılmadığı açıkça ifade edilmiştir [s. 85]. Gediz Havzası ve Yunusemre grabeni akifer yapısına dair genel literatür bilgileri aktarılmış, ancak sahadan toplanmış herhangi bir mevsimsel yeraltı suyu veya zemin kirliliği baz örneklemesi sunulmamıştır [s. 80]. Kümülatif değerlendirme ise OSB bünyesindeki parsel sayıları ile sınırlı tutulmuştur [s. 74].
+
+### Scientific Audit Red Flags
+
+- **[HIGH] Kapak Sayfası ve Rapor Metni Arasındaki Ciddi Kapasite Çelişkisi** (`s.1, s.2`): Proje tanıtım dosyasının kapak sayfasında (s. 1) toplama ayırma kapasitesi 100.000 ton/yıl, yağlı talaş/metal tozu 120.000 ton/yıl, AEEE işleme 1.440 ton/yıl, filtre 1.200 ton/yıl ve yağ filtresi 99 ton/yıl olarak sunulmuşken; raporun künye ve başlık sayfalarında (s. 2) ve resmi duyuruda toplama ayırma 500.000 ton/yıl, yağlı talaş 240.480 ton/yıl, AEEE 2.640 ton/yıl ve yağ filtresi 1.440 ton/yıl olarak belirtilmiştir. Kapasiteler arasında 2 ila 14 katı aşan bu tutarsızlık, etki hesaplarının hangi baz kapasite üzerinden yapıldığı konusunda belirsizlik yaratmaktadır.
+- **[HIGH] Flora ve Fauna Çalışmasının Tamamen İptal Edilmesi** (`s.85`): ÇED Yönetmeliği Ek-4 proje tanıtım formatına karşın, işletmenin OSB sınırları içinde olması ve 2 km'lik çevresinin sanayi olması gerekçe gösterilerek hiçbir flora ve fauna incelemesi, arazi gözlemi veya literatür taraması yapılmamıştır.
+- **[MEDIUM] Proses Kimyasalları, Çözücüler ve Tehlikeli Atık Su Risklerinin Belirsizliği** (`s.61, s.73`): Raporda proseste su kullanılmayacağı beyan edilirken, yağ alma ünitesinde su bazlı yağ çözücüler, solvent ve kostik kullanılacağı belirtilmektedir. Yıllık yüz binlerce ton yağlı atık, kontamine ambalaj ve filtre temizlenecek olmasına rağmen kullanılacak kimyasalların miktarları, kütle dengesi, oluşacak atık solvent/çözücü bakiye miktarları ve bunların bertaraf akışı somut olarak modellenmemiştir.
+- **[MEDIUM] Su Temininin Kaynağı Belirsiz Taşıma Suyu ile Sağlanması** (`s.61`): Tesisin günlük 5,63 m3 (yıllık 1.584 m3) su tüketiminin tamamen 'taşıma suyundan' karşılanacağı belirtilmiş; OSB altyapısı bulunmasına rağmen suyun hangi ruhsatlı kuyudan veya kaynaktan temin edileceği, nakliyat ve depolama detayları belgelenmemiştir.
+- **[MEDIUM] Proje Yatırım Bedelinin Gerçekçi Olmaması** (`s.2, s.12, s.26`): Yılda toplam 750.000 tonu aşan tehlikeli ve tehlikesiz atık işleyecek, kırma, eleme, radyasyon kontrol cihazları, daldırma havuzları ve söküm bantları kuracak bir tesisin toplam proje bedeli yalnızca 705.000 TL olarak beyan edilmiştir. Bu bedel, taahhüt edilen modern arıtma ve fiziksel sızdırmazlık ekipman maliyetleriyle bağdaşmamaktadır.
+
+### Draft Technical Questions (HKT / İYUK 20/A)
+
+- Proje dosyasının kapak sayfasında (s. 1) 100.000 ton/yıl toplama ayırma ve 120.000 ton/yıl yağlı talaş işleme kapasitesi yer alırken, teknik metin ve duyurularda (s. 2) sırasıyla 500.000 ton/yıl ve 240.480 ton/yıl değerleri verilmiştir; çevresel etki modellemeleri ve kütle dengesi hangi kapasiteye göre hazırlanmıştır? (`s.1, s.2`)
+- Yağ alma ünitesinde ve varil yıkama proseslerinde kullanılacağı belirtilen solvent, kostik ve endüstriyel çözücülerin yıllık tüketim miktarları ile bu işlemlerden kaynaklanacak VOC emisyonları ve tehlikeli atık bakiye çözelti miktarları ne kadardır? (`s.61, s.73`)
+- Muradiye OSB içerisinde yer alan tesisin su ihtiyacının kentsel veya OSB şebekesi yerine taşıma suyu ile sağlanmasının gerekçesi nedir ve bu su hangi lisanslı/tahsisli kaynaktan temin edilecektir? (`s.61`)
+- Tesisin OSB içinde yer alması gerekçesiyle flora-fauna incelemesinin tamamen yapılmamış olması (s. 85), etki alanındaki alıcı ortamın ve Gediz Havzası hassas hidrojeolojik akifer yapısının biyolojik ve ekolojik etki değerlendirmesini nasıl geçersiz kılmaktadır? (`s.80, s.85`)
+
+*Limitations:* Proje tanıtım dosyasının toplam 277 sayfasından 99 sayfası taranmış görsel/resim niteliğinde olup, eklerde yer aldığı belirtilen ÇED muafiyet yazısı (Ek-7.1), Çevre Lisans Belgesi (Ek-7.2), yer görme tutanağı (Ek-6.1) ve makine yerleşim planlarının detaylı tabloları sunulan kısıtlı metin excerpts içinde tam olarak doğrulanamamıştır.
+
+## Official Announcement Text
 
 > MANİSA ili YUNUSEMRE,  ilcesinde MANİSA ili YUNUSEMRE,  ilçesi MURADİYE MAHALLESİ, 28 SOKAK, NO:18, 163 ADA VE 1 PARSEL mevkiindeki PAŞAOĞLU METAL GERİ DÖNÜŞÜM DEMİR ÇELİK İNŞAAT ODUN KÖMÜR HAFRİYAT NAKLİYAT TURİZM İTHALAT İHRACAT SANAYİ VE TİCARET LİMİTED ŞİRKETİ tarafından yapılması planlanan TEHLİKELİ VE TEHLİKESİZ ATIKLARIN FİZİKSEL YÖNTEMİ İLE GERİ KAZANIMI/ ÖN İŞLEMİ (Metal Varil Temizleme: 1.728 ton/yıl, Plastik Varil/IBC Temizleme: 4.014 ton/yıl, Yağlı Kablo: 4.800 ton/yıl, Yağlı Talaş, Metal Ve Metal Tozu: 240.480 ton/yıl, Yağsız Kablo: 6.000 ton/yıl, Filtre:2.400 ton/yıl, Basınçlı Kap: 90 ton/yıl, Yağ Filtresi: 1.440 ton/yıl), ATIK ELEKTRİKLİ VE ELEKTRONİK EŞYA GERİ KAZANIM FAALİYETİ (AEEE İşleme Kapasitesi: 2.640 ton/yıl), VE TEHLİKESİZ ATIK TOPLAMA AYIRMA FAALİYETİ (Toplama Ayırma: 500.000 ton/yıl)   projesi ile ilgili olarak MANİSA Valiliğimize sunulan P.T.D. Dosyası Çevresel Etki Değerlendirmesi Yönetmeliği'nin 16. maddesi doğrultusunda incelenmiş ve projeye ilişkin ÇED Süreci başlamıştır. İlgililere ve kamuoyuna duyurulur.
 
-## 3. Automated Baseline & Red-Flag Scan
+## Deterministic Baseline & Red-Flag Scan
 
 | Check | Status in Extractable Text |
 |---|---|
@@ -36,7 +82,7 @@
 
 *(Scanned annex maps/appendices without OCR are excluded from text scan; see scanned-page count above.)*
 
-## 4. Page-Cited Extracted Evidence
+## Page-Cited Extracted Evidence
 
 ### Coordinates, Parcel & Footprint (23 pages: s.2, s.6, s.9, s.11, s.17, s.18, s.43, s.46, s.51, s.59, s.60, s.61 (+11 more))
 - **[s. 2]** `utm` — …ik, tekstil, cam, ahşap atıkları toplama, ayırma, kesme, parçalama, öğütme ve granül elde etme işlemleri ile solar kurutma işlemleri hariç)i” kapsamında değerlendirilmektedir. PROJENİN ANA NACE KODU 38.32 “Tasnif edilmiş materyalleri…
@@ -80,7 +126,7 @@
 - **[s. 1]** `1.200 ton/yıl` — …l, Yağlı Kablo: 4.000 ton/yıl, Yağlı Talaş, Metal Ve Metal Tozu: 120.000 ton/yıl, Yağsız Kablo: 6.000 ton/yıl, Filtre:1.200 ton/yıl, Basınçlı Kap: 36 ton/yıl, Yağ Filtresi: 99 ton/yıl), ATIK ELEKTRİKLİ VE ELEKTRONİK EŞYA GERİ KAZANIM FAALİYETİ (AEEE…
 - **[s. 1]** `Kapasite` — …lı Kap: 36 ton/yıl, Yağ Filtresi: 99 ton/yıl), ATIK ELEKTRİKLİ VE ELEKTRONİK EŞYA GERİ KAZANIM FAALİYETİ (AEEE İşleme Kapasitesi: 1.440 ton/yıl), VE TEHLİKESİZ ATIK TOPLAMA AYIRMA FAALİYETİ (Toplama Ayırma: 100.000 ton/yıl) MANİSA İLİ,…
 
-## 5. Document Navigation Map (Detected Headings)
+## Document Navigation Map (Detected Headings)
 
 - **[s. 5]** PROJENİN TEKNİK OLMAYAN ÖZETİ
 - **[s. 7]** BÖLÜM I: PROJENİN ÖZELLİKLERİ
@@ -101,7 +147,7 @@
 - **[s. 1]** EKLER.pdf
 - **[s. 146]** Model
 
-## 6. Scientist Audit Notes (1–2h Async Review Template)
+## Scientist Audit Notes (1–2h Async Review Template)
 
 - **Baseline & sampling gaps (`[s. N]`):** 
 - **Ecological / hydrological contradictions:** 

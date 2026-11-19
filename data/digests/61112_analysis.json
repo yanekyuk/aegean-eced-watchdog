@@ -573,5 +573,175 @@
       "mentions_groundwater_or_aquifer": true,
       "mentions_iucn_or_endemic": true
     }
+  },
+  "llm_synthesis": {
+    "model": "gemini-3.8-flash",
+    "generated_at": "2026-11-20T01:29:01",
+    "pages_sent": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      9,
+      18,
+      19,
+      34,
+      40,
+      62,
+      63,
+      121,
+      224,
+      227,
+      259,
+      261,
+      262,
+      263,
+      291,
+      303,
+      304,
+      307,
+      592,
+      593,
+      594
+    ],
+    "result": {
+      "executive_summary_tr": "TEİAŞ tarafından Çanakkale (Bayramiç, Çan, Yenice), Balıkesir (Balya, Havran, İvrindi), İzmir (Bergama) ve Manisa (Soma) il sınırlarını kapsayan 122,18 km uzunluğunda 400 kV gerilimli Uygar RES TM - Bayramiç Havza TM elektrik iletim hattı ve toplam 76 adet direk (2 nihai, 74 durdurucu) tesisi planlanmaktadır. Projenin toplam yatırım bedeli 1.698.401.872,50 TL olarak hesaplanmıştır. Güzergâh orman, mera, kuru ve sulu tarım alanları ile Bayramiç Barajı (1,3 km) havzası ve heyelan riski bulunan yörelerden geçmektedir. Başvuru dosyasında alternatif güzergâh değerlendirmesi yapılmamış, zeytinlik ve orman izinleri ÇED sonrasına ötelenmiş ve biyolojik etki değerlendirmesi genel beyanlarla sınırlandırılmıştır.",
+      "executive_summary_en": "TEİAŞ proposes the construction and operation of a 122.18 km-long, 400 kV high-voltage transmission line with 76 towers connecting Uygar WPP Substation to Bayramiç Basin Substation across Çanakkale, Balıkesir, İzmir, and Manisa provinces. The total estimated project investment is 1,698,401,872.50 TRY. The proposed transmission corridor intersects forest, pasture, agricultural lands, landslide risk zones, and passes within 1.3 km of the Bayramiç Dam reservoir. The application explicitly excludes alternative route assessments, defers statutory forestry and olive grove permits to post-EIA stages, and addresses ecological baseline parameters through generic literature statements without detailed seasonal surveys.",
+      "key_facts": [
+        {
+          "label": "Total Line Length",
+          "value": "122,17741 km",
+          "page": 18
+        },
+        {
+          "label": "Voltage Level and Conductor",
+          "value": "400 kV, 3B 1272 MCM",
+          "page": 18
+        },
+        {
+          "label": "Total Tower Count",
+          "value": "76 adet (2 nihai durdurucu, 74 köşe durdurucu)",
+          "page": 18
+        },
+        {
+          "label": "Total Investment Cost",
+          "value": "1.698.401.872,50 TL",
+          "page": 34
+        },
+        {
+          "label": "Unit Cost per Kilometer",
+          "value": "13.901.112,10 TL/km",
+          "page": 34
+        },
+        {
+          "label": "Traversed Administrative Jurisdictions",
+          "value": "4 il, 8 ilçe (Çanakkale: Bayramiç, Çan, Yenice; Balıkesir: Balya, Havran, İvrindi; İzmir: Bergama; Manisa: Soma)",
+          "page": 18
+        },
+        {
+          "label": "Construction Personnel",
+          "value": "200 kişi",
+          "page": 262
+        },
+        {
+          "label": "Domestic Water Requirement",
+          "value": "36,8 m3/gün (184 L/kişi-gün)",
+          "page": 263
+        },
+        {
+          "label": "Distance to Bayramiç Dam Lake",
+          "value": "1,3 km (kuş uçuşu)",
+          "page": 261
+        },
+        {
+          "label": "Distance to Koca Çay",
+          "value": "1 km (kuş uçuşu)",
+          "page": 261
+        }
+      ],
+      "baseline_assessment": {
+        "field_survey_status": "mixed_or_unclear",
+        "seasonal_sampling_status": "promised_post_approval_only",
+        "cumulative_impact_status": "superficial_or_boilerplate",
+        "olive_and_protected_status": "Hat orman, mera ve tarım arazilerinden geçmekte olup 3573 sayılı Zeytincilik Kanunu, 4342 sayılı Mera Kanunu ve 6831 sayılı Orman Kanunu kapsamındaki görüş ve izinlerin ÇED sonrası planlama aşamasında alınacağı taahhüt edilmektedir [s. 224, 259]. Güzergâh Bayramiç Baraj Gölü'ne yaklaşık 1,3 km mesafededir [s. 261].",
+        "explanation": "Raporda saha incelemesinin 31.07.2026 tarihinde tek seferlik 'yer görme' olarak planlandığı belirtilmekte [s. 18], ancak güzergâhtaki flora ve fauna varlığına ilişkin çok mevsimli arazi çalışması verisi sunulmamaktadır. Hat koridorunda endemik ve nesli tehlikedeki türlerin bulunmadığı yönünde toptancı bir beyana yer verilmiş [s. 261], çevresel bileşenlerin takibi ise onay sonrası genel izleme planlarına bırakılmıştır [s. 303, 307]."
+      },
+      "red_flags": [
+        {
+          "severity": "high",
+          "title": "Zeytinlik ve Mülkiyet/Orman İzinlerinin ÇED Sonrasına Ertelenmesi",
+          "detail": "Projenin 3573 sayılı Zeytincilik Kanunu, 4342 sayılı Mera Kanunu ve 5403 sayılı Toprak Koruma Kanunu kapsamındaki izin ve kurum görüşlerinin ÇED süreci sonrasındaki planlama aşamasında alınacağı belirtilmiş; koridorun zeytinliklerle çakışma boyutu ve olası ağaç kesimleri ÇED aşamasında netleştirilmemiştir.",
+          "pages": [
+            224
+          ]
+        },
+        {
+          "severity": "high",
+          "title": "Güzergâh ve Teknoloji Alternatiflerinin Değerlendirilmemesi",
+          "detail": "122 kilometrelik hat için çevresel, jeolojik ve sosyal riskleri asgariye indirebilecek alternatif koridor analizleri yapılmamış, 'proje yerinin başkaca yer alternatifi bulunmamaktadır' ifadesiyle tek bir hat üzerinden başvuru yapılmıştır.",
+          "pages": [
+            40
+          ]
+        },
+        {
+          "severity": "medium",
+          "title": "Endemik ve Tehlike Altındaki Türler İçin Yetersiz İnceleme",
+          "detail": "Biyolojik çeşitlilik açısından zengin ormanlık ve kırsal alanlardan geçen 122 km'lik hat boyunca bilimsel araştırmaya değer, nesli tehlikede veya endemik türlerin bulunmadığı peşinen iddia edilmiş, mevsimsel saha örneklemelerine dayalı bir ekolojik envanter sunulmamıştır.",
+          "pages": [
+            261
+          ]
+        },
+        {
+          "severity": "medium",
+          "title": "Heyelan ve Doğal Afet Alanlarıyla Kesişim Riski",
+          "detail": "Güzergâhın geçtiği Bergama gibi ilçelerde Bakanlar Kurulu ve Cumhurbaşkanı Kararları ile ilan edilmiş Afete Maruz Bölge (heyelan ve kaya düşmesi) alanları bulunmasına rağmen, direk lokasyonlarının mikrobölgeleme veya kütle hareketleri açısından zemin risk analizleri ayrıntılandırılmamıştır.",
+          "pages": [
+            121
+          ]
+        },
+        {
+          "severity": "low",
+          "title": "Yüzeysel Su Kaynakları ve Baraj Havzası Yakınlığı",
+          "detail": "Hat Karapürçek Deresi, Ada Çayı gibi birçok dere yatağını katetmekte ve Bayramiç Baraj Gölü'ne 1,3 km yaklaşmaktadır; inşaat aşamasındaki hafriyat ve montaj kaynaklı sedimantasyon risklerine karşı yalnızca genel mevzuat taahhütleriyle yetinilmiştir.",
+          "pages": [
+            261,
+            291
+          ]
+        }
+      ],
+      "hkt_and_petition_questions": [
+        {
+          "question_tr": "3573 sayılı Zeytincilik Kanunu uyarınca zeytinlik alanlara 3 km'den daha yakın mesafede toz ve duman çıkaran tesis kurulamayacağı ve zeytinliklerin daraltılamayacağı hükmü karşısında, iletim hattı ve direk ayaklarının isabet ettiği zeytinlik parselleri neden ÇED aşamasında tespit edilmeyip izinler onay sonrasına bırakılmıştır?",
+          "pages": [
+            224
+          ]
+        },
+        {
+          "question_tr": "122 km boyunca uzanan 400 kV'luk yüksek gerilim hattı için ÇED Başvuru Dosyası'nda 'başkaca yer alternatifi bulunmamaktadır' denilerek orman tahribatını, heyelan riskli bölgeleri ve tarım arazilerini asgariye indirecek alternatif güzergâh çalışmaları neden yapılmamıştır?",
+          "pages": [
+            40,
+            121,
+            259
+          ]
+        },
+        {
+          "question_tr": "Bayramiç Barajı'na 1,3 km ve Koca Çay'a 1 km mesafede yer alan kısımlar ile hat altındaki onlarca dere geçişinde, kule temeli kazıları ve açılacak servis yollarından kaynaklanacak erozyon ve sediment taşınımını önleyecek sahaya özgü mühendislik tedbirleri nelerdir?",
+          "pages": [
+            261,
+            291
+          ]
+        },
+        {
+          "question_tr": "Güzergâhta endemik ve tehdit altındaki türlerin bulunmadığı hükmüne hangi mevsimsel arazi sörveyleri ve bilimsel metodoloji ile varılmıştır; kuş göç yolları ve tel çarpışma risklerine yönelik hangi izleme takvimi öngörülmektedir?",
+          "pages": [
+            9,
+            261,
+            307
+          ]
+        }
+      ],
+      "data_limitations": "Sağlanan 26 sayfalık metin kesitinde flora-fauna sistematik tür listeleri, kuş gözlem raporları, kamulaştırma haritaları ve Bölüm IV altındaki kümülatif etki değerlendirmesinin tam metni (s. 282-285) yer almadığından, kümülatif modelleme derinliği ve detaylı ekolojik etki tespitleri doğrudan doğrulanamamıştır."
+    }
   }
 }
