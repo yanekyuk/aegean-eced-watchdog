@@ -1,0 +1,298 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>e-ÇED Ön Özet #27708 — İZMİR / BORNOVA</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <style>
+:root {
+  --bg: #0f1216;
+  --surface: #171c22;
+  --border: #262e38;
+  --text: #e6edf3;
+  --muted: #8b949e;
+  --accent: #58a6ff;
+  --red: #f85149;
+  --amber: #d29922;
+  --green: #3fb950;
+  --badge-bg: #212830;
+}
+@media (prefers-color-scheme: light) {
+  :root {
+    --bg: #f6f8fa;
+    --surface: #ffffff;
+    --border: #d0d7de;
+    --text: #1f2328;
+    --muted: #656d76;
+    --accent: #0969da;
+    --red: #cf222e;
+    --amber: #9a6700;
+    --green: #1a7f37;
+    --badge-bg: #eef2f6;
+  }
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+}
+.wrap { max-width: 1240px; margin: 0 auto; padding: 24px 18px 64px; }
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+header { border-bottom: 1px solid var(--border); padding-bottom: 16px; margin-bottom: 20px; }
+h1 { margin: 0 0 6px; font-size: 1.55rem; }
+h2 { margin: 26px 0 10px; font-size: 1.2rem; }
+h3 { margin: 16px 0 8px; font-size: 1rem; }
+.sub { color: var(--muted); font-size: 0.92rem; margin: 0; }
+.meta-bar { display: flex; flex-wrap: wrap; gap: 14px; margin-top: 12px; font-size: 0.85rem; color: var(--muted); }
+.stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 10px; margin: 16px 0 18px; }
+.stat { background: var(--surface); border: 1px solid var(--border); border-radius: 8px; padding: 12px 14px; }
+.stat .num { font-size: 1.45rem; font-weight: 700; }
+.stat .lbl { font-size: 0.78rem; color: var(--muted); }
+.map-box {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 18px;
+}
+#map { width: 100%; height: 420px; background: var(--badge-bg); }
+#digest-map { width: 100%; height: 320px; background: var(--badge-bg); }
+.map-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  padding: 9px 14px;
+  font-size: 0.8rem;
+  color: var(--muted);
+  border-top: 1px solid var(--border);
+}
+.dot { display: inline-block; width: 10px; height: 10px; border-radius: 50%; margin-right: 5px; vertical-align: middle; }
+.controls { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; margin-bottom: 16px; }
+input[type="search"], select.filter-select {
+  padding: 8px 12px;
+  border-radius: 6px;
+  border: 1px solid var(--border);
+  background: var(--surface);
+  color: var(--text);
+  font-size: 0.9rem;
+}
+input[type="search"] { flex: 1 1 240px; }
+select.filter-select { min-width: 170px; }
+button.pill {
+  padding: 7px 12px;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: var(--surface);
+  color: var(--text);
+  cursor: pointer;
+  font-size: 0.82rem;
+}
+button.pill.active { background: var(--accent); border-color: var(--accent); color: #fff; font-weight: 600; }
+.cards { display: flex; flex-direction: column; gap: 10px; }
+.card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 15px 17px;
+}
+.card.ek1 { border-left: 4px solid var(--accent); }
+.row-top { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px; align-items: baseline; }
+.title { font-weight: 600; font-size: 0.98rem; }
+.badges { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 7px; }
+.badge {
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  background: var(--badge-bg);
+  border: 1px solid var(--border);
+}
+.badge.urgent { border-color: var(--red); color: var(--red); font-weight: 600; }
+.badge.warn { border-color: var(--amber); color: var(--amber); font-weight: 600; }
+.badge.ok { border-color: var(--green); color: var(--green); }
+.badge.muted { color: var(--muted); }
+.detail { font-size: 0.87rem; color: var(--muted); margin: 8px 0; }
+.actions { display: flex; flex-wrap: wrap; gap: 12px; font-size: 0.84rem; margin-top: 8px; }
+.notice {
+  margin-top: 28px;
+  padding: 14px 16px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  font-size: 0.84rem;
+  color: var(--muted);
+}
+table.kv { width: 100%; border-collapse: collapse; margin: 12px 0; font-size: 0.9rem; }
+table.kv th, table.kv td { border: 1px solid var(--border); padding: 8px 11px; text-align: left; vertical-align: top; }
+table.kv th { width: 240px; background: var(--badge-bg); }
+code { background: var(--badge-bg); padding: 1px 5px; border-radius: 4px; font-size: 0.85em; }
+blockquote { margin: 10px 0; padding: 11px 15px; border-left: 3px solid var(--accent); background: var(--surface); font-size: 0.9rem; }
+.hit { margin: 7px 0; font-size: 0.88rem; }
+.pno { font-weight: 700; color: var(--accent); }
+.leaflet-popup-content { color: #1f2328; font-size: 0.85rem; line-height: 1.45; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div style="font-size:0.85rem;margin-bottom:8px;"><a href="../index.html">← Türkiye e-ÇED İzleme listesine dön</a> · <a href="../rehber.html">Kullanım ve İnceleme Rehberi</a> · <a href="27708.md">Ham Markdown (.md)</a></div>
+    <h1>e-ÇED Ön Özet #27708 — İZMİR / BORNOVA</h1>
+    <p class="sub">Tehlikeli  ve Tehlikesiz Atıkların Geri Kazanımı</p>
+    <div class="badges" style="margin-top:10px;">
+      <span class="badge">HKT</span>
+      <span class="badge">Ek-1</span>
+      <span class="badge warn">HKT Toplantısı · 13 gün kaldı (2026-12-03)</span>
+    </div>
+  </header>
+
+  <table class="kv">
+    <tr><th>Proje Sahibi</th><td>ÇEVKİM ATIK YÖNETİMİ SANAYİ TİCARET VE LİMİTED ŞİRKETİ</td></tr>
+    <tr><th>Hazırlayan Kuruluş</th><td>ENVON ÇEVRE DANIŞMANLIK MÜH. İNŞ. TAAH. SAN. TİC. LTD. ŞTİ.</td></tr>
+    <tr><th>Sektör / Alt Sektör</th><td>Atık / Atık Bertaraf /Geri Kazanım/ Depolama Tesisi Projeleri</td></tr>
+    <tr><th>Duyuru Tarihi</th><td><code>16.11.2026</code> (belge yükleme tarihi: <code>20/10/2026 09:07:01</code>)</td></tr>
+    <tr><th>PDF Kapsamı</th><td>43.03 MB · 243 sayfa (207 metin sayfası / 36 taranmış veya görüntü sayfası) · SHA-256 <code>7cff4c49da636c0c…</code></td></tr>
+    <tr><th>Resmi Bağlantılar</th><td><a href="http://eced.csb.gov.tr/jsp/ek1/27708" target="_blank" rel="noopener">e-ÇED Portal Kaydı</a> · <a href="http://eced.csb.gov.tr/jsp/dosya/dosyaGoster.htm?tempAd=sign3751441153432936660.pdf&amp;orjinalAd=e-imza.pdf&amp;yuklemeTarihi=2026-11-13" target="_blank" rel="noopener">Resmi PDF Dosyası</a> · <a href="https://www.openstreetmap.org/?mlat=38.40396&amp;mlon=27.23442#map=12/38.40396/27.23442" target="_blank" rel="noopener">OpenStreetMap</a> · <a href="https://www.google.com/maps/search/?api=1&amp;query=38.40396,27.23442" target="_blank" rel="noopener">Google Haritalar</a></td></tr>
+  </table>
+
+  <h2>Konum Haritası</h2>
+  <div class="map-box">
+    <div id="digest-map"></div>
+    <div class="map-legend"><span>PDF metninden çıkarılan kesin proje koordinatları (8 nokta, datum: UTM-Z35/ED50, sayfa: s.173).</span></div>
+  </div>
+
+  
+  <h2>Yapay Zeka Destekli Bilimsel Ön Değerlendirme <span class="badge">gemini-4-hydrogen</span></h2>
+  <p class="sub">Bu değerlendirme, resmi PDF dosyasından seçilen 24 sayfa (s.1, s.2, s.3, s.5, s.6, s.7, s.8, s.9, s.10, s.11, s.12, s.13, s.14, s.15, s.17, s.28, s.30, s.31, s.125, s.126, s.128, s.133, s.134, s.135) esas alınarak hazırlanmıştır. Tüm sayısal verilerin ve tespitlerin resmi PDF belgesindeki ilgili <code>[s. N]</code> sayfalarından doğrulanması gerekir.</p>
+  <section class="card ek1">
+    <p><strong>Özet:</strong> ÇEVKİM Atık Yönetimi Sanayi Ticaret ve Limited Şirketi tarafından İzmir İli, Bornova İlçesi, Işıklar Mahallesi, 11085 Ada 11 Parselde (Egemenlik Mah. 6106 Sok. No:113) yer alan 772,26 m² büyüklüğündeki mevcut kiralık yapıda tehlikeli ve tehlikesiz atıkların geri kazanımı projesi planlanmaktadır [s. 1, 11]. ÇED Yönetmeliği Ek-1 Madde 11(a) ve 11(b) kapsamında sunulan ve yatırım bedeli 9.522.000 TL olarak beyan edilen projede, 10 personel ve günde 24 saat esasıyla 29 farklı tehlikeli ve tehlikesiz atık ön işlem ve geri kazanım faaliyetinin yürütülmesi öngörülmektedir [s. 2, 12, 13]. S.S. Geri Kazanımcılar Metal Toplu İşyeri Yapı Kooperatifi içinde yer alan parsel, 1/1.000 ölçekli imar planında Küçük Sanayi Alanı iken 1/100.000 ölçekli Çevre Düzeni Planında Kırsal Yerleşme Alanı olarak tanımlanmaktadır [s. 11, 12]. Başvuru dosyası aşamasında tesisin proses atıksu karakterizasyonu, atıksu arıtma tesisi kapasitesi, İZSU deşarj onayı ve saha özelinde flora-fauna ile hidrojeoloji verileri henüz ortaya konulmamış olup bunların ileride hazırlanacak ÇED Raporuna bırakıldığı görülmektedir [s. 12, 126].</p>
+    <details style="margin-top:8px;font-size:0.86rem;color:var(--muted);"><summary style="cursor:pointer;">İngilizce özet (English summary)</summary><p style="margin:6px 0 0;">CEVKIM Atik Yonetimi Sanayi Ticaret ve Limited Sirketi proposes a hazardous and non-hazardous waste recovery facility inside an existing 772.26 m2 leased building on Parcel 11085/11 in Isiklar/Egemenlik Neighborhood, Bornova District, Izmir [s. 1, 11]. Filed under Annex-1 Article 11(a)-(b) of the Turkish EIA Regulation with an investment cost of 9,522,000 TRY, the facility plans 29 distinct waste pre-treatment and recovery operations—including solvent recovery, PCB decontamination, waste smelting, CRT/fluorescent lamp processing, and IBC/drum washing—operating 24 hours a day with 10 staff [s. 2, 12, 13]. While zoned as a Small Industry Area in the 1/1,000 local plan, the site falls within a Rural Settlement Area in the 1/100,000 Regional Environmental Plan, raising plan-hierarchy compatibility questions [s. 12, 15, 135]. At this EIA Application File stage, process wastewater characterization, treatment plant capacity, IZSU sewer connection approval, and site-specific ecological and hydrogeological baseline surveys are omitted and deferred to the future EIA Report [s. 12, 126].</p></details>
+    <div class="badges" style="margin-top:10px;">
+      <span class="badge">Saha çalışması: Yalnızca literatür taramasına dayalı</span>
+      <span class="badge">Mevsimsel örnekleme: İncelenen sayfalarda tespit edilemedi</span>
+      <span class="badge">Kümülatif etki: Eksik veya tespit edilemedi</span>
+    </div>
+    <p class="detail" style="margin-top:10px;"><strong>Zeytinlik ve Korunan Alanlar:</strong> Raporda yapılan ilk arazi çalışmalarında proje alanında kültür varlığı ve arkeolojik sit alanı bulunmadığı belirtilmektedir [s. 135]. Meteoroloji bölümünde İzmir il genelinde zeytin, üzüm ve incir yetiştiriciliğinden söz edilmekle birlikte [s. 134], parsel çevresi için 3573 sayılı Kanun kapsamında 3 km zeytinlik mesafe tespiti ile tarım, orman veya korunan alan kurum görüşleri incelenen sayfalarda yer almamaktadır [s. 11, 12, 135].<br/>İncelenen ÇED Başvuru Dosyası sayfalarında flora-fauna bölümü yalnızca 2024 İzmir İli Çevre Durum Raporu kaynaklı il geneli literatür bilgilerini içermekte olup proje sahasına özgü arazi gözlemleri ile tür listelerinin ileride hazırlanacak ÇED Raporuna bırakıldığı açıkça ifade edilmektedir [s. 125, 126]. Jeoloji ve hidrojeoloji bölümleri de İzmir ili geneli ve Gediz Havzası düzeyinde genel anlatımlardan oluşmakta, proje parseline özgü mevsimsel örnekleme veya yeraltı suyu başlangıç analizi sunulmamaktadır [s. 128, 133, 134]. Kümülatif çevresel etki değerlendirmesi bölümü ise içindekiler dizininde belirtilmesine karşın sağlanan sayfa aralığı dışında kaldığından incelenememiştir [s. 3].</p>
+  </section>
+  <h3>Öne Çıkan Sayısal Bulgular</h3><table class="kv"><tr><th>Proje Alanı (Tapu Alanı)</th><td>772,26 m² (Işıklar Mah., 11085 Ada 11 Parsel, mevcut kurulu bina) <span class="pno">[s. 11]</span></td></tr>
+<tr><th>Proje Bedeli</th><td>9.522.000 TL <span class="pno">[s. 2]</span></td></tr>
+<tr><th>Personel Sayısı</th><td>10 kişi <span class="pno">[s. 12]</span></td></tr>
+<tr><th>Çalışma Periyodu</th><td>3 vardiya, 24 saat/gün, 25 gün/ay, 300 gün/yıl, 12 ay/yıl <span class="pno">[s. 12]</span></td></tr>
+<tr><th>Planlanan Faaliyet Kalemleri</th><td>29 farklı tehlikeli ve tehlikesiz atık ön işlem ve geri kazanım faaliyeti <span class="pno">[s. 13]</span></td></tr>
+<tr><th>Önceki ÇED Muafiyet Görüşü</th><td>08.05.2026 tarih ve E-15619886 sayılı ÇED Muafiyet görüşü (toplama-ayırma) <span class="pno">[s. 11]</span></td></tr>
+<tr><th>Yerinde İnceleme Tarihi</th><td>07.09.2026 (27.08.2026 tarihli dilekçe, 16886900 kayıt no) <span class="pno">[s. 13]</span></td></tr>
+<tr><th>1/1.000 Ölçekli İmar Planı</th><td>11.08.2006 tarih ve 5605 sayılı plan (Küçük Sanayi Alanı) <span class="pno">[s. 12]</span></td></tr>
+<tr><th>Başvuru Dosyası Sunum Tarihi</th><td>13.11.2026 <span class="pno">[s. 2]</span></td></tr>
+<tr><th>Geçici Depolama Süre Sınırları</th><td>Tehlikeli atıklar için en fazla 6 ay, tehlikesiz atıklar için en fazla 1 yıl <span class="pno">[s. 30]</span></td></tr></table>
+  <h3>Danıştay Ölçütlerine Göre Bilimsel ve Hukuki Bulgular</h3><section class="card"><div class="hit"><span class="badge warn">ORTA</span> <span class="badge">5403 / Orman / Korunan Alan</span> <strong>Üst Ölçekli Çevre Düzeni Planı İle Alt Ölçekli İmar Planı Arasında Arazi Kullanım Çelişkisi</strong> <span class="pno">[s. 12, s. 13, s. 15, s. 135]</span> — Proje alanı İzmir-Manisa Planlama Bölgesi 1/100.000 ölçekli Çevre Düzeni Planında Kırsal Yerleşme Alanı olarak görünmesine karşın 11.08.2006 tarihli 1/1.000 ölçekli imar planında Küçük Sanayi Alanı içinde kalmaktadır [s. 12, 15, 135]. Ek-1 kapsamındaki tehlikeli atık geri kazanımı, PCB arındırma, solvent geri kazanımı ve ergitme gibi yüksek riskli faaliyetlerin Kırsal Yerleşme Alanı lekesi ve Küçük Sanayi Alanı fonksiyonu ile plan hiyerarşisi bakımından uyumu henüz ortaya konulmamıştır [s. 12, 13].</div>
+<div class="hit"><span class="badge warn">ORTA</span> <span class="badge">Ölçüm / İç Tutarlılık</span> <strong>772,26 m² Alanda 29 Farklı Tehlikeli ve Tehlikesiz Atık Prosesinin Fiziksel Sığma ve Güvenlik Sorunu</strong> <span class="pno">[s. 11, s. 12, s. 13, s. 28, s. 30, s. 31]</span> — Toplam 772,26 m² tapu alanındaki mevcut yapıda 10 personelle 24 saat esaslı 29 ayrı prosesin yürütülmesi planlanmaktadır [s. 11, 12, 13]. Mevzuat gereği ayrı kapalı atık kabul, geçici depolama, ayrıştırılmış stok sahaları, itfaiye geçiş yolları, atıksu arıtma tesisi, yağ tutuculu drenaj, kantar, yıkama üniteleri, ergitme, CRT ve flüoresan kırma makinelerinin bu ölçekteki tek bir parselde reaksiyon ve yangın riski oluşturmadan nasıl konumlandırılacağı mahallinde teknik inceleme gerektirmektedir [s. 12, 13, 28, 30, 31].</div>
+<div class="hit"><span class="badge warn">ORTA</span> <span class="badge">Proje Parçalama / Eşik Değer</span> <strong>Aynı Parselde ÇED Muafiyeti Alınmasının Ardından Kısa Sürede Kapsamlı Ek-1 Tesisine Dönüşüm</strong> <span class="pno">[s. 11, s. 13, s. 15]</span> — Tesis adına 08.05.2026 tarihinde yalnızca tehlikesiz atık toplama-ayırma faaliyeti için ÇED Muafiyet görüşü alınmış, kimyasal işlem veya ergitme yapılmayacağı taahhüt edilmişken, yaklaşık üç buçuk ay sonra 27.08.2026 tarihli dilekçe ile aynı 772,26 m² parselde kimyasal geri kazanım, ergitme ve PCB arındırmayı içeren Ek-1 başvurusu yapılmıştır [s. 11, 13, 15]. Önceki muafiyet kapsamı ile yeni 29 prosesin aynı kooperatif parseli içindeki kümülatif alan ve altyapı yükü birlikte değerlendirilmelidir [s. 11, 13].</div>
+<div class="hit"><span class="badge warn">ORTA</span> <span class="badge">Su / Hidrojeoloji</span> <strong>Proses Atıksu Karakterizasyonu, Arıtma Kapasitesi ve İZSU Deşarj Onayı Eksikliği</strong> <span class="pno">[s. 12, s. 13, s. 128]</span> — IBC ve varil temizleme, kontamine metal/ambalaj yıkama, PCB arındırma, atık kimyasal ve solvent geri kazanımı gibi faaliyetlerden kaynaklanacak tehlikeli nitelikli proses atıksularının arıtıldıktan sonra İZSU kanalizasyon sistemine verilmesi planlanmaktadır [s. 12, 13]. Ancak atıksu debisi, kirletici parametreleri, arıtma teknolojisi, İZSU Kanal Deşarj İzin kriterlerine uygunluğu ve proje sahası özelinde yeraltı suyu seviyesi ile akifer hassasiyeti sunulmayıp ilerideki ÇED Raporu ve taahhütlere bırakılmıştır [s. 12, 128].</div>
+<div class="hit"><span class="badge warn">ORTA</span> <span class="badge">Flora / Fauna &amp; Mevsimsellik</span> <strong>Saha Özelinde Flora-Fauna Gözlemi Yerine İl Geneli Literatür Özetine Dayanılması</strong> <span class="pno">[s. 125, s. 126]</span> — Biyolojik çeşitlilik bölümü İzmir ilinin genel Akdeniz bitki örtüsü ve Bozdağlar ya da Gediz Deltası gibi uzak ekosistemlerine ilişkin 2024 Çevre Durum Raporu özetlerinden ibarettir [s. 125, 126]. Proje sahası ve yakın etki alanına yönelik arazi gözlemleri ile tür listelerinin ileride hazırlanacak ÇED Raporunda sunulacağı belirtilmekte olup halihazırda saha özelinde başlangıç biyolojik verisi bulunmamaktadır [s. 126].</div>
+<div class="hit"><span class="badge muted">DÜŞÜK</span> <span class="badge">Ölçüm / İç Tutarlılık</span> <strong>Mevzuat Fiziksel Şartlar Tablolarında Boş Bırakılan Kapasite Raporu Bilgileri</strong> <span class="pno">[s. 11, s. 28, s. 30]</span> — Tehlikesiz ve tehlikeli atık ön işlem ile geri kazanım lisanslarına ilişkin fiziksel şartlar tablolarında işletmede bulunan makine ve ekipmanların yer aldığı Kapasite Raporunun tarih ve numara alanları boş şablon olarak bırakılmıştır [s. 28, 30]. Bu durum kurulu olduğu belirtilen mevcut tesisteki ekipman envanterinin resmi belge ile doğrulanmasını engellemektedir [s. 11, 28, 30].</div></section>
+  <h3>Keşif ve Bilirkişi Heyeti İçin Önerilen Uzmanlık Alanları</h3><section class="card"><div class="badges"><span class="badge">Çevre Mühendisi</span> <span class="badge">Kimya Mühendisi</span> <span class="badge">Hidrojeoloji Mühendisi</span> <span class="badge">Makine Mühendisi</span> <span class="badge">Şehir ve Bölge Plancısı</span> <span class="badge">Biyolog</span></div><p class="detail" style="margin-top:8px;">Danıştay içtihatları uyarınca bilirkişi heyetinin tek sayıda uzmandan oluşması, proje niteliğine uygun tüm disiplinleri içermesi ve plan kararlarıyla ilişkili davalarda Şehir ve Bölge Plancısına yer verilmesi gerekmektedir.</p></section>
+  <h3>HKT Tutanakları ve Bilirkişi İncelemesi İçin Taslak Teknik Sorular</h3><ul><li>Toplam 772,26 m² büyüklüğündeki tek bir kiralık yapı içerisinde, atıkların birbiriyle reaksiyona girmesini önleyecek ayrı kapalı kabul, stok, yıkama, PCB arındırma, solvent geri kazanımı, ergitme, CRT kesme, atıksu arıtma tesisi ve itfaiye araçlarının engellenmeden geçeceği acil müdahale koridorlarının fiziki olarak nasıl sağlanacağı vaziyet planı ve boş bırakılan Kapasite Raporu belgeleriyle açıklanabilir mi? <span class="pno">[s. 11, s. 12, s. 13, s. 28, s. 30]</span></li>
+<li>Proje alanı 1/100.000 ölçekli Çevre Düzeni Planında Kırsal Yerleşme Alanı ve 1/1.000 ölçekli imar planında Küçük Sanayi Alanı olarak görünmesine karşın, Ek-1 kapsamındaki tehlikeli ve kimyasal atık geri kazanım, ergitme ve PCB arındırma tesisinin plan kararlarına uygunluğu konusunda ilgili belediye ve kurum görüşleri alınmış mıdır? <span class="pno">[s. 12, s. 13, s. 15, s. 135]</span></li>
+<li>IBC ve varil yıkama, PCB arındırma ve kimyasal işlemlerden doğacak proses atıksularının miktarı, ağır metal ve organik kirletici yükü ile kurulacak atıksu arıtma tesisinin arıtma verimi ortaya konulmadan İZSU kanalizasyon sistemine deşarj edilmesine yönelik ön izin veya teknik uygunluk görüşü alınmış mıdır? <span class="pno">[s. 12, s. 13, s. 28, s. 30]</span></li>
+<li>08.05.2026 tarihinde yalnızca tehlikesiz atık toplama-ayırma faaliyeti için ÇED Muafiyet görüşü alınan aynı parselde kısa süre sonra 29 farklı tehlikeli atık prosesine geçilmesinin, bulunduğu yapı kooperatifi içindeki komşu işyerleri ve en yakın yerleşim alanları üzerinde hava emisyonu, VOC, koku, yangın ve BEKRA kaza riskleri açısından oluşturacağı kümülatif etki nasıl değerlendirilecektir? <span class="pno">[s. 11, s. 13, s. 14, s. 15]</span></li>
+<li>Bornova ilçesi çevresindeki olası tarım alanları, zeytinlikler (3573 sayılı Kanun kapsamındaki 3 km mesafe kontrolü), yüzeysel drenaj hatları ve alüvyal yeraltı suyu akiferi dikkate alınarak ÇED Raporu aşamasında saha özelinde hidrojeolojik, ekolojik ve başlangıç çevre kalitesi ölçümleri yapılacak mıdır? <span class="pno">[s. 125, s. 126, s. 128, s. 134]</span></li></ul>
+  <p class="sub"><em>İnceleme sınırları:</em> Toplam 243 sayfadan oluşan PDF dosyasının 207 sayfası metin çıkarılabilir, 36 sayfası ise taranmış görüntü niteliğindedir. Bu inceleme yalnızca sağlanan 24 örnek sayfa ([1, 2, 3, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 17, 28, 30, 31, 125, 126, 128, 133, 134, 135]) üzerinden gerçekleştirilmiştir; atık kapasite miktarlarını ve proses detaylarını içeren sayfalar, Bölüm III–VII kapsamındaki emisyon, atıksu ve gürültü hesaplamaları, kümülatif etki bölümü, çevre izleme planı ile vaziyet planı ve imar/muafiyet belgelerini içeren ekler sağlanan alıntılar dışında kaldığından incelenememiştir.</p>
+
+
+  <h2>Resmi Duyuru Metni</h2>
+  <blockquote>İZMİR ili BORNOVA,  ilcesinde İZMİR ili BORNOVA ilçesi sınırları içerisinde ÇEVKİM ATIK YÖNETİMİ SANAYİ TİCARET VE LİMİTED ŞİRKETİ tarafından yapılması planlanan Tehlikeli  ve Tehlikesiz Atıkların Geri Kazanımı projesi ile ilgili Çevresel Etki Değerlendirme süreci başlamış ve Çevresel Etki Değerlendirmesi Başvuru Dosyası halkın görüşüne açılmıştır.Söz konusu projeye ilişkin, halkı proje hakkında bilgilendirmek, görüş ve önerilerini almak amacıyla ÇED Yönetmeliğinin 9. maddesi gereğince 03/12/2026 tarihinde Halkın Katılım Toplantısı düzenlenecektir.ÇED Başvuru Dosyasını İncelemek isteyenler Bakanlık Merkezinde veya İZMİR Çevre ve Şehircilik İl Müdürlüklerinde duyuru tarihinden itibaren raporu inceleyerek, zamanlama takvimi içerisinde proje hakkında Bakanlığa veya Valiliğe görüş bildirebilirler. Halkın Katılımı Toplantısı yeri ve saati ile ilgili ÇED İzin Denetim Genel Müdürlüğü ve İZMİR Çevre, Şehircilik ve İklim Değişikliği İl Müdürlüğünden bilgi alınabilir. İlgililere ve kamuoyuna duyurulur.</blockquote>
+
+  <h2>Otomatik Metin Taraması (Deterministik)</h2>
+  <table class="kv"><tr><th>Saha veya arazi çalışması ifadesi</th><td><span class="badge ok">Metinde yer almaktadır</span></td></tr>
+<tr><th>Literatür taraması ifadesi</th><td><span class="badge urgent">Metinde tespit edilemedi; doğrudan PDF üzerinden kontrol ediniz</span></td></tr>
+<tr><th>Mevsimsel örnekleme ifadesi</th><td><span class="badge ok">Metinde yer almaktadır</span></td></tr>
+<tr><th>Kümülatif etki değerlendirmesi ifadesi</th><td><span class="badge ok">Metinde yer almaktadır</span></td></tr>
+<tr><th>3573 sayılı Zeytincilik Kanunu veya zeytinlik ifadesi</th><td><span class="badge ok">Metinde yer almaktadır</span></td></tr>
+<tr><th>Yeraltı suyu, akifer veya hidrojeoloji ifadesi</th><td><span class="badge ok">Metinde yer almaktadır</span></td></tr>
+<tr><th>Endemik tür, IUCN veya Bern Sözleşmesi ifadesi</th><td><span class="badge ok">Metinde yer almaktadır</span></td></tr></table>
+  <p class="sub">Metin katmanı (OCR) bulunmayan taranmış harita ve kurum görüşü ekleri otomatik metin taramasına dahil edilmemiştir.</p>
+
+  <h2>Sayfa Kaynaklı Çıkarılan Bulgular</h2>
+  <div class="cards"><section class="card"><h3>Koordinatlar, Parsel ve Alan Büyüklüğü <span style="color:var(--muted);font-weight:400;font-size:0.85rem">(45 sayfa: s.1, s.2, s.3, s.11, s.15, s.23, s.49, s.59, s.61, s.63, s.69, s.71, s.72, s.73 (+31 sayfa))</span></h3><div class="hit"><span class="pno">[s. 1]</span> <code>Ada 11 Parsel</code> — …İzmir İli, Bornova İlçesi, Egemenlik Mah. 6106 Sok. No:113 Adresinde, Tapu kaydına göre; Işıklar Mah., 11085 Ada 11 Parselde ENVON ÇEVRE DANIŞMANLIK MÜH. İNŞ. TAAH. SAN. TİC. LTD. ŞTİ. ÇED Başvuru Dosyası…</div>
+<div class="hit"><span class="pno">[s. 2]</span> <code>Ada 11 Parsel</code> — …EVKİİ) İzmir İli, Bornova İlçesi, Egemenlik Mah. 6106 Sok. No:113 Adresinde, Tapu kaydına göre; Işıklar Mah., 11085 Ada 11 Parselde PROJENİN ÇED YÖNETMELİĞİ KAPSAMINDAKİ YERİ (SEKTÖR, ALT SEKTÖR) 29.07.2022 Tarih ve 31907 Sayılı Resmî Gazetede…</div>
+<div class="hit"><span class="pno">[s. 3]</span> <code>Koordinat</code> — …............................................. 13 b) Projenin Yer Ve Teknoloji Alternatifleri, Proje İçin Seçilen Yerin Koordinatları 118 BÖLÜM II: PROJENİN YERİ VE ETKİ ALANININ MEVCUT ÇEVRESEL ÖZELLİKLERİ ........................................…</div>
+<div class="hit"><span class="pno">[s. 11]</span> <code>Ada 11 Parsel</code> — …arafından İzmir İli, Bornova İlçesi, Egemenlik Mah. 6106 Sok. No:113 Adresinde, Tapu kaydına göre; Işıklar Mah., 11085 Ada 11 Parsel de “Tehlikeli ve Tehlikesiz Atıkların Geri Kazanımı” faaliyetinin yapılması planlanmaktadır. Proje alanı; tapu ka…</div>
+<div class="hit"><span class="pno">[s. 11]</span> <code>772,26 m2</code> — …adır (Bkz.Ek-12). Proje kapsamında tesis binası kurulu durumda olup inşaat aşaması olmayacaktır. Planlanan faaliyet 772,26 m2’lik tapu alanında gerçekleştirilecektir. İşletmeye ait vaziyet planı ekte yer almaktadır (Bkz.Ek-4). Tesisin faaliy…</div>
+<div class="hit"><span class="pno">[s. 11]</span> <code>koordinat</code> — …ulanmasına gerek yoktur.” İfadeleri yer almaktadır. İlgili görüş ekte yer almaktadır (Bkz.Ek-13). Proje alanına ait koordinat listesi ekte yer almaktadır (Bkz.Ek-1). PROJENİN TEKNİK OLMAYAN ÖZETİ:</div></section><section class="card"><h3>Su Kullanımı, Hidrojeoloji ve Deşarj <span style="color:var(--muted);font-weight:400;font-size:0.85rem">(50 sayfa: s.12, s.28, s.30, s.31, s.32, s.34, s.35, s.43, s.45, s.51, s.57, s.59, s.64, s.73 (+36 sayfa))</span></h3><div class="hit"><span class="pno">[s. 12]</span> <code>atıksu</code> — …r alan İZSU Kanalizasyon sistemine verilmesi planlanmaktadır. Tesiste proses kaynaklı oluşacak proses atıksularının atıksu önlem tesisinde arıtıldıktan sonra İZSU Kanalizasyon sistemine verilmesi planlanmaktadır. Kurulması planlanan atıksu…</div>
+<div class="hit"><span class="pno">[s. 28]</span> <code>yeraltı suyu</code> — …ı sağlayacak şekilde geçirimsiz beton ve tutuşmaz malzemeden yapılmıştır. -Atıktan kaynaklanabilecek sızıntıların yeraltı suyu, kanalizasyon veya yerüstü suyuyla temasını veya sızmasını engelleyecek şekilde toplanabilmesi için tabanda uygun eği…</div>
+<div class="hit"><span class="pno">[s. 30]</span> <code>yeraltı suyu</code> — …sağlayacak şekilde geçirimsiz beton ve tutuşmaz malzemeden yapılmıştır. -Atıktan kaynaklanabilecek sızıntıların yeraltı suyu, kanalizasyon veya yerüstü suyuyla temasını veya sızmasını engelleyecek şekilde toplanabilmesi için tabanda uygun e…</div>
+<div class="hit"><span class="pno">[s. 31]</span> <code>yeraltı suyu</code> — …sağlayacak şekilde geçirimsiz beton ve tutuşmaz malzemeden yapılmıştır. -Atıktan kaynaklanabilecek sızıntıların yeraltı suyu, kanalizasyon veya yerüstü suyuyla temasını veya sızmasını engelleyecek şekilde toplanabilmesi için tabanda uygun e…</div>
+<div class="hit"><span class="pno">[s. 32]</span> <code>yeraltı suyu</code> — …ı sağlayacak şekilde geçirimsiz beton ve tutuşmaz malzemeden yapılmıştır. -Atıktan kaynaklanabilecek sızıntıların yeraltı suyu, kanalizasyon veya yerüstü suyuyla temasını veya sızmasını engelleyecek şekilde toplanabilmesi için tabanda uygun e…</div>
+<div class="hit"><span class="pno">[s. 34]</span> <code>yeraltı suyu</code> — …ı sağlayacak şekilde geçirimsiz beton ve tutuşmaz malzemeden yapılmıştır. -Atıktan kaynaklanabilecek sızıntıların yeraltı suyu, kanalizasyon veya yerüstü suyuyla temasını veya sızmasını engelleyecek şekilde toplanabilmesi için tabanda uygun e…</div></section><section class="card"><h3>Korunan Alanlar, Orman ve Zeytinlikler <span style="color:var(--muted);font-weight:400;font-size:0.85rem">(12 sayfa: s.133, s.134, s.135, s.137, s.138, s.140, s.141, s.142, s.143, s.144, s.145, s.223)</span></h3><div class="hit"><span class="pno">[s. 133]</span> <code>sulak alan</code> — …sindeki uzunluğu ise yaklaşık 198 km&#x27;dir. Denize döküldüğü kesimde geniş bir delta meydana getirmiştir. Gediz Deltası, sulak alan ekosistemi ve kuş varlığı açısından ulusal ve uluslararası öneme sahiptir. [1] Küçük Menderes Nehri İzmir ilinin gün…</div>
+<div class="hit"><span class="pno">[s. 134]</span> <code>sulak alan</code> — …biridir. [1] Belevi Gölü Selçuk ilçesi yakınlarında, Küçük Menderes Havzası içerisinde bulunmaktadır. Göl ve çevresi sulak alan ekosistemi niteliğinde olup, Küçük Menderes&#x27;in aşağı havzasındaki hidrolojik sistemle ilişkilidir. [1] Barajlar Taht…</div>
+<div class="hit"><span class="pno">[s. 135]</span> <code>arkeolojik sit</code> — …re “Küçük Sanayi Alanında” kalmaktadır. Yapılan ilk arazi çalışmalarında proje alanında herhangi bir kültür varlığı ve arkeolojik sit alanı bulunmamaktadır. 2.10. Mülkiyet ve Arazi Kullanım Durumu Proje alanı; tapu kaydına göre Işıklar Mah., 110…</div>
+<div class="hit"><span class="pno">[s. 137]</span> <code>özel çevre koruma</code> — …koruma alanları, Boğaziçi Kanuna göre koruma altına alınan alanlar, biyogenetik rezerv alanları, biyosfer rezervleri, özel çevre koruma bölgeleri, özel koruma alanları, turizm bölgeleri ve koruma altına alınmış diğer alanlar bulunmamaktadır. Proje ala…</div>
+<div class="hit"><span class="pno">[s. 137]</span> <code>Milli Park</code> — …rklar&quot;, &quot;Tabiat Parkları&quot;, &quot;Tabiat Anıtları&quot; ve &quot;Tabiat Koruma Alanları&quot;, bulunmamaktadır. Ülkemizde toplam 49 adet Milli Park bulunmaktadır. 22 İzmir ili sınırları içerisinde Milli Park bulunmaktadır. İzmir ili içerisinde 7 adet Tabiat Parkl…</div>
+<div class="hit"><span class="pno">[s. 137]</span> <code>tabiat parkı</code> — …isinde Yer Alan Tabiat Parkları Adı Alan (Ha) Konumu Gümüldür 7,37 İzmir’in Gümüldür ilçesine bağlıdır. Gümüldür tabiat parkı İzmir merkeze 64 km uzaklıktadır. Ekmeksiz Plajı 10,15 İzmir’in Sığacık ilçesine bağlıdır. Ekmeksiz Plajı tabiat p…</div></section><section class="card"><h3>Flora, Fauna ve Saha Metodolojisi <span style="color:var(--muted);font-weight:400;font-size:0.85rem">(6 sayfa: s.125, s.126, s.128, s.133, s.143, s.145)</span></h3><div class="hit"><span class="pno">[s. 125]</span> <code>flora ve fauna</code> — …li; coğrafi konumu, topoğrafik yapısı, iklim özellikleri ve farklı habitat tiplerini bünyesinde barındırması nedeniyle flora ve fauna yönünden oldukça zengin bir biyolojik çeşitliliğe sahiptir. İl sınırları içerisinde deniz seviyesinden başlayarak yüks…</div>
+<div class="hit"><span class="pno">[s. 126]</span> <code>endemik</code> — …bölgelerinden biridir. Özellikle Bozdağlar serisi, ilin floristik bakımdan en önemli alanlarından biri olup çok sayıda endemik bitki türünü barındırmaktadır. Bozdağlar; Mahmut Dağı, Nif Dağı ve çevresindeki yüksek kesimlerle birlikte farklı yük…</div>
+<div class="hit"><span class="pno">[s. 126]</span> <code>flora ve fauna</code> — …maktadır. Özellikle endemik ve nadir bitki türlerinin bulunduğu dağlık alanlar ile sulak alanlar ve kıyı ekosistemleri flora ve fauna açısından önem arz etmektedir. 5 Proje sahası ve etki alanında flora-fauna ile ilgili gerçekleştirilecek arazi gözle…</div>
+<div class="hit"><span class="pno">[s. 126]</span> <code>IUCN</code> — …izm durumları ile ulusal ve uluslararası koruma statüleri dikkate alınarak değerlendirilecektir. Bu kapsamda türlerin IUCN Kırmızı Liste kategorileri, Bern Sözleşmesi, CITES Sözleşmesi ve Merkez Av Komisyonu (MAK) kararları kapsamındaki duru…</div>
+<div class="hit"><span class="pno">[s. 126]</span> <code>Kırmızı Liste</code> — …durumları ile ulusal ve uluslararası koruma statüleri dikkate alınarak değerlendirilecektir. Bu kapsamda türlerin IUCN Kırmızı Liste kategorileri, Bern Sözleşmesi, CITES Sözleşmesi ve Merkez Av Komisyonu (MAK) kararları kapsamındaki durumları belirlen…</div>
+<div class="hit"><span class="pno">[s. 126]</span> <code>Bern Sözleşmesi</code> — …lararası koruma statüleri dikkate alınarak değerlendirilecektir. Bu kapsamda türlerin IUCN Kırmızı Liste kategorileri, Bern Sözleşmesi, CITES Sözleşmesi ve Merkez Av Komisyonu (MAK) kararları kapsamındaki durumları belirlenecek ve oluşturulacak flora-f…</div></section><section class="card"><h3>Emisyonlar, Jeokimya ve Atıklar <span style="color:var(--muted);font-weight:400;font-size:0.85rem">(40 sayfa: s.5, s.9, s.12, s.17, s.21, s.24, s.29, s.30, s.31, s.33, s.34, s.35, s.37, s.39 (+26 sayfa))</span></h3><div class="hit"><span class="pno">[s. 5]</span> <code>Tehlikeli Atık</code> — …...................................................... 27 Tablo 6: Mevzuat Gereği Sağlanması Gereken Fiziksel Şartlar: Tehlikeli Atık Geri Kazanım Lisans Konusu ...........................................................................................…</div>
+<div class="hit"><span class="pno">[s. 9]</span> <code>Tehlikeli Atık</code> — …nek Dönerli Yıkama Ünitesi............................................................................... 44 Şekil 10: Tehlikeli Atık Baskı Tonerlerinin Ön İşlem/Geri Kazanım Faaliyetine Ait İş Akım Şeması ..............................................…</div>
+<div class="hit"><span class="pno">[s. 12]</span> <code>Tehlikeli Atık</code> — …larının Ön İşlem/Geri Kazanım Faaliyeti 7. Tehlikeli Kontamine Metal Atıklarının Ön İşlem/Geri Kazanımı Faaliyeti 8. Tehlikeli Atık Baskı Tonerlerinin Ön İşlem/Geri Kazanım Faaliyeti 9. Tehlikeli Kontamine Ambalajların Atıkların Ön İşlem /Geri Kazanı…</div>
+<div class="hit"><span class="pno">[s. 17]</span> <code>Tehlikeli Atık</code> — …k Ön İşlem/Geri Kazanım Proses kapsamında kabul edilecek atıklara ilişkin detay iş akım şemasında yer almaktadır. 3 Tehlikeli Atık Ön İşlem/Geri Kazanım Proses kapsamında kabul edilecek atıklara ilişkin detay iş akım şemasında yer almaktadır. 4…</div>
+<div class="hit"><span class="pno">[s. 21]</span> <code>tehlikeli atık</code> — …rı 169 18 02 05* Tehlikeli maddeler içeren ya da tehlikeli maddelerden oluşan kimyasallar 170 19 02 04* En az bir tehlikeli atık ile önceden karıştırılması ile oluşmuş atıklar 171 19 02 08* Tehlikeli maddeler içeren sıvı yanabilir atıklar 172…</div>
+<div class="hit"><span class="pno">[s. 24]</span> <code>gürültü</code> — …cak yağmur suları, yıkama ve benzeri atık sulardan ayrı toplanacaktır. e) (Değişik: RG-24/11/2022-32023) Tesislerde gürültü, toz, koku gibi kirleticilere karşı Bakanlıkça belirlenen usul ve esaslara uyulacaktır.</div></section><section class="card"><h3>Proje Bedeli, Güç ve Kapasite <span style="color:var(--muted);font-weight:400;font-size:0.85rem">(44 sayfa: s.2, s.11, s.12, s.13, s.14, s.25, s.26, s.28, s.29, s.30, s.31, s.32, s.33, s.34 (+30 sayfa))</span></h3><div class="hit"><span class="pno">[s. 2]</span> <code>PROJE BEDELİ</code> — …258 17 41 Faks: - E-POSTA evrencerci@ersanenerji.com PROJENİN ADI Tehlikeli ve Tehlikesiz Atıkların Geri Kazanımı PROJE BEDELİ 9.522.000 TL PROJE İÇİN SEÇİLEN YERİN AÇIK ADRESİ:(İLİ, İLÇESİ, MEVKİİ) İzmir İli, Bornova İlçesi, Egemenlik Mah.…</div>
+<div class="hit"><span class="pno">[s. 2]</span> <code>9.522.000 TL</code> — …s: - E-POSTA evrencerci@ersanenerji.com PROJENİN ADI Tehlikeli ve Tehlikesiz Atıkların Geri Kazanımı PROJE BEDELİ 9.522.000 TL PROJE İÇİN SEÇİLEN YERİN AÇIK ADRESİ:(İLİ, İLÇESİ, MEVKİİ) İzmir İli, Bornova İlçesi, Egemenlik Mah. 6106 Sok. No:…</div>
+<div class="hit"><span class="pno">[s. 11]</span> <code>1.000 ton/yıl</code> — …iği&#x27;nin Ek-2 Listesi 5.Madde &quot;Atıkların fiziksel (Değişik:RG- 5/3/2026-33187) yöntemlerle geri kazanıldığı tesisler; 2) 1.000 ton/yıl ve üzeri tehlikesiz atıkların fiziksel yöntemlerle geri kazanıldığı tesisler (metal, kâğıt, plastik, tekstil, cam, ah…</div>
+<div class="hit"><span class="pno">[s. 12]</span> <code>9.522.000 TL</code> — …vardiya, 12 ay/yıl, 300 gün/yıl, 25 gün/ay, 24 saat/gün olacaktır. Planlanan proje ile ilgili toplam yatırım bedeli 9.522.000 TL olarak hesaplanmıştır. Tesiste çalışacak personelin yemek ihtiyacının dışarıdan alınacak yemek hizmeti ile karşıla…</div>
+<div class="hit"><span class="pno">[s. 12]</span> <code>kapasite</code> — …ıtıldıktan sonra İZSU Kanalizasyon sistemine verilmesi planlanmaktadır. Kurulması planlanan atıksu arıtma tesisine ait kapasite bilgileri ÇED Raporunda sunulacaktır. Atıksuların arıtılabilmesi için yeterli kapasiteye sahip atıksu arıtma tesisin…</div>
+<div class="hit"><span class="pno">[s. 13]</span> <code>kapasite</code> — …kli başvurular Çevre, Şehircilik ve İklim Değişikliği İl Müdürlüğüne yapılacağı tesiste yapılacak faaliyet ile ilgili kapasite artışı veya proses değişikliği yapılması planlanması durumunda ÇED Yönetmeliği kapsamında izin/görüş aldıktan sonra ya…</div></section><section class="card"><h3>Proje Parçalama, Kapasite Artışı ve Eşik Değerler <span style="color:var(--muted);font-weight:400;font-size:0.85rem">(3 sayfa: s.13, s.14, s.202)</span></h3><div class="hit"><span class="pno">[s. 13]</span> <code>kapasite artışı</code> — …kli başvurular Çevre, Şehircilik ve İklim Değişikliği İl Müdürlüğüne yapılacağı tesiste yapılacak faaliyet ile ilgili kapasite artışı veya proses değişikliği yapılması planlanması durumunda ÇED Yönetmeliği kapsamında izin/görüş aldıktan sonra yatırıma…</div>
+<div class="hit"><span class="pno">[s. 14]</span> <code>kapasite artışı</code> — …eri yerine getirileceği proje sahibi tarafından beyan ve taahhüt edilmektedir. Tesiste yapılan faaliyet ile ilgili kapasite artışı veya proses değişikliği yapılması planlanması durumunda ÇED Yönetmeliği kapsamında izin/görüş aldıktan sonra yatırıma…</div>
+<div class="hit"><span class="pno">[s. 202]</span> <code>kapasite artışı</code> — …a ve eklerinde yer alan tüm bilgi ve belgelerin doğru olduğunu, dosya içerisinde belirtilen tüm hususlara uyacağımızı, kapasite artışı yapılması planlanması durumunda kapasite artışı yapılmadan veya proses değişikliği yapılması planlanması durumunda önc…</div></section></div>
+
+  <h2>Belge Bölüm Haritası</h2>
+  <ul><li><span class="pno">[s. 1]</span> .KAPAK_13.11.2026</li>
+<li><span class="pno">[s. 3]</span> .ÇEVKİM ÇED BAŞVURU DOSYASI_13.11.2026</li>
+<li><span class="pno">[s. 172]</span> .EKLER-04.11.2026</li>
+<li><span class="pno">[s. 172]</span> .EKLER-24.09.2026</li>
+<li><span class="pno">[s. 190]</span> Sheets and Views</li>
+<li><span class="pno">[s. 190]</span> Model</li>
+<li><span class="pno">[s. 211]</span> ÇEVKİM-yer görme</li>
+<li><span class="pno">[s. 241]</span> .EK17</li>
+<li><span class="pno">[s. 242]</span> ÇEVKİM ATIK YÖNETİMİ SAN. TİC. LTD.ŞTİ PROJE BEDELİ-YEMİNLİ MALİ MÜŞAVİR</li>
+<li><span class="pno">[s. 243]</span> .EKLER-24.09.2026</li></ul>
+
+  <div class="notice">
+    Bu sayfa, T.C. Çevre, Şehircilik ve İklim Değişikliği Bakanlığı'nın kamuya açık <code>eced-duyuru.csb.gov.tr</code> duyuru portalındaki kayıtlar esas alınarak bilgilendirme amacıyla hazırlanmıştır. Alıntıların tamamı 1 tabanlı PDF sayfa numarasıyla (<code>[s. N]</code>) gösterilmektedir. Yasal süreler otomatik olarak hesaplanır; kesin sürelerin ve hukuki başvuru yollarının yetkili hukukçular tarafından teyit edilmesi gerekir.
+  </div>
+</div>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script>
+(() => {
+  if (typeof L === 'undefined') return;
+  const g = {"lat": 38.40396, "lon": 27.23442, "zoom": 12, "precision": "exact_pdf", "points": [[38.40422, 27.23453], [38.40393, 27.23475], [38.40393, 27.2347], [38.40383, 27.23437], [38.40384, 27.2343], [38.40392, 27.23392], [38.40387, 27.23451], [38.4041, 27.2343]], "label": "İZMİR / BORNOVA — Tehlikeli  ve Tehlikesiz Atıkların Geri Kazanımı"};
+  const map = L.map('digest-map').setView([g.lat, g.lon], g.zoom);
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    maxZoom: 18,
+    attribution: '&copy; OpenStreetMap katkıda bulunanları'
+  }).addTo(map);
+  if (g.precision === 'exact_pdf' && g.points.length > 1) {
+    const latlngs = g.points.map(p => [p[0], p[1]]);
+    const poly = L.polyline(latlngs, { color: '#58a6ff', weight: 3, opacity: 0.85 }).addTo(map);
+    for (const ll of latlngs.slice(0, 30)) {
+      L.circleMarker(ll, { radius: 4, color: '#ffffff', fillColor: '#f85149', fillOpacity: 0.9, weight: 1 }).addTo(map);
+    }
+    map.fitBounds(poly.getBounds().pad(0.25));
+  } else {
+    L.circleMarker([g.lat, g.lon], {
+      radius: g.precision === 'exact_pdf' ? 8 : 11,
+      color: '#ffffff',
+      fillColor: g.precision === 'exact_pdf' ? '#f85149' : '#58a6ff',
+      fillOpacity: g.precision === 'exact_pdf' ? 0.9 : 0.45,
+      weight: 2
+    }).bindPopup(g.label).addTo(map).openPopup();
+  }
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,834 @@
+{
+  "filing": {
+    "row_index": 4,
+    "button_id": "form:duyurTable:4:j_idt67",
+    "province": "İZMİR",
+    "district": "BORNOVA",
+    "project_name": "Tehlikeli  ve Tehlikesiz Atıkların Geri Kazanımı",
+    "project_owner": "ÇEVKİM ATIK YÖNETİMİ SANAYİ TİCARET VE LİMİTED ŞİRKETİ",
+    "sector": "Atık",
+    "sub_sector": "Atık Bertaraf /Geri Kazanım/ Depolama Tesisi Projeleri",
+    "decision_type": "HKT",
+    "announcement_date_tr": "16.11.2026",
+    "project_type": "Ek-1",
+    "detail_text": "İZMİR ili BORNOVA,  ilcesinde İZMİR ili BORNOVA ilçesi sınırları içerisinde ÇEVKİM ATIK YÖNETİMİ SANAYİ TİCARET VE LİMİTED ŞİRKETİ tarafından yapılması planlanan Tehlikeli  ve Tehlikesiz Atıkların Geri Kazanımı projesi ile ilgili Çevresel Etki Değerlendirme süreci başlamış ve Çevresel Etki Değerlendirmesi Başvuru Dosyası halkın görüşüne açılmıştır.Söz konusu projeye ilişkin, halkı proje hakkında bilgilendirmek, görüş ve önerilerini almak amacıyla ÇED Yönetmeliğinin 9. maddesi gereğince 03/12/2026 tarihinde Halkın Katılım Toplantısı düzenlenecektir.ÇED Başvuru Dosyasını İncelemek isteyenler Bakanlık Merkezinde veya İZMİR Çevre ve Şehircilik İl Müdürlüklerinde duyuru tarihinden itibaren raporu inceleyerek, zamanlama takvimi içerisinde proje hakkında Bakanlığa veya Valiliğe görüş bildirebilirler. Halkın Katılımı Toplantısı yeri ve saati ile ilgili ÇED İzin Denetim Genel Müdürlüğü ve İZMİR Çevre, Şehircilik ve İklim Değişikliği İl Müdürlüğünden bilgi alınabilir. İlgililere ve kamuoyuna duyurulur.",
+    "detail_links": [
+      {
+        "text": "Başvuru Dosyası",
+        "href": "http://eced.csb.gov.tr/jsp/ek1/27708"
+      }
+    ],
+    "documents": [
+      {
+        "portal_doc_url": "http://eced.csb.gov.tr/jsp/ek1/27708",
+        "filing_id": "27708",
+        "consulting_firm": "ENVON ÇEVRE DANIŞMANLIK MÜH. İNŞ. TAAH. SAN. TİC. LTD. ŞTİ.",
+        "submitted_at": "20/10/2026 09:07:01",
+        "pdf_urls": [
+          {
+            "label": "Dosya Göster",
+            "url": "http://eced.csb.gov.tr/jsp/dosya/dosyaGoster.htm?tempAd=sign3751441153432936660.pdf&orjinalAd=e-imza.pdf&yuklemeTarihi=2026-11-13"
+          }
+        ]
+      }
+    ],
+    "announcement_date": "2026-11-16",
+    "statutory_clocks": [
+      {
+        "code": "hkt",
+        "kind": "Halkın Katılımı Toplantısı (HKT — ÇED Yönetmeliği m. 9)",
+        "deadline": "2026-12-03",
+        "days_remaining": 13
+      }
+    ],
+    "priority_district": false,
+    "filing_key": "27708:16.11.2026:HKT",
+    "first_seen_at": null
+  },
+  "pdf_info": {
+    "filename": "27708.pdf",
+    "bytes": 45121479,
+    "sha256": "7cff4c49da636c0cf262dcf054444fad75647f58b63bfd2b79aa3b2e99df53ed",
+    "cached": true
+  },
+  "analysis": {
+    "page_count": 243,
+    "total_chars": 442590,
+    "text_pages": 207,
+    "scanned_or_blank_pages": 36,
+    "scanned_page_sample": [
+      172,
+      175,
+      176,
+      177,
+      178,
+      179,
+      180,
+      181,
+      182,
+      183,
+      184,
+      185,
+      187,
+      188,
+      189
+    ],
+    "headings": [
+      [
+        1,
+        ".KAPAK_13.11.2026"
+      ],
+      [
+        3,
+        ".ÇEVKİM ÇED BAŞVURU DOSYASI_13.11.2026"
+      ],
+      [
+        172,
+        ".EKLER-04.11.2026"
+      ],
+      [
+        172,
+        ".EKLER-24.09.2026"
+      ],
+      [
+        190,
+        "Sheets and Views"
+      ],
+      [
+        190,
+        "Model"
+      ],
+      [
+        211,
+        "ÇEVKİM-yer görme"
+      ],
+      [
+        241,
+        ".EK17"
+      ],
+      [
+        242,
+        "ÇEVKİM ATIK YÖNETİMİ SAN. TİC. LTD.ŞTİ PROJE BEDELİ-YEMİNLİ MALİ MÜŞAVİR"
+      ],
+      [
+        243,
+        ".EKLER-24.09.2026"
+      ]
+    ],
+    "geo": {
+      "precision": "exact_pdf",
+      "lat": 38.40396,
+      "lon": 27.23442,
+      "point_count": 8,
+      "points": [
+        [
+          38.40422,
+          27.23453
+        ],
+        [
+          38.40393,
+          27.23475
+        ],
+        [
+          38.40393,
+          27.2347
+        ],
+        [
+          38.40383,
+          27.23437
+        ],
+        [
+          38.40384,
+          27.2343
+        ],
+        [
+          38.40392,
+          27.23392
+        ],
+        [
+          38.40387,
+          27.23451
+        ],
+        [
+          38.4041,
+          27.2343
+        ]
+      ],
+      "datum": "UTM-Z35/ED50",
+      "pages": [
+        173
+      ]
+    },
+    "signals": {
+      "coordinates_and_footprint": {
+        "label": "Coordinates, Parcel & Footprint",
+        "page_count": 45,
+        "pages": [
+          1,
+          2,
+          3,
+          11,
+          15,
+          23,
+          49,
+          59,
+          61,
+          63,
+          69,
+          71,
+          72,
+          73,
+          79,
+          103,
+          117,
+          118,
+          120,
+          127,
+          130,
+          135,
+          142,
+          146,
+          147
+        ],
+        "samples": [
+          {
+            "page": 1,
+            "match": "Ada 11 Parsel",
+            "snippet": "…İzmir İli, Bornova İlçesi, Egemenlik Mah. 6106 Sok. No:113 Adresinde, Tapu kaydına göre; Işıklar Mah., 11085 Ada 11 Parselde ENVON ÇEVRE DANIŞMANLIK MÜH. İNŞ. TAAH. SAN. TİC. LTD. ŞTİ. ÇED Başvuru Dosyası…"
+          },
+          {
+            "page": 2,
+            "match": "Ada 11 Parsel",
+            "snippet": "…EVKİİ) İzmir İli, Bornova İlçesi, Egemenlik Mah. 6106 Sok. No:113 Adresinde, Tapu kaydına göre; Işıklar Mah., 11085 Ada 11 Parselde PROJENİN ÇED YÖNETMELİĞİ KAPSAMINDAKİ YERİ (SEKTÖR, ALT SEKTÖR) 29.07.2022 Tarih ve 31907 Sayılı Resmî Gazetede…"
+          },
+          {
+            "page": 3,
+            "match": "Koordinat",
+            "snippet": "…............................................. 13 b) Projenin Yer Ve Teknoloji Alternatifleri, Proje İçin Seçilen Yerin Koordinatları 118 BÖLÜM II: PROJENİN YERİ VE ETKİ ALANININ MEVCUT ÇEVRESEL ÖZELLİKLERİ ........................................…"
+          },
+          {
+            "page": 11,
+            "match": "Ada 11 Parsel",
+            "snippet": "…arafından İzmir İli, Bornova İlçesi, Egemenlik Mah. 6106 Sok. No:113 Adresinde, Tapu kaydına göre; Işıklar Mah., 11085 Ada 11 Parsel de “Tehlikeli ve Tehlikesiz Atıkların Geri Kazanımı” faaliyetinin yapılması planlanmaktadır. Proje alanı; tapu ka…"
+          },
+          {
+            "page": 11,
+            "match": "772,26 m2",
+            "snippet": "…adır (Bkz.Ek-12). Proje kapsamında tesis binası kurulu durumda olup inşaat aşaması olmayacaktır. Planlanan faaliyet 772,26 m2’lik tapu alanında gerçekleştirilecektir. İşletmeye ait vaziyet planı ekte yer almaktadır (Bkz.Ek-4). Tesisin faaliy…"
+          },
+          {
+            "page": 11,
+            "match": "koordinat",
+            "snippet": "…ulanmasına gerek yoktur.” İfadeleri yer almaktadır. İlgili görüş ekte yer almaktadır (Bkz.Ek-13). Proje alanına ait koordinat listesi ekte yer almaktadır (Bkz.Ek-1). PROJENİN TEKNİK OLMAYAN ÖZETİ:"
+          },
+          {
+            "page": 15,
+            "match": "Ada 11 Parsel",
+            "snippet": "…arafından İzmir İli, Bornova İlçesi, Egemenlik Mah. 6106 Sok. No:113 Adresinde, Tapu kaydına göre; Işıklar Mah., 11085 Ada 11 Parsel de “Tehlikeli ve Tehlikesiz Atıkların Geri Kazanımı” faaliyetinin yapılması planlanmaktadır. Proje alanı; tapu ka…"
+          },
+          {
+            "page": 23,
+            "match": "utm",
+            "snippet": "…n görüş almakla yükümlüdür. Değişiklik olması halinde işletme planları yenilenir ve Bakanlığa sunulur. (3) Biyo-kurutma, kompost ve biyo-metanizasyon tesisleri; a) Bu maddenin birinci fıkrasının (a), (b), (c), (ç), (d), (f), (g), (ğ) v…"
+          }
+        ]
+      },
+      "water_and_discharge": {
+        "label": "Water Use, Hydrogeology & Discharge",
+        "page_count": 50,
+        "pages": [
+          12,
+          28,
+          30,
+          31,
+          32,
+          34,
+          35,
+          43,
+          45,
+          51,
+          57,
+          59,
+          64,
+          73,
+          75,
+          78,
+          79,
+          80,
+          81,
+          93,
+          98,
+          102,
+          108,
+          109,
+          110
+        ],
+        "samples": [
+          {
+            "page": 12,
+            "match": "atıksu",
+            "snippet": "…r alan İZSU Kanalizasyon sistemine verilmesi planlanmaktadır. Tesiste proses kaynaklı oluşacak proses atıksularının atıksu önlem tesisinde arıtıldıktan sonra İZSU Kanalizasyon sistemine verilmesi planlanmaktadır. Kurulması planlanan atıksu…"
+          },
+          {
+            "page": 28,
+            "match": "yeraltı suyu",
+            "snippet": "…ı sağlayacak şekilde geçirimsiz beton ve tutuşmaz malzemeden yapılmıştır. -Atıktan kaynaklanabilecek sızıntıların yeraltı suyu, kanalizasyon veya yerüstü suyuyla temasını veya sızmasını engelleyecek şekilde toplanabilmesi için tabanda uygun eği…"
+          },
+          {
+            "page": 30,
+            "match": "yeraltı suyu",
+            "snippet": "…sağlayacak şekilde geçirimsiz beton ve tutuşmaz malzemeden yapılmıştır. -Atıktan kaynaklanabilecek sızıntıların yeraltı suyu, kanalizasyon veya yerüstü suyuyla temasını veya sızmasını engelleyecek şekilde toplanabilmesi için tabanda uygun e…"
+          },
+          {
+            "page": 31,
+            "match": "yeraltı suyu",
+            "snippet": "…sağlayacak şekilde geçirimsiz beton ve tutuşmaz malzemeden yapılmıştır. -Atıktan kaynaklanabilecek sızıntıların yeraltı suyu, kanalizasyon veya yerüstü suyuyla temasını veya sızmasını engelleyecek şekilde toplanabilmesi için tabanda uygun e…"
+          },
+          {
+            "page": 32,
+            "match": "yeraltı suyu",
+            "snippet": "…ı sağlayacak şekilde geçirimsiz beton ve tutuşmaz malzemeden yapılmıştır. -Atıktan kaynaklanabilecek sızıntıların yeraltı suyu, kanalizasyon veya yerüstü suyuyla temasını veya sızmasını engelleyecek şekilde toplanabilmesi için tabanda uygun e…"
+          },
+          {
+            "page": 34,
+            "match": "yeraltı suyu",
+            "snippet": "…ı sağlayacak şekilde geçirimsiz beton ve tutuşmaz malzemeden yapılmıştır. -Atıktan kaynaklanabilecek sızıntıların yeraltı suyu, kanalizasyon veya yerüstü suyuyla temasını veya sızmasını engelleyecek şekilde toplanabilmesi için tabanda uygun e…"
+          },
+          {
+            "page": 35,
+            "match": "yeraltı suyu",
+            "snippet": "…ı sağlayacak şekilde geçirimsiz beton ve tutuşmaz malzemeden yapılmıştır. -Atıktan kaynaklanabilecek sızıntıların yeraltı suyu, kanalizasyon veya yerüstü suyuyla temasını veya sızmasını engelleyecek şekilde toplanabilmesi için tabanda uygun eği…"
+          },
+          {
+            "page": 43,
+            "match": "atıksu",
+            "snippet": "…anizma sayesinde atıklar döndürülerek arındırıcı sıvının tüm atıklara teması sağlanacaktır. Dönerli yıkama ünitesinde atıksu oluşumu söz konusu olmayacaktır. Yağından arındırıcı yıkama solüsyonu (endüstriyel su bazlı kir ve yağ çözücü (S…"
+          }
+        ]
+      },
+      "protected_land_and_olive": {
+        "label": "Protected Zones, Forests & Olive Groves",
+        "page_count": 12,
+        "pages": [
+          133,
+          134,
+          135,
+          137,
+          138,
+          140,
+          141,
+          142,
+          143,
+          144,
+          145,
+          223
+        ],
+        "samples": [
+          {
+            "page": 133,
+            "match": "sulak alan",
+            "snippet": "…sindeki uzunluğu ise yaklaşık 198 km'dir. Denize döküldüğü kesimde geniş bir delta meydana getirmiştir. Gediz Deltası, sulak alan ekosistemi ve kuş varlığı açısından ulusal ve uluslararası öneme sahiptir. [1] Küçük Menderes Nehri İzmir ilinin gün…"
+          },
+          {
+            "page": 134,
+            "match": "sulak alan",
+            "snippet": "…biridir. [1] Belevi Gölü Selçuk ilçesi yakınlarında, Küçük Menderes Havzası içerisinde bulunmaktadır. Göl ve çevresi sulak alan ekosistemi niteliğinde olup, Küçük Menderes'in aşağı havzasındaki hidrolojik sistemle ilişkilidir. [1] Barajlar Taht…"
+          },
+          {
+            "page": 135,
+            "match": "arkeolojik sit",
+            "snippet": "…re “Küçük Sanayi Alanında” kalmaktadır. Yapılan ilk arazi çalışmalarında proje alanında herhangi bir kültür varlığı ve arkeolojik sit alanı bulunmamaktadır. 2.10. Mülkiyet ve Arazi Kullanım Durumu Proje alanı; tapu kaydına göre Işıklar Mah., 110…"
+          },
+          {
+            "page": 137,
+            "match": "özel çevre koruma",
+            "snippet": "…koruma alanları, Boğaziçi Kanuna göre koruma altına alınan alanlar, biyogenetik rezerv alanları, biyosfer rezervleri, özel çevre koruma bölgeleri, özel koruma alanları, turizm bölgeleri ve koruma altına alınmış diğer alanlar bulunmamaktadır. Proje ala…"
+          },
+          {
+            "page": 137,
+            "match": "Milli Park",
+            "snippet": "…rklar\", \"Tabiat Parkları\", \"Tabiat Anıtları\" ve \"Tabiat Koruma Alanları\", bulunmamaktadır. Ülkemizde toplam 49 adet Milli Park bulunmaktadır. 22 İzmir ili sınırları içerisinde Milli Park bulunmaktadır. İzmir ili içerisinde 7 adet Tabiat Parkl…"
+          },
+          {
+            "page": 137,
+            "match": "tabiat parkı",
+            "snippet": "…isinde Yer Alan Tabiat Parkları Adı Alan (Ha) Konumu Gümüldür 7,37 İzmir’in Gümüldür ilçesine bağlıdır. Gümüldür tabiat parkı İzmir merkeze 64 km uzaklıktadır. Ekmeksiz Plajı 10,15 İzmir’in Sığacık ilçesine bağlıdır. Ekmeksiz Plajı tabiat p…"
+          },
+          {
+            "page": 138,
+            "match": "tabiat parkı",
+            "snippet": "…ve Tehlikesiz Atıkların Geri Kazanımı 136 Yamanlardağı 40,18 İzmir’in Karşıyaka ilçesine bağlıdır. Yamanlardağı tabiat parkı İzmir merkeze 30 km uzaklıktadır. Ülkemizde toplam 31 adet Tabiat Koruma Alanları bulunmaktadır 24. İzmir ili sını…"
+          },
+          {
+            "page": 140,
+            "match": "Sit Alanı",
+            "snippet": "…Tabiat Varlıkları Proje alanı; İzmir İli içerisinde bulunan Tabiat Varlıkları içerisinde yer almamaktadır. Sit Alanı Ülkemizde toplam 27.705 adet Sit Alanı bulunmaktadır 30. İzmir ili sınırları içerisinde toplam 1.177 adet sit ala…"
+          }
+        ]
+      },
+      "ecology_and_baseline": {
+        "label": "Flora, Fauna & Baseline Methodology",
+        "page_count": 6,
+        "pages": [
+          125,
+          126,
+          128,
+          133,
+          143,
+          145
+        ],
+        "samples": [
+          {
+            "page": 125,
+            "match": "flora ve fauna",
+            "snippet": "…li; coğrafi konumu, topoğrafik yapısı, iklim özellikleri ve farklı habitat tiplerini bünyesinde barındırması nedeniyle flora ve fauna yönünden oldukça zengin bir biyolojik çeşitliliğe sahiptir. İl sınırları içerisinde deniz seviyesinden başlayarak yüks…"
+          },
+          {
+            "page": 126,
+            "match": "endemik",
+            "snippet": "…bölgelerinden biridir. Özellikle Bozdağlar serisi, ilin floristik bakımdan en önemli alanlarından biri olup çok sayıda endemik bitki türünü barındırmaktadır. Bozdağlar; Mahmut Dağı, Nif Dağı ve çevresindeki yüksek kesimlerle birlikte farklı yük…"
+          },
+          {
+            "page": 126,
+            "match": "flora ve fauna",
+            "snippet": "…maktadır. Özellikle endemik ve nadir bitki türlerinin bulunduğu dağlık alanlar ile sulak alanlar ve kıyı ekosistemleri flora ve fauna açısından önem arz etmektedir. 5 Proje sahası ve etki alanında flora-fauna ile ilgili gerçekleştirilecek arazi gözle…"
+          },
+          {
+            "page": 126,
+            "match": "IUCN",
+            "snippet": "…izm durumları ile ulusal ve uluslararası koruma statüleri dikkate alınarak değerlendirilecektir. Bu kapsamda türlerin IUCN Kırmızı Liste kategorileri, Bern Sözleşmesi, CITES Sözleşmesi ve Merkez Av Komisyonu (MAK) kararları kapsamındaki duru…"
+          },
+          {
+            "page": 126,
+            "match": "Kırmızı Liste",
+            "snippet": "…durumları ile ulusal ve uluslararası koruma statüleri dikkate alınarak değerlendirilecektir. Bu kapsamda türlerin IUCN Kırmızı Liste kategorileri, Bern Sözleşmesi, CITES Sözleşmesi ve Merkez Av Komisyonu (MAK) kararları kapsamındaki durumları belirlen…"
+          },
+          {
+            "page": 126,
+            "match": "Bern Sözleşmesi",
+            "snippet": "…lararası koruma statüleri dikkate alınarak değerlendirilecektir. Bu kapsamda türlerin IUCN Kırmızı Liste kategorileri, Bern Sözleşmesi, CITES Sözleşmesi ve Merkez Av Komisyonu (MAK) kararları kapsamındaki durumları belirlenecek ve oluşturulacak flora-f…"
+          },
+          {
+            "page": 126,
+            "match": "CITES",
+            "snippet": "…tatüleri dikkate alınarak değerlendirilecektir. Bu kapsamda türlerin IUCN Kırmızı Liste kategorileri, Bern Sözleşmesi, CITES Sözleşmesi ve Merkez Av Komisyonu (MAK) kararları kapsamındaki durumları belirlenecek ve oluşturulacak flora-fauna li…"
+          },
+          {
+            "page": 128,
+            "match": "mevsimsel",
+            "snippet": "…nemli akarsuları Gediz Nehri, Küçük Menderes Nehri ve Bakırçay'dır. Bunların yanı sıra il genelinde çok sayıda dere ve mevsimsel akış gösteren yüzeysel su kaynağı bulunmaktadır.11 Gediz Nehri, İç Batı Anadolu'da Murat Dağı'ndan doğmakta ve yakl…"
+          }
+        ]
+      },
+      "pollutants_and_hazards": {
+        "label": "Emissions, Geochemistry & Waste",
+        "page_count": 40,
+        "pages": [
+          5,
+          9,
+          12,
+          17,
+          21,
+          24,
+          29,
+          30,
+          31,
+          33,
+          34,
+          35,
+          37,
+          39,
+          40,
+          42,
+          47,
+          48,
+          58,
+          64,
+          68,
+          69,
+          70,
+          77,
+          99
+        ],
+        "samples": [
+          {
+            "page": 5,
+            "match": "Tehlikeli Atık",
+            "snippet": "…...................................................... 27 Tablo 6: Mevzuat Gereği Sağlanması Gereken Fiziksel Şartlar: Tehlikeli Atık Geri Kazanım Lisans Konusu ...........................................................................................…"
+          },
+          {
+            "page": 9,
+            "match": "Tehlikeli Atık",
+            "snippet": "…nek Dönerli Yıkama Ünitesi............................................................................... 44 Şekil 10: Tehlikeli Atık Baskı Tonerlerinin Ön İşlem/Geri Kazanım Faaliyetine Ait İş Akım Şeması ..............................................…"
+          },
+          {
+            "page": 12,
+            "match": "Tehlikeli Atık",
+            "snippet": "…larının Ön İşlem/Geri Kazanım Faaliyeti 7. Tehlikeli Kontamine Metal Atıklarının Ön İşlem/Geri Kazanımı Faaliyeti 8. Tehlikeli Atık Baskı Tonerlerinin Ön İşlem/Geri Kazanım Faaliyeti 9. Tehlikeli Kontamine Ambalajların Atıkların Ön İşlem /Geri Kazanı…"
+          },
+          {
+            "page": 17,
+            "match": "Tehlikeli Atık",
+            "snippet": "…k Ön İşlem/Geri Kazanım Proses kapsamında kabul edilecek atıklara ilişkin detay iş akım şemasında yer almaktadır. 3 Tehlikeli Atık Ön İşlem/Geri Kazanım Proses kapsamında kabul edilecek atıklara ilişkin detay iş akım şemasında yer almaktadır. 4…"
+          },
+          {
+            "page": 21,
+            "match": "tehlikeli atık",
+            "snippet": "…rı 169 18 02 05* Tehlikeli maddeler içeren ya da tehlikeli maddelerden oluşan kimyasallar 170 19 02 04* En az bir tehlikeli atık ile önceden karıştırılması ile oluşmuş atıklar 171 19 02 08* Tehlikeli maddeler içeren sıvı yanabilir atıklar 172…"
+          },
+          {
+            "page": 24,
+            "match": "gürültü",
+            "snippet": "…cak yağmur suları, yıkama ve benzeri atık sulardan ayrı toplanacaktır. e) (Değişik: RG-24/11/2022-32023) Tesislerde gürültü, toz, koku gibi kirleticilere karşı Bakanlıkça belirlenen usul ve esaslara uyulacaktır."
+          },
+          {
+            "page": 29,
+            "match": "tehlikeli atık",
+            "snippet": "…KETİ Tehlikeli ve Tehlikesiz Atıkların Geri Kazanımı 27 İşletmenin geçici depolama alanında 6 aydan fazla bekleyen tehlikeli atık ile 1 yıldan fazla bekleyen tehlikesiz atık bulunmamaktadır. (5) İşletmeye kabul edilen atıklar içerisinde 1 yıld…"
+          },
+          {
+            "page": 29,
+            "match": "gürültü",
+            "snippet": "…ğmur sularının yıkama ve benzeri atık sulardan ayrı toplanmasına yönelik gerekli tedbir alınmıştır. (14) Tesiste gürültü, toz, koku gibi kirleticilere karşı ilgili mevzuatta tanımlanan her türlü önleyici tedbir alınmıştır. (15) Atık…"
+          }
+        ]
+      },
+      "cost_and_capacity": {
+        "label": "Proje Bedeli, Güç ve Kapasite",
+        "page_count": 44,
+        "pages": [
+          2,
+          11,
+          12,
+          13,
+          14,
+          25,
+          26,
+          28,
+          29,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35,
+          54,
+          62,
+          69,
+          74,
+          76,
+          77,
+          78,
+          79,
+          106,
+          109
+        ],
+        "samples": [
+          {
+            "page": 2,
+            "match": "PROJE BEDELİ",
+            "snippet": "…258 17 41 Faks: - E-POSTA evrencerci@ersanenerji.com PROJENİN ADI Tehlikeli ve Tehlikesiz Atıkların Geri Kazanımı PROJE BEDELİ 9.522.000 TL PROJE İÇİN SEÇİLEN YERİN AÇIK ADRESİ:(İLİ, İLÇESİ, MEVKİİ) İzmir İli, Bornova İlçesi, Egemenlik Mah.…"
+          },
+          {
+            "page": 2,
+            "match": "9.522.000 TL",
+            "snippet": "…s: - E-POSTA evrencerci@ersanenerji.com PROJENİN ADI Tehlikeli ve Tehlikesiz Atıkların Geri Kazanımı PROJE BEDELİ 9.522.000 TL PROJE İÇİN SEÇİLEN YERİN AÇIK ADRESİ:(İLİ, İLÇESİ, MEVKİİ) İzmir İli, Bornova İlçesi, Egemenlik Mah. 6106 Sok. No:…"
+          },
+          {
+            "page": 11,
+            "match": "1.000 ton/yıl",
+            "snippet": "…iği'nin Ek-2 Listesi 5.Madde \"Atıkların fiziksel (Değişik:RG- 5/3/2026-33187) yöntemlerle geri kazanıldığı tesisler; 2) 1.000 ton/yıl ve üzeri tehlikesiz atıkların fiziksel yöntemlerle geri kazanıldığı tesisler (metal, kâğıt, plastik, tekstil, cam, ah…"
+          },
+          {
+            "page": 12,
+            "match": "9.522.000 TL",
+            "snippet": "…vardiya, 12 ay/yıl, 300 gün/yıl, 25 gün/ay, 24 saat/gün olacaktır. Planlanan proje ile ilgili toplam yatırım bedeli 9.522.000 TL olarak hesaplanmıştır. Tesiste çalışacak personelin yemek ihtiyacının dışarıdan alınacak yemek hizmeti ile karşıla…"
+          },
+          {
+            "page": 12,
+            "match": "kapasite",
+            "snippet": "…ıtıldıktan sonra İZSU Kanalizasyon sistemine verilmesi planlanmaktadır. Kurulması planlanan atıksu arıtma tesisine ait kapasite bilgileri ÇED Raporunda sunulacaktır. Atıksuların arıtılabilmesi için yeterli kapasiteye sahip atıksu arıtma tesisin…"
+          },
+          {
+            "page": 13,
+            "match": "kapasite",
+            "snippet": "…kli başvurular Çevre, Şehircilik ve İklim Değişikliği İl Müdürlüğüne yapılacağı tesiste yapılacak faaliyet ile ilgili kapasite artışı veya proses değişikliği yapılması planlanması durumunda ÇED Yönetmeliği kapsamında izin/görüş aldıktan sonra ya…"
+          },
+          {
+            "page": 14,
+            "match": "kapasite",
+            "snippet": "…eri yerine getirileceği proje sahibi tarafından beyan ve taahhüt edilmektedir. Tesiste yapılan faaliyet ile ilgili kapasite artışı veya proses değişikliği yapılması planlanması durumunda ÇED Yönetmeliği kapsamında izin/görüş aldıktan sonra ya…"
+          },
+          {
+            "page": 25,
+            "match": "kapasite",
+            "snippet": "…ılan bilgilere ait belgeler en az beş yıl süreyle muhafaza edilecektir. ı) (Değişik:RG-27/1/2022-31732) Tesislerde, kapasiteye uygun kantar ile tesise kabul edilen ve tesisten gönderilen atıkların takibi için tesis giriş ve çıkış noktalarına…"
+          }
+        ]
+      },
+      "splitting_and_thresholds": {
+        "label": "Proje Parçalama, Kapasite Artışı ve Eşik Değerler",
+        "page_count": 3,
+        "pages": [
+          13,
+          14,
+          202
+        ],
+        "samples": [
+          {
+            "page": 13,
+            "match": "kapasite artışı",
+            "snippet": "…kli başvurular Çevre, Şehircilik ve İklim Değişikliği İl Müdürlüğüne yapılacağı tesiste yapılacak faaliyet ile ilgili kapasite artışı veya proses değişikliği yapılması planlanması durumunda ÇED Yönetmeliği kapsamında izin/görüş aldıktan sonra yatırıma…"
+          },
+          {
+            "page": 14,
+            "match": "kapasite artışı",
+            "snippet": "…eri yerine getirileceği proje sahibi tarafından beyan ve taahhüt edilmektedir. Tesiste yapılan faaliyet ile ilgili kapasite artışı veya proses değişikliği yapılması planlanması durumunda ÇED Yönetmeliği kapsamında izin/görüş aldıktan sonra yatırıma…"
+          },
+          {
+            "page": 202,
+            "match": "kapasite artışı",
+            "snippet": "…a ve eklerinde yer alan tüm bilgi ve belgelerin doğru olduğunu, dosya içerisinde belirtilen tüm hususlara uyacağımızı, kapasite artışı yapılması planlanması durumunda kapasite artışı yapılmadan veya proses değişikliği yapılması planlanması durumunda önc…"
+          }
+        ]
+      }
+    },
+    "audit_checks": {
+      "mentions_field_survey": true,
+      "mentions_literature_only_cue": false,
+      "mentions_seasonal_sampling": true,
+      "mentions_cumulative_impact": true,
+      "mentions_olive_law_3573": true,
+      "mentions_groundwater_or_aquifer": true,
+      "mentions_iucn_or_endemic": true,
+      "mentions_capacity_or_splitting": true
+    }
+  },
+  "llm_synthesis": {
+    "model": "gemini-4-hydrogen",
+    "generated_at": "2026-11-20T12:42:52",
+    "pages_sent": [
+      1,
+      2,
+      3,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      17,
+      28,
+      30,
+      31,
+      125,
+      126,
+      128,
+      133,
+      134,
+      135
+    ],
+    "usage": {
+      "prompt_tokens": 27091,
+      "output_tokens": 4316,
+      "thoughts_tokens": 7856,
+      "total_tokens": 39263
+    },
+    "result": {
+      "executive_summary_tr": "ÇEVKİM Atık Yönetimi Sanayi Ticaret ve Limited Şirketi tarafından İzmir İli, Bornova İlçesi, Işıklar Mahallesi, 11085 Ada 11 Parselde (Egemenlik Mah. 6106 Sok. No:113) yer alan 772,26 m² büyüklüğündeki mevcut kiralık yapıda tehlikeli ve tehlikesiz atıkların geri kazanımı projesi planlanmaktadır [s. 1, 11]. ÇED Yönetmeliği Ek-1 Madde 11(a) ve 11(b) kapsamında sunulan ve yatırım bedeli 9.522.000 TL olarak beyan edilen projede, 10 personel ve günde 24 saat esasıyla 29 farklı tehlikeli ve tehlikesiz atık ön işlem ve geri kazanım faaliyetinin yürütülmesi öngörülmektedir [s. 2, 12, 13]. S.S. Geri Kazanımcılar Metal Toplu İşyeri Yapı Kooperatifi içinde yer alan parsel, 1/1.000 ölçekli imar planında Küçük Sanayi Alanı iken 1/100.000 ölçekli Çevre Düzeni Planında Kırsal Yerleşme Alanı olarak tanımlanmaktadır [s. 11, 12]. Başvuru dosyası aşamasında tesisin proses atıksu karakterizasyonu, atıksu arıtma tesisi kapasitesi, İZSU deşarj onayı ve saha özelinde flora-fauna ile hidrojeoloji verileri henüz ortaya konulmamış olup bunların ileride hazırlanacak ÇED Raporuna bırakıldığı görülmektedir [s. 12, 126].",
+      "executive_summary_en": "CEVKIM Atik Yonetimi Sanayi Ticaret ve Limited Sirketi proposes a hazardous and non-hazardous waste recovery facility inside an existing 772.26 m2 leased building on Parcel 11085/11 in Isiklar/Egemenlik Neighborhood, Bornova District, Izmir [s. 1, 11]. Filed under Annex-1 Article 11(a)-(b) of the Turkish EIA Regulation with an investment cost of 9,522,000 TRY, the facility plans 29 distinct waste pre-treatment and recovery operations—including solvent recovery, PCB decontamination, waste smelting, CRT/fluorescent lamp processing, and IBC/drum washing—operating 24 hours a day with 10 staff [s. 2, 12, 13]. While zoned as a Small Industry Area in the 1/1,000 local plan, the site falls within a Rural Settlement Area in the 1/100,000 Regional Environmental Plan, raising plan-hierarchy compatibility questions [s. 12, 15, 135]. At this EIA Application File stage, process wastewater characterization, treatment plant capacity, IZSU sewer connection approval, and site-specific ecological and hydrogeological baseline surveys are omitted and deferred to the future EIA Report [s. 12, 126].",
+      "key_facts": [
+        {
+          "label": "Proje Alanı (Tapu Alanı)",
+          "value": "772,26 m² (Işıklar Mah., 11085 Ada 11 Parsel, mevcut kurulu bina)",
+          "page": 11
+        },
+        {
+          "label": "Proje Bedeli",
+          "value": "9.522.000 TL",
+          "page": 2
+        },
+        {
+          "label": "Personel Sayısı",
+          "value": "10 kişi",
+          "page": 12
+        },
+        {
+          "label": "Çalışma Periyodu",
+          "value": "3 vardiya, 24 saat/gün, 25 gün/ay, 300 gün/yıl, 12 ay/yıl",
+          "page": 12
+        },
+        {
+          "label": "Planlanan Faaliyet Kalemleri",
+          "value": "29 farklı tehlikeli ve tehlikesiz atık ön işlem ve geri kazanım faaliyeti",
+          "page": 13
+        },
+        {
+          "label": "Önceki ÇED Muafiyet Görüşü",
+          "value": "08.05.2026 tarih ve E-15619886 sayılı ÇED Muafiyet görüşü (toplama-ayırma)",
+          "page": 11
+        },
+        {
+          "label": "Yerinde İnceleme Tarihi",
+          "value": "07.09.2026 (27.08.2026 tarihli dilekçe, 16886900 kayıt no)",
+          "page": 13
+        },
+        {
+          "label": "1/1.000 Ölçekli İmar Planı",
+          "value": "11.08.2006 tarih ve 5605 sayılı plan (Küçük Sanayi Alanı)",
+          "page": 12
+        },
+        {
+          "label": "Başvuru Dosyası Sunum Tarihi",
+          "value": "13.11.2026",
+          "page": 2
+        },
+        {
+          "label": "Geçici Depolama Süre Sınırları",
+          "value": "Tehlikeli atıklar için en fazla 6 ay, tehlikesiz atıklar için en fazla 1 yıl",
+          "page": 30
+        }
+      ],
+      "baseline_assessment": {
+        "field_survey_status": "literature_only",
+        "seasonal_sampling_status": "not_found",
+        "cumulative_impact_status": "omitted_or_not_found",
+        "olive_and_protected_status": "Raporda yapılan ilk arazi çalışmalarında proje alanında kültür varlığı ve arkeolojik sit alanı bulunmadığı belirtilmektedir [s. 135]. Meteoroloji bölümünde İzmir il genelinde zeytin, üzüm ve incir yetiştiriciliğinden söz edilmekle birlikte [s. 134], parsel çevresi için 3573 sayılı Kanun kapsamında 3 km zeytinlik mesafe tespiti ile tarım, orman veya korunan alan kurum görüşleri incelenen sayfalarda yer almamaktadır [s. 11, 12, 135].",
+        "explanation": "İncelenen ÇED Başvuru Dosyası sayfalarında flora-fauna bölümü yalnızca 2024 İzmir İli Çevre Durum Raporu kaynaklı il geneli literatür bilgilerini içermekte olup proje sahasına özgü arazi gözlemleri ile tür listelerinin ileride hazırlanacak ÇED Raporuna bırakıldığı açıkça ifade edilmektedir [s. 125, 126]. Jeoloji ve hidrojeoloji bölümleri de İzmir ili geneli ve Gediz Havzası düzeyinde genel anlatımlardan oluşmakta, proje parseline özgü mevsimsel örnekleme veya yeraltı suyu başlangıç analizi sunulmamaktadır [s. 128, 133, 134]. Kümülatif çevresel etki değerlendirmesi bölümü ise içindekiler dizininde belirtilmesine karşın sağlanan sayfa aralığı dışında kaldığından incelenememiştir [s. 3]."
+      },
+      "red_flags": [
+        {
+          "category": "tarim_orman_korunan_alan",
+          "severity": "medium",
+          "title": "Üst Ölçekli Çevre Düzeni Planı İle Alt Ölçekli İmar Planı Arasında Arazi Kullanım Çelişkisi",
+          "detail": "Proje alanı İzmir-Manisa Planlama Bölgesi 1/100.000 ölçekli Çevre Düzeni Planında Kırsal Yerleşme Alanı olarak görünmesine karşın 11.08.2006 tarihli 1/1.000 ölçekli imar planında Küçük Sanayi Alanı içinde kalmaktadır [s. 12, 15, 135]. Ek-1 kapsamındaki tehlikeli atık geri kazanımı, PCB arındırma, solvent geri kazanımı ve ergitme gibi yüksek riskli faaliyetlerin Kırsal Yerleşme Alanı lekesi ve Küçük Sanayi Alanı fonksiyonu ile plan hiyerarşisi bakımından uyumu henüz ortaya konulmamıştır [s. 12, 13].",
+          "pages": [
+            12,
+            13,
+            15,
+            135
+          ]
+        },
+        {
+          "category": "izleme_olcum_celiskisi",
+          "severity": "medium",
+          "title": "772,26 m² Alanda 29 Farklı Tehlikeli ve Tehlikesiz Atık Prosesinin Fiziksel Sığma ve Güvenlik Sorunu",
+          "detail": "Toplam 772,26 m² tapu alanındaki mevcut yapıda 10 personelle 24 saat esaslı 29 ayrı prosesin yürütülmesi planlanmaktadır [s. 11, 12, 13]. Mevzuat gereği ayrı kapalı atık kabul, geçici depolama, ayrıştırılmış stok sahaları, itfaiye geçiş yolları, atıksu arıtma tesisi, yağ tutuculu drenaj, kantar, yıkama üniteleri, ergitme, CRT ve flüoresan kırma makinelerinin bu ölçekteki tek bir parselde reaksiyon ve yangın riski oluşturmadan nasıl konumlandırılacağı mahallinde teknik inceleme gerektirmektedir [s. 12, 13, 28, 30, 31].",
+          "pages": [
+            11,
+            12,
+            13,
+            28,
+            30,
+            31
+          ]
+        },
+        {
+          "category": "proje_parcalama",
+          "severity": "medium",
+          "title": "Aynı Parselde ÇED Muafiyeti Alınmasının Ardından Kısa Sürede Kapsamlı Ek-1 Tesisine Dönüşüm",
+          "detail": "Tesis adına 08.05.2026 tarihinde yalnızca tehlikesiz atık toplama-ayırma faaliyeti için ÇED Muafiyet görüşü alınmış, kimyasal işlem veya ergitme yapılmayacağı taahhüt edilmişken, yaklaşık üç buçuk ay sonra 27.08.2026 tarihli dilekçe ile aynı 772,26 m² parselde kimyasal geri kazanım, ergitme ve PCB arındırmayı içeren Ek-1 başvurusu yapılmıştır [s. 11, 13, 15]. Önceki muafiyet kapsamı ile yeni 29 prosesin aynı kooperatif parseli içindeki kümülatif alan ve altyapı yükü birlikte değerlendirilmelidir [s. 11, 13].",
+          "pages": [
+            11,
+            13,
+            15
+          ]
+        },
+        {
+          "category": "su_hidrojeoloji",
+          "severity": "medium",
+          "title": "Proses Atıksu Karakterizasyonu, Arıtma Kapasitesi ve İZSU Deşarj Onayı Eksikliği",
+          "detail": "IBC ve varil temizleme, kontamine metal/ambalaj yıkama, PCB arındırma, atık kimyasal ve solvent geri kazanımı gibi faaliyetlerden kaynaklanacak tehlikeli nitelikli proses atıksularının arıtıldıktan sonra İZSU kanalizasyon sistemine verilmesi planlanmaktadır [s. 12, 13]. Ancak atıksu debisi, kirletici parametreleri, arıtma teknolojisi, İZSU Kanal Deşarj İzin kriterlerine uygunluğu ve proje sahası özelinde yeraltı suyu seviyesi ile akifer hassasiyeti sunulmayıp ilerideki ÇED Raporu ve taahhütlere bırakılmıştır [s. 12, 128].",
+          "pages": [
+            12,
+            13,
+            128
+          ]
+        },
+        {
+          "category": "flora_fauna_mevsimsel",
+          "severity": "medium",
+          "title": "Saha Özelinde Flora-Fauna Gözlemi Yerine İl Geneli Literatür Özetine Dayanılması",
+          "detail": "Biyolojik çeşitlilik bölümü İzmir ilinin genel Akdeniz bitki örtüsü ve Bozdağlar ya da Gediz Deltası gibi uzak ekosistemlerine ilişkin 2024 Çevre Durum Raporu özetlerinden ibarettir [s. 125, 126]. Proje sahası ve yakın etki alanına yönelik arazi gözlemleri ile tür listelerinin ileride hazırlanacak ÇED Raporunda sunulacağı belirtilmekte olup halihazırda saha özelinde başlangıç biyolojik verisi bulunmamaktadır [s. 126].",
+          "pages": [
+            125,
+            126
+          ]
+        },
+        {
+          "category": "izleme_olcum_celiskisi",
+          "severity": "low",
+          "title": "Mevzuat Fiziksel Şartlar Tablolarında Boş Bırakılan Kapasite Raporu Bilgileri",
+          "detail": "Tehlikesiz ve tehlikeli atık ön işlem ile geri kazanım lisanslarına ilişkin fiziksel şartlar tablolarında işletmede bulunan makine ve ekipmanların yer aldığı Kapasite Raporunun tarih ve numara alanları boş şablon olarak bırakılmıştır [s. 28, 30]. Bu durum kurulu olduğu belirtilen mevcut tesisteki ekipman envanterinin resmi belge ile doğrulanmasını engellemektedir [s. 11, 28, 30].",
+          "pages": [
+            11,
+            28,
+            30
+          ]
+        }
+      ],
+      "recommended_bilirkisi_disciplines": [
+        "Çevre Mühendisi",
+        "Kimya Mühendisi",
+        "Hidrojeoloji Mühendisi",
+        "Makine Mühendisi",
+        "Şehir ve Bölge Plancısı",
+        "Biyolog"
+      ],
+      "hkt_and_petition_questions": [
+        {
+          "question_tr": "Toplam 772,26 m² büyüklüğündeki tek bir kiralık yapı içerisinde, atıkların birbiriyle reaksiyona girmesini önleyecek ayrı kapalı kabul, stok, yıkama, PCB arındırma, solvent geri kazanımı, ergitme, CRT kesme, atıksu arıtma tesisi ve itfaiye araçlarının engellenmeden geçeceği acil müdahale koridorlarının fiziki olarak nasıl sağlanacağı vaziyet planı ve boş bırakılan Kapasite Raporu belgeleriyle açıklanabilir mi?",
+          "pages": [
+            11,
+            12,
+            13,
+            28,
+            30
+          ]
+        },
+        {
+          "question_tr": "Proje alanı 1/100.000 ölçekli Çevre Düzeni Planında Kırsal Yerleşme Alanı ve 1/1.000 ölçekli imar planında Küçük Sanayi Alanı olarak görünmesine karşın, Ek-1 kapsamındaki tehlikeli ve kimyasal atık geri kazanım, ergitme ve PCB arındırma tesisinin plan kararlarına uygunluğu konusunda ilgili belediye ve kurum görüşleri alınmış mıdır?",
+          "pages": [
+            12,
+            13,
+            15,
+            135
+          ]
+        },
+        {
+          "question_tr": "IBC ve varil yıkama, PCB arındırma ve kimyasal işlemlerden doğacak proses atıksularının miktarı, ağır metal ve organik kirletici yükü ile kurulacak atıksu arıtma tesisinin arıtma verimi ortaya konulmadan İZSU kanalizasyon sistemine deşarj edilmesine yönelik ön izin veya teknik uygunluk görüşü alınmış mıdır?",
+          "pages": [
+            12,
+            13,
+            28,
+            30
+          ]
+        },
+        {
+          "question_tr": "08.05.2026 tarihinde yalnızca tehlikesiz atık toplama-ayırma faaliyeti için ÇED Muafiyet görüşü alınan aynı parselde kısa süre sonra 29 farklı tehlikeli atık prosesine geçilmesinin, bulunduğu yapı kooperatifi içindeki komşu işyerleri ve en yakın yerleşim alanları üzerinde hava emisyonu, VOC, koku, yangın ve BEKRA kaza riskleri açısından oluşturacağı kümülatif etki nasıl değerlendirilecektir?",
+          "pages": [
+            11,
+            13,
+            14,
+            15
+          ]
+        },
+        {
+          "question_tr": "Bornova ilçesi çevresindeki olası tarım alanları, zeytinlikler (3573 sayılı Kanun kapsamındaki 3 km mesafe kontrolü), yüzeysel drenaj hatları ve alüvyal yeraltı suyu akiferi dikkate alınarak ÇED Raporu aşamasında saha özelinde hidrojeolojik, ekolojik ve başlangıç çevre kalitesi ölçümleri yapılacak mıdır?",
+          "pages": [
+            125,
+            126,
+            128,
+            134
+          ]
+        }
+      ],
+      "data_limitations": "Toplam 243 sayfadan oluşan PDF dosyasının 207 sayfası metin çıkarılabilir, 36 sayfası ise taranmış görüntü niteliğindedir. Bu inceleme yalnızca sağlanan 24 örnek sayfa ([1, 2, 3, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 17, 28, 30, 31, 125, 126, 128, 133, 134, 135]) üzerinden gerçekleştirilmiştir; atık kapasite miktarlarını ve proses detaylarını içeren sayfalar, Bölüm III–VII kapsamındaki emisyon, atıksu ve gürültü hesaplamaları, kümülatif etki bölümü, çevre izleme planı ile vaziyet planı ve imar/muafiyet belgelerini içeren ekler sağlanan alıntılar dışında kaldığından incelenememiştir."
+    }
+  }
+}

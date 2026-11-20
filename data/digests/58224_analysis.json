@@ -1,0 +1,905 @@
+{
+  "filing": {
+    "province": "BURSA",
+    "district": "KARACABEY",
+    "project_name": "BÜYÜKBAŞ VE KÜÇÜKBAŞ HAYVAN KESİM VE ET ENTEGRE TESİSİ KAPASİTE ARTIŞI",
+    "project_owner": "ULUDAĞ ENTEGRE ET TESİSİ SAN.VE TİC. LTD.ŞTİ.",
+    "sector": "Gıda",
+    "sub_sector": "Kesimhaneler",
+    "decision_type": "ÇED Olumlu",
+    "announcement_date_tr": "16.11.2026",
+    "project_type": "Ek-1",
+    "detail_text": "BURSA ili KARACABEY,  ilcesinde BURSA ili KARACABEY,  ilcesi Tavşanlı Köyü Mevkii, 786 ada, 1 parsel,  sınırları içerisinde, ULUDAĞ ENTEGRE ET TESİSİ SAN.VE TİC. LTD.ŞTİ.  tarafından yapılması planlanan BÜYÜKBAŞ VE KÜÇÜKBAŞ HAYVAN KESİM VE ET ENTEGRE TESİSİ KAPASİTE ARTIŞI projesi ile ilgili olarak Bakanlığımıza sunulan ÇED Raporu İnceleme Değerlendirme Komisyonu tarafından incelenmiş ve değerlendirilmiştir. Proje ile ilgili olarak ÇED Yönetmeliğinin 14. maddesi gereğince Komisyon çalışmaları ve halkın görüşleri dikkate alınarak Bakanlığımızca 'Çevresel Etki Değerlendirmesi Olumlu' Kararı verilmiş olup; BURSA Valiliği(Çevre, Şehircilik ve İklim Değişikliği İl Müdürlüğü) tarafından kararın halka duyurulması gerekmektedir. Ayrıca, söz konusu projeye ait Nihai ÇED Raporu ve eklerinde belirtilen hususlar ile 2872 sayılı Çevre Kanununa istinaden yürürlüğe giren yönetmeliklerin ilgili hükümlerine uyulması, mer'i mevzuat uyarınca ilgili kurum/kuruluşlardan gerekli izinlerin alınması gerekmektedir. İlgililere ve kamuoyuna duyurulur.",
+    "detail_links": [
+      {
+        "text": "ÇED Raporu",
+        "href": "http://eced.csb.gov.tr/jsp/ek1/58224"
+      }
+    ],
+    "documents": [
+      {
+        "portal_doc_url": "http://eced.csb.gov.tr/jsp/ek1/58224",
+        "filing_id": "58224",
+        "consulting_firm": "SEREN HAFR. TANITIM TARIM DANIŞ. SAN. VE TİC. LTD. ŞTİ.",
+        "submitted_at": "05/12/2025 03:51:33",
+        "pdf_urls": [
+          {
+            "label": "58224_Son_Sekli_Verilen_Rapor.pdf",
+            "url": "http://eced.csb.gov.tr/jsp/dosya/dosyaGoster.htm?tempAd=dosya_8199187412168823314.tmp&orjinalAd=58224_Son_Sekli_Verilen_Rapor.pdf&yuklemeTarihi=2026-10-27"
+          }
+        ]
+      }
+    ],
+    "announcement_date": "2026-11-16",
+    "statutory_clocks": [
+      {
+        "code": "iyuk_20a",
+        "kind": "İYUK Madde 20/A iptal davası süresi (30 takvim günü; İYUK 11 süreyi durdurmaz)",
+        "deadline": "2026-12-16",
+        "days_remaining": 26
+      }
+    ],
+    "filing_key": "58224:16.11.2026:ÇED Olumlu",
+    "first_seen_at": "2026-11-20T02:11:24"
+  },
+  "pdf_info": {
+    "filename": "58224.pdf",
+    "bytes": 40184471,
+    "sha256": "0bb72634e1662240a2495aa43daf3a5c1da31edffbe7500e566dbc7e04ba82b1",
+    "cached": true
+  },
+  "analysis": {
+    "page_count": 340,
+    "total_chars": 533039,
+    "text_pages": 267,
+    "scanned_or_blank_pages": 73,
+    "scanned_page_sample": [
+      185,
+      186,
+      187,
+      188,
+      190,
+      192,
+      193,
+      195,
+      196,
+      197,
+      198,
+      199,
+      200,
+      201,
+      202
+    ],
+    "headings": [
+      [
+        217,
+        "Rev11-KARACABEY ET ENTEGRE TESISI-Model"
+      ],
+      [
+        219,
+        "Rev11-KARACABEY ET ENTEGRE TESISI-Model"
+      ],
+      [
+        244,
+        "IcYazismaKGM"
+      ],
+      [
+        244,
+        "KayitTarihi"
+      ],
+      [
+        244,
+        "GidecegiYerAdiBM"
+      ],
+      [
+        244,
+        "GidecegiAltYerAdiBM"
+      ],
+      [
+        244,
+        "GidecegiYerAdresBM"
+      ],
+      [
+        259,
+        "üst yazı"
+      ],
+      [
+        262,
+        "belge"
+      ]
+    ],
+    "geo": {
+      "precision": "exact_pdf",
+      "lat": 40.21909,
+      "lon": 28.34491,
+      "point_count": 16,
+      "points": [
+        [
+          40.21963,
+          28.34474
+        ],
+        [
+          40.21963,
+          28.34482
+        ],
+        [
+          40.21908,
+          28.34562
+        ],
+        [
+          40.21895,
+          28.34566
+        ],
+        [
+          40.2185,
+          28.34514
+        ],
+        [
+          40.2185,
+          28.34505
+        ],
+        [
+          40.21924,
+          28.34407
+        ],
+        [
+          40.2192,
+          28.34434
+        ],
+        [
+          40.21932,
+          28.34451
+        ],
+        [
+          40.21953,
+          28.34477
+        ],
+        [
+          40.21902,
+          28.34545
+        ],
+        [
+          40.21881,
+          28.34519
+        ],
+        [
+          40.21887,
+          28.34511
+        ],
+        [
+          40.21874,
+          28.34494
+        ],
+        [
+          40.21911,
+          28.34445
+        ],
+        [
+          40.21924,
+          28.34462
+        ]
+      ],
+      "datum": "UTM-Z35/ED50",
+      "pages": [
+        21
+      ]
+    },
+    "signals": {
+      "coordinates_and_footprint": {
+        "label": "Coordinates, Parcel & Footprint",
+        "page_count": 53,
+        "pages": [
+          3,
+          11,
+          12,
+          13,
+          18,
+          19,
+          21,
+          55,
+          56,
+          68,
+          71,
+          72,
+          73,
+          77,
+          80,
+          90,
+          96,
+          105,
+          106,
+          107,
+          108,
+          109,
+          110,
+          111,
+          112
+        ],
+        "samples": [
+          {
+            "page": 3,
+            "match": "koordinat",
+            "snippet": "….................................................................................... 20 I.7. Arazinin mülkiyet durumu, koordinatları, yer bulduru haritası, faaliyet alanı ve çevresinin fotoğrafları. ................................................…"
+          },
+          {
+            "page": 11,
+            "match": "800,57 m2",
+            "snippet": "….VE TİC. LTD.ŞTİ. olarak Bursa İli, Karacabey İlçesi, Tavşanlı Köyü Mevkii, tapunun 786 ada, 1 nolu parselde kayıtlı 8.800,57 m2’lik tapulu alanda “Büyükbaş ve Küçükbaş Hayvan Kesim ve Et Entegre Tesisi Kapasite Artışı” yapılması planlanmaktadır.…"
+          },
+          {
+            "page": 11,
+            "match": "041,60 m2",
+            "snippet": "…asite Artışı” yapılması planlanmaktadır. Tapu ve kira sözleşmesi Ek-2’de verilmektedir. Tesisin toplam inşaat alanı 4.041,60 m2 olacak olup aplikasyon planı ve ölçü krokisi Ek- 3’de verilmektedir. Söz konusu tesis için, Bursa Çevre Şehircilik ve…"
+          },
+          {
+            "page": 11,
+            "match": "ada 1 sayılı parsel",
+            "snippet": "…Başkanlığı’ndan alınan 23.10.2025 tarih ve 210202 sayılı yazıda “Bursa İli, Karacabey İlçesi, Tavşanlı Mahallesi, 786 ada 1 sayılı parsel; Bursa Büyükşehir Belediye Meclisi tarafından 22.07.2025 tarih ve 963 sayılı karar ile onaylanan “Bursa 2020 yılı 1/10…"
+          },
+          {
+            "page": 12,
+            "match": "Koordinat",
+            "snippet": "…anın tamamının yerleşime açılacağını göstermez.” denilmektedir. İlgili yazı Ek-5’te verilmektedir. Proje alanına ait; Koordinatlar Ek-1’de, Proje alanına ait Tapu ve kira sözleşmesi Ek-2’de verilmektedir. Söz konusu proje kapsamında günde 500 ad…"
+          },
+          {
+            "page": 13,
+            "match": "800,57 m2",
+            "snippet": "….VE TİC. LTD.ŞTİ. olarak Bursa İli, Karacabey İlçesi, Tavşanlı Köyü Mevkii, tapunun 786 ada, 1 nolu parselde kayıtlı 8.800,57 m2’lik tapulu alanda “ Büyükbaş ve Küçükbaş Hayvan Kesim ve Et Entegre Tesisi Kapasite Artışı” yapılması planlanmaktadır…"
+          },
+          {
+            "page": 18,
+            "match": "800,57 m2",
+            "snippet": "….VE TİC. LTD.ŞTİ. olarak Bursa İli, Karacabey İlçesi, Tavşanlı Köyü Mevkii, tapunun 786 ada, 1 nolu parselde kayıtlı 8.800,57 m2’lik tapulu alanda “Büyükbaş ve Küçükbaş Hayvan Kesim ve Et Entegre Tesisi Kapasite Artışı” yapılması planlanmaktadır.…"
+          },
+          {
+            "page": 18,
+            "match": "koordinat",
+            "snippet": "…n Kesim ve Et Entegre Tesisi Kapasite Artışı” yapılması planlanmaktadır. Tapu ve kira sözleşmesi Ek-2’de, proje alanı koordinatları Ek-1’de verilmektedir. Söz konusu tesis için, Bursa Çevre Şehircilik ve İklim Değişikliği İl Müdürlüğü’nden 22.1…"
+          }
+        ]
+      },
+      "water_and_discharge": {
+        "label": "Water Use, Hydrogeology & Discharge",
+        "page_count": 46,
+        "pages": [
+          6,
+          32,
+          54,
+          55,
+          56,
+          58,
+          59,
+          60,
+          61,
+          71,
+          78,
+          83,
+          84,
+          105,
+          119,
+          120,
+          121,
+          122,
+          123,
+          124,
+          125,
+          126,
+          128,
+          134,
+          137
+        ],
+        "samples": [
+          {
+            "page": 6,
+            "match": "deşarj",
+            "snippet": "…........ 118 III. B.5. Yapılacak olan Arıtma Tesisi ve oluşacak atıksuların cins ve miktarları bertaraf yöntemleri ve deşarj edileceği ortamlar ve uzaklığı, atıksuların deşarj değerleri, arıtma tesisi akım şeması, iş termin planı, kapasitesi,…"
+          },
+          {
+            "page": 6,
+            "match": "atıksu",
+            "snippet": "…edileceği ortamlar ve uzaklığı, atıksuların deşarj değerleri, arıtma tesisi akım şeması, iş termin planı, kapasitesi, atıksu arıtma tesisin devreye alınması ile birlikte oluşacak arıtma tesisi arıtma çamurlarının miktarı ve bertarafı ile ilgil…"
+          },
+          {
+            "page": 32,
+            "match": "sulak alan",
+            "snippet": "…Kültür alanları (bağ, bahçe vb.), nadasa bırakılmış yerler 5- Kuru çayır ve açık alanlar 6- Nemli çayır, bataklık ve sulak alan, otsu yamaçlar, sahil yakını 7- Yol kenarı, terk edilmiş yerler 8- Kayalık ve taşlık alanlar, gölgeli yerler, kalkerl…"
+          },
+          {
+            "page": 54,
+            "match": "akifer",
+            "snippet": "…kli topografik harita üzerine işaretlenmesi Geniş alanlarda yüzeyleyen alüvyon birim inceleme alanındaki en önemli akifer birimdir. Gevşek tutturulmuş kil, silt, kum, çakıl ve blok boyutundaki malzemeden ve bunların farklı kombinasyonların…"
+          },
+          {
+            "page": 54,
+            "match": "yeraltı suyu",
+            "snippet": "…blok boyutundaki malzemeden ve bunların farklı kombinasyonlarından oluşan birim özellikle çakıl ve kumlu seviyelerinde yeraltı suyu bulundurabilmektedir. Karacabey havzasına inen birçok akarsuyun taşıdığı çeşitli boyda detritik malzemenin çökelmesiy…"
+          },
+          {
+            "page": 55,
+            "match": "yeraltı suyu",
+            "snippet": "…e arıtılacağı için yeraltı suyuna herhangi bir olumsuz hidrojeolojik etki beklenmemektedir. Kalite ve miktar yönünden yeraltı suyu durum takibi yapılması amacıyla, proje alanı etki alanında (akış aşağı) bulunan kuyu, kaynak, çeşme vb. su yapılarında…"
+          },
+          {
+            "page": 56,
+            "match": "Sulak Alan",
+            "snippet": "…l?appid=5f3978146c4643438ab446620e275269) Şekil 2.5. DKMP genel Müdürlüğü sulak alanlar haritası Şekil 2.6. Ulusal Sulak Alan Envanteri Yönetim Bilgi Sistemi Haritası (kaynak: https://saybis.tarimorman.gov.tr/#) İnceleme alanının 27 km kuze…"
+          },
+          {
+            "page": 58,
+            "match": "dere yatağı",
+            "snippet": "…I ÇED RAPORU 58 Şekil 2.7. Karacabey havzası Drenaj Ağı Haritası İnceleme alanı içerisinde kuru veya akar dere yatağı bulunmamaktadır. Yakın çevrede yalnızca 70 metre batısında Hanife Dere tahliye kanalı bulunmakta olup, olası taşkın ko…"
+          }
+        ]
+      },
+      "protected_land_and_olive": {
+        "label": "Protected Zones, Forests & Olive Groves",
+        "page_count": 12,
+        "pages": [
+          4,
+          32,
+          56,
+          72,
+          75,
+          76,
+          78,
+          97,
+          163,
+          168,
+          271,
+          272
+        ],
+        "samples": [
+          {
+            "page": 4,
+            "match": "Özel Çevre Koruma",
+            "snippet": "…ları, Kültür Varlıkları, Tabiat Varlıkları, Sit ve Koruma Alanları, Biyogenetik Rezerv Alanları, Biyosfer Rezervleri, Özel Çevre Koruma Bölgeleri, Özel Koruma Alanları, içme ve kullanma su kaynakları ile ilgili koruma alanları, Turizm Alan ve Merkezleri…"
+          },
+          {
+            "page": 32,
+            "match": "sulak alan",
+            "snippet": "…Kültür alanları (bağ, bahçe vb.), nadasa bırakılmış yerler 5- Kuru çayır ve açık alanlar 6- Nemli çayır, bataklık ve sulak alan, otsu yamaçlar, sahil yakını 7- Yol kenarı, terk edilmiş yerler 8- Kayalık ve taşlık alanlar, gölgeli yerler, kalkerl…"
+          },
+          {
+            "page": 56,
+            "match": "Sulak Alan",
+            "snippet": "…l?appid=5f3978146c4643438ab446620e275269) Şekil 2.5. DKMP genel Müdürlüğü sulak alanlar haritası Şekil 2.6. Ulusal Sulak Alan Envanteri Yönetim Bilgi Sistemi Haritası (kaynak: https://saybis.tarimorman.gov.tr/#) İnceleme alanının 27 km kuze…"
+          },
+          {
+            "page": 72,
+            "match": "3573 sayılı",
+            "snippet": "…ENTEGRE TESİSİ KAPASİTE ARTIŞI ÇED RAPORU 72 sayılı Mera Kanunu, 1380 sayılı Su Ürünleri Kanunu, 3573 sayılı Zeytinciliğin Islahı ve Yabanilerinin Aşılattırılması Hakkındaki Kanun ile diğer özel Kanunlar gereği kurumumuzdan gö…"
+          },
+          {
+            "page": 75,
+            "match": "Özel Çevre Koruma",
+            "snippet": "…ları, Kültür Varlıkları, Tabiat Varlıkları, Sit ve Koruma Alanları, Biyogenetik Rezerv Alanları, Biyosfer Rezervleri, Özel Çevre Koruma Bölgeleri, Özel Koruma Alanları, içme ve kullanma su kaynakları ile ilgili koruma alanları, Turizm Alan ve Merkezleri…"
+          },
+          {
+            "page": 76,
+            "match": "Özel Çevre Koruma",
+            "snippet": "…tmeliği’nde tanımlanan alanlar bulunmamaktadır. f) Çevre Kanunu’nun 9 uncu maddesi uyarınca Cumhurbaşkanı tarafından \"Özel Çevre Koruma Bölgeleri\" olarak tespit ve ilan edilen alanlar, bulunmamaktadır. g) Boğaziçi Kanunu’na göre koruma altına alınan alan…"
+          },
+          {
+            "page": 76,
+            "match": "orman alanı",
+            "snippet": "…ulunmamaktadır. g) Boğaziçi Kanunu’na göre koruma altına alınan alanlar, bulunmamaktadır. ğ) Orman Kanunu uyarınca orman alanı sayılan yerler, bulunmamaktadır. h) Kıyı Kanunu gereğince yapı yasağı getirilen alanlar, bulunmamaktadır. ı) Zeytinc…"
+          },
+          {
+            "page": 78,
+            "match": "kıyı kenar",
+            "snippet": "…ı olmak üzere canlıların yaşama ortamı olarak önem taşıyan bütün sular, bataklık sazlık ve turbiyeler ile bu alanların kıyı kenar çizgisinden itibaren kara tarafına doğru ekolojik açıdan sulak alan kalan yerler, bulunmamaktadır. ç) Göller, akarsul…"
+          }
+        ]
+      },
+      "ecology_and_baseline": {
+        "label": "Flora, Fauna & Baseline Methodology",
+        "page_count": 23,
+        "pages": [
+          5,
+          7,
+          24,
+          25,
+          27,
+          28,
+          32,
+          33,
+          34,
+          37,
+          39,
+          41,
+          54,
+          76,
+          78,
+          96,
+          97,
+          147,
+          148,
+          163,
+          180,
+          271,
+          274
+        ],
+        "samples": [
+          {
+            "page": 5,
+            "match": "Endemik",
+            "snippet": "…............... 92 III.A.9. Proje alanının hazırlanması ve inşaat aşamalarında zarar görebilecek flora fauna türleri (Endemik, nesli tehlikede türler vb.) proje için seçilen yer ve etki alanında bulunan tür popülasyonlarının etkilenmesi, ......…"
+          },
+          {
+            "page": 7,
+            "match": "Endemik",
+            "snippet": "….................... 145 II.B.20. İşletme aşamasında yapılacak işlerden dolayı zarar görebilecek flora-fauna türleri (Endemik türler, nesli tehlikede vb.), proje için seçilen yer ve faaliyetin etki alanında bulunan tür popülasyonlarının etkilen…"
+          },
+          {
+            "page": 24,
+            "match": "flora ve fauna",
+            "snippet": "…nı içindeki ekosistemler ve ekosistemlerdeki türler, Ekolojik analiz çalışmalarında, proje alanı ve etki alanının flora ve fauna analizi yapılırken, flora türlerinin üreme, çiçeklenme, fauna türlerinin üreme, kışlama vb. dönemleri gibi farklı per…"
+          },
+          {
+            "page": 24,
+            "match": "arazi çalışması",
+            "snippet": "…pılırken, flora türlerinin üreme, çiçeklenme, fauna türlerinin üreme, kışlama vb. dönemleri gibi farklı periyotlarında arazi çalışması yapılması gerekmektedir. Bunun için gerekli süre ise minimum bir vejetasyon dönemi olmalıdır. Ekolojik analiz çalışmas…"
+          },
+          {
+            "page": 24,
+            "match": "literatür taraması",
+            "snippet": "…bilir. Bundan dolayı arazi gözleminin yanı sıra aynı bölgede daha önce yapılmış arazi gözlem ve örneklemeler, detaylı literatür taraması, fiziksel, kimyasal ve jeolojik, iklimsel, topoğrafik bulgular da değerlendirilmiştir. Bu faktörler ekosistem üzerinde…"
+          },
+          {
+            "page": 24,
+            "match": "Bern Sözleşmesi",
+            "snippet": "…leri çalışması yanı sıra proje etki alanı içerisinde bulunması muhtemel flora ve fauna türleri de dikkate alınmıştır. Bern Sözleşmesi Bern Sözleşmesi (Avrupa’nın Yaban Hayatı ve Yaşama Ortamlarının Korunması Sözleşmesi) uluslararası bir sözleşme olu…"
+          },
+          {
+            "page": 24,
+            "match": "endemik",
+            "snippet": "…tedir. Bu sözleşme hükümlerine uygun olarak taraflar tehdit altında veya zarar görebilir nitelikteki türlere özellikle endemik olanlara özel önem gösterecek, yabani fauna ve floranın habitatlarının korunması için milli politikalarını oluşturacak…"
+          },
+          {
+            "page": 25,
+            "match": "Bern Sözleşmesi",
+            "snippet": "…lınan flora türlerinin kasıtlı olarak koparılması, toplanması, kesilmesi veya köklenmesi kesinlikle yasaklanmıştır. Bern Sözleşmesi Ekleri EK-I Kesin Koruma Altına Alınan Flora Türleri EK-II Kesin Koruma Altına Alınan Fauna Türleri EK-III Koru…"
+          }
+        ]
+      },
+      "pollutants_and_hazards": {
+        "label": "Emissions, Geochemistry & Waste",
+        "page_count": 35,
+        "pages": [
+          3,
+          20,
+          41,
+          47,
+          50,
+          53,
+          54,
+          85,
+          86,
+          87,
+          88,
+          89,
+          96,
+          134,
+          145,
+          148,
+          152,
+          153,
+          154,
+          155,
+          157,
+          163,
+          173,
+          176,
+          178
+        ],
+        "samples": [
+          {
+            "page": 3,
+            "match": "deprem",
+            "snippet": "…lik halihazır harita üzerinde faaliyet alanı merkezli 1 km lik yarıçap üzerinde yer altı sularını, yerüstü sularını ve deprem kuşaklarını gösterir analiz, jeolojik yapı, köy yerleşik ve sanayi alanları, ulaşım ağı, enerji nakil hatları, arazi k…"
+          },
+          {
+            "page": 20,
+            "match": "deprem",
+            "snippet": "…lik halihazır harita üzerinde faaliyet alanı merkezli 1 km lik yarıçap üzerinde yer altı sularını, yerüstü sularını ve deprem kuşaklarını gösterir analiz, jeolojik yapı, köy yerleşik ve sanayi alanları, ulaşım ağı, enerji nakil hatları, arazi k…"
+          },
+          {
+            "page": 41,
+            "match": "gürültü",
+            "snippet": "…flora ve fauna türleri geri dönüşümsüz olarak zarar görecek türler değildir. Fauna türleri çalışma sürecinde ortamdaki gürültü ve hareketlilikten etkilenecekler ve çevredeki daha uygun alternatif yaşam alanlarına çekileceklerdir. Bu çevresel ol…"
+          },
+          {
+            "page": 47,
+            "match": "bor",
+            "snippet": "…eçer. Menderesli akarsu ve gölsel ortama geçişe işaret eden bu seviyelerde arazi alanı dışında (daha güneyde) kömür ve bor gelişimleri vardır. Bu çökel kayalarla yaşıt olduğunu düşündüğümüz andezit, dasit ve yer yer bazaltik volkanik kayalar…"
+          },
+          {
+            "page": 50,
+            "match": "deprem",
+            "snippet": "….3. Depremsellik (İnceleme alanı ve çevresinin diri fay haritasında yeri belirlenerek inceleme alanının kaçıncı derece deprem bölgesinde yer aldığı ve yapılacak yapıların ilgili Deprem Yönetmeliğine göre incelenmesi), Batı Anadolu genişlem…"
+          },
+          {
+            "page": 53,
+            "match": "Deprem",
+            "snippet": "…ENTEGRE TESİSİ KAPASİTE ARTIŞI ÇED RAPORU 53 Şekil 2.4. Proje Alanını Gösterir Deprem Haritası Projelendirmede Afet Bölgelerinde Yapılacak Yapılar Hakkında Yönetmelikte belirtilen şartlara ve Deprem Yö…"
+          },
+          {
+            "page": 54,
+            "match": "Deprem",
+            "snippet": "…. LTD. ŞTİ. ENTEGRE TESİSİ KAPASİTE ARTIŞI ÇED RAPORU 54 “Türkiye Deprem Bölgeleri Haritası” nda birinci derece deprem bölgesi içerisinde yer almaktadır. Şekil 2.3’e göre proje alanının hali…"
+          },
+          {
+            "page": 54,
+            "match": "fay hattı",
+            "snippet": "…rem bölgesi içerisinde yer almaktadır. Şekil 2.3’e göre proje alanının halihazır Bursa Diri Fay haritasında aktif bir fay hattı üzerinde bulunmadığı gözlenmektedir. II.4. Hidrojeolojik Özellikler: yer altı su kaynaklarının mevcut ve planlanan ku…"
+          }
+        ]
+      },
+      "cost_and_capacity": {
+        "label": "Proje Bedeli, Güç ve Kapasite",
+        "page_count": 203,
+        "pages": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25
+        ],
+        "samples": [
+          {
+            "page": 1,
+            "match": "KAPASİTE",
+            "snippet": "BÜYÜKBAŞ VE KÜÇÜKBAŞ HAYVAN KESİM VE ET ENTEGRE TESİSİ KAPASİTE ARTIŞI PROJESİ Bursa İli, Karacabey İlçesi, Tavşanlı Köyü Mevkii, tapunun 786 ada, 1 nolu parsel…"
+          },
+          {
+            "page": 2,
+            "match": "KAPASİTE",
+            "snippet": "…ÜKBAŞ VE KÜÇÜKBAŞ HAYVAN KESİM VE ET SAN. VE TİC. LTD. ŞTİ. ENTEGRE TESİSİ KAPASİTE ARTIŞI ÇED RAPORU 2 PROJE SAHİBİNİN ADI: ULUDAĞ ENTEGRE ET TESİSİ SAN.VE TİC. LTD.ŞTİ. ADRESİ: Karapın…"
+          },
+          {
+            "page": 2,
+            "match": "480.000.000 TL",
+            "snippet": "…@hotmail.com PROJENİN ADI: BÜYÜKBAŞ VE KÜÇÜKBAŞ HAYVAN KESİM VE ET ENTEGRE TESİSİ KAPASİTE ARTIŞI PROJENİN BEDELİ: 480.000.000 TL PROJE İÇİN SEÇİLEN YERİN AÇIK ADRESİ (İLİ, İLÇESİ, MEVKİİ): Bursa İli, Karacabey İlçesi, Tavşanlı Köyü Mevkii, tapu…"
+          },
+          {
+            "page": 3,
+            "match": "KAPASİTE",
+            "snippet": "…ÜKBAŞ VE KÜÇÜKBAŞ HAYVAN KESİM VE ET SAN. VE TİC. LTD. ŞTİ. ENTEGRE TESİSİ KAPASİTE ARTIŞI ÇED RAPORU 3 İÇİNDEKİLER LİSTESİ: PROJENİN TEKNİK OLMAYAN ÖZETİ ................................…"
+          },
+          {
+            "page": 3,
+            "match": "proje bedeli",
+            "snippet": "…me süresi, hizmet amaçları, projenin sosyal ve ekonomik yönden gerekliliği (fayda maliyet analizi), zamanlama tablosu, proje bedelinin detaylandırılarak açıklanması, ....................................................................................…"
+          },
+          {
+            "page": 4,
+            "match": "KAPASİTE",
+            "snippet": "…ÜKBAŞ VE KÜÇÜKBAŞ HAYVAN KESİM VE ET SAN. VE TİC. LTD. ŞTİ. ENTEGRE TESİSİ KAPASİTE ARTIŞI ÇED RAPORU 4 Deprem Yönetmeliğine göre incelenmesi), .................................................…"
+          },
+          {
+            "page": 5,
+            "match": "KAPASİTE",
+            "snippet": "…ÜKBAŞ VE KÜÇÜKBAŞ HAYVAN KESİM VE ET SAN. VE TİC. LTD. ŞTİ. ENTEGRE TESİSİ KAPASİTE ARTIŞI ÇED RAPORU 5 BÖLÜM III. PROJENİN ÖNEMLİ ÇEVRESEL ETKİLERİ VE ALINACAK ÖNLEMLER .....................…"
+          },
+          {
+            "page": 5,
+            "match": "kapasite",
+            "snippet": "…II.A.8. Proje kapsamındaki ulaştırma altyapısı planı (ulaştırma güzergahı, şekli, güzergah yollarının mevcut durumu ve kapasitesi, hangi amaçlar için kullanıldığı, mevcut trafik yoğunluğu, yerleşim yerlerine göre konumu) .........................…"
+          }
+        ]
+      },
+      "splitting_and_thresholds": {
+        "label": "Proje Parçalama, Kapasite Artışı ve Eşik Değerler",
+        "page_count": 203,
+        "pages": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25
+        ],
+        "samples": [
+          {
+            "page": 1,
+            "match": "KAPASİTE ARTIŞI",
+            "snippet": "BÜYÜKBAŞ VE KÜÇÜKBAŞ HAYVAN KESİM VE ET ENTEGRE TESİSİ KAPASİTE ARTIŞI PROJESİ Bursa İli, Karacabey İlçesi, Tavşanlı Köyü Mevkii, tapunun 786 ada, 1 nolu parsel…"
+          },
+          {
+            "page": 2,
+            "match": "KAPASİTE ARTIŞI",
+            "snippet": "…ÜKBAŞ VE KÜÇÜKBAŞ HAYVAN KESİM VE ET SAN. VE TİC. LTD. ŞTİ. ENTEGRE TESİSİ KAPASİTE ARTIŞI ÇED RAPORU 2 PROJE SAHİBİNİN ADI: ULUDAĞ ENTEGRE ET TESİSİ SAN.VE TİC. LTD.ŞTİ. ADRESİ: Karapınar mh.…"
+          },
+          {
+            "page": 3,
+            "match": "KAPASİTE ARTIŞI",
+            "snippet": "…ÜKBAŞ VE KÜÇÜKBAŞ HAYVAN KESİM VE ET SAN. VE TİC. LTD. ŞTİ. ENTEGRE TESİSİ KAPASİTE ARTIŞI ÇED RAPORU 3 İÇİNDEKİLER LİSTESİ: PROJENİN TEKNİK OLMAYAN ÖZETİ .......................................…"
+          },
+          {
+            "page": 4,
+            "match": "KAPASİTE ARTIŞI",
+            "snippet": "…ÜKBAŞ VE KÜÇÜKBAŞ HAYVAN KESİM VE ET SAN. VE TİC. LTD. ŞTİ. ENTEGRE TESİSİ KAPASİTE ARTIŞI ÇED RAPORU 4 Deprem Yönetmeliğine göre incelenmesi), ........................................................…"
+          },
+          {
+            "page": 5,
+            "match": "KAPASİTE ARTIŞI",
+            "snippet": "…ÜKBAŞ VE KÜÇÜKBAŞ HAYVAN KESİM VE ET SAN. VE TİC. LTD. ŞTİ. ENTEGRE TESİSİ KAPASİTE ARTIŞI ÇED RAPORU 5 BÖLÜM III. PROJENİN ÖNEMLİ ÇEVRESEL ETKİLERİ VE ALINACAK ÖNLEMLER ............................…"
+          },
+          {
+            "page": 6,
+            "match": "KAPASİTE ARTIŞI",
+            "snippet": "…ÜKBAŞ VE KÜÇÜKBAŞ HAYVAN KESİM VE ET SAN. VE TİC. LTD. ŞTİ. ENTEGRE TESİSİ KAPASİTE ARTIŞI ÇED RAPORU 6 III. B.2. Proje kapsamında bulunan tesislerde kullanılacak hammaddelerin nereden temin edileceğ…"
+          },
+          {
+            "page": 7,
+            "match": "KAPASİTE ARTIŞI",
+            "snippet": "…ÜKBAŞ VE KÜÇÜKBAŞ HAYVAN KESİM VE ET SAN. VE TİC. LTD. ŞTİ. ENTEGRE TESİSİ KAPASİTE ARTIŞI ÇED RAPORU 7 III. B.14. Projenin, proje alanının yakınında bulunan tesislerle olan etkileşiminin açıklanması,…"
+          },
+          {
+            "page": 8,
+            "match": "KAPASİTE ARTIŞI",
+            "snippet": "…ÜKBAŞ VE KÜÇÜKBAŞ HAYVAN KESİM VE ET SAN. VE TİC. LTD. ŞTİ. ENTEGRE TESİSİ KAPASİTE ARTIŞI ÇED RAPORU 8 VI.4. Görüşlerine Başvurulan Proje İlgili Tarafları ve Görüş/Önerileri ve Konu İle İlgili Değer…"
+          }
+        ]
+      }
+    },
+    "audit_checks": {
+      "mentions_field_survey": true,
+      "mentions_literature_only_cue": true,
+      "mentions_seasonal_sampling": true,
+      "mentions_cumulative_impact": true,
+      "mentions_olive_law_3573": true,
+      "mentions_groundwater_or_aquifer": true,
+      "mentions_iucn_or_endemic": true,
+      "mentions_capacity_or_splitting": true
+    }
+  },
+  "llm_synthesis": {
+    "model": "gemini-4-hydrogen",
+    "generated_at": "2026-11-20T12:56:09",
+    "pages_sent": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      20,
+      24,
+      25,
+      32,
+      41,
+      47,
+      54,
+      55,
+      56,
+      72
+    ],
+    "usage": {
+      "prompt_tokens": 24080,
+      "output_tokens": 4292,
+      "thoughts_tokens": 6594,
+      "total_tokens": 34966
+    },
+    "result": {
+      "executive_summary_tr": "Uludağ Entegre Et Tesisi San. ve Tic. Ltd. Şti. tarafından Bursa İli, Karacabey İlçesi, Tavşanlı Köyü Mevkii, 786 ada 1 parseldeki 8.800,57 m2 alanda büyükbaş ve küçükbaş hayvan kesim ve et entegre tesisi kapasite artışı planlanmaktadır. Daha önce günlük 10 büyükbaş ve 40 küçükbaş hayvan kesimi beyanıyla ÇED kapsamı dışı görüşü alınarak inşaata başlanan tesisin kapasitesi, Ek-1 eşiği olan günlük 100 kesim ünitesinin çok üzerine çıkarılarak günlük 500 büyükbaş ve 2.500 küçükbaş (toplam 812 kesim ünitesi/gün) seviyesine yükseltilmektedir. Alüvyon akifer ve birinci derece deprem bölgesi üzerinde yer alan projede, tarım, mera, su ürünleri ve zeytinlik kanunlarına ilişkin izin ve uygun görüşlerin ÇED süreci sonrasına bırakıldığı, ekolojik saha çalışmasının ise yalnızca Temmuz-Eylül 2025 aralığında yürütüldüğü görülmektedir. Ayrıca proje alanı Manyas Kuş Gölü'ne 8,25 km mesafede bulunmakta olup günlük 375.000 kg canlı ağırlık kesimi ile yüksek miktarda kan, sakatat ve proses atıksuyu oluşturacak niteliktedir.",
+      "executive_summary_en": "Uludağ Entegre Et Tesisi San. ve Tic. Ltd. Şti. proposes a capacity expansion for a cattle and small-ruminant slaughterhouse and integrated meat processing facility on an 8,800.57 m2 parcel (786 ada, 1 parsel) in Tavşanlı Village, Karacabey District, Bursa Province. Having previously obtained a ÇED out-of-scope letter and initiated construction based on a declared capacity of 10 cattle and 40 small ruminants per day, the project now seeks to expand to 500 cattle and 2,500 small ruminants per day (812 slaughter units/day), well above the Annex-1 threshold of 100 units/day. Key environmental and legal stakes include the deferral of substantive clearances under the Soil Protection, Pasture, Fisheries, and Olive Cultivation Laws until after the ÇED decision, a single-period (July-September 2025) ecological survey relying on probable species lists, and siting over a permeable Quaternary alluvial aquifer in a first-degree seismic zone 8.25 km from Manyas Bird Lake.",
+      "key_facts": [
+        {
+          "label": "Tapu Alanı",
+          "value": "8.800,57 m2 (786 ada, 1 parsel, Tavşanlı Köyü Mevkii)",
+          "page": 11
+        },
+        {
+          "label": "Toplam İnşaat Alanı",
+          "value": "4.041,60 m2 (2 katlı tesis)",
+          "page": 11
+        },
+        {
+          "label": "Proje Bedeli",
+          "value": "480.000.000 TL",
+          "page": 2
+        },
+        {
+          "label": "Önceki ÇED Kapsam Dışı Kapasitesi",
+          "value": "10 adet/gün büyükbaş, 40 adet/gün küçükbaş (22.11.2024 tarihli yazı)",
+          "page": 11
+        },
+        {
+          "label": "Planlanan Kesim Kapasitesi",
+          "value": "500 adet/gün büyükbaş, 2.500 adet/gün küçükbaş (812 kesim ünitesi/gün; yıllık 900.000 hayvan)",
+          "page": 14
+        },
+        {
+          "label": "Günlük Canlı Ağırlık ve Yan Ürünler",
+          "value": "375.000 kg/gün canlı ağırlık; 225.000 kg/gün karkas et; 15.000 kg/gün kan; 6.525 kg/gün bağırsak; 10.087,5 kg/gün işkembe",
+          "page": 15
+        },
+        {
+          "label": "Et İşleme Üretim Kapasitesi",
+          "value": "42.730 kg/gün (12.820.000 kg/yıl)",
+          "page": 15
+        },
+        {
+          "label": "İstihdam ve Çalışma Düzeni",
+          "value": "İnşaat: 20 kişi (6 ay, 150 gün/yıl); İşletme: 150 kişi (300 gün/yıl, 16 saat/gün, 2 vardiya)",
+          "page": 14
+        },
+        {
+          "label": "Sulak Alanlara Mesafe",
+          "value": "Manyas Kuş Gölü 8,25 km kuzeybatıda; Uluabat Gölü 27 km kuzeydoğuda",
+          "page": 55
+        },
+        {
+          "label": "Karacabey İlçesi Arazi Varlığı",
+          "value": "1.093.178 dekar toplam alanın 776.744 dekarı tarım/çayır/mera, 316.434 dekarı orman",
+          "page": 72
+        }
+      ],
+      "baseline_assessment": {
+        "field_survey_status": "mixed_or_unclear",
+        "seasonal_sampling_status": "promised_post_approval_only",
+        "cumulative_impact_status": "omitted_or_not_found",
+        "olive_and_protected_status": "Bursa Tarım ve Orman İl Müdürlüğü yazısında, verilen ÇED devam görüşünün 5403 sayılı Toprak Koruma ve Arazi Kullanımı Kanunu, 4342 sayılı Mera Kanunu, 1380 sayılı Su Ürünleri Kanunu ve 3573 sayılı Zeytincilik Kanunu açısından izin veya uygun görüş anlamına gelmediği ve bu kanunlar kapsamındaki başvuruların ÇED sonrasında yapılmasının gerektiği belirtilmiştir [s. 72]. İnceleme alanının 8,25 km kuzeybatısında Manyas Kuş Gölü ve 27 km kuzeydoğusunda Uluabat Gölü yer almakta olup [s. 55, 56], Koruma Alanları (s. 75) ve Orman Alanları (s. 78) bölümleri alıntılanan sayfalar arasında bulunmamaktadır.",
+        "explanation": "Raporda ekolojik çalışmanın yalnızca Temmuz-Eylül 2025 aralığında yürütüldüğü, buna karşın tür tablolarının proje alanında bulunması muhtemel türler biçiminde literatür ve yöre halkı gözlemleriyle derlendiği ve flora izlemesine gerek görülmediği belirtilmektedir [s. 8, 24, 25, 32]. Hidrojeolojik açıdan proje alanının içme ve sulama kuyularının yer aldığı geçirimli Kuvaterner alüvyon akifer üzerinde bulunmasına rağmen incelenen sayfalarda faaliyet öncesi başlangıç su kimyası verisi sunulmamış, yalnızca işletme sonrasında üç ayda bir numune alınacağı taahhüt edilmiştir [s. 54, 55]. Kümülatif Etki Değerlendirmesi bölümü (s. 153) ise alıntılanan sayfalar kapsamında yer almadığından değerlendirilememiştir."
+      },
+      "red_flags": [
+        {
+          "category": "proje_parcalama",
+          "severity": "high",
+          "title": "ÇED kapsam dışı görüşüyle inşaata başlanıp ardından Ek-1 eşiğinin 8 katını aşan kapasite artışına gidilmesi",
+          "detail": "Tesis için 22.11.2024 tarih ve 11037259 sayılı İl Müdürlüğü yazısı ile günlük 10 büyükbaş ve 40 küçükbaş hayvan kesimi beyanı üzerinden ÇED Yönetmeliği kapsamı dışı görüşü alınarak inşaata başlandığı, ardından artan piyasa talebi gerekçesiyle kapasitenin günlük 500 büyükbaş ve 2.500 küçükbaşa (toplam 812 kesim ünitesi/gün) çıkarıldığı beyan edilmektedir [s. 11, 14]. Ek-1 listesi Madde 16/a kapsamındaki günlük 100 kesim ünitesi eşik değerinin sekiz katından fazla olan bu kapasite öncesinde kapsam dışı beyanıyla inşaata başlanmış olması, proje parçalama ve fiili durum yaratarak ÇED denetimini zayıflatma niteliği taşımaktadır [s. 11, 12, 14].",
+          "pages": [
+            11,
+            12,
+            14
+          ]
+        },
+        {
+          "category": "tarim_orman_korunan_alan",
+          "severity": "high",
+          "title": "5403, 4342, 1380 ve 3573 sayılı Kanunlar kapsamındaki uygun görüş ve izinlerin ÇED sonrasına ertelenmesi",
+          "detail": "Bursa Tarım ve Orman İl Müdürlüğü'nün rapora aktarılan görüşünde, ÇED sürecinin devamına yönelik görüşün 5403 sayılı Toprak Koruma ve Arazi Kullanımı Kanunu, 4342 sayılı Mera Kanunu, 1380 sayılı Su Ürünleri Kanunu ve 3573 sayılı Zeytincilik Kanunu açısından bir izin veya uygun görüş anlamı taşımadığı açıkça vurgulanmış ve bu kanunlar kapsamındaki inceleme ve izin işlemlerinin ÇED sürecinin tamamlanmasının ardından yapılması istenmiştir [s. 72]. Yer seçimi yasağı veya mutlak koruma hükmü içeren özel kanunlar yönünden saha uygunluğunun ÇED Olumlu kararı öncesinde kesinleştirilmemesi Danıştay içtihatlarına göre temel iptal nedenleri arasındadır [s. 72].",
+          "pages": [
+            72
+          ]
+        },
+        {
+          "category": "flora_fauna_mevsimsel",
+          "severity": "high",
+          "title": "Tek dönemli ekolojik inceleme, muhtemel tür listeleri ve flora izlemesinden vazgeçilmesi",
+          "detail": "Raporun kendisinde flora ve fauna türlerinin üreme, çiçeklenme ve kışlama dönemlerini kapsayacak biçimde farklı periyotlarda ve en az bir vejetasyon döneminde arazi çalışması gerektiği belirtildiği halde, ekolojik çalışmanın yalnızca Temmuz-Eylül 2025 dönemini kapsadığı görülmektedir [s. 24]. Tür listelerinin proje alanında bulunması muhtemel türler şeklinde sunulması [s. 8, 32], Bern Sözleşmesi kapsamındaki tür değerlendirmesinin literatür çalışmasına dayandırılması ve Manyas Kuş Gölü'ne 8,25 km mesafedeki sahada [s. 55] ilkbahar ile göç/kışlama dönemleri gözlenmeden flora izlemesine gerek duyulmaması [s. 25] bilimsel yeterlilik açısından ağır bir eksiklik oluşturmaktadır.",
+          "pages": [
+            8,
+            24,
+            25,
+            32,
+            55
+          ]
+        },
+        {
+          "category": "su_hidrojeoloji",
+          "severity": "medium",
+          "title": "Geçirimli Kuvaterner alüvyon akifer ve 1. derece deprem bölgesinde başlangıç su analizi yerine işletme sonrası izleme taahhüdü",
+          "detail": "Proje alanının birinci derece deprem bölgesinde yer aldığı ve bölgede içme, sulama ve kullanma suyu sondaj kuyularının açıldığı geçirimli Kuvaterner yaşlı alüvyon akifer üzerinde konumlandığı belirtilmektedir [s. 54]. Ancak alıntılanan hidrojeoloji bölümünde akış aşağı su yapılarına ilişkin faaliyet öncesi bazal kimyasal analiz verileri yer almamakta, yalnızca faaliyet başladıktan sonra üç ayda bir numune alınacağı taahhüt edilmektedir [s. 54, 55]; günlük 15.000 kg kan ve yüksek organik yük üretecek tesisin [s. 15] zemin sızdırmazlığı ve atıksu kontrolünün keşifte doğrulanması gerekmektedir.",
+          "pages": [
+            15,
+            54,
+            55
+          ]
+        },
+        {
+          "category": "tarim_orman_korunan_alan",
+          "severity": "medium",
+          "title": "İmar planı kademelenmesi ve 8.800,57 m2 parselde yüksek kesim kapasitesinin mekânsal yeterliliği",
+          "detail": "Bursa Büyükşehir Belediyesi'nin 23.10.2025 tarihli yazısında parsel için onaylı nazım imar planı bulunmadığı ve 1/100.000 ölçekli ÇDP'de Planlama Alanları sembolünde kaldığı belirtilirken, 14.01.2026 tarihli yazıda 1/5.000 ölçekli Nazım İmar Planında Sanayi Alanı olarak yer aldığı ifade edilmiştir [s. 11, 12, 20]. Günlük 375.000 kg canlı hayvan girişi yapılacak tesisin padok, kesimhane, et işleme, arıtma ve yükleme birimlerinin [s. 15, 20] 8.800,57 m2'lik parsel ve 4.041,60 m2 inşaat alanı içindeki [s. 11] mekânsal yeterliliği ile Karacabey Ovası tarım alanlarına etkisinin [s. 72] mahallinde incelenmesi gerekmektedir.",
+          "pages": [
+            11,
+            12,
+            15,
+            20,
+            72
+          ]
+        }
+      ],
+      "recommended_bilirkisi_disciplines": [
+        "Çevre Mühendisi",
+        "Hidrojeoloji Mühendisi",
+        "Biyolog",
+        "Ziraat Mühendisi",
+        "Jeoloji Mühendisi",
+        "Şehir ve Bölge Plancısı"
+      ],
+      "hkt_and_petition_questions": [
+        {
+          "question_tr": "22.11.2024 tarihli yazıda günlük 10 büyükbaş ve 40 küçükbaş hayvan kesimi taahhüdüyle ÇED kapsam dışı görüşü alınarak inşaata başlandıktan sonra hangi tarihte ve hangi yapı ruhsatı/projelendirme kapsamında kapasitenin günlük 500 büyükbaş ve 2.500 küçükbaşa (812 kesim ünitesi/gün) çıkarılmasına karar verilmiştir?",
+          "pages": [
+            11,
+            14
+          ]
+        },
+        {
+          "question_tr": "Bursa Tarım ve Orman İl Müdürlüğü yazısında 5403, 4342, 1380 ve 3573 sayılı Kanunlar kapsamındaki uygun görüş ve izinlendirme işlemlerinin ÇED süreci sonrasına bırakıldığı açıkça belirtildiğine göre, proje parseli ve 3 km çevresinde zeytinlik, mera veya mutlak tarım arazisi bulunup bulunmadığı ÇED Olumlu kararı verilmeden önce neden kesinleştirilmemiştir?",
+          "pages": [
+            72
+          ]
+        },
+        {
+          "question_tr": "Raporda farklı mevsimsel dönemleri kapsayan arazi çalışması gerektiği ifade edilmesine rağmen ekolojik çalışmanın yalnızca Temmuz-Eylül 2025 aralığında yapılmasının, tür listelerinin muhtemel türler olarak düzenlenmesinin ve Manyas Kuş Gölü'ne 8,25 km mesafede flora izlemesinden vazgeçilmesinin bilimsel dayanağı nedir?",
+          "pages": [
+            8,
+            24,
+            25,
+            32,
+            55
+          ]
+        },
+        {
+          "question_tr": "Tesisin birinci derece deprem bölgesinde ve içme-sulama sondaj kuyularının bulunduğu geçirimli Kuvaterner alüvyon akifer üzerinde yer almasına karşın, faaliyet öncesinde akış aşağı kuyulara ait bazal yeraltı suyu kalite analizleri neden yapılmamıştır?",
+          "pages": [
+            54,
+            55
+          ]
+        },
+        {
+          "question_tr": "Günlük 375.000 kg canlı ağırlık kesimi, 15.000 kg kan ve 16.612,5 kg iç organ yan ürünü oluşturacak entegre tesisin canlı hayvan bekleme padokları, kesimhane, işleme hatları ve atıksu arıtma tesisinin 8.800,57 m2 büyüklüğündeki parsele sığdırılabilirliği ve komşu tarım alanları ile yerleşimlere etkisi nasıl değerlendirilmiştir?",
+          "pages": [
+            11,
+            15,
+            20,
+            72
+          ]
+        }
+      ],
+      "data_limitations": "Toplam 340 sayfalık ÇED raporunun 267 sayfası metin çıkarılabilir, 73 sayfası ise taranmış görüntü niteliğindedir ve bu değerlendirmede yalnızca alıntılanan 25 sayfa (1-15, 20, 24, 25, 32, 41, 47, 54-56, 72) incelenebilmiştir. İçindekiler dizininde yer alan Koruma Alanları (s. 75), Orman Alanları (s. 78), Mevcut Kirlilik Yükü (s. 79), Su Temini (s. 82), Atıksu Arıtma Tesisi (s. 119), Koku ve Rendering Ünitesi (s. 136-142), Hayvan Yakma Ünitesi (s. 144), Kümülatif Etki Değerlendirmesi (s. 153), Çevre İzleme Planı (s. 155), Halkın Katılımı (s. 158) ve ekler bölümü (s. 182 ve sonrası) alıntı kapsamı dışında kaldığından içerikleri doğrulanamamıştır."
+    }
+  }
+}
