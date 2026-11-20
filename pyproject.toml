@@ -1,7 +1,7 @@
 [project]
-name = "aegean-eced-watchdog"
-version = "0.1.0"
-description = "Open-source e-ÇED watcher, statutory deadline tracker, and page-cited ecological PDF pre-digest for İzmir & the Aegean"
+name = "eced-watchdog"
+version = "0.2.0"
+description = "Türkiye-wide open-source e-ÇED watcher, interactive map, statutory deadline tracker, and page-cited ecological PDF pre-digest"
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [

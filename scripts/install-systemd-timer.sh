@@ -6,9 +6,9 @@ UV_BIN="$(command -v uv || echo "${HOME}/.local/bin/uv")"
 UNIT_DIR="${HOME}/.config/systemd/user"
 mkdir -p "${UNIT_DIR}"
 
-cat > "${UNIT_DIR}/aegean-eced-watchdog.service" <<EOF
+cat > "${UNIT_DIR}/eced-watchdog.service" <<EOF
 [Unit]
-Description=Aegean e-ÇED Ecological Watchdog (daily incremental poll & digest)
+Description=Türkiye e-ÇED Watchdog (daily incremental nationwide poll & digest)
 Wants=network-online.target
 After=network-online.target
 
@@ -21,9 +21,9 @@ ExecStart=${UV_BIN} run eced-watch --days 7 --max-digests 5 --drop-pdfs
 Nice=10
 EOF
 
-cat > "${UNIT_DIR}/aegean-eced-watchdog.timer" <<EOF
+cat > "${UNIT_DIR}/eced-watchdog.timer" <<EOF
 [Unit]
-Description=Run Aegean e-ÇED Ecological Watchdog daily
+Description=Run Türkiye e-ÇED Watchdog daily
 
 [Timer]
 OnCalendar=*-*-* 09:00:00
@@ -35,5 +35,5 @@ WantedBy=timers.target
 EOF
 
 systemctl --user daemon-reload
-systemctl --user enable --now aegean-eced-watchdog.timer
-systemctl --user list-timers aegean-eced-watchdog.timer --no-pager
+systemctl --user enable --now eced-watchdog.timer
+systemctl --user list-timers eced-watchdog.timer --no-pager

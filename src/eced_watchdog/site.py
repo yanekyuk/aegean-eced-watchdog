@@ -647,12 +647,45 @@ pre {{
 """
 
 
+def _urgency_sort_key(filing: dict[str, Any]) -> tuple[int, int, str]:
+    """Sort active dated clocks by fewest days remaining first, then undated HKT/İDK, then expired."""
+    clocks = filing.get("statutory_clocks") or []
+    active_days = [
+        c["days_remaining"]
+        for c in clocks
+        if c.get("days_remaining") is not None and c["days_remaining"] >= 0
+    ]
+    ann = filing.get("announcement_date") or "0000-00-00"
+    # Invert ISO date for descending secondary ordering inside ascending sort
+    inv_date = "".join(chr(ord("9") - ord(ch) + ord("0")) if ch.isdigit() else ch for ch in ann)
+    if active_days:
+        return (0, min(active_days), inv_date)
+    if any(c.get("days_remaining") is None for c in clocks):
+        return (1, 0, inv_date)
+    return (2, 0, inv_date)
+
+
+def _urgency_rank_value(filing: dict[str, Any]) -> int:
+    """Numeric rank for client-side sorting (lower = more urgent)."""
+    clocks = filing.get("statutory_clocks") or []
+    active_days = [
+        c["days_remaining"]
+        for c in clocks
+        if c.get("days_remaining") is not None and c["days_remaining"] >= 0
+    ]
+    if active_days:
+        return min(active_days)
+    if any(c.get("days_remaining") is None for c in clocks):
+        return 500
+    return 10000
+
+
 def build_site(
     filings: list[dict[str, Any]],
     *,
     digests_dir: Path,
     docs_dir: Path,
-    site_url: str = "https://yanekyuk.github.io/aegean-eced-watchdog/",
+    site_url: str = "https://yanekyuk.github.io/eced-watchdog/",
     max_cards: int = 300,
 ) -> dict[str, Any]:
     docs_dir.mkdir(parents=True, exist_ok=True)
@@ -679,7 +712,9 @@ def build_site(
             if saved.get("analysis") and saved["analysis"].get("geo"):
                 geo_by_fid[fid] = saved["analysis"]["geo"]
 
-    shown_filings = filings[:max_cards]
+    # Keep the latest max_cards filings by date, then default-order by statutory urgency (least time remaining first)
+    recent_pool = filings[:max_cards]
+    shown_filings = sorted(recent_pool, key=_urgency_sort_key)
     total = len(shown_filings)
     provinces_present = sorted({f.get("province", "") for f in shown_filings if f.get("province")})
     active_count = sum(
@@ -788,6 +823,8 @@ def build_site(
         cards_html.append(
             f"""<article class="card {'ek1' if is_ek1 else ''}"
   data-idx="{idx}"
+  data-urgency="{_urgency_rank_value(f)}"
+  data-date="{_esc(f.get('announcement_date') or '0000-00-00')}"
   data-province="{_esc(f.get('province', ''))}"
   data-active="{'1' if is_active else '0'}"
   data-digest="{'1' if has_digest else '0'}"
@@ -867,6 +904,12 @@ def build_site(
       <option value="">Tüm İller ({len(provinces_present)})</option>
       {prov_options}
     </select>
+    <select id="sort" class="filter-select" aria-label="Sıralama ölçütü">
+      <option value="urgent" selected>Sıralama: En acil yasal süre</option>
+      <option value="newest">Sıralama: En yeni duyuru</option>
+      <option value="digest">Sıralama: Ön özeti hazır olanlar</option>
+      <option value="ek1">Sıralama: Ek-1 öncelikli</option>
+    </select>
     <button class="pill active" data-filter="all">Tümü</button>
     <button class="pill" data-filter="active">Yasal Süresi Devam Edenler</button>
     <button class="pill" data-filter="digest">Ön Özeti Hazır Olanlar</button>
@@ -885,13 +928,45 @@ def build_site(
 <script src="{LEAFLET_JS}"></script>
 <script>
 (() => {{
+  const cardsContainer = document.getElementById('cards');
   const cards = [...document.querySelectorAll('#cards article')];
   const pills = [...document.querySelectorAll('button.pill')];
   const q = document.getElementById('q');
   const prov = document.getElementById('prov');
+  const sortSel = document.getElementById('sort');
   const countEl = document.getElementById('count');
   const mapItems = {map_json};
   let mode = 'all';
+
+  function sortCards() {{
+    const s = sortSel.value;
+    cards.sort((a, b) => {{
+      const ua = Number(a.dataset.urgency);
+      const ub = Number(b.dataset.urgency);
+      const da = a.dataset.date;
+      const db = b.dataset.date;
+      if (s === 'newest') {{
+        if (db !== da) return db.localeCompare(da);
+        return ua - ub;
+      }}
+      if (s === 'digest') {{
+        const ha = Number(b.dataset.digest) - Number(a.dataset.digest);
+        if (ha !== 0) return ha;
+        if (ua !== ub) return ua - ub;
+        return db.localeCompare(da);
+      }}
+      if (s === 'ek1') {{
+        const ea = (b.dataset.annex === 'Ek-1' ? 1 : 0) - (a.dataset.annex === 'Ek-1' ? 1 : 0);
+        if (ea !== 0) return ea;
+        if (ua !== ub) return ua - ub;
+        return db.localeCompare(da);
+      }}
+      // Default: urgent (least time remaining first)
+      if (ua !== ub) return ua - ub;
+      return db.localeCompare(da);
+    }});
+    for (const c of cards) cardsContainer.appendChild(c);
+  }}
 
   let map = null;
   let layerGroup = null;
@@ -969,6 +1044,11 @@ def build_site(
   }}));
   q.addEventListener('input', apply);
   prov.addEventListener('change', apply);
+  sortSel.addEventListener('change', () => {{
+    sortCards();
+    apply();
+  }});
+  sortCards();
   apply();
 }})();
 </script>

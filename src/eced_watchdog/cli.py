@@ -41,7 +41,7 @@ def select_digest_candidates(
     )
 
     already: list[dict[str, Any]] = []
-    fresh: list[tuple[tuple[int, int, str], dict[str, Any]]] = []
+    fresh: list[tuple[tuple[int, int, int, str], dict[str, Any]]] = []
     seen_ids: set[str] = set()
 
     for f in filings:
@@ -57,17 +57,24 @@ def select_digest_candidates(
             already.append(f)
             continue
 
+        clocks = f.get("statutory_clocks") or []
+        active_days = [c["days_remaining"] for c in clocks if c.get("days_remaining") is not None and c["days_remaining"] >= 0]
+        has_undated_active = any(c.get("days_remaining") is None for c in clocks)
+
+        if active_days:
+            # Active dated clock: prioritize fewest days remaining (most urgent first)
+            urgency_tier = 2
+            neg_days_left = -min(active_days)
+        elif has_undated_active:
+            urgency_tier = 1
+            neg_days_left = -999
+        else:
+            urgency_tier = 0
+            neg_days_left = -9999
+
         is_ek1 = 1 if f.get("project_type") == "Ek-1" else 0
-        is_active = (
-            1
-            if any(
-                c.get("days_remaining") is None or c.get("days_remaining", -1) >= 0
-                for c in f.get("statutory_clocks") or []
-            )
-            else 0
-        )
         ann = f.get("announcement_date") or "0000-00-00"
-        fresh.append(((is_active, is_ek1, ann), f))
+        fresh.append(((urgency_tier, is_ek1, neg_days_left, ann), f))
 
     fresh.sort(key=lambda x: x[0], reverse=True)
     return already + [f for _, f in fresh[:max_new]]
@@ -109,7 +116,7 @@ def main() -> None:
     parser.add_argument("--drop-pdfs", action="store_true", help="Delete downloaded PDFs after digesting")
     parser.add_argument(
         "--site-url",
-        default="https://yanekyuk.github.io/aegean-eced-watchdog/",
+        default="https://yanekyuk.github.io/eced-watchdog/",
         help="Public GitHub Pages base URL for RSS feed links",
     )
     args = parser.parse_args()
