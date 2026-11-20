@@ -1,0 +1,729 @@
+{
+  "filing": {
+    "province": "MERSİN",
+    "district": "ANAMUR",
+    "project_name": "202000531 (ER:3383507) RUHSAT NUMARALI BOKSİT OCAĞI VE MOBİL KIRMA ELEME TESİSİ",
+    "project_owner": "TEKBİR MADENCİLİK İNŞAAT GIDA NAKLİYE PETROL TARIM ELEKTRİK SANAYİ VE TİCARET LİMİTED ŞİRKETİ",
+    "sector": "Petrol-Doğalgaz-III. ve IV. Grup Madenler",
+    "sub_sector": "IV. Grup Madenler",
+    "decision_type": "HKT",
+    "announcement_date_tr": "19.11.2026",
+    "project_type": "Ek-1",
+    "detail_text": "MERSİN ili ANAMUR,  ilcesinde MERSİN ili ANAMUR ilçesi sınırları içerisinde TEKBİR MADENCİLİK İNŞAAT GIDA NAKLİYE PETROL TARIM ELEKTRİK SANAYİ VE TİCARET LİMİTED ŞİRKETİ tarafından yapılması planlanan 202000531 (ER:3383507) RUHSAT NUMARALI BOKSİT OCAĞI VE MOBİL KIRMA ELEME TESİSİ projesi ile ilgili Çevresel Etki Değerlendirme süreci başlamış ve Çevresel Etki Değerlendirmesi Başvuru Dosyası halkın görüşüne açılmıştır.Söz konusu projeye ilişkin, halkı proje hakkında bilgilendirmek, görüş ve önerilerini almak amacıyla ÇED Yönetmeliğinin 9. maddesi gereğince 15/12/2026 tarihinde Halkın Katılım Toplantısı düzenlenecektir.ÇED Başvuru Dosyasını İncelemek isteyenler Bakanlık Merkezinde veya MERSİN Çevre ve Şehircilik İl Müdürlüklerinde duyuru tarihinden itibaren raporu inceleyerek, zamanlama takvimi içerisinde proje hakkında Bakanlığa veya Valiliğe görüş bildirebilirler. Halkın Katılımı Toplantısı yeri ve saati ile ilgili ÇED İzin Denetim Genel Müdürlüğü ve MERSİN Çevre, Şehircilik ve İklim Değişikliği İl Müdürlüğünden bilgi alınabilir. İlgililere ve kamuoyuna duyurulur.",
+    "detail_links": [
+      {
+        "text": "Başvuru Dosyası",
+        "href": "http://eced.csb.gov.tr/jsp/ek1/61400"
+      }
+    ],
+    "documents": [
+      {
+        "portal_doc_url": "http://eced.csb.gov.tr/jsp/ek1/61400",
+        "filing_id": "61400",
+        "consulting_firm": "ALTA ÇED PROJE MÜHENDİSLİK A.Ş.",
+        "submitted_at": "24/10/2026 01:10:04",
+        "pdf_urls": [
+          {
+            "label": "Dosya Göster",
+            "url": "http://eced.csb.gov.tr/jsp/dosya/dosyaGoster.htm?tempAd=sign2720895194124067134.pdf&orjinalAd=e-imza.pdf&yuklemeTarihi=2026-10-24"
+          }
+        ]
+      }
+    ],
+    "announcement_date": "2026-11-19",
+    "statutory_clocks": [
+      {
+        "code": "hkt",
+        "kind": "Halkın Katılımı Toplantısı (HKT) duyurusu; toplantı tarihi resmi metinde yer alır",
+        "deadline": null,
+        "days_remaining": null
+      }
+    ],
+    "filing_key": "61400:19.11.2026:HKT",
+    "first_seen_at": "2026-11-20T02:10:47"
+  },
+  "pdf_info": {
+    "filename": "61400.pdf",
+    "bytes": 28888796,
+    "sha256": "63fea2deca8ef48c18ad23432842e3446db74b8a8cf9ff2897a0151619ff1c11",
+    "cached": false
+  },
+  "analysis": {
+    "page_count": 239,
+    "total_chars": 329976,
+    "text_pages": 212,
+    "scanned_or_blank_pages": 27,
+    "scanned_page_sample": [
+      76,
+      77,
+      93,
+      105,
+      112,
+      131,
+      144,
+      159,
+      160,
+      162,
+      167,
+      168,
+      177,
+      181,
+      183
+    ],
+    "headings": [
+      [
+        31,
+        "FLORA VE FAUNA"
+      ],
+      [
+        79,
+        "BÖLÜM 2. İZLEME YAPILACAK PARAMETRE/FAALİYETLER İÇİN DAYANAK"
+      ],
+      [
+        79,
+        "BÖLÜM 3."
+      ],
+      [
+        79,
+        "BÖLÜM 4. SORUMLU UYGULAYICI (PROJE SAHİBİ, YEREL/ULUSAL OTORİTE,"
+      ],
+      [
+        80,
+        "BÖLÜM 1. ÇEVRESEL VE SOSYAL ETKİ"
+      ],
+      [
+        81,
+        "BÖLÜM 2."
+      ],
+      [
+        84,
+        "BÖLÜM 3. İNŞAAT/İŞLETME DÖNEMİNDE ALINACAK ÖNLEMLERİN"
+      ],
+      [
+        86,
+        "BÖLÜM 4. SORUMLU UYGULAYICI (PROJE SAHİBİ, YEREL/ULUSAL"
+      ],
+      [
+        88,
+        "BÖLÜM 5. İZLEME SIKLIĞI VE METODU"
+      ],
+      [
+        89,
+        "BÖLÜM 6. HEDEF VE DEĞERLENDİRME KRİTERİ"
+      ],
+      [
+        97,
+        "BÖLÜM 1: ATIK YÖNETİMİ"
+      ],
+      [
+        103,
+        "BÖLÜM 2: EĞİTİM VE BİLGİLENDİRME FAALİYETLERİ"
+      ],
+      [
+        104,
+        "BÖLÜM 3: KAYIT TUTMA VE RAPORLAMA"
+      ],
+      [
+        108,
+        "BÖLÜM 1. AMAÇ VE KAPSAM"
+      ],
+      [
+        109,
+        "BÖLÜM 2. SORUMLULUKLAR"
+      ],
+      [
+        109,
+        "BÖLÜM 3. İNŞAAT AŞAMASI TRAFİK YÖNETİMİ"
+      ],
+      [
+        111,
+        "BÖLÜM 4. YOL VE ARAÇ BAKIMI"
+      ],
+      [
+        111,
+        "BÖLÜM 5. İŞLETME AŞAMASI TRAFİK YÖNETİMİ"
+      ],
+      [
+        114,
+        "BÖLÜM 1. Projenin İnşaat ve İşletme Aşamalarında Yenilenebilir Enerji Kullanımına"
+      ],
+      [
+        114,
+        "BÖLÜM 3. Alternatif ve Çevre Dostu Malzeme Seçimi, Bakım-Onarım-İyileştirme"
+      ],
+      [
+        114,
+        "BÖLÜM 4. Proje Kapsamında Açığa Çıkacak Atık Isının Değerlendirilmesi, Geri Kazanımı"
+      ],
+      [
+        114,
+        "BÖLÜM 5. Proje Kapsamında Önerilen Ağaçlandırma, Peyzaj vb. (Karbon Yutak Alanları)"
+      ]
+    ],
+    "geo": {
+      "precision": "province_centroid",
+      "lat": 36.8121,
+      "lon": 34.6415,
+      "point_count": 0,
+      "points": [],
+      "datum": null,
+      "pages": []
+    },
+    "signals": {
+      "coordinates_and_footprint": {
+        "label": "Coordinates, Parcel & Footprint",
+        "page_count": 36,
+        "pages": [
+          2,
+          8,
+          9,
+          16,
+          17,
+          19,
+          26,
+          29,
+          52,
+          65,
+          72,
+          74,
+          104,
+          109,
+          115,
+          125,
+          139,
+          156,
+          157,
+          163,
+          164,
+          174,
+          175,
+          178,
+          179
+        ],
+        "samples": [
+          {
+            "page": 2,
+            "match": "utm",
+            "snippet": "…yüzeyinde (kazı ve döküm alanı dâhil) planlanan açık işletmeler, c) 400.000 ton/yıl ve üzeri kırma, eleme, yıkama, kurutma, cevher hazırlama işlemlerinden en az birini yapan tesisler, Projenin Ana NACE Kodu: 08.9 Başka yerde sınıflandırılm…"
+          },
+          {
+            "page": 8,
+            "match": "8,46 km",
+            "snippet": "…tir; Tablo 3 Hassas Yapılar Yerleşim Birimi Talep Edilen ÇED Alanı Mersin İl Merkezi 187 km (Doğu) Anamur İlçesi 8,46 km (Güneydoğu) Korucuk Mahalleleri 440 m (Batı) Kızılaliler Mahalleleri 1070 m (Güneydoğu) Ovabaşı Mahalleleri 1776…"
+          },
+          {
+            "page": 8,
+            "match": "2,43 km",
+            "snippet": "…atı) Kızılaliler Mahalleleri 1070 m (Güneydoğu) Ovabaşı Mahalleleri 1776 m (Kuzeydoğu) Ovabaşı Mahalleleri Camii 2,43 km (Kuzeydoğu) Ovabaşı İlkokulu 3,30 km (Kuzeydoğu) Talep edilen ÇED Alanı en yakın yerleşim yerine olan mesafesi 440 k…"
+          },
+          {
+            "page": 8,
+            "match": "3,30 km",
+            "snippet": "…Güneydoğu) Ovabaşı Mahalleleri 1776 m (Kuzeydoğu) Ovabaşı Mahalleleri Camii 2,43 km (Kuzeydoğu) Ovabaşı İlkokulu 3,30 km (Kuzeydoğu) Talep edilen ÇED Alanı en yakın yerleşim yerine olan mesafesi 440 km batı yönünde bulunan Korucuk Mahalle…"
+          },
+          {
+            "page": 9,
+            "match": "utm",
+            "snippet": "…yüzeyinde (kazı ve döküm alanı dâhil) planlanan açık işletmeler, c) 400.000 ton/yıl ve üzeri kırma, eleme, yıkama, kurutma, cevher hazırlama işlemlerinden en az birini yapan tesisler, Hükmü gereğince hazırlanmıştır."
+          },
+          {
+            "page": 16,
+            "match": "Koordinat",
+            "snippet": "…0 m olarak alınmıştır. Hesaplanan görünür rezerv: 280 x 50 m x 40 m x 3 ton/m3 = 1.680.000 ton Tablo 4 Görünür Rezerv Koordinatları Sıra No Y X 1 475386 3994080 2 475920 3994120 3 476555 3993600 4 477000 3993100 5 477000 3993000…"
+          },
+          {
+            "page": 17,
+            "match": "Koordinat",
+            "snippet": "…LI BOKSİT OCAĞI VE MOBİL KIRMA ELEME TESİSİ ÇED BAŞVURU DOSYASI 12 Muhtemel Rezerv Alanı Tablo 5 Muhtemel Rezerv Koordinatları Sıra No Y X 1 473000 3996694 2 477000 3996807 3 477000 3996000 4 477000 3994000 5 477000 3993000…"
+          },
+          {
+            "page": 19,
+            "match": "363,33 ha",
+            "snippet": "…n bedelleri yıllara göre değişiklik göstermekte olup, proje alanı içerisinde yer alan ve daha önce izin alınmamış olan 363,33 ha ormanlık alan için; Orman Kanunu’nun 16’ncı Maddesi Uygulama Yönetmeliği hükümleri gereğince Teminat Bedeli, Ağaçlandı…"
+          }
+        ]
+      },
+      "water_and_discharge": {
+        "label": "Water Use, Hydrogeology & Discharge",
+        "page_count": 9,
+        "pages": [
+          7,
+          49,
+          50,
+          52,
+          53,
+          69,
+          83,
+          123,
+          126
+        ],
+        "samples": [
+          {
+            "page": 7,
+            "match": "600.000 m3/yıl",
+            "snippet": "…lo 2 Mevcut, Talep Edilen ve Nihai Kapasite Miktarlarını Gösterimi Nihai Kapasite Ocak Üretim Kapasitesi ton/yıl 600.000 m3/yıl 200.000 Mobil Kırma Eleme Tesisi Kapasitesi ton/yıl 600.000 m3/yıl 200.000 Söz konusu projede üretim açık işletm…"
+          },
+          {
+            "page": 49,
+            "match": "sulak alan",
+            "snippet": "…ar, bataklık sazlık ve turbiyeler ile bu alanların kıyı kenar çizgisinden itibaren kara tarafına doğru ekolojik açıdan sulak alan kalan yerler. Bulunmamaktadır. ç) Göller, akarsular, yeraltı suyu işletme sahaları. Bulunmamaktadır."
+          },
+          {
+            "page": 49,
+            "match": "yeraltı suyu",
+            "snippet": "…isinden itibaren kara tarafına doğru ekolojik açıdan sulak alan kalan yerler. Bulunmamaktadır. ç) Göller, akarsular, yeraltı suyu işletme sahaları. Bulunmamaktadır."
+          },
+          {
+            "page": 50,
+            "match": "yeraltı suyu",
+            "snippet": "…3187) İçme-kullanma suyu havzaları koruma alanları: İçme- kullanma suyu temin edilen veya edilmesi planlanan yerüstü ve yeraltı suyu kaynaklarının tabii su toplama alanı içerisinde kalan alanlar. Bulunmamaktadır."
+          },
+          {
+            "page": 52,
+            "match": "0,964 m3/gün",
+            "snippet": "…yu ihtiyaçları için gerekli olacak su miktarı şöyle hesaplanmıştır; Günlük Su İhtiyacı = 4 kişi * 0,241 m3/kişi-gün = 0,964 m3/gün İşletme Aşaması; Personel içme ve kullanma suyu: 20 personel çalıştırılacaktır. Çalışacak personelin kişi başına kul…"
+          },
+          {
+            "page": 52,
+            "match": "4,82 m3/gün",
+            "snippet": "…u ihtiyaçları için gerekli olacak su miktarı şöyle hesaplanmıştır; Günlük Su İhtiyacı = 20 kişi * 0,241 m3/kişi-gün = 4,82 m3/gün b) Yolda Tozumanın Önlenmesi İçin Gerekli Su Miktarı: İhtiyaç olunan spreyleme suyu miktarı metrekare başına 1,5 litr…"
+          },
+          {
+            "page": 52,
+            "match": "20,65 m3/gün",
+            "snippet": "…etre = 13.750 m2 olacaktır. Yolda İhtiyaç olunan spreyleme suyu miktarı = 13.750 m2/gün x 1,5 lt/m2 = 20.625 lt/gün =20,65 m3/gün = 20,65 m3/gün, yaz aylarında günde 2 defa sulama yapıldığından.41,25 m3/gündür."
+          },
+          {
+            "page": 52,
+            "match": "41,25 m3/gün",
+            "snippet": "….750 m2/gün x 1,5 lt/m2 = 20.625 lt/gün =20,65 m3/gün = 20,65 m3/gün, yaz aylarında günde 2 defa sulama yapıldığından.41,25 m3/gündür."
+          }
+        ]
+      },
+      "protected_land_and_olive": {
+        "label": "Protected Zones, Forests & Olive Groves",
+        "page_count": 10,
+        "pages": [
+          8,
+          21,
+          45,
+          46,
+          47,
+          48,
+          49,
+          51,
+          75,
+          129
+        ],
+        "samples": [
+          {
+            "page": 8,
+            "match": "Orman Alanı",
+            "snippet": "…in şantiye binası yapılacaktır. ÇED alanları Mersin-Adana Planlama Bölgesi 1/100.000 ölçekli Çevre Düzeni Planı’ nda “Orman Alanı” vasfında tanımlanan araziler içerisinde kalmaktadır. (Bkz. EK-3.3) Proje kapsamında ÇED proje alanlarına ait en yakın…"
+          },
+          {
+            "page": 21,
+            "match": "Orman Alanı",
+            "snippet": "…Elektrik, Su getirilmesi vb. ) 500,000.00 0.00 500,000.00 Mülkiyet İzin Bedeli (Talep edilen ÇED alanı mülkiyeti Orman Alanı) 141,717,117.52 0.00 141,717,117.52 Tesis Yatırım Giderleri 1,000,000.00 0.00 1,000,000.00 İnşaat ve Kurulum G…"
+          },
+          {
+            "page": 45,
+            "match": "Orman Alanı",
+            "snippet": "…r. Mülkiyet Durumu Proje alanı ÇED alanları Mersin-Adana Planlama Bölgesi 1/100.000 ölçekli Çevre Düzeni Planı’ nda “Orman Alanı” vasfında tanımlanan araziler içerisinde kalmaktadır. (Bkz. EK-3.3) İlgili kişi ve kurumlardan gerekli izinler alınmad…"
+          },
+          {
+            "page": 45,
+            "match": "sit alanı",
+            "snippet": "…si için tüm tedbirler alınacaktır. Kültür Varlığı Ve Sit Özellikleri Proje alanı ve yakın çevresinde kültür varlığı, sit alanı ve peyzaj değeri yüksek alanlar bulunmamaktadır. ÇED süreci sonrasında arazide gerçekleştirilecek işletme faaliyetle…"
+          },
+          {
+            "page": 45,
+            "match": "Arkeolojik Sit",
+            "snippet": "…si bulunmaktadır. Adana Kültür Varlıklarını Koruma Bölge Kurulunun 20.04.2021 gün ve 13418 sayılı kararı ile 1. Derece Arkeolojik Sit Alanı olarak tescil edilen Korucuk Tepe sit alanı bulunmaktadır. Bahsi geçen sit alanına ilişkin uydu görüntüsü aşağı…"
+          },
+          {
+            "page": 46,
+            "match": "Sit Alanı",
+            "snippet": "…:3383507) RUHSAT NUMARALI BOKSİT OCAĞI VE MOBİL KIRMA ELEME TESİSİ ÇED BAŞVURU DOSYASI 41 Şekil 15 Korucuk Tepe Sit Alanı Uydu Haritasında Gösterimi Korucuk Tepe 1. Derece Arkeolojik Sit Alanı 1450 m"
+          },
+          {
+            "page": 46,
+            "match": "Arkeolojik Sit",
+            "snippet": "…ÇED BAŞVURU DOSYASI 41 Şekil 15 Korucuk Tepe Sit Alanı Uydu Haritasında Gösterimi Korucuk Tepe 1. Derece Arkeolojik Sit Alanı 1450 m"
+          },
+          {
+            "page": 47,
+            "match": "Arkeolojik Sit",
+            "snippet": "…si bulunmaktadır. Adana Kültür Varlıklarını Koruma Bölge Kurulunun 20.04.2021 gün ve 13418 sayılı kararı ile 1. Derece Arkeolojik Sit Alanı olarak tescil edilen Korucuk Tepe sit alanı bulunmaktadır. ç) Su Ürünleri Kanunu kapsamında olan Su Ürünleri İ…"
+          }
+        ]
+      },
+      "ecology_and_baseline": {
+        "label": "Flora, Fauna & Baseline Methodology",
+        "page_count": 3,
+        "pages": [
+          31,
+          48,
+          50
+        ],
+        "samples": [
+          {
+            "page": 31,
+            "match": "FLORA VE FAUNA",
+            "snippet": "…VURU DOSYASI 26 Şekil 5 Anamur İlçesi Nüfus Grafiği (Kaynak: https://www.nufusu.com/ilce/anamur_mersin-nufusu ) FLORA VE FAUNA Flora-fauna ile ilgili literatür çalışmaları devam etmekte olup verilecek olan özel formata göre hazırlanacak olan ÇE…"
+          },
+          {
+            "page": 48,
+            "match": "BERN Sözleşmesi",
+            "snippet": "…sözleşmeler uyarınca korunması gerekli alanlar a) \"Avrupa’nın Yaban Hayatı ve Yaşama Ortamlarını Koruma Sözleşmesi\" (BERN Sözleşmesi) uyarınca koruma altına alınmış alanlardan \"Önemli Deniz Kaplumbağası Üreme Alanlarında belirtilen I. ve II. Koruma Bö…"
+          },
+          {
+            "page": 50,
+            "match": "endemik",
+            "snippet": "…45 d) Bilimsel araştırmalar için önem arz eden ve/veya nesli tehlikeye düşmüş veya düşebilir türler ve ülkemiz için endemik olan türlerin yaşama ortamı olan alanlar, biyosfer rezervi, biyotoplar, biyogenetik rezerv alanları, benzersiz özellik…"
+          }
+        ]
+      },
+      "pollutants_and_hazards": {
+        "label": "Emissions, Geochemistry & Waste",
+        "page_count": 36,
+        "pages": [
+          15,
+          39,
+          51,
+          54,
+          56,
+          59,
+          60,
+          61,
+          62,
+          63,
+          67,
+          68,
+          71,
+          72,
+          81,
+          82,
+          85,
+          86,
+          87,
+          88,
+          91,
+          99,
+          101,
+          103,
+          115
+        ],
+        "samples": [
+          {
+            "page": 15,
+            "match": "GÜRÜLTÜ",
+            "snippet": "…Ayrılması (Çeneli Kırıcı, Elek) Tesiste Boyutlandırılan Malzemenin Kamyonlara Yüklenmesi Depolama Alanına Sevk TOZ+GÜRÜLTÜ EMİSYONU Satış-Sevkiyat PASA OLUŞUMU REHABİLİTASYONDA KULLANILMAK ÜZERE DEPOLAMA PASA DEPOLAMA ALANINA SEVKİYA…"
+          },
+          {
+            "page": 39,
+            "match": "Deprem",
+            "snippet": "…D ŞİRKETİ 202000531 (ER:3383507) RUHSAT NUMARALI BOKSİT OCAĞI VE MOBİL KIRMA ELEME TESİSİ ÇED BAŞVURU DOSYASI 34 Deprem Durumu İlgili faaliyet kapsamında Türkiye Deprem Bölgeleri Haritası incelendiğinde proje alanının III. Derece Deprem…"
+          },
+          {
+            "page": 51,
+            "match": "kümülatif",
+            "snippet": "…Projenin; a) Çevreyi etkileyebilecek olası sorunların belirlenmesi, kirleticilerin miktarı, alıcı ortamla etkileşimi, kümülatif etkilerin belirlenmesi. Proje kapsamında işletme aşamasındaki olası çevresel etkiler değerlendirilecektir. Tüm çevres…"
+          },
+          {
+            "page": 51,
+            "match": "gürültü",
+            "snippet": "…ınır değerlerinin altında kalması taahhüt edildiğinden, proje etki alanı diğer unsurlar (proje alanı florası, faunası, gürültü, istihdam, tarım ve orman alanları vb.) göz önüne alınarak seçilmiştir."
+          },
+          {
+            "page": 54,
+            "match": "Gürültü",
+            "snippet": "…ve Seviyesi: Proje alanında, 30.11.2022 tarih ve 32029 sayılı Resmî Gazete’ de yayımlanarak yürürlüğe giren Çevresel Gürültü Kontrol Yönetmeliği, ilgili hükümlerine uyulacaktır. İşletme döneminde oluşacak gürültü için gürültü hesaplamaları ÇED…"
+          },
+          {
+            "page": 56,
+            "match": "tehlikeli atık",
+            "snippet": "…biriktirilecek ve lisanslı atık yağ toplayıcılarına verilecektir. Yağ ile kontamine olmuş eldiven, hortum, üstüpünün tehlikeli atık olarak değerlendirileceği ve sızdırmasız, yağmurdan arındırılmış alanlarda diğer atıklardan ayrı olarak depolanacağı v…"
+          },
+          {
+            "page": 59,
+            "match": "Tehlikeli Atık",
+            "snippet": "…n ayrı olarak toplanacak, giriş kapıları farklı olacak, — Tehlikeli atıkların depolandığı bölümün girişinde; “Dikkat! Tehlikeli Atık” ibaresinin bulunacak, — Etrafı kapalı, giriş kapısı kilitlenebilir olacak (kilit altında tutulması), anahtarların s…"
+          },
+          {
+            "page": 60,
+            "match": "Gürültü",
+            "snippet": "…izlikle riayet edilecektir. 30.11.2022 tarih ve 32029 sayılı Resmi Gazete ‘de Yayımlanarak Yürürlüğe giren “Çevresel Gürültü Kontrol Yönetmeliği” hükümlerine titizlikle riayet edilecektir."
+          }
+        ]
+      },
+      "cost_and_capacity": {
+        "label": "Project Cost, Power & Capacity",
+        "page_count": 11,
+        "pages": [
+          2,
+          7,
+          9,
+          18,
+          21,
+          27,
+          110,
+          135,
+          220,
+          221,
+          229
+        ],
+        "samples": [
+          {
+            "page": 2,
+            "match": "Proje Bedeli",
+            "snippet": "…ojetuncer@gmail.com Projenin Adı: 202000531 (ER:3383507) RUHSAT NUMARALI BOKSİT OCAĞI VE MOBİL KIRMA ELEME TESİSİ Proje Bedeli: Proje İçin Seçilen Yerin Açık Adresi (İli, İlçesi, Mevki): Mersin İli, Anamur İlçesi, Korucuk ve Kızılaliler Ma…"
+          },
+          {
+            "page": 2,
+            "match": "400.000 ton/yıl",
+            "snippet": "…Madencilik projeleri; a) 25 hektar ve üzeri arazi yüzeyinde (kazı ve döküm alanı dâhil) planlanan açık işletmeler, c) 400.000 ton/yıl ve üzeri kırma, eleme, yıkama, kurutma, cevher hazırlama işlemlerinden en az birini yapan tesisler, Projenin Ana NACE…"
+          },
+          {
+            "page": 7,
+            "match": "kapasite",
+            "snippet": "…Pasa Alanı 174746,56 17,47 Talep Edilen Stok Alanı 87675,09 8,77 Proje kapsamında Ocaktan yıllık 600.000 ton yıl kapasitesinde malzeme alınacak olup, çıkarılan malzemenin tamamı mobil kırma eleme tesisinde işleme tabii tutulduktan sonra pi…"
+          },
+          {
+            "page": 9,
+            "match": "400.000 ton/yıl",
+            "snippet": "…adencilik projeleri; a) 25 hektar ve üzeri arazi yüzeyinde (kazı ve döküm alanı dâhil) planlanan açık işletmeler, c) 400.000 ton/yıl ve üzeri kırma, eleme, yıkama, kurutma, cevher hazırlama işlemlerinden en az birini yapan tesisler, Hükmü gereğince…"
+          },
+          {
+            "page": 18,
+            "match": "600.000 ton/yıl",
+            "snippet": "…aplanmıştır). (Kaynak; İşletme Projesi) Toplam Görünür Rezerv / Yıllık Üretim = Projenin Faydalı Ömrü 7.500.000 ton / 600.000 ton/yıl=12,50~ 13 yıl ÇED raporu hazırlanırken kübaj hesaplamaları daha ayrıntılı yapılacağından projenin ömrü ve değerlerde…"
+          },
+          {
+            "page": 18,
+            "match": "Proje Bedeli",
+            "snippet": "…oru hazırlanırken kübaj hesaplamaları daha ayrıntılı yapılacağından projenin ömrü ve değerlerde değişiklik olacaktır. Proje Bedeli Proje konusu faaliyet; ile ilişkili makine ekipman listesi aşağıda sunulmuştur. Tablo 6 Makine-Ekipman Listesi Mak…"
+          },
+          {
+            "page": 18,
+            "match": "1.000.000 TL",
+            "snippet": "…rım bedeli bulunmamaktadır. Yatırım aşamasında gerekebilecek olan etüt, planlama, haritalama ve mühendislik bedelleri 1.000.000 TL olarak alınmıştır. Sahaya ulaşım yolu bulunmakta olup herhangi bakım gerektirmemektedir. İçme suyu damacanalarla, kul…"
+          },
+          {
+            "page": 18,
+            "match": "820.000 TL",
+            "snippet": "…t Listesine göre; Proje bedeli “10 milyon TL- 100 milyon TL” arası olan faaliyetler için ÇED Raporu özel format bedeli 820.000 TL ve Çevre Düzen Planı pafta, lejant, plan hükümleri bedelleri 8700 TL olarak belirlenmiştir. Bu bedeller de yatırım bed…"
+          }
+        ]
+      }
+    },
+    "audit_checks": {
+      "mentions_field_survey": false,
+      "mentions_literature_only_cue": false,
+      "mentions_seasonal_sampling": false,
+      "mentions_cumulative_impact": true,
+      "mentions_olive_law_3573": false,
+      "mentions_groundwater_or_aquifer": true,
+      "mentions_iucn_or_endemic": true
+    }
+  },
+  "llm_synthesis": {
+    "model": "gemini-4-hydrogen",
+    "generated_at": "2026-11-20T09:06:20",
+    "pages_sent": [
+      1,
+      2,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      15,
+      16,
+      18,
+      21,
+      31,
+      32,
+      39,
+      45,
+      46,
+      48,
+      49,
+      50,
+      51,
+      52,
+      54,
+      80,
+      81
+    ],
+    "result": {
+      "executive_summary_tr": "Tekbir Madencilik tarafından Mersin ili Anamur ilçesi Korucuk ve Kızılaliler mahallelerinde, 1.500,20 ha ruhsat alanı içindeki 363,33 ha ÇED alanında yıllık 600.000 ton kapasiteli açık işletme boksit ocağı ve mobil kırma-eleme tesisi planlanmaktadır [s. 1, 6, 7]. Tamamı 1/100.000 ölçekli Çevre Düzeni Planı'nda \"Orman Alanı\" vasfındaki arazide yer alan proje, en yakın yerleşim olan Korucuk Mahallesi'ne 440 m mesafededir ve ruhsat alanı içinde Korucuk Tepe 1. Derece Arkeolojik Sit Alanı bulunmaktadır [s. 8, 45, 46]. Bu aşamadaki ÇED Başvuru Dosyası'nda (EK-1) rezerv/proje ömrü, patlatma, gürültü ve flora-fauna analizleri gibi temel teknik ve ekolojik değerlendirmeler henüz tamamlanmayıp hazırlanacak ÇED Raporu'na ertelenmiştir [s. 10, 12, 31, 54]. Ayrıca Anamur Belediyesi'nin daha önce yol kullanımı ve olası çevre şikâyetleri gerekçesiyle olumsuz görüş bildirdiği, başvuru dosyasında ise kurum içi çelişkiler ve kopyala-yapıştır hatalarının bulunduğu görülmektedir [s. 6, 11, 45, 80].",
+      "executive_summary_en": "Tekbir Madencilik proposes an open-pit bauxite quarry using blasting and a mobile crushing-screening plant with a capacity of 600,000 tons/year across a 363.33 ha EIA area (within a 1,500.20 ha license area) in Korucuk and Kızılaliler neighborhoods of Anamur district, Mersin [s. 1, 6, 7]. Located entirely within lands designated as \"Forest Area\" in the 1/100,000 Environmental Plan, the project site lies 440 m from the nearest settlement (Korucuk) and overlaps in license boundaries with the Korucuk Tepe 1st Degree Archaeological Site [s. 8, 45, 46]. As an Annex-1 EIA Application File, core technical and ecological assessments—including reserve and lifespan calculations, blasting impacts, noise modeling, and flora-fauna surveys—have not yet been completed and are deferred to the forthcoming EIA Report [s. 10, 12, 31, 54]. Notably, Anamur Municipality previously issued a negative opinion citing road-use impacts and lack of alternative routes, and the current filing exhibits internal contradictions and boilerplate omissions [s. 6, 11, 45, 80].",
+      "key_facts": [
+        {
+          "label": "Ruhsat ve ÇED Alanı",
+          "value": "1.500,20 ha ruhsat alanı; 363,33 ha talep edilen ÇED alanı (309,34 ha ocak, 17,47 ha pasa, 16,76 ha bitkisel toprak, 8,77 ha stok, 3,90 ha mobil KET, 0,65 ha şantiye alanı).",
+          "page": 7
+        },
+        {
+          "label": "Üretim ve Tesis Kapasitesi",
+          "value": "600.000 ton/yıl (200.000 m3/yıl) ocak üretimi ve mobil kırma-eleme kapasitesi.",
+          "page": 7
+        },
+        {
+          "label": "Çalışma Takvimi",
+          "value": "Yılda 10 ay, ayda 25 gün, günde 8 saat (08:00-17:00).",
+          "page": 7
+        },
+        {
+          "label": "En Yakın Hassas Yerleşimler",
+          "value": "Korucuk Mahallesi 440 m (batı); Kızılaliler Mahallesi 1.070 m (güneydoğu); Ovabaşı Mahallesi 1.776 m (kuzeydoğu).",
+          "page": 8
+        },
+        {
+          "label": "Görünür Boksit Rezervi",
+          "value": "1.680.000 ton (40 m kalınlık ve 3 ton/m3 yoğunluk varsayımıyla).",
+          "page": 16
+        },
+        {
+          "label": "Tahmini Proje Ömrü",
+          "value": "7.500.000 ton muhtemel rezerv üzerinden yaklaşık 12,5-13 yıl.",
+          "page": 18
+        },
+        {
+          "label": "Toplam Yatırım Bedeli",
+          "value": "208.531.788,70 TL (141.717.117,52 TL Orman Alanı mülkiyet izin bedeli dahil).",
+          "page": 21
+        },
+        {
+          "label": "Arkeolojik Sit Alanı Mesafesi",
+          "value": "Ruhsat alanı içinde yer alan Korucuk Tepe 1. Derece Arkeolojik Sit Alanı haritada 1.450 m mesafede gösterilmektedir.",
+          "page": 46
+        },
+        {
+          "label": "İşletme Aşaması Su İhtiyacı",
+          "value": "Personel için 4,82 m3/gün (20 kişi); yol sulama için 20,65 m3/gün, yaz aylarında 41,25 m3/gün (MESKİ'den tankerle taşıma).",
+          "page": 52
+        },
+        {
+          "label": "Evsel Nitelikli Katı Atık",
+          "value": "İnşaat aşamasında 3,84 kg/gün (4 kişi); işletme aşamasında 19,2 kg/gün (20 kişi).",
+          "page": 54
+        }
+      ],
+      "baseline_assessment": {
+        "field_survey_status": "not_found",
+        "seasonal_sampling_status": "not_found",
+        "cumulative_impact_status": "superficial_or_boilerplate",
+        "olive_and_protected_status": "ÇED alanı Mersin-Adana Planlama Bölgesi 1/100.000 ölçekli Çevre Düzeni Planı'nda \"Orman Alanı\" vasfındadır [s. 8, 45, 48]. Korunan alanlar listesinde 3573 sayılı Zeytincilik Kanunu kapsamındaki alanların, meraların, sulak alanların, uluslararası sözleşmelerle (BERN, Barcelona, RAMSAR) korunan alanların, içme-kullanma suyu havzalarının ve endemik/tehlikedeki tür habitatlarının \"bulunmadığı\" beyan edilmiştir [s. 48, 49, 50]. Ancak ruhsat alanı içerisinde Adana Kültür Varlıklarını Koruma Bölge Kurulu'nun 20.04.2021 tarih ve 13418 sayılı kararıyla tescilli Korucuk Tepe 1. Derece Arkeolojik Sit Alanı bulunmaktadır [s. 45, 46].",
+        "explanation": "Mevcut ÇED Başvuru Dosyası'nda tamamlanmış bir arazi biyoçeşitlilik etüdü veya mevsimsel örnekleme verisi bulunmamakta; flora ve fauna listelerinin literatür taraması ve arazi gözlemleriyle ileride hazırlanacak ÇED Raporu aşamasında oluşturulacağı belirtilmektedir [s. 31]. Buna karşın korunan alanlar kontrol listesinde endemik ve nesli tehlikede türlerin yaşama ortamlarının \"bulunmadığı\" şimdiden beyan edilmiştir [s. 50]. Kümülatif etki değerlendirmesi başlığı altında ise bölgesel ölçekte kümülatif bir analiz yapılmamış, etkilerin hazırlanacak ÇED Raporu'nda ele alınacağına dair genel ifadelerle yetinilmiştir [s. 51]. Çevre İzleme Planı bölümü ise izlenecek parametreler ve örnekleme takvimi yerine Mersin iline dair genel tanıtım metni ve mevzuat listesinden oluşmaktadır [s. 80, 81]."
+      },
+      "red_flags": [
+        {
+          "severity": "high",
+          "title": "Arkeolojik Sit Alanına İlişkin Doğrudan Çelişki",
+          "detail": "Dosyanın aynı sayfasında önce proje alanı ve yakın çevresinde kültür varlığı ve sit alanı bulunmadığı belirtilmiş, ardından ruhsat alanı içerisinde Korucuk Tepe 1. Derece Arkeolojik Sit Alanı'nın bulunduğu (uydu haritasında 1.450 m mesafede) ifade edilmiştir. Patlatmalı açık ocak işletmeciliğinin bu tescilli sit alanına etkisine dair hiçbir değerlendirme sunulmamıştır.",
+          "pages": [
+            45,
+            46
+          ]
+        },
+        {
+          "severity": "high",
+          "title": "Flora-Fauna Çalışması Yapılmadan Tür Yokluğu Beyanı",
+          "detail": "Flora ve fauna literatür çalışmaları ile arazi gözlemlerinin henüz devam ettiği ve listelerin ileride hazırlanacak ÇED Raporu'nda sunulacağı belirtilmesine rağmen, korunan alanlar kontrol listesinde endemik veya nesli tehlikedeki türlerin yaşama ortamlarının \"bulunmadığı\" şimdiden beyan edilmiştir.",
+          "pages": [
+            31,
+            50
+          ]
+        },
+        {
+          "severity": "high",
+          "title": "Belediyenin Olumsuz Görüşüne Rağmen Yol ve Nakliye Belirsizliği",
+          "detail": "Anamur Belediyesi'nin 04.12.2025 tarihli görüşünde Kızılaliler Mahallesi yolunun kullanılması halinde şikâyetler oluşacağı, alternatif yol bulunmadığı ve telafisi mümkün olmayan zararlar doğabileceği belirtilerek önceki ÇED sürecinin sonlandırıldığı aktarılmıştır. Yeni dosyada yalnızca mevcut yolların kullanılacağı ve yerleşim yerinden geçilmeyeceği yazılmış, ancak alternatif yol ve altyapı sorununun nasıl çözüldüğü somut güzergâh ve trafik verileriyle açıklanmamıştır.",
+          "pages": [
+            6,
+            8,
+            52
+          ]
+        },
+        {
+          "severity": "medium",
+          "title": "Çevre İzleme Planı'nın Somut İzleme İçermemesi",
+          "detail": "Raporun \"Çevre İzleme Planı\" başlıklı bölümünün 1. kısmında projeye özgü çevresel ve sosyal izleme parametreleri yerine Mersin ilinin tarım, hayvancılık ve ormancılığına dair genel bir tanıtım metnine yer verilmiş; 2. kısımda ise izleme yöntemi, sıklığı ve sınır değerler olmaksızın yalnızca kanun ve yönetmelik adları sıralanmıştır.",
+          "pages": [
+            80,
+            81
+          ]
+        },
+        {
+          "severity": "medium",
+          "title": "Rezerv, Proje Ömrü ve Metin Tutarsızlıkları",
+          "detail": "Görünür rezerv 1.680.000 ton olarak hesaplanmasına rağmen proje ömrü hesabında \"Toplam Görünür Rezerv\" başlığı altında 7.500.000 tonluk muhtemel rezerv değeri kullanılarak 12,5-13 yıl ömür belirlenmiştir. Ayrıca proje bedeli 208.531.788,70 TL hesaplanırken özel format bedeli açıklamasında \"10 milyon TL-100 milyon TL arası\" ifadesi yer almış; işletme yöntemi metninde ise boksit yerine \"Kalker ocağı açık işletmesinde\" ifadesi kullanılmıştır.",
+          "pages": [
+            11,
+            16,
+            18
+          ]
+        },
+        {
+          "severity": "medium",
+          "title": "Yerleşim Mesafesi Yazım Hatası ve Tarım Alanı Çelişkisi",
+          "detail": "Tablo 3 ve krokide Korucuk Mahallesi'ne mesafe 440 m gösterilirken metin içinde \"440 km\" olarak yazılmıştır. Benzer şekilde korunan tarım alanları maddesinde sahanın yalnızca \"Orman Alanı\" olduğu belirtilirken, mülkiyet bölümünde proje sahasında ve etrafında tarım alanları bulunduğu ifade edilmiştir.",
+          "pages": [
+            8,
+            45,
+            49
+          ]
+        }
+      ],
+      "hkt_and_petition_questions": [
+        {
+          "question_tr": "Anamur Belediyesi'nin önceki süreçte alternatif yol bulunmadığı ve Kızılaliler Mahallesi yolunun kullanımı nedeniyle telafisi mümkün olmayan zararlar doğacağı yönündeki olumsuz görüşü sonrasında, yeni dosyada taahhüt edilen \"yerleşim yerinden geçmeyen mevcut yol\" güzergâhı tam olarak nerededir ve günlük kamyon trafiği ile tozuma yükü nasıl yönetilecektir?",
+          "pages": [
+            6,
+            8,
+            52
+          ]
+        },
+        {
+          "question_tr": "Ruhsat alanı içerisinde yer aldığı belirtilen Korucuk Tepe 1. Derece Arkeolojik Sit Alanı'na (1.450 m) ve 440 m mesafedeki Korucuk Mahallesi'ne yönelik olarak ANFO ile yapılacak patlatmaların sarsıntı, hava şoku ve taş savrulması etkileri nasıl modellenecektir; ÇED Raporu öncesinde Koruma Kurulu görüşü alınmış mıdır?",
+          "pages": [
+            8,
+            12,
+            45,
+            46
+          ]
+        },
+        {
+          "question_tr": "Proje sahası 1/100.000 ölçekli planda tamamen \"Orman Alanı\" içinde kalmaktadır; 363,33 ha ÇED alanında kesilecek ağaç sayısı, orman ekosistemi kaybı ve flora ile fauna için en az iki mevsimi kapsayan güncel arazi etütleri ÇED Raporu'nda sunulacak mıdır?",
+          "pages": [
+            7,
+            8,
+            31,
+            48
+          ]
+        },
+        {
+          "question_tr": "Yol sulama (yaz aylarında 41,25 m3/gün) ve personel (4,82 m3/gün) dahil günde yaklaşık 46 m3'e ulaşan su ihtiyacının MESKİ'den tankerle taşınması planlanmaktadır; bu su miktarının temin edileceği yerel kaynak ve kurak yaz dönemlerinde bölge su bütçesine etkisi konusunda MESKİ'den ön onay alınmış mıdır?",
+          "pages": [
+            18,
+            52
+          ]
+        },
+        {
+          "question_tr": "Görünür rezerv 1.680.000 ton iken proje ömrünün 7.500.000 tonluk muhtemel rezerv üzerinden yaklaşık 13 yıl hesaplanmasının teknik gerekçesi nedir ve 309,34 ha ocak alanının kademeli rehabilitasyonu için öngörülen 16,76 ha bitkisel toprak depolama alanı yeterli olacak mıdır?",
+          "pages": [
+            7,
+            10,
+            16,
+            18
+          ]
+        }
+      ],
+      "data_limitations": "Toplam 239 sayfalık PDF dosyasının 27 sayfası taranmış/görüntü formatında olup metin çıkarımı yapılamamıştır; ayrıca bu inceleme yalnızca sağlanan 26 örnek sayfa ([1, 2, 6, 7, 8, 9, 10, 11, 12, 15, 16, 18, 21, 31, 32, 39, 45, 46, 48, 49, 50, 51, 52, 54, 80, 81]) üzerinden gerçekleştirilmiştir. Kurum görüşleri (EK-5.1), MAPEG işletme projesi (EK-5.4), çevre düzeni planı haritaları (EK-3.3), detaylı hidrojeoloji, hava kalitesi/toz modellemesi ve raporun geri kalan bölümleri sunulan alıntılarda yer almadığından doğrulanamamıştır."
+    }
+  }
+}

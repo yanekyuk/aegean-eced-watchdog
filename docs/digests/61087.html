@@ -1,0 +1,286 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>e-ÇED Ön Özet #61087 — DENİZLİ / ÇİVRİL</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <style>
+:root {
+  --bg: #0f1216;
+  --surface: #171c22;
+  --border: #262e38;
+  --text: #e6edf3;
+  --muted: #8b949e;
+  --accent: #58a6ff;
+  --red: #f85149;
+  --amber: #d29922;
+  --green: #3fb950;
+  --badge-bg: #212830;
+}
+@media (prefers-color-scheme: light) {
+  :root {
+    --bg: #f6f8fa;
+    --surface: #ffffff;
+    --border: #d0d7de;
+    --text: #1f2328;
+    --muted: #656d76;
+    --accent: #0969da;
+    --red: #cf222e;
+    --amber: #9a6700;
+    --green: #1a7f37;
+    --badge-bg: #eef2f6;
+  }
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+}
+.wrap { max-width: 1240px; margin: 0 auto; padding: 24px 18px 64px; }
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+header { border-bottom: 1px solid var(--border); padding-bottom: 16px; margin-bottom: 20px; }
+h1 { margin: 0 0 6px; font-size: 1.55rem; }
+h2 { margin: 26px 0 10px; font-size: 1.2rem; }
+h3 { margin: 16px 0 8px; font-size: 1rem; }
+.sub { color: var(--muted); font-size: 0.92rem; margin: 0; }
+.meta-bar { display: flex; flex-wrap: wrap; gap: 14px; margin-top: 12px; font-size: 0.85rem; color: var(--muted); }
+.stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 10px; margin: 16px 0 18px; }
+.stat { background: var(--surface); border: 1px solid var(--border); border-radius: 8px; padding: 12px 14px; }
+.stat .num { font-size: 1.45rem; font-weight: 700; }
+.stat .lbl { font-size: 0.78rem; color: var(--muted); }
+.map-box {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 18px;
+}
+#map { width: 100%; height: 420px; background: var(--badge-bg); }
+#digest-map { width: 100%; height: 320px; background: var(--badge-bg); }
+.map-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  padding: 9px 14px;
+  font-size: 0.8rem;
+  color: var(--muted);
+  border-top: 1px solid var(--border);
+}
+.dot { display: inline-block; width: 10px; height: 10px; border-radius: 50%; margin-right: 5px; vertical-align: middle; }
+.controls { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; margin-bottom: 16px; }
+input[type="search"], select.filter-select {
+  padding: 8px 12px;
+  border-radius: 6px;
+  border: 1px solid var(--border);
+  background: var(--surface);
+  color: var(--text);
+  font-size: 0.9rem;
+}
+input[type="search"] { flex: 1 1 240px; }
+select.filter-select { min-width: 170px; }
+button.pill {
+  padding: 7px 12px;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: var(--surface);
+  color: var(--text);
+  cursor: pointer;
+  font-size: 0.82rem;
+}
+button.pill.active { background: var(--accent); border-color: var(--accent); color: #fff; font-weight: 600; }
+.cards { display: flex; flex-direction: column; gap: 10px; }
+.card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 15px 17px;
+}
+.card.ek1 { border-left: 4px solid var(--accent); }
+.row-top { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px; align-items: baseline; }
+.title { font-weight: 600; font-size: 0.98rem; }
+.badges { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 7px; }
+.badge {
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  background: var(--badge-bg);
+  border: 1px solid var(--border);
+}
+.badge.urgent { border-color: var(--red); color: var(--red); font-weight: 600; }
+.badge.warn { border-color: var(--amber); color: var(--amber); font-weight: 600; }
+.badge.ok { border-color: var(--green); color: var(--green); }
+.badge.muted { color: var(--muted); }
+.detail { font-size: 0.87rem; color: var(--muted); margin: 8px 0; }
+.actions { display: flex; flex-wrap: wrap; gap: 12px; font-size: 0.84rem; margin-top: 8px; }
+.notice {
+  margin-top: 28px;
+  padding: 14px 16px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  font-size: 0.84rem;
+  color: var(--muted);
+}
+table.kv { width: 100%; border-collapse: collapse; margin: 12px 0; font-size: 0.9rem; }
+table.kv th, table.kv td { border: 1px solid var(--border); padding: 8px 11px; text-align: left; vertical-align: top; }
+table.kv th { width: 240px; background: var(--badge-bg); }
+code { background: var(--badge-bg); padding: 1px 5px; border-radius: 4px; font-size: 0.85em; }
+blockquote { margin: 10px 0; padding: 11px 15px; border-left: 3px solid var(--accent); background: var(--surface); font-size: 0.9rem; }
+.hit { margin: 7px 0; font-size: 0.88rem; }
+.pno { font-weight: 700; color: var(--accent); }
+.leaflet-popup-content { color: #1f2328; font-size: 0.85rem; line-height: 1.45; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div style="font-size:0.85rem;margin-bottom:8px;"><a href="../index.html">← Türkiye e-ÇED İzleme listesine dön</a> · <a href="../rehber.html">Kullanım ve İnceleme Rehberi</a> · <a href="61087.md">Ham Markdown (.md)</a></div>
+    <h1>e-ÇED Ön Özet #61087 — DENİZLİ / ÇİVRİL</h1>
+    <p class="sub">G26-Denizli Güneş Enerji Santrali (36 MWm / 30 MWe - 44,8 ha.)</p>
+    <div class="badges" style="margin-top:10px;">
+      <span class="badge">HKT</span>
+      <span class="badge">Ek-1</span>
+      <span class="badge warn">HKT Duyurusu · Tarih duyuru metnindedir</span>
+    </div>
+  </header>
+
+  <table class="kv">
+    <tr><th>Proje Sahibi</th><td>Enerji İşleri Genel Müdürlüğü</td></tr>
+    <tr><th>Hazırlayan Kuruluş</th><td>ELTEM-TEK ELEKTRİK TESİSLERİ MÜHENDİSLİK MÜTEAHHİTLİK DANIŞMANLIK VE TİCARET ANONİM ŞİRKETİ</td></tr>
+    <tr><th>Sektör / Alt Sektör</th><td>Enerji / Güneş Enerji Santralleri</td></tr>
+    <tr><th>Duyuru Tarihi</th><td><code>19.11.2026</code> (belge yükleme tarihi: <code>09/09/2026 05:31:54</code>)</td></tr>
+    <tr><th>PDF Kapsamı</th><td>41.37 MB · 160 sayfa (121 metin sayfası / 39 taranmış veya görüntü sayfası) · SHA-256 <code>14cc240b3126f2dd…</code></td></tr>
+    <tr><th>Resmi Bağlantılar</th><td><a href="http://eced.csb.gov.tr/jsp/ek1/61087" target="_blank" rel="noopener">e-ÇED Portal Kaydı</a> · <a href="http://eced.csb.gov.tr/jsp/dosya/dosyaGoster.htm?tempAd=sign5484956242178825697.pdf&amp;orjinalAd=e-imza.pdf&amp;yuklemeTarihi=2026-09-09" target="_blank" rel="noopener">Resmi PDF Dosyası</a> · <a href="https://www.openstreetmap.org/?mlat=38.36692&amp;mlon=29.72399#map=12/38.36692/29.72399" target="_blank" rel="noopener">OpenStreetMap</a> · <a href="https://www.google.com/maps/search/?api=1&amp;query=38.36692,29.72399" target="_blank" rel="noopener">Google Haritalar</a></td></tr>
+  </table>
+
+  <h2>Konum Haritası</h2>
+  <div class="map-box">
+    <div id="digest-map"></div>
+    <div class="map-legend"><span>PDF metninden çıkarılan kesin proje koordinatları (56 nokta, datum: UTM-Z35/ED50, sayfa: s.20, s.21).</span></div>
+  </div>
+
+  
+  <h2>Yapay Zeka Destekli Bilimsel Ön Değerlendirme <span class="badge">gemini-4-hydrogen</span></h2>
+  <p class="sub">Bu değerlendirme, resmi PDF dosyasından seçilen 26 sayfa (s.1, s.2, s.3, s.4, s.6, s.7, s.8, s.9, s.10, s.11, s.12, s.13, s.14, s.25, s.28, s.31, s.32, s.33, s.35, s.37, s.38, s.39, s.40, s.41, s.42, s.83) esas alınarak hazırlanmıştır. Tüm sayısal verilerin ve tespitlerin resmi PDF belgesindeki ilgili <code>[s. N]</code> sayfalarından doğrulanması gerekir.</p>
+  <section class="card ek1">
+    <p><strong>Özet:</strong> Enerji İşleri Genel Müdürlüğü tarafından Denizli ili Çivril ilçesi Yukarı ve Gürpınar mahalleleri (Gökbaşlı ve Taşlı mevkii, 3 Ada/116 Parsel ve 379 Ada/1 Parsel) sınırlarında, 44,8 hektarlık Yenilenebilir Enerji Kaynak Alanı (YEKA) üzerinde 36 MWm / 30 MWe kurulu gücünde G26-Denizli Güneş Enerji Santrali (GES) kurulması planlanmaktadır [s. 1, 8]. ÇED Yönetmeliği Ek-1 Madde 43 kapsamında sunulan ÇED Başvuru Dosyası&#x27;na göre tesiste 500 W gücünde 72.000 adet monokristal çift yüzeyli panel ile yılda 57,6 GWh elektrik üretilmesi, inşaatın 24 ayda 50 personelle tamamlanması ve işletmenin 49 yıl boyunca 10 personelle sürdürülmesi öngörülmektedir [s. 2, 9, 11, 13]. Proje sahasının %98,53&#x27;ü VII. sınıf fundalık (kahverengi orman toprağı), %1,47&#x27;si III. sınıf kuru tarım arazisi olup saha Büyük Menderes Havzası içinde, yüksek sismik tehlike bölgesinde (PGA 475: 0,3 g - 0,4 g) ve mevsimsel kuru dere yataklarının yakınında yer almaktadır [s. 28, 31, 32, 37, 39, 42]. Başvuru dosyasında flora ve fauna saha çalışmaları henüz yapılmayıp ilerideki ÇED Raporu aşamasına bırakılmış, ayrıca alanın Yaban Hayatı Yerleştirme Sahası statüsü konusunda aynı sayfada birbiriyle çelişen beyanlara yer verilmiştir [s. 25, 38].</p>
+    <details style="margin-top:8px;font-size:0.86rem;color:var(--muted);"><summary style="cursor:pointer;">İngilizce özet (English summary)</summary><p style="margin:6px 0 0;">The General Directorate of Energy Affairs proposes the G26-Denizli Solar Power Plant (36 MWm / 30 MWe) covering 44.8 hectares on parcels 3/116 and 379/1 in Yukarı and Gürpınar neighborhoods of Çivril district, Denizli, within a designated Renewable Energy Resource Area (YEKA) [s. 1, 8]. According to the Annex-1 EIA Application File, the facility will install 72,000 bifacial monocrystalline silicon modules (500 W each) to generate 57.6 GWh/year over a 49-year economic life, with a 24-month construction phase (50 staff) and 10 operational staff [s. 2, 9, 11, 13]. Currently, 98.53% of the site is Class VII shrubland on brown forest soils and 1.47% is Class III dry farmland within the Büyük Menderes Basin, situated in a high seismic zone (PGA 475: 0.3 g - 0.4 g) near seasonal dry streambeds [s. 28, 31, 32, 37, 39, 42]. Primary environmental gaps in the application file include the complete deferral of flora and fauna field surveys to the subsequent EIA Report stage and an internal contradiction regarding whether the site falls inside a Wildlife Reintroduction Area [s. 25, 38].</p></details>
+    <div class="badges" style="margin-top:10px;">
+      <span class="badge">Saha çalışması: Karışık veya yöntemi belirsiz</span>
+      <span class="badge">Mevsimsel örnekleme: İncelenen sayfalarda tespit edilemedi</span>
+      <span class="badge">Kümülatif etki: Eksik veya tespit edilemedi</span>
+    </div>
+    <p class="detail" style="margin-top:10px;"><strong>Zeytinlik ve Korunan Alanlar:</strong> 3573 sayılı Kanun kapsamında ÇED alanında yapılan arazi incelemelerinde zeytinlik alanına rastlanılmadığı bildirilmiştir [s. 40]. Arazi varlığı haritasına göre saha %98,53 fundalık (VII. Sınıf, kahverengi orman toprakları) ve %1,47 kuru tarım (III. Sınıf) niteliğindedir [s. 31, 37, 42]. Korunan alanlar açısından saha Özel Çevre Koruma Bölgesi veya Ramsar/Sulak Alan içinde değildir; en yakın sulak alan Işıklı-Gökgöl Sulak Alanı (12,5 km) [s. 39, 40, 41], en yakın tabiat parkı Akdağ Tabiat Parkı (17,2 km) [s. 37] ve en yakın YHGS Denizli Çivril Akdağ YHGS&#x27;dir (17,3 km) [s. 38]. Ancak aynı sayfada alanın Avlaklar Haritası&#x27;na göre Yaban Hayatı Yerleştirme Sahası içinde kaldığı da yazılmıştır [s. 38]; SİT alanları ise parsel ölçeğinde değil yalnızca Denizli ili geneli toplamı (404 adet) olarak verilmiştir [s. 35].<br/>Bölüm II.a.2 kapsamında flora ve faunaya ilişkin herhangi bir ön saha çalışması veya tür listesi sunulmamış, tüm arazi ve literatür çalışmalarının Doğa Koruma ve Milli Parklar Genel Müdürlüğü görüşü doğrultusunda ilerideki ÇED Raporu&#x27;nda yapılacağı belirtilmiştir [s. 25]. Peyzaj, içme-kullanma suyu havzası ve hava kalitesi bölümleri yalnızca literatür taramasına ve tek aylık (01-31.08.2026, 4 günü eksik) Çivril istasyonu verilerine dayanmaktadır [s. 33, 35, 39]; yalnızca zeytinlik değerlendirmesinde arazi incelemesi yapıldığı beyan edilmiştir [s. 40]. Çok mevsimli saha örneklemesi dosyada bulunmamakta olup, İçindekiler&#x27;de 57. sayfada görünen Bölüm IV Kümülatif Çevresel Etki Değerlendirme ile Bölüm V İzleme Planı sağlanan sayfa özetleri dışında kaldığından doğrulanamamıştır [s. 4].</p>
+  </section>
+  <h3>Öne Çıkan Sayısal Bulgular</h3><table class="kv"><tr><th>Kurulu Güç</th><td>36 MWm / 30 MWe <span class="pno">[s. 2]</span></td></tr>
+<tr><th>ÇED Alanı Büyüklüğü</th><td>44,8 ha (448.483 m²) <span class="pno">[s. 37]</span></td></tr>
+<tr><th>Panel Sayısı ve Teknolojisi</th><td>72.000 adet x 500 W (Mono-C Silicon Bifacial PERC) <span class="pno">[s. 11]</span></td></tr>
+<tr><th>Yıllık Elektrik Üretimi</th><td>57,6 GWh/yıl <span class="pno">[s. 9]</span></td></tr>
+<tr><th>Proje Bedeli (KDV Dâhil)</th><td>324.000.000,00 (metinde para birimi belirtilmemiş) <span class="pno">[s. 13]</span></td></tr>
+<tr><th>Ekonomik Ömür</th><td>49 yıl <span class="pno">[s. 13]</span></td></tr>
+<tr><th>İnşaat Süresi ve İstihdam</th><td>24 ay inşaatta 50 personel; işletmede 10 personel <span class="pno">[s. 9]</span></td></tr>
+<tr><th>Şimdiki Arazi Kullanımı</th><td>%98,53 Fundalık (441.880 m²); %1,47 Kuru Tarım/Nadaslı (6.603 m²) <span class="pno">[s. 37]</span></td></tr>
+<tr><th>Sismik Tehlike ve Fay Mesafesi</th><td>PGA 475 yer ivmesi 0,3 g - 0,4 g; doğuda Sivaslı Fayı 1.900 m <span class="pno">[s. 28]</span></td></tr>
+<tr><th>En Yakın Yüzeysel Su</th><td>Kuru Çay 2.730 m (Kufi Deresi 7.180 m, Banaz Çayı 10.230 m) <span class="pno">[s. 32]</span></td></tr></table>
+  <h3>Bilimsel ve Metodolojik Bulgular</h3><section class="card"><div class="hit"><span class="badge urgent">YÜKSEK</span> <strong>Yaban Hayatı Yerleştirme Sahası Statüsünde Doğrudan Çelişki</strong> <span class="pno">[s. 38]</span> — Ek-5 Duyarlı Yöreler değerlendirmesinin 1.b maddesinde ilk paragrafta ÇED alanı ve yakın çevresinde Yaban Hayatı Geliştirme Sahası ve yaban hayvanı yerleştirme sahası bulunmadığı belirtilirken, aynı sayfanın alt kısmında Avlaklar Haritası&#x27;na atıfla ÇED alanının Yaban Hayatı Yerleştirme Sahası olarak tanımlanan alan içerisinde kaldığı ifade edilmektedir.</div>
+<div class="hit"><span class="badge urgent">YÜKSEK</span> <strong>Flora ve Fauna Saha Çalışmalarının HKT Öncesi Tamamlanmamış Olması</strong> <span class="pno">[s. 25, s. 31, s. 37]</span> — Proje alanının %98,53&#x27;ü fundalık ve kahverengi orman toprağı niteliğinde olmasına karşın Bölüm II.a.2&#x27;de tek bir bitki veya hayvan türü, habitat tanımı ya da saha gözlemi sunulmamış; tüm arazi ve literatür çalışmalarının süreç içerisinde sunulacak ÇED Raporu aşamasına ertelendiği belirtilmiştir.</div>
+<div class="hit"><span class="badge urgent">YÜKSEK</span> <strong>ÇED Alanı İçi Diri Fay ve Yüksek Sismik İvme Belirsizliği</strong> <span class="pno">[s. 28]</span> — Doğal Afet Durumu bölümünde ÇED alanı içerisinde diri fay bulunduğu ve PGA 475 yer ivmesinin 0,3 g - 0,4 g olduğu yazılırken hemen ardından Sivaslı Fayı&#x27;nın 1.900 m doğuda yer aldığı belirtilmiştir; saha içi fay izinin konumu, sakınım bandı ve paneller/şalt merkezi için jeoteknik tasarım kriterleri netleştirilmemiştir.</div>
+<div class="hit"><span class="badge warn">ORTA</span> <strong>Kültür Varlıkları ve SİT İncelemesinin İl Geneli İstatistiğe İndirgenmesi</strong> <span class="pno">[s. 35, s. 38]</span> — Bölüm II.a.10&#x27;da proje parselleri ve yakın çevresindeki tescilli arkeolojik/tarihi SİT alanlarının mesafeleri veya yüzey araştırması bulguları yerine yalnızca Denizli il geneline ait 404 SİT alanını gösteren özet tablo (Arkeolojik Sit Alanı satırı 3 ve 394 olarak mükerrer yazılmış hâlde) verilmiştir.</div>
+<div class="hit"><span class="badge warn">ORTA</span> <strong>Kuru Dere Yatakları ve VII. Sınıf Arazide Hidrolojik/Erozyon Analizi Eksikliği</strong> <span class="pno">[s. 11, s. 32, s. 42]</span> — ÇED alanı çevresinde mevsimsel yağışlarla akışa geçen kuru dere yatakları bulunduğu ve alanın %98,53&#x27;ünün VII. Sınıf arazi olduğu belirtilmesine rağmen, önemli bir arazi düzenlemesi yapılmayacağı varsayılarak yüzeysel akış, taşkın ve erozyon önlemlerine dair nicel hidrolojik veri sunulmamıştır.</div>
+<div class="hit"><span class="badge muted">DÜŞÜK</span> <strong>Tek Aylık ve Eksik Hava Kalitesi Verisi ile Birimsiz Proje Bedeli</strong> <span class="pno">[s. 2, s. 13, s. 33]</span> — Hava kalitesi mevcut durum değerlendirmesi yalnızca Ağustos 2026 dönemindeki tek aylık (25-28.08.2026 tarihleri boş bırakılmış) Çivril istasyonu ölçümüne dayanmakta olup yıllık/mevsimsel arka plan verisi içermemektedir; ayrıca Proje Bedeli tablolarında 324.000.000,00 tutarının para birimi yazılmamıştır.</div></section>
+  <h3>HKT Tutanakları ve İdari Başvurular İçin Taslak Teknik Sorular</h3><ul><li>Sayfa 38&#x27;de önce ÇED alanı ve yakın çevresinde yaban hayvanı yerleştirme sahası bulunmadığı belirtilip aynı sayfada alanın Avlaklar Haritası&#x27;na göre Yaban Hayatı Yerleştirme Sahası içinde kaldığı yazılmıştır; bu çelişkinin düzeltilerek yaban hayatı ve göç/üreme alanlarına etkilerin nasıl değerlendirileceği açıklanacak mıdır? <span class="pno">[s. 38, s. 25]</span></li>
+<li>Bölüm II.a.2&#x27;de flora ve fauna saha çalışmalarının henüz yapılmayıp ilerideki ÇED Raporu aşamasına bırakıldığı görülmektedir; %98,53&#x27;ü fundalık ve kahverengi orman toprağı olan 44,8 hektarlık alanda mevsimsel arazi örneklemeleri tamamlanmadan Halkın Katılımı Toplantısı yapılmasının doğuracağı bilgi eksikliği nasıl giderilecektir? <span class="pno">[s. 25, s. 31, s. 37]</span></li>
+<li>Sayfa 28&#x27;de ÇED alanı içerisinde diri fay bulunduğu ve PGA 475 yer ivmesinin 0,3 g - 0,4 g olduğu belirtilirken Sivaslı Fayı&#x27;nın 1.900 m doğuda yer aldığı ifade edilmiştir; saha sınırları içindeki diri fay izine yönelik fay sakınım bandı, sıvılaşma ve zemin etüdü çalışmaları yapılmış mıdır? <span class="pno">[s. 28, s. 11]</span></li>
+<li>Sayfa 32&#x27;de alan çevresinde mevsimsel yağışlarla akışa geçen kuru dere yatakları bulunduğu ve sahanın Büyük Menderes Havzası ile %98,53 oranında VII. Sınıf arazi içinde kaldığı belirtildiğinden, 72.000 panelin kurulacağı alanda yüzeysel akış, sel/taşkın ve erozyonu önlemeye yönelik hangi teknik drenaj hesaplamaları yapılacaktır? <span class="pno">[s. 11, s. 32, s. 39, s. 42]</span></li>
+<li>Kültür varlıkları için yalnızca Denizli ili geneli 404 SİT sayısını veren tablo (s. 35) ve hava kalitesi için sadece Ağustos 2026 dönemine ait 4 günü eksik istasyon verisi (s. 33) yerine, parsel ölçeğinde Kültür Varlıklarını Koruma Bölge Kurulu görüşü ve yıllık çevre kalitesi verileri ÇED Raporu&#x27;na eklenecek midir? <span class="pno">[s. 33, s. 35, s. 38]</span></li></ul>
+  <p class="sub"><em>İnceleme sınırları:</em> Toplam 160 sayfalık (121 metin, 39 taranmış/görsel sayfa) dosyanın yalnızca sağlanan 26 sayfalık bölümü [1-4, 6-14, 25, 28, 31-33, 35, 37-42, 83] incelenebilmiştir. Yer ve teknoloji alternatiflerinin devamı (s. 15-24), nüfus ve jeoloji ayrıntıları (s. 24-27), doğal afet harita ve metinlerinin devamı (s. 29-30), iklimsel faktörler (s. 34), Bölüm III inşaat/işletme etkileri ve su/atıksu/iklim hesapları (s. 43-56), Bölüm IV Kümülatif Çevresel Etki Değerlendirme (s. 57-58), Bölüm V Çevre İzleme ve Sürdürülebilirlik Planları (s. 59-63), Bölüm VI Paydaş Katılımı (s. 64) ile Ek 1-7 kapsamındaki harita, tutanak, kurum görüşleri ve taranmış belgeler (s. 65-160, 83. sayfa hariç) sağlanan özetler dışında kaldığından içerikleri doğrulanamamıştır.</p>
+
+
+  <h2>Resmi Duyuru Metni</h2>
+  <blockquote>DENİZLİ ili ÇİVRİL,  ilcesinde DENİZLİ ili ÇİVRİL ilçesi sınırları içerisinde Enerji İşleri Genel Müdürlüğü tarafından yapılması planlanan G26-Denizli Güneş Enerji Santrali (36 MWm / 30 MWe - 44,8 ha.) projesi ile ilgili Çevresel Etki Değerlendirme süreci başlamış ve Çevresel Etki Değerlendirmesi Başvuru Dosyası halkın görüşüne açılmıştır.Söz konusu projeye ilişkin, halkı proje hakkında bilgilendirmek, görüş ve önerilerini almak amacıyla ÇED Yönetmeliğinin 9. maddesi gereğince 08/12/2026 tarihinde Halkın Katılım Toplantısı düzenlenecektir.ÇED Başvuru Dosyasını İncelemek isteyenler Bakanlık Merkezinde veya DENİZLİ Çevre ve Şehircilik İl Müdürlüklerinde duyuru tarihinden itibaren raporu inceleyerek, zamanlama takvimi içerisinde proje hakkında Bakanlığa veya Valiliğe görüş bildirebilirler. Daha önce yayınlanan duyuruda belirtilen Halkın Katılımı Toplantısı tarihi güncellenmiştir. Halkın Katılımı Toplantısı yeri ve saati ile ilgili ÇED İzin Denetim Genel Müdürlüğü ve DENİZLİ Çevre, Şehircilik ve İklim Değişikliği İl Müdürlüğünden bilgi alınabilir. İlgililere ve kamuoyuna duyurulur.</blockquote>
+
+  <h2>Otomatik Metin Taraması (Deterministik)</h2>
+  <table class="kv"><tr><th>Saha veya arazi çalışması ifadesi</th><td><span class="badge ok">Metinde yer almaktadır</span></td></tr>
+<tr><th>Literatür taraması ifadesi</th><td><span class="badge urgent">Metinde tespit edilemedi; doğrudan PDF üzerinden kontrol ediniz</span></td></tr>
+<tr><th>Mevsimsel örnekleme ifadesi</th><td><span class="badge ok">Metinde yer almaktadır</span></td></tr>
+<tr><th>Kümülatif etki değerlendirmesi ifadesi</th><td><span class="badge ok">Metinde yer almaktadır</span></td></tr>
+<tr><th>3573 sayılı Zeytincilik Kanunu veya zeytinlik ifadesi</th><td><span class="badge ok">Metinde yer almaktadır</span></td></tr>
+<tr><th>Yeraltı suyu, akifer veya hidrojeoloji ifadesi</th><td><span class="badge ok">Metinde yer almaktadır</span></td></tr>
+<tr><th>Endemik tür, IUCN veya Bern Sözleşmesi ifadesi</th><td><span class="badge ok">Metinde yer almaktadır</span></td></tr></table>
+  <p class="sub">Metin katmanı (OCR) bulunmayan taranmış harita ve kurum görüşü ekleri otomatik metin taramasına dahil edilmemiştir.</p>
+
+  <h2>Sayfa Kaynaklı Çıkarılan Bulgular</h2>
+  <div class="cards"><section class="card"><h3>Koordinatlar, Parsel ve Alan Büyüklüğü <span style="color:var(--muted);font-weight:400;font-size:0.85rem">(93 sayfa: s.1, s.2, s.3, s.4, s.5, s.6, s.7, s.8, s.9, s.10, s.11, s.12, s.13, s.14 (+79 sayfa))</span></h3><div class="hit"><span class="pno">[s. 1]</span> <code>44,8 ha</code> — …ENERJİ İŞLERİ GENEL MÜDÜRLÜĞÜ G26- Denizli Güneş Enerji Santrali (36 MWm / 30 MWe – 44,8 ha.) Denizli ili, Çivril ilçesi, Yukarı ve Gürpınar Mahallesi, Gökbaşlı ve Taşlı Mevkii, 3 Ada/116 Parsel, 379…</div>
+<div class="hit"><span class="pno">[s. 1]</span> <code>Ada/116 Parsel, 379 Ada/1 Parsel</code> — …m / 30 MWe – 44,8 ha.) Denizli ili, Çivril ilçesi, Yukarı ve Gürpınar Mahallesi, Gökbaşlı ve Taşlı Mevkii, 3 Ada/116 Parsel, 379 Ada/1 Parsel ÇED Başvuru Dosyası / ÇED Raporu / Son Şekli Verilen ÇED Raporu / Nihai ÇED Raporu ANKARA | 2026</div>
+<div class="hit"><span class="pno">[s. 2]</span> <code>44,8 ha</code> — Enerji İşleri Genel Müdürlüğü G26-Denizli GES (36 MWm / 30 MWe – 44,8 ha.) 1 Başlık Sayfası Proje Sahibinin Adı Enerji İşleri Genel Müdürlüğü Adresi Nasuh Akar Mah. Türkocağı Cad. No:12…</div>
+<div class="hit"><span class="pno">[s. 2]</span> <code>Ada/116 Parsel, 379 Ada/1 Parsel</code> — …k Adresi (İli, İlçesi, Mevki) Denizli ili, Çivril ilçesi, Yukarı ve Gürpınar Mahallesi, Gökbaşlı ve Taşlı Mevkii, 3 Ada/116 Parsel, 379 Ada/1 Parsel Projenin ÇED Yönetmeliği Kapsamındaki Yeri (Sektör, Alt Sektör) Ek I - Madde 43 Proje alanı 25 hektar ve üzerinde ol…</div>
+<div class="hit"><span class="pno">[s. 3]</span> <code>44,8 ha</code> — Enerji İşleri Genel Müdürlüğü G26-Denizli GES (36 MWm / 30 MWe – 44,8 ha.) 2 İçindekiler Listesi Başlık Sayfası .......................................................................…</div>
+<div class="hit"><span class="pno">[s. 4]</span> <code>44,8 ha</code> — Enerji İşleri Genel Müdürlüğü G26-Denizli GES (36 MWm / 30 MWe – 44,8 ha.) 3 Tehlikeli Atıklar ........................................................................... 48 Ömrünü Ta…</div></section><section class="card"><h3>Su Kullanımı, Hidrojeoloji ve Deşarj <span style="color:var(--muted);font-weight:400;font-size:0.85rem">(10 sayfa: s.13, s.40, s.41, s.42, s.43, s.47, s.55, s.61, s.62, s.86)</span></h3><div class="hit"><span class="pno">[s. 13]</span> <code>deşarj</code> — …depo, idari ve/veya sosyal bina, köprü, alt ve üst yapılar (arıtma, kanalizasyon, içme/kullanma su hatları, su alma/deşarj hatları vb dahil) viyadük vb. sanat yapıları, drenaj, tesviye vb. gibi araziyi kullanılabilir duruma getirmek için…</div>
+<div class="hit"><span class="pno">[s. 40]</span> <code>Sulak Alan</code> — …olarak tanımlanmıştır. j) Sulak Alanların Korunması Yönetmeliği’nde belirtilen alanlar ÇED alanı ve yakın çevresinde Sulak Alan olarak tanımlanmış bir alan bulunmamaktadır. ÇED alanına en yakın sulak alan harita üzerinden 12,5 km mesafede yer al…</div>
+<div class="hit"><span class="pno">[s. 41]</span> <code>Sulak Alan</code> — …ar Yapılan çalışmalar doğrultusunda planlanan ÇED alanı içerisinde Ramsar, ulusal öneme sahip ve mahalli öneme sahip “Sulak Alan” olarak tanımlanmış bir alan bulunmamaktadır. ÇED alanına en yakın sulak alan harita üzerinden 12,5 km mesafede yer…</div>
+<div class="hit"><span class="pno">[s. 42]</span> <code>sulak alan</code> — …ar, bataklık sazlık ve turbiyeler ile bu alanların kıyı kenar çizgisinden itibaren kara tarafına doğru ekolojik açıdan sulak alan kalan yerler ÇED alanı içerisinde Sulak Alan olarak tanımlanmış bir alan bulunmamaktadır. ÇED alanına en yakın sulak…</div>
+<div class="hit"><span class="pno">[s. 43]</span> <code>yeraltı suyu</code> — …(36 MWm / 30 MWe – 44,8 ha.) 42 Şekil 26 ÇED Alanı Çevresinde Yer Alan Sulak Alanlar ç) Göller, akarsular, yeraltı suyu işletme sahaları ÇED alanının işaretlendiği ve bölgedeki, göller, akarsular, içme suyu barajları ve tampon bölgelerin…</div>
+<div class="hit"><span class="pno">[s. 47]</span> <code>atıksu</code> — …ca çevresel etkiler; toz emisyonları, habitat, flora ve fauna kayıpları, çevresel gürültü ve titreşim, evsel nitelikli atıksu, belediye atıkları, ambalaj atıkları, atık yağlar ve tehlikeli atıklardır. Ayrıca işletme aşamasında evsel nitelikli…</div></section><section class="card"><h3>Korunan Alanlar, Orman ve Zeytinlikler <span style="color:var(--muted);font-weight:400;font-size:0.85rem">(8 sayfa: s.35, s.37, s.38, s.39, s.40, s.41, s.42, s.153)</span></h3><div class="hit"><span class="pno">[s. 35]</span> <code>Sit Alanı</code> — …Özellikleri Projenin sınırları içerisinden kaldığı Denizli ilinde yer alan “Kültür Varlıkları”, “Tabiat Varlıkları”, “Sit Alanı” ve “Koruma Alanı” olarak tanımlanan alanlar Kültür Varlıkları ve Müzeler Genel Müdürlüğü’ nün resmi internet adresind…</div>
+<div class="hit"><span class="pno">[s. 35]</span> <code>Arkeolojik Sit</code> — …inden temin edilmiş ve aşağıda verilmiştir1. Tablo 14 Denizli İli Sit Alanları İstatistikleri SİT ALANLARI SAYISI Arkeolojik Sit Alanı 3 Tarihi Sit Alanı 5 Arkeolojik Sit Alanı 394 Karma Sit Alanları Arkeolojik ve Kentsel Sit Alanı 2 TOP…</div>
+<div class="hit"><span class="pno">[s. 37]</span> <code>3573 Sayılı</code> — …441.880 98,53 Kuru Tarım (Nadaslı) 6.603 1,47 Toplam 448.483 100,0 Proje kapsamında; 4342 sayılı Mera Kanunu, 3573 Sayılı (4086 Saylı Kanunla Değişik) Zeytinciliğin Islahı ve Yabanilerinin Aşılattırılması Hakkında Kanun, 5403 Sayılı Toprak…</div>
+<div class="hit"><span class="pno">[s. 37]</span> <code>Tabiat Parkı</code> — …at Koruma Alanları&quot; olarak tanımlanmış bir alan bulunmamaktadır. ÇED alanının harita üzerinden 17,2 km doğusunda Akdağ Tabiat Parkı yer almaktadır. Şekil 23 ÇED Alanı Çevresinde Yer Alan Milli Park Alanları</div>
+<div class="hit"><span class="pno">[s. 37]</span> <code>Milli Park</code> — …nının harita üzerinden 17,2 km doğusunda Akdağ Tabiat Parkı yer almaktadır. Şekil 23 ÇED Alanı Çevresinde Yer Alan Milli Park Alanları</div>
+<div class="hit"><span class="pno">[s. 38]</span> <code>Sit Alanı</code> — …arı ve Müzeler Genel Müdürlüğü’ nün resmi internet adresinden temin edilen “Kültür Varlıkları”, “Tabiat Varlıkları”, “Sit Alanı” ve “Koruma Alanı” olarak tanımlanan alanlar tablosu Bölüm II.a.10’da verilmiştir. 1 Bkz. Ek 3/h Avlaklar Haritası…</div></section><section class="card"><h3>Flora, Fauna ve Saha Metodolojisi <span style="color:var(--muted);font-weight:400;font-size:0.85rem">(6 sayfa: s.14, s.25, s.32, s.40, s.43, s.47)</span></h3><div class="hit"><span class="pno">[s. 14]</span> <code>kuş göç</code> — …alleri için yer seçimi sırasında; yer yapısı, yükselti, eğim, arazi kullanımı, bitki örtüsü, nüfus yoğunluğu, maliyet, kuş göç rotaları, elektrik hatlarına yakınlık, yola uzaklık, yerleşim alanlarına mesafe, fay hatlarına mesafe ve akarsu-göller…</div>
+<div class="hit"><span class="pno">[s. 25]</span> <code>Flora ve Fauna</code> — …/ 30 MWe – 44,8 ha.) 24 Şekil 14 Denizli ili, Çivril ilçesi 2007 - 2025 Yılı Nüfus Değişim Grafiği II.a.2. Flora ve Fauna Projeye konu bölgenin flora ve faunası ile ilgili detaylı çalışma muhtemel komisyon üyesi olan Doğa koruma ve Milli P…</div>
+<div class="hit"><span class="pno">[s. 25]</span> <code>endemik</code> — …rı varsa araştırılarak yapılacak arazi çalışmaları ile desteklenecektir. Faaliyet alanı ve çevresinde bulunabilecek endemik bitki türlerinin belirlenmesinde Ekim, T. (2000) tarafından hazırlanan “Türkiye Bitkileri Kırmızı Kitabı” adlı yayında…</div>
+<div class="hit"><span class="pno">[s. 25]</span> <code>Bern Sözleşmesi</code> — …D Raporu’nda yer alacaktır. Fauna türlerinden amfibi, sürüngen, kuş ve memeli türlerinin Latince ve Türkçe adları, Bern Sözleşmesi Ek-2 ve Ek-3 listelerinin hangisinde yer aldığı, habitatları, IUCN kategorileri, T.C. Tarım ve Orman Bakanlığı’nın 07.…</div>
+<div class="hit"><span class="pno">[s. 25]</span> <code>IUCN</code> — …eli türlerinin Latince ve Türkçe adları, Bern Sözleşmesi Ek-2 ve Ek-3 listelerinin hangisinde yer aldığı, habitatları, IUCN kategorileri, T.C. Tarım ve Orman Bakanlığı’nın 07.05.2026 tarih ve 25 no’ lu karar numarası ile yürürlüğe giren “202…</div>
+<div class="hit"><span class="pno">[s. 32]</span> <code>mevsimsel</code> — …0 Proje ile ilgili olarak hazırlanan 1/25.000 ölçekli topoğrafik haritada da görüleceği üzere ÇED alanının çevresinde mevsimsel yağışlar ile akışa geçen (kuru dere) dere yatakları yer almaktadır. ÇED Alanı</div></section><section class="card"><h3>Emisyonlar, Jeokimya ve Atıklar <span style="color:var(--muted);font-weight:400;font-size:0.85rem">(22 sayfa: s.7, s.28, s.31, s.33, s.47, s.49, s.50, s.51, s.52, s.53, s.54, s.56, s.58, s.61 (+8 sayfa))</span></h3><div class="hit"><span class="pno">[s. 7]</span> <code>Deprem</code> — …a Ek 3/ç Arazi Varlığı Haritası Ek 3/d Çevre Düzeni Planı, Lejandı ve Plan Hükümleri Ek 3/e Uydu Görüntüleri Ek 3/f Deprem Haritası Ek 3/g Avlaklar Haritası Ek 3/ğ Jeoloji Haritası Ek 3/h Proje Yerine Ait Fotoğraflar Ek 3/ı G26-Denizli GE…</div>
+<div class="hit"><span class="pno">[s. 28]</span> <code>Deprem</code> — …yal istiflerin eşdeğeridir II.a.4. Doğal Afet Durumu Afet ve Acil Durum Yönetimi Başkanlığı’nca hazırlanan Türkiye Deprem Tehlike Haritaları kullanılarak yapılan deprem tehlike haritası aşağıda görülmektedir. Haritadan da görüleceği üzere…</div>
+<div class="hit"><span class="pno">[s. 31]</span> <code>deprem</code> — …MWe – 44,8 ha.) 30 Projenin inşaat aşamasında yangın, doğal afet (yıldırım düşmesi, sel, heyelan, çığ düşmesi, deprem vb.), sabotaj vb. olağanüstü durumda; • Çalışmalar derhal durdurulacak • Çalışan araç ve iş makineleri kapatılacak,…</div>
+<div class="hit"><span class="pno">[s. 33]</span> <code>PM10</code> — …ölçüm değerleri aşağıdaki tabloda verilmiştir1. Tablo 12 Denizli İli Hava Kalitesi Verileri Tarih Denizli (Çivril) PM10 (µg/m3 ) SO2 (µg/m3) CO (µg/m3) NO2 (µg/m3) NOX (µg/m3) NO (µg/m3) O3 (µg/m3) 01.08.2026 27,35 6,18 - 6,14…</div>
+<div class="hit"><span class="pno">[s. 47]</span> <code>Kümülatif</code> — …III.a. Çevreyi Etkileyebilecek Olası Sorunların Belirlenmesi, Kirleticilerin Miktarı, Alıcı Ortamla Etkileşimi, Kümülatif Etkilerin Belirlenmesi Projenin inşaat aşamasında karşılaşılacak başlıca çevresel etkiler; toz emisyonları, habitat,…</div>
+<div class="hit"><span class="pno">[s. 47]</span> <code>gürültü</code> — …nşaat aşamasında karşılaşılacak başlıca çevresel etkiler; toz emisyonları, habitat, flora ve fauna kayıpları, çevresel gürültü ve titreşim, evsel nitelikli atıksu, belediye atıkları, ambalaj atıkları, atık yağlar ve tehlikeli atıklardır. Ayrıca…</div></section><section class="card"><h3>Proje Bedeli, Güç ve Kapasite <span style="color:var(--muted);font-weight:400;font-size:0.85rem">(5 sayfa: s.2, s.9, s.13, s.83, s.120)</span></h3><div class="hit"><span class="pno">[s. 2]</span> <code>Proje Bedeli</code> — …0 e-posta tuncay.vesek@eltemtek.com.tr Projenin Adı G26-Denizli Güneş Enerji Santrali (36 MWm / 30 MWe – 44,8 ha.) Proje Bedeli 324.000.000,00 Proje İçin Seçilen Yerin Açık Adresi (İli, İlçesi, Mevki) Denizli ili, Çivril ilçesi, Yukarı ve Gür…</div>
+<div class="hit"><span class="pno">[s. 9]</span> <code>proje bedeli</code> — …makine-ekipman giderleri ve kurulum maliyetleri ve diğer maliyetler göz önünde bulundurularak yapılan hesaplamalar ile proje bedeli 324.000.000,00 olarak hesaplanmıştır. Projenin arazi hazırlık ve güneş panellerinin kurulum çalışmalarının 24 ay i…</div>
+<div class="hit"><span class="pno">[s. 13]</span> <code>proje bedeli</code> — …makine-ekipman giderleri ve kurulum maliyetleri ve diğer maliyetler göz önünde bulundurularak yapılan hesaplamalar ile proje bedeli 324.000.000,00 olarak hesaplanmıştır. Tablo 2 Yatırım Bedelleri Yatırım Giderleri Açıklama Tahmini Bedeli Araz…</div>
+<div class="hit"><span class="pno">[s. 13]</span> <code>PROJE BEDELİ</code> — …307.800.000,00 Diğer (varsa) Eğitim, yazılım, donanım, otomasyon, - sertifikalandırma vb. idari giderler TOPLAM PROJE BEDELİ (KDV dâhil) 324.000.000,00 I.a.4. Projenin Ömrü Gerçekleştirilmesi planlanan güneş enerji santralinin ekonomik ö…</div>
+<div class="hit"><span class="pno">[s. 83]</span> <code>kapasite</code> — …Tüm araçlar kış aylarında kış lastiği kullanacaktır. • İnşaat malzemelerinin proje sahasına nakli sırasında araçlara kapasitesinden fazla yükleme yapılmayacaktır. 4. Yol ve Araç Bakımı Proje kapsamında mümkün olduğunca mevcut yolların kullanı…</div>
+<div class="hit"><span class="pno">[s. 120]</span> <code>KAPASİTE</code> — …YA KURULU GÜCÜ 50 MW, BİYOKÜTLE ENERJİ SANTRALLERİNDE KURULU GÜCÜ 10 MW, JEOTERMAL ENERJİ SANTRALLERİNDE ISIL KAPASİTESİ 20 MW, GÜNEŞ ENERJİ SANTRALLERİNDE PROJE ALANI 20 HEKTAR VEYA KURULU GÜCÜ 10 MW VE ÜZERİ TESİSLER İÇİN ÇEVRE DÜ…</div></section></div>
+
+  <h2>Belge Bölüm Haritası</h2>
+  <ul><li style="color:var(--muted)">Belge içinde yapılandırılmış bölüm başlığı tespit edilememiştir.</li></ul>
+
+  <div class="notice">
+    Bu sayfa, T.C. Çevre, Şehircilik ve İklim Değişikliği Bakanlığı'nın kamuya açık <code>eced-duyuru.csb.gov.tr</code> duyuru portalındaki kayıtlar esas alınarak bilgilendirme amacıyla hazırlanmıştır. Alıntıların tamamı 1 tabanlı PDF sayfa numarasıyla (<code>[s. N]</code>) gösterilmektedir. Yasal süreler otomatik olarak hesaplanır; kesin sürelerin ve hukuki başvuru yollarının yetkili hukukçular tarafından teyit edilmesi gerekir.
+  </div>
+</div>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script>
+(() => {
+  if (typeof L === 'undefined') return;
+  const g = {"lat": 38.36692, "lon": 29.72399, "zoom": 12, "precision": "exact_pdf", "points": [[38.3683, 29.72148], [38.36849, 29.72646], [38.36218, 29.72601], [38.36208, 29.72214], [38.36173, 29.72039], [38.36137, 29.71964], [38.36237, 29.71617], [38.36746, 29.7215], [38.36756, 29.725], [38.36733, 29.72498], [38.36735, 29.72464], [38.36757, 29.72465], [38.36798, 29.72599], [38.36726, 29.72594], [38.36728, 29.72537], [38.368, 29.72542], [38.36895, 29.72106], [38.36914, 29.72603], [38.36282, 29.72559], [38.36273, 29.72172], [38.36237, 29.71996], [38.36202, 29.71922], [38.36302, 29.71574], [38.36811, 29.72108], [38.3682, 29.72457], [38.36798, 29.72456], [38.36799, 29.72422], [38.36822, 29.72423], [38.36863, 29.72556], [38.36791, 29.72552], [38.36793, 29.72495], [38.36865, 29.72499], [38.36801, 29.72526], [38.36765, 29.72523], [38.36767, 29.72466], [38.36803, 29.72469], [38.36755, 29.72535], [38.36737, 29.72534], [38.36738, 29.72505], [38.36756, 29.72506]], "label": "DENİZLİ / ÇİVRİL — G26-Denizli Güneş Enerji Santrali (36 MWm / 30 MWe - 44,8 ha.)"};
+  const map = L.map('digest-map').setView([g.lat, g.lon], g.zoom);
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    maxZoom: 18,
+    attribution: '&copy; OpenStreetMap katkıda bulunanları'
+  }).addTo(map);
+  if (g.precision === 'exact_pdf' && g.points.length > 1) {
+    const latlngs = g.points.map(p => [p[0], p[1]]);
+    const poly = L.polyline(latlngs, { color: '#58a6ff', weight: 3, opacity: 0.85 }).addTo(map);
+    for (const ll of latlngs.slice(0, 30)) {
+      L.circleMarker(ll, { radius: 4, color: '#ffffff', fillColor: '#f85149', fillOpacity: 0.9, weight: 1 }).addTo(map);
+    }
+    map.fitBounds(poly.getBounds().pad(0.25));
+  } else {
+    L.circleMarker([g.lat, g.lon], {
+      radius: g.precision === 'exact_pdf' ? 8 : 11,
+      color: '#ffffff',
+      fillColor: g.precision === 'exact_pdf' ? '#f85149' : '#58a6ff',
+      fillOpacity: g.precision === 'exact_pdf' ? 0.9 : 0.45,
+      weight: 2
+    }).bindPopup(g.label).addTo(map).openPopup();
+  }
+})();
+</script>
+</body>
+</html>

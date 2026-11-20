@@ -1,0 +1,305 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>e-ÇED Ön Özet #53527 — ANTALYA / MANAVGAT</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <style>
+:root {
+  --bg: #0f1216;
+  --surface: #171c22;
+  --border: #262e38;
+  --text: #e6edf3;
+  --muted: #8b949e;
+  --accent: #58a6ff;
+  --red: #f85149;
+  --amber: #d29922;
+  --green: #3fb950;
+  --badge-bg: #212830;
+}
+@media (prefers-color-scheme: light) {
+  :root {
+    --bg: #f6f8fa;
+    --surface: #ffffff;
+    --border: #d0d7de;
+    --text: #1f2328;
+    --muted: #656d76;
+    --accent: #0969da;
+    --red: #cf222e;
+    --amber: #9a6700;
+    --green: #1a7f37;
+    --badge-bg: #eef2f6;
+  }
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+}
+.wrap { max-width: 1240px; margin: 0 auto; padding: 24px 18px 64px; }
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+header { border-bottom: 1px solid var(--border); padding-bottom: 16px; margin-bottom: 20px; }
+h1 { margin: 0 0 6px; font-size: 1.55rem; }
+h2 { margin: 26px 0 10px; font-size: 1.2rem; }
+h3 { margin: 16px 0 8px; font-size: 1rem; }
+.sub { color: var(--muted); font-size: 0.92rem; margin: 0; }
+.meta-bar { display: flex; flex-wrap: wrap; gap: 14px; margin-top: 12px; font-size: 0.85rem; color: var(--muted); }
+.stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 10px; margin: 16px 0 18px; }
+.stat { background: var(--surface); border: 1px solid var(--border); border-radius: 8px; padding: 12px 14px; }
+.stat .num { font-size: 1.45rem; font-weight: 700; }
+.stat .lbl { font-size: 0.78rem; color: var(--muted); }
+.map-box {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 18px;
+}
+#map { width: 100%; height: 420px; background: var(--badge-bg); }
+#digest-map { width: 100%; height: 320px; background: var(--badge-bg); }
+.map-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  padding: 9px 14px;
+  font-size: 0.8rem;
+  color: var(--muted);
+  border-top: 1px solid var(--border);
+}
+.dot { display: inline-block; width: 10px; height: 10px; border-radius: 50%; margin-right: 5px; vertical-align: middle; }
+.controls { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; margin-bottom: 16px; }
+input[type="search"], select.filter-select {
+  padding: 8px 12px;
+  border-radius: 6px;
+  border: 1px solid var(--border);
+  background: var(--surface);
+  color: var(--text);
+  font-size: 0.9rem;
+}
+input[type="search"] { flex: 1 1 240px; }
+select.filter-select { min-width: 170px; }
+button.pill {
+  padding: 7px 12px;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: var(--surface);
+  color: var(--text);
+  cursor: pointer;
+  font-size: 0.82rem;
+}
+button.pill.active { background: var(--accent); border-color: var(--accent); color: #fff; font-weight: 600; }
+.cards { display: flex; flex-direction: column; gap: 10px; }
+.card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 15px 17px;
+}
+.card.ek1 { border-left: 4px solid var(--accent); }
+.row-top { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px; align-items: baseline; }
+.title { font-weight: 600; font-size: 0.98rem; }
+.badges { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 7px; }
+.badge {
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  background: var(--badge-bg);
+  border: 1px solid var(--border);
+}
+.badge.urgent { border-color: var(--red); color: var(--red); font-weight: 600; }
+.badge.warn { border-color: var(--amber); color: var(--amber); font-weight: 600; }
+.badge.ok { border-color: var(--green); color: var(--green); }
+.badge.muted { color: var(--muted); }
+.detail { font-size: 0.87rem; color: var(--muted); margin: 8px 0; }
+.actions { display: flex; flex-wrap: wrap; gap: 12px; font-size: 0.84rem; margin-top: 8px; }
+.notice {
+  margin-top: 28px;
+  padding: 14px 16px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  font-size: 0.84rem;
+  color: var(--muted);
+}
+table.kv { width: 100%; border-collapse: collapse; margin: 12px 0; font-size: 0.9rem; }
+table.kv th, table.kv td { border: 1px solid var(--border); padding: 8px 11px; text-align: left; vertical-align: top; }
+table.kv th { width: 240px; background: var(--badge-bg); }
+code { background: var(--badge-bg); padding: 1px 5px; border-radius: 4px; font-size: 0.85em; }
+blockquote { margin: 10px 0; padding: 11px 15px; border-left: 3px solid var(--accent); background: var(--surface); font-size: 0.9rem; }
+.hit { margin: 7px 0; font-size: 0.88rem; }
+.pno { font-weight: 700; color: var(--accent); }
+.leaflet-popup-content { color: #1f2328; font-size: 0.85rem; line-height: 1.45; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div style="font-size:0.85rem;margin-bottom:8px;"><a href="../index.html">← Türkiye e-ÇED İzleme listesine dön</a> · <a href="../rehber.html">Kullanım ve İnceleme Rehberi</a> · <a href="53527.md">Ham Markdown (.md)</a></div>
+    <h1>e-ÇED Ön Özet #53527 — ANTALYA / MANAVGAT</h1>
+    <p class="sub">Manavgat 1 Güneş Enerji Santrali (13,728 MWm/10 MWe/11,30 ha) ve Elektrik Depolama Tesisi (10 MWe/10 MWh)</p>
+    <div class="badges" style="margin-top:10px;">
+      <span class="badge">IDK</span>
+      <span class="badge">Ek-1</span>
+      <span class="badge warn">İDK İncelemesi · Tarih duyuru metnindedir</span>
+    </div>
+  </header>
+
+  <table class="kv">
+    <tr><th>Proje Sahibi</th><td>Assan Alüminyum Sanayi ve Ticaret Anonim Şirketi</td></tr>
+    <tr><th>Hazırlayan Kuruluş</th><td>ÇINAR MÜH. MÜŞ. A.Ş.</td></tr>
+    <tr><th>Sektör / Alt Sektör</th><td>Enerji / Güneş Enerji Santralleri</td></tr>
+    <tr><th>Duyuru Tarihi</th><td><code>19.11.2026</code> (belge yükleme tarihi: <code>22/11/2024 09:36:05</code>)</td></tr>
+    <tr><th>PDF Kapsamı</th><td>159.94 MB · 1326 sayfa (1249 metin sayfası / 77 taranmış veya görüntü sayfası) · SHA-256 <code>5065a8e4f12d8d16…</code></td></tr>
+    <tr><th>Resmi Bağlantılar</th><td><a href="http://eced.csb.gov.tr/jsp/ek1/53527" target="_blank" rel="noopener">e-ÇED Portal Kaydı</a> · <a href="http://eced.csb.gov.tr/jsp/dosya/dosyaGoster.htm?tempAd=sign5554619382561765243.pdf&amp;orjinalAd=53527_CED_Raporu.pdf&amp;yuklemeTarihi=2026-10-18" target="_blank" rel="noopener">Resmi PDF Dosyası</a> · <a href="https://www.openstreetmap.org/?mlat=36.83536&amp;mlon=31.50732#map=12/36.83536/31.50732" target="_blank" rel="noopener">OpenStreetMap</a> · <a href="https://www.google.com/maps/search/?api=1&amp;query=36.83536,31.50732" target="_blank" rel="noopener">Google Haritalar</a></td></tr>
+  </table>
+
+  <h2>Konum Haritası</h2>
+  <div class="map-box">
+    <div id="digest-map"></div>
+    <div class="map-legend"><span>PDF metninden çıkarılan kesin proje koordinatları (81 nokta, datum: UTM-Z36/ED50, sayfa: s.147, s.148, s.329, s.330).</span></div>
+  </div>
+
+  
+  <h2>Yapay Zeka Destekli Bilimsel Ön Değerlendirme <span class="badge">gemini-4-hydrogen</span></h2>
+  <p class="sub">Bu değerlendirme, resmi PDF dosyasından seçilen 23 sayfa (s.1, s.2, s.3, s.4, s.5, s.6, s.7, s.8, s.9, s.10, s.11, s.12, s.13, s.14, s.15, s.17, s.18, s.21, s.25, s.48, s.51, s.61, s.62) esas alınarak hazırlanmıştır. Tüm sayısal verilerin ve tespitlerin resmi PDF belgesindeki ilgili <code>[s. N]</code> sayfalarından doğrulanması gerekir.</p>
+  <section class="card ek1">
+    <p><strong>Özet:</strong> Assan Alüminyum Sanayi ve Ticaret A.Ş. tarafından Antalya ili Manavgat ilçesi Oymapınar, Oymapınar/Iğrışlar ve Bucakşeyhler mahallelerinde 13,728 MWm/10 MWe kurulu gücünde Manavgat 1 Güneş Enerji Santrali (24.960 adet 550 Wp Mono PERC panel) ile 10 MWe/10 MWh kapasiteli lityum-iyon Elektrik Depolama Tesisi kurulması planlanmaktadır [s. 1, 2, 25]. ÇED Raporu 17.10.2026 tarihinde ÇED Yönetmeliği EK-I Madde 43 kapsamında sunulmuş olup, önlisans aşamasında 14,76 ha olan proje alanı orman niteliğindeki kısımların çıkarılmasıyla 11,30 ha&#x27;a düşürülmüş ve 18 adet ada/parsel üzerinde konumlandırılmıştır [s. 1, 2, 25]. Planlanan saha 1/100.000 ölçekli Çevre Düzeni Planı&#x27;nda &#x27;Tarım Alanı&#x27; ve 1/25.000 ölçekli Mevcut Arazi Kullanım Haritası&#x27;nda &#x27;Karışık Tarım Alanları&#x27; sınırları içinde kalmakta olup [s. 21], temel çevresel risk alanları tarım arazilerinin tarım dışı kullanımı, orman sınırı çelişkileri, parsel mülkiyet/vasıf belirsizlikleri ve ekolojik/kümülatif etki değerlendirmelerinin sunulan sayfalarda yer almamasıdır [s. 15, 21, 25].</p>
+    <details style="margin-top:8px;font-size:0.86rem;color:var(--muted);"><summary style="cursor:pointer;">İngilizce özet (English summary)</summary><p style="margin:6px 0 0;">Assan Alüminyum Sanayi ve Ticaret A.Ş. proposes to construct and operate the Manavgat 1 Solar Power Plant (13.728 MWm/10 MWe, comprising 24,960 Mono PERC modules of 550 Wp each) integrated with a 10 MWe/10 MWh lithium-ion Electricity Storage Facility across 18 cadastral parcels in the Oymapınar, Oymapınar/Iğrışlar, and Bucakşeyhler neighborhoods of Manavgat district, Antalya [s. 1, 2, 25]. Submitted on 17.10.2026 under Annex-I Article 43 of the EIA Regulation, the project footprint was revised downward from 14.76 ha in the pre-license to 11.30 ha by excluding forest-classified sections while retaining full generation capacity [s. 2, 25]. According to the excerpted pages, the project site falls within areas designated as &#x27;Agricultural Land&#x27; in the 1/100,000 Environmental Plan and &#x27;Mixed Agricultural Areas&#x27; on the 1/25,000 Existing Land Use Map [s. 21]. Primary technical and environmental stakes identifiable from the available excerpts include agricultural land-use conversion under Law No. 5403, conflicting statements regarding forest parcel inclusion, unresolved parcel ownership/pasture verification, and the absence of detailed ecological, cumulative, and annex documentation within the excerpted page range [s. 15, 21, 25].</p></details>
+    <div class="badges" style="margin-top:10px;">
+      <span class="badge">Saha çalışması: Karışık veya yöntemi belirsiz</span>
+      <span class="badge">Mevsimsel örnekleme: İncelenen sayfalarda tespit edilemedi</span>
+      <span class="badge">Kümülatif etki: Eksik veya tespit edilemedi</span>
+    </div>
+    <p class="detail" style="margin-top:10px;"><strong>Zeytinlik ve Korunan Alanlar:</strong> Sunulan sayfalarda zeytinliklere (3573 sayılı Kanun), sulak alanlara, ÖÇK veya SİT statülerine ilişkin ayrıntılı saha değerlendirmeleri yer almamaktadır; İçindekiler listesinde Kültür Varlığı/Sit/Koruma Alanları bölümü (rapor s. 84) ile Ekler Dizininde Antalya Kültür Varlıklarını Koruma Bölge Kurulu (01.10.2025), Tabiat Varlıklarını Koruma Genel Müdürlüğü (26.02.2025) ve DKMP (21.03.2025) görüş yazılarının bulunduğu görülmektedir [s. 4, 15]. Proje sahası 1/100.000 ölçekli Çevre Düzeni Planı&#x27;nda &#x27;Tarım Alanı&#x27;, 1/25.000 ölçekli Mevcut Arazi Kullanım Haritası&#x27;nda &#x27;Karışık Tarım Alanları&#x27; ve Meşcere Haritası&#x27;nda &#x27;Z Kadastroya Göre Orman Dışı Açıklıklar&#x27; olarak tanımlanmaktadır [s. 21].<br/>Sunulan sayfalarda yalnızca ÇED Yeterlik Belgesi Tebliği kapsamında 12.09.2024 tarihinde gerçekleştirilen ve sahada inşaat faaliyeti bulunmadığını belgeleyen genel arazi etüdü ile üç adet saha fotoğrafı yer almaktadır [s. 61, 62]. İçindekiler ve Ekler dizinlerinde Flora ve Fauna bölümü (rapor s. 87), Kümülatif ÇED bölümü (rapor s. 236), Çevre İzleme Planı (rapor s. 248) ve ornitolojik çalışma başlığı (rapor s. 279) listelenmiş olsa da [s. 4, 8, 9], bu bölümlerin içeriği sunulan sayfa aralığı dışında kaldığından onay öncesi mevsimsel ekolojik örnekleme yapılıp yapılmadığı ve kümülatif etki analizinin nicel niteliği doğrulanamamıştır.</p>
+  </section>
+  <h3>Öne Çıkan Sayısal Bulgular</h3><table class="kv"><tr><th>Kurulu Güç (GES ve Depolama)</th><td>13,728 MWm / 10 MWe GES ve 10 MWe / 10 MWh Elektrik Depolama Tesisi (Lityum-iyon) <span class="pno">[s. 25]</span></td></tr>
+<tr><th>Proje Alanı</th><td>11,30 ha (Önlisans belgesindeki 14,76 ha alandan revize edilmiş) <span class="pno">[s. 25]</span></td></tr>
+<tr><th>Yıllık Elektrik Üretim Hedefi</th><td>20.000.000 kWh/yıl (20 GWh/yıl) <span class="pno">[s. 25]</span></td></tr>
+<tr><th>Panel ve Evirici Sayısı</th><td>24.960 adet 550 Wp Mono PERC fotovoltaik modül ve 5 adet 2 MWe evirici <span class="pno">[s. 25]</span></td></tr>
+<tr><th>Şebeke Bağlantı Noktası</th><td>Manavgat TM OG Barası (80+80 MVA) <span class="pno">[s. 25]</span></td></tr>
+<tr><th>Ada ve Parsel Sayısı</th><td>18 adet parsel (149, 153, 158, 394 ve 398 numaralı adalar) <span class="pno">[s. 1]</span></td></tr>
+<tr><th>Proje Yatırım Bedeli ve Finansman</th><td>263.637.500,00 TL (yaklaşık %20 öz kaynak, %80 kredi) <span class="pno">[s. 21]</span></td></tr>
+<tr><th>Planlanan İstihdam</th><td>İnşaat aşamasında 20 kişi, işletme aşamasında 10 kişi <span class="pno">[s. 21]</span></td></tr>
+<tr><th>EPDK Önlisans Belgesi</th><td>15.08.2024 tarihli, ÖN/12813-21/06241 numaralı, 30 ay süreli <span class="pno">[s. 25]</span></td></tr>
+<tr><th>Arazi Etüdü Tarihi</th><td>12.09.2024 (Çınar Mühendislik Müşavirlik A.Ş. yer incelemesi) <span class="pno">[s. 61]</span></td></tr></table>
+  <h3>Bilimsel ve Metodolojik Bulgular</h3><section class="card"><div class="hit"><span class="badge warn">ORTA</span> <strong>Orman Alanlarının ÇED Sınırındaki Durumuna İlişkin Çelişkili Beyanlar</strong> <span class="pno">[s. 15, s. 21, s. 25]</span> — Teknik Olmayan Özet bölümünde alanın tamamının Meşcere Haritası&#x27;nda &#x27;Z Kadastroya Göre Orman Dışı Açıklıklar&#x27; içinde kaldığı belirtilmesine karşın iki paragraf sonra &#x27;proje kapsamında yer alan ormanlık alanlar sadece parseller arasındaki alan birleşimi için ÇED alanına dahil edilmiş olup... ünite yerleşimi yapılmayacaktır&#x27; ifadesi kullanılmaktadır [s. 21]. Buna karşılık Bölüm I.1&#x27;de Orman Genel Müdürlüğü dokümanlarında orman niteliğinde kalan bölümlerin ÇED proje sınırlarından çıkarıldığı belirtilmekte olup [s. 25], Ekler Dizininde Orman Genel Müdürlüğü veya Orman Bölge Müdürlüğü görüş yazısına rastlanmamıştır [s. 15].</div>
+<div class="hit"><span class="badge warn">ORTA</span> <strong>Proje Alanı Revizyonunda Aritmetik Tutarsızlık ve Kapasite Yoğunlaşması</strong> <span class="pno">[s. 25]</span> — Bölüm I.1&#x27;de 14,76 ha olan önlisans proje alanının revizyonla 11,30 ha&#x27;a düşürüldüğü belirtilirken takip eden paragrafta &#x27;yaklaşık 2,46 ha&#x27;lık alanın proje sınırları dışında bırakıldığı&#x27; yazılmıştır; oysa 14,76 ha ile 11,30 ha arasındaki fark 3,46 ha olup 1,00 ha&#x27;lık aritmetik tutarsızlık mevcuttur [s. 25]. Ayrıca alan yaklaşık %23,4 küçültülmesine rağmen 24.960 adet panel sayısı ve 13,728 MWm/10 MWe kurulu güç sabit tutulmuştur [s. 25].</div>
+<div class="hit"><span class="badge warn">ORTA</span> <strong>ÇED Yönetmeliği EK-I Eşiği ile Proje Alanı Arasındaki Uyumsuzluk</strong> <span class="pno">[s. 2, s. 25]</span> — Raporun künye sayfasında proje, ÇED Yönetmeliği EK-I Listesi Madde 43 (&#x27;Proje alanı 25 hektar ve üzerinde olan güneş enerji santralleri&#x27;) kapsamında sınıflandırılmıştır [s. 2]. Ancak gerek revizyon öncesi önlisans alanı (14,76 ha) gerekse revize ÇED alanı (11,30 ha) 25 hektar eşiğinin altındadır ve bu kapsam seçiminin gerekçesi sunulan sayfalarda açıklanmamıştır [s. 2, 25].</div>
+<div class="hit"><span class="badge warn">ORTA</span> <strong>Tarım Alanı Vasfına Rağmen Ek-2&#x27;de Tarım ve DSİ Görüşlerinin Bulunmaması</strong> <span class="pno">[s. 15, s. 21]</span> — Proje sahasının tamamı 1/100.000 ölçekli planda &#x27;Tarım Alanı&#x27; ve 1/25.000 ölçekli haritada &#x27;Karışık Tarım Alanları&#x27; içinde kalmakta olup 5403 sayılı Kanun kapsamında tarım dışı kullanım izni gerektiği ifade edilmektedir [s. 21]. Ancak Ekler Dizininde yer alan resmi görüş listesinde (Ek-2.8 ile Ek-2.16 arası) İl Tarım ve Orman Müdürlüğü ile DSİ kurum görüşleri bulunmamaktadır [s. 15].</div>
+<div class="hit"><span class="badge warn">ORTA</span> <strong>Parsel Mülkiyeti ve Mera/Tarım Vasfı Tespitinin Kamulaştırma Aşamasına Bırakılması</strong> <span class="pno">[s. 1, s. 21]</span> — Teknik Olmayan Özet&#x27;te proje alanındaki tüm parsellerin güncel mülkiyet ve kullanım durumlarının (&#x27;şahıs, hazine, mera, tarım arazisi vb.&#x27;) ancak ilerideki kamulaştırma aşamasında tespit edileceği belirtilmektedir [s. 21]. Mera veya tarım arazisi varlığının 18 parçalı parsel bazında ÇED aşamasında kesinleştirilmemiş olması çevresel etki değerlendirmesinde belirsizlik yaratmaktadır [s. 1, 21].</div>
+<div class="hit"><span class="badge muted">DÜŞÜK</span> <strong>Arazi Etüdü ile Revizyon ve Rapor Sunumu Arasındaki İki Yılı Aşkın Zaman Farkı</strong> <span class="pno">[s. 2, s. 15, s. 25, s. 61]</span> — Sunulan sayfalarda belgelenen tek saha incelemesi 12.09.2024 tarihinde yapılmıştır [s. 61]. Kurum görüşlerinin 2025 yılı içinde alındığı [s. 15], proje sınırlarının revize edildiği [s. 25] ve raporun 17.10.2026 tarihinde sunulduğu [s. 2] dikkate alındığında, revize edilmiş 11,30 ha&#x27;lık yeni sınırlar için güncel bir yer incelemesi yapıldığına dair bilgi sunulmamıştır.</div></section>
+  <h3>HKT Tutanakları ve İdari Başvurular İçin Taslak Teknik Sorular</h3><ul><li>Önlisans alanında 14,76 ha ve revize ÇED alanında 11,30 ha olan proje, neden ÇED Yönetmeliği EK-I Madde 43 (&#x27;25 hektar ve üzerinde olan güneş enerji santralleri&#x27;) kapsamında değerlendirilmiştir ve 14,76 ha&#x27;dan 11,30 ha&#x27;a düşüşte metinde &#x27;2,46 ha çıkarıldığı&#x27; yazılmasına karşın oluşan 1,00 ha&#x27;lık aritmetik fark hangi parsellerden kaynaklanmaktadır? <span class="pno">[s. 2, s. 25]</span></li>
+<li>Sahanın tamamının Meşcere Haritası&#x27;nda &#x27;Z Kadastroya Göre Orman Dışı Açıklıklar&#x27; olduğu ve orman alanlarının sınırdan çıkarıldığı belirtilmesine rağmen, aynı metinde parsel birleşimi amacıyla ÇED alanına dahil edilen ormanlık alanlardan söz edilmesinin nedeni nedir; 18 parsel arasındaki kablo kanalı ve bakım yolları orman vasıflı alanlardan geçecek midir ve buna ilişkin Orman Bölge Müdürlüğü görüşü mevcut mudur? <span class="pno">[s. 1, s. 15, s. 21, s. 25]</span></li>
+<li>Çevre Düzeni Planı&#x27;nda &#x27;Tarım Alanı&#x27; ve Mevcut Arazi Kullanım Haritası&#x27;nda &#x27;Karışık Tarım Alanları&#x27; olarak görünen proje sahası için Ek-2 resmi görüşler listesinde Antalya İl Tarım ve Orman Müdürlüğü görüşüne yer verilmediği anlaşılmaktadır; 5403 sayılı Kanun kapsamında tarım dışı kullanım uygunluğu ve 3573 sayılı Kanun kapsamında zeytinlik bulunup bulunmadığı İDK kararı öncesinde tespit edilmiş midir? <span class="pno">[s. 15, s. 21]</span></li>
+<li>Proje alanı yaklaşık %23,4 oranında küçültülürken panel sayısı (24.960 adet) ve kurulu gücün (13,728 MWm/10 MWe) ile 10 MWe/10 MWh lityum-iyon depolama ünitesinin aynı kalmasının drenaj, yüzey akışı ve yangın güvenlik mesafeleri üzerindeki etkileri revize sınırlar üzerinden yeniden modellenmiş midir? <span class="pno">[s. 25, s. 61]</span></li>
+<li>Parsellerin güncel mülkiyet ve kullanım durumlarının (&#x27;şahıs, hazine, mera, tarım arazisi vb.&#x27;) kamulaştırma aşamasında tespit edileceği belirtildiğinden, proje sahası veya birleşim alanları içinde mera vasfında taşınmaz bulunup bulunmadığı ÇED Raporu&#x27;nda kesinleştirilmiş midir? <span class="pno">[s. 1, s. 21]</span></li></ul>
+  <p class="sub"><em>İnceleme sınırları:</em> Toplam 1.326 sayfalık ÇED Raporu PDF dosyasının (1.249 metin çıkarılabilir, 77 taranmış/görüntü sayfa) yalnızca 23 sayfası [s. 1-15, 17, 18, 21, 25, 48, 51, 61, 62] incelemeye sunulmuştur. Başta iklim, jeoloji/depremsellik, hidroloji, tarım/mera, orman, kültür varlıkları ve korunan alanlar (Bölüm II.2.8), flora ve fauna saha verileri (Bölüm II.2.9), inşaat ve işletme etkileri ile batarya yangın/atıksu değerlendirmeleri (Bölüm III), Kümülatif Çevresel Etki Değerlendirmesi (Bölüm IV), Çevre İzleme Planı (Bölüm V), HKT tutanakları (Bölüm VI) ile Ek-1&#x27;den Ek-9&#x27;a kadar olan koordinatlar, haritalar ve resmi kurum yazılarının içerikleri ve taranmış 77 sayfa bu incelemede doğrulanamamıştır.</p>
+
+
+  <h2>Resmi Duyuru Metni</h2>
+  <blockquote>ANTALYA ili MANAVGAT,  ilcesinde ANTALYA ili MANAVGAT ilçesi sınırları içerisinde Assan Alüminyum Sanayi ve Ticaret Anonim Şirketi tarafından yapılması planlanan Manavgat 1 Güneş Enerji Santrali (13,728 MWm/10 MWe/11,30 ha) ve Elektrik Depolama Tesisi (10 MWe/10 MWh) projesi ile ilgili olarak hazırlanan ÇED Raporu, ÇED Yönetmeliği&#x27;nin 11. maddesi kapsamında Bakanlığımıza sunulmuş olup, inceleme değerlendirme süreci başlamıştır. Proje ile ilgili olarak 17/12/2026 tarihinde İDK toplantısı gerçekleştirilecektir. Bakanlığımıza sunulan ÇED Raporu https://eced-duyuru.csb.gov.tr/eced-prod/duyurular.xhtml adresinde yer almaktadır. ÇED Raporu ilgililere ve kamuoyuna duyurulur.</blockquote>
+
+  <h2>Otomatik Metin Taraması (Deterministik)</h2>
+  <table class="kv"><tr><th>Saha veya arazi çalışması ifadesi</th><td><span class="badge ok">Metinde yer almaktadır</span></td></tr>
+<tr><th>Literatür taraması ifadesi</th><td><span class="badge ok">Metinde yer almaktadır</span></td></tr>
+<tr><th>Mevsimsel örnekleme ifadesi</th><td><span class="badge ok">Metinde yer almaktadır</span></td></tr>
+<tr><th>Kümülatif etki değerlendirmesi ifadesi</th><td><span class="badge ok">Metinde yer almaktadır</span></td></tr>
+<tr><th>3573 sayılı Zeytincilik Kanunu veya zeytinlik ifadesi</th><td><span class="badge ok">Metinde yer almaktadır</span></td></tr>
+<tr><th>Yeraltı suyu, akifer veya hidrojeoloji ifadesi</th><td><span class="badge ok">Metinde yer almaktadır</span></td></tr>
+<tr><th>Endemik tür, IUCN veya Bern Sözleşmesi ifadesi</th><td><span class="badge ok">Metinde yer almaktadır</span></td></tr></table>
+  <p class="sub">Metin katmanı (OCR) bulunmayan taranmış harita ve kurum görüşü ekleri otomatik metin taramasına dahil edilmemiştir.</p>
+
+  <h2>Sayfa Kaynaklı Çıkarılan Bulgular</h2>
+  <div class="cards"><section class="card"><h3>Koordinatlar, Parsel ve Alan Büyüklüğü <span style="color:var(--muted);font-weight:400;font-size:0.85rem">(659 sayfa: s.1, s.2, s.3, s.4, s.5, s.6, s.7, s.8, s.9, s.10, s.11, s.12, s.13, s.14 (+645 sayfa))</span></h3><div class="hit"><span class="pno">[s. 1]</span> <code>11,30 ha</code> — …sı ÇED Raporu Son Şekli Verilen ÇED Raporu Nihai ÇED Raporu MANAVGAT 1 GÜNEŞ ENERJİ SANTRALİ (13,728 MWm/10 MWe/11,30 ha) VE ELEKTRİK DEPOLAMA TESİSİ (10 MWe/10 MWh) PROJESİ ANTALYA İLİ, MANAVGAT İLÇESİ, OYMAPINAR, OYMAPINAR/IĞRIŞLAR V…</div>
+<div class="hit"><span class="pno">[s. 2]</span> <code>11,30 ha</code> — MANAVGAT 1 GÜNEŞ ENERJİ SANTRALİ (13,728 MWm/10 MWe/11,30 ha) VE ELEKTRİK DEPOLAMA TESİSİ (10 MWe/10 MWh) PROJESİ ÇED RAPORU PROJE SAHİBİNİN ADI: Assan Alüminyum Sanayi ve…</div>
+<div class="hit"><span class="pno">[s. 3]</span> <code>11,30 ha</code> — MANAVGAT 1 GÜNEŞ ENERJİ SANTRALİ (13,728 MWm/10 MWe/11,30 ha) VE ELEKTRİK DEPOLAMA TESİSİ (10 MWe/10 MWh) PROJESİ ÇED RAPORU i İÇİNDEKİLER LİSTESİ İÇİNDEKİLER LİSTESİ ...…</div>
+<div class="hit"><span class="pno">[s. 4]</span> <code>11,30 ha</code> — MANAVGAT 1 GÜNEŞ ENERJİ SANTRALİ (13,728 MWm/10 MWe/11,30 ha) VE ELEKTRİK DEPOLAMA TESİSİ (10 MWe/10 MWh) PROJESİ ÇED RAPORU ii II.2. ÇED İnceleme Alanı ve Etki Alanı İçeris…</div>
+<div class="hit"><span class="pno">[s. 5]</span> <code>11,30 ha</code> — MANAVGAT 1 GÜNEŞ ENERJİ SANTRALİ (13,728 MWm/10 MWe/11,30 ha) VE ELEKTRİK DEPOLAMA TESİSİ (10 MWe/10 MWh) PROJESİ ÇED RAPORU iii II.3. Sosyo - Ekonomik Çevrenin Özellikleri…</div>
+<div class="hit"><span class="pno">[s. 6]</span> <code>11,30 ha</code> — MANAVGAT 1 GÜNEŞ ENERJİ SANTRALİ (13,728 MWm/10 MWe/11,30 ha) VE ELEKTRİK DEPOLAMA TESİSİ (10 MWe/10 MWh) PROJESİ ÇED RAPORU iv III.1.7. Elektrik Depolama Tesisi ve Güneş En…</div></section><section class="card"><h3>Su Kullanımı, Hidrojeoloji ve Deşarj <span style="color:var(--muted);font-weight:400;font-size:0.85rem">(63 sayfa: s.5, s.6, s.7, s.17, s.18, s.22, s.37, s.53, s.63, s.97, s.100, s.101, s.111, s.112 (+49 sayfa))</span></h3><div class="hit"><span class="pno">[s. 5]</span> <code>yeraltı suyu</code> — …emniyeti için yapılacak işlemler, alınacak önlemler; taşkın ve heyelan riski; yüzeysel (kuru dere yatakları dahil) ve yeraltı suyu kaynaklarının etkilenme durumları ve alınacak önlemler; “Dere Yatakları ve Taşkınlar” konulu 2006/27 sayılı Başbakanlı…</div>
+<div class="hit"><span class="pno">[s. 6]</span> <code>deşarj</code> — …nım amaçlarına göre miktarların ayrı ayrı belirtilmesi; oluşacak atık suların cins ve miktarları, bertaraf yöntemleri, deşarj edileceği ortamlar, çevreyi etkileyebilecek olası sorunların belirlenmesi, alıcı ortamla etkileşimi, kümülatif etkile…</div>
+<div class="hit"><span class="pno">[s. 7]</span> <code>atıksu</code> — …i; panellerin nasıl temizleneceği, kullanılacaksa suyunun nereden temin edileceği, ne kadar su kullanılacağı, oluşacak atıksu miktarı ve bertaraf yöntemi, çevreyi etkileyebilecek olası sorunların belirlenmesi, alıcı ortamla etkileşimi, kümülati…</div>
+<div class="hit"><span class="pno">[s. 17]</span> <code>Atıksu</code> — …10 MWe/11,30 ha) VE ELEKTRİK DEPOLAMA TESİSİ (10 MWe/10 MWh) PROJESİ ÇED RAPORU xv KISALTMALAR/ TANIMLAR AAT Atıksu Arıtma Tesisi ABD Amerika Birleşik Devletleri ADNKS Adrese Dayalı Nüfus Kayıt Sistemi AFAD Afet ve Acil Durum Yön…</div>
+<div class="hit"><span class="pno">[s. 18]</span> <code>Yeraltı Suyu</code> — …ik Kurumu TÜDEMSAŞ Türkiye Demiryolu Makinaları Sanayi Anonim Şirketi UNEP Birleşmiş Milletler Çevre Programı YAS Yeraltı Suyu Yatırımcı Firma Assan Alüminyum Sanayi ve Ticaret Anonim Şirketi YHGS Yaban Hayatı Geliştirme Sahaları YHYS Yaban…</div>
+<div class="hit"><span class="pno">[s. 22]</span> <code>10 m3/gün</code> — …naklı oluşabilecek toz emisyonunun indirgenebilmesi için sulama yapılacak olup sürekli çalışma halinde yaklaşık olarak 10 m3/gün sulama suyu kullanılacağı öngörülmektedir. Planlanan projede arazi hazırlama ve inşaat çalışmalarının yaklaşık 1 yıl…</div></section><section class="card"><h3>Korunan Alanlar, Orman ve Zeytinlikler <span style="color:var(--muted);font-weight:400;font-size:0.85rem">(49 sayfa: s.4, s.18, s.21, s.25, s.34, s.37, s.104, s.105, s.106, s.108, s.110, s.111, s.112, s.113 (+35 sayfa))</span></h3><div class="hit"><span class="pno">[s. 4]</span> <code>orman alanı</code> — …yvancılık faaliyetlerinin Raporda ayrıntılı olarak değerlendirilmesi) ..................... 79 II.2.7. Orman alanları (orman alanı miktarı -m2-), meşçere tipi, kapalılığı, mevcut ve planlanan koruma ve/veya kullanım amaçları, proje sahasının işaretl…</div>
+<div class="hit"><span class="pno">[s. 4]</span> <code>doğal sit</code> — …at anıtları, tabiatı koruma alanları, yaban hayatı korunma alanları, biyogenetik rezerv alanları, biyosfer rezervleri, doğal sit ve anıtlar, arkeolojik, tarihi, kültürel sitler, özel çevre koruma bölgeleri, özel koruma alanları, turizm alan ve me…</div>
+<div class="hit"><span class="pno">[s. 4]</span> <code>özel çevre koruma</code> — …alanları, biyogenetik rezerv alanları, biyosfer rezervleri, doğal sit ve anıtlar, arkeolojik, tarihi, kültürel sitler, özel çevre koruma bölgeleri, özel koruma alanları, turizm alan ve merkezleri, mer&#x27;a kanunu kapsamındaki vb. alanlar, hassasiyet derecesi…</div>
+<div class="hit"><span class="pno">[s. 18]</span> <code>Özel Çevre Koruma</code> — …ndislik Müş. Müşavirlik MWe Megawatt (Elektrik) MWm Megawatt (Mekanik) MWp Megawatt Peak ort. Ortalama ÖÇKB Özel Çevre Koruma Bölgeleri PGA Peak Ground Acceleration (En Büyük Yer İvmesi) RA RAMSAR Alanları R.G. Resmi Gazete SA Sulak Alan…</div>
+<div class="hit"><span class="pno">[s. 21]</span> <code>orman alanı</code> — …” olarak işaretlenmiş alanlar içerisinde kalmaktadır (Bkz. Ek- 9). Proje kapsamında herhangi bir ağaç emvali bulunan orman alanı kullanımı olmayacak bu nedenle ağaç kesimi söz konusu olmayacaktır. Proje kapsamında yer alan ormanlık alanlar sadece…</div>
+<div class="hit"><span class="pno">[s. 25]</span> <code>orman alanı</code> — …eki proje alanı içerisinde kalan tapu kayıtlarında tarla vasfında olmasına rağmen Orman Genel Müdürlüğü dokümanlarında orman alanı niteliğindeki olan bölümler ÇED proje sınırlarından çıkarılmış, 15.08.2024 tarihli ve ÖN/12813-21/06241 numaralı ÖNLİS…</div></section><section class="card"><h3>Flora, Fauna ve Saha Metodolojisi <span style="color:var(--muted);font-weight:400;font-size:0.85rem">(227 sayfa: s.4, s.17, s.48, s.51, s.63, s.92, s.93, s.97, s.111, s.112, s.113, s.115, s.116, s.117 (+213 sayfa))</span></h3><div class="hit"><span class="pno">[s. 4]</span> <code>Flora ve Fauna</code> — …ve etki alanında varsa koruma statülü alanların mesafelerinin harita üzerinde gösterimi ................. 84 II.2.9. Flora ve Fauna (türlerin belirlenmesi; belirlenen türlerin tehlike kategorileri, endemiklik durumları, nispi bolluk dereceleri, Ulusl…</div>
+<div class="hit"><span class="pno">[s. 4]</span> <code>Bern Sözleşmesi</code> — …i; belirlenen türlerin tehlike kategorileri, endemiklik durumları, nispi bolluk dereceleri, Uluslararası anlaşmalarla (Bern Sözleşmesi vb.) koruma 87 altına alınan türler; nadir ve nesli tehlikeye düşmüş türler ve bunların yaşama ortamları, av hayvanla…</div>
+<div class="hit"><span class="pno">[s. 17]</span> <code>BERN SÖZLEŞMESİ</code> — …fus Kayıt Sistemi AFAD Afet ve Acil Durum Yönetimi Başkanlığı A.Ş. Anonim Şirketi AMB Afete Maruz Bölge B Batı BERN SÖZLEŞMESİ Avrupa’nın Yaban Hayatı ve Yaşama Ortamlarını Koruma Sözleşmesi BKB Batı Kuzeybatı Bkz. Bakınız cm2 Santimetreka…</div>
+<div class="hit"><span class="pno">[s. 17]</span> <code>IUCN</code> — …veya kablonun bağlı bulunduğu teçhizat G Güney GB Güneybatı GD Güneydoğu GES Güneş Enerji Santrali ha Hektar IUCN Doğal Hayatı ve Doğal Kaynakları Koruma Birliği (International Union for Conservation of Nature) K Kuzey KAFZ Kuz…</div>
+<div class="hit"><span class="pno">[s. 48]</span> <code>mevsimsel</code> — …asında oluşan uyumsuzluğu azaltır. Şebekedeki gerilim ve frekans regülasyonu sağlar. Güneş ve rüzgar gibi süreli (mevsimsel) olmayan yenilenebilir enerji kaynaklarından daima enerji üretememe sorunu, enerji depolama teknolojileriyle azaltılab…</div>
+<div class="hit"><span class="pno">[s. 51]</span> <code>mevsimsel</code> — …ektrikli araçlar, şebeke destek hizmetleri (şebeke işletimi daha esnek), havacılık ve taşımacılıkta günlük depolama ve mevsimsel enerji depolaması için kullanılmaktadır. Ömürlerini uzatmak için süper kapasitörler ve yenilenebilir enerji kaynaklar…</div></section><section class="card"><h3>Emisyonlar, Jeokimya ve Atıklar <span style="color:var(--muted);font-weight:400;font-size:0.85rem">(159 sayfa: s.4, s.5, s.6, s.7, s.8, s.11, s.17, s.46, s.52, s.63, s.89, s.94, s.95, s.96 (+145 sayfa))</span></h3><div class="hit"><span class="pno">[s. 4]</span> <code>deprem</code> — …i, çığ, su baskını vb.), duyarlılık analizi; heyelan yağış ilişkisi, yamaç stabilitesi, kayma analizi; depremsellik ve deprem riski; heyelan risk haritası, faaliyet alanını da içine alan büyük ölçekli diri fay haritası ile Türkiye Deprem Tehli…</div>
+<div class="hit"><span class="pno">[s. 5]</span> <code>kümülatif</code> — …ğın hangi amaçlar için kullanılacağı, çevreyi etkileyebilecek olası sorunların belirlenmesi, alıcı ortamla etkileşimi, kümülatif etkilerin belirlenmesi, çevreye olabilecek olumsuz etkilerinin azaltılması için alınacak önlemler, düzenleme ve restor…</div>
+<div class="hit"><span class="pno">[s. 6]</span> <code>kümülatif</code> — …ek gürültünün kaynakları ve seviyesi, çevreyi etkileyebilecek olası sorunların belirlenmesi, alıcı ortamla etkileşimi, kümülatif etkilerin belirlenmesi, olabilecek olumsuz etkilerinin azaltılması için alınacak önlemler, ...........................…</div>
+<div class="hit"><span class="pno">[s. 7]</span> <code>kümülatif</code> — …k atıksu miktarı ve bertaraf yöntemi, çevreyi etkileyebilecek olası sorunların belirlenmesi, alıcı ortamla etkileşimi, kümülatif etkilerin belirlenmesi, olabilecek olumsuz etkilerinin azaltılması için alınacak önlemler, ..... 206 III.2.3. Güneş E…</div>
+<div class="hit"><span class="pno">[s. 7]</span> <code>gürültü</code> — …....................................................... 212 III.2.7. Proje ünitelerinin işletilmesi sırasında oluşacak gürültü kaynakları, çevreyi etkileyebilecek olası sorunların belirlenmesi, alıcı ortamla etkileşimi, kümülatif etkilerin belir…</div>
+<div class="hit"><span class="pno">[s. 8]</span> <code>kümülatif</code> — …üzerine olası etkilerin belirlenmesi, çevreyi etkileyebilecek olası sorunların belirlenmesi, alıcı ortamla etkileşimi, kümülatif etkilerin belirlenmesi, çevreye olabilecek olumsuz etkilerinin azaltılması için alınacak önlemler, risk- etki-tepki ma…</div></section><section class="card"><h3>Proje Bedeli, Güç ve Kapasite <span style="color:var(--muted);font-weight:400;font-size:0.85rem">(605 sayfa: s.1, s.2, s.3, s.4, s.5, s.6, s.7, s.8, s.9, s.10, s.11, s.12, s.13, s.14 (+591 sayfa))</span></h3><div class="hit"><span class="pno">[s. 1]</span> <code>13,728 MW</code> — …ÇED Başvuru Dosyası ÇED Raporu Son Şekli Verilen ÇED Raporu Nihai ÇED Raporu MANAVGAT 1 GÜNEŞ ENERJİ SANTRALİ (13,728 MWm/10 MWe/11,30 ha) VE ELEKTRİK DEPOLAMA TESİSİ (10 MWe/10 MWh) PROJESİ ANTALYA İLİ, MANAVGAT İLÇESİ, OYMAPINAR, OYM…</div>
+<div class="hit"><span class="pno">[s. 2]</span> <code>13,728 MW</code> — MANAVGAT 1 GÜNEŞ ENERJİ SANTRALİ (13,728 MWm/10 MWe/11,30 ha) VE ELEKTRİK DEPOLAMA TESİSİ (10 MWe/10 MWh) PROJESİ ÇED RAPORU PROJE SAHİBİNİN ADI: Assan Al…</div>
+<div class="hit"><span class="pno">[s. 2]</span> <code>PROJE BEDELİ</code> — …: Manavgat 1 Güneş Enerji Santrali (13,728 MWm/10 MWe/11,30 ha) ve Elektrik Depolama Tesisi (10 MWe/10 MWh) Projesi PROJE BEDELİ: 263.637.500,00 TL PROJE İÇİN SEÇİLEN YERİN AÇIK ADRESİ (İLİ, İLÇESİ, MEVKİİ): Antalya ili, Manavgat ilçesi, Oymap…</div>
+<div class="hit"><span class="pno">[s. 3]</span> <code>13,728 MW</code> — MANAVGAT 1 GÜNEŞ ENERJİ SANTRALİ (13,728 MWm/10 MWe/11,30 ha) VE ELEKTRİK DEPOLAMA TESİSİ (10 MWe/10 MWh) PROJESİ ÇED RAPORU i İÇİNDEKİLER LİSTESİ İÇİNDE…</div>
+<div class="hit"><span class="pno">[s. 3]</span> <code>proje bedeli</code> — …yrı verilmesi ve harita üzerinde mesafeleri ile birlikte gösterimi, ............ 27 I.5.Projenin ekonomik özellikleri (proje bedelinin hesaplanma şeklinin bilgi ve belgelerle güncel, açıklayıcı olması) (ilgili yatırım programı, finans kaynakları, bu…</div>
+<div class="hit"><span class="pno">[s. 4]</span> <code>13,728 MW</code> — MANAVGAT 1 GÜNEŞ ENERJİ SANTRALİ (13,728 MWm/10 MWe/11,30 ha) VE ELEKTRİK DEPOLAMA TESİSİ (10 MWe/10 MWh) PROJESİ ÇED RAPORU ii II.2. ÇED İnceleme Alanı ve…</div></section></div>
+
+  <h2>Belge Bölüm Haritası</h2>
+  <ul><li><span class="pno">[s. 3]</span> İÇİNDEKİLER LİSTESİ</li>
+<li><span class="pno">[s. 10]</span> TABLOLAR DİZİNİ</li>
+<li><span class="pno">[s. 12]</span> ŞEKİLLER DİZİNİ</li>
+<li><span class="pno">[s. 15]</span> EKLER DİZİNİ</li>
+<li><span class="pno">[s. 17]</span> KISALTMALAR/ TANIMLAR</li>
+<li><span class="pno">[s. 19]</span> PROJENİN TEKNİK OLMAYAN ÖZETİ</li>
+<li><span class="pno">[s. 25]</span> BÖLÜM I. PROJENİN TANIMI, KONUMU VE ÖZELLİKLERİ</li>
+<li><span class="pno">[s. 25]</span> I.1. Proje konusu yatırımın tanımı, özellikleri, ömrü, hizmet maksatları, önem ve gerekliliği,</li>
+<li><span class="pno">[s. 31]</span> I.2.Proje için seçilen yerin konumu (İlgili Planlama Bölgesi 1/100.000 Ölçekli Çevre Düzeni Planının ilgili plan paftaları, lejand ve plan hükümlerinin hangi iş kapsamında alındığını belirtir &quot;Aslı Gibidir&quot; kaşeli, orijinal boyuttaki kopyalarının rapo...</li>
+<li><span class="pno">[s. 34]</span> I.3 Projenin yer ve teknoloji alternatifleri (yer ve teknoloji alternatiflerin karşılaştırılması ve tercih sıralamasının yapılması ile eylemsizlik alternatifinin belirtilmesi), GES projesi için -varsa- daha önceden alınan ÇED kararlarının/görüşlerin t...</li>
+<li><span class="pno">[s. 52]</span> I.4.Proje kapsamındaki teknik altyapı üniteleri, idari ve sosyal üniteler, varsa diğer ünitelerin konumu; mevcut yollar ve açılacak yollarla birlikte, en yakın yerleşim yerlerinin ve hassas alanların GES alanına mesafelerin ayrı ayrı verilmesi ve hari...</li>
+<li><span class="pno">[s. 55]</span> I.5.Projenin ekonomik özellikleri (proje bedelinin hesaplanma şeklinin bilgi ve belgelerle güncel, açıklayıcı olması) (ilgili yatırım programı, finans kaynakları, bu kaynakların nereden temin edileceği, iş akım şeması, zamanlama tablosu, fayda-maliyet...</li>
+<li><span class="pno">[s. 58]</span> I.6.Diğer hususlar (proje kapsamında olmayan ancak projenin gerçekleşebilmesi için zaruri olan veya gerçekleşmesine bağlı olarak, yatırımcı firma veya diğer firmalar tarafından gerçekleştirilmesi tasarlanan diğer ekonomik, sosyal ve altyapı faaliyetleri)</li>
+<li><span class="pno">[s. 61]</span> BÖLÜM II. PROJE YERİ VE ETKİ ALANININ MEVCUT ÇEVRESEL ÖZELLİKLERİ (*)</li>
+<li><span class="pno">[s. 61]</span> (*) Bu bölümde proje için seçilen yerin çevresel özellikleri verilirken etki alanı dikkate alınmalıdır. Bu bölümde sıralanan hususlar açıklanırken, ilgili kamu kurum ve kuruluşlarından, araştırma kurumlarından, üniversitelerden veya benzeri diğer kuru...</li>
+<li><span class="pno">[s. 63]</span> II.1. Projeden Etkilenecek Alanın Belirlenmesi</li>
+<li><span class="pno">[s. 63]</span> II.1.1. Proje alanının ve önerilen proje nedeniyle etkilenmesi muhtemel olan çevrenin belirlenmesi (ÇED inceleme alanı ve etki alanının nasıl ve neye göre belirlendiği açıklanarak, bu alanların harita üzerinde gösterilmesi),</li>
+<li><span class="pno">[s. 65]</span> II.1.2. ÇED inceleme alanı ve etki alanının mülkiyet durumu, arazi kullanım durumu, kamulaştırma planı,</li>
+<li><span class="pno">[s. 65]</span> II.1.3. ÇED inceleme alanı ve etki alanında, ÇED kararları bulunan ve mevcutta kurulu olan ya da kurulması planlanan diğer güneş enerji santrali/elektrik depolama tesisi projelerine ve diğer faaliyetlere (enerji, madencilik, sanayi, turizm, hayvancılı...</li>
+<li><span class="pno">[s. 66]</span> II.2. ÇED İnceleme Alanı ve Etki Alanı İçerisindeki Fiziksel ve Biyolojik Çevrenin Özellikleri ve Doğal Kaynakların Kullanımı</li></ul>
+
+  <div class="notice">
+    Bu sayfa, T.C. Çevre, Şehircilik ve İklim Değişikliği Bakanlığı'nın kamuya açık <code>eced-duyuru.csb.gov.tr</code> duyuru portalındaki kayıtlar esas alınarak bilgilendirme amacıyla hazırlanmıştır. Alıntıların tamamı 1 tabanlı PDF sayfa numarasıyla (<code>[s. N]</code>) gösterilmektedir. Yasal süreler otomatik olarak hesaplanır; kesin sürelerin ve hukuki başvuru yollarının yetkili hukukçular tarafından teyit edilmesi gerekir.
+  </div>
+</div>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script>
+(() => {
+  if (typeof L === 'undefined') return;
+  const g = {"lat": 36.83536, "lon": 31.50732, "zoom": 12, "precision": "exact_pdf", "points": [[36.83219, 31.51855], [36.83682, 31.5044], [36.83792, 31.50174], [36.83054, 31.51014], [36.83215, 31.51857], [36.83673, 31.50444], [36.83799, 31.50176], [36.83058, 31.51018], [36.83261, 31.51057], [36.83819, 31.5059], [36.82743, 31.50839], [36.83899, 31.51342], [36.83831, 31.50657], [36.8382, 31.50658], [36.83786, 31.50673], [36.83761, 31.50691], [36.83752, 31.50687], [36.83695, 31.50653], [36.83701, 31.50765], [36.83629, 31.50729], [36.83625, 31.50758], [36.83577, 31.50757], [36.83563, 31.50686], [36.83578, 31.5068], [36.83563, 31.50658], [36.83534, 31.50689], [36.83492, 31.50647], [36.83488, 31.50641], [36.83477, 31.50656], [36.83473, 31.50663], [36.83468, 31.5067], [36.83465, 31.50676], [36.8347, 31.50731], [36.83499, 31.50756], [36.83414, 31.50778], [36.83425, 31.50739], [36.834, 31.50676], [36.83389, 31.50684], [36.83399, 31.50705], [36.83397, 31.50764]], "label": "ANTALYA / MANAVGAT — Manavgat 1 Güneş Enerji Santrali (13,728 MWm/10 MWe/11,30 ha) ve Elektrik Depolama Tesisi "};
+  const map = L.map('digest-map').setView([g.lat, g.lon], g.zoom);
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    maxZoom: 18,
+    attribution: '&copy; OpenStreetMap katkıda bulunanları'
+  }).addTo(map);
+  if (g.precision === 'exact_pdf' && g.points.length > 1) {
+    const latlngs = g.points.map(p => [p[0], p[1]]);
+    const poly = L.polyline(latlngs, { color: '#58a6ff', weight: 3, opacity: 0.85 }).addTo(map);
+    for (const ll of latlngs.slice(0, 30)) {
+      L.circleMarker(ll, { radius: 4, color: '#ffffff', fillColor: '#f85149', fillOpacity: 0.9, weight: 1 }).addTo(map);
+    }
+    map.fitBounds(poly.getBounds().pad(0.25));
+  } else {
+    L.circleMarker([g.lat, g.lon], {
+      radius: g.precision === 'exact_pdf' ? 8 : 11,
+      color: '#ffffff',
+      fillColor: g.precision === 'exact_pdf' ? '#f85149' : '#58a6ff',
+      fillOpacity: g.precision === 'exact_pdf' ? 0.9 : 0.45,
+      weight: 2
+    }).bindPopup(g.label).addTo(map).openPopup();
+  }
+})();
+</script>
+</body>
+</html>

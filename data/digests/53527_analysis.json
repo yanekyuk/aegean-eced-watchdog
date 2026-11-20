@@ -1,0 +1,990 @@
+{
+  "filing": {
+    "province": "ANTALYA",
+    "district": "MANAVGAT",
+    "project_name": "Manavgat 1 Güneş Enerji Santrali (13,728 MWm/10 MWe/11,30 ha) ve Elektrik Depolama Tesisi (10 MWe/10 MWh)",
+    "project_owner": "Assan Alüminyum Sanayi ve Ticaret Anonim Şirketi",
+    "sector": "Enerji",
+    "sub_sector": "Güneş Enerji Santralleri",
+    "decision_type": "IDK",
+    "announcement_date_tr": "19.11.2026",
+    "project_type": "Ek-1",
+    "detail_text": "ANTALYA ili MANAVGAT,  ilcesinde ANTALYA ili MANAVGAT ilçesi sınırları içerisinde Assan Alüminyum Sanayi ve Ticaret Anonim Şirketi tarafından yapılması planlanan Manavgat 1 Güneş Enerji Santrali (13,728 MWm/10 MWe/11,30 ha) ve Elektrik Depolama Tesisi (10 MWe/10 MWh) projesi ile ilgili olarak hazırlanan ÇED Raporu, ÇED Yönetmeliği'nin 11. maddesi kapsamında Bakanlığımıza sunulmuş olup, inceleme değerlendirme süreci başlamıştır. Proje ile ilgili olarak 17/12/2026 tarihinde İDK toplantısı gerçekleştirilecektir. Bakanlığımıza sunulan ÇED Raporu https://eced-duyuru.csb.gov.tr/eced-prod/duyurular.xhtml adresinde yer almaktadır. ÇED Raporu ilgililere ve kamuoyuna duyurulur.",
+    "detail_links": [
+      {
+        "text": "ÇED Raporu",
+        "href": "http://eced.csb.gov.tr/jsp/ek1/53527"
+      }
+    ],
+    "documents": [
+      {
+        "portal_doc_url": "http://eced.csb.gov.tr/jsp/ek1/53527",
+        "filing_id": "53527",
+        "consulting_firm": "ÇINAR MÜH. MÜŞ. A.Ş.",
+        "submitted_at": "22/11/2024 09:36:05",
+        "pdf_urls": [
+          {
+            "label": "53527_CED_Raporu.pdf",
+            "url": "http://eced.csb.gov.tr/jsp/dosya/dosyaGoster.htm?tempAd=sign5554619382561765243.pdf&orjinalAd=53527_CED_Raporu.pdf&yuklemeTarihi=2026-10-18"
+          }
+        ]
+      }
+    ],
+    "announcement_date": "2026-11-19",
+    "statutory_clocks": [
+      {
+        "code": "idk",
+        "kind": "İnceleme Değerlendirme Komisyonu (İDK) süreci; toplantı tarihi resmi metinde yer alır",
+        "deadline": null,
+        "days_remaining": null
+      }
+    ],
+    "filing_key": "53527:19.11.2026:IDK",
+    "first_seen_at": "2026-11-20T02:10:44"
+  },
+  "pdf_info": {
+    "filename": "53527.pdf",
+    "bytes": 167713070,
+    "sha256": "5065a8e4f12d8d16e2dd79aac235eca7b9fbe6e3fcb14ff01028e01db486cade",
+    "cached": false
+  },
+  "analysis": {
+    "page_count": 1326,
+    "total_chars": 2482543,
+    "text_pages": 1249,
+    "scanned_or_blank_pages": 77,
+    "scanned_page_sample": [
+      299,
+      327,
+      328,
+      344,
+      345,
+      346,
+      347,
+      352,
+      353,
+      354,
+      359,
+      360,
+      395,
+      419,
+      421
+    ],
+    "headings": [
+      [
+        3,
+        "İÇİNDEKİLER LİSTESİ"
+      ],
+      [
+        10,
+        "TABLOLAR DİZİNİ"
+      ],
+      [
+        12,
+        "ŞEKİLLER DİZİNİ"
+      ],
+      [
+        15,
+        "EKLER DİZİNİ"
+      ],
+      [
+        17,
+        "KISALTMALAR/ TANIMLAR"
+      ],
+      [
+        19,
+        "PROJENİN TEKNİK OLMAYAN ÖZETİ"
+      ],
+      [
+        25,
+        "BÖLÜM I. PROJENİN TANIMI, KONUMU VE ÖZELLİKLERİ"
+      ],
+      [
+        25,
+        "I.1. Proje konusu yatırımın tanımı, özellikleri, ömrü, hizmet maksatları, önem ve gerekliliği,"
+      ],
+      [
+        31,
+        "I.2.Proje için seçilen yerin konumu (İlgili Planlama Bölgesi 1/100.000 Ölçekli Çevre Düzeni Planının ilgili plan paftaları, lejand ve plan hükümlerinin hangi iş kapsamında alındığını belirtir \"Aslı Gibidir\" kaşeli, orijinal boyuttaki kopyalarının rapo..."
+      ],
+      [
+        34,
+        "I.3 Projenin yer ve teknoloji alternatifleri (yer ve teknoloji alternatiflerin karşılaştırılması ve tercih sıralamasının yapılması ile eylemsizlik alternatifinin belirtilmesi), GES projesi için -varsa- daha önceden alınan ÇED kararlarının/görüşlerin t..."
+      ],
+      [
+        52,
+        "I.4.Proje kapsamındaki teknik altyapı üniteleri, idari ve sosyal üniteler, varsa diğer ünitelerin konumu; mevcut yollar ve açılacak yollarla birlikte, en yakın yerleşim yerlerinin ve hassas alanların GES alanına mesafelerin ayrı ayrı verilmesi ve hari..."
+      ],
+      [
+        55,
+        "I.5.Projenin ekonomik özellikleri (proje bedelinin hesaplanma şeklinin bilgi ve belgelerle güncel, açıklayıcı olması) (ilgili yatırım programı, finans kaynakları, bu kaynakların nereden temin edileceği, iş akım şeması, zamanlama tablosu, fayda-maliyet..."
+      ],
+      [
+        58,
+        "I.6.Diğer hususlar (proje kapsamında olmayan ancak projenin gerçekleşebilmesi için zaruri olan veya gerçekleşmesine bağlı olarak, yatırımcı firma veya diğer firmalar tarafından gerçekleştirilmesi tasarlanan diğer ekonomik, sosyal ve altyapı faaliyetleri)"
+      ],
+      [
+        61,
+        "BÖLÜM II. PROJE YERİ VE ETKİ ALANININ MEVCUT ÇEVRESEL ÖZELLİKLERİ (*)"
+      ],
+      [
+        61,
+        "(*) Bu bölümde proje için seçilen yerin çevresel özellikleri verilirken etki alanı dikkate alınmalıdır. Bu bölümde sıralanan hususlar açıklanırken, ilgili kamu kurum ve kuruluşlarından, araştırma kurumlarından, üniversitelerden veya benzeri diğer kuru..."
+      ],
+      [
+        63,
+        "II.1. Projeden Etkilenecek Alanın Belirlenmesi"
+      ],
+      [
+        63,
+        "II.1.1. Proje alanının ve önerilen proje nedeniyle etkilenmesi muhtemel olan çevrenin belirlenmesi (ÇED inceleme alanı ve etki alanının nasıl ve neye göre belirlendiği açıklanarak, bu alanların harita üzerinde gösterilmesi),"
+      ],
+      [
+        65,
+        "II.1.2. ÇED inceleme alanı ve etki alanının mülkiyet durumu, arazi kullanım durumu, kamulaştırma planı,"
+      ],
+      [
+        65,
+        "II.1.3. ÇED inceleme alanı ve etki alanında, ÇED kararları bulunan ve mevcutta kurulu olan ya da kurulması planlanan diğer güneş enerji santrali/elektrik depolama tesisi projelerine ve diğer faaliyetlere (enerji, madencilik, sanayi, turizm, hayvancılı..."
+      ],
+      [
+        66,
+        "II.2. ÇED İnceleme Alanı ve Etki Alanı İçerisindeki Fiziksel ve Biyolojik Çevrenin Özellikleri ve Doğal Kaynakların Kullanımı"
+      ],
+      [
+        67,
+        "II.2.1.Atmosferik koşullar, iklimsel faktörler (genel iklim koşulları- basınç, sıcaklık, yağış, nispi nem, sayılı günler, kar kalınlığı, buharlaşma, etkin rüzgâr yönü; meteorolojik parametrelerin dağılımlarının tablo, grafik ve yazılı anlatımı; -yapıl..."
+      ],
+      [
+        83,
+        "II.2.2. Jeolojik özellikler (genel jeoloji ve inceleme alanı jeoloji, topografik özellikler, sahanın 1/25.000 ölçekli genel jeoloji haritası, stratigrafik kesitleri, proje alanı jeolojisi, inceleme alanına ait büyük ölçekli (1/25.000 ya da varsa 1/100..."
+      ],
+      [
+        89,
+        "II.2.3. Doğal afet durumu; kitle hareketleri (heyelan, kaya düşmesi, çığ, su baskını vb.), duyarlılık analizi; heyelan yağış ilişkisi, yamaç stabilitesi, kayma analizi; depremsellik ve deprem riski; heyelan risk haritası, faaliyet alanını da içine ala..."
+      ],
+      [
+        97,
+        "II.2.4. Yüzeysel ve yer altı su kaynaklarının hidrolojik ve hidrojeolojik özellikleri, mevcut ve planlanan kullanımı, faaliyet alanına mesafeleri, hidrolojik ve hidrojeolojik haritalar,"
+      ],
+      [
+        104,
+        "II.2.5. Toprak özellikleri ve kullanım durumu (toprağın arazi kullanım kabiliyeti sınıflaması, erozyon durumu, toprağın mevcut kullanım durumları vb.),"
+      ]
+    ],
+    "geo": {
+      "precision": "exact_pdf",
+      "lat": 36.83536,
+      "lon": 31.50732,
+      "point_count": 81,
+      "points": [
+        [
+          36.83219,
+          31.51855
+        ],
+        [
+          36.83682,
+          31.5044
+        ],
+        [
+          36.83792,
+          31.50174
+        ],
+        [
+          36.83054,
+          31.51014
+        ],
+        [
+          36.83215,
+          31.51857
+        ],
+        [
+          36.83673,
+          31.50444
+        ],
+        [
+          36.83799,
+          31.50176
+        ],
+        [
+          36.83058,
+          31.51018
+        ],
+        [
+          36.83261,
+          31.51057
+        ],
+        [
+          36.83819,
+          31.5059
+        ],
+        [
+          36.82743,
+          31.50839
+        ],
+        [
+          36.83899,
+          31.51342
+        ],
+        [
+          36.83831,
+          31.50657
+        ],
+        [
+          36.8382,
+          31.50658
+        ],
+        [
+          36.83786,
+          31.50673
+        ],
+        [
+          36.83761,
+          31.50691
+        ],
+        [
+          36.83752,
+          31.50687
+        ],
+        [
+          36.83695,
+          31.50653
+        ],
+        [
+          36.83701,
+          31.50765
+        ],
+        [
+          36.83629,
+          31.50729
+        ],
+        [
+          36.83625,
+          31.50758
+        ],
+        [
+          36.83577,
+          31.50757
+        ],
+        [
+          36.83563,
+          31.50686
+        ],
+        [
+          36.83578,
+          31.5068
+        ],
+        [
+          36.83563,
+          31.50658
+        ],
+        [
+          36.83534,
+          31.50689
+        ],
+        [
+          36.83492,
+          31.50647
+        ],
+        [
+          36.83488,
+          31.50641
+        ],
+        [
+          36.83477,
+          31.50656
+        ],
+        [
+          36.83473,
+          31.50663
+        ],
+        [
+          36.83468,
+          31.5067
+        ],
+        [
+          36.83465,
+          31.50676
+        ],
+        [
+          36.8347,
+          31.50731
+        ],
+        [
+          36.83499,
+          31.50756
+        ],
+        [
+          36.83414,
+          31.50778
+        ],
+        [
+          36.83425,
+          31.50739
+        ],
+        [
+          36.834,
+          31.50676
+        ],
+        [
+          36.83389,
+          31.50684
+        ],
+        [
+          36.83399,
+          31.50705
+        ],
+        [
+          36.83397,
+          31.50764
+        ]
+      ],
+      "datum": "UTM-Z36/ED50",
+      "pages": [
+        147,
+        148,
+        329,
+        330
+      ]
+    },
+    "signals": {
+      "coordinates_and_footprint": {
+        "label": "Coordinates, Parcel & Footprint",
+        "page_count": 659,
+        "pages": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          25,
+          26
+        ],
+        "samples": [
+          {
+            "page": 1,
+            "match": "11,30 ha",
+            "snippet": "…sı ÇED Raporu Son Şekli Verilen ÇED Raporu Nihai ÇED Raporu MANAVGAT 1 GÜNEŞ ENERJİ SANTRALİ (13,728 MWm/10 MWe/11,30 ha) VE ELEKTRİK DEPOLAMA TESİSİ (10 MWe/10 MWh) PROJESİ ANTALYA İLİ, MANAVGAT İLÇESİ, OYMAPINAR, OYMAPINAR/IĞRIŞLAR V…"
+          },
+          {
+            "page": 2,
+            "match": "11,30 ha",
+            "snippet": "MANAVGAT 1 GÜNEŞ ENERJİ SANTRALİ (13,728 MWm/10 MWe/11,30 ha) VE ELEKTRİK DEPOLAMA TESİSİ (10 MWe/10 MWh) PROJESİ ÇED RAPORU PROJE SAHİBİNİN ADI: Assan Alüminyum Sanayi ve…"
+          },
+          {
+            "page": 3,
+            "match": "11,30 ha",
+            "snippet": "MANAVGAT 1 GÜNEŞ ENERJİ SANTRALİ (13,728 MWm/10 MWe/11,30 ha) VE ELEKTRİK DEPOLAMA TESİSİ (10 MWe/10 MWh) PROJESİ ÇED RAPORU i İÇİNDEKİLER LİSTESİ İÇİNDEKİLER LİSTESİ ...…"
+          },
+          {
+            "page": 4,
+            "match": "11,30 ha",
+            "snippet": "MANAVGAT 1 GÜNEŞ ENERJİ SANTRALİ (13,728 MWm/10 MWe/11,30 ha) VE ELEKTRİK DEPOLAMA TESİSİ (10 MWe/10 MWh) PROJESİ ÇED RAPORU ii II.2. ÇED İnceleme Alanı ve Etki Alanı İçeris…"
+          },
+          {
+            "page": 5,
+            "match": "11,30 ha",
+            "snippet": "MANAVGAT 1 GÜNEŞ ENERJİ SANTRALİ (13,728 MWm/10 MWe/11,30 ha) VE ELEKTRİK DEPOLAMA TESİSİ (10 MWe/10 MWh) PROJESİ ÇED RAPORU iii II.3. Sosyo - Ekonomik Çevrenin Özellikleri…"
+          },
+          {
+            "page": 6,
+            "match": "11,30 ha",
+            "snippet": "MANAVGAT 1 GÜNEŞ ENERJİ SANTRALİ (13,728 MWm/10 MWe/11,30 ha) VE ELEKTRİK DEPOLAMA TESİSİ (10 MWe/10 MWh) PROJESİ ÇED RAPORU iv III.1.7. Elektrik Depolama Tesisi ve Güneş En…"
+          },
+          {
+            "page": 7,
+            "match": "11,30 ha",
+            "snippet": "MANAVGAT 1 GÜNEŞ ENERJİ SANTRALİ (13,728 MWm/10 MWe/11,30 ha) VE ELEKTRİK DEPOLAMA TESİSİ (10 MWe/10 MWh) PROJESİ ÇED RAPORU v III.1.20. İnşaat aşamasında İklim değişikliğin…"
+          },
+          {
+            "page": 7,
+            "match": "utm",
+            "snippet": "…üneş enerji sisteminin nereden temin edileceği, sistemin nasıl kurulacağı, depolama yönteminin nasıl olacağı, hangi soğutma sisteminin kullanılacağı, kurulacak paneller ve depolama tesislerinin nasıl konumlandırılacağı kullanılacak paneller…"
+          }
+        ]
+      },
+      "water_and_discharge": {
+        "label": "Water Use, Hydrogeology & Discharge",
+        "page_count": 63,
+        "pages": [
+          5,
+          6,
+          7,
+          17,
+          18,
+          22,
+          37,
+          53,
+          63,
+          97,
+          100,
+          101,
+          111,
+          112,
+          113,
+          173,
+          174,
+          175,
+          176,
+          177,
+          178,
+          179,
+          196,
+          197,
+          198
+        ],
+        "samples": [
+          {
+            "page": 5,
+            "match": "yeraltı suyu",
+            "snippet": "…emniyeti için yapılacak işlemler, alınacak önlemler; taşkın ve heyelan riski; yüzeysel (kuru dere yatakları dahil) ve yeraltı suyu kaynaklarının etkilenme durumları ve alınacak önlemler; “Dere Yatakları ve Taşkınlar” konulu 2006/27 sayılı Başbakanlı…"
+          },
+          {
+            "page": 6,
+            "match": "deşarj",
+            "snippet": "…nım amaçlarına göre miktarların ayrı ayrı belirtilmesi; oluşacak atık suların cins ve miktarları, bertaraf yöntemleri, deşarj edileceği ortamlar, çevreyi etkileyebilecek olası sorunların belirlenmesi, alıcı ortamla etkileşimi, kümülatif etkile…"
+          },
+          {
+            "page": 7,
+            "match": "atıksu",
+            "snippet": "…i; panellerin nasıl temizleneceği, kullanılacaksa suyunun nereden temin edileceği, ne kadar su kullanılacağı, oluşacak atıksu miktarı ve bertaraf yöntemi, çevreyi etkileyebilecek olası sorunların belirlenmesi, alıcı ortamla etkileşimi, kümülati…"
+          },
+          {
+            "page": 17,
+            "match": "Atıksu",
+            "snippet": "…10 MWe/11,30 ha) VE ELEKTRİK DEPOLAMA TESİSİ (10 MWe/10 MWh) PROJESİ ÇED RAPORU xv KISALTMALAR/ TANIMLAR AAT Atıksu Arıtma Tesisi ABD Amerika Birleşik Devletleri ADNKS Adrese Dayalı Nüfus Kayıt Sistemi AFAD Afet ve Acil Durum Yön…"
+          },
+          {
+            "page": 18,
+            "match": "Yeraltı Suyu",
+            "snippet": "…ik Kurumu TÜDEMSAŞ Türkiye Demiryolu Makinaları Sanayi Anonim Şirketi UNEP Birleşmiş Milletler Çevre Programı YAS Yeraltı Suyu Yatırımcı Firma Assan Alüminyum Sanayi ve Ticaret Anonim Şirketi YHGS Yaban Hayatı Geliştirme Sahaları YHYS Yaban…"
+          },
+          {
+            "page": 22,
+            "match": "10 m3/gün",
+            "snippet": "…naklı oluşabilecek toz emisyonunun indirgenebilmesi için sulama yapılacak olup sürekli çalışma halinde yaklaşık olarak 10 m3/gün sulama suyu kullanılacağı öngörülmektedir. Planlanan projede arazi hazırlama ve inşaat çalışmalarının yaklaşık 1 yıl…"
+          },
+          {
+            "page": 37,
+            "match": "sulak alan",
+            "snippet": "…alan bulunmaması, Büyük ova sınırları içerisinde yer almaması, Mera alanı kullanılmayacak olması, Alanın sulak alan ve korunan alanlar içerisinde yer almaması, Yatırımcı firmaya ait proje sahası yakınlarında yer alan işletme tesis…"
+          },
+          {
+            "page": 53,
+            "match": "atıksu",
+            "snippet": "…tel, motel, tatil köyü, tatil sitesi ve yazlık siteler ile sanayi tesislerinin evsel nitelikli atık suları, bölgedeki atıksu altyapı durumu dikkate alınarak, çevre ve insan sağlığına zarar vermeyecek şekilde Çevre, Şehircilik ve İklim Değişikl…"
+          }
+        ]
+      },
+      "protected_land_and_olive": {
+        "label": "Protected Zones, Forests & Olive Groves",
+        "page_count": 49,
+        "pages": [
+          4,
+          18,
+          21,
+          25,
+          34,
+          37,
+          104,
+          105,
+          106,
+          108,
+          110,
+          111,
+          112,
+          113,
+          144,
+          206,
+          210,
+          240,
+          261,
+          283,
+          295,
+          305,
+          306,
+          397,
+          400
+        ],
+        "samples": [
+          {
+            "page": 4,
+            "match": "orman alanı",
+            "snippet": "…yvancılık faaliyetlerinin Raporda ayrıntılı olarak değerlendirilmesi) ..................... 79 II.2.7. Orman alanları (orman alanı miktarı -m2-), meşçere tipi, kapalılığı, mevcut ve planlanan koruma ve/veya kullanım amaçları, proje sahasının işaretl…"
+          },
+          {
+            "page": 4,
+            "match": "doğal sit",
+            "snippet": "…at anıtları, tabiatı koruma alanları, yaban hayatı korunma alanları, biyogenetik rezerv alanları, biyosfer rezervleri, doğal sit ve anıtlar, arkeolojik, tarihi, kültürel sitler, özel çevre koruma bölgeleri, özel koruma alanları, turizm alan ve me…"
+          },
+          {
+            "page": 4,
+            "match": "özel çevre koruma",
+            "snippet": "…alanları, biyogenetik rezerv alanları, biyosfer rezervleri, doğal sit ve anıtlar, arkeolojik, tarihi, kültürel sitler, özel çevre koruma bölgeleri, özel koruma alanları, turizm alan ve merkezleri, mer'a kanunu kapsamındaki vb. alanlar, hassasiyet derecesi…"
+          },
+          {
+            "page": 18,
+            "match": "Özel Çevre Koruma",
+            "snippet": "…ndislik Müş. Müşavirlik MWe Megawatt (Elektrik) MWm Megawatt (Mekanik) MWp Megawatt Peak ort. Ortalama ÖÇKB Özel Çevre Koruma Bölgeleri PGA Peak Ground Acceleration (En Büyük Yer İvmesi) RA RAMSAR Alanları R.G. Resmi Gazete SA Sulak Alan…"
+          },
+          {
+            "page": 21,
+            "match": "orman alanı",
+            "snippet": "…” olarak işaretlenmiş alanlar içerisinde kalmaktadır (Bkz. Ek- 9). Proje kapsamında herhangi bir ağaç emvali bulunan orman alanı kullanımı olmayacak bu nedenle ağaç kesimi söz konusu olmayacaktır. Proje kapsamında yer alan ormanlık alanlar sadece…"
+          },
+          {
+            "page": 25,
+            "match": "orman alanı",
+            "snippet": "…eki proje alanı içerisinde kalan tapu kayıtlarında tarla vasfında olmasına rağmen Orman Genel Müdürlüğü dokümanlarında orman alanı niteliğindeki olan bölümler ÇED proje sınırlarından çıkarılmış, 15.08.2024 tarihli ve ÖN/12813-21/06241 numaralı ÖNLİS…"
+          },
+          {
+            "page": 34,
+            "match": "orman alanı",
+            "snippet": "…lçekli Meşcere Haritası ekler bölümünde verilmiştir (Bkz. Ek-9). Proje kapsamında panel yerleşimi için herhangi bir orman alanı kullanımı söz konusu olmayacak, orman emvaline zarar verilmeyecek ve herhangi bir ağaç kesimi yapılmayacaktır. I.3…"
+          },
+          {
+            "page": 37,
+            "match": "Mera alanı",
+            "snippet": "…sı, Proje alanı içerisinde orman vasıflı alan bulunmaması, Büyük ova sınırları içerisinde yer almaması, Mera alanı kullanılmayacak olması, Alanın sulak alan ve korunan alanlar içerisinde yer almaması, Yatırımcı firmaya ait p…"
+          }
+        ]
+      },
+      "ecology_and_baseline": {
+        "label": "Flora, Fauna & Baseline Methodology",
+        "page_count": 227,
+        "pages": [
+          4,
+          17,
+          48,
+          51,
+          63,
+          92,
+          93,
+          97,
+          111,
+          112,
+          113,
+          115,
+          116,
+          117,
+          118,
+          119,
+          120,
+          121,
+          122,
+          124,
+          126,
+          128,
+          129,
+          130,
+          131
+        ],
+        "samples": [
+          {
+            "page": 4,
+            "match": "Flora ve Fauna",
+            "snippet": "…ve etki alanında varsa koruma statülü alanların mesafelerinin harita üzerinde gösterimi ................. 84 II.2.9. Flora ve Fauna (türlerin belirlenmesi; belirlenen türlerin tehlike kategorileri, endemiklik durumları, nispi bolluk dereceleri, Ulusl…"
+          },
+          {
+            "page": 4,
+            "match": "Bern Sözleşmesi",
+            "snippet": "…i; belirlenen türlerin tehlike kategorileri, endemiklik durumları, nispi bolluk dereceleri, Uluslararası anlaşmalarla (Bern Sözleşmesi vb.) koruma 87 altına alınan türler; nadir ve nesli tehlikeye düşmüş türler ve bunların yaşama ortamları, av hayvanla…"
+          },
+          {
+            "page": 17,
+            "match": "BERN SÖZLEŞMESİ",
+            "snippet": "…fus Kayıt Sistemi AFAD Afet ve Acil Durum Yönetimi Başkanlığı A.Ş. Anonim Şirketi AMB Afete Maruz Bölge B Batı BERN SÖZLEŞMESİ Avrupa’nın Yaban Hayatı ve Yaşama Ortamlarını Koruma Sözleşmesi BKB Batı Kuzeybatı Bkz. Bakınız cm2 Santimetreka…"
+          },
+          {
+            "page": 17,
+            "match": "IUCN",
+            "snippet": "…veya kablonun bağlı bulunduğu teçhizat G Güney GB Güneybatı GD Güneydoğu GES Güneş Enerji Santrali ha Hektar IUCN Doğal Hayatı ve Doğal Kaynakları Koruma Birliği (International Union for Conservation of Nature) K Kuzey KAFZ Kuz…"
+          },
+          {
+            "page": 48,
+            "match": "mevsimsel",
+            "snippet": "…asında oluşan uyumsuzluğu azaltır. Şebekedeki gerilim ve frekans regülasyonu sağlar. Güneş ve rüzgar gibi süreli (mevsimsel) olmayan yenilenebilir enerji kaynaklarından daima enerji üretememe sorunu, enerji depolama teknolojileriyle azaltılab…"
+          },
+          {
+            "page": 51,
+            "match": "mevsimsel",
+            "snippet": "…ektrikli araçlar, şebeke destek hizmetleri (şebeke işletimi daha esnek), havacılık ve taşımacılıkta günlük depolama ve mevsimsel enerji depolaması için kullanılmaktadır. Ömürlerini uzatmak için süper kapasitörler ve yenilenebilir enerji kaynaklar…"
+          },
+          {
+            "page": 63,
+            "match": "flora ve fauna",
+            "snippet": "…apsamda, proje alanı ve yakın çevresinin mevcut arazi kullanımı, jeolojik ve hidrojeolojik özellikleri, su kaynakları, flora ve fauna varlığı, korunan alanlar, yerleşim yerleri ve diğer çevresel özelliklerine ilişkin bilgiler, ilgili kamu kurum ve kuru…"
+          },
+          {
+            "page": 92,
+            "match": "mevsimsel",
+            "snippet": "…İl Afet Risk Azaltma Planı (İRAP), 2022 Çığ Riski Çığların arkasındaki temel belirleyici faktörlerin yükseklik ve mevsimsel etkilerdir. AFAD, Doğal Afet İstatistiklerine göre, çığlar Türkiye ‘de en sık Doğu Anadolu ve Doğu Karadeniz bölgeleri…"
+          }
+        ]
+      },
+      "pollutants_and_hazards": {
+        "label": "Emissions, Geochemistry & Waste",
+        "page_count": 159,
+        "pages": [
+          4,
+          5,
+          6,
+          7,
+          8,
+          11,
+          17,
+          46,
+          52,
+          63,
+          89,
+          94,
+          95,
+          96,
+          97,
+          146,
+          147,
+          148,
+          149,
+          150,
+          158,
+          164,
+          173,
+          175,
+          184
+        ],
+        "samples": [
+          {
+            "page": 4,
+            "match": "deprem",
+            "snippet": "…i, çığ, su baskını vb.), duyarlılık analizi; heyelan yağış ilişkisi, yamaç stabilitesi, kayma analizi; depremsellik ve deprem riski; heyelan risk haritası, faaliyet alanını da içine alan büyük ölçekli diri fay haritası ile Türkiye Deprem Tehli…"
+          },
+          {
+            "page": 5,
+            "match": "kümülatif",
+            "snippet": "…ğın hangi amaçlar için kullanılacağı, çevreyi etkileyebilecek olası sorunların belirlenmesi, alıcı ortamla etkileşimi, kümülatif etkilerin belirlenmesi, çevreye olabilecek olumsuz etkilerinin azaltılması için alınacak önlemler, düzenleme ve restor…"
+          },
+          {
+            "page": 6,
+            "match": "kümülatif",
+            "snippet": "…ek gürültünün kaynakları ve seviyesi, çevreyi etkileyebilecek olası sorunların belirlenmesi, alıcı ortamla etkileşimi, kümülatif etkilerin belirlenmesi, olabilecek olumsuz etkilerinin azaltılması için alınacak önlemler, ...........................…"
+          },
+          {
+            "page": 7,
+            "match": "kümülatif",
+            "snippet": "…k atıksu miktarı ve bertaraf yöntemi, çevreyi etkileyebilecek olası sorunların belirlenmesi, alıcı ortamla etkileşimi, kümülatif etkilerin belirlenmesi, olabilecek olumsuz etkilerinin azaltılması için alınacak önlemler, ..... 206 III.2.3. Güneş E…"
+          },
+          {
+            "page": 7,
+            "match": "gürültü",
+            "snippet": "…....................................................... 212 III.2.7. Proje ünitelerinin işletilmesi sırasında oluşacak gürültü kaynakları, çevreyi etkileyebilecek olası sorunların belirlenmesi, alıcı ortamla etkileşimi, kümülatif etkilerin belir…"
+          },
+          {
+            "page": 8,
+            "match": "kümülatif",
+            "snippet": "…üzerine olası etkilerin belirlenmesi, çevreyi etkileyebilecek olası sorunların belirlenmesi, alıcı ortamla etkileşimi, kümülatif etkilerin belirlenmesi, çevreye olabilecek olumsuz etkilerinin azaltılması için alınacak önlemler, risk- etki-tepki ma…"
+          },
+          {
+            "page": 11,
+            "match": "Gürültü",
+            "snippet": "…ürültü Sınır Değerleri ..................... 158 Tablo III.1.8.2 İnşaat Aşaması Hesaplama Sonuçlarının Çevresel Gürültü Açısından Değerlendirilmesi .........................................................................................…"
+          },
+          {
+            "page": 17,
+            "match": "Gürültü",
+            "snippet": "…lendirmesi Yönetmeliği ÇGKY 30.11.2022 tarihli ve 32029 sayılı Resmi Gazete’de yayımlanarak yürürlüğe giren Çevresel Gürültü Kontrol Yönetmeliği D Doğu DGD Doğu Güneydoğu DKMP Doğa Koruma ve Milli Parklar DSİ Devlet Su İşleri EİGM Ene…"
+          }
+        ]
+      },
+      "cost_and_capacity": {
+        "label": "Project Cost, Power & Capacity",
+        "page_count": 605,
+        "pages": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          25,
+          26
+        ],
+        "samples": [
+          {
+            "page": 1,
+            "match": "13,728 MW",
+            "snippet": "…ÇED Başvuru Dosyası ÇED Raporu Son Şekli Verilen ÇED Raporu Nihai ÇED Raporu MANAVGAT 1 GÜNEŞ ENERJİ SANTRALİ (13,728 MWm/10 MWe/11,30 ha) VE ELEKTRİK DEPOLAMA TESİSİ (10 MWe/10 MWh) PROJESİ ANTALYA İLİ, MANAVGAT İLÇESİ, OYMAPINAR, OYM…"
+          },
+          {
+            "page": 2,
+            "match": "13,728 MW",
+            "snippet": "MANAVGAT 1 GÜNEŞ ENERJİ SANTRALİ (13,728 MWm/10 MWe/11,30 ha) VE ELEKTRİK DEPOLAMA TESİSİ (10 MWe/10 MWh) PROJESİ ÇED RAPORU PROJE SAHİBİNİN ADI: Assan Al…"
+          },
+          {
+            "page": 2,
+            "match": "PROJE BEDELİ",
+            "snippet": "…: Manavgat 1 Güneş Enerji Santrali (13,728 MWm/10 MWe/11,30 ha) ve Elektrik Depolama Tesisi (10 MWe/10 MWh) Projesi PROJE BEDELİ: 263.637.500,00 TL PROJE İÇİN SEÇİLEN YERİN AÇIK ADRESİ (İLİ, İLÇESİ, MEVKİİ): Antalya ili, Manavgat ilçesi, Oymap…"
+          },
+          {
+            "page": 3,
+            "match": "13,728 MW",
+            "snippet": "MANAVGAT 1 GÜNEŞ ENERJİ SANTRALİ (13,728 MWm/10 MWe/11,30 ha) VE ELEKTRİK DEPOLAMA TESİSİ (10 MWe/10 MWh) PROJESİ ÇED RAPORU i İÇİNDEKİLER LİSTESİ İÇİNDE…"
+          },
+          {
+            "page": 3,
+            "match": "proje bedeli",
+            "snippet": "…yrı verilmesi ve harita üzerinde mesafeleri ile birlikte gösterimi, ............ 27 I.5.Projenin ekonomik özellikleri (proje bedelinin hesaplanma şeklinin bilgi ve belgelerle güncel, açıklayıcı olması) (ilgili yatırım programı, finans kaynakları, bu…"
+          },
+          {
+            "page": 4,
+            "match": "13,728 MW",
+            "snippet": "MANAVGAT 1 GÜNEŞ ENERJİ SANTRALİ (13,728 MWm/10 MWe/11,30 ha) VE ELEKTRİK DEPOLAMA TESİSİ (10 MWe/10 MWh) PROJESİ ÇED RAPORU ii II.2. ÇED İnceleme Alanı ve…"
+          },
+          {
+            "page": 5,
+            "match": "13,728 MW",
+            "snippet": "MANAVGAT 1 GÜNEŞ ENERJİ SANTRALİ (13,728 MWm/10 MWe/11,30 ha) VE ELEKTRİK DEPOLAMA TESİSİ (10 MWe/10 MWh) PROJESİ ÇED RAPORU iii II.3. Sosyo - Ekonomik Çevr…"
+          },
+          {
+            "page": 6,
+            "match": "13,728 MW",
+            "snippet": "MANAVGAT 1 GÜNEŞ ENERJİ SANTRALİ (13,728 MWm/10 MWe/11,30 ha) VE ELEKTRİK DEPOLAMA TESİSİ (10 MWe/10 MWh) PROJESİ ÇED RAPORU iv III.1.7. Elektrik Depolama T…"
+          }
+        ]
+      }
+    },
+    "audit_checks": {
+      "mentions_field_survey": true,
+      "mentions_literature_only_cue": true,
+      "mentions_seasonal_sampling": true,
+      "mentions_cumulative_impact": true,
+      "mentions_olive_law_3573": true,
+      "mentions_groundwater_or_aquifer": true,
+      "mentions_iucn_or_endemic": true
+    }
+  },
+  "llm_synthesis": {
+    "model": "gemini-4-hydrogen",
+    "generated_at": "2026-11-20T09:11:00",
+    "pages_sent": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      17,
+      18,
+      21,
+      25,
+      48,
+      51,
+      61,
+      62
+    ],
+    "result": {
+      "executive_summary_tr": "Assan Alüminyum Sanayi ve Ticaret A.Ş. tarafından Antalya ili Manavgat ilçesi Oymapınar, Oymapınar/Iğrışlar ve Bucakşeyhler mahallelerinde 13,728 MWm/10 MWe kurulu gücünde Manavgat 1 Güneş Enerji Santrali (24.960 adet 550 Wp Mono PERC panel) ile 10 MWe/10 MWh kapasiteli lityum-iyon Elektrik Depolama Tesisi kurulması planlanmaktadır [s. 1, 2, 25]. ÇED Raporu 17.10.2026 tarihinde ÇED Yönetmeliği EK-I Madde 43 kapsamında sunulmuş olup, önlisans aşamasında 14,76 ha olan proje alanı orman niteliğindeki kısımların çıkarılmasıyla 11,30 ha'a düşürülmüş ve 18 adet ada/parsel üzerinde konumlandırılmıştır [s. 1, 2, 25]. Planlanan saha 1/100.000 ölçekli Çevre Düzeni Planı'nda 'Tarım Alanı' ve 1/25.000 ölçekli Mevcut Arazi Kullanım Haritası'nda 'Karışık Tarım Alanları' sınırları içinde kalmakta olup [s. 21], temel çevresel risk alanları tarım arazilerinin tarım dışı kullanımı, orman sınırı çelişkileri, parsel mülkiyet/vasıf belirsizlikleri ve ekolojik/kümülatif etki değerlendirmelerinin sunulan sayfalarda yer almamasıdır [s. 15, 21, 25].",
+      "executive_summary_en": "Assan Alüminyum Sanayi ve Ticaret A.Ş. proposes to construct and operate the Manavgat 1 Solar Power Plant (13.728 MWm/10 MWe, comprising 24,960 Mono PERC modules of 550 Wp each) integrated with a 10 MWe/10 MWh lithium-ion Electricity Storage Facility across 18 cadastral parcels in the Oymapınar, Oymapınar/Iğrışlar, and Bucakşeyhler neighborhoods of Manavgat district, Antalya [s. 1, 2, 25]. Submitted on 17.10.2026 under Annex-I Article 43 of the EIA Regulation, the project footprint was revised downward from 14.76 ha in the pre-license to 11.30 ha by excluding forest-classified sections while retaining full generation capacity [s. 2, 25]. According to the excerpted pages, the project site falls within areas designated as 'Agricultural Land' in the 1/100,000 Environmental Plan and 'Mixed Agricultural Areas' on the 1/25,000 Existing Land Use Map [s. 21]. Primary technical and environmental stakes identifiable from the available excerpts include agricultural land-use conversion under Law No. 5403, conflicting statements regarding forest parcel inclusion, unresolved parcel ownership/pasture verification, and the absence of detailed ecological, cumulative, and annex documentation within the excerpted page range [s. 15, 21, 25].",
+      "key_facts": [
+        {
+          "label": "Kurulu Güç (GES ve Depolama)",
+          "value": "13,728 MWm / 10 MWe GES ve 10 MWe / 10 MWh Elektrik Depolama Tesisi (Lityum-iyon)",
+          "page": 25
+        },
+        {
+          "label": "Proje Alanı",
+          "value": "11,30 ha (Önlisans belgesindeki 14,76 ha alandan revize edilmiş)",
+          "page": 25
+        },
+        {
+          "label": "Yıllık Elektrik Üretim Hedefi",
+          "value": "20.000.000 kWh/yıl (20 GWh/yıl)",
+          "page": 25
+        },
+        {
+          "label": "Panel ve Evirici Sayısı",
+          "value": "24.960 adet 550 Wp Mono PERC fotovoltaik modül ve 5 adet 2 MWe evirici",
+          "page": 25
+        },
+        {
+          "label": "Şebeke Bağlantı Noktası",
+          "value": "Manavgat TM OG Barası (80+80 MVA)",
+          "page": 25
+        },
+        {
+          "label": "Ada ve Parsel Sayısı",
+          "value": "18 adet parsel (149, 153, 158, 394 ve 398 numaralı adalar)",
+          "page": 1
+        },
+        {
+          "label": "Proje Yatırım Bedeli ve Finansman",
+          "value": "263.637.500,00 TL (yaklaşık %20 öz kaynak, %80 kredi)",
+          "page": 21
+        },
+        {
+          "label": "Planlanan İstihdam",
+          "value": "İnşaat aşamasında 20 kişi, işletme aşamasında 10 kişi",
+          "page": 21
+        },
+        {
+          "label": "EPDK Önlisans Belgesi",
+          "value": "15.08.2024 tarihli, ÖN/12813-21/06241 numaralı, 30 ay süreli",
+          "page": 25
+        },
+        {
+          "label": "Arazi Etüdü Tarihi",
+          "value": "12.09.2024 (Çınar Mühendislik Müşavirlik A.Ş. yer incelemesi)",
+          "page": 61
+        }
+      ],
+      "baseline_assessment": {
+        "field_survey_status": "mixed_or_unclear",
+        "seasonal_sampling_status": "not_found",
+        "cumulative_impact_status": "omitted_or_not_found",
+        "olive_and_protected_status": "Sunulan sayfalarda zeytinliklere (3573 sayılı Kanun), sulak alanlara, ÖÇK veya SİT statülerine ilişkin ayrıntılı saha değerlendirmeleri yer almamaktadır; İçindekiler listesinde Kültür Varlığı/Sit/Koruma Alanları bölümü (rapor s. 84) ile Ekler Dizininde Antalya Kültür Varlıklarını Koruma Bölge Kurulu (01.10.2025), Tabiat Varlıklarını Koruma Genel Müdürlüğü (26.02.2025) ve DKMP (21.03.2025) görüş yazılarının bulunduğu görülmektedir [s. 4, 15]. Proje sahası 1/100.000 ölçekli Çevre Düzeni Planı'nda 'Tarım Alanı', 1/25.000 ölçekli Mevcut Arazi Kullanım Haritası'nda 'Karışık Tarım Alanları' ve Meşcere Haritası'nda 'Z Kadastroya Göre Orman Dışı Açıklıklar' olarak tanımlanmaktadır [s. 21].",
+        "explanation": "Sunulan sayfalarda yalnızca ÇED Yeterlik Belgesi Tebliği kapsamında 12.09.2024 tarihinde gerçekleştirilen ve sahada inşaat faaliyeti bulunmadığını belgeleyen genel arazi etüdü ile üç adet saha fotoğrafı yer almaktadır [s. 61, 62]. İçindekiler ve Ekler dizinlerinde Flora ve Fauna bölümü (rapor s. 87), Kümülatif ÇED bölümü (rapor s. 236), Çevre İzleme Planı (rapor s. 248) ve ornitolojik çalışma başlığı (rapor s. 279) listelenmiş olsa da [s. 4, 8, 9], bu bölümlerin içeriği sunulan sayfa aralığı dışında kaldığından onay öncesi mevsimsel ekolojik örnekleme yapılıp yapılmadığı ve kümülatif etki analizinin nicel niteliği doğrulanamamıştır."
+      },
+      "red_flags": [
+        {
+          "severity": "medium",
+          "title": "Orman Alanlarının ÇED Sınırındaki Durumuna İlişkin Çelişkili Beyanlar",
+          "detail": "Teknik Olmayan Özet bölümünde alanın tamamının Meşcere Haritası'nda 'Z Kadastroya Göre Orman Dışı Açıklıklar' içinde kaldığı belirtilmesine karşın iki paragraf sonra 'proje kapsamında yer alan ormanlık alanlar sadece parseller arasındaki alan birleşimi için ÇED alanına dahil edilmiş olup... ünite yerleşimi yapılmayacaktır' ifadesi kullanılmaktadır [s. 21]. Buna karşılık Bölüm I.1'de Orman Genel Müdürlüğü dokümanlarında orman niteliğinde kalan bölümlerin ÇED proje sınırlarından çıkarıldığı belirtilmekte olup [s. 25], Ekler Dizininde Orman Genel Müdürlüğü veya Orman Bölge Müdürlüğü görüş yazısına rastlanmamıştır [s. 15].",
+          "pages": [
+            15,
+            21,
+            25
+          ]
+        },
+        {
+          "severity": "medium",
+          "title": "Proje Alanı Revizyonunda Aritmetik Tutarsızlık ve Kapasite Yoğunlaşması",
+          "detail": "Bölüm I.1'de 14,76 ha olan önlisans proje alanının revizyonla 11,30 ha'a düşürüldüğü belirtilirken takip eden paragrafta 'yaklaşık 2,46 ha'lık alanın proje sınırları dışında bırakıldığı' yazılmıştır; oysa 14,76 ha ile 11,30 ha arasındaki fark 3,46 ha olup 1,00 ha'lık aritmetik tutarsızlık mevcuttur [s. 25]. Ayrıca alan yaklaşık %23,4 küçültülmesine rağmen 24.960 adet panel sayısı ve 13,728 MWm/10 MWe kurulu güç sabit tutulmuştur [s. 25].",
+          "pages": [
+            25
+          ]
+        },
+        {
+          "severity": "medium",
+          "title": "ÇED Yönetmeliği EK-I Eşiği ile Proje Alanı Arasındaki Uyumsuzluk",
+          "detail": "Raporun künye sayfasında proje, ÇED Yönetmeliği EK-I Listesi Madde 43 ('Proje alanı 25 hektar ve üzerinde olan güneş enerji santralleri') kapsamında sınıflandırılmıştır [s. 2]. Ancak gerek revizyon öncesi önlisans alanı (14,76 ha) gerekse revize ÇED alanı (11,30 ha) 25 hektar eşiğinin altındadır ve bu kapsam seçiminin gerekçesi sunulan sayfalarda açıklanmamıştır [s. 2, 25].",
+          "pages": [
+            2,
+            25
+          ]
+        },
+        {
+          "severity": "medium",
+          "title": "Tarım Alanı Vasfına Rağmen Ek-2'de Tarım ve DSİ Görüşlerinin Bulunmaması",
+          "detail": "Proje sahasının tamamı 1/100.000 ölçekli planda 'Tarım Alanı' ve 1/25.000 ölçekli haritada 'Karışık Tarım Alanları' içinde kalmakta olup 5403 sayılı Kanun kapsamında tarım dışı kullanım izni gerektiği ifade edilmektedir [s. 21]. Ancak Ekler Dizininde yer alan resmi görüş listesinde (Ek-2.8 ile Ek-2.16 arası) İl Tarım ve Orman Müdürlüğü ile DSİ kurum görüşleri bulunmamaktadır [s. 15].",
+          "pages": [
+            15,
+            21
+          ]
+        },
+        {
+          "severity": "medium",
+          "title": "Parsel Mülkiyeti ve Mera/Tarım Vasfı Tespitinin Kamulaştırma Aşamasına Bırakılması",
+          "detail": "Teknik Olmayan Özet'te proje alanındaki tüm parsellerin güncel mülkiyet ve kullanım durumlarının ('şahıs, hazine, mera, tarım arazisi vb.') ancak ilerideki kamulaştırma aşamasında tespit edileceği belirtilmektedir [s. 21]. Mera veya tarım arazisi varlığının 18 parçalı parsel bazında ÇED aşamasında kesinleştirilmemiş olması çevresel etki değerlendirmesinde belirsizlik yaratmaktadır [s. 1, 21].",
+          "pages": [
+            1,
+            21
+          ]
+        },
+        {
+          "severity": "low",
+          "title": "Arazi Etüdü ile Revizyon ve Rapor Sunumu Arasındaki İki Yılı Aşkın Zaman Farkı",
+          "detail": "Sunulan sayfalarda belgelenen tek saha incelemesi 12.09.2024 tarihinde yapılmıştır [s. 61]. Kurum görüşlerinin 2025 yılı içinde alındığı [s. 15], proje sınırlarının revize edildiği [s. 25] ve raporun 17.10.2026 tarihinde sunulduğu [s. 2] dikkate alındığında, revize edilmiş 11,30 ha'lık yeni sınırlar için güncel bir yer incelemesi yapıldığına dair bilgi sunulmamıştır.",
+          "pages": [
+            2,
+            15,
+            25,
+            61
+          ]
+        }
+      ],
+      "hkt_and_petition_questions": [
+        {
+          "question_tr": "Önlisans alanında 14,76 ha ve revize ÇED alanında 11,30 ha olan proje, neden ÇED Yönetmeliği EK-I Madde 43 ('25 hektar ve üzerinde olan güneş enerji santralleri') kapsamında değerlendirilmiştir ve 14,76 ha'dan 11,30 ha'a düşüşte metinde '2,46 ha çıkarıldığı' yazılmasına karşın oluşan 1,00 ha'lık aritmetik fark hangi parsellerden kaynaklanmaktadır?",
+          "pages": [
+            2,
+            25
+          ]
+        },
+        {
+          "question_tr": "Sahanın tamamının Meşcere Haritası'nda 'Z Kadastroya Göre Orman Dışı Açıklıklar' olduğu ve orman alanlarının sınırdan çıkarıldığı belirtilmesine rağmen, aynı metinde parsel birleşimi amacıyla ÇED alanına dahil edilen ormanlık alanlardan söz edilmesinin nedeni nedir; 18 parsel arasındaki kablo kanalı ve bakım yolları orman vasıflı alanlardan geçecek midir ve buna ilişkin Orman Bölge Müdürlüğü görüşü mevcut mudur?",
+          "pages": [
+            1,
+            15,
+            21,
+            25
+          ]
+        },
+        {
+          "question_tr": "Çevre Düzeni Planı'nda 'Tarım Alanı' ve Mevcut Arazi Kullanım Haritası'nda 'Karışık Tarım Alanları' olarak görünen proje sahası için Ek-2 resmi görüşler listesinde Antalya İl Tarım ve Orman Müdürlüğü görüşüne yer verilmediği anlaşılmaktadır; 5403 sayılı Kanun kapsamında tarım dışı kullanım uygunluğu ve 3573 sayılı Kanun kapsamında zeytinlik bulunup bulunmadığı İDK kararı öncesinde tespit edilmiş midir?",
+          "pages": [
+            15,
+            21
+          ]
+        },
+        {
+          "question_tr": "Proje alanı yaklaşık %23,4 oranında küçültülürken panel sayısı (24.960 adet) ve kurulu gücün (13,728 MWm/10 MWe) ile 10 MWe/10 MWh lityum-iyon depolama ünitesinin aynı kalmasının drenaj, yüzey akışı ve yangın güvenlik mesafeleri üzerindeki etkileri revize sınırlar üzerinden yeniden modellenmiş midir?",
+          "pages": [
+            25,
+            61
+          ]
+        },
+        {
+          "question_tr": "Parsellerin güncel mülkiyet ve kullanım durumlarının ('şahıs, hazine, mera, tarım arazisi vb.') kamulaştırma aşamasında tespit edileceği belirtildiğinden, proje sahası veya birleşim alanları içinde mera vasfında taşınmaz bulunup bulunmadığı ÇED Raporu'nda kesinleştirilmiş midir?",
+          "pages": [
+            1,
+            21
+          ]
+        }
+      ],
+      "data_limitations": "Toplam 1.326 sayfalık ÇED Raporu PDF dosyasının (1.249 metin çıkarılabilir, 77 taranmış/görüntü sayfa) yalnızca 23 sayfası [s. 1-15, 17, 18, 21, 25, 48, 51, 61, 62] incelemeye sunulmuştur. Başta iklim, jeoloji/depremsellik, hidroloji, tarım/mera, orman, kültür varlıkları ve korunan alanlar (Bölüm II.2.8), flora ve fauna saha verileri (Bölüm II.2.9), inşaat ve işletme etkileri ile batarya yangın/atıksu değerlendirmeleri (Bölüm III), Kümülatif Çevresel Etki Değerlendirmesi (Bölüm IV), Çevre İzleme Planı (Bölüm V), HKT tutanakları (Bölüm VI) ile Ek-1'den Ek-9'a kadar olan koordinatlar, haritalar ve resmi kurum yazılarının içerikleri ve taranmış 77 sayfa bu incelemede doğrulanamamıştır."
+    }
+  }
+}

@@ -1,0 +1,807 @@
+{
+  "filing": {
+    "province": "DENİZLİ",
+    "district": "ÇİVRİL",
+    "project_name": "G26-Denizli Güneş Enerji Santrali (36 MWm / 30 MWe - 44,8 ha.)",
+    "project_owner": "Enerji İşleri Genel Müdürlüğü",
+    "sector": "Enerji",
+    "sub_sector": "Güneş Enerji Santralleri",
+    "decision_type": "HKT",
+    "announcement_date_tr": "19.11.2026",
+    "project_type": "Ek-1",
+    "detail_text": "DENİZLİ ili ÇİVRİL,  ilcesinde DENİZLİ ili ÇİVRİL ilçesi sınırları içerisinde Enerji İşleri Genel Müdürlüğü tarafından yapılması planlanan G26-Denizli Güneş Enerji Santrali (36 MWm / 30 MWe - 44,8 ha.) projesi ile ilgili Çevresel Etki Değerlendirme süreci başlamış ve Çevresel Etki Değerlendirmesi Başvuru Dosyası halkın görüşüne açılmıştır.Söz konusu projeye ilişkin, halkı proje hakkında bilgilendirmek, görüş ve önerilerini almak amacıyla ÇED Yönetmeliğinin 9. maddesi gereğince 08/12/2026 tarihinde Halkın Katılım Toplantısı düzenlenecektir.ÇED Başvuru Dosyasını İncelemek isteyenler Bakanlık Merkezinde veya DENİZLİ Çevre ve Şehircilik İl Müdürlüklerinde duyuru tarihinden itibaren raporu inceleyerek, zamanlama takvimi içerisinde proje hakkında Bakanlığa veya Valiliğe görüş bildirebilirler. Daha önce yayınlanan duyuruda belirtilen Halkın Katılımı Toplantısı tarihi güncellenmiştir. Halkın Katılımı Toplantısı yeri ve saati ile ilgili ÇED İzin Denetim Genel Müdürlüğü ve DENİZLİ Çevre, Şehircilik ve İklim Değişikliği İl Müdürlüğünden bilgi alınabilir. İlgililere ve kamuoyuna duyurulur.",
+    "detail_links": [
+      {
+        "text": "Başvuru Dosyası",
+        "href": "http://eced.csb.gov.tr/jsp/ek1/61087"
+      }
+    ],
+    "documents": [
+      {
+        "portal_doc_url": "http://eced.csb.gov.tr/jsp/ek1/61087",
+        "filing_id": "61087",
+        "consulting_firm": "ELTEM-TEK ELEKTRİK TESİSLERİ MÜHENDİSLİK MÜTEAHHİTLİK DANIŞMANLIK VE TİCARET ANONİM ŞİRKETİ",
+        "submitted_at": "09/09/2026 05:31:54",
+        "pdf_urls": [
+          {
+            "label": "Dosya Göster",
+            "url": "http://eced.csb.gov.tr/jsp/dosya/dosyaGoster.htm?tempAd=sign5484956242178825697.pdf&orjinalAd=e-imza.pdf&yuklemeTarihi=2026-09-09"
+          }
+        ]
+      }
+    ],
+    "announcement_date": "2026-11-19",
+    "statutory_clocks": [
+      {
+        "code": "hkt",
+        "kind": "Halkın Katılımı Toplantısı (HKT) duyurusu; toplantı tarihi resmi metinde yer alır",
+        "deadline": null,
+        "days_remaining": null
+      }
+    ],
+    "filing_key": "61087:19.11.2026:HKT",
+    "first_seen_at": "2026-11-20T02:10:48"
+  },
+  "pdf_info": {
+    "filename": "61087.pdf",
+    "bytes": 43376197,
+    "sha256": "14cc240b3126f2ddba84b2bab1179ddab68377e634985e99fef379c3699e5c44",
+    "cached": false
+  },
+  "analysis": {
+    "page_count": 160,
+    "total_chars": 193998,
+    "text_pages": 121,
+    "scanned_or_blank_pages": 39,
+    "scanned_page_sample": [
+      71,
+      88,
+      105,
+      107,
+      108,
+      109,
+      110,
+      111,
+      112,
+      114,
+      115,
+      116,
+      121,
+      122,
+      123
+    ],
+    "headings": [],
+    "geo": {
+      "precision": "exact_pdf",
+      "lat": 38.36692,
+      "lon": 29.72399,
+      "point_count": 56,
+      "points": [
+        [
+          38.3683,
+          29.72148
+        ],
+        [
+          38.36849,
+          29.72646
+        ],
+        [
+          38.36218,
+          29.72601
+        ],
+        [
+          38.36208,
+          29.72214
+        ],
+        [
+          38.36173,
+          29.72039
+        ],
+        [
+          38.36137,
+          29.71964
+        ],
+        [
+          38.36237,
+          29.71617
+        ],
+        [
+          38.36746,
+          29.7215
+        ],
+        [
+          38.36756,
+          29.725
+        ],
+        [
+          38.36733,
+          29.72498
+        ],
+        [
+          38.36735,
+          29.72464
+        ],
+        [
+          38.36757,
+          29.72465
+        ],
+        [
+          38.36798,
+          29.72599
+        ],
+        [
+          38.36726,
+          29.72594
+        ],
+        [
+          38.36728,
+          29.72537
+        ],
+        [
+          38.368,
+          29.72542
+        ],
+        [
+          38.36895,
+          29.72106
+        ],
+        [
+          38.36914,
+          29.72603
+        ],
+        [
+          38.36282,
+          29.72559
+        ],
+        [
+          38.36273,
+          29.72172
+        ],
+        [
+          38.36237,
+          29.71996
+        ],
+        [
+          38.36202,
+          29.71922
+        ],
+        [
+          38.36302,
+          29.71574
+        ],
+        [
+          38.36811,
+          29.72108
+        ],
+        [
+          38.3682,
+          29.72457
+        ],
+        [
+          38.36798,
+          29.72456
+        ],
+        [
+          38.36799,
+          29.72422
+        ],
+        [
+          38.36822,
+          29.72423
+        ],
+        [
+          38.36863,
+          29.72556
+        ],
+        [
+          38.36791,
+          29.72552
+        ],
+        [
+          38.36793,
+          29.72495
+        ],
+        [
+          38.36865,
+          29.72499
+        ],
+        [
+          38.36801,
+          29.72526
+        ],
+        [
+          38.36765,
+          29.72523
+        ],
+        [
+          38.36767,
+          29.72466
+        ],
+        [
+          38.36803,
+          29.72469
+        ],
+        [
+          38.36755,
+          29.72535
+        ],
+        [
+          38.36737,
+          29.72534
+        ],
+        [
+          38.36738,
+          29.72505
+        ],
+        [
+          38.36756,
+          29.72506
+        ]
+      ],
+      "datum": "UTM-Z35/ED50",
+      "pages": [
+        20,
+        21
+      ]
+    },
+    "signals": {
+      "coordinates_and_footprint": {
+        "label": "Coordinates, Parcel & Footprint",
+        "page_count": 93,
+        "pages": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25
+        ],
+        "samples": [
+          {
+            "page": 1,
+            "match": "44,8 ha",
+            "snippet": "…ENERJİ İŞLERİ GENEL MÜDÜRLÜĞÜ G26- Denizli Güneş Enerji Santrali (36 MWm / 30 MWe – 44,8 ha.) Denizli ili, Çivril ilçesi, Yukarı ve Gürpınar Mahallesi, Gökbaşlı ve Taşlı Mevkii, 3 Ada/116 Parsel, 379…"
+          },
+          {
+            "page": 1,
+            "match": "Ada/116 Parsel, 379 Ada/1 Parsel",
+            "snippet": "…m / 30 MWe – 44,8 ha.) Denizli ili, Çivril ilçesi, Yukarı ve Gürpınar Mahallesi, Gökbaşlı ve Taşlı Mevkii, 3 Ada/116 Parsel, 379 Ada/1 Parsel ÇED Başvuru Dosyası / ÇED Raporu / Son Şekli Verilen ÇED Raporu / Nihai ÇED Raporu ANKARA | 2026"
+          },
+          {
+            "page": 2,
+            "match": "44,8 ha",
+            "snippet": "Enerji İşleri Genel Müdürlüğü G26-Denizli GES (36 MWm / 30 MWe – 44,8 ha.) 1 Başlık Sayfası Proje Sahibinin Adı Enerji İşleri Genel Müdürlüğü Adresi Nasuh Akar Mah. Türkocağı Cad. No:12…"
+          },
+          {
+            "page": 2,
+            "match": "Ada/116 Parsel, 379 Ada/1 Parsel",
+            "snippet": "…k Adresi (İli, İlçesi, Mevki) Denizli ili, Çivril ilçesi, Yukarı ve Gürpınar Mahallesi, Gökbaşlı ve Taşlı Mevkii, 3 Ada/116 Parsel, 379 Ada/1 Parsel Projenin ÇED Yönetmeliği Kapsamındaki Yeri (Sektör, Alt Sektör) Ek I - Madde 43 Proje alanı 25 hektar ve üzerinde ol…"
+          },
+          {
+            "page": 3,
+            "match": "44,8 ha",
+            "snippet": "Enerji İşleri Genel Müdürlüğü G26-Denizli GES (36 MWm / 30 MWe – 44,8 ha.) 2 İçindekiler Listesi Başlık Sayfası .......................................................................…"
+          },
+          {
+            "page": 4,
+            "match": "44,8 ha",
+            "snippet": "Enerji İşleri Genel Müdürlüğü G26-Denizli GES (36 MWm / 30 MWe – 44,8 ha.) 3 Tehlikeli Atıklar ........................................................................... 48 Ömrünü Ta…"
+          },
+          {
+            "page": 5,
+            "match": "44,8 ha",
+            "snippet": "Enerji İşleri Genel Müdürlüğü G26-Denizli GES (36 MWm / 30 MWe – 44,8 ha.) 4 Tablolar Dizini Tablo 1 Proje Karakteristikleri .........................................................…"
+          },
+          {
+            "page": 6,
+            "match": "44,8 ha",
+            "snippet": "Enerji İşleri Genel Müdürlüğü G26-Denizli GES (36 MWm / 30 MWe – 44,8 ha.) 5 Şekiller Dizini Şekil 1 ÇED Alanını Gösterir Harita .....................................................…"
+          }
+        ]
+      },
+      "water_and_discharge": {
+        "label": "Water Use, Hydrogeology & Discharge",
+        "page_count": 10,
+        "pages": [
+          13,
+          40,
+          41,
+          42,
+          43,
+          47,
+          55,
+          61,
+          62,
+          86
+        ],
+        "samples": [
+          {
+            "page": 13,
+            "match": "deşarj",
+            "snippet": "…depo, idari ve/veya sosyal bina, köprü, alt ve üst yapılar (arıtma, kanalizasyon, içme/kullanma su hatları, su alma/deşarj hatları vb dahil) viyadük vb. sanat yapıları, drenaj, tesviye vb. gibi araziyi kullanılabilir duruma getirmek için…"
+          },
+          {
+            "page": 40,
+            "match": "Sulak Alan",
+            "snippet": "…olarak tanımlanmıştır. j) Sulak Alanların Korunması Yönetmeliği’nde belirtilen alanlar ÇED alanı ve yakın çevresinde Sulak Alan olarak tanımlanmış bir alan bulunmamaktadır. ÇED alanına en yakın sulak alan harita üzerinden 12,5 km mesafede yer al…"
+          },
+          {
+            "page": 41,
+            "match": "Sulak Alan",
+            "snippet": "…ar Yapılan çalışmalar doğrultusunda planlanan ÇED alanı içerisinde Ramsar, ulusal öneme sahip ve mahalli öneme sahip “Sulak Alan” olarak tanımlanmış bir alan bulunmamaktadır. ÇED alanına en yakın sulak alan harita üzerinden 12,5 km mesafede yer…"
+          },
+          {
+            "page": 42,
+            "match": "sulak alan",
+            "snippet": "…ar, bataklık sazlık ve turbiyeler ile bu alanların kıyı kenar çizgisinden itibaren kara tarafına doğru ekolojik açıdan sulak alan kalan yerler ÇED alanı içerisinde Sulak Alan olarak tanımlanmış bir alan bulunmamaktadır. ÇED alanına en yakın sulak…"
+          },
+          {
+            "page": 43,
+            "match": "yeraltı suyu",
+            "snippet": "…(36 MWm / 30 MWe – 44,8 ha.) 42 Şekil 26 ÇED Alanı Çevresinde Yer Alan Sulak Alanlar ç) Göller, akarsular, yeraltı suyu işletme sahaları ÇED alanının işaretlendiği ve bölgedeki, göller, akarsular, içme suyu barajları ve tampon bölgelerin…"
+          },
+          {
+            "page": 47,
+            "match": "atıksu",
+            "snippet": "…ca çevresel etkiler; toz emisyonları, habitat, flora ve fauna kayıpları, çevresel gürültü ve titreşim, evsel nitelikli atıksu, belediye atıkları, ambalaj atıkları, atık yağlar ve tehlikeli atıklardır. Ayrıca işletme aşamasında evsel nitelikli…"
+          },
+          {
+            "page": 47,
+            "match": "11,6 m3/gün",
+            "snippet": "…a Personel Birim İçme ve Kullanma Suyu İhtiyacı Atıksu Miktarı İnşaat 50 kişi 232 lt/kişi/gün 11.600 lt/gün (11,6 m3/gün ) İşletme 10 kişi 2.320 lt/gün (2,32 m3/gün) Belediye Atıkları ve Ambalaj Atığı Proje kapsamında çalışacak persone…"
+          },
+          {
+            "page": 47,
+            "match": "2,32 m3/gün",
+            "snippet": "…yacı Atıksu Miktarı İnşaat 50 kişi 232 lt/kişi/gün 11.600 lt/gün (11,6 m3/gün ) İşletme 10 kişi 2.320 lt/gün (2,32 m3/gün) Belediye Atıkları ve Ambalaj Atığı Proje kapsamında çalışacak personelin sosyal ihtiyaçlarından kaynaklı belediye a…"
+          }
+        ]
+      },
+      "protected_land_and_olive": {
+        "label": "Protected Zones, Forests & Olive Groves",
+        "page_count": 8,
+        "pages": [
+          35,
+          37,
+          38,
+          39,
+          40,
+          41,
+          42,
+          153
+        ],
+        "samples": [
+          {
+            "page": 35,
+            "match": "Sit Alanı",
+            "snippet": "…Özellikleri Projenin sınırları içerisinden kaldığı Denizli ilinde yer alan “Kültür Varlıkları”, “Tabiat Varlıkları”, “Sit Alanı” ve “Koruma Alanı” olarak tanımlanan alanlar Kültür Varlıkları ve Müzeler Genel Müdürlüğü’ nün resmi internet adresind…"
+          },
+          {
+            "page": 35,
+            "match": "Arkeolojik Sit",
+            "snippet": "…inden temin edilmiş ve aşağıda verilmiştir1. Tablo 14 Denizli İli Sit Alanları İstatistikleri SİT ALANLARI SAYISI Arkeolojik Sit Alanı 3 Tarihi Sit Alanı 5 Arkeolojik Sit Alanı 394 Karma Sit Alanları Arkeolojik ve Kentsel Sit Alanı 2 TOP…"
+          },
+          {
+            "page": 37,
+            "match": "3573 Sayılı",
+            "snippet": "…441.880 98,53 Kuru Tarım (Nadaslı) 6.603 1,47 Toplam 448.483 100,0 Proje kapsamında; 4342 sayılı Mera Kanunu, 3573 Sayılı (4086 Saylı Kanunla Değişik) Zeytinciliğin Islahı ve Yabanilerinin Aşılattırılması Hakkında Kanun, 5403 Sayılı Toprak…"
+          },
+          {
+            "page": 37,
+            "match": "Tabiat Parkı",
+            "snippet": "…at Koruma Alanları\" olarak tanımlanmış bir alan bulunmamaktadır. ÇED alanının harita üzerinden 17,2 km doğusunda Akdağ Tabiat Parkı yer almaktadır. Şekil 23 ÇED Alanı Çevresinde Yer Alan Milli Park Alanları"
+          },
+          {
+            "page": 37,
+            "match": "Milli Park",
+            "snippet": "…nının harita üzerinden 17,2 km doğusunda Akdağ Tabiat Parkı yer almaktadır. Şekil 23 ÇED Alanı Çevresinde Yer Alan Milli Park Alanları"
+          },
+          {
+            "page": 38,
+            "match": "Sit Alanı",
+            "snippet": "…arı ve Müzeler Genel Müdürlüğü’ nün resmi internet adresinden temin edilen “Kültür Varlıkları”, “Tabiat Varlıkları”, “Sit Alanı” ve “Koruma Alanı” olarak tanımlanan alanlar tablosu Bölüm II.a.10’da verilmiştir. 1 Bkz. Ek 3/h Avlaklar Haritası…"
+          },
+          {
+            "page": 39,
+            "match": "Özel Çevre Koruma",
+            "snippet": "…yukarıda belirtilen alanlara rastlanılmamıştır. f) Çevre Kanununun 9 uncu maddesi uyarınca Cumhurbaşkanı tarafından \"Özel Çevre Koruma Bölgeleri\" olarak tespit ve ilan edilen alanlar ÇED alanı; Özel Çevre Koruma Bölgesi sınırları içerisinde kalmamaktadı…"
+          },
+          {
+            "page": 39,
+            "match": "orman alanı",
+            "snippet": "…yakın çevresinde olarak Boğaziçi Kanunu’na göre koruma altına alınan alan bulunmamaktadır. ğ) Orman Kanunu uyarınca orman alanı sayılan yerler Mekansal Planlama Genel Müdürlüğü’nce onaylanan Aydın-Muğla-Denizli Planlama Bölgesi 1/100.000 Öl…"
+          }
+        ]
+      },
+      "ecology_and_baseline": {
+        "label": "Flora, Fauna & Baseline Methodology",
+        "page_count": 6,
+        "pages": [
+          14,
+          25,
+          32,
+          40,
+          43,
+          47
+        ],
+        "samples": [
+          {
+            "page": 14,
+            "match": "kuş göç",
+            "snippet": "…alleri için yer seçimi sırasında; yer yapısı, yükselti, eğim, arazi kullanımı, bitki örtüsü, nüfus yoğunluğu, maliyet, kuş göç rotaları, elektrik hatlarına yakınlık, yola uzaklık, yerleşim alanlarına mesafe, fay hatlarına mesafe ve akarsu-göller…"
+          },
+          {
+            "page": 25,
+            "match": "Flora ve Fauna",
+            "snippet": "…/ 30 MWe – 44,8 ha.) 24 Şekil 14 Denizli ili, Çivril ilçesi 2007 - 2025 Yılı Nüfus Değişim Grafiği II.a.2. Flora ve Fauna Projeye konu bölgenin flora ve faunası ile ilgili detaylı çalışma muhtemel komisyon üyesi olan Doğa koruma ve Milli P…"
+          },
+          {
+            "page": 25,
+            "match": "endemik",
+            "snippet": "…rı varsa araştırılarak yapılacak arazi çalışmaları ile desteklenecektir. Faaliyet alanı ve çevresinde bulunabilecek endemik bitki türlerinin belirlenmesinde Ekim, T. (2000) tarafından hazırlanan “Türkiye Bitkileri Kırmızı Kitabı” adlı yayında…"
+          },
+          {
+            "page": 25,
+            "match": "Bern Sözleşmesi",
+            "snippet": "…D Raporu’nda yer alacaktır. Fauna türlerinden amfibi, sürüngen, kuş ve memeli türlerinin Latince ve Türkçe adları, Bern Sözleşmesi Ek-2 ve Ek-3 listelerinin hangisinde yer aldığı, habitatları, IUCN kategorileri, T.C. Tarım ve Orman Bakanlığı’nın 07.…"
+          },
+          {
+            "page": 25,
+            "match": "IUCN",
+            "snippet": "…eli türlerinin Latince ve Türkçe adları, Bern Sözleşmesi Ek-2 ve Ek-3 listelerinin hangisinde yer aldığı, habitatları, IUCN kategorileri, T.C. Tarım ve Orman Bakanlığı’nın 07.05.2026 tarih ve 25 no’ lu karar numarası ile yürürlüğe giren “202…"
+          },
+          {
+            "page": 32,
+            "match": "mevsimsel",
+            "snippet": "…0 Proje ile ilgili olarak hazırlanan 1/25.000 ölçekli topoğrafik haritada da görüleceği üzere ÇED alanının çevresinde mevsimsel yağışlar ile akışa geçen (kuru dere) dere yatakları yer almaktadır. ÇED Alanı"
+          },
+          {
+            "page": 40,
+            "match": "BERN Sözleşmesi",
+            "snippet": "…özleşmeler uyarınca korunması gerekli alanlar: a) \"Avrupa’nın Yaban Hayatı ve Yaşama Ortamlarını Koruma Sözleşmesi\" (BERN Sözleşmesi) uyarınca koruma altına alınmış alanlardan \"Önemli Deniz Kaplumbağası Üreme Alanları\"nda belirtilen I. ve II. Koruma B…"
+          },
+          {
+            "page": 43,
+            "match": "mevsimsel",
+            "snippet": "…a proje ile ilgili olarak hazırlanan 1/25.000 ölçekli topoğrafik haritada da görüleceği üzere ÇED alanı ve çevresinde mevsimsel yağışlar ile akışa geçen (kuru dere) dere yatakları yer almaktadır. d) Bilimsel araştırmalar için önem arz eden ve/vey…"
+          }
+        ]
+      },
+      "pollutants_and_hazards": {
+        "label": "Emissions, Geochemistry & Waste",
+        "page_count": 22,
+        "pages": [
+          7,
+          28,
+          31,
+          33,
+          47,
+          49,
+          50,
+          51,
+          52,
+          53,
+          54,
+          56,
+          58,
+          61,
+          62,
+          63,
+          66,
+          76,
+          78,
+          86,
+          117,
+          119
+        ],
+        "samples": [
+          {
+            "page": 7,
+            "match": "Deprem",
+            "snippet": "…a Ek 3/ç Arazi Varlığı Haritası Ek 3/d Çevre Düzeni Planı, Lejandı ve Plan Hükümleri Ek 3/e Uydu Görüntüleri Ek 3/f Deprem Haritası Ek 3/g Avlaklar Haritası Ek 3/ğ Jeoloji Haritası Ek 3/h Proje Yerine Ait Fotoğraflar Ek 3/ı G26-Denizli GE…"
+          },
+          {
+            "page": 28,
+            "match": "Deprem",
+            "snippet": "…yal istiflerin eşdeğeridir II.a.4. Doğal Afet Durumu Afet ve Acil Durum Yönetimi Başkanlığı’nca hazırlanan Türkiye Deprem Tehlike Haritaları kullanılarak yapılan deprem tehlike haritası aşağıda görülmektedir. Haritadan da görüleceği üzere…"
+          },
+          {
+            "page": 31,
+            "match": "deprem",
+            "snippet": "…MWe – 44,8 ha.) 30 Projenin inşaat aşamasında yangın, doğal afet (yıldırım düşmesi, sel, heyelan, çığ düşmesi, deprem vb.), sabotaj vb. olağanüstü durumda; • Çalışmalar derhal durdurulacak • Çalışan araç ve iş makineleri kapatılacak,…"
+          },
+          {
+            "page": 33,
+            "match": "PM10",
+            "snippet": "…ölçüm değerleri aşağıdaki tabloda verilmiştir1. Tablo 12 Denizli İli Hava Kalitesi Verileri Tarih Denizli (Çivril) PM10 (µg/m3 ) SO2 (µg/m3) CO (µg/m3) NO2 (µg/m3) NOX (µg/m3) NO (µg/m3) O3 (µg/m3) 01.08.2026 27,35 6,18 - 6,14…"
+          },
+          {
+            "page": 47,
+            "match": "Kümülatif",
+            "snippet": "…III.a. Çevreyi Etkileyebilecek Olası Sorunların Belirlenmesi, Kirleticilerin Miktarı, Alıcı Ortamla Etkileşimi, Kümülatif Etkilerin Belirlenmesi Projenin inşaat aşamasında karşılaşılacak başlıca çevresel etkiler; toz emisyonları, habitat,…"
+          },
+          {
+            "page": 47,
+            "match": "gürültü",
+            "snippet": "…nşaat aşamasında karşılaşılacak başlıca çevresel etkiler; toz emisyonları, habitat, flora ve fauna kayıpları, çevresel gürültü ve titreşim, evsel nitelikli atıksu, belediye atıkları, ambalaj atıkları, atık yağlar ve tehlikeli atıklardır. Ayrıca…"
+          },
+          {
+            "page": 47,
+            "match": "toz emisyon",
+            "snippet": "…ehlikeli atıklar söz konusu olacaktır. Toz Emisyonları Projenin inşaat aşamasında faaliyetlerden kaynaklı oluşacak toz emisyon miktarları ÇED Raporu kapsamında detaylı bir şekilde hesaplanacak ve emisyon miktarı 30.03.2010 tarih ve 27537 sayılı…"
+          },
+          {
+            "page": 49,
+            "match": "Gürültü",
+            "snippet": "…nşaat 50 kişi 0,66 kg/kişi/yıl 0,25 kg/kişi/yıl 33 kg/yıl 12,5 kg/yıl İşletme 10 kişi 6,6 kg/yıl 2,5 kg/yıl Gürültü ve Titreşim Projenin inşaat aşamasında kullanılacak araç ve iş makinelerinin çalışmasından dolayı çevresel gürültü v…"
+          }
+        ]
+      },
+      "cost_and_capacity": {
+        "label": "Project Cost, Power & Capacity",
+        "page_count": 5,
+        "pages": [
+          2,
+          9,
+          13,
+          83,
+          120
+        ],
+        "samples": [
+          {
+            "page": 2,
+            "match": "Proje Bedeli",
+            "snippet": "…0 e-posta tuncay.vesek@eltemtek.com.tr Projenin Adı G26-Denizli Güneş Enerji Santrali (36 MWm / 30 MWe – 44,8 ha.) Proje Bedeli 324.000.000,00 Proje İçin Seçilen Yerin Açık Adresi (İli, İlçesi, Mevki) Denizli ili, Çivril ilçesi, Yukarı ve Gür…"
+          },
+          {
+            "page": 9,
+            "match": "proje bedeli",
+            "snippet": "…makine-ekipman giderleri ve kurulum maliyetleri ve diğer maliyetler göz önünde bulundurularak yapılan hesaplamalar ile proje bedeli 324.000.000,00 olarak hesaplanmıştır. Projenin arazi hazırlık ve güneş panellerinin kurulum çalışmalarının 24 ay i…"
+          },
+          {
+            "page": 13,
+            "match": "proje bedeli",
+            "snippet": "…makine-ekipman giderleri ve kurulum maliyetleri ve diğer maliyetler göz önünde bulundurularak yapılan hesaplamalar ile proje bedeli 324.000.000,00 olarak hesaplanmıştır. Tablo 2 Yatırım Bedelleri Yatırım Giderleri Açıklama Tahmini Bedeli Araz…"
+          },
+          {
+            "page": 13,
+            "match": "PROJE BEDELİ",
+            "snippet": "…307.800.000,00 Diğer (varsa) Eğitim, yazılım, donanım, otomasyon, - sertifikalandırma vb. idari giderler TOPLAM PROJE BEDELİ (KDV dâhil) 324.000.000,00 I.a.4. Projenin Ömrü Gerçekleştirilmesi planlanan güneş enerji santralinin ekonomik ö…"
+          },
+          {
+            "page": 83,
+            "match": "kapasite",
+            "snippet": "…Tüm araçlar kış aylarında kış lastiği kullanacaktır. • İnşaat malzemelerinin proje sahasına nakli sırasında araçlara kapasitesinden fazla yükleme yapılmayacaktır. 4. Yol ve Araç Bakımı Proje kapsamında mümkün olduğunca mevcut yolların kullanı…"
+          },
+          {
+            "page": 120,
+            "match": "KAPASİTE",
+            "snippet": "…YA KURULU GÜCÜ 50 MW, BİYOKÜTLE ENERJİ SANTRALLERİNDE KURULU GÜCÜ 10 MW, JEOTERMAL ENERJİ SANTRALLERİNDE ISIL KAPASİTESİ 20 MW, GÜNEŞ ENERJİ SANTRALLERİNDE PROJE ALANI 20 HEKTAR VEYA KURULU GÜCÜ 10 MW VE ÜZERİ TESİSLER İÇİN ÇEVRE DÜ…"
+          }
+        ]
+      }
+    },
+    "audit_checks": {
+      "mentions_field_survey": true,
+      "mentions_literature_only_cue": false,
+      "mentions_seasonal_sampling": true,
+      "mentions_cumulative_impact": true,
+      "mentions_olive_law_3573": true,
+      "mentions_groundwater_or_aquifer": true,
+      "mentions_iucn_or_endemic": true
+    }
+  },
+  "llm_synthesis": {
+    "model": "gemini-4-hydrogen",
+    "generated_at": "2026-11-20T09:08:03",
+    "pages_sent": [
+      1,
+      2,
+      3,
+      4,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      25,
+      28,
+      31,
+      32,
+      33,
+      35,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42,
+      83
+    ],
+    "result": {
+      "executive_summary_tr": "Enerji İşleri Genel Müdürlüğü tarafından Denizli ili Çivril ilçesi Yukarı ve Gürpınar mahalleleri (Gökbaşlı ve Taşlı mevkii, 3 Ada/116 Parsel ve 379 Ada/1 Parsel) sınırlarında, 44,8 hektarlık Yenilenebilir Enerji Kaynak Alanı (YEKA) üzerinde 36 MWm / 30 MWe kurulu gücünde G26-Denizli Güneş Enerji Santrali (GES) kurulması planlanmaktadır [s. 1, 8]. ÇED Yönetmeliği Ek-1 Madde 43 kapsamında sunulan ÇED Başvuru Dosyası'na göre tesiste 500 W gücünde 72.000 adet monokristal çift yüzeyli panel ile yılda 57,6 GWh elektrik üretilmesi, inşaatın 24 ayda 50 personelle tamamlanması ve işletmenin 49 yıl boyunca 10 personelle sürdürülmesi öngörülmektedir [s. 2, 9, 11, 13]. Proje sahasının %98,53'ü VII. sınıf fundalık (kahverengi orman toprağı), %1,47'si III. sınıf kuru tarım arazisi olup saha Büyük Menderes Havzası içinde, yüksek sismik tehlike bölgesinde (PGA 475: 0,3 g - 0,4 g) ve mevsimsel kuru dere yataklarının yakınında yer almaktadır [s. 28, 31, 32, 37, 39, 42]. Başvuru dosyasında flora ve fauna saha çalışmaları henüz yapılmayıp ilerideki ÇED Raporu aşamasına bırakılmış, ayrıca alanın Yaban Hayatı Yerleştirme Sahası statüsü konusunda aynı sayfada birbiriyle çelişen beyanlara yer verilmiştir [s. 25, 38].",
+      "executive_summary_en": "The General Directorate of Energy Affairs proposes the G26-Denizli Solar Power Plant (36 MWm / 30 MWe) covering 44.8 hectares on parcels 3/116 and 379/1 in Yukarı and Gürpınar neighborhoods of Çivril district, Denizli, within a designated Renewable Energy Resource Area (YEKA) [s. 1, 8]. According to the Annex-1 EIA Application File, the facility will install 72,000 bifacial monocrystalline silicon modules (500 W each) to generate 57.6 GWh/year over a 49-year economic life, with a 24-month construction phase (50 staff) and 10 operational staff [s. 2, 9, 11, 13]. Currently, 98.53% of the site is Class VII shrubland on brown forest soils and 1.47% is Class III dry farmland within the Büyük Menderes Basin, situated in a high seismic zone (PGA 475: 0.3 g - 0.4 g) near seasonal dry streambeds [s. 28, 31, 32, 37, 39, 42]. Primary environmental gaps in the application file include the complete deferral of flora and fauna field surveys to the subsequent EIA Report stage and an internal contradiction regarding whether the site falls inside a Wildlife Reintroduction Area [s. 25, 38].",
+      "key_facts": [
+        {
+          "label": "Kurulu Güç",
+          "value": "36 MWm / 30 MWe",
+          "page": 2
+        },
+        {
+          "label": "ÇED Alanı Büyüklüğü",
+          "value": "44,8 ha (448.483 m²)",
+          "page": 37
+        },
+        {
+          "label": "Panel Sayısı ve Teknolojisi",
+          "value": "72.000 adet x 500 W (Mono-C Silicon Bifacial PERC)",
+          "page": 11
+        },
+        {
+          "label": "Yıllık Elektrik Üretimi",
+          "value": "57,6 GWh/yıl",
+          "page": 9
+        },
+        {
+          "label": "Proje Bedeli (KDV Dâhil)",
+          "value": "324.000.000,00 (metinde para birimi belirtilmemiş)",
+          "page": 13
+        },
+        {
+          "label": "Ekonomik Ömür",
+          "value": "49 yıl",
+          "page": 13
+        },
+        {
+          "label": "İnşaat Süresi ve İstihdam",
+          "value": "24 ay inşaatta 50 personel; işletmede 10 personel",
+          "page": 9
+        },
+        {
+          "label": "Şimdiki Arazi Kullanımı",
+          "value": "%98,53 Fundalık (441.880 m²); %1,47 Kuru Tarım/Nadaslı (6.603 m²)",
+          "page": 37
+        },
+        {
+          "label": "Sismik Tehlike ve Fay Mesafesi",
+          "value": "PGA 475 yer ivmesi 0,3 g - 0,4 g; doğuda Sivaslı Fayı 1.900 m",
+          "page": 28
+        },
+        {
+          "label": "En Yakın Yüzeysel Su",
+          "value": "Kuru Çay 2.730 m (Kufi Deresi 7.180 m, Banaz Çayı 10.230 m)",
+          "page": 32
+        }
+      ],
+      "baseline_assessment": {
+        "field_survey_status": "mixed_or_unclear",
+        "seasonal_sampling_status": "not_found",
+        "cumulative_impact_status": "omitted_or_not_found",
+        "olive_and_protected_status": "3573 sayılı Kanun kapsamında ÇED alanında yapılan arazi incelemelerinde zeytinlik alanına rastlanılmadığı bildirilmiştir [s. 40]. Arazi varlığı haritasına göre saha %98,53 fundalık (VII. Sınıf, kahverengi orman toprakları) ve %1,47 kuru tarım (III. Sınıf) niteliğindedir [s. 31, 37, 42]. Korunan alanlar açısından saha Özel Çevre Koruma Bölgesi veya Ramsar/Sulak Alan içinde değildir; en yakın sulak alan Işıklı-Gökgöl Sulak Alanı (12,5 km) [s. 39, 40, 41], en yakın tabiat parkı Akdağ Tabiat Parkı (17,2 km) [s. 37] ve en yakın YHGS Denizli Çivril Akdağ YHGS'dir (17,3 km) [s. 38]. Ancak aynı sayfada alanın Avlaklar Haritası'na göre Yaban Hayatı Yerleştirme Sahası içinde kaldığı da yazılmıştır [s. 38]; SİT alanları ise parsel ölçeğinde değil yalnızca Denizli ili geneli toplamı (404 adet) olarak verilmiştir [s. 35].",
+        "explanation": "Bölüm II.a.2 kapsamında flora ve faunaya ilişkin herhangi bir ön saha çalışması veya tür listesi sunulmamış, tüm arazi ve literatür çalışmalarının Doğa Koruma ve Milli Parklar Genel Müdürlüğü görüşü doğrultusunda ilerideki ÇED Raporu'nda yapılacağı belirtilmiştir [s. 25]. Peyzaj, içme-kullanma suyu havzası ve hava kalitesi bölümleri yalnızca literatür taramasına ve tek aylık (01-31.08.2026, 4 günü eksik) Çivril istasyonu verilerine dayanmaktadır [s. 33, 35, 39]; yalnızca zeytinlik değerlendirmesinde arazi incelemesi yapıldığı beyan edilmiştir [s. 40]. Çok mevsimli saha örneklemesi dosyada bulunmamakta olup, İçindekiler'de 57. sayfada görünen Bölüm IV Kümülatif Çevresel Etki Değerlendirme ile Bölüm V İzleme Planı sağlanan sayfa özetleri dışında kaldığından doğrulanamamıştır [s. 4]."
+      },
+      "red_flags": [
+        {
+          "severity": "high",
+          "title": "Yaban Hayatı Yerleştirme Sahası Statüsünde Doğrudan Çelişki",
+          "detail": "Ek-5 Duyarlı Yöreler değerlendirmesinin 1.b maddesinde ilk paragrafta ÇED alanı ve yakın çevresinde Yaban Hayatı Geliştirme Sahası ve yaban hayvanı yerleştirme sahası bulunmadığı belirtilirken, aynı sayfanın alt kısmında Avlaklar Haritası'na atıfla ÇED alanının Yaban Hayatı Yerleştirme Sahası olarak tanımlanan alan içerisinde kaldığı ifade edilmektedir.",
+          "pages": [
+            38
+          ]
+        },
+        {
+          "severity": "high",
+          "title": "Flora ve Fauna Saha Çalışmalarının HKT Öncesi Tamamlanmamış Olması",
+          "detail": "Proje alanının %98,53'ü fundalık ve kahverengi orman toprağı niteliğinde olmasına karşın Bölüm II.a.2'de tek bir bitki veya hayvan türü, habitat tanımı ya da saha gözlemi sunulmamış; tüm arazi ve literatür çalışmalarının süreç içerisinde sunulacak ÇED Raporu aşamasına ertelendiği belirtilmiştir.",
+          "pages": [
+            25,
+            31,
+            37
+          ]
+        },
+        {
+          "severity": "high",
+          "title": "ÇED Alanı İçi Diri Fay ve Yüksek Sismik İvme Belirsizliği",
+          "detail": "Doğal Afet Durumu bölümünde ÇED alanı içerisinde diri fay bulunduğu ve PGA 475 yer ivmesinin 0,3 g - 0,4 g olduğu yazılırken hemen ardından Sivaslı Fayı'nın 1.900 m doğuda yer aldığı belirtilmiştir; saha içi fay izinin konumu, sakınım bandı ve paneller/şalt merkezi için jeoteknik tasarım kriterleri netleştirilmemiştir.",
+          "pages": [
+            28
+          ]
+        },
+        {
+          "severity": "medium",
+          "title": "Kültür Varlıkları ve SİT İncelemesinin İl Geneli İstatistiğe İndirgenmesi",
+          "detail": "Bölüm II.a.10'da proje parselleri ve yakın çevresindeki tescilli arkeolojik/tarihi SİT alanlarının mesafeleri veya yüzey araştırması bulguları yerine yalnızca Denizli il geneline ait 404 SİT alanını gösteren özet tablo (Arkeolojik Sit Alanı satırı 3 ve 394 olarak mükerrer yazılmış hâlde) verilmiştir.",
+          "pages": [
+            35,
+            38
+          ]
+        },
+        {
+          "severity": "medium",
+          "title": "Kuru Dere Yatakları ve VII. Sınıf Arazide Hidrolojik/Erozyon Analizi Eksikliği",
+          "detail": "ÇED alanı çevresinde mevsimsel yağışlarla akışa geçen kuru dere yatakları bulunduğu ve alanın %98,53'ünün VII. Sınıf arazi olduğu belirtilmesine rağmen, önemli bir arazi düzenlemesi yapılmayacağı varsayılarak yüzeysel akış, taşkın ve erozyon önlemlerine dair nicel hidrolojik veri sunulmamıştır.",
+          "pages": [
+            11,
+            32,
+            42
+          ]
+        },
+        {
+          "severity": "low",
+          "title": "Tek Aylık ve Eksik Hava Kalitesi Verisi ile Birimsiz Proje Bedeli",
+          "detail": "Hava kalitesi mevcut durum değerlendirmesi yalnızca Ağustos 2026 dönemindeki tek aylık (25-28.08.2026 tarihleri boş bırakılmış) Çivril istasyonu ölçümüne dayanmakta olup yıllık/mevsimsel arka plan verisi içermemektedir; ayrıca Proje Bedeli tablolarında 324.000.000,00 tutarının para birimi yazılmamıştır.",
+          "pages": [
+            2,
+            13,
+            33
+          ]
+        }
+      ],
+      "hkt_and_petition_questions": [
+        {
+          "question_tr": "Sayfa 38'de önce ÇED alanı ve yakın çevresinde yaban hayvanı yerleştirme sahası bulunmadığı belirtilip aynı sayfada alanın Avlaklar Haritası'na göre Yaban Hayatı Yerleştirme Sahası içinde kaldığı yazılmıştır; bu çelişkinin düzeltilerek yaban hayatı ve göç/üreme alanlarına etkilerin nasıl değerlendirileceği açıklanacak mıdır?",
+          "pages": [
+            38,
+            25
+          ]
+        },
+        {
+          "question_tr": "Bölüm II.a.2'de flora ve fauna saha çalışmalarının henüz yapılmayıp ilerideki ÇED Raporu aşamasına bırakıldığı görülmektedir; %98,53'ü fundalık ve kahverengi orman toprağı olan 44,8 hektarlık alanda mevsimsel arazi örneklemeleri tamamlanmadan Halkın Katılımı Toplantısı yapılmasının doğuracağı bilgi eksikliği nasıl giderilecektir?",
+          "pages": [
+            25,
+            31,
+            37
+          ]
+        },
+        {
+          "question_tr": "Sayfa 28'de ÇED alanı içerisinde diri fay bulunduğu ve PGA 475 yer ivmesinin 0,3 g - 0,4 g olduğu belirtilirken Sivaslı Fayı'nın 1.900 m doğuda yer aldığı ifade edilmiştir; saha sınırları içindeki diri fay izine yönelik fay sakınım bandı, sıvılaşma ve zemin etüdü çalışmaları yapılmış mıdır?",
+          "pages": [
+            28,
+            11
+          ]
+        },
+        {
+          "question_tr": "Sayfa 32'de alan çevresinde mevsimsel yağışlarla akışa geçen kuru dere yatakları bulunduğu ve sahanın Büyük Menderes Havzası ile %98,53 oranında VII. Sınıf arazi içinde kaldığı belirtildiğinden, 72.000 panelin kurulacağı alanda yüzeysel akış, sel/taşkın ve erozyonu önlemeye yönelik hangi teknik drenaj hesaplamaları yapılacaktır?",
+          "pages": [
+            11,
+            32,
+            39,
+            42
+          ]
+        },
+        {
+          "question_tr": "Kültür varlıkları için yalnızca Denizli ili geneli 404 SİT sayısını veren tablo (s. 35) ve hava kalitesi için sadece Ağustos 2026 dönemine ait 4 günü eksik istasyon verisi (s. 33) yerine, parsel ölçeğinde Kültür Varlıklarını Koruma Bölge Kurulu görüşü ve yıllık çevre kalitesi verileri ÇED Raporu'na eklenecek midir?",
+          "pages": [
+            33,
+            35,
+            38
+          ]
+        }
+      ],
+      "data_limitations": "Toplam 160 sayfalık (121 metin, 39 taranmış/görsel sayfa) dosyanın yalnızca sağlanan 26 sayfalık bölümü [1-4, 6-14, 25, 28, 31-33, 35, 37-42, 83] incelenebilmiştir. Yer ve teknoloji alternatiflerinin devamı (s. 15-24), nüfus ve jeoloji ayrıntıları (s. 24-27), doğal afet harita ve metinlerinin devamı (s. 29-30), iklimsel faktörler (s. 34), Bölüm III inşaat/işletme etkileri ve su/atıksu/iklim hesapları (s. 43-56), Bölüm IV Kümülatif Çevresel Etki Değerlendirme (s. 57-58), Bölüm V Çevre İzleme ve Sürdürülebilirlik Planları (s. 59-63), Bölüm VI Paydaş Katılımı (s. 64) ile Ek 1-7 kapsamındaki harita, tutanak, kurum görüşleri ve taranmış belgeler (s. 65-160, 83. sayfa hariç) sağlanan özetler dışında kaldığından içerikleri doğrulanamamıştır."
+    }
+  }
+}

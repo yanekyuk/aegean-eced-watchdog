@@ -1,0 +1,301 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>e-ÇED Ön Özet #61423 — ÇANKIRI / MERKEZ</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <style>
+:root {
+  --bg: #0f1216;
+  --surface: #171c22;
+  --border: #262e38;
+  --text: #e6edf3;
+  --muted: #8b949e;
+  --accent: #58a6ff;
+  --red: #f85149;
+  --amber: #d29922;
+  --green: #3fb950;
+  --badge-bg: #212830;
+}
+@media (prefers-color-scheme: light) {
+  :root {
+    --bg: #f6f8fa;
+    --surface: #ffffff;
+    --border: #d0d7de;
+    --text: #1f2328;
+    --muted: #656d76;
+    --accent: #0969da;
+    --red: #cf222e;
+    --amber: #9a6700;
+    --green: #1a7f37;
+    --badge-bg: #eef2f6;
+  }
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+}
+.wrap { max-width: 1240px; margin: 0 auto; padding: 24px 18px 64px; }
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+header { border-bottom: 1px solid var(--border); padding-bottom: 16px; margin-bottom: 20px; }
+h1 { margin: 0 0 6px; font-size: 1.55rem; }
+h2 { margin: 26px 0 10px; font-size: 1.2rem; }
+h3 { margin: 16px 0 8px; font-size: 1rem; }
+.sub { color: var(--muted); font-size: 0.92rem; margin: 0; }
+.meta-bar { display: flex; flex-wrap: wrap; gap: 14px; margin-top: 12px; font-size: 0.85rem; color: var(--muted); }
+.stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 10px; margin: 16px 0 18px; }
+.stat { background: var(--surface); border: 1px solid var(--border); border-radius: 8px; padding: 12px 14px; }
+.stat .num { font-size: 1.45rem; font-weight: 700; }
+.stat .lbl { font-size: 0.78rem; color: var(--muted); }
+.map-box {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 18px;
+}
+#map { width: 100%; height: 420px; background: var(--badge-bg); }
+#digest-map { width: 100%; height: 320px; background: var(--badge-bg); }
+.map-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  padding: 9px 14px;
+  font-size: 0.8rem;
+  color: var(--muted);
+  border-top: 1px solid var(--border);
+}
+.dot { display: inline-block; width: 10px; height: 10px; border-radius: 50%; margin-right: 5px; vertical-align: middle; }
+.controls { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; margin-bottom: 16px; }
+input[type="search"], select.filter-select {
+  padding: 8px 12px;
+  border-radius: 6px;
+  border: 1px solid var(--border);
+  background: var(--surface);
+  color: var(--text);
+  font-size: 0.9rem;
+}
+input[type="search"] { flex: 1 1 240px; }
+select.filter-select { min-width: 170px; }
+button.pill {
+  padding: 7px 12px;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: var(--surface);
+  color: var(--text);
+  cursor: pointer;
+  font-size: 0.82rem;
+}
+button.pill.active { background: var(--accent); border-color: var(--accent); color: #fff; font-weight: 600; }
+.cards { display: flex; flex-direction: column; gap: 10px; }
+.card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 15px 17px;
+}
+.card.ek1 { border-left: 4px solid var(--accent); }
+.row-top { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px; align-items: baseline; }
+.title { font-weight: 600; font-size: 0.98rem; }
+.badges { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 7px; }
+.badge {
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  background: var(--badge-bg);
+  border: 1px solid var(--border);
+}
+.badge.urgent { border-color: var(--red); color: var(--red); font-weight: 600; }
+.badge.warn { border-color: var(--amber); color: var(--amber); font-weight: 600; }
+.badge.ok { border-color: var(--green); color: var(--green); }
+.badge.muted { color: var(--muted); }
+.detail { font-size: 0.87rem; color: var(--muted); margin: 8px 0; }
+.actions { display: flex; flex-wrap: wrap; gap: 12px; font-size: 0.84rem; margin-top: 8px; }
+.notice {
+  margin-top: 28px;
+  padding: 14px 16px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  font-size: 0.84rem;
+  color: var(--muted);
+}
+table.kv { width: 100%; border-collapse: collapse; margin: 12px 0; font-size: 0.9rem; }
+table.kv th, table.kv td { border: 1px solid var(--border); padding: 8px 11px; text-align: left; vertical-align: top; }
+table.kv th { width: 240px; background: var(--badge-bg); }
+code { background: var(--badge-bg); padding: 1px 5px; border-radius: 4px; font-size: 0.85em; }
+blockquote { margin: 10px 0; padding: 11px 15px; border-left: 3px solid var(--accent); background: var(--surface); font-size: 0.9rem; }
+.hit { margin: 7px 0; font-size: 0.88rem; }
+.pno { font-weight: 700; color: var(--accent); }
+.leaflet-popup-content { color: #1f2328; font-size: 0.85rem; line-height: 1.45; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div style="font-size:0.85rem;margin-bottom:8px;"><a href="../index.html">← Türkiye e-ÇED İzleme listesine dön</a> · <a href="../rehber.html">Kullanım ve İnceleme Rehberi</a> · <a href="61423.md">Ham Markdown (.md)</a></div>
+    <h1>e-ÇED Ön Özet #61423 — ÇANKIRI / MERKEZ</h1>
+    <p class="sub">RN:200707469 (ER: 3147107) Nolu Bentonit Ocağı Kapasite Artışı ve Cevher Hazırlama Tesisi</p>
+    <div class="badges" style="margin-top:10px;">
+      <span class="badge">HKT</span>
+      <span class="badge">Ek-1</span>
+      <span class="badge warn">HKT Duyurusu · Tarih duyuru metnindedir</span>
+    </div>
+  </header>
+
+  <table class="kv">
+    <tr><th>Proje Sahibi</th><td>Yüksel Ceylan Motorlu Araçlar İnşaat Gıda Hayvancılık Tarım Madencilik Sanayi Ve Ticaret Anonim Şirketi</td></tr>
+    <tr><th>Hazırlayan Kuruluş</th><td>PPM KİR.ÖNL.VE YÖN. DAN. MÜH. İNŞ. TAAH. SAN.VE.TİC. LTD.ŞTİ.</td></tr>
+    <tr><th>Sektör / Alt Sektör</th><td>Petrol-Doğalgaz-III. ve IV. Grup Madenler / IV. Grup Madenler</td></tr>
+    <tr><th>Duyuru Tarihi</th><td><code>19.11.2026</code> (belge yükleme tarihi: <code>22/10/2026 11:06:33</code>)</td></tr>
+    <tr><th>PDF Kapsamı</th><td>58.36 MB · 191 sayfa (148 metin sayfası / 43 taranmış veya görüntü sayfası) · SHA-256 <code>f6fb706bde112d9e…</code></td></tr>
+    <tr><th>Resmi Bağlantılar</th><td><a href="http://eced.csb.gov.tr/jsp/ek1/61423" target="_blank" rel="noopener">e-ÇED Portal Kaydı</a> · <a href="http://eced.csb.gov.tr/jsp/dosya/dosyaGoster.htm?tempAd=sign3779171575239646664.pdf&amp;orjinalAd=CEDBASVURUDOSYASI.pdf&amp;yuklemeTarihi=2026-10-22" target="_blank" rel="noopener">Resmi PDF Dosyası</a> · <a href="https://www.openstreetmap.org/?mlat=40.34797&amp;mlon=33.5276#map=12/40.34797/33.5276" target="_blank" rel="noopener">OpenStreetMap</a> · <a href="https://www.google.com/maps/search/?api=1&amp;query=40.34797,33.5276" target="_blank" rel="noopener">Google Haritalar</a></td></tr>
+  </table>
+
+  <h2>Konum Haritası</h2>
+  <div class="map-box">
+    <div id="digest-map"></div>
+    <div class="map-legend"><span>PDF metninden çıkarılan kesin proje koordinatları (80 nokta, datum: UTM-Z36/ED50, sayfa: s.27, s.98, s.121).</span></div>
+  </div>
+
+  
+  <h2>Yapay Zeka Destekli Bilimsel Ön Değerlendirme <span class="badge">gemini-4-hydrogen</span></h2>
+  <p class="sub">Bu değerlendirme, resmi PDF dosyasından seçilen 26 sayfa (s.1, s.2, s.3, s.4, s.18, s.22, s.23, s.30, s.31, s.40, s.44, s.45, s.47, s.48, s.52, s.59, s.60, s.84, s.85, s.92, s.93, s.96, s.141, s.142, s.145, s.146) esas alınarak hazırlanmıştır. Tüm sayısal verilerin ve tespitlerin resmi PDF belgesindeki ilgili <code>[s. N]</code> sayfalarından doğrulanması gerekir.</p>
+  <section class="card ek1">
+    <p><strong>Özet:</strong> Yüksel Ceylan Motorlu Araçlar İnşaat Gıda Hayvancılık Tarım Madencilik Sanayi ve Ticaret A.Ş. tarafından Çankırı İli, Merkez İlçesi, Tüney Köyü sınırları içerisinde RN:200707469 (ER: 3147107) ruhsatlı sahada bentonit ocağı kapasite artışı ve Kırma Eleme Aktivasyon Ünitesi (cevher hazırlama tesisi) kurulması planlanmaktadır [s. 1, 2, 18]. ÇED Yönetmeliği Ek-1 Madde 25-a ve Ek-2 Madde 45-e kapsamında sunulan proje 531.500 m² (53,15 ha) ocak alanını kapsamakta olup, bu alanın 336.228 m²&#x27;si mera, 121.626,53 m²&#x27;si tarla ve 73.645,47 m²&#x27;si Hazine arazisinden oluşmaktadır [s. 2, 23]. En yakın yapı/konut proje alanının kuzeyinde 20 metre mesafede yer almakta, ayrıca saha içinde mevsimsel akış gösteren dere yatakları bulunmaktadır [s. 18, 30]. Başlıca çevresel hassasiyetler; geniş ölçekli mera ve tarım alanı dönüşümü, yerleşime çok yakın mesafede toz ve gürültü maruziyeti, su kaynağı ve koruma bandı belirsizlikleri ile dosya içi orman statüsü ve kapasite çelişkileridir [s. 18, 23, 30, 44, 96].</p>
+    <details style="margin-top:8px;font-size:0.86rem;color:var(--muted);"><summary style="cursor:pointer;">İngilizce özet (English summary)</summary><p style="margin:6px 0 0;">Yüksel Ceylan Motorlu Araçlar İnşaat Gıda Hayvancılık Tarım Madencilik Sanayi ve Ticaret A.Ş. proposes a bentonite quarry capacity increase and an ore preparation (crushing-screening-activation) unit at Tuney Village, Merkez District, Cankiri Province under license RN:200707469 (ER: 3147107) [s. 1, 2, 18]. Submitted under EIA Regulation Annex-1 Item 25-a and Annex-2 Item 45-e, the project covers 531,500 m2 (53.15 ha), comprising 336,228 m2 of pastureland, 121,626.53 m2 of agricultural fields, and 73,645.47 m2 of Treasury land [s. 2, 23]. The nearest building/residence lies just 20 meters north of the site, and seasonal stream beds traverse the project area [s. 18, 30]. Primary environmental stakes include large-scale loss of pasture and agricultural land, dust and noise exposure at close proximity to dwellings, unquantified water supply and stream buffer widths, and internal contradictions regarding forest land status and unit capacity [s. 18, 23, 30, 44, 96].</p></details>
+    <div class="badges" style="margin-top:10px;">
+      <span class="badge">Saha çalışması: İncelenen sayfalarda tespit edilemedi</span>
+      <span class="badge">Mevsimsel örnekleme: Yalnızca onay sonrasına ertelenmiş</span>
+      <span class="badge">Kümülatif etki: Eksik veya tespit edilemedi</span>
+    </div>
+    <p class="detail" style="margin-top:10px;"><strong>Zeytinlik ve Korunan Alanlar:</strong> Ek-5 Duyarlı Yöreler değerlendirmesinde alanın Zeytincilik Kanunu kapsamındaki alanlar, ÖÇK bölgeleri, sulak alanlar, içme-kullanma suyu havzaları, BERN/RAMSAR/Barcelona sözleşme alanları ve 6831 sayılı Kanun kapsamındaki orman alanları içerisinde kalmadığı beyan edilmiştir [s. 44, 45]; buna karşın Çevresel ve Sosyal Yönetim Planı&#x27;nda orman izinlerinin alınacağı belirtilerek çelişkili bir ifade yer almaktadır [s. 96]. Alanın 336.228 m²&#x27;lik kısmı 4342 sayılı Mera Kanunu kapsamında mera, 121.626,53 m²&#x27;lik kısmı ise 5403 sayılı Kanun kapsamında tarım alanı (tarla) niteliğinde olup her iki arazi türü için de izin süreçlerinin faaliyet öncesinde yürütüleceği ifade edilmektedir [s. 23, 44, 45].<br/>Sunulan ÇED Başvuru Dosyası kesitlerinde proje alanına özel tamamlanmış herhangi bir arazi florası/faunası etüdü veya tür listesi yer almamakta, yalnızca Çankırı geneline ait havza/toprak/sosyoekonomik tanımlamalar ile Ek-5 kontrol listesi beyanları bulunmaktadır [s. 40, 44, 45, 92]. Proje öncesi döneme ait mevsimsel hava kalitesi, toz, gürültü veya su kalitesi örneklemesi dosyada sunulmamış; bunun yerine Çevre İzleme Planı&#x27;nda onay sonrası dönemde kurum talebine bağlı saha gözlem çalışmaları yapılacağı taahhüt edilmiştir [s. 59, 60]. Bölüm IV altında yer alması gereken kümülatif çevresel etki değerlendirmesi ise sağlanan sayfa kesitleri arasında bulunmamaktadır [s. 3, 47].</p>
+  </section>
+  <h3>Öne Çıkan Sayısal Bulgular</h3><table class="kv"><tr><th>Planlanan Toplam Ocak Alanı</th><td>531.500 m² (53,15 hektar; 336.228 m² mera, 121.626,53 m² tarla, 73.645,47 m² Hazine arazisi) [s. 23] <span class="pno">[s. 23]</span></td></tr>
+<tr><th>Maden Ruhsat Alanı ve Süresi</th><td>343,76 hektar; ruhsat bitiş tarihi 23.01.2033; talep edilen işletme izin süresi 10 yıl [s. 141] <span class="pno">[s. 141]</span></td></tr>
+<tr><th>Mera Alanı ve Tahsis Bedeli</th><td>336.228,00 m² (336,228 dönüm); 20 yıllık tahsis ve kuru ot bedeli 5.043.420,00 TL [s. 22] <span class="pno">[s. 22]</span></td></tr>
+<tr><th>Toplam Proje Bedeli</th><td>9.167.836,84 TL (5.667.836,84 TL arazi/mera bedeli + 3.500.000 TL makine-ekipman) [s. 23] <span class="pno">[s. 23]</span></td></tr>
+<tr><th>En Yakın Yapı / Konut Mesafesi</th><td>Proje alanının kuzeyinde 20 metre (Tüney Köyü merkezine kuş uçuşu 0,78 km) [s. 30, 142] <span class="pno">[s. 30]</span></td></tr>
+<tr><th>Planlanan Personel Sayısı</th><td>Toplam 19 kişi (mevcut 9 personele ilave 10 kişi) [s. 40] <span class="pno">[s. 40]</span></td></tr>
+<tr><th>Personel Su Tüketimi ve Atıksu</th><td>6,1 m³/gün (6.099 lt/gün) içme-kullanma suyu; 2,05 m³/gün evsel nitelikli atıksu [s. 40, 52] <span class="pno">[s. 40]</span></td></tr>
+<tr><th>Evsel Katı Atık ve Ambalaj Atığı</th><td>21,47 kg/gün evsel nitelikli katı atık; 6,44 kg/gün ambalaj atığı [s. 48] <span class="pno">[s. 48]</span></td></tr>
+<tr><th>Ocak Basamak ve Şev Geometrisi</th><td>8 m basamak yüksekliği, 8 m basamak genişliği, 50° basamak şev eğimi, 24° genel şev eğimi [s. 18] <span class="pno">[s. 18]</span></td></tr>
+<tr><th>Kırma Eleme Aktivasyon Ünitesi Kapasitesi</th><td>Yıllık 100 ton (rapor metninde beyan edilen değer) [s. 18] <span class="pno">[s. 18]</span></td></tr></table>
+  <h3>Bilimsel ve Metodolojik Bulgular</h3><section class="card"><div class="hit"><span class="badge urgent">YÜKSEK</span> <strong>En yakın yapıya 20 metre mesafe ve ölçüm takvimi eksikliği</strong> <span class="pno">[s. 30, s. 60]</span> — En yakın yapı/konutun proje alanının kuzeyinde yalnızca 20 metre mesafede bulunduğu belirtilmektedir [s. 30]. Buna karşın ÇED Başvuru Dosyası kesitlerinde toz ve gürültüye yönelik mevcut durum ölçümü bulunmamakta, Çevre İzleme Planı&#x27;nda ise izleme sıklığı ve metodu periyodik sayısal ölçümler yerine kurumun talebi doğrultusunda sahada gerçekleştirilecek gözlem çalışmalarına bırakılmaktadır [s. 60].</div>
+<div class="hit"><span class="badge urgent">YÜKSEK</span> <strong>Orman alanı statüsünde açık iç çelişki</strong> <span class="pno">[s. 44, s. 96]</span> — Ek-5 Duyarlı Yöreler kontrolünde proje alanının 6831 sayılı Orman Kanunu uyarınca orman alanı sayılan yerler içerisinde kalmadığı beyan edilmektedir [s. 44]. Buna karşın Çevresel ve Sosyal Yönetim Planı&#x27;nın Ormanlar ve Biyolojik Çeşitlilik başlığında alanlarda 6831 sayılı Orman Kanunu&#x27;nun 16. ve 17. maddeleri gereğince izinler alınacağı ve orman alanlarına atık atılmayacağı ifade edilmektedir [s. 96].</div>
+<div class="hit"><span class="badge urgent">YÜKSEK</span> <strong>Geniş ölçekli mera ve tarım arazisi kaybı ile tamamlanmamış izinler</strong> <span class="pno">[s. 22, s. 23, s. 44, s. 45]</span> — 531.500 m²&#x27;lik proje alanının %63,3&#x27;ü mera (336.228 m²) ve %22,9&#x27;u tarla (121.626,53 m²) vasfındadır [s. 22, 23]. 4342 sayılı Mera Kanunu kapsamında tahsis amacı değişikliği ve 5403 sayılı Kanun kapsamında tarım dışı kullanım izni henüz alınmamış olup, dört adet tarla parselinin mülkiyetinin henüz satın alma aşamasında olduğu görülmektedir [s. 23, 44, 45].</div>
+<div class="hit"><span class="badge warn">ORTA</span> <strong>Mevsimsel dere yatakları ve su temini belirsizliği</strong> <span class="pno">[s. 18, s. 40, s. 52, s. 145]</span> — Proje alanı içinde haritalarda mevsimsel akış gösteren dere yatakları bulunduğu belirtilmekte ancak bırakılacak koruma bantlarının genişliği ile yüzey akışı/erozyon önlemlerine dair hidrolik hesaplar sunulmamaktadır [s. 18]. Ayrıca MAPEG işletme projesinde suyun yeterli gelmesi halinde yeraltı suyundan sağlanacağı belirtilirken [s. 145], ÇED başvuru metninde toz bastırma amaçlı sulama suyunun miktarı ve su kaynağı belirtilmemiştir [s. 40, 52].</div>
+<div class="hit"><span class="badge warn">ORTA</span> <strong>Tesis kapasitesi ve personel verilerinde tutarsızlıklar</strong> <span class="pno">[s. 18, s. 23, s. 40, s. 47, s. 146]</span> — 531.500 m² açık işletme alanına ve 3.500.000 TL makine-ekipman bedeline sahip Kırma Eleme Aktivasyon Ünitesi&#x27;nin kapasitesi metinde yıllık 100 ton olarak yazılmıştır ki bu değer ölçekle tutarsız veya birim hatalı görünmektedir [s. 18, 23]. Ayrıca ÇED metninde toplam personel 19 kişi olarak verilirken, ekteki MAPEG Maden İşletme Projesi&#x27;nde 11 personel ve yılda 10 ay açık ocak çalışması öngörülmektedir [s. 40, 47, 146].</div>
+<div class="hit"><span class="badge warn">ORTA</span> <strong>Atıksu ve kimyasal aktivasyon proses detaylarının eksikliği</strong> <span class="pno">[s. 18, s. 52]</span> — Kurulacak ünite &#x27;Kırma Eleme Aktivasyon Ünitesi&#x27; olarak adlandırılmasına rağmen bentonit aktivasyonunda kullanılacak katkı maddeleri (örneğin soda külü veya kimyasallar) ve proses emisyonları/atıkları hakkında bilgi yer almamakta, yalnızca personel kaynaklı 2,05 m³/gün evsel atıksu hesaplanmaktadır [s. 18, 52].</div></section>
+  <h3>HKT Tutanakları ve İdari Başvurular İçin Taslak Teknik Sorular</h3><ul><li>Proje alanının kuzeyinde yalnızca 20 metre mesafede bulunan en yakın yapı/konut [s. 30] için açık ocak kazısı, nakliye ve kırma-eleme faaliyetlerinden kaynaklanacak PM10/PM2,5 toz ve gürültü emisyonlarına karşı sağlık koruma bandı ve emniyet mesafesi nasıl sağlanacaktır; Çevre İzleme Planı&#x27;nda neden düzenli akredite ölçüm periyotları yerine yalnızca kurum talebine bağlı saha gözlemi öngörülmüştür [s. 60]? <span class="pno">[s. 30, s. 60]</span></li>
+<li>Ek-5 Duyarlı Yöreler bölümünde proje alanının 6831 sayılı Orman Kanunu kapsamında orman alanı içinde kalmadığı belirtilirken [s. 44], Çevresel ve Sosyal Yönetim Planı&#x27;nda aynı kanunun 16. ve 17. maddeleri uyarınca izin alınacağının yazılmasının [s. 96] nedeni nedir; proje sınırlarının orman kadastrosu ile kesin çakışma durumu nedir? <span class="pno">[s. 44, s. 96]</span></li>
+<li>Toplam 531.500 m²&#x27;lik alanın 336.228 m²&#x27;sinin mera ve 121.626,53 m²&#x27;sinin tarla niteliğinde olduğu, ayrıca bazı tarlaların henüz mülkiyet devrinin yapılmadığı belirtilmektedir [s. 23, 44, 45]. Tüney Köyü tarım ve hayvancılığı üzerindeki bu arazi kaybına karşın yer seçimi alternatifleri ve 4342 ile 5403 sayılı kanunlar kapsamındaki değerlendirmeler ÇED sürecinde hangi somut kriterlerle incelenecektir? <span class="pno">[s. 22, s. 23, s. 44, s. 45]</span></li>
+<li>Proje alanı içerisindeki mevsimsel dere yataklarının her iki tarafında bırakılacak koruma bantlarının genişliği kaç metredir [s. 18] ve toz bastırma amaçlı kullanılacak sulama suyu miktarı ile yeraltı/yüzey suyu kaynağının sürdürülebilir debisi [s. 40, 52, 145] hidrojeolojik çalışma ile ortaya konulmuş mudur? <span class="pno">[s. 18, s. 40, s. 52, s. 145]</span></li>
+<li>Kırma Eleme Aktivasyon Ünitesi kapasitesi metinde yıllık 100 ton olarak belirtilmekte [s. 18], personel sayısı ise ÇED dosyasında 19 [s. 40], MAPEG projesinde 11 [s. 146] olarak geçmektedir. Projenin gerçek yıllık tüvenan kazı, pasa, aktivasyon üretim miktarları ve proseste kullanılacak olası kimyasal katkı maddeleri nelerdir? <span class="pno">[s. 18, s. 23, s. 40, s. 146]</span></li></ul>
+  <p class="sub"><em>İnceleme sınırları:</em> Toplam 191 sayfalık PDF dosyasının 43 sayfası taranmış/görsel nitelikte olup metin çıkarılamamıştır; bu değerlendirme yalnızca sağlanan 26 sayfalık metin kesitlerine ([1, 2, 3, 4, 18, 22, 23, 30, 31, 40, 44, 45, 47, 48, 52, 59, 60, 84, 85, 92, 93, 96, 141, 142, 145, 146]) dayanmaktadır. İçindekiler dizininde ([s. 3]) yer alan geçmiş ÇED Gerekli Değildir kararları ve üretim planı tabloları (Bölüm I), jeoloji/deprem/hava kalitesi ve flora-fauna alt bölümleri (Bölüm II), sera gazı ve iklim değişikliği bölümü (Bölüm III-b, c), Kümülatif ÇED bölümü (Bölüm IV) ile eklerdeki kurum görüşleri sunulan kesitler dışında kaldığından doğrulanamamıştır.</p>
+
+
+  <h2>Resmi Duyuru Metni</h2>
+  <blockquote>ÇANKIRI ili MERKEZ,  ilcesinde ÇANKIRI ili MERKEZ ilçesi sınırları içerisinde Yüksel Ceylan Motorlu Araçlar İnşaat Gıda Hayvancılık Tarım Madencilik Sanayi Ve Ticaret Anonim Şirketi tarafından yapılması planlanan RN:200707469 (ER: 3147107) Nolu Bentonit Ocağı Kapasite Artışı ve Cevher Hazırlama Tesisi projesi ile ilgili Çevresel Etki Değerlendirme süreci başlamış ve Çevresel Etki Değerlendirmesi Başvuru Dosyası halkın görüşüne açılmıştır.Söz konusu projeye ilişkin, halkı proje hakkında bilgilendirmek, görüş ve önerilerini almak amacıyla ÇED Yönetmeliğinin 9. maddesi gereğince 22/12/2026 tarihinde Halkın Katılım Toplantısı düzenlenecektir.ÇED Başvuru Dosyasını İncelemek isteyenler Bakanlık Merkezinde veya ÇANKIRI Çevre ve Şehircilik İl Müdürlüklerinde duyuru tarihinden itibaren raporu inceleyerek, zamanlama takvimi içerisinde proje hakkında Bakanlığa veya Valiliğe görüş bildirebilirler. Halkın Katılımı Toplantısı yeri ve saati ile ilgili ÇED İzin Denetim Genel Müdürlüğü ve ÇANKIRI Çevre, Şehircilik ve İklim Değişikliği İl Müdürlüğünden bilgi alınabilir. İlgililere ve kamuoyuna duyurulur.</blockquote>
+
+  <h2>Otomatik Metin Taraması (Deterministik)</h2>
+  <table class="kv"><tr><th>Saha veya arazi çalışması ifadesi</th><td><span class="badge ok">Metinde yer almaktadır</span></td></tr>
+<tr><th>Literatür taraması ifadesi</th><td><span class="badge urgent">Metinde tespit edilemedi; doğrudan PDF üzerinden kontrol ediniz</span></td></tr>
+<tr><th>Mevsimsel örnekleme ifadesi</th><td><span class="badge ok">Metinde yer almaktadır</span></td></tr>
+<tr><th>Kümülatif etki değerlendirmesi ifadesi</th><td><span class="badge ok">Metinde yer almaktadır</span></td></tr>
+<tr><th>3573 sayılı Zeytincilik Kanunu veya zeytinlik ifadesi</th><td><span class="badge urgent">Metinde tespit edilemedi; doğrudan PDF üzerinden kontrol ediniz</span></td></tr>
+<tr><th>Yeraltı suyu, akifer veya hidrojeoloji ifadesi</th><td><span class="badge ok">Metinde yer almaktadır</span></td></tr>
+<tr><th>Endemik tür, IUCN veya Bern Sözleşmesi ifadesi</th><td><span class="badge ok">Metinde yer almaktadır</span></td></tr></table>
+  <p class="sub">Metin katmanı (OCR) bulunmayan taranmış harita ve kurum görüşü ekleri otomatik metin taramasına dahil edilmemiştir.</p>
+
+  <h2>Sayfa Kaynaklı Çıkarılan Bulgular</h2>
+  <div class="cards"><section class="card"><h3>Koordinatlar, Parsel ve Alan Büyüklüğü <span style="color:var(--muted);font-weight:400;font-size:0.85rem">(41 sayfa: s.2, s.5, s.6, s.8, s.11, s.12, s.13, s.14, s.15, s.20, s.21, s.22, s.23, s.24 (+27 sayfa))</span></h3><div class="hit"><span class="pno">[s. 2]</span> <code>utm</code> — …üm alanı dâhil) planlanan açık işletmeler, Ek-2 Listesi; Madde 45- Madencilik projeleri: e) Kırma, eleme, yıkama, kurutma ve cevher hazırlama işlemlerinden en az birini yapan tesisler, Projenin Ana NACE Kodu: 08 99 90 - Başka yerde sınıf…</div>
+<div class="hit"><span class="pno">[s. 5]</span> <code>Koordinat</code> — …rafik Yönetim Planı, Sera Gazı Azaltım Planı, Çevresel ve Sosyal Yönetim Planı vb.) VII-2 Proje İçin Seçilen Yerin Koordinatları VII-3 Proje İçin Belirlenen Yer Ve Alternatiflerinin Varsa; Çevre Düzeni, Nazım, Uygulama İmar Planı, Vaziyet…</div>
+<div class="hit"><span class="pno">[s. 6]</span> <code>343,76 hektar</code> — …Kapasite Artışı ve Cevher Hazırlama Tesisi” projesinin gerçekleştirilmesi planlanmaktadır. 200707469 Ruhsat Nolu ve 343,76 hektardan oluşan saha Maden ve Petrol İşleri Genel Müdürlüğü (MAPEG) tarafından Yüksel Ceylan Motorlu Araçlar İnşaat Gıda Hay…</div>
+<div class="hit"><span class="pno">[s. 6]</span> <code>343,76 ha</code> — …3147107 Grubu IV. Grup (a) Yürürlüğe Giriş Tarihi 23.01.2023 Ruhsat Bitim Tarihi 23.01.2033 Ruhsat İzin Alanı 343,76 ha Safhası İşletme Ruhsat Sahibi Yüksel Ceylan Motorlu Araçlar İnşaat Gıda Hayvancılık Tarım Madencilik Sanayi Ve Tic…</div>
+<div class="hit"><span class="pno">[s. 6]</span> <code>12,65 ha</code> — …“ÇED Gerekli Değildir” Kararı verilmiştir (Bkz. Ek-VII-5.1). 2015 yılı ÇED Gerekli Değildir Kararı’na esas ÇED alanı 12,65 ha büyüklüğündedir. Şekil 1. 2015 Yılı ÇED Gerekli Değildir Kararına Esas ÇED Alanı</div>
+<div class="hit"><span class="pno">[s. 8]</span> <code>24,87 ha</code> — …CAĞI KAPASİTE ARTIŞI VE CEVHER HAZIRLAMA TESİSİ ÇED BAŞVURU DOSYASI 3 Mevcut durumda ÇED Kararı bulunan toplam 24,87 ha büyüklüğündeki proje alanı, faaliyetlerin niteliğine göre 3 ayrı poligondan oluşmaktadır. Bu kapsamda, 22,20 ha büyükl…</div></section><section class="card"><h3>Su Kullanımı, Hidrojeoloji ve Deşarj <span style="color:var(--muted);font-weight:400;font-size:0.85rem">(10 sayfa: s.40, s.45, s.47, s.52, s.54, s.61, s.95, s.129, s.167, s.173)</span></h3><div class="hit"><span class="pno">[s. 40]</span> <code>yeraltı suyu</code> — …az aylarında ise debileri azalmaktadır. Bölgede yer alan dere ve çaylar tarımsal sulama, ekosistemlerin devamlılığı ve yeraltı suyu beslenmesi açısından önem taşımaktadır. Çankırı ilinin içme ve kullanma suyu ihtiyacı büyük ölçüde yeraltı su kaynak…</div>
+<div class="hit"><span class="pno">[s. 40]</span> <code>6,1 m3/gün</code> — …nım miktarı = Kişi x Ort. Su Tüketimi = 19 kişi x 321 litre/kişi.gün = 6.099 lt/gün = 6,1 m3/gün olarak hesaplanmıştır.</div>
+<div class="hit"><span class="pno">[s. 45]</span> <code>sulak alan</code> — …r, bataklık sazlık ve turbiyeler ile bu alanların kıyı kenar çizgisinden itibaren kara tarafına doğru ekolojik açıdan sulak alan kalan yerler içerisinde kalmamaktadır. ç) Göller, akarsular ve yeraltı suyu işletme sahaları içerisinde kalmamaktad…</div>
+<div class="hit"><span class="pno">[s. 45]</span> <code>yeraltı suyu</code> — …aren kara tarafına doğru ekolojik açıdan sulak alan kalan yerler içerisinde kalmamaktadır. ç) Göller, akarsular ve yeraltı suyu işletme sahaları içerisinde kalmamaktadır. d) Bilimsel araştırmalar için önem arzeden ve/veya nesli tehlikeye düşmü…</div>
+<div class="hit"><span class="pno">[s. 47]</span> <code>atıksu</code> — …faaliyetlerinden kaynaklı toz oluşumu, iş makinelerinde kullanılan yakıt sonrasında emisyon oluşumu, gürültü oluşumu, atıksu ve katı atık oluşumu vb. çevresel etki oluşumu söz konusu olacaktır. Proje kapsamında çalışacak personelin tüm ihtiyac…</div>
+<div class="hit"><span class="pno">[s. 52]</span> <code>Atıksu</code> — …“Atık Yönetimi Yönetmeliği” hükümleri lisanslı bertaraf tesislerine iletilecektir. Sıvı Atıklar Evsel Nitelikli Atıksu Proje kapsamında personelin içme ve kullanma suyu ihtiyacının karşılanması amaçlı su kullanımı olacaktır. Proje kap…</div></section><section class="card"><h3>Korunan Alanlar, Orman ve Zeytinlikler <span style="color:var(--muted);font-weight:400;font-size:0.85rem">(4 sayfa: s.22, s.23, s.44, s.45)</span></h3><div class="hit"><span class="pno">[s. 22]</span> <code>mera alanı</code> — …sellerden oluşmaktadır. Mera Tahsis Amacı Değişikliği Bedeli Proje alanı içerisinde 336.228,00 m² (336,228 dönüm) mera alanı bulunmaktadır. Söz konusu mera alanı için mera tahsis bedeli ve kuru ot bedeli hesabında, 20 yıllık kullanım dönemi es…</div>
+<div class="hit"><span class="pno">[s. 23]</span> <code>mera alanı</code> — …RTIŞI VE CEVHER HAZIRLAMA TESİSİ ÇED BAŞVURU DOSYASI 18 Buna göre, proje kapsamında kullanılacak 336.228,00 m² mera alanı için 20 yıllık kullanım dönemi esas alınarak mera tahsis bedeli ve kuru ot bedeli toplamı 5.043.420,00 TL olarak hesa…</div>
+<div class="hit"><span class="pno">[s. 44]</span> <code>Özel Çevre Koruma</code> — …tanımlanan alanlar içerisinde kalmamaktadır. f) Çevre Kanununun 9 uncu maddesi uyarınca Cumhurbaşkanı tarafından &quot;Özel Çevre Koruma Bölgeleri&quot; olarak tespit ve ilan edilen alanlar içerisinde kalmamaktadır. g) Boğaziçi Kanununa göre koruma altına…</div>
+<div class="hit"><span class="pno">[s. 44]</span> <code>orman alanı</code> — …adır. g) Boğaziçi Kanununa göre koruma altına alınan alanlar içerisinde kalmamaktadır. ğ) Orman Kanunu uyarınca orman alanı sayılan yerler içerisinde kalmamaktadır. h) Kıyı Kanunu gereğince yapı yasağı getirilen alanlar içerisinde kalmamak…</div>
+<div class="hit"><span class="pno">[s. 45]</span> <code>kıyı kenar</code> — …ı olmak üzere canlıların yaşama ortamı olarak önem taşıyan bütün sular, bataklık sazlık ve turbiyeler ile bu alanların kıyı kenar çizgisinden itibaren kara tarafına doğru ekolojik açıdan sulak alan kalan yerler içerisinde kalmamaktadır. ç) Göll…</div>
+<div class="hit"><span class="pno">[s. 45]</span> <code>sulak alan</code> — …r, bataklık sazlık ve turbiyeler ile bu alanların kıyı kenar çizgisinden itibaren kara tarafına doğru ekolojik açıdan sulak alan kalan yerler içerisinde kalmamaktadır. ç) Göller, akarsular ve yeraltı suyu işletme sahaları içerisinde kalmamaktad…</div></section><section class="card"><h3>Flora, Fauna ve Saha Metodolojisi <span style="color:var(--muted);font-weight:400;font-size:0.85rem">(5 sayfa: s.18, s.44, s.45, s.96, s.172)</span></h3><div class="hit"><span class="pno">[s. 18]</span> <code>mevsimsel</code> — …zyon ve şev bozulmaları gibi risklere karşı gerekli teknik önlemler alınacaktır. Proje alanı içerisinde haritalarda mevsimsel akış gösteren dere yatakları bulunmakla birlikte, bu alanlara herhangi bir müdahalede bulunulmayacaktır. Dere yataklar…</div>
+<div class="hit"><span class="pno">[s. 44]</span> <code>BERN Sözleşmesi</code> — …sözleşmeler uyarınca korunması gerekli alanlar a)&quot;Avrupa’nın Yaban Hayatı ve Yaşama Ortamlarını Koruma Sözleşmesi&quot; (BERN Sözleşmesi) uyarınca koruma altına alınmış alanlardan &quot;Önemli Deniz Kaplumbağası Üreme Alanlarında belirtilen I. ve II. Koruma B…</div>
+<div class="hit"><span class="pno">[s. 45]</span> <code>endemik</code> — …r. d) Bilimsel araştırmalar için önem arzeden ve/veya nesli tehlikeye düşmüş veya düşebilir türler ve ülkemiz için endemik olan türlerin yaşama ortamı olan alanlar, biyosfer rezervi, biyotoplar, biyogenetik rezerv alanları, benzersiz özellik…</div>
+<div class="hit"><span class="pno">[s. 96]</span> <code>biyoçeşitlilik</code> — …lması durumunda hedeflere yönelik uygulamaları değiştirmek Çevre, İş Sağlığı ve Güvenliği Birim Müdürü • Personele biyoçeşitlilik ve ekosistem üzerine eğitimlerin verilmesini sağlamak • Projeden kaynaklı atıkların doğal ortama atılmasını önlemek…</div>
+<div class="hit"><span class="pno">[s. 172]</span> <code>flora ve fauna</code> — …müteakip ağaçlandırma işlemi yapılarak saha rehabilite edilecektir. Bu şekilde sahada doğal dengenin tekrar kurulması, flora ve fauna topluluklarına tekrar yaşam alanı sağlanması amaçlanmıştır. e) Binalarla İlgili Alınacak Güvenlik Önlemleri Çalışma ala…</div></section><section class="card"><h3>Emisyonlar, Jeokimya ve Atıklar <span style="color:var(--muted);font-weight:400;font-size:0.85rem">(26 sayfa: s.17, s.26, s.38, s.39, s.47, s.48, s.51, s.52, s.54, s.55, s.57, s.58, s.60, s.63 (+12 sayfa))</span></h3><div class="hit"><span class="pno">[s. 17]</span> <code>gürültü</code> — …etim tesisine nakledilecektir. Üretim faaliyetleri sırasında iş makinelerinin çalışmasına bağlı olarak toz emisyonu ve gürültü oluşacak olup, bu etkilerin en aza indirilmesine yönelik gerekli çevresel tedbirler uygulanacaktır. Ocak Tasarımı…</div>
+<div class="hit"><span class="pno">[s. 26]</span> <code>gürültü</code> — …tlar ve iş sağlığı ve güvenliği esasları doğrultusunda yürütülecektir. Üretim faaliyetleri sırasında oluşabilecek toz, gürültü ve diğer çevresel etkilerin en aza indirilmesi amacıyla gerekli mühendislik önlemleri uygulanacak, yüzey sularının kor…</div>
+<div class="hit"><span class="pno">[s. 38]</span> <code>Deprem</code> — …kil 14. Çankırı Şehri Ve Yakın Çevresinin Jeoloji Haritası Doğal Afet Durumu 1996 yılında yürürlüğe giren Türkiye Deprem Bölgeleri Haritası, AFAD Deprem Dairesi Başkanlığı tarafından yenilenmiş, 18 Mart 2018 tarih ve 30364 sayılı (mükerrer…</div>
+<div class="hit"><span class="pno">[s. 39]</span> <code>Deprem</code> — …7107) NO’LU BENTONİT OCAĞI KAPASİTE ARTIŞI VE CEVHER HAZIRLAMA TESİSİ ÇED BAŞVURU DOSYASI 34 Kaynak: Türkiye Deprem Tehlike Haritaları İnteraktif Web Uygulaması, https://tdth.afad.gov.tr/TDTH/main.xhtml, E.T.: 16.07.2026. Şekil 15.…</div>
+<div class="hit"><span class="pno">[s. 47]</span> <code>Kümülatif</code> — …ojenin; a) Çevreyi Etkileyebilecek Olası Sorunların Belirlenmesi, Kirleticilerin Miktarı, Alıcı Ortamla Etkileşimi, Kümülatif Etkilerin Belirlenmesi Proje tüm aşamalarında genel olarak; kullanılacak makine-ekipmanlar ve üretim faaliyetlerin…</div>
+<div class="hit"><span class="pno">[s. 47]</span> <code>gürültü</code> — …manlar ve üretim faaliyetlerinden kaynaklı toz oluşumu, iş makinelerinde kullanılan yakıt sonrasında emisyon oluşumu, gürültü oluşumu, atıksu ve katı atık oluşumu vb. çevresel etki oluşumu söz konusu olacaktır. Proje kapsamında çalışacak person…</div></section><section class="card"><h3>Proje Bedeli, Güç ve Kapasite <span style="color:var(--muted);font-weight:400;font-size:0.85rem">(30 sayfa: s.2, s.5, s.6, s.8, s.11, s.14, s.18, s.19, s.22, s.23, s.25, s.27, s.30, s.40 (+16 sayfa))</span></h3><div class="hit"><span class="pno">[s. 2]</span> <code>Kapasite</code> — …2 397 39 90 e posta: mustafa.guzel@ceylanmineral.com Projenin Adı: RN:200707469 (ER: 3147107) No’lu Bentonit Ocağı Kapasite Artışı ve Cevher Hazırlama Tesisi Proje Bedeli: 9.167.836,84 TL Proje İçin Seçilen Yerin Açık Adresi (İli, İlçesi,…</div>
+<div class="hit"><span class="pno">[s. 2]</span> <code>Proje Bedeli</code> — …mineral.com Projenin Adı: RN:200707469 (ER: 3147107) No’lu Bentonit Ocağı Kapasite Artışı ve Cevher Hazırlama Tesisi Proje Bedeli: 9.167.836,84 TL Proje İçin Seçilen Yerin Açık Adresi (İli, İlçesi, Mevkii): Çankırı İli, Merkez İlçesi, Tüney K…</div>
+<div class="hit"><span class="pno">[s. 5]</span> <code>Kapasite</code> — …umlardan Alınmış Belgeler VII-5.1 ÇED Kararları VII-5.2 Faaliyet Belgesi ve İşyeri Açma ve Çalışma Ruhsatı VII-5.3 Kapasite Raporu VII-6 Vekaletname, İmza Sirküleri ve Türkiye Ticaret Sicili Gazetesi (e-ÇED Sistemi Yayınlanmayacak Döküman…</div>
+<div class="hit"><span class="pno">[s. 6]</span> <code>Kapasite</code> — …vancılık Tarım Madencilik Sanayi Ve Ticaret Anonim Şirketi tarafından “RN:200707469 (ER: 3147107) No’lu Bentonit Ocağı Kapasite Artışı ve Cevher Hazırlama Tesisi” projesinin gerçekleştirilmesi planlanmaktadır. 200707469 Ruhsat Nolu ve 343,76 h…</div>
+<div class="hit"><span class="pno">[s. 8]</span> <code>Kapasite</code> — …l edilmemiştir. Proje kapsamında söz konusu alanlarda herhangi bir çalışma gerçekleştirilmeyecektir. Mevcut duruma ait Kapasite Raporu Ek- VII-5.3’de verilmektedir. 1. Poligon kapsamında mevcut ÇED alanına ilave alan dahil edilerek alan artışı…</div>
+<div class="hit"><span class="pno">[s. 11]</span> <code>Kapasite</code> — …2,17 ha 3.poligon = 0,5 ha 3.poligon = 0,5 ha Toplam ÇED Alanı: 15,32 ha Toplam ÇED Alanı: 24,87 ha Üretim Kapasitesi 50.000 ton/yıl 240.000 ton/yıl 240.000 ton/yıl 240.000 ton/yıl 10.000 ton/yıl 250.000 ton/yıl Proje Konus…</div></section></div>
+
+  <h2>Belge Bölüm Haritası</h2>
+  <ul><li><span class="pno">[s. 3]</span> BÖLÜM III. PROJENİN İNŞAAT VE İŞLETME AŞAMASINDA ÇEVRESEL ETKİLERİ VE ALINACAK</li>
+<li><span class="pno">[s. 14]</span> BÖLÜM I. PROJENİN TANIMI VE ÖZELLİKLERİ</li>
+<li><span class="pno">[s. 30]</span> BÖLÜM II. PROJE YERİ VE ETKİ ALANININ MEVCUT ÇEVRESEL ÖZELLİKLERİ</li>
+<li><span class="pno">[s. 47]</span> BÖLÜM III. PROJENİN İNŞAAT VE İŞLETME AŞAMASINDA ÇEVRESEL ETKİLERİ VE</li>
+<li><span class="pno">[s. 57]</span> BÖLÜM IV. KÜMÜLATİF ÇEVRESEL ETKİ DEĞERLENDİRME</li>
+<li><span class="pno">[s. 59]</span> BÖLÜM V. ÇEVRESEL VE SOSYAL EYLEM PLANI</li>
+<li><span class="pno">[s. 64]</span> BÖLÜM VI: HALKIN BİLGİLENDİRİLMESİ VE SÜRECE KATILIMI İLE PAYDAŞ KATILIM</li>
+<li><span class="pno">[s. 68]</span> BÖLÜM VII. NOTLAR, KAYNAKLAR VE EKLER</li>
+<li><span class="pno">[s. 84]</span> ÇEVRESEL VE SOSYAL YÖNETİM</li>
+<li><span class="pno">[s. 92]</span> ÇEVRESEL VE SOSYAL YÖNETİM PLANI</li>
+<li><span class="pno">[s. 141]</span> BÖLÜM I</li>
+<li><span class="pno">[s. 141]</span> BÖLÜM II</li>
+<li><span class="pno">[s. 145]</span> BÖLÜM III</li>
+<li><span class="pno">[s. 147]</span> BÖLÜM IV</li>
+<li><span class="pno">[s. 166]</span> BÖLÜM V</li>
+<li><span class="pno">[s. 174]</span> BÖLÜM VI</li>
+<li><span class="pno">[s. 179]</span> BÖLÜM VII</li></ul>
+
+  <div class="notice">
+    Bu sayfa, T.C. Çevre, Şehircilik ve İklim Değişikliği Bakanlığı'nın kamuya açık <code>eced-duyuru.csb.gov.tr</code> duyuru portalındaki kayıtlar esas alınarak bilgilendirme amacıyla hazırlanmıştır. Alıntıların tamamı 1 tabanlı PDF sayfa numarasıyla (<code>[s. N]</code>) gösterilmektedir. Yasal süreler otomatik olarak hesaplanır; kesin sürelerin ve hukuki başvuru yollarının yetkili hukukçular tarafından teyit edilmesi gerekir.
+  </div>
+</div>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script>
+(() => {
+  if (typeof L === 'undefined') return;
+  const g = {"lat": 40.34797, "lon": 33.5276, "zoom": 12, "precision": "exact_pdf", "points": [[40.35145, 33.51709], [40.35134, 33.54064], [40.34233, 33.54057], [40.33335, 33.53461], [40.33342, 33.51836], [40.34024, 33.52015], [40.35034, 33.52254], [40.35094, 33.52973], [40.34595, 33.53227], [40.34177, 33.52895], [40.34115, 33.52706], [40.35025, 33.52369], [40.35034, 33.52475], [40.34944, 33.52488], [40.34934, 33.52383], [40.34797, 33.52815], [40.34777, 33.52871], [40.34718, 33.52837], [40.34743, 33.52781], [40.34851, 33.52692], [40.34799, 33.52797], [40.3474, 33.52766], [40.34786, 33.52676], [40.34691, 33.52909], [40.34648, 33.52936], [40.34631, 33.52903], [40.34664, 33.52879], [40.3501, 33.52352], [40.35031, 33.52572], [40.35071, 33.5274], [40.35054, 33.52882], [40.35038, 33.53002], [40.34866, 33.53089], [40.34777, 33.53064], [40.3467, 33.53146], [40.34648, 33.53128], [40.3462, 33.53099], [40.34591, 33.53071], [40.34563, 33.53038], [40.35171, 33.51811]], "label": "ÇANKIRI / MERKEZ — RN:200707469 (ER: 3147107) Nolu Bentonit Ocağı Kapasite Artışı ve Cevher Hazırlama Tesisi"};
+  const map = L.map('digest-map').setView([g.lat, g.lon], g.zoom);
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    maxZoom: 18,
+    attribution: '&copy; OpenStreetMap katkıda bulunanları'
+  }).addTo(map);
+  if (g.precision === 'exact_pdf' && g.points.length > 1) {
+    const latlngs = g.points.map(p => [p[0], p[1]]);
+    const poly = L.polyline(latlngs, { color: '#58a6ff', weight: 3, opacity: 0.85 }).addTo(map);
+    for (const ll of latlngs.slice(0, 30)) {
+      L.circleMarker(ll, { radius: 4, color: '#ffffff', fillColor: '#f85149', fillOpacity: 0.9, weight: 1 }).addTo(map);
+    }
+    map.fitBounds(poly.getBounds().pad(0.25));
+  } else {
+    L.circleMarker([g.lat, g.lon], {
+      radius: g.precision === 'exact_pdf' ? 8 : 11,
+      color: '#ffffff',
+      fillColor: g.precision === 'exact_pdf' ? '#f85149' : '#58a6ff',
+      fillOpacity: g.precision === 'exact_pdf' ? 0.9 : 0.45,
+      weight: 2
+    }).bindPopup(g.label).addTo(map).openPopup();
+  }
+})();
+</script>
+</body>
+</html>
