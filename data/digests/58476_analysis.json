@@ -36,7 +36,7 @@
     "statutory_clocks": [
       {
         "code": "iyuk_20a",
-        "kind": "İYUK Madde 20/A iptal davası süresi (30 gün; İYUK 11 süreyi durdurmaz)",
+        "kind": "İYUK Madde 20/A iptal davası süresi (30 takvim günü; İYUK 11 süreyi durdurmaz)",
         "deadline": "2026-12-11",
         "days_remaining": 21
       }

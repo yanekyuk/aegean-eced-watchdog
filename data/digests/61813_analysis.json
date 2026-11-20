@@ -33,10 +33,10 @@
     "announcement_date": "2026-11-19",
     "statutory_clocks": [
       {
-        "code": "aski_10d",
-        "kind": "10 günlük halkın görüş ve önerilerine açılma (askı) süresi",
-        "deadline": "2026-11-29",
-        "days_remaining": 9
+        "code": "process_open",
+        "kind": "Karar öncesi inceleme süreci (ÇED Yönetmeliği m. 8/16; süreç boyunca yazılı görüş verilebilir)",
+        "deadline": null,
+        "days_remaining": null
       }
     ],
     "filing_key": "61813:19.11.2026:ÇED Süreci Başlayan",

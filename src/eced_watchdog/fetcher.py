@@ -38,7 +38,34 @@ def normalize_tr_upper(text: str) -> str:
     return text.replace("i", "İ").replace("ı", "I").upper().strip()
 
 
-def compute_deadlines(decision_type: str, date_str: str, today: date) -> dict[str, Any]:
+def _extract_meeting_date(detail_text: str, ann_date: date) -> date | None:
+    """Extract an upcoming HKT / İDK meeting date from official announcement text."""
+    if not detail_text:
+        return None
+    # Match DD/MM/YYYY or DD.MM.YYYY
+    candidates: list[date] = []
+    for m in re.finditer(r"\b(\d{2})[./](\d{2})[./](\d{4})\b", detail_text):
+        day_s, mon_s, yr_s = m.group(1), m.group(2), m.group(3)
+        try:
+            d = date(int(yr_s), int(mon_s), int(day_s))
+        except ValueError:
+            continue
+        # Ignore regulation publication dates (e.g., 29.07.2022) or distant historical dates
+        if ann_date <= d <= ann_date + timedelta(days=180):
+            candidates.append(d)
+    if not candidates:
+        return None
+    # Prefer the earliest date on/after announcement date (the scheduled meeting date)
+    return min(candidates)
+
+
+def compute_deadlines(
+    decision_type: str,
+    date_str: str,
+    today: date,
+    detail_text: str = "",
+) -> dict[str, Any]:
+    """Compute legally accurate statutory clocks under ÇED Regulation (31907 RG + 2025/2026) & İYUK m. 20/A."""
     try:
         ann_date = datetime.strptime(date_str, "%d.%m.%Y").date()
     except ValueError:
@@ -47,40 +74,56 @@ def compute_deadlines(decision_type: str, date_str: str, today: date) -> dict[st
     clocks: list[dict[str, Any]] = []
     dt_lower = decision_type.lower()
 
+    # 1. Final administrative decisions: 30-day hard İYUK m. 20/A annulment clock (İYUK m. 11 does not toll)
     if "gerekli değil" in dt_lower or "çed olumlu" in dt_lower or "çed olumsuz" in dt_lower:
         cutoff = ann_date + timedelta(days=30)
         clocks.append(
             {
                 "code": "iyuk_20a",
-                "kind": "İYUK Madde 20/A iptal davası süresi (30 gün; İYUK 11 süreyi durdurmaz)",
+                "kind": "İYUK Madde 20/A iptal davası süresi (30 takvim günü; İYUK 11 süreyi durdurmaz)",
                 "deadline": cutoff.isoformat(),
                 "days_remaining": (cutoff - today).days,
             }
         )
-    if "hkt" in dt_lower or "halkın katılım" in dt_lower:
-        clocks.append(
-            {
-                "code": "hkt",
-                "kind": "Halkın Katılımı Toplantısı (HKT) duyurusu; toplantı tarihi resmi metinde yer alır",
-                "deadline": None,
-                "days_remaining": None,
-            }
-        )
-    if "başlayan" in dt_lower or "nihai" in dt_lower or "görüş" in dt_lower:
+    # 2. Final Ek-1 ÇED Report (Madde 14): 10-calendar-day public review / comment window
+    elif "nihai" in dt_lower or "görüş" in dt_lower:
         cutoff = ann_date + timedelta(days=10)
         clocks.append(
             {
                 "code": "aski_10d",
-                "kind": "10 günlük halkın görüş ve önerilerine açılma (askı) süresi",
+                "kind": "ÇED Yönetmeliği Madde 14 kapsamındaki 10 takvim günlük nihai askı ve görüş süresi",
                 "deadline": cutoff.isoformat(),
                 "days_remaining": (cutoff - today).days,
             }
         )
-    if "idk" in dt_lower or "İdk" in decision_type:
+    # 3. HKT (Madde 9): extract exact meeting date from announcement text when available
+    elif "hkt" in dt_lower or "halkın katılım" in dt_lower:
+        m_date = _extract_meeting_date(detail_text, ann_date)
+        clocks.append(
+            {
+                "code": "hkt",
+                "kind": "Halkın Katılımı Toplantısı (HKT — ÇED Yönetmeliği m. 9)",
+                "deadline": m_date.isoformat() if m_date else None,
+                "days_remaining": (m_date - today).days if m_date else None,
+            }
+        )
+    # 4. İDK (Madde 11-12): extract exact commission review date from announcement text when available
+    elif "idk" in dt_lower or "İdk" in decision_type:
+        m_date = _extract_meeting_date(detail_text, ann_date)
         clocks.append(
             {
                 "code": "idk",
-                "kind": "İnceleme Değerlendirme Komisyonu (İDK) süreci; toplantı tarihi resmi metinde yer alır",
+                "kind": "İnceleme Değerlendirme Komisyonu (İDK — ÇED Yönetmeliği m. 11–12)",
+                "deadline": m_date.isoformat() if m_date else None,
+                "days_remaining": (m_date - today).days if m_date else None,
+            }
+        )
+    # 5. Process initiation (Madde 8 / Madde 16): early-warning open review stage (no 10-day expiration)
+    elif "başlayan" in dt_lower:
+        clocks.append(
+            {
+                "code": "process_open",
+                "kind": "Karar öncesi inceleme süreci (ÇED Yönetmeliği m. 8/16; süreç boyunca yazılı görüş verilebilir)",
                 "deadline": None,
                 "days_remaining": None,
             }
@@ -331,7 +374,14 @@ def fetch_announcements(
             cached = existing_by_sig.get(sig)
             if cached and cached.get("detail_text") and cached.get("documents"):
                 merged = {**cached, **{k: v for k, v in row.items() if k not in {"row_index", "button_id"}}}
-                merged.update(compute_deadlines(merged["decision_type"], merged["announcement_date_tr"], today))
+                merged.update(
+                    compute_deadlines(
+                        merged["decision_type"],
+                        merged["announcement_date_tr"],
+                        today,
+                        merged.get("detail_text", ""),
+                    )
+                )
                 merged["filing_key"] = make_filing_key(merged)
                 return merged
 
@@ -369,7 +419,14 @@ def fetch_announcements(
                     time.sleep(delay_sec)
                     docs.append(_resolve_document_page(doc_client, lk["href"]))
             row["documents"] = docs
-            row.update(compute_deadlines(row["decision_type"], row["announcement_date_tr"], today))
+            row.update(
+                compute_deadlines(
+                    row["decision_type"],
+                    row["announcement_date_tr"],
+                    today,
+                    row.get("detail_text", ""),
+                )
+            )
             row["filing_key"] = make_filing_key(row)
             row["first_seen_at"] = datetime.now().isoformat(timespec="seconds")
             row.pop("row_index", None)
@@ -444,7 +501,14 @@ def merge_filings(
 
     merged = list(by_key.values())
     for f in merged:
-        f.update(compute_deadlines(f.get("decision_type", ""), f.get("announcement_date_tr", ""), today))
+        f.update(
+            compute_deadlines(
+                f.get("decision_type", ""),
+                f.get("announcement_date_tr", ""),
+                today,
+                f.get("detail_text", ""),
+            )
+        )
 
     merged.sort(
         key=lambda x: (

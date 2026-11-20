@@ -148,6 +148,7 @@ journalctl --user -u eced-watchdog.service -n 50 --no-pager
 | `--days N` | `7` | Lookback window in days |
 | `--provinces CODE:LABEL ...` | *(all 81)* | Restrict polling to chosen provinces |
 | `--max-digests N` | `5` | Max newly downloaded & synthesized PDFs per run |
+| `--workers N` | `4` | Parallel workers for PDF parsing & Gemini synthesis (Ministry PDF downloads remain capped at 2 concurrent) |
 | `--drop-pdfs` | `false` | Delete raw PDFs after extraction/synthesis |
 | `--skip-fetch` | `false` | Skip portal polling; use existing `data/filings.json` |
 | `--skip-digests` | `false` | Skip PDF extraction & LLM synthesis; rebuild `docs/` only |

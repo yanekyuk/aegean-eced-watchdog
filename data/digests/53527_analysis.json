@@ -34,9 +34,9 @@
     "statutory_clocks": [
       {
         "code": "idk",
-        "kind": "İnceleme Değerlendirme Komisyonu (İDK) süreci; toplantı tarihi resmi metinde yer alır",
-        "deadline": null,
-        "days_remaining": null
+        "kind": "İnceleme Değerlendirme Komisyonu (İDK — ÇED Yönetmeliği m. 11–12)",
+        "deadline": "2026-12-17",
+        "days_remaining": 27
       }
     ],
     "filing_key": "53527:19.11.2026:IDK",

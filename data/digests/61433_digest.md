@@ -16,7 +16,7 @@
 | **Announcement Date** | `30.10.2026` (uploaded `14/10/2026 05:41:51`) |
 
 **Statutory Deadlines (informational aid — verify with legal counsel):**
-- **Halkın Katılımı Toplantısı (HKT) duyurusu; toplantı tarihi resmi metinde yer alır:** `see text` 
+- **Halkın Katılımı Toplantısı (HKT — ÇED Yönetmeliği m. 9):** `2026-12-03` (`13 days remaining`)
 
 ## 2. AI-Assisted Scientific Synthesis (`gemini-4-hydrogen`)
 

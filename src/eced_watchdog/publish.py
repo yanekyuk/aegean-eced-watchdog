@@ -3,9 +3,11 @@
 from __future__ import annotations
 
 import argparse
+from concurrent.futures import ThreadPoolExecutor, as_completed
 import json
 import subprocess
 import sys
+import threading
 import xml.etree.ElementTree as ET
 from datetime import date, datetime
 from pathlib import Path
@@ -52,33 +54,46 @@ def actual_usage_cost(model: str, usage: dict[str, Any] | None) -> float | None:
 
 def _urgency_key(f: dict[str, Any]) -> tuple[int, int, int, str]:
     clocks = f.get("statutory_clocks") or []
-    active_days = [
+    hard_days = [
         c["days_remaining"]
         for c in clocks
-        if c.get("days_remaining") is not None and c["days_remaining"] >= 0
+        if c.get("code") in ("iyuk_20a", "aski_10d")
+        and c.get("days_remaining") is not None
+        and c["days_remaining"] >= 0
     ]
-    has_undated = any(c.get("days_remaining") is None for c in clocks)
+    meeting_days = [
+        c["days_remaining"]
+        for c in clocks
+        if c.get("code") in ("hkt", "idk")
+        and c.get("days_remaining") is not None
+        and c["days_remaining"] >= 0
+    ]
     is_ek1 = 1 if f.get("project_type") == "Ek-1" else 0
     ann = f.get("announcement_date") or "0000-00-00"
-    if active_days:
-        return (2, -min(active_days), is_ek1, ann)
-    if has_undated:
+    if hard_days:
+        return (3, -min(hard_days), is_ek1, ann)
+    if meeting_days:
+        return (2, -min(meeting_days), is_ek1, ann)
+    if any(c.get("code") in ("hkt", "idk", "process_open") for c in clocks):
         return (1, -999, is_ek1, ann)
     return (0, -9999, is_ek1, ann)
 
 
 def _urgency_label(f: dict[str, Any]) -> str:
     clocks = f.get("statutory_clocks") or []
-    active_days = [
-        c["days_remaining"]
-        for c in clocks
-        if c.get("days_remaining") is not None and c["days_remaining"] >= 0
-    ]
-    if active_days:
-        return f"{min(active_days):2d}d left"
-    if any(c.get("days_remaining") is None for c in clocks):
-        return "HKT/IDK "
-    return "expired "
+    for c in clocks:
+        code = c.get("code")
+        dr = c.get("days_remaining")
+        if code == "iyuk_20a" and dr is not None:
+            return f"İYUK {dr:2d}d" if dr >= 0 else "expired "
+        if code == "aski_10d" and dr is not None:
+            return f"Askı {dr:2d}d" if dr >= 0 else "expired "
+        if code in ("hkt", "idk"):
+            tag = "HKT" if code == "hkt" else "İDK"
+            return f"{tag}  {dr:2d}d" if (dr is not None and dr >= 0) else f"{tag}  -- "
+        if code == "process_open":
+            return "m.8/16  "
+    return "closed  "
 
 
 def find_missing_llm(
@@ -148,6 +163,7 @@ def main() -> None:
     parser.add_argument("--provinces", nargs="+", help="Optional CODE:LABEL province filter (default: all 81)")
     parser.add_argument("--skip-fetch", action="store_true", help="Skip live portal fetch; inspect existing data/filings.json")
     parser.add_argument("--keep-pdfs", action="store_true", help="Keep downloaded PDFs in data/pdfs/ instead of deleting after digest")
+    parser.add_argument("--workers", type=int, default=4, help="Parallel workers for PDF parsing & Gemini synthesis (default: 4; downloads stay capped at 2)")
     parser.add_argument(
         "--gemini-model",
         default=None,
@@ -298,17 +314,21 @@ def main() -> None:
                     print("Cancelled LLM generation.")
                     selected = []
 
-    # 3. Generate selected reports + rebuild site
-    print("\n=== [3/4] Generating digests & rebuilding static site ===")
+    # 3. Generate selected reports in parallel + rebuild site
+    workers = max(1, min(args.workers, len(selected) or 1))
+    print(f"\n=== [3/4] Generating digests ({workers} parallel workers, max 2 concurrent downloads) & rebuilding site ===")
     total_actual_usd = 0.0
     total_prompt_tok = 0
     total_out_tok = 0
     generated_ok = 0
+    print_lock = threading.Lock()
+    done_counter = 0
 
-    for idx, item in enumerate(selected, start=1):
+    def process_one(item: dict[str, Any]) -> tuple[dict[str, Any], dict[str, Any] | None, Exception | None]:
         f = item["filing"]
         fid = item["filing_id"]
-        print(f"  [{idx}/{len(selected)}] #{fid} ({f['province']}/{f['district']}, {f['project_type']})...")
+        with print_lock:
+            print(f"  [start] #{fid} ({f['province']}/{f['district']}, {f['project_type']}, {item['model']})...")
         try:
             res = ensure_digest_for_filing(
                 f,
@@ -319,24 +339,38 @@ def main() -> None:
                 gemini_api_key=gemini_key,
                 gemini_model=item["model"],
             )
-            if res and res.get("llm_synthesis"):
-                generated_ok += 1
-                llm_s = res["llm_synthesis"]
-                u = llm_s.get("usage") or {}
-                cost = actual_usage_cost(llm_s["model"], u)
-                if cost is not None:
-                    total_actual_usd += cost
-                total_prompt_tok += u.get("prompt_tokens") or 0
-                total_out_tok += (u.get("output_tokens") or 0) + (u.get("thoughts_tokens") or 0)
-                geo_p = (res["analysis"].get("geo") or {}).get("precision", "?")
-                n_flags = len(llm_s["result"].get("red_flags") or [])
-                cost_str = f"${cost:.4f}" if cost is not None else f"~${item['est_cost']:.3f}"
-                print(
-                    f"      OK: {res['analysis']['page_count']}p, geo={geo_p}, "
-                    f"{llm_s['model']} -> {n_flags} findings ({cost_str})"
-                )
+            return item, res, None
         except Exception as exc:
-            print(f"      WARN: failed #{fid}: {exc}")
+            return item, None, exc
+
+    if selected:
+        with ThreadPoolExecutor(max_workers=workers) as pool:
+            futures = [pool.submit(process_one, item) for item in selected]
+            for fut in as_completed(futures):
+                done_counter += 1
+                item, res, exc = fut.result()
+                f = item["filing"]
+                fid = item["filing_id"]
+                with print_lock:
+                    if exc is not None:
+                        print(f"  [{done_counter}/{len(selected)}] WARN #{fid}: {exc}")
+                    elif res and res.get("llm_synthesis"):
+                        generated_ok += 1
+                        llm_s = res["llm_synthesis"]
+                        u = llm_s.get("usage") or {}
+                        cost = actual_usage_cost(llm_s["model"], u)
+                        if cost is not None:
+                            total_actual_usd += cost
+                        total_prompt_tok += u.get("prompt_tokens") or 0
+                        total_out_tok += (u.get("output_tokens") or 0) + (u.get("thoughts_tokens") or 0)
+                        geo_p = (res["analysis"].get("geo") or {}).get("precision", "?")
+                        n_flags = len(llm_s["result"].get("red_flags") or [])
+                        cost_str = f"${cost:.4f}" if cost is not None else f"~${item['est_cost']:.3f}"
+                        print(
+                            f"  [{done_counter}/{len(selected)}] OK #{fid} ({f['province']}/{f['district']}): "
+                            f"{res['analysis']['page_count']}p, geo={geo_p}, "
+                            f"{llm_s['model']} -> {n_flags} findings ({cost_str})"
+                        )
 
     # Refresh countdowns on already-digested markdown files without calling LLM
     if digests_dir.exists():

@@ -34,7 +34,7 @@
     "statutory_clocks": [
       {
         "code": "aski_10d",
-        "kind": "10 günlük halkın görüş ve önerilerine açılma (askı) süresi",
+        "kind": "ÇED Yönetmeliği Madde 14 kapsamındaki 10 takvim günlük nihai askı ve görüş süresi",
         "deadline": "2026-11-23",
         "days_remaining": 3
       }

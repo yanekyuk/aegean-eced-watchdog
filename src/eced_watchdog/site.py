@@ -154,6 +154,17 @@ TR_SIGNAL_LABELS = {
     "ecology_and_baseline": "Flora, Fauna ve Saha Metodolojisi",
     "pollutants_and_hazards": "Emisyonlar, Jeokimya ve Atıklar",
     "cost_and_capacity": "Proje Bedeli, Güç ve Kapasite",
+    "splitting_and_thresholds": "Proje Parçalama, Kapasite Artışı ve Eşik Değerler",
+}
+
+TR_DANISTAY_CATEGORIES = {
+    "zeytinlik_3573": "3573 Zeytincilik (3 km)",
+    "proje_parcalama": "Proje Parçalama / Eşik Değer",
+    "kumulatif_etki": "Kümülatif Etki",
+    "flora_fauna_mevsimsel": "Flora / Fauna & Mevsimsellik",
+    "su_hidrojeoloji": "Su / Hidrojeoloji",
+    "tarim_orman_korunan_alan": "5403 / Orman / Korunan Alan",
+    "izleme_olcum_celiskisi": "Ölçüm / İç Tutarlılık",
 }
 
 TR_BASELINE_STATUS = {
@@ -194,10 +205,12 @@ def _clock_badge_html(clock: dict[str, Any] | None) -> str:
         return ""
     dr = clock.get("days_remaining")
     code = clock.get("code", "")
+    if code == "process_open":
+        return '<span class="badge">Karar Öncesi İnceleme Sürecinde (m. 8/16)</span>'
     label = {
-        "iyuk_20a": "İYUK 20/A",
-        "aski_10d": "10 Günlük Askı",
-        "hkt": "HKT Duyurusu",
+        "iyuk_20a": "İYUK 20/A (30g)",
+        "aski_10d": "Madde 14 Askı (10g)",
+        "hkt": "HKT Toplantısı",
         "idk": "İDK İncelemesi",
     }.get(code, "Yasal Süre")
     if dr is None:
@@ -213,17 +226,20 @@ def _clock_badge_html(clock: dict[str, Any] | None) -> str:
 
 def _marker_color(filing: dict[str, Any], has_digest: bool) -> str:
     clock = _best_active_clock(filing)
-    if clock and clock.get("days_remaining") is not None:
-        dr = clock["days_remaining"]
-        if 0 <= dr <= 7:
-            return "#f85149"  # urgent red
-        if 8 <= dr <= 15:
-            return "#d29922"  # amber
-        if dr > 15:
-            return "#3fb950"  # green active
-        return "#6e7681"  # expired
     if clock:
-        return "#d29922"  # HKT/IDK active
+        code = clock.get("code", "")
+        dr = clock.get("days_remaining")
+        if code == "process_open":
+            return "#58a6ff"  # early warning / review in progress
+        if dr is not None:
+            if 0 <= dr <= 7:
+                return "#f85149"  # urgent red
+            if 8 <= dr <= 15:
+                return "#d29922"  # amber
+            if dr > 15:
+                return "#3fb950"  # green active
+            return "#6e7681"  # expired
+        return "#d29922"  # undated HKT/İDK
     if filing.get("project_type") == "Ek-1" or has_digest:
         return "#58a6ff"
     return "#6e7681"
@@ -311,10 +327,24 @@ def render_digest_html(saved: dict[str, Any], raw_md_filename: str) -> str:
         sev_cls = {"high": "urgent", "medium": "warn", "low": "muted"}
         flags_html = "\n".join(
             f'<div class="hit"><span class="badge {sev_cls.get(rf["severity"], "muted")}">{_esc(TR_SEVERITY.get(rf["severity"], rf["severity"].upper()))}</span> '
-            f'<strong>{_esc(rf["title"])}</strong> '
+            + (
+                f'<span class="badge">{_esc(TR_DANISTAY_CATEGORIES.get(rf["category"], rf["category"]))}</span> '
+                if rf.get("category")
+                else ""
+            )
+            + f'<strong>{_esc(rf["title"])}</strong> '
             f'<span class="pno">[{", ".join(f"s. {p}" for p in rf.get("pages") or [])}]</span> — {_esc(rf["detail"])}</div>'
             for rf in res.get("red_flags") or []
         )
+        bilirkisi = res.get("recommended_bilirkisi_disciplines") or []
+        bilirkisi_html = ""
+        if bilirkisi:
+            pills_b = " ".join(f'<span class="badge">{_esc(d)}</span>' for d in bilirkisi)
+            bilirkisi_html = (
+                f'<h3>Keşif ve Bilirkişi Heyeti İçin Önerilen Uzmanlık Alanları</h3>'
+                f'<section class="card"><div class="badges">{pills_b}</div>'
+                f'<p class="detail" style="margin-top:8px;">Danıştay içtihatları uyarınca bilirkişi heyetinin tek sayıda uzmandan oluşması, proje niteliğine uygun tüm disiplinleri içermesi ve plan kararlarıyla ilişkili davalarda Şehir ve Bölge Plancısına yer verilmesi gerekmektedir.</p></section>'
+            )
         qs_html = "\n".join(
             f'<li>{_esc(q["question_tr"])} <span class="pno">[{", ".join(f"s. {p}" for p in q.get("pages") or [])}]</span></li>'
             for q in res.get("hkt_and_petition_questions") or []
@@ -340,8 +370,9 @@ def render_digest_html(saved: dict[str, Any], raw_md_filename: str) -> str:
     <p class="detail" style="margin-top:10px;"><strong>Zeytinlik ve Korunan Alanlar:</strong> {_esc(ba['olive_and_protected_status'])}<br/>{_esc(ba['explanation'])}</p>
   </section>
   {f'<h3>Öne Çıkan Sayısal Bulgular</h3><table class="kv">{facts_html}</table>' if facts_html else ''}
-  {f'<h3>Bilimsel ve Metodolojik Bulgular</h3><section class="card">{flags_html}</section>' if flags_html else ''}
-  {f'<h3>HKT Tutanakları ve İdari Başvurular İçin Taslak Teknik Sorular</h3><ul>{qs_html}</ul>' if qs_html else ''}
+  {f'<h3>Danıştay Ölçütlerine Göre Bilimsel ve Hukuki Bulgular</h3><section class="card">{flags_html}</section>' if flags_html else ''}
+  {bilirkisi_html}
+  {f'<h3>HKT Tutanakları ve Bilirkişi İncelemesi İçin Taslak Teknik Sorular</h3><ul>{qs_html}</ul>' if qs_html else ''}
   <p class="sub"><em>İnceleme sınırları:</em> {_esc(res.get('data_limitations', ''))}</p>
 """
 
@@ -574,72 +605,76 @@ pre {{
   </header>
 
   <section class="card ek1">
-    <h2 style="margin-top:0;">1. Karşılaşılan Temel Sorun ve Nihai Amaç</h2>
-    <p>T.C. Çevre, Şehircilik ve İklim Değişikliği Bakanlığı, Türkiye genelindeki tüm Çevresel Etki Değerlendirmesi (ÇED) başvurularını, Halkın Katılımı Toplantısı (HKT) ilanlarını ve nihai kararları kamuya açık biçimde yayımlamaktadır. Buna karşın, kamusal denetimin etkili biçimde yürütülmesini zorlaştıran iki temel yapısal engel bulunmaktadır:</p>
+    <h2 style="margin-top:0;">1. Hukuki Süreç, Gerçek Süreler ve Nihai Amaç</h2>
+    <p>T.C. Çevre, Şehircilik ve İklim Değişikliği Bakanlığı, Türkiye genelindeki tüm Çevresel Etki Değerlendirmesi (ÇED) başvurularını, Halkın Katılımı Toplantısı (HKT) ilanlarını, İnceleme Değerlendirme Komisyonu (İDK) toplantılarını ve nihai kararları kamuya açık biçimde yayımlamaktadır. 29 Temmuz 2022 tarihli ve 31907 sayılı Resmî Gazete'de yayımlanan ÇED Yönetmeliği ile 2025–2026 dönemindeki güncellemeler uyarınca (Ek-2 projelerinde eski <em>"ÇED Gerekli Değildir"</em> ifadesi yerini <strong>"ÇED Olumlu (Kapsam Ek-2)"</strong> kararına bırakmıştır) izlenmesi gereken temel yasal aşamalar şunlardır:</p>
     <ul>
-      <li><strong>Yasal sürelerin son derece kısa olması:</strong> Projelerin halkın görüş ve önerilerine açılma (askı) ve HKT duyuru süreleri kural olarak <strong>10 takvim günüdür</strong>. <em>ÇED Olumlu</em> veya <em>ÇED Gerekli Değildir</em> kararlarına karşı açılacak iptal davaları ise 2577 sayılı İdari Yargılama Usulü Kanunu'nun (İYUK) <strong>20/A maddesi</strong> uyarınca ivedi yargılama usulüne tabidir. Bu kapsamda dava açma süresi yalnızca <strong>30 takvim günüdür</strong> ve idareye yapılan İYUK Madde 11 başvuruları bu süreyi durdurmaz.</li>
-      <li><strong>Dosyaların yüksek teknik hacmi:</strong> Ek-2 kapsamındaki Proje Tanıtım Dosyaları (PTD) çoğunlukla 200 ila 400 sayfa, Ek-1 kapsamındaki ÇED Raporları ise 600 ila 1.000 sayfa uzunluğunda ve yüzlerce megabayt boyutundadır. Yerel halkın, bağımsız gazetecilerin ve gönüllü avukatların kısa yasal süreler dolmadan bu belgelerdeki bilimsel ve metodolojik eksiklikleri tespit etmesi fiilen güçleşmektedir.</li>
+      <li><strong>İYUK Madde 20/A İptal Davası Süresi (30 Takvim Günü):</strong> <em>ÇED Olumlu</em>, <em>ÇED Olumlu (Kapsam Ek-2)</em> veya <em>ÇED Gerekli Değildir</em> kararlarına karşı açılacak iptal davaları 2577 sayılı İdari Yargılama Usulü Kanunu'nun <strong>20/A maddesi</strong> uyarınca ivedi yargılama usulüne tabidir. Dava açma süresi kararın ilanı veya tebliğinden itibaren <strong>30 takvim günüdür</strong> ve idareye yapılan <strong>İYUK Madde 11 başvuruları bu süreyi durdurmaz</strong>.</li>
+      <li><strong>Madde 14 Nihai ÇED Askı Süresi (10 Takvim Günü):</strong> İDK tarafından son şekli verilen Ek-1 kapsamındaki Nihai ÇED Raporu, halkın görüş ve önerilerini almak üzere <strong>10 takvim günü</strong> süreyle askıda ve internette ilan edilir.</li>
+      <li><strong>HKT (m. 9), İDK (m. 11–12) ve Karar Öncesi Süreç (m. 8 / m. 16):</strong> <em>ÇED Süreci Başlayan</em> ilanları kesin bir 10 günlük son tarih doğurmaz; karar verilmeden önce yazılı görüş sunulabilecek ve dosya takip edilebilecek erken uyarı aşamasıdır.</li>
     </ul>
-    <p><strong>Bu platformun nihai amacı</strong>, tartışma veya polemik üretmek değil; resmi PDF belgelerindeki sayfa numaralarına (<code>[s. N]</code>) dayanan, nesnel ve bilimsel olarak doğrulanmış <strong>bir sayfalık teknik inceleme notlarının</strong> yasal süreler dolmadan önce dava ehliyetine ve kurumsal kapasiteye sahip aktörlere ulaştırılmasını kolaylaştırmaktır. İdari yargıda ÇED kararlarının iptali genel ve soyut itirazlarla değil; raporun kendi içindeki başlangıç verisi eksikliklerinin, mevsimsel örnekleme boşluklarının ve mevzuat çelişkilerinin somut sayfa numaralarıyla ortaya konulmasıyla mümkün olmaktadır.</p>
+    <p><strong>Bu platformun nihai amacı</strong>, polemik üretmek değil; yüzlerce sayfalık resmi PDF dosyalarındaki bilimsel ve hukuki eksiklikleri sayfa numaralarıyla (<code>[s. N]</code>) görünür kılarak, dava ehliyeti bulunan yerel aktörlerin ve uzmanların yasal süreler dolmadan <strong>keşif ve bilirkişi incelemesine esas olacak teknik dayanakları</strong> hazırlamasına yardımcı olmaktır.</p>
   </section>
 
-  <h2>2. Platform Hangi İşlemleri Otomatik Olarak Yürütür?</h2>
+  <h2>2. İdari Yargıda Ne "Bulgu" Sayılır? (7 Temel Danıştay İptal Ölçütü)</h2>
+  <p class="sub">Türk idari yargısında ÇED iptal davaları büyük ölçüde mahallinde yapılan <strong>keşif ve çok disiplinli bilirkişi heyeti raporu</strong> üzerinden karara bağlanır. Danıştay'ın yerleşik içtihatlarına göre bir raporun hukuka aykırı bulunmasına doğrudan yol açan temel bulgu kategorileri şunlardır:</p>
   <table class="kv">
-    <tr><th>Türkiye Geneli Tarama</th><td>Bakanlığın resmi <code>eced-duyuru.csb.gov.tr</code> duyuru portalındaki 81 ile ait kayıtları düzenli olarak tarar, proje detaylarını ve resmi PDF bağlantılarını tek bir dizinde toplar.</td></tr>
-    <tr><th>Konum Haritası</th><td>Metin katmanında koordinat tablosu bulunan PDF dosyalarındaki UTM/ED50 ve WGS84 koordinatlarını haritaya aktarır; koordinat çıkarılamayan dosyaları ise yaklaşık il merkezi üzerinden görünür kılar.</td></tr>
-    <tr><th>Yasal Süre Hesaplama</th><td>Her duyuru için 10 günlük askı süresini ve 30 günlük İYUK Madde 20/A dava açma son tarihini otomatik olarak hesaplayarak süresi yaklaşan dosyaları önceliklendirir.</td></tr>
-    <tr><th>Sayfa Kaynaklı Ön Özet</th><td>Yüzlerce sayfalık PDF dosyalarını tarayarak taranmış sayfa oranını, su kullanımı, deşarj, zeytinlik, orman, korunan alan, flora/fauna ve kümülatif etki verilerini <code>[s. N]</code> sayfa numaralarıyla listeler.</td></tr>
-    <tr><th>Yapay Zeka Destekli Ön Değerlendirme</th><td>Raporun en yüksek bilgi yoğunluğuna sahip sayfalarından Türkçe özet, başlangıç etüdü değerlendirmesi ve taslak teknik sorular oluşturur. Bu aşama yalnızca ön taramayı hızlandırmak içindir; nihai doğrulama kaynağı her zaman resmi PDF belgesinin kendisidir.</td></tr>
+    <tr><th>1. 3573 Sayılı Zeytincilik Kanunu (m. 20)</th><td>Zeytinlik sahaları içinde ve bu sahalara <strong>en az 3 kilometre mesafede</strong> zeytinyağı fabrikası hariç toz, duman veya kimyevi atık bırakan tesislerin kurulması mutlak olarak yasaktır. Danıştay içtihatları uyarınca raporda verilen filtreleme veya toz önleme taahhütleri bu kanuni yasağı ortadan kaldırmaz.</td></tr>
+    <tr><th>2. Proje Parçalama (Eşik Değer Dolanılması)</th><td>Esasen Ek-1 kapsamına girmesi gereken bir yatırımın, ruhsat sahasının veya kapasite artışının yapay biçimde bölünerek Ek-2 üzerinden geçirilmeye çalışılması Danıştay tarafından kanuna karşı hile ve bütüncül inceleme ilkesine aykırılık sayılarak iptal edilmektedir.</td></tr>
+    <tr><th>3. Kümülatif (Birikimli) Etki Eksikliği</th><td>Projenin bölgedeki mevcut veya planlanan diğer maden, enerji, sanayi ve su kullanım yükleriyle birlikte oluşturacağı birikimli ekolojik etkinin ve ekosistem taşıma kapasitesinin değerlendirilmemesi başlıca iptal gerekçelerindendir.</td></tr>
+    <tr><th>4. Flora, Fauna ve Mevsimsellik Eksikliği</th><td>Yalnızca literatür taramasına (<code>L</code>) veya tek günlük/tek mevsimlik gözlemlere dayanan tür listeleri, göçmen kuşların ve endemik/IUCN/Bern türlerinin tespit edilmemesi ile orman ekosisteminin bilimsel dayanaktan yoksun "rehabilitasyon" vaatleriyle yok edilmesi raporları sakatlar.</td></tr>
+    <tr><th>5. Su Kaynakları ve Başlangıç Analizleri</th><td>Yeraltı suyu, akifer, dere rejimi, içme suyu havzası veya can suyu etkilerinin hidrojeolojik olarak modellenmemesi ya da DSİ gibi kurumların talep ettiği faaliyet öncesi başlangıç su analizlerinin onay sonrasına ertelenmesi ağır metodolojik eksikliktir.</td></tr>
+    <tr><th>6. 5403 Toprak Koruma, Orman, ÖÇK/SİT ve Kurum Görüşleri</th><td>Mutlak veya dikili tarım arazilerinin vasfının bozulması, zorunlu kurum görüşlerinin (DSİ, İl Tarım, OGM, Kültür Varlıkları) eksik olması ya da yer/teknoloji alternatiflerinin hiç irdelenmemesi hukuka aykırılık doğurur.</td></tr>
+    <tr><th>7. Ölçüm Hataları ve Bilirkişi Denetimi</th><td>İç tutarsızlıklar (kapasite, koordinat veya parsel çelişkileri) ile teknik olarak imkânsız izleme yöntemleri (örneğin akustik gürültü için yalnızca "görsel takip" taahhüt edilmesi) keşif ve bilirkişi aşamasında doğrudan denetim konusu yapılır.</td></tr>
   </table>
 
-  <h2>3. Bir Uzman veya Bilim İnsanı Olarak Nasıl Katkı Sunabilirsiniz?</h2>
-  <p class="sub">Bu sürece katılmak için yeni bir dernek kurmanız, yazılım bilgisine sahip olmanız ya da platformu her gün izlemeniz gerekmez. Yalnızca kendi uzmanlık alanınızla doğrudan örtüşen bir dosya yayımlandığında, ayda bir veya iki saat ayırarak aşağıdaki dört adımı izleyebilirsiniz:</p>
+  <h2>3. Kimler Dava Açabilir? (Dava Ehliyeti ve Danıştay İçtihatları)</h2>
+  <p class="sub">2577 sayılı İYUK Madde 2 uyarınca iptal davası açabilmek için işlem ile davacı arasında <strong>meşru, kişisel ve güncel bir menfaat bağı</strong> bulunması zorunludur. Yanlış davacı seçimi davanın daha ilk incelemede <em>ehliyet yönünden reddine</em> yol açar:</p>
+  <table class="kv">
+    <tr><th>Yöre Sakinleri ve Taşınmaz Sahipleri</th><td>Projenin etki alanında ikamet eden yurttaşlar, komşular ve bölgede taşınmazı bulunan kişiler en güçlü ve yerleşik dava ehliyetine sahiptir.</td></tr>
+    <tr><th>TMMOB ve İlgili Meslek Odaları</th><td>Çevre, Ziraat, Jeoloji, Orman, Maden ve Şehir Plancıları Odaları gibi kamu kurumu niteliğindeki meslek kuruluşları, kendi uzmanlık ve görev alanlarına giren projelerde doğrudan dava açma ehliyetine sahiptir.</td></tr>
+    <tr><th>Çevre Dernekleri</th><td>Ana tüzüğünde açıkça çevre ve doğa koruma amacı yer alan ve projenin bulunduğu coğrafi bölgede faaliyet gösteren derneklerin dava ehliyeti kabul edilmektedir.</td></tr>
+    <tr><th>İlgili Belediyeler</th><td>Proje sahasını veya etki alanını sınırları içinde barındıran büyükşehir ve ilçe belediyeleri idari yargıda dava açabilmektedir.</td></tr>
+    <tr><th>Barolar (Önemli İçtihat Uyarısı)</th><td>Danıştay'ın güncel ve istikrarlı içtihatları, <strong>baroların kendi tüzel kişilikleri adına ÇED iptal davası açma ehliyetini çoğunlukla reddetmektedir</strong>. Bu nedenle il barolarının Çevre ve Kent Hukuku Komisyonları doğrudan davacı sıfatıyla değil; <strong>yöre sakinlerine hukuki danışmanlık, dilekçe hazırlığı ve avukatlık temsili sağlamak</strong> açısından kritik rol üstlenmektedir.</td></tr>
+  </table>
+
+  <h2>4. Uzmanlar İçin 4 Adımlı Çalışma Akışı (Ayda 1–2 Saat)</h2>
+  <p class="sub">Bu sürece katkı sunmak için yeni bir dernek kurmanız, yazılım bilgisine sahip olmanız ya da platformu her gün izlemeniz gerekmez. Uzmanlık alanınızla örtüşen bir dosya yayımlandığında şu dört adımı izleyebilirsiniz:</p>
 
   <div class="step-grid">
     <div class="card">
       <div class="step-num">Adım 1 · Yaklaşık 5 dakika</div>
-      <div class="title">İlgili Dosyayı Seçiniz</div>
-      <p class="detail">Ana sayfada <strong>Yasal Süresi Devam Edenler</strong> filtresini ve il seçicisini kullanınız. Uzmanlık alanınıza giren (örneğin hidrojeoloji, kıyı ekolojisi, flora/fauna, tarım veya hava kalitesi) ve başvuru süresi henüz dolmamış tek bir dosyayı açınız.</p>
+      <div class="title">Süresi Yaklaşan Dosyayı Seçiniz</div>
+      <p class="detail">Ana sayfa varsayılan olarak <strong>en acil yasal süreye</strong> (30 günlük İYUK 20/A ve 10 günlük Madde 14 askı sürelerine) göre sıralanır. İl seçicisini kullanarak uzmanlık alanınıza giren tek bir dosyayı açınız.</p>
     </div>
     <div class="card">
       <div class="step-num">Adım 2 · 30–60 dakika</div>
       <div class="title">Bulguları Resmi PDF Üzerinden Doğrulayınız</div>
-      <p class="detail">Ön özette yer alan sayısal verileri ve bilimsel bulguları inceleyiniz. Her maddenin yanında belirtilen <code>[s. N]</code> sayfa numarasından doğrudan <strong>Resmi PDF Dosyası</strong> üzerindeki ilgili sayfayı açarak bilgileri ve olası metodolojik eksiklikleri kendi uzmanlık süzgecinizden geçiriniz.</p>
+      <p class="detail">Ön özetteki Danıştay kategorili bulguları ve <code>[s. N]</code> sayfa numaralarını inceleyiniz. Doğrudan <strong>Resmi PDF Dosyası</strong> üzerindeki ilgili sayfaları açarak tespitleri kendi uzmanlık süzgecinizden geçiriniz.</p>
     </div>
     <div class="card">
       <div class="step-num">Adım 3 · Yaklaşık 30 dakika</div>
-      <div class="title">Bir Sayfalık Teknik İnceleme Notu Hazırlayınız</div>
-      <p class="detail">Aşağıdaki beş maddelik şablonu kullanarak kısa bir teknik not oluşturunuz. Metnin yalnızca belgeden doğrulanmış olgulara, sayfa numaralarına ve hakemli bilimsel ölçütlere dayanmasına özen gösteriniz; öznel değerlendirmelerden ve polemik dilinden kaçınınız.</p>
+      <div class="title">Bir Sayfalık Teknik Not ve Bilirkişi Talebi Hazırlayınız</div>
+      <p class="detail">Aşağıdaki şablonu doldurunuz. Yalnızca doğrulanmış sayfa numaralı olgulara dayanan somut teknik soruları ve keşif heyetinde bulunması gereken akademik uzmanlık alanlarını (örneğin mutlaka <em>Şehir ve Bölge Plancısı</em>, <em>Hidrojeolog</em>, <em>Biyolog</em>) belirtiniz.</p>
     </div>
     <div class="card">
       <div class="step-num">Adım 4 · Yaklaşık 5 dakika</div>
-      <div class="title">Notu Yetkili Kurum ve Paydaşlara İletiniz</div>
-      <p class="detail">Hazırladığınız teknik notu aşağıdaki hukuk, meslek odası veya yerel izleme ağlarından birine iletiniz. Notunuzu dilerseniz kendi adınızla uzman görüşü olarak, dilerseniz ilgili oda veya komisyonun kurumsal çalışmasına katkı biçiminde paylaşabilirsiniz.</p>
+      <div class="title">Ehliyetli Aktörlere veya Hukukçulara İletiniz</div>
+      <p class="detail">Hazırladığınız teknik notu ilgili TMMOB odasına, bölgedeki çevre derneğine, belediye çevre birimine veya yöre sakinlerini temsil eden çevre hukukçularına iletiniz. Kurumsal güvence ihtiyacı varsa not doğrudan meslek odaları veya platformlar üzerinden paylaşılabilir.</p>
     </div>
   </div>
-
-  <h2>4. Hazırlanan Teknik Notlar Hangi Kanallara İletilebilir?</h2>
-  <table class="kv">
-    <tr><th>Baro Çevre Komisyonları</th><td>İlgili il barolarının Çevre ve Kent Hukuku Komisyonları (örneğin İzmir, İstanbul, Muğla, Ankara, Antalya ve Manisa Baroları), 30 günlük İYUK Madde 20/A iptal davası dilekçelerinde bilimsel dayanak olarak bu notlardan doğrudan yararlanabilmektedir.</td></tr>
-    <tr><th>Meslek Odaları (TMMOB)</th><td>TMMOB İl Koordinasyon Kurulları ile Çevre, Ziraat, Jeoloji, Orman, Kimya ve Şehir Plancıları Odalarının ilgili şubeleri kurumsal itiraz, teknik raporlama ve bilirkişi süreçlerinde doğrudan yetkilidir.</td></tr>
-    <tr><th>Resmi Katılım Mekanizmaları</th><td>10 günlük askı süresi içinde ilgili Çevre, Şehircilik ve İklim Değişikliği İl Müdürlüğüne yazılı görüş dilekçesi sunulabilir. Ek-1 kapsamındaki projelerde ise Halkın Katılımı Toplantısı (HKT) tutanaklarına somut teknik soruların geçirilmesi sağlanabilir.</td></tr>
-    <tr><th>Bölgesel Platformlar ve Belediyeler</th><td>EGEÇEP, Kazdağları, Marmara, Karadeniz ve Akdeniz çevre platformları, ilçe düzeyindeki sivil inisiyatifler ile ilgili büyükşehir veya ilçe belediyelerinin çevre koruma birimleri yerel süreçleri takip etmektedir.</td></tr>
-    <tr><th>Bağımsız Yerel Basın</th><td>Çevre haberciliği yapan yerel ve ulusal muhabirler için 500 sayfalık bir PDF yerine sayfa numaraları doğrulanmış bir sayfalık teknik özet, kamuoyunun doğru bilgilendirilmesini önemli ölçüde kolaylaştırır.</td></tr>
-  </table>
 
   <h2>5. Bir Sayfalık Teknik İnceleme Notu Şablonu</h2>
   <pre>{_esc(template_text)}</pre>
 
   <h2>6. Çalışma İlkeleri ve Sürdürülebilirlik</h2>
   <ul>
-    <li><strong>Kamuya açık ve yasal veri zemini:</strong> Platformda kullanılan tüm kayıtlar Bakanlığın kamuya açık duyuru sisteminden elde edilir. Askı sürecinde görüş bildirmek, HKT toplantılarına katılmak ve idari yargı yoluna başvurmak hukuk düzeninin tanıdığı yasal katılım haklarıdır.</li>
-    <li><strong>Bilimsel nesnellik ve doğrulanabilirlik:</strong> Her tespit, doğrudan resmi raporun sayfa numarasıyla ilişkilendirilir. Amaç siyasi değerlendirme yapmak değil, çevresel etki değerlendirme belgelerinin bilimsel yeterliliğini şeffaf biçimde incelemektir.</li>
-    <li><strong>Tükenmişlikten uzak, esnek katkı:</strong> Hiçbir uzmanın düzenli bir görev kotası üstlenmesi gerekmez. Kendi alanınızla örtüşen tek bir dosyaya ayda bir ya da iki saat ayırmak bile uzun vadede kalıcı ve ölçülebilir kamusal fayda üretir.</li>
-    <li><strong>Kurumsal güvence ve gizlilik tercihi:</strong> Akademik veya mesleki güvencesi nedeniyle bireysel görünürlük almak istemeyen uzmanlar, hazırladıkları teknik incelemeleri doğrudan meslek odaları, baro komisyonları veya sivil platformlar aracılığıyla paylaşabilirler.</li>
+    <li><strong>Kamuya açık ve yasal veri zemini:</strong> Platformda kullanılan tüm kayıtlar Bakanlığın kamuya açık duyuru sisteminden elde edilir. Madde 14 askı sürecinde görüş bildirmek, HKT toplantılarına katılmak ve İYUK 20/A kapsamında yargı yoluna başvurmak hukuk düzeninin tanıdığı yasal haklardır.</li>
+    <li><strong>Bilimsel nesnellik ve doğrulanabilirlik:</strong> Yapay zeka ön taraması yalnızca hızlandırıcıdır; nihai dayanak daima resmi PDF belgesindeki <code>[s. N]</code> sayfalarıdır.</li>
+    <li><strong>Tükenmişlikten uzak, esnek katkı:</strong> Hiçbir uzmanın düzenli kota üstlenmesi gerekmez. Ayda tek bir kritik dosyayı bir ya da iki saatte doğrulayıp yetkili hukuk ve meslek ağına ulaştırmak uzun vadede kalıcı kamusal fayda üretir.</li>
   </ul>
 
   <div class="notice">
-    <strong>Yasal Bilgilendirme:</strong> Bu platform yalnızca kamuoyu şeffaflığı ve bilgilendirme amacıyla hazırlanmış olup hukuki danışmanlık niteliği taşımaz. Tüm yasal sürelerin, yetki kurallarının ve mevzuat hükümlerinin herhangi bir başvuru öncesinde avukat tarafından doğrulanması gerekmektedir.
+    <strong>Yasal Bilgilendirme:</strong> Bu platform yalnızca kamuoyu şeffaflığı ve bilgilendirme amacıyla hazırlanmış olup hukuki danışmanlık niteliği taşımaz. Tüm yasal sürelerin, dava ehliyeti şartlarının ve güncel mevzuat değişikliklerinin herhangi bir başvuru öncesinde avukat tarafından doğrulanması gerekmektedir.
   </div>
 </div>
 </body>
@@ -647,37 +682,44 @@ pre {{
 """
 
 
-def _urgency_sort_key(filing: dict[str, Any]) -> tuple[int, int, str]:
-    """Sort active dated clocks by fewest days remaining first, then undated HKT/İDK, then expired."""
-    clocks = filing.get("statutory_clocks") or []
-    active_days = [
-        c["days_remaining"]
-        for c in clocks
-        if c.get("days_remaining") is not None and c["days_remaining"] >= 0
-    ]
-    ann = filing.get("announcement_date") or "0000-00-00"
-    # Invert ISO date for descending secondary ordering inside ascending sort
-    inv_date = "".join(chr(ord("9") - ord(ch) + ord("0")) if ch.isdigit() else ch for ch in ann)
-    if active_days:
-        return (0, min(active_days), inv_date)
-    if any(c.get("days_remaining") is None for c in clocks):
-        return (1, 0, inv_date)
-    return (2, 0, inv_date)
-
-
 def _urgency_rank_value(filing: dict[str, Any]) -> int:
-    """Numeric rank for client-side sorting (lower = more urgent)."""
+    """Numeric rank for urgency sorting (lower = more urgent).
+    0..99    = Hard statutory deadline (İYUK 20/A 30d or Madde 14 10d askı), active
+    200..399 = Scheduled upcoming HKT / İDK meeting date
+    500      = Undated HKT / İDK notice
+    800      = Open pre-decision review stage (ÇED Süreci Başlayan, m. 8/16)
+    10000    = Expired deadline or closed/returned filing
+    """
     clocks = filing.get("statutory_clocks") or []
-    active_days = [
+    hard_days = [
         c["days_remaining"]
         for c in clocks
-        if c.get("days_remaining") is not None and c["days_remaining"] >= 0
+        if c.get("code") in ("iyuk_20a", "aski_10d")
+        and c.get("days_remaining") is not None
+        and c["days_remaining"] >= 0
     ]
-    if active_days:
-        return min(active_days)
-    if any(c.get("days_remaining") is None for c in clocks):
+    if hard_days:
+        return min(hard_days)
+    meeting_days = [
+        c["days_remaining"]
+        for c in clocks
+        if c.get("code") in ("hkt", "idk")
+        and c.get("days_remaining") is not None
+        and c["days_remaining"] >= 0
+    ]
+    if meeting_days:
+        return 200 + min(meeting_days)
+    if any(c.get("code") in ("hkt", "idk") and c.get("days_remaining") is None for c in clocks):
         return 500
+    if any(c.get("code") == "process_open" for c in clocks):
+        return 800
     return 10000
+
+
+def _urgency_sort_key(filing: dict[str, Any]) -> tuple[int, str]:
+    ann = filing.get("announcement_date") or "0000-00-00"
+    inv_date = "".join(chr(ord("9") - ord(ch) + ord("0")) if ch.isdigit() else ch for ch in ann)
+    return (_urgency_rank_value(filing), inv_date)
 
 
 def build_site(
@@ -890,10 +932,11 @@ def build_site(
   <section class="map-box">
     <div id="map"></div>
     <div class="map-legend">
-      <span><span class="dot" style="background:#f85149"></span>Acil süre (≤ 7 gün)</span>
+      <span><span class="dot" style="background:#f85149"></span>Acil yasal süre (≤ 7 gün)</span>
       <span><span class="dot" style="background:#d29922"></span>Yaklaşan süre / HKT / İDK</span>
-      <span><span class="dot" style="background:#3fb950"></span>Devam eden süre (&gt; 15 gün)</span>
-      <span><span class="dot" style="background:#6e7681"></span>Süresi dolmuş kayıt</span>
+      <span><span class="dot" style="background:#3fb950"></span>Devam eden İYUK 20/A süresi (&gt; 15 gün)</span>
+      <span><span class="dot" style="background:#58a6ff"></span>Karar öncesi inceleme (m. 8/16)</span>
+      <span><span class="dot" style="background:#6e7681"></span>Süresi dolmuş / iade</span>
       <span><strong>Beyaz çerçeveli nokta:</strong> PDF'ten çıkarılmış kesin koordinat · <strong>Yarı saydam nokta:</strong> Yaklaşık il merkezi</span>
     </div>
   </section>

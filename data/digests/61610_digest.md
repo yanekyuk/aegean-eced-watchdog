@@ -16,7 +16,7 @@
 | **Announcement Date** | `16.11.2026` (uploaded `10/11/2026 04:11:02`) |
 
 **Statutory Deadlines (informational aid — verify with legal counsel):**
-- **10 günlük halkın görüş ve önerilerine açılma (askı) süresi:** `2026-11-26` (`6 days remaining`)
+- **Karar öncesi inceleme süreci (ÇED Yönetmeliği m. 8/16; süreç boyunca yazılı görüş verilebilir):** `see text` 
 
 ## 2. AI-Assisted Scientific Synthesis (`gemini-4-hydrogen`)
 

@@ -34,9 +34,9 @@
     "statutory_clocks": [
       {
         "code": "hkt",
-        "kind": "Halkın Katılımı Toplantısı (HKT) duyurusu; toplantı tarihi resmi metinde yer alır",
-        "deadline": null,
-        "days_remaining": null
+        "kind": "Halkın Katılımı Toplantısı (HKT — ÇED Yönetmeliği m. 9)",
+        "deadline": "2026-12-08",
+        "days_remaining": 18
       }
     ],
     "filing_key": "61087:19.11.2026:HKT",

@@ -3,7 +3,9 @@
 from __future__ import annotations
 
 import argparse
+from concurrent.futures import ThreadPoolExecutor, as_completed
 import json
+import threading
 from datetime import datetime
 from pathlib import Path
 from typing import Any
@@ -58,14 +60,28 @@ def select_digest_candidates(
             continue
 
         clocks = f.get("statutory_clocks") or []
-        active_days = [c["days_remaining"] for c in clocks if c.get("days_remaining") is not None and c["days_remaining"] >= 0]
-        has_undated_active = any(c.get("days_remaining") is None for c in clocks)
+        hard_days = [
+            c["days_remaining"]
+            for c in clocks
+            if c.get("code") in ("iyuk_20a", "aski_10d")
+            and c.get("days_remaining") is not None
+            and c["days_remaining"] >= 0
+        ]
+        meeting_days = [
+            c["days_remaining"]
+            for c in clocks
+            if c.get("code") in ("hkt", "idk")
+            and c.get("days_remaining") is not None
+            and c["days_remaining"] >= 0
+        ]
 
-        if active_days:
-            # Active dated clock: prioritize fewest days remaining (most urgent first)
+        if hard_days:
+            urgency_tier = 3
+            neg_days_left = -min(hard_days)
+        elif meeting_days:
             urgency_tier = 2
-            neg_days_left = -min(active_days)
-        elif has_undated_active:
+            neg_days_left = -min(meeting_days)
+        elif any(c.get("code") in ("hkt", "idk", "process_open") for c in clocks):
             urgency_tier = 1
             neg_days_left = -999
         else:
@@ -104,6 +120,7 @@ def main() -> None:
         default=5,
         help="Max new PDFs to download and digest per run",
     )
+    parser.add_argument("--workers", type=int, default=4, help="Parallel workers for PDF parsing & Gemini synthesis (default: 4)")
     parser.add_argument("--skip-fetch", action="store_true", help="Rebuild site/digests from existing data/filings.json")
     parser.add_argument("--skip-digests", action="store_true", help="Skip downloading/digesting new PDFs")
     parser.add_argument("--skip-llm", action="store_true", help="Disable Gemini API synthesis even if GEMINI_API_KEY is set")
@@ -188,7 +205,9 @@ def main() -> None:
         candidates = select_digest_candidates(filings, digests_dir, args.max_digests)
         digested_new = 0
         synthesized_new = 0
-        for f in candidates:
+        print_lock = threading.Lock()
+
+        def run_one(f: dict[str, Any]) -> tuple[dict[str, Any], str, dict[str, Any] | None, Exception | None]:
             fid = f["documents"][0]["filing_id"]
             try:
                 res = ensure_digest_for_filing(
@@ -201,21 +220,31 @@ def main() -> None:
                     gemini_model=args.gemini_model,
                     re_synthesize=args.re_synthesize,
                 )
-                if res and not res["cached"]:
-                    digested_new += 1
-                    geo = res["analysis"].get("geo") or {}
-                    print(
-                        f"  Digested NEW #{fid} ({f['province']}/{f['district']}): "
-                        f"{res['analysis']['page_count']}p "
-                        f"({res['pdf_info']['bytes'] / 1024 / 1024:.1f} MB, geo={geo.get('precision')})"
-                    )
-                if res and res.get("synthesized_now"):
-                    synthesized_new += 1
-                    llm_m = res["llm_synthesis"]["model"]
-                    n_flags = len(res["llm_synthesis"]["result"].get("red_flags") or [])
-                    print(f"  Synthesized #{fid} via {llm_m} ({n_flags} findings)")
+                return f, fid, res, None
             except Exception as exc:
-                print(f"  WARN: failed to digest #{fid}: {exc}")
+                return f, fid, None, exc
+
+        workers = max(1, min(args.workers, len(candidates) or 1))
+        with ThreadPoolExecutor(max_workers=workers) as pool:
+            for fut in as_completed([pool.submit(run_one, f) for f in candidates]):
+                f, fid, res, exc = fut.result()
+                with print_lock:
+                    if exc is not None:
+                        print(f"  WARN: failed to digest #{fid}: {exc}")
+                        continue
+                    if res and not res["cached"]:
+                        digested_new += 1
+                        geo = res["analysis"].get("geo") or {}
+                        print(
+                            f"  Digested NEW #{fid} ({f['province']}/{f['district']}): "
+                            f"{res['analysis']['page_count']}p "
+                            f"({res['pdf_info']['bytes'] / 1024 / 1024:.1f} MB, geo={geo.get('precision')})"
+                        )
+                    if res and res.get("synthesized_now"):
+                        synthesized_new += 1
+                        llm_m = res["llm_synthesis"]["model"]
+                        n_flags = len(res["llm_synthesis"]["result"].get("red_flags") or [])
+                        print(f"  Synthesized #{fid} via {llm_m} ({n_flags} findings)")
         print(f"Digests ready ({digested_new} newly extracted, {synthesized_new} newly synthesized)")
 
     stats = build_site(

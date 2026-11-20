@@ -5,6 +5,7 @@ from __future__ import annotations
 import hashlib
 import json
 import re
+import threading
 from pathlib import Path
 from typing import Any
 
@@ -14,6 +15,9 @@ import pymupdf as fitz
 from .fetcher import USER_AGENT, build_ssl_context
 from .geo import extract_pdf_coordinates
 from .llm import synthesize_with_gemini
+
+# Keep Ministry portal downloads polite even when Gemini synthesis runs with 4-6 parallel workers
+_DOWNLOAD_SEMAPHORE = threading.Semaphore(2)
 
 SIGNAL_SPECS: list[tuple[str, str, str]] = [
     (
@@ -53,9 +57,15 @@ SIGNAL_SPECS: list[tuple[str, str, str]] = [
     ),
     (
         "cost_and_capacity",
-        "Project Cost, Power & Capacity",
+        "Proje Bedeli, Güç ve Kapasite",
         r"(?:(\d{1,3}(?:[.,]\d{3})+\s*(?:TL|USD|Euro|€|\$|kW|MW|kV|ton/yıl|ton/gün))|"
         r"(?:proje\s*bedeli|kurulu\s*güç|kapasite))",
+    ),
+    (
+        "splitting_and_thresholds",
+        "Proje Parçalama, Kapasite Artışı ve Eşik Değerler",
+        r"\b(?:kapasite\s*artışı|alan\s*genişletme|ilave\s*ünite|ruhsat\s*alanı|"
+        r"ÇED\s*alanı|eşik\s*değer|5403\s*sayılı|mutlak\s*tarım|dikili\s*tarım|can\s*suyu)\b",
     ),
 ]
 
@@ -71,28 +81,29 @@ def download_pdf(pdf_url: str, dest: Path, cert_path: Path | None) -> dict[str, 
         }
 
     ctx = build_ssl_context(cert_path)
-    with httpx.Client(
-        verify=ctx,
-        http2=False,
-        headers={"User-Agent": USER_AGENT},
-        timeout=90.0,
-        follow_redirects=True,
-    ) as client:
-        resp = client.get(pdf_url)
-        resp.raise_for_status()
-        data = resp.content
-        if not data[:5].startswith(b"%PDF"):
-            raise RuntimeError(
-                f"Expected PDF from {pdf_url}, got content-type={resp.headers.get('content-type')}"
-            )
-        dest.parent.mkdir(parents=True, exist_ok=True)
-        dest.write_bytes(data)
-        return {
-            "filename": dest.name,
-            "bytes": len(data),
-            "sha256": hashlib.sha256(data).hexdigest(),
-            "cached": False,
-        }
+    with _DOWNLOAD_SEMAPHORE:
+        with httpx.Client(
+            verify=ctx,
+            http2=False,
+            headers={"User-Agent": USER_AGENT},
+            timeout=90.0,
+            follow_redirects=True,
+        ) as client:
+            resp = client.get(pdf_url)
+            resp.raise_for_status()
+            data = resp.content
+            if not data[:5].startswith(b"%PDF"):
+                raise RuntimeError(
+                    f"Expected PDF from {pdf_url}, got content-type={resp.headers.get('content-type')}"
+                )
+            dest.parent.mkdir(parents=True, exist_ok=True)
+            dest.write_bytes(data)
+            return {
+                "filename": dest.name,
+                "bytes": len(data),
+                "sha256": hashlib.sha256(data).hexdigest(),
+                "cached": False,
+            }
 
 
 def _clean_snippet(text: str, start: int, end: int, radius: int = 120) -> str:
@@ -198,6 +209,7 @@ def analyze_pdf(pdf_path: Path, province: str = "") -> dict[str, Any]:
         "mentions_olive_law_3573": bool(re.search(r"3573|zeytinlik", full_text_lower)),
         "mentions_groundwater_or_aquifer": bool(re.search(r"yeraltı\s*su|akifer|hidrojeoloj", full_text_lower)),
         "mentions_iucn_or_endemic": bool(re.search(r"iucn|endemik|bern\s*sözleşme", full_text_lower)),
+        "mentions_capacity_or_splitting": bool(re.search(r"kapasite\s*artış|ilave\s*ünite|eşik\s*değer|alan\s*genişlet", full_text_lower)),
     }
 
     page_count = len(doc)
@@ -297,7 +309,19 @@ def render_markdown_digest(
         )
         for rf in res.get("red_flags") or []:
             p_tags = ", ".join(f"s.{p}" for p in rf.get("pages") or [])
-            lines.append(f"- **[{rf['severity'].upper()}] {rf['title']}** (`{p_tags}`): {rf['detail']}")
+            cat = rf.get("category")
+            cat_part = f" [{cat}]" if cat else ""
+            lines.append(f"- **[{rf['severity'].upper()}]{cat_part} {rf['title']}** (`{p_tags}`): {rf['detail']}")
+        bilirkisi = res.get("recommended_bilirkisi_disciplines") or []
+        if bilirkisi:
+            lines.extend(
+                [
+                    "",
+                    "### Keşif ve Bilirkişi Heyeti İçin Önerilen Uzmanlık Alanları",
+                    "",
+                    "- " + ", ".join(bilirkisi),
+                ]
+            )
         lines.extend(
             [
                 "",

@@ -65,39 +65,75 @@ class BaselineAssessment(BaseModel):
     )
 
 
+DanistayCategory = Literal[
+    "zeytinlik_3573",
+    "proje_parcalama",
+    "kumulatif_etki",
+    "flora_fauna_mevsimsel",
+    "su_hidrojeoloji",
+    "tarim_orman_korunan_alan",
+    "izleme_olcum_celiskisi",
+]
+
+
 class AuditRedFlag(BaseModel):
-    severity: Literal["high", "medium", "low"]
-    title: str = Field(description="Short concrete title of the methodological, ecological, or regulatory gap.")
-    detail: str = Field(description="Factual explanation grounded strictly in the provided pages.")
-    pages: list[int] = Field(description="1-based PDF page numbers supporting this finding.")
+    category: DanistayCategory = Field(
+        description=(
+            "Danıştay ÇED iptal içtihatlarına karşılık gelen hukuki/teknik kategori: "
+            "zeytinlik_3573 (3573 m.20 3 km yasağı), proje_parcalama (eşik değer dolanılması / Ek-2 parçalama), "
+            "kumulatif_etki (birikimli bölgesel etki eksikliği), flora_fauna_mevsimsel (tek mevsim/literatür/endemik/göç), "
+            "su_hidrojeoloji (akifer/başlangıç analizi/can suyu/atıksu), tarim_orman_korunan_alan (5403/orman/ÖÇK/SİT/kurum görüşü), "
+            "izleme_olcum_celiskisi (ölçüm hatası/iç çelişki/bilirkişi denetim noktası)."
+        )
+    )
+    severity: Literal["high", "medium", "low"] = Field(
+        description=(
+            "high = doğrudan Danıştay iptal emsali taşıyan ağır mevzuat/metodoloji ihlali; "
+            "medium = keşif ve bilirkişi incelemesinde doğrulanması gereken somut teknik eksik; "
+            "low = ikincil idari veya biçimsel eksiklik."
+        )
+    )
+    title: str = Field(description="Kısa, somut ve hukuki/bilimsel açıdan net başlık (Türkçe).")
+    detail: str = Field(description="Yalnızca verilen sayfalara dayanan, nesnel ve eksiksiz Türkçe açıklama.")
+    pages: list[int] = Field(description="Bu bulguyu destekleyen 1 tabanlı PDF sayfa numaraları.")
 
 
 class RecordQuestion(BaseModel):
     question_tr: str = Field(
-        description="Concise, neutral, technically sharp Turkish question for HKT minutes or administrative petition."
+        description="HKT tutanağına, askı görüş dilekçesine veya keşif/bilirkişi talebine doğrudan eklenebilecek net Türkçe teknik soru."
     )
-    pages: list[int] = Field(description="Relevant 1-based PDF page numbers.")
+    pages: list[int] = Field(description="İlgili 1 tabanlı PDF sayfa numaraları.")
 
 
 class EcologicalSynthesis(BaseModel):
     executive_summary_tr: str = Field(
-        description="3-5 sentence neutral Turkish summary: what is proposed, exact location/scale, and primary environmental stakes."
+        description="3-5 cümlelik akıcı, resmi ve nesnel Türkçe özet: projenin kapsamı, konumu, ölçeği ve temel çevresel riskleri."
     )
     executive_summary_en: str = Field(
         description="3-5 sentence neutral English summary: what is proposed, exact location/scale, and primary environmental stakes."
     )
     key_facts: list[CitedFact] = Field(
-        description="Up to 10 concrete quantitative facts extracted directly from the report with page citations."
+        description="Doğrudan rapordan çıkarılmış, sayfa numaralı en fazla 10 somut sayısal veri."
     )
     baseline_assessment: BaselineAssessment
     red_flags: list[AuditRedFlag] = Field(
-        description="Up to 6 concrete scientific/methodological gaps or omissions strictly supported by the excerpts."
+        description=(
+            "Danıştay ÇED iptal ölçütlerine göre sınıflandırılmış en fazla 6 somut bilimsel/hukuki bulgu. "
+            "Önemsiz biçimsel detayları 'high' olarak işaretlemeyiniz."
+        )
+    )
+    recommended_bilirkisi_disciplines: list[str] = Field(
+        description=(
+            "İdari yargıda mahallinde keşif ve bilirkişi heyeti talep edilmesi halinde heyette bulunması gereken "
+            "temel akademik uzmanlık alanları (ör. 'Çevre Mühendisi', 'Hidrojeoloji Mühendisi', 'Biyolog', "
+            "'Ziraat Mühendisi', 'Orman Mühendisi', 'Maden Mühendisi', 'Şehir ve Bölge Plancısı')."
+        )
     )
     hkt_and_petition_questions: list[RecordQuestion] = Field(
-        description="3-5 concrete, neutral technical questions in Turkish for HKT minutes or İYUK 20/A review."
+        description="HKT tutanağı, Madde 14 görüş dilekçesi veya İYUK 20/A davasında bilirkişi incelemesi için 3-5 somut Türkçe teknik soru."
     )
     data_limitations: str = Field(
-        description="Brief note on what could not be verified (e.g., scanned annex pages or sections outside excerpts)."
+        description="İncelenemeyen bölümler (taranmış ekler, alıntı dışı kalan sayfalar) hakkında kısa Türkçe not."
     )
 
 
@@ -212,14 +248,21 @@ def synthesize_with_gemini(
     used_pages, excerpt_blob = select_high_signal_pages(pdf_path, analysis)
 
     system_instruction = (
-        "You are an independent environmental scientist auditing an official Turkish Environmental Impact "
-        "Assessment (ÇED / PTD) filing for public-interest transparency. "
-        "Strict epistemic rules:\n"
-        "1. Rely ONLY on the provided PDF page excerpts and filing metadata. Never invent figures, species, or claims.\n"
-        "2. Every fact, red flag, and question MUST cite exact 1-based PDF page numbers from the === PDF PAGE [s. N] === markers.\n"
-        "3. Explicitly distinguish completed pre-project baseline field/seasonal surveys from future post-approval monitoring promises.\n"
-        "4. Stay strictly factual, neutral, and scientific — zero partisan commentary or legal accusations.\n"
-        "5. Write key_facts labels/values, baseline explanation, olive_and_protected_status, red_flags, hkt_and_petition_questions, and data_limitations in clear, formal Turkish (only executive_summary_en should be in English)."
+        "You are an independent environmental scientist and Turkish administrative-law EIA (ÇED) auditor reviewing "
+        "an official Turkish ÇED / PTD filing for public-interest transparency and court-grade technical review.\n"
+        "Strict epistemic & legal grounding rules:\n"
+        "1. Rely ONLY on the provided PDF page excerpts and filing metadata. Never invent figures, species, distances, or claims.\n"
+        "2. Every fact, finding, and question MUST cite exact 1-based PDF page numbers from the === PDF PAGE [s. N] === markers.\n"
+        "3. Apply Danıştay (Turkish Council of State) ÇED annulment criteria strictly:\n"
+        "   - 'high' severity ONLY for established annulment grounds: 3573 Olive Law 3 km violations (mitigation promises cannot bypass it), "
+        "project splitting / capacity-threshold evasion (proje parçalama), absent cumulative regional impact assessment, "
+        "single-season/literature-only flora-fauna inventories in sensitive ecosystems, missing mandatory pre-project baseline water/soil chemistry "
+        "or agency consents (DSİ, İl Tarım/5403, OGM), or outright impossible monitoring methods (e.g. visual noise monitoring).\n"
+        "   - 'medium' severity for concrete technical gaps requiring on-site keşif & bilirkişi verification.\n"
+        "   - 'low' severity for secondary procedural or administrative omissions.\n"
+        "4. Explicitly distinguish completed pre-project baseline field/seasonal surveys from future post-approval monitoring commitments.\n"
+        "5. Recommend the exact university expert disciplines (bilirkişi heyeti — always include 'Şehir ve Bölge Plancısı' when land-use/plan compliance is implicated) needed for an on-site court inspection.\n"
+        "6. Write all fields except executive_summary_en in fluent, complete, formal Turkish sentences (zero fragments, zero partisan commentary)."
     )
 
     user_prompt = (
