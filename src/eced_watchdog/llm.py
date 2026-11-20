@@ -266,9 +266,19 @@ def synthesize_with_gemini(
         raise last_err or RuntimeError("Gemini synthesis returned no response")
 
     parsed = EcologicalSynthesis.model_validate_json(response.text)
+    usage = getattr(response, "usage_metadata", None)
+    usage_dict = None
+    if usage is not None:
+        usage_dict = {
+            "prompt_tokens": getattr(usage, "prompt_token_count", None),
+            "output_tokens": getattr(usage, "candidates_token_count", None),
+            "thoughts_tokens": getattr(usage, "thoughts_token_count", None),
+            "total_tokens": getattr(usage, "total_token_count", None),
+        }
     return {
         "model": chosen_model,
         "generated_at": datetime.now().isoformat(timespec="seconds"),
         "pages_sent": used_pages,
+        "usage": usage_dict,
         "result": parsed.model_dump(),
     }

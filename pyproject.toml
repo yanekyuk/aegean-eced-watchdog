@@ -15,6 +15,7 @@ dependencies = [
 
 [project.scripts]
 eced-watch = "eced_watchdog.cli:main"
+eced-publish = "eced_watchdog.publish:main"
 
 [build-system]
 requires = ["hatchling"]

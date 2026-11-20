@@ -72,6 +72,16 @@ chmod 600 .env
 
 ### 3. Run the Pipeline Locally
 
+#### Recommended: Interactive All-in-One Publish Flow (`eced-publish`)
+Fetches the latest nationwide announcements, finds every filing still missing an LLM report (sorted by fewest days remaining), prints a **live USD cost estimate** (`Next 5`, `Next 10`, `Next 25`, `All Ek-1`, `All pending`), asks how many you want to generate, generates them (tracking real token usage), rebuilds `docs/` + validates `feed.xml`, and prompts to commit and push:
+
+```bash
+uv run eced-publish
+# Or skip live fetch and inspect/generate from cached filings only:
+uv run eced-publish --skip-fetch
+```
+
+#### Headless / Scriptable CLI (`eced-watch`)
 ```bash
 # Standard nationwide run (last 7 days across all 81 provinces, up to 5 new PDFs, clean up raw PDFs)
 uv run eced-watch --days 7 --max-digests 5 --drop-pdfs
