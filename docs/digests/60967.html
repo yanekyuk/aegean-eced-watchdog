@@ -1,0 +1,303 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>e-ÇED Ön Özet #60967 — TEKİRDAĞ / ERGENE</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <style>
+:root {
+  --bg: #0f1216;
+  --surface: #171c22;
+  --border: #262e38;
+  --text: #e6edf3;
+  --muted: #8b949e;
+  --accent: #58a6ff;
+  --red: #f85149;
+  --amber: #d29922;
+  --green: #3fb950;
+  --badge-bg: #212830;
+}
+@media (prefers-color-scheme: light) {
+  :root {
+    --bg: #f6f8fa;
+    --surface: #ffffff;
+    --border: #d0d7de;
+    --text: #1f2328;
+    --muted: #656d76;
+    --accent: #0969da;
+    --red: #cf222e;
+    --amber: #9a6700;
+    --green: #1a7f37;
+    --badge-bg: #eef2f6;
+  }
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+}
+.wrap { max-width: 1240px; margin: 0 auto; padding: 24px 18px 64px; }
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+header { border-bottom: 1px solid var(--border); padding-bottom: 16px; margin-bottom: 20px; }
+h1 { margin: 0 0 6px; font-size: 1.55rem; }
+h2 { margin: 26px 0 10px; font-size: 1.2rem; }
+h3 { margin: 16px 0 8px; font-size: 1rem; }
+.sub { color: var(--muted); font-size: 0.92rem; margin: 0; }
+.meta-bar { display: flex; flex-wrap: wrap; gap: 14px; margin-top: 12px; font-size: 0.85rem; color: var(--muted); }
+.stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 10px; margin: 16px 0 18px; }
+.stat { background: var(--surface); border: 1px solid var(--border); border-radius: 8px; padding: 12px 14px; }
+.stat .num { font-size: 1.45rem; font-weight: 700; }
+.stat .lbl { font-size: 0.78rem; color: var(--muted); }
+.map-box {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 18px;
+}
+#map { width: 100%; height: 420px; background: var(--badge-bg); }
+#digest-map { width: 100%; height: 320px; background: var(--badge-bg); }
+.map-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  padding: 9px 14px;
+  font-size: 0.8rem;
+  color: var(--muted);
+  border-top: 1px solid var(--border);
+}
+.dot { display: inline-block; width: 10px; height: 10px; border-radius: 50%; margin-right: 5px; vertical-align: middle; }
+.controls { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; margin-bottom: 16px; }
+input[type="search"], select.filter-select {
+  padding: 8px 12px;
+  border-radius: 6px;
+  border: 1px solid var(--border);
+  background: var(--surface);
+  color: var(--text);
+  font-size: 0.9rem;
+}
+input[type="search"] { flex: 1 1 240px; }
+select.filter-select { min-width: 170px; }
+button.pill {
+  padding: 7px 12px;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: var(--surface);
+  color: var(--text);
+  cursor: pointer;
+  font-size: 0.82rem;
+}
+button.pill.active { background: var(--accent); border-color: var(--accent); color: #fff; font-weight: 600; }
+.cards { display: flex; flex-direction: column; gap: 10px; }
+.card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 15px 17px;
+}
+.card.ek1 { border-left: 4px solid var(--accent); }
+.row-top { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px; align-items: baseline; }
+.title { font-weight: 600; font-size: 0.98rem; }
+.badges { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 7px; }
+.badge {
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  background: var(--badge-bg);
+  border: 1px solid var(--border);
+}
+.badge.urgent { border-color: var(--red); color: var(--red); font-weight: 600; }
+.badge.warn { border-color: var(--amber); color: var(--amber); font-weight: 600; }
+.badge.ok { border-color: var(--green); color: var(--green); }
+.badge.muted { color: var(--muted); }
+.detail { font-size: 0.87rem; color: var(--muted); margin: 8px 0; }
+.actions { display: flex; flex-wrap: wrap; gap: 12px; font-size: 0.84rem; margin-top: 8px; }
+.notice {
+  margin-top: 28px;
+  padding: 14px 16px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  font-size: 0.84rem;
+  color: var(--muted);
+}
+table.kv { width: 100%; border-collapse: collapse; margin: 12px 0; font-size: 0.9rem; }
+table.kv th, table.kv td { border: 1px solid var(--border); padding: 8px 11px; text-align: left; vertical-align: top; }
+table.kv th { width: 240px; background: var(--badge-bg); }
+code { background: var(--badge-bg); padding: 1px 5px; border-radius: 4px; font-size: 0.85em; }
+blockquote { margin: 10px 0; padding: 11px 15px; border-left: 3px solid var(--accent); background: var(--surface); font-size: 0.9rem; }
+.hit { margin: 7px 0; font-size: 0.88rem; }
+.pno { font-weight: 700; color: var(--accent); }
+.leaflet-popup-content { color: #1f2328; font-size: 0.85rem; line-height: 1.45; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div style="font-size:0.85rem;margin-bottom:8px;"><a href="../index.html">← Türkiye e-ÇED İzleme listesine dön</a> · <a href="../rehber.html">Kullanım ve İnceleme Rehberi</a> · <a href="60967.md">Ham Markdown (.md)</a></div>
+    <h1>e-ÇED Ön Özet #60967 — TEKİRDAĞ / ERGENE</h1>
+    <p class="sub">Oligonükleotid Platformu ve Kimyasal Sentez Yoluyla İlaç Etken Maddesi (API), Parenteral Çözelti (Flakon, Şırınga, Kartuş) Üretim Tesisi</p>
+    <div class="badges" style="margin-top:10px;">
+      <span class="badge">IDK</span>
+      <span class="badge">Ek-1</span>
+      <span class="badge warn">İDK İncelemesi · Tarih duyuru metnindedir</span>
+    </div>
+  </header>
+
+  <table class="kv">
+    <tr><th>Proje Sahibi</th><td>POLİFARMA İLAÇ SAN. VE TİC. A.Ş. ÇORLU ŞUBESİ</td></tr>
+    <tr><th>Hazırlayan Kuruluş</th><td>CNR ÇED ÇEVRE HİZMETLERİ TİC. LTD. ŞTİ.</td></tr>
+    <tr><th>Sektör / Alt Sektör</th><td>Kimya / Tarım İlaçları ve Farmasötik Ürünlerin Üretildiği Tesis Projeleri</td></tr>
+    <tr><th>Duyuru Tarihi</th><td><code>14.11.2026</code> (belge yükleme tarihi: <code>27/08/2026 08:53:59</code>)</td></tr>
+    <tr><th>PDF Kapsamı</th><td>62.71 MB · 875 sayfa (640 metin sayfası / 235 taranmış veya görüntü sayfası) · SHA-256 <code>cc1deff60c4807e1…</code></td></tr>
+    <tr><th>Resmi Bağlantılar</th><td><a href="http://eced.csb.gov.tr/jsp/ek1/60967" target="_blank" rel="noopener">e-ÇED Portal Kaydı</a> · <a href="http://eced.csb.gov.tr/jsp/dosya/dosyaGoster.htm?tempAd=sign4885618897043232020.pdf&amp;orjinalAd=60967_CED_Raporu.pdf&amp;yuklemeTarihi=2026-11-11" target="_blank" rel="noopener">Resmi PDF Dosyası</a> · <a href="https://www.openstreetmap.org/?mlat=41.27458&amp;mlon=27.5921#map=12/41.27458/27.5921" target="_blank" rel="noopener">OpenStreetMap</a> · <a href="https://www.google.com/maps/search/?api=1&amp;query=41.27458,27.5921" target="_blank" rel="noopener">Google Haritalar</a></td></tr>
+  </table>
+
+  <h2>Konum Haritası</h2>
+  <div class="map-box">
+    <div id="digest-map"></div>
+    <div class="map-legend"><span>PDF metninden çıkarılan kesin proje koordinatları (80 nokta, datum: UTM-Z35/ED50, sayfa: s.73, s.74, s.75).</span></div>
+  </div>
+
+  
+  <h2>Yapay Zeka Destekli Bilimsel Ön Değerlendirme <span class="badge">gemini-4-hydrogen</span></h2>
+  <p class="sub">Bu değerlendirme, resmi PDF dosyasından seçilen 22 sayfa (s.1, s.2, s.4, s.5, s.6, s.7, s.8, s.9, s.10, s.11, s.12, s.13, s.14, s.15, s.16, s.34, s.57, s.58, s.66, s.79, s.80, s.81) esas alınarak hazırlanmıştır. Tüm sayısal verilerin ve tespitlerin resmi PDF belgesindeki ilgili <code>[s. N]</code> sayfalarından doğrulanması gerekir.</p>
+  <section class="card ek1">
+    <p><strong>Özet:</strong> Polifarma İlaç San. ve Tic. A.Ş. Çorlu Şubesi tarafından Tekirdağ ili, Ergene ilçesi, Ergene-1 Organize Sanayi Bölgesi (461 ada, 25 parsel) sınırlarındaki mevcut tesis bünyesinde oligonükleotid platformu ve kimyasal sentez yoluyla ilaç etken maddesi (API) ile parenteral çözelti üretim kapasitesi artırımı ve çeşitlendirmesi planlanmaktadır [s. 1, s. 12, s. 13]. 800.000.000 TL yatırım bedelli proje kapsamında mevcut 61.689,60 ton/yıl parenteral çözelti üretimine ek olarak yıllık 3,00 kg oligonükleotid API, 30,00 kg kimyasal sentez API, 6.804,00 ton likit farmasötik ilaç ve 86.400,00 L flakon/şırınga/kartuş formunda parenteral çözelti üretimi öngörülmektedir [s. 2, s. 13]. ÇED Yönetmeliği Ek-1 Madde 33 ve Madde 29 kapsamında sunulan projede yeni arazi tahsisi bulunmamakla birlikte, solvent geri kazanım ünitesinin yer almaması, proses kaynaklı VOC emisyonları, endüstriyel atıksular ve tehlikeli atık yönetimi başlıca çevresel unsurları oluşturmaktadır [s. 2, s. 14, s. 57]. Sunulan rapor kesitlerinde koruma alanlarına mesafelerin kesinleştirilmemesi ve flora-fauna verilerinin büyük ölçüde önceki çalışmalara ile literatüre dayandırılması temel metodolojik boşluklar olarak öne çıkmaktadır [s. 79, s. 80, s. 81].</p>
+    <details style="margin-top:8px;font-size:0.86rem;color:var(--muted);"><summary style="cursor:pointer;">İngilizce özet (English summary)</summary><p style="margin:6px 0 0;">Polifarma İlaç San. ve Tic. A.Ş. Çorlu Branch proposes adding oligonucleotide-based and chemical synthesis Active Pharmaceutical Ingredient (API) production as well as expanded parenteral solution manufacturing within its existing facility in the Ergene-1 Organized Industrial Zone (Block 461, Parcel 25), Ergene District, Tekirdağ [s. 1, s. 12, s. 13]. With a projected investment of 800,000,000 TL, the project adds 3.00 kg/year of oligonucleotide API, 30.00 kg/year of chemical synthesis API, 6,804.00 tons/year of liquid pharmaceuticals, and 86,400.00 L/year of vial/syringe/cartridge parenteral solutions alongside the existing 61,689.60 tons/year serum output [s. 2, s. 13]. Classified under EIA Regulation Annex-1 Articles 33 and 29, the expansion requires no new land outside the existing industrial parcel, yet key environmental stakes center on the absence of solvent recovery, volatile organic compound (VOC) emissions, industrial wastewater pre-treatment, and hazardous chemical/waste management [s. 2, s. 14, s. 57]. Within the supplied excerpts, key baseline limitations include deferred spatial proximity verification for nearby protected sites and reliance on prior regional reports and literature for flora and fauna characterization [s. 79, s. 80, s. 81].</p></details>
+    <div class="badges" style="margin-top:10px;">
+      <span class="badge">Saha çalışması: Karışık veya yöntemi belirsiz</span>
+      <span class="badge">Mevsimsel örnekleme: İncelenen sayfalarda tespit edilemedi</span>
+      <span class="badge">Kümülatif etki: Eksik veya tespit edilemedi</span>
+    </div>
+    <p class="detail" style="margin-top:10px;"><strong>Zeytinlik ve Korunan Alanlar:</strong> Sunulan sayfalarda 3573 sayılı Kanun kapsamındaki zeytinliklere ilişkin bir veri yer almamaktadır. Proje alanının Ergene-1 OSB içinde mevcut sanayi parseli üzerinde bulunduğu ve Milli Park, Tabiat Parkı, Yaban Hayatı Geliştirme Sahası, Doğal Sit Alanı, ÖÇK, sulak alan veya doğal orman formasyonu içermediği belirtilmektedir [s. 66, s. 80, s. 81]. Ancak raporda Çerkezköy-Ergene sınırlarında Doğal Sit-Nitelikli Doğal Koruma Alanı statüsünde tescilli Veliköy Antik Su Yolu Doğal Sit Alanı bulunduğu kaydedilmekte, buna karşın proje sahasına mesafesi belirtilmemektedir [s. 79].<br/>Biyolojik çeşitlilik değerlendirmesinde önceki bölgesel ekolojik değerlendirme raporlarındaki tür listeleri ve literatür bilgilerinin esas alındığı açıkça ifade edilmekte, arazi gözlemleri ve literatüre dayanılarak yayılış göstermesi muhtemel türler sıralanmaktadır [s. 80, s. 81]. İncelenen sayfalarda proje öncesi döneme ait tamamlanmış çok mevsimli bir saha örneklemesi tarih veya yöntemi sunulmamış, çevresel izleme faaliyetlerinin ise onay sonrasında yürütüleceği belirtilmiştir [s. 58, s. 80, s. 81]. İçindekiler dizininde IV. Bölüm olarak Kümülatif Çevresel Etki Değerlendirmesi başlığı yer almakla birlikte ilgili sayfalar sağlanan kesitlerde bulunmadığından kümülatif analiz niteliği doğrulanamamıştır [s. 8].</p>
+  </section>
+  <h3>Öne Çıkan Sayısal Bulgular</h3><table class="kv"><tr><th>Proje Yatırım Bedeli</th><td>800.000.000,00 TL <span class="pno">[s. 2]</span></td></tr>
+<tr><th>Proje Alanı Konumu</th><td>Tekirdağ İli, Ergene İlçesi, Vakıflar OSB Mah., Ergene-1 OSB, F19-A-22-C-2A Pafta, 461 Ada, 25 Parsel <span class="pno">[s. 12]</span></td></tr>
+<tr><th>ÇED Yönetmeliği Kapsamı</th><td>Madde 33 (farmasötik/tarım ilacı etken madde üretimi) ve Madde 29 (50.000 m³ ve üzeri kimyasal depolama) <span class="pno">[s. 2]</span></td></tr>
+<tr><th>Mevcut Parenteral Çözelti (Serum) Kapasitesi</th><td>61.689,60 ton/yıl <span class="pno">[s. 13]</span></td></tr>
+<tr><th>Planlanan Likit Farmasötik İlaç Kapasitesi</th><td>6.804,00 ton/yıl <span class="pno">[s. 13]</span></td></tr>
+<tr><th>Planlanan Oligonükleotid API Kapasitesi</th><td>3,00 kg/yıl <span class="pno">[s. 13]</span></td></tr>
+<tr><th>Planlanan Kimyasal Sentez API Kapasitesi</th><td>30,00 kg/yıl <span class="pno">[s. 13]</span></td></tr>
+<tr><th>Planlanan Toplam API Kapasitesi</th><td>33,00 kg/yıl <span class="pno">[s. 13]</span></td></tr>
+<tr><th>Planlanan Parenteral Çözelti (Flakon, Şırınga, Kartuş)</th><td>86.400,00 L/yıl <span class="pno">[s. 13]</span></td></tr>
+<tr><th>Çalışma Süresi ve Vardiya Düzeni</th><td>3 vardiya (8 saat/vardiya), 24 saat/gün, 25 gün/ay, 300 gün/yıl <span class="pno">[s. 13]</span></td></tr></table>
+  <h3>Bilimsel ve Metodolojik Bulgular</h3><section class="card"><div class="hit"><span class="badge urgent">YÜKSEK</span> <strong>Flora ve fauna temel durumunun önceki raporlara ve literatüre dayandırılması</strong> <span class="pno">[s. 80, s. 81]</span> — Flora ve fauna bölümünde tür listelerinin belirlenmesinde önceki ekolojik değerlendirme raporlarının ve literatür bilgilerinin esas alındığı belirtilmekte; türler arazi gözlemleri ve literatür doğrultusunda yayılış göstermesi muhtemel türler olarak tanımlanmaktadır. Sağlanan kesitlerde proje sahasına özgü saha çalışması tarihleri, örnekleme noktaları veya çok mevsimli arazi envanteri yer almamaktadır.</div>
+<div class="hit"><span class="badge urgent">YÜKSEK</span> <strong>Koruma alanlarına mesafe ve mekânsal kesişim analizinin şartlı olarak sonraya bırakılması</strong> <span class="pno">[s. 79]</span> — Raporda Çerkezköy-Ergene ilçeleri sınırında tescilli Veliköy Antik Su Yolu Doğal Sit Alanı bulunduğu belirtilmesine rağmen tesisin bu alana mesafesi verilmemiştir. Bunun yerine herhangi bir koruma alanı ile mekânsal kesişim veya yakınlık bulunması halinde kurum görüşleri doğrultusunda değerlendirme yapılacağı ifade edilerek temel mekânsal tespit ÇED sonrası sürece ertelenmiştir.</div>
+<div class="hit"><span class="badge warn">ORTA</span> <strong>Solvent geri kazanım veya yeniden kullanım ünitesinin bulunmaması</strong> <span class="pno">[s. 14, s. 57, s. 58]</span> — Oligonükleotid ve kimyasal sentez yoluyla API üretimi gerçekleştirilecek olmasına ve proje maliyet unsurları arasında VOC emisyonları ile tehlikeli atıklar sayılmasına rağmen proje kapsamında solvent geri kazanım ünitesi veya solventlerin yeniden kullanımına yönelik bir faaliyet bulunmadığı beyan edilmektedir.</div>
+<div class="hit"><span class="badge warn">ORTA</span> <strong>Çevresel fayda-maliyet analizinin yalnızca niteliksel yapılması</strong> <span class="pno">[s. 58]</span> — Toplam yatırım bedeli 800.000.000 TL olarak belirtilmesine karşın çevresel faydalar ve çevresel maliyetler için ayrı parasal değerler, net fayda-maliyet oranı veya geri ödeme hesabı oluşturulmadığı, değerlendirmenin bütünüyle niteliksel bırakıldığı ifade edilmektedir.</div>
+<div class="hit"><span class="badge muted">DÜŞÜK</span> <strong>Yer alternatiflerinin değerlendirilmemesi</strong> <span class="pno">[s. 2, s. 66]</span> — Projenin ÇED Yönetmeliği Ek-1 Madde 33 (API üretimi) ve Madde 29 (50.000 m³ üzeri kimyasal depolama) kapsamında yeni kimyasal sentez süreçleri eklemesine rağmen, mevcut OSB parseli içinde kaldığı gerekçesiyle ayrıca alternatif saha değerlendirmesine ihtiyaç duyulmadığı belirtilmiştir.</div></section>
+  <h3>HKT Tutanakları ve İdari Başvurular İçin Taslak Teknik Sorular</h3><ul><li>Flora ve fauna değerlendirmesinin önceki ekolojik değerlendirme raporları ve literatür verilerine dayandırıldığı belirtilmektedir; proje sahası ve yakın çevresi için proje öncesinde farklı vejetasyon dönemlerini kapsayan güncel saha etütleri yapılmış mıdır, yapıldıysa tarih ve yöntemleri nelerdir? <span class="pno">[s. 80, s. 81]</span></li>
+<li>Raporda adı geçen Veliköy Antik Su Yolu Doğal Sit Alanı başta olmak üzere bölgedeki tescilli doğal ve arkeolojik sit alanlarının proje parseline kesin kuş uçuşu mesafeleri neden belirtilmemiş ve mekânsal kesişim değerlendirmesi neden ÇED raporu aşamasında tamamlanmamıştır? <span class="pno">[s. 79]</span></li>
+<li>ÇED Yönetmeliği Madde 33 ve Madde 29 kapsamında kimyasal sentez ve oligonükleotid bazlı API üretimi planlanmasına rağmen projede neden solvent geri kazanım ünitesi öngörülmemiştir; yıllık tüketilecek ve atık olarak bertaraf edilecek solvent miktarları ile VOC kontrol verimliliği nedir? <span class="pno">[s. 2, s. 13, s. 14]</span></li>
+<li>Çevresel fayda-maliyet değerlendirmesinde sayısal çevresel maliyet ve net fayda-maliyet oranı hesaplanmadığı belirtildiğine göre, planlanan kapasite artışının Ergene-1 OSB atıksu altyapısı ve bölge hava kalitesi üzerindeki ek kirlilik yükü hangi nicel verilerle karşılanacaktır? <span class="pno">[s. 14, s. 58, s. 66]</span></li></ul>
+  <p class="sub"><em>İnceleme sınırları:</em> Toplam 875 PDF sayfasından oluşan ÇED raporunun yalnızca 22 sayfası ([1, 2, 4-16, 34, 57, 58, 66, 79-81]) inceleme kesiti olarak sunulmuştur; ayrıca raporun 235 sayfası metin çıkarılamayan taranmış görüntü formatındadır. Bu nedenle içindekiler dizininde görülen BEKRA hesaplamaları, flora-fauna tablolarının devamı, su temini ve atıksu hesapları, hava/VOC emisyon modellemeleri, IV. Bölüm Kümülatif Çevresel Etki Değerlendirmesi, V. Bölüm İzleme Planları ve rapor ekleri incelenememiş ve doğrulanamamıştır [s. 4, s. 6, s. 8, s. 9, s. 11].</p>
+
+
+  <h2>Resmi Duyuru Metni</h2>
+  <blockquote>TEKİRDAĞ ili ERGENE,  ilcesinde TEKİRDAĞ ili ERGENE ilçesi sınırları içerisinde POLİFARMA İLAÇ SAN. VE TİC. A.Ş. ÇORLU ŞUBESİ tarafından yapılması planlanan Oligonükleotid Platformu ve Kimyasal Sentez Yoluyla İlaç Etken Maddesi (API), Parenteral Çözelti (Flakon, Şırınga, Kartuş) Üretim Tesisi projesi ile ilgili olarak hazırlanan ÇED Raporu, ÇED Yönetmeliği&#x27;nin 11. maddesi kapsamında Bakanlığımıza sunulmuş olup, inceleme değerlendirme süreci başlamıştır. Proje ile ilgili olarak 30/11/2026 tarihinde İDK toplantısı gerçekleştirilecektir. Bakanlığımıza sunulan ÇED Raporu https://eced-duyuru.csb.gov.tr/eced-prod/duyurular.xhtml adresinde yer almaktadır. ÇED Raporu ilgililere ve kamuoyuna duyurulur.</blockquote>
+
+  <h2>Otomatik Metin Taraması (Deterministik)</h2>
+  <table class="kv"><tr><th>Saha veya arazi çalışması ifadesi</th><td><span class="badge ok">Metinde yer almaktadır</span></td></tr>
+<tr><th>Literatür taraması ifadesi</th><td><span class="badge ok">Metinde yer almaktadır</span></td></tr>
+<tr><th>Mevsimsel örnekleme ifadesi</th><td><span class="badge ok">Metinde yer almaktadır</span></td></tr>
+<tr><th>Kümülatif etki değerlendirmesi ifadesi</th><td><span class="badge ok">Metinde yer almaktadır</span></td></tr>
+<tr><th>3573 sayılı Zeytincilik Kanunu veya zeytinlik ifadesi</th><td><span class="badge urgent">Metinde tespit edilemedi; doğrudan PDF üzerinden kontrol ediniz</span></td></tr>
+<tr><th>Yeraltı suyu, akifer veya hidrojeoloji ifadesi</th><td><span class="badge ok">Metinde yer almaktadır</span></td></tr>
+<tr><th>Endemik tür, IUCN veya Bern Sözleşmesi ifadesi</th><td><span class="badge ok">Metinde yer almaktadır</span></td></tr></table>
+  <p class="sub">Metin katmanı (OCR) bulunmayan taranmış harita ve kurum görüşü ekleri otomatik metin taramasına dahil edilmemiştir.</p>
+
+  <h2>Sayfa Kaynaklı Çıkarılan Bulgular</h2>
+  <div class="cards"><section class="card"><h3>Koordinatlar, Parsel ve Alan Büyüklüğü <span style="color:var(--muted);font-weight:400;font-size:0.85rem">(130 sayfa: s.5, s.6, s.12, s.13, s.21, s.26, s.27, s.39, s.41, s.42, s.45, s.46, s.47, s.49 (+116 sayfa))</span></h3><div class="hit"><span class="pno">[s. 5]</span> <code>Koordinat</code> — …de Depolanacakları veya Hangi Amaçlar İçin Kullanılacakları (Kazı Fazlası Malzeme ve Bitkisel Toprak Depo Alanlarının Koordinatlarıyla Birlikte Gösterilmesi, Bitkisel Toprağın Nasıl Değerlendirileceğinin Açıklanması), Şantiye Çalışmaları Sonucund…</div>
+<div class="hit"><span class="pno">[s. 6]</span> <code>utm</code> — …dileceği, Suyun Temin Edileceği Kaynaklardan Alınacak Su Miktarı Ve Bu Suların Kullanım Amaçlarına Göre Miktarları, Soğutma Sistemine İlişkin Bilgiler (Soğutma Suyu Akım Şeması, Soğutma Suyu Miktarı, Kullanılacak Kimyasal Maddeler Ve Miktarl…</div>
+<div class="hit"><span class="pno">[s. 12]</span> <code>utm</code> — …nılarak kontrollü kimyasal reaksiyonlar gerçekleştirilecek; filtrasyon ve/veya ayırma, saflaştırma, kristalizasyon, kurutma ve kalite kontrol işlemleri uygulanacaktır. Oligonükleotid üretiminde ise başlangıç malzemelerinin hazırlanması, oli…</div>
+<div class="hit"><span class="pno">[s. 13]</span> <code>utm</code> — …slerinin gerçekleştirilmesi, reaksiyon, ayırma, filtrasyon ve saflaştırma işlemleri, gerektiğinde kristalizasyon ve kurutma, kalite kontrol analizleri, ürünlerin ambalajlanması ve depolanması aşamalarından oluşacaktır. Parenteral çözelti ür…</div>
+<div class="hit"><span class="pno">[s. 21]</span> <code>utm</code> — …lü kimyasal reaksiyonların gerçekleştirilmesi, filtrasyon ve/veya ayırma işlemleri, saflaştırma ve kristalizasyon, kurutma, kalite kontrollerinin gerçekleştirilmesi, uygun ürünlerin ambalajlanması ve depolanması aşamaları uygulanacaktır.…</div>
+<div class="hit"><span class="pno">[s. 26]</span> <code>50,5 m²</code> — …FF/Filtrasyon Ünitesi İş Akım Şeması 2. Kimyasal Sentez Yoluyla API Üretim Prosesi: Kimyasal Sentez Ünitesi yaklaşık 50,5 m² kapalı alanda planlanmaktadır. Bu ünitede farklı ilaç etken maddelerinin üretimi, ürün bazında tanımlanmış üretim r…</div></section><section class="card"><h3>Su Kullanımı, Hidrojeoloji ve Deşarj <span style="color:var(--muted);font-weight:400;font-size:0.85rem">(147 sayfa: s.6, s.14, s.15, s.16, s.36, s.47, s.48, s.49, s.53, s.57, s.58, s.60, s.61, s.62 (+133 sayfa))</span></h3><div class="hit"><span class="pno">[s. 6]</span> <code>Yeraltı Suyu</code> — …..................................... 177 III.9. Proje Kapsamında Gerçekleştirilecek Faaliyetler Sonucunda Yüzeysel Ve Yeraltı Suyu Kaynaklarının Etkilenme Durumları Ve Alınacak Tedbirler .......................................................... 177…</div>
+<div class="hit"><span class="pno">[s. 14]</span> <code>atıksu</code> — …anacaktır. Proje kapsamında oluşabilecek endüstriyel atıksular, niteliklerine göre mevcut tesis altyapısı ve ilgili atıksu yönetim sistemi kapsamında değerlendirilecek; gerekli ön arıtma işlemlerinin ardından ilgili deşarj kriterleri ve Orga…</div>
+<div class="hit"><span class="pno">[s. 14]</span> <code>deşarj</code> — …ltyapısı ve ilgili atıksu yönetim sistemi kapsamında değerlendirilecek; gerekli ön arıtma işlemlerinin ardından ilgili deşarj kriterleri ve Organize Sanayi Bölgesi altyapı koşulları doğrultusunda yönetilecektir. Evsel nitelikli atıksular mevcut…</div>
+<div class="hit"><span class="pno">[s. 15]</span> <code>atıksu</code> — …Ergene 1 Organize Sanayi Bölgesi içerisinde bulunması nedeniyle ulaşım, enerji, doğal gaz, su temini, kanalizasyon ve atıksu altyapısına ilişkin mevcut olanaklardan yararlanılacaktır. Projenin gerçekleştirilmesi ve işletilmesi sırasında ilgili…</div>
+<div class="hit"><span class="pno">[s. 16]</span> <code>atıksu</code> — …Organize Sanayi Bölgesi içerisinde bulunması nedeniyle mevcut elektrik, doğal gaz, su temini, ulaşım, kanalizasyon ve atıksu altyapısı olanaklarından yararlanılacaktır. Bu yönüyle proje, mevcut tesisin teknik ve altyapısal olanaklarını etkin…</div>
+<div class="hit"><span class="pno">[s. 36]</span> <code>916,4 m³/yıl</code> — …cmi = 25,5 m³ Buna göre 2,75 saat steril süresi ve %85 randıman hesabı ile; K = 25,5 × (8 / 2,75) × 300 × 0,85 = 18.916,4 m³/yıl = 18.916.400 kg/yıl Steril işlemi yapılmayan alüminyum şişe: 194.400 kg/yıl Genel Toplam = 18.916.400 + 194.400 = 1…</div></section><section class="card"><h3>Korunan Alanlar, Orman ve Zeytinlikler <span style="color:var(--muted);font-weight:400;font-size:0.85rem">(23 sayfa: s.66, s.79, s.81, s.86, s.112, s.113, s.120, s.121, s.197, s.201, s.205, s.208, s.209, s.211 (+9 sayfa))</span></h3><div class="hit"><span class="pno">[s. 66]</span> <code>orman alanı</code> — …marlı alanda ve mevcut üretim tesisinin bulunduğu parsel üzerindedir. 5 Doğal alanların korunması Proje kapsamında orman alanı, tarım arazisi, mera, sulak alan, doğal sit, milli park, özel çevre koruma bölgesi veya yaban hayatı geliştirme sahası…</div>
+<div class="hit"><span class="pno">[s. 66]</span> <code>sulak alan</code> — …isinin bulunduğu parsel üzerindedir. 5 Doğal alanların korunması Proje kapsamında orman alanı, tarım arazisi, mera, sulak alan, doğal sit, milli park, özel çevre koruma bölgesi veya yaban hayatı geliştirme sahası gibi hassas alanların kullanımı…</div>
+<div class="hit"><span class="pno">[s. 66]</span> <code>doğal sit</code> — …duğu parsel üzerindedir. 5 Doğal alanların korunması Proje kapsamında orman alanı, tarım arazisi, mera, sulak alan, doğal sit, milli park, özel çevre koruma bölgesi veya yaban hayatı geliştirme sahası gibi hassas alanların kullanımına ihtiyaç…</div>
+<div class="hit"><span class="pno">[s. 66]</span> <code>milli park</code> — …üzerindedir. 5 Doğal alanların korunması Proje kapsamında orman alanı, tarım arazisi, mera, sulak alan, doğal sit, milli park, özel çevre koruma bölgesi veya yaban hayatı geliştirme sahası gibi hassas alanların kullanımına ihtiyaç duyulmamaktad…</div>
+<div class="hit"><span class="pno">[s. 66]</span> <code>özel çevre koruma</code> — …5 Doğal alanların korunması Proje kapsamında orman alanı, tarım arazisi, mera, sulak alan, doğal sit, milli park, özel çevre koruma bölgesi veya yaban hayatı geliştirme sahası gibi hassas alanların kullanımına ihtiyaç duyulmamaktadır. 6 Altyapı ve…</div>
+<div class="hit"><span class="pno">[s. 79]</span> <code>Özel Çevre Koruma</code> — …oruma Alanları, Boğaziçi Kanununa göre koruma altına alınan alanlar, Biyogenetik Rezerv Alanları, Biyosfer Rezervleri, Özel Çevre Koruma Bölgeleri, Özel Koruma Alanları, içme ve kullanma su kaynakları ile ilgili koruma alanları, Turizm Alan ve Merkezleri…</div></section><section class="card"><h3>Flora, Fauna ve Saha Metodolojisi <span style="color:var(--muted);font-weight:400;font-size:0.85rem">(35 sayfa: s.7, s.34, s.80, s.81, s.82, s.86, s.87, s.88, s.89, s.90, s.91, s.92, s.93, s.94 (+21 sayfa))</span></h3><div class="hit"><span class="pno">[s. 7]</span> <code>Endemik</code> — …....................................... 189 III.11. Projenin İnşaat Ve İşletme Döneminde Flora – Fauna (Mevcut Türler, Endemik Türlerin Bulunduğu Yerler, Önemli Bitki Alanı Bulunan Yerler Ve Varsa Nesli Tehlike Altında Olan Fauna Türlerinin Yaş…</div>
+<div class="hit"><span class="pno">[s. 34]</span> <code>Örnekleme</code> — …Cihazı 2 Otoklav (Sterilizatör) Lab. Tipi 3 Isıtıcı Manyetik Karıştırıcı 1 Derin Dondurucu 1 Rcs Hıng Flow Hava Örnekleme Cihazı 1 Phoenix-100/Indentifikasyon Cihazı 1 Phoenix Spec / Macfarland Cihazı 2 Uv Spektrofotometre 1 Ultrason…</div>
+<div class="hit"><span class="pno">[s. 80]</span> <code>Flora ve Fauna</code> — …Kimyasal Sentez Yoluyla İlaç Etken Maddesi (API), Parenteral Çözelti (Flakon, Şırınga, Kartuş) Üretim Tesisi II.3. Flora ve Fauna (Proje alanı ve etkW alanında bulunan flora türlerW, etkWlenecek alandakW türler, bu çalışmaların hangW dönemde yapıl…</div>
+<div class="hit"><span class="pno">[s. 80]</span> <code>IUCN</code> — …tkileri Veri Servisi (TÜBİVES), Türkiye Tabiatı Koruma Derneği tarafından yayımlanan Red Data Book of Turkish Plants, IUCN Kırmızı Liste kategorileri, Avrupa’nın Yaban Hayatı ve Yaşama Ortamlarını Koruma Sözleşmesi (Bern Sözleşmesi) ekleri v…</div>
+<div class="hit"><span class="pno">[s. 80]</span> <code>Kırmızı Liste</code> — …ri Veri Servisi (TÜBİVES), Türkiye Tabiatı Koruma Derneği tarafından yayımlanan Red Data Book of Turkish Plants, IUCN Kırmızı Liste kategorileri, Avrupa’nın Yaban Hayatı ve Yaşama Ortamlarını Koruma Sözleşmesi (Bern Sözleşmesi) ekleri ve yürürlükteki…</div>
+<div class="hit"><span class="pno">[s. 80]</span> <code>Bern Sözleşmesi</code> — …of Turkish Plants, IUCN Kırmızı Liste kategorileri, Avrupa’nın Yaban Hayatı ve Yaşama Ortamlarını Koruma Sözleşmesi (Bern Sözleşmesi) ekleri ve yürürlükteki Merkez Av Komisyonu kararları dikkate alınmıştır. Proje alanı Ergene İlçesi sınırlarında, T…</div></section><section class="card"><h3>Emisyonlar, Jeokimya ve Atıklar <span style="color:var(--muted);font-weight:400;font-size:0.85rem">(130 sayfa: s.4, s.14, s.57, s.58, s.60, s.68, s.71, s.73, s.76, s.77, s.79, s.102, s.103, s.104 (+116 sayfa))</span></h3><div class="hit"><span class="pno">[s. 4]</span> <code>Deprem</code> — ….................. 64 II.1.3. Proje Alanı ve Yakın Çevresinde Bulunan Tarım Arazilerinin, Yeraltı ve Yüzey Sularının, Deprem Kuşaklarının, Jeolojik Yapının, Yerleşim Alanlarının, Ulaşım Ağının, Enerji İletim Hatlarının, Boru Hatlarının, A…</div>
+<div class="hit"><span class="pno">[s. 14]</span> <code>gürültü</code> — …abilecek olumsuz etkilerin önlenmesi için gerekli tedbirler alınacaktır. Üretim faaliyetleri sırasında oluşabilecek gürültü, koku, emisyon, kimyasal madde ve diğer çevresel sağlık risklerinin kontrolü için gerekli önlemler uygulanacaktır. Ça…</div>
+<div class="hit"><span class="pno">[s. 57]</span> <code>gürültü</code> — …VOC oluşumu, atıksu, tehlikeli ve tehlikesiz atıklar, kimyasal madde kullanımı ve depolanması, enerji ve su tüketimi, gürültü ve koku oluşumu başlıkları altında değerlendirilmiştir. Tablo 15 Olası çevresel maliyet unsurları No Çevresel Mal…</div>
+<div class="hit"><span class="pno">[s. 58]</span> <code>Gürültü</code> — …lanım 6 Enerji tüketimi Enerji verimli ekipmanların tercih edilmesi ve yardımcı sistemlerin verimli işletilmesi 7 Gürültü ve koku oluşumu Kaynakta kontrol, ekipman bakımı ve gerekli işletme tedbirleri 8 Acil durum ve kaza riskleri Yangı…</div>
+<div class="hit"><span class="pno">[s. 60]</span> <code>gürültü</code> — …ertaraf edilmesi, içme ve kullanma sularının uygun temin edilmesi, evsel ve katı atıkların mevzuata uygun yönetilmesi, gürültü, koku, emisyon ve artık kimyasal maddelerden kaynaklanabilecek çevre ve sağlık risklerine karşı önlem alınması gerekt…</div>
+<div class="hit"><span class="pno">[s. 68]</span> <code>tehlikeli atık</code> — …edir. Üretim sırasında oluşabilecek atık solventler ve solvent içeren atıklar, ilgili mevzuat hükümleri doğrultusunda tehlikeli atık olarak yönetilecektir. I.7.4. Sonuç ve Seçilen Alternatif Yapılan yer ve teknoloji alternatifleri değerlendirmesi…</div></section><section class="card"><h3>Proje Bedeli, Güç ve Kapasite <span style="color:var(--muted);font-weight:400;font-size:0.85rem">(91 sayfa: s.2, s.12, s.13, s.15, s.16, s.17, s.18, s.30, s.35, s.36, s.37, s.40, s.41, s.42 (+77 sayfa))</span></h3><div class="hit"><span class="pno">[s. 2]</span> <code>Proje Bedeli</code> — …ormu ve Kimyasal Sentez Yoluyla İlaç Etken Maddesi (API), Parenteral Çözelti (Flakon, Şırınga, Kartuş) Üretim Tesisi Proje Bedeli: 800.000.000,00 TL Proje İçin Seçilen Yerin Açık Adresi (İli, İlçesi, Mevki): Tekirdağ İli, Ergene İlçesi, Vakıflar…</div>
+<div class="hit"><span class="pno">[s. 2]</span> <code>kapasite</code> — …farmasötik ürünlerin etken maddelerinin üretildiği tesisler (Ar-Ge için üretim yapan tesisler hariç), Madde 29-Toplam kapasitesi 50.000 m³ ve üzeri olan petrol, doğalgaz, petrokimya ve kimyasal maddelerin depolandığı tesisler (Ek ibare: RG-5/3/…</div>
+<div class="hit"><span class="pno">[s. 12]</span> <code>kapasite</code> — …k kontrol ve ambalajlama işlemleri tamamlanacaktır. Proje kapsamında mevcut ve planlanan üretim faaliyetlerine ilişkin kapasiteler aşağıda verilmiştir.</div>
+<div class="hit"><span class="pno">[s. 13]</span> <code>Kapasite</code> — …aç Etken Maddesi (API), Parenteral Çözelti (Flakon, Şırınga, Kartuş) Üretim Tesisi Tablo 1 Mevcut ve Planlanan Üretim Kapasiteleri No Üretim Faaliyeti Mevcut / Planlanan Durum Kapasite Birim 1 Parenteral Çözelti (Serum) Üretimi Mevcut 6…</div>
+<div class="hit"><span class="pno">[s. 15]</span> <code>kapasite</code> — …lacaktır. Projenin işletmeye alınmasıyla birlikte yüksek katma değerli aktif farmasötik maddelerin ülkemizde üretim kapasitesinin geliştirilmesi, ilaç üretiminde dışa bağımlılığın azaltılmasına katkı sağlanması, ilaç tedarik zincirinin güçlend…</div>
+<div class="hit"><span class="pno">[s. 16]</span> <code>kapasite</code> — …maddesi üretiminin mevcut farmasötik üretim süreçleriyle bütünleştirilmesine ve yüksek katma değerli ürünlerin üretim kapasitesinin artırılmasına yönelik bir yatırım niteliğindedir.</div></section></div>
+
+  <h2>Belge Bölüm Haritası</h2>
+  <ul><li><span class="pno">[s. 12]</span> PROJENİN TEKNİK OLMAYAN ÖZETİ:</li>
+<li><span class="pno">[s. 671]</span> BÖLÜM 1: Maddenin/karışımın ve şirketin/dağıtıcının kimliği</li>
+<li><span class="pno">[s. 671]</span> BÖLÜM 2: Zararlılık tanımlanması</li>
+<li><span class="pno">[s. 671]</span> BÖLÜM 3: Bileşimi/İçindekiler hakkında bilgi</li>
+<li><span class="pno">[s. 672]</span> BÖLÜM 4: İlk yardım önlemleri</li>
+<li><span class="pno">[s. 672]</span> BÖLÜM 5: Yangınla mücadele önlemleri</li>
+<li><span class="pno">[s. 672]</span> BÖLÜM 6: Kaza sonucu yayılmaya karşı önlemler</li>
+<li><span class="pno">[s. 673]</span> BÖLÜM 7: Elleçleme ve depolama</li>
+<li><span class="pno">[s. 673]</span> BÖLÜM 8: Maruz kalma kontrolleri/kişisel korunma</li>
+<li><span class="pno">[s. 674]</span> BÖLÜM 9: Fiziksel ve kimyasal özellikler</li>
+<li><span class="pno">[s. 674]</span> BÖLÜM 10: Kararlılık ve tepkime</li>
+<li><span class="pno">[s. 675]</span> BÖLÜM 11: Toksikolojik bilgiler</li>
+<li><span class="pno">[s. 675]</span> BÖLÜM 12: Ekolojik bilgiler</li>
+<li><span class="pno">[s. 676]</span> BÖLÜM 13: Bertaraf etme bilgileri</li>
+<li><span class="pno">[s. 676]</span> BÖLÜM 14: Taşımacılık bilgileri</li>
+<li><span class="pno">[s. 677]</span> BÖLÜM 15: Mevzuat bilgileri</li>
+<li><span class="pno">[s. 678]</span> BÖLÜM 16: Diğer bilgiler</li>
+<li><span class="pno">[s. 680]</span> BÖLÜM 1. Maddenin/karışımın ve şirketin/dağıtıcının kimliği</li>
+<li><span class="pno">[s. 680]</span> BÖLÜM 2. Zararlılık tanımlanması</li>
+<li><span class="pno">[s. 681]</span> BÖLÜM 3. Bileşimi/İçindekiler hakkında bilgi</li></ul>
+
+  <div class="notice">
+    Bu sayfa, T.C. Çevre, Şehircilik ve İklim Değişikliği Bakanlığı'nın kamuya açık <code>eced-duyuru.csb.gov.tr</code> duyuru portalındaki kayıtlar esas alınarak bilgilendirme amacıyla hazırlanmıştır. Alıntıların tamamı 1 tabanlı PDF sayfa numarasıyla (<code>[s. N]</code>) gösterilmektedir. Yasal süreler otomatik olarak hesaplanır; kesin sürelerin ve hukuki başvuru yollarının yetkili hukukçular tarafından teyit edilmesi gerekir.
+  </div>
+</div>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script>
+(() => {
+  if (typeof L === 'undefined') return;
+  const g = {"lat": 41.27458, "lon": 27.5921, "zoom": 12, "precision": "exact_pdf", "points": [[41.27463, 27.59408], [41.27479, 27.59376], [41.27486, 27.5936], [41.27488, 27.59355], [41.27502, 27.59321], [41.27511, 27.59297], [41.27519, 27.59276], [41.2752, 27.59274], [41.27528, 27.5925], [41.27528, 27.59249], [41.27533, 27.59235], [41.27536, 27.59226], [41.2754, 27.59213], [41.2754, 27.59212], [41.27544, 27.59202], [41.27582, 27.59082], [41.27593, 27.59047], [41.27598, 27.59032], [41.27595, 27.59021], [41.2756, 27.58994], [41.27558, 27.58986], [41.27592, 27.58879], [41.27535, 27.58853], [41.2753, 27.58872], [41.27525, 27.58891], [41.27519, 27.58915], [41.27515, 27.58925], [41.27511, 27.58938], [41.27508, 27.58948], [41.27503, 27.5896], [41.27494, 27.58982], [41.27488, 27.58996], [41.27481, 27.59013], [41.27472, 27.59036], [41.27463, 27.59058], [41.27456, 27.59076], [41.27453, 27.59083], [41.27448, 27.59096], [41.2744, 27.59114], [41.27434, 27.59128]], "label": "TEKİRDAĞ / ERGENE — Oligonükleotid Platformu ve Kimyasal Sentez Yoluyla İlaç Etken Maddesi (API), Parenteral Ç"};
+  const map = L.map('digest-map').setView([g.lat, g.lon], g.zoom);
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    maxZoom: 18,
+    attribution: '&copy; OpenStreetMap katkıda bulunanları'
+  }).addTo(map);
+  if (g.precision === 'exact_pdf' && g.points.length > 1) {
+    const latlngs = g.points.map(p => [p[0], p[1]]);
+    const poly = L.polyline(latlngs, { color: '#58a6ff', weight: 3, opacity: 0.85 }).addTo(map);
+    for (const ll of latlngs.slice(0, 30)) {
+      L.circleMarker(ll, { radius: 4, color: '#ffffff', fillColor: '#f85149', fillOpacity: 0.9, weight: 1 }).addTo(map);
+    }
+    map.fitBounds(poly.getBounds().pad(0.25));
+  } else {
+    L.circleMarker([g.lat, g.lon], {
+      radius: g.precision === 'exact_pdf' ? 8 : 11,
+      color: '#ffffff',
+      fillColor: g.precision === 'exact_pdf' ? '#f85149' : '#58a6ff',
+      fillOpacity: g.precision === 'exact_pdf' ? 0.9 : 0.45,
+      weight: 2
+    }).bindPopup(g.label).addTo(map).openPopup();
+  }
+})();
+</script>
+</body>
+</html>

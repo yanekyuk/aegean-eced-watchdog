@@ -1,0 +1,916 @@
+{
+  "filing": {
+    "province": "ADANA",
+    "district": "KARAİSALI",
+    "project_name": "ETLİK PİLİÇ ÜRETİM TESİSİ KAPASİTE ARTIŞI",
+    "project_owner": "KANAAT GİRİŞİM ENERJİ SANAYİ VE TİCARET LİMİTED ŞİRKETİ",
+    "sector": "Hayvancılık",
+    "sub_sector": "Kümes Hayvanları  Yetiştirme Tesisleri",
+    "decision_type": "Nihai Karar",
+    "announcement_date_tr": "13.11.2026",
+    "project_type": "Ek-1",
+    "detail_text": "ADANA ili KARAİSALI,  ilcesinde ADANA İli KARAİSALI,  ilcesinde KANAAT GİRİŞİM ENERJİ SANAYİ VE TİCARET LİMİTED ŞİRKETİtarafından yapılması planlanan ETLİK PİLİÇ ÜRETİM TESİSİ KAPASİTE ARTIŞI projesi ile ilgili olarak hazırlanan ÇED Raporu , İnceleme ve Değerlendirme Komisyonu (İDK) tarafından incelenerek son şekli verilmiş olup, söz konusu rapor halkın görüş ve önerilerini almak üzere ÇED Yönetmeliği'nin 14.Maddesi (1) no'lu bendi kapsamında Bakanlıkta ve Çevre, Şehircilik ve İklim Değişikliği İl Müdürlüğü'nde on (10) takvim günü görüşe açılmıştır. Bakanlığa/Çevre, Şehircilik ve İklim Değişikliği İl Müdürlüğü'ne iletilen görüşler projeyle ilgili karar alma sürecinde dikkate alınacaktır. Görüş ve öneriler için bu süreç içerisinde Çevre, Şehircilik ve İklim Değişikliği Bakanlığı'na veya ADANA Çevre ve Şehircilik İl Müdürlüklerine müracaat edilebilir. İlgililere ve kamuoyuna duyurulur.",
+    "detail_links": [
+      {
+        "text": "ÇED Raporu",
+        "href": "http://eced.csb.gov.tr/jsp/ek1/59199"
+      }
+    ],
+    "documents": [
+      {
+        "portal_doc_url": "http://eced.csb.gov.tr/jsp/ek1/59199",
+        "filing_id": "59199",
+        "consulting_firm": "ÇEV  MED ÇEVRE MED.MÜH.EĞT.MAD.MAK. DAN.PAZ.SANAYİ VE TİCARET  LTD. ŞTİ.",
+        "submitted_at": "18/02/2026 11:46:18",
+        "pdf_urls": [
+          {
+            "label": "59199_Son_Sekli_Verilen_Rapor.pdf",
+            "url": "http://eced.csb.gov.tr/jsp/dosya/dosyaGoster.htm?tempAd=signature_file2933703425245871547.imz&orjinalAd=59199_Son_Sekli_Verilen_Rapor.pdf&yuklemeTarihi=2026-10-26"
+          }
+        ]
+      }
+    ],
+    "announcement_date": "2026-11-13",
+    "statutory_clocks": [
+      {
+        "code": "aski_10d",
+        "kind": "10 günlük halkın görüş ve önerilerine açılma (askı) süresi",
+        "deadline": "2026-11-23",
+        "days_remaining": 3
+      }
+    ],
+    "filing_key": "59199:13.11.2026:Nihai Karar",
+    "first_seen_at": "2026-11-20T09:02:26"
+  },
+  "pdf_info": {
+    "filename": "59199.pdf",
+    "bytes": 36730985,
+    "sha256": "6b2bdc42304053eedf9a6800b9b108d49d67b44c0cfe1e149d23d6b03b9191f1",
+    "cached": false
+  },
+  "analysis": {
+    "page_count": 525,
+    "total_chars": 877650,
+    "text_pages": 522,
+    "scanned_or_blank_pages": 3,
+    "scanned_page_sample": [
+      425,
+      436,
+      437
+    ],
+    "headings": [
+      [
+        3,
+        "BÖLÜM II: PROJE YERİ VE ETKİ ALANININ MEVCUT ÇEVRESEL ÖZELLİKLERİ (Fiziksel ve"
+      ],
+      [
+        7,
+        "BÖLÜM VI: HALKIN BİLGİLENDİRİLMESİ VE SÜRECE KATILIMI İLE PAYDAŞ KATILIM PLANI"
+      ],
+      [
+        15,
+        "BÖLÜM I: PROJENİN TANIMI VE AMACI, PROJE İÇİN SEÇİLEN YERİN KONUMU"
+      ],
+      [
+        132,
+        "BÖLÜM III. PROJENİN ÖNEMLİ ÇEVRESEL ETKİLERİ VE ALINACAK ÖNLEMLER"
+      ],
+      [
+        231,
+        "BÖLÜM IV: KÜMÜLATİF ÇEVRESEL ETKİ DEĞERLENDİRME"
+      ],
+      [
+        239,
+        "BÖLÜM V: ÇEVRESEL VE SOSYAL EYLEM PLANI"
+      ],
+      [
+        280,
+        "BÖLÜM VII:. SONUÇLAR"
+      ],
+      [
+        345,
+        "ÇEVRESEL VE SOSYAL YÖNETİMİ PLANI"
+      ],
+      [
+        524,
+        "BÖLÜM 1-2-3"
+      ],
+      [
+        524,
+        "BÖLÜM 2-3"
+      ]
+    ],
+    "geo": {
+      "precision": "exact_pdf",
+      "lat": 37.18809,
+      "lon": 35.1974,
+      "point_count": 75,
+      "points": [
+        [
+          37.19239,
+          35.16581
+        ],
+        [
+          37.19257,
+          35.16587
+        ],
+        [
+          37.19282,
+          35.16609
+        ],
+        [
+          37.19309,
+          35.16626
+        ],
+        [
+          37.19334,
+          35.16645
+        ],
+        [
+          37.19353,
+          35.16663
+        ],
+        [
+          37.19362,
+          35.16674
+        ],
+        [
+          37.1937,
+          35.16694
+        ],
+        [
+          37.19374,
+          35.167
+        ],
+        [
+          37.19385,
+          35.16712
+        ],
+        [
+          37.1939,
+          35.1672
+        ],
+        [
+          37.19394,
+          35.16729
+        ],
+        [
+          37.19397,
+          35.16741
+        ],
+        [
+          37.19398,
+          35.16756
+        ],
+        [
+          37.19375,
+          35.16765
+        ],
+        [
+          37.19352,
+          35.16768
+        ],
+        [
+          37.19344,
+          35.16767
+        ],
+        [
+          37.19365,
+          35.16848
+        ],
+        [
+          37.19324,
+          35.16829
+        ],
+        [
+          37.19317,
+          35.16827
+        ],
+        [
+          37.19304,
+          35.16826
+        ],
+        [
+          37.1929,
+          35.16831
+        ],
+        [
+          37.19274,
+          35.16837
+        ],
+        [
+          37.19259,
+          35.16844
+        ],
+        [
+          37.19238,
+          35.16842
+        ],
+        [
+          37.19244,
+          35.1684
+        ],
+        [
+          37.19261,
+          35.16784
+        ],
+        [
+          37.19295,
+          35.16755
+        ],
+        [
+          37.1933,
+          35.16701
+        ],
+        [
+          37.1934,
+          35.16703
+        ],
+        [
+          37.19426,
+          35.16764
+        ],
+        [
+          37.1942,
+          35.16779
+        ],
+        [
+          37.19333,
+          35.16718
+        ],
+        [
+          37.19323,
+          35.16731
+        ],
+        [
+          37.19409,
+          35.16792
+        ],
+        [
+          37.19403,
+          35.16807
+        ],
+        [
+          37.19317,
+          35.16745
+        ],
+        [
+          37.1931,
+          35.16764
+        ],
+        [
+          37.19397,
+          35.16825
+        ],
+        [
+          37.1939,
+          35.1684
+        ]
+      ],
+      "datum": "UTM-Z36/ED50",
+      "pages": [
+        28,
+        29,
+        30,
+        130,
+        358
+      ]
+    },
+    "signals": {
+      "coordinates_and_footprint": {
+        "label": "Coordinates, Parcel & Footprint",
+        "page_count": 59,
+        "pages": [
+          3,
+          12,
+          13,
+          15,
+          16,
+          17,
+          18,
+          21,
+          22,
+          27,
+          28,
+          29,
+          30,
+          75,
+          84,
+          109,
+          113,
+          114,
+          119,
+          124,
+          130,
+          131,
+          132,
+          153,
+          154
+        ],
+        "samples": [
+          {
+            "page": 3,
+            "match": "koordinat",
+            "snippet": "…esisi, depolama alanları, yollar), ................................................. 27 I.7. Arazinin mülkiyet durumu, koordinatları, yer bulduru haritası, faaliyet alanı ve çevresinin fotoğrafları. ................................................…"
+          },
+          {
+            "page": 12,
+            "match": "24.350 m2",
+            "snippet": "…iliç Üretim Tesisi Kapasite Artışı” faaliyetidir. Faaliyet 731 Nolu parsel üzerinde kurulacak olup, Söz konusu parsel 24.350 m2’’lik alanı kaplamaktadır. Faaliyetin gerçekleşeceği alan Kanaat Girişim Enerji Sanayi ve Ticaret Limited Şirketi’ne a…"
+          },
+          {
+            "page": 12,
+            "match": "1.650 m2",
+            "snippet": "…ecektir. Proje kapsamında ilave edilecek bir adet çift katlı kümes ve bir adet tek katlı kümesin toplam kapalı alanı (1.650 m2 x 2 katlı + 1.650 m2 x 1 katlı) 4.950 m2’dir. Faaliyet konusu tesiste ÇED Gerekli Değildir Kararında; ÇED Kararı Alına…"
+          },
+          {
+            "page": 12,
+            "match": "4.950 m2",
+            "snippet": "…bir adet çift katlı kümes ve bir adet tek katlı kümesin toplam kapalı alanı (1.650 m2 x 2 katlı + 1.650 m2 x 1 katlı) 4.950 m2’dir. Faaliyet konusu tesiste ÇED Gerekli Değildir Kararında; ÇED Kararı Alınan A Blok Kümesin inşaatı devam etmektedi…"
+          },
+          {
+            "page": 12,
+            "match": "3.300 m2",
+            "snippet": "…oplamda 2 adet, çift katlı ve bir adet tek katlı (1.650 m2 x 2 katlı) + (1.650 m2 x 2 Katlı) + (1.650 m2 x 1 Katlı) = (3.300 m2 + 3.300 m2 + 1.650 m2) 8.250 m2’lik toplam kapalı alanı olacak şekilde etlik piliç üretim tesisi faaliyetidir. Toplam…"
+          },
+          {
+            "page": 12,
+            "match": "8.250 m2",
+            "snippet": "…r adet tek katlı (1.650 m2 x 2 katlı) + (1.650 m2 x 2 Katlı) + (1.650 m2 x 1 Katlı) = (3.300 m2 + 3.300 m2 + 1.650 m2) 8.250 m2’lik toplam kapalı alanı olacak şekilde etlik piliç üretim tesisi faaliyetidir. Toplam kapasite: Kümes Büyüklüğü x Met…"
+          },
+          {
+            "page": 13,
+            "match": "12,5 km",
+            "snippet": "…mevcutta bulunan Akçalı Mahallesi köy yolu ile sağlanmaktadır. Faaliyet alanı Adana İli’ ne 27 km. Karaisalı İlçesi’ne 12,5 km. mesafededir. Faaliyet alanına en yakın yerleşim yeri 365 metre mesafede Akçalı Mahallesine ait evdir. (Proje alanına…"
+          },
+          {
+            "page": 15,
+            "match": "24.350 m2",
+            "snippet": "…iliç Üretim Tesisi Kapasite Artışı” faaliyetidir. Faaliyet 731 Nolu parsel üzerinde kurulacak olup, Söz konusu parsel 24.350 m2’’lik alanı kaplamaktadır. Faaliyetin gerçekleşeceği alan Kanaat Girişim Enerji Sanayi ve Ticaret Limited Şirketi’ne a…"
+          }
+        ]
+      },
+      "water_and_discharge": {
+        "label": "Water Use, Hydrogeology & Discharge",
+        "page_count": 76,
+        "pages": [
+          6,
+          23,
+          24,
+          25,
+          44,
+          54,
+          70,
+          71,
+          72,
+          76,
+          78,
+          79,
+          80,
+          81,
+          82,
+          83,
+          84,
+          85,
+          86,
+          123,
+          130,
+          136,
+          137,
+          139,
+          153
+        ],
+        "samples": [
+          {
+            "page": 6,
+            "match": "deşarj",
+            "snippet": "…......................................... 179 III. B.6. Oluşacak atıksuların cins ve miktarları bertaraf yöntemleri ve deşarj edileceği ortamlar ve uzaklığı, atıksuların deşarj değerleri, arıtma tesisi akım şeması, iş termin planı, kapasitesi,…"
+          },
+          {
+            "page": 6,
+            "match": "atıksu",
+            "snippet": "…edileceği ortamlar ve uzaklığı, atıksuların deşarj değerleri, arıtma tesisi akım şeması, iş termin planı, kapasitesi, atıksu arıtma tesisin devreye alınması ile birlikte oluşacak arıtma tesisi arıtma çamurlarının miktarı ve bertarafı ile ilgil…"
+          },
+          {
+            "page": 23,
+            "match": "deşarj",
+            "snippet": "…e aşamalarında personelden ve tesisten kaynaklanacak atıkları arıtıldıktan sonra dahi dsi sulama ve drenaj kanallarına deşarj edilmeyecektir. Faaliyet sahasında ve/veya yakınında harita üzerinde gösterilmeyen ancak kullanılmakta olan kaynak su…"
+          },
+          {
+            "page": 24,
+            "match": "yeraltı suyu",
+            "snippet": "…cağı faaliyet sahibi tarafından taahhüt edilmektedir. Proje dahilinde gerçekleştirilen her türlü faaliyet sırasında yeraltı suyu ile karşılaşılması durumunda işletmenin faaliyetine son verileceği ve bu faaliyetlerden ötürü kaynak çıkış noktaların…"
+          },
+          {
+            "page": 24,
+            "match": "yeraltısuyu",
+            "snippet": "…şletmenin faaliyetine son verileceği ve bu faaliyetlerden ötürü kaynak çıkış noktalarında değişme, debilerinde azalma, yeraltısuyu kalitesinde bozulma gibi oluşacak tüm zararların temin edileceği ve DSİ Bölge Müdürlüğü direktifleri doğrultusunda har…"
+          },
+          {
+            "page": 24,
+            "match": "Akifer",
+            "snippet": "…ulacağı faaliyet sahibi tarafından taahhüt edilmektedir. 10 Ekim 2012 tarih ve 28437 sayılı \"İçme Suyu Temin Edilen Akifer ve Kaynakların Koruma Alanlarının Belirlenmesi Hakkında Tebliğ\" hükümlerine göre koruma alanı belirlenmesi halinde DS…"
+          },
+          {
+            "page": 25,
+            "match": "Akifer",
+            "snippet": "…ında Kanun, Yeraltı Sularının Kirlenmeye ve Bozulmaya Karşı Korunması Hakkındaki Yönetmelik ve İçme Suyu Temin Edilen Akifer ve Kaynakların Koruma Alanlarının Belirlenmesi Hakkındaki Tebliğ'de belirtilen hükümlere uyulacak ve DSİ tarafından he…"
+          },
+          {
+            "page": 44,
+            "match": "sulak alan",
+            "snippet": "…iler) Kültür alanları (bağ, bahçe vb.), nadasa bırakılmış yerler Kuru çayır ve açık alanlar Nemli çayır, bataklık ve sulak alan, otsu yamaçlar Yol kenarı, terk edilmiş yerler Kayalık ve taşlık alanlar, gölgeli yerler, kalkerli yamaçlar FLORA:…"
+          }
+        ]
+      },
+      "protected_land_and_olive": {
+        "label": "Protected Zones, Forests & Olive Groves",
+        "page_count": 14,
+        "pages": [
+          4,
+          44,
+          80,
+          85,
+          119,
+          120,
+          121,
+          123,
+          234,
+          244,
+          351,
+          403,
+          408,
+          423
+        ],
+        "samples": [
+          {
+            "page": 4,
+            "match": "Özel Çevre Koruma",
+            "snippet": "…nları, Kültür Varlıkları, Tabiat Varlıkları, Sit ve Koruma Alanları, Biyogenetik Rezerv Alanları, Biyosfer Rezervleri, Özel Çevre Koruma Bölgeleri, Özel Koruma Alanları, içme ve kullanma su kaynakları ile ilgili koruma alanları, Turizm Alan ve Merkezleri…"
+          },
+          {
+            "page": 44,
+            "match": "sulak alan",
+            "snippet": "…iler) Kültür alanları (bağ, bahçe vb.), nadasa bırakılmış yerler Kuru çayır ve açık alanlar Nemli çayır, bataklık ve sulak alan, otsu yamaçlar Yol kenarı, terk edilmiş yerler Kayalık ve taşlık alanlar, gölgeli yerler, kalkerli yamaçlar FLORA:…"
+          },
+          {
+            "page": 80,
+            "match": "sulak alan",
+            "snippet": "…80 Bölge ve Proje Alanı Hidrolojik Özellikleri Göller Proje alanı içerisinde herhangi bir göl, gölet, baraj vb sulak alan bulunmamaktadır. Bataklıklar Proje alanı içerisinde herhangi bir doğal bataklık bulunmamaktadır. Sondaj Kuyuları…"
+          },
+          {
+            "page": 85,
+            "match": "sulak alan",
+            "snippet": "…. 14- Proje konusu alan sınırları içerisinde herhangi bir göl, gölet, baraj, akarsu, içme suyu barajı, isale hattı ve sulak alan bulunmamaktadır. 15- Projenin inşaat ve işletme aşamasında mevsimsel akışlı ve kuru dereler ile ilgili olarak her tü…"
+          },
+          {
+            "page": 119,
+            "match": "Özel Çevre Koruma",
+            "snippet": "…nları, Kültür Varlıkları, Tabiat Varlıkları, Sit ve Koruma Alanları, Biyogenetik Rezerv Alanları, Biyosfer Rezervleri, Özel Çevre Koruma Bölgeleri, Özel Koruma Alanları, içme ve kullanma su kaynakları ile ilgili koruma alanları, Turizm Alan ve Merkezleri…"
+          },
+          {
+            "page": 119,
+            "match": "Orman Alanı",
+            "snippet": "…roje alanı faaliyet sahibine ait tapulu alandır. - Su Yüzeyi Proje alanı içerisinde su yüzeyi bulunmamaktadır. - Orman Alanı Faaliyet alanı içinde orman sayılan alan içerisinde yer almamaktadır. - Turizm Alanı Faaliyet alanı ve yakın çevre…"
+          },
+          {
+            "page": 120,
+            "match": "Sit Alanı",
+            "snippet": "…li maddeleri uyarınca tespiti ve tescili yapılan alanlar, Proje alanında “Kültür Varlıkları”, “Tabiat Varlıkları”, “Sit Alanı” ve “Koruma Alanı” olarak tanımlanan özel alanlardan hiçbiri bulunmamaktadır. ç) Su Ürünleri Kanunu kapsamında olan…"
+          },
+          {
+            "page": 120,
+            "match": "Özel Çevre Koruma",
+            "snippet": "…nı içerisinde bu tip alanlar bulunmamaktadır. f) Çevre Kanunu’nun 9 uncu maddesi uyarınca Bakanlar Kurulu tarafından “Özel Çevre Koruma Bölgeleri” olarak tespit ve ilan edilen alanlar, Proje alanı içerisinde ve yakın çevresinde Özel Çevre Koruma Bölg…"
+          }
+        ]
+      },
+      "ecology_and_baseline": {
+        "label": "Flora, Fauna & Baseline Methodology",
+        "page_count": 37,
+        "pages": [
+          3,
+          5,
+          6,
+          23,
+          40,
+          42,
+          43,
+          46,
+          47,
+          48,
+          49,
+          51,
+          53,
+          54,
+          72,
+          77,
+          85,
+          87,
+          88,
+          121,
+          123,
+          161,
+          186,
+          216,
+          240
+        ],
+        "samples": [
+          {
+            "page": 3,
+            "match": "endemik",
+            "snippet": "…nıflandırılması, yaşama ortamları (Beslenme veya üreme alanları), popülasyon yoğunlukları, uluslar arası sözleşmelerle endemik, nadir, nesli tehlikede, tehlike dışı vb. kategorilerinin tablo halinde belirtilmesi (koruma altında olan türler varsa…"
+          },
+          {
+            "page": 3,
+            "match": "flora ve fauna",
+            "snippet": "…arın hangi tarihte kim tarafından yapıldığının belirtilmesi), ............................................. 40 -Mevcut flora ve fauna yapısını içeren bilgilerin faaliyet alanı ve yakın çevresinde, dar veya geniş yayılışlı endemik, nesli tehlike kategor…"
+          },
+          {
+            "page": 3,
+            "match": "IUCN",
+            "snippet": "…içeren bilgilerin faaliyet alanı ve yakın çevresinde, dar veya geniş yayılışlı endemik, nesli tehlike kategorilerinde (IUCN’e göre ve Türkiye Kırmızı Kitabına göre) olan türlerin olup olmadığı, uluslararası sözleşmeler (Bern sözleşmesi) ve fa…"
+          },
+          {
+            "page": 3,
+            "match": "Bern sözleşmesi",
+            "snippet": "…kategorilerinde (IUCN’e göre ve Türkiye Kırmızı Kitabına göre) olan türlerin olup olmadığı, uluslararası sözleşmeler (Bern sözleşmesi) ve fauna incelemelerinde Merkez Av Komisyonu kararları ve eklerine göre koruma altında olan tür olup olmadığının bel…"
+          },
+          {
+            "page": 5,
+            "match": "Endemik",
+            "snippet": "….............. 159 III.A.9. Proje alanının hazırlanması ve inşaat aşamalarında zarar görebilecek flora-fauna türleri (Endemik, nesli tehlikede türler vb.) proje için seçilen yer ve etki alanında bulunan tür popülasyonlarının etkilenmesi, ......…"
+          },
+          {
+            "page": 6,
+            "match": "Endemik",
+            "snippet": "…................... 215 III.B.17. İşletme aşamasında yapılacak işlerden dolayı zarar görebilecek flora-fauna türleri (Endemik türler, nesli tehlikede vb.), proje için seçilen yer ve faaliyetin etki alanında bulunan tür popülasyonlarının etkilen…"
+          },
+          {
+            "page": 23,
+            "match": "mevsimsel",
+            "snippet": "…sinde kaldığı, ÇED alanı kuzeybatı mücavirinden Hacılıbendi Sulaması projesine ait boru hattının geçtiği, mücavirinde mevsimsel akışlı derenin bulunduğu tespit edilmiştir. Hacılıbendi Sulaması projesine ait boru hattı ile ilgili ÇED alanı batı sı…"
+          },
+          {
+            "page": 40,
+            "match": "endemik",
+            "snippet": "…nıflandırılması, yaşama ortamları (Beslenme veya üreme alanları), popülasyon yoğunlukları, uluslar arası sözleşmelerle endemik, nadir, nesli tehlikede, tehlike dışı vb. kategorilerinin tablo halinde belirtilmesi (koruma altında olan türler varsa…"
+          }
+        ]
+      },
+      "pollutants_and_hazards": {
+        "label": "Emissions, Geochemistry & Waste",
+        "page_count": 76,
+        "pages": [
+          3,
+          4,
+          10,
+          21,
+          66,
+          67,
+          68,
+          127,
+          128,
+          131,
+          136,
+          140,
+          141,
+          142,
+          143,
+          144,
+          145,
+          146,
+          147,
+          148,
+          149,
+          150,
+          151,
+          152,
+          154
+        ],
+        "samples": [
+          {
+            "page": 3,
+            "match": "deprem",
+            "snippet": "…lik halihazır harita üzerinde faaliyet alanı merkezli 1 km lik yarıçap üzerinde yer altı sularını, yerüstü sularını ve deprem kuşaklarını gösterir analiz, jeolojik yapı, köy yerleşik ve sanayi alanları, ulaşım ağı, enerji nakil hatları, arazi k…"
+          },
+          {
+            "page": 4,
+            "match": "deprem",
+            "snippet": "….3. Depremsellik (İnceleme alanı ve çevresinin diri fay haritasında yeri belirlenerek inceleme alanının kaçıncı derece deprem bölgesinde yer aldığı ve yapılacak yapıların ilgili Deprem Yönetmeliğine göre incelenmesi), ..........................…"
+          },
+          {
+            "page": 10,
+            "match": "PM10",
+            "snippet": "…iliği Ölçüm Cihazlarının Yeri ....................................... 127 Şekil 36: 2024 yılında Meteoroloji istasyonu PM10 parametresi günlük ortalama değer grafiği (havaizleme.gov.tr, 2025) ..................................................…"
+          },
+          {
+            "page": 21,
+            "match": "deprem",
+            "snippet": "…lik halihazır harita üzerinde faaliyet alanı merkezli 1 km lik yarıçap üzerinde yer altı sularını, yerüstü sularını ve deprem kuşaklarını gösterir analiz, jeolojik yapı, köy yerleşik ve sanayi alanları, ulaşım ağı, enerji nakil hatları, arazi k…"
+          },
+          {
+            "page": 66,
+            "match": "deprem",
+            "snippet": "….3. Depremsellik (İnceleme alanı ve çevresinin diri fay haritasında yeri belirlenerek inceleme alanının kaçıncı derece deprem bölgesinde yer aldığı ve yapılacak yapıların ilgili Deprem Yönetmeliğine göre incelenmesi), En son 1996 yılında yür…"
+          },
+          {
+            "page": 67,
+            "match": "Deprem",
+            "snippet": "…SON ŞEKLİ VERİLEN ÇED RAPORU 67 Şekil 12: Türkiye Deprem Tehlike Haritası Proje alanını içine alan Adana İli, Karaisalı İlçesi; AFAD Deprem Dairesi Başkanlığı tarafından yeni…"
+          },
+          {
+            "page": 68,
+            "match": "Deprem",
+            "snippet": "…anında yapılacak olan her türlü yapıda; 06.03.2007 tarih ve 26454 sayılı Resmi Gazete’de yayımlanarak yürürlüğe giren “Deprem Bölgelerinde Yapılacak Binalar Hakkında Yönetmelik” ve 14.07.2007 tarihli ve 26582 sayılı Resmi Gazete’de yayımlanara…"
+          },
+          {
+            "page": 127,
+            "match": "PM10",
+            "snippet": "…on kategorilerine göre ölçülen parametrelerde farklılık olmakla birlikte, istasyonlarda Kükürtdioksit, Partikül Madde (PM10 ve PM2.5), Azotoksitler, Ozon, ve Karbonmonoksit, parametreleri ölçülmektedir. İstasyonlarımızda uluslararası standart…"
+          }
+        ]
+      },
+      "cost_and_capacity": {
+        "label": "Project Cost, Power & Capacity",
+        "page_count": 134,
+        "pages": [
+          1,
+          2,
+          3,
+          5,
+          6,
+          12,
+          13,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          27,
+          65,
+          84,
+          87,
+          113,
+          132,
+          133,
+          135,
+          136,
+          137,
+          139
+        ],
+        "samples": [
+          {
+            "page": 1,
+            "match": "KAPASİTE",
+            "snippet": "1 KANAAT GİRİŞİM ENERJİ SANAYİ VE TİCARET LİMİTED ŞİRKETİ ETLİK PİLİÇ ÜRETİM TESİSİ KAPASİTE ARTIŞI SON ŞEKLİ VERİLEN ÇED RAPORU ADANA İLİ, KARAİSALI İLÇESİ, AKÇALI MAHALLESİ, KARABÜK MEVKİİ, 731 PARSEL ÇED…"
+          },
+          {
+            "page": 2,
+            "match": "KAPASİTE",
+            "snippet": "…448 25 22 / 0 312 448 25 23 E-POSTA burhaneddincaliskan@hotmail.com PROJENİN ADI ETLİK PİLİÇ ÜRETİM TESİSİ KAPASİTE ARTIŞI PROJE BEDELİ 46.245.000 (TL) PROJE İÇİN SEÇİLEN YERİN AÇIK ADRESİ (İLİ, İLÇESİ, MEVKİİ) ADANA İL…"
+          },
+          {
+            "page": 2,
+            "match": "PROJE BEDELİ",
+            "snippet": "…48 25 23 E-POSTA burhaneddincaliskan@hotmail.com PROJENİN ADI ETLİK PİLİÇ ÜRETİM TESİSİ KAPASİTE ARTIŞI PROJE BEDELİ 46.245.000 (TL) PROJE İÇİN SEÇİLEN YERİN AÇIK ADRESİ (İLİ, İLÇESİ, MEVKİİ) ADANA İLİ, KARAİSALI İLÇESİ, AKÇ…"
+          },
+          {
+            "page": 3,
+            "match": "proje bedeli",
+            "snippet": "…me süresi, hizmet amaçları, projenin sosyal ve ekonomik yönden gerekliliği (fayda maliyet analizi), zamanlama tablosu, proje bedelinin detaylandırılarak açıklanması, ....................................................................................…"
+          },
+          {
+            "page": 5,
+            "match": "kapasite",
+            "snippet": "…II.A.8. Proje kapsamındaki ulaştırma altyapısı planı (ulaştırma güzergahı, şekli, güzergah yollarının mevcut durumu ve kapasitesi, hangi amaçlar için kullanıldığı, mevcut trafik yoğunluğu, yerleşim yerlerine göre konumu) .........................…"
+          },
+          {
+            "page": 6,
+            "match": "kapasite",
+            "snippet": "…ri ve deşarj edileceği ortamlar ve uzaklığı, atıksuların deşarj değerleri, arıtma tesisi akım şeması, iş termin planı, kapasitesi, atıksu arıtma tesisin devreye alınması ile birlikte oluşacak arıtma tesisi arıtma çamurlarının miktarı ve bertaraf…"
+          },
+          {
+            "page": 12,
+            "match": "Kapasite",
+            "snippet": "…İRKETİ adına Adana ili, Karaisalı İlçesi, Akçalı Mahallesi, Karabük Mevkii, 731 Parsel’ de “Etlik Piliç Üretim Tesisi Kapasite Artışı” faaliyetidir. Faaliyet 731 Nolu parsel üzerinde kurulacak olup, Söz konusu parsel 24.350 m2’’lik alanı kaplam…"
+          },
+          {
+            "page": 13,
+            "match": "kapasite",
+            "snippet": "…çalışma süreleri 5-6 dönem/yıl, 45 gün/dönem ve 24 saat/gün olarak planlanmıştır. Projenin inşaat aşamasında 10 kişi, kapasite artışı sonrası işletme aşamasında ise 3 personel görev alacaktır. Proje alanına ulaşım mevcutta bulunan Akçalı Mahalle…"
+          }
+        ]
+      }
+    },
+    "audit_checks": {
+      "mentions_field_survey": true,
+      "mentions_literature_only_cue": true,
+      "mentions_seasonal_sampling": true,
+      "mentions_cumulative_impact": true,
+      "mentions_olive_law_3573": true,
+      "mentions_groundwater_or_aquifer": true,
+      "mentions_iucn_or_endemic": true
+    }
+  },
+  "llm_synthesis": {
+    "model": "gemini-4-hydrogen",
+    "generated_at": "2026-11-20T10:48:44",
+    "pages_sent": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      10,
+      12,
+      13,
+      15,
+      16,
+      21,
+      23,
+      24,
+      25,
+      44,
+      80,
+      85,
+      132,
+      133,
+      239,
+      240,
+      345,
+      346
+    ],
+    "usage": {
+      "prompt_tokens": 24103,
+      "output_tokens": 4419,
+      "thoughts_tokens": 10103,
+      "total_tokens": 38625
+    },
+    "result": {
+      "executive_summary_tr": "Kanaat Girişim Enerji Sanayi ve Ticaret Limited Şirketi tarafından Adana ili, Karaisalı ilçesi, Akçalı Mahallesi, Karabük Mevkii, 731 parselde (24.350 m2 tapulu tarla vasıflı arazi) Etlik Piliç Üretim Tesisi Kapasite Artışı projesi planlanmaktadır [s. 1, 12, 21]. 07.03.2025 tarihli ÇED Gerekli Değildir kararıyla inşaatı süren mevcut A Blok kümese (3.300 m2) ilave olarak çift katlı B Blok (3.300 m2) ve tek katlı C Blok (1.650 m2) kümeslerin eklenmesiyle toplam kapalı alan 8.250 m2'ye, toplam kapasite ise dönem başına 148.500 adet etlik pilice (yılda 5-6 dönem) çıkarılacaktır [s. 12, 13, 15]. Proje alanı Seyhan Havzası ile Aşağı Körkün Projesi Hacılıbendi Sulama Sahası içinde yer almakta olup kuzeybatı sınırından sulama boru hattı, mücavirinden mevsimsel akışlı dere geçmekte ve tesisin kuş uçuşu 140 m ile 300 m mesafelerinde bağ evi tarzında meskun mahaller (en yakın mahalle evi 365 m) bulunmaktadır [s. 13, 23, 85]. İncelenen sayfalarda yeraltı suyu seviyesi ve net akım yönü verilerinin eksikliği, kapasite artışına karşın mevcut gübre/ölü/fosseptik çukuru ünitelerinde genişleme öngörülmemesi ve yakın mesafedeki yapılara ilişkin tutarsız/eksik değerlendirmeler başlıca çevresel ve metodolojik konular olarak öne çıkmaktadır [s. 12, 15, 80, 85].",
+      "executive_summary_en": "Kanaat Girişim Enerji Sanayi ve Ticaret Limited Şirketi proposes a capacity expansion for its broiler poultry production facility on Parcel 731 (24,350 m2 privately owned field/agricultural land) in Akçalı Neighborhood, Karaisalı District, Adana Province [s. 1, 12, 21]. By adding a two-story coop (Block B, 3,300 m2) and a one-story coop (Block C, 1,650 m2) to the currently under-construction Block A (3,300 m2, which received an 'EIA Not Required' decision on 07.03.2025), total indoor area will reach 8,250 m2 and capacity will increase to 148,500 broilers per cycle across 5 to 6 cycles per year [s. 12, 13, 15]. The site lies within the Seyhan Basin and the Aşağı Körkün Hacılıbendi Irrigation Area, adjacent to an irrigation pipeline and a seasonal stream, with vineyard-house style dwellings at 140 m and 300 m crow-flies distance (and the nearest village house at 365 m) [s. 13, 23, 85]. Key environmental and methodological stakes in the examined pages include unmeasured groundwater levels and conflicting groundwater flow-direction claims, discrepancies in baseline capacity and working-hour figures, and no listed expansion of manure, carcass, or septic containment units to match the increased bird capacity [s. 12, 15, 80, 85].",
+      "key_facts": [
+        {
+          "label": "Proje Bedeli",
+          "value": "46.245.000 TL",
+          "page": 2
+        },
+        {
+          "label": "Parsel Büyüklüğü",
+          "value": "24.350 m2 (731 parsel, tapulu tarla vasıflı arazi)",
+          "page": 12
+        },
+        {
+          "label": "Toplam Kapalı Kümes Alanı",
+          "value": "8.250 m2 (A Blok 3.300 m2, ilave B Blok 3.300 m2 ve C Blok 1.650 m2)",
+          "page": 12
+        },
+        {
+          "label": "Toplam Üretim Kapasitesi",
+          "value": "148.500 adet/dönem (18 adet/m2 yerleşim yoğunluğu)",
+          "page": 12
+        },
+        {
+          "label": "Önceki ÇED Muafiyeti ve Atık Üniteleri",
+          "value": "07.03.2025 tarihli kararla 57.800 adet/dönem; 200 m2 gübre çukuru, 25 m2 ölü çukuru, 9 m2 fosseptik çukuru",
+          "page": 12
+        },
+        {
+          "label": "Üretim Periyodu ve Süresi",
+          "value": "5-6 dönem/yıl, 45 gün/dönem, 24 saat/gün",
+          "page": 13
+        },
+        {
+          "label": "En Yakın Yerleşim ve Meskun Mahaller",
+          "value": "365 m (Akçalı Mahallesi evi); kuş uçuşu 140 m ve 300 m mesafede bağ evi tarzı meskun mahaller",
+          "page": 13
+        },
+        {
+          "label": "İstihdam ve İnşaat Süresi",
+          "value": "İnşaat aşamasında 10 kişi (12 ay hafriyat), işletme aşamasında 3 kişi",
+          "page": 13
+        },
+        {
+          "label": "Planlanan İşletme Ömrü",
+          "value": "50 yıl",
+          "page": 16
+        },
+        {
+          "label": "Toplam Hafriyat Miktarı",
+          "value": "3.300 m2 kazı alanında 4.950 m3 (7.920 ton)",
+          "page": 132
+        }
+      ],
+      "baseline_assessment": {
+        "field_survey_status": "mixed_or_unclear",
+        "seasonal_sampling_status": "not_found",
+        "cumulative_impact_status": "omitted_or_not_found",
+        "olive_and_protected_status": "Proje sahası tapulu tarım arazisi (tarla) vasfındadır [s. 21, 346] ve Seyhan Havzası ile Aşağı Körkün Projesi Hacılıbendi Sulama Sahası içinde yer almaktadır [s. 23, 85]. Raporda proje alanı içinde göl, gölet, baraj, doğal bataklık veya sulak alan bulunmadığı, ancak mücavirde mevsimsel akışlı/kuru dere yer aldığı belirtilmektedir [s. 23, 80, 85]. Zeytinlik alanlar (3573 sayılı Kanun), koruma alanları (Bölüm II.10, s. 119) ve orman alanlarına (Bölüm II.11, s. 124) ilişkin özel bölümler incelenen sayfa örneklemi dışında kaldığından [s. 4], bu statüler mevcut sayfalardan doğrulanamamıştır; s. 44'teki genel habitat sınıflamasında yalnızca 'Orman' ve 'Kültür alanları' kategorileri listelenmektedir [s. 44].",
+        "explanation": "Flora bölümünde TÜBİVES veri tabanı ve literatür taramalarının yanı sıra tarihi, kapsamı ve uygulayıcıları belirtilmeyen 'daha önceden yapılmış olan gözlem ve arazi çalışmaları'na atıf yapılmakta, ancak tür listelerini ve çalışma detaylarını içeren sayfalar (s. 40-43 ve 45-56) incelenen örneklemde yer almamaktadır [s. 3, 44]. Hidrojeolojik temel durumda ise sahada ve etki alanında kuyu bulunmadığından yeraltı su seviyesinin tespit edilemediği ve net akım yönü için yeterli veri olmadığı açıkça ifade edilmektedir [s. 80, 85]. İncelenen sayfalarda proje öncesi tamamlanmış çok mevsimli örnekleme verisine, onay sonrası mevsimsel izleme programına (Bölüm V.1, s. 250) veya kümülatif bölgesel etki analizine (Bölüm III.B.13, s. 211) rastlanmamıştır [s. 6, 7]."
+      },
+      "red_flags": [
+        {
+          "severity": "high",
+          "title": "Yeraltı Suyu Seviyesi ve Akım Yönü Verilerinin Eksikliği ile Çelişkili İfadeler",
+          "detail": "Raporda proje alanı ve etki alanında açılmış yeraltı suyu kuyusu bulunmadığından olası yeraltı su seviyesinin tespit edilemediği, 80-100 m sondajlarda su tablası kesilmediği bilgisinin ise 'bölge halkından öğrenildiği' belirtilmektedir [s. 85]. Ayrıca yeraltı suyu akım yönüne ilişkin net bilgi verebilecek yeterli veri bulunmadığı yazılmasına rağmen, s. 80'de akımın 'kuzeybatı-güneydoğu', s. 85'te ise 'kuzeydoğu-güneybatı ve güneydoğu-kuzeybatı' yönünde gelişeceği öngörülerek kendi içinde çelişen yönler verilmiştir [s. 80, 85].",
+          "pages": [
+            80,
+            85
+          ]
+        },
+        {
+          "severity": "high",
+          "title": "Kapasite Artışına Karşın Gübre, Ölü Çukuru ve Fosseptik Kapasitesinde Artış Öngörülmemesi",
+          "detail": "Önceki ÇED Gerekli Değildir kararı kapsamında tek kümes (A Blok) için 200 m2 gübre çukuru, 25 m2 ölü çukuru ve 9 m2 fosseptik çukuru yapılacağı belirtilmektedir [s. 12, 15]. Kapasite artışıyla ilave B ve C Blok kümeslerin eklenerek kapasitenin 57.800/59.400 adet/dönemden 148.500 adet/döneme çıkmasına karşın, planlanan ilave üniteler arasında gübre depolama, ölü çukuru veya fosseptik kapasitesinin artırıldığına dair bir bilgi yer almamaktadır [s. 12, 15].",
+          "pages": [
+            12,
+            15
+          ]
+        },
+        {
+          "severity": "high",
+          "title": "140 m ve 300 m Mesafedeki Meskun Mahallere Yönelik Risk Değerlendirmesinin Eksikliği",
+          "detail": "Raporda en yakın yerleşim yeri 365 m mesafedeki Akçalı Mahallesi evi olarak sunulsa da aynı bölümlerde tesis alanına kuş uçuşu 140 m ve 300 m mesafelerde 'tarla içi bağ evi tarzında' meskun mahaller bulunduğu belirtilmektedir [s. 13, 16, 239]. Yılda 5-6 dönem toplam 148.500 etlik piliç yetiştirilecek bir tesisin 140 m mesafedeki bu yapılara koku, toz, biyoaerosol ve gürültü etkilerine dair analizler incelenen sayfalarda bulunmamaktadır [s. 12, 13].",
+          "pages": [
+            12,
+            13,
+            16,
+            239
+          ]
+        },
+        {
+          "severity": "medium",
+          "title": "Mevcut Kapasite ve İşletme Süresi Bilgilerinde İç Tutarsızlıklar",
+          "detail": "Metinde 07.03.2025 tarihli ÇED Gerekli Değildir kararının '57.800 adet/dönem' kapasite için verildiği belirtilirken, aynı sayfadaki Tablo 1'de söz konusu A Blok kümesin kapasitesi 59.400 adet/periyot (3.300 m2 x 18 adet/m2) olarak gösterilmiştir [s. 12, 15]. Benzer şekilde tesisin çalışma süresi s. 13'te '5-6 dönem/yıl, 45 gün/dönem ve 24 saat/gün' olarak verilirken, s. 15'te 'yılda 12 ay, ayda 30 gün, günde 8 saat çalışılacaktır' ifadesi yer almaktadır [s. 13, 15].",
+          "pages": [
+            12,
+            13,
+            15
+          ]
+        },
+        {
+          "severity": "medium",
+          "title": "Sulama Sahası ve Tarım Dışı Kullanım İzninin Nihai Rapor Aşamasında Taahhüde Bırakılması",
+          "detail": "Tapuda tarım arazisi (tarla) vasfında olan parselin Aşağı Körkün Projesi Hacılıbendi Sulama Sahası içinde kaldığı ve kuzeybatı mücavirinden sulama boru hattının geçtiği tespit edilmiştir [s. 21, 23]. Buna karşın faaliyetin Toprak Koruma Kurulu'nda değerlendirilmesi ve tarım dışı kullanım izni alınması süreçlerinin henüz tamamlanmayıp yalnızca faaliyet sahibi taahhüdü olarak bırakıldığı görülmektedir [s. 23].",
+          "pages": [
+            21,
+            23
+          ]
+        },
+        {
+          "severity": "low",
+          "title": "Hafriyat Atığı Beyanı ile Hesaplanan Kazı Miktarı Arasındaki Gerilim ve Güncel Olmayan Şablon İfadeler",
+          "detail": "Tablo 50'de B ve C Bloklar için 4.950 m3 (7.920 ton) kazı hafriyatı hesaplanmasına karşın, saha içi dolgu ve yollarda kullanılacağı varsayımıyla 'hafriyat atığı meydana gelmeyeceği' bildirilmiş ve Büyükşehir Belediyesi görüşü bu beyana dayandırılmıştır [s. 132, 133]. Ayrıca 2026 tarihli raporda 2015 yılına kadar olan sektör verileri [s. 16] ve ÇSYP metninde 'COVID-19 pandemisine ilişkin' tedbir ifadeleri [s. 346] gibi güncel olmayan şablon metinler bulunmaktadır.",
+          "pages": [
+            16,
+            132,
+            133,
+            346
+          ]
+        }
+      ],
+      "hkt_and_petition_questions": [
+        {
+          "question_tr": "Önceki ÇED Gerekli Değildir kararıyla tek kümes (57.800/59.400 adet) için planlanan 200 m2 gübre çukuru, 25 m2 ölü çukuru ve 9 m2 fosseptik çukuru hacimlerinin, kapasitenin 148.500 adet/döneme çıkarılmasıyla oluşacak atık ve atıksu yükünü karşılayıp karşılayamayacağı hangi kütle dengesi ve depolama süresi hesaplarıyla doğrulanmıştır?",
+          "pages": [
+            12,
+            15
+          ]
+        },
+        {
+          "question_tr": "Proje sahası ve etki alanında yeraltı suyu seviyesi ölçümü yapılmamış ve yeraltı suyu akım yönü s. 80 ile s. 85'te çelişkili biçimde tanımlanmışken, atık depolama ünitelerindeki geçirimsizlik önlemlerinin Hacılıbendi Sulama Sahası ve mücavirdeki mevsimsel dere açısından yeterliliği hangi somut hidrojeolojik verilere dayandırılmaktadır?",
+          "pages": [
+            23,
+            80,
+            85
+          ]
+        },
+        {
+          "question_tr": "Raporda en yakın yerleşim yeri 365 m olarak gösterilirken kuş uçuşu 140 m ve 300 m mesafelerde bulunduğu belirtilen bağ evi niteliğindeki meskun mahallerin koku, amonyak/toz emisyonu, vektör ve gürültü maruziyeti yönünden korunması için hangi mesafe/emisyon modellemeleri ve koruma bandı önlemleri esas alınmıştır?",
+          "pages": [
+            13,
+            16,
+            239
+          ]
+        },
+        {
+          "question_tr": "Hacılıbendi Sulama Sahası içinde kalan tarla vasıflı 731 parsel için Toprak Koruma Kurulu ve tarım dışı kullanım izni süreçleri Nihai ÇED aşamasında sonuçlandırılmış mıdır; ayrıca A Blok kapasitesindeki (57.800 vs. 59.400 adet) ve çalışma süresindeki (24 saat/gün vs. 8 saat/gün) çelişkiler nasıl giderilmiştir?",
+          "pages": [
+            12,
+            13,
+            15,
+            21,
+            23
+          ]
+        }
+      ],
+      "data_limitations": "Toplam 525 sayfalık PDF dosyasının 3 sayfası taranmış/görüntü formatında olup incelenen metin örneklemi 26 sayfayla (s. 1-8, 10, 12-13, 15-16, 21, 23-25, 44, 80, 85, 132-133, 239-240, 345-346) sınırlıdır. Bu nedenle İçindekiler dizininde görülen flora-fauna tür listeleri ve arazi çalışma tarihleri (s. 40-56), koruma alanları ve orman alanları (s. 119-124), su temin miktarları (s. 136), atıksu ve atık bertaraf detayları (s. 179-193), emisyon/koku modellemeleri (s. 193-208), çevre tesislerle etkileşim (s. 211), Çevre İzleme Planı (s. 250), Halkın Katılımı Toplantısı kayıtları (s. 253-279) ve eklerdeki kurum görüşleri/ASKİ sözleşmesi (s. 292 sonrası) doğrudan incelenememiştir."
+    }
+  }
+}

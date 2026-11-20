@@ -1,0 +1,799 @@
+{
+  "filing": {
+    "province": "NEVŞEHİR",
+    "district": "GÜLŞEHİR",
+    "project_name": "Yumurta Tavukçuluğu ve Yumurta Üretim Tesisi Kapasite Artışı",
+    "project_owner": "Arısoy Hayvancılık San. ve Tic. Ltd. Şti.",
+    "sector": "Hayvancılık",
+    "sub_sector": "Kümes Hayvanları  Yetiştirme Tesisleri",
+    "decision_type": "ÇED Süreci Başlayan",
+    "announcement_date_tr": "17.11.2026",
+    "project_type": "Ek-1",
+    "detail_text": "NEVŞEHİR ili GÜLŞEHİR,  ilcesinde NEVŞEHİR il GÜLŞEHİR,  ilce  Fatih (Karavezir) Mahallesi, 304 Ada, 42 ve 43 Parsel mevkiinde Arısoy Hayvancılık San. ve Tic. Ltd. Şti. tarafından yapılması planlanan Yumurta Tavukçuluğu ve Yumurta Üretim Tesisi Kapasite Artışı projesi ile ilgili olarak Bakanlığımıza sunulan ÇED Başvuru Dosyası Çevresel Etki Değerlendirmesi Yönetmeliği'nin 8. maddesi doğrultusunda incelenmiş ve başvurunun ÇED Genel Formatına uygun hazırlandığı anlaşılmış olup, projeye ilişkin ÇED Süreci başlatılmıştır. Çevresel Etki Değerlendirmesi süreci tamamlanana kadar, süreç ile ilgili her türlü bilgiler ve projeye ilişkin görüş, soru ve öneriler NEVŞEHİR Valiliğine (Çevre, Şehircilik ve İklim Değişikliği İl Müdürlüğü) veya Çevre, Şehircilik ve İklim Değişikliği Bakanlığına gönderilebilir.İlgililere ve kamuoyuna duyurulur.",
+    "detail_links": [
+      {
+        "text": "ÇED Başvuru Dosyası",
+        "href": "http://eced.csb.gov.tr/jsp/ek1/61396"
+      }
+    ],
+    "documents": [
+      {
+        "portal_doc_url": "http://eced.csb.gov.tr/jsp/ek1/61396",
+        "filing_id": "61396",
+        "consulting_firm": "Masçev Çed ve Çevre Hizmetleri Ltd. Şti.",
+        "submitted_at": "10/11/2026 04:06:44",
+        "pdf_urls": [
+          {
+            "label": "Dosya Göster",
+            "url": "http://eced.csb.gov.tr/jsp/dosya/dosyaGoster.htm?tempAd=sign4608917934182870856.pdf&orjinalAd=e-imza.pdf&yuklemeTarihi=2026-11-13"
+          }
+        ]
+      }
+    ],
+    "announcement_date": "2026-11-17",
+    "statutory_clocks": [
+      {
+        "code": "aski_10d",
+        "kind": "10 günlük halkın görüş ve önerilerine açılma (askı) süresi",
+        "deadline": "2026-11-27",
+        "days_remaining": 7
+      }
+    ],
+    "filing_key": "61396:17.11.2026:ÇED Süreci Başlayan",
+    "first_seen_at": "2026-11-20T02:11:15"
+  },
+  "pdf_info": {
+    "filename": "61396.pdf",
+    "bytes": 63732531,
+    "sha256": "535254f863e883e172151f4d948414b29f60683e1470a00541fe2015c34a9d99",
+    "cached": false
+  },
+  "analysis": {
+    "page_count": 287,
+    "total_chars": 395122,
+    "text_pages": 217,
+    "scanned_or_blank_pages": 70,
+    "scanned_page_sample": [
+      140,
+      142,
+      143,
+      144,
+      157,
+      168,
+      179,
+      180,
+      181,
+      182,
+      183,
+      184,
+      185,
+      186,
+      187
+    ],
+    "headings": [
+      [
+        1,
+        "1-ARISOY  Kapak"
+      ],
+      [
+        3,
+        "2-ARISOY Gövde"
+      ],
+      [
+        140,
+        "3-eklerr"
+      ],
+      [
+        140,
+        "EK-1"
+      ],
+      [
+        142,
+        "EK-1-1 TAPU"
+      ],
+      [
+        143,
+        "EK-1-1 TAPU"
+      ],
+      [
+        144,
+        "EK-1-2 SIFIR ATIK"
+      ],
+      [
+        145,
+        "EK-1-2 SIFIR ATIK-1"
+      ],
+      [
+        157,
+        "EK-1-3 TRAFİK YP"
+      ],
+      [
+        158,
+        "EK-1-3 TRAFİK YP-1"
+      ],
+      [
+        160,
+        "1. AMAÇ VE KAPSAM"
+      ],
+      [
+        160,
+        "2.SORUMLULUKLAR"
+      ],
+      [
+        162,
+        "3.İNŞAAT AŞAMASI TRAFİK YÖNETİMİ"
+      ],
+      [
+        162,
+        "3.1.Saha İçi Trafik Yönetimi"
+      ],
+      [
+        162,
+        "3.2.Saha Dışı Trafik Yönetimi"
+      ],
+      [
+        165,
+        "4.YOL VE ARAÇ BAKIMI"
+      ],
+      [
+        165,
+        "5.İŞLETME AŞAMASI TRAFİK YÖNETİMİ"
+      ],
+      [
+        168,
+        "EK-1-4 SERA GAZI"
+      ],
+      [
+        169,
+        "EK-1-4 SERA GAZI-1"
+      ],
+      [
+        171,
+        "1. Projenin inşaat ve işletme aşamalarında yenilenebilir enerji kullanımına ilişkin çalışmalar,"
+      ],
+      [
+        172,
+        "2.Yakıt Tüketimini Azaltmaya yönelik çalışmalar,"
+      ],
+      [
+        172,
+        "3.Alternatif ve çevre dostu malzeme seçimi, bakım-onarım-iyileştirme çalışmaları, stratejik yol tasarım çalışmaları,"
+      ],
+      [
+        172,
+        "4.Proje kapsamında açığa çıkacak atık ısının değerlendirilmesi, geri kazanımı ile ilgili çalışmalar"
+      ],
+      [
+        173,
+        "5.Proje kapsamında önerilen ağaçlandırma, peyzaj vb (karbon yutak alanları) konularda yapılacak çalışmalar,"
+      ],
+      [
+        174,
+        "EK-1-5 ÇEVRE VE SOSYAL"
+      ]
+    ],
+    "geo": {
+      "precision": "exact_pdf",
+      "lat": 38.74099,
+      "lon": 34.67734,
+      "point_count": 80,
+      "points": [
+        [
+          38.74247,
+          34.67814
+        ],
+        [
+          38.74228,
+          34.67858
+        ],
+        [
+          38.74187,
+          34.67916
+        ],
+        [
+          38.74157,
+          34.67913
+        ],
+        [
+          38.74064,
+          34.67952
+        ],
+        [
+          38.74028,
+          34.67918
+        ],
+        [
+          38.73967,
+          34.67853
+        ],
+        [
+          38.73923,
+          34.67816
+        ],
+        [
+          38.73925,
+          34.67811
+        ],
+        [
+          38.73944,
+          34.67772
+        ],
+        [
+          38.73955,
+          34.67746
+        ],
+        [
+          38.73956,
+          34.67742
+        ],
+        [
+          38.73968,
+          34.67704
+        ],
+        [
+          38.73982,
+          34.6766
+        ],
+        [
+          38.73985,
+          34.67644
+        ],
+        [
+          38.74054,
+          34.67686
+        ],
+        [
+          38.74096,
+          34.67716
+        ],
+        [
+          38.74109,
+          34.67724
+        ],
+        [
+          38.74161,
+          34.67755
+        ],
+        [
+          38.74181,
+          34.67764
+        ],
+        [
+          38.74221,
+          34.67773
+        ],
+        [
+          38.74236,
+          34.67794
+        ],
+        [
+          38.74004,
+          34.67669
+        ],
+        [
+          38.74046,
+          34.67702
+        ],
+        [
+          38.74039,
+          34.67716
+        ],
+        [
+          38.73997,
+          34.67684
+        ],
+        [
+          38.7431,
+          34.67754
+        ],
+        [
+          38.74292,
+          34.67798
+        ],
+        [
+          38.7425,
+          34.67856
+        ],
+        [
+          38.74221,
+          34.67853
+        ],
+        [
+          38.74127,
+          34.67892
+        ],
+        [
+          38.74091,
+          34.67858
+        ],
+        [
+          38.7403,
+          34.67793
+        ],
+        [
+          38.73986,
+          34.67756
+        ],
+        [
+          38.73988,
+          34.6775
+        ],
+        [
+          38.74008,
+          34.67712
+        ],
+        [
+          38.74018,
+          34.67686
+        ],
+        [
+          38.74019,
+          34.67682
+        ],
+        [
+          38.74032,
+          34.67644
+        ],
+        [
+          38.74045,
+          34.676
+        ]
+      ],
+      "datum": "UTM-Z36/ED50",
+      "pages": [
+        193,
+        194
+      ]
+    },
+    "signals": {
+      "coordinates_and_footprint": {
+        "label": "Coordinates, Parcel & Footprint",
+        "page_count": 39,
+        "pages": [
+          7,
+          16,
+          17,
+          29,
+          30,
+          33,
+          51,
+          55,
+          57,
+          58,
+          59,
+          60,
+          62,
+          68,
+          76,
+          80,
+          82,
+          84,
+          86,
+          87,
+          92,
+          94,
+          134,
+          139,
+          156
+        ],
+        "samples": [
+          {
+            "page": 7,
+            "match": "205,36 m2",
+            "snippet": "…i, Fatih (Karavezir) Mahallesi, tapunun 304 Ada, 42 ve 43 Parsel numarasında yer almakta olup toplam alan yüzölçümü 53.205,36 m2’dir. Mülkiyet Belgeleri EK-1.1’de verilmiştir. Firma Nevşehir İli, Gülşehir İlçesi, Fatih (Karavezir) Mahallesi, 304…"
+          },
+          {
+            "page": 16,
+            "match": "13,19 km",
+            "snippet": "…TAVUKÇULUĞU VE YUMURTA ÜRETİM TESİSİ KAPASİTE ARTIŞI 14 Söz konusu tesisin güneydoğu yönünde kuş uçuşu yaklaşık 13,19 km mesafede Nevşehir İl Merkezi, batı yönünde kuş uçuşu yaklaşık 4,67 km mesafede Gülşehir İlçesi ve güneydoğu yönünde k…"
+          },
+          {
+            "page": 16,
+            "match": "4,67 km",
+            "snippet": "…su tesisin güneydoğu yönünde kuş uçuşu yaklaşık 13,19 km mesafede Nevşehir İl Merkezi, batı yönünde kuş uçuşu yaklaşık 4,67 km mesafede Gülşehir İlçesi ve güneydoğu yönünde kuş uçuşu yaklaşık 5,80 km mesafede Sulusaray İlçesi bulunmaktadır. Tesi…"
+          },
+          {
+            "page": 16,
+            "match": "5,80 km",
+            "snippet": "…İl Merkezi, batı yönünde kuş uçuşu yaklaşık 4,67 km mesafede Gülşehir İlçesi ve güneydoğu yönünde kuş uçuşu yaklaşık 5,80 km mesafede Sulusaray İlçesi bulunmaktadır. Tesise en yakın yerleşim yerlerinin yaklaşık olarak kuş uçuşu mesafeleri aşağ…"
+          },
+          {
+            "page": 17,
+            "match": "205,36 m2",
+            "snippet": "…i, Fatih (Karavezir) Mahallesi, tapunun 304 Ada, 42 ve 43 Parsel numarasında yer almakta olup toplam alan yüzölçümü 53.205,36 m2’dir. Mülkiyet Belgeleri EK-1.1’de verilmiştir. Gelişen ve değişen dünyada insanoğlunun değişmez ve önemli sorunların…"
+          },
+          {
+            "page": 29,
+            "match": "utm",
+            "snippet": "…a Sistemi 4 Yumurta Paketleme Makinesi 4 Yumurta Kodlama Makinesi 4 Gübre Sevk Sistemi 4 Jeneratör 1 Gübre Kurutma Bandı 8 Proje kapsamında kurulacak üniteler ve alanları aşağıdaki tabloda verilmiştir. Tablo 13. Üniteler ve A…"
+          },
+          {
+            "page": 30,
+            "match": "6.015 m2",
+            "snippet": "…LTD. ŞTİ. YUMURTA TAVUKÇULUĞU VE YUMURTA ÜRETİM TESİSİ KAPASİTE ARTIŞI 28 Proje Bedeli Proje alanında toplam 6.015 m2 inşaat yapılacaktır. Çevre, Şehircilik ve İklim Değişikliği Bakanlığı tarafından yayımlanan 2026 yılı Mimarlık ve Mü…"
+          },
+          {
+            "page": 33,
+            "match": "koordinat",
+            "snippet": "…YUMURTA ÜRETİM TESİSİ KAPASİTE ARTIŞI 31 b) Projenin yer ve teknoloji alternatifleri, proje için seçilen yerin koordinatları. Projenin yer ve teknoloji alternatifleri Arısoy Hayvancılık San. ve Tic. Ltd. Şti. tarafından Nevşehir İli, Gülş…"
+          }
+        ]
+      },
+      "water_and_discharge": {
+        "label": "Water Use, Hydrogeology & Discharge",
+        "page_count": 22,
+        "pages": [
+          43,
+          44,
+          55,
+          64,
+          65,
+          66,
+          70,
+          71,
+          75,
+          76,
+          77,
+          78,
+          79,
+          80,
+          81,
+          82,
+          83,
+          84,
+          130,
+          177,
+          207,
+          261
+        ],
+        "samples": [
+          {
+            "page": 43,
+            "match": "yeraltısuyu",
+            "snippet": "…vşehir il sınırları içerisinde Kızılırmak ve Konya Kapalı havzasına ait alt havzalar yer almaktadır. Bu alt havzalarda yeraltısuyu seviyesi hidrojeolojik koşullara göre ve topografyaya göre değişkenlik göstermektedir. Tablo 22 Nevşehir İlinin Yera…"
+          },
+          {
+            "page": 43,
+            "match": "Yeraltı Suyu",
+            "snippet": "…suyu seviyesi hidrojeolojik koşullara göre ve topografyaya göre değişkenlik göstermektedir. Tablo 22 Nevşehir İlinin Yeraltı Suyu Potansiyeli (DSİ, 2024) Kaynağın İsmi Hm3 /yıl YAS ve İçme Suyu 200 İlde içme ve kullanma suyunun tamamına yakın…"
+          },
+          {
+            "page": 44,
+            "match": "Akifer",
+            "snippet": "…rlenmeye ve Bozulmaya Karşı Korunması Hakkında Yönetmelik\", 10 Ekim 2012 tarih ve 28437 sayılı \"İçme Suyu Temin Edilen Akifer ve Kaynakların Koruma Alanlarının Belirlenmesi Hakkında Tebliğ\" hükümlerine uyulacaktır. Ayrıca Su Kirliliği Kontrolü…"
+          },
+          {
+            "page": 44,
+            "match": "yeraltı suyu",
+            "snippet": "…cak, projeden kaynaklı olarak yeraltı suyunda kalite ve miktar açısından olumsuz etki tespiti veya faaliyet sırasında yeraltı suyu ile karşılaşılması halinde bütün zarar faaliyet sahibi tarafından karşılanacak, faaliyet durdurulacak ve DSİ direktifl…"
+          },
+          {
+            "page": 55,
+            "match": "deşarj",
+            "snippet": "…ünde kuş uçuşu yaklaşık 1 km mesafede Kızılırmak Nehri bulunmaktadır. Faaliyetle birlikte yüzeysel sulara herhangi bir deşarj söz konusu olmayacaktır. Hava Kalitesi; Nevşehir İlinde bugüne kadar sanayileşmeden kaynaklanan herhangi bir hava kir…"
+          },
+          {
+            "page": 64,
+            "match": "sulak alan",
+            "snippet": "…ar, bataklık sazlık ve turbiyeler ile bu alanların kıyı kenar çizgisinden itibaren kara tarafına doğru ekolojik açıdan sulak alan kalan yerler, Proje alanı içerisinden bu tür alanlar geçmemektedir. Ancak Proje alanın kuzey yönünden yaklaşık kuş uç…"
+          },
+          {
+            "page": 64,
+            "match": "yeraltı suyu",
+            "snippet": "…Proje alanın kuzey yönünden yaklaşık kuş uçuşu 1 km mesafesinden Kızılırmak Nehri geçmektedir. ç) Göller, akarsular, yeraltı suyu işletme sahaları, Bu tür alanlar bulunmamaktadır. d) Bilimsel araştırmalar için önem arz eden ve/veya nesli tehlikey…"
+          },
+          {
+            "page": 65,
+            "match": "4,8 ton/gün",
+            "snippet": "…Tavuklardan Kaynaklı Dışkı Miktarı = Tavuk Sayısı x 0,08 kg/gün = 60.000 tavuk x 0,08 kg/gün-tavuk = 4.800 kg/gün = 4,8 ton/gün olacaktır. Civcivlerden Kaynaklı Dışkı Miktarı = Civciv sayısı x 0,04 kg/gün-civciv"
+          }
+        ]
+      },
+      "protected_land_and_olive": {
+        "label": "Protected Zones, Forests & Olive Groves",
+        "page_count": 5,
+        "pages": [
+          58,
+          59,
+          61,
+          64,
+          207
+        ],
+        "samples": [
+          {
+            "page": 58,
+            "match": "Tabiat parkı",
+            "snippet": "…ı\", \"Tabiat Anıtları\" ve \"Tabiat Koruma Alanları\" bulunmamaktadır. Tablo 26. “Milli Parklar”, “Tabiat Koruma Alanı\", \"Tabiat parkı\" ve \"Tabiat anıtı\" Alanlar Uzaklığı Yönü Göreme MP 13 km Güneydoğu"
+          },
+          {
+            "page": 59,
+            "match": "Tabiat Parkı",
+            "snippet": "…RTA TAVUKÇULUĞU VE YUMURTA ÜRETİM TESİSİ KAPASİTE ARTIŞI 57 Şekil 24 “Milli Parklar”, “Tabiat Koruma Alanı\", \"Tabiat Parkı\" ve \"Tabiat Anıtı\" b) Kara Avcılığı Kanunu uyarınca belirlenen \"Yaban Hayatı Koruma Sahaları ve Yaban Hayvanı Yerleş…"
+          },
+          {
+            "page": 61,
+            "match": "Özel Çevre Koruma",
+            "snippet": "…lanan alanlar Bu tür alanlar bulunmamaktadır. f) Çevre Kanunu’nun 9 uncu maddesi uyarınca Cumhurbaşkanı tarafından \"Özel Çevre Koruma Bölgeleri\" olarak tespit ve ilan edilen alanlar, Bu tür alanlar bulunmamaktadır. g) Boğaziçi Kanunu’na göre koruma a…"
+          },
+          {
+            "page": 61,
+            "match": "orman alanı",
+            "snippet": "…. g) Boğaziçi Kanunu’na göre koruma altına alınan alanlar, Bu tür alanlar bulunmamaktadır. ğ) Orman Kanunu uyarınca orman alanı sayılan yerler, Bu tür alanlar bulunmamaktadır."
+          },
+          {
+            "page": 64,
+            "match": "kıyı kenar",
+            "snippet": "…ı olmak üzere canlıların yaşama ortamı olarak önem taşıyan bütün sular, bataklık sazlık ve turbiyeler ile bu alanların kıyı kenar çizgisinden itibaren kara tarafına doğru ekolojik açıdan sulak alan kalan yerler, Proje alanı içerisinden bu tür alan…"
+          },
+          {
+            "page": 64,
+            "match": "sulak alan",
+            "snippet": "…ar, bataklık sazlık ve turbiyeler ile bu alanların kıyı kenar çizgisinden itibaren kara tarafına doğru ekolojik açıdan sulak alan kalan yerler, Proje alanı içerisinden bu tür alanlar geçmemektedir. Ancak Proje alanın kuzey yönünden yaklaşık kuş uç…"
+          },
+          {
+            "page": 207,
+            "match": "ORMAN ALANI",
+            "snippet": "…R ARAZİ Tozlu T, S\\> | ° \\S ^ a 20 - BARAJ - > — ? - * '• \\n/ Aydossırtıfepe, $ ENERJİ İÜETİM ÜNİVERSİTE İÇİ ORMAN ALANI _ _ _ D 0 Ğ A | _ Q A Z B Q R U H A T T | - T - . . - O İM ALANLARI ASKERİ AL * LiYılanhyurt ı Mvk ) 2572 PETR…"
+          },
+          {
+            "page": 207,
+            "match": "ÖZEL ÇEVRE KORUMA",
+            "snippet": "…LANLARI I A., 25 Kayabaşı T. 0 • NEHİRLER • DERELER * * • o U ^ U j j j j l Mv* I /Atrep ftî. . i GÖLLER ÖZEL ÇEVRE KORUMA BOLGESI(O.Ç.K) M Kucükada [T. TABİATI KORUMA ALANI ^ & AıçbçuctTfcfpe ' ARAZİ KULLANIM <ıyu T' K ARKEOLOJİK SI…"
+          }
+        ]
+      },
+      "ecology_and_baseline": {
+        "label": "Flora, Fauna & Baseline Methodology",
+        "page_count": 6,
+        "pages": [
+          36,
+          43,
+          63,
+          64,
+          88,
+          178
+        ],
+        "samples": [
+          {
+            "page": 36,
+            "match": "mevsimsel",
+            "snippet": "…yük sınıf altında toplanmaktadır. Bunlar; “İki Yaşamlılar, Sürüngenler, Kuşlar ve Memeli” hayvanlardır. Fauna türleri mevsimsel değişiklikler göstermekte olup bir alanın fauna envanterinin belirlenmesi birkaç yıl sürebildiğinden fauna listelerind…"
+          },
+          {
+            "page": 43,
+            "match": "mevsimsel",
+            "snippet": "…de yüzeysel su kaynağı olarak akar dere, göl, gölet bulunmamaktadır. Proje kapsamında ÇED alanı ve civarında yer alan mevsimsel akışlı dere yataklarına ait yatak kesitlerinin, daraltılması, akış rejimlerinin bozulmasına yönelik faaliyette…"
+          },
+          {
+            "page": 63,
+            "match": "BERN Sözleşmesi",
+            "snippet": "…sözleşmeler uyarınca korunması gerekli alanlar a) Avrupa’nın Yaban Hayatı ve Yaşama Ortamlarını Koruma Sözleşmesi\" (BERN Sözleşmesi) uyarınca koruma altına alınmış alanlardan \"Önemli Deniz Kaplumbağası Üreme Alanları “nda belirtilen I. ve II. Koruma…"
+          },
+          {
+            "page": 64,
+            "match": "endemik",
+            "snippet": "…ır. d) Bilimsel araştırmalar için önem arz eden ve/veya nesli tehlikeye düşmüş veya düşebilir türler ve ülkemiz için endemik olan türlerin yaşama ortamı olan alanlar, biyosfer rezervi, biyotoplar, biyogenetik rezerv alanları, benzersiz özellik…"
+          },
+          {
+            "page": 88,
+            "match": "mevsimsel",
+            "snippet": "…ı, Savrulma Yapılmadan Yükleme Boşaltılması vb.) alınarak kontrollü çalışma yapılacaktır. • Alandaki yol güzergahları mevsimsel koşullara bağlı olarak su ile nemlendirilecek • Malzeme boşaltma ve doldurma işlemleri savrulmadan yapılacak, • Kamy…"
+          },
+          {
+            "page": 178,
+            "match": "Biyoçeşitlilik",
+            "snippet": "…da lisanslı tesislere geri kazanım ya da bertaraf edilmesi amacı ile gönderilmek üzere depolanacaktır. 11-Ormanlar ve Biyoçeşitlilik Çevre Kirliliği Proje kapsamında 2873 Sayılı Milli Parklar Kanunu, 2872 Sayılı Çevre Kanunu ve 4915 Sayılı Kara Avcı…"
+          }
+        ]
+      },
+      "pollutants_and_hazards": {
+        "label": "Emissions, Geochemistry & Waste",
+        "page_count": 43,
+        "pages": [
+          12,
+          20,
+          44,
+          49,
+          50,
+          51,
+          65,
+          86,
+          87,
+          94,
+          96,
+          97,
+          98,
+          99,
+          101,
+          102,
+          103,
+          105,
+          108,
+          111,
+          113,
+          114,
+          115,
+          116,
+          118
+        ],
+        "samples": [
+          {
+            "page": 12,
+            "match": "Gürültü",
+            "snippet": "…esisler1,2 kapsamında yer alacaktır. Çevre İzin ve Lisans Yönetmeliğine göre hayvan yetiştirme tesisleri 1: Çevresel Gürültü konulu Çevre izninden muaf olan tesisler 2: Hava emisyonu konulu Çevre izninden muaf olan tesislerdir. Mevcut durum…"
+          },
+          {
+            "page": 20,
+            "match": "Gürültü",
+            "snippet": "…Tabakasının Sıyrılması Kazı Dolgu Çalışmaları Betonarme İşlemleri Montaj İşlemleri İşletme Aşaması Toz Emisyonu Gürültü Toz Emisyonu Gürültü"
+          },
+          {
+            "page": 44,
+            "match": "deprem",
+            "snippet": "…ak 7269 sayılı Umumi Hayata Müessir Afetler Dolayısıyla Alınacak Tedbirler Yapılacak Yardımlara Dair Kanun kapsamında deprem haricinde yer alan yangın, heyelan, kaya düşmesi, çığ, fırtına, sis, hortum, su baskını vb. doğal afet türleri açısınd…"
+          },
+          {
+            "page": 49,
+            "match": "Deprem",
+            "snippet": "…msellik 18.03.2018 tarih ve 30364 sayılı (mükerrer) Resmî Gazete’ de yayımlanarak yürürlüğe giren 2018/11275 “Türkiye Deprem Tehlike Haritası ve Parametre Değerleri Hakkında Karar” uyarınca 1.1.2019 tarihinden itibaren AFAD Deprem Dairesi Başk…"
+          },
+          {
+            "page": 50,
+            "match": "Deprem",
+            "snippet": "…. VE TİC. LTD. ŞTİ. YUMURTA TAVUKÇULUĞU VE YUMURTA ÜRETİM TESİSİ KAPASİTE ARTIŞI 48 Şekil 17. Nevşehir İli Deprem Şiddet Haritası Kaynak: https://tdth.afad.gov.tr/ Tablo 24. Yaşanmış Deprem Tarih Enlem Boylam Derinlik Büyükl…"
+          },
+          {
+            "page": 51,
+            "match": "Deprem",
+            "snippet": "…LTD. ŞTİ. YUMURTA TAVUKÇULUĞU VE YUMURTA ÜRETİM TESİSİ KAPASİTE ARTIŞI 49 Şekil 18 . Proje Alanını Gösterir Deprem Tehlike Haritası (https://tdth.afad.gov.tr/TDTH/main.xhtml) Proje Alanı içerisinde diri fay bulunmamaktadır. Proje A…"
+          },
+          {
+            "page": 65,
+            "match": "kümülatif",
+            "snippet": "…Projenin; a) Çevreyi etkileyebilecek olası sorunların belirlenmesi, kirleticilerin miktarı, alıcı ortamla etkileşimi, kümülatif etkilerin belirlenmesi a.1) Katı Atıklar a.1.1) Mevcut Durum Evsel Kaynaklı Katı Atıklar: Tesiste personelin ihtiy…"
+          },
+          {
+            "page": 86,
+            "match": "toz emisyon",
+            "snippet": "…rası Durum İnşaat Aşaması Toz Emisyonu Bitkisel Toprak Proje kapsamında inşaat aşamasında oluşacak Bitkisel Toprak toz emisyon hesabı aşağıda verilmiştir. Tablo 41 Bitkisel Toprak Toz Emisyonu Çalışma Süresi Ton Yıllık 1 ay Yıllık…"
+          }
+        ]
+      },
+      "cost_and_capacity": {
+        "label": "Project Cost, Power & Capacity",
+        "page_count": 154,
+        "pages": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25
+        ],
+        "samples": [
+          {
+            "page": 1,
+            "match": "KAPASİTE",
+            "snippet": "…ÇED BAŞVURU DOSYASI 2026 Masçev ÇED ve Çevre Hizmetleri Ltd. Şti. YUMURTA TAVUKÇULUĞU VE YUMURTA ÜRETİM TESİSİ KAPASİTE ARTIŞI NEVŞEHİR İLİ, GÜLŞEHİR İLÇESİ, FATİH (KARAVEZİR) MAHALLESİ, 304 ADA, 42 VE 43 PARSEL ARISOY HAYVANCILIK SAN…"
+          },
+          {
+            "page": 2,
+            "match": "Kapasite",
+            "snippet": "…ARASI : 05326052160 E-POSTA : coskunarisoy@hotmail.com PROJENİN ADI : Yumurta Tavukçuluğu ve Yumurta Üretim Tesisi Kapasite Artışı PROJE BEDELİ : 146.168.715 TL PROJE İÇİN SEÇİLEN YERİN AÇIK ADRESİ (İLİ, İLÇESİ, MEVKİ) : Nevşehir İli, G…"
+          },
+          {
+            "page": 2,
+            "match": "PROJE BEDELİ",
+            "snippet": "…60 E-POSTA : coskunarisoy@hotmail.com PROJENİN ADI : Yumurta Tavukçuluğu ve Yumurta Üretim Tesisi Kapasite Artışı PROJE BEDELİ : 146.168.715 TL PROJE İÇİN SEÇİLEN YERİN AÇIK ADRESİ (İLİ, İLÇESİ, MEVKİ) : Nevşehir İli, Gülşehir İlçesi, Fatih…"
+          },
+          {
+            "page": 2,
+            "match": "146.168.715 TL",
+            "snippet": "…oskunarisoy@hotmail.com PROJENİN ADI : Yumurta Tavukçuluğu ve Yumurta Üretim Tesisi Kapasite Artışı PROJE BEDELİ : 146.168.715 TL PROJE İÇİN SEÇİLEN YERİN AÇIK ADRESİ (İLİ, İLÇESİ, MEVKİ) : Nevşehir İli, Gülşehir İlçesi, Fatih (Karavezir) Mahall…"
+          },
+          {
+            "page": 3,
+            "match": "KAPASİTE",
+            "snippet": "ARISOY HAYVANCILIK SAN. VE TİC. LTD. ŞTİ. YUMURTA TAVUKÇULUĞU VE YUMURTA ÜRETİM TESİSİ KAPASİTE ARTIŞI i İÇİNDEKİLER TABLOLAR DİZİNİ ..........................................................................…"
+          },
+          {
+            "page": 4,
+            "match": "KAPASİTE",
+            "snippet": "ARISOY HAYVANCILIK SAN. VE TİC. LTD. ŞTİ. YUMURTA TAVUKÇULUĞU VE YUMURTA ÜRETİM TESİSİ KAPASİTE ARTIŞI ii TABLOLAR DİZİNİ Tablo 1 Proje Alanına İlişkin Geçmiş ÇED Kararları, Kümes ve Kapasite Değişimleri ......…"
+          },
+          {
+            "page": 4,
+            "match": "Kapasite",
+            "snippet": "…i Yeri ve Kapasitesi ..................................................... 7 Tablo 3 Tesiste Mevcut Durumda Bulunan ve Kapasite Artışı Sonrası Durumda Üniteler ve Alan Bilgileri ....................................................................…"
+          },
+          {
+            "page": 5,
+            "match": "KAPASİTE",
+            "snippet": "ARISOY HAYVANCILIK SAN. VE TİC. LTD. ŞTİ. YUMURTA TAVUKÇULUĞU VE YUMURTA ÜRETİM TESİSİ KAPASİTE ARTIŞI iii Tablo 47 Yakıt Kirletici Değerleri .....................................................................…"
+          }
+        ]
+      }
+    },
+    "audit_checks": {
+      "mentions_field_survey": true,
+      "mentions_literature_only_cue": false,
+      "mentions_seasonal_sampling": true,
+      "mentions_cumulative_impact": true,
+      "mentions_olive_law_3573": false,
+      "mentions_groundwater_or_aquifer": true,
+      "mentions_iucn_or_endemic": true
+    }
+  },
+  "llm_synthesis": {
+    "model": "gemini-4-hydrogen",
+    "generated_at": "2026-11-20T11:00:17",
+    "pages_sent": [
+      1,
+      2,
+      3,
+      4,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      16,
+      17,
+      20,
+      29,
+      36,
+      43,
+      44,
+      49,
+      55,
+      58,
+      59,
+      61,
+      63,
+      64
+    ],
+    "usage": {
+      "prompt_tokens": 20277,
+      "output_tokens": 689,
+      "thoughts_tokens": 7120,
+      "total_tokens": 28086
+    },
+    "result": {
+      "executive_summary_tr": "Arısoy Hayvancılık San. ve Tic. Ltd. Şti. tarafından Nevşehir ili, Gülşehir ilçesi, Fatih (Karavezir) Mahallesi, 304 Ada, 42 ve 43 numaralı parsellerde (toplam 53.205,36 m²) yer alan mevcut yumurta tavukçuluğu tesisinde ÇED Yönetmeliği Ek-1 Madde 17/d kapsamında kapasite artışı planlanmaktadır. Proje ile mevcut 60.000 adet/yıl tavuk ve 29.000 adet/yıl civciv kapasitesine 330.000 adet/yıl tavuk ve 100.000 adet/yıl civciv eklenerek toplam kapasitenin 390.000 adet/yıl tavuk, 129.000 adet/yıl civciv ve 136.656.000 adet/yıl yumurta üretimine çıkarılması öngörülmektedir. Başlıca çevresel hassasiyetler; tarla vasfındaki sahanın 1/100.000 ölçekli planda Kültür ve Turizm Koruma ve Gelişim Bölgesi sınırlarında yer alması, Kızılırmak Nehri'ne yaklaşık 1 km mesafede bulunması, bölgedeki yeraltı suyu bağımlılığı ve henüz tamamlanmamış saha bazlı ekolojik ve hava kalitesi etütleridir.",
+      "executive_summary_en": "Arısoy Hayvancılık San. ve Tic. Ltd. Şti. proposes a capacity expansion for its egg-laying poultry facility located on Block 304, Parcels 42 and 43 (53,205.36 m2 total) in Fatih (Karavezir) Neighborhood, Gülşehir District, Nevşehir Province, under Annex-1 Item 17/d of the Turkish EIA Regulation. The project increases authorized capacity from 60,000 laying hens/year and 29,000 chicks/year to 390,000 hens/year, 129,000 chicks/year, and 136,656,000 eggs/year by activating an idle coop and constructing new coops, a 800 m2 manure pit, and a 200 m2 animal carcass disposal pit. Key environmental stakes include the site's overlap with agricultural (",
+      "key_facts": [],
+      "baseline_assessment": {
+        "field_survey_status": "not_found",
+        "seasonal_sampling_status": "not_found",
+        "cumulative_impact_status": "omitted_or_not_found",
+        "olive_and_protected_status": "",
+        "explanation": ""
+      },
+      "red_flags": [],
+      "hkt_and_petition_questions": [],
+      "data_limitations": ""
+    }
+  }
+}

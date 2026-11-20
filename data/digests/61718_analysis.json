@@ -1,0 +1,811 @@
+{
+  "filing": {
+    "province": "ANTALYA",
+    "district": "KALE(DEMRE)",
+    "project_name": "201700280 (ER:3339342) Ruhsat Numaralı Mermer Ocağı Kapasite Artışı",
+    "project_owner": "Ctm Mermer İç Ve  Dış Ticaret Limited Şirketi",
+    "sector": "I., II. ve V. Grup Madenler",
+    "sub_sector": "II. Grup Madenler",
+    "decision_type": "ÇED Süreci Başlayan",
+    "announcement_date_tr": "13.11.2026",
+    "project_type": "Ek-1",
+    "detail_text": "ANTALYA ili KALE(DEMRE) ,  ilcesinde ANTALYA il KALE(DEMRE) ,  ilce Belören Mahallesi mevkiinde Ctm Mermer İç Ve  Dış Ticaret Limited Şirketi tarafından yapılması planlanan 201700280 (ER:3339342) Ruhsat Numaralı Mermer Ocağı Kapasite Artışı projesi ile ilgili olarak Bakanlığımıza sunulan ÇED Başvuru Dosyası Çevresel Etki Değerlendirmesi Yönetmeliği'nin 8. maddesi doğrultusunda incelenmiş ve başvurunun ÇED Genel Formatına uygun hazırlandığı anlaşılmış olup, projeye ilişkin ÇED Süreci başlatılmıştır. Çevresel Etki Değerlendirmesi süreci tamamlanana kadar, süreç ile ilgili her türlü bilgiler ve projeye ilişkin görüş, soru ve öneriler ANTALYA Valiliğine (Çevre, Şehircilik ve İklim Değişikliği İl Müdürlüğü) veya Çevre, Şehircilik ve İklim Değişikliği Bakanlığına gönderilebilir.İlgililere ve kamuoyuna duyurulur.",
+    "detail_links": [
+      {
+        "text": "ÇED Başvuru Dosyası",
+        "href": "http://eced.csb.gov.tr/jsp/ek1/61718"
+      }
+    ],
+    "documents": [
+      {
+        "portal_doc_url": "http://eced.csb.gov.tr/jsp/ek1/61718",
+        "filing_id": "61718",
+        "consulting_firm": "ÖZDEMİR ÇEVRE ARIT. MÜH. MÜŞ. ORM. MAD. İNŞ. TAŞ. TEM. HİZ. TUR. SAN. VE TİC. LTD. ŞTİ.",
+        "submitted_at": "09/11/2026 01:08:51",
+        "pdf_urls": [
+          {
+            "label": "Dosya Göster",
+            "url": "http://eced.csb.gov.tr/jsp/dosya/dosyaGoster.htm?tempAd=sign3410074410049567359.pdf&orjinalAd=CEDBASDOSYASI..pdf&yuklemeTarihi=2026-11-09"
+          }
+        ]
+      }
+    ],
+    "announcement_date": "2026-11-13",
+    "statutory_clocks": [
+      {
+        "code": "aski_10d",
+        "kind": "10 günlük halkın görüş ve önerilerine açılma (askı) süresi",
+        "deadline": "2026-11-23",
+        "days_remaining": 3
+      }
+    ],
+    "filing_key": "61718:13.11.2026:ÇED Süreci Başlayan",
+    "first_seen_at": "2026-11-20T09:02:28"
+  },
+  "pdf_info": {
+    "filename": "61718.pdf",
+    "bytes": 93804208,
+    "sha256": "b0e1416778c60c3662c6a7c55d012cb72d56493987aee51ee3ea51eb31ea91db",
+    "cached": false
+  },
+  "analysis": {
+    "page_count": 267,
+    "total_chars": 418122,
+    "text_pages": 231,
+    "scanned_or_blank_pages": 36,
+    "scanned_page_sample": [
+      134,
+      135,
+      136,
+      137,
+      138,
+      139,
+      141,
+      150,
+      151,
+      152,
+      153,
+      154,
+      155,
+      156,
+      157
+    ],
+    "headings": [
+      [
+        1,
+        "0.KAPAK.pdf (p.1-2)"
+      ],
+      [
+        3,
+        "1.ÇED BAŞVURU DOSYASI CTM (Onarıldı).pdf (p.3-130)"
+      ],
+      [
+        131,
+        "EKLER06.11.2026.pdf (p.131-267)"
+      ],
+      [
+        131,
+        "Ek-1 Çevresel Etki Değerlendirmesi Başvuru Dosyasının Hazırlanmasında Kullanılan Bilgi ve Belgeler ile Raporda Sunulamayan Dokümanlar.pdf (p.1)"
+      ],
+      [
+        132,
+        "EK-1.1 ÇED YÖNETMELİĞİ KAPSAMINDA ALINAN BELGELER.pdf (p.2-9)"
+      ],
+      [
+        132,
+        "CTM ÇED OLUMLU ÜST YAZI.pdf (p.1-2)"
+      ],
+      [
+        134,
+        "CTM BELÖREN ÇED OLUMLU BELGE.pdf (p.3-4)"
+      ],
+      [
+        136,
+        "ÇED GEREKLİ DEĞİLDİR KARARI.pdf (p.5-8)"
+      ],
+      [
+        140,
+        "EK-1.2 MADEN İŞLETME RUHSATI.pdf (p.10)"
+      ],
+      [
+        141,
+        "Ek-2 Proje Alanına Ait Koordinatlar.pdf (p.11)"
+      ],
+      [
+        142,
+        "EK-2.1 FAALİYET SAHASININ KOORDİNATLARI.pdf (p.12-18)"
+      ],
+      [
+        149,
+        "Ek-3 Proje Alanı ve Alternatiflerine İlişkin Planlar.pdf (p.19)"
+      ],
+      [
+        150,
+        "EK-3.1 ÇEVRE DÜZENİ PLANI.pdf (p.20)"
+      ],
+      [
+        151,
+        "EK-3.2 VAZİYET PLANI.pdf (p.21)"
+      ],
+      [
+        152,
+        "Ek-3.3 1-25.000 ÖLÇEKLİ TOPOĞRAFİK HARİTASI.pdf (p.22)"
+      ],
+      [
+        153,
+        "Ek-3.4 HİDROJEOLOJİ  HARİTASI.pdf (p.23)"
+      ],
+      [
+        154,
+        "Ek-3.4 HİDROLOJİ HARİTASI.pdf (p.24)"
+      ],
+      [
+        155,
+        "Ek-3.4 JEOLOJİ HARİTASI.pdf (p.25)"
+      ],
+      [
+        156,
+        "Ek-3.5 DİRİ FAY HARİTASI.pdf (p.26)"
+      ],
+      [
+        157,
+        "Ek-3.6 VAZİYET NAKLİYE HARİTASI.pdf (p.27)"
+      ],
+      [
+        158,
+        "Ek-3.7 DUYARLI YÖRELER HARİTASI.pdf (p.28)"
+      ],
+      [
+        159,
+        "Ek-3.8  MESCERE HARİTASI.pdf (p.29)"
+      ],
+      [
+        160,
+        "Ek-3.9  ORMAN KADASTRO HARİTASI.pdf (p.30)"
+      ],
+      [
+        161,
+        "Ek-3.10 KADASTRO HARITASI.pdf (p.31)"
+      ],
+      [
+        162,
+        "Ek-3.11 KORUNAN ALANLAR HARİTASI.pdf (p.32)"
+      ]
+    ],
+    "geo": {
+      "precision": "province_centroid",
+      "lat": 36.8969,
+      "lon": 30.7133,
+      "point_count": 0,
+      "points": [],
+      "datum": null,
+      "pages": []
+    },
+    "signals": {
+      "coordinates_and_footprint": {
+        "label": "Coordinates, Parcel & Footprint",
+        "page_count": 56,
+        "pages": [
+          5,
+          8,
+          10,
+          11,
+          12,
+          15,
+          16,
+          21,
+          22,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          33,
+          42,
+          50,
+          52,
+          59,
+          60,
+          61
+        ],
+        "samples": [
+          {
+            "page": 5,
+            "match": "Koordinat",
+            "snippet": "…............................................... 6 b) Projenin Yer ve Teknoloji Alternatifleri, Proje İçin Seçilen Yerin Koordinatları. 17 BÖLÜM II: PROJE YERİ VE ETKİ ALANININ MEVCUT ÇEVRESEL ÖZELLİKLERİ..............................................…"
+          },
+          {
+            "page": 8,
+            "match": "Koordinat",
+            "snippet": "…lerden Rapor Metninde Sunulamayan Belgeler.(Maden İşletme Ruhsatı, Mevcut ÇED Kararı vb.) Ek–2:Proje İçin Seçilen Yerin Koordinatları Ek–3:Proje İçin Belirlenen Yer Ve Alternatiflerinin Varsa; Çevre Düzeni, Nazım, Uygulama İmar Planı, Vaziyet Planı…"
+          },
+          {
+            "page": 10,
+            "match": "99,98 hektar",
+            "snippet": "…Çevre, Şehircilik ve İklim Değişikliği İl Müdürlüğü’nün 21.03.2023 tarih ve E-23822202-220.02-6012612 sayılı yazısı ile 99,98 hektarlık sahanın 24,95 hektarlık kısmında 200.000 m3/yıl kapasiteli Mermer Ocağı için CTM Mermer İç ve Dış Tic. Ltd. Şti. adı…"
+          },
+          {
+            "page": 10,
+            "match": "24,95 hektar",
+            "snippet": "…im Değişikliği İl Müdürlüğü’nün 21.03.2023 tarih ve E-23822202-220.02-6012612 sayılı yazısı ile 99,98 hektarlık sahanın 24,95 hektarlık kısmında 200.000 m3/yıl kapasiteli Mermer Ocağı için CTM Mermer İç ve Dış Tic. Ltd. Şti. adına “ÇED Gerekli Değildir…"
+          },
+          {
+            "page": 11,
+            "match": "99,98 ha",
+            "snippet": "…marası Ruhsat Alanı ÇED Alanı Kapasitesi Kurum Karara Ait Tarih ve Sayı ÇED Kararları Faaliyet Başlama Tarihi 201700280 99,98 ha 24,95 ha. 200.000 m3/yıl Çevre, Şehircilik ve İklim Değişikliği İl Müdürlüğü 21.03.2023 Tarih ve SayıE- 23822202-220.0…"
+          },
+          {
+            "page": 11,
+            "match": "24,95 ha",
+            "snippet": "…hsat Alanı ÇED Alanı Kapasitesi Kurum Karara Ait Tarih ve Sayı ÇED Kararları Faaliyet Başlama Tarihi 201700280 99,98 ha 24,95 ha. 200.000 m3/yıl Çevre, Şehircilik ve İklim Değişikliği İl Müdürlüğü 21.03.2023 Tarih ve SayıE- 23822202-220.02- 601261…"
+          },
+          {
+            "page": 11,
+            "match": "24,95 hektar",
+            "snippet": "…Gerekli Değildir Faaliyete Başlandı. 250.000 m3/yıl 27.07.2026 Tarih ve Sayı E- 23822202-220.99- 16283627 ÇED Olumlu 24,95 hektarlık mevcut ÇED Alanının 1388,33 m2’si Doğal Sit alanında kalması nedeniyle vaziyet planında çalışma yapılmayacak alan ol…"
+          },
+          {
+            "page": 11,
+            "match": "1388,33 m2",
+            "snippet": "…. 250.000 m3/yıl 27.07.2026 Tarih ve Sayı E- 23822202-220.99- 16283627 ÇED Olumlu 24,95 hektarlık mevcut ÇED Alanının 1388,33 m2’si Doğal Sit alanında kalması nedeniyle vaziyet planında çalışma yapılmayacak alan olarak gösterilmiştir. Çevre İzin ve…"
+          }
+        ]
+      },
+      "water_and_discharge": {
+        "label": "Water Use, Hydrogeology & Discharge",
+        "page_count": 31,
+        "pages": [
+          10,
+          11,
+          12,
+          15,
+          16,
+          21,
+          25,
+          41,
+          42,
+          48,
+          53,
+          74,
+          93,
+          97,
+          98,
+          99,
+          107,
+          108,
+          109,
+          110,
+          111,
+          117,
+          132,
+          181,
+          184
+        ],
+        "samples": [
+          {
+            "page": 10,
+            "match": "200.000 m3/yıl",
+            "snippet": "…ğü’nün 21.03.2023 tarih ve E-23822202-220.02-6012612 sayılı yazısı ile 99,98 hektarlık sahanın 24,95 hektarlık kısmında 200.000 m3/yıl kapasiteli Mermer Ocağı için CTM Mermer İç ve Dış Tic. Ltd. Şti. adına “ÇED Gerekli Değildir” kararı alınmıştır. Antaly…"
+          },
+          {
+            "page": 10,
+            "match": "250.000 m3/yıl",
+            "snippet": "…ü’nün 27.07.2026 tarih ve E-23822202-220.99-16283627 sayılı yazısı ile 99,98 hektarlık sahanın 24,95 hektarlık kısmında 250.000 m3/yıl kapasiteli Mermer Ocağı için CTM Mermer İç ve Dış Tic. Ltd. Şti. adına “Çevresel Etki Değerlendirme Olumlu ” kararı alı…"
+          },
+          {
+            "page": 11,
+            "match": "200.000 m3/yıl",
+            "snippet": "…ÇED Alanı Kapasitesi Kurum Karara Ait Tarih ve Sayı ÇED Kararları Faaliyet Başlama Tarihi 201700280 99,98 ha 24,95 ha. 200.000 m3/yıl Çevre, Şehircilik ve İklim Değişikliği İl Müdürlüğü 21.03.2023 Tarih ve SayıE- 23822202-220.02- 6012612 ÇED Gerekli De…"
+          },
+          {
+            "page": 11,
+            "match": "250.000 m3/yıl",
+            "snippet": "…Değişikliği İl Müdürlüğü 21.03.2023 Tarih ve SayıE- 23822202-220.02- 6012612 ÇED Gerekli Değildir Faaliyete Başlandı. 250.000 m3/yıl 27.07.2026 Tarih ve Sayı E- 23822202-220.99- 16283627 ÇED Olumlu 24,95 hektarlık mevcut ÇED Alanının 1388,33 m2’si Do…"
+          },
+          {
+            "page": 12,
+            "match": "250.000 m3/yıl",
+            "snippet": "…ınmış olan 201700280 ruhsat numaralı sahada ÇED alanının 24,95 hektardan 53,72 hektara çıkarılması ve üretim kapasitesi 250.000 m3/yıl’dan 300.000 m3/yıl’ arttırılması planlanmaktadır. Ocak verimi blok mermer için % 10, moloz için %5 olup, geri kalan %85…"
+          },
+          {
+            "page": 12,
+            "match": "300.000 m3/yıl",
+            "snippet": "…0 ruhsat numaralı sahada ÇED alanının 24,95 hektardan 53,72 hektara çıkarılması ve üretim kapasitesi 250.000 m3/yıl’dan 300.000 m3/yıl’ arttırılması planlanmaktadır. Ocak verimi blok mermer için % 10, moloz için %5 olup, geri kalan %85’i pasa malzemedir.…"
+          },
+          {
+            "page": 12,
+            "match": "30.000 m3/yıl",
+            "snippet": "…sı planlanmaktadır. Ocak verimi blok mermer için % 10, moloz için %5 olup, geri kalan %85’i pasa malzemedir. Bu sebeple 30.000 m3/yıl blok mermer, 15.000 m3/yıl moloz, geriye kalan 255.000 m3/yıl ise pasa malzeme olacaktır. Tablo 2: Mermer Ocağı Kapasit…"
+          },
+          {
+            "page": 12,
+            "match": "15.000 m3/yıl",
+            "snippet": "…rimi blok mermer için % 10, moloz için %5 olup, geri kalan %85’i pasa malzemedir. Bu sebeple 30.000 m3/yıl blok mermer, 15.000 m3/yıl moloz, geriye kalan 255.000 m3/yıl ise pasa malzeme olacaktır. Tablo 2: Mermer Ocağı Kapasite Bilgileri Mermer Ocağı Me…"
+          }
+        ]
+      },
+      "protected_land_and_olive": {
+        "label": "Protected Zones, Forests & Olive Groves",
+        "page_count": 14,
+        "pages": [
+          11,
+          13,
+          15,
+          23,
+          24,
+          59,
+          67,
+          68,
+          91,
+          92,
+          93,
+          112,
+          118,
+          254
+        ],
+        "samples": [
+          {
+            "page": 11,
+            "match": "Doğal Sit",
+            "snippet": "…ıl 27.07.2026 Tarih ve Sayı E- 23822202-220.99- 16283627 ÇED Olumlu 24,95 hektarlık mevcut ÇED Alanının 1388,33 m2’si Doğal Sit alanında kalması nedeniyle vaziyet planında çalışma yapılmayacak alan olarak gösterilmiştir. Çevre İzin ve Lisans Yönet…"
+          },
+          {
+            "page": 13,
+            "match": "Arkeolojik Sit",
+            "snippet": "…maya ait ruhsat müracaat başvuru yapılmış ve değerlendirme aşamasındadır. Kuzeydoğu-Kuzey sınırı tarafında da 1. Derece Arkeolojik Sit Sınırı bulunmaktadır. ÇED alanı belirlenirken ruhsat müracaat yapılan kısma ilerde tehlikeye neden olmaması sebebiyle s…"
+          },
+          {
+            "page": 15,
+            "match": "Doğal Sit",
+            "snippet": "…² lik toplanma alanı, 1388,33 çalışma yapılmayacak alan bulunacaktır. 24,95 hektarlık mevcut ÇED Alanının 1388,33 m2’si Doğal Sit alanında kalması nedeniyle vaziyet planında çalışma yapılmayacak alan olarak gösterilmiştir. 53,72 hektarlık ÇED alanın…"
+          },
+          {
+            "page": 23,
+            "match": "orman alanı",
+            "snippet": "….karotmakine.com/urun/6-5-hp-4-zamanli-sondaj-makinasi-rayli-sistem) Ağaçlandırma Bedeli Hesabında; ÇED alanının tamamı orman alanı olması nedeniyle orman arazisi dikkate alınarak yapılmış olup, ağaçlandırma bedeli hesabı Tablo 10’da verilmiştir. Tabl…"
+          },
+          {
+            "page": 24,
+            "match": "orman alanı",
+            "snippet": "…faaliyet sahasında ÇED alanında; mevcut ÇED alanı içerisinde 220.345,67 m2 alanda orman izinleri bulunmaktadır. Tamamı orman alanı olan 537.200 m2 ÇED Alanından orman izni olan alanlar çıkarıldıktan sonra orman izni bulunmayan 316.854,33 m2’lik alan…"
+          },
+          {
+            "page": 59,
+            "match": "orman alanı",
+            "snippet": "…LİMİTED ŞİRKETİ Grafik 1: Antalya İli Arazi Kullanım Durumu Genel arazi dağılımının; 40564303.45 hektarını (%50,31) ile orman alanı, 34079354.82 hektarını (%42,26) ile tarım, çayır ve mera arazisi, 4013668.63 (%4,98) hektarını su kütleleri, 1565407.01…"
+          },
+          {
+            "page": 67,
+            "match": "milli park",
+            "snippet": "…nılabilirler. VIII. Sınıf araziler ilde %17.5‘lik bir oranla 361.129 hektarlık bir alana sahiptir. Bunun 31.620 hektarı milli park, 8.603 hektarı yerleşim yeri, 227.645 hektarı çıplak kaya ve molozdur. Tablo 23: İlçelere Göre Arazi Sınıflarının Dağıl…"
+          },
+          {
+            "page": 68,
+            "match": "Mutlak Tarım",
+            "snippet": "…ARTIŞI CTM MERMER İÇ VE DIŞ TİCARET LİMİTED ŞİRKETİ Tablo 24: Antalya İli İlçeler Arazi Nitelik Dağılımı İlçe adı Sulu Mutlak Tarım (Ha) Kuru Mutlak Tarım (Ha) Dikili Meyve (Ha) Dikili Narenciye (Ha) Dikili Zeytin (Ha) Dikili Bağ (Ha) Kuru Marjinal (H…"
+          }
+        ]
+      },
+      "ecology_and_baseline": {
+        "label": "Flora, Fauna & Baseline Methodology",
+        "page_count": 10,
+        "pages": [
+          37,
+          38,
+          39,
+          50,
+          92,
+          93,
+          117,
+          129,
+          241,
+          257
+        ],
+        "samples": [
+          {
+            "page": 37,
+            "match": "arazi çalışması",
+            "snippet": "…eratür çalışması yapılacak, bu bölgede yapılmış araştırma, yayın, makale ve tez çalışmaları varsa araştırılarak yapılan arazi çalışması desteklenecektir. Flora listesinde bitki türlerinin Latince ve Türkçe adları, endemizm durumları, tehlike kategorileri,…"
+          },
+          {
+            "page": 37,
+            "match": "endemik",
+            "snippet": "…, tehlike kategorileri, fitocoğrafik bölgeleri, habitatları belirtilecektir. Faaliyet alanı ve çevresinde bulunabilecek endemik bitki türlerinin belirlenmesinde, http://turkherb.ibu.edu.tr adresinde bulunan Türkiye Bitkileri Veri Servisinden, Ekim…"
+          },
+          {
+            "page": 38,
+            "match": "Bern Sözleşmesi",
+            "snippet": "…e kategorileri, habitatları vb., fauna türlerinden amfibi, sürüngen, kuş ve memeli türlerinin Latince ve Türkçe adları, Bern Sözleşmesi Ek-2 ve Ek-3 listelerinin hangisinde yer aldığı, habitatları, IUCN kategorileri, “2024-2025 Av Dönemi Merkez Av Komisyo…"
+          },
+          {
+            "page": 38,
+            "match": "IUCN",
+            "snippet": "…meli türlerinin Latince ve Türkçe adları, Bern Sözleşmesi Ek-2 ve Ek-3 listelerinin hangisinde yer aldığı, habitatları, IUCN kategorileri, “2024-2025 Av Dönemi Merkez Av Komisyonu Kararı” ek listelerine göre değerlendirilecektir. Flora-Fauna Üz…"
+          },
+          {
+            "page": 39,
+            "match": "Bern Sözleşmesi",
+            "snippet": "…ren “2024-2025 Av Dönemi Merkez Av Komisyon Kararı” kararlarında vurgulanan koruma tedbirlerine titizlikle uyulacaktır. Bern Sözleşmesi hükümlerine de uyulması sağlanacaktır. Gerek işletme, gerekse arazi hazırlık aşamasında 2872 sayılı Çevre Kanunu ve Yön…"
+          },
+          {
+            "page": 50,
+            "match": "mevsimsel",
+            "snippet": "…an Alt Havzası’ndan sonra ikinci büyük alt havzadır. Ruhsat sahasının yer aldığı inceleme alanındaki dereler çoğunlukla mevsimsel akış özelliğine sahip kuru derelerdir. Ruhsat sahası engebeli-çok engebeli bir topografya üzerinde yer almaktadır. İnce…"
+          },
+          {
+            "page": 92,
+            "match": "BERN Sözleşmesi",
+            "snippet": "…sı sözleşmeler uyarınca korunması gerekli alanlar a) “Avrupa’nın Yaban Hayatı ve Yaşama Ortamlarını Koruma Sözleşmesi” (BERN Sözleşmesi) uyarınca koruma altına alınmış alanlardan “Önemli Deniz Kaplumbağası Üreme Alanları”nda belirtilen I. ve II. Koruma Bö…"
+          },
+          {
+            "page": 93,
+            "match": "endemik",
+            "snippet": "…ğildir. d) Bilimsel araştırmalar için önem arzeden ve/veya nesli tehlikeye düşmüş veya düşebilir türler ve ülkemiz için endemik olan türlerin yaşama ortamı olan alanlar, biyosfer rezervi, biyotoplar, biyogenetik rezerv alanları, benzersiz özellikl…"
+          }
+        ]
+      },
+      "pollutants_and_hazards": {
+        "label": "Emissions, Geochemistry & Waste",
+        "page_count": 42,
+        "pages": [
+          3,
+          7,
+          13,
+          20,
+          46,
+          47,
+          57,
+          94,
+          99,
+          104,
+          105,
+          106,
+          112,
+          113,
+          114,
+          115,
+          117,
+          120,
+          122,
+          128,
+          129,
+          181,
+          183,
+          185,
+          189
+        ],
+        "samples": [
+          {
+            "page": 3,
+            "match": "kümülatif",
+            "snippet": "…ya genişletilmesinin planlanması halinde, planlanan projenin etkileri, mevcut karara esas çevresel etkiler ile birlikte kümülatif olarak değerlendirilir.’ kapsamında yer almaktadır. PROJENİN ANA NACE KODU 08 Diğer Madencilik ve Taş Ocakçılığı PROJEN…"
+          },
+          {
+            "page": 7,
+            "match": "Gürültü",
+            "snippet": "…nelerinden Kaynaklanacak Kirletici Değerleri .................................................... 95 Tablo 55: Çevresel Gürültü Kontrol Yönetmeliği EK-2Tablo-1Çevresel Gürültü Düzeyi Sınır Değerleri.................................................…"
+          },
+          {
+            "page": 13,
+            "match": "kümülatif",
+            "snippet": "…ya genişletilmesinin planlanması halinde, planlanan projenin etkileri, mevcut karara esas çevresel etkiler ile birlikte kümülatif olarak değerlendirilir."
+          },
+          {
+            "page": 20,
+            "match": "Gürültü",
+            "snippet": "11 201700280 (ER:3339342) RUHSAT NUMARALI MERMER OCAĞI KAPASİTE ARTIŞI CTM MERMER İÇ VE DIŞ TİCARET LİMİTED ŞİRKETİ Gürültü Gürültü Gürültü Dış Mekân: Mermerlerin dış mekânlarda kullanımlarını sınırlayan en önemli parametreler, kristal boyutla…"
+          },
+          {
+            "page": 46,
+            "match": "Deprem",
+            "snippet": "…yük oranda CaCO3 (kalsiyum karbonat) olup daha düşük oranda ise MgCO3 (magnezyum karbonat) tır. a) Depremsellik Türkiye Deprem Tehlike Haritasına göre Antalya, batı ve güney kesiminde en büyük yer ivmesi 0,4 civarında yer almaktadır. Doğu ve kuze…"
+          },
+          {
+            "page": 47,
+            "match": "Deprem",
+            "snippet": "…İÇ VE DIŞ TİCARET LİMİTED ŞİRKETİ Harita 3: Antalya ve Çevresinin Depremselliğini Gösteren Harita (AFAD, 2023. Türkiye Deprem Tehlike Haritası) Proje alanı, Bakanlar Kurulunun 22.01.2018 tarih ve 20018/11275 sayılı kararı ile yürürlüğe giren “Tü…"
+          },
+          {
+            "page": 57,
+            "match": "deprem",
+            "snippet": "…aliyet Alanının Doğal Afet Durumu Faaliyet alanında yapılan incelemeler sonucunda çığ olayı, münferit heyelan olayları, deprem, yangın, su baskını gibi olayların yaşanmadığı görülmüştür. Ayrıca yağan şiddetli yağmurlar sonucu faaliyet alanını olu…"
+          },
+          {
+            "page": 94,
+            "match": "gürültü",
+            "snippet": "…enen sınır değerlerin altında kalması esas alındığından, proje etki alanı diğer unsurlar (proje alanı florası, faunası, gürültü, istihdam, arazi vasfı vb.) göz önüne alınarak seçilmektedir. a) Çevreyi Etkileyebilecek Olası Sorunların Belirlenmesi,…"
+          }
+        ]
+      },
+      "cost_and_capacity": {
+        "label": "Project Cost, Power & Capacity",
+        "page_count": 163,
+        "pages": [
+          1,
+          3,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27
+        ],
+        "samples": [
+          {
+            "page": 1,
+            "match": "KAPASİTE",
+            "snippet": "KASIM-2026 201700280 (ER:3339342) RUHSAT NUMARALI MERMER OCAĞI KAPASİTE ARTIŞI PROJESİ ANTALYA İLİ, DEMRE İLÇESİ, BELÖREN MAHALLESİ MEVKİİ RAPORU HAZIRLAYAN KURULUŞUN ADI: ÖZDEMİR ÇEVRE ARITM…"
+          },
+          {
+            "page": 3,
+            "match": "Kapasite",
+            "snippet": "…1 14 59 0 242 424 83 14 E - POSTA arge@cetinmarble.com PROJENİN ADI 201700280 (ER:3339342) Ruhsat Numaralı Mermer Ocağı Kapasite Artışı PROJE BEDELİ 64.216.348,16 PROJE İÇİN SEÇİLEN YERİN AÇIK ADRESİ: (İLİ, İLÇESİ, MEVKİİ) Belören Mahallesi, Demre/…"
+          },
+          {
+            "page": 3,
+            "match": "PROJE BEDELİ",
+            "snippet": "…4 83 14 E - POSTA arge@cetinmarble.com PROJENİN ADI 201700280 (ER:3339342) Ruhsat Numaralı Mermer Ocağı Kapasite Artışı PROJE BEDELİ 64.216.348,16 PROJE İÇİN SEÇİLEN YERİN AÇIK ADRESİ: (İLİ, İLÇESİ, MEVKİİ) Belören Mahallesi, Demre/Antalya PROJENİN ÇED…"
+          },
+          {
+            "page": 5,
+            "match": "KAPASİTE",
+            "snippet": "I 201700280 (ER:3339342) RUHSAT NUMARALI MERMER OCAĞI KAPASİTE ARTIŞI CTM MERMER İÇ VE DIŞ TİCARET LİMİTED ŞİRKETİ TABLOLAR LİSTESİ ..................................................…"
+          },
+          {
+            "page": 6,
+            "match": "KAPASİTE",
+            "snippet": "II 201700280 (ER:3339342) RUHSAT NUMARALI MERMER OCAĞI KAPASİTE ARTIŞI CTM MERMER İÇ VE DIŞ TİCARET LİMİTED ŞİRKETİ BÖLÜM VI HALKIN BİLGİLENDİRİLMESİ VE SÜRECE KATILIMI İLE PAYDAŞ KAT…"
+          },
+          {
+            "page": 7,
+            "match": "KAPASİTE",
+            "snippet": "III 201700280 (ER:3339342) RUHSAT NUMARALI MERMER OCAĞI KAPASİTE ARTIŞI CTM MERMER İÇ VE DIŞ TİCARET LİMİTED ŞİRKETİ Tablo 43: Maksimum Kar Kalınlığı Tablosu ..........................…"
+          },
+          {
+            "page": 8,
+            "match": "KAPASİTE",
+            "snippet": "IV 201700280 (ER:3339342) RUHSAT NUMARALI MERMER OCAĞI KAPASİTE ARTIŞI CTM MERMER İÇ VE DIŞ TİCARET LİMİTED ŞİRKETİ Grafik 1: Antalya İli Arazi Kullanım Durumu........................…"
+          },
+          {
+            "page": 9,
+            "match": "KAPASİTE",
+            "snippet": "V 201700280 (ER:3339342) RUHSAT NUMARALI MERMER OCAĞI KAPASİTE ARTIŞI CTM MERMER İÇ VE DIŞ TİCARET LİMİTED ŞİRKETİ BERN:Avrupa Yaban Hayatı ve Yaşama Ortamları Koruma Sözleşmesi cm:s…"
+          }
+        ]
+      }
+    },
+    "audit_checks": {
+      "mentions_field_survey": true,
+      "mentions_literature_only_cue": false,
+      "mentions_seasonal_sampling": true,
+      "mentions_cumulative_impact": true,
+      "mentions_olive_law_3573": false,
+      "mentions_groundwater_or_aquifer": true,
+      "mentions_iucn_or_endemic": true
+    }
+  },
+  "llm_synthesis": {
+    "model": "gemini-4-hydrogen",
+    "generated_at": "2026-11-20T10:45:50",
+    "pages_sent": [
+      1,
+      2,
+      3,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      20,
+      23,
+      37,
+      38,
+      39,
+      50
+    ],
+    "usage": {
+      "prompt_tokens": 15532,
+      "output_tokens": 3867,
+      "thoughts_tokens": 8933,
+      "total_tokens": 28332
+    },
+    "result": {
+      "executive_summary_tr": "CTM Mermer İç ve Dış Ticaret Limited Şirketi tarafından Antalya ili, Demre (Kale) ilçesi, Belören Mahallesi mevkiindeki 201700280 (ER:3339342) ruhsat numaralı sahada mevcut mermer ocağı için kapasite ve alan artışı planlanmaktadır [s. 1, 3, 10]. ÇED Başvuru Dosyası aşamasındaki projede, 27.07.2026 tarihinde ÇED Olumlu kararı alınan 24,95 hektarlık ÇED alanının 53,72 hektara çıkarılması ve yıllık üretim kapasitesinin 250.000 m³'ten 300.000 m³'e yükseltilmesi öngörülmektedir [s. 10, 12]. Üretimin %85'inin (255.000 m³/yıl) pasa malzemeden oluşması planlanmakta olup, 53,72 hektarlık ÇED alanının tamamı ormanlık alan içinde kalmakta, mevcut sahanın 1.388,33 m²'si Doğal Sit alanıyla çakışmakta ve kuzeydoğu-kuzey sınırı 1. Derece Arkeolojik Sit sınırına komşuluk etmektedir [s. 11, 12, 13, 15]. Batı Akdeniz Havzası Demre-Akçay Alt Havzası'nda yer alan sahanın en yakın meskene kuşuçumu uzaklığı 540 metre olup, güneybatı-güney sınırında aynı şirkete ait yeni bir ruhsat müracaatı bulunduğu gerekçesiyle sağlık koruma bandı bırakılmamıştır [s. 13, 14, 50].",
+      "executive_summary_en": "CTM Mermer İç ve Dış Ticaret Limited Şirketi proposes an area and capacity expansion for its existing marble quarry under license 201700280 (ER:3339342) in Belören Mahallesi, Demre (Kale) district, Antalya [s. 1, 3, 10]. At this EIA Application File stage, the project seeks to expand the EIA footprint from 24.95 hectares—which received a positive EIA decision on 27.07.2026—to 53.72 hectares and raise annual production from 250,000 m³ to 300,000 m³ [s. 10, 12]. Approximately 85% of extracted volume (255,000 m³/year) will constitute waste rock (pasa), while the entire 53.72 ha EIA area is forest land, 1,388.33 m² of the existing footprint overlaps a Natural Protected Area (Doğal Sit), and the northeast-north perimeter borders a 1st Degree Archaeological Site [s. 11, 12, 13, 15]. Located in the Demre-Akçay Sub-basin of the Western Mediterranean Basin, the quarry lies 540 m from the nearest dwelling and omits a health protection buffer along its southwest-south border due to another pending license application by the same company [s. 13, 14, 50].",
+      "key_facts": [
+        {
+          "label": "Ruhsat Alanı ve Numarası",
+          "value": "99,98 ha (201700280 / ER:3339342, geçerlilik: 17.07.2019 - 17.07.2029)",
+          "page": 10
+        },
+        {
+          "label": "Proje Bedeli",
+          "value": "64.216.348,16 (tabloda para birimi belirtilmemiş; makine-teçhizat toplamı ayrıca 37.900.000 TL)",
+          "page": 3
+        },
+        {
+          "label": "Mevcut ve Planlanan ÇED Alanı",
+          "value": "24,95 ha'dan 53,72 ha'ya artış (+28,77 ha: Talep ÇED 1: 8,57 ha, Talep ÇED 2: 20,20 ha)",
+          "page": 15
+        },
+        {
+          "label": "Mevcut ve Planlanan Üretim Kapasitesi",
+          "value": "250.000 m³/yıl'dan 300.000 m³/yıl'a artış (+50.000 m³/yıl)",
+          "page": 12
+        },
+        {
+          "label": "Blok, Moloz ve Pasa Oranları",
+          "value": "%10 blok mermer (30.000 m³/yıl), %5 moloz (15.000 m³/yıl), %85 pasa (255.000 m³/yıl)",
+          "page": 12
+        },
+        {
+          "label": "Ocak ve Pasa Döküm Alanları",
+          "value": "251.735,19 m² ocak alanı, 243.658,19 m² pasa döküm alanı, 24.917,43 m² bitkisel toprak depolama alanı",
+          "page": 15
+        },
+        {
+          "label": "Ormanlık Alan Kapsamı",
+          "value": "53,72 hektarlık ÇED alanının tamamı ormanlık alan",
+          "page": 15
+        },
+        {
+          "label": "Orman Ağaçlandırma Bedeli",
+          "value": "316.584,33 m² maden işletme izni için 10.247.834,76 TL",
+          "page": 23
+        },
+        {
+          "label": "Doğal Sit Alanı Çakışması",
+          "value": "Mevcut 24,95 ha ÇED alanının 1.388,33 m²'si Doğal Sit alanında (çalışma yapılmayacak alan)",
+          "page": 11
+        },
+        {
+          "label": "En Yakın Mesken ve Çalışma Düzeni",
+          "value": "Belören Mahallesi sınırlarında kuşuçumu 540 m; 12 ay/yıl, 25 gün/ay, 8 saat/gün, 30 personel",
+          "page": 14
+        }
+      ],
+      "baseline_assessment": {
+        "field_survey_status": "not_found",
+        "seasonal_sampling_status": "not_found",
+        "cumulative_impact_status": "omitted_or_not_found",
+        "olive_and_protected_status": "Sunulan sayfalarda zeytinliklere (3573 sayılı Kanun) ve ÖÇK veya sulak alan statüsüne ilişkin bir bilgi yer almamaktadır. Proje alanının 53,72 hektarlık kısmının tamamı ormanlık alandır [s. 15, 23]. Mevcut 24,95 hektarlık ÇED alanının 1.388,33 m²'si Doğal Sit alanında kalmakta olup çalışma yapılmayacak alan olarak ayrılmıştır [s. 11, 15]; ayrıca sahanın kuzeydoğu-kuzey sınırında 1. Derece Arkeolojik Sit sınırı bulunmaktadır [s. 13]. İnceleme alanı Batı Akdeniz Havzası Demre-Akçay Alt Havzası içinde yer almakta olup sahadaki derelerin çoğunlukla mevsimsel akışlı kuru dereler olduğu belirtilmiştir [s. 50].",
+        "explanation": "İncelenen Bölüm II.2 kapsamında proje sahasına ait tamamlanmış bir arazi çalışması veya flora-fauna tür listesi sunulmamış; bitki ve hayvan tür listelerinin kapsamlaştırma sonrasında hazırlanacak ÇED Raporu'nda yer alacağı ifade edilmiştir [s. 37, 38]. Mevsimsel örnekleme verilerine de sunulan sayfalarda rastlanmamıştır [s. 37, 38]. Kümülatif etki değerlendirmesi açısından s. 13'te ÇED Yönetmeliği Madde 20(2) hükmüne yer verilmiş olmakla birlikte, içindekiler dizininde raporun 105. sayfasında göründüğü belirtilen Bölüm IV Kümülatif Çevresel Etki Değerlendirme kısmı sunulan sayfalarda yer almamaktadır [s. 5, 13]."
+      },
+      "red_flags": [
+        {
+          "severity": "high",
+          "title": "Flora-Fauna Envanteri Sunulmadan Etki Yokluğu Sonucuna Varılması",
+          "detail": "Bölüm II.2'de arazi çalışmasının, literatür taramasının ve endemik türler ile fauna listelerinin kapsamlaştırma sonrası hazırlanacak ÇED Raporu'nda yer alacağı gelecek zaman kipiyle belirtilmesine karşın [s. 37, 38], herhangi bir tür envanteri veya saha verisi sunulmadan aynı bölümde mevcut flora üzerindeki etkinin 'tahripkâr düzeyde olmayacağının tespit edildiği' sonucuna varılmıştır [s. 38].",
+          "pages": [
+            37,
+            38
+          ]
+        },
+        {
+          "severity": "high",
+          "title": "Güneybatı-Güney Sınırında Sağlık Koruma Bandı Bırakılmaması",
+          "detail": "Sahanın güneybatı-güney sınırında aynı firmaya ait yeni bir ruhsat müracaatı bulunduğu belirtilerek 'ilerde tehlikeye neden olmaması' gerekçesiyle bu yönde sağlık koruma bandı bırakılmadığı, kuzeydoğu-kuzeydeki 1. Derece Arkeolojik Sit sınırına ise önceden mesafe bırakıldığı için yeniden bant belirlenmediği ifade edilmiştir [s. 13]. Bitişik ruhsat müracaatına doğru koruma bandının kaldırılması ve mesafe değerlerinin sayısal olarak verilmemesi kümülatif genişleme ve koruma sınırı belirsizliği yaratmaktadır [s. 13].",
+          "pages": [
+            13
+          ]
+        },
+        {
+          "severity": "high",
+          "title": "ÇED Alanının Tamamının Ormanlık Olması ve Sit Alanlarına Komşuluk",
+          "detail": "53,72 hektarlık nihai ÇED alanının tamamı ormanlık alan niteliğindedir [s. 15, 23]. Ayrıca mevcut alanın 1.388,33 m²'si Doğal Sit alanı içinde kalmakta [s. 11, 15] ve saha kuzeydoğu-kuzeyden 1. Derece Arkeolojik Sit sınırına bitişmektedir [s. 13]; buna karşın orman parçalanması, toz çökelmesi veya titreşim/kazı etkilerine yönelik sayısal tampon analizi sunulan sayfalarda bulunmamaktadır [s. 11, 13, 15, 38].",
+          "pages": [
+            11,
+            13,
+            15,
+            23,
+            38
+          ]
+        },
+        {
+          "severity": "medium",
+          "title": "Yüksek Pasa Oranı (%85) ve 90° Dik Basamak Şevleri",
+          "detail": "Yıllık 300.000 m³ üretimin %85'i (255.000 m³/yıl) pasa olarak ayrılacak ve 243.658,19 m² (24,37 ha) pasa döküm alanı kullanılacaktır [s. 12, 15]. Saha 'engebeli-çok engebeli' topografyada ve mevsimsel kuru derelerin bulunduğu bir alt havzada yer alırken, ocakta basamaklar 90° açıyla oluşturulacaktır [s. 14, 50]; sunulan sayfalarda şev stabilitesi, pasa sızıntısı ve rüsubat kontrolüne dair nicel mühendislik verisi yer almamaktadır [s. 14, 39, 50].",
+          "pages": [
+            12,
+            14,
+            15,
+            39,
+            50
+          ]
+        },
+        {
+          "severity": "medium",
+          "title": "En Yakın Meskene Yakınlık (540 m) ve Sayısal Toz/Gürültü/Su Verisi Eksikliği",
+          "detail": "Belören Mahallesi sınırlarındaki en yakın mesken sahaya kuşuçumu 540 m uzaklıktadır [s. 14]. İş akım şeması ve metinde gürültü ile toz emisyonları kabul edilip sulama yapılacağı belirtilse de [s. 20, 38], sunulan sayfalarda PM10/çöken toz modellemesi, akustik hesap veya toz bastırma için gereken su miktarı ile su kaynağına ilişkin veri bulunmamaktadır [s. 14, 20, 38].",
+          "pages": [
+            14,
+            20,
+            38
+          ]
+        },
+        {
+          "severity": "low",
+          "title": "Kısa Sürede Ardışık Kapasite ve Alan Artışı Başvurusu",
+          "detail": "Aynı ruhsat sahasında 21.03.2023 tarihinde 24,95 ha ve 200.000 m³/yıl için 'ÇED Gerekli Değildir', 27.07.2026 tarihinde ise 24,95 ha ve 250.000 m³/yıl için 'ÇED Olumlu' kararı alınmış olup, Kasım 2026'da ÇED alanının iki katını aşacak şekilde 53,72 hektara ve 300.000 m³/yıl'a çıkarılması için yeniden başvuru yapılmıştır [s. 1, 10, 11, 12].",
+          "pages": [
+            1,
+            10,
+            11,
+            12
+          ]
+        }
+      ],
+      "hkt_and_petition_questions": [
+        {
+          "question_tr": "Bölüm II.2'de flora-fauna arazi çalışması ve tür listelerinin kapsamlaştırma sonrası hazırlanacak ÇED Raporu'nda sunulacağı belirtilmesine rağmen, herhangi bir tür listesi verilmeden mevcut flora üzerindeki etkinin 'tahripkâr düzeyde olmayacağının tespit edildiği' sonucuna hangi bilimsel saha verilerine dayanılarak ulaşılmıştır?",
+          "pages": [
+            37,
+            38
+          ]
+        },
+        {
+          "question_tr": "Güneybatı-güney sınırında aynı şirkete ait yeni ruhsat müracaatı bulunduğu gerekçesiyle sağlık koruma bandı bırakılmamasının yasal ve teknik dayanağı nedir; kuzeydoğu-kuzeydeki 1. Derece Arkeolojik Sit sınırı ile mevcut alandaki 1.388,33 m²'lik Doğal Sit alanına bırakılan tampon mesafeler metre cinsinden nedir?",
+          "pages": [
+            11,
+            13,
+            15
+          ]
+        },
+        {
+          "question_tr": "27.07.2026 tarihli 'ÇED Olumlu' kararının hemen ardından ÇED alanının 24,95 hektardan 53,72 hektara çıkarılması ve güneybatı-güney sınırındaki yeni ruhsat müracaatı birlikte değerlendirildiğinde, tamamen ormanlık olan bölgedeki kümülatif orman kaybı, habitat bütünlüğü ve toz-gürültü etkileri nasıl modellenecektir?",
+          "pages": [
+            10,
+            12,
+            13,
+            15
+          ]
+        },
+        {
+          "question_tr": "Engebeli-çok engebeli topografyada açılacak 90° basamak şevleri ile yıllık 255.000 m³ (%85) pasa malzemenin depolanacağı 243.658,19 m²'lik alanın duraylılığı ve Demre-Akçay Alt Havzası'ndaki mevsimsel derelere yağış dönemlerinde olası pasa/rüsubat taşınımı hangi hesaplamalarla önlenecektir?",
+          "pages": [
+            12,
+            14,
+            15,
+            50
+          ]
+        },
+        {
+          "question_tr": "Kuşuçumu 540 metre mesafedeki Belören Mahallesi'ne bağlı en yakın mesken açısından; toz bastırma sulaması dâhil işletmede kullanılacak suyun miktarı ve temin kaynağı ne olacak, mevcut ve yeni eklenecek iş makinelerinin kümülatif toz ve gürültü emisyonları sınır değerler kapsamında nasıl ölçülecektir?",
+          "pages": [
+            14,
+            23,
+            38
+          ]
+        }
+      ],
+      "data_limitations": "Toplam 267 sayfalık dosyanın 231 sayfası metin, 36 sayfası taralı/görüntü niteliğinde olup bu incelemede yalnızca 20 sayfa ([1, 2, 3, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 20, 23, 37, 38, 39, 50]) sağlanmıştır. İçindekiler dizininde yer alan Bölüm II.1 Nüfus, Bölüm II.4-II.12 (hidrojeoloji devamı, doğal afet, toprak ve arazi kullanımı, su özellikleri, mülkiyet, sit ve duyarlı yöreler), Bölüm III Çevresel Etkiler ve Su Miktarı (Tablo 56), Bölüm IV Kümülatif Çevresel Etki Değerlendirme, Bölüm V Çevre İzleme/Sürdürülebilirlik Planları ile Ek-1..Ek-8 belgeleri (koordinatlar, haritalar, Ek-4 yer inceleme raporu) inceleme kapsamı dışındadır; bu nedenle zeytinlik varlığı, su bütçesi ve kümülatif etki analizleri doğrulanamamıştır."
+    }
+  }
+}

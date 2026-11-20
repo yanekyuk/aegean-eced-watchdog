@@ -1,0 +1,934 @@
+{
+  "filing": {
+    "province": "DİYARBAKIR",
+    "district": "DİCLE,EĞİL,YENİŞEHİR",
+    "project_name": "154 kV İSDEMİR DİYARBAKIR GES TM-DİYARBAKIR-3 TM ELEKTRİK ENERJİSİ İLETİM HATTI",
+    "project_owner": "TÜRKİYE ELEKTRİK İLETİM ANONİM ŞİRKETİ",
+    "sector": "Turizm",
+    "sub_sector": "Enerji İletim Hatları",
+    "decision_type": "Nihai Karar",
+    "announcement_date_tr": "17.11.2026",
+    "project_type": "Ek-1",
+    "detail_text": "DİYARBAKIR ili DİCLE, EĞİLYENİŞEHİR,  ilcesinde DİYARBAKIR İli DİCLE, EĞİLYENİŞEHİR,  ilcesinde TÜRKİYE ELEKTRİK İLETİM ANONİM ŞİRKETİ tarafından yapılması planlanan 154 kV İSDEMİR DİYARBAKIR GES TM-DİYARBAKIR-3 TM ELEKTRİK ENERJİSİ İLETİM HATTI projesi ile ilgili olarak hazırlanan ÇED Raporu , İnceleme ve Değerlendirme Komisyonu (İDK) tarafından incelenerek son şekli verilmiş olup, söz konusu rapor halkın görüş ve önerilerini almak üzere ÇED Yönetmeliği'nin 14.Maddesi (1) no'lu bendi kapsamında Bakanlıkta ve Çevre, Şehircilik ve İklim Değişikliği İl Müdürlüğü'nde on (10) takvim günü görüşe açılmıştır. Bakanlığa/Çevre, Şehircilik ve İklim Değişikliği İl Müdürlüğü'ne iletilen görüşler projeyle ilgili karar alma sürecinde dikkate alınacaktır. Görüş ve öneriler için bu süreç içerisinde Çevre, Şehircilik ve İklim Değişikliği Bakanlığı'na veya DİYARBAKIR Çevre ve Şehircilik İl Müdürlüklerine müracaat edilebilir. İlgililere ve kamuoyuna duyurulur.",
+    "detail_links": [
+      {
+        "text": "ÇED Raporu",
+        "href": "http://eced.csb.gov.tr/jsp/ek1/53543"
+      }
+    ],
+    "documents": [
+      {
+        "portal_doc_url": "http://eced.csb.gov.tr/jsp/ek1/53543",
+        "filing_id": "53543",
+        "consulting_firm": "EN-ÇEV ENERJİ ÇEVRE YATIRIMLARI DANIŞMANLIĞI HARİTACILIK İMAR İNŞAAT A.Ş",
+        "submitted_at": "24/12/2024 11:18:43",
+        "pdf_urls": [
+          {
+            "label": "53543_Son_Sekli_Verilen_Rapor.pdf",
+            "url": "http://eced.csb.gov.tr/jsp/dosya/dosyaGoster.htm?tempAd=signature_file4862650492096544884.imz&orjinalAd=53543_Son_Sekli_Verilen_Rapor.pdf&yuklemeTarihi=2026-11-13"
+          }
+        ]
+      }
+    ],
+    "announcement_date": "2026-11-17",
+    "statutory_clocks": [
+      {
+        "code": "aski_10d",
+        "kind": "10 günlük halkın görüş ve önerilerine açılma (askı) süresi",
+        "deadline": "2026-11-27",
+        "days_remaining": 7
+      }
+    ],
+    "filing_key": "53543:17.11.2026:Nihai Karar",
+    "first_seen_at": "2026-11-20T02:11:13"
+  },
+  "pdf_info": {
+    "filename": "53543.pdf",
+    "bytes": 343426212,
+    "sha256": "009b7cdf1b3b08828a438e8883027702452146356279082d08e5604c1de5f861",
+    "cached": false
+  },
+  "analysis": {
+    "page_count": 953,
+    "total_chars": 1514766,
+    "text_pages": 708,
+    "scanned_or_blank_pages": 245,
+    "scanned_page_sample": [
+      376,
+      378,
+      379,
+      382,
+      383,
+      384,
+      389,
+      391,
+      392,
+      394,
+      395,
+      397,
+      398,
+      399,
+      400
+    ],
+    "headings": [
+      [
+        6,
+        "BÖLÜM 3 - PROJENİN İNŞAAT ÖNCESİ (ARAZİ HAZIRLIK), İNŞAAT VE İŞLETME AŞAMASINDA"
+      ],
+      [
+        9,
+        "BÖLÜM 4: KÜMÜLATİF ETKİ DEĞERLENDİRME (Projenin geçmişteki, mevcuttaki veya gelecekteki"
+      ],
+      [
+        16,
+        "PROJENİN TEKNİK OLMAYAN ÖZETİ"
+      ],
+      [
+        18,
+        "BÖLÜM 1: PROJENİN TANIMI VE AMACI"
+      ],
+      [
+        43,
+        "BÖLÜM 2: PROJE YERİ VE ETKİ ALANININ MEVCUT ÇEVRESEL ÖZELLİKLERİ"
+      ],
+      [
+        352,
+        "BÖLÜM 4: KÜMÜLATİF ETKİ DEĞERLENDİRME (Projenin geçmişteki, mevcuttaki veya gelecekteki etki"
+      ],
+      [
+        356,
+        "BÖLÜM 5: ÇEVRESEL VE SOSYAL EYLEM PLANI"
+      ],
+      [
+        360,
+        "BÖLÜM 6: HALKIN BİLGİLENDİRİLMESİ VE SÜRECE KATILIMI İLE PAYDAŞ KATILIM PLANI"
+      ],
+      [
+        362,
+        "BÖLÜM 7: NOTLAR, KAYNAKLAR VE EKLER"
+      ],
+      [
+        421,
+        "ÇEVRESEL VE SOSYAL YÖNETİM PLANI"
+      ],
+      [
+        547,
+        "FLORA VE FAUNA"
+      ]
+    ],
+    "geo": {
+      "precision": "exact_pdf",
+      "lat": 38.18959,
+      "lon": 40.08919,
+      "point_count": 80,
+      "points": [
+        [
+          38.37164,
+          40.06131
+        ],
+        [
+          38.36999,
+          40.06005
+        ],
+        [
+          38.36795,
+          40.05849
+        ],
+        [
+          38.36542,
+          40.05656
+        ],
+        [
+          38.36315,
+          40.05483
+        ],
+        [
+          38.3607,
+          40.05296
+        ],
+        [
+          38.3583,
+          40.05279
+        ],
+        [
+          38.35595,
+          40.05262
+        ],
+        [
+          38.35379,
+          40.05246
+        ],
+        [
+          38.35032,
+          40.05221
+        ],
+        [
+          38.34671,
+          40.05196
+        ],
+        [
+          38.34433,
+          40.05266
+        ],
+        [
+          38.34101,
+          40.05363
+        ],
+        [
+          38.33819,
+          40.05446
+        ],
+        [
+          38.3357,
+          40.05487
+        ],
+        [
+          38.33109,
+          40.05562
+        ],
+        [
+          38.32854,
+          40.05604
+        ],
+        [
+          38.32645,
+          40.05639
+        ],
+        [
+          38.32373,
+          40.05487
+        ],
+        [
+          38.3212,
+          40.05347
+        ],
+        [
+          38.3184,
+          40.05191
+        ],
+        [
+          38.31501,
+          40.05003
+        ],
+        [
+          38.31137,
+          40.048
+        ],
+        [
+          38.30761,
+          40.05002
+        ],
+        [
+          38.02389,
+          40.1506
+        ],
+        [
+          38.0221,
+          40.14973
+        ],
+        [
+          38.02068,
+          40.14838
+        ],
+        [
+          38.02046,
+          40.14554
+        ],
+        [
+          38.02132,
+          40.14297
+        ],
+        [
+          38.02189,
+          40.14181
+        ],
+        [
+          38.37208,
+          40.06114
+        ],
+        [
+          38.02203,
+          40.14135
+        ],
+        [
+          38.21157,
+          40.23671
+        ],
+        [
+          38.07885,
+          40.15022
+        ],
+        [
+          38.27674,
+          40.24007
+        ],
+        [
+          38.24752,
+          40.03101
+        ],
+        [
+          38.2658,
+          40.10728
+        ],
+        [
+          38.15494,
+          39.95271
+        ],
+        [
+          38.0967,
+          40.01467
+        ],
+        [
+          38.14748,
+          39.95911
+        ]
+      ],
+      "datum": "UTM-Z37/ED50",
+      "pages": [
+        21,
+        24,
+        154,
+        155
+      ]
+    },
+    "signals": {
+      "coordinates_and_footprint": {
+        "label": "Coordinates, Parcel & Footprint",
+        "page_count": 112,
+        "pages": [
+          3,
+          16,
+          18,
+          21,
+          24,
+          27,
+          33,
+          35,
+          36,
+          38,
+          40,
+          43,
+          44,
+          54,
+          66,
+          68,
+          76,
+          87,
+          90,
+          95,
+          101,
+          104,
+          126,
+          132,
+          140
+        ],
+        "samples": [
+          {
+            "page": 3,
+            "match": "Koordinat",
+            "snippet": "…r ve Üniteler, Hattın Uzunluğu, Proje Kapsamındaki Direklerin Sayısı, Özellikleri ve Proje Alanı İçindeki Konumlarının Koordinat Noktaları ile Birlikte Vaziyet Planı Üzerinde Gösterimi ..............................................................…"
+          },
+          {
+            "page": 16,
+            "match": "42,47959 km",
+            "snippet": "…aş, Güvendere, Bahçelievler, Yukarı Nasırlar ve Cankatran Mahalleleri mevkiinde 154 kV geriliminde 1272 MCM iletkenli, 42,47959 km uzunluğunda “154 kV İsdemir Diyarbakır GES TM-Diyarbakır-3 TM Elektrik Enerjisi İletim Hattı Projesi”nin kurulması ve…"
+          },
+          {
+            "page": 16,
+            "match": "42,5 km",
+            "snippet": "…ları içerisinden geçmektedir. Proje kapsamında tesis edilecek Elektrik İletim Hattı, 154 kV geriliminde ve yaklaşık 42,5 km uzunluğunda olacaktır. Tesis edilecek Elektrik İletim Hattı için 32 adet some, 86 taşıyıcı ve 2 adet nihai direk olma…"
+          },
+          {
+            "page": 16,
+            "match": "2,5 km",
+            "snippet": "…r. Proje konusu faaliyet kapsamında yapılan çalışmalarda; EİH güzergahı merkez olmak üzere; iletim hattının sağında 2,5 km, solunda 2,5 km olmak üzere toplam km genişliğindeki koridor inceleme alanı olarak kabul edilerek, tüm çevresel etki d…"
+          },
+          {
+            "page": 16,
+            "match": "koordinat",
+            "snippet": "…unca çeşitli nokta veya noktalarda geçici şantiye binaları kurulması planlanmaktadır. Şantiye binası kurulması halinde koordinatlarıyla birlikte ilgili Çevre, Şehircilik ve İklim Değişikliği İl Müdürlüğü’ne bilgi verilecektir."
+          },
+          {
+            "page": 18,
+            "match": "42,47959 km",
+            "snippet": "…aş, Güvendere, Bahçelievler, Yukarı Nasırlar ve Cankatran Mahalleleri mevkiinde 154 kV geriliminde 1272 MCM iletkenli, 42,47959 km uzunluğunda “154 kV İsdemir Diyarbakır GES TM-Diyarbakır-3 TM Elektrik Enerjisi İletim Hattı Projesi”nin kurulması ve…"
+          },
+          {
+            "page": 18,
+            "match": "42,5 km",
+            "snippet": "…ları içerisinden geçmektedir. Proje kapsamında tesis edilecek Elektrik İletim Hattı, 154 kV geriliminde ve yaklaşık 42,5 km uzunluğunda olacaktır. Tesis edilecek Elektrik İletim Hattı için 32 adet some, 86 taşıyıcı ve 2 adet nihai direk olma…"
+          },
+          {
+            "page": 18,
+            "match": "koordinat",
+            "snippet": "…ere toplamda 120 direk tesis edilmesi planlanmaktadır. EİH güzergahında kullanılacak toplam direk sayısı ve direklerin koordinatlarının listesi EK-2’de verilmiştir. Proje konusu faaliyet kapsamında yapılan çalışmalarda; EİH güzergahı merkez olma…"
+          }
+        ]
+      },
+      "water_and_discharge": {
+        "label": "Water Use, Hydrogeology & Discharge",
+        "page_count": 85,
+        "pages": [
+          4,
+          7,
+          14,
+          25,
+          35,
+          73,
+          89,
+          96,
+          97,
+          100,
+          114,
+          115,
+          116,
+          131,
+          132,
+          135,
+          140,
+          143,
+          145,
+          146,
+          147,
+          148,
+          149,
+          150,
+          153
+        ],
+        "samples": [
+          {
+            "page": 4,
+            "match": "Yeraltı Suyu",
+            "snippet": "…Hidrojeolojik Özellikleri, Yeraltı Su Kaynaklarının Mevcut ve Planlanan Kullanımı, Proje Alanına Mesafeleri, Debileri, Yeraltı Suyu Akiferlerinin Bulunup Bulunmadığı, Varsa Bölgede Açılmış Kuyularla İlgili Genel Bilgiler, Yeraltı Suyu Kullanım Durumu…"
+          },
+          {
+            "page": 7,
+            "match": "Yeraltı Suyu",
+            "snippet": "…...................................................276 3.10. Proje Kapsamında Gerçekleştirilecek Faaliyetler Sonucunda Yeraltı Suyu Kaynaklarının Etkilenme Durumları ve Alınacak Tedbirler (DSİ Genel Müdürlüğü Görüşü Doğrultusunda Yapılacak İş ve İşle…"
+          },
+          {
+            "page": 14,
+            "match": "Yeraltısuyu",
+            "snippet": "…2024) ........................................................... 141 Şekil 56 Proje Alanı ve Yakın Çevresindeki Eş Yeraltısuyu Eğrilerini Gösteren Harita (DSİ, 2024) . 143 Şekil 57 Proje Alanı ve Çevresi Basitleştirilmiş Kavramsal Saha Modeli…"
+          },
+          {
+            "page": 25,
+            "match": "atıksu",
+            "snippet": "…aktır. Ancak bu zaman aralığı oldukça geniş ve ekipler de mobil olacağı için projenin işletme aşamasında evsel nitelik atıksu, belediye atıkları, ambalaj atığı oluşumu beklenmemektedir. 1.2.4. İletim Hattının İnşası ile İlgili İşlemler, Dire…"
+          },
+          {
+            "page": 35,
+            "match": "deşarj",
+            "snippet": "…, depo, idari ve/veya sosyal bina, köprü, alt ve üst yapılar (arıtma, kanalizasyon, içme/kullanma su hatları, su alma/deşarj hatları vb dahil) viyadük vb. sanat yapıları, drenaj, tesviye vb. gibi araziyi kullanılabilir duruma getirmek için y…"
+          },
+          {
+            "page": 73,
+            "match": "sulak alan",
+            "snippet": "…ar, bataklık sazlık ve turbiyeler ile bu alanların kıyı kenar çizgisinden itibaren kara tarafına doğru ekolojik açıdan sulak alan kalan yerler: bulunmamaktadır. ç) Göller, akarsular, yeraltı suyu işletme sahaları bulunmamaktadır. d) Bilimsel…"
+          },
+          {
+            "page": 73,
+            "match": "yeraltı suyu",
+            "snippet": "…sinden itibaren kara tarafına doğru ekolojik açıdan sulak alan kalan yerler: bulunmamaktadır. ç) Göller, akarsular, yeraltı suyu işletme sahaları bulunmamaktadır. d) Bilimsel araştırmalar için önem arz eden ve/veya nesli tehlikeye düşmüş veya d…"
+          },
+          {
+            "page": 89,
+            "match": "atıksu",
+            "snippet": "…naklar Dicle Barajı içme suyu havzasında iki adet ilçe merkezi bulunmaktadır. Eğil ilçe merkezinin evsel atıksuları, atıksu arıtma tesisinde arıtıldıktan sonra arıtılmış sular havza dışına terfi yoluyla deşarj edilmektedir. Dicle ilçesinin at…"
+          }
+        ]
+      },
+      "protected_land_and_olive": {
+        "label": "Protected Zones, Forests & Olive Groves",
+        "page_count": 48,
+        "pages": [
+          5,
+          7,
+          39,
+          49,
+          51,
+          55,
+          56,
+          58,
+          59,
+          65,
+          66,
+          68,
+          70,
+          71,
+          72,
+          73,
+          74,
+          166,
+          200,
+          220,
+          222,
+          224,
+          225,
+          226,
+          227
+        ],
+        "samples": [
+          {
+            "page": 5,
+            "match": "Orman Alanı",
+            "snippet": "….................................................................................214 2.17.1. Proje Sahasının Bulunduğu Orman Alanı Miktarı (m2) veya Güzergâha En Yakın Orman Alanı Mesafesi ............................................................…"
+          },
+          {
+            "page": 7,
+            "match": "3573 Sayılı",
+            "snippet": "…3.15.4. Güzergâh Üzerinde Kalan Tarım Alanları ile İlgili Olarak 5403 Sayılı Toprak Koruma ve Arazi Kullanım Kanunu, 3573 Sayılı Zeytinciliğin Islahı ve Yabanilerin Aşılattırılması Hakkındaki Kanun ve"
+          },
+          {
+            "page": 39,
+            "match": "orman alanı",
+            "snippet": "…lanının Mülkiyet Durumu 1.6.1. Kamulaştırılacak Alanların Mevcut Kullanım ve Mülkiyet Durumu (kamulaştırılacak alan/orman alanı/hazine arazisi vb. tablosunun hazırlanması) İletim tesislerinin kurulacağı yerlere/güzergâhlara isabet eden şahıs ar…"
+          },
+          {
+            "page": 49,
+            "match": "Orman Alanı",
+            "snippet": "…alışmalar kapsamında direklerinin “Mania Alanı”, “Tarım Arazisi”, “Organize Tarım/Hayvancılık Alanı”, “Sulama Alanı”, “Orman Alanı”, “Çayır-Mera”, “İçme-Kullanma Suyu Mutlak Koruma Alanı Sınırı”, “İçme ve Kullanma Suyu Kısa Mesafeli Koruma Alanı”, “…"
+          },
+          {
+            "page": 51,
+            "match": "Orman Alanı",
+            "snippet": "…ı, Adıyaman-Şanlıurfa-Diyarbakır Planlama Bölgesi 1/100.000 Ölçekli Çevre Düzeni Planı’na göre L44 paftası içerisinde “Orman Alanı, Tarım Arazisi, Organize Tarım / Hayvancılık Alanı, Çayır-Mera, Sulama Alanı, İçme ve Kullanma Suyu Orta Mesafeli Koru…"
+          },
+          {
+            "page": 55,
+            "match": "Orman Alanı",
+            "snippet": "…ı, Adıyaman-Şanlıurfa-Diyarbakır Planlama Bölgesi 1/100.000 Ölçekli Çevre Düzeni Planı’na göre L44 paftası içerisinde “Orman Alanı, Tarım Arazisi, Organize Tarım / Hayvancılık Alanı, Çayır-Mera, Sulama Alanı, İçme ve Kullanma Suyu Orta Mesafeli Koru…"
+          },
+          {
+            "page": 56,
+            "match": "Orman Alanı",
+            "snippet": "…ı, Adıyaman-Şanlıurfa-Diyarbakır Planlama Bölgesi 1/100.000 Ölçekli Çevre Düzeni Planı’na göre L44 paftası içerisinde “Orman Alanı, Tarım Arazisi, Organize Tarım / Hayvancılık Alanı, Çayır-Mera, Sulama Alanı, İçme ve Kullanma Suyu Orta Mesafeli Koru…"
+          },
+          {
+            "page": 58,
+            "match": "Orman Alanı",
+            "snippet": "…roje Alanlarının Nitelik Durumları Direk Adı ÇDP Gösterimi Direk Adı ÇDP Gösterimi Direk Adı ÇDP Gösterimi 1 Orman Alanı, İçme ve Kullanma Suyu Orta Mesafeli Koruma Alanı Sınırı 42 Orman Alanı, İçme ve Kullanma Suyu Uzun Mesafeli Koruma A…"
+          }
+        ]
+      },
+      "ecology_and_baseline": {
+        "label": "Flora, Fauna & Baseline Methodology",
+        "page_count": 116,
+        "pages": [
+          5,
+          7,
+          37,
+          72,
+          73,
+          90,
+          164,
+          165,
+          169,
+          171,
+          172,
+          173,
+          174,
+          175,
+          176,
+          177,
+          178,
+          183,
+          184,
+          185,
+          186,
+          187,
+          188,
+          189,
+          190
+        ],
+        "samples": [
+          {
+            "page": 5,
+            "match": "Flora ve Fauna",
+            "snippet": "…..........................................................................131 2.12. Proje Güzergâhı ve Etki Alanındaki Flora ve Fauna Bilgisi (proje güzergâhı ve etki alanında yapılan arazi çalışması hakkında bilgiler) (Doğa Koruma ve Milli Parklar Gen…"
+          },
+          {
+            "page": 5,
+            "match": "arazi çalışması",
+            "snippet": "…........131 2.12. Proje Güzergâhı ve Etki Alanındaki Flora ve Fauna Bilgisi (proje güzergâhı ve etki alanında yapılan arazi çalışması hakkında bilgiler) (Doğa Koruma ve Milli Parklar Genel Müdürlüğü Görüşleri Doğrultusunda Yapılmış veya Yapılacak İş ve…"
+          },
+          {
+            "page": 5,
+            "match": "Bern Sözleşmesi",
+            "snippet": "…, Araştırılan Türlerin Tehlike Kategorileri, Endemiklik Durumları, Nispi Bolluk Dereceleri, Uluslararası Anlaşmalarla (Bern Sözleşmesi, IUCN vb.) Koruma Altına Alınan Tür Olup Olmadığının Tablo Halinde Verilmesi .........................................…"
+          },
+          {
+            "page": 5,
+            "match": "IUCN",
+            "snippet": "…lerin Tehlike Kategorileri, Endemiklik Durumları, Nispi Bolluk Dereceleri, Uluslararası Anlaşmalarla (Bern Sözleşmesi, IUCN vb.) Koruma Altına Alınan Tür Olup Olmadığının Tablo Halinde Verilmesi ...............................................…"
+          },
+          {
+            "page": 7,
+            "match": "Flora ve Fauna",
+            "snippet": "…........................................................................280 3.11. Projenin İnşaat ve İşletme Döneminde Flora ve Fauna Türleri Üzerine Etkileri ve Alınacak Önlemler (Doğa Koruma ve Milli Parklar Genel Müdürlüğü Görüşleri Doğrultusunda Ya…"
+          },
+          {
+            "page": 37,
+            "match": "mevsimsel",
+            "snippet": "…ülmemesi, bu amaçla herhangi bir tesisat yapılmayacak, planlama sürecinde dere yataklarında değişiklik yapılmayacak ve mevsimsel akış gösteren alanlarda su ürünlerinin doğal yaşamını koruyacak tedbirler alınacaktır. Ayrıca, söz konusu alan üzerind…"
+          },
+          {
+            "page": 72,
+            "match": "BERN Sözleşmesi",
+            "snippet": "…sözleşmeler uyarınca korunması gerekli alanlar a) \"Avrupa’nın Yaban Hayatı ve Yaşama Ortamlarını Koruma Sözleşmesi\" (BERN Sözleşmesi) uyarınca koruma altına alınmış alanlardan \"Önemli Deniz Kaplumbağası Üreme Alanları\"nda belirtilen I. ve II. Koruma…"
+          },
+          {
+            "page": 73,
+            "match": "endemik",
+            "snippet": "…. d) Bilimsel araştırmalar için önem arz eden ve/veya nesli tehlikeye düşmüş veya düşebilir türler ve ülkemiz için endemik olan türlerin yaşama ortamı olan alanlar, biyosfer rezervi, biyotoplar, biyogenetik rezerv alanları, benzersiz özellik…"
+          }
+        ]
+      },
+      "pollutants_and_hazards": {
+        "label": "Emissions, Geochemistry & Waste",
+        "page_count": 84,
+        "pages": [
+          8,
+          9,
+          12,
+          17,
+          26,
+          32,
+          33,
+          40,
+          43,
+          54,
+          83,
+          84,
+          86,
+          87,
+          116,
+          117,
+          118,
+          119,
+          123,
+          124,
+          128,
+          129,
+          197,
+          201,
+          206
+        ],
+        "samples": [
+          {
+            "page": 8,
+            "match": "Elektromanyetik",
+            "snippet": "…lükleri ...................................................................................................305 3.15.6. Elektromanyetik Alan Etkilerinin Tarım Arazileri ve Tarım Ürünleri Üzerine Etkileri ve Alınacak Önlemler .............................…"
+          },
+          {
+            "page": 9,
+            "match": "KÜMÜLATİF",
+            "snippet": "…zuatlar dışındaki özel taahhütler) .......................................................................336 BÖLÜM 4: KÜMÜLATİF ETKİ DEĞERLENDİRME (Projenin geçmişteki, mevcuttaki veya gelecekteki etki alani içerisinde kalan başka faaliyetler ile…"
+          },
+          {
+            "page": 12,
+            "match": "Elektromanyetik",
+            "snippet": "…................................................ 257 Tablo 95 0 Hz-300 GHz Frekans Bantlarındaki Elektrik, Manyetik ve Elektromanyetik Alanlar İçin Limit Değerler ..........................................................................................…"
+          },
+          {
+            "page": 17,
+            "match": "gürültü",
+            "snippet": "…nım/bertaraf firmalarına verilecektir. Proje inşaat aşamasında sahada iş makinelerinin kullanılmasına bağlı olarak gürültü oluşması söz konusudur. Ancak proje sahasında kullanılan iş makinelerinin hepsi eş zamanlı çalışmayacaktır. Bununla b…"
+          },
+          {
+            "page": 26,
+            "match": "TEHLİKELİ ATIK",
+            "snippet": "…NTAJ Kazı İşlemleri Direk Ayaklarının ÜST MONTAJ TEL ÇEKİMİ Kalıp Betonların Dökülmesi Mekanik Montajlama TOZ TEHLİKELİ ATIK VE ATIK YAĞLAR BELEDİYE ATIKLARI GÜRÜLTÜ TEHLİKELİ ATIK VE ATIK YAĞLAR BELEDİYE ATIKLARI GÜRÜLTÜ TEHLİKELİ ATIK V…"
+          },
+          {
+            "page": 26,
+            "match": "GÜRÜLTÜ",
+            "snippet": "…J TEL ÇEKİMİ Kalıp Betonların Dökülmesi Mekanik Montajlama TOZ TEHLİKELİ ATIK VE ATIK YAĞLAR BELEDİYE ATIKLARI GÜRÜLTÜ TEHLİKELİ ATIK VE ATIK YAĞLAR BELEDİYE ATIKLARI GÜRÜLTÜ TEHLİKELİ ATIK VE ATIK YAĞLAR BELEDİYE ATIKLARI KABUL Ke…"
+          },
+          {
+            "page": 32,
+            "match": "elektromanyetik",
+            "snippet": "…lüğü’ nün Montaj Teknik Şartnamesi’ ne yüksek frekanslı girişimlerin etkilerinin azaltılması ve kontrol sistemlerinin elektromanyetik uyumluluğu için alınacak önlemler ise 21.08.2001 tarih ve 24500 sayılı Resmi Gazete’ de yayımlanarak yürürlüğe giren E…"
+          },
+          {
+            "page": 33,
+            "match": "tehlikeli atık",
+            "snippet": "…Yönetimi Yönetmeliği hükümlerince belediye atıkları ayrı olarak uygun bir alanda geçici olarak toplanacak ve lisanslı tehlikeli atık toplayıcı firmalarına teslim edilecektir. 1.3. Proje İçin Seçilen Güzergâh ve Kullanılan Teknoloji Alternatiflerini…"
+          }
+        ]
+      },
+      "cost_and_capacity": {
+        "label": "Project Cost, Power & Capacity",
+        "page_count": 16,
+        "pages": [
+          2,
+          35,
+          79,
+          89,
+          146,
+          170,
+          197,
+          259,
+          263,
+          264,
+          331,
+          349,
+          485,
+          545,
+          580,
+          622
+        ],
+        "samples": [
+          {
+            "page": 2,
+            "match": "PROJE BEDELİ",
+            "snippet": "…ğe bağlı) 8790304314 PROJENİN ADI 154 kV İSDEMİR DİYARBAKIR GES TM-DİYARBAKIR-3 TM ELEKTRİK ENERJİSİ İLETİM HATTI PROJE BEDELİ 250.438.991,7 TL. PROJE İÇİN SEÇİLEN YERİN AÇIK ADRESİ (İLİ, İLÇESİ, MEVKİİ) İli: Diyarbakır ili, İlçe: Dicle,…"
+          },
+          {
+            "page": 35,
+            "match": "Proje Bedeli",
+            "snippet": "…yarbakır İli başta olmak üzere bölgede enerji ihtiyacının karşılanması hususunda sorunlar meydana gelecektir. 1.4. Proje Bedeli ve Projeye İlişkin Fayda-Maliyet Analizi Projenin maliyeti; Kamulaştırma maliyeti, Malzeme temini, İnşaat ça…"
+          },
+          {
+            "page": 35,
+            "match": "PROJE BEDELİ",
+            "snippet": "…KDV dâhil fiyatı) Diğer (varsa) Eğitim, yazılım, donanım, otomasyon, sertifikalandırma vb. idari giderler TOPLAM PROJE BEDELİ (KDV dâhil) 250.438.991,7 TL. ÇED Başvuru aşamasında, 401.800.000 TL olarak belirlenmiştir. Ancak proje bedeli hes…"
+          },
+          {
+            "page": 35,
+            "match": "401.800.000 TL",
+            "snippet": "…, sertifikalandırma vb. idari giderler TOPLAM PROJE BEDELİ (KDV dâhil) 250.438.991,7 TL. ÇED Başvuru aşamasında, 401.800.000 TL olarak belirlenmiştir. Ancak proje bedeli hesaplanmasında TEİAŞ Genel Müdürlüğü’nün 2026 Yılı Enerji İletim Hattı (EİH…"
+          },
+          {
+            "page": 79,
+            "match": "kapasite",
+            "snippet": "…tüm taşımalarda yük ve malzeme taşıyan araçların dingil başına gelen azami yüklerine göre taşıma yapılacak olup taşıma kapasitesi aşılmayacaktır. Ayrıca yük üzeri branda ile kapatılacak olup, nakliye esnasında karayoluna malzeme savrulmasının önl…"
+          },
+          {
+            "page": 89,
+            "match": "36.480.608 TL",
+            "snippet": "…nda bulunan derelere arıtma yapılmadan deşarj edilmektedir. Dicle İlçesi Atıksu arıtma tesisi İşi 01.08.2022 tarihinde 36.480.608 TL maliyet ile sözleşmeye bağlanmış olup yapımı devam etmektedir."
+          },
+          {
+            "page": 146,
+            "match": "kapasite",
+            "snippet": "…idrojeolojik yapısı anlatılmıştır. Bir jeolojik birimin akifer olma potansiyeli, suyu taşıyabilme ve suyu iletebilme kapasitelerini belirleyen jeohidrolojik özelliklerine bağlıdır. Bu özellikler, temel olarak gözeneklilik ve geçirimliliktir. G…"
+          },
+          {
+            "page": 170,
+            "match": "kapasite",
+            "snippet": "…asyon: Akarsular gibi karasal sulak alanlar yüksek biyoçeşitlilikte çok sayıda bitki ve hayvan türlerini barındırma kapasiteleri nedeniyle önemli ekosistemlerdir. Ayrıca, insan populasyonu için önemli bir kaynak olan suyu sağlarlar. Riparian z…"
+          }
+        ]
+      }
+    },
+    "audit_checks": {
+      "mentions_field_survey": true,
+      "mentions_literature_only_cue": true,
+      "mentions_seasonal_sampling": true,
+      "mentions_cumulative_impact": true,
+      "mentions_olive_law_3573": true,
+      "mentions_groundwater_or_aquifer": true,
+      "mentions_iucn_or_endemic": true
+    }
+  },
+  "llm_synthesis": {
+    "model": "gemini-4-hydrogen",
+    "generated_at": "2026-11-20T11:03:51",
+    "pages_sent": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      7,
+      8,
+      9,
+      12,
+      14,
+      16,
+      17,
+      18,
+      21,
+      25,
+      35,
+      37,
+      39,
+      49,
+      72,
+      356,
+      357
+    ],
+    "usage": {
+      "prompt_tokens": 24609,
+      "output_tokens": 4063,
+      "thoughts_tokens": 7632,
+      "total_tokens": 36304
+    },
+    "result": {
+      "executive_summary_tr": "Diyarbakır ilinin Dicle, Eğil ve Yenişehir ilçelerine bağlı 19 mahalle/köy güzergâhında, 154 kV geriliminde, 3B 1272 MCM iletkenli ve 42,47959 km uzunluğunda toplam 120 direkli elektrik enerjisi iletim hattı kurulması ve TEİAŞ tarafından 49 yıl işletilmesi planlanmaktadır [s. 2, 16, 21]. Proje bedeli 250.438.991,7 TL, inşaat süresi ise 12 ay olarak öngörülmüştür [s. 16, 35]. Güzergâh ve 5 km genişliğindeki inceleme koridoru; İçme-Kullanma Suyu Mutlak, Kısa, Orta ve Uzun Mesafeli Koruma Alanları, Orman Alanı, Çayır-Mera, I-IV. sınıf Tarım Alanları ve Kentsel Yerleşik/Gelişme Alanları ile kesişmekte olup, Dökmetaş Mahallesi'ndeki en yakın konut hattın yaklaşık 40 m güneyinde yer almaktadır [s. 21, 39, 49, 72]. Sunulan sayfalarda su koruma alanları, elektromanyetik alan, flora-fauna ve kümülatif etki bölümlerinin asıl metinleri yer almazken, pek çok yasal izin ve detaylı çevre izleme programı ÇED kararı sonrasına bırakılmıştır [s. 37, 356].",
+      "executive_summary_en": "The project proposes a 154 kV, 42.48 km overhead power transmission line with 120 towers across 19 neighborhoods in the Dicle, Eğil, and Yenişehir districts of Diyarbakır Province, to be operated by TEİAŞ for an economic life of 49 years [s. 2, 16, 21]. Total project cost is stated as 250,438,991.7 TL with a 12-month construction schedule [s. 16, 35]. The route and its 5 km study corridor overlap with absolute, short-, medium-, and long-range drinking water protection zones, forest areas, pastures, Class I-IV agricultural lands, and urban development zones, while the nearest residence in Dökmetaş lies approximately 40 m south of the line [s. 21, 39, 49, 72]. Within the provided excerpts, key impact chapters on water, flora-fauna, electromagnetic fields, and cumulative impacts are absent, and statutory permits as well as detailed environmental monitoring are deferred to post-EIA stages [s. 37, 356].",
+      "key_facts": [
+        {
+          "label": "Hat Uzunluğu",
+          "value": "42,47959 km (yaklaşık 42,5 km)",
+          "page": 16
+        },
+        {
+          "label": "Gerilim ve İletken Tipi",
+          "value": "154 kV, 3B 1272 MCM iletkenli",
+          "page": 21
+        },
+        {
+          "label": "Planlanan Direk Sayısı",
+          "value": "120 adet (32 some, 86 taşıyıcı, 2 nihai direk)",
+          "page": 16
+        },
+        {
+          "label": "İnceleme Koridoru Genişliği",
+          "value": "Hattın sağında 2,5 km, solunda 2,5 km olmak üzere toplam 5 km",
+          "page": 21
+        },
+        {
+          "label": "Proje Bedeli",
+          "value": "250.438.991,7 TL (Başvuru aşamasında 401.800.000 TL)",
+          "page": 35
+        },
+        {
+          "label": "Kilometrik Birim Maliyet",
+          "value": "5.895.456,49 TL/km (TEİAŞ 2026 yılı birim fiyatı)",
+          "page": 35
+        },
+        {
+          "label": "İnşaat Süresi",
+          "value": "12 ay",
+          "page": 16
+        },
+        {
+          "label": "Ekonomik Ömür",
+          "value": "49 yıl",
+          "page": 16
+        },
+        {
+          "label": "En Yakın Konut Mesafesi",
+          "value": "Yaklaşık 40 m (Dökmetaş Mahallesi, S2 güneyi)",
+          "page": 49
+        },
+        {
+          "label": "Yer Görme Çalışması Tarihi",
+          "value": "28.05.2024",
+          "page": 49
+        }
+      ],
+      "baseline_assessment": {
+        "field_survey_status": "mixed_or_unclear",
+        "seasonal_sampling_status": "unclear",
+        "cumulative_impact_status": "omitted_or_not_found",
+        "olive_and_protected_status": "Sunulan özet sayfalarda 3573 sayılı Kanun kapsamında zeytinlik alanlara ilişkin bir kayıt bulunmamakta, yalnızca I-IV. sınıf tarım alanları ile özel mahsul plantasyon alanlarının bulunduğu belirtilmektedir [s. 72]. İnceleme koridorunun ve direklerin Orman Alanı, Çayır-Mera ve İçme-Kullanma Suyu Mutlak, Kısa, Orta ve Uzun Mesafeli Koruma Alanları içinde kaldığı, 6831 sayılı Orman Kanunu izinlerinin ÇED sonrası alınacağı ifade edilmektedir [s. 37, 39, 49, 72]. Sulak Alanların Korunması Yönetmeliği, Ramsar, Bern, Barcelona ve Dünya Mirası kapsamında alan bulunmadığı beyan edilmiştir [s. 72]; ancak ÖÇK ve SİT alanlarına ilişkin önceki alt başlık sayfaları sunulan özetlerde yer almamaktadır [s. 4, 72].",
+        "explanation": "Sunulan sayfalarda doğrudan belgelenen tek saha tespiti 28.05.2024 tarihli yer görme çalışmasıdır [s. 49]. İçindekiler ve Şekiller listesi, raporun tam metninde Bölüm 2.12 altında flora-fauna arazi çalışması ve Nuhun Gemisi veri tabanı bilgilerinin bulunduğunu göstermekte, ancak bazı fauna türleri için 'Temsili Fotoğraf' ibaresi yer almaktadır [s. 5, 14]. Çok mevsimli öncül örnekleme yapıldığına dair veri sunulan sayfalarda doğrulanamamakta, buna karşılık Bölüm 5.1'de detaylı irdeleme ve tespit için Çevre İzleme Programı oluşturulması inşaat öncesi/onay sonrasına bırakılmaktadır [s. 356]. Bölüm 4 (Kümülatif Etki Değerlendirme) metni özetlerde bulunmamakta, yalnızca yakın çevrede planlanan iletim hatlarını gösteren Şekil 106 yer almaktadır [s. 9, 356]."
+      },
+      "red_flags": [
+        {
+          "severity": "high",
+          "title": "İçme-Kullanma Suyu Mutlak ve Kısa Mesafeli Koruma Alanları ile Çakışma",
+          "detail": "Some direklerinin ve inceleme koridorunun 1/100.000 ölçekli Çevre Düzeni Planı'nda 'İçme-Kullanma Suyu Mutlak Koruma Alanı Sınırı' ile Kısa, Orta ve Uzun Mesafeli Koruma Alanlarına denk geldiği beyan edilmektedir [s. 39, 49, 72]. Buna karşın mutlak koruma alanından kaçınan güzergâh alternatiflerine veya su kaynakları/hidrojeoloji etki analizine (Bölüm 3.9-3.10) dair teknik veriler sunulan sayfalarda bulunmamaktadır [s. 7, 39, 49].",
+          "pages": [
+            39,
+            49,
+            72
+          ]
+        },
+        {
+          "severity": "high",
+          "title": "Konutlara 40 m Mesafe ve Kentsel Yerleşim Alanları ile Kesişim",
+          "detail": "Yer görme çalışmasında proje alanına en yakın konutun Dökmetaş Mahallesi'nde hattın yaklaşık 40 m güneyinde bulunduğu, koridorun ayrıca Kentsel Yerleşik Alan ve Kentsel Gelişme Alanı sınırlarına girdiği belirtilmektedir [s. 49, 72]. Bu mesafedeki konutlar için elektromanyetik alan, korona gürültüsü ve inşaat tozu etkilerine dair Tablo 87-106 hesaplamaları yalnızca dizinde görünmekte olup sunulan sayfalarda doğrulanamamaktadır [s. 12, 49].",
+          "pages": [
+            12,
+            49,
+            72
+          ]
+        },
+        {
+          "severity": "high",
+          "title": "Temel Yasal İzinlerin ve Detaylı Çevre İzlemenin ÇED Sonrasına Bırakılması",
+          "detail": "Nihai ÇED aşamasına rağmen 4342 sayılı Mera, 5403 sayılı Toprak Koruma, 1380 sayılı Su Ürünleri, 3083 sayılı Sulama Alanları ve 6831 sayılı Orman Kanunu izinleri ile BOTAŞ yeniden görüşü ve Karayolları 9. Bölge protokolü ÇED sonrasına ertelenmiştir [s. 37]. Ayrıca Bölüm 5.1'de 'çalışmalara başlamadan önce daha detaylı irdeleme ve tespit yapılabilmesi amacıyla Çevre İzleme Programı oluşturulmalı' denilerek detaylı izleme ve tespit süreci onay sonrasına bırakılmaktadır [s. 356].",
+          "pages": [
+            37,
+            356
+          ]
+        },
+        {
+          "severity": "medium",
+          "title": "Proje Bedeli Revizyonu ve Tablo 3 Maliyet Kalemlerinin Ayrıştırılmaması",
+          "detail": "Proje bedeli ÇED başvuru aşamasında 401.800.000 TL iken, TEİAŞ 2026 yılı kilometrik birim fiyatı (5.895.456,49 TL/km) üzerinden 250.438.991,7 TL'ye düşürülmüştür [s. 35]. Tablo 3'te Arazi Edinimi, İnşaat, Makine-Ekipman ve Diğer gider kalemleri ayrı ayrı hesaplanmamış; tek bir hücrede aynı toplam rakam verilip 'ilave maliyetler dahil edildiğinde' ifadesiyle yine 250.438.991,6952 TL yazılmıştır [s. 35].",
+          "pages": [
+            35
+          ]
+        },
+        {
+          "severity": "medium",
+          "title": "Kurumsal Sorumluluk İfadelerindeki Tutarsızlık ve Metin Eksikliği",
+          "detail": "Başvuru künyesi ve finansman bölümünde yatırımcı/proje sahibi TEİAŞ olarak gösterilirken [s. 2, 39], Teknik Olmayan Özet ve Bölüm 1.1'de projenin 'İskenderun Demir ve Çelik A.Ş. tarafından kurulması ve TEİAŞ tarafından işletilmesi' yazılmış, aynı sayfalarda finansman ve mülkiyetin de TEİAŞ'a ait olacağı belirtilmiştir [s. 16, 18]. Ayrıca aynı sayfalarda koridor genişliği sayısal değeri düşürülerek 'toplam km' biçiminde eksik yazılmıştır [s. 16, 18].",
+          "pages": [
+            2,
+            16,
+            18,
+            39
+          ]
+        },
+        {
+          "severity": "medium",
+          "title": "Temsili Fauna Fotoğrafları ve Şantiye/Su Temini Lokasyonlarının Belirsizliği",
+          "detail": "Şekiller listesinde Kayseri kertenkelesi (Apathya cappadocica), üveyik (Streptopelia turtur), ekin kargası (Corvus frugilegus) ve vaşak (Lynx lynx) için doğrudan saha gözlemi yerine 'Temsili Fotoğrafı ve Dağılım Haritası' ifadeleri kullanılmıştır [s. 14]. Geçici şantiye koordinatlarının kurulması halinde sonradan bildirilecek olması ve kullanma suyu dolum noktalarının yükleniciye bırakılması yerel etkilerin önceden değerlendirilmesini sınırlamaktadır [s. 16, 17].",
+          "pages": [
+            14,
+            16,
+            17
+          ]
+        }
+      ],
+      "hkt_and_petition_questions": [
+        {
+          "question_tr": "Some direklerinin ve inceleme koridorunun 1/100.000 ölçekli Çevre Düzeni Planı'nda 'İçme-Kullanma Suyu Mutlak Koruma Alanı' ile Kısa, Orta ve Uzun Mesafeli Koruma Alanları içerisinde kaldığı belirtilmektedir; mutlak koruma alanından kaçınan alternatif güzergâh etüdü yapılmış mıdır ve bu koruma kuşaklarına isabet eden direk numaraları hangileridir?",
+          "pages": [
+            39,
+            49,
+            72
+          ]
+        },
+        {
+          "question_tr": "Dökmetaş Mahallesi'ndeki en yakın konutun hattın yaklaşık 40 m güneyinde bulunduğu ve koridorun Kentsel Yerleşik/Gelişme Alanları ile kesiştiği dikkate alındığında, 154 kV 1272 MCM iletken kaynaklı elektrik/manyetik alan ve korona gürültüsü değerleri bu mesafedeki konutlar için hangi parametrelerle hesaplanmış ve sınır değerlerle karşılaştırılmıştır?",
+          "pages": [
+            12,
+            49,
+            72
+          ]
+        },
+        {
+          "question_tr": "Mera (4342), Toprak Koruma (5403), Su Ürünleri (1380), Sulama Alanları (3083) ve Orman (6831) izinleri ile BOTAŞ/KGM protokollerinin ve detaylı Çevre İzleme Programı'nın ÇED kararı sonrasına ertelenmesi karşısında, ilgili kurumlardan olumsuz görüş gelmesi veya direk yeri değişikliği gerekmesi halinde Nihai ÇED değerlendirmesi nasıl güncellenecektir?",
+          "pages": [
+            37,
+            356
+          ]
+        },
+        {
+          "question_tr": "Proje bedeli 401.800.000 TL'den 250.438.991,7 TL'ye revize edilirken Tablo 3'te kamulaştırma, inşaat ve çevresel tedbir giderleri neden ayrı kalemler halinde gösterilmemiştir; I-IV. sınıf tarım arazileri ve özel mahsul plantasyon alanlarına yönelik kamulaştırma/zarar tazmin maliyetleri bu tutara dahil midir?",
+          "pages": [
+            35,
+            39,
+            72
+          ]
+        },
+        {
+          "question_tr": "Yer görme çalışmasının 28.05.2024 tarihinde yapıldığı ve Şekiller listesinde vaşak (Lynx lynx) ile üveyik (Streptopelia turtur) gibi türler için 'temsili fotoğraf' kullanıldığı görülmektedir; flora-fauna ve kuş göç yollarına ilişkin arazi sörveyleri hangi tarihlerde ve kaç mevsim boyunca gerçekleştirilmiştir?",
+          "pages": [
+            5,
+            14,
+            49
+          ]
+        }
+      ],
+      "data_limitations": "Toplam 953 sayfalık Nihai ÇED Raporu'nun 245 sayfası taranmış/görüntü nitelikli olup, bu incelemede yalnızca sağlanan 22 metin sayfası [s. 1, 2, 3, 4, 5, 7, 8, 9, 12, 14, 16, 17, 18, 21, 25, 35, 37, 39, 49, 72, 356, 357] değerlendirilebilmiştir. İçindekiler ve dizinlerde yer alan Bölüm 2.12 (Flora ve Fauna), Bölüm 2.13-2.17 (Toprak, Tarım, Mera, Orman), gürültü/EMA/toz hesap tabloları (Tablo 87-106), Bölüm 3.9-3.11 (Su ve Biyoçeşitlilik Etkileri), Bölüm 4 (Kümülatif Etki Değerlendirme) ve kurum görüşü/harita ekleri sunulan özetlerin dışında kaldığından doğrudan doğrulanamamıştır."
+    }
+  }
+}

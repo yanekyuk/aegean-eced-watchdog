@@ -1,0 +1,295 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>e-ÇED Ön Özet #59220 — OSMANİYE / DÜZİÇİ</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <style>
+:root {
+  --bg: #0f1216;
+  --surface: #171c22;
+  --border: #262e38;
+  --text: #e6edf3;
+  --muted: #8b949e;
+  --accent: #58a6ff;
+  --red: #f85149;
+  --amber: #d29922;
+  --green: #3fb950;
+  --badge-bg: #212830;
+}
+@media (prefers-color-scheme: light) {
+  :root {
+    --bg: #f6f8fa;
+    --surface: #ffffff;
+    --border: #d0d7de;
+    --text: #1f2328;
+    --muted: #656d76;
+    --accent: #0969da;
+    --red: #cf222e;
+    --amber: #9a6700;
+    --green: #1a7f37;
+    --badge-bg: #eef2f6;
+  }
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+}
+.wrap { max-width: 1240px; margin: 0 auto; padding: 24px 18px 64px; }
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+header { border-bottom: 1px solid var(--border); padding-bottom: 16px; margin-bottom: 20px; }
+h1 { margin: 0 0 6px; font-size: 1.55rem; }
+h2 { margin: 26px 0 10px; font-size: 1.2rem; }
+h3 { margin: 16px 0 8px; font-size: 1rem; }
+.sub { color: var(--muted); font-size: 0.92rem; margin: 0; }
+.meta-bar { display: flex; flex-wrap: wrap; gap: 14px; margin-top: 12px; font-size: 0.85rem; color: var(--muted); }
+.stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 10px; margin: 16px 0 18px; }
+.stat { background: var(--surface); border: 1px solid var(--border); border-radius: 8px; padding: 12px 14px; }
+.stat .num { font-size: 1.45rem; font-weight: 700; }
+.stat .lbl { font-size: 0.78rem; color: var(--muted); }
+.map-box {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 18px;
+}
+#map { width: 100%; height: 420px; background: var(--badge-bg); }
+#digest-map { width: 100%; height: 320px; background: var(--badge-bg); }
+.map-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  padding: 9px 14px;
+  font-size: 0.8rem;
+  color: var(--muted);
+  border-top: 1px solid var(--border);
+}
+.dot { display: inline-block; width: 10px; height: 10px; border-radius: 50%; margin-right: 5px; vertical-align: middle; }
+.controls { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; margin-bottom: 16px; }
+input[type="search"], select.filter-select {
+  padding: 8px 12px;
+  border-radius: 6px;
+  border: 1px solid var(--border);
+  background: var(--surface);
+  color: var(--text);
+  font-size: 0.9rem;
+}
+input[type="search"] { flex: 1 1 240px; }
+select.filter-select { min-width: 170px; }
+button.pill {
+  padding: 7px 12px;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: var(--surface);
+  color: var(--text);
+  cursor: pointer;
+  font-size: 0.82rem;
+}
+button.pill.active { background: var(--accent); border-color: var(--accent); color: #fff; font-weight: 600; }
+.cards { display: flex; flex-direction: column; gap: 10px; }
+.card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 15px 17px;
+}
+.card.ek1 { border-left: 4px solid var(--accent); }
+.row-top { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px; align-items: baseline; }
+.title { font-weight: 600; font-size: 0.98rem; }
+.badges { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 7px; }
+.badge {
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  background: var(--badge-bg);
+  border: 1px solid var(--border);
+}
+.badge.urgent { border-color: var(--red); color: var(--red); font-weight: 600; }
+.badge.warn { border-color: var(--amber); color: var(--amber); font-weight: 600; }
+.badge.ok { border-color: var(--green); color: var(--green); }
+.badge.muted { color: var(--muted); }
+.detail { font-size: 0.87rem; color: var(--muted); margin: 8px 0; }
+.actions { display: flex; flex-wrap: wrap; gap: 12px; font-size: 0.84rem; margin-top: 8px; }
+.notice {
+  margin-top: 28px;
+  padding: 14px 16px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  font-size: 0.84rem;
+  color: var(--muted);
+}
+table.kv { width: 100%; border-collapse: collapse; margin: 12px 0; font-size: 0.9rem; }
+table.kv th, table.kv td { border: 1px solid var(--border); padding: 8px 11px; text-align: left; vertical-align: top; }
+table.kv th { width: 240px; background: var(--badge-bg); }
+code { background: var(--badge-bg); padding: 1px 5px; border-radius: 4px; font-size: 0.85em; }
+blockquote { margin: 10px 0; padding: 11px 15px; border-left: 3px solid var(--accent); background: var(--surface); font-size: 0.9rem; }
+.hit { margin: 7px 0; font-size: 0.88rem; }
+.pno { font-weight: 700; color: var(--accent); }
+.leaflet-popup-content { color: #1f2328; font-size: 0.85rem; line-height: 1.45; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div style="font-size:0.85rem;margin-bottom:8px;"><a href="../index.html">← Türkiye e-ÇED İzleme listesine dön</a> · <a href="../rehber.html">Kullanım ve İnceleme Rehberi</a> · <a href="59220.md">Ham Markdown (.md)</a></div>
+    <h1>e-ÇED Ön Özet #59220 — OSMANİYE / DÜZİÇİ</h1>
+    <p class="sub">ETLİK PİLİÇ ÜRETİM TESİSİ KAPASİTE ARTIŞI</p>
+    <div class="badges" style="margin-top:10px;">
+      <span class="badge">Nihai Karar</span>
+      <span class="badge">Ek-1</span>
+      <span class="badge urgent">10 Günlük Askı · 3 gün kaldı (2026-11-23)</span>
+    </div>
+  </header>
+
+  <table class="kv">
+    <tr><th>Proje Sahibi</th><td>UMUT PETROKİMYA VE İNŞAAT TİCARET LİMİTED ŞİRKETİ</td></tr>
+    <tr><th>Hazırlayan Kuruluş</th><td>ÇEV  MED ÇEVRE MED.MÜH.EĞT.MAD.MAK. DAN.PAZ.SANAYİ VE TİCARET  LTD. ŞTİ.</td></tr>
+    <tr><th>Sektör / Alt Sektör</th><td>Hayvancılık / Kümes Hayvanları  Yetiştirme Tesisleri</td></tr>
+    <tr><th>Duyuru Tarihi</th><td><code>13.11.2026</code> (belge yükleme tarihi: <code>22/02/2026 07:36:11</code>)</td></tr>
+    <tr><th>PDF Kapsamı</th><td>80.11 MB · 645 sayfa (608 metin sayfası / 37 taranmış veya görüntü sayfası) · SHA-256 <code>e0e35669fff632b2…</code></td></tr>
+    <tr><th>Resmi Bağlantılar</th><td><a href="http://eced.csb.gov.tr/jsp/ek1/59220" target="_blank" rel="noopener">e-ÇED Portal Kaydı</a> · <a href="http://eced.csb.gov.tr/jsp/dosya/dosyaGoster.htm?tempAd=signature_file6196713954316478978.imz&amp;orjinalAd=59220_Son_Sekli_Verilen_Rapor.pdf&amp;yuklemeTarihi=2026-10-12" target="_blank" rel="noopener">Resmi PDF Dosyası</a> · <a href="https://www.openstreetmap.org/?mlat=36.77578&amp;mlon=36.80026#map=12/36.77578/36.80026" target="_blank" rel="noopener">OpenStreetMap</a> · <a href="https://www.google.com/maps/search/?api=1&amp;query=36.77578,36.80026" target="_blank" rel="noopener">Google Haritalar</a></td></tr>
+  </table>
+
+  <h2>Konum Haritası</h2>
+  <div class="map-box">
+    <div id="digest-map"></div>
+    <div class="map-legend"><span>PDF metninden çıkarılan kesin proje koordinatları (80 nokta, datum: UTM-Z36/WGS84, sayfa: s.35, s.36, s.37).</span></div>
+  </div>
+
+  
+  <h2>Yapay Zeka Destekli Bilimsel Ön Değerlendirme <span class="badge">gemini-4-hydrogen</span></h2>
+  <p class="sub">Bu değerlendirme, resmi PDF dosyasından seçilen 25 sayfa (s.1, s.2, s.3, s.4, s.5, s.6, s.7, s.8, s.11, s.12, s.14, s.15, s.21, s.30, s.31, s.32, s.47, s.53, s.79, s.84, s.134, s.135, s.235, s.236, s.344) esas alınarak hazırlanmıştır. Tüm sayısal verilerin ve tespitlerin resmi PDF belgesindeki ilgili <code>[s. N]</code> sayfalarından doğrulanması gerekir.</p>
+  <section class="card ek1">
+    <p><strong>Özet:</strong> Umut Petrokimya ve İnşaat Ticaret Limited Şirketi tarafından Osmaniye ili, Düziçi ilçesi, Çerçioğlu Köyü, 179 ada 19 parseldeki 26.229,44 m2 alanda, 178.445.500 TL bedelle Etlik Piliç Üretim Tesisi Kapasite Artışı projesi planlanmaktadır [s. 1, 2, 11]. Daha önce 19.000 adet/dönem kapasiteli tek katlı kümes için alınan kapsam dışı kararı sonrası henüz inşaata başlanmadan 6 adet çift katlı kümese (21.120 m2 kapalı alan) geçilerek kapasitenin 380.160 adet/döneme çıkarılması öngörülmektedir [s. 11, 12, 14]. Tarım arazisi vasıflı parsel, DSİ görüşüne göre Haruniye Ovası Sulama Sahası ve Aslantaş Barajı Orta Mesafeli Koruma Alanı içinde kalmakta olup raporda en yakın yerleşim mesafesi konusunda 350 m ve 60-70 m şeklinde iki farklı bilgi yer almaktadır [s. 12, 21, 31].</p>
+    <details style="margin-top:8px;font-size:0.86rem;color:var(--muted);"><summary style="cursor:pointer;">İngilizce özet (English summary)</summary><p style="margin:6px 0 0;">Umut Petrokimya ve Insaat Ticaret Limited Sirketi proposes an expansion of a broiler chicken production facility on a 26,229.44 m2 agricultural parcel in Cercioglu Village, Duzici District, Osmaniye Province, with a project cost of 178,445,500 TL [s. 1, 2, 11, 21]. Before starting construction under a prior 19,000-bird/cycle EIA exemption decision, the project proposes scaling up to six two-story coops (21,120 m2 enclosed area) housing 380,160 broilers per cycle across 5-6 cycles annually [s. 11, 12, 14]. According to the State Hydraulic Works (DSI) opinion, the site lies within the Haruniye Plain Irrigation Area and the medium-range protection zone of Aslantas Dam, while the report also notes residential houses 60-70 m away alongside a stated 350 m distance to the nearest village houses [s. 12, 31].</p></details>
+    <div class="badges" style="margin-top:10px;">
+      <span class="badge">Saha çalışması: Belgelenmiş saha çalışması mevcut</span>
+      <span class="badge">Mevsimsel örnekleme: İncelenen sayfalarda tespit edilemedi</span>
+      <span class="badge">Kümülatif etki: Eksik veya tespit edilemedi</span>
+    </div>
+    <p class="detail" style="margin-top:10px;"><strong>Zeytinlik ve Korunan Alanlar:</strong> Proje alanının Milli Park, Tabiat Parkı, Tabiat Anıtı, sulak alan veya Önemli Bitki Alanı içerisinde yer almadığı ifade edilmektedir [s. 53]. Ancak parsel tarım arazisi vasfında olup [s. 21], DSİ&#x27;nin 07.04.2026 tarihli görüşüne göre Haruniye Ovası Sulama Sahası ve Aslantaş Barajı Orta Mesafeli Koruma Alanı sınırları içerisindedir [s. 31]. Zeytinlikler (3573 sayılı Kanun), orman ve SİT alanlarına ilişkin detaylı bölümler sunulan sayfa seçkisi dışında kalmaktadır [s. 4].<br/>Flora ve fauna değerlendirmesi için yalnızca 15-17.05.2026 tarihlerinde tek seferlik üç günlük bir arazi çalışması gerçekleştirilmiş, diğer mevsimlere ilişkin fauna bilgileri ise çevre köylerdeki sakinlerle yapılan sözel görüşmelerden derlenmiştir [s. 47, 53]. Dolayısıyla proje öncesi çok mevsimli sistematik biyolojik örnekleme tamamlanmamış olup sunulan sayfalarda onay sonrası mevsimsel izleme taahhüdü de yer almamaktadır [s. 47, 53]. Hidrojeolojik temel veri açısından da sahada ve etki alanında kuyu veya ölçüm bulunmadığından yeraltı suyu seviyesi tespit edilememiş ve yalnızca bölge halkından alınan sözel bilgilere dayanılmıştır [s. 31, 79]. Kümülatif Etki Değerlendirmesi bölümü (Bölüm IV, s. 228) sunulan sayfa seçkisi içinde yer almadığından nicel değerlendirme durumu doğrulanamamıştır [s. 6].</p>
+  </section>
+  <h3>Öne Çıkan Sayısal Bulgular</h3><table class="kv"><tr><th>Proje Alanı (Parsel)</th><td>26.229,44 m2 (Çerçioğlu Köyü, 179 Ada 19 Parsel, tarım arazisi) <span class="pno">[s. 11]</span></td></tr>
+<tr><th>Toplam Kapalı Kümes Alanı</th><td>21.120 m2 (6 adet çift katlı kümes, her biri 1.760 m2 x 2 kat) <span class="pno">[s. 11]</span></td></tr>
+<tr><th>Planlanan Kapasite</th><td>380.160 adet/dönem (18 adet/m2), yılda 5-6 dönem (45 gün/dönem) <span class="pno">[s. 12]</span></td></tr>
+<tr><th>Önceki Kapsam Dışı Kapasitesi</th><td>19.000 adet/dönem (06.02.2026 tarihli karar; inşaat henüz başlamamıştır) <span class="pno">[s. 11]</span></td></tr>
+<tr><th>Proje Bedeli ve Ömrü</th><td>178.445.500 TL; planlanan işletme ömrü 50 yıl <span class="pno">[s. 2]</span></td></tr>
+<tr><th>En Yakın Yerleşim Mesafesi</th><td>Kuzeydoğuda Çerçioğlu Köyü evleri 350 m (ayrıca 60-70 m mesafede meskun mahal evleri) <span class="pno">[s. 12]</span></td></tr>
+<tr><th>Atık ve Yardımcı Çukur Üniteleri</th><td>1 adet 217,5 m2 gübre çukuru, 5 adet 9 m2 ölü çukuru, 2 adet 9 m2 fosseptik çukuru <span class="pno">[s. 134]</span></td></tr>
+<tr><th>Toplam Hafriyat Miktarı</th><td>10.990,5 m2 kazı alanında 16.614 m3 (26.582,4 ton) hafriyat (12 ay inşaat süresi) <span class="pno">[s. 134]</span></td></tr>
+<tr><th>Su Havzası ve Sulama Statüsü</th><td>Aslantaş Barajı Orta Mesafeli Koruma Alanı ve Haruniye Ovası Sulama Sahası içi <span class="pno">[s. 31]</span></td></tr>
+<tr><th>Personel Sayısı</th><td>İnşaat aşamasında 10 kişi, işletme aşamasında 3 kişi <span class="pno">[s. 12]</span></td></tr></table>
+  <h3>Bilimsel ve Metodolojik Bulgular</h3><section class="card"><div class="hit"><span class="badge urgent">YÜKSEK</span> <strong>İçme Suyu Barajı Koruma Alanı ve Geçirimli Akifer Riski</strong> <span class="pno">[s. 21, s. 30, s. 31, s. 79, s. 84, s. 134]</span> — DSİ görüşüne göre saha, Aslantaş Barajı Orta Mesafeli Koruma Alanı ve Haruniye Ovası Sulama Sahası içinde kalmaktadır [s. 31]. Zemin yer yer geçirimli akifer özellikte olmasına ve tesiste gübre çukuru, 5 adet 3 m derinliğinde ölü çukuru ile 2 adet fosseptik planlanmasına rağmen [s. 31, 134], Toprak Koruma Kurulu ve tarım dışı kullanım izinleri henüz alınmadan yalnızca genel mevzuata uyulacağı taahhüt edilmiştir [s. 30, 31, 84].</div>
+<div class="hit"><span class="badge urgent">YÜKSEK</span> <strong>Yeraltı Suyu Seviyesinin Ölçülmeden Sözel Beyanla Geçilmesi</strong> <span class="pno">[s. 31, s. 79, s. 134]</span> — Raporda proje alanı ve etki alanında kuyu bilgisi bulunmadığı için olası yeraltı suyu seviyesinin tespit edilemediği açıkça ifade edilmektedir [s. 31, 79]. Yerinde piezometrik ölçüm veya sondaj yapılmadan, yalnızca halktan duyulan 120-150 m derinlikte su tablası kesilmediği bilgisine yer verilerek 2-3 m derinlikte gübre, ölü ve fosseptik çukurları kazılması planlanmaktadır [s. 31, 79, 134].</div>
+<div class="hit"><span class="badge urgent">YÜKSEK</span> <strong>En Yakın Yerleşim Mesafesindeki Çelişki ve 60-70 m Yakınlık</strong> <span class="pno">[s. 12, s. 15, s. 53, s. 235]</span> — Raporun birden fazla bölümünde en yakın evlerin kuzeydoğuda 350 m mesafedeki Çerçioğlu Köyü evleri olduğu yazılırken, hemen ardından parantez içinde proje alanına 60-70 metre mesafede meskun mahal evleri bulunduğu belirtilmektedir [s. 12, 15, 235]. Flora bölümünde de tesisin amonyak gazı ve yanlış gübre/atıksu yönetimi nedeniyle bitkilerde yaprak yanmasına yol açabileceği belirtilirken [s. 53], 380.160 piliç kapasiteli tesisin 60-70 m mesafedeki konutlara etkisine dair çelişki giderilmemiştir [s. 12, 53].</div>
+<div class="hit"><span class="badge warn">ORTA</span> <strong>İnşaatı Başlamamış Kapsam Dışı Kararı Üzerinden 20 Kat Kapasite Artışı</strong> <span class="pno">[s. 11, s. 12, s. 14]</span> — 06.02.2026 tarihinde 19.000 adet/dönem tek katlı kümes için alınan kapsam dışı kararı kapsamında inşaata hiç başlanmadığı belirtilmesine rağmen, proje yeni bir Ek-1 tesisi yerine mevcut kararın üzerine 5 çift katlı kümes ve 1 üst kat eklenerek 380.160 adet/dönemlik kapasite artışı olarak kurgulanmıştır [s. 11, 14].</div>
+<div class="hit"><span class="badge warn">ORTA</span> <strong>Tek Seferlik Mayıs Ayı Biyolojik Arazi Çalışması</strong> <span class="pno">[s. 47, s. 53]</span> — Flora ve fauna tespiti için arazi çalışması yalnızca 15-17.05.2026 tarihlerinde tek bir 3 günlük saha gezisiyle yapılmıştır [s. 47, 53]. Diğer mevsimlerdeki tür varlığı için mevsimsel örnekleme yerine yakın köylerdeki sakinlerle yapılan görüşmelere dayanılmıştır [s. 47, 53].</div>
+<div class="hit"><span class="badge muted">DÜŞÜK</span> <strong>Evsel Atıksu Bertarafı ve Hafriyat Dengesi Beyanlarında Tutarsızlık</strong> <span class="pno">[s. 11, s. 14, s. 84, s. 134, s. 135]</span> — Hidrojeolojik değerlendirme taahhütlerinde evsel nitelikli atıksuların kanalizasyon sistemine verileceği belirtilirken [s. 84], proje üniteleri arasında 2 adet 9 m2 fosseptik çukuru planlanmaktadır [s. 11, 14, 134]. Ayrıca 16.614 m3 (26.582,4 ton) hafriyatın tamamının saha içi dolgu ve yolda kullanılıp hiç atık oluşmayacağı öngörülmektedir [s. 134, 135].</div></section>
+  <h3>HKT Tutanakları ve İdari Başvurular İçin Taslak Teknik Sorular</h3><ul><li>Aslantaş Barajı Orta Mesafeli Koruma Alanı ve Haruniye Ovası Sulama Sahası içinde yer alan ve kısmen geçirimli akifer özelliği gösteren tarım arazisinde [s. 21, 31, 79], 380.160 adet/dönemlik etlik piliç tesisi için Toprak Koruma Kurulu ve tarım dışı kullanım izinleri neden ÇED nihai kararı öncesinde tamamlanmamıştır [s. 31]? <span class="pno">[s. 21, s. 31, s. 79]</span></li>
+<li>Sahada ve etki alanında yeraltı suyu seviyesi ölçülerek tespit edilemediği raporlanmasına rağmen [s. 31, 79], 2-3 m derinliğinde kazılacak gübre çukuru, 5 adet ölü çukuru ve 2 adet fosseptik çukurunun [s. 134] mevsimsel yüksek su tablasıyla temas etmeyeceği ve yeraltı suyunu kirletmeyeceği hangi sondaj veya piezometre verileriyle kanıtlanmaktadır? <span class="pno">[s. 31, s. 79, s. 134]</span></li>
+<li>Raporun 12, 15 ve 235. sayfalarında en yakın yerleşim yeri olarak hem kuzeydoğuda 350 m mesafedeki Çerçioğlu Köyü evleri hem de 60-70 m mesafede meskun mahal evleri ifadeleri yer almaktadır [s. 12, 15, 235]; 60-70 m mesafedeki konutlar için koku, amonyak emisyonu, biyogüvenlik ve koruma bandı hesaplamaları hangi mesafe esas alınarak yapılmıştır? <span class="pno">[s. 12, s. 15, s. 53, s. 235]</span></li>
+<li>15-17.05.2026 tarihli tek seferlik arazi çalışması dışında neden göçmen kuşlar ve diğer mevsimlere özgü fauna/flora türleri için çok mevsimli saha örneklemesi yapılmamış, bunun yerine köy sakinlerinin beyanlarıyla yetinilmiştir [s. 47, 53]? <span class="pno">[s. 47, s. 53]</span></li>
+<li>Tesiste evsel atıksular için 2 adet fosseptik çukuru planlanmasına rağmen sayfa 84&#x27;te atıksuların kanalizasyon sistemine verileceğinin taahhüt edilmesi arasındaki çelişki nasıl açıklanmaktadır [s. 11, 84, 134]? <span class="pno">[s. 11, s. 84, s. 134]</span></li></ul>
+  <p class="sub"><em>İnceleme sınırları:</em> Toplam 645 sayfalık (37 sayfası taranmış/görüntü) ÇED raporunun yalnızca 25 sayfası incelenebilmiştir. Sunulan sayfa seçkisi dışında kalan tür listeleri ve haritalar (s. 48-52, 54-60), tarım-orman-koruma alanları ve zeytinlik değerlendirmeleri (s. 114-130), emisyon ve koku modellemesi ile atık yönetimi detayları (s. 163-213), kümülatif etki değerlendirmesi (Bölüm IV, s. 228), halkın katılımı tutanakları (s. 249-275), kurum görüşü ekleri (s. 290-439) ve Çevresel ve Sosyal Yönetim Planı içeriği (s. 345 sonrası) doğrulanamamıştır.</p>
+
+
+  <h2>Resmi Duyuru Metni</h2>
+  <blockquote>OSMANİYE ili DÜZİÇİ,  ilcesinde OSMANİYE İli DÜZİÇİ,  ilcesinde UMUT PETROKİMYA VE İNŞAAT TİCARET LİMİTED ŞİRKETİ tarafından yapılması planlanan ETLİK PİLİÇ ÜRETİM TESİSİ KAPASİTE ARTIŞI projesi ile ilgili olarak hazırlanan ÇED Raporu , İnceleme ve Değerlendirme Komisyonu (İDK) tarafından incelenerek son şekli verilmiş olup, söz konusu rapor halkın görüş ve önerilerini almak üzere ÇED Yönetmeliği&#x27;nin 14.Maddesi (1) no&#x27;lu bendi kapsamında Bakanlıkta ve Çevre, Şehircilik ve İklim Değişikliği İl Müdürlüğü&#x27;nde on (10) takvim günü görüşe açılmıştır. Bakanlığa/Çevre, Şehircilik ve İklim Değişikliği İl Müdürlüğü&#x27;ne iletilen görüşler projeyle ilgili karar alma sürecinde dikkate alınacaktır. Görüş ve öneriler için bu süreç içerisinde Çevre, Şehircilik ve İklim Değişikliği Bakanlığı&#x27;na veya OSMANİYE Çevre ve Şehircilik İl Müdürlüklerine müracaat edilebilir. İlgililere ve kamuoyuna duyurulur.</blockquote>
+
+  <h2>Otomatik Metin Taraması (Deterministik)</h2>
+  <table class="kv"><tr><th>Saha veya arazi çalışması ifadesi</th><td><span class="badge ok">Metinde yer almaktadır</span></td></tr>
+<tr><th>Literatür taraması ifadesi</th><td><span class="badge ok">Metinde yer almaktadır</span></td></tr>
+<tr><th>Mevsimsel örnekleme ifadesi</th><td><span class="badge ok">Metinde yer almaktadır</span></td></tr>
+<tr><th>Kümülatif etki değerlendirmesi ifadesi</th><td><span class="badge ok">Metinde yer almaktadır</span></td></tr>
+<tr><th>3573 sayılı Zeytincilik Kanunu veya zeytinlik ifadesi</th><td><span class="badge ok">Metinde yer almaktadır</span></td></tr>
+<tr><th>Yeraltı suyu, akifer veya hidrojeoloji ifadesi</th><td><span class="badge ok">Metinde yer almaktadır</span></td></tr>
+<tr><th>Endemik tür, IUCN veya Bern Sözleşmesi ifadesi</th><td><span class="badge ok">Metinde yer almaktadır</span></td></tr></table>
+  <p class="sub">Metin katmanı (OCR) bulunmayan taranmış harita ve kurum görüşü ekleri otomatik metin taramasına dahil edilmemiştir.</p>
+
+  <h2>Sayfa Kaynaklı Çıkarılan Bulgular</h2>
+  <div class="cards"><section class="card"><h3>Koordinatlar, Parsel ve Alan Büyüklüğü <span style="color:var(--muted);font-weight:400;font-size:0.85rem">(81 sayfa: s.3, s.11, s.12, s.14, s.15, s.16, s.17, s.18, s.21, s.22, s.25, s.34, s.35, s.36 (+67 sayfa))</span></h3><div class="hit"><span class="pno">[s. 3]</span> <code>koordinat</code> — ….................................................................................... 34 I.7. Arazinin mülkiyet durumu, koordinatları, yer bulduru haritası, faaliyet alanı ve çevresinin fotoğrafları..................................................…</div>
+<div class="hit"><span class="pno">[s. 11]</span> <code>Ada 19 Parsel</code> — …konusu proje; UMUT PETROKİMYA VE İNŞAAT TİCARET LİMİTED ŞİRKETİ adına Osmaniye İli, Düziçi İlçesi, Çerçioğlu Köyü, 179 Ada 19 Parsel’ de “Etlik Piliç Üretim Tesisi Kapasite Artışı” faaliyetidir. Faaliyet 19 Nolu parsel üzerinde kurulacak olup, Söz ko…</div>
+<div class="hit"><span class="pno">[s. 11]</span> <code>229,44 m2</code> — …iç Üretim Tesisi Kapasite Artışı” faaliyetidir. Faaliyet 19 Nolu parsel üzerinde kurulacak olup, Söz konusu parsel 26.229,44 m2’’lik alanı kaplamaktadır. Faaliyetin gerçekleşeceği alan UMUT PETROKİMYA VE İNŞAAT TİCARET LİMİTED ŞİRKETİ’ ne ait ta…</div>
+<div class="hit"><span class="pno">[s. 11]</span> <code>1.760 m2</code> — …tir. Proje kapsamında ilave edilecek mevcut tek katlı kümesin üst katı ve çift katlı beş kümesin toplam kapalı alanı (1.760 m2 x 1 üst kat x 1 adet + 1.760 m2 x 2 katlı x 5 adet) 19.360 m2’dir. Faaliyet konusu tesiste kapsam dışı kararında; proj…</div>
+<div class="hit"><span class="pno">[s. 11]</span> <code>19.360 m2</code> — …n üst katı ve çift katlı beş kümesin toplam kapalı alanı (1.760 m2 x 1 üst kat x 1 adet + 1.760 m2 x 2 katlı x 5 adet) 19.360 m2’dir. Faaliyet konusu tesiste kapsam dışı kararında; proje sahasında inşaat faaliyetleri başlamamıştır. İnşaat aşaması…</div>
+<div class="hit"><span class="pno">[s. 11]</span> <code>217,5 m2</code> — …bre çukuru vb. üniteler revize edilmiştir. Ayrıca kapsam dışı kararı ile 1 adet 75 m2 büyüklüğünde bakıcı evi, 1 adet 217,5 m2 büyüklüğünde gübre çukuru, 1 adet 9 m2 büyüklüğünde ölü çukuru ve 1 adet 9 m2 büyüklüğünde fosseptik çukuru yapılacak…</div></section><section class="card"><h3>Su Kullanımı, Hidrojeoloji ve Deşarj <span style="color:var(--muted);font-weight:400;font-size:0.85rem">(94 sayfa: s.5, s.30, s.31, s.32, s.53, s.66, s.67, s.74, s.76, s.77, s.78, s.79, s.80, s.81 (+80 sayfa))</span></h3><div class="hit"><span class="pno">[s. 5]</span> <code>deşarj</code> — …......................................... 180 III. B.6. Oluşacak atıksuların cins ve miktarları bertaraf yöntemleri ve deşarj edileceği ortamlar ve uzaklığı, atıksuların deşarj değerleri, arıtma tesisi akım şeması, iş termin planı, kapasitesi,…</div>
+<div class="hit"><span class="pno">[s. 5]</span> <code>atıksu</code> — …edileceği ortamlar ve uzaklığı, atıksuların deşarj değerleri, arıtma tesisi akım şeması, iş termin planı, kapasitesi, atıksu arıtma tesisin devreye alınması ile birlikte oluşacak arıtma tesisi arıtma çamurlarının miktarı ve</div>
+<div class="hit"><span class="pno">[s. 30]</span> <code>Yeraltı Suyu</code> — …YERALTI SULARI: Yeraltısu rezervi: 159,69 hm3/yıl Tahsis edilen su miktarı: 139,133 hm3/yıl Tablo 8: Osmaniye İli Yeraltı Suyu Potansiyeli Kaynak: Osmaniye İli 2024 Yılı Çevre Durum Raporu Proje kapsamında, 23.12.1960 tarih ve 10688 sayıl…</div>
+<div class="hit"><span class="pno">[s. 31]</span> <code>yeraltısuyu</code> — …ancak bu seviyelerde herhangi bir su tablası kesilmediği bölge halkından öğrenilmiştir. Proje alanı ve etki alanında yeraltısuyu kuyuları ve bilgileri bulunmadığı için olası yeraltı su seviyesi tespit edilememiştir. Proje alanında gerek inşaat ge…</div>
+<div class="hit"><span class="pno">[s. 31]</span> <code>yeraltı suyu</code> — …lunmadığı için olası yeraltı su seviyesi tespit edilememiştir. Proje alanında gerek inşaat gerekse işletme aşamasında yeraltı suyu ile karşılaşılması durumunda DSİ Bölge Müdürlüğü’ne bilgi verileceği, gerekli müsaade alınmadan hiçbir suretle çalışm…</div>
+<div class="hit"><span class="pno">[s. 31]</span> <code>akifer</code> — …ayacağını proje sahibi tarafından taahhüt edilmektedir. Proje alanı yer yer yarı geçirimli akitard, yer yer geçirimli akifer özelliktedir. Yeraltı ve yüzey su noktalarına yakın bölgelerde yeraltı ve yüzey sularının kotlarının altında çalışma y…</div></section><section class="card"><h3>Korunan Alanlar, Orman ve Zeytinlikler <span style="color:var(--muted);font-weight:400;font-size:0.85rem">(21 sayfa: s.4, s.53, s.79, s.84, s.89, s.123, s.124, s.125, s.126, s.228, s.240, s.350, s.351, s.432 (+7 sayfa))</span></h3><div class="hit"><span class="pno">[s. 4]</span> <code>Özel Çevre Koruma</code> — …nları, Kültür Varlıkları, Tabiat Varlıkları, Sit ve Koruma Alanları, Biyogenetik Rezerv Alanları, Biyosfer Rezervleri, Özel Çevre Koruma Bölgeleri, Özel Koruma Alanları, içme ve kullanma su kaynakları ile ilgili koruma alanları, Turizm Alan ve Merkezleri…</div>
+<div class="hit"><span class="pno">[s. 53]</span> <code>Milli park</code> — …kullanılmıştır (Şekil 5). Proje Sahasının Korunan Alanlar Açısından Konumu Yapılması planlanan proje sahası civarında Milli park, Tabiat Parkı, Tabiat Anıtı, ve sulak alan bulunmamakta olup alan korunan alanlar içerisinde yer almamaktadır.</div>
+<div class="hit"><span class="pno">[s. 53]</span> <code>Tabiat Parkı</code> — …ır (Şekil 5). Proje Sahasının Korunan Alanlar Açısından Konumu Yapılması planlanan proje sahası civarında Milli park, Tabiat Parkı, Tabiat Anıtı, ve sulak alan bulunmamakta olup alan korunan alanlar içerisinde yer almamaktadır.</div>
+<div class="hit"><span class="pno">[s. 53]</span> <code>sulak alan</code> — …Korunan Alanlar Açısından Konumu Yapılması planlanan proje sahası civarında Milli park, Tabiat Parkı, Tabiat Anıtı, ve sulak alan bulunmamakta olup alan korunan alanlar içerisinde yer almamaktadır.</div>
+<div class="hit"><span class="pno">[s. 79]</span> <code>sulak alan</code> — …Bölge ve Proje Alanı Hidrolojik Özellikleri Göller-Göletler Proje alanı içerisinde herhangi bir göl, gölet, baraj vb sulak alan bulunmamaktadır. Bataklıklar Proje alanı içerisinde herhangi bir doğal bataklık bulunmamaktadır. Sondaj Kuyuları Sı…</div>
+<div class="hit"><span class="pno">[s. 84]</span> <code>sulak alan</code> — …ysel Su Kaynağı, Akarsu, Yeraltı Suyu Tesisleri Proje konusu alan içerisinde herhangi bir göl, gölet, baraj, akarsu ve sulak alan bulunmamaktadır. Projeye konu alan ve etki alanında yapılan arazi çalışmaları neticesinde bölgenin jeolojik-jeomorf…</div></section><section class="card"><h3>Flora, Fauna ve Saha Metodolojisi <span style="color:var(--muted);font-weight:400;font-size:0.85rem">(68 sayfa: s.3, s.5, s.6, s.47, s.48, s.49, s.50, s.51, s.52, s.53, s.54, s.57, s.58, s.59 (+54 sayfa))</span></h3><div class="hit"><span class="pno">[s. 3]</span> <code>endemik</code> — …nıflandırılması, yaşama ortamları (Beslenme veya üreme alanları), popülasyon yoğunlukları, uluslar arası sözleşmelerle endemik, nadir, nesli tehlikede, tehlike dışı vb. kategorilerinin tablo halinde belirtilmesi (koruma altında olan türler varsa…</div>
+<div class="hit"><span class="pno">[s. 3]</span> <code>flora ve fauna</code> — …........................................................................................................... 47 -Mevcut flora ve fauna yapısını içeren bilgilerin faaliyet alanı ve yakın çevresinde, dar veya geniş yayılışlı endemik, nesli tehlike kategor…</div>
+<div class="hit"><span class="pno">[s. 3]</span> <code>IUCN</code> — …içeren bilgilerin faaliyet alanı ve yakın çevresinde, dar veya geniş yayılışlı endemik, nesli tehlike kategorilerinde (IUCN’e göre ve Türkiye Kırmızı Kitabına göre) olan türlerin olup olmadığı, uluslararası sözleşmeler (Bern sözleşmesi) ve fa…</div>
+<div class="hit"><span class="pno">[s. 3]</span> <code>Bern sözleşmesi</code> — …kategorilerinde (IUCN’e göre ve Türkiye Kırmızı Kitabına göre) olan türlerin olup olmadığı, uluslararası sözleşmeler (Bern sözleşmesi) ve fauna incelemelerinde Merkez Av Komisyonu kararları ve eklerine göre koruma altında olan tür olup olmadığının beli…</div>
+<div class="hit"><span class="pno">[s. 5]</span> <code>Endemik</code> — ….............. 160 III.A.9. Proje alanının hazırlanması ve inşaat aşamalarında zarar görebilecek flora-fauna türleri (Endemik, nesli tehlikede türler vb.) proje için seçilen yer ve etki alanında bulunan tür popülasyonlarının etkilenmesi, ......…</div>
+<div class="hit"><span class="pno">[s. 6]</span> <code>Endemik</code> — ….................... 212 III.B.17. İşletme aşamasında yapılacak işlerden dolayı zarar görebilecek flora-fauna türleri (Endemik türler, nesli tehlikede vb.), proje için seçilen yer ve faaliyetin etki alanında bulunan tür popülasyonlarının etkile…</div></section><section class="card"><h3>Emisyonlar, Jeokimya ve Atıklar <span style="color:var(--muted);font-weight:400;font-size:0.85rem">(80 sayfa: s.3, s.4, s.6, s.21, s.53, s.55, s.56, s.57, s.63, s.64, s.130, s.132, s.133, s.137 (+66 sayfa))</span></h3><div class="hit"><span class="pno">[s. 3]</span> <code>deprem</code> — …lik halihazır harita üzerinde faaliyet alanı merkezli 1 km lik yarıçap üzerinde yer altı sularını, yerüstü sularını ve deprem kuşaklarını gösterir analiz, jeolojik yapı, köy yerleşik ve sanayi alanları, ulaşım ağı, enerji nakil hatları, arazi k…</div>
+<div class="hit"><span class="pno">[s. 4]</span> <code>deprem</code> — ….3. Depremsellik (İnceleme alanı ve çevresinin diri fay haritasında yeri belirlenerek inceleme alanının kaçıncı derece deprem bölgesinde yer aldığı ve yapılacak yapıların ilgili Deprem Yönetmeliğine göre incelenmesi), ..........................…</div>
+<div class="hit"><span class="pno">[s. 6]</span> <code>deprem</code> — …...................... 213 III. B.18. Çevresel Acil eylem planı (ünitelerde meydana gelebilecek muhtemel kaza, yangın, deprem, sel ve sabotaja karşı alınması gerekli önlemler), ...................................................................…</div>
+<div class="hit"><span class="pno">[s. 21]</span> <code>deprem</code> — …lik halihazır harita üzerinde faaliyet alanı merkezli 1 km lik yarıçap üzerinde yer altı sularını, yerüstü sularını ve deprem kuşaklarını gösterir analiz, jeolojik yapı, köy yerleşik ve sanayi alanları, ulaşım ağı, enerji nakil hatları, arazi k…</div>
+<div class="hit"><span class="pno">[s. 53]</span> <code>ağır metal</code> — …ir flora elemanı alanda tespit edilmemiştir. Ancak etlik piliç üretim tesisi ve idari binanın inşaası sırasında toz ve ağır metal içeren demir, çimento atıkları, beton artıkları alanda bırakılmamalıdır. Aksi takdirde çevre alanları ve yağmur ve rü…</div>
+<div class="hit"><span class="pno">[s. 55]</span> <code>gürültü</code> — …me sezonu dışında inşaat sürecinde gerekli önlemler alındığı takdirde (hafriyat, kazı, toz, yol yapımı, atık kontrolü, gürültü vb.) karasal yerli veya göçer türlerin etkilenmeyeceği tahmin edilmektedir. Tablo 13: Proje Sahası Risk-Etki-Tedbir M…</div></section><section class="card"><h3>Proje Bedeli, Güç ve Kapasite <span style="color:var(--muted);font-weight:400;font-size:0.85rem">(151 sayfa: s.1, s.2, s.3, s.5, s.7, s.8, s.11, s.12, s.14, s.15, s.16, s.17, s.18, s.19 (+137 sayfa))</span></h3><div class="hit"><span class="pno">[s. 1]</span> <code>KAPASİTE</code> — 1 UMUT PETROKİMYA VE İNŞAAT TİCARET LİMİTED ŞİRKETİ ETLİK PİLİÇ ÜRETİM TESİSİ KAPASİTE ARTIŞI SON ŞEKLİ VERİLEN ÇED RAPORU OSMANİYE İLİ, DÜZİÇİ İLÇESİ, ÇERÇİOĞLU KÖYÜ, 179 ADA, 19 PARSEL ÇED BAŞVURU D…</div>
+<div class="hit"><span class="pno">[s. 2]</span> <code>KAPASİTE</code> — …L/FAKS: 0 312 448 25 22 / 03124482523 E-POSTA darcinhakan@gmail.com PROJENİN ADI ETLİK PİLİÇ ÜRETİM TESİSİ KAPASİTE ARTIŞI PROJE BEDELİ 178.445.500 (TL) PROJE İÇİN SEÇİLEN YERİN AÇIK ADRESİ (İLİ, İLÇESİ, MEVKİİ) OSMANİY…</div>
+<div class="hit"><span class="pno">[s. 2]</span> <code>PROJE BEDELİ</code> — …22 / 03124482523 E-POSTA darcinhakan@gmail.com PROJENİN ADI ETLİK PİLİÇ ÜRETİM TESİSİ KAPASİTE ARTIŞI PROJE BEDELİ 178.445.500 (TL) PROJE İÇİN SEÇİLEN YERİN AÇIK ADRESİ (İLİ, İLÇESİ, MEVKİİ) OSMANİYE İLİ, DÜZİÇİ İLÇESİ, ÇE…</div>
+<div class="hit"><span class="pno">[s. 3]</span> <code>proje bedeli</code> — …me süresi, hizmet amaçları, projenin sosyal ve ekonomik yönden gerekliliği (fayda maliyet analizi), zamanlama tablosu, proje bedelinin detaylandırılarak açıklanması, ....................................................................................…</div>
+<div class="hit"><span class="pno">[s. 5]</span> <code>kapasite</code> — …II.A.8. Proje kapsamındaki ulaştırma altyapısı planı (ulaştırma güzergahı, şekli, güzergah yollarının mevcut durumu ve kapasitesi, hangi amaçlar için kullanıldığı, mevcut trafik yoğunluğu, yerleşim yerlerine göre konumu) .........................…</div>
+<div class="hit"><span class="pno">[s. 7]</span> <code>Kapasite</code> — …ojeler İçin ÇED Yönetmeliği Kapsamında Alınmış Belgeler, Çevre İzin ve Lisans Yönetmeliği Kapsamında Alınmış Belgeler, Kapasite Raporu, Yeterlik Tebliği Kapsamında Arazi İncelemesine İlişkin Bilgi, Belge ve Fotoğraflar, vb., ÇED Başvuru Dosyasın…</div></section></div>
+
+  <h2>Belge Bölüm Haritası</h2>
+  <ul><li><span class="pno">[s. 3]</span> BÖLÜM II: PROJE YERİ VE ETKİ ALANININ MEVCUT ÇEVRESEL ÖZELLİKLERİ (Fiziksel ve</li>
+<li><span class="pno">[s. 6]</span> BÖLÜM VI: HALKIN BİLGİLENDİRİLMESİ VE SÜRECE KATILIMI İLE PAYDAŞ KATILIM PLANI</li>
+<li><span class="pno">[s. 14]</span> BÖLÜM I: PROJENİN TANIMI VE AMACI, PROJE İÇİN SEÇİLEN YERİN KONUMU</li>
+<li><span class="pno">[s. 134]</span> BÖLÜM III. PROJENİN ÖNEMLİ ÇEVRESEL ETKİLERİ VE ALINACAK ÖNLEMLER</li>
+<li><span class="pno">[s. 228]</span> BÖLÜM IV: KÜMÜLATİF ÇEVRESEL ETKİ DEĞERLENDİRME</li>
+<li><span class="pno">[s. 235]</span> BÖLÜM V: ÇEVRESEL VE SOSYAL EYLEM PLANI</li>
+<li><span class="pno">[s. 276]</span> BÖLÜM VII:. SONUÇLAR</li>
+<li><span class="pno">[s. 344]</span> ÇEVRESEL VE SOSYAL YÖNETİMİ PLANI</li>
+<li><span class="pno">[s. 644]</span> BÖLÜM 1-2-3</li>
+<li><span class="pno">[s. 644]</span> BÖLÜM 2-3</li></ul>
+
+  <div class="notice">
+    Bu sayfa, T.C. Çevre, Şehircilik ve İklim Değişikliği Bakanlığı'nın kamuya açık <code>eced-duyuru.csb.gov.tr</code> duyuru portalındaki kayıtlar esas alınarak bilgilendirme amacıyla hazırlanmıştır. Alıntıların tamamı 1 tabanlı PDF sayfa numarasıyla (<code>[s. N]</code>) gösterilmektedir. Yasal süreler otomatik olarak hesaplanır; kesin sürelerin ve hukuki başvuru yollarının yetkili hukukçular tarafından teyit edilmesi gerekir.
+  </div>
+</div>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script>
+(() => {
+  if (typeof L === 'undefined') return;
+  const g = {"lat": 36.77578, "lon": 36.80026, "zoom": 12, "precision": "exact_pdf", "points": [[36.28683, 37.28804], [36.28712, 37.28838], [36.2872, 37.28839], [36.28736, 37.28835], [37.28866, 36.28627], [37.289, 36.28655], [37.289, 36.28663], [37.28896, 36.28679], [36.2876, 37.28822], [36.28783, 37.28814], [36.28802, 37.2881], [36.28871, 37.28747], [36.28925, 37.28716], [36.28928, 37.28672], [36.28673, 37.28786], [36.28662, 37.28767], [36.28654, 37.2875], [36.28638, 37.28744], [36.28625, 37.28743], [36.2861, 37.28737], [36.28803, 37.28693], [36.28813, 37.28692], [36.28821, 37.28682], [36.28836, 37.28674], [36.2892, 37.2867], [36.28873, 37.2867], [36.28895, 37.28669], [36.28659, 37.28746], [36.28718, 37.28833], [36.28734, 37.28826], [36.28675, 37.28739], [36.28681, 37.28733], [36.2874, 37.2882], [36.28756, 37.28813], [36.28697, 37.28726], [36.28705, 37.28723], [36.28764, 37.2881], [36.2878, 37.28803], [36.28721, 37.28716], [36.28732, 37.28717]], "label": "OSMANİYE / DÜZİÇİ — ETLİK PİLİÇ ÜRETİM TESİSİ KAPASİTE ARTIŞI"};
+  const map = L.map('digest-map').setView([g.lat, g.lon], g.zoom);
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    maxZoom: 18,
+    attribution: '&copy; OpenStreetMap katkıda bulunanları'
+  }).addTo(map);
+  if (g.precision === 'exact_pdf' && g.points.length > 1) {
+    const latlngs = g.points.map(p => [p[0], p[1]]);
+    const poly = L.polyline(latlngs, { color: '#58a6ff', weight: 3, opacity: 0.85 }).addTo(map);
+    for (const ll of latlngs.slice(0, 30)) {
+      L.circleMarker(ll, { radius: 4, color: '#ffffff', fillColor: '#f85149', fillOpacity: 0.9, weight: 1 }).addTo(map);
+    }
+    map.fitBounds(poly.getBounds().pad(0.25));
+  } else {
+    L.circleMarker([g.lat, g.lon], {
+      radius: g.precision === 'exact_pdf' ? 8 : 11,
+      color: '#ffffff',
+      fillColor: g.precision === 'exact_pdf' ? '#f85149' : '#58a6ff',
+      fillOpacity: g.precision === 'exact_pdf' ? 0.9 : 0.45,
+      weight: 2
+    }).bindPopup(g.label).addTo(map).openPopup();
+  }
+})();
+</script>
+</body>
+</html>

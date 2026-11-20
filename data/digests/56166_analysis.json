@@ -1,0 +1,931 @@
+{
+  "filing": {
+    "province": "VAN",
+    "district": "ÇALDIRAN",
+    "project_name": "ABDALAĞA BARAJI, HES VE SULAMASI, MALZEME OCAKLARI, KIRMA- YIKAMA-ELEME TESİSİ VE HAZIR BETON SANTRALİ",
+    "project_owner": "DSİ 17. Bölge Müdürlüğü",
+    "sector": "Su",
+    "sub_sector": "İçme Kullanma ve Sulama Barajları",
+    "decision_type": "IDK",
+    "announcement_date_tr": "17.11.2026",
+    "project_type": "Ek-1",
+    "detail_text": "VAN ili ÇALDIRAN,  ilcesinde VAN ili ÇALDIRAN ilçesi sınırları içerisinde DSİ 17. Bölge Müdürlüğü tarafından yapılması planlanan ABDALAĞA BARAJI, HES VE SULAMASI, MALZEME OCAKLARI, KIRMA- YIKAMA-ELEME TESİSİ VE HAZIR BETON SANTRALİ  projesi ile ilgili olarak hazırlanan ÇED Raporu, ÇED Yönetmeliği'nin 11. maddesi kapsamında Bakanlığımıza sunulmuş olup, inceleme değerlendirme süreci başlamıştır. Proje ile ilgili olarak 11/12/2026 tarihinde İDK toplantısı gerçekleştirilecektir. Bakanlığımıza sunulan ÇED Raporu https://eced-duyuru.csb.gov.tr/eced-prod/duyurular.xhtml adresinde yer almaktadır. ÇED Raporu ilgililere ve kamuoyuna duyurulur.",
+    "detail_links": [
+      {
+        "text": "ÇED Raporu",
+        "href": "http://eced.csb.gov.tr/jsp/ek1/56166"
+      }
+    ],
+    "documents": [
+      {
+        "portal_doc_url": "http://eced.csb.gov.tr/jsp/ek1/56166",
+        "filing_id": "56166",
+        "consulting_firm": "MOMENT ÇEVRE DANIŞMANLIK MÜHENDİSLİK TİC. LTD. ŞTİ.",
+        "submitted_at": "20/06/2025 12:33:17",
+        "pdf_urls": [
+          {
+            "label": "56166_CED_Raporu.pdf",
+            "url": "http://eced.csb.gov.tr/jsp/dosya/dosyaGoster.htm?tempAd=sign5845098783553566672.pdf&orjinalAd=56166_CED_Raporu.pdf&yuklemeTarihi=2026-11-04"
+          }
+        ]
+      }
+    ],
+    "announcement_date": "2026-11-17",
+    "statutory_clocks": [
+      {
+        "code": "idk",
+        "kind": "İnceleme Değerlendirme Komisyonu (İDK) süreci; toplantı tarihi resmi metinde yer alır",
+        "deadline": null,
+        "days_remaining": null
+      }
+    ],
+    "filing_key": "56166:17.11.2026:IDK",
+    "first_seen_at": "2026-11-20T02:11:08"
+  },
+  "pdf_info": {
+    "filename": "56166.pdf",
+    "bytes": 181745738,
+    "sha256": "550d4f356594d8f75af4771a4fe13ff2f88083ca8f649a53f53dad07bb66a675",
+    "cached": false
+  },
+  "analysis": {
+    "page_count": 1471,
+    "total_chars": 2473247,
+    "text_pages": 1388,
+    "scanned_or_blank_pages": 83,
+    "scanned_page_sample": [
+      646,
+      650,
+      651,
+      652,
+      653,
+      654,
+      659,
+      661,
+      662,
+      663,
+      664,
+      669,
+      673,
+      674,
+      677
+    ],
+    "headings": [
+      [
+        5,
+        "BÖLÜM II: PROJE ALANI VE ETKİ ALANININ MEVCUT ÇEVRESEL"
+      ],
+      [
+        7,
+        "BÖLÜM III: PROJENİN İNŞAAT VE İŞLETME AŞAMASINDA ÇEVRESEL"
+      ],
+      [
+        14,
+        "BÖLÜM VI: HALKIN BİLGİLENDİRİLMESİ VE SÜRECE KATILIMI İLE"
+      ],
+      [
+        29,
+        "ÇEVRESEL VE SOSYAL YÖNETİM PLANI"
+      ],
+      [
+        31,
+        "PROJENİN TEKNİK OLMAYAN ÖZETİ"
+      ],
+      [
+        34,
+        "BÖLÜM I: PROJENİN TANIMI, KONUMU VE ÖZELLİKLERİ"
+      ],
+      [
+        606,
+        "BÖLÜM IV: KÜMÜLATİF ÇEVRESEL ETKİ DEĞERLENDİRME"
+      ],
+      [
+        608,
+        "BÖLÜM V: ÇEVRESEL VE SOSYAL EYLEM PLANI"
+      ],
+      [
+        623,
+        "BÖLÜM VII: SONUÇLAR"
+      ],
+      [
+        630,
+        "BÖLÜM VIII: NOTLAR, KAYNAKLAR VE EKLER"
+      ],
+      [
+        1437,
+        "ÇEVRESEL VE SOSYAL"
+      ],
+      [
+        1443,
+        "ÇEVRESEL VE SOSYAL YÖNETİM PLANININ AMACI VE HEDEFİ"
+      ]
+    ],
+    "geo": {
+      "precision": "exact_pdf",
+      "lat": 39.20229,
+      "lon": 43.85119,
+      "point_count": 81,
+      "points": [
+        [
+          39.20109,
+          43.85909
+        ],
+        [
+          39.20105,
+          43.85936
+        ],
+        [
+          39.19805,
+          43.85952
+        ],
+        [
+          39.19785,
+          43.85939
+        ],
+        [
+          39.19771,
+          43.85809
+        ],
+        [
+          39.19758,
+          43.85882
+        ],
+        [
+          39.1979,
+          43.86124
+        ],
+        [
+          39.19744,
+          43.86133
+        ],
+        [
+          39.19715,
+          43.85851
+        ],
+        [
+          39.19791,
+          43.85603
+        ],
+        [
+          39.19837,
+          43.85627
+        ],
+        [
+          39.19799,
+          43.85753
+        ],
+        [
+          39.19882,
+          43.85664
+        ],
+        [
+          39.20896,
+          43.83821
+        ],
+        [
+          39.2082,
+          43.83926
+        ],
+        [
+          39.20761,
+          43.83963
+        ],
+        [
+          39.20723,
+          43.84059
+        ],
+        [
+          39.20642,
+          43.84177
+        ],
+        [
+          39.20593,
+          43.84299
+        ],
+        [
+          39.2061,
+          43.84344
+        ],
+        [
+          39.20607,
+          43.84381
+        ],
+        [
+          39.20545,
+          43.84463
+        ],
+        [
+          39.20509,
+          43.84599
+        ],
+        [
+          39.20171,
+          43.85809
+        ],
+        [
+          39.20167,
+          43.85837
+        ],
+        [
+          39.19867,
+          43.85853
+        ],
+        [
+          39.19847,
+          43.85839
+        ],
+        [
+          39.19833,
+          43.8571
+        ],
+        [
+          39.19819,
+          43.85783
+        ],
+        [
+          39.19852,
+          43.86025
+        ],
+        [
+          39.19805,
+          43.86034
+        ],
+        [
+          39.19776,
+          43.85751
+        ],
+        [
+          39.19853,
+          43.85504
+        ],
+        [
+          39.19899,
+          43.85528
+        ],
+        [
+          39.19861,
+          43.85653
+        ],
+        [
+          39.19944,
+          43.85565
+        ],
+        [
+          39.20958,
+          43.83722
+        ],
+        [
+          39.20882,
+          43.83827
+        ],
+        [
+          39.20823,
+          43.83864
+        ],
+        [
+          39.20784,
+          43.8396
+        ]
+      ],
+      "datum": "UTM-Z38/ED50",
+      "pages": [
+        44,
+        45,
+        46
+      ]
+    },
+    "signals": {
+      "coordinates_and_footprint": {
+        "label": "Coordinates, Parcel & Footprint",
+        "page_count": 198,
+        "pages": [
+          3,
+          4,
+          9,
+          28,
+          31,
+          32,
+          34,
+          35,
+          36,
+          38,
+          40,
+          42,
+          44,
+          45,
+          46,
+          47,
+          48,
+          49,
+          50,
+          51,
+          70,
+          71,
+          79,
+          82,
+          84
+        ],
+        "samples": [
+          {
+            "page": 3,
+            "match": "utm",
+            "snippet": "e) Kırma, eleme, yıkama, kurutma ve cevher hazırlama işlemlerinden en az birini yapan tesisler, Madde 55 - Arazilerin Yeniden Yapılandırılması Proj…"
+          },
+          {
+            "page": 3,
+            "match": "1.000 hektar",
+            "snippet": "…an tesisler, Madde 55 - Arazilerin Yeniden Yapılandırılması Projeleri; (ç) - Tarımsal amaçlı su yönetimi projeleri (1.000 hektar ve üzeri)” kapsamında değerlendirilmiştir. Sektör Enerji – Su Alt Sektör Hidroelektrik Santralleri - İçme, Kul…"
+          },
+          {
+            "page": 4,
+            "match": "koordinat",
+            "snippet": "…1 - I.3. Proje kapsamındaki tüm ünitelerin, teknik altyapı üniteleri ve idari/sosyal ünitelerle birlikte konumları ve koordinatları; varsa memba ve mansabındaki diğer projelerle birlikte vaziyet planı, kroki ve Çevrimiçi ÇED Süreci Yönetim Sistem…"
+          },
+          {
+            "page": 9,
+            "match": "koordinat",
+            "snippet": "…at sahası ve ÇED talep alanlarının bulunduğu, eş yükseklik eğrilerinin bulunduğu, lejantı, ölçeği, kuzeyi gösterilen, koordinat açılımı olan jeoloji haritasının eklenmesi, lejantta ÇED talebine konu madenin de belirtilmesi, haritada talep alanlar…"
+          },
+          {
+            "page": 28,
+            "match": "KOORDİNAT",
+            "snippet": "…RMA-YIKAMA-ELEME TESİSİ VE HAZIR BETON SANTRALİ PROJESİ ÇED RAPORU xxv EKLER EK-1 PROJE İÇİN SEÇİLEN YERİN KOORDİNATLARI EK-2 PROJE İÇİN BELİRLENEN YER VE ALTERNATİFLERİNİN VARSA; ÇEVRE DÜZENİ PLANI (LEJANT VE PLAN HÜKÜMLERİ İLE…"
+          },
+          {
+            "page": 31,
+            "match": "80,2 km²",
+            "snippet": "…alağa deresi üzerinde 2145,00 m talveg kotunda, talvegden 70,30 m yüksekliğinde planlanmaktadır. Barajın drenaj alanı 80,2 km²’dir. Proje kapsamındaki Abdalağa Barajı ile Abdalağa deresi su potansiyelinden yararlanılarak; 3049 ha brüt, 2744…"
+          },
+          {
+            "page": 32,
+            "match": "1,75 ha",
+            "snippet": "…BETON SANTRALİ PROJESİ ÇED RAPORU - 2 - Proje kapsamında işletilmesi planlanan ocaklardan; Kaya-1 malzeme ocağı 1,75 ha, Kaya-2 malzeme ocağı 3,35 ha, Kaya-3 malzeme ocağı 0,91 ha, F-Kum-Çakıl malzeme ocağı 2,62 ha, G-Kum-Çakıl malzeme o…"
+          },
+          {
+            "page": 32,
+            "match": "3,35 ha",
+            "snippet": "…PORU - 2 - Proje kapsamında işletilmesi planlanan ocaklardan; Kaya-1 malzeme ocağı 1,75 ha, Kaya-2 malzeme ocağı 3,35 ha, Kaya-3 malzeme ocağı 0,91 ha, F-Kum-Çakıl malzeme ocağı 2,62 ha, G-Kum-Çakıl malzeme ocağı 1,04 ha, H-Kum-Çakıl malze…"
+          }
+        ]
+      },
+      "water_and_discharge": {
+        "label": "Water Use, Hydrogeology & Discharge",
+        "page_count": 169,
+        "pages": [
+          2,
+          9,
+          10,
+          11,
+          30,
+          32,
+          37,
+          40,
+          71,
+          72,
+          127,
+          128,
+          129,
+          132,
+          133,
+          134,
+          135,
+          137,
+          138,
+          139,
+          140,
+          141,
+          142,
+          143,
+          145
+        ],
+        "samples": [
+          {
+            "page": 2,
+            "match": "100 m3/saat",
+            "snippet": "…i Projeler Listesi, Madde 18 – Çimento bazlı yapı elemanları ve/veya hazır beton tesisleri; b) Üretim kapasitesi 100 m3/saat veya üzerinde olan hazır beton tesisleri, Madde 45 – Madencilik Projeleri;"
+          },
+          {
+            "page": 9,
+            "match": "yeraltı suyu",
+            "snippet": "…rem, heyelan, çığ, sel, kaya düşmesi vb. oluşumlar halinde alınacak önlemler; yüzeysel (kuru dere yatakları dahil) ve yeraltı suyu kaynaklarının etkilenme durumları ve alınacak önlemler; ..............................................................…"
+          },
+          {
+            "page": 10,
+            "match": "yeraltı suyu",
+            "snippet": "…................................................ - 339 - III.1.9. Arazi hazırlama, inşaat ve tesis işlemleri süresince yeraltı suyu kaynakları, su sondaj kuyuları, çeşme, kaptaj vb. yapılara etkiler, alınacak önlemler,.............. - 350 - III.1.10…"
+          },
+          {
+            "page": 11,
+            "match": "deşarj",
+            "snippet": "…m amaçlarına göre miktarlarının ayrı ayrı belirtilmesi; oluşacak atık suların cins ve miktarları, bertaraf yöntemleri, deşarj edileceği ortamlar, olası çevresel etkileri ile birlikte kümülatif etkilerin belirlenmesi, olabilecek olumsuz etkiler…"
+          },
+          {
+            "page": 30,
+            "match": "Yeraltı Suyu",
+            "snippet": "…itkileri Veri Servisi T.C. : Türkiye Cumhuriyeti VASKİ : Van Su ve Kanalizasyon İdaresi Genel Müdürlüğü YAS : Yeraltı Suyu"
+          },
+          {
+            "page": 32,
+            "match": "100 m3/saat",
+            "snippet": "…ntrali ÇED Yönetmeliği EK I “Madde 14-Hidroelektrik enerji santraller”, kapsamında yer almaktadır. Proje kapsamında 100 m3/saat kapasiteli beton santrali işletilmesi planlanmakta olup, Beton santralleri ÇED Yönetmeliği EK II “Madde 18 (b)- Üretim…"
+          },
+          {
+            "page": 37,
+            "match": "0,67 l/s",
+            "snippet": "…: 3049 ha Toplam Sulama Alanı (Net) : 2744 ha Sulama Suyu İhtiyacı : 4235,33 m3/ha/yıl Sulama Modülü : 0,67 l/s/ha Ana Boru Başlangıç Debisi : 2,49 m3/s Ana Boru Uzunluğu : 15 960 m Ana Boru Başlangıç Çapı : 2000 mm…"
+          },
+          {
+            "page": 40,
+            "match": "100 m3/saat",
+            "snippet": "…a Hazır Beton Santrali Tesisi işletilmesi planlanmaktadır. Proje kapsamında Hazır Beton Santrali Tesisinin kapasitesi 100 m3/saat olarak planlanmaktadır. Beton Santralinde çimento, beton agrega malzemesi, varsa beton katkı maddesi ve su belirli…"
+          }
+        ]
+      },
+      "protected_land_and_olive": {
+        "label": "Protected Zones, Forests & Olive Groves",
+        "page_count": 46,
+        "pages": [
+          6,
+          7,
+          32,
+          41,
+          85,
+          132,
+          147,
+          156,
+          172,
+          213,
+          214,
+          218,
+          220,
+          221,
+          222,
+          223,
+          224,
+          230,
+          231,
+          232,
+          259,
+          373,
+          376,
+          424,
+          463
+        ],
+        "samples": [
+          {
+            "page": 6,
+            "match": "orman alanı",
+            "snippet": "…isindeki yeri ve değeri, etki alanı içinde hayvancılık, balıkçılık, arıcılık vs.), . - 121 - II.2.10. Orman alanları (orman alanı miktarı -m2-), meşçere tipi, kapalılığı, mevcut ve planlanan koruma ve/veya kullanım amaçları, proje sahasının işaretl…"
+          },
+          {
+            "page": 7,
+            "match": "doğal sit",
+            "snippet": "…R BETON SANTRALİ PROJESİ ÇED RAPORU iv hayatı koruma alanları, biyogenetik rezerv alanları, biyosfer rezervleri, doğal sit ve anıtlar, arkeolojik, tarihi, kültürel sitler, özel çevre koruma bölgeleri, özel koruma alanları, turizm alan ve me…"
+          },
+          {
+            "page": 7,
+            "match": "özel çevre koruma",
+            "snippet": "…alanları, biyogenetik rezerv alanları, biyosfer rezervleri, doğal sit ve anıtlar, arkeolojik, tarihi, kültürel sitler, özel çevre koruma bölgeleri, özel koruma alanları, turizm alan ve merkezleri, Mera Kanunu kapsamındaki vb. alanlar, hassasiyet derecesi…"
+          },
+          {
+            "page": 32,
+            "match": "Arkeolojik Sit",
+            "snippet": "…68.01.07-7057704 sayılı görüşü doğrultusunda değerlendirilmiştir. Söz konusu görüşte, alanın Demircik Kalesi 1. Derece Arkeolojik Sit Alanı ile çakıştığının belirtilmesi üzerine, kültürel mirasın korunması amacıyla E Geçirimsiz Malzeme Alanı proje kap…"
+          },
+          {
+            "page": 41,
+            "match": "Mera Alanı",
+            "snippet": "…j” olarak işlenmiştir. Proje kapsamında işletilecek ocaklar Çevre Düzeni Planında ağırlıklı olarak “Tarım Alanı, Çayır-Mera Alanı” içerisinde yer almaktadır. Proje alanının işaretlendiği Çevre Düzeni Planı EK-2.4’te verilmektedir. Proje kapsamında…"
+          },
+          {
+            "page": 85,
+            "match": "mutlak tarım",
+            "snippet": "…da Van İl Tarım ve Orman Müdürlüğünden gerekli izinler alınacaktır. Alandaki her nitelikteki tarım arazisi (sulu mutlak tarım, kuru mutlak tarım, sulu marjinal tarım, kuru marjinal tarım, özel ürün, örtü altı tarımı ve dikili tarım arazileri) i…"
+          },
+          {
+            "page": 132,
+            "match": "sulak alan",
+            "snippet": "…hip olduğu ekolojik ve hidrolojik özellikler nedeniyle koruma statüsü altına alınmış olup, bölgesel ölçekte önemli bir sulak alan niteliği taşımaktadır (Resmî Gazete, 2021). Bu durum, gölün yalnızca hidrolojik açıdan değil, aynı zamanda çevresel v…"
+          },
+          {
+            "page": 147,
+            "match": "sulak alan",
+            "snippet": "…yüzey suyu Aptalağa Deresi ve Sarıgöl Çayı yer almaktadır. Göller Değerlendirme sahası içerisinde herhangi bir sulak alan ve ya doğal bir göl bulunmamaktadır."
+          }
+        ]
+      },
+      "ecology_and_baseline": {
+        "label": "Flora, Fauna & Baseline Methodology",
+        "page_count": 136,
+        "pages": [
+          6,
+          24,
+          29,
+          129,
+          148,
+          157,
+          158,
+          159,
+          163,
+          165,
+          166,
+          167,
+          168,
+          169,
+          171,
+          172,
+          173,
+          174,
+          175,
+          176,
+          177,
+          178,
+          179,
+          180,
+          185
+        ],
+        "samples": [
+          {
+            "page": 6,
+            "match": "Flora ve Fauna",
+            "snippet": "…..................................................................................................... - 126 - II.2.11. Flora ve Fauna (türlerin belirlenmesi; belirlenen türlerin tehlike kategorileri, endemiklik durumları, nispi bolluk dereceleri, Ulusl…"
+          },
+          {
+            "page": 6,
+            "match": "Bern Sözleşmesi",
+            "snippet": "…i; belirlenen türlerin tehlike kategorileri, endemiklik durumları, nispi bolluk dereceleri, Uluslararası anlaşmalarla (Bern Sözleşmesi vb.) koruma altına alınan türler; nadir ve nesli tehlikeye düşmüş türler ve bunların yaşama ortamları, av hayvanları,…"
+          },
+          {
+            "page": 24,
+            "match": "Mevsimsel",
+            "snippet": "…............................................. - 160 - Şekil 78. Proje Alanı ve Yakın Çevresinde Tespit Edilen Kuşların Mevsimsel Statülerinin Dağılımı Grafiği ........................................................................................…"
+          },
+          {
+            "page": 24,
+            "match": "Örnekleme",
+            "snippet": "…lanlar Haritası .............................................................................. - 199 - Şekil 89. Balık Örnekleme Çalışmalarında Kullanılan Samus 725 MP Model Elektroşoker . .........................................................…"
+          },
+          {
+            "page": 29,
+            "match": "BİYOÇEŞİTLİLİK",
+            "snippet": "…GÖRÜŞÜ EK-4.6: MADEN TETKİK VE ARAMA GENEL MÜDÜRLÜĞÜ GÖRÜŞÜ EK-4.7: KARAYOLLARI 11. BÖLGE MÜDÜRLÜĞÜ GÖRÜŞÜ EK-4.8: BİYOÇEŞİTLİLİK RAPORU EK-5. YETKİ BELGESİ EK-6. FAALİYET ALANINDA YETKİLİ MÜŞAVİR FİRMA TARAFINDAN YER İNCELEMESİ YAPIL…"
+          },
+          {
+            "page": 129,
+            "match": "mevsimsel",
+            "snippet": "…enine yönlenmiş durumdadır. Yapılan incelemelerde, özellikle havzanın üst kesimlerinde ve yamaç bölgelerinde süreksiz (mevsimsel) akış gösteren çok sayıda tali dere bulunduğu gözlenmektedir. Ayrıca, dere yataklarının bazı kesimlerinde yüzey akı…"
+          },
+          {
+            "page": 148,
+            "match": "mevsimsel",
+            "snippet": "…. Bu kaynakların önemli bir kısmı Harita Genel Müdürlüğü’nün topoğrafik haritalarından tespit edilmiş olup, bir kısmı mevsimsel, bir kısmı ise sürekli akış halinde küçük kaynaklar olup, Aptalağa Deresi ve Sarıgöl Çayı’na karışmaktadır. Söz konusu…"
+          },
+          {
+            "page": 157,
+            "match": "Flora ve Fauna",
+            "snippet": "…LAMASI, MALZEME OCAKLARI, KIRMA-YIKAMA-ELEME TESİSİ VE HAZIR BETON SANTRALİ PROJESİ ÇED RAPORU - 127 - II.2.11. Flora ve Fauna (türlerin belirlenmesi; belirlenen türlerin tehlike kategorileri, endemiklik durumları, nispi bolluk dereceleri, Ulusl…"
+          }
+        ]
+      },
+      "pollutants_and_hazards": {
+        "label": "Emissions, Geochemistry & Waste",
+        "page_count": 192,
+        "pages": [
+          5,
+          7,
+          8,
+          9,
+          10,
+          11,
+          13,
+          14,
+          20,
+          40,
+          72,
+          73,
+          81,
+          109,
+          114,
+          120,
+          122,
+          124,
+          125,
+          150,
+          182,
+          211,
+          212,
+          216,
+          237
+        ],
+        "samples": [
+          {
+            "page": 5,
+            "match": "deprem",
+            "snippet": "…, çığ, su baskını vb.), duyarlılık analizi; heyelan yağış ilişkisi, yamaç stabilitesi, kayma analizi; depremsellik ve deprem riski; heyelan risk haritası, faaliyet alanını da içine alan büyük ölçekli diri fay haritası ile Türkiye Deprem Tehlik…"
+          },
+          {
+            "page": 7,
+            "match": "gürültü",
+            "snippet": "…................... - 220 - II.2.17. ÇED inceleme alanının ve etki alanının mevcut kirlilik yükü (hava, su, toprak ve gürültü açısından mevcut kirlilik yükünün belirlenmesi, bu çalışma yapılırken hangi tarihler arasında ne tür çalışmalar yapıld…"
+          },
+          {
+            "page": 8,
+            "match": "kümülatif",
+            "snippet": "…acmi; kazı fazlası malzeme ve bitkisel toprağın hangi amaçlar için kullanılacağı; olası çevresel etkiler ile birlikte kümülatif etkilerin belirlenmesi, olabilecek olumsuz etkilerinin azaltılması için alınacak önlemlerin açıklanması; düzenleme ve…"
+          },
+          {
+            "page": 9,
+            "match": "kümülatif",
+            "snippet": "…ıç ve nihai durumlarının imalat haritaları üzerinde gösterimi, olası etkilerin belirlenmesi, alıcı ortamla etkileşimi, kümülatif etkilerin belirlenmesi, çevreye olabilecek olumsuz etkilerinin azaltılması için alınacak önlemler, ..................…"
+          },
+          {
+            "page": 9,
+            "match": "deprem",
+            "snippet": "…işlemlerin nerelerde ve nasıl yapılacağı; zemin emniyetinin sağlanması ve su kaçağı olmaması için yapılacak işlemler; deprem, heyelan, çığ, sel, kaya düşmesi vb. oluşumlar halinde alınacak önlemler; yüzeysel (kuru dere yatakları dahil) ve yer…"
+          },
+          {
+            "page": 10,
+            "match": "kümülatif",
+            "snippet": "…ler nedeniyle bitki örtüsüne, tarım arazilerine, yerleşim yerlerine vb. etkileri, olası çevresel etkileri ile birlikte kümülatif etkilerin belirlenmesi, olabilecek olumsuz etkilerinin azaltılması için alınacak önlemlerin açıklanması (Hava Kalites…"
+          },
+          {
+            "page": 11,
+            "match": "kümülatif",
+            "snippet": "…e makinelerde kullanılacak yakıtların türleri, özellikleri, oluşacak emisyonlar; olası çevresel etkileri ile birlikte kümülatif etkilerin belirlenmesi, olabilecek olumsuz etkilerinin azaltılması için alınacak önlemlerin açıklanması, .............…"
+          },
+          {
+            "page": 13,
+            "match": "kümülatif",
+            "snippet": "…eya kurulması planlanan diğer projeler ile birlikte, ekosistem üzerindeki olası etkilerin (canlılar, hava, su, toprak) kümülatif olarak değerlendirilmesi, ............................................................................................…"
+          }
+        ]
+      },
+      "cost_and_capacity": {
+        "label": "Project Cost, Power & Capacity",
+        "page_count": 99,
+        "pages": [
+          2,
+          4,
+          9,
+          32,
+          34,
+          38,
+          39,
+          40,
+          71,
+          72,
+          73,
+          74,
+          75,
+          118,
+          137,
+          138,
+          151,
+          246,
+          255,
+          284,
+          288,
+          291,
+          292,
+          296,
+          297
+        ],
+        "samples": [
+          {
+            "page": 2,
+            "match": "PROJE BEDELİ",
+            "snippet": "…… m3) Abdalağa Barajı, HES ve Sulaması, Malzeme Ocakları, Kırma-Yıkama-Eleme Tesisi Ve Hazır Beton Santrali Projesi PROJE BEDELİ (TL) 1.656.000.000 TL PROJE İÇİN SEÇİLEN YERİN AÇIK ADRESİ (İLİ, İLÇESİ, MEVKİİ) Van İli, Çaldıran İlçesi, Kuskunk…"
+          },
+          {
+            "page": 2,
+            "match": "1.656.000.000 TL",
+            "snippet": "…rajı, HES ve Sulaması, Malzeme Ocakları, Kırma-Yıkama-Eleme Tesisi Ve Hazır Beton Santrali Projesi PROJE BEDELİ (TL) 1.656.000.000 TL PROJE İÇİN SEÇİLEN YERİN AÇIK ADRESİ (İLİ, İLÇESİ, MEVKİİ) Van İli, Çaldıran İlçesi, Kuskunkıran, Şehit Jandarma Bi…"
+          },
+          {
+            "page": 2,
+            "match": "kapasite",
+            "snippet": "…irmeye Tabi Projeler Listesi, Madde 18 – Çimento bazlı yapı elemanları ve/veya hazır beton tesisleri; b) Üretim kapasitesi 100 m3/saat veya üzerinde olan hazır beton tesisleri, Madde 45 – Madencilik Projeleri;"
+          },
+          {
+            "page": 4,
+            "match": "kapasite",
+            "snippet": "…e ocakları, kırma, yıkama, eleme tesisi, hazır beton santrali, depolama alanları, açılacak yollar- karakteristikleri, kapasiteleri, alan büyüklükleri, regülatör, santral binası verilerek varsa ÇED Yönetmeliği kapsamındaki verilen kararlar, görüş…"
+          },
+          {
+            "page": 9,
+            "match": "kapasite",
+            "snippet": "….................... - 320 - III.1.4.4 Kırma-Yıkama-Eleme tesisinin ve depolama alanlarının kapladığı alan büyüklüğü, kapasitesi, teknolojisi-işletme yöntemi, üretim miktarları (yıllık-aylık- günlük), çalışma süreleri (gün-ay-yıl), ulaşım güzergâ…"
+          },
+          {
+            "page": 32,
+            "match": "kapasite",
+            "snippet": "…önetmeliği EK I “Madde 14-Hidroelektrik enerji santraller”, kapsamında yer almaktadır. Proje kapsamında 100 m3/saat kapasiteli beton santrali işletilmesi planlanmakta olup, Beton santralleri ÇED Yönetmeliği EK II “Madde 18 (b)- Üretim kapasite…"
+          },
+          {
+            "page": 32,
+            "match": "249.600 ton/yıl",
+            "snippet": "…Üretim kapasitesi 100 m3/saat veya üzerinde olan hazır beton tesisleri” kapsamında yer almaktadır. Proje kapsamında 249.600 ton/yıl kapasiteli Kırma-Yıkama-Eleme Tesisi işletilmesi planlanmakta olup, Kırma-Yıkama-Eleme Tesisi ÇED Yönetmeliği EK II “…"
+          },
+          {
+            "page": 34,
+            "match": "kapasite",
+            "snippet": "…e ocakları, kırma, yıkama, eleme tesisi, hazır beton santrali, depolama alanları, açılacak yollar- karakteristikleri, kapasiteleri, alan büyüklükleri, regülatör, santral binası verilerek varsa ÇED Yönetmeliği kapsamındaki verilen kararlar, görüş…"
+          }
+        ]
+      }
+    },
+    "audit_checks": {
+      "mentions_field_survey": true,
+      "mentions_literature_only_cue": true,
+      "mentions_seasonal_sampling": true,
+      "mentions_cumulative_impact": true,
+      "mentions_olive_law_3573": true,
+      "mentions_groundwater_or_aquifer": true,
+      "mentions_iucn_or_endemic": true
+    }
+  },
+  "llm_synthesis": {
+    "model": "gemini-4-hydrogen",
+    "generated_at": "2026-11-20T11:06:34",
+    "pages_sent": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      24,
+      28,
+      29,
+      30,
+      32,
+      34,
+      35,
+      41,
+      129,
+      608,
+      609,
+      1437,
+      1438,
+      1443,
+      1444
+    ],
+    "usage": {
+      "prompt_tokens": 22551,
+      "output_tokens": 3641,
+      "thoughts_tokens": 9215,
+      "total_tokens": 35407
+    },
+    "result": {
+      "executive_summary_tr": "DSİ 17. Bölge Müdürlüğü tarafından Van ili, Çaldıran ilçesi sınırları içerisinde Abdalağa Deresi üzerinde Abdalağa Barajı, HES ve Sulaması ile proje inşaatına yönelik 7 adet malzeme ocağı (toplam 20,85 ha), 249.600 ton/yıl kapasiteli kırma-yıkama-eleme tesisi ve 100 m³/saat kapasiteli hazır beton santrali kurulması planlanmaktadır. Talvegden 70,30 m yüksekliğinde asfalt çekirdekli kaya dolgu gövde olarak tasarlanan baraj ile net 2.744 ha (brüt 3.049 ha) tarım arazisinin borulu sistemle sulanması ve 2,0 MWe kurulu güce sahip HES ile yıllık ortalama 6,16 GWh enerji üretilmesi hedeflenmektedir. Başlıca çevresel hassasiyetler; Karasu Deresi ve Bendimahi Çayı üzerinden Van Gölü kapalı havzasına ulaşan yüzey-yeraltı suyu sisteminin akım ve su bütçesi dengesi, Çevre Düzeni Planı'nda ağırlıklı olarak tarım ve çayır-mera alanlarında kalan ocak sahalarının arazi kullanımı ile çevredeki doğal ve arkeolojik sit alanlarıyla etkileşimlerdir.",
+      "executive_summary_en": "DSİ 17th Regional Directorate proposes the Abdalağa Dam, Hydroelectric Power Plant (2.0 MWe installed capacity, 6.16 GWh/yr average generation), and Irrigation project (2,744 ha net / 3,049 ha gross agricultural land) on Abdalağa Stream in Çaldıran district, Van Province, integrated with seven material quarries (20.85 ha total), a 249,600 t/yr crushing-washing-screening facility, and a 100 m³/hr ready-mix concrete plant. Designed as a rockfill dam with an asphalt core rising 70.30 m above the talweg, the project covers an 80.2 km² drainage area and plans to allocate 11.55 hm³/yr for irrigation. Key environmental stakes center on the hydrological balance of Abdalağa Stream—which connects via Karasu Stream and Bendimahi River to the closed Lake Van basin—land-use impacts on agricultural and pasture lands hosting the quarries, proximity to Çaldıran Plain Natural Sit and archaeological sites, and construction-phase dust and noise monitoring.",
+      "key_facts": [
+        {
+          "label": "Proje Bedeli",
+          "value": "1.656.000.000 TL",
+          "page": 2
+        },
+        {
+          "label": "Baraj Gövde Yüksekliği ve Kotları",
+          "value": "Talvegden 70,30 m yükseklik (talveg kotu 2.145,00 m, kret kotu 2.215,30 m, temel taban kotu 2.135,30 m), Asfalt Çekirdekli Kaya Dolgu",
+          "page": 35
+        },
+        {
+          "label": "Baraj Drenaj (Yağış) Alanı",
+          "value": "80,2 km²",
+          "page": 35
+        },
+        {
+          "label": "Yıllık Ortalama Akım (AGİ D25A044 Verisi)",
+          "value": "46,13 hm³ (en yüksek Nisan 10,93 hm³, en düşük Ekim 2,07 hm³)",
+          "page": 129
+        },
+        {
+          "label": "Sulamaya Verilecek Su Miktarı",
+          "value": "11,55 hm³/yıl",
+          "page": 35
+        },
+        {
+          "label": "Sulama Alanı Büyüklüğü",
+          "value": "3.049 ha brüt, 2.744 ha net tarım arazisi",
+          "page": 34
+        },
+        {
+          "label": "HES Kurulu Gücü ve Enerji Üretimi",
+          "value": "2,0 MWe / 2,0 MWm kurulu güç; yıllık ortalama 6,16 GWh",
+          "page": 35
+        },
+        {
+          "label": "Toplam Malzeme Ocağı Alanı",
+          "value": "20,85 ha (3 kaya, 3 kum-çakıl ve 1 geçirimsiz malzeme ocağı toplamı)",
+          "page": 32
+        },
+        {
+          "label": "Kırma-Yıkama-Eleme Tesisi Kapasitesi",
+          "value": "249.600 ton/yıl",
+          "page": 32
+        },
+        {
+          "label": "Hazır Beton Santrali Kapasitesi",
+          "value": "100 m³/saat",
+          "page": 32
+        }
+      ],
+      "baseline_assessment": {
+        "field_survey_status": "mixed_or_unclear",
+        "seasonal_sampling_status": "unclear",
+        "cumulative_impact_status": "omitted_or_not_found",
+        "olive_and_protected_status": "Alıntılanan sayfalarda zeytinlik (3573 sayılı Kanun) varlığına ilişkin bir bilgi yer almamaktadır; proje Van ili Çaldıran ilçesinde 2.145,00 m talveg kotunda planlanmaktadır [s. 35]. ÇED sürecinin başında planlanan E Geçirimsiz Malzeme Ocağı, Van Kültür Varlıklarını Koruma Bölge Kurulu görüşü doğrultusunda Demircik Kalesi 1. Derece Arkeolojik Sit Alanı ile çakıştığı için proje kapsamından çıkarılmıştır [s. 32]. Şekiller Dizini'nde Çaldıran Ovası Doğal Sit Alanı (Şekil 84-85), Arkeolojik Sit Alanları (Şekil 83, 86) ve Korunan Alanlar Haritası (Şekil 88) bulunduğu görülmekte, ancak bu değerlendirme sayfaları (Bölüm II.2.12) alıntılarda yer almamaktadır [s. 7, 24]. Malzeme ocakları 1/100.000 Ölçekli Çevre Düzeni Planı'nda ağırlıklı olarak Tarım Alanı ve Çayır-Mera Alanı içinde kalmaktadır; proje alanının Büyük Ova'da kalmadığı belirtilmekle birlikte olası tarım arazilerinin Büyük Ova Koruma Alanları içinde kalması durumunda 5403 sayılı Kanun m. 14 kapsamında kamu yararı kararı alınacağı ifade edilmektedir [s. 41]. Orman alanları ve sulak alan statülerine ilişkin Bölüm II.2.10 ile Tabiat Varlıklarını Koruma Genel Müdürlüğü görüşü (EK-4.4) alıntılar dışındadır [s. 6, 29]; ancak Abdalağa Deresi'nin Karasu Deresi ve Bendimahi Çayı aracılığıyla Van Gölü'ne ulaştığı belirtilmektedir [s. 129].",
+        "explanation": "İçindekiler, Şekiller Dizini ve Ekler Listesi'nde yaban hayatı arazi çalışmaları (Şekil 77), elektroşoker ile balık örneklemesi (Şekil 89), kuşların mevsimsel statü grafiği (Şekil 78), Biyoçeşitlilik Raporu (EK-4.8) ve yer incelemesi tutanağına (EK-6) atıf yapılması, arazi incelemelerinin rapor kapsamında ele alındığını göstermektedir [s. 6, 24, 29]. Bununla birlikte flora-fauna, sucul canlılar, su kalitesi ve kirlilik yükü bölümleri (II.2.7, II.2.11, II.2.13, II.2.17) incelemeye sunulan alıntılar arasında yer almadığından, proje öncesi çok mevsimli örnekleme yapılıp yapılmadığı ve vejetasyon dönemi tarihleri doğrulanamamaktadır [s. 6, 7]. Alıntılarda yalnızca hidrolojik akım istasyonu aylık verileri (Nisan 10,93 hm³ - Ekim 2,07 hm³) [s. 129] ile onay sonrası inşaat dönemine yönelik Çevre İzleme Planı taahhütleri [s. 609] görülmektedir. Kümülatif etki değerlendirmelerini içeren Bölüm II.1.3 ve Bölüm III alt başlıkları da alıntılar dışında kaldığından bölgesel kümülatif etki analizi incelenememiştir [s. 5, 8, 9, 10, 11]."
+      },
+      "red_flags": [
+        {
+          "severity": "high",
+          "title": "Malzeme Ocaklarının EK-1 ve EK-2 Sınıflandırmasında Çelişki",
+          "detail": "Raporun künye tablosunda proje kapsamındaki açık işletme madencilik faaliyetleri ÇED Yönetmeliği EK-1 Madde 25(a) (kazı ve döküm alanı dahil 25 hektar ve üzeri) kapsamında gösterilirken, Teknik Olmayan Özet bölümünde 7 ocağın toplam alanının 20,85 ha (25 hektarın altında) olduğu belirtilerek malzeme sahaları EK-2 Madde 45(a) kapsamında değerlendirilmiştir. E Geçirimsiz Malzeme Ocağı'nın çıkarılması veya kazı-döküm alanlarının dahil edilip edilmemesi nedeniyle EK-1/EK-2 eşik sınıflandırmasında iç tutarsızlık bulunmaktadır.",
+          "pages": [
+            2,
+            32
+          ]
+        },
+        {
+          "severity": "medium",
+          "title": "Yıllık Ortalama Akım Verisinde Sayısal Farklılık ve Mansap Su Bütçesi Belirsizliği",
+          "detail": "Abdalağa Deresi'nin yıllık ortalama akım hacmi Bölüm I.1'deki karakteristikler tablosunda 45,81 hm³ olarak belirtilirken, Bölüm II.2.5'te D25A044 numaralı Akım Gözlem İstasyonu verilerine atıfla yaklaşık 46,13 hm³ olarak verilmiştir. Ayrıca derenin yeraltı suyu katkısıyla beslenen karma bir hidrolik yapı sergilediği ve Ekim ayında akımın 2,07 hm³ seviyesine düştüğü belirtilmesine karşın, 11,55 hm³/yıl sulama çekiminin Karasu Deresi–Bendimahi Çayı–Van Gölü kapalı havzası ekosistemine etkisi özet ve hidroloji giriş sayfalarında nicel olarak ortaya konulmamıştır.",
+          "pages": [
+            35,
+            129
+          ]
+        },
+        {
+          "severity": "medium",
+          "title": "Gürültü İzlemesinin Yalnızca Şikâyet Koşuluna Bağlanması",
+          "detail": "Tablo 163 Çevre İzleme Planı'nda inşaat aşaması hava kalitesi izlemesi için izleme sıklığı ve metodu yalnızca 'İnşaat faaliyetleri süresince' ifadesiyle genel bırakılmış, gürültü parametresinde ise düzenli periyodik ölçüm yerine 'Şikâyet durumunda. Arka Plan Gürültü ölçümleri yapılacaktır' hükmüne yer verilmiştir. Patlatma, kırma-eleme ve iş makinesi yoğunluğu içeren bir şantiyede şikâyet şartına bağlı izleme, sınır değer aşımlarının önlenmesinde yetersiz kalma riski taşımaktadır.",
+          "pages": [
+            609
+          ]
+        },
+        {
+          "severity": "medium",
+          "title": "Tarım ve Çayır-Mera Alanlarında Ocak Planlaması ve Büyük Ova Belirsizliği",
+          "detail": "Malzeme ocaklarının 1/100.000 Ölçekli Çevre Düzeni Planı'nda ağırlıklı olarak 'Tarım Alanı, Çayır-Mera Alanı' içinde yer aldığı belirtilmiştir. Aynı bölümde önce proje alanının büyük ovada kalmadığı ifade edilmiş, ancak hemen ardından 'olası tarım arazilerinin... Büyük Ova Koruma Alanları içerisinde kalması durumunda' 5403 sayılı Kanun m. 14 gereği kamu yararı kararı alınacağı belirtilerek alanın koruma statüsü kesinleştirilmeden süreç sonraya bırakılmıştır.",
+          "pages": [
+            41
+          ]
+        },
+        {
+          "severity": "low",
+          "title": "Rapor Aşaması İbaresi ve Künye Bilgisi Tutarsızlığı",
+          "detail": "Bakanlık duyurusunda projenin ÇED Yönetmeliği 11. maddesi kapsamında İDK sürecinin yeni başladığı ve 11/12/2026 tarihinde İDK toplantısı yapılacağı bildirilmesine karşın, rapor kapağında 'SON ŞEKLİ VERİLEN ÇED RAPORU' ve 'NİHAİ ÇED RAPORU' ibareleri yer almaktadır. Ayrıca sayfa 3'teki künyede raporu hazırlayan çalışma grubunun/kuruluşun adı kısmı boş bırakılmış, yalnızca adres ve e-posta adresi yazılmıştır.",
+          "pages": [
+            1,
+            3
+          ]
+        }
+      ],
+      "hkt_and_petition_questions": [
+        {
+          "question_tr": "Proje künyesinde madencilik faaliyetleri EK-1 Madde 25(a) (25 ha ve üzeri) kapsamında gösterilirken sayfa 32'de toplam ocak alanının 20,85 ha olduğu belirtilerek EK-2 Madde 45(a) kapsamında değerlendirilmesinin gerekçesi nedir; kazı fazlası depolama alanı ve döküm sahaları eklendiğinde toplam açık işletme alanı 25 hektarı aşmakta mıdır?",
+          "pages": [
+            2,
+            32
+          ]
+        },
+        {
+          "question_tr": "Abdalağa Deresi yıllık ortalama akım hacminin karakteristikler tablosunda 45,81 hm³, Bölüm II.2.5'te ise 46,13 hm³ olarak verilmesinin nedeni nedir ve Ekim ayı gibi düşük akım dönemlerinde (2,07 hm³) sulama için 11,55 hm³/yıl su tutulmasının Karasu Deresi, Bendimahi Çayı ve Van Gölü kapalı havzası ekolojik su ihtiyacına etkisi nasıl dengelenecektir?",
+          "pages": [
+            35,
+            129
+          ]
+        },
+        {
+          "question_tr": "Şekiller Dizini'nde görülen Çaldıran Ovası Doğal Sit Alanı (Şekil 84-85), çevre arkeolojik sit alanları (Şekil 83, 86) ve Sicil: 202100002 (ER: 3194590) sayılı IV. Grup maden arama ruhsat sahası ile girişimli bölümün (Şekil 91) baraj, sulama şebekesi ve malzeme ocakları üzerindeki kısıtları ve ilgili kurum görüşleri nelerdir?",
+          "pages": [
+            24,
+            32
+          ]
+        },
+        {
+          "question_tr": "Hava kalitesi mevcut kirlilik yükü değerlendirmesinde Ağrı Doğubeyazıt İstasyonu verilerinin (Şekil 92) 2.145 m rakımlı Çaldıran havzasını hangi meteorolojik gerekçelerle temsil ettiği kabul edilmiştir ve Tablo 163'teki gürültü izlemesi neden periyodik ölçümler yerine yalnızca 'şikâyet durumunda' yapılacak şekilde planlanmıştır?",
+          "pages": [
+            24,
+            35,
+            609
+          ]
+        },
+        {
+          "question_tr": "1/100.000 Ölçekli Çevre Düzeni Planı'nda ağırlıklı olarak 'Tarım Alanı, Çayır-Mera Alanı'nda yer alan malzeme ocakları için 4342 sayılı Mera Kanunu ve 5403 sayılı Toprak Koruma ve Arazi Kullanımı Kanunu kapsamındaki vasıf değişikliği/tarım dışı kullanım izinleri ile Büyük Ova Koruma Alanı çakışma analizleri kesin olarak tamamlanmış mıdır?",
+          "pages": [
+            41
+          ]
+        }
+      ],
+      "data_limitations": "Toplam 1.471 sayfadan oluşan ÇED Raporu'nun (1.388 metin çıkarılabilir sayfa, 83 taranmış/görüntü sayfası) yalnızca 26 alıntılanmış sayfası incelenebilmiştir. Flora-fauna ve sucul canlılar bölümleri (II.2.11, II.2.13), korunan alanlar (II.2.12), hidrojeoloji ve su kalitesi analizleri (II.2.6, II.2.7), kümülatif etki değerlendirmeleri (II.1.3 ve Bölüm III), Biyoçeşitlilik Raporu (EK-4.8), kurum görüşleri (EK-4), Hava Kalitesi Dağılım Modeli (EK-7), Akustik Rapor (EK-9) ve Çevresel ve Sosyal Yönetim Planı tablosu (Tablo 1) alıntılar dışında kaldığından bu bölümlerdeki arazi örnekleme tarihleri, sayısal model çıktıları ve resmi izin belgeleri doğrulanamamıştır."
+    }
+  }
+}

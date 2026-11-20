@@ -1,0 +1,295 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>e-ÇED Ön Özet #54371 — BİLECİK / SÖĞÜT</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <style>
+:root {
+  --bg: #0f1216;
+  --surface: #171c22;
+  --border: #262e38;
+  --text: #e6edf3;
+  --muted: #8b949e;
+  --accent: #58a6ff;
+  --red: #f85149;
+  --amber: #d29922;
+  --green: #3fb950;
+  --badge-bg: #212830;
+}
+@media (prefers-color-scheme: light) {
+  :root {
+    --bg: #f6f8fa;
+    --surface: #ffffff;
+    --border: #d0d7de;
+    --text: #1f2328;
+    --muted: #656d76;
+    --accent: #0969da;
+    --red: #cf222e;
+    --amber: #9a6700;
+    --green: #1a7f37;
+    --badge-bg: #eef2f6;
+  }
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+}
+.wrap { max-width: 1240px; margin: 0 auto; padding: 24px 18px 64px; }
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+header { border-bottom: 1px solid var(--border); padding-bottom: 16px; margin-bottom: 20px; }
+h1 { margin: 0 0 6px; font-size: 1.55rem; }
+h2 { margin: 26px 0 10px; font-size: 1.2rem; }
+h3 { margin: 16px 0 8px; font-size: 1rem; }
+.sub { color: var(--muted); font-size: 0.92rem; margin: 0; }
+.meta-bar { display: flex; flex-wrap: wrap; gap: 14px; margin-top: 12px; font-size: 0.85rem; color: var(--muted); }
+.stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 10px; margin: 16px 0 18px; }
+.stat { background: var(--surface); border: 1px solid var(--border); border-radius: 8px; padding: 12px 14px; }
+.stat .num { font-size: 1.45rem; font-weight: 700; }
+.stat .lbl { font-size: 0.78rem; color: var(--muted); }
+.map-box {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 18px;
+}
+#map { width: 100%; height: 420px; background: var(--badge-bg); }
+#digest-map { width: 100%; height: 320px; background: var(--badge-bg); }
+.map-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  padding: 9px 14px;
+  font-size: 0.8rem;
+  color: var(--muted);
+  border-top: 1px solid var(--border);
+}
+.dot { display: inline-block; width: 10px; height: 10px; border-radius: 50%; margin-right: 5px; vertical-align: middle; }
+.controls { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; margin-bottom: 16px; }
+input[type="search"], select.filter-select {
+  padding: 8px 12px;
+  border-radius: 6px;
+  border: 1px solid var(--border);
+  background: var(--surface);
+  color: var(--text);
+  font-size: 0.9rem;
+}
+input[type="search"] { flex: 1 1 240px; }
+select.filter-select { min-width: 170px; }
+button.pill {
+  padding: 7px 12px;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: var(--surface);
+  color: var(--text);
+  cursor: pointer;
+  font-size: 0.82rem;
+}
+button.pill.active { background: var(--accent); border-color: var(--accent); color: #fff; font-weight: 600; }
+.cards { display: flex; flex-direction: column; gap: 10px; }
+.card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 15px 17px;
+}
+.card.ek1 { border-left: 4px solid var(--accent); }
+.row-top { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px; align-items: baseline; }
+.title { font-weight: 600; font-size: 0.98rem; }
+.badges { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 7px; }
+.badge {
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  background: var(--badge-bg);
+  border: 1px solid var(--border);
+}
+.badge.urgent { border-color: var(--red); color: var(--red); font-weight: 600; }
+.badge.warn { border-color: var(--amber); color: var(--amber); font-weight: 600; }
+.badge.ok { border-color: var(--green); color: var(--green); }
+.badge.muted { color: var(--muted); }
+.detail { font-size: 0.87rem; color: var(--muted); margin: 8px 0; }
+.actions { display: flex; flex-wrap: wrap; gap: 12px; font-size: 0.84rem; margin-top: 8px; }
+.notice {
+  margin-top: 28px;
+  padding: 14px 16px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  font-size: 0.84rem;
+  color: var(--muted);
+}
+table.kv { width: 100%; border-collapse: collapse; margin: 12px 0; font-size: 0.9rem; }
+table.kv th, table.kv td { border: 1px solid var(--border); padding: 8px 11px; text-align: left; vertical-align: top; }
+table.kv th { width: 240px; background: var(--badge-bg); }
+code { background: var(--badge-bg); padding: 1px 5px; border-radius: 4px; font-size: 0.85em; }
+blockquote { margin: 10px 0; padding: 11px 15px; border-left: 3px solid var(--accent); background: var(--surface); font-size: 0.9rem; }
+.hit { margin: 7px 0; font-size: 0.88rem; }
+.pno { font-weight: 700; color: var(--accent); }
+.leaflet-popup-content { color: #1f2328; font-size: 0.85rem; line-height: 1.45; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div style="font-size:0.85rem;margin-bottom:8px;"><a href="../index.html">← Türkiye e-ÇED İzleme listesine dön</a> · <a href="../rehber.html">Kullanım ve İnceleme Rehberi</a> · <a href="54371.md">Ham Markdown (.md)</a></div>
+    <h1>e-ÇED Ön Özet #54371 — BİLECİK / SÖĞÜT</h1>
+    <p class="sub">Üyük Depolamalı Rüzgar Enerji Santrali (4 Adet Türbin, 30 MWm/30MWe, EDT 30 MWe/30 MWh)</p>
+    <div class="badges" style="margin-top:10px;">
+      <span class="badge">Nihai Karar</span>
+      <span class="badge">Ek-1</span>
+      <span class="badge urgent">10 Günlük Askı · 3 gün kaldı (2026-11-23)</span>
+    </div>
+  </header>
+
+  <table class="kv">
+    <tr><th>Proje Sahibi</th><td>AYGÜNGES ELEKTRİK ÜRETİM A. Ş.</td></tr>
+    <tr><th>Hazırlayan Kuruluş</th><td>PPM KİR.ÖNL.VE YÖN. DAN. MÜH. İNŞ. TAAH. SAN.VE.TİC. LTD.ŞTİ.</td></tr>
+    <tr><th>Sektör / Alt Sektör</th><td>Enerji / Rüzgar Enerji Santralleri</td></tr>
+    <tr><th>Duyuru Tarihi</th><td><code>13.11.2026</code> (belge yükleme tarihi: <code>13/01/2025 01:12:07</code>)</td></tr>
+    <tr><th>PDF Kapsamı</th><td>296.34 MB · 914 sayfa (841 metin sayfası / 73 taranmış veya görüntü sayfası) · SHA-256 <code>d8c203164d98cbd8…</code></td></tr>
+    <tr><th>Resmi Bağlantılar</th><td><a href="http://eced.csb.gov.tr/jsp/ek1/54371" target="_blank" rel="noopener">e-ÇED Portal Kaydı</a> · <a href="http://eced.csb.gov.tr/jsp/dosya/dosyaGoster.htm?tempAd=signature_file1970800552447241394.imz&amp;orjinalAd=54371_Son_Sekli_Verilen_Rapor.pdf&amp;yuklemeTarihi=2026-11-10" target="_blank" rel="noopener">Resmi PDF Dosyası</a> · <a href="https://www.openstreetmap.org/?mlat=39.95815&amp;mlon=30.21003#map=12/39.95815/30.21003" target="_blank" rel="noopener">OpenStreetMap</a> · <a href="https://www.google.com/maps/search/?api=1&amp;query=39.95815,30.21003" target="_blank" rel="noopener">Google Haritalar</a></td></tr>
+  </table>
+
+  <h2>Konum Haritası</h2>
+  <div class="map-box">
+    <div id="digest-map"></div>
+    <div class="map-legend"><span>PDF metninden çıkarılan kesin proje koordinatları (80 nokta, datum: UTM-Z36/ED50, sayfa: s.39, s.40, s.384).</span></div>
+  </div>
+
+  
+  <h2>Yapay Zeka Destekli Bilimsel Ön Değerlendirme <span class="badge">gemini-4-hydrogen</span></h2>
+  <p class="sub">Bu değerlendirme, resmi PDF dosyasından seçilen 19 sayfa (s.1, s.2, s.3, s.4, s.5, s.6, s.7, s.8, s.10, s.11, s.14, s.15, s.18, s.20, s.29, s.60, s.61, s.101, s.106) esas alınarak hazırlanmıştır. Tüm sayısal verilerin ve tespitlerin resmi PDF belgesindeki ilgili <code>[s. N]</code> sayfalarından doğrulanması gerekir.</p>
+  <section class="card ek1">
+    <p><strong>Özet:</strong> AYGÜNGES Elektrik Üretim A.Ş. tarafından Bilecik İli, Söğüt İlçesi (Sırhoca, Gündüzbey, Savcıbey ve Hayriye köyleri) sınırları içinde 4 adet rüzgar türbini (toplam 30 MWm/30 MWe) ve 30 MWe/30 MWh kapasiteli lityum-iyon Elektrik Depolama Tesisi (EDT) kurulması planlanmaktadır [s. 1, s. 20]. Kasım 2026 tarihli Nihai ÇED Raporu kapsamında proje bedeli 390.000.000 TL, yıllık ortalama üretim 120.000.000 kWh ve yeni açılacak ulaşım yolu yaklaşık 2.450 m olarak belirtilmiştir [s. 1, s. 2, s. 20]. Çevre Düzeni Planı&#x27;na göre T1, T3, T4 türbinleri ile depolama ve şantiye alanları orman alanı; T2 türbini, EDT, şalt merkezi ve idari bina ise tarım arazisi lejantında kalmaktadır [s. 29]. İncelenen kurum görüşleri, ÇED sahasının IV. Grup altın-gümüş madeni ruhsat sahası ve köy içmesuyu/kanalizasyon hatları ile çakıştığını ortaya koyarken [s. 29], etki alanının 250 m gürültü sınırıyla tanımlanması [s. 60] ve mülkiyet tablosundaki eksiklikler [s. 61] başlıca teknik hususlar olarak öne çıkmaktadır.</p>
+    <details style="margin-top:8px;font-size:0.86rem;color:var(--muted);"><summary style="cursor:pointer;">İngilizce özet (English summary)</summary><p style="margin:6px 0 0;">AYGÜNGES Elektrik Üretim A.Ş. proposes the Üyük Storage-Integrated Wind Power Plant in Söğüt District, Bilecik Province (near Sırhoca, Gündüzbey, Savcıbey, and Hayriye villages), comprising four 7.5 MW turbines (30 MWm/30 MWe total) and a 30 MWe/30 MWh lithium-ion battery energy storage facility [s. 1, s. 20]. The November 2026 Final EIA Report estimates an investment cost of 390,000,000 TL, an average annual output of 120,000,000 kWh, and approximately 2,450 m of new access roads [s. 1, s. 2, s. 20]. According to the 1/100,000 Environmental Plan, turbines T1, T3, and T4 plus spoil and site areas lie on forest-designated land, whereas T2, the battery storage unit, substation, and administrative building lie on agricultural-designated land [s. 29]. Key environmental and planning stakes identified in the excerpts include overlap with a Group IV gold-silver mining license and village drinking water and sewage pipelines [s. 29], a project impact zone restricted to a 250 m construction-noise boundary [s. 60], and incomplete parcel/ownership records for several project units [s. 61].</p></details>
+    <div class="badges" style="margin-top:10px;">
+      <span class="badge">Saha çalışması: Karışık veya yöntemi belirsiz</span>
+      <span class="badge">Mevsimsel örnekleme: Belirsiz</span>
+      <span class="badge">Kümülatif etki: Eksik veya tespit edilemedi</span>
+    </div>
+    <p class="detail" style="margin-top:10px;"><strong>Zeytinlik ve Korunan Alanlar:</strong> Bilecik Valiliği İl Tarım ve Orman Müdürlüğü&#x27;nün 02.11.2026 tarihli kurum görüşüne göre ÇED alanı içerisinde 3573 sayılı Zeytinciliğin Islahı ve Yabanilerinin Aşılattırılması Hakkında Kanun kapsamına giren alan ve 1380 sayılı Su Ürünleri Kanunu kapsamında su ürünleri ihtisas alanı bulunmamaktadır [s. 106]. Çevre Düzeni Planı&#x27;nda T1, T3, T4 türbinleri ile depolama ve şantiye alanları orman alanı lejantında; T2, EDT, şalt merkezi ve idari bina tarım arazisi lejantında yer almaktadır [s. 29]. İl Tarım ve Orman Müdürlüğü, tarım arazileri için 5403 sayılı Kanun uyarınca tarım dışı kullanım izni ve 4342 sayılı Mera Kanunu kapsamına giren kamu orta malları tespiti halinde tahsis amacı değişikliği izni gerekeceğini bildirmiştir [s. 106]. Kültür varlıkları, SİT, ÖÇK ve sulak alanların durumunu içeren Bölüm II.2.9 ise verilen alıntılar dışındadır [s. 4].<br/>İçindekiler ve Ekler Listesi&#x27;nde 2025 İlkbahar ve 2025 Sonbahar Göç Dönemi Ornitolojik İzleme Çalışması (Ek VIII-3.14), Yarasa İzleme Raporu (Ek VIII-3.15) ve Ekosistem Değerlendirme Raporu (Ek VIII-3.16) ile fauna/flora tabloları başlık olarak yer almaktadır [s. 10, s. 11, s. 18]. Ancak bu raporların ve Bölüm II.2.10&#x27;un içerikleri verilen sayfa alıntılarında bulunmadığından, tamamlanmış saha örneklemesinin metodolojisi, gözlem çabası ve diğer taksonların mevsimsel kapsamı doğrulanamamıştır [s. 4, s. 18]. Sunulan mevcut çevresel özellik sayfalarında ise toprak özellikleri için literatür çalışması (Koca ve Menteşe, 2021) ve hayvancılık için TÜİK verileri kullanılmıştır [s. 101, s. 106]. Kümülatif etkiler açısından Bölüm IV (rapor s. 328) alıntılar dışında kaldığından [s. 8] değerlendirilememiş, Bölüm II.1.1&#x27;de ise saatlik toz emisyonunun 1 kg/saat altında kaldığı gerekçesiyle toz için kümülatif hesaplama yapılmadığı belirtilmiştir [s. 60].</p>
+  </section>
+  <h3>Öne Çıkan Sayısal Bulgular</h3><table class="kv"><tr><th>Kurulu Güç ve Türbin Sayısı</th><td>4 adet türbin (her biri 7,5 MWm / 7,5 MWe), toplam 30 MWm / 30 MWe <span class="pno">[s. 20]</span></td></tr>
+<tr><th>Elektrik Depolama Tesisi (EDT) Kapasitesi</th><td>30 MWe / 30 MWh (konteyner tipi lityum-iyon batarya) <span class="pno">[s. 20]</span></td></tr>
+<tr><th>Türbin Boyutları</th><td>110 m kule yüksekliği, 183,40 m rotor çapı <span class="pno">[s. 20]</span></td></tr>
+<tr><th>Öngörülen Yıllık Enerji Üretimi</th><td>Ortalama 120.000.000 kWh/yıl (Bozüyük TM OG barasına bağlantı) <span class="pno">[s. 20]</span></td></tr>
+<tr><th>Proje Bedeli</th><td>390.000.000 TL <span class="pno">[s. 2]</span></td></tr>
+<tr><th>Yeni Açılacak Ulaşım Yolu</th><td>Yaklaşık 2.450 m <span class="pno">[s. 20]</span></td></tr>
+<tr><th>En Yakın Konut Mesafesi</th><td>T2 türbinine 460 m (diğer üniteler 460 m - 990 m aralığında) <span class="pno">[s. 60]</span></td></tr>
+<tr><th>Belirlenen Etki Alanı Sınırı</th><td>250 m (inşaat gürültüsünün 65 dB(A) sınır değerinin altına indiği mesafe: 63,67 dBA) <span class="pno">[s. 60]</span></td></tr>
+<tr><th>İstihdam (İnşaat / İşletme)</th><td>İnşaat aşamasında 30 kişi, işletme aşamasında 5 kişi (7/24 vardiya) <span class="pno">[s. 20]</span></td></tr>
+<tr><th>Lisans ve Önlisans Süresi</th><td>Önlisans süresi 30 ay, lisans süresi 49 yıl <span class="pno">[s. 20]</span></td></tr></table>
+  <h3>Bilimsel ve Metodolojik Bulgular</h3><section class="card"><div class="hit"><span class="badge urgent">YÜKSEK</span> <strong>IV. Grup Altın-Gümüş Maden Ruhsat Sahasıyla Çakışma</strong> <span class="pno">[s. 29]</span> — Bilecik İl Özel İdaresi kurum görüşünde (84795 sayılı yazı), ÇED alanının Gübretaş Maden Yatırımları A.Ş.&#x27;ye ait (Sicil No: 82050, Erişim No: 3292773) IV. Grup altın-gümüş madeni işletme ocağı iş yeri açma ve çalışma ruhsat sahasıyla çakıştığı tespit edilmiş ve MAPEG görüşü alınması gerektiği belirtilmiştir. Sunulan alıntılarda bu çakışmanın nasıl çözümlendiğine ve eşzamanlı faaliyet risklerine dair veri bulunmamaktadır.</div>
+<div class="hit"><span class="badge urgent">YÜKSEK</span> <strong>Köy İçmesuyu ve Kanalizasyon Altyapısı ile Çakışma</strong> <span class="pno">[s. 29]</span> — Bilecik İl Özel İdaresi Su ve Kanal Hizmetleri Müdürlüğü görüşünde (84083 sayılı yazı), Hayriye ve Gündüzbey köylerine ait içmesuyu ve kanalizasyon hat ve tesislerinin ÇED sahasıyla çakıştığı, ayrıca Kızılsaray, Sırhoca, Savcıbey ve Gündüzbey köylerinin içmesuyu kaynaklarının bu bölgede yer aldığı bildirilmiştir. Raporda deplase ve koruma protokolü imzalanacağı taahhüt edilmiş ancak teknik önlemler ve deplase güzergahları detaylandırılmamıştır.</div>
+<div class="hit"><span class="badge urgent">YÜKSEK</span> <strong>Etki Alanının 250 m İnşaat Gürültüsü Mesafesiyle Sınırlandırılması</strong> <span class="pno">[s. 20, s. 60]</span> — Raporda toz emisyonunun 1 kg/saat altında kaldığı gerekçesiyle hava kalitesi dağılım modellemesi ve toz kümülatif etki hesaplaması yapılmamış, etki alanı yalnızca inşaat gürültüsünün 65 dB(A) sınır değerinin altına indiği 250 m mesafe esas alınarak belirlenmiştir. İşletme gürültüsü, 183,40 m rotor çaplı türbinlerin ekolojik/gölge etki alanı ve 30 MWh lityum-iyon EDT ünitesinin yangın/patlama risk zonu etki alanı tanımına dahil edilmemiştir.</div>
+<div class="hit"><span class="badge warn">ORTA</span> <strong>Mülkiyet Tablosunda Eksik Bilgiler ve Arazi Niteliği Çelişkisi</strong> <span class="pno">[s. 29, s. 61]</span> — Tablo 5&#x27;te yalnızca T1 (103 ada 1 parsel) ve T4 (118 ada 9 parsel) için ada/parsel ve &#x27;Tarla / Şahıs Mülkiyeti&#x27; bilgisi verilmiş; T2, T3, Şalt Merkezi, EDT, İdari Bina, Kazı Fazlası Malzeme Depolama Alanı, Bitkisel Toprak Depolama Alanı ve Şantiye Alanı için ada/parsel, nitelik ve mülkiyet sütunları boş (&#x27;-&#x27;) bırakılmıştır. Ayrıca Çevre Düzeni Planı&#x27;nda orman alanı lejantında kalan T1 ve T4 türbinleri Tablo 5&#x27;te tarla niteliğinde gösterilmiştir.</div>
+<div class="hit"><span class="badge warn">ORTA</span> <strong>Orman ve Tarım Arazisi Kullanımı ile İzinlerin Süreç Sonrasına Bırakılması</strong> <span class="pno">[s. 20, s. 29, s. 106]</span> — T1, T3, T4 türbinleri ile depolama ve şantiye alanları orman alanı lejantında; T2, EDT, şalt merkezi ve idari bina ise tarım arazisi lejantında kalmakta ve yaklaşık 2.450 m yeni yol açılması planlanmaktadır. 5403 sayılı Kanun kapsamındaki tarım dışı kullanım izni ile 4342 sayılı Mera Kanunu kapsamındaki olası tahsis amacı değişikliği işlemleri Nihai ÇED sonrası aşamalara bırakılmıştır.</div>
+<div class="hit"><span class="badge muted">DÜŞÜK</span> <strong>Proje Kapsamındaki Köy Adlarında Bölüm Bazlı Tutarsızlık</strong> <span class="pno">[s. 1, s. 2, s. 20, s. 60]</span> — Proje künyesi, kapak ve Teknik Olmayan Özet&#x27;te proje alanının &#x27;Sırhoca, Gündüzbey, Savcıbey ve Hayriye Köyü&#x27; sınırları içinde yer aldığı belirtilirken, Bölüm II.1.2&#x27;de yalnızca &#x27;Hayriye ve Gündüzbey köyleri sınırları içerisinde planlanmaktadır&#x27; ifadesine yer verilmiştir.</div></section>
+  <h3>HKT Tutanakları ve İdari Başvurular İçin Taslak Teknik Sorular</h3><ul><li>ÇED alanının Gübretaş Maden Yatırımları A.Ş.&#x27;ye ait Sicil No: 82050, Erişim No: 3292773 sayılı IV. Grup altın-gümüş madeni işletme ocağı ruhsat sahasıyla çakışması hakkında Maden ve Petrol İşleri Genel Müdürlüğü&#x27;nden (MAPEG) nihai görüş alınmış mıdır; her iki faaliyetin eşzamanlı yürütülmesi halinde ortaya çıkabilecek zemin stabilitesi, patlatma ve kümülatif etkiler nasıl değerlendirilmiştir? <span class="pno">[s. 29]</span></li>
+<li>Hayriye ve Gündüzbey köylerine ait içmesuyu ve kanalizasyon hatlarının ÇED sahasıyla çakışması ve Kızılsaray, Sırhoca, Savcıbey ile Gündüzbey köylerinin içmesuyu kaynaklarının bölgede bulunması karşısında, İl Özel İdaresi ile imzalanacak koruma ve deplase protokolünün teknik kapsamı nedir ve kazı/inşaat çalışmalarının içmesuyu kaynaklarına olası kirletici veya debi azaltıcı etkileri nasıl önlenecektir? <span class="pno">[s. 29]</span></li>
+<li>Tablo 5&#x27;te T2 ve T3 türbinleri ile Şalt Merkezi, EDT, İdari Bina, şantiye ve depolama alanlarının ada/parsel, arazi niteliği ve mülkiyet bilgilerinin boş bırakılmasının gerekçesi nedir; ayrıca 1/100.000 ölçekli Çevre Düzeni Planı&#x27;nda orman alanı lejantında görünen T1 ve T4 türbinlerinin Tablo 5&#x27;te neden &#x27;Tarla / Şahıs Mülkiyeti&#x27; olarak kayıtlı olduğu açıklanabilir mi? <span class="pno">[s. 29, s. 61]</span></li>
+<li>Proje etki alanının neden yalnızca inşaat aşaması gürültü sınırının (65 dB(A)) sağlandığı 250 m mesafe ile sınırlandırıldığı; 183,40 m rotor çaplı türbinlerin işletme gürültüsü, gölge/titreşim etkisi, kuş ve yarasa çarpışma zonu ile 30 MWh lityum-iyon EDT ünitesinin olası termal/yangın etki mesafelerinin etki alanı belirlemesine neden dahil edilmediği teknik olarak açıklanabilir mi? <span class="pno">[s. 20, s. 60]</span></li>
+<li>Yaklaşık 2.450 m yeni yol açılması ve türbin platformu/kazı çalışmaları planlanırken, toz emisyonunun 1 kg/saat altında kalacağı varsayımıyla hava kalitesi dağılım modellemesi ve toz için kümülatif etki hesaplaması yapılmamasının dayandığı kontrollü çalışma varsayımları saha koşullarında nasıl doğrulanacaktır? <span class="pno">[s. 20, s. 60]</span></li></ul>
+  <p class="sub"><em>İnceleme sınırları:</em> Toplam 914 sayfadan oluşan Nihai ÇED Raporu&#x27;nun (73 sayfası taranmış/görüntü formatında) yalnızca 19 sayfası [1, 2, 3, 4, 5, 6, 7, 8, 10, 11, 14, 15, 18, 20, 29, 60, 61, 101, 106] alıntı olarak sunulmuştur. Jeoloji ve doğal afetler (Bölüm II.2.2-II.2.3), hidroloji/hidrojeoloji (II.2.4), orman alanları (II.2.8), kültür varlıkları/koruma alanları (II.2.9), flora-fauna ve ornitoloji/yarasa bulguları (II.2.10), inşaat ve işletme aşaması etki hesaplamaları (Bölüm III), Kümülatif Çevresel Etki Değerlendirme (Bölüm IV, rapor s. 328), Çevre İzleme Planı (Bölüm V, rapor s. 331) ile Ek VIII-3.14 (2025 İlkbahar-Sonbahar Ornitolojik İzleme), Ek VIII-3.15 (Yarasa İzleme Raporu), Ek VIII-3.16 (Ekosistem Değerlendirme Raporu) ve kurum görüş yazılarının tam metinleri verilen alıntılar dışında kaldığından doğrudan doğrulanamamıştır.</p>
+
+
+  <h2>Resmi Duyuru Metni</h2>
+  <blockquote>BİLECİK ili SÖĞÜT,  ilcesinde BİLECİK İli SÖĞÜT,  ilcesinde AYGÜNGES ELEKTRİK ÜRETİM A. Ş. tarafından yapılması planlanan Üyük Depolamalı Rüzgar Enerji Santrali (4 Adet Türbin, 30 MWm/30MWe, EDT 30 MWe/30 MWh) projesi ile ilgili olarak hazırlanan ÇED Raporu , İnceleme ve Değerlendirme Komisyonu (İDK) tarafından incelenerek son şekli verilmiş olup, söz konusu rapor halkın görüş ve önerilerini almak üzere ÇED Yönetmeliği&#x27;nin 14.Maddesi (1) no&#x27;lu bendi kapsamında Bakanlıkta ve Çevre, Şehircilik ve İklim Değişikliği İl Müdürlüğü&#x27;nde on (10) takvim günü görüşe açılmıştır. Bakanlığa/Çevre, Şehircilik ve İklim Değişikliği İl Müdürlüğü&#x27;ne iletilen görüşler projeyle ilgili karar alma sürecinde dikkate alınacaktır. Görüş ve öneriler için bu süreç içerisinde Çevre, Şehircilik ve İklim Değişikliği Bakanlığı&#x27;na veya BİLECİK Çevre ve Şehircilik İl Müdürlüklerine müracaat edilebilir. İlgililere ve kamuoyuna duyurulur.</blockquote>
+
+  <h2>Otomatik Metin Taraması (Deterministik)</h2>
+  <table class="kv"><tr><th>Saha veya arazi çalışması ifadesi</th><td><span class="badge ok">Metinde yer almaktadır</span></td></tr>
+<tr><th>Literatür taraması ifadesi</th><td><span class="badge ok">Metinde yer almaktadır</span></td></tr>
+<tr><th>Mevsimsel örnekleme ifadesi</th><td><span class="badge ok">Metinde yer almaktadır</span></td></tr>
+<tr><th>Kümülatif etki değerlendirmesi ifadesi</th><td><span class="badge ok">Metinde yer almaktadır</span></td></tr>
+<tr><th>3573 sayılı Zeytincilik Kanunu veya zeytinlik ifadesi</th><td><span class="badge ok">Metinde yer almaktadır</span></td></tr>
+<tr><th>Yeraltı suyu, akifer veya hidrojeoloji ifadesi</th><td><span class="badge ok">Metinde yer almaktadır</span></td></tr>
+<tr><th>Endemik tür, IUCN veya Bern Sözleşmesi ifadesi</th><td><span class="badge ok">Metinde yer almaktadır</span></td></tr></table>
+  <p class="sub">Metin katmanı (OCR) bulunmayan taranmış harita ve kurum görüşü ekleri otomatik metin taramasına dahil edilmemiştir.</p>
+
+  <h2>Sayfa Kaynaklı Çıkarılan Bulgular</h2>
+  <div class="cards"><section class="card"><h3>Koordinatlar, Parsel ve Alan Büyüklüğü <span style="color:var(--muted);font-weight:400;font-size:0.85rem">(122 sayfa: s.6, s.14, s.18, s.20, s.22, s.25, s.31, s.37, s.39, s.40, s.41, s.53, s.58, s.61 (+108 sayfa))</span></h3><div class="hit"><span class="pno">[s. 6]</span> <code>utm</code> — …eminin ve bataryaların nereden temin edileceği, sistemin nasıl kurulacağı, depolama yönteminin nasıl olacağı, hangi soğutma sisteminin kullanılacağı, türbinler arası mesafe ve depolama tesislerinin nasıl konumlandırılacağı, kullanıl…</div>
+<div class="hit"><span class="pno">[s. 14]</span> <code>3,0 km</code> — …Kış Ziyaretçisi) ......................................................... 114 Şekil 83. Proje Sahasının Yaklaşık 0,3-3,0 km Güney ve Güneybatısında Yer Alan Diğer RES Projesi ...................................................................…</div>
+<div class="hit"><span class="pno">[s. 18]</span> <code>koordinat</code> — …(4 ADET TÜRBİN, 30 MWm/30MWe, EDT 30 MWe/30 MWh) ÇED RAPORU xvi EKLER LİSTESİ VIII.1. Proje için seçilen yerin koordinatları VIII.2. Proje için belirlenen yer ve alternatiflerinin varsa; çevre düzeni planı (lejant ve plan hükümleri ile…</div>
+<div class="hit"><span class="pno">[s. 20]</span> <code>utm</code> — …kullanılacak enerji depolama sisteminin konteyner tipi enerji depolama olması planlanmaktadır. Konteyner; inverter, soğutma, aydınlatma, kamera, yangın söndürme vb. donanımları içerecektir. Proje “29.07.2022 tarih ve 31907 sayılı Resmi G…</div>
+<div class="hit"><span class="pno">[s. 22]</span> <code>25,16 ha</code> — …üğü kurum görüşünde sistem kayıtlarında 20.07.2026 tarihinde yapılan inceleme neticesinde; ER:3514971 sayılı Üyük RES (25,16 ha) proje alanının, Türk Altın İşletmeleri A.Ş. uhdesinde bulunan Sicil:86730 sayılı IV. grup (altın) işletme ruhsat saha…</div>
+<div class="hit"><span class="pno">[s. 22]</span> <code>koordinat</code> — …er neticesinde, Maden ve Petrol İşleri Genel Müdürlüğünün 10.08.2026 tarih ve 2026432987 sayılı Makam Oluru uyarınca, koordinatları belirtilen Üyük RES revize projesinin gerçekleşmesinde herhangi bir sakınca bulunmadığı, revize edildiği ifade edi…</div></section><section class="card"><h3>Su Kullanımı, Hidrojeoloji ve Deşarj <span style="color:var(--muted);font-weight:400;font-size:0.85rem">(46 sayfa: s.5, s.6, s.11, s.18, s.99, s.114, s.144, s.147, s.214, s.215, s.217, s.218, s.243, s.244 (+32 sayfa))</span></h3><div class="hit"><span class="pno">[s. 5]</span> <code>yeraltı suyu</code> — …emniyeti için yapılacak işlemler, alınacak önlemler; taşkın ve heyelan riski; yüzeysel (kuru dere yatakları dahil) ve yeraltı suyu kaynaklarının etkilenme durumları ve alınacak önlemler; “Dere Yatakları ve Taşkınlar” konulu 2006/27 sayılı Başbakanlı…</div>
+<div class="hit"><span class="pno">[s. 6]</span> <code>deşarj</code> — …NERJİ SANTRALİ (4 ADET TÜRBİN, 30 MWm/30MWe, EDT 30 MWe/30 MWh) ÇED RAPORU iv miktarları, bertaraf yöntemleri, deşarj edileceği ortamlar, çevreyi etkileyebilecek olası sorunların belirlenmesi, alıcı ortamla etkileşimi, kümülatif etkiler…</div>
+<div class="hit"><span class="pno">[s. 11]</span> <code>atıksu</code> — …...................................... 194 Tablo 53. Bilecik ili 2025 yılı OSB, Serbest Bölgeler ve Sanayi Sitelerinde atıksu arıtma tesislerinin (AAT) durumu (OSB, 2026) .........................................................................…</div>
+<div class="hit"><span class="pno">[s. 18]</span> <code>Atıksu</code> — …Azaltım Planı, Çevresel ve Sosyal Yönetim Planı vb.) VIII -3.18 Sızdırmaz Fiberglas Fosseptik Tank Planı VIII -3.19 Atıksu Kabul Yazısı VIII -3.20 Su Temini Yazısı VIII -3.21 1. İnceleme ve Değerlendirme Komisyon Toplantısı Kurum Görüşleri…</div>
+<div class="hit"><span class="pno">[s. 99]</span> <code>yeraltısuyu</code> — …akın çevresinin hidrojeolojik özelliklerinin belirlenmesi amacıyla bölgenin jeolojik ve hidrojeolojik yapısı, yüzey ve yeraltısuyu ilişkileri ile mevcut su kaynakları değerlendirilmiştir. Bu kapsamda, proje faaliyetlerinin yeraltısuyunun kalitesi, m…</div>
+<div class="hit"><span class="pno">[s. 114]</span> <code>sulak alan</code> — …r, bataklık sazlık ve turbiyeler ile bu alanların kıyı kenar çizgisinden itibaren kara tarafına doğru ekolojik açıdan sulak alan kalan yerler içerisinde kalmamaktadır. ç) Göller, akarsular, yeraltı suyu işletme sahaları içerisinde kalmamaktadır.…</div></section><section class="card"><h3>Korunan Alanlar, Orman ve Zeytinlikler <span style="color:var(--muted);font-weight:400;font-size:0.85rem">(37 sayfa: s.4, s.29, s.101, s.106, s.113, s.114, s.115, s.144, s.147, s.220, s.273, s.276, s.277, s.283 (+23 sayfa))</span></h3><div class="hit"><span class="pno">[s. 4]</span> <code>doğal sit</code> — …at anıtları, tabiatı koruma alanları, yaban hayatı korunma alanları, biyogenetik rezerv alanları, biyosfer rezervleri, doğal sit ve anıtlar, arkeolojik, tarihi, kültürel sitler, özel çevre koruma bölgeleri, özel koruma alanları, turizm alan ve me…</div>
+<div class="hit"><span class="pno">[s. 4]</span> <code>özel çevre koruma</code> — …alanları, biyogenetik rezerv alanları, biyosfer rezervleri, doğal sit ve anıtlar, arkeolojik, tarihi, kültürel sitler, özel çevre koruma bölgeleri, özel koruma alanları, turizm alan ve merkezleri, mer&#x27;a kanunu kapsamındaki vb. alanlar, hassasiyet derecesi…</div>
+<div class="hit"><span class="pno">[s. 29]</span> <code>orman alanı</code> — …elerden T1, T3, T4 nolu türbinler, kazı fazlası malzeme depolama alanı, bitkisel toprak depolama alanı, şantiye alanı orman alanı; T2 nolu türbin, elektrik depolama tesisi, şalt merkezi ve idari bina tarım arazisi lejantında kalmaktadır. Proje…</div>
+<div class="hit"><span class="pno">[s. 101]</span> <code>milli park</code> — …nlık olarak dahi kullanılamayan, ancak doğal hayata ortam teşkil edebilen veya insanlar tarafından dinlenme yerleri ve milli park olarak kullanılabilen sekizinci sınıf arasında yer alırlar. Aşağıda bu sınıflara ait genel tanımlar verilmiştir.…</div>
+<div class="hit"><span class="pno">[s. 106]</span> <code>3573 sayılı</code> — …an inceleme ve değerlendirmede proje alanında su ürünleri ihtisas alanları bulunmadığı tespit edildiği belirtilmiştir. 3573 sayılı Zeytinciliğin Islahı ve Yabanilerinin Aşılattırılması Hakkında Kanun kapsamında yapılan inceleme ve değerlendirmede Ç…</div>
+<div class="hit"><span class="pno">[s. 113]</span> <code>doğal sit</code> — …at anıtları, tabiatı koruma alanları, yaban hayatı korunma alanları, biyogenetik rezerv alanları, biyosfer rezervleri, doğal sit ve anıtlar, arkeolojik, tarihi, kültürel sitler, özel çevre koruma bölgeleri, özel koruma alanları, turizm alan ve me…</div></section><section class="card"><h3>Flora, Fauna ve Saha Metodolojisi <span style="color:var(--muted);font-weight:400;font-size:0.85rem">(181 sayfa: s.4, s.10, s.15, s.113, s.114, s.115, s.116, s.124, s.126, s.127, s.128, s.129, s.130, s.133 (+167 sayfa))</span></h3><div class="hit"><span class="pno">[s. 4]</span> <code>Flora ve Fauna</code> — …uma statülü alanların mesafelerinin harita üzerinde gösterimi, ........................................... 89 II.2.10. Flora ve Fauna (türlerin belirlenmesi; belirlenen türlerin tehlike kategorileri, endemiklik durumları, nispi bolluk dereceleri, Ulusl…</div>
+<div class="hit"><span class="pno">[s. 4]</span> <code>Bern Sözleşmesi</code> — …i; belirlenen türlerin tehlike kategorileri, endemiklik durumları, nispi bolluk dereceleri, Uluslararası anlaşmalarla (Bern Sözleşmesi vb.) koruma altına alınan türler; nadir ve nesli tehlikeye düşmüş türler ve bunların yaşama ortamları, av hayvanları,…</div>
+<div class="hit"><span class="pno">[s. 10]</span> <code>Mevsimsel</code> — …....................................... 107 Tablo 24. Proje Sahasında Tespit Edilen Türlerin Sahip Oldukları Koruma ve Mevsimsel Statüleri ............................................................................................................…</div>
+<div class="hit"><span class="pno">[s. 15]</span> <code>Kuş Göç</code> — …..................................................................................... 131 Şekil 86. Batı Paleartikteki Kuş Göç Rotaları (Busse Vd. 2015). B. Batı Paleartikte Yer Alan Kalabalık Kuş Gruplarının Yoğun Olarak Geçiş Yaptığı Dar Boğaz…</div>
+<div class="hit"><span class="pno">[s. 15]</span> <code>Kırmızı Liste</code> — …len Bazı Hedef Dışı Türler ....................................... 141 Şekil 102. Proje Sahasında İzlenen Kuşların RDB Kırmızı Liste’ye Göre Yüzde Dağılım Grafiği . 143 Şekil 103. Proje Sahasında Kaydedilen Türlerin IUCN Kriterlerine Göre Dağılımı ...…</div>
+<div class="hit"><span class="pno">[s. 113]</span> <code>BERN Sözleşmesi</code> — …sözleşmeler uyarınca korunması gerekli alanlar a) &quot;Avrupa’nın Yaban Hayatı ve Yaşama Ortamlarını Koruma Sözleşmesi&quot; (BERN Sözleşmesi) uyarınca koruma altına alınmış alanlardan &quot;Önemli Deniz Kaplumbağası Üreme Alanlarında belirtilen I. ve II. Koruma Bö…</div></section><section class="card"><h3>Emisyonlar, Jeokimya ve Atıklar <span style="color:var(--muted);font-weight:400;font-size:0.85rem">(99 sayfa: s.4, s.5, s.6, s.7, s.11, s.14, s.60, s.84, s.95, s.96, s.122, s.177, s.195, s.210 (+85 sayfa))</span></h3><div class="hit"><span class="pno">[s. 4]</span> <code>deprem</code> — …i, çığ, su baskını vb.), duyarlılık analizi; heyelan yağış ilişkisi, yamaç stabilitesi, kayma analizi; depremsellik ve deprem riski; heyelan risk haritası, faaliyet alanını da içine alan büyük ölçekli diri fay haritası ile Türkiye Deprem Tehli…</div>
+<div class="hit"><span class="pno">[s. 5]</span> <code>kümülatif</code> — …ate alınarak- Çevreyi etkileyebilecek olası sorunların belirlenmesi, kirleticilerin miktarı, alıcı ortamla etkileşimi, kümülatif etkileri, Projenin iklim üzerindeki etkisi (sera gazı emisyonlarının niteliği ve büyüklüğü) ve projenin iklim değişikl…</div>
+<div class="hit"><span class="pno">[s. 6]</span> <code>kümülatif</code> — …öntemleri, deşarj edileceği ortamlar, çevreyi etkileyebilecek olası sorunların belirlenmesi, alıcı ortamla etkileşimi, kümülatif etkilerin belirlenmesi, çevreye olabilecek olumsuz etkilerinin azaltılması için alınacak önlemler, su temininde altern…</div>
+<div class="hit"><span class="pno">[s. 7]</span> <code>kümülatif</code> — …rarası standartlar ile kıyaslanması, çevreyi etkileyebilecek olası sorunların belirlenmesi, alıcı ortamla etkileşimi, kümülatif etkilerin belirlenmesi, çevreye olabilecek olumsuz etkilerinin azaltılması için alınacak önlemler, ...................…</div>
+<div class="hit"><span class="pno">[s. 7]</span> <code>gürültü</code> — …....................................................... 281 III.2.7. Proje ünitelerinin işletilmesi sırasında oluşacak gürültü kaynak seviyesi, arka plan ölçümleri çevreyi etkileyebilecek olası sorunların belirlenmesi, alıcı ortamla etkileşimi,…</div>
+<div class="hit"><span class="pno">[s. 11]</span> <code>Toz Emisyon</code> — …k Bitkisel Toprak Miktarları ......... 228 Tablo 69. T3 Türbini Bitkisel Toprak Sıyırma Çalışmaları Sırasında Oluşacak Toz Emisyon Değerleri ............................................................................................................…</div></section><section class="card"><h3>Proje Bedeli, Güç ve Kapasite <span style="color:var(--muted);font-weight:400;font-size:0.85rem">(46 sayfa: s.2, s.3, s.6, s.20, s.25, s.26, s.27, s.28, s.37, s.51, s.52, s.94, s.99, s.102 (+32 sayfa))</span></h3><div class="hit"><span class="pno">[s. 2]</span> <code>Proje Bedeli</code> — …lgi@ppm.com.tr Projenin Adı: Üyük Depolamalı Rüzgar Enerji Santrali (4 Adet Türbin, 30 MWm/30MWe, EDT 30 MWe/30 MWh) Proje Bedeli (TL): 390.000.000 TL Proje İçin Seçilen Yerin Açık Adresi (İli, İlçesi, Mevkii): Bilecik İli, Söğüt İlçesi, Sırhoca…</div>
+<div class="hit"><span class="pno">[s. 2]</span> <code>390.000.000 TL</code> — …nin Adı: Üyük Depolamalı Rüzgar Enerji Santrali (4 Adet Türbin, 30 MWm/30MWe, EDT 30 MWe/30 MWh) Proje Bedeli (TL): 390.000.000 TL Proje İçin Seçilen Yerin Açık Adresi (İli, İlçesi, Mevkii): Bilecik İli, Söğüt İlçesi, Sırhoca, Gündüzbey, Savcıbey…</div>
+<div class="hit"><span class="pno">[s. 3]</span> <code>proje bedeli</code> — …ilen yerin koordinatları ...................................................... 18 I.5. Projenin ekonomik özellikleri (proje bedelinin hesaplanma şeklinin bilgi ve belgelerle güncel, açıklayıcı olması) (ilgili yatırım programı, finans kaynakları, bu…</div>
+<div class="hit"><span class="pno">[s. 6]</span> <code>kapasite</code> — …, (modeli, kule yüksekli, kanat çapı-boyu, süpürme alanı, EDT boyutları ve kurulacağı alan büyüklüğü, batarya sayısı, kapasitesi vb. teknik özelliklerin verilmesi), tesisin faaliyet aşamasındaki ana üretim kapasitesi, elektrik bağlantı hattı vb.…</div>
+<div class="hit"><span class="pno">[s. 20]</span> <code>120.000.000 KW</code> — …dirmeye Tabi Projeler, 41 Rüzgâr enerji santralleri kapsamında yer almaktadır. Proje ile öngörülen ortalama yıllık 120.000.000 KWh/yıl enerji üretimi sağlanacak olup, tek hat şemasına uygun olarak Bozüyük TM&#x27;nin OG barasına bağlanacaktır. Proje…</div>
+<div class="hit"><span class="pno">[s. 25]</span> <code>kapasite</code> — …rlikte faaliyet kapsamında 1 adet Elektrik Depolama Tesisi ile 1 adet Şalt Sahası (İşletme Binası) yer almaktadır. EDT kapasitesi ise 30 MWe/30 MWh olacaktır. RES alanı içerisinde bitkisel toprak depolama, şantiye alanı, kazı fazlası malzeme d…</div></section></div>
+
+  <h2>Belge Bölüm Haritası</h2>
+  <ul><li><span class="pno">[s. 3]</span> BÖLÜM II : PROJE YERİ VE ETKİ ALANININ MEVCUT ÇEVRESEL ÖZELLİKLERİN AÇIKLANMASI</li>
+<li><span class="pno">[s. 4]</span> BÖLÜM III: PROJENİN İNŞAAT ÖNCESİ, İNŞAAT VE İŞLETME AŞAMASINDA ÇEVRESEL</li>
+<li><span class="pno">[s. 8]</span> BÖLÜM VI HALKIN BİLGİLENDİRİLMESİ VE SÜRECE KATILIMI İLE PAYDAŞ KATILIM PLANI</li>
+<li><span class="pno">[s. 60]</span> BÖLÜM II : PROJE YERİ VE ETKİ ALANININ MEVCUT ÇEVRESEL ÖZELLİKLERİN</li>
+<li><span class="pno">[s. 347]</span> BÖLÜM IV: KÜMÜLATİF ÇEVRESEL ETKİ DEĞERLENDİRME</li>
+<li><span class="pno">[s. 350]</span> BÖLÜM V: ÇEVRESEL VE SOSYAL EYLEM PLANI</li>
+<li><span class="pno">[s. 374]</span> BÖLÜM VII: SONUÇLAR</li>
+<li><span class="pno">[s. 378]</span> BÖLÜM VIII: NOTLAR, KAYNAKLAR VE EKLER</li>
+<li><span class="pno">[s. 821]</span> ÇEVRESEL VE SOSYAL YÖNETİM PLANI VB.)</li>
+<li><span class="pno">[s. 829]</span> ÇEVRESEL VE SOSYAL YÖNETİM PLANI</li></ul>
+
+  <div class="notice">
+    Bu sayfa, T.C. Çevre, Şehircilik ve İklim Değişikliği Bakanlığı'nın kamuya açık <code>eced-duyuru.csb.gov.tr</code> duyuru portalındaki kayıtlar esas alınarak bilgilendirme amacıyla hazırlanmıştır. Alıntıların tamamı 1 tabanlı PDF sayfa numarasıyla (<code>[s. N]</code>) gösterilmektedir. Yasal süreler otomatik olarak hesaplanır; kesin sürelerin ve hukuki başvuru yollarının yetkili hukukçular tarafından teyit edilmesi gerekir.
+  </div>
+</div>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script>
+(() => {
+  if (typeof L === 'undefined') return;
+  const g = {"lat": 39.95815, "lon": 30.21003, "zoom": 12, "precision": "exact_pdf", "points": [[39.96059, 30.23385], [39.95899, 30.23414], [39.95777, 30.23245], [39.95675, 30.22938], [39.95531, 30.22657], [39.95498, 30.22543], [39.95371, 30.22365], [39.95193, 30.22294], [39.95099, 30.22306], [39.94947, 30.22351], [39.94681, 30.22245], [39.94682, 30.21946], [39.94662, 30.21249], [39.9558, 30.21293], [39.95753, 30.21293], [39.95629, 30.21239], [39.95304, 30.21128], [39.94981, 30.20742], [39.94953, 30.20576], [39.94867, 30.20475], [39.9482, 30.20259], [39.9484, 30.20134], [39.94844, 30.20126], [39.94855, 30.20089], [39.94899, 30.19894], [39.94857, 30.19658], [39.94834, 30.19539], [39.94779, 30.19441], [39.94711, 30.19367], [39.94595, 30.19358], [39.94454, 30.19432], [39.94175, 30.19257], [39.94061, 30.19185], [39.9403, 30.1862], [39.94004, 30.17819], [39.94167, 30.1759], [39.94438, 30.17509], [39.94893, 30.17879], [39.9491, 30.17979], [39.95156, 30.18321]], "label": "BİLECİK / SÖĞÜT — Üyük Depolamalı Rüzgar Enerji Santrali (4 Adet Türbin, 30 MWm/30MWe, EDT 30 MWe/30 MWh)"};
+  const map = L.map('digest-map').setView([g.lat, g.lon], g.zoom);
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    maxZoom: 18,
+    attribution: '&copy; OpenStreetMap katkıda bulunanları'
+  }).addTo(map);
+  if (g.precision === 'exact_pdf' && g.points.length > 1) {
+    const latlngs = g.points.map(p => [p[0], p[1]]);
+    const poly = L.polyline(latlngs, { color: '#58a6ff', weight: 3, opacity: 0.85 }).addTo(map);
+    for (const ll of latlngs.slice(0, 30)) {
+      L.circleMarker(ll, { radius: 4, color: '#ffffff', fillColor: '#f85149', fillOpacity: 0.9, weight: 1 }).addTo(map);
+    }
+    map.fitBounds(poly.getBounds().pad(0.25));
+  } else {
+    L.circleMarker([g.lat, g.lon], {
+      radius: g.precision === 'exact_pdf' ? 8 : 11,
+      color: '#ffffff',
+      fillColor: g.precision === 'exact_pdf' ? '#f85149' : '#58a6ff',
+      fillOpacity: g.precision === 'exact_pdf' ? 0.9 : 0.45,
+      weight: 2
+    }).bindPopup(g.label).addTo(map).openPopup();
+  }
+})();
+</script>
+</body>
+</html>

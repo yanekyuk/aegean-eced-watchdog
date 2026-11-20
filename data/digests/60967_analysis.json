@@ -1,0 +1,964 @@
+{
+  "filing": {
+    "province": "TEKİRDAĞ",
+    "district": "ERGENE",
+    "project_name": "Oligonükleotid Platformu ve Kimyasal Sentez Yoluyla İlaç Etken Maddesi (API), Parenteral Çözelti (Flakon, Şırınga, Kartuş) Üretim Tesisi",
+    "project_owner": "POLİFARMA İLAÇ SAN. VE TİC. A.Ş. ÇORLU ŞUBESİ",
+    "sector": "Kimya",
+    "sub_sector": "Tarım İlaçları ve Farmasötik Ürünlerin Üretildiği Tesis Projeleri",
+    "decision_type": "IDK",
+    "announcement_date_tr": "14.11.2026",
+    "project_type": "Ek-1",
+    "detail_text": "TEKİRDAĞ ili ERGENE,  ilcesinde TEKİRDAĞ ili ERGENE ilçesi sınırları içerisinde POLİFARMA İLAÇ SAN. VE TİC. A.Ş. ÇORLU ŞUBESİ tarafından yapılması planlanan Oligonükleotid Platformu ve Kimyasal Sentez Yoluyla İlaç Etken Maddesi (API), Parenteral Çözelti (Flakon, Şırınga, Kartuş) Üretim Tesisi projesi ile ilgili olarak hazırlanan ÇED Raporu, ÇED Yönetmeliği'nin 11. maddesi kapsamında Bakanlığımıza sunulmuş olup, inceleme değerlendirme süreci başlamıştır. Proje ile ilgili olarak 30/11/2026 tarihinde İDK toplantısı gerçekleştirilecektir. Bakanlığımıza sunulan ÇED Raporu https://eced-duyuru.csb.gov.tr/eced-prod/duyurular.xhtml adresinde yer almaktadır. ÇED Raporu ilgililere ve kamuoyuna duyurulur.",
+    "detail_links": [
+      {
+        "text": "ÇED Raporu",
+        "href": "http://eced.csb.gov.tr/jsp/ek1/60967"
+      }
+    ],
+    "documents": [
+      {
+        "portal_doc_url": "http://eced.csb.gov.tr/jsp/ek1/60967",
+        "filing_id": "60967",
+        "consulting_firm": "CNR ÇED ÇEVRE HİZMETLERİ TİC. LTD. ŞTİ.",
+        "submitted_at": "27/08/2026 08:53:59",
+        "pdf_urls": [
+          {
+            "label": "60967_CED_Raporu.pdf",
+            "url": "http://eced.csb.gov.tr/jsp/dosya/dosyaGoster.htm?tempAd=sign4885618897043232020.pdf&orjinalAd=60967_CED_Raporu.pdf&yuklemeTarihi=2026-11-11"
+          }
+        ]
+      }
+    ],
+    "announcement_date": "2026-11-14",
+    "statutory_clocks": [
+      {
+        "code": "idk",
+        "kind": "İnceleme Değerlendirme Komisyonu (İDK) süreci; toplantı tarihi resmi metinde yer alır",
+        "deadline": null,
+        "days_remaining": null
+      }
+    ],
+    "filing_key": "60967:14.11.2026:IDK",
+    "first_seen_at": "2026-11-20T09:02:12"
+  },
+  "pdf_info": {
+    "filename": "60967.pdf",
+    "bytes": 65755434,
+    "sha256": "cc1deff60c4807e1b854f1f36feffd6ee0b70ff1729ab56d9aa0b995981aa829",
+    "cached": false
+  },
+  "analysis": {
+    "page_count": 875,
+    "total_chars": 1548139,
+    "text_pages": 640,
+    "scanned_or_blank_pages": 235,
+    "scanned_page_sample": [
+      350,
+      352,
+      356,
+      357,
+      358,
+      359,
+      360,
+      361,
+      362,
+      363,
+      364,
+      365,
+      366,
+      367,
+      368
+    ],
+    "headings": [
+      [
+        12,
+        "PROJENİN TEKNİK OLMAYAN ÖZETİ:"
+      ],
+      [
+        671,
+        "BÖLÜM 1: Maddenin/karışımın ve şirketin/dağıtıcının kimliği"
+      ],
+      [
+        671,
+        "BÖLÜM 2: Zararlılık tanımlanması"
+      ],
+      [
+        671,
+        "BÖLÜM 3: Bileşimi/İçindekiler hakkında bilgi"
+      ],
+      [
+        672,
+        "BÖLÜM 4: İlk yardım önlemleri"
+      ],
+      [
+        672,
+        "BÖLÜM 5: Yangınla mücadele önlemleri"
+      ],
+      [
+        672,
+        "BÖLÜM 6: Kaza sonucu yayılmaya karşı önlemler"
+      ],
+      [
+        673,
+        "BÖLÜM 7: Elleçleme ve depolama"
+      ],
+      [
+        673,
+        "BÖLÜM 8: Maruz kalma kontrolleri/kişisel korunma"
+      ],
+      [
+        674,
+        "BÖLÜM 9: Fiziksel ve kimyasal özellikler"
+      ],
+      [
+        674,
+        "BÖLÜM 10: Kararlılık ve tepkime"
+      ],
+      [
+        675,
+        "BÖLÜM 11: Toksikolojik bilgiler"
+      ],
+      [
+        675,
+        "BÖLÜM 12: Ekolojik bilgiler"
+      ],
+      [
+        676,
+        "BÖLÜM 13: Bertaraf etme bilgileri"
+      ],
+      [
+        676,
+        "BÖLÜM 14: Taşımacılık bilgileri"
+      ],
+      [
+        677,
+        "BÖLÜM 15: Mevzuat bilgileri"
+      ],
+      [
+        678,
+        "BÖLÜM 16: Diğer bilgiler"
+      ],
+      [
+        680,
+        "BÖLÜM 1. Maddenin/karışımın ve şirketin/dağıtıcının kimliği"
+      ],
+      [
+        680,
+        "BÖLÜM 2. Zararlılık tanımlanması"
+      ],
+      [
+        681,
+        "BÖLÜM 3. Bileşimi/İçindekiler hakkında bilgi"
+      ],
+      [
+        681,
+        "BÖLÜM 4. İlk yardım önlemleri"
+      ],
+      [
+        682,
+        "BÖLÜM 5. Yangınla mücadele önlemleri"
+      ],
+      [
+        682,
+        "BÖLÜM 6. Kaza sonucu yayılmaya karşı önlemler"
+      ]
+    ],
+    "geo": {
+      "precision": "exact_pdf",
+      "lat": 41.27458,
+      "lon": 27.5921,
+      "point_count": 80,
+      "points": [
+        [
+          41.27463,
+          27.59408
+        ],
+        [
+          41.27479,
+          27.59376
+        ],
+        [
+          41.27486,
+          27.5936
+        ],
+        [
+          41.27488,
+          27.59355
+        ],
+        [
+          41.27502,
+          27.59321
+        ],
+        [
+          41.27511,
+          27.59297
+        ],
+        [
+          41.27519,
+          27.59276
+        ],
+        [
+          41.2752,
+          27.59274
+        ],
+        [
+          41.27528,
+          27.5925
+        ],
+        [
+          41.27528,
+          27.59249
+        ],
+        [
+          41.27533,
+          27.59235
+        ],
+        [
+          41.27536,
+          27.59226
+        ],
+        [
+          41.2754,
+          27.59213
+        ],
+        [
+          41.2754,
+          27.59212
+        ],
+        [
+          41.27544,
+          27.59202
+        ],
+        [
+          41.27582,
+          27.59082
+        ],
+        [
+          41.27593,
+          27.59047
+        ],
+        [
+          41.27598,
+          27.59032
+        ],
+        [
+          41.27595,
+          27.59021
+        ],
+        [
+          41.2756,
+          27.58994
+        ],
+        [
+          41.27558,
+          27.58986
+        ],
+        [
+          41.27592,
+          27.58879
+        ],
+        [
+          41.27535,
+          27.58853
+        ],
+        [
+          41.2753,
+          27.58872
+        ],
+        [
+          41.27525,
+          27.58891
+        ],
+        [
+          41.27519,
+          27.58915
+        ],
+        [
+          41.27515,
+          27.58925
+        ],
+        [
+          41.27511,
+          27.58938
+        ],
+        [
+          41.27508,
+          27.58948
+        ],
+        [
+          41.27503,
+          27.5896
+        ],
+        [
+          41.27494,
+          27.58982
+        ],
+        [
+          41.27488,
+          27.58996
+        ],
+        [
+          41.27481,
+          27.59013
+        ],
+        [
+          41.27472,
+          27.59036
+        ],
+        [
+          41.27463,
+          27.59058
+        ],
+        [
+          41.27456,
+          27.59076
+        ],
+        [
+          41.27453,
+          27.59083
+        ],
+        [
+          41.27448,
+          27.59096
+        ],
+        [
+          41.2744,
+          27.59114
+        ],
+        [
+          41.27434,
+          27.59128
+        ]
+      ],
+      "datum": "UTM-Z35/ED50",
+      "pages": [
+        73,
+        74,
+        75
+      ]
+    },
+    "signals": {
+      "coordinates_and_footprint": {
+        "label": "Coordinates, Parcel & Footprint",
+        "page_count": 130,
+        "pages": [
+          5,
+          6,
+          12,
+          13,
+          21,
+          26,
+          27,
+          39,
+          41,
+          42,
+          45,
+          46,
+          47,
+          49,
+          50,
+          56,
+          65,
+          70,
+          71,
+          73,
+          74,
+          75,
+          76,
+          77,
+          78
+        ],
+        "samples": [
+          {
+            "page": 5,
+            "match": "Koordinat",
+            "snippet": "…de Depolanacakları veya Hangi Amaçlar İçin Kullanılacakları (Kazı Fazlası Malzeme ve Bitkisel Toprak Depo Alanlarının Koordinatlarıyla Birlikte Gösterilmesi, Bitkisel Toprağın Nasıl Değerlendirileceğinin Açıklanması), Şantiye Çalışmaları Sonucund…"
+          },
+          {
+            "page": 6,
+            "match": "utm",
+            "snippet": "…dileceği, Suyun Temin Edileceği Kaynaklardan Alınacak Su Miktarı Ve Bu Suların Kullanım Amaçlarına Göre Miktarları, Soğutma Sistemine İlişkin Bilgiler (Soğutma Suyu Akım Şeması, Soğutma Suyu Miktarı, Kullanılacak Kimyasal Maddeler Ve Miktarl…"
+          },
+          {
+            "page": 12,
+            "match": "utm",
+            "snippet": "…nılarak kontrollü kimyasal reaksiyonlar gerçekleştirilecek; filtrasyon ve/veya ayırma, saflaştırma, kristalizasyon, kurutma ve kalite kontrol işlemleri uygulanacaktır. Oligonükleotid üretiminde ise başlangıç malzemelerinin hazırlanması, oli…"
+          },
+          {
+            "page": 13,
+            "match": "utm",
+            "snippet": "…slerinin gerçekleştirilmesi, reaksiyon, ayırma, filtrasyon ve saflaştırma işlemleri, gerektiğinde kristalizasyon ve kurutma, kalite kontrol analizleri, ürünlerin ambalajlanması ve depolanması aşamalarından oluşacaktır. Parenteral çözelti ür…"
+          },
+          {
+            "page": 21,
+            "match": "utm",
+            "snippet": "…lü kimyasal reaksiyonların gerçekleştirilmesi, filtrasyon ve/veya ayırma işlemleri, saflaştırma ve kristalizasyon, kurutma, kalite kontrollerinin gerçekleştirilmesi, uygun ürünlerin ambalajlanması ve depolanması aşamaları uygulanacaktır.…"
+          },
+          {
+            "page": 26,
+            "match": "50,5 m²",
+            "snippet": "…FF/Filtrasyon Ünitesi İş Akım Şeması 2. Kimyasal Sentez Yoluyla API Üretim Prosesi: Kimyasal Sentez Ünitesi yaklaşık 50,5 m² kapalı alanda planlanmaktadır. Bu ünitede farklı ilaç etken maddelerinin üretimi, ürün bazında tanımlanmış üretim r…"
+          },
+          {
+            "page": 26,
+            "match": "utm",
+            "snippet": "…utulacaktır. Filtrasyon ve/veya ayırma işlemleri sonucunda elde edilen ürün, ilgili proses gerekliliklerine göre kurutma ve eleme aşamalarına alınacaktır. Ürün özelliklerine bağlı olarak gerekli saflaştırma veya kristalizasyon işlemleri u…"
+          },
+          {
+            "page": 27,
+            "match": "utm",
+            "snippet": "…mu ve Kimyasal Sentez Yoluyla İlaç Etken Maddesi (API), Parenteral Çözelti (Flakon, Şırınga, Kartuş) Üretim Tesisi Kurutma ve eleme işlemleri tamamlanan ürün, kalite kontrol değerlendirmesine alınacaktır. Kalite kontrol açısından uygun bulu…"
+          }
+        ]
+      },
+      "water_and_discharge": {
+        "label": "Water Use, Hydrogeology & Discharge",
+        "page_count": 147,
+        "pages": [
+          6,
+          14,
+          15,
+          16,
+          36,
+          47,
+          48,
+          49,
+          53,
+          57,
+          58,
+          60,
+          61,
+          62,
+          66,
+          71,
+          73,
+          86,
+          101,
+          103,
+          107,
+          108,
+          109,
+          110,
+          111
+        ],
+        "samples": [
+          {
+            "page": 6,
+            "match": "Yeraltı Suyu",
+            "snippet": "…..................................... 177 III.9. Proje Kapsamında Gerçekleştirilecek Faaliyetler Sonucunda Yüzeysel Ve Yeraltı Suyu Kaynaklarının Etkilenme Durumları Ve Alınacak Tedbirler .......................................................... 177…"
+          },
+          {
+            "page": 14,
+            "match": "atıksu",
+            "snippet": "…anacaktır. Proje kapsamında oluşabilecek endüstriyel atıksular, niteliklerine göre mevcut tesis altyapısı ve ilgili atıksu yönetim sistemi kapsamında değerlendirilecek; gerekli ön arıtma işlemlerinin ardından ilgili deşarj kriterleri ve Orga…"
+          },
+          {
+            "page": 14,
+            "match": "deşarj",
+            "snippet": "…ltyapısı ve ilgili atıksu yönetim sistemi kapsamında değerlendirilecek; gerekli ön arıtma işlemlerinin ardından ilgili deşarj kriterleri ve Organize Sanayi Bölgesi altyapı koşulları doğrultusunda yönetilecektir. Evsel nitelikli atıksular mevcut…"
+          },
+          {
+            "page": 15,
+            "match": "atıksu",
+            "snippet": "…Ergene 1 Organize Sanayi Bölgesi içerisinde bulunması nedeniyle ulaşım, enerji, doğal gaz, su temini, kanalizasyon ve atıksu altyapısına ilişkin mevcut olanaklardan yararlanılacaktır. Projenin gerçekleştirilmesi ve işletilmesi sırasında ilgili…"
+          },
+          {
+            "page": 16,
+            "match": "atıksu",
+            "snippet": "…Organize Sanayi Bölgesi içerisinde bulunması nedeniyle mevcut elektrik, doğal gaz, su temini, ulaşım, kanalizasyon ve atıksu altyapısı olanaklarından yararlanılacaktır. Bu yönüyle proje, mevcut tesisin teknik ve altyapısal olanaklarını etkin…"
+          },
+          {
+            "page": 36,
+            "match": "916,4 m³/yıl",
+            "snippet": "…cmi = 25,5 m³ Buna göre 2,75 saat steril süresi ve %85 randıman hesabı ile; K = 25,5 × (8 / 2,75) × 300 × 0,85 = 18.916,4 m³/yıl = 18.916.400 kg/yıl Steril işlemi yapılmayan alüminyum şişe: 194.400 kg/yıl Genel Toplam = 18.916.400 + 194.400 = 1…"
+          },
+          {
+            "page": 47,
+            "match": "atıksu",
+            "snippet": "…ınga/kartuş), proses atıksuyu, atık ambalajlar Enerji (elektrik, buhar, doğal gaz) ve su Tüm prosesler Emisyonlar, atıksu, tehlikeli/tehlikesiz katı atıklar Üretim faaliyetleri sırasında oluşabilecek atıklar ve emisyonlar, ilgili prosesl…"
+          },
+          {
+            "page": 48,
+            "match": "atıksu",
+            "snippet": "…acaktır. • Yağ ve solvent içerebilecek drenaj suları, uygun toplama/ayırma sistemlerinden geçirildikten sonra ilgili atıksu yönetim sistemine yönlendirilecektir. • Temiz yağmur suları ile proses kaynaklı veya kimyasal madde içerebilecek sula…"
+          }
+        ]
+      },
+      "protected_land_and_olive": {
+        "label": "Protected Zones, Forests & Olive Groves",
+        "page_count": 23,
+        "pages": [
+          66,
+          79,
+          81,
+          86,
+          112,
+          113,
+          120,
+          121,
+          197,
+          201,
+          205,
+          208,
+          209,
+          211,
+          212,
+          213,
+          214,
+          226,
+          227,
+          264,
+          310,
+          312,
+          314
+        ],
+        "samples": [
+          {
+            "page": 66,
+            "match": "orman alanı",
+            "snippet": "…marlı alanda ve mevcut üretim tesisinin bulunduğu parsel üzerindedir. 5 Doğal alanların korunması Proje kapsamında orman alanı, tarım arazisi, mera, sulak alan, doğal sit, milli park, özel çevre koruma bölgesi veya yaban hayatı geliştirme sahası…"
+          },
+          {
+            "page": 66,
+            "match": "sulak alan",
+            "snippet": "…isinin bulunduğu parsel üzerindedir. 5 Doğal alanların korunması Proje kapsamında orman alanı, tarım arazisi, mera, sulak alan, doğal sit, milli park, özel çevre koruma bölgesi veya yaban hayatı geliştirme sahası gibi hassas alanların kullanımı…"
+          },
+          {
+            "page": 66,
+            "match": "doğal sit",
+            "snippet": "…duğu parsel üzerindedir. 5 Doğal alanların korunması Proje kapsamında orman alanı, tarım arazisi, mera, sulak alan, doğal sit, milli park, özel çevre koruma bölgesi veya yaban hayatı geliştirme sahası gibi hassas alanların kullanımına ihtiyaç…"
+          },
+          {
+            "page": 66,
+            "match": "milli park",
+            "snippet": "…üzerindedir. 5 Doğal alanların korunması Proje kapsamında orman alanı, tarım arazisi, mera, sulak alan, doğal sit, milli park, özel çevre koruma bölgesi veya yaban hayatı geliştirme sahası gibi hassas alanların kullanımına ihtiyaç duyulmamaktad…"
+          },
+          {
+            "page": 66,
+            "match": "özel çevre koruma",
+            "snippet": "…5 Doğal alanların korunması Proje kapsamında orman alanı, tarım arazisi, mera, sulak alan, doğal sit, milli park, özel çevre koruma bölgesi veya yaban hayatı geliştirme sahası gibi hassas alanların kullanımına ihtiyaç duyulmamaktadır. 6 Altyapı ve…"
+          },
+          {
+            "page": 79,
+            "match": "Özel Çevre Koruma",
+            "snippet": "…oruma Alanları, Boğaziçi Kanununa göre koruma altına alınan alanlar, Biyogenetik Rezerv Alanları, Biyosfer Rezervleri, Özel Çevre Koruma Bölgeleri, Özel Koruma Alanları, içme ve kullanma su kaynakları ile ilgili koruma alanları, Turizm Alan ve Merkezleri…"
+          },
+          {
+            "page": 79,
+            "match": "doğal sit",
+            "snippet": "…i parklar, tabiat parkları, tabiat anıtları, tabiatı koruma alanları, yaban hayatı geliştirme sahaları, sulak alanlar, doğal sit alanları, kültür varlıkları ve sit alanları, özel çevre koruma bölgeleri, içme-kullanma suyu koruma alanları, turizm a…"
+          },
+          {
+            "page": 81,
+            "match": "Milli Park",
+            "snippet": "…ük ölçüde tarım alanları, bozulmuş mera alanları ve yer yer çalılık formasyonlardan oluşmaktadır. Proje sahası; • Milli Park • Tabiat Parkı • Yaban Hayatı Geliştirme Sahası • Doğal Sit Alanı • Özel Çevre Koruma Bölgesi içerisinde yer al…"
+          }
+        ]
+      },
+      "ecology_and_baseline": {
+        "label": "Flora, Fauna & Baseline Methodology",
+        "page_count": 35,
+        "pages": [
+          7,
+          34,
+          80,
+          81,
+          82,
+          86,
+          87,
+          88,
+          89,
+          90,
+          91,
+          92,
+          93,
+          94,
+          96,
+          107,
+          116,
+          134,
+          200,
+          202,
+          203,
+          206,
+          207,
+          208,
+          210
+        ],
+        "samples": [
+          {
+            "page": 7,
+            "match": "Endemik",
+            "snippet": "…....................................... 189 III.11. Projenin İnşaat Ve İşletme Döneminde Flora – Fauna (Mevcut Türler, Endemik Türlerin Bulunduğu Yerler, Önemli Bitki Alanı Bulunan Yerler Ve Varsa Nesli Tehlike Altında Olan Fauna Türlerinin Yaş…"
+          },
+          {
+            "page": 34,
+            "match": "Örnekleme",
+            "snippet": "…Cihazı 2 Otoklav (Sterilizatör) Lab. Tipi 3 Isıtıcı Manyetik Karıştırıcı 1 Derin Dondurucu 1 Rcs Hıng Flow Hava Örnekleme Cihazı 1 Phoenix-100/Indentifikasyon Cihazı 1 Phoenix Spec / Macfarland Cihazı 2 Uv Spektrofotometre 1 Ultrason…"
+          },
+          {
+            "page": 80,
+            "match": "Flora ve Fauna",
+            "snippet": "…Kimyasal Sentez Yoluyla İlaç Etken Maddesi (API), Parenteral Çözelti (Flakon, Şırınga, Kartuş) Üretim Tesisi II.3. Flora ve Fauna (Proje alanı ve etkW alanında bulunan flora türlerW, etkWlenecek alandakW türler, bu çalışmaların hangW dönemde yapıl…"
+          },
+          {
+            "page": 80,
+            "match": "IUCN",
+            "snippet": "…tkileri Veri Servisi (TÜBİVES), Türkiye Tabiatı Koruma Derneği tarafından yayımlanan Red Data Book of Turkish Plants, IUCN Kırmızı Liste kategorileri, Avrupa’nın Yaban Hayatı ve Yaşama Ortamlarını Koruma Sözleşmesi (Bern Sözleşmesi) ekleri v…"
+          },
+          {
+            "page": 80,
+            "match": "Kırmızı Liste",
+            "snippet": "…ri Veri Servisi (TÜBİVES), Türkiye Tabiatı Koruma Derneği tarafından yayımlanan Red Data Book of Turkish Plants, IUCN Kırmızı Liste kategorileri, Avrupa’nın Yaban Hayatı ve Yaşama Ortamlarını Koruma Sözleşmesi (Bern Sözleşmesi) ekleri ve yürürlükteki…"
+          },
+          {
+            "page": 80,
+            "match": "Bern Sözleşmesi",
+            "snippet": "…of Turkish Plants, IUCN Kırmızı Liste kategorileri, Avrupa’nın Yaban Hayatı ve Yaşama Ortamlarını Koruma Sözleşmesi (Bern Sözleşmesi) ekleri ve yürürlükteki Merkez Av Komisyonu kararları dikkate alınmıştır. Proje alanı Ergene İlçesi sınırlarında, T…"
+          },
+          {
+            "page": 81,
+            "match": "Bern Sözleşmesi",
+            "snippet": "…Grid Sistemine göre saha A1 karesi içinde bulunmaktadır. Proje alanı ve yakın çevresinde nadir, nesli tehlikede veya Bern Sözleşmesi Ek-I’e göre koruma altına alınması gereken bir bitki türüne rastlanmamıştır. Vejetasyon Özellikleri: Saha ve yakın…"
+          },
+          {
+            "page": 82,
+            "match": "IUCN",
+            "snippet": "…canina • Crataegus spp. • Cornus sanguinea Koruma Statüsü ve Endemizm: Yapılan literatür incelemeleri (TUBİVES, IUCN 2025-1, Red Data Book of Turkish Plants) doğrultusunda; • Proje sahasında endemik tür tespit edilmemiştir. • IUCN…"
+          }
+        ]
+      },
+      "pollutants_and_hazards": {
+        "label": "Emissions, Geochemistry & Waste",
+        "page_count": 130,
+        "pages": [
+          4,
+          14,
+          57,
+          58,
+          60,
+          68,
+          71,
+          73,
+          76,
+          77,
+          79,
+          102,
+          103,
+          104,
+          105,
+          106,
+          108,
+          110,
+          113,
+          123,
+          125,
+          126,
+          129,
+          130,
+          134
+        ],
+        "samples": [
+          {
+            "page": 4,
+            "match": "Deprem",
+            "snippet": "….................. 64 II.1.3. Proje Alanı ve Yakın Çevresinde Bulunan Tarım Arazilerinin, Yeraltı ve Yüzey Sularının, Deprem Kuşaklarının, Jeolojik Yapının, Yerleşim Alanlarının, Ulaşım Ağının, Enerji İletim Hatlarının, Boru Hatlarının, A…"
+          },
+          {
+            "page": 14,
+            "match": "gürültü",
+            "snippet": "…abilecek olumsuz etkilerin önlenmesi için gerekli tedbirler alınacaktır. Üretim faaliyetleri sırasında oluşabilecek gürültü, koku, emisyon, kimyasal madde ve diğer çevresel sağlık risklerinin kontrolü için gerekli önlemler uygulanacaktır. Ça…"
+          },
+          {
+            "page": 57,
+            "match": "gürültü",
+            "snippet": "…VOC oluşumu, atıksu, tehlikeli ve tehlikesiz atıklar, kimyasal madde kullanımı ve depolanması, enerji ve su tüketimi, gürültü ve koku oluşumu başlıkları altında değerlendirilmiştir. Tablo 15 Olası çevresel maliyet unsurları No Çevresel Mal…"
+          },
+          {
+            "page": 58,
+            "match": "Gürültü",
+            "snippet": "…lanım 6 Enerji tüketimi Enerji verimli ekipmanların tercih edilmesi ve yardımcı sistemlerin verimli işletilmesi 7 Gürültü ve koku oluşumu Kaynakta kontrol, ekipman bakımı ve gerekli işletme tedbirleri 8 Acil durum ve kaza riskleri Yangı…"
+          },
+          {
+            "page": 60,
+            "match": "gürültü",
+            "snippet": "…ertaraf edilmesi, içme ve kullanma sularının uygun temin edilmesi, evsel ve katı atıkların mevzuata uygun yönetilmesi, gürültü, koku, emisyon ve artık kimyasal maddelerden kaynaklanabilecek çevre ve sağlık risklerine karşı önlem alınması gerekt…"
+          },
+          {
+            "page": 68,
+            "match": "tehlikeli atık",
+            "snippet": "…edir. Üretim sırasında oluşabilecek atık solventler ve solvent içeren atıklar, ilgili mevzuat hükümleri doğrultusunda tehlikeli atık olarak yönetilecektir. I.7.4. Sonuç ve Seçilen Alternatif Yapılan yer ve teknoloji alternatifleri değerlendirmesi…"
+          },
+          {
+            "page": 71,
+            "match": "Gürültü",
+            "snippet": "…oses kaynaklı emisyonlar ve havalandırma sistemleri üzerinden oluşabilecek emisyonların etkileyebileceği alanlar, • Gürültü: İnşaat ve işletme aşamalarında kullanılacak makine, ekipman ve tesis faaliyetlerinden kaynaklanabilecek gürültünün et…"
+          },
+          {
+            "page": 73,
+            "match": "gürültü",
+            "snippet": "…tki alanının her bir çevresel unsur bakımından aynı sınırlarla temsil edilemeyeceği dikkate alınmış; hava emisyonları, gürültü, atıksu, atık yönetimi ve trafik gibi farklı etki türleri kendi oluşum ve yayılım özellikleri çerçevesinde ele alınmış…"
+          }
+        ]
+      },
+      "cost_and_capacity": {
+        "label": "Project Cost, Power & Capacity",
+        "page_count": 91,
+        "pages": [
+          2,
+          12,
+          13,
+          15,
+          16,
+          17,
+          18,
+          30,
+          35,
+          36,
+          37,
+          40,
+          41,
+          42,
+          44,
+          45,
+          48,
+          52,
+          53,
+          55,
+          56,
+          57,
+          58,
+          59,
+          61
+        ],
+        "samples": [
+          {
+            "page": 2,
+            "match": "Proje Bedeli",
+            "snippet": "…ormu ve Kimyasal Sentez Yoluyla İlaç Etken Maddesi (API), Parenteral Çözelti (Flakon, Şırınga, Kartuş) Üretim Tesisi Proje Bedeli: 800.000.000,00 TL Proje İçin Seçilen Yerin Açık Adresi (İli, İlçesi, Mevki): Tekirdağ İli, Ergene İlçesi, Vakıflar…"
+          },
+          {
+            "page": 2,
+            "match": "kapasite",
+            "snippet": "…farmasötik ürünlerin etken maddelerinin üretildiği tesisler (Ar-Ge için üretim yapan tesisler hariç), Madde 29-Toplam kapasitesi 50.000 m³ ve üzeri olan petrol, doğalgaz, petrokimya ve kimyasal maddelerin depolandığı tesisler (Ek ibare: RG-5/3/…"
+          },
+          {
+            "page": 12,
+            "match": "kapasite",
+            "snippet": "…k kontrol ve ambalajlama işlemleri tamamlanacaktır. Proje kapsamında mevcut ve planlanan üretim faaliyetlerine ilişkin kapasiteler aşağıda verilmiştir."
+          },
+          {
+            "page": 13,
+            "match": "Kapasite",
+            "snippet": "…aç Etken Maddesi (API), Parenteral Çözelti (Flakon, Şırınga, Kartuş) Üretim Tesisi Tablo 1 Mevcut ve Planlanan Üretim Kapasiteleri No Üretim Faaliyeti Mevcut / Planlanan Durum Kapasite Birim 1 Parenteral Çözelti (Serum) Üretimi Mevcut 6…"
+          },
+          {
+            "page": 15,
+            "match": "kapasite",
+            "snippet": "…lacaktır. Projenin işletmeye alınmasıyla birlikte yüksek katma değerli aktif farmasötik maddelerin ülkemizde üretim kapasitesinin geliştirilmesi, ilaç üretiminde dışa bağımlılığın azaltılmasına katkı sağlanması, ilaç tedarik zincirinin güçlend…"
+          },
+          {
+            "page": 16,
+            "match": "kapasite",
+            "snippet": "…maddesi üretiminin mevcut farmasötik üretim süreçleriyle bütünleştirilmesine ve yüksek katma değerli ürünlerin üretim kapasitesinin artırılmasına yönelik bir yatırım niteliğindedir."
+          },
+          {
+            "page": 17,
+            "match": "kapasite",
+            "snippet": "…oligonükleotid yapılı etken maddelerin üretimine yönelik altyapının ülkemizde geliştirilmesi, ilaç sanayisinin teknik kapasitesinin artırılması açısından önem taşımaktadır. Proje kapsamında öncelikli olarak Spinal Musküler Atrofi (SMA) hastalı…"
+          },
+          {
+            "page": 18,
+            "match": "kapasite",
+            "snippet": "…ileşenlerin üretimine yönelik altyapının geliştirilmesi, kritik öneme sahip ilaçların üretim süreçlerinde yerli teknik kapasitenin artırılmasına katkı sağlayacaktır. Yatırım kapsamında ileri teknolojiye dayalı üretim faaliyetlerinin gerçekleşt…"
+          }
+        ]
+      }
+    },
+    "audit_checks": {
+      "mentions_field_survey": true,
+      "mentions_literature_only_cue": true,
+      "mentions_seasonal_sampling": true,
+      "mentions_cumulative_impact": true,
+      "mentions_olive_law_3573": false,
+      "mentions_groundwater_or_aquifer": true,
+      "mentions_iucn_or_endemic": true
+    }
+  },
+  "llm_synthesis": {
+    "model": "gemini-4-hydrogen",
+    "generated_at": "2026-11-20T11:08:40",
+    "pages_sent": [
+      1,
+      2,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      34,
+      57,
+      58,
+      66,
+      79,
+      80,
+      81
+    ],
+    "usage": {
+      "prompt_tokens": 22153,
+      "output_tokens": 3132,
+      "thoughts_tokens": 6681,
+      "total_tokens": 31966
+    },
+    "result": {
+      "executive_summary_tr": "Polifarma İlaç San. ve Tic. A.Ş. Çorlu Şubesi tarafından Tekirdağ ili, Ergene ilçesi, Ergene-1 Organize Sanayi Bölgesi (461 ada, 25 parsel) sınırlarındaki mevcut tesis bünyesinde oligonükleotid platformu ve kimyasal sentez yoluyla ilaç etken maddesi (API) ile parenteral çözelti üretim kapasitesi artırımı ve çeşitlendirmesi planlanmaktadır [s. 1, s. 12, s. 13]. 800.000.000 TL yatırım bedelli proje kapsamında mevcut 61.689,60 ton/yıl parenteral çözelti üretimine ek olarak yıllık 3,00 kg oligonükleotid API, 30,00 kg kimyasal sentez API, 6.804,00 ton likit farmasötik ilaç ve 86.400,00 L flakon/şırınga/kartuş formunda parenteral çözelti üretimi öngörülmektedir [s. 2, s. 13]. ÇED Yönetmeliği Ek-1 Madde 33 ve Madde 29 kapsamında sunulan projede yeni arazi tahsisi bulunmamakla birlikte, solvent geri kazanım ünitesinin yer almaması, proses kaynaklı VOC emisyonları, endüstriyel atıksular ve tehlikeli atık yönetimi başlıca çevresel unsurları oluşturmaktadır [s. 2, s. 14, s. 57]. Sunulan rapor kesitlerinde koruma alanlarına mesafelerin kesinleştirilmemesi ve flora-fauna verilerinin büyük ölçüde önceki çalışmalara ile literatüre dayandırılması temel metodolojik boşluklar olarak öne çıkmaktadır [s. 79, s. 80, s. 81].",
+      "executive_summary_en": "Polifarma İlaç San. ve Tic. A.Ş. Çorlu Branch proposes adding oligonucleotide-based and chemical synthesis Active Pharmaceutical Ingredient (API) production as well as expanded parenteral solution manufacturing within its existing facility in the Ergene-1 Organized Industrial Zone (Block 461, Parcel 25), Ergene District, Tekirdağ [s. 1, s. 12, s. 13]. With a projected investment of 800,000,000 TL, the project adds 3.00 kg/year of oligonucleotide API, 30.00 kg/year of chemical synthesis API, 6,804.00 tons/year of liquid pharmaceuticals, and 86,400.00 L/year of vial/syringe/cartridge parenteral solutions alongside the existing 61,689.60 tons/year serum output [s. 2, s. 13]. Classified under EIA Regulation Annex-1 Articles 33 and 29, the expansion requires no new land outside the existing industrial parcel, yet key environmental stakes center on the absence of solvent recovery, volatile organic compound (VOC) emissions, industrial wastewater pre-treatment, and hazardous chemical/waste management [s. 2, s. 14, s. 57]. Within the supplied excerpts, key baseline limitations include deferred spatial proximity verification for nearby protected sites and reliance on prior regional reports and literature for flora and fauna characterization [s. 79, s. 80, s. 81].",
+      "key_facts": [
+        {
+          "label": "Proje Yatırım Bedeli",
+          "value": "800.000.000,00 TL",
+          "page": 2
+        },
+        {
+          "label": "Proje Alanı Konumu",
+          "value": "Tekirdağ İli, Ergene İlçesi, Vakıflar OSB Mah., Ergene-1 OSB, F19-A-22-C-2A Pafta, 461 Ada, 25 Parsel",
+          "page": 12
+        },
+        {
+          "label": "ÇED Yönetmeliği Kapsamı",
+          "value": "Madde 33 (farmasötik/tarım ilacı etken madde üretimi) ve Madde 29 (50.000 m³ ve üzeri kimyasal depolama)",
+          "page": 2
+        },
+        {
+          "label": "Mevcut Parenteral Çözelti (Serum) Kapasitesi",
+          "value": "61.689,60 ton/yıl",
+          "page": 13
+        },
+        {
+          "label": "Planlanan Likit Farmasötik İlaç Kapasitesi",
+          "value": "6.804,00 ton/yıl",
+          "page": 13
+        },
+        {
+          "label": "Planlanan Oligonükleotid API Kapasitesi",
+          "value": "3,00 kg/yıl",
+          "page": 13
+        },
+        {
+          "label": "Planlanan Kimyasal Sentez API Kapasitesi",
+          "value": "30,00 kg/yıl",
+          "page": 13
+        },
+        {
+          "label": "Planlanan Toplam API Kapasitesi",
+          "value": "33,00 kg/yıl",
+          "page": 13
+        },
+        {
+          "label": "Planlanan Parenteral Çözelti (Flakon, Şırınga, Kartuş)",
+          "value": "86.400,00 L/yıl",
+          "page": 13
+        },
+        {
+          "label": "Çalışma Süresi ve Vardiya Düzeni",
+          "value": "3 vardiya (8 saat/vardiya), 24 saat/gün, 25 gün/ay, 300 gün/yıl",
+          "page": 13
+        }
+      ],
+      "baseline_assessment": {
+        "field_survey_status": "mixed_or_unclear",
+        "seasonal_sampling_status": "not_found",
+        "cumulative_impact_status": "omitted_or_not_found",
+        "olive_and_protected_status": "Sunulan sayfalarda 3573 sayılı Kanun kapsamındaki zeytinliklere ilişkin bir veri yer almamaktadır. Proje alanının Ergene-1 OSB içinde mevcut sanayi parseli üzerinde bulunduğu ve Milli Park, Tabiat Parkı, Yaban Hayatı Geliştirme Sahası, Doğal Sit Alanı, ÖÇK, sulak alan veya doğal orman formasyonu içermediği belirtilmektedir [s. 66, s. 80, s. 81]. Ancak raporda Çerkezköy-Ergene sınırlarında Doğal Sit-Nitelikli Doğal Koruma Alanı statüsünde tescilli Veliköy Antik Su Yolu Doğal Sit Alanı bulunduğu kaydedilmekte, buna karşın proje sahasına mesafesi belirtilmemektedir [s. 79].",
+        "explanation": "Biyolojik çeşitlilik değerlendirmesinde önceki bölgesel ekolojik değerlendirme raporlarındaki tür listeleri ve literatür bilgilerinin esas alındığı açıkça ifade edilmekte, arazi gözlemleri ve literatüre dayanılarak yayılış göstermesi muhtemel türler sıralanmaktadır [s. 80, s. 81]. İncelenen sayfalarda proje öncesi döneme ait tamamlanmış çok mevsimli bir saha örneklemesi tarih veya yöntemi sunulmamış, çevresel izleme faaliyetlerinin ise onay sonrasında yürütüleceği belirtilmiştir [s. 58, s. 80, s. 81]. İçindekiler dizininde IV. Bölüm olarak Kümülatif Çevresel Etki Değerlendirmesi başlığı yer almakla birlikte ilgili sayfalar sağlanan kesitlerde bulunmadığından kümülatif analiz niteliği doğrulanamamıştır [s. 8]."
+      },
+      "red_flags": [
+        {
+          "severity": "high",
+          "title": "Flora ve fauna temel durumunun önceki raporlara ve literatüre dayandırılması",
+          "detail": "Flora ve fauna bölümünde tür listelerinin belirlenmesinde önceki ekolojik değerlendirme raporlarının ve literatür bilgilerinin esas alındığı belirtilmekte; türler arazi gözlemleri ve literatür doğrultusunda yayılış göstermesi muhtemel türler olarak tanımlanmaktadır. Sağlanan kesitlerde proje sahasına özgü saha çalışması tarihleri, örnekleme noktaları veya çok mevsimli arazi envanteri yer almamaktadır.",
+          "pages": [
+            80,
+            81
+          ]
+        },
+        {
+          "severity": "high",
+          "title": "Koruma alanlarına mesafe ve mekânsal kesişim analizinin şartlı olarak sonraya bırakılması",
+          "detail": "Raporda Çerkezköy-Ergene ilçeleri sınırında tescilli Veliköy Antik Su Yolu Doğal Sit Alanı bulunduğu belirtilmesine rağmen tesisin bu alana mesafesi verilmemiştir. Bunun yerine herhangi bir koruma alanı ile mekânsal kesişim veya yakınlık bulunması halinde kurum görüşleri doğrultusunda değerlendirme yapılacağı ifade edilerek temel mekânsal tespit ÇED sonrası sürece ertelenmiştir.",
+          "pages": [
+            79
+          ]
+        },
+        {
+          "severity": "medium",
+          "title": "Solvent geri kazanım veya yeniden kullanım ünitesinin bulunmaması",
+          "detail": "Oligonükleotid ve kimyasal sentez yoluyla API üretimi gerçekleştirilecek olmasına ve proje maliyet unsurları arasında VOC emisyonları ile tehlikeli atıklar sayılmasına rağmen proje kapsamında solvent geri kazanım ünitesi veya solventlerin yeniden kullanımına yönelik bir faaliyet bulunmadığı beyan edilmektedir.",
+          "pages": [
+            14,
+            57,
+            58
+          ]
+        },
+        {
+          "severity": "medium",
+          "title": "Çevresel fayda-maliyet analizinin yalnızca niteliksel yapılması",
+          "detail": "Toplam yatırım bedeli 800.000.000 TL olarak belirtilmesine karşın çevresel faydalar ve çevresel maliyetler için ayrı parasal değerler, net fayda-maliyet oranı veya geri ödeme hesabı oluşturulmadığı, değerlendirmenin bütünüyle niteliksel bırakıldığı ifade edilmektedir.",
+          "pages": [
+            58
+          ]
+        },
+        {
+          "severity": "low",
+          "title": "Yer alternatiflerinin değerlendirilmemesi",
+          "detail": "Projenin ÇED Yönetmeliği Ek-1 Madde 33 (API üretimi) ve Madde 29 (50.000 m³ üzeri kimyasal depolama) kapsamında yeni kimyasal sentez süreçleri eklemesine rağmen, mevcut OSB parseli içinde kaldığı gerekçesiyle ayrıca alternatif saha değerlendirmesine ihtiyaç duyulmadığı belirtilmiştir.",
+          "pages": [
+            2,
+            66
+          ]
+        }
+      ],
+      "hkt_and_petition_questions": [
+        {
+          "question_tr": "Flora ve fauna değerlendirmesinin önceki ekolojik değerlendirme raporları ve literatür verilerine dayandırıldığı belirtilmektedir; proje sahası ve yakın çevresi için proje öncesinde farklı vejetasyon dönemlerini kapsayan güncel saha etütleri yapılmış mıdır, yapıldıysa tarih ve yöntemleri nelerdir?",
+          "pages": [
+            80,
+            81
+          ]
+        },
+        {
+          "question_tr": "Raporda adı geçen Veliköy Antik Su Yolu Doğal Sit Alanı başta olmak üzere bölgedeki tescilli doğal ve arkeolojik sit alanlarının proje parseline kesin kuş uçuşu mesafeleri neden belirtilmemiş ve mekânsal kesişim değerlendirmesi neden ÇED raporu aşamasında tamamlanmamıştır?",
+          "pages": [
+            79
+          ]
+        },
+        {
+          "question_tr": "ÇED Yönetmeliği Madde 33 ve Madde 29 kapsamında kimyasal sentez ve oligonükleotid bazlı API üretimi planlanmasına rağmen projede neden solvent geri kazanım ünitesi öngörülmemiştir; yıllık tüketilecek ve atık olarak bertaraf edilecek solvent miktarları ile VOC kontrol verimliliği nedir?",
+          "pages": [
+            2,
+            13,
+            14
+          ]
+        },
+        {
+          "question_tr": "Çevresel fayda-maliyet değerlendirmesinde sayısal çevresel maliyet ve net fayda-maliyet oranı hesaplanmadığı belirtildiğine göre, planlanan kapasite artışının Ergene-1 OSB atıksu altyapısı ve bölge hava kalitesi üzerindeki ek kirlilik yükü hangi nicel verilerle karşılanacaktır?",
+          "pages": [
+            14,
+            58,
+            66
+          ]
+        }
+      ],
+      "data_limitations": "Toplam 875 PDF sayfasından oluşan ÇED raporunun yalnızca 22 sayfası ([1, 2, 4-16, 34, 57, 58, 66, 79-81]) inceleme kesiti olarak sunulmuştur; ayrıca raporun 235 sayfası metin çıkarılamayan taranmış görüntü formatındadır. Bu nedenle içindekiler dizininde görülen BEKRA hesaplamaları, flora-fauna tablolarının devamı, su temini ve atıksu hesapları, hava/VOC emisyon modellemeleri, IV. Bölüm Kümülatif Çevresel Etki Değerlendirmesi, V. Bölüm İzleme Planları ve rapor ekleri incelenememiş ve doğrulanamamıştır [s. 4, s. 6, s. 8, s. 9, s. 11]."
+    }
+  }
+}

@@ -1,0 +1,304 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>e-ÇED Ön Özet #57477 — İZMİR / Ödemiş</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <style>
+:root {
+  --bg: #0f1216;
+  --surface: #171c22;
+  --border: #262e38;
+  --text: #e6edf3;
+  --muted: #8b949e;
+  --accent: #58a6ff;
+  --red: #f85149;
+  --amber: #d29922;
+  --green: #3fb950;
+  --badge-bg: #212830;
+}
+@media (prefers-color-scheme: light) {
+  :root {
+    --bg: #f6f8fa;
+    --surface: #ffffff;
+    --border: #d0d7de;
+    --text: #1f2328;
+    --muted: #656d76;
+    --accent: #0969da;
+    --red: #cf222e;
+    --amber: #9a6700;
+    --green: #1a7f37;
+    --badge-bg: #eef2f6;
+  }
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+}
+.wrap { max-width: 1240px; margin: 0 auto; padding: 24px 18px 64px; }
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+header { border-bottom: 1px solid var(--border); padding-bottom: 16px; margin-bottom: 20px; }
+h1 { margin: 0 0 6px; font-size: 1.55rem; }
+h2 { margin: 26px 0 10px; font-size: 1.2rem; }
+h3 { margin: 16px 0 8px; font-size: 1rem; }
+.sub { color: var(--muted); font-size: 0.92rem; margin: 0; }
+.meta-bar { display: flex; flex-wrap: wrap; gap: 14px; margin-top: 12px; font-size: 0.85rem; color: var(--muted); }
+.stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 10px; margin: 16px 0 18px; }
+.stat { background: var(--surface); border: 1px solid var(--border); border-radius: 8px; padding: 12px 14px; }
+.stat .num { font-size: 1.45rem; font-weight: 700; }
+.stat .lbl { font-size: 0.78rem; color: var(--muted); }
+.map-box {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 18px;
+}
+#map { width: 100%; height: 420px; background: var(--badge-bg); }
+#digest-map { width: 100%; height: 320px; background: var(--badge-bg); }
+.map-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  padding: 9px 14px;
+  font-size: 0.8rem;
+  color: var(--muted);
+  border-top: 1px solid var(--border);
+}
+.dot { display: inline-block; width: 10px; height: 10px; border-radius: 50%; margin-right: 5px; vertical-align: middle; }
+.controls { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; margin-bottom: 16px; }
+input[type="search"], select.filter-select {
+  padding: 8px 12px;
+  border-radius: 6px;
+  border: 1px solid var(--border);
+  background: var(--surface);
+  color: var(--text);
+  font-size: 0.9rem;
+}
+input[type="search"] { flex: 1 1 240px; }
+select.filter-select { min-width: 170px; }
+button.pill {
+  padding: 7px 12px;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: var(--surface);
+  color: var(--text);
+  cursor: pointer;
+  font-size: 0.82rem;
+}
+button.pill.active { background: var(--accent); border-color: var(--accent); color: #fff; font-weight: 600; }
+.cards { display: flex; flex-direction: column; gap: 10px; }
+.card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 15px 17px;
+}
+.card.ek1 { border-left: 4px solid var(--accent); }
+.row-top { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px; align-items: baseline; }
+.title { font-weight: 600; font-size: 0.98rem; }
+.badges { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 7px; }
+.badge {
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  background: var(--badge-bg);
+  border: 1px solid var(--border);
+}
+.badge.urgent { border-color: var(--red); color: var(--red); font-weight: 600; }
+.badge.warn { border-color: var(--amber); color: var(--amber); font-weight: 600; }
+.badge.ok { border-color: var(--green); color: var(--green); }
+.badge.muted { color: var(--muted); }
+.detail { font-size: 0.87rem; color: var(--muted); margin: 8px 0; }
+.actions { display: flex; flex-wrap: wrap; gap: 12px; font-size: 0.84rem; margin-top: 8px; }
+.notice {
+  margin-top: 28px;
+  padding: 14px 16px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  font-size: 0.84rem;
+  color: var(--muted);
+}
+table.kv { width: 100%; border-collapse: collapse; margin: 12px 0; font-size: 0.9rem; }
+table.kv th, table.kv td { border: 1px solid var(--border); padding: 8px 11px; text-align: left; vertical-align: top; }
+table.kv th { width: 240px; background: var(--badge-bg); }
+code { background: var(--badge-bg); padding: 1px 5px; border-radius: 4px; font-size: 0.85em; }
+blockquote { margin: 10px 0; padding: 11px 15px; border-left: 3px solid var(--accent); background: var(--surface); font-size: 0.9rem; }
+.hit { margin: 7px 0; font-size: 0.88rem; }
+.pno { font-weight: 700; color: var(--accent); }
+.leaflet-popup-content { color: #1f2328; font-size: 0.85rem; line-height: 1.45; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div style="font-size:0.85rem;margin-bottom:8px;"><a href="../index.html">← Türkiye e-ÇED İzleme listesine dön</a> · <a href="../rehber.html">Kullanım ve İnceleme Rehberi</a> · <a href="57477.md">Ham Markdown (.md)</a></div>
+    <h1>e-ÇED Ön Özet #57477 — İZMİR / Ödemiş</h1>
+    <p class="sub">Süt İşleme Tesisi (450.000 lt/gün Çiğ Süt, 650.000 lt/gün Peyniraltı Suyu)</p>
+    <div class="badges" style="margin-top:10px;">
+      <span class="badge">Nihai Karar</span>
+      <span class="badge">Ek-1</span>
+      <span class="badge urgent">10 Günlük Askı · 6 gün kaldı (2026-11-26)</span>
+    </div>
+  </header>
+
+  <table class="kv">
+    <tr><th>Proje Sahibi</th><td>Sayer Gıda İç ve Dış Ticaret A.Ş.</td></tr>
+    <tr><th>Hazırlayan Kuruluş</th><td>ÇEVTAŞ ARAŞTIRMA TEKNOLOJİ MADENCİLİK MÜHENDİSLİK MÜŞAVİRLİK PEYZAJ EĞİTİM DANIŞMANLIK TAAHHÜT TİCARET LİMİTED ŞİRKETİ</td></tr>
+    <tr><th>Sektör / Alt Sektör</th><td>Gıda / Süt İşleme Tesisleri</td></tr>
+    <tr><th>Duyuru Tarihi</th><td><code>16.11.2026</code> (belge yükleme tarihi: <code>09/10/2025 06:28:17</code>)</td></tr>
+    <tr><th>PDF Kapsamı</th><td>87.27 MB · 674 sayfa (497 metin sayfası / 177 taranmış veya görüntü sayfası) · SHA-256 <code>5951730ec4939261…</code></td></tr>
+    <tr><th>Resmi Bağlantılar</th><td><a href="http://eced.csb.gov.tr/jsp/ek1/57477" target="_blank" rel="noopener">e-ÇED Portal Kaydı</a> · <a href="http://eced.csb.gov.tr/jsp/dosya/dosyaGoster.htm?tempAd=sign2023591123295745630.pdf&amp;orjinalAd=57477_Son_Sekli_Verilen_Rapor.pdf&amp;yuklemeTarihi=2026-11-16" target="_blank" rel="noopener">Resmi PDF Dosyası</a> · <a href="https://www.openstreetmap.org/?mlat=38.1815&amp;mlon=27.9704#map=12/38.1815/27.9704" target="_blank" rel="noopener">OpenStreetMap</a> · <a href="https://www.google.com/maps/search/?api=1&amp;query=38.1815,27.9704" target="_blank" rel="noopener">Google Haritalar</a></td></tr>
+  </table>
+
+  <h2>Konum Haritası</h2>
+  <div class="map-box">
+    <div id="digest-map"></div>
+    <div class="map-legend"><span>PDF metninden çıkarılan kesin proje koordinatları (77 nokta, datum: UTM-Z35/ED50, sayfa: s.35, s.36, s.37, s.338).</span></div>
+  </div>
+
+  
+  <h2>Yapay Zeka Destekli Bilimsel Ön Değerlendirme <span class="badge">gemini-4-hydrogen</span></h2>
+  <p class="sub">Bu değerlendirme, resmi PDF dosyasından seçilen 24 sayfa (s.1, s.2, s.3, s.4, s.5, s.6, s.7, s.8, s.9, s.10, s.11, s.12, s.13, s.14, s.15, s.16, s.17, s.18, s.20, s.28, s.42, s.43, s.140, s.142) esas alınarak hazırlanmıştır. Tüm sayısal verilerin ve tespitlerin resmi PDF belgesindeki ilgili <code>[s. N]</code> sayfalarından doğrulanması gerekir.</p>
+  <section class="card ek1">
+    <p><strong>Özet:</strong> Sayer Gıda İç ve Dış Ticaret A.Ş. tarafından İzmir ili, Ödemiş ilçesi, Umurbey Mahallesi mevkii 631 Ada 36 Parsel üzerinde günde 450.000 litre çiğ süt ve 650.000 litre peyniraltı suyu işleme kapasiteli Süt İşleme Tesisi kurulması planlanmaktadır. Tapu alanı 47.252,14 m2, revize ÇED alanı 45.677,825 m2 olan tarla nitelikli parsel, 1/100.000 ölçekli Çevre Düzeni Planı&#x27;nda Tarım Arazisi ve Sulama Alanı kapsamında yer almaktadır. Proje alanı Ödemiş ilçe merkezinin yaklaşık 5 km güneyinde, en yakın yerleşimler olan Karakova Mahallesi&#x27;ne 2.290 m ve Umurbey Mahallesi&#x27;ne 3.600 m mesafededir. Başlıca çevresel hususlar; tarım ve sulama alanı niteliğindeki arazinin sanayi tesisine dönüşümü, su temini ile yüksek organik yüklü atıksu yönetimi ve Mayıs 2025 ile sınırlı tutulan biyolojik çeşitlilik değerlendirmesinin kapsamıdır.</p>
+    <details style="margin-top:8px;font-size:0.86rem;color:var(--muted);"><summary style="cursor:pointer;">İngilizce özet (English summary)</summary><p style="margin:6px 0 0;">Sayer Gıda İç ve Dış Ticaret A.Ş. proposes to establish a dairy processing facility with a daily capacity of 450,000 liters of raw milk and 650,000 liters of whey on Parcel 36, Block 631 in Umurbey Neighborhood, Ödemiş District, İzmir Province. The land parcel, registered as agricultural field with a title deed area of 47,252.14 m2 and a revised EIA area of 45,677.825 m2, falls within Agricultural Land and Irrigation Area designations under the 1/100,000-scale Environmental Plan. Located approximately 5 km south of Ödemiş town center, the site is 2,290 m from Karakova Neighborhood and 3,600 m from Umurbey Neighborhood. Key environmental considerations include the conversion of designated agricultural and irrigation land, water supply and high-strength wastewater management, and the narrow scope of baseline biodiversity surveys documented only for May 2025.</p></details>
+    <div class="badges" style="margin-top:10px;">
+      <span class="badge">Saha çalışması: Karışık veya yöntemi belirsiz</span>
+      <span class="badge">Mevsimsel örnekleme: Belirsiz</span>
+      <span class="badge">Kümülatif etki: Eksik veya tespit edilemedi</span>
+    </div>
+    <p class="detail" style="margin-top:10px;"><strong>Zeytinlik ve Korunan Alanlar:</strong> 1/100.000 ölçekli plan hükümlerinde 3573 sayılı Zeytincilik Kanunu ve 5403 sayılı Toprak Koruma Kanunu hatırlatılmakta [s. 28], EK-V Duyarlı Yöreler değerlendirmesinde ise zeytinlik, orman, mera, sulak alan, ÖÇK ve içme-kullanma suyu koruma alanlarının bulunmadığı beyan edilmektedir [s. 142]. En yakın korunan alanın ~25,25 km mesafedeki Yaban Hayatı Geliştirme Sahası olduğu belirtilmekle birlikte [s. 140], proje parselinin kendisi Tarım Arazisi ve Sulama Alanı statüsündedir [s. 17].<br/>Sunulan sayfalarda flora ve fauna çalışmalarının Mayıs 2025 tarihinde yürütüldüğü belirtilmiş, ancak değerlendirmenin önceki PTD/ÇED raporlarından, literatür verilerinden ve yöre halkı duyumlarından derlenen bilgilerle birleştirildiği ifade edilmiştir [s. 42, s. 43]. İçindekiler dizinindeki Tablo 11 ve 13-16 başlıklarının bulunması muhtemel tür listelerine işaret etmesi ve çok mevsimli bir ön örneklemenin sunulan sayfalarda yer almaması nedeniyle mevcut mevsimsel saha verisi yetersiz veya belirsizdir [s. 8, s. 42]. Proje alanı yakınındaki diğer tesislerle etkileşimi ele alan Bölüm III.B.12 ile işletme sonrası izleme planları (Tablo 90, 91, 93) ise sunulan sayfa kesitinin dışında kaldığından kümülatif etki değerlendirmesi doğrulanamamıştır [s. 6, s. 11].</p>
+  </section>
+  <h3>Öne Çıkan Sayısal Bulgular</h3><table class="kv"><tr><th>Proje Bedeli</th><td>360.165.000 TL <span class="pno">[s. 2]</span></td></tr>
+<tr><th>Günlük İşleme Kapasitesi</th><td>450.000 lt/gün çiğ süt ve 650.000 lt/gün peyniraltı suyu <span class="pno">[s. 16]</span></td></tr>
+<tr><th>Tapu ve Revize ÇED Alanı</th><td>Tapu alanı 47.252,14 m2; ÇED alanı 45.677,825 m2 <span class="pno">[s. 16]</span></td></tr>
+<tr><th>Tesis ve Kapalı Alan Büyüklüğü</th><td>Üniteler toplamı 12.207,984 m2; kapalı alan 9.749,228 m2 <span class="pno">[s. 16]</span></td></tr>
+<tr><th>En Yakın Yerleşim Yerleri</th><td>Karakova Mahallesi 2.290 m; Umurbey Mahallesi 3.600 m; Ödemiş ilçe merkezi ~5 km <span class="pno">[s. 16]</span></td></tr>
+<tr><th>İmar ve Arazi Kullanım Durumu</th><td>Tapuda tarla; 1/100.000 ÇDP L19 paftasında Tarım Arazisi ve Sulama Alanı <span class="pno">[s. 17]</span></td></tr>
+<tr><th>İnşaat Süresi ve Ekonomik Ömür</th><td>İnşaat 1 yıl; ekonomik ömür 50 yıl <span class="pno">[s. 16]</span></td></tr>
+<tr><th>İstihdam ve Çalışma Düzeni</th><td>İnşaatta 30, işletmede 40 kişi; yılda 12 ay, ayda 30 gün, günde 3 vardiya <span class="pno">[s. 17]</span></td></tr>
+<tr><th>En Yakın Korunan Alan Mesafesi</th><td>Yaban Hayatı Geliştirme Sahası (~25,25 km mesafede); ÖÇK ve Milli Park bulunmuyor <span class="pno">[s. 140]</span></td></tr>
+<tr><th>Flora-Fauna ve Yer İnceleme Tarihi</th><td>Flora-fauna çalışması Mayıs 2025; ÇEVTAŞ yer incelemesi 30.09.2025 <span class="pno">[s. 42]</span></td></tr></table>
+  <h3>Bilimsel ve Metodolojik Bulgular</h3><section class="card"><div class="hit"><span class="badge urgent">YÜKSEK</span> <strong>Tarım ve Sulama Alanında Sanayi Yapılaşması ve 5403 Sayılı Kanun İzin Belirsizliği</strong> <span class="pno">[s. 4, s. 16, s. 17, s. 28]</span> — Proje parseli tapuda tarla niteliğinde olup 1/100.000 ölçekli planda Tarım Arazisi ve Sulama Alanı içinde kalmaktadır [s. 16, s. 17]. Plan hükümleri madde 8.7.4 amaç dışı kullanım için 5403 sayılı Kanun kapsamında Bakanlık izni aramakta, madde 8.7.9 ise sulama alanlarında emsal artışı yapılamayacağını belirtmektedir; ancak sunulan özet ve giriş sayfalarında tarım dışı kullanım izni veya Toprak Koruma Projesi onayı görülmemektedir [s. 4, s. 28].</div>
+<div class="hit"><span class="badge urgent">YÜKSEK</span> <strong>Biyolojik Çeşitlilik Çalışmasının Tek Aya Sıkışması ve Duyum/Literatür Ağırlığı</strong> <span class="pno">[s. 8, s. 42, s. 43]</span> — Flora ve fauna incelemesinin yalnızca Mayıs 2025 döneminde yapıldığı bildirilmiştir [s. 42]. Çalışmada sahadan ziyade çevre benzer alanlara, önceki PTD/ÇED raporlarına, literatüre ve yöre halkından edinilen duyumlara dayanıldığı belirtilmekte [s. 42, s. 43], tablo başlıklarında ise gözlenen yerine bulunması muhtemel tür ifadeleri yer almaktadır [s. 8].</div>
+<div class="hit"><span class="badge warn">ORTA</span> <strong>Rapor Sunum ve Duyuru Tarihlerindeki 2026 Kronolojik Tutarsızlığı</strong> <span class="pno">[s. 1, s. 2, s. 16, s. 17]</span> — Nihai ÇED Raporu kapağında KASIM-2026, başlık sayfasında ve ilan metninde 16.11.2026 tarihi yer alırken; parsel alımı 09/2025, flora-fauna çalışması Mayıs 2025, yer incelemesi 30.09.2025 ve Karayolları yazısı 06.11.2025 tarihlerini taşımaktadır [s. 1, s. 2, s. 16, s. 17]. İleri tarihli resmi sunum/ilan kaydının 2025 tarihli saha ve kurum yazılarıyla ilişkisi net değildir [s. 2, s. 16, s. 17].</div>
+<div class="hit"><span class="badge warn">ORTA</span> <strong>Dışarıdan Peyniraltı Suyu Taşınması ve Kömür Kullanımı İhtimali</strong> <span class="pno">[s. 10, s. 16, s. 18]</span> — Tesis kendi üretimi dışında diğer süt işleme firmalarından gelecek günde 650 ton peyniraltı suyunu da işleyerek toplam günde 1.100 ton hammadde işleyecektir [s. 16, s. 18]. Ayrıca Tablolar Dizini&#x27;nde yer alan Tablo 51 (Gaz Emisyon Faktörleri - Kömür) başlığı tesisin yakma ünitesinde kömür kullanılabileceğine işaret etmekte, ancak su temini, atıksu deşarjı ve emisyon hesapları sunulan sayfalarda bulunmamaktadır [s. 10, s. 16].</div>
+<div class="hit"><span class="badge muted">DÜŞÜK</span> <strong>EK-V Duyarlı Yöreler Beyanlarının Somut Mesafe Analizinden Yoksun Görünümü</strong> <span class="pno">[s. 12, s. 140, s. 142]</span> — Sayfa 142&#x27;de zeytinlik, orman, mera, sulak alan ve içme suyu havzalarının bulunmadığı tek cümlelerle beyan edilmiş, yalnızca 25,25 km mesafedeki Yaban Hayatı Geliştirme Sahası belirtilmiştir [s. 140, s. 142]. Şekiller Dizini&#x27;nde Küçük Menderes Nehri, Bademli Göleti, Gölcük Gölü ve yakın dereler listelenmesine karşın bu su kütlelerine mesafe ve etkileşim detayları sunulan sayfalarda yer almamaktadır [s. 12, s. 140, s. 142].</div></section>
+  <h3>HKT Tutanakları ve İdari Başvurular İçin Taslak Teknik Sorular</h3><ul><li>Tapuda tarla niteliğinde olan ve 1/100.000 ölçekli Çevre Düzeni Planı&#x27;nda Tarım Arazisi ile Sulama Alanı kapsamında kalan 631 Ada 36 Parsel için 5403 sayılı Kanun uyarınca Tarım ve Orman Bakanlığı&#x27;ndan tarım dışı amaçlı kullanım izni alınmış mıdır; plan notu 8.7.9 kapsamında sulama alanı emsal kısıtı sağlanmakta mıdır? <span class="pno">[s. 16, s. 17, s. 28]</span></li>
+<li>Flora ve fauna saha çalışmasının yalnızca Mayıs 2025 dönemine ve çevre alanlardan, literatürden ve yöre halkı duyumlarından derlenen verilere dayandırılması yerine dört mevsimi kapsayan doğrudan parsel içi örnekleme neden gerçekleştirilmemiştir? <span class="pno">[s. 8, s. 42, s. 43]</span></li>
+<li>Tablolar Dizini&#x27;nde Tablo 51 olarak yer alan kömür gaz emisyon faktörleri kapsamında tesiste buhar üretimi için kömür yakılacak mıdır; kullanılacaksa baca gazı ve partikül madde emisyonlarının çevredeki tarım ve sulama arazileri ile Karakova (2.290 m) ve Umurbey (3.600 m) mahalleleri üzerindeki etkileri nedir? <span class="pno">[s. 10, s. 16, s. 17]</span></li>
+<li>Günde 450 ton çiğ süt ve dış tesislerden taşınacak 650 ton peyniraltı suyunun işlenmesinde kullanılacak proses suyu hangi yeraltı veya yüzeysel su kaynağından çekilecek, oluşacak yüksek organik yüklü atıksular ve salamura atıksuları hangi alıcı ortama deşarj edilecektir? <span class="pno">[s. 6, s. 11, s. 12, s. 16]</span></li>
+<li>Nihai ÇED Raporu kapağı, başlık sayfası ve halkın görüşüne açılma ilanında 16.11.2026 (Kasım 2026) tarihlerinin yer almasına karşın parsel satın alımı, flora-fauna çalışması ve yer inceleme tarihlerinin 2025 yılına ait olmasının resmi süreç takvimi açısından açıklaması nedir? <span class="pno">[s. 1, s. 2, s. 16, s. 17]</span></li></ul>
+  <p class="sub"><em>İnceleme sınırları:</em> Toplam 674 sayfalık ÇED Raporu&#x27;nun 177 sayfası taranmış/görüntü (metin çıkarılamayan) nitelikte olup incelemeye yalnızca 24 sayfalık başlangıç ve özet kesiti [s. 1-18, 20, 28, 42, 43, 140, 142] sunulmuştur. İçindekiler dizininde yer alan flora-fauna tür tabloları (rapor s. 33-62), hidrojeoloji ve hidroloji bölümleri (rapor s. 81-94), toprak ve tarım verileri (rapor s. 111-122), su temini ve yakıt/emisyon hesapları (rapor s. 134-146), atıksu arıtma tesisi ve deşarj ortamı (rapor s. 200-208), koku ve yakın tesislerle etkileşim bölümleri (rapor s. 217-220), izleme planları (rapor s. 242-247) ile kurum görüşü ekleri sunulan sayfalarda bulunmadığından doğrulanamamıştır.</p>
+
+
+  <h2>Resmi Duyuru Metni</h2>
+  <blockquote>İZMİR ili Ödemiş,  ilcesinde İZMİR İli Ödemiş,  ilcesinde Sayer Gıda İç ve Dış Ticaret A.Ş. tarafından yapılması planlanan Süt İşleme Tesisi (450.000 lt/gün Çiğ Süt, 650.000 lt/gün Peyniraltı Suyu) projesi ile ilgili olarak hazırlanan ÇED Raporu , İnceleme ve Değerlendirme Komisyonu (İDK) tarafından incelenerek son şekli verilmiş olup, söz konusu rapor halkın görüş ve önerilerini almak üzere ÇED Yönetmeliği&#x27;nin 14.Maddesi (1) no&#x27;lu bendi kapsamında Bakanlıkta ve Çevre, Şehircilik ve İklim Değişikliği İl Müdürlüğü&#x27;nde on (10) takvim günü görüşe açılmıştır. Bakanlığa/Çevre, Şehircilik ve İklim Değişikliği İl Müdürlüğü&#x27;ne iletilen görüşler projeyle ilgili karar alma sürecinde dikkate alınacaktır. Görüş ve öneriler için bu süreç içerisinde Çevre, Şehircilik ve İklim Değişikliği Bakanlığı&#x27;na veya İZMİR Çevre ve Şehircilik İl Müdürlüklerine müracaat edilebilir. İlgililere ve kamuoyuna duyurulur.</blockquote>
+
+  <h2>Otomatik Metin Taraması (Deterministik)</h2>
+  <table class="kv"><tr><th>Saha veya arazi çalışması ifadesi</th><td><span class="badge ok">Metinde yer almaktadır</span></td></tr>
+<tr><th>Literatür taraması ifadesi</th><td><span class="badge ok">Metinde yer almaktadır</span></td></tr>
+<tr><th>Mevsimsel örnekleme ifadesi</th><td><span class="badge ok">Metinde yer almaktadır</span></td></tr>
+<tr><th>Kümülatif etki değerlendirmesi ifadesi</th><td><span class="badge urgent">Metinde tespit edilemedi; doğrudan PDF üzerinden kontrol ediniz</span></td></tr>
+<tr><th>3573 sayılı Zeytincilik Kanunu veya zeytinlik ifadesi</th><td><span class="badge ok">Metinde yer almaktadır</span></td></tr>
+<tr><th>Yeraltı suyu, akifer veya hidrojeoloji ifadesi</th><td><span class="badge ok">Metinde yer almaktadır</span></td></tr>
+<tr><th>Endemik tür, IUCN veya Bern Sözleşmesi ifadesi</th><td><span class="badge ok">Metinde yer almaktadır</span></td></tr></table>
+  <p class="sub">Metin katmanı (OCR) bulunmayan taranmış harita ve kurum görüşü ekleri otomatik metin taramasına dahil edilmemiştir.</p>
+
+  <h2>Sayfa Kaynaklı Çıkarılan Bulgular</h2>
+  <div class="cards"><section class="card"><h3>Koordinatlar, Parsel ve Alan Büyüklüğü <span style="color:var(--muted);font-weight:400;font-size:0.85rem">(101 sayfa: s.3, s.16, s.18, s.20, s.23, s.24, s.30, s.33, s.35, s.36, s.37, s.57, s.90, s.95 (+87 sayfa))</span></h3><div class="hit"><span class="pno">[s. 3]</span> <code>koordinat</code> — …ıtma tesisi, depolama alanları, yollar), ........................................... 18 I.7. Arazinin mülkiyet durumu, koordinatları, yer bulduru haritası, faaliyet alanı ve çevresinin fotoğrafları ..................................................…</div>
+<div class="hit"><span class="pno">[s. 16]</span> <code>252,14 m2</code> — …azetesi, imza sirküleri e-ÇED sistemine yüklenmiştir. Birleştirme sonucu tapu alanı 631 Ada, 36 Parsel numarası ile 47.252,14 m2 olarak yeniden düzenlenmiştir. Karayolları 2. Bölge Müdürlüğü’nün 06.11.2025 tarih ve 3720572 sayılı yazısında (Bkz.E…</div>
+<div class="hit"><span class="pno">[s. 16]</span> <code>677,825 m2</code> — …da (Bkz.Ek:4) belirtilen proje aşamasındaki Belevi-Tire-Ödemiş Yolu kamulaştırma sınırının korunması için ÇED Alanı 45.677,825 m2 olarak revize edilmiştir. Proje kapsamında yer alan üniteler; tesis binası, kazan dairesi ve arıtma tesisi dahil yakl…</div>
+<div class="hit"><span class="pno">[s. 16]</span> <code>207,984 m2</code> — …revize edilmiştir. Proje kapsamında yer alan üniteler; tesis binası, kazan dairesi ve arıtma tesisi dahil yaklaşık 12.207,984 m2 lik bir alan üzerinde yer almaktadır. Tesis binası ve kazan dairesi kapalı alan olarak planlanmış olup yaklaşık 9.749,…</div>
+<div class="hit"><span class="pno">[s. 16]</span> <code>749,228 m2</code> — …4 m2 lik bir alan üzerinde yer almaktadır. Tesis binası ve kazan dairesi kapalı alan olarak planlanmış olup yaklaşık 9.749,228 m2 dir. Tesis binası ise, hammadde stok, üretim, ürün stok, paketleme ve idari bina birimlerinden oluşmaktadır. Proje a…</div>
+<div class="hit"><span class="pno">[s. 18]</span> <code>252,14 m2</code> — …kova Mahallesine ise 2290 m mesafede yer almaktadır. Birleştirme sonucu tapu alanı 631 Ada, 36 Parsel numarası ile 47.252,14 m2 olarak yeniden düzenlenmiştir. Karayolları 2. Bölge Müdürlüğü’nün 06.11.2025 tarih ve 3720572 sayılı yazısında belirt…</div></section><section class="card"><h3>Su Kullanımı, Hidrojeoloji ve Deşarj <span style="color:var(--muted);font-weight:400;font-size:0.85rem">(73 sayfa: s.2, s.6, s.16, s.17, s.18, s.21, s.84, s.86, s.97, s.98, s.99, s.103, s.104, s.143 (+59 sayfa))</span></h3><div class="hit"><span class="pno">[s. 2]</span> <code>20 Ton/Gün</code> — …ve hayvansal ürünlerin üretimi; r) İşleme kapasitesi 10.000 litre /gün ve üzeri peynir altı suyu işleme tesisleri, k) 20 Ton/Gün ve Üzeri Bitkisel ve/veya Hayvansal Kökenli Katı Yağ Üretim Tesisleri PROJENİN NACE KODU 10.51 - Süthane İşletmeciliğ…</div>
+<div class="hit"><span class="pno">[s. 6]</span> <code>Deşarj</code> — …......................................... 199 III.B.5. Oluşacak Atıksuların Cins ve Miktarları, Bertaraf Yöntemleri ve Deşarj Edileceği Ortamlar ve Uzaklığı, Atıksuların Deşarj Değerleri, Arıtma Tesisi Akım Şeması, İş Termin Planı, Kapasitesi, A…</div>
+<div class="hit"><span class="pno">[s. 6]</span> <code>Atıksu</code> — …j Edileceği Ortamlar ve Uzaklığı, Atıksuların Deşarj Değerleri, Arıtma Tesisi Akım Şeması, İş Termin Planı, Kapasitesi, Atıksu Arıtma Tesisin Devreye Alınması İle Birlikte Oluşacak Arıtma Tesisi Arıtma Çamurlarının Miktarı ve Bertarafı İle İlgili…</div>
+<div class="hit"><span class="pno">[s. 16]</span> <code>450 ton/gün</code> — …ngörülmektedir. Projenin ekonomik ömrünün ise 50 yıl olacağı öngörülmektedir. Planlanan Süt İşleme Tesisi (Proje) ile 450 ton/gün (450.000 lt/gün) çiğ süt 650 ton/gün (650.000 lt/gün) peyniraltı suyu işlenmesi planlanmaktadır. Proje ile bölgedeki s…</div>
+<div class="hit"><span class="pno">[s. 16]</span> <code>650 ton/gün</code> — …ünün ise 50 yıl olacağı öngörülmektedir. Planlanan Süt İşleme Tesisi (Proje) ile 450 ton/gün (450.000 lt/gün) çiğ süt 650 ton/gün (650.000 lt/gün) peyniraltı suyu işlenmesi planlanmaktadır. Proje ile bölgedeki süt üretim te sislerinden alınan süt,…</div>
+<div class="hit"><span class="pno">[s. 17]</span> <code>20 Ton/Gün</code> — …ve hayvansal ürünlerin üretimi; r) İşleme kapasitesi 10.000 litre /gün ve üzeri peynir altı suyu işleme tesisleri, k) 20 Ton/Gün ve Üzeri Bitkisel ve/veya Hayvansal Kökenli Katı Yağ Üretim Tesisleri kapsamında yer almaktadır. Çevre, Şehircilik ve…</div></section><section class="card"><h3>Korunan Alanlar, Orman ve Zeytinlikler <span style="color:var(--muted);font-weight:400;font-size:0.85rem">(11 sayfa: s.4, s.28, s.140, s.142, s.143, s.254, s.257, s.292, s.376, s.564, s.565)</span></h3><div class="hit"><span class="pno">[s. 4]</span> <code>Özel Çevre Koruma</code> — …anları, Kültür Varlıkları, Tabiat Varlıkları, Sit ve Koruma Alanları, Biyogenetik Rezerv Alanları, Biyosfer Rezervleri, Özel Çevre Koruma Bölgeleri, Özel Koruma Alanları, içme ve kullanma su kaynakları ile ilgili koruma alanları, Turizm Alan ve Merkezleri v…</div>
+<div class="hit"><span class="pno">[s. 28]</span> <code>Zeytinlik</code> — …i Sınıflamalarına Göre Tarımsal Amaçlı Yapılaşmalar Bu Planda Belirlenen Koşullara Göre Gerçekleştirilecektir. 8.7.6. Zeytinlik Alanlarda, 3573 Sayılı “Zeytinciliğin Islahı ve Yabanilerinin Aşılattırılması Hakkında Kanun” Hükümleri Uygulanır. Bu…</div>
+<div class="hit"><span class="pno">[s. 28]</span> <code>3573 Sayılı</code> — …e Tarımsal Amaçlı Yapılaşmalar Bu Planda Belirlenen Koşullara Göre Gerçekleştirilecektir. 8.7.6. Zeytinlik Alanlarda, 3573 Sayılı “Zeytinciliğin Islahı ve Yabanilerinin Aşılattırılması Hakkında Kanun” Hükümleri Uygulanır. Bu Alanlarda ve 5403 Sayıl…</div>
+<div class="hit"><span class="pno">[s. 140]</span> <code>Özel Çevre Koruma</code> — …nları, Kültür Varlıkları, Tabiat Varlıkları, Sit ve Koruma Alanları, Biyogenetik Rezerv Alanları, Biyosfer Rezervleri, Özel Çevre Koruma Bölgeleri, Özel Koruma Alanları, içme ve kullanma su kaynakları ile ilgili koruma alanları, Turizm Alan ve Merkezleri…</div>
+<div class="hit"><span class="pno">[s. 142]</span> <code>Özel Çevre Koruma</code> — …etmeliği’nde tanımlanan alanlar bulunmamaktadır. f) Çevre Kanununun 9 uncu maddesi uyarınca Cumhurbaşkanı tarafından &quot;Özel Çevre Koruma Bölgeleri&quot; olarak tespit ve ilan edilen alanlar, bulunmamaktadır g) Boğaziçi Kanununa göre koruma altına alınan alanla…</div>
+<div class="hit"><span class="pno">[s. 142]</span> <code>orman alanı</code> — …ar, bulunmamaktadır g) Boğaziçi Kanununa göre koruma altına alınan alanlar, bulunmamaktadır. ğ) Orman Kanunu uyarınca orman alanı sayılan yerler, bulunmamaktadır. h) Kıyı Kanunu gereğince yapı yasağı getirilen alanlar, bulunmamaktadır. ı) Zeytinci…</div></section><section class="card"><h3>Flora, Fauna ve Saha Metodolojisi <span style="color:var(--muted);font-weight:400;font-size:0.85rem">(78 sayfa: s.5, s.6, s.8, s.15, s.42, s.43, s.45, s.46, s.47, s.48, s.49, s.50, s.51, s.52 (+64 sayfa))</span></h3><div class="hit"><span class="pno">[s. 5]</span> <code>Endemik</code> — ….............. 163 III.A.9. Proje Alanının Hazırlanması Ve İnşaat Aşamalarında Zarar Görebilecek Flora- Fauna Türleri (Endemik, Nesli Tehlikede Türler Vb.) Proje İçin Seçilen Yer Ve Etki Alanında Bulunan Tür Popülasyonlarının Etkilenmesi, .......…</div>
+<div class="hit"><span class="pno">[s. 6]</span> <code>Endemik</code> — …..................... 221 III.B.16.İşletme Aşamasında Yapılacak İşlerden Dolayı Zarar Görebilecek Flora-Fauna Türleri (Endemik Türler, Nesli Tehlikede Vb.), Proje İçin Seçilen Yer Ve Faaliyetin Etki Alanında Bulunan Tür Popülasyonlarının Etkilenm…</div>
+<div class="hit"><span class="pno">[s. 8]</span> <code>IUCN</code> — …le Bulunması Muhtemel Flora Türleri, Türkçe İsimleri, Habitatları, Fitocoğrafik Bölgesi, Endemizm ve Nadirlik Durumu, IUCN Red Data Book Kategorileri, BERN ve CITES Sözleşmelerine Göre Durumları ve Nispi Bolluk Derecesi .....................…</div>
+<div class="hit"><span class="pno">[s. 8]</span> <code>CITES</code> — …kçe İsimleri, Habitatları, Fitocoğrafik Bölgesi, Endemizm ve Nadirlik Durumu, IUCN Red Data Book Kategorileri, BERN ve CITES Sözleşmelerine Göre Durumları ve Nispi Bolluk Derecesi ...............................................................…</div>
+<div class="hit"><span class="pno">[s. 8]</span> <code>BERN Sözleşmesi</code> — …nin Familya ve Tür Adı, Türkçe Adı, Habitatı, Endemizm Durumu, Demirsoy Kategorileri, IUCN Red Data Book Kategorileri, BERN Sözleşmesi Kategorileri, CITES Sözleşmesi Kategorileri ve 2025-2026 MAK Kararları’na Göre Durumları ............................…</div>
+<div class="hit"><span class="pno">[s. 15]</span> <code>CITES</code> — …ullanım Kabiliyet Sınıfı BERN : Avrupa’nın Yaban Hayatı ve Yaşama Ortamlarının Korunması Sözleşmesi Bkz : Bakınız CITES : Nesli Tehlike Altında Olan Yabani Hayvan ve Bitki Türlerinin Uluslararası Ticaretine İlişkin Sözleşme ÇED : Çevre…</div></section><section class="card"><h3>Emisyonlar, Jeokimya ve Atıklar <span style="color:var(--muted);font-weight:400;font-size:0.85rem">(81 sayfa: s.3, s.10, s.12, s.15, s.30, s.64, s.88, s.89, s.91, s.95, s.96, s.157, s.158, s.162 (+67 sayfa))</span></h3><div class="hit"><span class="pno">[s. 3]</span> <code>deprem</code> — …lik halihazır harita üzerinde faaliyet alanı merkezli 1 km lik yarıçap üzerinde yer altı sularını, yerüstü sularını ve deprem kuşaklarını gösterir analiz, jeolojik yapı, köy yerleşik ve sanayi alanları, ulaşım ağı, enerji nakil hatları arazi kab…</div>
+<div class="hit"><span class="pno">[s. 10]</span> <code>Gürültü</code> — ….................................................... 152 Tablo 66İnşaat Aşaması Düzeltme Katsayısı Uygulanarak Bulunan Gürültü Değerleri(dBA) .......................................................................................................…</div>
+<div class="hit"><span class="pno">[s. 12]</span> <code>Deprem</code> — …ası .............................................................................. 74 Şekil 14. Proje Alanını Gösterir Deprem Tehlike Haritası (kaynak: https://tdth.afad.gov.tr/) 74 Şekil 15. Proje Alanını Gösterir Fay/Diri Fay Haritası (kayna…</div>
+<div class="hit"><span class="pno">[s. 15]</span> <code>Gürültü</code> — …aştırma Teknoloji Madencilik Mühendislik Müşavirlik Peyzaj Eğitim Danışmanlık Taahhüt Tic. Ltd. Şti. ÇGKY : Çevresel Gürültü Kontrol Yönetmeliği dB : Desibel dBA : A Ağırlıklı Desibel g : Gram IUCN : Uluslararası Doğa Koruma Birliği k…</div>
+<div class="hit"><span class="pno">[s. 30]</span> <code>deprem</code> — …lik halihazır harita üzerinde faaliyet alanı merkezli 1 km lik yarıçap üzerinde yer altı sularını, yerüstü sularını ve deprem kuşaklarını gösterir analiz, jeolojik yapı, köy yerleşik ve sanayi alanları, ulaşım ağı, enerji nakil hatları, arazi…</div>
+<div class="hit"><span class="pno">[s. 64]</span> <code>Gürültü</code> — …inin üreme dönemi olan Bahar ayları dışında yapılması, bu ortamların sürekli sulanarak nemli kalmasının sağlanması. Gürültü oluşumuna neden olan faaliyetlerin fauna türlerin etkisi Ortamdaki hareketlilik ve gürültü oluşumu nedeniyle fauna…</div></section><section class="card"><h3>Proje Bedeli, Güç ve Kapasite <span style="color:var(--muted);font-weight:400;font-size:0.85rem">(42 sayfa: s.2, s.3, s.5, s.6, s.17, s.18, s.19, s.21, s.22, s.23, s.24, s.28, s.152, s.153 (+28 sayfa))</span></h3><div class="hit"><span class="pno">[s. 2]</span> <code>PROJE BEDELİ</code> — …rpil.basaran@sayergida.com PROJENİN ADI Süt İşleme Tesisi (450.000 lt/gün Çiğ Süt, 650.000 lt/gün Peyniraltı Suyu) PROJE BEDELİ 360.165.000 TL PROJE İÇİN SEÇİLEN YERİN AÇIK ADRESİ (İLİ, İLÇESİ, MEVKİİ) İzmir İli, Ödemiş İlçesi, Umurbey Mahall…</div>
+<div class="hit"><span class="pno">[s. 2]</span> <code>360.165.000 TL</code> — …ayergida.com PROJENİN ADI Süt İşleme Tesisi (450.000 lt/gün Çiğ Süt, 650.000 lt/gün Peyniraltı Suyu) PROJE BEDELİ 360.165.000 TL PROJE İÇİN SEÇİLEN YERİN AÇIK ADRESİ (İLİ, İLÇESİ, MEVKİİ) İzmir İli, Ödemiş İlçesi, Umurbey Mahallesi Mevkii (631…</div>
+<div class="hit"><span class="pno">[s. 2]</span> <code>kapasite</code> — …el Etkileri Ön İnceleme ve Değerlendirmeye Tabi Projeler MADDE 26-Bitkisel ve hayvansal ürünlerin üretimi; r) İşleme kapasitesi 10.000 litre /gün ve üzeri peynir altı suyu işleme tesisleri, k) 20 Ton/Gün ve Üzeri Bitkisel ve/veya Hayvansal Köken…</div>
+<div class="hit"><span class="pno">[s. 3]</span> <code>proje bedeli</code> — …tme süresi, hizmet amaçları, projenin sosyal ve ekonomik yönden gerekliliği (fayda maliyet analizi), zamanlama tablosu, proje bedelinin detaylandırılarak açıklanması ......................................................................................…</div>
+<div class="hit"><span class="pno">[s. 5]</span> <code>Kapasite</code> — …III.A.8. Proje Kapsamındaki Ulaştırma Altyapısı Planı (Ulaştırma Güzergahı, Şekli, Güzergah Yollarının Mevcut Durumu Ve Kapasitesi, Hangi Amaçlar İçin Kullanıldığı, Mevcut Trafik Yoğunluğu, Yerleşim Yerlerine Göre Konumu) ..........................…</div>
+<div class="hit"><span class="pno">[s. 6]</span> <code>Kapasite</code> — …eri ve Deşarj Edileceği Ortamlar ve Uzaklığı, Atıksuların Deşarj Değerleri, Arıtma Tesisi Akım Şeması, İş Termin Planı, Kapasitesi, Atıksu Arıtma Tesisin Devreye Alınması İle Birlikte Oluşacak Arıtma Tesisi Arıtma Çamurlarının Miktarı ve Bertarafı…</div></section></div>
+
+  <h2>Belge Bölüm Haritası</h2>
+  <ul><li><span class="pno">[s. 3]</span> İÇİNDEKİLER</li>
+<li><span class="pno">[s. 8]</span> TABLOLAR DİZİNİ</li>
+<li><span class="pno">[s. 12]</span> ŞEKİLLER DİZİNİ</li>
+<li><span class="pno">[s. 14]</span> FOTOĞRAFLAR DİZİNİ</li>
+<li><span class="pno">[s. 15]</span> KISALTMALAR</li>
+<li><span class="pno">[s. 16]</span> PROJENİN TEKNİK OLMAYAN ÖZETİ</li>
+<li><span class="pno">[s. 18]</span> BÖLÜM I. PROJENİN TANIMI VE AMACI, PROJE İÇİN SEÇİLEN YERİN KONUMU</li>
+<li><span class="pno">[s. 18]</span> I.1. Projenin konusu, yatırımın tanımı, işletme süresi, hizmet amaçları, projenin sosyal ve ekonomik yönden gerekliliği (fayda maliyet analizi), zamanlama tablosu, proje bedelinin detaylandırılarak açıklanması</li>
+<li><span class="pno">[s. 24]</span> I.2. Projenin inşaat ve işletme aşamasında kullanılacak arazi miktarı ve arazinin tanımlanması,</li>
+<li><span class="pno">[s. 25]</span> I.3. Proje için seçilen yer ve kullanılan teknoloji alternatiflerinin değerlendirilmesi,</li>
+<li><span class="pno">[s. 26]</span> I.4. Bölgeye ilişkin varsa 1/100.000, 1/25.000, 1/5.000 ve 1/1.000 ölçekli onaylı imar planları ve plan hükümleri, faaliyet alanının plan üzerinde işaretlenmesi (onaylı plan olmaması durumunda faaliyet için kullanılacak yer ölçekli harita üzerinde açı...</li>
+<li><span class="pno">[s. 30]</span> I.5. 1/25.000 ve 1/5000 lik halihazır harita üzerinde faaliyet alanı merkezli 1 km lik yarıçap üzerinde yer altı sularını, yerüstü sularını ve deprem kuşaklarını gösterir analiz, jeolojik yapı, köy yerleşik ve sanayi alanları, ulaşım ağı, enerji nakil...</li>
+<li><span class="pno">[s. 33]</span> I.6. Proje Kapsamındaki Ünitelerin Konumu (Bütün idari ve sosyal ünitelerin, teknik altyapı ünitelerinin varsa diğer ünitelerin proje alanı içindeki konumlarının vaziyet planı üzerinde gösterimi, bunlar için belirlenen kapalı ve açık alan büyüklükleri...</li>
+<li><span class="pno">[s. 37]</span> I.7. Arazinin mülkiyet durumu, koordinatları, yer bulduru haritası, faaliyet alanı ve çevresinin fotoğrafları</li>
+<li><span class="pno">[s. 42]</span> BÖLÜM II. PROJE YERİ VE ETKİ ALANININ MEVCUT ÇEVRESEL ÖZELLİKLERİ (Fiziksel ve Biyolojik çevrenin özellikleri ve doğal kaynakların kullanımı)</li>
+<li><span class="pno">[s. 42]</span> (Proje için seçilen yerin ve projeden etkilenecek alanların ve ortamların, etkileyecek parametreler dikkate alınarak ayrı ayrı belirlenmesi,)</li>
+<li><span class="pno">[s. 42]</span> Proje için seçilen yerin ve projeden etkilenecek alanların-ortamların Fiziksel ve Biyolojik Özellikleri ve Doğal Kaynakların Kullanımı</li>
+<li><span class="pno">[s. 42]</span> II.</li>
+<li><span class="pno">[s. 42]</span> II.1. Türler Ve Ekosistemler: Proje için seçilen yer ve etki alanı içindeki ekosistemler ve ekosistemlerdeki türler,</li>
+<li><span class="pno">[s. 42]</span> Flora-fauna türleri, sınıflandırılması, yaşama ortamları (Beslenme veya üreme alanları), popülasyon yoğunlukları, uluslar arası sözleşmelerle endemik, nadir, nesli tehlikede, tehlike dışı vb. kategorilerinin tablo halinde belirtilmesi (koruma altında ...</li></ul>
+
+  <div class="notice">
+    Bu sayfa, T.C. Çevre, Şehircilik ve İklim Değişikliği Bakanlığı'nın kamuya açık <code>eced-duyuru.csb.gov.tr</code> duyuru portalındaki kayıtlar esas alınarak bilgilendirme amacıyla hazırlanmıştır. Alıntıların tamamı 1 tabanlı PDF sayfa numarasıyla (<code>[s. N]</code>) gösterilmektedir. Yasal süreler otomatik olarak hesaplanır; kesin sürelerin ve hukuki başvuru yollarının yetkili hukukçular tarafından teyit edilmesi gerekir.
+  </div>
+</div>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script>
+(() => {
+  if (typeof L === 'undefined') return;
+  const g = {"lat": 38.1815, "lon": 27.9704, "zoom": 12, "precision": "exact_pdf", "points": [[38.18107, 27.96803], [38.18118, 27.96809], [38.18132, 27.96822], [38.18147, 27.96835], [38.18202, 27.96885], [38.18144, 27.97324], [38.18139, 27.97323], [38.18126, 27.97321], [38.18104, 27.97318], [38.18081, 27.97309], [38.18071, 27.97305], [38.18047, 27.97301], [38.18131, 27.96835], [38.18199, 27.96906], [38.18172, 27.96755], [38.18183, 27.96761], [38.18198, 27.96774], [38.18213, 27.96787], [38.18268, 27.96837], [38.1821, 27.97277], [38.18204, 27.97276], [38.18192, 27.97274], [38.18169, 27.9727], [38.18147, 27.97261], [38.18137, 27.97258], [38.18113, 27.97253], [38.18196, 27.96787], [38.18265, 27.96859], [38.18182, 27.96962], [38.18181, 27.9697], [38.18177, 27.96999], [38.18175, 27.97022], [38.18173, 27.97034], [38.18168, 27.97075], [38.1814, 27.9707], [38.18092, 27.97061], [38.18103, 27.96974], [38.18106, 27.96948], [38.18122, 27.96951], [38.18126, 27.9695]], "label": "İZMİR / Ödemiş — Süt İşleme Tesisi (450.000 lt/gün Çiğ Süt, 650.000 lt/gün Peyniraltı Suyu)"};
+  const map = L.map('digest-map').setView([g.lat, g.lon], g.zoom);
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    maxZoom: 18,
+    attribution: '&copy; OpenStreetMap katkıda bulunanları'
+  }).addTo(map);
+  if (g.precision === 'exact_pdf' && g.points.length > 1) {
+    const latlngs = g.points.map(p => [p[0], p[1]]);
+    const poly = L.polyline(latlngs, { color: '#58a6ff', weight: 3, opacity: 0.85 }).addTo(map);
+    for (const ll of latlngs.slice(0, 30)) {
+      L.circleMarker(ll, { radius: 4, color: '#ffffff', fillColor: '#f85149', fillOpacity: 0.9, weight: 1 }).addTo(map);
+    }
+    map.fitBounds(poly.getBounds().pad(0.25));
+  } else {
+    L.circleMarker([g.lat, g.lon], {
+      radius: g.precision === 'exact_pdf' ? 8 : 11,
+      color: '#ffffff',
+      fillColor: g.precision === 'exact_pdf' ? '#f85149' : '#58a6ff',
+      fillOpacity: g.precision === 'exact_pdf' ? 0.9 : 0.45,
+      weight: 2
+    }).bindPopup(g.label).addTo(map).openPopup();
+  }
+})();
+</script>
+</body>
+</html>

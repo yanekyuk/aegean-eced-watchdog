@@ -1,0 +1,832 @@
+{
+  "filing": {
+    "province": "ANTALYA",
+    "district": "ALANYA",
+    "project_name": "Kaila Beach Hotel Kapasite Artışı",
+    "project_owner": "Edizka Tur. İnş. Taah. Tar. Gıda Tic. A.Ş.",
+    "sector": "Turizm",
+    "sub_sector": "Turistik Tesisler",
+    "decision_type": "ÇED Süreci Başlayan",
+    "announcement_date_tr": "16.11.2026",
+    "project_type": "Ek-1",
+    "detail_text": "ANTALYA ili ALANYA,  ilcesinde ANTALYA il ALANYA,  ilce Oba Mahallesi 724 Ada 2,3 ve 5 Parseller  mevkiinde Edizka Tur. İnş. Taah. Tar. Gıda Tic. A.Ş. tarafından yapılması planlanan Kaila Beach Hotel Kapasite Artışı  projesi ile ilgili olarak Bakanlığımıza sunulan ÇED Başvuru Dosyası Çevresel Etki Değerlendirmesi Yönetmeliği'nin 8. maddesi doğrultusunda incelenmiş ve başvurunun ÇED Genel Formatına uygun hazırlandığı anlaşılmış olup, projeye ilişkin ÇED Süreci başlatılmıştır. Çevresel Etki Değerlendirmesi süreci tamamlanana kadar, süreç ile ilgili her türlü bilgiler ve projeye ilişkin görüş, soru ve öneriler ANTALYA Valiliğine (Çevre, Şehircilik ve İklim Değişikliği İl Müdürlüğü) veya Çevre, Şehircilik ve İklim Değişikliği Bakanlığına gönderilebilir.İlgililere ve kamuoyuna duyurulur.",
+    "detail_links": [
+      {
+        "text": "ÇED Başvuru Dosyası",
+        "href": "http://eced.csb.gov.tr/jsp/ek1/61610"
+      }
+    ],
+    "documents": [
+      {
+        "portal_doc_url": "http://eced.csb.gov.tr/jsp/ek1/61610",
+        "filing_id": "61610",
+        "consulting_firm": "BAYSAL ÇEVRE MÜH. HİZM. ARIT.İNŞ. SAN. VE TİC. LTD. ŞTİ.",
+        "submitted_at": "10/11/2026 04:11:02",
+        "pdf_urls": [
+          {
+            "label": "Dosya Göster",
+            "url": "http://eced.csb.gov.tr/jsp/dosya/dosyaGoster.htm?tempAd=sign2675455215003939365.pdf&orjinalAd=e-imza.pdf&yuklemeTarihi=2026-11-10"
+          }
+        ]
+      }
+    ],
+    "announcement_date": "2026-11-16",
+    "statutory_clocks": [
+      {
+        "code": "aski_10d",
+        "kind": "10 günlük halkın görüş ve önerilerine açılma (askı) süresi",
+        "deadline": "2026-11-26",
+        "days_remaining": 6
+      }
+    ],
+    "filing_key": "61610:16.11.2026:ÇED Süreci Başlayan",
+    "first_seen_at": "2026-11-20T02:11:18"
+  },
+  "pdf_info": {
+    "filename": "61610.pdf",
+    "bytes": 87952359,
+    "sha256": "4bbf715dc724f5d78c7b3d96a464745fbe476eebe01dc6253a82ad4e930b18b9",
+    "cached": false
+  },
+  "analysis": {
+    "page_count": 193,
+    "total_chars": 264997,
+    "text_pages": 139,
+    "scanned_or_blank_pages": 54,
+    "scanned_page_sample": [
+      91,
+      92,
+      93,
+      94,
+      95,
+      97,
+      98,
+      99,
+      100,
+      101,
+      102,
+      103,
+      105,
+      106,
+      107
+    ],
+    "headings": [
+      [
+        3,
+        "BÖLÜM III: PROJENİN İNŞAAT VE İŞLETME AŞAMASINDA ÇEVRESEL ETKİLERİ VE"
+      ],
+      [
+        3,
+        "BÖLÜM VI. HALKIN BİLGİLENDİRİLMESİ VE SÜRECE KATILIMI İLE PAYDAŞ KATILIM PLANI73"
+      ],
+      [
+        6,
+        "PROJENİN TEKNİK OLMAYAN ÖZETİ"
+      ],
+      [
+        9,
+        "BÖLÜM I: PROJENİN TANIMI VE ÖZELLİKLERİ"
+      ],
+      [
+        15,
+        "BÖLÜM II. PROJE YERİ VE ETKİ ALANININ MEVCUT ÇEVRESEL"
+      ],
+      [
+        52,
+        "BÖLÜM III: PROJENİN İNŞAAT VE İŞLETME AŞAMASINDA ÇEVRESEL"
+      ],
+      [
+        63,
+        "BÖLÜM IV: KÜMÜLATİF ÇEVRESEL ETKİ DEĞERLENDİRME"
+      ],
+      [
+        66,
+        "BÖLÜM V: ÇEVRESEL VE SOSYAL EYLEM PLANI"
+      ],
+      [
+        78,
+        "BÖLÜM VI. HALKIN BİLGİLENDİRİLMESİ VE SÜRECE KATILIMI İLE"
+      ],
+      [
+        80,
+        "BÖLÜM VII. NOTLAR, KAYNAKLAR VE EKLER"
+      ]
+    ],
+    "geo": {
+      "precision": "exact_pdf",
+      "lat": 36.53192,
+      "lon": 32.04167,
+      "point_count": 20,
+      "points": [
+        [
+          36.53204,
+          32.04192
+        ],
+        [
+          36.53186,
+          32.04223
+        ],
+        [
+          36.53206,
+          32.0424
+        ],
+        [
+          36.53208,
+          32.04241
+        ],
+        [
+          36.53189,
+          32.04278
+        ],
+        [
+          36.53057,
+          32.04174
+        ],
+        [
+          36.53081,
+          32.04136
+        ],
+        [
+          36.53124,
+          32.04172
+        ],
+        [
+          36.53142,
+          32.04141
+        ],
+        [
+          36.53171,
+          32.04165
+        ],
+        [
+          36.53275,
+          32.04134
+        ],
+        [
+          36.53257,
+          32.04165
+        ],
+        [
+          36.53277,
+          32.04182
+        ],
+        [
+          36.53279,
+          32.04184
+        ],
+        [
+          36.5326,
+          32.0422
+        ],
+        [
+          36.53128,
+          32.04117
+        ],
+        [
+          36.53152,
+          32.04078
+        ],
+        [
+          36.53195,
+          32.04114
+        ],
+        [
+          36.53214,
+          32.04083
+        ],
+        [
+          36.53242,
+          32.04107
+        ]
+      ],
+      "datum": "UTM-Z36/ED50",
+      "pages": [
+        14
+      ]
+    },
+    "signals": {
+      "coordinates_and_footprint": {
+        "label": "Coordinates, Parcel & Footprint",
+        "page_count": 35,
+        "pages": [
+          1,
+          2,
+          6,
+          7,
+          9,
+          10,
+          11,
+          13,
+          14,
+          15,
+          17,
+          32,
+          33,
+          34,
+          35,
+          47,
+          64,
+          65,
+          70,
+          72,
+          73,
+          76,
+          82,
+          84,
+          87
+        ],
+        "samples": [
+          {
+            "page": 1,
+            "match": "ADA 2,3,5 PARSEL",
+            "snippet": "…NŞ. TAAH. TAR. GIDA TİC. A.Ş. KAİLA BEACH HOTEL KAPASİTE ARTIŞI ANTALYA İLİ, ALANYA İLÇESİ, OBA MAH., 724 ADA 2,3,5 PARSEL ■ ÇED BAŞVURU DOSYASI ÇED RAPORU SON ŞEKLİ VERİLEN ÇED RAPORU…"
+          },
+          {
+            "page": 2,
+            "match": "Ada 2,3,5 Parsel",
+            "snippet": "…463.000,00 TL Proje İçin Seçilen Yerin Açık Adresi (İli, İlçesi, Mevkii) Antalya İli, Alanya İlçesi, Oba Mah. 724 Ada 2,3,5 Parseller Projenin Çed Yönetmeliği Kapsamındaki Yeri (Sektör, Alt Sektörü) 05.03.2026 tarih ve 33187 sayılı Resmi Gazete…"
+          },
+          {
+            "page": 6,
+            "match": "Ada 2,3 ve 5 Parsel",
+            "snippet": "…ÇED BAŞVURU DOSYASI 1 PROJENİN TEKNİK OLMAYAN ÖZETİ Antalya İli, Alanya İlçesi, Oba Mahallesi 724 Ada 2,3 ve 5 Parseller üzerinde toplam 9.872,9 m2 yüzölçümlü alanda Edizka Tur. İnş. Taah. Tar. Gıda Tic. A.Ş. tarafından 364 oda 844 yat…"
+          },
+          {
+            "page": 6,
+            "match": "872,9 m2",
+            "snippet": "…PROJENİN TEKNİK OLMAYAN ÖZETİ Antalya İli, Alanya İlçesi, Oba Mahallesi 724 Ada 2,3 ve 5 Parseller üzerinde toplam 9.872,9 m2 yüzölçümlü alanda Edizka Tur. İnş. Taah. Tar. Gıda Tic. A.Ş. tarafından 364 oda 844 yatak kapasiteli Kaila Beach Hotel…"
+          },
+          {
+            "page": 6,
+            "match": "Ada 3 Parsel",
+            "snippet": "…ehircilik İl Müdürlüğü’nün 10.10.2018 tarih ve 28717 sayılı yazısı ile Antalya İli, Alanya İlçesi, Oba Mahallersi, 724 Ada 3 Parsel adresinde Edizka Tur. İnş. Taah. Tar. Gıda Tic. A.Ş. tarafından yapılması planlanan 60 oda kapasite artışı ile nihai…"
+          },
+          {
+            "page": 6,
+            "match": "Ada 2 Parsel",
+            "snippet": "…Blokta 60 oda ve B blokta 252 oda bulunmakta olup, ÇED Yönetmeliği kapsamında gerekli izin işlemleri onaylanmadan 724 Ada 2 Parselde 52 oda kapasiteli C blok otel bünyesine eklenmiş ve mevcutta 364 oda 844 yatak kapasiteyle işletilmektedir. ÇED Yö…"
+          },
+          {
+            "page": 6,
+            "match": "Ada 5 Parsel (eski 1966 Parsel",
+            "snippet": "…e alınması şeklinde gerçekleştirilmiş olup, oda sayılarını gösterir karşılaştırmalı tablo aşağıda verilmiştir. 724 Ada 5 Parsel (eski 1966 Parsel) adına 24.03.2014 tarih ve 14.80 Belge numaralı yapı kullanım izin belgesi, 724 Ada 3 Parsel adına 15.06.2020 tarih ve…"
+          },
+          {
+            "page": 7,
+            "match": "Ada 3 ve 5 Parsel",
+            "snippet": "…2023 yılı ÇED Yönetmeliği Kapsamında gerekli izinler alınmadan yapılan artış 364 Oda Faaliyet, proje alanında 724 Ada 3 ve 5 Parsellerde mülk sahibi olarak yer almakta, 724 Ada 2 Parselde ise kiracı olarak faaliyet göstermektedir. Mülkiyet belgeleri…"
+          }
+        ]
+      },
+      "water_and_discharge": {
+        "label": "Water Use, Hydrogeology & Discharge",
+        "page_count": 14,
+        "pages": [
+          11,
+          36,
+          51,
+          53,
+          54,
+          66,
+          69,
+          77,
+          78,
+          83,
+          84,
+          152,
+          153,
+          154
+        ],
+        "samples": [
+          {
+            "page": 11,
+            "match": "deşarj",
+            "snippet": "…, depo, idari ve/veya sosyal bina, köprü, alt ve üst yapılar (arıtma, kanalizasyon, içme/kullanma su hatları, su alma/deşarj hatları vb. dahil) viyadük vb. sanat yapıları, drenaj, tesviye vb. gibi araziyi kullanılabilir duruma getirmek için…"
+          },
+          {
+            "page": 36,
+            "match": "Atıksu",
+            "snippet": "…et sahibi tarafından alınacaktır. Tesisin inşaat ve işletme aşamasında su ihtiyacı Antalya Büyükşehir Belediyesi Su ve Atıksu İdaresi Genel Müdürlüğü (ASAT), içme suyu şebekesinden sağlanacaktır. Söz konusu işletmede oluşan atıksular, merkez…"
+          },
+          {
+            "page": 51,
+            "match": "sulak alan",
+            "snippet": "…ar, bataklık sazlık ve turbiyeler ile bu alanların kıyı kenar çizgisinden itibaren kara tarafına doğru ekolojik açıdan sulak alan kalan yerler, ÇED Alanında ve etki alanında doğal veya yapay, devamlı veya geçici, suların durgun veya akıntılı, tat…"
+          },
+          {
+            "page": 51,
+            "match": "yeraltı suyu",
+            "snippet": "…çizgisinden itibaren kara tarafına doğru ekolojik açıdan sulak alan kalan yer bulunmamaktadır. c) Göller, akarsular, yeraltı suyu işletme sahaları, ÇED Alanında ve etki alanında Göller, akarsular, yeraltı suyu işletme sahası bulunmamaktadır. ç)…"
+          },
+          {
+            "page": 53,
+            "match": "Atıksu",
+            "snippet": "…ın Kontrolü Yönetmeliği hükümlerine ve 2872 sayılı Çevre Kanununa istinaden yayımlanan yönetmeliklere uyulacaktır. Atıksu Oluşumu İnşaat Aşaması Tesiste 52 odalık artış hali hazırda yapılmış olup, inşaat aşaması bulunmamaktadır. İşletm…"
+          },
+          {
+            "page": 54,
+            "match": "Atıksu",
+            "snippet": "…ÇED BAŞVURU DOSYASI 49 Müşteri Sayısı = 844 kişi Personel Sayısı = 200 kişi Atıksu miktarı = 318 lt/gün.su * 1044 kişi = 331.992 lt/gün = 332 m3/gün Antalya Büyükşehir Belediye Başkanlığ…"
+          },
+          {
+            "page": 54,
+            "match": "332 m3/gün",
+            "snippet": "…844 kişi Personel Sayısı = 200 kişi Atıksu miktarı = 318 lt/gün.su * 1044 kişi = 331.992 lt/gün = 332 m3/gün Antalya Büyükşehir Belediye Başkanlığı (Antalya Su ve Atıksu İdaresi Genel Müdürlüğü Abone İşleri Dairesi Başkanlığı)…"
+          },
+          {
+            "page": 66,
+            "match": "atıksu",
+            "snippet": "…zleme Planı Çevre izleme planı kapsamında tesis içi izlemelerde; enerji tüketimi, su tüketimi, atık oluşum miktarları atıksu gönderim kayıtları izleme altına alınacaktır. Tesisin çevre mevzuatına uygun olarak izlenmesi ise; çevre izin belgesi…"
+          }
+        ]
+      },
+      "protected_land_and_olive": {
+        "label": "Protected Zones, Forests & Olive Groves",
+        "page_count": 5,
+        "pages": [
+          48,
+          49,
+          51,
+          77,
+          133
+        ],
+        "samples": [
+          {
+            "page": 48,
+            "match": "Milli Park",
+            "snippet": "…enen \"Milli Parklar\", \"Tabiat Parkları\", \"Tabiat Anıtları\" ve \"Tabiat Koruma Alanları\", ÇED Alanında ve etki alanında Milli Park, Tabiat Parkı, Tabiat Anıtı ve Tabiat Koruma Alanları bulunmamaktadır. b) Kara Avcılığı Kanunu uyarınca belirlenen \"…"
+          },
+          {
+            "page": 48,
+            "match": "Tabiat Parkı",
+            "snippet": "…Parklar\", \"Tabiat Parkları\", \"Tabiat Anıtları\" ve \"Tabiat Koruma Alanları\", ÇED Alanında ve etki alanında Milli Park, Tabiat Parkı, Tabiat Anıtı ve Tabiat Koruma Alanları bulunmamaktadır. b) Kara Avcılığı Kanunu uyarınca belirlenen \"Yaban Hayatı K…"
+          },
+          {
+            "page": 49,
+            "match": "Özel Çevre Koruma",
+            "snippet": "…netmeliği’nde tanımlanan alan bulunmamaktadır. f) Çevre Kanunu’nun 9 uncu maddesi uyarınca Bakanlar Kurulu tarafından \"Özel Çevre Koruma Bölgeleri\" olarak tespit ve ilan edilen alanlar, ÇED Alanında ve etki alanında Çevre Kanunu’nun 9 uncu maddesi uyarınc…"
+          },
+          {
+            "page": 49,
+            "match": "orman alanı",
+            "snippet": "…Alanında ve etki alanında Boğaziçi Kanunu’na göre koruma altına alınan alan bulunmamaktadır. ğ) Orman Kanunu uyarınca orman alanı sayılan yerler, Faaliyet alanı 1/100.000 Ölçekli Antalya-Burdur-Isparta Çevre Düzeni Planında (O28) turizm alanı sını…"
+          },
+          {
+            "page": 51,
+            "match": "Özel Çevre Koruma",
+            "snippet": "…alan, biogenetik rezerv alanları, jeotermal alanlar ve benzeri) alan bulunmamaktadır. ÇED Alanı ve etki alanı Belek Özel Çevre Koruma Bölgesi içerisinde kalmamaktadır. b) Tarım Alanları: Tarımsal kalkınma alanları, sulanan, sulanması mümkün ve arazi…"
+          },
+          {
+            "page": 51,
+            "match": "kıyı kenar",
+            "snippet": "…olmak üzere canlıların yaşama ortamı olarak önem taşıyan bütün sular, bataklık sazlık ve turbiyeler ile bu alanların kıyı kenar çizgisinden itibaren kara tarafına doğru ekolojik açıdan sulak alan kalan yerler, ÇED Alanında ve etki alanında doğal…"
+          },
+          {
+            "page": 51,
+            "match": "sulak alan",
+            "snippet": "…ar, bataklık sazlık ve turbiyeler ile bu alanların kıyı kenar çizgisinden itibaren kara tarafına doğru ekolojik açıdan sulak alan kalan yerler, ÇED Alanında ve etki alanında doğal veya yapay, devamlı veya geçici, suların durgun veya akıntılı, tat…"
+          },
+          {
+            "page": 77,
+            "match": "orman alanı",
+            "snippet": "…rekli Alanlar” başlığı altında belirtildiği üzere Tesis alanı, 31∕8∕1956 tarihli ve 6831 sayılı Orman Kanunu uyarınca orman alanı sayılan alanda değildir."
+          }
+        ]
+      },
+      "ecology_and_baseline": {
+        "label": "Flora, Fauna & Baseline Methodology",
+        "page_count": 16,
+        "pages": [
+          5,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          50,
+          51,
+          81,
+          187
+        ],
+        "samples": [
+          {
+            "page": 5,
+            "match": "IUCN",
+            "snippet": "…ğişikliği İl Müdürlüğü ÇED: Çevresel Etki Değerlendirmesi DSİ: Devlet su İşleri TUİK: Türkiye İstatistik Kurumu IUCN: Dünya Doğa Ve Doğal Kaynakları Koruma Birliği (International Union for Conservation of Nature and Natural Resources)…"
+          },
+          {
+            "page": 17,
+            "match": "arazi çalışması",
+            "snippet": "…blo 8: Alanya İlçesi Son 18 Yıl Nüfus Verileri II.2. Flora – Fauna Flora Alandaki bitki türlerinin tespiti için arazi çalışması, literatür taraması yöntemleri kullanılmıştır. Araştırma Bölgesi Akdeniz bölgesinde Antalya İli, Alanya İlçesi sınırla…"
+          },
+          {
+            "page": 17,
+            "match": "literatür taraması",
+            "snippet": "…esi Son 18 Yıl Nüfus Verileri II.2. Flora – Fauna Flora Alandaki bitki türlerinin tespiti için arazi çalışması, literatür taraması yöntemleri kullanılmıştır. Araştırma Bölgesi Akdeniz bölgesinde Antalya İli, Alanya İlçesi sınırları içerisinde yer a…"
+          },
+          {
+            "page": 18,
+            "match": "IUCN",
+            "snippet": "…kın çevresinin flora elemanları ile ilgili, Familya, Tür Adı, Türkçe isim, yöresel isim, Fitocoğrafik Bölge, Endemizm, IUCN (Tehlike sınıfı) ve kaynak kısmının yer aldığı bir tablo oluşturulmuştur. IUCN listesi, 2001 yılında tekrar hazırlan…"
+          },
+          {
+            "page": 18,
+            "match": "literatür taraması",
+            "snippet": "…gelmemiştir. Aşağıda sunulan ve proje alanı ve yakın çevresindeki florayı oluşturan türlerin listelendiği Tablo 8’de literatür taraması ile tespit edilen türler Kaynak kısmında “L” harfi ile arazide yapılan gözlemler sonucunda tespiti yapılan türler ise…"
+          },
+          {
+            "page": 18,
+            "match": "Bern Sözleşmesi",
+            "snippet": "…Dağılımı, Bolluk Miktarları, IUCN Kriterlerine Göre Tehdit Kategorileri, Endemizm Durumları, Uluslararası Anlaşmalara (Bern Sözleşmesi vb.) Göre Koruma Statüleri’ni içerir liste Tablo 8’de sunulmaktadır."
+          },
+          {
+            "page": 19,
+            "match": "IUCN",
+            "snippet": "…ÇED BAŞVURU DOSYASI 14 Tablo 9: Proje Alanı ve Yakın Çevresindeki Flora Elemanları NO TURKCE ADI BİLİMSEL ADI IUCN KATEGO Rİ BERN SÖZLEŞ MESİ ENDEMİZ M NİSBİ BOL LUK DERE CESİ TESPİT ŞEKLİ 1 Sakız Ağacı Pistacia lentiscus…"
+          },
+          {
+            "page": 20,
+            "match": "IUCN",
+            "snippet": "…ÇED BAŞVURU DOSYASI 15 NO TURKCE ADI BİLİMSEL ADI IUCN KATEGO Rİ BERN SÖZLEŞ MESİ ENDEMİZ M NİSBİ BOL LUK DERE CESİ TESPİT ŞEKLİ 31 Yarpuz Mentha pulegium L. LC…"
+          }
+        ]
+      },
+      "pollutants_and_hazards": {
+        "label": "Emissions, Geochemistry & Waste",
+        "page_count": 21,
+        "pages": [
+          8,
+          31,
+          32,
+          52,
+          54,
+          56,
+          57,
+          63,
+          64,
+          65,
+          68,
+          69,
+          70,
+          72,
+          73,
+          77,
+          78,
+          80,
+          82,
+          84,
+          129
+        ],
+        "samples": [
+          {
+            "page": 8,
+            "match": "kümülatif",
+            "snippet": "…Hotel Kapasite Artışı faaliyetinin çevreye olan etkilerinin azaltılmasında uygulanan tedbirler sonrasında oluşabilecek kümülatif çevresel etkilerini belirlemek"
+          },
+          {
+            "page": 31,
+            "match": "deprem",
+            "snippet": "…uzak olmasına rağmen depremin kırıcı etkisine beklenilenden fazla olmasına yol açar Bu nedenle herhangi bir bölgenin deprem potansiyeli değerlendirilirken depreme yol açan fayların (aktif fay), yerel zemin özelliklerinin iyi bilinmesi gerekme…"
+          },
+          {
+            "page": 32,
+            "match": "Deprem",
+            "snippet": "…RTIŞI ÇED BAŞVURU DOSYASI 27 Şekil 5: Antalya İli Deprem Haritası II.5. Toprak – Su – Hava İlin toprak yapısına bakıldığında %27’lik kısmının Kırmızı Akdeniz toprağı olduğu…"
+          },
+          {
+            "page": 52,
+            "match": "kümülatif",
+            "snippet": "…ktır. III.a. Çevreyi etkileyebilecek olası sorunların belirlenmesi, kirleticilerin miktarı, alıcı ortamla etkileşimi, kümülatif etkilerin belirlenmesi Edizka Tur. İnş. Taah. Tar. Gıda Tic. A.Ş. tarafından işletilen Kaila Beach Hotel Kapasite Art…"
+          },
+          {
+            "page": 54,
+            "match": "Tehlikeli Atık",
+            "snippet": "…da yapılmış olup, inşaat aşaması bulunmamaktadır. İşletme aşamasında tesiste oluşan tehlikeli atıklar, tesiste bulunan Tehlikeli Atık Geçici Depolama Alanında, atık kodlarına uygun bir şekilde depolanmakta olup, 180 gün depolama süresi geçirilmeden Çe…"
+          },
+          {
+            "page": 56,
+            "match": "Gürültü",
+            "snippet": "…k 03.07.2009 tarih ve 27277 sayılı Sanayi Kaynaklı Hava Kirliliğinin Kontrolü Yönetmeliği hükümlerine uyulacaktır. Gürültü Tesiste 52 odalık artış hali hazırda yapılmış olup, inşaat aşaması bulunmamaktadır. Bu nedenle herhangi bir gürültü…"
+          },
+          {
+            "page": 56,
+            "match": "Kümülatif",
+            "snippet": "…sayılı Resmi Gazete’de yayımlanarak yürürlüğe giren “İş Sağlığı ve Güvenliği Yönetmeliği” hükümlerine uyulacaktır. Kümülatif Etkilerin Belirlenmesi Genel anlamda kümülatif etkiler, bir eylemin geçmişteki, mevcut veya gelecekteki başka insan f…"
+          },
+          {
+            "page": 57,
+            "match": "kümülatif",
+            "snippet": "…BAŞVURU DOSYASI 52 ÇED raporu içerisinde tüm bu etkilere ilişkin çalışmalar etki alanı içerisindeki etmenler ile kümülatif olarak değerlendirilecek, mevcut ölçüm sonuçları ve yönetmelik sınır değerleri ile karşılaştırılacaktır. Neticede kabu…"
+          }
+        ]
+      },
+      "cost_and_capacity": {
+        "label": "Project Cost, Power & Capacity",
+        "page_count": 95,
+        "pages": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25
+        ],
+        "samples": [
+          {
+            "page": 1,
+            "match": "KAPASİTE",
+            "snippet": "EDİZKA TUR. İNŞ. TAAH. TAR. GIDA TİC. A.Ş. KAİLA BEACH HOTEL KAPASİTE ARTIŞI ANTALYA İLİ, ALANYA İLÇESİ, OBA MAH., 724 ADA 2,3,5 PARSEL ■ ÇED BAŞVURU DOSYASI…"
+          },
+          {
+            "page": 2,
+            "match": "KAPASİTE",
+            "snippet": "EDİZKA TUR. İNŞ. TAAH. TAR. GIDA TİC. A.Ş. KAİLA BEACH HOTEL KAPASİTE ARTIŞI ÇED BAŞVURU DOSYASI i Proje Sahibinin Adı E…"
+          },
+          {
+            "page": 2,
+            "match": "Kapasite",
+            "snippet": "…Telefon, Gsm ve Faks Numaraları 0242 514 30 90 E - Posta info@baysalcevre.com Projenin Adı Kaila Beach Hotel Kapasite Artışı Proje Bedeli 116.463.000,00 TL Proje İçin Seçilen Yerin Açık Adresi (İli, İlçesi, Mevkii) Antalya İli, A…"
+          },
+          {
+            "page": 2,
+            "match": "Proje Bedeli",
+            "snippet": "…ve Faks Numaraları 0242 514 30 90 E - Posta info@baysalcevre.com Projenin Adı Kaila Beach Hotel Kapasite Artışı Proje Bedeli 116.463.000,00 TL Proje İçin Seçilen Yerin Açık Adresi (İli, İlçesi, Mevkii) Antalya İli, Alanya İlçesi, Oba Mah…"
+          },
+          {
+            "page": 3,
+            "match": "KAPASİTE",
+            "snippet": "EDİZKA TUR. İNŞ. TAAH. TAR. GIDA TİC. A.Ş. KAİLA BEACH HOTEL KAPASİTE ARTIŞI ÇED BAŞVURU DOSYASI ii İÇİNDEKİLER PROJENİN…"
+          },
+          {
+            "page": 4,
+            "match": "KAPASİTE",
+            "snippet": "EDİZKA TUR. İNŞ. TAAH. TAR. GIDA TİC. A.Ş. KAİLA BEACH HOTEL KAPASİTE ARTIŞI ÇED BAŞVURU DOSYASI iii TABLOLAR DİZİNİ Tab…"
+          },
+          {
+            "page": 5,
+            "match": "KAPASİTE",
+            "snippet": "EDİZKA TUR. İNŞ. TAAH. TAR. GIDA TİC. A.Ş. KAİLA BEACH HOTEL KAPASİTE ARTIŞI ÇED BAŞVURU DOSYASI iv ŞEKİLLER VE RESİMLER…"
+          },
+          {
+            "page": 6,
+            "match": "KAPASİTE",
+            "snippet": "EDİZKA TUR. İNŞ. TAAH. TAR. GIDA TİC. A.Ş. KAİLA BEACH HOTEL KAPASİTE ARTIŞI ÇED BAŞVURU DOSYASI 1 PROJENİN TEKNİK OLMAYA…"
+          }
+        ]
+      }
+    },
+    "audit_checks": {
+      "mentions_field_survey": true,
+      "mentions_literature_only_cue": true,
+      "mentions_seasonal_sampling": false,
+      "mentions_cumulative_impact": true,
+      "mentions_olive_law_3573": false,
+      "mentions_groundwater_or_aquifer": true,
+      "mentions_iucn_or_endemic": true
+    }
+  },
+  "llm_synthesis": {
+    "model": "gemini-4-hydrogen",
+    "generated_at": "2026-11-20T10:56:26",
+    "pages_sent": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      8,
+      9,
+      10,
+      11,
+      15,
+      16,
+      17,
+      18,
+      19,
+      31,
+      32,
+      36,
+      48,
+      49,
+      51,
+      52,
+      53,
+      66,
+      67,
+      77
+    ],
+    "usage": {
+      "prompt_tokens": 25017,
+      "output_tokens": 3041,
+      "thoughts_tokens": 5968,
+      "total_tokens": 34026
+    },
+    "result": {
+      "executive_summary_tr": "Antalya İli, Alanya İlçesi, Oba Mahallesi 724 Ada 2, 3 ve 5 parsellerdeki toplam 9.872,9 m2 alanda Edizka Tur. İnş. Taah. Tar. Gıda Tic. A.Ş. tarafından Kaila Beach Hotel Kapasite Artışı projesi için ÇED Başvuru Dosyası sunulmuştur [s. 2, 6]. Dosyada, 724 Ada 2 parseldeki başka bir firmaya ait 52 odalı (2.018 m2 inşaat alanlı) tesisin kiralanıp C blok olarak bünyeye katılmasıyla ÇED izinleri onaylanmadan 364 oda ve 844 yatak kapasiteyle fiilen işletmeye geçildiği belirtilmektedir [s. 6, 9, 11]. Toplam yatırım bedeli 116.463.000 TL olarak beyan edilen tesis; en yakın meskene ve benzer turizm tesisine 20 metre, kıyıya ise yaklaşık 60 metre mesafededir [s. 10, 11, 49]. İncelenen bölümlerde başlıca çevresel ve metodolojik konular; ÇED öncesi fiili kapasite artışı, izinli oda sayılarındaki tutarsızlıklar, işletme gürültüsü modellemesinin ertelenmesi ve flora envanterindeki literatür-arazi çalışması uyumsuzluğudur [s. 6, 17, 19, 77].",
+      "executive_summary_en": "Edizka Tur. İnş. Taah. Tar. Gıda Tic. A.Ş. has submitted an EIA Application File for the Kaila Beach Hotel Capacity Increase project located on Block 724, Parcels 2, 3, and 5 (9,872.9 m2 total area) in Oba Neighborhood, Alanya, Antalya [s. 2, 6]. According to the filing, the facility already operates at 364 rooms and 844 beds after leasing an adjacent 52-room hotel (2,018 m2 construction area) on Parcel 2 as Block C without prior EIA authorization [s. 6, 9, 11]. With a declared project cost of 116,463,000 TL, the hotel sits 20 meters from the nearest residence and neighboring tourism facility and approximately 60 meters from the coastline [s. 10, 11, 49]. Primary environmental and methodological issues identified in the excerpts include ex-post capacity expansion, discrepancies in previously permitted room counts, deferral of operational noise modeling, and an inconsistency between claimed field surveys and literature-only flora records [s. 6, 17, 19, 77].",
+      "key_facts": [
+        {
+          "label": "Toplam Proje Alanı",
+          "value": "9.872,9 m2 (724 Ada 2, 3 ve 5 Parseller) [s. 6]",
+          "page": 6
+        },
+        {
+          "label": "Toplam Kapasite",
+          "value": "364 oda, 844 yatak (mevcut/işletilen) [s. 6]",
+          "page": 6
+        },
+        {
+          "label": "Kapasite Artışı Kapsamı",
+          "value": "52 oda (2.018 m2 inşaat alanı, kiralanan C Blok) [s. 6, 11]",
+          "page": 11
+        },
+        {
+          "label": "Proje Bedeli",
+          "value": "116.463.000,00 TL (KDV dahil) [s. 11]",
+          "page": 11
+        },
+        {
+          "label": "En Yakın Mesken ve Tesis Mesafesi",
+          "value": "20 metre (kuş uçuşu) [s. 10]",
+          "page": 10
+        },
+        {
+          "label": "Sahile Mesafe",
+          "value": "Yaklaşık 60 metre [s. 49]",
+          "page": 49
+        },
+        {
+          "label": "Personel ve Müşteri Yükü",
+          "value": "844 müşteri + 200 personel = 1.044 kişi [s. 53]",
+          "page": 53
+        },
+        {
+          "label": "Katı Atık Oluşumu",
+          "value": "1.211 kg/gün (1.065 kg/gün evsel, 146 kg/gün ambalaj) [s. 53]",
+          "page": 53
+        },
+        {
+          "label": "Su Tüketimi ve Atıksu Kaynağı",
+          "value": "ASAT şebeke suyu, kişi başı 318 lt/gün; yeraltı suyu yok [s. 36, 53, 77]",
+          "page": 53
+        },
+        {
+          "label": "Depremsellik",
+          "value": "3. derece deprem kuşağı, sahada aktif fay yok [s. 31]",
+          "page": 31
+        }
+      ],
+      "baseline_assessment": {
+        "field_survey_status": "mixed_or_unclear",
+        "seasonal_sampling_status": "not_found",
+        "cumulative_impact_status": "omitted_or_not_found",
+        "olive_and_protected_status": "Proje alanı ve etki alanında 3573 sayılı Zeytincilik Kanunu kapsamında zeytinlik, 6831 sayılı Kanun kapsamında orman, 2863 sayılı Kanun kapsamında kültür/tabiat varlığı veya SİT alanı, ÖÇK (Belek ÖÇK dahil), sulak alan, Ramsar alanı, mera ve tarım alanı bulunmadığı beyan edilmiştir [s. 48, 49, 51, 77]. Kıyı Kanunu uyarınca yapı yasağı getirilen alan bulunmadığı ancak sahanın sahile yaklaşık 60 metre mesafede yer aldığı belirtilmiştir [s. 49].",
+        "explanation": "Bölüm II.2'de flora tespitinde arazi çalışması ve literatür taraması yapıldığı ifade edilip arazi gözlemleri için 'G' ve literatür için 'L' kodları tanımlanmasına rağmen [s. 17, 18], sunulan Tablo 9'daki 30 bitki türünün tamamı yalnızca 'Literatür' tespiti olarak listelenmiştir [s. 19]. İncelenen sayfalarda proje öncesi tamamlanmış mevsimsel biyolojik örnekleme veya onay sonrası mevsimsel biyolojik izleme taahhüdü yer almamaktadır [s. 17, 66]. Benzer şekilde Bölüm III.a başlığında kümülatif etkilerin belirlenmesinden söz edilmesine karşın sunulan metinlerde kümülatif etki hesabı bulunmamaktadır [s. 52, 53]."
+      },
+      "red_flags": [
+        {
+          "severity": "high",
+          "title": "ÇED Onayı Olmadan Fiili Kapasite Artışı ve İşletme",
+          "detail": "724 Ada 2 parseldeki başka bir firmaya ait 52 odalı tesisin ÇED Yönetmeliği kapsamındaki izinler onaylanmadan kiralanarak C blok adıyla tesise eklendiği ve otelin hâlihazırda 364 oda 844 yatak kapasitesiyle işletildiği açıkça beyan edilmektedir. Ayrıca bu kapasite için 10.08.2022 tarihli Turizm İşletme Belgesi alındığı görülmektedir.",
+          "pages": [
+            6,
+            9,
+            11,
+            15,
+            52,
+            53,
+            77
+          ]
+        },
+        {
+          "severity": "high",
+          "title": "Önceki İzinli Oda Sayılarında 28 Odalık Tutarsızlık",
+          "detail": "Dosyada 10.10.2018 tarihli ÇED Kapsam Dışı yazısıyla 60 oda artış sonucunda nihai 340 oda kapasitesine ulaşıldığı yazılmasına rağmen, hemen sonraki paragrafta mevcut ÇED izinli kapasite A Blok 60 oda ve B Blok 252 oda (toplam 312 oda) olarak verilmiş ve 52 oda eklenerek 364 odaya ulaşıldığı belirtilmiştir. Aradaki 28 odalık fark açıklanmamıştır.",
+          "pages": [
+            6,
+            9,
+            15
+          ]
+        },
+        {
+          "severity": "medium",
+          "title": "Yakın Yerleşime Rağmen Gürültü Analizinin Ertelenmesi",
+          "detail": "Tesis en yakın meskene ve komşu konaklama tesisine kuş uçuşu 20 metre mesafede bulunmasına karşın işletme aşaması gürültü seviyesinin hesaplanmadığı, bu hesabın ÇED Raporu aşamasına bırakıldığı ve faaliyetin kapalı alanda olması nedeniyle dışarıya olumsuz etkisi olmayacağının varsayıldığı görülmektedir.",
+          "pages": [
+            10,
+            15,
+            77
+          ]
+        },
+        {
+          "severity": "medium",
+          "title": "Flora Envanterinde Yöntem ve Tablo Çelişkisi",
+          "detail": "Bitki türlerinin tespiti için arazi çalışması ve literatür taraması yapıldığı belirtilip gözlem ('G') kodu tanımlanmasına rağmen, Tablo 9'da sıralanan 30 flora türünün tamamının tespit şekli 'Literatür' olarak kaydedilmiştir; ayrıca metin içi atıf Tablo 8 olarak verilirken ilgili tablo Tablo 9 numarasını taşımaktadır.",
+          "pages": [
+            17,
+            18,
+            19
+          ]
+        },
+        {
+          "severity": "medium",
+          "title": "İmar Planı Lejant Çelişkisi ve Kümülatif Yük Eksikliği",
+          "detail": "Bölüm I.a.1'de 1/1000 ve 1/5000 ölçekli imar planlarında saha 'Turizm veya 2. Konut Alanı' olarak tanımlanırken, Bölüm II ve II.11'de aynı planlarda 'Turizm Tesis Alanı ve Günübirlik Tesis Alanları' olarak belirtilmiştir. Ayrıca 20 metre mesafedeki diğer otellerle birlikte şebeke suyu, merkezi arıtma ve yerel trafik üzerindeki kümülatif etkiler incelenen sayfalarda hesaplanmamıştır.",
+          "pages": [
+            10,
+            15,
+            36,
+            48,
+            52,
+            53
+          ]
+        },
+        {
+          "severity": "low",
+          "title": "İnşaat Aşaması Beyanlarında İç Tutarlılık Sorunu",
+          "detail": "Raporun çeşitli yerlerinde 52 odalık artışın hâlihazırda tamamlandığı ve inşaat aşaması bulunmadığı belirtilmesine rağmen, aynı sayfalarda ve Tablo 5'te arazi düzenlemesi/inşaat gideri kalemlerine, olası hafriyat bertarafına ve inşaat aşaması makine gürültüsü bakım taahhütlerine yer verilmiştir.",
+          "pages": [
+            11,
+            52,
+            66,
+            77
+          ]
+        }
+      ],
+      "hkt_and_petition_questions": [
+        {
+          "question_tr": "ÇED Yönetmeliği izinleri tamamlanmadan 724 Ada 2 parseldeki 52 odalık C bloğun kiralanarak fiilen 364 oda 844 yatak kapasiteyle işletilmeye başlanması hakkında idari yaptırım uygulanıp uygulanmadığı ve geçmiş işletme dönemine ait çevresel etkilerin nasıl telafi edileceği açıklanacak mıdır?",
+          "pages": [
+            6,
+            9,
+            15,
+            52,
+            53
+          ]
+        },
+        {
+          "question_tr": "10.10.2018 tarihli ÇED Kapsam Dışı kararında nihai 340 oda kapasite belirtilmesine karşın dosyada mevcut ÇED izinli oda sayısının neden 312 oda (A Blok 60 + B Blok 252) olarak gösterildiği ve aradaki 28 odalık farkın hangi parsellere ait olduğu belgelenebilecek midir?",
+          "pages": [
+            6,
+            9,
+            15
+          ]
+        },
+        {
+          "question_tr": "En yakın meskene 20 metre mesafedeki tesis için başvuru aşamasında yapılmayan gürültü hesaplamalarının, ÇED Raporu aşamasında yalnızca kapalı alanlarla sınırlı kalmayıp açık alan etkinlikleri, havuz, soğutma grupları ve servis trafiğini de kapsayacak şekilde modellenmesi sağlanacak mıdır?",
+          "pages": [
+            10,
+            15,
+            77
+          ]
+        },
+        {
+          "question_tr": "Bölüm II.2'de arazi çalışması yapıldığı ifade edilmesine rağmen Tablo 9'daki tüm flora kayıtlarının neden yalnızca literatüre dayandığı ve ÇED Raporu aşamasında proje sahası ile 60 metre mesafedeki kıyı bandını kapsayan mevsimsel arazi sörveyi yapılıp yapılmayacağı netleştirilecek midir?",
+          "pages": [
+            17,
+            18,
+            19,
+            49
+          ]
+        },
+        {
+          "question_tr": "İmar planı lejantlarının farklı bölümlerde 'Turizm veya 2. Konut Alanı' ile 'Turizm Tesis Alanı ve Günübirlik Tesis Alanları' şeklinde farklı yazılmasının gerekçesi nedir ve 1.044 kişilik toplam nüfusun ASAT şebeke suyu, kanalizasyon ve kıyı trafiği üzerindeki kümülatif yükü sayısallaştırılacak mıdır?",
+          "pages": [
+            10,
+            15,
+            36,
+            48,
+            53
+          ]
+        }
+      ],
+      "data_limitations": "Toplam 193 sayfalık PDF dosyasının 54 sayfası taranmış/görüntü formatında olup metin olarak okunamamıştır; ayrıca inceleme yalnızca sağlanan 26 sayfalık kesitle sınırlıdır. Fauna listelerinin yer aldığı rapor sayfaları, Bölüm III.b-III.ç (iklim değişikliği, afet riski ve azaltım önlemleri), Bölüm IV (Kümülatif Çevresel Etki Değerlendirme, rapor s. 58-60), Bölüm VI (Paydaş Katılım Planı), Tablo 1-3, atıksu hesaplamasının devamı ve tüm Ekler inceleme kesitinde bulunmadığından doğrulanamamıştır."
+    }
+  }
+}

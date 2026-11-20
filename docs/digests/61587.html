@@ -1,0 +1,249 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>e-ÇED Ön Özet #61587 — KONYA / SELÇUKLU</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <style>
+:root {
+  --bg: #0f1216;
+  --surface: #171c22;
+  --border: #262e38;
+  --text: #e6edf3;
+  --muted: #8b949e;
+  --accent: #58a6ff;
+  --red: #f85149;
+  --amber: #d29922;
+  --green: #3fb950;
+  --badge-bg: #212830;
+}
+@media (prefers-color-scheme: light) {
+  :root {
+    --bg: #f6f8fa;
+    --surface: #ffffff;
+    --border: #d0d7de;
+    --text: #1f2328;
+    --muted: #656d76;
+    --accent: #0969da;
+    --red: #cf222e;
+    --amber: #9a6700;
+    --green: #1a7f37;
+    --badge-bg: #eef2f6;
+  }
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+}
+.wrap { max-width: 1240px; margin: 0 auto; padding: 24px 18px 64px; }
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+header { border-bottom: 1px solid var(--border); padding-bottom: 16px; margin-bottom: 20px; }
+h1 { margin: 0 0 6px; font-size: 1.55rem; }
+h2 { margin: 26px 0 10px; font-size: 1.2rem; }
+h3 { margin: 16px 0 8px; font-size: 1rem; }
+.sub { color: var(--muted); font-size: 0.92rem; margin: 0; }
+.meta-bar { display: flex; flex-wrap: wrap; gap: 14px; margin-top: 12px; font-size: 0.85rem; color: var(--muted); }
+.stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 10px; margin: 16px 0 18px; }
+.stat { background: var(--surface); border: 1px solid var(--border); border-radius: 8px; padding: 12px 14px; }
+.stat .num { font-size: 1.45rem; font-weight: 700; }
+.stat .lbl { font-size: 0.78rem; color: var(--muted); }
+.map-box {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 18px;
+}
+#map { width: 100%; height: 420px; background: var(--badge-bg); }
+#digest-map { width: 100%; height: 320px; background: var(--badge-bg); }
+.map-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  padding: 9px 14px;
+  font-size: 0.8rem;
+  color: var(--muted);
+  border-top: 1px solid var(--border);
+}
+.dot { display: inline-block; width: 10px; height: 10px; border-radius: 50%; margin-right: 5px; vertical-align: middle; }
+.controls { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; margin-bottom: 16px; }
+input[type="search"], select.filter-select {
+  padding: 8px 12px;
+  border-radius: 6px;
+  border: 1px solid var(--border);
+  background: var(--surface);
+  color: var(--text);
+  font-size: 0.9rem;
+}
+input[type="search"] { flex: 1 1 240px; }
+select.filter-select { min-width: 170px; }
+button.pill {
+  padding: 7px 12px;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: var(--surface);
+  color: var(--text);
+  cursor: pointer;
+  font-size: 0.82rem;
+}
+button.pill.active { background: var(--accent); border-color: var(--accent); color: #fff; font-weight: 600; }
+.cards { display: flex; flex-direction: column; gap: 10px; }
+.card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 15px 17px;
+}
+.card.ek1 { border-left: 4px solid var(--accent); }
+.row-top { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px; align-items: baseline; }
+.title { font-weight: 600; font-size: 0.98rem; }
+.badges { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 7px; }
+.badge {
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  background: var(--badge-bg);
+  border: 1px solid var(--border);
+}
+.badge.urgent { border-color: var(--red); color: var(--red); font-weight: 600; }
+.badge.warn { border-color: var(--amber); color: var(--amber); font-weight: 600; }
+.badge.ok { border-color: var(--green); color: var(--green); }
+.badge.muted { color: var(--muted); }
+.detail { font-size: 0.87rem; color: var(--muted); margin: 8px 0; }
+.actions { display: flex; flex-wrap: wrap; gap: 12px; font-size: 0.84rem; margin-top: 8px; }
+.notice {
+  margin-top: 28px;
+  padding: 14px 16px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  font-size: 0.84rem;
+  color: var(--muted);
+}
+table.kv { width: 100%; border-collapse: collapse; margin: 12px 0; font-size: 0.9rem; }
+table.kv th, table.kv td { border: 1px solid var(--border); padding: 8px 11px; text-align: left; vertical-align: top; }
+table.kv th { width: 240px; background: var(--badge-bg); }
+code { background: var(--badge-bg); padding: 1px 5px; border-radius: 4px; font-size: 0.85em; }
+blockquote { margin: 10px 0; padding: 11px 15px; border-left: 3px solid var(--accent); background: var(--surface); font-size: 0.9rem; }
+.hit { margin: 7px 0; font-size: 0.88rem; }
+.pno { font-weight: 700; color: var(--accent); }
+.leaflet-popup-content { color: #1f2328; font-size: 0.85rem; line-height: 1.45; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div style="font-size:0.85rem;margin-bottom:8px;"><a href="../index.html">← Türkiye e-ÇED İzleme listesine dön</a> · <a href="../rehber.html">Kullanım ve İnceleme Rehberi</a> · <a href="61587.md">Ham Markdown (.md)</a></div>
+    <h1>e-ÇED Ön Özet #61587 — KONYA / SELÇUKLU</h1>
+    <p class="sub">Beşerî İlaç ve İlaç Aktif Maddesi Üretimi Faaliyeti</p>
+    <div class="badges" style="margin-top:10px;">
+      <span class="badge">İptal/İade</span>
+      <span class="badge">Ek-1</span>
+      
+    </div>
+  </header>
+
+  <table class="kv">
+    <tr><th>Proje Sahibi</th><td>BAYFARMA İLAÇ VE TIBBİ ATIK SAN. VE TİC. A.Ş.</td></tr>
+    <tr><th>Hazırlayan Kuruluş</th><td>AK-KO MEDİKAL MÜHENDİSLİK VE PATENT DAN. SAN.TİC. LTD. ŞTİ.</td></tr>
+    <tr><th>Sektör / Alt Sektör</th><td>Kimya / Tarım İlaçları ve/veya Farmasötik Ürünlerin Etken Maddelerinin Üretildiği Tesis Projeleri</td></tr>
+    <tr><th>Duyuru Tarihi</th><td><code>18.11.2026</code> (belge yükleme tarihi: <code>11/11/2026 03:18:26</code>)</td></tr>
+    <tr><th>PDF Kapsamı</th><td>0.13 MB · 1 sayfa (1 metin sayfası / 0 taranmış veya görüntü sayfası) · SHA-256 <code>d6ed8a3f5f912443…</code></td></tr>
+    <tr><th>Resmi Bağlantılar</th><td><a href="http://eced.csb.gov.tr/jsp/ek1/61587" target="_blank" rel="noopener">e-ÇED Portal Kaydı</a> · <a href="http://eced.csb.gov.tr/jsp/dosya/dosyaGoster.htm?orjinalAd=61587_5_33081.pdf&amp;yuklemeTarihi=2026-11-18&amp;projeIptalEk1=ek1" target="_blank" rel="noopener">Resmi PDF Dosyası</a> · <a href="https://www.openstreetmap.org/?mlat=37.8746&amp;mlon=32.4932#map=8/37.8746/32.4932" target="_blank" rel="noopener">OpenStreetMap</a> · <a href="https://www.google.com/maps/search/?api=1&amp;query=37.8746,32.4932" target="_blank" rel="noopener">Google Haritalar</a></td></tr>
+  </table>
+
+  <h2>Konum Haritası</h2>
+  <div class="map-box">
+    <div id="digest-map"></div>
+    <div class="map-legend"><span>PDF dosyasında metin olarak okunabilir koordinat tablosu tespit edilemediği için il merkezi yaklaşık konum olarak gösterilmektedir.</span></div>
+  </div>
+
+  
+  <h2>Yapay Zeka Destekli Bilimsel Ön Değerlendirme <span class="badge">gemini-4-hydrogen</span></h2>
+  <p class="sub">Bu değerlendirme, resmi PDF dosyasından seçilen 1 sayfa (s.1) esas alınarak hazırlanmıştır. Tüm sayısal verilerin ve tespitlerin resmi PDF belgesindeki ilgili <code>[s. N]</code> sayfalarından doğrulanması gerekir.</p>
+  <section class="card ek1">
+    <p><strong>Özet:</strong> Konya İli, Selçuklu İlçesi, Horozluhan OSB Mahallesi sınırları içerisindeki 13202 Ada, 713 Parsel adresinde Bayfarma İlaç Ve Tıbbi Atık San. Ve Tic. A.Ş. tarafından planlanan Beşerî İlaç ve İlaç Aktif Maddesi Üretimi Faaliyeti projesine ilişkin Bakanlık düzeyindeki ÇED süreci sonlandırılmıştır [s. 1]. 16.11.2026 tarihli resmi yazıda, projenin etken madde üretimi içermediği belirtilerek faaliyetin ÇED Yönetmeliği Ek-2 Listesi 4/a maddesi kapsamında değerlendirildiği ve bu nedenle Ek-1 sürecinin iptal edildiği bildirilmektedir [s. 1]. Sürecin devamı için Yönetmeliğin 16. maddesi uyarınca Proje Tanıtım Dosyası (PTD) hazırlanarak e-ÇED üzerinden Konya Valiliğine başvuru yapılması gerektiği ifade edilmiştir [s. 1]. İncelenen belge yalnızca tek sayfalık idari süreç sonlandırma yazısından ibaret olup, projenin çevresel etkilerine, kapasitesine veya temel saha verilerine dair teknik bilgi içermemektedir [s. 1].</p>
+    <details style="margin-top:8px;font-size:0.86rem;color:var(--muted);"><summary style="cursor:pointer;">İngilizce özet (English summary)</summary><p style="margin:6px 0 0;">The Ministry-level EIA process for the proposed Human Pharmaceuticals and Active Pharmaceutical Ingredient Production Facility by Bayfarma İlaç Ve Tıbbi Atık San. Ve Tic. A.Ş. in Horozluhan OIZ (13202 Block, Parcel 713), Selçuklu District, Konya Province, has been terminated [s. 1]. According to the official notice dated 16.11.2026, the project does not include active ingredient production and therefore falls under Annex-2 List Item 4/a of the EIA Regulation rather than Annex-1 [s. 1]. Consequently, the applicant is instructed to prepare a Project Description File (PTD) pursuant to Article 16 of the EIA Regulation and submit an application via e-ÇED to the Konya Governorship [s. 1]. Because the filing consists solely of a one-page administrative termination letter, no technical data regarding environmental baseline conditions, capacity, emissions, or waste management are available for evaluation [s. 1].</p></details>
+    <div class="badges" style="margin-top:10px;">
+      <span class="badge">Saha çalışması: İncelenen sayfalarda tespit edilemedi</span>
+      <span class="badge">Mevsimsel örnekleme: İncelenen sayfalarda tespit edilemedi</span>
+      <span class="badge">Kümülatif etki: Eksik veya tespit edilemedi</span>
+    </div>
+    <p class="detail" style="margin-top:10px;"><strong>Zeytinlik ve Korunan Alanlar:</strong> Tek sayfalık idari süreç sonlandırma yazısında 3573 sayılı Kanun kapsamındaki zeytinlikler, orman alanları, sulak alanlar veya ÖÇK/SİT statüsüne ilişkin herhangi bir bilgi bulunmamaktadır; tesis adresinin Horozluhan OSB sınırları içerisinde yer aldığı belirtilmiştir [s. 1].<br/>İncelenen doküman yalnızca ÇED sürecinin sonlandırıldığına dair tek sayfalık idari bir resmi yazıdan oluşmaktadır [s. 1]. Bu nedenle saha araştırmaları, mevsimsel örnekleme çalışmaları, kümülatif etki değerlendirmesi veya flora-fauna envanterine ilişkin herhangi bir temel veri dosyada yer almamaktadır [s. 1].</p>
+  </section>
+  <h3>Öne Çıkan Sayısal Bulgular</h3><table class="kv"><tr><th>Proje Sahibi</th><td>BAYFARMA İLAÇ VE TIBBİ ATIK SAN. VE TİC. A.Ş. <span class="pno">[s. 1]</span></td></tr>
+<tr><th>Konum / Adres</th><td>Konya İli, Selçuklu İlçesi, Horozluhan OSB Mahallesi, Yerlisu Sokak, No: 5/F-5/G-5/H <span class="pno">[s. 1]</span></td></tr>
+<tr><th>Ada / Parsel</th><td>13202 Ada, 713 Parsel <span class="pno">[s. 1]</span></td></tr>
+<tr><th>İdari İşlem Durumu</th><td>Bakanlık ÇED süreci sonlandırılmıştır (İptal/İade - Ek-1 kapsamından çıkarılmıştır). <span class="pno">[s. 1]</span></td></tr>
+<tr><th>Güncel Mevzuat Kapsamı</th><td>ÇED Yönetmeliği Ek-2 Listesi 4/a maddesi ve Madde 16 (Proje Tanıtım Dosyası süreci). <span class="pno">[s. 1]</span></td></tr>
+<tr><th>Resmi Yazı Tarihi ve Sayısı</th><td>16.11.2026 tarihli, E-53785661-220.01-17304127 sayılı yazı. <span class="pno">[s. 1]</span></td></tr>
+<tr><th>Danışman Kuruluş</th><td>AK-KO MEDİKAL MÜHENDİSLİK VE PATENT DANIŞMANLIK SANAYİ TİCARET LTD. ŞTİ. <span class="pno">[s. 1]</span></td></tr>
+<tr><th>Yeni Başvuru Makamı</th><td>Konya Valiliği (Konya Çevre, Şehircilik ve İklim Değişikliği İl Müdürlüğü). <span class="pno">[s. 1]</span></td></tr></table>
+  <h3>Bilimsel ve Metodolojik Bulgular</h3><section class="card"><div class="hit"><span class="badge warn">ORTA</span> <strong>Proje Adı ile Faaliyet Kapsamı Arasındaki Uyumsuzluk</strong> <span class="pno">[s. 1]</span> — Proje başlığı &#x27;Beşerî İlaç ve İlaç Aktif Maddesi Üretimi Faaliyeti&#x27; olarak tanımlanmasına rağmen, resmi yazıda projenin etken madde üretimi içermediği gerekçesiyle Ek-1 kapsamından çıkarılıp Ek-2 Listesi 4/a maddesi kapsamına alındığı belirtilmektedir [s. 1].</div>
+<div class="hit"><span class="badge urgent">YÜKSEK</span> <strong>Çevresel Temel Veri ve Teknik Değerlendirme Eksikliği</strong> <span class="pno">[s. 1]</span> — Yayımlanan dosya yalnızca süreç sonlandırma yazısını içerdiğinden, planlanan tesisin üretim kapasitesi, kullanılacak kimyasallar, atık su ve hava emisyonu yükleri ile tıbbi/tehlikeli atık yönetimine ilişkin hiçbir teknik bilgi ve temel saha ölçümü bulunmamaktadır [s. 1].</div>
+<div class="hit"><span class="badge warn">ORTA</span> <strong>Ek-2 (PTD) Sürecine Geçişle İlgili Denetim ve Katılım Düzeyi Değişimi</strong> <span class="pno">[s. 1]</span> — Faaliyetin Ek-1 kapsamından çıkarılarak ÇED Yönetmeliği 16. maddesi uyarınca İl Müdürlüğü nezdinde yürütülecek Proje Tanıtım Dosyası (PTD) sürecine yönlendirilmesi, Bakanlık düzeyindeki tam kapsamlı ÇED sürecinin sona ermesine neden olmaktadır [s. 1].</div></section>
+  <h3>HKT Tutanakları ve İdari Başvurular İçin Taslak Teknik Sorular</h3><ul><li>Proje adında &#x27;İlaç Aktif Maddesi Üretimi&#x27; ifadesi yer almasına karşın resmi yazıda etken madde üretimi içermediğinin belirtilme gerekçesi nedir ve önceki başvuru dosyasında hangi proses tanımlanmıştır? <span class="pno">[s. 1]</span></li>
+<li>ÇED Yönetmeliği 16. maddesi uyarınca Konya Valiliğine sunulacak Proje Tanıtım Dosyasında yalnızca formülasyon/ambalajlama mı yapılacağı, yoksa kimyasal sentez veya çözücü kullanımı içeren proseslerin bulunup bulunmayacağı nasıl doğrulanacaktır? <span class="pno">[s. 1]</span></li>
+<li>Horozluhan OSB 13202 Ada, 713 Parsel adresinde planlanan tesisin olası farmasötik atık suları, uçucu organik bileşik (VOC) emisyonları ve tehlikeli atıkları ile OSB altyapısının kümülatif yükü hazırlanacak PTD dosyasında nicel olarak değerlendirilecek midir? <span class="pno">[s. 1]</span></li></ul>
+  <p class="sub"><em>İnceleme sınırları:</em> Değerlendirme yalnızca e-ÇED sisteminde yayımlanan 1 sayfalık (1/1) süreç sonlandırma yazısı esas alınarak yapılmıştır [s. 1]. Daha önce sunulan başvuru dosyası, teknik ekler, proses akım şemaları ve çevresel etki analizleri bu belgede yer almadığı için incelenememiştir [s. 1].</p>
+
+
+  <h2>Resmi Duyuru Metni</h2>
+  <blockquote>KONYA ili SELÇUKLU,  ilcesinde KONYA ili SELÇUKLU,  ilcesi Horozluhan OSB Mahallesi, Yerlisu Sokak, No: 5/F-5/G-5/H (13202 Ada, 713 Parsel) sınırları içerisinde, BAYFARMA İLAÇ VE TIBBİ ATIK SAN. VE TİC. A.Ş. tarafından yapılması planlanan Beşerî İlaç ve İlaç Aktif Maddesi Üretimi Faaliyeti projesi iptal edilmiştir. İptal Raporu: İptal Raporu</blockquote>
+
+  <h2>Otomatik Metin Taraması (Deterministik)</h2>
+  <table class="kv"><tr><th>Saha veya arazi çalışması ifadesi</th><td><span class="badge urgent">Metinde tespit edilemedi; doğrudan PDF üzerinden kontrol ediniz</span></td></tr>
+<tr><th>Literatür taraması ifadesi</th><td><span class="badge urgent">Metinde tespit edilemedi; doğrudan PDF üzerinden kontrol ediniz</span></td></tr>
+<tr><th>Mevsimsel örnekleme ifadesi</th><td><span class="badge urgent">Metinde tespit edilemedi; doğrudan PDF üzerinden kontrol ediniz</span></td></tr>
+<tr><th>Kümülatif etki değerlendirmesi ifadesi</th><td><span class="badge urgent">Metinde tespit edilemedi; doğrudan PDF üzerinden kontrol ediniz</span></td></tr>
+<tr><th>3573 sayılı Zeytincilik Kanunu veya zeytinlik ifadesi</th><td><span class="badge urgent">Metinde tespit edilemedi; doğrudan PDF üzerinden kontrol ediniz</span></td></tr>
+<tr><th>Yeraltı suyu, akifer veya hidrojeoloji ifadesi</th><td><span class="badge urgent">Metinde tespit edilemedi; doğrudan PDF üzerinden kontrol ediniz</span></td></tr>
+<tr><th>Endemik tür, IUCN veya Bern Sözleşmesi ifadesi</th><td><span class="badge urgent">Metinde tespit edilemedi; doğrudan PDF üzerinden kontrol ediniz</span></td></tr></table>
+  <p class="sub">Metin katmanı (OCR) bulunmayan taranmış harita ve kurum görüşü ekleri otomatik metin taramasına dahil edilmemiştir.</p>
+
+  <h2>Sayfa Kaynaklı Çıkarılan Bulgular</h2>
+  <div class="cards"><section class="card"><h3>Koordinatlar, Parsel ve Alan Büyüklüğü <span style="color:var(--muted);font-weight:400;font-size:0.85rem">(0 sayfa: yok)</span></h3><div class="hit" style="color:var(--muted)">İlgili başlık altında metin eşleşmesi bulunamamıştır.</div></section><section class="card"><h3>Su Kullanımı, Hidrojeoloji ve Deşarj <span style="color:var(--muted);font-weight:400;font-size:0.85rem">(0 sayfa: yok)</span></h3><div class="hit" style="color:var(--muted)">İlgili başlık altında metin eşleşmesi bulunamamıştır.</div></section><section class="card"><h3>Korunan Alanlar, Orman ve Zeytinlikler <span style="color:var(--muted);font-weight:400;font-size:0.85rem">(0 sayfa: yok)</span></h3><div class="hit" style="color:var(--muted)">İlgili başlık altında metin eşleşmesi bulunamamıştır.</div></section><section class="card"><h3>Flora, Fauna ve Saha Metodolojisi <span style="color:var(--muted);font-weight:400;font-size:0.85rem">(0 sayfa: yok)</span></h3><div class="hit" style="color:var(--muted)">İlgili başlık altında metin eşleşmesi bulunamamıştır.</div></section><section class="card"><h3>Emisyonlar, Jeokimya ve Atıklar <span style="color:var(--muted);font-weight:400;font-size:0.85rem">(0 sayfa: yok)</span></h3><div class="hit" style="color:var(--muted)">İlgili başlık altında metin eşleşmesi bulunamamıştır.</div></section><section class="card"><h3>Proje Bedeli, Güç ve Kapasite <span style="color:var(--muted);font-weight:400;font-size:0.85rem">(0 sayfa: yok)</span></h3><div class="hit" style="color:var(--muted)">İlgili başlık altında metin eşleşmesi bulunamamıştır.</div></section></div>
+
+  <h2>Belge Bölüm Haritası</h2>
+  <ul><li style="color:var(--muted)">Belge içinde yapılandırılmış bölüm başlığı tespit edilememiştir.</li></ul>
+
+  <div class="notice">
+    Bu sayfa, T.C. Çevre, Şehircilik ve İklim Değişikliği Bakanlığı'nın kamuya açık <code>eced-duyuru.csb.gov.tr</code> duyuru portalındaki kayıtlar esas alınarak bilgilendirme amacıyla hazırlanmıştır. Alıntıların tamamı 1 tabanlı PDF sayfa numarasıyla (<code>[s. N]</code>) gösterilmektedir. Yasal süreler otomatik olarak hesaplanır; kesin sürelerin ve hukuki başvuru yollarının yetkili hukukçular tarafından teyit edilmesi gerekir.
+  </div>
+</div>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script>
+(() => {
+  if (typeof L === 'undefined') return;
+  const g = {"lat": 37.8746, "lon": 32.4932, "zoom": 8, "precision": "province_centroid", "points": [], "label": "KONYA / SELÇUKLU — Beşerî İlaç ve İlaç Aktif Maddesi Üretimi Faaliyeti"};
+  const map = L.map('digest-map').setView([g.lat, g.lon], g.zoom);
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    maxZoom: 18,
+    attribution: '&copy; OpenStreetMap katkıda bulunanları'
+  }).addTo(map);
+  if (g.precision === 'exact_pdf' && g.points.length > 1) {
+    const latlngs = g.points.map(p => [p[0], p[1]]);
+    const poly = L.polyline(latlngs, { color: '#58a6ff', weight: 3, opacity: 0.85 }).addTo(map);
+    for (const ll of latlngs.slice(0, 30)) {
+      L.circleMarker(ll, { radius: 4, color: '#ffffff', fillColor: '#f85149', fillOpacity: 0.9, weight: 1 }).addTo(map);
+    }
+    map.fitBounds(poly.getBounds().pad(0.25));
+  } else {
+    L.circleMarker([g.lat, g.lon], {
+      radius: g.precision === 'exact_pdf' ? 8 : 11,
+      color: '#ffffff',
+      fillColor: g.precision === 'exact_pdf' ? '#f85149' : '#58a6ff',
+      fillOpacity: g.precision === 'exact_pdf' ? 0.9 : 0.45,
+      weight: 2
+    }).bindPopup(g.label).addTo(map).openPopup();
+  }
+})();
+</script>
+</body>
+</html>

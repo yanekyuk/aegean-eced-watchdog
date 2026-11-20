@@ -1,0 +1,976 @@
+{
+  "filing": {
+    "province": "VAN",
+    "district": "ERCİŞ",
+    "project_name": "ERCİŞ-2 GÜNEŞ ENERJİ SANTRALİ (40 MWm/40 MWe-55,77 ha) VE ELEKTRİK DEPOLAMA TESİSİ (40 MWe/40 MWh)",
+    "project_owner": "ALKEN ELEKTRİK ENERJİ ÜRETİM TİCARET A.Ş.",
+    "sector": "Enerji",
+    "sub_sector": "Güneş Enerji Santralleri",
+    "decision_type": "ÇED Olumlu",
+    "announcement_date_tr": "17.11.2026",
+    "project_type": "Ek-1",
+    "detail_text": "VAN ili ERCİŞ,  ilcesinde VAN ili ERCİŞ,  ilcesi Bayramlı Mahallesi, 104 ada 119 nolu parsel sınırları içerisinde, ALKEN ELEKTRİK ENERJİ ÜRETİM TİCARET A.Ş. tarafından yapılması planlanan ERCİŞ-2 GÜNEŞ ENERJİ SANTRALİ (40 MWm/40 MWe-55,77 ha) VE ELEKTRİK DEPOLAMA TESİSİ (40 MWe/40 MWh) projesi ile ilgili olarak Bakanlığımıza sunulan ÇED Raporu İnceleme Değerlendirme Komisyonu tarafından incelenmiş ve değerlendirilmiştir. Proje ile ilgili olarak ÇED Yönetmeliğinin 14. maddesi gereğince Komisyon çalışmaları ve halkın görüşleri dikkate alınarak Bakanlığımızca 'Çevresel Etki Değerlendirmesi Olumlu' Kararı verilmiş olup; VAN Valiliği(Çevre, Şehircilik ve İklim Değişikliği İl Müdürlüğü) tarafından kararın halka duyurulması gerekmektedir. Ayrıca, söz konusu projeye ait Nihai ÇED Raporu ve eklerinde belirtilen hususlar ile 2872 sayılı Çevre Kanununa istinaden yürürlüğe giren yönetmeliklerin ilgili hükümlerine uyulması, mer'i mevzuat uyarınca ilgili kurum/kuruluşlardan gerekli izinlerin alınması gerekmektedir. İlgililere ve kamuoyuna duyurulur.",
+    "detail_links": [
+      {
+        "text": "ÇED Raporu",
+        "href": "http://eced.csb.gov.tr/jsp/ek1/59556"
+      }
+    ],
+    "documents": [
+      {
+        "portal_doc_url": "http://eced.csb.gov.tr/jsp/ek1/59556",
+        "filing_id": "59556",
+        "consulting_firm": "ONLİNE ÇEVRE PROJE İNŞAAT MÜH. DAN. YAZILIM BİLİŞİM VE TEKNOLOJİLERİ SAN. TİC.LTD.ŞTİ.",
+        "submitted_at": "03/04/2026 12:16:08",
+        "pdf_urls": [
+          {
+            "label": "59556_Son_Sekli_Verilen_Rapor.pdf",
+            "url": "http://eced.csb.gov.tr/jsp/dosya/dosyaGoster.htm?tempAd=signature_file4970806405136470511.imz&orjinalAd=59556_Son_Sekli_Verilen_Rapor.pdf&yuklemeTarihi=2026-11-02"
+          }
+        ]
+      }
+    ],
+    "announcement_date": "2026-11-17",
+    "statutory_clocks": [
+      {
+        "code": "iyuk_20a",
+        "kind": "İYUK Madde 20/A iptal davası süresi (30 gün; İYUK 11 süreyi durdurmaz)",
+        "deadline": "2026-12-17",
+        "days_remaining": 27
+      }
+    ],
+    "filing_key": "59556:17.11.2026:ÇED Olumlu",
+    "first_seen_at": "2026-11-20T02:11:11"
+  },
+  "pdf_info": {
+    "filename": "59556.pdf",
+    "bytes": 78039187,
+    "sha256": "16b1a794499f821644095daadb38da412c9de84ae60e790755420384ecb0c249",
+    "cached": false
+  },
+  "analysis": {
+    "page_count": 685,
+    "total_chars": 1291693,
+    "text_pages": 636,
+    "scanned_or_blank_pages": 49,
+    "scanned_page_sample": [
+      245,
+      246,
+      251,
+      254,
+      256,
+      257,
+      258,
+      259,
+      260,
+      261,
+      263,
+      266,
+      268,
+      269,
+      270
+    ],
+    "headings": [
+      [
+        1,
+        "T.C. ENERJİ VE TABİİ KAYNAKLAR BAKANLIĞI Maden ve Petrol İşleri Genel Müdürlüğü Özel Alanlar Ve Harita Dairesi Başkanlığı"
+      ],
+      [
+        1,
+        "ÇEVRE, ŞEHİRCİLİK VE İKLİM DEĞİŞİKLİĞİ BAKANLIĞINA  ( Çevresel Etki Değerlendirmesi, İzin Ve Denetim Genel Müdürlüğü )"
+      ],
+      [
+        1,
+        "T.C. ENERJİ VE TABİİ KAYNAKLAR BAKANLIĞI Maden ve Petrol İşleri Genel Müdürlüğü"
+      ],
+      [
+        1,
+        "ALKEN ELEKTRİK ENERJİ ÜRETİM TİCARET ANONİM ŞİRKETİNE"
+      ],
+      [
+        590,
+        "A.1 TESİS/İŞLETMENİN TİCARİ ÜNVANI VE PROJENİN ADI"
+      ],
+      [
+        591,
+        "a.2. TESİS/İŞLETMENİN EK VII’DEKİ YERİ (LİSTE A/B DEKİ İLGİLİ MADDENİN BELİRTİLMESİ)"
+      ],
+      [
+        591,
+        "a.3. TESİSE EN YAKIN YAPININ MESAFESİ (M OLARAK) ve topoğrafik haritadaki yeri"
+      ],
+      [
+        593,
+        "B. İnşaat aşaması için gürültü/titreşim düzeylerine ilişkin bilgiler ve inşaat faaliyeti sonucu oluşabilecek toplam gürültü düzeyinin hesaplanması ve hesaplama sonuçlarının değerlendirilmesi"
+      ],
+      [
+        593,
+        "B.1. inşaat aşamasında kullanılacak makina ekipman listesi"
+      ],
+      [
+        593,
+        "B.2 İNŞAAT FAALİYETİ SONUCU OLUŞABİLECEK TOPLAM GÜRÜLTÜ DÜZEYİNİN HESAPLANMASI, (SESİN AÇIK ALANDA YAYILIM PRENSİBİNE GÖRE; MESAFE VE ATMOSFERİK YUTUŞUN HESABA KATILMASI)."
+      ],
+      [
+        600,
+        "C. Arka plan gürültü düzeyine ilişkin bilgiler,"
+      ],
+      [
+        601,
+        "D. İşletme aşamasında oluşabilecek gürültü/titreşim düzeylerine ilişkin bilgiler ve işletme aşamasında oluşabilecek toplam gürültü düzeyinin hesaplanması ve hesaplama sonuçlarının değerlendirilmesi"
+      ],
+      [
+        601,
+        "D.1 Planlanan Tesiste Kullanılacak Gürültü Kaynakları"
+      ],
+      [
+        601,
+        "D.2. İNŞAAT FAALİYETİ SONUCU OLUŞABİLECEK TOPLAM GÜRÜLTÜ DÜZEYİNİN HESAPLANMASI, (SESİN AÇIK ALANDA YAYILIM PRENSİBİNE GÖRE; MESAFE VE ATMOSFERİK YUTUŞUN HESABA KATILMASI)."
+      ],
+      [
+        601,
+        "D.3. TESİSİN KURULACAĞI ALANA EN YAKIN HASSAS yapılarda ölçülen arka plan değerlerinin gürültü dağılım haritasında hesaplanan gürültü sonuçlarının kümülatif olarak hesaplanması"
+      ],
+      [
+        603,
+        "D.4. HESAPLAMA SONUCU ELDE EDİLEN DEĞERLERİN ÇGDY YÖNETMELİĞİ EK-2 ÇERÇEVESİNDE DEĞERLENDİRİLMESİ"
+      ],
+      [
+        604,
+        "E. İnşaat ve işletme aşamasında çevresel titreşimle ilgili olarak Mevzuat kapsamında değerlendirme yapılması,"
+      ],
+      [
+        604,
+        "F. İnşaat ve işletme aşamasında oluşması muhtemel gürültü ve titreşim için uygulamaya konulabilecek kontrol tedbirleri hakkında bilgiler ve gerekli tedbirlerin alınacağının taahhüt edilmesi."
+      ],
+      [
+        606,
+        "EKLER"
+      ],
+      [
+        607,
+        "EK-1"
+      ],
+      [
+        607,
+        "YETERLİLİK BELGELERİ"
+      ],
+      [
+        611,
+        "EK-2"
+      ],
+      [
+        611,
+        "ÖLÇEKLİ IZGARALI GÜRÜLTÜ HARİTALARI"
+      ],
+      [
+        617,
+        "EK-3"
+      ],
+      [
+        617,
+        "SOUND PLAN YAZILIM PROGRAMI FATURASI ve KALİBRASYON BELGELERİ"
+      ]
+    ],
+    "geo": {
+      "precision": "exact_pdf",
+      "lat": 38.96378,
+      "lon": 43.21622,
+      "point_count": 73,
+      "points": [
+        [
+          38.96037,
+          43.21199
+        ],
+        [
+          38.961,
+          43.21234
+        ],
+        [
+          38.96131,
+          43.21285
+        ],
+        [
+          38.96183,
+          43.21387
+        ],
+        [
+          38.96252,
+          43.21343
+        ],
+        [
+          38.96358,
+          43.21114
+        ],
+        [
+          38.96376,
+          43.21099
+        ],
+        [
+          38.9636,
+          43.21014
+        ],
+        [
+          38.96397,
+          43.21002
+        ],
+        [
+          38.9644,
+          43.2099
+        ],
+        [
+          38.96547,
+          43.21005
+        ],
+        [
+          38.96858,
+          43.21155
+        ],
+        [
+          38.96841,
+          43.21267
+        ],
+        [
+          38.967,
+          43.21269
+        ],
+        [
+          38.96673,
+          43.21379
+        ],
+        [
+          38.96619,
+          43.21399
+        ],
+        [
+          38.96607,
+          43.2149
+        ],
+        [
+          38.96529,
+          43.21581
+        ],
+        [
+          38.96514,
+          43.21636
+        ],
+        [
+          38.96655,
+          43.21682
+        ],
+        [
+          38.9666,
+          43.21667
+        ],
+        [
+          38.96769,
+          43.21572
+        ],
+        [
+          38.96801,
+          43.2161
+        ],
+        [
+          38.96876,
+          43.21729
+        ],
+        [
+          38.96782,
+          43.21874
+        ],
+        [
+          38.96724,
+          43.21819
+        ],
+        [
+          38.96694,
+          43.21867
+        ],
+        [
+          38.96609,
+          43.22003
+        ],
+        [
+          38.96588,
+          43.21959
+        ],
+        [
+          38.96557,
+          43.21891
+        ],
+        [
+          38.96527,
+          43.21831
+        ],
+        [
+          38.96315,
+          43.21923
+        ],
+        [
+          38.96332,
+          43.22001
+        ],
+        [
+          38.96285,
+          43.22
+        ],
+        [
+          38.96108,
+          43.22105
+        ],
+        [
+          38.96099,
+          43.22183
+        ],
+        [
+          38.96082,
+          43.22169
+        ],
+        [
+          38.96026,
+          43.22181
+        ],
+        [
+          38.96014,
+          43.22134
+        ],
+        [
+          38.96002,
+          43.22064
+        ]
+      ],
+      "datum": "UTM-Z38/WGS84",
+      "pages": [
+        28,
+        29,
+        30,
+        592
+      ]
+    },
+    "signals": {
+      "coordinates_and_footprint": {
+        "label": "Coordinates, Parcel & Footprint",
+        "page_count": 347,
+        "pages": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25
+        ],
+        "samples": [
+          {
+            "page": 1,
+            "match": "55,77 ha",
+            "snippet": "…/ NİHAİ ÇED RAPORU ALKEN ELEKTRİK ENERJİ ÜRETİM TİCARET A.Ş. ERCİŞ-2 GÜNEŞ ENERJİ SANTRALİ (40 MWm/40 MWe- 55,77 ha) VE ELEKTRİK DEPOLAMA TESİSİ (40 MWe/40 MWh) Van İli, Erciş İlçesi, Bayramlı Mahallesi (104 ada 119 nolu parse…"
+          },
+          {
+            "page": 1,
+            "match": "ada 119 nolu parsel",
+            "snippet": "…m/40 MWe- 55,77 ha) VE ELEKTRİK DEPOLAMA TESİSİ (40 MWe/40 MWh) Van İli, Erciş İlçesi, Bayramlı Mahallesi (104 ada 119 nolu parsel) ONLİNE ÇEVRE PROJE İNŞAAT MÜH. DAN. YAZILIM BİLİŞİM VE TEKNOLOJİLERİ SAN. TİC. LTD. ŞTİ.…"
+          },
+          {
+            "page": 2,
+            "match": "55,77 ha",
+            "snippet": "ALKEN ELEKTRİK ENERJİ ÜRETİM TİCARET A.Ş. ERCİŞ-2 GÜNEŞ ENERJİ SANTRALİ (40 MWm/40 MWe- 55,77 ha) VE ELEKTRİK DEPOLAMA TESİSİ (40 MWe/40 MWh NİHAİ ÇED RAPORU 2 BAŞLIK SAYFASI Proje Sahibinin Adı ALKEN ELEKTR…"
+          },
+          {
+            "page": 2,
+            "match": "ada 119 nolu parsel",
+            "snippet": "…0.000 TL Proje İçin Seçilen Yerin Açık Adresi (İli, İlçesi, Mevkii) Van İli, Erciş İlçesi, Bayramlı Mahallesi (104 ada 119 nolu parsel) Projenin ÇED Yönetmeliği Kapsamındaki Yeri (Sektörü, Alt Sektörü) Sektör: Enerji Alt Sektör: Güneş Enerji Sant…"
+          },
+          {
+            "page": 3,
+            "match": "55,77 ha",
+            "snippet": "ALKEN ELEKTRİK ENERJİ ÜRETİM TİCARET A.Ş. ERCİŞ-2 GÜNEŞ ENERJİ SANTRALİ (40 MWm/40 MWe- 55,77 ha) VE ELEKTRİK DEPOLAMA TESİSİ (40 MWe/40 MWh NİHAİ ÇED RAPORU 3 İÇİNDEKİLER LİSTESİ Başlık Sayfası ...........…"
+          },
+          {
+            "page": 4,
+            "match": "55,77 ha",
+            "snippet": "ALKEN ELEKTRİK ENERJİ ÜRETİM TİCARET A.Ş. ERCİŞ-2 GÜNEŞ ENERJİ SANTRALİ (40 MWm/40 MWe- 55,77 ha) VE ELEKTRİK DEPOLAMA TESİSİ (40 MWe/40 MWh NİHAİ ÇED RAPORU 4 dağılımlarının tablo, grafik ve yazılı anlatımı…"
+          },
+          {
+            "page": 5,
+            "match": "55,77 ha",
+            "snippet": "ALKEN ELEKTRİK ENERJİ ÜRETİM TİCARET A.Ş. ERCİŞ-2 GÜNEŞ ENERJİ SANTRALİ (40 MWm/40 MWe- 55,77 ha) VE ELEKTRİK DEPOLAMA TESİSİ (40 MWe/40 MWh NİHAİ ÇED RAPORU 5 II.3.1. ÇED inceleme alanı ve etki alanının eko…"
+          },
+          {
+            "page": 6,
+            "match": "55,77 ha",
+            "snippet": "ALKEN ELEKTRİK ENERJİ ÜRETİM TİCARET A.Ş. ERCİŞ-2 GÜNEŞ ENERJİ SANTRALİ (40 MWm/40 MWe- 55,77 ha) VE ELEKTRİK DEPOLAMA TESİSİ (40 MWe/40 MWh NİHAİ ÇED RAPORU 6 III.1.7. Elektrik Depolama Tesisi ve Güneş Ener…"
+          }
+        ]
+      },
+      "water_and_discharge": {
+        "label": "Water Use, Hydrogeology & Discharge",
+        "page_count": 93,
+        "pages": [
+          5,
+          6,
+          7,
+          13,
+          22,
+          23,
+          33,
+          72,
+          74,
+          75,
+          77,
+          78,
+          79,
+          83,
+          84,
+          85,
+          86,
+          87,
+          88,
+          89,
+          94,
+          95,
+          96,
+          97,
+          98
+        ],
+        "samples": [
+          {
+            "page": 5,
+            "match": "yeraltı suyu",
+            "snippet": "…emniyeti için yapılacak işlemler, alınacak önlemler; taşkın ve heyelan riski; yüzeysel (kuru dere yatakları dahil) ve yeraltı suyu kaynaklarının etkilenme durumları ve alınacak önlemler; “Dere Yatakları ve Taşkınlar” konulu 2006/27 sayılı Başbakanlı…"
+          },
+          {
+            "page": 6,
+            "match": "deşarj",
+            "snippet": "…nım amaçlarına göre miktarların ayrı ayrı belirtilmesi; oluşacak atık suların cins ve miktarları, bertaraf yöntemleri, deşarj edileceği ortamlar, çevreyi etkileyebilecek olası sorunların belirlenmesi, alıcı ortamla etkileşimi, kümülatif etkile…"
+          },
+          {
+            "page": 7,
+            "match": "atıksu",
+            "snippet": "…i; panellerin nasıl temizleneceği, kullanılacaksa suyunun nereden temin edileceği, ne kadar su kullanılacağı, oluşacak atıksu miktarı ve bertaraf yöntemi, çevreyi etkileyebilecek olası sorunların belirlenmesi, alıcı ortamla etkileşimi, kümülati…"
+          },
+          {
+            "page": 13,
+            "match": "Yeraltı Suyu",
+            "snippet": "…i Haritası ............................................................ 85 Şekil 47 Çalışma Alanı Civarındaki Muhtemel Yeraltı Suyu Seviyesini Gösterir Harita ve Proje sahasını içine alan enine kesit ..................................................…"
+          },
+          {
+            "page": 22,
+            "match": "deşarj",
+            "snippet": "…dir. Daha fazla enerji depolayabildikleri, bu enerjiyi diğer pillere göre daha uzun süre tutabildikleri ve daha yüksek deşarj derinliğine sahip oldukları için lityum iyon piller daha fazla tercih edilmektedir. 1- Lityum İyon Bataryalar…"
+          },
+          {
+            "page": 23,
+            "match": "deşarj",
+            "snippet": "…a sistemleri olarak yaygın olarak kullanılmaktadır. Fiyatlarının uygun olması sebebiyle hala piyasada olsalar da düşük deşarj derinliği ve daha kısa ömürleri nedeniyle solar enerji depolama konusundaki popülerlikleri her geçen gün azalmaktadır…"
+          },
+          {
+            "page": 33,
+            "match": "deşarj",
+            "snippet": "…dir. Daha fazla enerji depolayabildikleri, bu enerjiyi diğer pillere göre daha uzun süre tutabildikleri ve daha yüksek deşarj derinliğine sahip oldukları için lityum iyon piller daha fazla tercih edilmektedir. Proje kapsamında elektrik depo…"
+          },
+          {
+            "page": 72,
+            "match": "yeraltı suyu",
+            "snippet": "…unla birlikte, çalışma alanında heyelana neden olabilecek nitelikte dolgu, litolojik birimler (gevşek – yumuşak vb) ve yeraltı suyu etkisi mevcut değildir."
+          }
+        ]
+      },
+      "protected_land_and_olive": {
+        "label": "Protected Zones, Forests & Olive Groves",
+        "page_count": 47,
+        "pages": [
+          4,
+          93,
+          94,
+          95,
+          96,
+          97,
+          98,
+          99,
+          103,
+          116,
+          117,
+          118,
+          122,
+          137,
+          139,
+          143,
+          144,
+          176,
+          180,
+          181,
+          203,
+          204,
+          229,
+          230,
+          236
+        ],
+        "samples": [
+          {
+            "page": 4,
+            "match": "orman alanı",
+            "snippet": "…ılık faaliyetlerinin Raporda ayrıntılı olarak değerlendirilmesi) .......................... 90 II.2.7. Orman alanları (orman alanı miktarı -m2-), meşçere tipi, kapalılığı, mevcut ve planlanan koruma ve/veya kullanım amaçları, proje sahasının işaretl…"
+          },
+          {
+            "page": 4,
+            "match": "doğal sit",
+            "snippet": "…at anıtları, tabiatı koruma alanları, yaban hayatı korunma alanları, biyogenetik rezerv alanları, biyosfer rezervleri, doğal sit ve anıtlar, arkeolojik, tarihi, kültürel sitler, özel çevre koruma bölgeleri, özel koruma alanları, turizm alan ve me…"
+          },
+          {
+            "page": 4,
+            "match": "özel çevre koruma",
+            "snippet": "…alanları, biyogenetik rezerv alanları, biyosfer rezervleri, doğal sit ve anıtlar, arkeolojik, tarihi, kültürel sitler, özel çevre koruma bölgeleri, özel koruma alanları, turizm alan ve merkezleri, mer'a kanunu kapsamındaki vb. alanlar, hassasiyet derecesi…"
+          },
+          {
+            "page": 93,
+            "match": "orman alanı",
+            "snippet": "…ısı ile, projeden kaynaklı olarak hayvancılığın olumsuz etkilenmesi söz konusu olmayacaktır. II.2.7. Orman alanları (orman alanı miktarı -m2-), meşçere tipi, kapalılığı, mevcut ve planlanan koruma ve/veya kullanım amaçları, proje sahasının işaretl…"
+          },
+          {
+            "page": 94,
+            "match": "doğal sit",
+            "snippet": "…at anıtları, tabiatı koruma alanları, yaban hayatı korunma alanları, biyogenetik rezerv alanları, biyosfer rezervleri, doğal sit ve anıtlar, arkeolojik, tarihi, kültürel sitler, özel çevre koruma bölgeleri, özel koruma alanları, turizm alan ve me…"
+          },
+          {
+            "page": 94,
+            "match": "özel çevre koruma",
+            "snippet": "…alanları, biyogenetik rezerv alanları, biyosfer rezervleri, doğal sit ve anıtlar, arkeolojik, tarihi, kültürel sitler, özel çevre koruma bölgeleri, özel koruma alanları, turizm alan ve merkezleri, mer'a kanunu kapsamındaki vb. alanlar, hassasiyet derecesi…"
+          },
+          {
+            "page": 94,
+            "match": "sit alanı",
+            "snippet": "…nında varsa koruma statülü alanların mesafelerinin harita üzerinde gösterimi Proje alanı içerisinde kültür varlığı, sit alanı, mimari ve arkeolojik miras bulunmamaktadır. Proje alanı içerisinde peyzaj değeri yüksek alanlar bulunmamaktadır.…"
+          },
+          {
+            "page": 94,
+            "match": "Tabiat Parkı",
+            "snippet": "…lunduğu alanlara rastlanılmamıştır. Yapılan değerlendirmede, 55,77 hektarlık ÇED alanının herhangi bir Millî Park, Tabiat Parkı, Tabiatı Koruma Alanı, Tabiat Anıtı, Yaban Hayatı Geliştirme Sahası veya Ramsar Alanı sınırları içerisinde kalmadığı…"
+          }
+        ]
+      },
+      "ecology_and_baseline": {
+        "label": "Flora, Fauna & Baseline Methodology",
+        "page_count": 92,
+        "pages": [
+          4,
+          78,
+          96,
+          97,
+          98,
+          101,
+          102,
+          103,
+          104,
+          111,
+          113,
+          116,
+          118,
+          119,
+          120,
+          121,
+          122,
+          123,
+          124,
+          126,
+          127,
+          135,
+          136,
+          137,
+          140
+        ],
+        "samples": [
+          {
+            "page": 4,
+            "match": "Flora ve Fauna",
+            "snippet": "…statülü alanların mesafelerinin harita üzerinde gösterimi ................................................ 93 II.2.9. Flora ve Fauna (türlerin belirlenmesi; belirlenen türlerin tehlike kategorileri, endemiklik durumları, nispi bolluk dereceleri, Ulusl…"
+          },
+          {
+            "page": 4,
+            "match": "Bern Sözleşmesi",
+            "snippet": "…i; belirlenen türlerin tehlike kategorileri, endemiklik durumları, nispi bolluk dereceleri, Uluslararası anlaşmalarla (Bern Sözleşmesi vb.) koruma altına alınan türler; nadir ve nesli tehlikeye düşmüş türler ve bunların yaşama ortamları, av hayvanları,…"
+          },
+          {
+            "page": 78,
+            "match": "mevsimsel",
+            "snippet": "…saha incelemeleri kapsamında değerlendirilmiştir. Yapılan incelemelerde proje alanı ve yakın çevresinde sürekli veya mevsimsel nitelikte tanımlanmış herhangi bir doğal kaynak veya çeşmeye rastlanmamıştır. Proje alanının hidrojeolojik ve topoğraf…"
+          },
+          {
+            "page": 96,
+            "match": "BERN Sözleşmesi",
+            "snippet": "…sözleşmeler uyarınca korunması gerekli alanlar a) \"Avrupa’nın Yaban Hayatı ve Yaşama Ortamlarını Koruma Sözleşmesi\" (BERN Sözleşmesi) uyarınca koruma altına alınmış alanlardan \"Önemli Deniz Kaplumbağası Üreme Alanlarında belirtilen I. ve II. Koruma B…"
+          },
+          {
+            "page": 97,
+            "match": "endemik",
+            "snippet": "…r. d) Bilimsel araştırmalar için önem arz eden ve/veya nesli tehlikeye düşmüş veya düşebilir türler ve ülkemiz için endemik olan türlerin yaşama ortamı olan alanlar, biyosfer rezervi, biyotoplar, biyogenetik"
+          },
+          {
+            "page": 98,
+            "match": "Flora ve Fauna",
+            "snippet": "…tü ve yeraltı suyu kaynaklarının tabii su toplama alanı içerisinde kalan alanlar, içerisinde kalmamaktadır. II.2.9. Flora ve Fauna (türlerin belirlenmesi; belirlenen türlerin tehlike kategorileri, endemiklik durumları, nispi bolluk dereceleri, Ulusl…"
+          },
+          {
+            "page": 98,
+            "match": "Bern Sözleşmesi",
+            "snippet": "…i; belirlenen türlerin tehlike kategorileri, endemiklik durumları, nispi bolluk dereceleri, Uluslararası anlaşmalarla (Bern Sözleşmesi vb.) koruma altına alınan türler; nadir ve nesli tehlikeye düşmüş türler ve bunların yaşama ortamları, av hayvanları,…"
+          },
+          {
+            "page": 98,
+            "match": "biyoçeşitlilik",
+            "snippet": "…i kamu kurumunun bilgisi dâhilinde yürütülmesi sağlanmıştır. Çalışmanın amacı; söz konusu projeden etkilenebilecek, biyoçeşitlilik unsurlarının belirlenmesi ve ekosistemin doğal işleyişinin korunmasına yönelik alınabilecek önlemlerin önerilmesidir.…"
+          }
+        ]
+      },
+      "pollutants_and_hazards": {
+        "label": "Emissions, Geochemistry & Waste",
+        "page_count": 105,
+        "pages": [
+          4,
+          5,
+          6,
+          7,
+          8,
+          10,
+          13,
+          22,
+          27,
+          38,
+          42,
+          43,
+          68,
+          69,
+          70,
+          71,
+          72,
+          73,
+          81,
+          119,
+          120,
+          138,
+          139,
+          140,
+          145
+        ],
+        "samples": [
+          {
+            "page": 4,
+            "match": "deprem",
+            "snippet": "…i, çığ, su baskını vb.), duyarlılık analizi; heyelan yağış ilişkisi, yamaç stabilitesi, kayma analizi; depremsellik ve deprem riski; heyelan risk haritası, faaliyet alanını da içine alan büyük ölçekli diri fay haritası ile Türkiye Deprem Tehli…"
+          },
+          {
+            "page": 5,
+            "match": "kümülatif",
+            "snippet": "…ğın hangi amaçlar için kullanılacağı, çevreyi etkileyebilecek olası sorunların belirlenmesi, alıcı ortamla etkileşimi, kümülatif etkilerin belirlenmesi, çevreye olabilecek olumsuz etkilerinin azaltılması için alınacak önlemler, düzenleme ve restor…"
+          },
+          {
+            "page": 6,
+            "match": "kümülatif",
+            "snippet": "…ek gürültünün kaynakları ve seviyesi, çevreyi etkileyebilecek olası sorunların belirlenmesi, alıcı ortamla etkileşimi, kümülatif etkilerin belirlenmesi, olabilecek olumsuz etkilerinin azaltılması için alınacak önlemler, ...........................…"
+          },
+          {
+            "page": 7,
+            "match": "kümülatif",
+            "snippet": "…k atıksu miktarı ve bertaraf yöntemi, çevreyi etkileyebilecek olası sorunların belirlenmesi, alıcı ortamla etkileşimi, kümülatif etkilerin belirlenmesi, olabilecek olumsuz etkilerinin azaltılması için alınacak önlemler, ....................... 188…"
+          },
+          {
+            "page": 7,
+            "match": "gürültü",
+            "snippet": "…....................................................... 196 III.2.7. Proje ünitelerinin işletilmesi sırasında oluşacak gürültü kaynakları, çevreyi etkileyebilecek olası sorunların belirlenmesi, alıcı ortamla etkileşimi, kümülatif etkilerin belir…"
+          },
+          {
+            "page": 8,
+            "match": "kümülatif",
+            "snippet": "…üzerine olası etkilerin belirlenmesi, çevreyi etkileyebilecek olası sorunların belirlenmesi, alıcı ortamla etkileşimi, kümülatif etkilerin belirlenmesi, çevreye olabilecek olumsuz etkilerinin azaltılması için alınacak önlemler, risk-etki- tepki ma…"
+          },
+          {
+            "page": 10,
+            "match": "CO2",
+            "snippet": "…DNKS Adrese Dayalı Nüfus Kayıt Sistemi bkz. Bakınız ÇED Çevresel Etki Değerlendirmesi CO Karbonmonoksit CO2 Karbondioksit DSİ Devlet Su İşleri Genel Müdürlüğü EDT Elektrik Depolama Tesisi GES Güneş Enerji Santra…"
+          },
+          {
+            "page": 10,
+            "match": "Karbondioksit",
+            "snippet": "…drese Dayalı Nüfus Kayıt Sistemi bkz. Bakınız ÇED Çevresel Etki Değerlendirmesi CO Karbonmonoksit CO2 Karbondioksit DSİ Devlet Su İşleri Genel Müdürlüğü EDT Elektrik Depolama Tesisi GES Güneş Enerji Santrali ha Hektar…"
+          }
+        ]
+      },
+      "cost_and_capacity": {
+        "label": "Project Cost, Power & Capacity",
+        "page_count": 43,
+        "pages": [
+          2,
+          3,
+          7,
+          16,
+          18,
+          20,
+          21,
+          24,
+          25,
+          26,
+          33,
+          36,
+          37,
+          40,
+          160,
+          175,
+          183,
+          188,
+          201,
+          203,
+          210,
+          212,
+          228,
+          238,
+          239
+        ],
+        "samples": [
+          {
+            "page": 2,
+            "match": "Proje Bedeli",
+            "snippet": "…MWm/MWe/MWh): ERCİŞ-2 GÜNEŞ ENERJİ SANTRALİ (40 MWm/40 MWe - 55,77 ha) VE ELEKTRİK DEPOLAMA TESİSİ (40 MWe/40 MWh) Proje Bedeli (TL) 528.000.000 TL Proje İçin Seçilen Yerin Açık Adresi (İli, İlçesi, Mevkii) Van İli, Erciş İlçesi, Bayramlı Mah…"
+          },
+          {
+            "page": 2,
+            "match": "528.000.000 TL",
+            "snippet": "…İŞ-2 GÜNEŞ ENERJİ SANTRALİ (40 MWm/40 MWe - 55,77 ha) VE ELEKTRİK DEPOLAMA TESİSİ (40 MWe/40 MWh) Proje Bedeli (TL) 528.000.000 TL Proje İçin Seçilen Yerin Açık Adresi (İli, İlçesi, Mevkii) Van İli, Erciş İlçesi, Bayramlı Mahallesi (104 ada 119…"
+          },
+          {
+            "page": 3,
+            "match": "proje bedeli",
+            "snippet": "…............................................................................... 34 I.5. Projenin ekonomik özellikleri (proje bedelinin hesaplanma şeklinin bilgi ve belgelerle güncel, açıklayıcı olması) (ilgili yatırım programı, finans kaynakları, bu…"
+          },
+          {
+            "page": 7,
+            "match": "kapasite",
+            "snippet": "…ılacağı kullanılacak panellerin ve EDT ünite sayısı, özellikleri, boyutları, tesisin faaliyet aşamasındaki ana üretim kapasitesi, elektrik bağlantı hattı vb., tesiste kullanılacak yardımcı maddeler cinsi, miktarı, vb.), .........................…"
+          },
+          {
+            "page": 16,
+            "match": "80.000.000 kW",
+            "snippet": "…. Elektrik elde etmek amacıyla kurulması planlanan güneş enerji santralinden 40 MWm / 40 MWe kurulu gücü ile yıllık 80.000.000 kWh elektrik üretimi sağlanacaktır. Üretilecek olan enerjinin, Erciş TM’ye bağlanması planlanmakta olup gerekmesi durumun…"
+          },
+          {
+            "page": 18,
+            "match": "80.000.000 kW",
+            "snippet": "…. Elektrik elde etmek amacıyla kurulması planlanan güneş enerji santralinden 40 MWm / 40 MWe kurulu gücü ile yıllık 80.000.000 kWh elektrik üretimi sağlanacaktır. Üretilecek olan enerjinin, Erciş TM’ye bağlanması planlanmakta olup gerekmesi durumun…"
+          },
+          {
+            "page": 20,
+            "match": "80.000.000 kW",
+            "snippet": "…R Proje Adı ERCİŞ-2 GES İli Van İlçesi Erciş Tesis Türü Yenilenebilir Yıllık Elektrik Enerjisi Üretim Miktarı 80.000.000 kWh Sisteme Bağlantı Noktası ve Gerilim Seviyesi Erciş TM’nin OG Barası (80+80 MVA) ÜRETİM TESİSİ ÜNİTESİNE İLİŞKİN BİL…"
+          },
+          {
+            "page": 21,
+            "match": "Kurulu Güç",
+            "snippet": "…DEPOLAMA TESİSİ (40 MWe/40 MWh NİHAİ ÇED RAPORU 21 Ünite Teknolojisi Lityum-İyon Ünite Sayısı 1 adet Ünite Kurulu Güçleri 40 MWe Toplam Kurulu Gücü 40 MWe Toplam Kapasite 40 MWh Proje kapsamında yıllık 80.000.000 kWh elektrik üre…"
+          }
+        ]
+      }
+    },
+    "audit_checks": {
+      "mentions_field_survey": true,
+      "mentions_literature_only_cue": true,
+      "mentions_seasonal_sampling": true,
+      "mentions_cumulative_impact": true,
+      "mentions_olive_law_3573": false,
+      "mentions_groundwater_or_aquifer": true,
+      "mentions_iucn_or_endemic": true
+    }
+  },
+  "llm_synthesis": {
+    "model": "gemini-4-hydrogen",
+    "generated_at": "2026-11-20T11:03:27",
+    "pages_sent": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      78,
+      93,
+      94,
+      95,
+      96
+    ],
+    "usage": {
+      "prompt_tokens": 23515,
+      "output_tokens": 3500,
+      "thoughts_tokens": 5390,
+      "total_tokens": 32405
+    },
+    "result": {
+      "executive_summary_tr": "ALKEN ELEKTRİK ENERJİ ÜRETİM TİCARET A.Ş. tarafından Van İli, Erciş İlçesi, Bayramlı Mahallesi 104 ada 119 nolu parselde 55,77 hektarlık alanda 40 MWm/40 MWe kurulu gücünde Erciş-2 Güneş Enerji Santrali (GES) ve bu sahanın 2.000 m²'lik kısmında 40 MWe/40 MWh kapasiteli Elektrik Depolama Tesisi (EDT) kurulması planlanmaktadır [s. 16]. Yıllık 80.000.000 kWh elektrik üretimi hedeflenen ve proje bedeli 528.000.000 TL olarak belirtilen tesis, ÇED Yönetmeliği Ek-1 Madde 43/a kapsamında değerlendirilerek ÇED Olumlu kararı almıştır [s. 2, 16]. Proje sahasının tamamı mera vasıflı arazide yer almakta olup, büyük bölümü Van Gölü Sulak Alanı Tampon Bölgesi sınırları ile çakışmaktadır [s. 16, 93, 94]. Başlıca çevresel ve sosyal riskler; henüz sonuçlanmamış mera tahsis amacı değişikliği izni, hayvancılık ve su kullanımına yönelik halk itirazları, sulak alan tampon bölgesinde kuş gözlemlerinin inşaat öncesine ertelenmesi ve en yakın yapıya 75 m mesafe bulunmasıdır [s. 16, 93, 95].",
+      "executive_summary_en": "ALKEN ELEKTRİK ENERJİ ÜRETİM TİCARET A.Ş. proposes to construct and operate the Erciş-2 Solar Power Plant (40 MWm/40 MWe) across 55.77 hectares and an integrated 40 MWe/40 MWh Electricity Storage Facility on a 2,000 m² footprint within parcel 104/119 in Bayramlı Neighborhood, Erciş District, Van Province [s. 16]. Projected to generate 80,000,000 kWh annually at an estimated cost of 528,000,000 TL, the project falls under Annex-1 Item 43/a of the EIA Regulation and has received an EIA Positive decision [s. 2, 16]. The entire site is classified as pastureland (mera) and largely overlaps with the Van Lake Wetland Buffer Zone [s. 16, 93, 94]. Key environmental and social stakes include the pending pastureland allocation-change permit, local livestock grazing and water-access concerns raised during public participation, the deferral of bird surveys to the pre-construction phase within a sensitive wetland buffer zone, and a 75 m proximity to the nearest structure [s. 16, 93, 95].",
+      "key_facts": [
+        {
+          "label": "Kurulu Güç ve Depolama Kapasitesi",
+          "value": "40 MWm / 40 MWe GES ve 40 MWe / 40 MWh Elektrik Depolama Tesisi (EDT)",
+          "page": 16
+        },
+        {
+          "label": "Proje Alanı ve EDT Ayak İzi",
+          "value": "55,77 ha toplam ÇED alanı (EDT alanı 2.000 m²)",
+          "page": 16
+        },
+        {
+          "label": "Tahsis Amacı Değişikliği Talep Edilen Mera",
+          "value": "558.010,37 m² (104 ada 119 nolu parsel)",
+          "page": 93
+        },
+        {
+          "label": "Yıllık Elektrik Üretimi",
+          "value": "80.000.000 kWh/yıl (Erciş TM bağlantılı)",
+          "page": 16
+        },
+        {
+          "label": "Proje Bedeli",
+          "value": "528.000.000 TL",
+          "page": 2
+        },
+        {
+          "label": "En Yakın Yerleşim ve Konut Mesafesi",
+          "value": "Bayramlı Mahallesi ~1,8 km; en yakın yapı/konut (bahçe evi) 75 m",
+          "page": 16
+        },
+        {
+          "label": "İl ve İlçe Merkezine Mesafe",
+          "value": "Van il merkezine ~53,8 km (KB), Erciş ilçe merkezine ~13,88 km (KB)",
+          "page": 16
+        },
+        {
+          "label": "Yakın Sulak Alan Mesafeleri",
+          "value": "Van Gölü Sulak Alanı Tampon Bölgesi içinde; Çelebibağı Sazlıkları ~7,9 km; Sodalı Göl ~24,1 km; Bendimahi Deltası ~35,9 km",
+          "page": 95
+        },
+        {
+          "label": "En Yakın Yaban Hayatı Geliştirme Sahası",
+          "value": "Süphan Dağı YHGS (~24,9 km)",
+          "page": 95
+        },
+        {
+          "label": "İnşaat Süresi ve Personel Sayısı",
+          "value": "1 yıl (ayda 30 gün, günde 10 saat); inşaatta 20, işletmede 5 personel",
+          "page": 16
+        }
+      ],
+      "baseline_assessment": {
+        "field_survey_status": "mixed_or_unclear",
+        "seasonal_sampling_status": "unclear",
+        "cumulative_impact_status": "omitted_or_not_found",
+        "olive_and_protected_status": "Proje sahası zeytinlik alanları, orman alanları (OGM E-Harita verisine göre), 2863 sayılı Kanun kapsamındaki SİT ve kültür varlıkları, ÖÇKB, Milli Park, Tabiat Parkı, Tabiat Anıtı, Tabiatı Koruma Alanı, YHGS veya Ramsar alanı sınırları içerisinde kalmamaktadır [s. 94, 95, 96]. Buna karşılık alan 4342 sayılı Mera Kanunu kapsamındaki mera arazisinde yer almakta olup [s. 93, 96], büyük bölümü Sulak Alanların Korunması Yönetmeliği kapsamındaki Van Gölü Sulak Alanı Tampon Bölgesi sınırları ile mekânsal olarak çakışmaktadır [s. 94, 96].",
+        "explanation": "Sunulan sayfa kesitlerinde doğal kaynak/çeşmeler için harita ve saha incelemelerine atıf yapıldığı [s. 78], içindekiler ile şekil dizininde saha fotoğrafları ve yer inceleme tutanağının listelendiği görülmektedir [s. 14, 15]. Ancak asıl Flora ve Fauna bölümü (Bölüm II.2.9, rapor s. 98-146) ile Çevre İzleme Planı (Bölüm V.1) sağlanan kesitlerde yer almadığından çok mevsimli örneklemenin ÇED öncesi tamamlanıp tamamlanmadığı doğrudan doğrulanamamaktadır; ayrıca raporun 95. sayfasında su kuşlarının üreme, beslenme ve dinlenme alanlarını belirlemek üzere inşaat öncesinde kuş gözlemleri yapılması gerektiği belirtilerek bu tespit ÇED sonrası aşamaya bırakılmıştır [s. 95]. Kümülatif Çevresel Etki Değerlendirme bölümü (Bölüm IV, rapor s. 215) de sağlanan sayfa kesitleri dışında kaldığından incelenen sayfalarda nicel bir kümülatif değerlendirme bulunmamaktadır [s. 8]."
+      },
+      "red_flags": [
+        {
+          "severity": "high",
+          "title": "Tamamlanmamış Mera Tahsis Amacı Değişikliği ve Hayvancılık/Su İhtiyacı İtirazı",
+          "detail": "Proje alanının tamamı 104 ada 119 nolu mera parselinde yer almaktadır ve Van İl Tarım ve Orman Müdürlüğü görüşüne göre 2018/8 sayılı Cumhurbaşkanlığı Genelgesi kapsamında Tarım ve Orman Bakanlığı Komisyonu henüz görüş bildirmediğinden tahsis amacı değişikliği talebi sonuçlanmamıştır [s. 16, 93]. Ayrıca 09.06.2026 tarihli Halkın Bilgilendirilmesi Toplantısında yöre halkı geçimlerini hayvancılıkla sağladıklarını ve sahanın hayvanların su içtiği mera olduğunu belirtmiş; raporda yalnızca tel çit çekileceği ve yöre halkıyla birlikte alternatif verimli meralar oluşturulacağı genel taahhüdü verilmiş, somut yer, alan büyüklüğü veya su kaynağı planı sunulmamıştır [s. 93].",
+          "pages": [
+            16,
+            93,
+            96
+          ]
+        },
+        {
+          "severity": "high",
+          "title": "Van Gölü Sulak Alanı Tampon Bölgesi Çakışması ve Ertelenen Kuş Gözlemleri",
+          "detail": "55,77 ha'lık proje poligonunun büyük bölümü Van Gölü Sulak Alanı Tampon Bölgesi sınırları içinde yer almakta ve Çelebibağı Sazlıkları'na ~7,9 km mesafede bulunmaktadır [s. 94, 95]. Sulak Alanların Korunması Yönetmeliği Ek-2 kapsamındaki Sulak Alan Faaliyet İzin Belgesi başvurusu ÇED sürecinin tamamlanmasından sonraya bırakılmıştır [s. 94, 96]. Bunun yanında, Van Gölü ve Çelebibağı Sazlıkları'nın su kuşları açısından ekolojik önemi vurgulanmasına rağmen üreme, beslenme ve dinlenme amacıyla kullanılan hassas alanları belirleyecek kuş gözlemlerinin ÇED öncesi tamamlanması yerine 'inşaat öncesinde ... yapılmalı' şeklinde ÇED sonrasına ertelendiği ifade edilmektedir [s. 95].",
+          "pages": [
+            94,
+            95,
+            96
+          ]
+        },
+        {
+          "severity": "medium",
+          "title": "En Yakın Konut/Yapıya 75 Metre Mesafede 40 MWh Depolama Tesisi Konumlandırılması",
+          "detail": "Proje kapsamında 55,77 ha alanda 40 MWe GES ve 2.000 m² alanda 40 MWe/40 MWh Elektrik Depolama Tesisi (EDT) kurulması planlanırken, alana en yakın yapı/konutun yalnızca 75 m uzaklıktaki bir bahçe evi olduğu belirtilmektedir [s. 16]. Bu yakın mesafe akustik etki, parlama, elektromanyetik alan ve batarya kaynaklı yangın/ısıl patlama riskleri açısından yüksek hassasiyet oluşturmaktadır.",
+          "pages": [
+            16
+          ]
+        },
+        {
+          "severity": "medium",
+          "title": "Mevsimlik Dere Mesafelerinin Sayısallaştırılmaması ve Kaynak/Çeşme Belirsizliği",
+          "detail": "Şekil 42'nin Kumlu Dere (mevsimlik dere) ve tali kolları ile proje alanı arasındaki mesafeleri gösterdiği belirtilse de metinde ünitelerin dere yatağına kesin mesafeleri sayısal olarak verilmemiş, mevzuatta sabit mesafe kriteri olmadığı ifade edilerek DSİ sınırlarına atıf yapılmıştır [s. 78]. Doğal kaynak ve çeşme değerlendirmesinde sahada kaynak/çeşmeye rastlanmadığı belirtilirken ilerleyen aşamalarda farklı bir tespit yapılması halinde önlem alınacağı ifade edilerek belirsizlik bırakılmış [s. 78]; bu durum yöre halkının alanın hayvanların su içtiği mera olduğuna ilişkin beyanıyla da çelişmektedir [s. 93].",
+          "pages": [
+            78,
+            93
+          ]
+        },
+        {
+          "severity": "low",
+          "title": "Şebeke Bağlantı Hattı (Erciş TM) Etkilerinin Özet Kesitlerde Kapsam Dışı Kalması",
+          "detail": "Üretilecek elektriğin Erciş TM'ye bağlanacağı ifade edilmekle birlikte [s. 16], bağlantı hattının uzunluğu, güzergâhı ve yaratacağı habitat parçalanması ile elektro-manyetik/kuş çarpma riskleri sunulan özet ve kesitlerde değerlendirilmemiştir [s. 8, 16].",
+          "pages": [
+            8,
+            16
+          ]
+        }
+      ],
+      "hkt_and_petition_questions": [
+        {
+          "question_tr": "104 ada 119 nolu parselin 558.010,37 m²'lik mera kısmına ilişkin Tarım ve Orman Bakanlığı Komisyonu nezdindeki 4342 sayılı Mera Kanunu tahsis amacı değişikliği izni henüz sonuçlanmadan ÇED Olumlu kararı verilmesinin teknik ve idari gerekçesi nedir; HKT'de yöre halkının belirttiği hayvancılık ve hayvanların su ihtiyacını telafi edecek alternatif mera alanının yeri, kapasitesi ve su kaynağı somut olarak belirlenmiş midir?",
+          "pages": [
+            93,
+            96
+          ]
+        },
+        {
+          "question_tr": "Proje alanının büyük bölümü Van Gölü Sulak Alanı Tampon Bölgesi içinde yer alırken ve Çelebibağı Sazlıkları'na 7,9 km mesafede bulunurken, su kuşlarının üreme, beslenme ve dinlenme için kullandığı hassas alanları tespit edecek kuş gözlemleri neden ÇED kararı öncesinde tamamlanmayıp inşaat öncesi aşamaya ertelenmiştir ve Sulak Alan Faaliyet İzin Belgesi alınmadan ekolojik etki analizleri nasıl kesinleştirilmiştir?",
+          "pages": [
+            94,
+            95,
+            96
+          ]
+        },
+        {
+          "question_tr": "Proje sahasına 75 m mesafede bir bahçe evi (konut/yapı) bulunması karşısında, 40 MWe/40 MWh kapasiteli Elektrik Depolama Tesisi (EDT) ve GES ünitelerinden kaynaklanabilecek gürültü, elektromanyetik alan, ışık yansıması ve batarya yangını/ısıl patlama risklerine karşı en yakın yapı yönünde hangi fiziksel güvenlik mesafeleri ve mühendislik önlemleri sağlanmıştır?",
+          "pages": [
+            16
+          ]
+        },
+        {
+          "question_tr": "Mevsimlik Kumlu Dere ve tali kollarına proje ünitelerinin kesin mesafeleri ile taşkın kotları nelerdir; raporda kaynak/çeşme bulunmadığı belirtilmesine rağmen HKT'de halkın hayvanların su içtiği mera beyanında bulunması arasındaki uyumsuzluk saha düzeyinde nasıl araştırılmıştır?",
+          "pages": [
+            78,
+            93,
+            95
+          ]
+        }
+      ],
+      "data_limitations": "Toplam 685 sayfalık Nihai ÇED Raporunun 49 sayfası taranmış/görüntü formatında olup, bu incelemeye yalnızca 21 sayfa (s. 1-16, 78, 93-96) dahil edilmiştir. Yer ve teknoloji alternatifleri (Bölüm I.3), iklim/jeoloji/afet/toprak analizleri (Bölüm II.2.1-II.2.5), Flora ve Fauna ile ornitolojik değerlendirme (Bölüm II.2.9, s. 98-146), inşaat ve işletme aşaması su temini, toz, gürültü, EDT yangın güvenliği ve enerji iletim hattı analizleri (Bölüm III), Kümülatif ÇED (Bölüm IV, s. 215-217), Çevre İzleme Planı (Bölüm V.1) ve EK-4/EK-5/EK-8 belgeleri sunulan kesitler dışında kaldığından bu bölümlerdeki teknik veriler doğrulanamamıştır."
+    }
+  }
+}

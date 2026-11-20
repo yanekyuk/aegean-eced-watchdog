@@ -1,0 +1,977 @@
+{
+  "filing": {
+    "province": "MALATYA",
+    "district": "PÜTÜRGE",
+    "project_name": "34652 Ruhsat Numaralı (ER:2252457) Bakır Ocağı Kapasite Artışı",
+    "project_owner": "COPPER EXPORT METAL SAN. VE TİC. A.Ş.",
+    "sector": "Petrol-Doğalgaz-III. ve IV. Grup Madenler",
+    "sub_sector": "IV. Grup Madenler",
+    "decision_type": "IDK",
+    "announcement_date_tr": "19.11.2026",
+    "project_type": "Ek-1",
+    "detail_text": "MALATYA ili PÜTÜRGE,  ilcesinde MALATYA ili PÜTÜRGE ilçesi sınırları içerisinde COPPER EXPORT METAL SAN. VE TİC. A.Ş. tarafından yapılması planlanan 34652 Ruhsat Numaralı (ER:2252457) Bakır Ocağı Kapasite Artışı projesi ile ilgili olarak hazırlanan ÇED Raporu, ÇED Yönetmeliği'nin 11. maddesi kapsamında Bakanlığımıza sunulmuş olup, inceleme değerlendirme süreci başlamıştır. Proje ile ilgili olarak 22/12/2026 tarihinde İDK toplantısı gerçekleştirilecektir. Bakanlığımıza sunulan ÇED Raporu https://eced-duyuru.csb.gov.tr/eced-prod/duyurular.xhtml adresinde yer almaktadır. ÇED Raporu ilgililere ve kamuoyuna duyurulur.",
+    "detail_links": [
+      {
+        "text": "ÇED Raporu",
+        "href": "http://eced.csb.gov.tr/jsp/ek1/49803"
+      }
+    ],
+    "documents": [
+      {
+        "portal_doc_url": "http://eced.csb.gov.tr/jsp/ek1/49803",
+        "filing_id": "49803",
+        "consulting_firm": "SİEN ÇEVRE DANIŞMANLIK MÜHENDİSLİK ÖLÇÜM LABARATUVARI ENERJİ MADEN SAN. TİC. LTD. ŞTİ.",
+        "submitted_at": "08/02/2024 09:15:10",
+        "pdf_urls": [
+          {
+            "label": "49803_CED_Raporu.pdf",
+            "url": "http://eced.csb.gov.tr/jsp/dosya/dosyaGoster.htm?tempAd=sign5979539008263830517.pdf&orjinalAd=49803_CED_Raporu.pdf&yuklemeTarihi=2026-11-06"
+          }
+        ]
+      }
+    ],
+    "announcement_date": "2026-11-19",
+    "statutory_clocks": [
+      {
+        "code": "idk",
+        "kind": "İnceleme Değerlendirme Komisyonu (İDK) süreci; toplantı tarihi resmi metinde yer alır",
+        "deadline": null,
+        "days_remaining": null
+      }
+    ],
+    "filing_key": "49803:19.11.2026:IDK",
+    "first_seen_at": "2026-11-20T02:10:46"
+  },
+  "pdf_info": {
+    "filename": "49803.pdf",
+    "bytes": 419579524,
+    "sha256": "ee21b0e6e1d77bbcb9c356598c9c305f17f621489459f9b8d6debf9dfd0de65f",
+    "cached": false
+  },
+  "analysis": {
+    "page_count": 1317,
+    "total_chars": 2229680,
+    "text_pages": 1072,
+    "scanned_or_blank_pages": 245,
+    "scanned_page_sample": [
+      319,
+      340,
+      341,
+      369,
+      374,
+      375,
+      377,
+      378,
+      379,
+      383,
+      384,
+      385,
+      386,
+      387,
+      388
+    ],
+    "headings": [
+      [
+        4,
+        "İÇİNDEKİLER LİSTESİ"
+      ],
+      [
+        12,
+        "TABLOLAR DİZİNİ"
+      ],
+      [
+        14,
+        "ŞEKİLLER DİZİNİ"
+      ],
+      [
+        16,
+        "EKLER"
+      ],
+      [
+        17,
+        "KISALTMALAR"
+      ],
+      [
+        18,
+        "PROJENİN TEKNİK OLMAYAN ÖZETİ"
+      ],
+      [
+        23,
+        "I. BÖLÜM 1 - PROJENİN TANIMI, AMACI VE ÖZELLİKLERİ"
+      ],
+      [
+        23,
+        "I.1. Projenin Tanımı ve Amaçları"
+      ],
+      [
+        23,
+        "(Projenin konusu, Ekonomik ve Sosyal Yönden Önem ve Gerekliliği, Hizmet amaçları, Mevcut ve/veya Planlanan Projelerle İlişkisi, Projenin Yatırım ve İşletme Süresi, Zamanlama Tablosu,  Projenin İnşaat ve İşletme Aşamalarında Projeye İlişkin Finans Kayn..."
+      ],
+      [
+        28,
+        "I.2. Proje Kapsamındaki Faaliyet Ünitelerinin Konumu (Mevcut ve Planlanan)"
+      ],
+      [
+        28,
+        "(Bütün idari ve sosyal ünitelerin, teknik altyapı ünitelerinin varsa diğer ünitelerin proje alanı içindeki konumlarının vaziyet planı üzerinde gösterimi, bunlar için belirlenen kapalı ve açık alan büyüklükleri, binaların kat adetleri ve yükseklikleri,..."
+      ],
+      [
+        28,
+        "I.2.1. Ocak"
+      ],
+      [
+        33,
+        "I.2.2. Bitkisel Toprak Depolama Alanı"
+      ],
+      [
+        34,
+        "I.2.3. Cevher Stok Alanı"
+      ],
+      [
+        35,
+        "I.2.4. Pasa Alanı"
+      ],
+      [
+        37,
+        "I.2.5. Nakliye Güzergahı"
+      ],
+      [
+        37,
+        "I.2.6. Şantiye/İdari Bina"
+      ],
+      [
+        37,
+        "I.2.7. Patlayıcı Ve Diğer Kimyasalların Tutulacağı Asıl Üniteden Ayrı Depo/Stok Binası Ve Yalıtım Projesi"
+      ],
+      [
+        38,
+        "I.2.7.1. Kimyasallar ve Hazırlama Üniteleri"
+      ],
+      [
+        38,
+        "I.2.8. Diğer hususlar"
+      ],
+      [
+        38,
+        "I.3. Projenin Özellikleri"
+      ],
+      [
+        38,
+        "I.3.1. Proje Kapsamında Kullanılacak Üretim Yöntemleri ve seçilme nedenleri"
+      ],
+      [
+        39,
+        "I.3.2. Kapasite ve alan bilgilerinin mevcut, planlanan ve toplam olarak tablo şeklinde gösterilmesi"
+      ],
+      [
+        40,
+        "I.3.2.1. Açık Ocak"
+      ],
+      [
+        40,
+        "a. Basamak Genişliği-Yüksekliği-Sayısı, Ocak Tavan-Taban Kotları                                               b. Şev-Genel Şev Açısı, Şev Stabilite Hesapları"
+      ]
+    ],
+    "geo": {
+      "precision": "exact_pdf",
+      "lat": 38.32527,
+      "lon": 38.75425,
+      "point_count": 80,
+      "points": [
+        [
+          38.34928,
+          38.76471
+        ],
+        [
+          38.3452,
+          38.75383
+        ],
+        [
+          38.32699,
+          38.75149
+        ],
+        [
+          38.3271,
+          38.75773
+        ],
+        [
+          38.32232,
+          38.75831
+        ],
+        [
+          38.32164,
+          38.7538
+        ],
+        [
+          38.32276,
+          38.75242
+        ],
+        [
+          38.32879,
+          38.74805
+        ],
+        [
+          38.32881,
+          38.75949
+        ],
+        [
+          38.3198,
+          38.75952
+        ],
+        [
+          38.31978,
+          38.74808
+        ],
+        [
+          38.32479,
+          38.75127
+        ],
+        [
+          38.3248,
+          38.75662
+        ],
+        [
+          38.32014,
+          38.75664
+        ],
+        [
+          38.32012,
+          38.75129
+        ],
+        [
+          38.32761,
+          38.75068
+        ],
+        [
+          38.32772,
+          38.75691
+        ],
+        [
+          38.32294,
+          38.7575
+        ],
+        [
+          38.32226,
+          38.75299
+        ],
+        [
+          38.32338,
+          38.75161
+        ],
+        [
+          38.32941,
+          38.74724
+        ],
+        [
+          38.32943,
+          38.75868
+        ],
+        [
+          38.32042,
+          38.75871
+        ],
+        [
+          38.3204,
+          38.74727
+        ],
+        [
+          38.32541,
+          38.75046
+        ],
+        [
+          38.32543,
+          38.75581
+        ],
+        [
+          38.32076,
+          38.75583
+        ],
+        [
+          38.32075,
+          38.75047
+        ],
+        [
+          38.32861,
+          38.74828
+        ],
+        [
+          38.32863,
+          38.75926
+        ],
+        [
+          38.31998,
+          38.75929
+        ],
+        [
+          38.31996,
+          38.74831
+        ],
+        [
+          38.32862,
+          38.75573
+        ],
+        [
+          38.32766,
+          38.75927
+        ],
+        [
+          38.32729,
+          38.75758
+        ],
+        [
+          38.32723,
+          38.75601
+        ],
+        [
+          38.32792,
+          38.75523
+        ],
+        [
+          38.32524,
+          38.75517
+        ],
+        [
+          38.32508,
+          38.75559
+        ],
+        [
+          38.32455,
+          38.75681
+        ]
+      ],
+      "datum": "UTM-Z37/ED50",
+      "pages": [
+        247,
+        320,
+        321,
+        322
+      ]
+    },
+    "signals": {
+      "coordinates_and_footprint": {
+        "label": "Coordinates, Parcel & Footprint",
+        "page_count": 169,
+        "pages": [
+          2,
+          4,
+          5,
+          7,
+          16,
+          18,
+          23,
+          28,
+          33,
+          34,
+          35,
+          37,
+          43,
+          44,
+          45,
+          46,
+          47,
+          48,
+          49,
+          54,
+          55,
+          59,
+          60,
+          61,
+          64
+        ],
+        "samples": [
+          {
+            "page": 2,
+            "match": "koordinat",
+            "snippet": "…lçesi, Pazarcık Köyü 34652 (ER: 2252457) Ruhsat No’lu Alan Pafta Numarası I41-a3 & I41-b4 Proje için seçilen yerin koordinatları: zon Proje için seçilen yerin koordinatları Ek-1’de verilmiştir. Ruhsat Numarası (İR ve ER): İR: 34652 / ER:…"
+          },
+          {
+            "page": 4,
+            "match": "koordinat",
+            "snippet": "…üzerinde gösterimi, bunlar için belirlenen kapalı ve açık alan büyüklükleri, binaların kat adetleri ve yükseklikleri, koordinatları, tüm ünitelerin mevcut ve planlanan kapasiteleri ayrı ayrı verilecektir. ) .......................................…"
+          },
+          {
+            "page": 5,
+            "match": "Koordinat",
+            "snippet": "…lanının Tanımlanması ve Neye Göre Belirlendiğinin Açıklanması, Proje Alanı ve Etki Alanının Harita Üzerinde Gösterimi, Koordinat Bilgileri Tanımı (Yer Bulduru Haritası, Proje Alanı ve Yakın Çevresinin Fotoğrafları) ................................…"
+          },
+          {
+            "page": 7,
+            "match": "Koordinat",
+            "snippet": "….................................................................................. 180 (Tarım Arazileri, Büyüklükleri, Koordinatları, Harita Üzerinde İşaretlenmesi, Ürün Desenleri ve Bunların Yıllık Üretim Miktarı, Tarım Reformu Uygulama Alanları,…"
+          },
+          {
+            "page": 16,
+            "match": "KOORDİNAT",
+            "snippet": "…ET ANONİM ŞİRKETİ 34652 RUHSAT NUMARALI (ER:2252457) BAKIR OCAĞI KAPASİTE ARTIŞI xiii EKLER EK-1: PROJE ALANI KOORDİNATLARI EK-2: İŞLETME PROJESİ, İŞLETME RUHSATI-İŞLETME İZNİ VE GSM RUHSATI EK-3: YER BULDURU HARİTASI EK-4: PROJE ALANI…"
+          },
+          {
+            "page": 18,
+            "match": "24,24 ha",
+            "snippet": "…ında gerçekleştirilen üretim, 05.10.2011 tarih ve 133 sayı ile Malatya Valiliği İl Çevre ve Orman Müdürlüğü tarafından 24,24 ha’lık alan için verilen “ÇED Gerekli Değildir” kararına istinaden devam etmektedir. ÇED Gerekli Değildir Kararı Osman Ka…"
+          },
+          {
+            "page": 18,
+            "match": "24,24 hektar",
+            "snippet": "…lanı, pasa depolama alanı, stok alanı vb. alanların bir kısmının ve aynı zamanda üretim yapılan alanın bir kısmının da 24,24 hektarlık ÇED alanı dışında kaldığı tespit edilmiştir. Mevcut durumda 30.000 ton/yıl kapasite ile çalışılmaktadır. Proje kap…"
+          },
+          {
+            "page": 18,
+            "match": "koordinat",
+            "snippet": "…ı, 1 adet bitkisel toprak depolama alanı, 1 adet fosseptik alanı ve 1 adet şantiye alanı tekrar belirlenmiştir. İlgili koordinatlar Ek-1’de yer almaktadır. Tarım ve Orman Bakanlığı Devlet Su İşleri Genel Müdürlüğü’nün 5989227 sayı ve 23.06.2025…"
+          }
+        ]
+      },
+      "water_and_discharge": {
+        "label": "Water Use, Hydrogeology & Discharge",
+        "page_count": 77,
+        "pages": [
+          7,
+          9,
+          16,
+          18,
+          19,
+          20,
+          21,
+          39,
+          53,
+          57,
+          67,
+          70,
+          71,
+          162,
+          167,
+          168,
+          169,
+          170,
+          171,
+          172,
+          219,
+          230,
+          231,
+          232,
+          238
+        ],
+        "samples": [
+          {
+            "page": 7,
+            "match": "Yeraltısuyu",
+            "snippet": "…............................ 152 (Proje Alanının Bağlı Bulunduğu Hidrojeolojik Sistem Tanımlanmalı; Çalışmanın Ölçeği Yeraltısuyu Sistemi Ve Hidrojeolojik Etkileşim İçinde Olabileceği Yerüstü Kütleleri İle Komşu Akiferleri de Kapsayacak Şekilde Seç…"
+          },
+          {
+            "page": 9,
+            "match": "Yeraltı Suyu",
+            "snippet": "….................................... 242 III.17. Proje Kapsamında Gerçekleştirilecek Faaliyetler Sonucunda Yüzeysel ve Yeraltı Suyu Kaynaklarının Etkilenme Durumları ve Alınacak Tedbirler ......................................................... 242…"
+          },
+          {
+            "page": 16,
+            "match": "ATIKSU",
+            "snippet": "…Jİ HARİTASI & HİDROJEOLOJİ HARİTASI VE KESİTLERİ EK-9: ÇED GEREKLİ DEĞİLDİR BELGESİ EK-10: EVSEL NİTELİKLİ KATI ATIK, ATIKSU VE SU TEMİN YAZISI EK-11: KAPASİTE RAPORU EK-12: PAYDAŞ KATILIM PLANI EK-13: ÇEVRE İZLEME PLANI EK-14: ÇEVRE VE SOS…"
+          },
+          {
+            "page": 18,
+            "match": "yeraltı suyu",
+            "snippet": "…5989227 sayı ve 23.06.2025 tarihli yazısına istinaden; Proje dahilinde gerçekleştirilen her türlü faaliyet sırasında yeraltı suyu ile karşılaşılması durumunda faaliyete son verileceği ve bu faaliyetlerden ötürü kaynak çıkış noktalarında değişme, de…"
+          },
+          {
+            "page": 19,
+            "match": "yeraltı suyu",
+            "snippet": "…Karşı Korunması Hakkında Yönetmelik\" hükümleri dikkate alınarak gerçekleştirilecektir. Bu kapsamda, tüm faaliyetlerin yeraltı suyu seviyesi üzerinde, yeraltı suyunu etkilemeyecek emniyetli işletme kotunda yapılacağı ve YAS kotunun altına inilmeyeceğ…"
+          },
+          {
+            "page": 19,
+            "match": "Akifer",
+            "snippet": "…erhal son verileceği ve bu hususta her türlü zararın faaliyet sahibi tarafından karşılanacağı, \"İçme Suyu Temin Edilen Akifer ve Kaynakların Koruma Alanlarının Belirlenmesi Hakkında Tebliğ\" hükümleri doğrultusunda herhangi bir içme suyu koruma…"
+          },
+          {
+            "page": 20,
+            "match": "deşarj",
+            "snippet": "…lar, evsel/evsel olmayan, katı/sıvı atık, hafriyat atıkları, ambalaj atıkları ile tehlikeli atıkların dere yataklarına deşarj edilmeyecektir. Faaliyet alanına düşerek burada kontamine olabilecek yağış sularının yüzeysel akışa geçmesi önlenecek…"
+          },
+          {
+            "page": 21,
+            "match": "deşarj",
+            "snippet": "…lar, evsel/evsel olmayan, katı/sıvı atık, hafriyat atıkları, ambalaj atıkları ile tehlikeli atıkların dere yataklarına deşarj edilmeyeceği proje sahibi tarafından taahhüt edilmektedir. Tespit edilememiş su yapılarının faaliyet sırasında ortaya…"
+          }
+        ]
+      },
+      "protected_land_and_olive": {
+        "label": "Protected Zones, Forests & Olive Groves",
+        "page_count": 38,
+        "pages": [
+          6,
+          7,
+          54,
+          68,
+          69,
+          70,
+          72,
+          73,
+          74,
+          172,
+          198,
+          262,
+          263,
+          264,
+          482,
+          490,
+          555,
+          559,
+          560,
+          564,
+          567,
+          1145,
+          1158,
+          1160,
+          1168
+        ],
+        "samples": [
+          {
+            "page": 6,
+            "match": "Özel Çevre Koruma",
+            "snippet": "…ruma Alanları, Boğaziçi Kanununa göre koruma altına alınan alanlar, Biyogenetik Rezerv Alanları, Biyosfer Rezervleri, Özel Çevre Koruma Bölgeleri, Özel Koruma Alanları, içme ve kullanma su kaynakları ile ilgili koruma alanları, Turizm Alan ve Merkezleri…"
+          },
+          {
+            "page": 7,
+            "match": "Mutlak Tarım",
+            "snippet": "…Toprak Özellikleri ve Arazi Kullanım Durumu .................................................................... 156 (Mutlak Tarım Arazileri, Özel Ürün Arazileri, Dikili Tarım Arazileri, Sulu Tarım Arazileri ve Marjinal Tarım Arazileri) ............…"
+          },
+          {
+            "page": 54,
+            "match": "mera alanı",
+            "snippet": "…rinde ise metrekare başına kamulaştırma bedeli olarak 2 TL ortalama maliyet eklenmiştir. Proje alanında yaklaşık 18 ha mera alanı ve 388.000 m2 tarım arazisi bulunmaktadır. Proje kapsamında kullanılacak makine ve ekipmanların periyodik bakımları ye…"
+          },
+          {
+            "page": 68,
+            "match": "Özel Çevre Koruma",
+            "snippet": "…ruma Alanları, Boğaziçi Kanununa göre koruma altına alınan alanlar, Biyogenetik Rezerv Alanları, Biyosfer Rezervleri, Özel Çevre Koruma Bölgeleri, Özel Koruma Alanları, içme ve kullanma su kaynakları ile ilgili koruma alanları, Turizm Alan ve Merkezleri…"
+          },
+          {
+            "page": 69,
+            "match": "Özel Çevre Koruma",
+            "snippet": "…alanlar, proje alanı içerisinde bulunmamaktadır. f) Çevre Kanununun 9 uncu maddesi uyarınca Cumhurbaşkanı tarafından \"Özel Çevre Koruma Bölgeleri\" olarak tespit ve ilan edilen alanlar, proje alanı içerisinde bulunmamaktadır. g) Boğaziçi Kanunu’na göre k…"
+          },
+          {
+            "page": 69,
+            "match": "orman alanı",
+            "snippet": "…Boğaziçi Kanunu’na göre koruma altına alınan alanlar, proje alanı içerisinde bulunmamaktadır. ğ) Orman Kanunu uyarınca orman alanı sayılan yerler, bulunmamaktadır. h) Kıyı Kanunu gereğince yapı yasağı getirilen alanlar, proje alanı içerisinde bulun…"
+          },
+          {
+            "page": 70,
+            "match": "kıyı kenar",
+            "snippet": "…ı olmak üzere canlıların yaşama ortamı olarak önem taşıyan bütün sular, bataklık sazlık ve turbiyeler ile bu alanların kıyı kenar çizgisinden itibaren kara tarafına doğru ekolojik açıdan sulak alan kalan yerler, proje alanı içerisinde bulunmamaktad…"
+          },
+          {
+            "page": 70,
+            "match": "sulak alan",
+            "snippet": "…ar, bataklık sazlık ve turbiyeler ile bu alanların kıyı kenar çizgisinden itibaren kara tarafına doğru ekolojik açıdan sulak alan kalan yerler, proje alanı içerisinde bulunmamaktadır."
+          }
+        ]
+      },
+      "ecology_and_baseline": {
+        "label": "Flora, Fauna & Baseline Methodology",
+        "page_count": 78,
+        "pages": [
+          6,
+          9,
+          16,
+          70,
+          71,
+          78,
+          79,
+          80,
+          81,
+          82,
+          83,
+          84,
+          85,
+          86,
+          87,
+          88,
+          89,
+          90,
+          91,
+          92,
+          93,
+          94,
+          96,
+          98,
+          99
+        ],
+        "samples": [
+          {
+            "page": 6,
+            "match": "endemik",
+            "snippet": "…nesli tehlikeye düşmüş türler, bunların yaşama ortamları ve tehlike kategorilerinin Red Data Book’a göre irdelenmesi, endemik türler ile önemli bitki alanı bulunması durumunda alınacak önlemler, flora tablosunun oluşturulması, alanda bulunan bi…"
+          },
+          {
+            "page": 6,
+            "match": "Bern Sözleşmesi",
+            "snippet": "…ncelenmesi, faunanın uygun formda düzenlenmesi, Kara Avcılığı Kanunu ve Yönetmelikleri kapsamında yapılacak işlemler, Bern Sözleşmesi kapsamında bulunan türlerin belirlenmesi, proje faaliyetlerinden etkilenecek canlılar için alınması gereken koruma önl…"
+          },
+          {
+            "page": 9,
+            "match": "endemik",
+            "snippet": "…in İnşaat ve İşletme Döneminde Flora – Fauna ..................................................... 244 (Mevcut türler, endemik türlerin bulunduğu yerler, önemli bitki alanı bulunan yerler ve varsa nesli tehlike altında olan fauna türlerinin yaşa…"
+          },
+          {
+            "page": 16,
+            "match": "BİYOÇEŞİTLİLİK",
+            "snippet": "…: OCAK VE PASA KÜBAJ TABLOLARI EK-19: DOĞAYA YENİDEN KAZANDIRMA PLANI EK-20: EKOSİSTEM DEĞERLENDİRME RAPORU VE ULUSAL BİYOÇEŞİTLİLİK ENVANTER VE İZLEME PROJESİ RAPORU EK-21: HİDROJEOLOJİK DEĞERLENDİRME RAPORU & DERE SU ANALİZ RAPORU EK…"
+          },
+          {
+            "page": 70,
+            "match": "BERN Sözleşmesi",
+            "snippet": "…ER:2252457) BAKIR OCAĞI KAPASİTE ARTIŞI 54 a) \"Avrupa’nın Yaban Hayatı ve Yaşama Ortamlarını Koruma Sözleşmesi\" (BERN Sözleşmesi) uyarınca koruma altına alınmış alanlardan \"Önemli Deniz Kaplumbağası Üreme Alanları\"nda belirtilen I. ve II. Koruma…"
+          },
+          {
+            "page": 71,
+            "match": "endemik",
+            "snippet": "…dır. d) Bilimsel araştırmalar için önem arz eden ve/veya nesli tehlikeye düşmüş veya düşebilir türler ve ülkemiz için endemik olan türlerin yaşama ortamı olan alanlar, biyosfer rezervi, biyotoplar, biyogenetik rezerv alanları, benzersiz özellik…"
+          },
+          {
+            "page": 71,
+            "match": "Flora ve Fauna",
+            "snippet": "…özelliklerdeki jeolojik ve jeomorfolojik oluşumların bulunduğu alanlar, proje alanı içerisinde bulunmamaktadır. II.3. Flora ve Fauna (Proje alanı ve etki alanında bulunan flora türleri, etkilenecek alandaki türler, bu çalışmaların hangi dönemde yapıl…"
+          },
+          {
+            "page": 71,
+            "match": "Bern Sözleşmesi",
+            "snippet": "…ncelenmesi, faunanın uygun formda düzenlenmesi, Kara Avcılığı Kanunu ve Yönetmelikleri kapsamında yapılacak işlemler, Bern Sözleşmesi kapsamında bulunan türlerin belirlenmesi, proje faaliyetlerinden etkilenecek canlılar için alınması gereken koruma önl…"
+          }
+        ]
+      },
+      "pollutants_and_hazards": {
+        "label": "Emissions, Geochemistry & Waste",
+        "page_count": 109,
+        "pages": [
+          5,
+          6,
+          13,
+          15,
+          16,
+          17,
+          41,
+          52,
+          54,
+          64,
+          66,
+          104,
+          106,
+          109,
+          138,
+          139,
+          148,
+          154,
+          155,
+          158,
+          222,
+          224,
+          226,
+          229,
+          230
+        ],
+        "samples": [
+          {
+            "page": 5,
+            "match": "Deprem",
+            "snippet": "….................. 48 II.1.3. Proje Alanı ve Yakın Çevresinde Bulunan Tarım Arazilerinin, Yeraltı ve Yüzey Sularının, Deprem Kuşaklarının, Jeolojik Yapının, Yerleşim Alanlarının, Ulaşım Ağının, Enerji İletim Hatlarının, Boru Hatlarının, Arazi…"
+          },
+          {
+            "page": 6,
+            "match": "deprem",
+            "snippet": "…................................................................................... 132 (7269 sayılı yasada belirtilen deprem dışındaki heyelan, su baskını, çığ, kaya düşmesi vb. afet riskleri hakkında bilgi verilmeli, ilgili haritaları üzerind…"
+          },
+          {
+            "page": 13,
+            "match": "Gürültü",
+            "snippet": "…Dağılımı ........................................................... 229 Tablo 81. Tüm Kaynaklardan Oluşan Toplam Ses (Gürültü) Düzeyinin Mesafelere Göre Dağılımı ..................................................................................…"
+          },
+          {
+            "page": 15,
+            "match": "Gürültü",
+            "snippet": "….................................................................. 224 Şekil 79. Tüm Kaynaklardan Oluşacak Toplam Ses (Gürültü) Düzeyinin Mesafelere Göre Dağılım Grafiği ...........................................................................…"
+          },
+          {
+            "page": 16,
+            "match": "PM10",
+            "snippet": "…PROJESİ RAPORU EK-21: HİDROJEOLOJİK DEĞERLENDİRME RAPORU & DERE SU ANALİZ RAPORU EK-22: METEOROLOJİK VERİLER EK-23: PM10 ve ÇÖKEN TOZ HAVA KALİTESİ MODELLEMESİ RAPORU EK-24: AKUSTİK RAPOR EK-25: DSİ ONAYLI TERSİP BENTLERİNE AİT RÜSUBAT HE…"
+          },
+          {
+            "page": 17,
+            "match": "Gürültü",
+            "snippet": "…:Çevre, Şehircilik ve İklim Değişikliği Bakanlığı Bkz. :Bakınız ÇED :Çevresel Etki Değerlendirmesi ÇGKY :Çevresel Gürültü Kontrol Yönetmeliği DSİ :Devlet Su İşleri HKKD :Hava Kirlenmesine Katkı Değeri MAPEG : Maden ve Petrol İşleri Gen…"
+          },
+          {
+            "page": 41,
+            "match": "Deprem",
+            "snippet": "…dır. Şev stabilite rapor sonuçları aşağıda yer almaktadır. • İnceleme alanında tekrarlama periyodu 475 yıl olan DD-2 (Deprem Yer Hareketi Düzeyi-2) hareket düzeyinde en büyük yer ivme değeri PGA= 0.554 g olarak elde edilmiştir. Buna göre PGA…"
+          },
+          {
+            "page": 52,
+            "match": "GÜRÜLTÜ",
+            "snippet": "…ALIŞMASI (Bitkisel Toprağın Sıyrılması ve Depolanması) PASANIN DEPOLANMASI CEVHERİN PİYASAYA VERİLMESİ TOZ VE GÜRÜLTÜ TOZ VE GÜRÜLTÜ TOZ GÜRÜLTÜ TİTREŞİM TAŞ FIRLAMASI"
+          }
+        ]
+      },
+      "cost_and_capacity": {
+        "label": "Project Cost, Power & Capacity",
+        "page_count": 446,
+        "pages": [
+          1,
+          2,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26
+        ],
+        "samples": [
+          {
+            "page": 1,
+            "match": "KAPASİTE",
+            "snippet": "COPPER EXPORT METAL SANAYİ VE TİCARET ANONİM ŞİRKETİ 34652 RUHSAT NUMARALI (ER:2252457) BAKIR OCAĞI KAPASİTE ARTIŞI Malatya İli, Pütürge İlçesi, Pazarcık Köyü 34652 (Er:2252457) Ruhsat Numaralı Alan SİEN ÇEVRE DANIŞMA…"
+          },
+          {
+            "page": 2,
+            "match": "Kapasite",
+            "snippet": "…ergi Numarası: 2111294754 Ticaret Sicil Numarası: 22346 Projenin Adı 34652 Ruhsat Numaralı (ER:2252457) Bakır Ocağı Kapasite Artışı Proje Bedeli 6.100.000,00TL Proje İçin Seçilen Yerin Açık Adresi (İli, İlçesi, Mevkii) Malatya İli, Pütürg…"
+          },
+          {
+            "page": 2,
+            "match": "Proje Bedeli",
+            "snippet": "…11294754 Ticaret Sicil Numarası: 22346 Projenin Adı 34652 Ruhsat Numaralı (ER:2252457) Bakır Ocağı Kapasite Artışı Proje Bedeli 6.100.000,00TL Proje İçin Seçilen Yerin Açık Adresi (İli, İlçesi, Mevkii) Malatya İli, Pütürge İlçesi, Pazarcık Kö…"
+          },
+          {
+            "page": 4,
+            "match": "KAPASİTE",
+            "snippet": "COPPER EXPORT METAL SANAYİ VE TİCARET ANONİM ŞİRKETİ 34652 RUHSAT NUMARALI (ER:2252457) BAKIR OCAĞI KAPASİTE ARTIŞI i İÇİNDEKİLER LİSTESİ İÇİNDEKİLER LİSTESİ .............................................................…"
+          },
+          {
+            "page": 4,
+            "match": "kapasite",
+            "snippet": "…ve açık alan büyüklükleri, binaların kat adetleri ve yükseklikleri, koordinatları, tüm ünitelerin mevcut ve planlanan kapasiteleri ayrı ayrı verilecektir. ) ........................................................................................…"
+          },
+          {
+            "page": 5,
+            "match": "KAPASİTE",
+            "snippet": "COPPER EXPORT METAL SANAYİ VE TİCARET ANONİM ŞİRKETİ 34652 RUHSAT NUMARALI (ER:2252457) BAKIR OCAĞI KAPASİTE ARTIŞI ii I.3.6. Üretimde Kullanılacak Makinelerin, Araçların, Aletlerin ve diğer ekipmanların sayıları ve kapas…"
+          },
+          {
+            "page": 5,
+            "match": "Kapasite",
+            "snippet": "…1. Proje Kapsamındaki Ulaşım Planı (Ulaşım Güzegâhı (alternatif güzergahlar dahil) Güzegâh Yollarının Mevcut Durumu Ve Kapasitesi, Hangi Amaçlar İçin Kullanıldığı, Mevcut Trafik Yoğunluğu, Yerleşim Yerlerine Göre Konumu, Yapılması Düşünülen Tamir…"
+          },
+          {
+            "page": 6,
+            "match": "KAPASİTE",
+            "snippet": "COPPER EXPORT METAL SANAYİ VE TİCARET ANONİM ŞİRKETİ 34652 RUHSAT NUMARALI (ER:2252457) BAKIR OCAĞI KAPASİTE ARTIŞI iii (1/100000, 1/25000, 1/5000, 1/1000 ölçekli yürürlükte bulunan planlar üzerinde işaretlenerek gösteril…"
+          }
+        ]
+      }
+    },
+    "audit_checks": {
+      "mentions_field_survey": true,
+      "mentions_literature_only_cue": true,
+      "mentions_seasonal_sampling": true,
+      "mentions_cumulative_impact": true,
+      "mentions_olive_law_3573": true,
+      "mentions_groundwater_or_aquifer": true,
+      "mentions_iucn_or_endemic": true
+    }
+  },
+  "llm_synthesis": {
+    "model": "gemini-4-hydrogen",
+    "generated_at": "2026-11-20T11:04:32",
+    "pages_sent": [
+      1,
+      2,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      18,
+      54,
+      68,
+      70
+    ],
+    "usage": {
+      "prompt_tokens": 19719,
+      "output_tokens": 3657,
+      "thoughts_tokens": 7267,
+      "total_tokens": 30643
+    },
+    "result": {
+      "executive_summary_tr": "Copper Export Metal San. ve Tic. A.Ş. tarafından Malatya İli, Pütürge İlçesi, Pazarcık Köyü mevkiindeki 34652 ruhsat numaralı (ER: 2252457) sahada bakır ocağı kapasite artışı projesi planlanmaktadır. Proje kapsamında mevcut 24,24 hektarlık ÇED alanında 30.000 ton/yıl olan üretim kapasitesinin, 100 hektarlık ÇED alanı içerisinde 150.000 ton/yıla çıkarılması ve 8 adet ocak alanı, 2 adet pasa depolama alanı, maden stok alanı, bitkisel toprak depolama alanı ile şantiye ünitelerinin işletilmesi öngörülmektedir. Sunulan sayfa alıntılarında mevcut 24,24 hektarlık ÇED alanı dışında üretim ve depolama yapıldığına dair yer inceleme tespiti, proje alanının tamamının üst ölçekli planda tarım arazisi niteliğinde olması, DSİ planlama faaliyetleriyle çakışma ve endemik flora varlığı başlıca çevresel ve metodolojik riskler olarak öne çıkmaktadır.",
+      "executive_summary_en": "Copper Export Metal San. ve Tic. A.Ş. proposes a capacity expansion project for an open-pit copper mine within license area 34652 (ER: 2252457) located in Pazarcık Village, Pütürge District, Malatya Province. The proposal seeks to expand the existing operation from 30,000 tons/year across 24.24 hectares to 150,000 tons/year across a 100-hectare EIA area, comprising eight open pits, two waste rock dumps, an ore stockpile area, a topsoil storage area, and site facilities. Key environmental and regulatory stakes identified in the excerpted pages include prior out-of-boundary mining and waste storage documented during site inspection, full overlap of the 100-hectare site with designated agricultural land in the 1/100,000 Environmental Plan alongside pasture and farmland parcels, overlap with DSİ planned activities, and recorded endemic plant species.",
+      "key_facts": [
+        {
+          "label": "Ruhsat Numarası",
+          "value": "İR: 34652 / ER: 2252457",
+          "page": 2
+        },
+        {
+          "label": "Proje Bedeli",
+          "value": "6.100.000,00 TL",
+          "page": 2
+        },
+        {
+          "label": "Mevcut ÇED Alanı ve Kapasitesi",
+          "value": "24,24 ha alanda 30.000 ton/yıl",
+          "page": 18
+        },
+        {
+          "label": "Planlanan ÇED Alanı ve Kapasitesi",
+          "value": "100 ha alanda 150.000 ton/yıl",
+          "page": 18
+        },
+        {
+          "label": "Planlanan Faaliyet Üniteleri",
+          "value": "8 adet ocak alanı, 2 adet pasa depolama alanı, 1 adet maden stok alanı, 1 adet bitkisel toprak depolama alanı, 1 adet fosseptik alanı, 1 adet şantiye alanı",
+          "page": 18
+        },
+        {
+          "label": "Proje Alanındaki Mera ve Tarım Arazisi",
+          "value": "Yaklaşık 18 ha mera alanı ve 388.000 m² tarım arazisi",
+          "page": 54
+        },
+        {
+          "label": "Makine-Ekipman Gideri (1 Yıllık Kiralama)",
+          "value": "4.200.000 TL",
+          "page": 54
+        },
+        {
+          "label": "Arazi Edinim Maliyeti Hesabı",
+          "value": "800.000 TL (mera için 200 TL/ha ot maliyeti, tarım arazisi için 2 TL/m² kamulaştırma bedeli)",
+          "page": 54
+        },
+        {
+          "label": "Öngörülen Sağlık Koruma Bandı Mesafesi",
+          "value": "20 metre",
+          "page": 68
+        }
+      ],
+      "baseline_assessment": {
+        "field_survey_status": "mixed_or_unclear",
+        "seasonal_sampling_status": "not_found",
+        "cumulative_impact_status": "omitted_or_not_found",
+        "olive_and_protected_status": "Sunulan sayfa alıntılarında 3573 sayılı Kanun kapsamında zeytinliklere ilişkin bilgi yer almamakta olup Orman Alanları bölümü (rapor s. 123) alıntılar dışındadır [s. 6]. Raporda Milli Park, Tabiat Parkı, Tabiat Anıtı, Tabiat Koruma Alanı [s. 68], Ramsar sulak alanları, Dünya Miras Listesi alanları, Avrupa Peyzaj Sözleşmesi kapsamındaki alanlar, Çevre Düzeni Planı'nda yapılaşma yasağı getirilen alanlar ve sulak alanların proje alanı içinde (ve milli park vb. için yakın çevresinde) bulunmadığı belirtilmiştir [s. 68, 70]. Buna karşın proje alanının tamamının 1/100.000 Ölçekli Çevre Düzeni Planı'na göre Tarım Arazisi niteliğinde olduğu [s. 70], ayrıca tapu kayıtlarında yaklaşık 18 ha mera ve 388.000 m² tarım arazisi bulunduğu ifade edilmektedir [s. 54].",
+        "explanation": "Tablolar ve Şekiller Dizini incelendiğinde flora listesinin literatür ve arazi çalışmalarının bileşimine dayandığı ve Phryna hamzaoglui gibi endemik bireylerin sahada fotoğraflandığı görülürken, arazi çalışmalarında tespit edilememiş ancak alanda bulunması muhtemel endemik bitkiler için ayrı bir liste oluşturulduğu anlaşılmaktadır [s. 12, 14]. İkiyaşamlı, sürüngen, kuş ve memeli fauna tabloları ise doğrudan arazi gözlemlerinden ziyade habitat özelliği nedeniyle bulunması muhtemel türler olarak başlıklandırılmıştır [s. 12]. Yüzeysel su kaynağı memba ve mansap kalite ölçümlerine ilişkin tablo ve şekil başlıkları mevcuttur [s. 12, 15]; ancak flora-fauna, hidroloji ve kümülatif etki bölümlerinin metin sayfaları sağlanan alıntılarda yer almadığından mevsimsel örnekleme ve kümülatif değerlendirme kapsamı doğrulanamamıştır [s. 6, 7, 10, 16]."
+      },
+      "red_flags": [
+        {
+          "severity": "high",
+          "title": "Mevcut ÇED Alanı Dışında Üretim ve Depolama Yapıldığının Tespiti",
+          "detail": "Projenin Teknik Olmayan Özeti'nde Ek-17 Yer İnceleme Tutanağı'na atıfla, 05.10.2011 tarihli 24,24 ha'lık ÇED Gerekli Değildir alanı kapsamında yürütülen çalışmalarda bitkisel toprak depolama alanı, pasa depolama alanı, stok alanı ve üretim yapılan alanın bir kısmının 24,24 ha'lık ÇED alanı dışında kaldığının tespit edildiği belirtilmektedir.",
+          "pages": [
+            18
+          ]
+        },
+        {
+          "severity": "high",
+          "title": "Proje Alanının Tamamının Planda Tarım Arazisi Olması ve Düşük Arazi Edinim Bedeli",
+          "detail": "Proje alanının tamamının Malatya-Elazığ-Bingöl-Tunceli Planlama Bölgesi 1/100.000 Ölçekli Çevre Düzeni Planı'na göre Tarım Arazisi niteliğinde olduğu [s. 70] ve sahada yaklaşık 18 ha mera ile 388.000 m² tarım arazisi bulunduğu belirtilmiştir [s. 54]. Buna karşın yatırım maliyetinde mera alanları için hektar başına 200 TL ot maliyeti, tarım arazileri için ise metrekare başına yalnızca 2 TL kamulaştırma bedeli öngörülmüştür [s. 54].",
+          "pages": [
+            54,
+            70
+          ]
+        },
+        {
+          "severity": "high",
+          "title": "DSİ Planlama Sahaları ile Çakışma ve Yeraltı Suyu Riski",
+          "detail": "DSİ Genel Müdürlüğü'nün 23.06.2025 tarihli yazısında ocak ve pasa depolama alanlarının bazı kısımlarının DSİ'nin planlama aşamasındaki faaliyetleriyle çakıştığı bildirilmiş, bu nedenle üniteler yeniden konumlandırılmış ancak 100 ha'lık ÇED alanında küçültmeye gidilmemiştir. Aynı kurum görüşüne istinaden faaliyet sırasında yeraltı suyu ile karşılaşılması halinde faaliyete son verileceği ve oluşacak zararların karşılanacağı ifade edilmiş olup, bu durum yeraltı suyu riskinin ön tedbirden ziyade karşılaşma sonrasına bırakıldığını göstermektedir.",
+          "pages": [
+            18
+          ]
+        },
+        {
+          "severity": "medium",
+          "title": "Fauna Listelerinin Bulunması Muhtemel Türlere Dayanması ve Endemik Flora Varlığı",
+          "detail": "Tablolar Dizini'ne göre ikiyaşamlı, sürüngen, kuş ve memeli tabloları (Tablo 23-26) habitat özelliği nedeniyle bulunması muhtemel türler olarak hazırlanmıştır [s. 12]. Flora bölümünde ise proje alanından fotoğraflanan Phryna hamzaoglui türünün yanında arazi çalışmalarında tespit edilememiş ancak bulunması muhtemel endemik taksonlar için ayrı bir tablo (Tablo 21) yer almaktadır [s. 12, 14].",
+          "pages": [
+            12,
+            14
+          ]
+        },
+        {
+          "severity": "medium",
+          "title": "İmar Planı Eksikliği ve 20 Metrelik Sağlık Koruma Bandı",
+          "detail": "Pütürge Belediyesi'nin 6477 sayılı yazısında sahada 1/5000 Nazım İmar Planı ve 1/1000 Uygulama İmar Planı'nın bulunmadığı belirtilmiştir. Ayrıca 150.000 ton/yıl kapasiteli bakır ocağı projesi için sağlık koruma bandı mesafesi 20 metre olarak belirlenmiştir.",
+          "pages": [
+            68
+          ]
+        },
+        {
+          "severity": "low",
+          "title": "Tankerle İtfaiye Suyu Temini ve Kiralık Makine Maliyet Yapısı",
+          "detail": "Kullanma suyu ve toz bastırma amacıyla kullanılacak suyun Malatya Büyükşehir Belediyesi Ağaç Sanayi İtfaiye Şubesi'nden tankerlerle satın alınarak taşınacağı, şantiye içi motorin ikmalinin de tankerle yapılacağı belirtilmektedir. Proje yatırım bedelinde (6.100.000 TL) makine-ekipman giderinin yalnızca 1 yıllık kiralama bedeli (4.200.000 TL) olarak hesaplandığı görülmektedir.",
+          "pages": [
+            54
+          ]
+        }
+      ],
+      "hkt_and_petition_questions": [
+        {
+          "question_tr": "Ek-17 Yer İnceleme Tutanağı'nda mevcut 24,24 hektarlık ÇED alanı dışında üretim ve pasa/stok depolama yapıldığının tespit edildiği belirtilmektedir; bu kapsam dışı faaliyetlere yönelik hangi idari ve ıslah işlemleri uygulanmıştır ve 100 hektarlık yeni sınırların aşılmaması için hangi bağlayıcı izleme önlemleri öngörülmektedir?",
+          "pages": [
+            18
+          ]
+        },
+        {
+          "question_tr": "Proje alanının tamamının 1/100.000 Ölçekli Çevre Düzeni Planı'nda Tarım Arazisi niteliğinde olması ve sahada yaklaşık 18 ha mera ile 388.000 m² tarım arazisi bulunması karşısında, 5403 sayılı Toprak Koruma ve Arazi Kullanımı Kanunu ile 4342 sayılı Mera Kanunu kapsamında gerekli tarım dışı kullanım ve mera tahsis amacı değişikliği izinleri alınmış mıdır?",
+          "pages": [
+            54,
+            70
+          ]
+        },
+        {
+          "question_tr": "DSİ Genel Müdürlüğü'nün 23.06.2025 tarihli yazısında belirtilen planlama faaliyetleriyle çakışma nedeniyle ocak ve pasa alanları değiştirilmiş olmasına rağmen 100 ha'lık ÇED alanı neden daraltılmamıştır ve yeraltı suyu ile karşılaşılması halinde faaliyete son verilmesi taahhüdü yerine ocak taban kotlarını kapsayan öncül hidrojeolojik sondaj verileri bulunmakta mıdır?",
+          "pages": [
+            18
+          ]
+        },
+        {
+          "question_tr": "Fauna türlerinin habitat özelliği nedeniyle bulunması muhtemel türler olarak listelendiği ve arazi çalışmalarında tespit edilememiş endemik bitkiler için ayrı bir tablo oluşturulduğu görülmektedir; proje alanından fotoğraflanan Phryna hamzaoglui ile diğer endemik ve korunan türlerin popülasyonlarını belirlemeye yönelik çok mevsimli saha taramaları tamamlanmış mıdır?",
+          "pages": [
+            12,
+            14
+          ]
+        },
+        {
+          "question_tr": "150.000 ton/yıl kapasiteye çıkacak olan açık ocak işletmesi için öngörülen 20 metrelik sağlık koruma bandı mesafesinin toz, gürültü ve patlatma etkileri açısından bilimsel dayanağı nedir ve toz bastırma suyunun itfaiye şubesinden tankerlerle taşınmasının trafik yükü ile su temini sürekliliği üzerindeki etkileri nasıl değerlendirilmiştir?",
+          "pages": [
+            54,
+            68
+          ]
+        }
+      ],
+      "data_limitations": "Başvuru dosyası toplam 1317 sayfadan oluşmakta olup bunun 245 sayfası taranmış/görüntü formatındadır. Bu teknik inceleme yalnızca sağlanan 19 adet PDF sayfa alıntısı (1, 2, 4-16, 18, 54, 68, 70) ile sınırlıdır. İçindekiler dizininde yer alan Bölüm II.3 (Flora ve Fauna, rapor s. 55-122), Bölüm II.4 (Orman Alanları, rapor s. 123), Bölüm II.8-II.9 (Hidroloji ve Hidrojeoloji, rapor s. 142-156), Bölüm III (Patlatma, toz emisyonu, asit kaya drenajı, su temini, atık yönetimi ve rehabilitasyon, rapor s. 195-283), Bölüm IV (Kümülatif Çevresel Etki Değerlendirme, rapor s. 283-287), Bölüm V-VI (Çevre İzleme Planı ve Halkın Katılımı, rapor s. 287-295) ile Ek-1'den Ek-30'a kadar olan tüm teknik ekler sağlanan alıntılar arasında bulunmadığından içerikleri doğrudan doğrulanamamıştır."
+    }
+  }
+}

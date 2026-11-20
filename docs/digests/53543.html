@@ -1,0 +1,296 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>e-ÇED Ön Özet #53543 — DİYARBAKIR / DİCLE,EĞİL,YENİŞEHİR</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <style>
+:root {
+  --bg: #0f1216;
+  --surface: #171c22;
+  --border: #262e38;
+  --text: #e6edf3;
+  --muted: #8b949e;
+  --accent: #58a6ff;
+  --red: #f85149;
+  --amber: #d29922;
+  --green: #3fb950;
+  --badge-bg: #212830;
+}
+@media (prefers-color-scheme: light) {
+  :root {
+    --bg: #f6f8fa;
+    --surface: #ffffff;
+    --border: #d0d7de;
+    --text: #1f2328;
+    --muted: #656d76;
+    --accent: #0969da;
+    --red: #cf222e;
+    --amber: #9a6700;
+    --green: #1a7f37;
+    --badge-bg: #eef2f6;
+  }
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+}
+.wrap { max-width: 1240px; margin: 0 auto; padding: 24px 18px 64px; }
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+header { border-bottom: 1px solid var(--border); padding-bottom: 16px; margin-bottom: 20px; }
+h1 { margin: 0 0 6px; font-size: 1.55rem; }
+h2 { margin: 26px 0 10px; font-size: 1.2rem; }
+h3 { margin: 16px 0 8px; font-size: 1rem; }
+.sub { color: var(--muted); font-size: 0.92rem; margin: 0; }
+.meta-bar { display: flex; flex-wrap: wrap; gap: 14px; margin-top: 12px; font-size: 0.85rem; color: var(--muted); }
+.stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 10px; margin: 16px 0 18px; }
+.stat { background: var(--surface); border: 1px solid var(--border); border-radius: 8px; padding: 12px 14px; }
+.stat .num { font-size: 1.45rem; font-weight: 700; }
+.stat .lbl { font-size: 0.78rem; color: var(--muted); }
+.map-box {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 18px;
+}
+#map { width: 100%; height: 420px; background: var(--badge-bg); }
+#digest-map { width: 100%; height: 320px; background: var(--badge-bg); }
+.map-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  padding: 9px 14px;
+  font-size: 0.8rem;
+  color: var(--muted);
+  border-top: 1px solid var(--border);
+}
+.dot { display: inline-block; width: 10px; height: 10px; border-radius: 50%; margin-right: 5px; vertical-align: middle; }
+.controls { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; margin-bottom: 16px; }
+input[type="search"], select.filter-select {
+  padding: 8px 12px;
+  border-radius: 6px;
+  border: 1px solid var(--border);
+  background: var(--surface);
+  color: var(--text);
+  font-size: 0.9rem;
+}
+input[type="search"] { flex: 1 1 240px; }
+select.filter-select { min-width: 170px; }
+button.pill {
+  padding: 7px 12px;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: var(--surface);
+  color: var(--text);
+  cursor: pointer;
+  font-size: 0.82rem;
+}
+button.pill.active { background: var(--accent); border-color: var(--accent); color: #fff; font-weight: 600; }
+.cards { display: flex; flex-direction: column; gap: 10px; }
+.card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 15px 17px;
+}
+.card.ek1 { border-left: 4px solid var(--accent); }
+.row-top { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px; align-items: baseline; }
+.title { font-weight: 600; font-size: 0.98rem; }
+.badges { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 7px; }
+.badge {
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  background: var(--badge-bg);
+  border: 1px solid var(--border);
+}
+.badge.urgent { border-color: var(--red); color: var(--red); font-weight: 600; }
+.badge.warn { border-color: var(--amber); color: var(--amber); font-weight: 600; }
+.badge.ok { border-color: var(--green); color: var(--green); }
+.badge.muted { color: var(--muted); }
+.detail { font-size: 0.87rem; color: var(--muted); margin: 8px 0; }
+.actions { display: flex; flex-wrap: wrap; gap: 12px; font-size: 0.84rem; margin-top: 8px; }
+.notice {
+  margin-top: 28px;
+  padding: 14px 16px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  font-size: 0.84rem;
+  color: var(--muted);
+}
+table.kv { width: 100%; border-collapse: collapse; margin: 12px 0; font-size: 0.9rem; }
+table.kv th, table.kv td { border: 1px solid var(--border); padding: 8px 11px; text-align: left; vertical-align: top; }
+table.kv th { width: 240px; background: var(--badge-bg); }
+code { background: var(--badge-bg); padding: 1px 5px; border-radius: 4px; font-size: 0.85em; }
+blockquote { margin: 10px 0; padding: 11px 15px; border-left: 3px solid var(--accent); background: var(--surface); font-size: 0.9rem; }
+.hit { margin: 7px 0; font-size: 0.88rem; }
+.pno { font-weight: 700; color: var(--accent); }
+.leaflet-popup-content { color: #1f2328; font-size: 0.85rem; line-height: 1.45; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div style="font-size:0.85rem;margin-bottom:8px;"><a href="../index.html">← Türkiye e-ÇED İzleme listesine dön</a> · <a href="../rehber.html">Kullanım ve İnceleme Rehberi</a> · <a href="53543.md">Ham Markdown (.md)</a></div>
+    <h1>e-ÇED Ön Özet #53543 — DİYARBAKIR / DİCLE,EĞİL,YENİŞEHİR</h1>
+    <p class="sub">154 kV İSDEMİR DİYARBAKIR GES TM-DİYARBAKIR-3 TM ELEKTRİK ENERJİSİ İLETİM HATTI</p>
+    <div class="badges" style="margin-top:10px;">
+      <span class="badge">Nihai Karar</span>
+      <span class="badge">Ek-1</span>
+      <span class="badge urgent">10 Günlük Askı · 7 gün kaldı (2026-11-27)</span>
+    </div>
+  </header>
+
+  <table class="kv">
+    <tr><th>Proje Sahibi</th><td>TÜRKİYE ELEKTRİK İLETİM ANONİM ŞİRKETİ</td></tr>
+    <tr><th>Hazırlayan Kuruluş</th><td>EN-ÇEV ENERJİ ÇEVRE YATIRIMLARI DANIŞMANLIĞI HARİTACILIK İMAR İNŞAAT A.Ş</td></tr>
+    <tr><th>Sektör / Alt Sektör</th><td>Turizm / Enerji İletim Hatları</td></tr>
+    <tr><th>Duyuru Tarihi</th><td><code>17.11.2026</code> (belge yükleme tarihi: <code>24/12/2024 11:18:43</code>)</td></tr>
+    <tr><th>PDF Kapsamı</th><td>327.52 MB · 953 sayfa (708 metin sayfası / 245 taranmış veya görüntü sayfası) · SHA-256 <code>009b7cdf1b3b0882…</code></td></tr>
+    <tr><th>Resmi Bağlantılar</th><td><a href="http://eced.csb.gov.tr/jsp/ek1/53543" target="_blank" rel="noopener">e-ÇED Portal Kaydı</a> · <a href="http://eced.csb.gov.tr/jsp/dosya/dosyaGoster.htm?tempAd=signature_file4862650492096544884.imz&amp;orjinalAd=53543_Son_Sekli_Verilen_Rapor.pdf&amp;yuklemeTarihi=2026-11-13" target="_blank" rel="noopener">Resmi PDF Dosyası</a> · <a href="https://www.openstreetmap.org/?mlat=38.18959&amp;mlon=40.08919#map=12/38.18959/40.08919" target="_blank" rel="noopener">OpenStreetMap</a> · <a href="https://www.google.com/maps/search/?api=1&amp;query=38.18959,40.08919" target="_blank" rel="noopener">Google Haritalar</a></td></tr>
+  </table>
+
+  <h2>Konum Haritası</h2>
+  <div class="map-box">
+    <div id="digest-map"></div>
+    <div class="map-legend"><span>PDF metninden çıkarılan kesin proje koordinatları (80 nokta, datum: UTM-Z37/ED50, sayfa: s.21, s.24, s.154, s.155).</span></div>
+  </div>
+
+  
+  <h2>Yapay Zeka Destekli Bilimsel Ön Değerlendirme <span class="badge">gemini-4-hydrogen</span></h2>
+  <p class="sub">Bu değerlendirme, resmi PDF dosyasından seçilen 22 sayfa (s.1, s.2, s.3, s.4, s.5, s.7, s.8, s.9, s.12, s.14, s.16, s.17, s.18, s.21, s.25, s.35, s.37, s.39, s.49, s.72, s.356, s.357) esas alınarak hazırlanmıştır. Tüm sayısal verilerin ve tespitlerin resmi PDF belgesindeki ilgili <code>[s. N]</code> sayfalarından doğrulanması gerekir.</p>
+  <section class="card ek1">
+    <p><strong>Özet:</strong> Diyarbakır ilinin Dicle, Eğil ve Yenişehir ilçelerine bağlı 19 mahalle/köy güzergâhında, 154 kV geriliminde, 3B 1272 MCM iletkenli ve 42,47959 km uzunluğunda toplam 120 direkli elektrik enerjisi iletim hattı kurulması ve TEİAŞ tarafından 49 yıl işletilmesi planlanmaktadır [s. 2, 16, 21]. Proje bedeli 250.438.991,7 TL, inşaat süresi ise 12 ay olarak öngörülmüştür [s. 16, 35]. Güzergâh ve 5 km genişliğindeki inceleme koridoru; İçme-Kullanma Suyu Mutlak, Kısa, Orta ve Uzun Mesafeli Koruma Alanları, Orman Alanı, Çayır-Mera, I-IV. sınıf Tarım Alanları ve Kentsel Yerleşik/Gelişme Alanları ile kesişmekte olup, Dökmetaş Mahallesi&#x27;ndeki en yakın konut hattın yaklaşık 40 m güneyinde yer almaktadır [s. 21, 39, 49, 72]. Sunulan sayfalarda su koruma alanları, elektromanyetik alan, flora-fauna ve kümülatif etki bölümlerinin asıl metinleri yer almazken, pek çok yasal izin ve detaylı çevre izleme programı ÇED kararı sonrasına bırakılmıştır [s. 37, 356].</p>
+    <details style="margin-top:8px;font-size:0.86rem;color:var(--muted);"><summary style="cursor:pointer;">İngilizce özet (English summary)</summary><p style="margin:6px 0 0;">The project proposes a 154 kV, 42.48 km overhead power transmission line with 120 towers across 19 neighborhoods in the Dicle, Eğil, and Yenişehir districts of Diyarbakır Province, to be operated by TEİAŞ for an economic life of 49 years [s. 2, 16, 21]. Total project cost is stated as 250,438,991.7 TL with a 12-month construction schedule [s. 16, 35]. The route and its 5 km study corridor overlap with absolute, short-, medium-, and long-range drinking water protection zones, forest areas, pastures, Class I-IV agricultural lands, and urban development zones, while the nearest residence in Dökmetaş lies approximately 40 m south of the line [s. 21, 39, 49, 72]. Within the provided excerpts, key impact chapters on water, flora-fauna, electromagnetic fields, and cumulative impacts are absent, and statutory permits as well as detailed environmental monitoring are deferred to post-EIA stages [s. 37, 356].</p></details>
+    <div class="badges" style="margin-top:10px;">
+      <span class="badge">Saha çalışması: Karışık veya yöntemi belirsiz</span>
+      <span class="badge">Mevsimsel örnekleme: Belirsiz</span>
+      <span class="badge">Kümülatif etki: Eksik veya tespit edilemedi</span>
+    </div>
+    <p class="detail" style="margin-top:10px;"><strong>Zeytinlik ve Korunan Alanlar:</strong> Sunulan özet sayfalarda 3573 sayılı Kanun kapsamında zeytinlik alanlara ilişkin bir kayıt bulunmamakta, yalnızca I-IV. sınıf tarım alanları ile özel mahsul plantasyon alanlarının bulunduğu belirtilmektedir [s. 72]. İnceleme koridorunun ve direklerin Orman Alanı, Çayır-Mera ve İçme-Kullanma Suyu Mutlak, Kısa, Orta ve Uzun Mesafeli Koruma Alanları içinde kaldığı, 6831 sayılı Orman Kanunu izinlerinin ÇED sonrası alınacağı ifade edilmektedir [s. 37, 39, 49, 72]. Sulak Alanların Korunması Yönetmeliği, Ramsar, Bern, Barcelona ve Dünya Mirası kapsamında alan bulunmadığı beyan edilmiştir [s. 72]; ancak ÖÇK ve SİT alanlarına ilişkin önceki alt başlık sayfaları sunulan özetlerde yer almamaktadır [s. 4, 72].<br/>Sunulan sayfalarda doğrudan belgelenen tek saha tespiti 28.05.2024 tarihli yer görme çalışmasıdır [s. 49]. İçindekiler ve Şekiller listesi, raporun tam metninde Bölüm 2.12 altında flora-fauna arazi çalışması ve Nuhun Gemisi veri tabanı bilgilerinin bulunduğunu göstermekte, ancak bazı fauna türleri için &#x27;Temsili Fotoğraf&#x27; ibaresi yer almaktadır [s. 5, 14]. Çok mevsimli öncül örnekleme yapıldığına dair veri sunulan sayfalarda doğrulanamamakta, buna karşılık Bölüm 5.1&#x27;de detaylı irdeleme ve tespit için Çevre İzleme Programı oluşturulması inşaat öncesi/onay sonrasına bırakılmaktadır [s. 356]. Bölüm 4 (Kümülatif Etki Değerlendirme) metni özetlerde bulunmamakta, yalnızca yakın çevrede planlanan iletim hatlarını gösteren Şekil 106 yer almaktadır [s. 9, 356].</p>
+  </section>
+  <h3>Öne Çıkan Sayısal Bulgular</h3><table class="kv"><tr><th>Hat Uzunluğu</th><td>42,47959 km (yaklaşık 42,5 km) <span class="pno">[s. 16]</span></td></tr>
+<tr><th>Gerilim ve İletken Tipi</th><td>154 kV, 3B 1272 MCM iletkenli <span class="pno">[s. 21]</span></td></tr>
+<tr><th>Planlanan Direk Sayısı</th><td>120 adet (32 some, 86 taşıyıcı, 2 nihai direk) <span class="pno">[s. 16]</span></td></tr>
+<tr><th>İnceleme Koridoru Genişliği</th><td>Hattın sağında 2,5 km, solunda 2,5 km olmak üzere toplam 5 km <span class="pno">[s. 21]</span></td></tr>
+<tr><th>Proje Bedeli</th><td>250.438.991,7 TL (Başvuru aşamasında 401.800.000 TL) <span class="pno">[s. 35]</span></td></tr>
+<tr><th>Kilometrik Birim Maliyet</th><td>5.895.456,49 TL/km (TEİAŞ 2026 yılı birim fiyatı) <span class="pno">[s. 35]</span></td></tr>
+<tr><th>İnşaat Süresi</th><td>12 ay <span class="pno">[s. 16]</span></td></tr>
+<tr><th>Ekonomik Ömür</th><td>49 yıl <span class="pno">[s. 16]</span></td></tr>
+<tr><th>En Yakın Konut Mesafesi</th><td>Yaklaşık 40 m (Dökmetaş Mahallesi, S2 güneyi) <span class="pno">[s. 49]</span></td></tr>
+<tr><th>Yer Görme Çalışması Tarihi</th><td>28.05.2024 <span class="pno">[s. 49]</span></td></tr></table>
+  <h3>Bilimsel ve Metodolojik Bulgular</h3><section class="card"><div class="hit"><span class="badge urgent">YÜKSEK</span> <strong>İçme-Kullanma Suyu Mutlak ve Kısa Mesafeli Koruma Alanları ile Çakışma</strong> <span class="pno">[s. 39, s. 49, s. 72]</span> — Some direklerinin ve inceleme koridorunun 1/100.000 ölçekli Çevre Düzeni Planı&#x27;nda &#x27;İçme-Kullanma Suyu Mutlak Koruma Alanı Sınırı&#x27; ile Kısa, Orta ve Uzun Mesafeli Koruma Alanlarına denk geldiği beyan edilmektedir [s. 39, 49, 72]. Buna karşın mutlak koruma alanından kaçınan güzergâh alternatiflerine veya su kaynakları/hidrojeoloji etki analizine (Bölüm 3.9-3.10) dair teknik veriler sunulan sayfalarda bulunmamaktadır [s. 7, 39, 49].</div>
+<div class="hit"><span class="badge urgent">YÜKSEK</span> <strong>Konutlara 40 m Mesafe ve Kentsel Yerleşim Alanları ile Kesişim</strong> <span class="pno">[s. 12, s. 49, s. 72]</span> — Yer görme çalışmasında proje alanına en yakın konutun Dökmetaş Mahallesi&#x27;nde hattın yaklaşık 40 m güneyinde bulunduğu, koridorun ayrıca Kentsel Yerleşik Alan ve Kentsel Gelişme Alanı sınırlarına girdiği belirtilmektedir [s. 49, 72]. Bu mesafedeki konutlar için elektromanyetik alan, korona gürültüsü ve inşaat tozu etkilerine dair Tablo 87-106 hesaplamaları yalnızca dizinde görünmekte olup sunulan sayfalarda doğrulanamamaktadır [s. 12, 49].</div>
+<div class="hit"><span class="badge urgent">YÜKSEK</span> <strong>Temel Yasal İzinlerin ve Detaylı Çevre İzlemenin ÇED Sonrasına Bırakılması</strong> <span class="pno">[s. 37, s. 356]</span> — Nihai ÇED aşamasına rağmen 4342 sayılı Mera, 5403 sayılı Toprak Koruma, 1380 sayılı Su Ürünleri, 3083 sayılı Sulama Alanları ve 6831 sayılı Orman Kanunu izinleri ile BOTAŞ yeniden görüşü ve Karayolları 9. Bölge protokolü ÇED sonrasına ertelenmiştir [s. 37]. Ayrıca Bölüm 5.1&#x27;de &#x27;çalışmalara başlamadan önce daha detaylı irdeleme ve tespit yapılabilmesi amacıyla Çevre İzleme Programı oluşturulmalı&#x27; denilerek detaylı izleme ve tespit süreci onay sonrasına bırakılmaktadır [s. 356].</div>
+<div class="hit"><span class="badge warn">ORTA</span> <strong>Proje Bedeli Revizyonu ve Tablo 3 Maliyet Kalemlerinin Ayrıştırılmaması</strong> <span class="pno">[s. 35]</span> — Proje bedeli ÇED başvuru aşamasında 401.800.000 TL iken, TEİAŞ 2026 yılı kilometrik birim fiyatı (5.895.456,49 TL/km) üzerinden 250.438.991,7 TL&#x27;ye düşürülmüştür [s. 35]. Tablo 3&#x27;te Arazi Edinimi, İnşaat, Makine-Ekipman ve Diğer gider kalemleri ayrı ayrı hesaplanmamış; tek bir hücrede aynı toplam rakam verilip &#x27;ilave maliyetler dahil edildiğinde&#x27; ifadesiyle yine 250.438.991,6952 TL yazılmıştır [s. 35].</div>
+<div class="hit"><span class="badge warn">ORTA</span> <strong>Kurumsal Sorumluluk İfadelerindeki Tutarsızlık ve Metin Eksikliği</strong> <span class="pno">[s. 2, s. 16, s. 18, s. 39]</span> — Başvuru künyesi ve finansman bölümünde yatırımcı/proje sahibi TEİAŞ olarak gösterilirken [s. 2, 39], Teknik Olmayan Özet ve Bölüm 1.1&#x27;de projenin &#x27;İskenderun Demir ve Çelik A.Ş. tarafından kurulması ve TEİAŞ tarafından işletilmesi&#x27; yazılmış, aynı sayfalarda finansman ve mülkiyetin de TEİAŞ&#x27;a ait olacağı belirtilmiştir [s. 16, 18]. Ayrıca aynı sayfalarda koridor genişliği sayısal değeri düşürülerek &#x27;toplam km&#x27; biçiminde eksik yazılmıştır [s. 16, 18].</div>
+<div class="hit"><span class="badge warn">ORTA</span> <strong>Temsili Fauna Fotoğrafları ve Şantiye/Su Temini Lokasyonlarının Belirsizliği</strong> <span class="pno">[s. 14, s. 16, s. 17]</span> — Şekiller listesinde Kayseri kertenkelesi (Apathya cappadocica), üveyik (Streptopelia turtur), ekin kargası (Corvus frugilegus) ve vaşak (Lynx lynx) için doğrudan saha gözlemi yerine &#x27;Temsili Fotoğrafı ve Dağılım Haritası&#x27; ifadeleri kullanılmıştır [s. 14]. Geçici şantiye koordinatlarının kurulması halinde sonradan bildirilecek olması ve kullanma suyu dolum noktalarının yükleniciye bırakılması yerel etkilerin önceden değerlendirilmesini sınırlamaktadır [s. 16, 17].</div></section>
+  <h3>HKT Tutanakları ve İdari Başvurular İçin Taslak Teknik Sorular</h3><ul><li>Some direklerinin ve inceleme koridorunun 1/100.000 ölçekli Çevre Düzeni Planı&#x27;nda &#x27;İçme-Kullanma Suyu Mutlak Koruma Alanı&#x27; ile Kısa, Orta ve Uzun Mesafeli Koruma Alanları içerisinde kaldığı belirtilmektedir; mutlak koruma alanından kaçınan alternatif güzergâh etüdü yapılmış mıdır ve bu koruma kuşaklarına isabet eden direk numaraları hangileridir? <span class="pno">[s. 39, s. 49, s. 72]</span></li>
+<li>Dökmetaş Mahallesi&#x27;ndeki en yakın konutun hattın yaklaşık 40 m güneyinde bulunduğu ve koridorun Kentsel Yerleşik/Gelişme Alanları ile kesiştiği dikkate alındığında, 154 kV 1272 MCM iletken kaynaklı elektrik/manyetik alan ve korona gürültüsü değerleri bu mesafedeki konutlar için hangi parametrelerle hesaplanmış ve sınır değerlerle karşılaştırılmıştır? <span class="pno">[s. 12, s. 49, s. 72]</span></li>
+<li>Mera (4342), Toprak Koruma (5403), Su Ürünleri (1380), Sulama Alanları (3083) ve Orman (6831) izinleri ile BOTAŞ/KGM protokollerinin ve detaylı Çevre İzleme Programı&#x27;nın ÇED kararı sonrasına ertelenmesi karşısında, ilgili kurumlardan olumsuz görüş gelmesi veya direk yeri değişikliği gerekmesi halinde Nihai ÇED değerlendirmesi nasıl güncellenecektir? <span class="pno">[s. 37, s. 356]</span></li>
+<li>Proje bedeli 401.800.000 TL&#x27;den 250.438.991,7 TL&#x27;ye revize edilirken Tablo 3&#x27;te kamulaştırma, inşaat ve çevresel tedbir giderleri neden ayrı kalemler halinde gösterilmemiştir; I-IV. sınıf tarım arazileri ve özel mahsul plantasyon alanlarına yönelik kamulaştırma/zarar tazmin maliyetleri bu tutara dahil midir? <span class="pno">[s. 35, s. 39, s. 72]</span></li>
+<li>Yer görme çalışmasının 28.05.2024 tarihinde yapıldığı ve Şekiller listesinde vaşak (Lynx lynx) ile üveyik (Streptopelia turtur) gibi türler için &#x27;temsili fotoğraf&#x27; kullanıldığı görülmektedir; flora-fauna ve kuş göç yollarına ilişkin arazi sörveyleri hangi tarihlerde ve kaç mevsim boyunca gerçekleştirilmiştir? <span class="pno">[s. 5, s. 14, s. 49]</span></li></ul>
+  <p class="sub"><em>İnceleme sınırları:</em> Toplam 953 sayfalık Nihai ÇED Raporu&#x27;nun 245 sayfası taranmış/görüntü nitelikli olup, bu incelemede yalnızca sağlanan 22 metin sayfası [s. 1, 2, 3, 4, 5, 7, 8, 9, 12, 14, 16, 17, 18, 21, 25, 35, 37, 39, 49, 72, 356, 357] değerlendirilebilmiştir. İçindekiler ve dizinlerde yer alan Bölüm 2.12 (Flora ve Fauna), Bölüm 2.13-2.17 (Toprak, Tarım, Mera, Orman), gürültü/EMA/toz hesap tabloları (Tablo 87-106), Bölüm 3.9-3.11 (Su ve Biyoçeşitlilik Etkileri), Bölüm 4 (Kümülatif Etki Değerlendirme) ve kurum görüşü/harita ekleri sunulan özetlerin dışında kaldığından doğrudan doğrulanamamıştır.</p>
+
+
+  <h2>Resmi Duyuru Metni</h2>
+  <blockquote>DİYARBAKIR ili DİCLE, EĞİLYENİŞEHİR,  ilcesinde DİYARBAKIR İli DİCLE, EĞİLYENİŞEHİR,  ilcesinde TÜRKİYE ELEKTRİK İLETİM ANONİM ŞİRKETİ tarafından yapılması planlanan 154 kV İSDEMİR DİYARBAKIR GES TM-DİYARBAKIR-3 TM ELEKTRİK ENERJİSİ İLETİM HATTI projesi ile ilgili olarak hazırlanan ÇED Raporu , İnceleme ve Değerlendirme Komisyonu (İDK) tarafından incelenerek son şekli verilmiş olup, söz konusu rapor halkın görüş ve önerilerini almak üzere ÇED Yönetmeliği&#x27;nin 14.Maddesi (1) no&#x27;lu bendi kapsamında Bakanlıkta ve Çevre, Şehircilik ve İklim Değişikliği İl Müdürlüğü&#x27;nde on (10) takvim günü görüşe açılmıştır. Bakanlığa/Çevre, Şehircilik ve İklim Değişikliği İl Müdürlüğü&#x27;ne iletilen görüşler projeyle ilgili karar alma sürecinde dikkate alınacaktır. Görüş ve öneriler için bu süreç içerisinde Çevre, Şehircilik ve İklim Değişikliği Bakanlığı&#x27;na veya DİYARBAKIR Çevre ve Şehircilik İl Müdürlüklerine müracaat edilebilir. İlgililere ve kamuoyuna duyurulur.</blockquote>
+
+  <h2>Otomatik Metin Taraması (Deterministik)</h2>
+  <table class="kv"><tr><th>Saha veya arazi çalışması ifadesi</th><td><span class="badge ok">Metinde yer almaktadır</span></td></tr>
+<tr><th>Literatür taraması ifadesi</th><td><span class="badge ok">Metinde yer almaktadır</span></td></tr>
+<tr><th>Mevsimsel örnekleme ifadesi</th><td><span class="badge ok">Metinde yer almaktadır</span></td></tr>
+<tr><th>Kümülatif etki değerlendirmesi ifadesi</th><td><span class="badge ok">Metinde yer almaktadır</span></td></tr>
+<tr><th>3573 sayılı Zeytincilik Kanunu veya zeytinlik ifadesi</th><td><span class="badge ok">Metinde yer almaktadır</span></td></tr>
+<tr><th>Yeraltı suyu, akifer veya hidrojeoloji ifadesi</th><td><span class="badge ok">Metinde yer almaktadır</span></td></tr>
+<tr><th>Endemik tür, IUCN veya Bern Sözleşmesi ifadesi</th><td><span class="badge ok">Metinde yer almaktadır</span></td></tr></table>
+  <p class="sub">Metin katmanı (OCR) bulunmayan taranmış harita ve kurum görüşü ekleri otomatik metin taramasına dahil edilmemiştir.</p>
+
+  <h2>Sayfa Kaynaklı Çıkarılan Bulgular</h2>
+  <div class="cards"><section class="card"><h3>Koordinatlar, Parsel ve Alan Büyüklüğü <span style="color:var(--muted);font-weight:400;font-size:0.85rem">(112 sayfa: s.3, s.16, s.18, s.21, s.24, s.27, s.33, s.35, s.36, s.38, s.40, s.43, s.44, s.54 (+98 sayfa))</span></h3><div class="hit"><span class="pno">[s. 3]</span> <code>Koordinat</code> — …r ve Üniteler, Hattın Uzunluğu, Proje Kapsamındaki Direklerin Sayısı, Özellikleri ve Proje Alanı İçindeki Konumlarının Koordinat Noktaları ile Birlikte Vaziyet Planı Üzerinde Gösterimi ..............................................................…</div>
+<div class="hit"><span class="pno">[s. 16]</span> <code>42,47959 km</code> — …aş, Güvendere, Bahçelievler, Yukarı Nasırlar ve Cankatran Mahalleleri mevkiinde 154 kV geriliminde 1272 MCM iletkenli, 42,47959 km uzunluğunda “154 kV İsdemir Diyarbakır GES TM-Diyarbakır-3 TM Elektrik Enerjisi İletim Hattı Projesi”nin kurulması ve…</div>
+<div class="hit"><span class="pno">[s. 16]</span> <code>42,5 km</code> — …ları içerisinden geçmektedir. Proje kapsamında tesis edilecek Elektrik İletim Hattı, 154 kV geriliminde ve yaklaşık 42,5 km uzunluğunda olacaktır. Tesis edilecek Elektrik İletim Hattı için 32 adet some, 86 taşıyıcı ve 2 adet nihai direk olma…</div>
+<div class="hit"><span class="pno">[s. 16]</span> <code>2,5 km</code> — …r. Proje konusu faaliyet kapsamında yapılan çalışmalarda; EİH güzergahı merkez olmak üzere; iletim hattının sağında 2,5 km, solunda 2,5 km olmak üzere toplam km genişliğindeki koridor inceleme alanı olarak kabul edilerek, tüm çevresel etki d…</div>
+<div class="hit"><span class="pno">[s. 16]</span> <code>koordinat</code> — …unca çeşitli nokta veya noktalarda geçici şantiye binaları kurulması planlanmaktadır. Şantiye binası kurulması halinde koordinatlarıyla birlikte ilgili Çevre, Şehircilik ve İklim Değişikliği İl Müdürlüğü’ne bilgi verilecektir.</div>
+<div class="hit"><span class="pno">[s. 18]</span> <code>42,47959 km</code> — …aş, Güvendere, Bahçelievler, Yukarı Nasırlar ve Cankatran Mahalleleri mevkiinde 154 kV geriliminde 1272 MCM iletkenli, 42,47959 km uzunluğunda “154 kV İsdemir Diyarbakır GES TM-Diyarbakır-3 TM Elektrik Enerjisi İletim Hattı Projesi”nin kurulması ve…</div></section><section class="card"><h3>Su Kullanımı, Hidrojeoloji ve Deşarj <span style="color:var(--muted);font-weight:400;font-size:0.85rem">(85 sayfa: s.4, s.7, s.14, s.25, s.35, s.73, s.89, s.96, s.97, s.100, s.114, s.115, s.116, s.131 (+71 sayfa))</span></h3><div class="hit"><span class="pno">[s. 4]</span> <code>Yeraltı Suyu</code> — …Hidrojeolojik Özellikleri, Yeraltı Su Kaynaklarının Mevcut ve Planlanan Kullanımı, Proje Alanına Mesafeleri, Debileri, Yeraltı Suyu Akiferlerinin Bulunup Bulunmadığı, Varsa Bölgede Açılmış Kuyularla İlgili Genel Bilgiler, Yeraltı Suyu Kullanım Durumu…</div>
+<div class="hit"><span class="pno">[s. 7]</span> <code>Yeraltı Suyu</code> — …...................................................276 3.10. Proje Kapsamında Gerçekleştirilecek Faaliyetler Sonucunda Yeraltı Suyu Kaynaklarının Etkilenme Durumları ve Alınacak Tedbirler (DSİ Genel Müdürlüğü Görüşü Doğrultusunda Yapılacak İş ve İşle…</div>
+<div class="hit"><span class="pno">[s. 14]</span> <code>Yeraltısuyu</code> — …2024) ........................................................... 141 Şekil 56 Proje Alanı ve Yakın Çevresindeki Eş Yeraltısuyu Eğrilerini Gösteren Harita (DSİ, 2024) . 143 Şekil 57 Proje Alanı ve Çevresi Basitleştirilmiş Kavramsal Saha Modeli…</div>
+<div class="hit"><span class="pno">[s. 25]</span> <code>atıksu</code> — …aktır. Ancak bu zaman aralığı oldukça geniş ve ekipler de mobil olacağı için projenin işletme aşamasında evsel nitelik atıksu, belediye atıkları, ambalaj atığı oluşumu beklenmemektedir. 1.2.4. İletim Hattının İnşası ile İlgili İşlemler, Dire…</div>
+<div class="hit"><span class="pno">[s. 35]</span> <code>deşarj</code> — …, depo, idari ve/veya sosyal bina, köprü, alt ve üst yapılar (arıtma, kanalizasyon, içme/kullanma su hatları, su alma/deşarj hatları vb dahil) viyadük vb. sanat yapıları, drenaj, tesviye vb. gibi araziyi kullanılabilir duruma getirmek için y…</div>
+<div class="hit"><span class="pno">[s. 73]</span> <code>sulak alan</code> — …ar, bataklık sazlık ve turbiyeler ile bu alanların kıyı kenar çizgisinden itibaren kara tarafına doğru ekolojik açıdan sulak alan kalan yerler: bulunmamaktadır. ç) Göller, akarsular, yeraltı suyu işletme sahaları bulunmamaktadır. d) Bilimsel…</div></section><section class="card"><h3>Korunan Alanlar, Orman ve Zeytinlikler <span style="color:var(--muted);font-weight:400;font-size:0.85rem">(48 sayfa: s.5, s.7, s.39, s.49, s.51, s.55, s.56, s.58, s.59, s.65, s.66, s.68, s.70, s.71 (+34 sayfa))</span></h3><div class="hit"><span class="pno">[s. 5]</span> <code>Orman Alanı</code> — ….................................................................................214 2.17.1. Proje Sahasının Bulunduğu Orman Alanı Miktarı (m2) veya Güzergâha En Yakın Orman Alanı Mesafesi ............................................................…</div>
+<div class="hit"><span class="pno">[s. 7]</span> <code>3573 Sayılı</code> — …3.15.4. Güzergâh Üzerinde Kalan Tarım Alanları ile İlgili Olarak 5403 Sayılı Toprak Koruma ve Arazi Kullanım Kanunu, 3573 Sayılı Zeytinciliğin Islahı ve Yabanilerin Aşılattırılması Hakkındaki Kanun ve</div>
+<div class="hit"><span class="pno">[s. 39]</span> <code>orman alanı</code> — …lanının Mülkiyet Durumu 1.6.1. Kamulaştırılacak Alanların Mevcut Kullanım ve Mülkiyet Durumu (kamulaştırılacak alan/orman alanı/hazine arazisi vb. tablosunun hazırlanması) İletim tesislerinin kurulacağı yerlere/güzergâhlara isabet eden şahıs ar…</div>
+<div class="hit"><span class="pno">[s. 49]</span> <code>Orman Alanı</code> — …alışmalar kapsamında direklerinin “Mania Alanı”, “Tarım Arazisi”, “Organize Tarım/Hayvancılık Alanı”, “Sulama Alanı”, “Orman Alanı”, “Çayır-Mera”, “İçme-Kullanma Suyu Mutlak Koruma Alanı Sınırı”, “İçme ve Kullanma Suyu Kısa Mesafeli Koruma Alanı”, “…</div>
+<div class="hit"><span class="pno">[s. 51]</span> <code>Orman Alanı</code> — …ı, Adıyaman-Şanlıurfa-Diyarbakır Planlama Bölgesi 1/100.000 Ölçekli Çevre Düzeni Planı’na göre L44 paftası içerisinde “Orman Alanı, Tarım Arazisi, Organize Tarım / Hayvancılık Alanı, Çayır-Mera, Sulama Alanı, İçme ve Kullanma Suyu Orta Mesafeli Koru…</div>
+<div class="hit"><span class="pno">[s. 55]</span> <code>Orman Alanı</code> — …ı, Adıyaman-Şanlıurfa-Diyarbakır Planlama Bölgesi 1/100.000 Ölçekli Çevre Düzeni Planı’na göre L44 paftası içerisinde “Orman Alanı, Tarım Arazisi, Organize Tarım / Hayvancılık Alanı, Çayır-Mera, Sulama Alanı, İçme ve Kullanma Suyu Orta Mesafeli Koru…</div></section><section class="card"><h3>Flora, Fauna ve Saha Metodolojisi <span style="color:var(--muted);font-weight:400;font-size:0.85rem">(116 sayfa: s.5, s.7, s.37, s.72, s.73, s.90, s.164, s.165, s.169, s.171, s.172, s.173, s.174, s.175 (+102 sayfa))</span></h3><div class="hit"><span class="pno">[s. 5]</span> <code>Flora ve Fauna</code> — …..........................................................................131 2.12. Proje Güzergâhı ve Etki Alanındaki Flora ve Fauna Bilgisi (proje güzergâhı ve etki alanında yapılan arazi çalışması hakkında bilgiler) (Doğa Koruma ve Milli Parklar Gen…</div>
+<div class="hit"><span class="pno">[s. 5]</span> <code>arazi çalışması</code> — …........131 2.12. Proje Güzergâhı ve Etki Alanındaki Flora ve Fauna Bilgisi (proje güzergâhı ve etki alanında yapılan arazi çalışması hakkında bilgiler) (Doğa Koruma ve Milli Parklar Genel Müdürlüğü Görüşleri Doğrultusunda Yapılmış veya Yapılacak İş ve…</div>
+<div class="hit"><span class="pno">[s. 5]</span> <code>Bern Sözleşmesi</code> — …, Araştırılan Türlerin Tehlike Kategorileri, Endemiklik Durumları, Nispi Bolluk Dereceleri, Uluslararası Anlaşmalarla (Bern Sözleşmesi, IUCN vb.) Koruma Altına Alınan Tür Olup Olmadığının Tablo Halinde Verilmesi .........................................…</div>
+<div class="hit"><span class="pno">[s. 5]</span> <code>IUCN</code> — …lerin Tehlike Kategorileri, Endemiklik Durumları, Nispi Bolluk Dereceleri, Uluslararası Anlaşmalarla (Bern Sözleşmesi, IUCN vb.) Koruma Altına Alınan Tür Olup Olmadığının Tablo Halinde Verilmesi ...............................................…</div>
+<div class="hit"><span class="pno">[s. 7]</span> <code>Flora ve Fauna</code> — …........................................................................280 3.11. Projenin İnşaat ve İşletme Döneminde Flora ve Fauna Türleri Üzerine Etkileri ve Alınacak Önlemler (Doğa Koruma ve Milli Parklar Genel Müdürlüğü Görüşleri Doğrultusunda Ya…</div>
+<div class="hit"><span class="pno">[s. 37]</span> <code>mevsimsel</code> — …ülmemesi, bu amaçla herhangi bir tesisat yapılmayacak, planlama sürecinde dere yataklarında değişiklik yapılmayacak ve mevsimsel akış gösteren alanlarda su ürünlerinin doğal yaşamını koruyacak tedbirler alınacaktır. Ayrıca, söz konusu alan üzerind…</div></section><section class="card"><h3>Emisyonlar, Jeokimya ve Atıklar <span style="color:var(--muted);font-weight:400;font-size:0.85rem">(84 sayfa: s.8, s.9, s.12, s.17, s.26, s.32, s.33, s.40, s.43, s.54, s.83, s.84, s.86, s.87 (+70 sayfa))</span></h3><div class="hit"><span class="pno">[s. 8]</span> <code>Elektromanyetik</code> — …lükleri ...................................................................................................305 3.15.6. Elektromanyetik Alan Etkilerinin Tarım Arazileri ve Tarım Ürünleri Üzerine Etkileri ve Alınacak Önlemler .............................…</div>
+<div class="hit"><span class="pno">[s. 9]</span> <code>KÜMÜLATİF</code> — …zuatlar dışındaki özel taahhütler) .......................................................................336 BÖLÜM 4: KÜMÜLATİF ETKİ DEĞERLENDİRME (Projenin geçmişteki, mevcuttaki veya gelecekteki etki alani içerisinde kalan başka faaliyetler ile…</div>
+<div class="hit"><span class="pno">[s. 12]</span> <code>Elektromanyetik</code> — …................................................ 257 Tablo 95 0 Hz-300 GHz Frekans Bantlarındaki Elektrik, Manyetik ve Elektromanyetik Alanlar İçin Limit Değerler ..........................................................................................…</div>
+<div class="hit"><span class="pno">[s. 17]</span> <code>gürültü</code> — …nım/bertaraf firmalarına verilecektir. Proje inşaat aşamasında sahada iş makinelerinin kullanılmasına bağlı olarak gürültü oluşması söz konusudur. Ancak proje sahasında kullanılan iş makinelerinin hepsi eş zamanlı çalışmayacaktır. Bununla b…</div>
+<div class="hit"><span class="pno">[s. 26]</span> <code>TEHLİKELİ ATIK</code> — …NTAJ Kazı İşlemleri Direk Ayaklarının ÜST MONTAJ TEL ÇEKİMİ Kalıp Betonların Dökülmesi Mekanik Montajlama TOZ TEHLİKELİ ATIK VE ATIK YAĞLAR BELEDİYE ATIKLARI GÜRÜLTÜ TEHLİKELİ ATIK VE ATIK YAĞLAR BELEDİYE ATIKLARI GÜRÜLTÜ TEHLİKELİ ATIK V…</div>
+<div class="hit"><span class="pno">[s. 26]</span> <code>GÜRÜLTÜ</code> — …J TEL ÇEKİMİ Kalıp Betonların Dökülmesi Mekanik Montajlama TOZ TEHLİKELİ ATIK VE ATIK YAĞLAR BELEDİYE ATIKLARI GÜRÜLTÜ TEHLİKELİ ATIK VE ATIK YAĞLAR BELEDİYE ATIKLARI GÜRÜLTÜ TEHLİKELİ ATIK VE ATIK YAĞLAR BELEDİYE ATIKLARI KABUL Ke…</div></section><section class="card"><h3>Proje Bedeli, Güç ve Kapasite <span style="color:var(--muted);font-weight:400;font-size:0.85rem">(16 sayfa: s.2, s.35, s.79, s.89, s.146, s.170, s.197, s.259, s.263, s.264, s.331, s.349, s.485, s.545 (+2 sayfa))</span></h3><div class="hit"><span class="pno">[s. 2]</span> <code>PROJE BEDELİ</code> — …ğe bağlı) 8790304314 PROJENİN ADI 154 kV İSDEMİR DİYARBAKIR GES TM-DİYARBAKIR-3 TM ELEKTRİK ENERJİSİ İLETİM HATTI PROJE BEDELİ 250.438.991,7 TL. PROJE İÇİN SEÇİLEN YERİN AÇIK ADRESİ (İLİ, İLÇESİ, MEVKİİ) İli: Diyarbakır ili, İlçe: Dicle,…</div>
+<div class="hit"><span class="pno">[s. 35]</span> <code>Proje Bedeli</code> — …yarbakır İli başta olmak üzere bölgede enerji ihtiyacının karşılanması hususunda sorunlar meydana gelecektir. 1.4. Proje Bedeli ve Projeye İlişkin Fayda-Maliyet Analizi Projenin maliyeti; Kamulaştırma maliyeti, Malzeme temini, İnşaat ça…</div>
+<div class="hit"><span class="pno">[s. 35]</span> <code>PROJE BEDELİ</code> — …KDV dâhil fiyatı) Diğer (varsa) Eğitim, yazılım, donanım, otomasyon, sertifikalandırma vb. idari giderler TOPLAM PROJE BEDELİ (KDV dâhil) 250.438.991,7 TL. ÇED Başvuru aşamasında, 401.800.000 TL olarak belirlenmiştir. Ancak proje bedeli hes…</div>
+<div class="hit"><span class="pno">[s. 35]</span> <code>401.800.000 TL</code> — …, sertifikalandırma vb. idari giderler TOPLAM PROJE BEDELİ (KDV dâhil) 250.438.991,7 TL. ÇED Başvuru aşamasında, 401.800.000 TL olarak belirlenmiştir. Ancak proje bedeli hesaplanmasında TEİAŞ Genel Müdürlüğü’nün 2026 Yılı Enerji İletim Hattı (EİH…</div>
+<div class="hit"><span class="pno">[s. 79]</span> <code>kapasite</code> — …tüm taşımalarda yük ve malzeme taşıyan araçların dingil başına gelen azami yüklerine göre taşıma yapılacak olup taşıma kapasitesi aşılmayacaktır. Ayrıca yük üzeri branda ile kapatılacak olup, nakliye esnasında karayoluna malzeme savrulmasının önl…</div>
+<div class="hit"><span class="pno">[s. 89]</span> <code>36.480.608 TL</code> — …nda bulunan derelere arıtma yapılmadan deşarj edilmektedir. Dicle İlçesi Atıksu arıtma tesisi İşi 01.08.2022 tarihinde 36.480.608 TL maliyet ile sözleşmeye bağlanmış olup yapımı devam etmektedir.</div></section></div>
+
+  <h2>Belge Bölüm Haritası</h2>
+  <ul><li><span class="pno">[s. 6]</span> BÖLÜM 3 - PROJENİN İNŞAAT ÖNCESİ (ARAZİ HAZIRLIK), İNŞAAT VE İŞLETME AŞAMASINDA</li>
+<li><span class="pno">[s. 9]</span> BÖLÜM 4: KÜMÜLATİF ETKİ DEĞERLENDİRME (Projenin geçmişteki, mevcuttaki veya gelecekteki</li>
+<li><span class="pno">[s. 16]</span> PROJENİN TEKNİK OLMAYAN ÖZETİ</li>
+<li><span class="pno">[s. 18]</span> BÖLÜM 1: PROJENİN TANIMI VE AMACI</li>
+<li><span class="pno">[s. 43]</span> BÖLÜM 2: PROJE YERİ VE ETKİ ALANININ MEVCUT ÇEVRESEL ÖZELLİKLERİ</li>
+<li><span class="pno">[s. 352]</span> BÖLÜM 4: KÜMÜLATİF ETKİ DEĞERLENDİRME (Projenin geçmişteki, mevcuttaki veya gelecekteki etki</li>
+<li><span class="pno">[s. 356]</span> BÖLÜM 5: ÇEVRESEL VE SOSYAL EYLEM PLANI</li>
+<li><span class="pno">[s. 360]</span> BÖLÜM 6: HALKIN BİLGİLENDİRİLMESİ VE SÜRECE KATILIMI İLE PAYDAŞ KATILIM PLANI</li>
+<li><span class="pno">[s. 362]</span> BÖLÜM 7: NOTLAR, KAYNAKLAR VE EKLER</li>
+<li><span class="pno">[s. 421]</span> ÇEVRESEL VE SOSYAL YÖNETİM PLANI</li>
+<li><span class="pno">[s. 547]</span> FLORA VE FAUNA</li></ul>
+
+  <div class="notice">
+    Bu sayfa, T.C. Çevre, Şehircilik ve İklim Değişikliği Bakanlığı'nın kamuya açık <code>eced-duyuru.csb.gov.tr</code> duyuru portalındaki kayıtlar esas alınarak bilgilendirme amacıyla hazırlanmıştır. Alıntıların tamamı 1 tabanlı PDF sayfa numarasıyla (<code>[s. N]</code>) gösterilmektedir. Yasal süreler otomatik olarak hesaplanır; kesin sürelerin ve hukuki başvuru yollarının yetkili hukukçular tarafından teyit edilmesi gerekir.
+  </div>
+</div>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script>
+(() => {
+  if (typeof L === 'undefined') return;
+  const g = {"lat": 38.18959, "lon": 40.08919, "zoom": 12, "precision": "exact_pdf", "points": [[38.37164, 40.06131], [38.36999, 40.06005], [38.36795, 40.05849], [38.36542, 40.05656], [38.36315, 40.05483], [38.3607, 40.05296], [38.3583, 40.05279], [38.35595, 40.05262], [38.35379, 40.05246], [38.35032, 40.05221], [38.34671, 40.05196], [38.34433, 40.05266], [38.34101, 40.05363], [38.33819, 40.05446], [38.3357, 40.05487], [38.33109, 40.05562], [38.32854, 40.05604], [38.32645, 40.05639], [38.32373, 40.05487], [38.3212, 40.05347], [38.3184, 40.05191], [38.31501, 40.05003], [38.31137, 40.048], [38.30761, 40.05002], [38.02389, 40.1506], [38.0221, 40.14973], [38.02068, 40.14838], [38.02046, 40.14554], [38.02132, 40.14297], [38.02189, 40.14181], [38.37208, 40.06114], [38.02203, 40.14135], [38.21157, 40.23671], [38.07885, 40.15022], [38.27674, 40.24007], [38.24752, 40.03101], [38.2658, 40.10728], [38.15494, 39.95271], [38.0967, 40.01467], [38.14748, 39.95911]], "label": "DİYARBAKIR / DİCLE,EĞİL,YENİŞEHİR — 154 kV İSDEMİR DİYARBAKIR GES TM-DİYARBAKIR-3 TM ELEKTRİK ENERJİSİ İLETİM HATTI"};
+  const map = L.map('digest-map').setView([g.lat, g.lon], g.zoom);
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    maxZoom: 18,
+    attribution: '&copy; OpenStreetMap katkıda bulunanları'
+  }).addTo(map);
+  if (g.precision === 'exact_pdf' && g.points.length > 1) {
+    const latlngs = g.points.map(p => [p[0], p[1]]);
+    const poly = L.polyline(latlngs, { color: '#58a6ff', weight: 3, opacity: 0.85 }).addTo(map);
+    for (const ll of latlngs.slice(0, 30)) {
+      L.circleMarker(ll, { radius: 4, color: '#ffffff', fillColor: '#f85149', fillOpacity: 0.9, weight: 1 }).addTo(map);
+    }
+    map.fitBounds(poly.getBounds().pad(0.25));
+  } else {
+    L.circleMarker([g.lat, g.lon], {
+      radius: g.precision === 'exact_pdf' ? 8 : 11,
+      color: '#ffffff',
+      fillColor: g.precision === 'exact_pdf' ? '#f85149' : '#58a6ff',
+      fillOpacity: g.precision === 'exact_pdf' ? 0.9 : 0.45,
+      weight: 2
+    }).bindPopup(g.label).addTo(map).openPopup();
+  }
+})();
+</script>
+</body>
+</html>

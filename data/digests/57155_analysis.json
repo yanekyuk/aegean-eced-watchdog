@@ -1,0 +1,996 @@
+{
+  "filing": {
+    "province": "BALIKESİR",
+    "district": "ALTIEYLUL,SAVAŞTEPE",
+    "project_name": "R25-Balıkesir-1 Rüzgar Enerji Santrali (23 adet türbin - 161 MWm/160 MWe)",
+    "project_owner": "Enerji İşleri Genel Müdürlüğü",
+    "sector": "Enerji",
+    "sub_sector": "Rüzgar Enerji Santralleri",
+    "decision_type": "IDK",
+    "announcement_date_tr": "14.11.2026",
+    "project_type": "Ek-1",
+    "detail_text": "BALIKESİR ili SAVAŞTEPE, ALTIEYLUL ilcesinde BALIKESİR ili SAVAŞTEPE, ALTIEYLUL ilçesi sınırları içerisinde Enerji İşleri Genel Müdürlüğü tarafından yapılması planlanan R25-Balıkesir-1 Rüzgar Enerji Santrali (23 adet türbin - 161 MWm/160 MWe) projesi ile ilgili olarak hazırlanan ÇED Raporu, ÇED Yönetmeliği'nin 11. maddesi kapsamında Bakanlığımıza sunulmuş olup, inceleme değerlendirme süreci başlamıştır. Proje ile ilgili olarak 27/11/2026 tarihinde İDK toplantısı gerçekleştirilecektir. Bakanlığımıza sunulan ÇED Raporu https://eced-duyuru.csb.gov.tr/eced-prod/duyurular.xhtml adresinde yer almaktadır. ÇED Raporu ilgililere ve kamuoyuna duyurulur.",
+    "detail_links": [
+      {
+        "text": "ÇED Raporu",
+        "href": "http://eced.csb.gov.tr/jsp/ek1/57155"
+      }
+    ],
+    "documents": [
+      {
+        "portal_doc_url": "http://eced.csb.gov.tr/jsp/ek1/57155",
+        "filing_id": "57155",
+        "consulting_firm": "ELTEM-TEK ELEKTRİK TESİSLERİ MÜHENDİSLİK MÜTEAHHİTLİK DANIŞMANLIK VE TİCARET ANONİM ŞİRKETİ",
+        "submitted_at": "15/10/2025 02:14:45",
+        "pdf_urls": [
+          {
+            "label": "57155_CED_Raporu.pdf",
+            "url": "http://eced.csb.gov.tr/jsp/dosya/dosyaGoster.htm?tempAd=sign5478328963283126927.pdf&orjinalAd=57155_CED_Raporu.pdf&yuklemeTarihi=2026-11-04"
+          }
+        ]
+      }
+    ],
+    "announcement_date": "2026-11-14",
+    "statutory_clocks": [
+      {
+        "code": "idk",
+        "kind": "İnceleme Değerlendirme Komisyonu (İDK) süreci; toplantı tarihi resmi metinde yer alır",
+        "deadline": null,
+        "days_remaining": null
+      }
+    ],
+    "filing_key": "57155:14.11.2026:IDK",
+    "first_seen_at": "2026-11-20T09:02:10"
+  },
+  "pdf_info": {
+    "filename": "57155.pdf",
+    "bytes": 127158015,
+    "sha256": "077f3280875424370388793e6f168ff33e43648301d97dafbae2a288cc9fdadd",
+    "cached": false
+  },
+  "analysis": {
+    "page_count": 1344,
+    "total_chars": 2465936,
+    "text_pages": 1151,
+    "scanned_or_blank_pages": 193,
+    "scanned_page_sample": [
+      435,
+      436,
+      438,
+      439,
+      440,
+      441,
+      442,
+      443,
+      445,
+      447,
+      449,
+      451,
+      452,
+      453,
+      472
+    ],
+    "headings": [
+      [
+        1,
+        "T.C. ENERJİ VE TABİİ KAYNAKLAR BAKANLIĞI Maden ve Petrol İşleri Genel Müdürlüğü Özel Alanlar Ve Harita Dairesi Başkanlığı"
+      ],
+      [
+        1,
+        "ÇEVRE, ŞEHİRCİLİK VE İKLİM DEĞİŞİKLİĞİ BAKANLIĞINA  ( Çevresel Etki Değerlendirmesi, İzin Ve Denetim Genel Müdürlüğü )"
+      ],
+      [
+        1,
+        "T.C. ENERJİ VE TABİİ KAYNAKLAR BAKANLIĞI Maden ve Petrol İşleri Genel Müdürlüğü"
+      ],
+      [
+        1,
+        "ENERJİ VE TABİİ KAYNAKLAR BAKANLIĞINA  ( Enerji İşleri Genel Müdürlüğü )"
+      ],
+      [
+        474,
+        "İÇİNDEKİLER"
+      ],
+      [
+        475,
+        "1. GİRİŞ"
+      ],
+      [
+        475,
+        "1.1 Projeye Genel Bakış"
+      ],
+      [
+        476,
+        "1.2 Projenin Olası Sosyal Etkilerinin Özeti"
+      ],
+      [
+        476,
+        "Arazi Kullanımı"
+      ],
+      [
+        476,
+        "Tedarik Fırsatları"
+      ],
+      [
+        476,
+        "Halk Sağlığı ve Güvenliği"
+      ],
+      [
+        476,
+        "Yol ve Altyapı Çalışmaları"
+      ],
+      [
+        477,
+        "2. PAYDAŞ KATILIM PLANI GEREKLİLİKLERİ"
+      ],
+      [
+        477,
+        "2.1 Ulusal ve Uluslararası Gereklilikleri"
+      ],
+      [
+        478,
+        "3. PAYDAŞLARIN BELİRLENMESİ"
+      ],
+      [
+        478,
+        "3.1 . Projeden Etkilendiği Veya Potansiyel Olarak İlgilenildiği Tespit Edilen Paydaş Kategorisi (Yöre Halkı, Yerel İdareler, Ulusal İdareler, Sivil Toplum Kuruluşları)"
+      ],
+      [
+        479,
+        "4. İLETİŞİM YÖNTEMLERİ"
+      ],
+      [
+        479,
+        "4.1 Bilgi Paylaşımı"
+      ],
+      [
+        479,
+        "4.2 Katılım Faaliyetleri"
+      ],
+      [
+        480,
+        "4.3 Halkın Bilgilendirilmesi ve Sürece Katılımı Toplantısı"
+      ],
+      [
+        480,
+        "5. ŞİKAYET MEKANİZMASI"
+      ],
+      [
+        482,
+        "6. İZLEME VE RAPORLAMA"
+      ],
+      [
+        482,
+        "7. KAYNAKLAR VE SORUMLULUKLAR"
+      ],
+      [
+        1,
+        "T.C. ENERJİ VE TABİİ KAYNAKLAR BAKANLIĞI Maden ve Petrol İşleri Genel Müdürlüğü Özel Alanlar Ve Harita Dairesi Başkanlığı"
+      ],
+      [
+        1,
+        "ÇEVRE, ŞEHİRCİLİK VE İKLİM DEĞİŞİKLİĞİ BAKANLIĞINA  ( Çevresel Etki Değerlendirmesi, İzin Ve Denetim Genel Müdürlüğü )"
+      ]
+    ],
+    "geo": {
+      "precision": "exact_pdf",
+      "lat": 39.39393,
+      "lon": 27.80166,
+      "point_count": 80,
+      "points": [
+        [
+          39.41686,
+          27.83399
+        ],
+        [
+          39.4147,
+          27.83412
+        ],
+        [
+          39.40914,
+          27.83609
+        ],
+        [
+          39.40682,
+          27.84257
+        ],
+        [
+          39.41069,
+          27.85715
+        ],
+        [
+          39.38945,
+          27.85742
+        ],
+        [
+          39.37964,
+          27.84725
+        ],
+        [
+          39.38022,
+          27.83938
+        ],
+        [
+          39.37766,
+          27.83206
+        ],
+        [
+          39.38018,
+          27.82128
+        ],
+        [
+          39.38343,
+          27.81246
+        ],
+        [
+          39.38581,
+          27.80891
+        ],
+        [
+          39.38115,
+          27.80927
+        ],
+        [
+          39.37985,
+          27.80487
+        ],
+        [
+          39.37799,
+          27.79817
+        ],
+        [
+          39.38017,
+          27.79447
+        ],
+        [
+          39.38174,
+          27.79255
+        ],
+        [
+          39.38169,
+          27.78992
+        ],
+        [
+          39.38035,
+          27.78891
+        ],
+        [
+          39.37951,
+          27.785
+        ],
+        [
+          39.38086,
+          27.78341
+        ],
+        [
+          39.37959,
+          27.78293
+        ],
+        [
+          39.37834,
+          27.78401
+        ],
+        [
+          39.376,
+          27.78037
+        ],
+        [
+          39.37158,
+          27.77621
+        ],
+        [
+          39.37251,
+          27.77318
+        ],
+        [
+          39.41752,
+          27.83352
+        ],
+        [
+          39.41536,
+          27.83365
+        ],
+        [
+          39.4098,
+          27.83562
+        ],
+        [
+          39.40748,
+          27.8421
+        ],
+        [
+          39.41135,
+          27.85668
+        ],
+        [
+          39.39011,
+          27.85695
+        ],
+        [
+          39.3803,
+          27.84678
+        ],
+        [
+          39.38089,
+          27.83891
+        ],
+        [
+          39.37833,
+          27.83159
+        ],
+        [
+          39.38084,
+          27.82081
+        ],
+        [
+          39.38409,
+          27.81199
+        ],
+        [
+          39.38647,
+          27.80844
+        ],
+        [
+          39.38181,
+          27.8088
+        ],
+        [
+          39.38051,
+          27.8044
+        ]
+      ],
+      "datum": "UTM-Z35/ED50",
+      "pages": [
+        38,
+        39
+      ]
+    },
+    "signals": {
+      "coordinates_and_footprint": {
+        "label": "Coordinates, Parcel & Footprint",
+        "page_count": 129,
+        "pages": [
+          22,
+          24,
+          35,
+          38,
+          39,
+          40,
+          42,
+          44,
+          46,
+          49,
+          50,
+          51,
+          54,
+          83,
+          107,
+          126,
+          132,
+          137,
+          139,
+          143,
+          145,
+          152,
+          183,
+          218,
+          239
+        ],
+        "samples": [
+          {
+            "page": 22,
+            "match": "8,5 km",
+            "snippet": "…dan kurulması planlanan R25-Balıkesir-1 RES projesi yaklaşık Balıkesir şehir merkezine 23 km, Savaştepe ilçe merkezine 8,5 km mesafede yer almaktadır."
+          },
+          {
+            "page": 24,
+            "match": "8,5 km",
+            "snippet": "…dan kurulması planlanan R25-Balıkesir-1 RES projesi yaklaşık Balıkesir şehir merkezine 23 km, Savaştepe ilçe merkezine 8,5 km mesafede yer almaktadır. Proje kapsamında yılda 420.480.000 kWh (420 GWh) elektrik enerjisi üretilmesi planlanmaktad…"
+          },
+          {
+            "page": 35,
+            "match": "koordinat",
+            "snippet": "…zlik alternatifinin belirtilmesi), (projede kullanılacak ulusal ve uluslararası standartlar) proje için seçilen yerin koordinatları Rüzgar enerji santralleri için yer seçimi sırasında; yer yapısı, yükselti, eğim, arazi kullanımı, bitki örtüsü, n…"
+          },
+          {
+            "page": 38,
+            "match": "UTM",
+            "snippet": "…rji santrali üniteleri 1/25.000 ölçekli J19-B1, J19-B4 pafta sınırları içerisinde kalmaktadır. Projeye ait ünitelerin UTM ED50 6 derecelik koordinatları ile coğrafi koordinatları aşağıdaki tablolarda verilmiştir. Tablo 4 Santral Sahası (ÇE…"
+          },
+          {
+            "page": 38,
+            "match": "ED50",
+            "snippet": "…santrali üniteleri 1/25.000 ölçekli J19-B1, J19-B4 pafta sınırları içerisinde kalmaktadır. Projeye ait ünitelerin UTM ED50 6 derecelik koordinatları ile coğrafi koordinatları aşağıdaki tablolarda verilmiştir. Tablo 4 Santral Sahası (ÇED Ala…"
+          },
+          {
+            "page": 38,
+            "match": "koordinat",
+            "snippet": "…i 1/25.000 ölçekli J19-B1, J19-B4 pafta sınırları içerisinde kalmaktadır. Projeye ait ünitelerin UTM ED50 6 derecelik koordinatları ile coğrafi koordinatları aşağıdaki tablolarda verilmiştir. Tablo 4 Santral Sahası (ÇED Alanı) Koordinatları No…"
+          },
+          {
+            "page": 38,
+            "match": "WGS 84",
+            "snippet": "…erilmiştir. Tablo 4 Santral Sahası (ÇED Alanı) Koordinatları Nokta Adı UTM ED50 6 Derecelik Coğrafi Koordinatlar (WGS 84) Sağa Yukarı Enlem Boylam Ç.1 571839,62 4363549,12 39.4168608 27.8339883 Ç.2 571853,45 4363309,36 39.41469…"
+          },
+          {
+            "page": 39,
+            "match": "UTM",
+            "snippet": "…İşleri Genel Müdürlüğü R25-Balıkesir-1 Rüzgar Enerji Santrali (23 adet türbin – 161 MWm/160 MWe) 39 Nokta Adı UTM ED50 6 Derecelik Coğrafi Koordinatlar (WGS 84) Sağa Yukarı Enlem Boylam Ç.27 566275,74 4358491,12 39.3717342…"
+          }
+        ]
+      },
+      "water_and_discharge": {
+        "label": "Water Use, Hydrogeology & Discharge",
+        "page_count": 60,
+        "pages": [
+          7,
+          41,
+          84,
+          85,
+          103,
+          104,
+          105,
+          133,
+          136,
+          175,
+          239,
+          247,
+          248,
+          266,
+          267,
+          278,
+          281,
+          282,
+          283,
+          284,
+          286,
+          288,
+          303,
+          309,
+          310
+        ],
+        "samples": [
+          {
+            "page": 7,
+            "match": "yeraltı suyu",
+            "snippet": "…emniyeti için yapılacak işlemler, alınacak önlemler; taşkın ve heyelan riski; yüzeysel (kuru dere yatakları dahil) ve yeraltı suyu kaynaklarının etkilenme durumları ve alınacak önlemler; “Dere Yatakları ve Taşkınlar” konulu 2006/27 sayılı Başbakanl…"
+          },
+          {
+            "page": 7,
+            "match": "deşarj",
+            "snippet": "…ım amaçlarına göre miktarların ayrı ayrı belirtilmesi; oluşacak atık suların cins ve miktarları, bertaraf yöntemleri, deşarj edileceği ortamlar, çevreyi etkileyebilecek olası sorunların belirlenmesi, alıcı ortamla etkileşimi, kümülatif etkile…"
+          },
+          {
+            "page": 41,
+            "match": "deşarj",
+            "snippet": "…s, depo, idari ve/veya sosyal bina, köprü, alt ve üst yapılar (arıtma, kanalizasyon, içme/kullanma su hatları, su alma/deşarj hatları vb dahil) viyadük vb. sanat yapıları, drenaj, tesviye vb. gibi araziyi kullanılabilir duruma getirmek için ya…"
+          },
+          {
+            "page": 84,
+            "match": "akifer",
+            "snippet": "…çatlak sistemi ve faylanma yüzünden yüksek porozite– permeabilite zonları geliştirmiş olup hidrojeolojik açıdan önemli akifer niteliği taşımaktadır. Bölgenin jeolojik evriminde önemli bir basamak oluşturan Kretase ofiyolitik karmaşığı, serpant…"
+          },
+          {
+            "page": 85,
+            "match": "yeraltı suyu",
+            "snippet": "…ileşen gösteren karma tektonik rejim mekaniği izlenmektedir. Bu fay sistemleri topografik eşikleri, akarsu yönelimini, yeraltı suyu dolaşımını ve lokal deprem tehlikesini kontrol etmektedir. Ayrıca yapısal süreksizliklerin, altere volkanitlerle birl…"
+          },
+          {
+            "page": 103,
+            "match": "0.051 lt/sn",
+            "snippet": "…kışı tespit edilememiştir. Kuyular ÇED alanının yakınlarında kuyu tespit edilememiştir. Çeşme 1 – Debi: 0.051 lt/sn Çeşme 2 – Debi: 0.24lt/sn Çeşme 3 – Debi: 0.094 lt/sn Çeşme 4 – Debi: 0.029 lt/sn Çeşme 5 – Debi: 0.074 lt/sn Çeşm…"
+          },
+          {
+            "page": 103,
+            "match": "0.24lt/sn",
+            "snippet": "…uyular ÇED alanının yakınlarında kuyu tespit edilememiştir. Çeşme 1 – Debi: 0.051 lt/sn Çeşme 2 – Debi: 0.24lt/sn Çeşme 3 – Debi: 0.094 lt/sn Çeşme 4 – Debi: 0.029 lt/sn Çeşme 5 – Debi: 0.074 lt/sn Çeşme 6 Debi: 0.063 lt/sn Çeşm…"
+          },
+          {
+            "page": 103,
+            "match": "0.094 lt/sn",
+            "snippet": "…larında kuyu tespit edilememiştir. Çeşme 1 – Debi: 0.051 lt/sn Çeşme 2 – Debi: 0.24lt/sn Çeşme 3 – Debi: 0.094 lt/sn Çeşme 4 – Debi: 0.029 lt/sn Çeşme 5 – Debi: 0.074 lt/sn Çeşme 6 Debi: 0.063 lt/sn Çeşme 7 Debi: 0.025 lt/sn Çeşme…"
+          }
+        ]
+      },
+      "protected_land_and_olive": {
+        "label": "Protected Zones, Forests & Olive Groves",
+        "page_count": 55,
+        "pages": [
+          5,
+          28,
+          29,
+          31,
+          127,
+          129,
+          130,
+          132,
+          133,
+          136,
+          139,
+          144,
+          145,
+          218,
+          237,
+          243,
+          333,
+          334,
+          342,
+          355,
+          398,
+          414,
+          488,
+          722,
+          790
+        ],
+        "samples": [
+          {
+            "page": 5,
+            "match": "doğal sit",
+            "snippet": "…t anıtları, tabiatı koruma alanları, yaban hayatı korunma alanları, biyogenetik rezerv alanları, biyosfer rezervleri, doğal sit ve anıtlar, arkeolojik, tarihi, kültürel sitler, özel çevre koruma bölgeleri, özel koruma alanları, turizm alan ve…"
+          },
+          {
+            "page": 5,
+            "match": "özel çevre koruma",
+            "snippet": "…lanları, biyogenetik rezerv alanları, biyosfer rezervleri, doğal sit ve anıtlar, arkeolojik, tarihi, kültürel sitler, özel çevre koruma bölgeleri, özel koruma alanları, turizm alan ve merkezleri, mer'a kanunu kapsamındaki vb. alanlar, hassasiyet d…"
+          },
+          {
+            "page": 28,
+            "match": "Orman Alanı",
+            "snippet": "…ürlükteki \"Balıkesir Çanakkale Planlama Bölgesi 1/100.000 ölçekli Çevre Düzeni Planı (ÇDP)\"nda hakim fonksiyon olarak \"Orman Alanı\" ve \"Tarım Alanı\" nda kaldığı belirtilmiş olup, anılan Projenin ÇED sürecine ilişkin iş ve işlemlerin; başta Tarım ve…"
+          },
+          {
+            "page": 29,
+            "match": "Özel Çevre Koruma",
+            "snippet": "…nda, Jeolojik Etüt Raporuna uyulacaktır. -Plan sınırı içerisinde bulunan Kültür ve Turizm Koruma Ve Gelişim Bölgeleri, Özel Çevre Koruma Alanları, Milli Park, Tabiat Parkı, Tabiatı Koruma Alanı, Yaban Hayatı Koruma Geliştirme Sahası gibi özel kanunlara ta…"
+          },
+          {
+            "page": 29,
+            "match": "Milli Park",
+            "snippet": "…yulacaktır. -Plan sınırı içerisinde bulunan Kültür ve Turizm Koruma Ve Gelişim Bölgeleri, Özel Çevre Koruma Alanları, Milli Park, Tabiat Parkı, Tabiatı Koruma Alanı, Yaban Hayatı Koruma Geliştirme Sahası gibi özel kanunlara tabi alanlarda ilgili k…"
+          },
+          {
+            "page": 29,
+            "match": "Tabiat Parkı",
+            "snippet": "…-Plan sınırı içerisinde bulunan Kültür ve Turizm Koruma Ve Gelişim Bölgeleri, Özel Çevre Koruma Alanları, Milli Park, Tabiat Parkı, Tabiatı Koruma Alanı, Yaban Hayatı Koruma Geliştirme Sahası gibi özel kanunlara tabi alanlarda ilgili kanun hükümleri…"
+          },
+          {
+            "page": 31,
+            "match": "Orman Alanı",
+            "snippet": "…e söz konusu ÇED alanının Balıkesir-Çanakkale Planlama Bölgesi 1/100.000 ölçekli Çevre Düzeni Planında ‘’Tarım Alanı, Orman Alanı, 3. Derece Yol, Kırsal Yerleşik Alan, Su Yüzeyleri ve İçme ve Kullanma Suyu Uzun Mesafeli Koruma Alanı” fonksiyonların…"
+          },
+          {
+            "page": 127,
+            "match": "doğal sit",
+            "snippet": "…t anıtları, tabiatı koruma alanları, yaban hayatı korunma alanları, biyogenetik rezerv alanları, biyosfer rezervleri, doğal sit ve anıtlar, arkeolojik, tarihi, kültürel sitler, özel çevre koruma bölgeleri, özel koruma alanları, turizm alan ve mer…"
+          }
+        ]
+      },
+      "ecology_and_baseline": {
+        "label": "Flora, Fauna & Baseline Methodology",
+        "page_count": 265,
+        "pages": [
+          5,
+          21,
+          35,
+          52,
+          97,
+          101,
+          104,
+          134,
+          137,
+          138,
+          139,
+          140,
+          142,
+          144,
+          145,
+          150,
+          151,
+          152,
+          153,
+          155,
+          156,
+          157,
+          158,
+          160,
+          161
+        ],
+        "samples": [
+          {
+            "page": 5,
+            "match": "Flora ve Fauna",
+            "snippet": "…tki alanında varsa koruma statülü alanların mesafelerinin harita üzerinde gösterimi ................... 127 II.2.10. Flora ve Fauna (türlerin belirlenmesi; belirlenen türlerin tehlike kategorileri, endemiklik durumları, nispi bolluk dereceleri, Ulus…"
+          },
+          {
+            "page": 5,
+            "match": "Bern Sözleşmesi",
+            "snippet": "…; belirlenen türlerin tehlike kategorileri, endemiklik durumları, nispi bolluk dereceleri, Uluslararası anlaşmalarla (Bern Sözleşmesi vb.) koruma altına alınan türler; nadir ve nesli tehlikeye düşmüş türler ve bunların yaşama ortamları, av hayvanları,…"
+          },
+          {
+            "page": 21,
+            "match": "IUCN",
+            "snippet": "…rbon Dioksit EPDK Enerji Piyasası Düzenleme Kurumu TEİAŞ Türkiye Elektrik İletim Anonim Şirketi GWh GigaWattsaat IUCN Uluslararası Doğa Koruma Birliği TUBİVES Türkiye Bitkileri Veri Servisi MAK Merkez Av Komisyonu TM Trafo Merkezi…"
+          },
+          {
+            "page": 35,
+            "match": "kuş göç",
+            "snippet": "…alleri için yer seçimi sırasında; yer yapısı, yükselti, eğim, arazi kullanımı, bitki örtüsü, nüfus yoğunluğu, maliyet, kuş göç rotaları, rüzgar hızı, kapasite faktör dağılımı, rüzgar güç yoğunluğu, bölgedeki, mevcut türbin yerleri, elektrik hatl…"
+          },
+          {
+            "page": 52,
+            "match": "kuş göç",
+            "snippet": "…alleri için yer seçimi sırasında; yer yapısı, yükselti, eğim, arazi kullanımı, bitki örtüsü, nüfus yoğunluğu, maliyet, kuş göç rotaları, rüzgar hızı, kapasite faktör dağılımı, rüzgar güç yoğunluğu, bölgede ki, mevcut türbin yerleri, elektrik hat…"
+          },
+          {
+            "page": 97,
+            "match": "mevsimsel",
+            "snippet": "…esine Ait Hidrolojik Harita Drenaj Ağı ve Beslenme Havzaları Proje alanı yakınlarında bölgenin drenaj ağını oluşturan mevsimsel akışa sahip dere yatakları bulunmaktadır. Mühendislik yapılarının inşası sürecinde, proje alanı yakınlarında çevresin…"
+          },
+          {
+            "page": 101,
+            "match": "mevsimsel",
+            "snippet": "…r. 24.11.2025 tarihinde gerçekleştirilen arazi çalışmalarında, proje alanı yakınlarına ait topografik paftalarda kuru (mevsimsel akışlı) ve akar dere olarak işlenmiş bazı dere yataklarında su varlığı gözlemlenmiştir. Proje alanı yakınlarında ise…"
+          },
+          {
+            "page": 104,
+            "match": "mevsimsel",
+            "snippet": "…a derinliği ile kontrol edilir. Ayrışmış üst zonlarda lokal ve süreksiz akifer davranışı gelişmekte, bu sığ akiferler mevsimsel su seviyesi dalgalanmalarına duyarlıdır. Kuvarsit seviyelerinde nispeten daha yüksek ikincil porozite görülmekle birli…"
+          }
+        ]
+      },
+      "pollutants_and_hazards": {
+        "label": "Emissions, Geochemistry & Waste",
+        "page_count": 224,
+        "pages": [
+          4,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          18,
+          19,
+          20,
+          21,
+          30,
+          44,
+          47,
+          55,
+          85,
+          91,
+          94,
+          174,
+          177,
+          181,
+          182,
+          186,
+          187,
+          204
+        ],
+        "samples": [
+          {
+            "page": 4,
+            "match": "deprem",
+            "snippet": "…, çığ, su baskını vb.), duyarlılık analizi; heyelan yağış ilişkisi, yamaç stabilitesi, kayma analizi; depremsellik ve deprem riski; heyelan risk haritası, faaliyet alanını da içine alan büyük ölçekli diri fay haritası ile Türkiye Deprem Tehli…"
+          },
+          {
+            "page": 6,
+            "match": "kümülatif",
+            "snippet": "…ınarak- Çevreyi etkileyebilecek olası sorunların belirlenmesi, kirleticilerin miktarı, alıcı ortamla etkileşimi, kümülatif etkileri, Projenin iklim üzerindeki etkisi (sera gazı emisyonlarının niteliği ve büyüklüğü) ve projenin iklim değişik…"
+          },
+          {
+            "page": 7,
+            "match": "kümülatif",
+            "snippet": "…mında değerlendirmeler yapılması, çevreyi etkileyebilecek olası sorunların belirlenmesi, alıcı ortamla etkileşimi, kümülatif etkilerin belirlenmesi, çevreye olabilecek olumsuz etkilerinin azaltılması için alınacak önlemler ............ 278 II…"
+          },
+          {
+            "page": 8,
+            "match": "kümülatif",
+            "snippet": "…ı, flora/fauna üzerine olabilecek ve çevreyi etkileyebilecek olası sorunların belirlenmesi, alıcı ortamla etkileşimi, kümülatif etkilerin belirlenmesi, çevreye olabilecek olumsuz etkilerinin azaltılması için alınacak önlemler, risk-etki-tepk…"
+          },
+          {
+            "page": 9,
+            "match": "kümülatif",
+            "snippet": "…llikleri ve nasıl bertaraf edileceği çevreyi etkileyebilecek olası sorunların belirlenmesi, alıcı ortamla etkileşimi, kümülatif etkilerin belirlenmesi, çevreye olabilecek olumsuz etkilerinin azaltılması için alınacak önlemler ...................…"
+          },
+          {
+            "page": 9,
+            "match": "gürültü",
+            "snippet": "…erinin azaltılması için alınacak önlemler ............ 354 III.2.7. Proje ünitelerinin işletilmesi sırasında oluşacak gürültü kaynak seviyesi, arka plan ölçümleri( mevcut durumda gürültü ölçümlerinin yapılarak Akustik Raporun hazırlanarak ÇED…"
+          },
+          {
+            "page": 10,
+            "match": "kümülatif",
+            "snippet": "…1 Rüzgar Enerji Santrali (23 adet türbin – 161 MWm/160 MWe) x sorunların belirlenmesi, alıcı ortamla etkileşimi, kümülatif etkilerin (halihazırda kurulu/inşaatı devam eden rüzgar enerji santrali projeleri ile birlikte) belirlenmesi, çevreye…"
+          },
+          {
+            "page": 11,
+            "match": "kümülatif",
+            "snippet": "…rbinlerin bertarafına ilişkin bilgi, çevreyi etkileyebilecek olası sorunların belirlenmesi, alıcı ortamla etkileşimi, kümülatif etkilerin belirlenmesi, çevreye olabilecek olumsuz etkilerinin azaltılması için alınacak önlemler ...................…"
+          }
+        ]
+      },
+      "cost_and_capacity": {
+        "label": "Project Cost, Power & Capacity",
+        "page_count": 46,
+        "pages": [
+          2,
+          3,
+          9,
+          22,
+          24,
+          25,
+          26,
+          35,
+          36,
+          37,
+          38,
+          40,
+          41,
+          45,
+          52,
+          55,
+          104,
+          105,
+          247,
+          275,
+          346,
+          403,
+          406,
+          412,
+          413
+        ],
+        "samples": [
+          {
+            "page": 2,
+            "match": "Proje Bedeli",
+            "snippet": "…m.tr Projenin Adı (…türbin-…MWm /.. MWe) R25-Balıkesir-1 Rüzgar Enerji Santrali (23 adet türbin – 161 MWm/160 MWe) Proje Bedeli (TL) 2.817.500.000,00 Proje İçin Seçilen Yerin Açık Adresi (İli, İlçesi, Mevkii) Balıkesir ili, Altıeylül ve Savaş…"
+          },
+          {
+            "page": 3,
+            "match": "proje bedeli",
+            "snippet": "…roje için seçilen yerin koordinatları ........................................ 35 I.5. Projenin ekonomik özellikleri (proje bedelinin hesaplanma şeklinin bilgi ve belgelerle güncel, açıklayıcı olması) (ilgili yatırım programı, finans kaynakları, bu…"
+          },
+          {
+            "page": 9,
+            "match": "kapasite",
+            "snippet": "…yüksekli, kanat çapı-boyu, süpürme alanı vb. teknik özelliklerin verilmesi), tesisin faaliyet aşamasındaki ana üretim kapasitesi, elektrik bağlantı hattı vb. tesiste kullanılacak yardımcı maddeler cinsi, miktarı, vb.) ..........................…"
+          },
+          {
+            "page": 22,
+            "match": "kurulu güç",
+            "snippet": "…(23 adet Türbin – 161 MWm /160 MWe)’ ne ilişkindir. Projede 7 MWm gücünde 23 adet türbin kullanılacak olup, kurulu güç 161 MWm / 160 MWe olacaktır. R25-Balıkesir-1 RES ÇED alanı; Enerji ve Tabii Kaynaklar Bakanlığ…"
+          },
+          {
+            "page": 24,
+            "match": "420.480.000 kW",
+            "snippet": "…aşık Balıkesir şehir merkezine 23 km, Savaştepe ilçe merkezine 8,5 km mesafede yer almaktadır. Proje kapsamında yılda 420.480.000 kWh (420 GWh) elektrik enerjisi üretilmesi planlanmaktadır. ÇED alanına ulaşım Balıkesir - Konakpınar yolu üzerinden sağ…"
+          },
+          {
+            "page": 25,
+            "match": "10.976 MW",
+            "snippet": "…ünyada ise 12'inci sırada bulunmaktadır. Haziran 2022 sonu itibariyle rüzgar enerjisine dayalı elektrik kurulu gücümüz 10.976 MW, toplam kurulu güç içerisindeki oranı % 10,81’dir. 2022 yılında Rüzgar Enerji Santralleri ile 35.262.220.000 kilovats…"
+          },
+          {
+            "page": 25,
+            "match": "kurulu güç",
+            "snippet": "…sırada bulunmaktadır. Haziran 2022 sonu itibariyle rüzgar enerjisine dayalı elektrik kurulu gücümüz 10.976 MW, toplam kurulu güç içerisindeki oranı % 10,81’dir. 2022 yılında Rüzgar Enerji Santralleri ile 35.262.220.000 kilovatsaat elektrik üretimi…"
+          },
+          {
+            "page": 25,
+            "match": "3.331 MW",
+            "snippet": "…bağımlılığı azaltmasından dolayı, ülkelerin geleceği için önemi açıktır. Balıkesir 'in elektrik santrali kurulu gücü 3.331 MWe'dir. Balıkesir 'deki 61 elektrik santrali ile yılda yaklaşık 10.903 GWh elektrik üretimi yapılmaktadır1. Tablo 1 Ba…"
+          }
+        ]
+      }
+    },
+    "audit_checks": {
+      "mentions_field_survey": true,
+      "mentions_literature_only_cue": true,
+      "mentions_seasonal_sampling": true,
+      "mentions_cumulative_impact": true,
+      "mentions_olive_law_3573": true,
+      "mentions_groundwater_or_aquifer": true,
+      "mentions_iucn_or_endemic": true
+    }
+  },
+  "llm_synthesis": {
+    "model": "gemini-4-hydrogen",
+    "generated_at": "2026-11-20T11:10:53",
+    "pages_sent": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      21,
+      22,
+      24,
+      28,
+      29,
+      31,
+      35,
+      38,
+      41,
+      52,
+      84,
+      85
+    ],
+    "usage": {
+      "prompt_tokens": 26425,
+      "output_tokens": 3894,
+      "thoughts_tokens": 6723,
+      "total_tokens": 37042
+    },
+    "result": {
+      "executive_summary_tr": "Enerji İşleri Genel Müdürlüğü tarafından Balıkesir ili, Altıeylül ve Savaştepe ilçeleri sınırları içerisindeki Kaledağı Fındıklı ve Türkmen Tepesi mevkiinde, 23 adet rüzgar türbini ve toplam 161 MWm / 160 MWe kurulu güç kapasiteli R25-Balıkesir-1 Rüzgar Enerji Santrali (RES) kurulması planlanmaktadır [s. 2, 22]. Yılda 420.480.000 kWh elektrik üretimi öngörülen proje kapsamında, türbinler arası ulaşım için yaklaşık 31.000 m uzunluğunda ve ortalama 8 m genişliğinde yeni saha içi yollar açılması planlanmaktadır [s. 24]. Proje sahası 1/100.000 ölçekli Çevre Düzeni Planı'nda ağırlıklı olarak Orman Alanı ve Tarım Alanı fonksiyonlarında kalmakta olup, aynı zamanda İçme ve Kullanma Suyu Uzun Mesafeli Koruma Alanı, Su Yüzeyi (Akarsu), Kırsal Yerleşik Alan ve Savaştepe Nazım İmar Planı'nda Afete Maruz Bölge fonksiyonlarından etkilenmektedir [s. 28, 31]. Ayrıca Milli Savunma Bakanlığı TEA değerlendirmesi sonrası yer değişikliğine gidilen proje için güncel TEİAŞ görüşünün henüz alınmadığı ve karmaşık tektonik yapı nedeniyle şev duraysızlığı ile kütle hareketi risklerinin bulunduğu görülmektedir [s. 22, 52, 85].",
+      "executive_summary_en": "The General Directorate of Energy Affairs proposes the R25-Balıkesir-1 Wind Power Plant, consisting of 23 turbines with a total installed capacity of 161 MWm / 160 MWe, located in the Altıeylül and Savaştepe districts of Balıkesir Province [s. 2, 22]. The project is expected to generate 420.48 GWh of electricity annually and involves constructing approximately 31,000 m of internal access roads with an average width of 8 m [s. 24]. According to regional planning opinions, the site lies predominantly within Forest and Agricultural Areas and intersects a Long-Distance Drinking Water Protection Area, Surface Water (Stream), Rural Settlement Areas, and a Disaster-Prone Zone in the Savaştepe master plan [s. 28, 31]. Key environmental and technical stakes visible in the excerpts include a prior site relocation following a negative Ministry of National Defense technical interaction assessment without an updated TEİAŞ grid opinion yet on file, as well as complex geological formations presenting slope instability and mass-movement hazards [s. 22, 52, 85].",
+      "key_facts": [
+        {
+          "label": "Kurulu Güç ve Türbin Sayısı",
+          "value": "23 adet türbin (7 MWm/türbin), toplam 161 MWm / 160 MWe",
+          "page": 22
+        },
+        {
+          "label": "Yıllık Elektrik Üretimi",
+          "value": "420.480.000 kWh (420 GWh)",
+          "page": 24
+        },
+        {
+          "label": "Toplam Proje Bedeli",
+          "value": "2.817.500.000,00 TL",
+          "page": 41
+        },
+        {
+          "label": "Saha İçi Yol Uzunluğu ve Genişliği",
+          "value": "Yaklaşık 31.000 m uzunluk, ortalama 8 m genişlik",
+          "page": 24
+        },
+        {
+          "label": "Proje Ömrü",
+          "value": "49 yıl",
+          "page": 24
+        },
+        {
+          "label": "İnşaat Süresi ve İstihdam",
+          "value": "24 ay inşaat süresi; inşaat aşamasında 45, işletme aşamasında 10 personel",
+          "page": 41
+        },
+        {
+          "label": "Yerleşim Merkezlerine Mesafe",
+          "value": "Balıkesir şehir merkezine yaklaşık 23 km, Savaştepe ilçe merkezine 8,5 km",
+          "page": 22
+        },
+        {
+          "label": "Arazi Edinimi Maliyeti",
+          "value": "84.525.000,00 TL",
+          "page": 41
+        },
+        {
+          "label": "YEKA İlan Tarihi ve Sayısı",
+          "value": "08.11.2025 tarihli ve 33071 sayılı Resmi Gazete",
+          "page": 22
+        },
+        {
+          "label": "ÇED Raporu Sunum Tarihi",
+          "value": "04.11.2026",
+          "page": 2
+        }
+      ],
+      "baseline_assessment": {
+        "field_survey_status": "not_found",
+        "seasonal_sampling_status": "not_found",
+        "cumulative_impact_status": "omitted_or_not_found",
+        "olive_and_protected_status": "1/100.000 ölçekli ÇDP ve kurum görüşlerine göre ÇED alanı ağırlıklı olarak Orman Alanı ve Tarım Alanı içinde yer almakta, ayrıca İçme ve Kullanma Suyu Uzun Mesafeli Koruma Alanı, Su Yüzeyi (Akarsu) ve Savaştepe 1/25.000 planında Afete Maruz Bölge fonksiyonlarından etkilenmektedir [s. 28, 31, 41]. 3573 sayılı Kanun kapsamındaki zeytinlikler, sulak alanlar ve SİT/ÖÇK statülerine ilişkin Bölüm II.2.6 ve II.2.9 sayfaları [s. 5] sağlanan alıntılarda yer almadığından doğrulanamamıştır.",
+        "explanation": "Sağlanan alıntılar raporun yalnızca giriş, planlama, proje tanımı, konum ve genel jeoloji bölümlerini (1-85 arası seçili sayfalar) kapsamaktadır. İçindekiler listesinde Flora ve Fauna (Bölüm II.2.10), Ornitolojik Değerlendirme Raporu (Ek VIII.4), yer incelemesi tutanağı (Ek VIII.8), Hidrojeolojik Gözlem Raporu (Ek 4.3) ve Kümülatif Etki Değerlendirmesi (Bölüm IV) başlıkları yer almakla birlikte [s. 5, 11, 12, 13, 84], bu bölümlerin içeriği alıntılanan sayfalarda bulunmadığı için arazi sörveyi, mevsimsel örnekleme ve kümülatif etki analizlerinin kapsamı doğrulanamamıştır."
+      },
+      "red_flags": [
+        {
+          "severity": "high",
+          "title": "Saha Değişikliği Sonrası Güncel TEİAŞ Görüşünün Eksikliği",
+          "detail": "Milli Savunma Bakanlığı Teknik Etkileşim Analizi (TEA) değerlendirmesinin olumsuz sonuçlanması nedeniyle projede yer değişikliğine gidilmiştir [s. 22]. Buna karşın raporda 20.11.2025 tarihli eski çalışma alanına ait TEİAŞ görüşüne atıf yapılmakta ve proje alanı değiştirildiği için ÇED süreci içerisinde TEİAŞ Genel Müdürlüğü'nden yeniden görüş alınacağı belirtilmektedir; dolayısıyla revize nihai saha için güncel TEİAŞ uygunluk görüşü henüz tamamlanmamıştır [s. 52].",
+          "pages": [
+            22,
+            52
+          ]
+        },
+        {
+          "severity": "high",
+          "title": "İçme Suyu Koruma Alanı ve Afete Maruz Bölge Etkileşimi",
+          "detail": "Balıkesir Büyükşehir Belediyesi görüşüne göre proje sahası İçme ve Kullanma Suyu Uzun Mesafeli Koruma Alanı, Su Yüzeyi (Akarsu) ve Savaştepe 1/25.000 ölçekli Nazım İmar Planı'nda Afete Maruz Bölge fonksiyonlarından etkilenmektedir [s. 28, 31]. ÇDP'nin 8.37 numaralı plan hükmü uyarınca içme ve kullanma suyu koruma kuşaklarında üniversitelerce Ekosistem Değerlendirme Raporu hazırlanması zorunlu olmasına rağmen [s. 29], incelenen sayfalarda su koruma kuşağı ve afet bölgesi ile çakışan ünitelerin konumu ve risk analizine ilişkin veri sunulmamıştır.",
+          "pages": [
+            28,
+            29,
+            31
+          ]
+        },
+        {
+          "severity": "high",
+          "title": "Karmaşık Tektonik Yapı ve Şev Duraysızlığı Riskleri",
+          "detail": "Bölgenin genel jeolojisinde düşük mukavemetli serpantinitler, yoğun hidrotermal alterasyonlu volkanitler, yüksek sıkışabilirlikli genç sedimanlar ile KD-GB ve KB-GD doğrultulu fay sistemlerinin varlığı tanımlanmıştır [s. 84, 85]. Raporda yapısal süreksizliklerin altere volkanitlerle birleştiği kesimlerde duraysız şev yapısı, kütle hareketleri potansiyeli ve lokal zemin stabilite problemleri oluşabileceği belirtilmekte olup [s. 84, 85], 31.000 m uzunluğunda yeni yol açımı ve türbin temel kazıları açısından yüksek jeoteknik risk söz konusudur [s. 24].",
+          "pages": [
+            24,
+            84,
+            85
+          ]
+        },
+        {
+          "severity": "medium",
+          "title": "Alt Ölçekli İmar Planı Eksikliği ve Orman/Tarım Alanında Yol Açımı",
+          "detail": "Proje sahası hakim olarak Orman Alanı ve Tarım Alanı niteliğindedir ve Altıeylül ilçesindeki 8 mahalleyi etkileyen kısımda onaylı 1/25.000, 1/5.000 veya 1/1.000 ölçekli imar planı bulunmamaktadır [s. 28, 31, 41]. Türbinler arası yaklaşık 31.000 m uzunluğunda ve 8 m eninde (~24,8 hektar) yeni yol açımı planlanması [s. 24], 6831 sayılı Orman Kanunu ve 5403 sayılı Toprak Koruma Kanunu kapsamındaki habitat parçalanması ve tarım dışı kullanım etkilerini artırmaktadır [s. 29].",
+          "pages": [
+            24,
+            28,
+            29,
+            31,
+            41
+          ]
+        },
+        {
+          "severity": "low",
+          "title": "Eylemsizlik Alternatifi Değerlendirmesinin Genel Gerekçelere Dayanması",
+          "detail": "Bölüm I.4'te yer seçimi için çok sayıda çevresel ve teknik kriter sıralanmasına rağmen [s. 35], eylemsizlik alternatifinin değerlendirilmesi artan elektrik talebi ve fosil kaynakların tükenmesi gibi genel makro ifadelerle sınırlı tutulmuş, alternatif türbin konumlarına dair karşılaştırmalı nicel analiz sunulmamıştır [s. 38].",
+          "pages": [
+            35,
+            38
+          ]
+        },
+        {
+          "severity": "low",
+          "title": "Proje Adı ve Metin İçi Referans Tutarsızlıkları",
+          "detail": "Başlık sayfasında proje adı 'R25-Balıkesir-1' olarak belirtilirken [s. 2], Teknik Olmayan Özet [s. 22] ve Bölüm I.1'de [s. 24] yer yer 'R5-Balıkesir-1' şeklinde hatalı adlandırma yapılmıştır. Ayrıca yeni YEKA ilanı sonrası revize edilen saha için eski saha sınırlarına göre verilmiş 20.11.2025 tarihli TEİAŞ yazısına atıf sürdürülmüştür [s. 22, 52].",
+          "pages": [
+            2,
+            22,
+            24,
+            52
+          ]
+        }
+      ],
+      "hkt_and_petition_questions": [
+        {
+          "question_tr": "Milli Savunma Bakanlığı TEA olumsuz değerlendirmesi sonrasında proje alanında yer değişikliğine gidildiği belirtilmesine rağmen [s. 22], dosyada 20.11.2025 tarihli önceki sahaya ait TEİAŞ görüşü yer almaktadır [s. 52]. Revize edilen 23 türbinlik nihai yerleşim ve enerji iletim hatları için TEİAŞ Genel Müdürlüğü'nün güncel kurum görüşü İDK toplantısından önce temin edilerek dosyaya sunulacak mıdır?",
+          "pages": [
+            22,
+            52
+          ]
+        },
+        {
+          "question_tr": "Balıkesir Büyükşehir Belediyesi görüşüne göre ÇED alanı İçme ve Kullanma Suyu Uzun Mesafeli Koruma Alanı, Su Yüzeyi (Akarsu) ve Savaştepe 1/25.000 planında Afete Maruz Bölge fonksiyonlarından etkilenmektedir [s. 28, 31]. ÇDP'nin 8.37 maddesi gereğince içme suyu koruma kuşakları için üniversitelerce hazırlanması zorunlu Ekosistem Değerlendirme Raporu hazırlanmış mıdır ve hangi türbin veya yol üniteleri bu koruma kuşağı ile afet bölgesi içinde kalmaktadır?",
+          "pages": [
+            28,
+            29,
+            31
+          ]
+        },
+        {
+          "question_tr": "Genel jeoloji bölümünde düşük mukavemetli serpantinitler, altere volkanitler, yüksek sıkışabilirlikli genç sedimanlar ve fay sistemleri nedeniyle duraysız şev yapısı ve kütle hareketi potansiyeli tanımlanmıştır [s. 84, 85]. Yaklaşık 31.000 m uzunluğunda ve 8 m genişliğinde açılacak yeni yollar ile türbin temel hafriyatları için her türbin noktasında sahaya özgü şev stabilitesi ve heyelan duyarlılık analizleri yapılmış mıdır?",
+          "pages": [
+            24,
+            84,
+            85
+          ]
+        },
+        {
+          "question_tr": "Altıeylül ilçesindeki 8 mahalleyi kapsayan kısımda 1/25.000, 1/5.000 ve 1/1.000 ölçekli onaylı imar planlarının bulunmadığı ve sahanın hakim olarak Orman ve Tarım Alanı niteliğinde olduğu belirtilmektedir [s. 28, 31, 41]. ÇDP 8.37 hükmü uyarınca öncelikle orman niteliğini kaybetmiş alanların tercih edilip edilmediği ve kırsal mahalle yollarının ile belediye hizmet alanlarının nasıl korunacağı teknik olarak ortaya konulmuş mudur?",
+          "pages": [
+            28,
+            29,
+            31
+          ]
+        }
+      ],
+      "data_limitations": "Toplam 1344 sayfalık ÇED raporunun 193 sayfası taranmış/görsel nitelikte olup, incelemeye yalnızca 1-85 aralığındaki 26 metin sayfası sunulmuştur. İçindekiler listesinde yer alan diğer RES/GES mesafeleri (II.1.3), hidroloji/hidrojeoloji (II.2.4), tarım ve mera alanları (II.2.6-II.2.7), orman alanları (II.2.8), koruma alanları/SİT/sulak alanlar (II.2.9), flora-fauna ve ornitolojik değerlendirme (II.2.10), inşaat ve işletme etkileri (Bölüm III), kümülatif etki değerlendirmesi (Bölüm IV), izleme planları (Bölüm V), halkın katılımı (Bölüm VI) ile kurum görüşleri ve uzman raporlarını içeren Ekler (Bölüm VIII) sağlanan alıntılar dışında kaldığından bu kısımlardaki veriler doğrulanamamıştır [s. 4, 5, 6, 11, 12, 13]."
+    }
+  }
+}

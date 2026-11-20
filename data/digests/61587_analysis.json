@@ -1,0 +1,225 @@
+{
+  "filing": {
+    "province": "KONYA",
+    "district": "SELÇUKLU",
+    "project_name": "Beşerî İlaç ve İlaç Aktif Maddesi Üretimi Faaliyeti",
+    "project_owner": "BAYFARMA İLAÇ VE TIBBİ ATIK SAN. VE TİC. A.Ş.",
+    "sector": "Kimya",
+    "sub_sector": "Tarım İlaçları ve/veya Farmasötik Ürünlerin Etken Maddelerinin Üretildiği Tesis Projeleri",
+    "decision_type": "İptal/İade",
+    "announcement_date_tr": "18.11.2026",
+    "project_type": "Ek-1",
+    "detail_text": "KONYA ili SELÇUKLU,  ilcesinde KONYA ili SELÇUKLU,  ilcesi Horozluhan OSB Mahallesi, Yerlisu Sokak, No: 5/F-5/G-5/H (13202 Ada, 713 Parsel) sınırları içerisinde, BAYFARMA İLAÇ VE TIBBİ ATIK SAN. VE TİC. A.Ş. tarafından yapılması planlanan Beşerî İlaç ve İlaç Aktif Maddesi Üretimi Faaliyeti projesi iptal edilmiştir. İptal Raporu: İptal Raporu",
+    "detail_links": [
+      {
+        "text": "İptal Raporu",
+        "href": "http://eced.csb.gov.tr/jsp/ek1/61587"
+      }
+    ],
+    "documents": [
+      {
+        "portal_doc_url": "http://eced.csb.gov.tr/jsp/ek1/61587",
+        "filing_id": "61587",
+        "consulting_firm": "AK-KO MEDİKAL MÜHENDİSLİK VE PATENT DAN. SAN.TİC. LTD. ŞTİ.",
+        "submitted_at": "11/11/2026 03:18:26",
+        "pdf_urls": [
+          {
+            "label": "İptal Dosya Göster (ek1)",
+            "url": "http://eced.csb.gov.tr/jsp/dosya/dosyaGoster.htm?orjinalAd=61587_5_33081.pdf&yuklemeTarihi=2026-11-18&projeIptalEk1=ek1"
+          },
+          {
+            "label": "Dosya Göster",
+            "url": "http://eced.csb.gov.tr/jsp/dosya/dosyaGoster.htm?tempAd=sign2790023569702316854.pdf&orjinalAd=e-imza.pdf&yuklemeTarihi=2026-11-11"
+          }
+        ]
+      }
+    ],
+    "announcement_date": "2026-11-18",
+    "statutory_clocks": [],
+    "filing_key": "61587:18.11.2026:İptal/İade",
+    "first_seen_at": "2026-11-20T02:11:04"
+  },
+  "pdf_info": {
+    "filename": "61587.pdf",
+    "bytes": 132937,
+    "sha256": "d6ed8a3f5f912443573ad3afae66d9799af680ed9ff0601339c68ac56d5695f6",
+    "cached": false
+  },
+  "analysis": {
+    "page_count": 1,
+    "total_chars": 1881,
+    "text_pages": 1,
+    "scanned_or_blank_pages": 0,
+    "scanned_page_sample": [],
+    "headings": [],
+    "geo": {
+      "precision": "province_centroid",
+      "lat": 37.8746,
+      "lon": 32.4932,
+      "point_count": 0,
+      "points": [],
+      "datum": null,
+      "pages": []
+    },
+    "signals": {
+      "coordinates_and_footprint": {
+        "label": "Coordinates, Parcel & Footprint",
+        "page_count": 0,
+        "pages": [],
+        "samples": []
+      },
+      "water_and_discharge": {
+        "label": "Water Use, Hydrogeology & Discharge",
+        "page_count": 0,
+        "pages": [],
+        "samples": []
+      },
+      "protected_land_and_olive": {
+        "label": "Protected Zones, Forests & Olive Groves",
+        "page_count": 0,
+        "pages": [],
+        "samples": []
+      },
+      "ecology_and_baseline": {
+        "label": "Flora, Fauna & Baseline Methodology",
+        "page_count": 0,
+        "pages": [],
+        "samples": []
+      },
+      "pollutants_and_hazards": {
+        "label": "Emissions, Geochemistry & Waste",
+        "page_count": 0,
+        "pages": [],
+        "samples": []
+      },
+      "cost_and_capacity": {
+        "label": "Project Cost, Power & Capacity",
+        "page_count": 0,
+        "pages": [],
+        "samples": []
+      }
+    },
+    "audit_checks": {
+      "mentions_field_survey": false,
+      "mentions_literature_only_cue": false,
+      "mentions_seasonal_sampling": false,
+      "mentions_cumulative_impact": false,
+      "mentions_olive_law_3573": false,
+      "mentions_groundwater_or_aquifer": false,
+      "mentions_iucn_or_endemic": false
+    }
+  },
+  "llm_synthesis": {
+    "model": "gemini-4-hydrogen",
+    "generated_at": "2026-11-20T11:11:00",
+    "pages_sent": [
+      1
+    ],
+    "usage": {
+      "prompt_tokens": 2652,
+      "output_tokens": 1745,
+      "thoughts_tokens": 1388,
+      "total_tokens": 5785
+    },
+    "result": {
+      "executive_summary_tr": "Konya İli, Selçuklu İlçesi, Horozluhan OSB Mahallesi sınırları içerisindeki 13202 Ada, 713 Parsel adresinde Bayfarma İlaç Ve Tıbbi Atık San. Ve Tic. A.Ş. tarafından planlanan Beşerî İlaç ve İlaç Aktif Maddesi Üretimi Faaliyeti projesine ilişkin Bakanlık düzeyindeki ÇED süreci sonlandırılmıştır [s. 1]. 16.11.2026 tarihli resmi yazıda, projenin etken madde üretimi içermediği belirtilerek faaliyetin ÇED Yönetmeliği Ek-2 Listesi 4/a maddesi kapsamında değerlendirildiği ve bu nedenle Ek-1 sürecinin iptal edildiği bildirilmektedir [s. 1]. Sürecin devamı için Yönetmeliğin 16. maddesi uyarınca Proje Tanıtım Dosyası (PTD) hazırlanarak e-ÇED üzerinden Konya Valiliğine başvuru yapılması gerektiği ifade edilmiştir [s. 1]. İncelenen belge yalnızca tek sayfalık idari süreç sonlandırma yazısından ibaret olup, projenin çevresel etkilerine, kapasitesine veya temel saha verilerine dair teknik bilgi içermemektedir [s. 1].",
+      "executive_summary_en": "The Ministry-level EIA process for the proposed Human Pharmaceuticals and Active Pharmaceutical Ingredient Production Facility by Bayfarma İlaç Ve Tıbbi Atık San. Ve Tic. A.Ş. in Horozluhan OIZ (13202 Block, Parcel 713), Selçuklu District, Konya Province, has been terminated [s. 1]. According to the official notice dated 16.11.2026, the project does not include active ingredient production and therefore falls under Annex-2 List Item 4/a of the EIA Regulation rather than Annex-1 [s. 1]. Consequently, the applicant is instructed to prepare a Project Description File (PTD) pursuant to Article 16 of the EIA Regulation and submit an application via e-ÇED to the Konya Governorship [s. 1]. Because the filing consists solely of a one-page administrative termination letter, no technical data regarding environmental baseline conditions, capacity, emissions, or waste management are available for evaluation [s. 1].",
+      "key_facts": [
+        {
+          "label": "Proje Sahibi",
+          "value": "BAYFARMA İLAÇ VE TIBBİ ATIK SAN. VE TİC. A.Ş.",
+          "page": 1
+        },
+        {
+          "label": "Konum / Adres",
+          "value": "Konya İli, Selçuklu İlçesi, Horozluhan OSB Mahallesi, Yerlisu Sokak, No: 5/F-5/G-5/H",
+          "page": 1
+        },
+        {
+          "label": "Ada / Parsel",
+          "value": "13202 Ada, 713 Parsel",
+          "page": 1
+        },
+        {
+          "label": "İdari İşlem Durumu",
+          "value": "Bakanlık ÇED süreci sonlandırılmıştır (İptal/İade - Ek-1 kapsamından çıkarılmıştır).",
+          "page": 1
+        },
+        {
+          "label": "Güncel Mevzuat Kapsamı",
+          "value": "ÇED Yönetmeliği Ek-2 Listesi 4/a maddesi ve Madde 16 (Proje Tanıtım Dosyası süreci).",
+          "page": 1
+        },
+        {
+          "label": "Resmi Yazı Tarihi ve Sayısı",
+          "value": "16.11.2026 tarihli, E-53785661-220.01-17304127 sayılı yazı.",
+          "page": 1
+        },
+        {
+          "label": "Danışman Kuruluş",
+          "value": "AK-KO MEDİKAL MÜHENDİSLİK VE PATENT DANIŞMANLIK SANAYİ TİCARET LTD. ŞTİ.",
+          "page": 1
+        },
+        {
+          "label": "Yeni Başvuru Makamı",
+          "value": "Konya Valiliği (Konya Çevre, Şehircilik ve İklim Değişikliği İl Müdürlüğü).",
+          "page": 1
+        }
+      ],
+      "baseline_assessment": {
+        "field_survey_status": "not_found",
+        "seasonal_sampling_status": "not_found",
+        "cumulative_impact_status": "omitted_or_not_found",
+        "olive_and_protected_status": "Tek sayfalık idari süreç sonlandırma yazısında 3573 sayılı Kanun kapsamındaki zeytinlikler, orman alanları, sulak alanlar veya ÖÇK/SİT statüsüne ilişkin herhangi bir bilgi bulunmamaktadır; tesis adresinin Horozluhan OSB sınırları içerisinde yer aldığı belirtilmiştir [s. 1].",
+        "explanation": "İncelenen doküman yalnızca ÇED sürecinin sonlandırıldığına dair tek sayfalık idari bir resmi yazıdan oluşmaktadır [s. 1]. Bu nedenle saha araştırmaları, mevsimsel örnekleme çalışmaları, kümülatif etki değerlendirmesi veya flora-fauna envanterine ilişkin herhangi bir temel veri dosyada yer almamaktadır [s. 1]."
+      },
+      "red_flags": [
+        {
+          "severity": "medium",
+          "title": "Proje Adı ile Faaliyet Kapsamı Arasındaki Uyumsuzluk",
+          "detail": "Proje başlığı 'Beşerî İlaç ve İlaç Aktif Maddesi Üretimi Faaliyeti' olarak tanımlanmasına rağmen, resmi yazıda projenin etken madde üretimi içermediği gerekçesiyle Ek-1 kapsamından çıkarılıp Ek-2 Listesi 4/a maddesi kapsamına alındığı belirtilmektedir [s. 1].",
+          "pages": [
+            1
+          ]
+        },
+        {
+          "severity": "high",
+          "title": "Çevresel Temel Veri ve Teknik Değerlendirme Eksikliği",
+          "detail": "Yayımlanan dosya yalnızca süreç sonlandırma yazısını içerdiğinden, planlanan tesisin üretim kapasitesi, kullanılacak kimyasallar, atık su ve hava emisyonu yükleri ile tıbbi/tehlikeli atık yönetimine ilişkin hiçbir teknik bilgi ve temel saha ölçümü bulunmamaktadır [s. 1].",
+          "pages": [
+            1
+          ]
+        },
+        {
+          "severity": "medium",
+          "title": "Ek-2 (PTD) Sürecine Geçişle İlgili Denetim ve Katılım Düzeyi Değişimi",
+          "detail": "Faaliyetin Ek-1 kapsamından çıkarılarak ÇED Yönetmeliği 16. maddesi uyarınca İl Müdürlüğü nezdinde yürütülecek Proje Tanıtım Dosyası (PTD) sürecine yönlendirilmesi, Bakanlık düzeyindeki tam kapsamlı ÇED sürecinin sona ermesine neden olmaktadır [s. 1].",
+          "pages": [
+            1
+          ]
+        }
+      ],
+      "hkt_and_petition_questions": [
+        {
+          "question_tr": "Proje adında 'İlaç Aktif Maddesi Üretimi' ifadesi yer almasına karşın resmi yazıda etken madde üretimi içermediğinin belirtilme gerekçesi nedir ve önceki başvuru dosyasında hangi proses tanımlanmıştır?",
+          "pages": [
+            1
+          ]
+        },
+        {
+          "question_tr": "ÇED Yönetmeliği 16. maddesi uyarınca Konya Valiliğine sunulacak Proje Tanıtım Dosyasında yalnızca formülasyon/ambalajlama mı yapılacağı, yoksa kimyasal sentez veya çözücü kullanımı içeren proseslerin bulunup bulunmayacağı nasıl doğrulanacaktır?",
+          "pages": [
+            1
+          ]
+        },
+        {
+          "question_tr": "Horozluhan OSB 13202 Ada, 713 Parsel adresinde planlanan tesisin olası farmasötik atık suları, uçucu organik bileşik (VOC) emisyonları ve tehlikeli atıkları ile OSB altyapısının kümülatif yükü hazırlanacak PTD dosyasında nicel olarak değerlendirilecek midir?",
+          "pages": [
+            1
+          ]
+        }
+      ],
+      "data_limitations": "Değerlendirme yalnızca e-ÇED sisteminde yayımlanan 1 sayfalık (1/1) süreç sonlandırma yazısı esas alınarak yapılmıştır [s. 1]. Daha önce sunulan başvuru dosyası, teknik ekler, proses akım şemaları ve çevresel etki analizleri bu belgede yer almadığı için incelenememiştir [s. 1]."
+    }
+  }
+}

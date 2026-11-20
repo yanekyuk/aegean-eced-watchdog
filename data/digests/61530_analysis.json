@@ -1,0 +1,915 @@
+{
+  "filing": {
+    "province": "NİĞDE",
+    "district": "BOR",
+    "project_name": "OBRUK DEPOLAMALI (100 MWe / 100 MWh) GÜNEŞ ENERJİ SANTRALİ (100 MWm / 100 MWe) (175,18 ha)",
+    "project_owner": "RNC AVRASYA ENERJİ TEDARİK  DEPOLAMA TİCARET A.Ş.",
+    "sector": "Enerji",
+    "sub_sector": "Güneş Enerji Santralleri",
+    "decision_type": "HKT",
+    "announcement_date_tr": "14.11.2026",
+    "project_type": "Ek-1",
+    "detail_text": "NİĞDE ili BOR,  ilcesinde NİĞDE ili BOR ilçesi sınırları içerisinde RNC AVRASYA ENERJİ TEDARİK  DEPOLAMA TİCARET A.Ş. tarafından yapılması planlanan OBRUK DEPOLAMALI (100 MWe / 100 MWh) GÜNEŞ ENERJİ SANTRALİ (100 MWm / 100 MWe) (175,18 ha)  projesi ile ilgili Çevresel Etki Değerlendirme süreci başlamış ve Çevresel Etki Değerlendirmesi Başvuru Dosyası halkın görüşüne açılmıştır.Söz konusu projeye ilişkin, halkı proje hakkında bilgilendirmek, görüş ve önerilerini almak amacıyla ÇED Yönetmeliğinin 9. maddesi gereğince 30/11/2026 tarihinde Halkın Katılım Toplantısı düzenlenecektir.ÇED Başvuru Dosyasını İncelemek isteyenler Bakanlık Merkezinde veya NİĞDE Çevre ve Şehircilik İl Müdürlüklerinde duyuru tarihinden itibaren raporu inceleyerek, zamanlama takvimi içerisinde proje hakkında Bakanlığa veya Valiliğe görüş bildirebilirler. Halkın Katılımı Toplantısı yeri ve saati ile ilgili ÇED İzin Denetim Genel Müdürlüğü ve NİĞDE Çevre, Şehircilik ve İklim Değişikliği İl Müdürlüğünden bilgi alınabilir. İlgililere ve kamuoyuna duyurulur.",
+    "detail_links": [
+      {
+        "text": "Başvuru Dosyası",
+        "href": "http://eced.csb.gov.tr/jsp/ek1/61530"
+      }
+    ],
+    "documents": [
+      {
+        "portal_doc_url": "http://eced.csb.gov.tr/jsp/ek1/61530",
+        "filing_id": "61530",
+        "consulting_firm": "MOMENT ÇEVRE DANIŞMANLIK MÜHENDİSLİK TİC. LTD. ŞTİ.",
+        "submitted_at": "21/10/2026 04:02:08",
+        "pdf_urls": [
+          {
+            "label": "Dosya Göster",
+            "url": "http://eced.csb.gov.tr/jsp/dosya/dosyaGoster.htm?tempAd=sign2147024592917388043.pdf&orjinalAd=OBRUKGESCBD.pdf&yuklemeTarihi=2026-11-09"
+          }
+        ]
+      }
+    ],
+    "announcement_date": "2026-11-14",
+    "statutory_clocks": [
+      {
+        "code": "hkt",
+        "kind": "Halkın Katılımı Toplantısı (HKT) duyurusu; toplantı tarihi resmi metinde yer alır",
+        "deadline": null,
+        "days_remaining": null
+      }
+    ],
+    "filing_key": "61530:14.11.2026:HKT",
+    "first_seen_at": "2026-11-20T09:02:13"
+  },
+  "pdf_info": {
+    "filename": "61530.pdf",
+    "bytes": 21506924,
+    "sha256": "63d93551451f8ecc11141ac52f8563d32c737ce9b4136c24e9845385a807d468",
+    "cached": false
+  },
+  "analysis": {
+    "page_count": 215,
+    "total_chars": 284928,
+    "text_pages": 194,
+    "scanned_or_blank_pages": 21,
+    "scanned_page_sample": [
+      8,
+      119,
+      122,
+      125,
+      126,
+      127,
+      128,
+      129,
+      130,
+      132,
+      133,
+      141,
+      143,
+      146,
+      149
+    ],
+    "headings": [
+      [
+        3,
+        "BÖLÜM III: PROJENİN İNŞAAT VE İŞLETME AŞAMASINDA ÇEVRESEL ETKİLERİ"
+      ],
+      [
+        3,
+        "BÖLÜM VI: HALKIN BİLGİLENDİRİLMESİ VE SÜRECE KATILIMI İLE PAYDAŞ"
+      ],
+      [
+        6,
+        "ÇEVRESEL VE SOSYAL YÖNETİM PLANI"
+      ],
+      [
+        8,
+        "PROJENİN TEKNİK OLMAYAN ÖZETİ"
+      ],
+      [
+        12,
+        "BÖLÜM I"
+      ],
+      [
+        13,
+        "BÖLÜM I: PROJENİN TANIMI VE ÖZELLİKLERİ"
+      ],
+      [
+        63,
+        "BÖLÜM II"
+      ],
+      [
+        64,
+        "BÖLÜM II: PROJE YERİ VE ETKİ ALANININ MEVCUT ÇEVRESEL"
+      ],
+      [
+        80,
+        "BÖLÜM III"
+      ],
+      [
+        81,
+        "BÖLÜM III: PROJENİN İNŞAAT VE İŞLETME AŞAMASINDA ÇEVRESEL"
+      ],
+      [
+        103,
+        "BÖLÜM IV"
+      ],
+      [
+        104,
+        "BÖLÜM IV: KÜMÜLATİF ÇEVRESEL ETKİ DEĞERLENDİRME"
+      ],
+      [
+        105,
+        "BÖLÜM V"
+      ],
+      [
+        105,
+        "ÇEVRESEL VE SOSYAL"
+      ],
+      [
+        106,
+        "BÖLÜM V: ÇEVRESEL VE SOSYAL EYLEM PLANI"
+      ],
+      [
+        116,
+        "BÖLÜM VI"
+      ],
+      [
+        117,
+        "BÖLÜM VI: HALKIN BİLGİLENDİRİLMESİ VE SÜRECE KATILIMI İLE"
+      ],
+      [
+        119,
+        "BÖLÜM VII"
+      ],
+      [
+        120,
+        "BÖLÜM VII: NOTLAR, KAYNAKLAR VE EKLER"
+      ],
+      [
+        186,
+        "ÇEVRESEL VE SOSYAL YÖNETİM PLANININ AMACI VE HEDEFİ"
+      ]
+    ],
+    "geo": {
+      "precision": "exact_pdf",
+      "lat": 37.9747,
+      "lon": 34.09951,
+      "point_count": 80,
+      "points": [
+        [
+          37.97935,
+          34.09142
+        ],
+        [
+          37.97947,
+          34.09905
+        ],
+        [
+          37.97931,
+          34.09923
+        ],
+        [
+          37.97882,
+          34.0997
+        ],
+        [
+          37.97847,
+          34.10005
+        ],
+        [
+          37.97742,
+          34.10111
+        ],
+        [
+          37.97692,
+          34.10164
+        ],
+        [
+          37.97655,
+          34.1021
+        ],
+        [
+          37.97637,
+          34.10222
+        ],
+        [
+          37.97606,
+          34.10232
+        ],
+        [
+          37.9759,
+          34.10242
+        ],
+        [
+          37.97511,
+          34.10096
+        ],
+        [
+          37.97494,
+          34.1006
+        ],
+        [
+          37.97478,
+          34.10025
+        ],
+        [
+          37.97463,
+          34.09994
+        ],
+        [
+          37.97447,
+          34.09962
+        ],
+        [
+          37.97449,
+          34.09956
+        ],
+        [
+          37.9745,
+          34.0995
+        ],
+        [
+          37.97436,
+          34.0994
+        ],
+        [
+          37.97421,
+          34.09929
+        ],
+        [
+          37.97412,
+          34.0992
+        ],
+        [
+          37.97402,
+          34.0991
+        ],
+        [
+          37.97396,
+          34.09924
+        ],
+        [
+          37.97389,
+          34.09937
+        ],
+        [
+          37.97383,
+          34.09955
+        ],
+        [
+          37.97377,
+          34.09973
+        ],
+        [
+          37.97372,
+          34.09984
+        ],
+        [
+          37.97367,
+          34.09995
+        ],
+        [
+          37.97347,
+          34.09971
+        ],
+        [
+          37.97328,
+          34.09947
+        ],
+        [
+          37.97305,
+          34.09965
+        ],
+        [
+          37.97282,
+          34.09984
+        ],
+        [
+          37.97239,
+          34.10016
+        ],
+        [
+          37.97196,
+          34.10048
+        ],
+        [
+          37.9705,
+          34.10081
+        ],
+        [
+          37.97031,
+          34.10026
+        ],
+        [
+          37.97012,
+          34.09971
+        ],
+        [
+          37.97006,
+          34.09958
+        ],
+        [
+          37.97001,
+          34.09945
+        ],
+        [
+          37.98004,
+          34.09073
+        ]
+      ],
+      "datum": "UTM-Z36/ED50",
+      "pages": [
+        50,
+        51
+      ]
+    },
+    "signals": {
+      "coordinates_and_footprint": {
+        "label": "Coordinates, Parcel & Footprint",
+        "page_count": 70,
+        "pages": [
+          1,
+          2,
+          6,
+          9,
+          10,
+          11,
+          13,
+          14,
+          26,
+          29,
+          30,
+          32,
+          47,
+          49,
+          50,
+          51,
+          52,
+          64,
+          69,
+          74,
+          75,
+          87,
+          104,
+          117,
+          121
+        ],
+        "samples": [
+          {
+            "page": 1,
+            "match": "175,18 ha",
+            "snippet": "…Jİ TEDARİK DEPOLAMA TİCARET A.Ş. OBRUK DEPOLAMALI (100 MWe / 100 MWh) GÜNEŞ ENERJİ SANTRALİ (100 MWm / 100 MWe) (175,18 ha) PROJESİ NİĞDE İLİ, BOR İLÇESİ, OBRUK KÖYÜ, 158 ADA 132 PARSEL 2026 ÇED BAŞVURU…"
+          },
+          {
+            "page": 1,
+            "match": "ADA 132 PARSEL",
+            "snippet": "…100 MWh) GÜNEŞ ENERJİ SANTRALİ (100 MWm / 100 MWe) (175,18 ha) PROJESİ NİĞDE İLİ, BOR İLÇESİ, OBRUK KÖYÜ, 158 ADA 132 PARSEL 2026 ÇED BAŞVURU DOSYASI ÇED RAPORU SON ŞEKLİ VERİLEN ÇED RAPORU N…"
+          },
+          {
+            "page": 2,
+            "match": "175,18 ha",
+            "snippet": "…OSTA info@rncenerji.com PROJENİN ADI OBRUK DEPOLAMALI (100 MWe / 100 MWh) GÜNEŞ ENERJİ SANTRALİ (100 MWm / 100 MWe) (175,18 ha) PROJESİ PROJE BEDELİ 1.320.000.000 TL PROJE İÇİN SEÇİLEN YERİN AÇIK ADRESİ (İLİ, İLÇESİ, MEVKİİ) NİĞDE İLİ, BOR…"
+          },
+          {
+            "page": 2,
+            "match": "ADA 132 PARSEL",
+            "snippet": "…1.320.000.000 TL PROJE İÇİN SEÇİLEN YERİN AÇIK ADRESİ (İLİ, İLÇESİ, MEVKİİ) NİĞDE İLİ, BOR İLÇESİ, OBRUK KÖYÜ, 158 ADA 132 PARSEL PROJENİN ÇED YÖNETMELİĞİ KAPSAMINDAKİ YERİ (SEKTÖR, ALT SEKTÖR) Proje, 29.07.2022 tarih ve 31907 sayılı Resmî Gaz…"
+          },
+          {
+            "page": 6,
+            "match": "KOORDİNAT",
+            "snippet": "…-15/05458 NUMARALI ÖNLİSANS EK 1B: 15/10/2026 TARİH VE 14973-4 SAYILI EPDK OLUR’U EK 2. PROJE İÇİN SEÇİLEN YERİN KOORDİNATLARI EK 3. PROJE İÇİN BELİRLENEN YER VE ALTERNATİFLERİNİN VARSA; ÇEVRE DÜZENİ, NAZIM, UYGULAMA İMAR PLANI, VAZİYET P…"
+          },
+          {
+            "page": 9,
+            "match": "175,18 ha",
+            "snippet": "…8 Ada, 132 Parsel sınırları içerisinde OBRUK DEPOLAMALI (100 MWe / 100 MWh) GÜNEŞ ENERJİ SANTRALİ (100 MWm / 100 MWe) (175,18 ha) PROJESİ planlanmaktadır. Sultanhanı Elektrik Depolama Tesisi Güneş Enerji Santrali Projesi kapsamında, Enerji Piyasa…"
+          },
+          {
+            "page": 9,
+            "match": "Ada 670 ve 705 parsel",
+            "snippet": "…nleme Kurulunun (EPDK) 11.05.2023 tarih ve ÖN/11849-15 sayılı Kurul Kararı ile Aksaray ili Merkez ilçesi Kutlu Köyü, 0 Ada 670 ve 705 parseller içerisinde Sultanhanı Elektrik Depolama Tesisi (100 MWe / 100 MWh) Güneş Enerji Santrali (100 MWm / 100 MWe) için…"
+          },
+          {
+            "page": 9,
+            "match": "Ada 132 Parsel",
+            "snippet": "…n taşınması zaruriyeti meydana gelmiş ve önlisans tadil edilerek proje sahasının Niğde İli, Bor İlçesi, Obruk Köyü 158 Ada 132 Parsel’e taşınması için önlisans tadili müracaatı yapılmış; EPDK’nın 15.10.2026 tarih ve 14973-4 sayılı EPDK Kurul Kararı ile…"
+          }
+        ]
+      },
+      "water_and_discharge": {
+        "label": "Water Use, Hydrogeology & Discharge",
+        "page_count": 15,
+        "pages": [
+          29,
+          33,
+          35,
+          78,
+          79,
+          82,
+          83,
+          95,
+          108,
+          112,
+          145,
+          184,
+          189,
+          192,
+          203
+        ],
+        "samples": [
+          {
+            "page": 29,
+            "match": "deşarj",
+            "snippet": "…(BMS) olup, bu sistem hücrede ve sistem seviyesinde şarj durumunun kontrol edilmesine ve takibine ek olarak, şarj ve deşarj işlemleri sırasında sıcaklığın yönetilmesini de sağlamaktadır. Şekil 10. Batarya Yönetim Sistemleri Örnek Görseli…"
+          },
+          {
+            "page": 33,
+            "match": "Atıksu",
+            "snippet": "…lo, AC Kablo) İşletmeye Alma ÇED ve Diğer Tüm İzinlerin Alınması ve Arazi Hazırlığı Çalışacak Personelden Kaynaklı Atıksu, Katı Atık, Ambalaj Atığı vb. Oluşumu Toz ve Gürültü Oluşumu Bitkisel Toprak ve Hafriyat Malzeme Oluşumu Bitkis…"
+          },
+          {
+            "page": 35,
+            "match": "Atıksu",
+            "snippet": "…Şalt Sahasının Kurulumu İşletmeye Alma Bitkisel Toprak ve Hafriyat Malzeme Oluşumu Çalışacak Personelden Kaynaklı Atıksu, Katı Atık, Ambalaj Atığı vb. Oluşumu Toz ve Gürültü Oluşumu Bitkisel toprak, inşaat faaliyetleri sonrasında peyza…"
+          },
+          {
+            "page": 78,
+            "match": "sulak alan",
+            "snippet": "…ar, bataklık sazlık ve turbiyeler ile bu alanların kıyı kenar çizgisinden itibaren kara tarafına doğru ekolojik açıdan sulak alan kalan yerler, bulunmamaktadır. ç) Göller, akarsular, yeraltı suyu işletme sahaları; bulunmamaktadır. d) Bilimsel ar…"
+          },
+          {
+            "page": 78,
+            "match": "yeraltı suyu",
+            "snippet": "…isinden itibaren kara tarafına doğru ekolojik açıdan sulak alan kalan yerler, bulunmamaktadır. ç) Göller, akarsular, yeraltı suyu işletme sahaları; bulunmamaktadır. d) Bilimsel araştırmalar için önem arz eden ve/veya nesli tehlikeye düşmüş veya dü…"
+          },
+          {
+            "page": 79,
+            "match": "yeraltı suyu",
+            "snippet": "…e) İçme-kullanma suyu havzaları koruma alanları: İçme-kullanma suyu temin edilen veya edilmesi planlanan yerüstü ve yeraltı suyu kaynaklarının tabii su toplama alanı içerisinde kalan alanlar, bulunmamaktadır."
+          },
+          {
+            "page": 82,
+            "match": "10,36 m3/gün",
+            "snippet": "…aşı Günlük Su Tüketim Miktarı : 259 lt//gün Kullanılacak Su Miktarı : 40 x 259 = 10.360 lt/gün : 10,36 m3/gün’dür. Projenin arazi hazırlık ve montaj aşamasında çalışacak 40 personel tarafından kullanılacak içme suyu damacanal…"
+          },
+          {
+            "page": 83,
+            "match": "3,108 m3/gün",
+            "snippet": "…Başı Günlük Su Tüketim Miktarı : 259 lt//gün Kullanılacak Su Miktarı : 12 x 259 = 3.108 lt/gün : 3,108 m3/gün’dür. İşletme aşamasında çalışacak personelin içme ve kullanma suyunun piyasadan satın alınmak ve/veya tankerlerle s…"
+          }
+        ]
+      },
+      "protected_land_and_olive": {
+        "label": "Protected Zones, Forests & Olive Groves",
+        "page_count": 7,
+        "pages": [
+          7,
+          75,
+          77,
+          78,
+          145,
+          183,
+          185
+        ],
+        "samples": [
+          {
+            "page": 7,
+            "match": "ÖÇK",
+            "snippet": "…: Uluslararası Enerji Ajansı km : Kilometre kV : Kilovolt m : Metre mm : Milimetre MW : Megawatt ÖÇK : Özel Çevre Koruma PFC : Perflorokarbonlar PV : Fotovoltaik TH : Tescil Harici TM : Trafo Merkezi T…"
+          },
+          {
+            "page": 7,
+            "match": "Özel Çevre Koruma",
+            "snippet": "…slararası Enerji Ajansı km : Kilometre kV : Kilovolt m : Metre mm : Milimetre MW : Megawatt ÖÇK : Özel Çevre Koruma PFC : Perflorokarbonlar PV : Fotovoltaik TH : Tescil Harici TM : Trafo Merkezi TUBİVES : Tübitak Türk…"
+          },
+          {
+            "page": 75,
+            "match": "arkeolojik sit",
+            "snippet": "…kları ve Sit Özellikleri Yapılan ilk arazi çalışmalarında proje alanı sınırları içinde herhangi bir kültür varlığı, arkeolojik sit alanı ve doğal sit alanı tespit edilmemiştir. Proje kapsamında yapılacak işlemler sırasında tarihi çevreler ve sit böl…"
+          },
+          {
+            "page": 75,
+            "match": "doğal sit",
+            "snippet": "…Yapılan ilk arazi çalışmalarında proje alanı sınırları içinde herhangi bir kültür varlığı, arkeolojik sit alanı ve doğal sit alanı tespit edilmemiştir. Proje kapsamında yapılacak işlemler sırasında tarihi çevreler ve sit bölgelerini etkileyece…"
+          },
+          {
+            "page": 75,
+            "match": "SİT alanı",
+            "snippet": "…Proje alanının gösterildiği Korunan Alanlar Haritaları Şekil 37’de verilmektedir. Proje alanı ve yakın çevresinde SİT alanı bulunmamaktadır."
+          },
+          {
+            "page": 77,
+            "match": "Özel Çevre Koruma",
+            "snippet": "…eliği’nde tanımlanan alanlar, bulunmamaktadır. f) Çevre Kanunu’nun 9 uncu maddesi uyarınca Cumhurbaşkanı tarafından \"Özel Çevre Koruma Bölgeleri\" olarak tespit ve ilan edilen alanlar, bulunmamaktadır. g) Boğaziçi Kanunu’na göre koruma altına alınan ala…"
+          },
+          {
+            "page": 77,
+            "match": "orman alanı",
+            "snippet": "…bulunmamaktadır. g) Boğaziçi Kanunu’na göre koruma altına alınan alanlar, bulunmamaktadır. ğ) Orman Kanunu uyarınca orman alanı sayılan yerler, bulunmamaktadır. h) Kıyı Kanunu gereğince yapı yasağı getirilen alanlar, bulunmamaktadır. ı) Zeytinc…"
+          },
+          {
+            "page": 78,
+            "match": "kıyı kenar",
+            "snippet": "…ı olmak üzere canlıların yaşama ortamı olarak önem taşıyan bütün sular, bataklık sazlık ve turbiyeler ile bu alanların kıyı kenar çizgisinden itibaren kara tarafına doğru ekolojik açıdan sulak alan kalan yerler, bulunmamaktadır. ç) Göller, akars…"
+          }
+        ]
+      },
+      "ecology_and_baseline": {
+        "label": "Flora, Fauna & Baseline Methodology",
+        "page_count": 9,
+        "pages": [
+          64,
+          65,
+          66,
+          77,
+          78,
+          79,
+          182,
+          185,
+          192
+        ],
+        "samples": [
+          {
+            "page": 64,
+            "match": "Flora ve Fauna",
+            "snippet": "…Kadın Nüfus Niğde İli 374,492 187,502 186,990 Bor İlçesi 62,594 31,064 31,530 Obruk Köyü 1,056 573 483 Flora ve Fauna Türkiye, topografik yapı ve iklim özelliklerinin farklılığından dolayı 3 floristik bölgenin etkisi altındadır. Bunl…"
+          },
+          {
+            "page": 65,
+            "match": "arazi çalışması",
+            "snippet": "…listesinin tam ve eksiksiz olması amacıyla bu bölgede yapılmış araştırma, yayın, makale ve tez çalışmaları ile yapılan arazi çalışması desteklenecektir. Bitkilerin tehlike kategorileri IUCN komisyonunun tespit ettiği kriterlere göre Türkiye Tabiatın…"
+          },
+          {
+            "page": 65,
+            "match": "IUCN",
+            "snippet": "…ma, yayın, makale ve tez çalışmaları ile yapılan arazi çalışması desteklenecektir. Bitkilerin tehlike kategorileri IUCN komisyonunun tespit ettiği kriterlere göre Türkiye Tabiatını Koruma Derneği tarafından yayınlanmış olan \"Türkiye Bitki…"
+          },
+          {
+            "page": 65,
+            "match": "Bern Sözleşmesi",
+            "snippet": "…ki türlerinin Latince ve Türkçe adları, endemizm durumları, tehlike kategorileri, fitocoğrafik bölgeleri, habitatları, Bern Sözleşmesi Ek-1 listesinde yer alıp almadığı belirtilecektir. Proje alanındaki fauna incelemesi çalışmaları kapsamında proje a…"
+          },
+          {
+            "page": 66,
+            "match": "IUCN",
+            "snippet": "…adlı eseri kullanılacaktır. Fauna listesinde, türlerin Latince ve Türkçe adları, habitatları, popülasyon yoğunluğu, IUCN kategorileri, endemizm durumları, tehlike kategorileri, fitocoğrafik bölgeleri, habitatları, Bern Sözleşmesi Ek-2 ve E…"
+          },
+          {
+            "page": 66,
+            "match": "Bern Sözleşmesi",
+            "snippet": "…pülasyon yoğunluğu, IUCN kategorileri, endemizm durumları, tehlike kategorileri, fitocoğrafik bölgeleri, habitatları, Bern Sözleşmesi Ek-2 ve Ek-3 listelerinin hangisinde yer aldığı, “2026-2027 Av Dönemi Merkez Av Komisyonu Kararı” ek listelerinin hang…"
+          },
+          {
+            "page": 66,
+            "match": "flora ve fauna",
+            "snippet": "…rarı” ek listelerinin hangisinde yer aldığı belirtilecektir. Proje alanı ve yakın çevresinde bulunma olasılığı olan flora ve fauna türlerine ait detaylı bilgiler hazırlanacak olan ÇED Raporu’nda verilecektir. Doğal Afet Durumu Proje alanının i…"
+          },
+          {
+            "page": 77,
+            "match": "BERN Sözleşmesi",
+            "snippet": "…unması gerekli alanlar Proje alanı içerisinde; a) \"Avrupa’nın Yaban Hayatı ve Yaşama Ortamlarını Koruma Sözleşmesi\" (BERN Sözleşmesi) uyarınca koruma altına alınmış alanlardan \"Önemli Deniz Kaplumbağası Üreme Alanlarında belirtilen I. ve II. Koruma Bö…"
+          }
+        ]
+      },
+      "pollutants_and_hazards": {
+        "label": "Emissions, Geochemistry & Waste",
+        "page_count": 52,
+        "pages": [
+          1,
+          2,
+          9,
+          10,
+          13,
+          14,
+          33,
+          35,
+          42,
+          43,
+          44,
+          49,
+          60,
+          64,
+          66,
+          67,
+          68,
+          74,
+          75,
+          81,
+          85,
+          88,
+          91,
+          92,
+          95
+        ],
+        "samples": [
+          {
+            "page": 1,
+            "match": "BOR",
+            "snippet": "…OBRUK DEPOLAMALI (100 MWe / 100 MWh) GÜNEŞ ENERJİ SANTRALİ (100 MWm / 100 MWe) (175,18 ha) PROJESİ NİĞDE İLİ, BOR İLÇESİ, OBRUK KÖYÜ, 158 ADA 132 PARSEL 2026 ÇED BAŞVURU DOSYASI ÇED RAPORU…"
+          },
+          {
+            "page": 2,
+            "match": "BOR",
+            "snippet": "…ha) PROJESİ PROJE BEDELİ 1.320.000.000 TL PROJE İÇİN SEÇİLEN YERİN AÇIK ADRESİ (İLİ, İLÇESİ, MEVKİİ) NİĞDE İLİ, BOR İLÇESİ, OBRUK KÖYÜ, 158 ADA 132 PARSEL PROJENİN ÇED YÖNETMELİĞİ KAPSAMINDAKİ YERİ (SEKTÖR, ALT SEKTÖR) Proje, 29.…"
+          },
+          {
+            "page": 9,
+            "match": "Bor",
+            "snippet": "…ŞVURU DOSYASI 1 PROJENİN TEKNİK OLMAYAN ÖZETİ RNC Avrasya Enerji Tedarik Depolama Ticaret A.Ş. tarafından Niğde İli, Bor İlçesi, Obruk Köyü, 158 Ada, 132 Parsel sınırları içerisinde OBRUK DEPOLAMALI (100 MWe / 100 MWh) GÜNEŞ ENERJİ SANTRA…"
+          },
+          {
+            "page": 9,
+            "match": "CO2",
+            "snippet": "…ir edilen bu kaynaklar, günümüzde yoğun ilgi görmektedir. Yenilenebilir enerji kaynakları arasında güneş enerjisi, hem CO2 salımı olmadığı için çevre dostu hem de potansiyel olarak tüm dünyanın enerji talebini karşılayacak kadar büyük bir e…"
+          },
+          {
+            "page": 10,
+            "match": "Bor",
+            "snippet": "…yapı, proje alanının yaklaşık 775 m güneydoğusunda yer alan mera vasfında bulunan 158 Ada 109 Parsel içindeki yapıdır. Bor İlçesi proje alanının yaklaşık 40 km güneydoğusunda yer almaktadır. Projenin inşaat aşamasında toplam 40 personeli…"
+          },
+          {
+            "page": 10,
+            "match": "gürültü",
+            "snippet": "…çalışacak personelden kaynaklı belediye atıkları, evsel nitelikli sıvı atıklar, inşaat faaliyetlerinden kaynaklı toz, gürültü, inşaat faaliyetleri sırasında kullanılacak ekipmanlardan kaynaklı atıkların oluşması gibi çevresel etkiler meydana ge…"
+          },
+          {
+            "page": 13,
+            "match": "Bor",
+            "snippet": "…➢ Proje Konusu Yatırımın Tanımı ve Özellikleri RNC Avrasya Enerji Tedarik Depolama Ticaret A.Ş. tarafından Niğde İli, Bor İlçesi, Obruk Köyü, 158 Ada, 132 Parsel sınırları içerisinde OBRUK DEPOLAMALI (100 MWe / 100 MWh) GÜNEŞ ENERJİ SANTRA…"
+          },
+          {
+            "page": 14,
+            "match": "Bor",
+            "snippet": "…00 MWh) GÜNEŞ ENERJİ SANTRALİ (100 MWm / 100 MWe) (175,18 ha) PROJESİ ÇED BAŞVURU DOSYASI 5 Proje alanı, Niğde İli, Bor İlçesi sınırlarında yer almaktadır. Faaliyet yeri inceleme çalışmaları 04.09.2026 tarihinde şirketimize ait ÇED Yeterl…"
+          }
+        ]
+      },
+      "cost_and_capacity": {
+        "label": "Project Cost, Power & Capacity",
+        "page_count": 13,
+        "pages": [
+          2,
+          13,
+          15,
+          18,
+          32,
+          36,
+          37,
+          38,
+          39,
+          40,
+          42,
+          47,
+          81
+        ],
+        "samples": [
+          {
+            "page": 2,
+            "match": "PROJE BEDELİ",
+            "snippet": "…com PROJENİN ADI OBRUK DEPOLAMALI (100 MWe / 100 MWh) GÜNEŞ ENERJİ SANTRALİ (100 MWm / 100 MWe) (175,18 ha) PROJESİ PROJE BEDELİ 1.320.000.000 TL PROJE İÇİN SEÇİLEN YERİN AÇIK ADRESİ (İLİ, İLÇESİ, MEVKİİ) NİĞDE İLİ, BOR İLÇESİ, OBRUK KÖYÜ, 15…"
+          },
+          {
+            "page": 2,
+            "match": "1.320.000.000 TL",
+            "snippet": "…ADI OBRUK DEPOLAMALI (100 MWe / 100 MWh) GÜNEŞ ENERJİ SANTRALİ (100 MWm / 100 MWe) (175,18 ha) PROJESİ PROJE BEDELİ 1.320.000.000 TL PROJE İÇİN SEÇİLEN YERİN AÇIK ADRESİ (İLİ, İLÇESİ, MEVKİİ) NİĞDE İLİ, BOR İLÇESİ, OBRUK KÖYÜ, 158 ADA 132 PARSEL…"
+          },
+          {
+            "page": 13,
+            "match": "200.000.000 kW",
+            "snippet": "…100 MWe kurulu gücünde Güneş Enerji Santrali (GES) kurulması ve işletilmesi planlanmaktadır. Proje kapsamında yıllık 200.000.000 kWh/yıl elektrik üretilmesi öngörülmektedir. Üretilecek enerjinin üretim barasından şalt merkezine oradan da Bor…"
+          },
+          {
+            "page": 15,
+            "match": "kapasite",
+            "snippet": "…r araya getirilerek fotovoltaik modül oluşturulur. Modüller seri bağlandığında gerilim, paralel bağlandığında ise akım kapasitesi artırılır. Projenin güç ihtiyacına göre modüller seri ve paralel bağlantılarla düzenlenerek birkaç watt düzeyinden…"
+          },
+          {
+            "page": 15,
+            "match": "kurulu güç",
+            "snippet": "…iyacına göre modüller seri ve paralel bağlantılarla düzenlenerek birkaç watt düzeyinden megawatt ölçeğine kadar farklı kurulu güçlerde fotovoltaik sistemler oluşturulabilir. Seri bağlantı, bir güneş panelinin pozitif terminalini bir sonraki güneş p…"
+          },
+          {
+            "page": 18,
+            "match": "kurulu güç",
+            "snippet": "…sağlamaktadır. Geleneksel polikristal silisyum modüllere kıyasla genellikle daha yüksek verim sunan bu paneller, aynı kurulu güç için daha az modül yüzey alanına ihtiyaç duymaktadır. Modüllerin verimi ve elektriksel özellikleri, kullanılan hücre…"
+          },
+          {
+            "page": 32,
+            "match": "Proje Bedeli",
+            "snippet": "…k 15 yıl olarak belirtilmektedir. Tesiste yüksek çevrim sayısına elverişli pillerin kullanılması planlanmaktadır. ➢ Proje Bedeli Obruk Depolamalı (100 MWe / 100 MWh) Güneş Enerji Santrali (100 MWm / 100 MWe) (175,18 ha) Proje bedelinin hesaplan…"
+          },
+          {
+            "page": 32,
+            "match": "1.320.000.000 TL",
+            "snippet": "…MWm / 100 MWe 9.000.000 900.000.000 Elektrik Depolama Tesisi – 100 MWe / 100 MWh 4.200.000 420.000.000 Toplam 1.320.000.000 TL ➢ İş Akım Şeması Proje kapsamında inşaat faaliyetlerinin gerçekleşmesine ilişkin İş Akım Şeması Şekil 11’de veri…"
+          }
+        ]
+      }
+    },
+    "audit_checks": {
+      "mentions_field_survey": true,
+      "mentions_literature_only_cue": false,
+      "mentions_seasonal_sampling": false,
+      "mentions_cumulative_impact": true,
+      "mentions_olive_law_3573": false,
+      "mentions_groundwater_or_aquifer": true,
+      "mentions_iucn_or_endemic": true
+    }
+  },
+  "llm_synthesis": {
+    "model": "gemini-4-hydrogen",
+    "generated_at": "2026-11-20T11:08:10",
+    "pages_sent": [
+      1,
+      2,
+      3,
+      4,
+      6,
+      7,
+      13,
+      14,
+      29,
+      33,
+      35,
+      63,
+      64,
+      65,
+      66,
+      75,
+      77,
+      78,
+      80,
+      81,
+      82,
+      105,
+      106,
+      107,
+      186,
+      187
+    ],
+    "usage": {
+      "prompt_tokens": 17368,
+      "output_tokens": 4295,
+      "thoughts_tokens": 7820,
+      "total_tokens": 29483
+    },
+    "result": {
+      "executive_summary_tr": "RNC Avrasya Enerji Tedarik Depolama Ticaret A.Ş. tarafından Niğde İli, Bor İlçesi, Obruk Köyü, 158 Ada 132 Parsel sınırları içerisindeki 175,18 hektarlık alanda 100 MWm / 100 MWe kurulu gücünde Güneş Enerji Santrali (GES) ve 100 MWe / 100 MWh kapasiteli Elektrik Depolama Tesisi (EDT) kurulması planlanmaktadır [s. 1, 13, 75]. Toplam yatırım bedeli 1.320.000.000 TL olan ve yıllık 200.000.000 kWh elektrik üretimi öngörülen proje, daha önce Aksaray ilinde aldığı ÇED Olumlu kararına esas mera tahsis amacı değişikliğinin İl Mera Komisyonu tarafından uygun bulunmaması üzerine Niğde'ye taşınmıştır [s. 2, 13]. Proje sahasının tamamı 535,89 hektar büyüklüğündeki mera vasıflı parsel üzerinde yer almakta olup 4342 sayılı Mera Kanunu kapsamında tahsis amacı değişikliği gerektirmektedir [s. 75, 77]. ÇED Başvuru Dosyası aşamasında sunulan metinde flora ve fauna arazi envanterlerinin henüz tamamlanmayıp ÇED Raporu aşamasına ertelenmesi, bitkisel toprak sıyırma ve hafriyat miktarları ile inşaat dönemi su temininin kesinleştirilmemiş olması temel çevresel belirsizlikleri oluşturmaktadır [s. 33, 35, 65, 66, 81, 82].",
+      "executive_summary_en": "RNC Avrasya Enerji Tedarik Depolama Ticaret A.Ş. proposes the Obruk Solar Power Plant with Storage (100 MWm / 100 MWe) and a 100 MWe / 100 MWh battery energy storage facility covering 175.18 hectares on Parcel 158/132 in Obruk Village, Bor District, Niğde Province [s. 1, 13, 75]. With a projected investment of 1.32 billion TL and annual generation of 200,000,000 kWh, the project was relocated from Aksaray after the Provincial Pasture Commission rejected the pasture allocation purpose change for the previously approved site under Pasture Law No. 4342 [s. 2, 13]. The entire proposed footprint lies on active pastureland within a 535.89-hectare natural-landscape parcel, requiring a pasture allocation change permit from the Niğde Provincial Directorate of Agriculture and Forestry [s. 75, 77]. Primary environmental and methodological stakes at this Scoping/Application (ÇBD) stage include the deferral of baseline flora and fauna field surveys to the subsequent EIA Report, unquantified topsoil stripping and excavation volumes, and uncertainties regarding construction water sourcing and instrumental environmental monitoring [s. 33, 35, 65, 66, 81, 82, 107].",
+      "key_facts": [
+        {
+          "label": "Proje Alanı ve Parsel Büyüklüğü",
+          "value": "175,18 ha (1.751.847,899 m2); toplam 535,89 ha büyüklüğündeki 158 Ada 132 Parsel içinde",
+          "page": 75
+        },
+        {
+          "label": "Kurulu Güç ve Depolama Kapasitesi",
+          "value": "100 MWm / 100 MWe GES ve 100 MWe / 100 MWh Elektrik Depolama Tesisi (LFP batarya)",
+          "page": 13
+        },
+        {
+          "label": "Panel, İnvertör ve Yıllık Üretim",
+          "value": "200.000 adet 500 Wp tek eksenli takip sistemli panel, 20 adet 5.000 kWe invertör; 200.000.000 kWh/yıl",
+          "page": 13
+        },
+        {
+          "label": "Şebeke Bağlantı Gerilimi",
+          "value": "400 kV (Bor EDT GES Trafo Merkezi bağlantısı)",
+          "page": 13
+        },
+        {
+          "label": "Proje Yatırım Bedeli",
+          "value": "1.320.000.000 TL",
+          "page": 2
+        },
+        {
+          "label": "İnşaat Süresi ve İstihdam",
+          "value": "Ortalama 36 ay inşaat süresi; inşaat aşamasında 40 personel, işletme aşamasında 12 personel",
+          "page": 81
+        },
+        {
+          "label": "İnşaat Aşaması Toz Bastırma Suyu",
+          "value": "20 m3/gün (kesin miktar belirlenememekle birlikte 10 m3 kapasiteli arazözle günde 2 kez sulama kabulü)",
+          "page": 81
+        },
+        {
+          "label": "İnşaat Aşaması İçme-Kullanma Suyu ve Atıksu",
+          "value": "10,36 m3/gün içme-kullanma suyu (259 lt/kişi-gün) ve 10,36 m3/gün evsel atıksu (sızdırmaz fosseptik)",
+          "page": 82
+        },
+        {
+          "label": "En Yakın Yerleşim Yeri Nüfusu (TÜİK 2025)",
+          "value": "Obruk Köyü: 1.056 kişi (Bor İlçesi: 62.594 kişi; Niğde İli: 374.492 kişi)",
+          "page": 64
+        }
+      ],
+      "baseline_assessment": {
+        "field_survey_status": "mixed_or_unclear",
+        "seasonal_sampling_status": "not_found",
+        "cumulative_impact_status": "omitted_or_not_found",
+        "olive_and_protected_status": "Dosyadaki Ek-5 Duyarlı Yöreler Listesi beyanına göre proje alanında 3573 sayılı Zeytincilik Kanunu kapsamındaki alanlar, orman alanları, Özel Çevre Koruma (ÖÇK) bölgeleri, sulak alanlar, RAMSAR alanları, içme-kullanma suyu havzaları, I-IV. sınıf tarım alanları ve SİT alanları bulunmamaktadır [s. 75, 77, 78]. Ancak saha tamamen 4342 sayılı Mera Kanunu kapsamında mera niteliğindeki 158 Ada 132 Parsel içinde kalmaktadır ve kültür varlıklarına ilişkin Kayseri Kültür Varlıklarını Koruma Bölge Kurulu Müdürlüğü görüşü ÇED sürecinde alınacaktır [s. 75, 77].",
+        "explanation": "Dosyada 04.09.2026 tarihinde yetkili kuruluşça faaliyet yeri incelemesi yapıldığı [s. 14] ve ilk arazi çalışmalarında kültür varlığı veya sit alanı tespit edilmediği [s. 75] belirtilmektedir. Buna karşın flora ve fauna bölümlerinde tamamlanmış bir arazi çalışması veya tür listesi sunulmamış, tüm arazi gözlemlerinin ve literatür derlemelerinin hazırlanacak ÇED Raporu aşamasında yapılacağı ifade edilmiştir [s. 65, 66]. Alıntılanan sayfalarda proje öncesi tamamlanmış mevsimsel örnekleme veya çok mevsimli izleme taahhüdü bulunmamakta olup [s. 65, 66, 107], İçindekiler dizininde raporun 92. sayfasında bir sayfalık yer kapladığı görülen Kümülatif Çevresel Etki Değerlendirme bölümü sunulan sayfalar arasında yer almamaktadır [s. 3]."
+      },
+      "red_flags": [
+        {
+          "severity": "high",
+          "title": "Mera Vasıflı Alanda Kurulum ve Önceki Mera Tahsis Reddi Geçmişi",
+          "detail": "Proje, Niğde İli Bor İlçesi Obruk Köyü 158 Ada 132 Parsel üzerindeki 535,89 ha büyüklüğündeki aktif mera arazisinin 175,18 ha'lık kısmında planlanmaktadır [s. 75]. Dosyada projenin daha önce Aksaray ili Kutlu Köyü'nde ÇED Olumlu kararı almasına rağmen Aksaray İl Mera Komisyonu'nun 30.10.2025 tarihli kararıyla mera tahsis amacı değişikliğinin uygun bulunmaması nedeniyle Niğde'ye taşındığı belirtilmiştir [s. 13]. Doğal peyzaj özelliğine sahip yeni mera sahasında 175,18 ha alanın kapatılmasının mera bütünlüğü ve hayvancılık üzerindeki etkilerine dair değerlendirme sunulmamıştır [s. 75, 77].",
+          "pages": [
+            13,
+            75,
+            77
+          ]
+        },
+        {
+          "severity": "high",
+          "title": "Flora, Fauna ve Endemik Tür Değerlendirmelerinin ÇED Raporuna Ertelenmesi",
+          "detail": "İrano-Turan fitocoğrafik bölgesi C5 grid karesinde yer alan sahada flora listesi ve fauna (iki yaşamlılar, sürüngenler, kuşlar, memeliler) arazi gözlemleri henüz yapılmamış olup tüm incelemelerin gelecek zaman kipiyle hazırlanacak ÇED Raporu'nda verileceği belirtilmektedir [s. 64, 65, 66]. Ayrıca Ek-5 madde 3.d kapsamındaki nesli tehlikede veya endemik tür yaşama ortamı değerlendirmesi de ÇED sürecine bırakılmıştır [s. 78]. Bu durum HKT sürecinde ekolojik taban verilerinin incelenmesini engellemektedir [s. 65, 66].",
+          "pages": [
+            64,
+            65,
+            66,
+            78
+          ]
+        },
+        {
+          "severity": "medium",
+          "title": "Bitkisel Toprak Sıyırma, Hafriyat ve LFP Batarya Atık/Yangın Riski Verilerinin Eksikliği",
+          "detail": "İnşaat ve Elektrik Depolama Tesisi iş akım şemalarında bitkisel toprak sıyırma ve temel kazısı yapılacağı, kazı fazlası malzemenin belediye depolama alanına taşınacağı belirtilse de sıyrılacak toprak ve hafriyat hacmine dair nicel veri sunulmamıştır [s. 33, 35]. Ayrıca 100 MWh LFP batarya sisteminde olası ısıl sürüklenme (thermal runaway) ve yangın söndürme sırasında oluşabilecek kirli söndürme suyunun veya ömrünü tamamlamış bataryaların yönetimine ilişkin nicel değerlendirme alıntılarda yer almamaktadır [s. 29].",
+          "pages": [
+            29,
+            33,
+            35
+          ]
+        },
+        {
+          "severity": "medium",
+          "title": "İnşaat Dönemi Su Miktarı ve Su Kaynağındaki Belirsizlik",
+          "detail": "36 ay sürmesi planlanan inşaat döneminde toz bastırma amacıyla kullanılacak sulama suyu miktarının kesin olarak belirlenemediği, günlük 20 m3 kabulü yapıldığı ifade edilmektedir [s. 81]. Kullanma ve sulama suyunun piyasadan tankerle alınacağı belirtilmekle birlikte, ihtiyacın yeraltı suyundan karşılanması halinde sonradan DSİ'ye başvurulacağı yazılarak kesin su kaynağı ve bölgenin yeraltı su bütçesine etkisi netleştirilmemiştir [s. 82].",
+          "pages": [
+            81,
+            82
+          ]
+        },
+        {
+          "severity": "medium",
+          "title": "Çevre İzleme Planının Yalnızca Gözleme ve Kurum Talebine Bağlanması",
+          "detail": "Tablo 8 Çevre İzleme Planı'nda inşaat aşaması hava kalitesi (toz ve egzoz emisyonları) ile gürültü parametreleri için periyodik ve aletsel ölçüm (PM10 veya dBA ölçümü) yerine yalnızca 'ÇED alanında yapılacak gözlemler' yöntemi ve 'ilgili kurumun talebi doğrultusunda' izleme sıklığı öngörülmüştür [s. 107]. 175,18 ha alanda 36 ay sürecek hafriyat ve montaj faaliyetleri için nicel izleme eşikleri tanımlanmamıştır [s. 75, 81, 107].",
+          "pages": [
+            75,
+            81,
+            107
+          ]
+        },
+        {
+          "severity": "low",
+          "title": "Dayanaksız Görsel Etki Beyanı ve Kısıtlı Kümülatif Etki Bölümü",
+          "detail": "Çevresel ve Sosyal Yönetim Planı'nda proje alanının görsel ve estetik açıdan olumsuzluk yaratmayacağı herhangi bir görünürlük veya peyzaj analizi sunulmadan beyan edilmiştir [s. 186]. Öte yandan İçindekiler dizininde BÖLÜM IV Kümülatif Çevresel Etki Değerlendirme başlığının raporun yalnızca 92-93. sayfaları arasındaki 1 sayfaya ayrıldığı görülmektedir [s. 3].",
+          "pages": [
+            3,
+            186
+          ]
+        }
+      ],
+      "hkt_and_petition_questions": [
+        {
+          "question_tr": "Projenin daha önce Aksaray ili Kutlu Köyü'nde 4342 sayılı Mera Kanunu'nun 14. maddesi uyarınca İl Mera Komisyonu tarafından tahsis amacı değişikliği uygun bulunmadığı için Niğde İli, Bor İlçesi, Obruk Köyü 158 Ada 132 Parsel'e taşındığı görülmektedir [s. 13]. Doğal peyzaj özelliğindeki 535,89 ha'lık mera parselinin 175,18 ha'lık kısmının 36 aylık inşaat ve işletme süresince kapatılmasının Obruk Köyü'nün otlatma kapasitesi ve hayvancılık faaliyetleri üzerindeki etkileri nasıl giderilecektir [s. 75, 81]?",
+          "pages": [
+            13,
+            75,
+            81
+          ]
+        },
+        {
+          "question_tr": "ÇED Başvuru Dosyası'nda flora ve fauna envanterleri ile endemik/tehlike altındaki tür değerlendirmelerinin hazırlanacak ÇED Raporu'na bırakıldığı görülmektedir [s. 65, 66, 78]. ÇED Raporu aşamasında yürütülecek arazi çalışmalarının tüm vejetasyon ve göç dönemlerini kapsayacak şekilde çok mevsimli olarak yapılıp yapılmayacağı ve örnekleme metodolojisi açıklanacak mıdır [s. 65, 66]?",
+          "pages": [
+            65,
+            66,
+            78
+          ]
+        },
+        {
+          "question_tr": "200.000 adet güneş paneli ve 100 MWh LFP batarya depolama tesisi kurulumu sırasında yapılacak bitkisel toprak sıyırma ve temel kazısından kaynaklanacak hafriyat miktarı (m3) nedir ve sıyrılan bitkisel toprak nasıl korunacaktır [s. 13, 33, 35]? Ayrıca LFP bataryalarda olası ısıl sürüklenme veya yangın durumunda oluşacak söndürme atıksularının mera toprağına sızmasını önleyecek sızdırmaz toplama sistemi kurulacak mıdır [s. 29]?",
+          "pages": [
+            13,
+            29,
+            33,
+            35
+          ]
+        },
+        {
+          "question_tr": "36 aylık inşaat sürecinde miktarı kesinleştirilemeyen toz bastırma suyu (20 m3/gün) ile personel suyunun (10,36 m3/gün) temin edileceği kaynak netleştirilmiş midir [s. 81, 82]? Ayrıca Tablo 8 Çevre İzleme Planı'nda yalnızca görsel gözleme ve kurum talebine bağlanan inşaat dönemi toz ve gürültü izlemesinin, periyodik ve aletsel PM10 ve desibel (dBA) ölçümleriyle zorunlu hale getirilmesi planlanmakta mıdır [s. 107]?",
+          "pages": [
+            81,
+            82,
+            107
+          ]
+        }
+      ],
+      "data_limitations": "Toplam 215 sayfalık PDF dosyasının 21 sayfası taranmış/görüntü formatında olup yalnızca 26 seçili sayfa ([1, 2, 3, 4, 6, 7, 13, 14, 29, 33, 35, 63, 64, 65, 66, 75, 77, 78, 80, 81, 82, 105, 106, 107, 186, 187]) incelenebilmiştir. BÖLÜM I-B (yer/teknoloji alternatifleri ve koordinatlar), BÖLÜM II'nin kalan kısımları (jeoloji, hidrojeoloji, toprak sınıfları, en yakın konuta/yerleşime kesin mesafe ve 78. sayfanın devamı), BÖLÜM III'ün kalan bölümleri (işletme aşaması su kullanımı, panel yıkama suyu, sera gazı, gürültü ve toz hesaplamaları), BÖLÜM IV (Kümülatif Çevresel Etki Değerlendirme, rapor s. 92), BÖLÜM VI (Paydaş Katılım Planı) ve EK-1 ile EK-7 arası ekler (özellikle EK 2 koordinatlar, EK 3 haritalar/vaziyet planı, EK 4 Yer İnceleme Raporu) sunulan alıntılar dışında kaldığından doğrulanamamıştır."
+    }
+  }
+}

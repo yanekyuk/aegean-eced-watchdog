@@ -1,0 +1,993 @@
+{
+  "filing": {
+    "province": "TEKİRDAĞ",
+    "district": "MARMARAEREĞLİSİ",
+    "project_name": "Büyükbaş ve Küçükbaş Hayvan Besi Tesisi Projesi",
+    "project_owner": "Niğmet Hayvancılık Gıda San. Tic. Ltd. Şti.",
+    "sector": "Hayvancılık",
+    "sub_sector": "Büyükbaş-Küçükbaş Hayvan Besi Tesisleri",
+    "decision_type": "IDK",
+    "announcement_date_tr": "17.11.2026",
+    "project_type": "Ek-1",
+    "detail_text": "TEKİRDAĞ ili MARMARAEREĞLİSİ,  ilcesinde TEKİRDAĞ ili MARMARAEREĞLİSİ ilçesi sınırları içerisinde Niğmet Hayvancılık Gıda San. Tic. Ltd. Şti. tarafından yapılması planlanan Büyükbaş ve Küçükbaş Hayvan Besi Tesisi Projesi projesi ile ilgili olarak hazırlanan ÇED Raporu, ÇED Yönetmeliği'nin 11. maddesi kapsamında Bakanlığımıza sunulmuş olup, inceleme değerlendirme süreci başlamıştır. Proje ile ilgili olarak 11/12/2026 tarihinde İDK toplantısı gerçekleştirilecektir. Bakanlığımıza sunulan ÇED Raporu https://eced-duyuru.csb.gov.tr/eced-prod/duyurular.xhtml adresinde yer almaktadır. ÇED Raporu ilgililere ve kamuoyuna duyurulur.",
+    "detail_links": [
+      {
+        "text": "ÇED Raporu",
+        "href": "http://eced.csb.gov.tr/jsp/ek1/56067"
+      }
+    ],
+    "documents": [
+      {
+        "portal_doc_url": "http://eced.csb.gov.tr/jsp/ek1/56067",
+        "filing_id": "56067",
+        "consulting_firm": "Bilimçed Mühendislik Danışmanlık Çevre Teknolojileri Sanayi ve Ticaret Limited Şirketi",
+        "submitted_at": "30/10/2025 08:57:05",
+        "pdf_urls": [
+          {
+            "label": "56067_CED_Raporu.pdf",
+            "url": "http://eced.csb.gov.tr/jsp/dosya/dosyaGoster.htm?tempAd=sign609069023605120267.pdf&orjinalAd=56067_CED_Raporu.pdf&yuklemeTarihi=2026-10-20"
+          }
+        ]
+      }
+    ],
+    "announcement_date": "2026-11-17",
+    "statutory_clocks": [
+      {
+        "code": "idk",
+        "kind": "İnceleme Değerlendirme Komisyonu (İDK) süreci; toplantı tarihi resmi metinde yer alır",
+        "deadline": null,
+        "days_remaining": null
+      }
+    ],
+    "filing_key": "56067:17.11.2026:IDK",
+    "first_seen_at": "2026-11-20T02:11:15"
+  },
+  "pdf_info": {
+    "filename": "56067.pdf",
+    "bytes": 77096105,
+    "sha256": "69df34d6c02de3a9539b915d41e59fbb97daefcc64b4c778745077e7bf8efb09",
+    "cached": false
+  },
+  "analysis": {
+    "page_count": 723,
+    "total_chars": 1066095,
+    "text_pages": 505,
+    "scanned_or_blank_pages": 218,
+    "scanned_page_sample": [
+      230,
+      232,
+      235,
+      239,
+      241,
+      243,
+      245,
+      246,
+      247,
+      248,
+      251,
+      253,
+      254,
+      255,
+      312
+    ],
+    "headings": [
+      [
+        1,
+        "1- PTD KAPAK"
+      ],
+      [
+        2,
+        "2- TABLO"
+      ],
+      [
+        3,
+        "3- ÇED RAPORU NİĞMET"
+      ],
+      [
+        3,
+        "İÇİNDEKİLER"
+      ],
+      [
+        13,
+        "ŞEKİLLER DİZİNİ"
+      ],
+      [
+        14,
+        "TABLOLAR DİZİNİ"
+      ],
+      [
+        19,
+        "PROJENİN TEKNİK OLMAYAN ÖZETİ"
+      ],
+      [
+        21,
+        "BÖLÜM I: PROJENİN TANIMI VE AMACI, PROJE İÇİN SEÇİLEN YERİN KONUMU"
+      ],
+      [
+        21,
+        "I.1.Projenin konusu, yatırımın tanımı, işletme süresi, hizmet amaçları, projenin sosyal ve ekonomik yönden gerekliliği (fayda maliyet analizi), zamanlama tablosu,"
+      ],
+      [
+        21,
+        "Proje Konusu ve Yatırımın Tanımı"
+      ],
+      [
+        22,
+        "Tesisin Geçmiş Dönemi"
+      ],
+      [
+        22,
+        "Kuruluş ve Karantina Faaliyeti"
+      ],
+      [
+        22,
+        "Denetimler ve İdari Yaptırımlar (2011-2012)"
+      ],
+      [
+        23,
+        "Yapılar, Yıkım Kararları ve Yapı Kayıt Belgeleri"
+      ],
+      [
+        23,
+        "ÇED Süreçleri (2012-2024)"
+      ],
+      [
+        24,
+        "Mevcut Durum"
+      ],
+      [
+        24,
+        "İşletme Süresi"
+      ],
+      [
+        25,
+        "Hizmet Amaçları"
+      ],
+      [
+        25,
+        "Projenin Sosyal ve Ekonomik Yönden Gerekliliği (Fayda Maliyet Analizi)"
+      ],
+      [
+        26,
+        "Zamanlama Tablosu"
+      ],
+      [
+        26,
+        "I.2. Projenin inşaat ve işletme aşamasında kullanılacak arazi miktarı ve arazinin tanımlanması,"
+      ],
+      [
+        26,
+        "İnşaat Aşamasında Kullanılacak Arazi Miktarı"
+      ],
+      [
+        27,
+        "İşletme Aşamasında Kullanılacak Arazi Miktarı"
+      ],
+      [
+        27,
+        "Arazinin Tanımlanması"
+      ],
+      [
+        27,
+        "I.3. Proje için seçilen yer ve kullanılan teknoloji alternatiflerinin değerlendirilmesi,"
+      ]
+    ],
+    "geo": {
+      "precision": "exact_pdf",
+      "lat": 41.10229,
+      "lon": 27.86871,
+      "point_count": 80,
+      "points": [
+        [
+          41.1017,
+          27.8686
+        ],
+        [
+          41.10221,
+          27.86441
+        ],
+        [
+          41.10236,
+          27.86473
+        ],
+        [
+          41.10289,
+          27.86396
+        ],
+        [
+          41.10303,
+          27.86428
+        ],
+        [
+          41.10278,
+          27.86574
+        ],
+        [
+          41.1032,
+          27.86673
+        ],
+        [
+          41.10365,
+          27.86775
+        ],
+        [
+          41.10377,
+          27.86754
+        ],
+        [
+          41.10403,
+          27.86814
+        ],
+        [
+          41.10406,
+          27.86825
+        ],
+        [
+          41.10422,
+          27.86861
+        ],
+        [
+          41.10419,
+          27.86865
+        ],
+        [
+          41.10367,
+          27.86939
+        ],
+        [
+          41.10304,
+          27.87035
+        ],
+        [
+          41.10315,
+          27.87058
+        ],
+        [
+          41.10318,
+          27.87066
+        ],
+        [
+          41.10345,
+          27.8712
+        ],
+        [
+          41.10348,
+          27.87125
+        ],
+        [
+          41.1032,
+          27.87127
+        ],
+        [
+          41.10278,
+          27.8713
+        ],
+        [
+          41.10265,
+          27.87133
+        ],
+        [
+          41.10237,
+          27.87137
+        ],
+        [
+          41.10225,
+          27.8714
+        ],
+        [
+          41.1022,
+          27.87132
+        ],
+        [
+          41.10202,
+          27.87114
+        ],
+        [
+          41.1018,
+          27.8709
+        ],
+        [
+          41.10151,
+          27.87057
+        ],
+        [
+          41.10121,
+          27.87025
+        ],
+        [
+          41.10076,
+          27.86984
+        ],
+        [
+          41.1005,
+          27.8696
+        ],
+        [
+          41.10023,
+          27.86936
+        ],
+        [
+          41.09992,
+          27.86909
+        ],
+        [
+          41.09959,
+          27.86883
+        ],
+        [
+          41.09929,
+          27.86857
+        ],
+        [
+          41.0991,
+          27.86839
+        ],
+        [
+          41.09928,
+          27.86824
+        ],
+        [
+          41.09944,
+          27.86806
+        ],
+        [
+          41.09953,
+          27.86797
+        ],
+        [
+          41.0996,
+          27.86789
+        ]
+      ],
+      "datum": "UTM-Z35/ED50",
+      "pages": [
+        36,
+        42,
+        227
+      ]
+    },
+    "signals": {
+      "coordinates_and_footprint": {
+        "label": "Coordinates, Parcel & Footprint",
+        "page_count": 141,
+        "pages": [
+          1,
+          2,
+          4,
+          19,
+          21,
+          27,
+          28,
+          29,
+          30,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39,
+          40,
+          41,
+          42,
+          44,
+          45,
+          47,
+          49,
+          74,
+          76
+        ],
+        "samples": [
+          {
+            "page": 1,
+            "match": "ADA 1392 PARSEL",
+            "snippet": "…EKİM- 2026 TEKİRDAĞ İLİ, MARMARAEREĞLİSİ İLÇESİ, YAKUPLU MAHALLESİ SINIRLARI İÇERİSİNDE, 144 ADA 100 PARSEL (ESKİ 0 ADA 1392 PARSEL) ÇED BAŞVURU DOSYASI ÇED RAPORU NİHAİ ÇED RAPORU SON ŞEKLİ VERİLEN ÇED RAPORU"
+          },
+          {
+            "page": 2,
+            "match": "Ada 100 Parsel (Eski 0 Ada 1392 Parsel",
+            "snippet": "…AÇIK ADRESİ (İLİ, İLÇESİ, MEVKİİ) Tekirdağ İli, Marmaraereğlisi İlçesi, Yakuplu Mahallesi sınırları içerisinde, 144 Ada 100 Parsel (Eski 0 Ada 1392 Parsel) PROJENİN ÇED YÖNETMELİĞİ KAPSAMINDAKİ YERİ (SEKTÖRÜ, ALT SEKTÖRÜ) 29.07.2022 Tarih ve 31907 Sayılı Resmî Gazet…"
+          },
+          {
+            "page": 4,
+            "match": "Koordinat",
+            "snippet": "…şım, Yollar ve Zemin Kaplamaları ................................................... 24 I.7. Arazinin Mülkiyet Durumu, Koordinatları, Yer Bulduru Haritası, Faaliyet Alanı ve Çevresinin Fotoğrafları .................................................…"
+          },
+          {
+            "page": 19,
+            "match": "Ada 100 Parsel",
+            "snippet": "…GIDA SAN. TİC. LTD. ŞTİ. tarafından Tekirdağ İli, Marmaraereğlisi İlçesi, Yakuplu Mahallesi sınırları içerisinde, 144 Ada 100 Parsel (Eski 0 Ada 1392 Parsel) üzerinde “Büyükbaş ve Küçükbaş Hayvan Besi Tesisi Projesi” planlanmaktadır. Proje alanındaki…"
+          },
+          {
+            "page": 19,
+            "match": "Ada 1392 Parsel",
+            "snippet": "…İ. tarafından Tekirdağ İli, Marmaraereğlisi İlçesi, Yakuplu Mahallesi sınırları içerisinde, 144 Ada 100 Parsel (Eski 0 Ada 1392 Parsel) üzerinde “Büyükbaş ve Küçükbaş Hayvan Besi Tesisi Projesi” planlanmaktadır. Proje alanındaki tesis, 2011 yılında Ango…"
+          },
+          {
+            "page": 19,
+            "match": "Ada 100 Parsel (Eski 0 Ada 1392 Parsel",
+            "snippet": "…mü EK-11’de sunulmuştur. Hâlihazırda Tekirdağ İli, Marmaraereğlisi İlçesi, Yakuplu Mahallesi sınırları içerisinde 144 Ada 100 Parsel (Eski 0 Ada 1392 Parsel) üzerinde kurulu olan tesis parseli Angos Hayvancılık Gıda San. Tic. Ltd. Şti.’ye ait olup, bu Rapor’a konu proje için…"
+          },
+          {
+            "page": 19,
+            "match": "372,90 m2",
+            "snippet": "…Hayvancılık Gıda San. Tic. Ltd. Şti.’ne kiralanmıştır. Tesiste şu anda hayvan bulunmamaktadır. Söz konusu parsel 163.372,90 m2 büyüklüğünde olup sahanın 114.850 m2’lik kısmı 20 cm kalınlığında, tek kat hasır çelik ilaveli c25 sınıfı beton malzem…"
+          },
+          {
+            "page": 19,
+            "match": "114.850 m2",
+            "snippet": "…i.’ne kiralanmıştır. Tesiste şu anda hayvan bulunmamaktadır. Söz konusu parsel 163.372,90 m2 büyüklüğünde olup sahanın 114.850 m2’lik kısmı 20 cm kalınlığında, tek kat hasır çelik ilaveli c25 sınıfı beton malzeme ile kaplanmıştır. Kapalı alanlara…"
+          }
+        ]
+      },
+      "water_and_discharge": {
+        "label": "Water Use, Hydrogeology & Discharge",
+        "page_count": 120,
+        "pages": [
+          9,
+          22,
+          23,
+          30,
+          31,
+          33,
+          35,
+          38,
+          41,
+          70,
+          77,
+          78,
+          79,
+          80,
+          81,
+          84,
+          103,
+          104,
+          105,
+          106,
+          107,
+          108,
+          112,
+          113,
+          114
+        ],
+        "samples": [
+          {
+            "page": 9,
+            "match": "deşarj",
+            "snippet": "…......................................... 117 III.B.5. Oluşacak atık suların cins ve miktarları bertaraf yöntemleri ve deşarj edileceği ortamlar ve uzaklığı, atık suların deşarj değerleri, arıtma tesisi akım şeması, iş termin planı, kapasitesi…"
+          },
+          {
+            "page": 9,
+            "match": "atıksu",
+            "snippet": "…edileceği ortamlar ve uzaklığı, atık suların deşarj değerleri, arıtma tesisi akım şeması, iş termin planı, kapasitesi, atıksu arıtma tesisin devreye alınması ile birlikte oluşacak arıtma tesisi arıtma çamurlarının miktarı ve bertarafı ile ilgil…"
+          },
+          {
+            "page": 22,
+            "match": "deşarj",
+            "snippet": "…ğü personelince denetlenmiş; 06.08.2012 tarihli denetimde tesis duvarlarındaki deliklerin kapatıldığı ve alıcı ortama deşarj bulunmadığı, 24.12.2012 tarihli denetimde ise yağmur suyu tahliye sistemi"
+          },
+          {
+            "page": 23,
+            "match": "Yeraltısuyu",
+            "snippet": "…ştir. DSİ 11. Bölge Müdürlüğü’nün 20.11.2012 tarihli yazısı üzerine kuyu için 21.11.2012 tarihli ve Te.09- 47 numaralı Yeraltısuyu Arama Belgesi düzenlenmiştir. Parselde bugün DSİ’nin 29.07.2026 tarihli ve Te.09-85 sayılı Yeraltısuyu Kullanma Belges…"
+          },
+          {
+            "page": 30,
+            "match": "dere yatağı",
+            "snippet": "…aşık 30 m olarak verilmiştir; Bölüm I.5). Dere yatağına herhangi bir müdahale yapılmayacak, akış rejimi bozulmayacak, dere yatağı içerisine faaliyetle ilgili atık veya malzeme dökülmeyecektir. Evsel nitelikli atık sular sızdırmaz fosseptikte toplan…"
+          },
+          {
+            "page": 31,
+            "match": "4,34 m³/gün",
+            "snippet": "…oplam hacim, 5.000 büyükbaş senaryosundaki 90 günlük gübre hacmini (12.150 m³) karşılamaktadır. Evsel atık su 4,34 m³/gün evsel atık su; sızdırmaz fosseptik ve vidanjörle uzaklaştırma (Su Kirliliği Kontrolü Yönetmeliği md. 32); alıcı…"
+          },
+          {
+            "page": 31,
+            "match": "deşarj",
+            "snippet": "…tık su; sızdırmaz fosseptik ve vidanjörle uzaklaştırma (Su Kirliliği Kontrolü Yönetmeliği md. 32); alıcı ortama deşarj yok Paket biyolojik arıtma tesisi ve alıcı ortama deşarj Debi düşüktür (yaklaşık 20 personel) ve yakında dere bulu…"
+          },
+          {
+            "page": 33,
+            "match": "Yeraltı Suyu",
+            "snippet": "…rdağ İl Çevre Düzeni Planı “Tarım Alanları” hakim fonksiyonu; plan notlarının 3.1.2 “Tarım Alanları” ve 3.2.2 “Aşırı Yeraltı Suyu Çekim Alanları” hükümleri geçerlidir Kurum yazısı 1/5.000 Nazım İmar Planı Onaylı plan yoktur (Tekirdağ Büyükşehir…"
+          }
+        ]
+      },
+      "protected_land_and_olive": {
+        "label": "Protected Zones, Forests & Olive Groves",
+        "page_count": 24,
+        "pages": [
+          7,
+          38,
+          40,
+          84,
+          86,
+          91,
+          92,
+          101,
+          102,
+          103,
+          104,
+          106,
+          108,
+          109,
+          110,
+          116,
+          125,
+          185,
+          206,
+          223,
+          652,
+          685,
+          695,
+          722
+        ],
+        "samples": [
+          {
+            "page": 7,
+            "match": "Özel Çevre Koruma",
+            "snippet": "…ları, Kültür Varlıkları, Tabiat Varlıkları, Sit ve Koruma Alanları, Biyogenetik Rezerv Alanları, Biyosfer Rezervleri, Özel Çevre Koruma Bölgeleri, Özel Koruma Alanları, içme ve kullanma su kaynakları ile ilgili koruma alanları, Turizm Alan ve Merkezleri…"
+          },
+          {
+            "page": 38,
+            "match": "sulak alan",
+            "snippet": "…km). Faaliyet alanı merkezli 1 km yarıçap içinde içme, kullanma veya sulama amaçlı tescilli baraj gölü, koruma statülü sulak alan veya daimi rejimli nehir bulunmamaktadır. Bölüm II.5; EK-2.a Deprem kuşakları Proje alanı, Türkiye Deprem Tehlike H…"
+          },
+          {
+            "page": 40,
+            "match": "Milli Park",
+            "snippet": "…vresindeki durum Kaynak / Ek Koruma alanları Doğa Koruma ve Milli Parklar Genel Müdürlüğü görüşüne göre proje alanı Milli Park, Tabiat Parkı, Tabiat Anıtı, Tabiatı Koruma Alanı, Yaban Hayatı Koruma ve Geliştirme Sahası ve Sulak Alanlar Yönetmel…"
+          },
+          {
+            "page": 40,
+            "match": "Tabiat Parkı",
+            "snippet": "…urum Kaynak / Ek Koruma alanları Doğa Koruma ve Milli Parklar Genel Müdürlüğü görüşüne göre proje alanı Milli Park, Tabiat Parkı, Tabiat Anıtı, Tabiatı Koruma Alanı, Yaban Hayatı Koruma ve Geliştirme Sahası ve Sulak Alanlar Yönetmeliği kapsamında…"
+          },
+          {
+            "page": 40,
+            "match": "Sit alanı",
+            "snippet": "…en Türkmenli Göleti Havzası Uzun Mesafeli Koruma Alanı içindedir (göletin tesise uzaklığı yaklaşık 5 km; Bölüm II.10). Sit alanı ve orman alanı durumu Bölüm II.10 ve II.11’de verilmiştir; mera parselleri yukarıda belirtilmiştir. Bölüm II.10, II.1…"
+          },
+          {
+            "page": 40,
+            "match": "orman alanı",
+            "snippet": "…öleti Havzası Uzun Mesafeli Koruma Alanı içindedir (göletin tesise uzaklığı yaklaşık 5 km; Bölüm II.10). Sit alanı ve orman alanı durumu Bölüm II.10 ve II.11’de verilmiştir; mera parselleri yukarıda belirtilmiştir. Bölüm II.10, II.11; EK-2.e Diğ…"
+          },
+          {
+            "page": 84,
+            "match": "kıyı kenar",
+            "snippet": "…KÜÇÜKBAŞ HAYVAN BESİ TESİSİ ÇED RAPORU Sayfa | 66 taşıyan sular, bataklık, sazlık ve turbiyeler ile bu alanların kıyı kenar çizgisinden itibaren kara tarafına doğru ekolojik açıdan sulak alan kabul edilen yerlerdir (ÇED Yönetmeliği Ek-5, Sula…"
+          },
+          {
+            "page": 84,
+            "match": "sulak alan",
+            "snippet": "…r, bataklık, sazlık ve turbiyeler ile bu alanların kıyı kenar çizgisinden itibaren kara tarafına doğru ekolojik açıdan sulak alan kabul edilen yerlerdir (ÇED Yönetmeliği Ek-5, Sulak Alanların Korunması Yönetmeliği). Proje alanında ve yakın çevresin…"
+          }
+        ]
+      },
+      "ecology_and_baseline": {
+        "label": "Flora, Fauna & Baseline Methodology",
+        "page_count": 54,
+        "pages": [
+          8,
+          27,
+          37,
+          38,
+          44,
+          45,
+          46,
+          48,
+          49,
+          50,
+          51,
+          52,
+          53,
+          54,
+          55,
+          56,
+          57,
+          58,
+          59,
+          60,
+          61,
+          62,
+          63,
+          64,
+          65
+        ],
+        "samples": [
+          {
+            "page": 8,
+            "match": "Endemik",
+            "snippet": "….............. 106 III.A.9. Proje alanının hazırlanması ve inşaat aşamalarında zarar görebilecek flora- fauna türleri (Endemik, nesli tehlikede türler vb.) proje için seçilen yer ve etki alanında bulunan tür popülasyonlarının etkilenmesi .......…"
+          },
+          {
+            "page": 27,
+            "match": "mevsimsel",
+            "snippet": "…olojiye sahip olup, bölge tarımsal nitelikli açık arazilerden oluşmaktadır. Parselin yaklaşık 45 metre doğusundan kuru/mevsimsel akış gösteren Kapılar Deresi geçmekte, sahanın güneyinde yaklaşık 800 metre mesafede münferit bir duyarlı yapı ve yak…"
+          },
+          {
+            "page": 37,
+            "match": "mevsimsel",
+            "snippet": "…1 km yarıçaplı alan içinde, proje alanı dışında başlıca tarım arazileri, tapu kaydında “Mera” niteliğindeki parseller, mevsimsel su unsurları, tarla yolları ve proje alanının yaklaşık 530 m kuzeydoğusunda yer alan bir hayvan çiftliği bulunmaktadı…"
+          },
+          {
+            "page": 38,
+            "match": "mevsimsel",
+            "snippet": "…ısında topoğrafik haritada “Çoban G.” olarak geçen mevsimlik Çoban Göleti, 1 km dairenin kuzey ve kuzeydoğu kesiminde mevsimsel yağışlarla su toplayan iki küçük gölet, güney ve güneybatı kesiminde kuru dere kolları, doğu ve güneydoğuda Kapılar D…"
+          },
+          {
+            "page": 44,
+            "match": "mevsimsel",
+            "snippet": "…fı tel çit ve çevre emniyet hatlarıyla sınırlandırılmıştır. Tesisin yakın çevresi incelendiğinde; doğu cephesinde kuru/mevsimsel akışlı Kapılar Deresi yatağı, batı cephesinde mevsimsel nitelikli Çoban Göleti, güneybatı ve kuzey kesimlerinde ise k…"
+          },
+          {
+            "page": 45,
+            "match": "flora ve fauna",
+            "snippet": "…ve ekosistemlerdeki türler, Bu bölümde proje alanı ve etki alanı içindeki ekosistemler ile bu ekosistemlerde yaşayan flora ve fauna türleri; sınıflandırmaları, endemizm durumları, tehlike kategorileri ve ulusal ve uluslararası koruma statüleri ile bi…"
+          },
+          {
+            "page": 45,
+            "match": "literatür taraması",
+            "snippet": "…anı ve etki alanındaki flora ve fauna çalışmaları uzman biyolog Mehmet Akif BÖLÜKBAŞI tarafından yapılmıştır. Çalışma, literatür taraması ve arazi gözlemlerinden oluşmaktadır. Gruplara göre uygulanan yöntemler aşağıda, çalışmayı yapan uzman ve çalışma tar…"
+          },
+          {
+            "page": 46,
+            "match": "Flora ve Fauna",
+            "snippet": "…ET HAYVANCILIK GIDA SAN. TİC. LTD. ŞTİ. BÜYÜKBAŞ VE KÜÇÜKBAŞ HAYVAN BESİ TESİSİ ÇED RAPORU Sayfa | 28 Tablo 10. Flora ve Fauna Çalışmalarının Yöntemi, Yapan Uzman ve Tarihleri Grup Uygulanan yöntem Çalışmayı yapan Arazi çalışması tarihi Flor…"
+          }
+        ]
+      },
+      "pollutants_and_hazards": {
+        "label": "Emissions, Geochemistry & Waste",
+        "page_count": 105,
+        "pages": [
+          4,
+          5,
+          13,
+          16,
+          18,
+          28,
+          30,
+          32,
+          36,
+          38,
+          40,
+          71,
+          74,
+          75,
+          76,
+          77,
+          99,
+          106,
+          108,
+          110,
+          111,
+          112,
+          113,
+          114,
+          116
+        ],
+        "samples": [
+          {
+            "page": 4,
+            "match": "deprem",
+            "snippet": "…lik halihazır harita üzerinde faaliyet alanı merkezli 1 km lik yarıçap üzerinde yer altı sularını, yerüstü sularını ve deprem kuşaklarını gösterir analiz, jeolojik yapı, köy yerleşik ve sanayi alanları, ulaşım ağı, enerji nakil hatları, güneş e…"
+          },
+          {
+            "page": 5,
+            "match": "deprem",
+            "snippet": "….3. Depremsellik (İnceleme alanı ve çevresinin diri fay haritasında yeri belirlenerek inceleme alanının kaçıncı derece deprem bölgesinde yer aldığı ve yapılacak yapıların ilgili Deprem Yönetmeliğine göre incelenmesi) ...........................…"
+          },
+          {
+            "page": 13,
+            "match": "Deprem",
+            "snippet": "…...... 57 Şekil 6. Proje alanı ve çevresinin MTA Diri Fay Haritası üzerindeki konumu ............ 58 Şekil 7. Türkiye Deprem Tehlike Haritaları İnteraktif Web Uygulamasından Alınan Yer İvmeleri Gösterimi (Kaynak: AFAD) ........................…"
+          },
+          {
+            "page": 16,
+            "match": "Gürültü",
+            "snippet": "…dilen Ses Güç Düzeyleri ........................... 104 Tablo 61. Tesis İçi Kaynaklar ve Nakliye Hattı İçin Hesaplanan Gürültü Düzeyleri, dB(A) (Gündüz) ............................................................................................…"
+          },
+          {
+            "page": 18,
+            "match": "Gürültü",
+            "snippet": "…8 Tablo 117. Projenin Önemli Çevresel Etkilerinin Sıralanması ve Önlemler .............. 190 Tablo 118. Hava, Koku ve Gürültü Parametrelerinin Mevzuattaki Sınır Değerlerle Karşılaştırılması ......................................................…"
+          },
+          {
+            "page": 28,
+            "match": "gürültü",
+            "snippet": "…00 m³ hacimli gübre toplama ve depolama yapıları mevcuttur (Tablo 1). Bu nedenle inşaat aşamasına bağlı hafriyat, toz, gürültü ve atık etkileri oluşmayacak, ilave arazi kullanımı gerekmeyecektir. b) Mevcut izin ve belgeler: Tesis için Mülga Çev…"
+          },
+          {
+            "page": 28,
+            "match": "kümülatif",
+            "snippet": "…ydeki (KÇ-2) hayvan çiftlikleri tesisle aynı faaliyet türünde koku kaynağı olduğundan alıcı olarak değil kaynak olarak kümülatif değerlendirmeye alınmıştır (Bölüm I.5, IV.2)."
+          },
+          {
+            "page": 30,
+            "match": "gürültü",
+            "snippet": "…mşu 0/1367 parseli AFAD ve Büyükşehir Belediyesi tarafından Geçici Barınma Alanı olarak belirlenmiştir. Koku, sinek ve gürültü etkileri Bölüm III’te değerlendirilmektedir. • Komşu Hayvan Çiftliği: Proje alanının yaklaşık 530 m kuzeydoğusunda ba…"
+          }
+        ]
+      },
+      "cost_and_capacity": {
+        "label": "Project Cost, Power & Capacity",
+        "page_count": 95,
+        "pages": [
+          2,
+          8,
+          9,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          28,
+          31,
+          32,
+          80,
+          81,
+          95,
+          96,
+          97,
+          98,
+          115,
+          119,
+          120,
+          121,
+          124,
+          125,
+          127
+        ],
+        "samples": [
+          {
+            "page": 2,
+            "match": "PROJE BEDELİ",
+            "snippet": "…M: 0 533 318 23 32 E – POSTA ADRESİ mfakrap@gmail.com PROJENİN ADI Büyükbaş ve Küçükbaş Hayvan Besi Tesisi Projesi PROJE BEDELİ 182.875.919,00 TL PROJE İÇİN SEÇİLEN YERİN AÇIK ADRESİ (İLİ, İLÇESİ, MEVKİİ) Tekirdağ İli, Marmaraereğlisi İlçesi…"
+          },
+          {
+            "page": 8,
+            "match": "kapasite",
+            "snippet": "…II.A.8. Proje kapsamındaki ulaştırma altyapısı planı (ulaştırma güzergahı, şekli, güzergah yollarının mevcut durumu ve kapasitesi, hangi amaçlar için kullanıldığı, mevcut trafik yoğunluğu, yerleşim yerlerine göre konumu) .........................…"
+          },
+          {
+            "page": 9,
+            "match": "kapasite",
+            "snippet": "….......................................... 109 III.B.1. Proje kapsamında yer alan her bir ünitenin özelliği, adetleri, kapasiteleri, nerelerde, nasıl ve ne kadar alanda yapıldığı, üretim ve işletme yöntemleri ve teknolojileri, (ayrı olarak alt b…"
+          },
+          {
+            "page": 19,
+            "match": "kapasite",
+            "snippet": "…aaliyetleri yılda 12 ay, ayda 30 gün ve günde 24 saat olacak şekilde yürütülecektir. Geçmiş dönemde tesis için farklı kapasite değerleri beyan edilmiştir (Bölüm I.1 ve EK- 11). Angos Hayvancılık Gıda San. Tic. Ltd. Şti. tarafından 25.04.2014 tari…"
+          },
+          {
+            "page": 20,
+            "match": "kapasite",
+            "snippet": "…07.2024 tarihinde durdurulmuştur. Bu Rapor’a konu proje, 13.000 adet büyükbaş hayvan veya 65.000 adet küçükbaş hayvan kapasiteli olarak yeniden planlanarak e-ÇED Sistemi üzerinden sunulmuştur. Başvurunun sunulmasından sonra 12.01.2026 tarihinde…"
+          },
+          {
+            "page": 21,
+            "match": "kapasite",
+            "snippet": "…Belgesi EK-4.e’de verilmektedir. Bu Rapor’a konu proje, 13.000 adet büyükbaş hayvan veya 65.000 adet küçükbaş hayvan kapasiteli olarak yeniden planlanarak e-ÇED Sistemi üzerinden sunulmuştur. Başvurunun sunulmasından sonra 12.01.2026 tarihinde…"
+          },
+          {
+            "page": 22,
+            "match": "kapasite",
+            "snippet": "…e dağıtılmıştır. Mülga Çevre ve Şehircilik Bakanlığı’nın 23.08.2011 tarihli ve 1820 sayılı yazısında, 30.000 büyükbaş kapasiteli karantina çiftliği projesi ÇED Yönetmeliği kapsamı dışında değerlendirilmiş; projenin plan hükümlerine ve Çevre Kanu…"
+          },
+          {
+            "page": 23,
+            "match": "kapasite",
+            "snippet": "…ele alınmıştır. ÇED Süreçleri (2012-2024) 10.02.2012 tarihli İl Müdürlüğü yazısıyla, 4.900 büyükbaş ve 9.500 küçükbaş kapasiteli tesis için sunulan Proje Tanıtım Dosyası’nın İnceleme Değerlendirme Toplantısı 13.02.2012 tarihine planlanmış; bu s…"
+          }
+        ]
+      }
+    },
+    "audit_checks": {
+      "mentions_field_survey": true,
+      "mentions_literature_only_cue": true,
+      "mentions_seasonal_sampling": true,
+      "mentions_cumulative_impact": true,
+      "mentions_olive_law_3573": true,
+      "mentions_groundwater_or_aquifer": true,
+      "mentions_iucn_or_endemic": true
+    }
+  },
+  "llm_synthesis": {
+    "model": "gemini-4-hydrogen",
+    "generated_at": "2026-11-20T11:06:38",
+    "pages_sent": [
+      1,
+      2,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      19,
+      21,
+      22,
+      23,
+      27,
+      30,
+      37,
+      38
+    ],
+    "usage": {
+      "prompt_tokens": 23695,
+      "output_tokens": 4260,
+      "thoughts_tokens": 6823,
+      "total_tokens": 34778
+    },
+    "result": {
+      "executive_summary_tr": "Niğmet Hayvancılık Gıda San. Tic. Ltd. Şti., Tekirdağ ili Marmaraereğlisi ilçesi Yakuplu Mahallesi 144 Ada 100 Parselde (163.372,90 m²), daha önce 2011 yılında karantina tesisi olarak inşa edilmiş mevcut 38.085,79 m² yapı stoku üzerinde büyükbaş ve küçükbaş hayvan besi tesisi işletmeyi planlamaktadır [s. 1, 2, 19, 22]. Başlangıçta 13.000 büyükbaş (veya 65.000 küçükbaş) olarak sunulan kapasitenin, 12.01.2026 tarihli Halkın Katılımı Toplantısı sonrasında 5.000 büyükbaş veya 25.000 küçükbaş eşdeğerine düşürüldüğü belirtilmiştir [s. 21]. Proje sahası içme suyu temin edilen Türkmenli Göleti Havzası Uzun Mesafeli Koruma Alanı, Yeraltı Suyu Besleme Alanı ve kısmen Aşırı Yeraltı Suyu Çekim Alanı içinde kalmakta olup; doğusunda 30-45 m mesafede göleti besleyen Kapılar Deresi, bitişiğinde ise AFAD Geçici Barınma Alanı olarak belirlenen mera parseli yer almaktadır [s. 30, 38]. Koku etki alanı modellemesinin Nihai ÇED Raporu'na ertelenmiş olması, geçmiş imar/çevre yaptırımları ve kurum görüşlerindeki mesafe çelişkileri başlıca teknik tartışma alanlarıdır [s. 22, 23, 37, 38].",
+      "executive_summary_en": "Niğmet Hayvancılık Gıda San. Tic. Ltd. Şti. proposes to operate a cattle and small-ruminant fattening facility on a 163,372.90 m² parcel (144 Ada 100 Parsel) in Yakuplu Neighborhood, Marmaraereğlisi, Tekirdağ, utilizing 38,085.79 m² of existing buildings originally constructed as a quarantine facility in 2011 [s. 1, 2, 19, 22]. Following public opposition at the 12 January 2026 participation meeting, the planned capacity was reportedly reduced from 13,000 cattle (or 65,000 sheep/goats) to 5,000 cattle or 25,000 small ruminants [s. 21]. The site lies within the Long-Distance Protection Zone of the Türkmenli Reservoir drinking water basin, a Groundwater Recharge Area, and partially within an Excessive Groundwater Abstraction Area, just 30-45 m from Kapılar Creek and adjacent to a pasture parcel designated as an AFAD Temporary Shelter Area [s. 30, 38]. Key technical stakes include the deferral of odor dispersion modeling to the Final EIA Report, past environmental and zoning violations at the existing facility, and conflicting distance figures among agency opinions [s. 22, 23, 37, 38].",
+      "key_facts": [
+        {
+          "label": "Proje Bedeli",
+          "value": "182.875.919,00 TL",
+          "page": 2
+        },
+        {
+          "label": "Planlanan Kapasite (Revize)",
+          "value": "5.000 adet büyükbaş veya 25.000 adet küçükbaş (önceki başvuru: 13.000 büyükbaş / 65.000 küçükbaş)",
+          "page": 21
+        },
+        {
+          "label": "Parsel Alanı ve Beton Zemin",
+          "value": "163.372,90 m² toplam parsel; 114.850,00 m² saha 20 cm C25 beton kaplı",
+          "page": 27
+        },
+        {
+          "label": "Mevcut Yapı Taban Alanı",
+          "value": "38.085,79 m² (6 ahır 29.643,84 m², 4 besi padoku 3.038,40 m², sıvı gübre çukuru 1.650,00 m² dahil)",
+          "page": 22
+        },
+        {
+          "label": "En Yakın Yerleşim Yeri",
+          "value": "Şahpaz Mahallesi (yerleşik alan sınırına yaklaşık 900 m, merkeze yaklaşık 1.800 m)",
+          "page": 37
+        },
+        {
+          "label": "En Yakın Duyarlı Yapı",
+          "value": "Yaklaşık 800 m güneyde çiftlik (KÇ-2) yanındaki konut",
+          "page": 37
+        },
+        {
+          "label": "Komşu Hayvan Çiftliği",
+          "value": "Yaklaşık 530 m kuzeydoğuda başka bir hayvan çiftliği",
+          "page": 30
+        },
+        {
+          "label": "Kapılar Deresi Mesafesi",
+          "value": "Başvuru dosyasında yaklaşık 45 m, TESKİ görüşünde yaklaşık 30 m, İlçe Sağlık Müdürlüğü görüşünde ortalama 650 m",
+          "page": 38
+        },
+        {
+          "label": "Türkmenli Göleti Mesafesi",
+          "value": "Yaklaşık 5 km (proje alanı Uzun Mesafeli Koruma Alanı içinde)",
+          "page": 30
+        },
+        {
+          "label": "Deprem Tehlike Değeri (PGA)",
+          "value": "475 yıl tekrarlanma periyodunda yaklaşık 0,334 g (eski haritada 1. derece deprem bölgesi)",
+          "page": 38
+        }
+      ],
+      "baseline_assessment": {
+        "field_survey_status": "not_found",
+        "seasonal_sampling_status": "not_found",
+        "cumulative_impact_status": "omitted_or_not_found",
+        "olive_and_protected_status": "Sunulan sayfalarda 3573 sayılı Kanun kapsamında zeytinlik alanlara ilişkin bir kayıt bulunmamaktadır [s. 1-38]. Raporun 27. sayfasında sahanın koruma statülü alanlardan uzak olduğu, 38. sayfasında ise 1 km yarıçap içinde tescilli içme-sulama barajı, koruma statülü sulak alan veya daimi rejimli nehir bulunmadığı belirtilmektedir [s. 27, 38]. Bununla birlikte proje alanı Türkmenli Göleti Havzası Uzun Mesafeli Koruma Alanı (yaklaşık 5 km), Yeraltı Suyu Besleme Alanı ve kısmen Aşırı Yeraltı Suyu Çekim Alanı içinde kalmaktadır [s. 30, 38]. Çevrede tapuda mera nitelikli parseller (bitişik 0/1367 parseli AFAD Geçici Barınma Alanı) yer almakta olup, Marmara Denizi ve Adalar ÖÇK Bölgesi, SİT alanları ve orman varlığını inceleyen Bölüm II.10 ve II.11 metinleri sunulan alıntılarda yer almamaktadır [s. 7, 37].",
+        "explanation": "İncelenen 23 sayfalık alıntı yalnızca kapak, içindekiler, teknik olmayan özet ve Bölüm I'in bir kısmını kapsamaktadır [s. 1-38]. İçindekiler dizininde Bölüm II.1 (flora-fauna yöntem, uzman ve tarihleri ile literatür/gözlem tür listeleri), Bölüm IV (kümülatif etki) ve Bölüm V.1 (çevre izleme planı) başlıkları görülmekle birlikte, bu bölümlerin metin ve verileri sunulan sayfalarda yer almadığından arazi etüdü veya mevsimsel örnekleme yapılıp yapılmadığı doğrulanamamıştır [s. 4, 5, 10, 14]. Ayrıca koku etki alanı modellemesinin henüz sunulmadığı ve Nihai ÇED Raporu'na ertelendiği açıkça ifade edilmektedir [s. 37]."
+      },
+      "red_flags": [
+        {
+          "severity": "high",
+          "title": "İçme Suyu Havzası ve Aşırı Yeraltı Suyu Çekim Alanında Konumlanma",
+          "detail": "Proje alanı içme suyu temin edilen Türkmenli Göleti Havzası Uzun Mesafeli Koruma Alanı içinde yer almakta, doğusundan geçen Kapılar Deresi (30-45 m) göleti besleyen ana dereye katılmaktadır [s. 30, 38]. Saha aynı zamanda tamamen Yeraltı Suyu Besleme Alanı ve kısmen Aşırı Yeraltı Suyu Çekim Alanı sınırlarında olup, TESKİ yüksek günlük su ihtiyacı nedeniyle şebekeden su verilemeyeceğini bildirmiştir [s. 38].",
+          "pages": [
+            30,
+            38
+          ]
+        },
+        {
+          "severity": "high",
+          "title": "Koku Modellemesinin Nihai ÇED Raporu'na Ertelenmesi",
+          "detail": "Hâkim rüzgâr yönünün kuzeydoğu olması nedeniyle tesisin güneybatı/güneyindeki 800 m mesafeli konut (KÇ-2), bitişik 0/1367 parseldeki AFAD Geçici Barınma Alanı ve 900 m mesafedeki Şahpaz Mahallesi yerleşim sınırı etki alanında kalmaktadır [s. 30, 37]. Buna karşın koku etki alanı modellemesi İDK aşamasındaki mevcut raporda sunulmamış, Nihai ÇED Raporu'na bırakılmıştır [s. 37].",
+          "pages": [
+            30,
+            37
+          ]
+        },
+        {
+          "severity": "high",
+          "title": "Kapasite Beyanı Çelişkileri ve Geçmiş Çevre/İmar Yaptırımları",
+          "detail": "Aynı dosyada tesis kapasitesi teknik olmayan özette maksimum 5.500 büyükbaş/25.000 küçükbaş, Bölüm I'de ise önce 13.000 büyükbaş/65.000 küçükbaş, ardından 12.01.2026 toplantısı sonrası 5.000 büyükbaş/25.000 küçükbaş olarak yer almaktadır [s. 19, 21]. Tesis geçmişte çevre izinsiz faaliyet, atıkların mera yakınına yığılması, izinsiz sondaj kuyuları ve mera tecavüzü nedeniyle idari para cezalarına ve faaliyet durdurmaya konu olmuş; tarım dışı imar planları reddedilmiş, Danıştay tarafından onanan yıkım kararları sonrası Yapı Kayıt Belgeleri alınmıştır [s. 19, 22, 23].",
+          "pages": [
+            19,
+            21,
+            22,
+            23
+          ]
+        },
+        {
+          "severity": "medium",
+          "title": "Kurum Görüşlerinde Çelişkili Yüzey Suyu Mesafeleri",
+          "detail": "Kapılar Deresi'ne olan mesafe başvuru dosyasında yaklaşık 45 m, TESKİ görüşünde yaklaşık 30 m ve İlçe Sağlık Müdürlüğü görüşünde ortalama 650 m olarak belirtilmiştir [s. 30, 38]. Yakuplu Hayvan İçme Suyu Göleti'ne mesafe ise Tarımsal Hizmetler Dairesi görüşünde yaklaşık 750 m, İlçe Sağlık Müdürlüğü görüşünde 6,3 km olarak çelişkili verilmiştir [s. 30, 38].",
+          "pages": [
+            30,
+            38
+          ]
+        },
+        {
+          "severity": "medium",
+          "title": "Bitişik AFAD Geçici Barınma Alanı ve İsale Hattı ile Etkileşim",
+          "detail": "Tesise bitişik tapuda mera vasıflı 0/1367 parselinin AFAD ve Büyükşehir Belediyesi tarafından Geçici Barınma Alanı olarak belirlendiği ve aynı parselden Ø350 AÇB içme suyu isale hattının geçtiği raporlanmaktadır [s. 30, 37, 38]. Geçmişte Şahpaz Köyü merasına atık ve gübre bırakılması nedeniyle tecavüzün men'i kararı bulunması, komşu mera ve barınma alanına yönelik koruma riskini artırmaktadır [s. 23, 30, 37].",
+          "pages": [
+            23,
+            30,
+            37,
+            38
+          ]
+        },
+        {
+          "severity": "medium",
+          "title": "2011 Öncesi Ruhsatsız Yapı Stokunun Deprem ve Sızdırmazlık Uygunluğu",
+          "detail": "Saha 475 yıl tekrarlanma periyodunda 0,334 g yer ivmesine sahip (eski haritada 1. derece deprem bölgesi) bölgede bulunmakta olup mevcut 38.085,79 m² yapı stoku (1.650 m² membran kaplı sıvı gübre lagünü dahil) 2011 yılında ruhsatsız olarak inşa edilmiştir [s. 22, 23, 38]. Mevcut yapıların TBDY-2018 ve güncel sızdırmazlık standartlarına uygunluğunu kanıtlayan teknik test verileri sunulan sayfalarda yer almamaktadır [s. 23, 38].",
+          "pages": [
+            22,
+            23,
+            38
+          ]
+        }
+      ],
+      "hkt_and_petition_questions": [
+        {
+          "question_tr": "Hâkim rüzgâr yönünün kuzeydoğu olduğu ve tesisin güneybatı/güney ekseninde 800 m mesafede konut (KÇ-2), bitişik 0/1367 parselde AFAD Geçici Barınma Alanı ve 900 m mesafede Şahpaz Mahallesi sınırı bulunduğu dikkate alındığında; koku etki alanı modellemesi neden İDK sürecindeki raporda sunulmayıp Nihai ÇED Raporu'na ertelenmiştir ve 530 m kuzeydoğudaki komşu çiftlikle kümülatif koku etkisi nasıl hesaplanacaktır?",
+          "pages": [
+            30,
+            37
+          ]
+        },
+        {
+          "question_tr": "Proje sahasının Türkmenli Göleti Havzası Uzun Mesafeli Koruma Alanı ve Yeraltı Suyu Besleme Alanı içinde yer alması, kısmen Aşırı Yeraltı Suyu Çekim Alanı sınırlarında bulunması ve TESKİ'nin yüksek su ihtiyacı nedeniyle şebekeden su verilemeyeceğini bildirmesi karşısında; 5.000 büyükbaş/25.000 küçükbaş kapasite için tüm su ihtiyacının tek DSİ kuyusu (Te.09-85) ve tankerlerle temininin bölgedeki içme suyu kuyularına (2.300 m kuzeydoğuda 5 adet TESKİ kuyusu) kümülatif etkisi sayısal hidrojeolojik modelle ortaya konulmuş mudur?",
+          "pages": [
+            23,
+            30,
+            38
+          ]
+        },
+        {
+          "question_tr": "Kurum görüşleri arasında Kapılar Deresi mesafesinin (30 m, 45 m, 650 m) ve Yakuplu Hayvan İçme Suyu Göleti mesafesinin (750 m ve 6,3 km) birbirinden ciddi biçimde farklılaşmasının nedeni nedir; Türkmenli Göleti'ni besleyen Kapılar Deresi'ne 30-45 m mesafedeki 1.650 m² membran kaplı sıvı gübre lagününün taşma ve yeraltı suyu sızıntı riskine karşı güncel sızdırmazlık testleri yapılmış mıdır?",
+          "pages": [
+            22,
+            23,
+            30,
+            38
+          ]
+        },
+        {
+          "question_tr": "Raporda kapasitenin teknik olmayan özette 5.500 büyükbaş, Bölüm I'de ise 13.000'den 5.000 büyükbaşa düşürüldüğünün belirtilmesi nedeniyle tüm su, atıksu, gübre, emisyon ve koku hesaplamalarının hangi nihai kapasite esas alınarak güncellendiği açıklanabilir mi; ayrıca geçmişte yıkım kararlarına konu olup Yapı Kayıt Belgesi alan 2011 yapımı ahırların PGA 0,334 g deprem tehlikesi altında TBDY-2018'e göre yapısal güvenliği belgelenmiş midir?",
+          "pages": [
+            19,
+            21,
+            23,
+            38
+          ]
+        }
+      ],
+      "data_limitations": "Toplam 723 sayfalık ÇED Raporu dosyasının 218 sayfası taranmış/görüntü formatında olup, sağlanan alıntı paketi yalnızca 23 sayfayı (kapak, bilgi tablosu, içindekiler, teknik olmayan özet ve Bölüm I'in başlangıç kısımları) içermektedir [s. 1-38]. Flora-fauna arazi etütleri (Bölüm II.1), hidrojeoloji ve su bilançosu (Bölüm II.4-II.5), koruma alanları ve ormanlar (Bölüm II.10-II.11), atıksu-gübre-emisyon-koku detayları (Bölüm III), kümülatif etki değerlendirmesi (Bölüm IV), çevre izleme planı (Bölüm V), HKT tutanakları (Bölüm VI), taahhütler (Bölüm VII) ve tüm ekler (EK-1 ile EK-11 arası kurum görüşleri, yapı tespit raporları ve haritalar) sunulan sayfalarda bulunmadığından doğrudan doğrulanamamıştır."
+    }
+  }
+}

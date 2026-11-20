@@ -1,0 +1,790 @@
+{
+  "filing": {
+    "province": "İSTANBUL",
+    "district": "TUZLA",
+    "project_name": "Tehlikeli/Tehlikesiz Atıkların Geri Kazanımı ve İnorganik Kimyasalların Üretimi ve Depolanması",
+    "project_owner": "SİDRA KİMYA SAN. ve TİC. A.Ş.",
+    "sector": "Atık",
+    "sub_sector": "Atık Bertaraf /Geri Kazanım/ Depolama Tesisi Projeleri",
+    "decision_type": "ÇED Olumlu",
+    "announcement_date_tr": "17.11.2026",
+    "project_type": "Ek-1",
+    "detail_text": "İSTANBUL ili TUZLA,  ilcesinde İSTANBUL ili TUZLA,  ilcesi AYDINLI-KOSB Mah. İstanbul Tuzla Kimya Sanayicileri OSB Organik cad. no:23 (7079 ada 12 no?lu parsel) sınırları içerisinde, SİDRA KİMYA SAN. ve TİC. A.Ş. tarafından yapılması planlanan Tehlikeli/Tehlikesiz Atıkların Geri Kazanımı ve İnorganik Kimyasalların Üretimi ve Depolanması projesi ile ilgili olarak Bakanlığımıza sunulan ÇED Raporu İnceleme Değerlendirme Komisyonu tarafından incelenmiş ve değerlendirilmiştir. Proje ile ilgili olarak ÇED Yönetmeliğinin 14. maddesi gereğince Komisyon çalışmaları ve halkın görüşleri dikkate alınarak Bakanlığımızca 'Çevresel Etki Değerlendirmesi Olumlu' Kararı verilmiş olup; İSTANBUL Valiliği(Çevre, Şehircilik ve İklim Değişikliği İl Müdürlüğü) tarafından kararın halka duyurulması gerekmektedir. Ayrıca, söz konusu projeye ait Nihai ÇED Raporu ve eklerinde belirtilen hususlar ile 2872 sayılı Çevre Kanununa istinaden yürürlüğe giren yönetmeliklerin ilgili hükümlerine uyulması, mer'i mevzuat uyarınca ilgili kurum/kuruluşlardan gerekli izinlerin alınması gerekmektedir. İlgililere ve kamuoyuna duyurulur.",
+    "detail_links": [
+      {
+        "text": "ÇED Raporu",
+        "href": "http://eced.csb.gov.tr/jsp/ek1/60943"
+      }
+    ],
+    "documents": [
+      {
+        "portal_doc_url": "http://eced.csb.gov.tr/jsp/ek1/60943",
+        "filing_id": "60943",
+        "consulting_firm": "PPM KİR.ÖNL.VE YÖN. DAN. MÜH. İNŞ. TAAH. SAN.VE.TİC. LTD.ŞTİ.",
+        "submitted_at": "25/08/2026 04:06:06",
+        "pdf_urls": [
+          {
+            "label": "60943_Son_Sekli_Verilen_Rapor.pdf",
+            "url": "http://eced.csb.gov.tr/jsp/dosya/dosyaGoster.htm?tempAd=signature_file1395180590027167103.imz&orjinalAd=60943_Son_Sekli_Verilen_Rapor.pdf&yuklemeTarihi=2026-11-03"
+          }
+        ]
+      }
+    ],
+    "announcement_date": "2026-11-17",
+    "statutory_clocks": [
+      {
+        "code": "iyuk_20a",
+        "kind": "İYUK Madde 20/A iptal davası süresi (30 gün; İYUK 11 süreyi durdurmaz)",
+        "deadline": "2026-12-17",
+        "days_remaining": 27
+      }
+    ],
+    "filing_key": "60943:17.11.2026:ÇED Olumlu",
+    "first_seen_at": "2026-11-20T02:11:06"
+  },
+  "pdf_info": {
+    "filename": "60943.pdf",
+    "bytes": 109476156,
+    "sha256": "ce57f059d29b1bde986c98e0375b0f5d24833534fb77deb7ca5672b4c906ae2e",
+    "cached": false
+  },
+  "analysis": {
+    "page_count": 603,
+    "total_chars": 1035047,
+    "text_pages": 463,
+    "scanned_or_blank_pages": 140,
+    "scanned_page_sample": [
+      235,
+      236,
+      237,
+      238,
+      244,
+      245,
+      246,
+      247,
+      248,
+      249,
+      250,
+      251,
+      252,
+      253,
+      254
+    ],
+    "headings": [
+      [
+        6,
+        "BÖLÜM 3 - PROJENİN İNŞAAT ÖNCESİ (ARAZİ HAZIRLIK), İNŞAAT VE İŞLETME AŞAMASINDA"
+      ],
+      [
+        16,
+        "PROJENİN TEKNİK OLMAYAN ÖZETİ"
+      ],
+      [
+        18,
+        "BÖLÜM 1 - PROJENİN TANIMI, AMACI ve ÖZELLİKLERİ"
+      ],
+      [
+        56,
+        "BÖLÜM 2 - PROJE YERİ VE ETKİ ALANININ MEVCUT ÇEVRESEL ÖZELLİKLERİ"
+      ],
+      [
+        134,
+        "BÖLÜM 3 - PROJENİN İNŞAAT ÖNCESİ (ARAZİ HAZIRLIK), İNŞAAT VE İŞLETME"
+      ],
+      [
+        203,
+        "BÖLÜM 4: KÜMÜLATİF ÇEVRESEL ETKİ DEĞERLENDİRME"
+      ],
+      [
+        205,
+        "BÖLÜM 5: ÇEVRESEL VE SOSYAL EYLEM PLANI"
+      ],
+      [
+        226,
+        "BÖLÜM 6 HALKIN BİLGİLENDİRİLMESİ VE SÜRECE KATILIMI İLE PAYDAŞ KATILIM PLANI"
+      ],
+      [
+        406,
+        "BÖLÜM 1. Maddenin/karışımın ve şirketin/dağıtıcının kimliği"
+      ],
+      [
+        406,
+        "BÖLÜM 2. Zararlılık tanımlanması"
+      ],
+      [
+        407,
+        "BÖLÜM 3. Bileşimi/İçindekiler hakkında bilgi"
+      ],
+      [
+        407,
+        "BÖLÜM 4. İlk yardım önlemleri"
+      ],
+      [
+        408,
+        "BÖLÜM 5. Yangınla mücadele önlemleri"
+      ],
+      [
+        408,
+        "BÖLÜM 6. Kaza sonucu yayılmaya karşı önlemler"
+      ],
+      [
+        409,
+        "BÖLÜM 7. Elleçleme ve depolama"
+      ],
+      [
+        409,
+        "BÖLÜM 8. Maruz kalma kontrolleri/kişisel korunma"
+      ],
+      [
+        410,
+        "BÖLÜM 9. Fiziksel ve kimyasal özellikler"
+      ],
+      [
+        411,
+        "BÖLÜM 10. Kararlılık ve tepkime"
+      ],
+      [
+        411,
+        "BÖLÜM 11. Toksikolojik bilgiler"
+      ],
+      [
+        412,
+        "BÖLÜM 12. Ekolojik bilgiler"
+      ],
+      [
+        412,
+        "BÖLÜM 13. Bertaraf etme bilgileri"
+      ],
+      [
+        412,
+        "BÖLÜM 14. Taşımacılık bilgileri"
+      ]
+    ],
+    "geo": {
+      "precision": "exact_pdf",
+      "lat": 40.88188,
+      "lon": 29.38757,
+      "point_count": 4,
+      "points": [
+        [
+          40.8822,
+          29.38714
+        ],
+        [
+          40.88233,
+          29.38745
+        ],
+        [
+          40.88155,
+          29.38801
+        ],
+        [
+          40.88143,
+          29.38769
+        ]
+      ],
+      "datum": "UTM-Z35/ED50",
+      "pages": [
+        298
+      ]
+    },
+    "signals": {
+      "coordinates_and_footprint": {
+        "label": "Coordinates, Parcel & Footprint",
+        "page_count": 86,
+        "pages": [
+          1,
+          2,
+          6,
+          16,
+          17,
+          18,
+          21,
+          22,
+          24,
+          25,
+          27,
+          34,
+          37,
+          38,
+          40,
+          46,
+          51,
+          52,
+          56,
+          58,
+          62,
+          64,
+          65,
+          81,
+          86
+        ],
+        "samples": [
+          {
+            "page": 1,
+            "match": "ada 12 no’lu parsel",
+            "snippet": "…İstanbul İli, Tuzla İlçesi AYDINLI-KOSB Mah. İstanbul Tuzla Kimya Sanayicileri OSB Organik cad. No:23 adresinde (7079 ada 12 no’lu parsel) ÇED Başvuru Dosyası/ ÇED Raporu/ Son Şekli Verilen ÇED Raporu/ Nihai ÇED Raporu/ İSTANBUL KASIM-2026"
+          },
+          {
+            "page": 2,
+            "match": "utm",
+            "snippet": "…kesiz atıkların ve/veya belediye atıklarının geri kazanıldığı ve/veya biyobozunur atık işleme (mekanik ayırma, biyokurutma, biyometanizasyon, kompost) tesisleri, Madde 2-a) Kimyasalların üretimi ve/veya ara ürünlerinin işlenmesi için…"
+          },
+          {
+            "page": 6,
+            "match": "koordinat",
+            "snippet": "….................................................... 109 II.12.1. Tarımsal Faaliyetler (Tarım arazileri, büyüklükleri, koordinatları, harita üzerinde işaretlenmesi, ürün desenleri ve bunların yıllık üretim miktarı, tarım reformu uygulama alanları,…"
+          },
+          {
+            "page": 16,
+            "match": "ada 12 no’lu parsel",
+            "snippet": "…ilerek) İstanbul İli, Tuzla İlçesi AYDINLI-KOSB Mah. İstanbul Tuzla Kimya Sanayicileri OSB Organik cad. no:23 (7079 ada 12 no’lu parsel) adresinde SİDRA KİMYA SAN. ve TİC. A.Ş. tarafından “Tehlikeli/Tehlikesiz Atıkların Geri Kazanımı ve İnorganik Kimyasa…"
+          },
+          {
+            "page": 17,
+            "match": "utm",
+            "snippet": "…ikesiz atıkların ve/veya belediye atıklarının geri kazanıldığı ve/veya biyobozunur atık işleme (mekanik ayırma, biyokurutma, biyometanizasyon, kompost) tesisleri, Madde 2-a) Kimyasalların üretimi ve/veya ara ürünlerinin işlenmesi için projel…"
+          },
+          {
+            "page": 18,
+            "match": "ada 12 no’lu parsel",
+            "snippet": "…tesisinin İstanbul İli, Tuzla İlçesi AYDINLI-KOSB Mah. İstanbul Tuzla Kimya Sanayicileri OSB Organik cad. no:23 (7079 ada 12 no’lu parsel) adresinde hizmet vermesi planlanmaktadır. Söz konu proje kapsamında atık, maden konsantresi ve/veya kimyevi hammadd…"
+          },
+          {
+            "page": 21,
+            "match": "utm",
+            "snippet": "…hmini SrSO₄ tenörü: %96 (selestin konsantresi) • Sr geri kazanım oranı (kavurma (ihtiyaca göre), liç, karbonatlama, kurutma): %90,27 • Ürünlere geçen Sr: 14.000 × 0,96 × 0,9027 × 0,4770 ≈ 5.787 ton/yıl (0,4770 = SrSO₄'taki Sr oranı) • Topl…"
+          },
+          {
+            "page": 22,
+            "match": "ada 12 no’lu parsel",
+            "snippet": "…tesisinin İstanbul İli, Tuzla İlçesi AYDINLI-KOSB Mah. İstanbul Tuzla Kimya Sanayicileri OSB Organik cad. no:23 (7079 ada 12 no’lu parsel) adresinde hizmet vermesi planlanmaktadır. Planlanan projede, atıklar ağaç endüstrisi, formaldehit üreticileri, kimy…"
+          }
+        ]
+      },
+      "water_and_discharge": {
+        "label": "Water Use, Hydrogeology & Discharge",
+        "page_count": 48,
+        "pages": [
+          2,
+          7,
+          8,
+          17,
+          28,
+          34,
+          35,
+          36,
+          37,
+          45,
+          46,
+          48,
+          67,
+          72,
+          98,
+          129,
+          135,
+          149,
+          150,
+          151,
+          152,
+          153,
+          164,
+          173,
+          174
+        ],
+        "samples": [
+          {
+            "page": 2,
+            "match": "1 ton/gün",
+            "snippet": "…de 5 -Atık Geri Kazanım ve /veya Bertaraf Tesisleri (hafriyat toprağı hariç olmak üzere), (Değişik:RG-5/3/2026-33187) 1 ton/gün ve üzeri tehlikesiz atıkların ve/veya belediye atıklarının geri kazanıldığı ve/veya biyobozunur atık işleme (mekanik…"
+          },
+          {
+            "page": 7,
+            "match": "deşarj",
+            "snippet": "…tıksu kaynağı için ayrı ayrı hesaplanmalıdır) ..................... 135 III.7.3. Sıvı atıkların bertaraf yöntemleri ve deşarj edileceği ortamlar (atık suların arıtılacağı arıtma tesisine ait bilgiler (kapasite, proses, giderim verimi, deşarj ye…"
+          },
+          {
+            "page": 8,
+            "match": "yeraltı suyu",
+            "snippet": "…mesine karşı alınacak önlemler ..... 157 III.12. Proje kapsamında gerçekleştirilecek faaliyetler sonucunda yüzeysel ve yeraltı suyu kaynaklarının etkilenme durumları ve alınacak tedbirler (detayları ile birlikte) .............................. 158 I…"
+          },
+          {
+            "page": 17,
+            "match": "1 ton/gün",
+            "snippet": "…dde 5 -Atık Geri Kazanım ve /veya Bertaraf Tesisleri (hafriyat toprağı hariç olmak üzere), (Değişik:RG-5/3/2026-33187) 1 ton/gün ve üzeri tehlikesiz atıkların ve/veya belediye atıklarının geri kazanıldığı ve/veya biyobozunur atık işleme (mekanik…"
+          },
+          {
+            "page": 28,
+            "match": "atıksu",
+            "snippet": "…fireler ve proses suları uygun koşullarda tekrar prosese dahil edilebilecektir. Prosese dahil edilemeyen eser miktarda atıksu OSB standartlarını sağlaması durumunda OSB kanalizasyon sistemine verilmesi planlanmaktadır. Böylece hammadde ve su k…"
+          },
+          {
+            "page": 34,
+            "match": "atıksu",
+            "snippet": "…a ürün olarak sodyum molibdat dihidrat (Na₂MoO₄·2H₂O) formunda elde edilecektir. Proses geri beslemeli çalışacak olup atıksu çıkışı beklenmemektedir. Stokiyometrik reaksiyon: MoO₃ + 2 NaOH → Na₂MoO₄ + H₂O 1.2. Amonyum Molibdat Tetrahidra…"
+          },
+          {
+            "page": 35,
+            "match": "atıksu",
+            "snippet": "…KAZANIMI VE İNORGANİK KİMYASALLARIN ÜRETİMİ VE DEPOLANMASI ÇED RAPORU 20 Proses geri beslemeli çalışacak olup atıksu çıkışı beklenmemektedir, oluşması durumunda su kirliliği kontrol yönetmeliği kapsamında yönetilecektir. Stokiyometr…"
+          },
+          {
+            "page": 36,
+            "match": "atıksu",
+            "snippet": "…onsantrasyon/kristalizasyon uygulanması ile kobalt sülfat ürünü elde edilecektir. Proses geri beslemeli çalışacak olup atıksu çıkışı beklenmemektedir, oluşması durumunda su kirliliği kontrol yönetmeliği kapsamında yönetilecektir. Stokiyometr…"
+          }
+        ]
+      },
+      "protected_land_and_olive": {
+        "label": "Protected Zones, Forests & Olive Groves",
+        "page_count": 9,
+        "pages": [
+          5,
+          65,
+          66,
+          67,
+          68,
+          98,
+          129,
+          175,
+          224
+        ],
+        "samples": [
+          {
+            "page": 5,
+            "match": "özel çevre koruma",
+            "snippet": "…oruma alanları, Boğaziçi Kanununa göre koruma altına alınan alanlar, biyogenetik rezerv alanları, biyosfer rezervleri, özel çevre koruma bölgeleri, özel koruma alanları, içme ve kullanma su kaynakları ile ilgili koruma alanları, turizm alan ve merkezleri…"
+          },
+          {
+            "page": 65,
+            "match": "özel çevre koruma",
+            "snippet": "…oruma alanları, Boğaziçi Kanununa göre koruma altına alınan alanlar, biyogenetik rezerv alanları, biyosfer rezervleri, özel çevre koruma bölgeleri, özel koruma alanları, içme ve kullanma su kaynakları ile ilgili koruma alanları, turizm alan ve merkezleri…"
+          },
+          {
+            "page": 65,
+            "match": "Tabiat Parkı",
+            "snippet": "…uma Alanları” içerisinde kalmamaktadır. ÇED alanının kuzeybatısında yaklaşık olarak 4,60 km mesafedeki Hacetderesi Tabiat Parkı, en yakın mesafede bulunan korunması gerekli alan olup proje alanına konumu aşağıdaki uydu görüntüsünde yer almaktadı…"
+          },
+          {
+            "page": 66,
+            "match": "Özel Çevre Koruma",
+            "snippet": "…tanımlanan alanlar içerisinde kalmamaktadır. f) Çevre Kanununun 9 uncu maddesi uyarınca Cumhurbaşkanı tarafından \"Özel Çevre Koruma Bölgeleri\" olarak tespit ve ilan edilen alanlar içerisinde kalmamaktadır. g) Boğaziçi Kanununa göre koruma altına…"
+          },
+          {
+            "page": 66,
+            "match": "orman alanı",
+            "snippet": "…adır. g) Boğaziçi Kanununa göre koruma altına alınan alanlar içerisinde kalmamaktadır. ğ) Orman Kanunu uyarınca orman alanı sayılan yerler içerisinde kalmamaktadır. h) Kıyı Kanunu gereğince yapı yasağı getirilen alanlar içerisinde kalmamak…"
+          },
+          {
+            "page": 67,
+            "match": "kıyı kenar",
+            "snippet": "…ı olmak üzere canlıların yaşama ortamı olarak önem taşıyan bütün sular, bataklık sazlık ve turbiyeler ile bu alanların kıyı kenar çizgisinden itibaren kara tarafına doğru ekolojik açıdan sulak alan kalan yerler içerisinde kalmamaktadır. ç) Göll…"
+          },
+          {
+            "page": 67,
+            "match": "sulak alan",
+            "snippet": "…r, bataklık sazlık ve turbiyeler ile bu alanların kıyı kenar çizgisinden itibaren kara tarafına doğru ekolojik açıdan sulak alan kalan yerler içerisinde kalmamaktadır. ç) Göller, akarsular ve yeraltı suyu işletme sahaları içerisinde kalmamaktad…"
+          },
+          {
+            "page": 68,
+            "match": "orman alanı",
+            "snippet": "…Proje alanı İstanbul Tuzla Kimya Sanayicileri Organize Sanayi Bölgesi içerisindedir. Etki alanı mesafesi içerisinde orman alanı bulunmamaktadır. Meşcere Haritasına göre proje alanı Is olarak tanımlanan İskan alanında kalmaktadır. Meşçere Harit…"
+          }
+        ]
+      },
+      "ecology_and_baseline": {
+        "label": "Flora, Fauna & Baseline Methodology",
+        "page_count": 9,
+        "pages": [
+          5,
+          8,
+          50,
+          67,
+          68,
+          133,
+          173,
+          175,
+          224
+        ],
+        "samples": [
+          {
+            "page": 5,
+            "match": "Flora ve Fauna",
+            "snippet": "…............................................................................................................. 50 II.3. Flora ve Fauna (Proje alanı ve etki alanında bulunan flora türleri, etkilenecek alandaki türler, bu çalışmaların hangi dönemde yapıld…"
+          },
+          {
+            "page": 5,
+            "match": "endemik",
+            "snippet": "…nesli tehlikeye düşmüş türler, bunların yaşama ortamları ve tehlike kategorilerinin Red Data Book’a göre irdelenmesi, endemik türler ile önemli bitki alanı bulunması durumunda alınacak önlemler, flora tablosunun oluşturulması, alanda bulunan bi…"
+          },
+          {
+            "page": 5,
+            "match": "Bern Sözleşmesi",
+            "snippet": "…ncelenmesi, faunanın uygun formda düzenlenmesi, Kara Avcılığı Kanunu ve Yönetmelikleri kapsamında yapılacak işlemler, Bern Sözleşmesi kapsamında bulunan türlerin belirlenmesi, proje faaliyetlerinden etkilenecek canlılar için alınması gereken koruma önl…"
+          },
+          {
+            "page": 8,
+            "match": "endemik",
+            "snippet": "…....................................... 158 III.14. Projenin inşaat ve işletme döneminde flora – fauna (mevcut türler, endemik türlerin bulunduğu yerler, önemli bitki alanı bulunan yerler ve varsa nesli tehlike altında olan fauna türlerinin yaşa…"
+          },
+          {
+            "page": 50,
+            "match": "BERN Sözleşmesi",
+            "snippet": "…atüsü verilen kültürel, tarihi ve doğal alanlar » Avrupa’nın Yaban Hayatı ve Yaşama Ortamlarını Koruma Sözleşmesi\" (BERN Sözleşmesi) uyarınca koruma altına alınmış alanlardan \"Önemli Deniz Kaplumbağası Üreme Alanları\"nda belirtilen I. ve II. Koruma…"
+          },
+          {
+            "page": 67,
+            "match": "BERN Sözleşmesi",
+            "snippet": "…sözleşmeler uyarınca korunması gerekli alanlar a)\"Avrupa’nın Yaban Hayatı ve Yaşama Ortamlarını Koruma Sözleşmesi\" (BERN Sözleşmesi) uyarınca koruma altına alınmış alanlardan \"Önemli Deniz Kaplumbağası Üreme Alanlarında belirtilen I. ve II. Koruma B…"
+          },
+          {
+            "page": 67,
+            "match": "endemik",
+            "snippet": "…r. d) Bilimsel araştırmalar için önem arzeden ve/veya nesli tehlikeye düşmüş veya düşebilir türler ve ülkemiz için endemik olan türlerin yaşama ortamı olan alanlar, biyosfer rezervi, biyotoplar, biyogenetik rezerv alanları, benzersiz özellik…"
+          },
+          {
+            "page": 68,
+            "match": "Flora ve Fauna",
+            "snippet": "…İKELİ/TEHLİKESİZ ATIKLARIN GERİ KAZANIMI VE İNORGANİK KİMYASALLARIN ÜRETİMİ VE DEPOLANMASI ÇED RAPORU 53 II.3. Flora ve Fauna (Proje alanı ve etki alanında bulunan flora türleri, etkilenecek alandaki türler, bu çalışmaların hangi dönemde yapıld…"
+          }
+        ]
+      },
+      "pollutants_and_hazards": {
+        "label": "Emissions, Geochemistry & Waste",
+        "page_count": 72,
+        "pages": [
+          4,
+          5,
+          9,
+          45,
+          51,
+          62,
+          73,
+          85,
+          86,
+          87,
+          88,
+          92,
+          93,
+          94,
+          95,
+          97,
+          125,
+          126,
+          136,
+          137,
+          138,
+          139,
+          140,
+          141,
+          147
+        ],
+        "samples": [
+          {
+            "page": 4,
+            "match": "deprem",
+            "snippet": "….................. 43 II.1.3. Proje alanı ve yakın çevresinde bulunan tarım arazilerinin, yeraltı ve yüzey sularının, deprem kuşaklarının, jeolojik yapının, yerleşim alanlarının, ulaşım ağının, enerji iletim hatlarının, boru hatlarının, arazi…"
+          },
+          {
+            "page": 5,
+            "match": "deprem",
+            "snippet": "…i kuruma onaylatılması gerekmektedir) ...................... 57 II.6. Doğal Afet Durumu (7269 sayılı yasada belirtilen deprem dışındaki heyelan, su baskını, çığ, kaya düşmesi vb. afet riskleri hakkında bilgi verilmeli, ilgili haritaları üzerind…"
+          },
+          {
+            "page": 9,
+            "match": "kümülatif",
+            "snippet": "…liyetlerle birlikte oluşturduğu/oluşturabileceği çevresel ve sosyal etkilere ait verilerin hesaplamalarının birlikte kümülatif olacak şekilde değerlendirilmesi, olumsuz çevresel etkilere yönelik alınacak önlemlerin detaylı şekilde izah edilmesi…"
+          },
+          {
+            "page": 45,
+            "match": "Tehlikeli atık",
+            "snippet": "…epolayacak büyüklüktedir. Hammadde depolama alanlarında (atık alanları) sürekli olarak atık sirkülasyonu olacaktır. Tehlikeli atık geçici depolama alanları geçirimsiz zeminle kaplı, yangın güvenliği için yangın tüpü bulundurulan kapalı alanlardır.…"
+          },
+          {
+            "page": 51,
+            "match": "Gürültü",
+            "snippet": "…giren “Tıbbi Atıkların Kontrolü Yönetmeliği” » 30.11.2022 Tarih ve 32029 Sayılı Resmi Gazetede Yayımlanan; “Çevresel Gürültü Kontrol Yönetmeliği” » 19.12.2007 tarih ve 26735 sayılı Resmi Gazete’de yayımlanan Binaların Yangından Korunması Ha…"
+          },
+          {
+            "page": 62,
+            "match": "deprem",
+            "snippet": "…ÇED RAPORU 47 II.1.3. Proje alanı ve yakın çevresinde bulunan tarım arazilerinin, yeraltı ve yüzey sularının, deprem kuşaklarının, jeolojik yapının, yerleşim alanlarının, ulaşım ağının, enerji iletim hatlarının, boru hatlarının, arazi…"
+          },
+          {
+            "page": 73,
+            "match": "deprem",
+            "snippet": "…lgili mevzuat hükümleri doğrultusunda yerine getirilecektir. II.6. Doğal Afet Durumu (7269 sayılı yasada belirtilen deprem dışındaki heyelan, su baskını, çığ, kaya düşmesi vb. afet riskleri hakkında bilgi verilmeli, ilgili haritaları üzerind…"
+          },
+          {
+            "page": 85,
+            "match": "Deprem",
+            "snippet": "…Depremsellik Proje alanının; 18 Mart 2018 tarih ve 30364 sayılı (mükerrer) ‘’Resmî Gazete’ ’de yayınlanan, AFAD Deprem Dairesi Başkanlığı tarafından 1 OCAK 2019 tarihinde yürürlüğü giren “Türkiye Deprem Tehlike Haritasına göre konumu aşa…"
+          }
+        ]
+      },
+      "cost_and_capacity": {
+        "label": "Project Cost, Power & Capacity",
+        "page_count": 43,
+        "pages": [
+          2,
+          4,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          27,
+          33,
+          39,
+          44,
+          45,
+          47,
+          48,
+          72,
+          83,
+          134,
+          135,
+          136,
+          137,
+          151,
+          161,
+          163
+        ],
+        "samples": [
+          {
+            "page": 2,
+            "match": "kapasite",
+            "snippet": "…rilen tesisler kimyasal reaksiyonla gerçekleştirilen üretimler), Madde 3- (Değişik:RG-5/3/2026-33187) Toplam depolama kapasitesi 500 m³ ve üzeri olan doğalgaz, petrokimya, petrol ve kimyasal maddelerin depolandığı tesisler (perakende satışa haz…"
+          },
+          {
+            "page": 4,
+            "match": "kapasite",
+            "snippet": "…mun irdelenmesi, kapasitesi, ömrü gibi hususlar, ................. 3 I.2. Proje kapsamında tüm ünitelerin özellikleri, kapasiteleri, proses akım şeması, her faaliyet için her ünitede gerçekleştirilecek işlemler, faaliyet ünitelerinde kullanılacak…"
+          },
+          {
+            "page": 16,
+            "match": "kapasite",
+            "snippet": "…aki diğer projeler ile olan ilişkisi, mevcut faaliyetlere yönelik varsak daha önce alınmış ÇED Kararları tablo halinde kapasite, karar tarihi, faaliyet, vd. belirtilerek) İstanbul İli, Tuzla İlçesi AYDINLI-KOSB Mah. İstanbul Tuzla Kimya Sanayi…"
+          },
+          {
+            "page": 16,
+            "match": "31.000 ton/yıl",
+            "snippet": "…nımı ve İnorganik Kimyasalların Üretimi ve Depolanması projesi kapsamında tesiste kullanılacak toplam hammadde miktarı 31.000 ton/yıl, elde edilmesi planlanan toplam son ürün miktarı ise 29.000 ton/yıl olarak öngörülmektedir. Hammadde ile son ürün ara…"
+          },
+          {
+            "page": 16,
+            "match": "29.000 ton/yıl",
+            "snippet": "…mında tesiste kullanılacak toplam hammadde miktarı 31.000 ton/yıl, elde edilmesi planlanan toplam son ürün miktarı ise 29.000 ton/yıl olarak öngörülmektedir. Hammadde ile son ürün arasındaki dönüşüm oranının kuru madde esasına göre ortalama %80 olduğu…"
+          },
+          {
+            "page": 16,
+            "match": "24.800 ton/yıl",
+            "snippet": "…şüm oranının kuru madde esasına göre ortalama %80 olduğu kabul edildiğinde, 31.000 ton/yıl hammadde üzerinden yaklaşık 24.800 ton/yıl kuru ürün karşılığı elde edilmesi beklenmektedir. Bununla birlikte, proses sonunda elde edilen son ürünlerin bünyesind…"
+          },
+          {
+            "page": 17,
+            "match": "kapasite",
+            "snippet": "…irilen tesisler kimyasal reaksiyonla gerçekleştirilen üretimler), Madde 3- (Değişik:RG-5/3/2026-33187) Toplam depolama kapasitesi 500 m³ ve üzeri olan doğalgaz, petrokimya, petrol ve kimyasal maddelerin depolandığı tesisler (perakende satışa haz…"
+          },
+          {
+            "page": 18,
+            "match": "kapasite",
+            "snippet": "…in finans kaynaklarının detaylandırılarak finansın nereden/ne şekilde temin edileceği). Projenin durumun irdelenmesi, kapasitesi, ömrü gibi hususlar, SİDRA KİMYA SAN. ve TİC. A.Ş. tarafından işletilmesi planlanan “Tehlikeli/Tehlikesiz Atıkla…"
+          }
+        ]
+      }
+    },
+    "audit_checks": {
+      "mentions_field_survey": true,
+      "mentions_literature_only_cue": false,
+      "mentions_seasonal_sampling": true,
+      "mentions_cumulative_impact": true,
+      "mentions_olive_law_3573": false,
+      "mentions_groundwater_or_aquifer": true,
+      "mentions_iucn_or_endemic": true
+    }
+  },
+  "llm_synthesis": {
+    "model": "gemini-4-hydrogen",
+    "generated_at": "2026-11-20T11:04:08",
+    "pages_sent": [
+      1,
+      2,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      45,
+      50,
+      65,
+      66
+    ],
+    "usage": {
+      "prompt_tokens": 23085,
+      "output_tokens": 4279,
+      "thoughts_tokens": 5024,
+      "total_tokens": 32388
+    },
+    "result": {
+      "executive_summary_tr": "SİDRA KİMYA SAN. ve TİC. A.Ş. tarafından İstanbul İli, Tuzla İlçesi, Aydınlı-KOSB Mahallesi, İstanbul Tuzla Kimya Sanayicileri OSB, Organik Cad. No:23 (7079 ada 12 parsel) adresinde tehlikeli ve tehlikesiz atıklar, maden konsantreleri ve kimyevi hammaddeler kullanılarak inorganik kimyasalların (stronsiyum bileşikleri, sülfatlı bileşikler, molibdatlar, katalizör ve diğer inorganik bileşikler) üretimi, geri kazanımı ve depolanması planlanmaktadır [s. 1, s. 16, s. 45]. ÇED Yönetmeliği Ek-1 kapsamında yer alan ve 27.118.764,39 TL proje bedeline sahip tesis için Bakanlıkça 'ÇED Olumlu' kararı verilmiş olup, yıllık 31.000 ton hammadde işlenerek yaş ağırlık esasına göre 29.000 ton/yıl (kuru bazda yaklaşık 24.800 ton/yıl) katı son ürün üretilmesi öngörülmektedir [s. 2, s. 16, s. 45]. Tesisin ağaç, formaldehit, kimya ve petrokimya endüstrilerinden temin edeceği atıkları günlük olarak prosese alması, üretim sonucunda yıllık yaklaşık 300 ton metal oksit ile toplam 300 ton tehlikeli ve tehlikesiz arıtma çamuru oluşturması planlanmaktadır [s. 16, s. 45]. Başlıca çevresel risk unsurları arasında tehlikeli atık ve kimyasal madde depolama ile proses kaynaklı atıkların yönetimi, sızıntı/yangın/emisyon olasılıkları ve alanın yaklaşık 4,60 km kuzeybatısında yer alan Hacetderesi Tabiat Parkı ile OSB çevresindeki olası kümülatif etkiler bulunmaktadır [s. 2, s. 45, s. 65].",
+      "executive_summary_en": "SİDRA KİMYA SAN. ve TİC. A.Ş. proposes a facility for the recovery of hazardous and non-hazardous wastes and the production and storage of inorganic chemicals (strontium compounds, sulfates, molybdates, catalysts, and other inorganic compounds) at İstanbul Tuzla Kimya Sanayicileri Organized Industrial Zone (7079 block, parcel 12) in Tuzla, İstanbul [p. 1, p. 16, p. 45]. Classified under Annex-1 of the EIA Regulation with a project cost of 27,118,764.39 TL and granted an 'EIA Positive' decision, the facility plans to process 31,000 tons/year of raw materials (including wastes from wood, formaldehyde, chemical, and petrochemical industries) to yield 29,000 tons/year of solid final products on a wet-weight basis (~24,800 tons/year dry basis) [p. 2, p. 16, p. 45]. Production is expected to generate approximately 300 tons/year of metal oxides and 300 tons/year of hazardous and non-hazardous wastewater treatment sludges, with products and process wastes stored for up to 6 months [p. 45]. Primary environmental stakes involve hazardous waste and chemical handling/storage safety, air emissions and sludge disposal, and proximity (~4.60 km northwest) to Hacetderesi Nature Park alongside existing industrial loads in the Tuzla OIZ [p. 45, p. 65].",
+      "key_facts": [
+        {
+          "label": "Proje Bedeli",
+          "value": "27.118.764,39 TL",
+          "page": 2
+        },
+        {
+          "label": "Yıllık Toplam Hammadde Miktarı",
+          "value": "31.000 ton/yıl",
+          "page": 16
+        },
+        {
+          "label": "Yıllık Toplam Son Ürün Kapasitesi",
+          "value": "29.000 ton/yıl (yaş ağırlık esasına göre; kuru madde esasına göre yaklaşık 24.800 ton/yıl, ortalama %80 dönüşüm)",
+          "page": 16
+        },
+        {
+          "label": "Ürün Grupları Yıllık Üretim Dağılımı",
+          "value": "12.000 ton stronsiyum bileşikleri, 8.000 ton diğer inorganik bileşikler, 4.000 ton sülfatlı bileşikler, 3.000 ton katalizör, 2.000 ton molibdatlar",
+          "page": 45
+        },
+        {
+          "label": "Proses Kaynaklı Yıllık Atık Miktarı",
+          "value": "Yaklaşık 300 ton metal oksit (06 03 16), 200 ton tehlikeli arıtma çamuru (06 05 02*) ve 100 ton arıtma çamuru (06 05 03)",
+          "page": 45
+        },
+        {
+          "label": "Çalışma Süresi ve Vardiya Düzeni",
+          "value": "İşletmede planlanan tek vardiya (8 saat/gün), yılda yaklaşık 300 gün; ÇED değerlendirmesi 2 vardiya / 16 saat üzerinden",
+          "page": 17
+        },
+        {
+          "label": "Tesisin Ekonomik / Yapısal Ömrü",
+          "value": "Makine, ekipman ve binalar için ortalama 25 yıl (yenileme ile 50-80 yıla kadar uzayabilir)",
+          "page": 17
+        },
+        {
+          "label": "Ürün ve Üretim Atıkları Depolama Süresi",
+          "value": "Maksimum 6 ay",
+          "page": 45
+        },
+        {
+          "label": "Kimyasal Depolama Kapsam Eşiği (Ek-2 Madde 3)",
+          "value": "Toplam 500 m³ ve üzeri kimyasal madde depolama",
+          "page": 2
+        },
+        {
+          "label": "En Yakın Korunan Alana Mesafe",
+          "value": "Hacetderesi Tabiat Parkı, kuzeybatıda yaklaşık 4,60 km",
+          "page": 65
+        }
+      ],
+      "baseline_assessment": {
+        "field_survey_status": "not_found",
+        "seasonal_sampling_status": "not_found",
+        "cumulative_impact_status": "omitted_or_not_found",
+        "olive_and_protected_status": "ÇED Yönetmeliği Ek-5 Duyarlı Yöreler Listesi kapsamında proje alanının 3573 sayılı Zeytinciliğin Islahı ve Yabanilerinin Aşılattırılması Hakkında Kanun'da belirtilen alanlar, Orman Kanunu uyarınca orman alanları, Sulak Alanların Korunması Yönetmeliği alanları, Özel Çevre Koruma Bölgeleri, 2863 sayılı Kanun kapsamındaki Kültür/Tabiat Varlıkları ve Sit alanları, İçme-Kullanma Suyu Havzaları, Mera Kanunu ve Kıyı Kanunu kapsamındaki alanlar içerisinde kalmadığı beyan edilmiştir [s. 65, s. 66]. En yakın korunması gerekli alanın proje sahasının yaklaşık 4,60 km kuzeybatısındaki Hacetderesi Tabiat Parkı olduğu belirtilmiştir [s. 65].",
+        "explanation": "Sunulan sayfalarda proje alanının 1/100.000 ölçekli Çevre Düzeni Planı ve 1/1.000 ölçekli Uygulama İmar Planı'na göre İstanbul Tuzla Kimya Sanayicileri OSB sınırları içinde kaldığı [s. 16, s. 65] ve Ek-5 korunan alanlar listesi dışında yer aldığı [s. 65, s. 66] doğrulanabilmektedir. Buna karşın İçindekiler dizininde raporun 53. sayfasında gösterilen Flora ve Fauna bölümü (II.3), 108. sayfasındaki AERMOD emisyon modellemesi (II.11.5), 110. sayfasındaki Bölgenin Mevcut Kirlilik Yükü (II.14), 182. sayfasındaki Kümülatif Çevresel Etki Değerlendirmesi (Bölüm 4) ve 190. sayfasındaki Çevre İzleme Planı (Bölüm 5) [s. 5, s. 6, s. 9] sunulan sayfa kesitleri arasında yer almadığından saha çalışması, mevsimsel örnekleme ve kümülatif etki analizlerinin niteliği doğrulanamamıştır."
+      },
+      "red_flags": [
+        {
+          "severity": "high",
+          "title": "Ek-1 Projesinde Halkın Katılımı Toplantısı (HKT) Yapılmaması",
+          "detail": "İçindekiler tablosunun VI.4 başlığında, Bakanlığın 13.01.2026 tarihli ve 14619889 sayılı yazısına istinaden Halkın Katılımı Toplantısı yapılmadığı belirtilmektedir [s. 11]. Ek-1 kapsamında tehlikeli atık geri kazanımı ve kimyasal üretimi öngören bir projede toplantı yapılmamasının gerekçesi ve halkın katılımının hangi yöntemle sağlandığı sunulan sayfalarda açıklanmamıştır.",
+          "pages": [
+            11
+          ]
+        },
+        {
+          "severity": "medium",
+          "title": "ÇED Yönetmeliği Kapsamında Termal İşlem / Bertaraf (Madde 11/b) Belirsizliği",
+          "detail": "Projenin ÇED Yönetmeliği kapsamı tanımlanırken Ek-1 Madde 11/a (geri kazanım) ile birlikte Madde 11/b'ye ('oksitlenme yoluyla yakma, piroliz, gazlaştırma, plazma ve benzeri termal işlemler veya kimyasal/biyolojik bertaraf') de yer verilmiştir [s. 2, s. 17]. Ancak Teknik Olmayan Özet ve Bölüm I.7'de yalnızca inorganik kimyasal üretimi ve geri kazanım tanımlanmakta olup, termal yakma veya bertaraf ünitelerinin bulunup bulunmadığı sunulan sayfalarda netleştirilmemiştir [s. 16, s. 45].",
+          "pages": [
+            2,
+            16,
+            17,
+            45
+          ]
+        },
+        {
+          "severity": "medium",
+          "title": "Planlanan Vardiya Düzeni ile Etki Değerlendirmesi Varsayımı Arasındaki Fark",
+          "detail": "İşletme aşamasında tesisin tek vardiya, günde 8 saat ve yılda yaklaşık 300 gün çalışmasının planlandığı ifade edilirken, ÇED değerlendirmesinin 2 vardiya / 16 saat üzerinden yapılacağı ve vardiya düzeninin pazar/hammadde koşullarına göre değiştirilebileceği belirtilmiştir [s. 17]. Ayrıca 31.000 ton/yıl hammadde ile %80 dönüşüm oranından hesaplanan ~24.800 ton/yıl kuru ürün (yaş ağırlıkla 29.000 ton/yıl son ürün) arasındaki bakiye kütle farkının proses atıkları (600 ton/yıl) dışındaki akıbeti sunulan sayfalarda gösterilmemiştir [s. 16, s. 45].",
+          "pages": [
+            16,
+            17,
+            45
+          ]
+        },
+        {
+          "severity": "medium",
+          "title": "Günlük Doğrudan Atık Kabulü ile Depolama Kapasitesi Arasındaki Kırılganlık",
+          "detail": "Tesise gelecek atıkların günlük olarak alınıp doğrudan proseste işleneceği ve hammadde/atık depolama alanlarının yalnızca günlük gelecek atıkları depolayacak büyüklükte olduğu belirtilmiştir [s. 45]. Proses duruşları veya sevkiyat aksamaları durumunda atık birikimine karşı tampon kapasite bilgisi sunulan sayfalarda yer almamaktadır; buna karşılık yıllık 29.000 ton son ürün ve 600 ton proses atığının 6 aya kadar sahada depolanacağı öngörülmektedir [s. 45].",
+          "pages": [
+            45
+          ]
+        },
+        {
+          "severity": "low",
+          "title": "Kira Sözleşmesinin Gizlenmesi ve Standartlar Bölümünde Şablon Metin Kullanımı",
+          "detail": "Fabrika binasına ait kira sözleşmesinin e-ÇED sisteminde 'görülmesi istenilmeyen dosyalar' bölümünde verildiği belirtilmiştir [s. 16]. Ayrıca Tuzla OSB içinde yer alan kara içi kimya tesisi için Bölüm I.10.3'te 'Uluslararası Standartlar' başlığı altında Önemli Deniz Kaplumbağası Üreme Alanları, Akdeniz Foku Yaşama Alanları ve Akdeniz Kıyısal Tarihi Sitleri gibi kıyısal/denizel koruma sözleşmelerinin kopyalanmış şablon metin olarak yer aldığı görülmektedir [s. 50].",
+          "pages": [
+            16,
+            50
+          ]
+        }
+      ],
+      "hkt_and_petition_questions": [
+        {
+          "question_tr": "Bakanlığın 13.01.2026 tarihli ve 14619889 sayılı yazısına istinaden Halkın Katılımı Toplantısı yapılmamasının [s. 11] ÇED Yönetmeliği Ek-1 kapsamındaki bu proje özelindeki hukuki ve teknik gerekçesi nedir; çevre halkının ve komşu tesislerin görüşleri nasıl alınmıştır?",
+          "pages": [
+            11
+          ]
+        },
+        {
+          "question_tr": "Proje kapsamında ÇED Yönetmeliği Ek-1 Madde 11/a (geri kazanım) yanında Madde 11/b'ye (yakma, piroliz, gazlaştırma, plazma gibi termal işlemler veya kimyasal/biyolojik bertaraf) atıf yapılmasının [s. 2, s. 17] nedeni nedir; tesiste termal işlem veya atık yakma faaliyeti gerçekleştirilecek midir?",
+          "pages": [
+            2,
+            17
+          ]
+        },
+        {
+          "question_tr": "31.000 ton/yıl hammadde girişinden ortalama %80 kuru madde dönüşümüyle elde edilecek ~24.800 ton/yıl kuru ürün (yaş ağırlıkla 29.000 ton/yıl son ürün) [s. 16] ile beyan edilen yıllık yaklaşık 600 ton proses/arıtma atığı [s. 45] arasındaki kütle farkı hangi emisyon, buharlaşma, atıksu veya yan akım kalemlerinden oluşmaktadır?",
+          "pages": [
+            16,
+            45
+          ]
+        },
+        {
+          "question_tr": "Tesiste atık depolama alanlarının yalnızca günlük gelen atığı alacak büyüklükte planlandığı belirtilirken [s. 45], arıza veya bakım duruşlarında gelecek tehlikeli atıklar nerede ve hangi güvenlik/geçirimsizlik koşullarında bekletilecektir; ayrıca ürün ve atıkların 6 aya kadar depolanması sırasındaki toplam stok kapasitesi Ek-2 Madde 3'teki 500 m³ eşiğiyle [s. 2] nasıl ilişkilendirilmiştir?",
+          "pages": [
+            2,
+            45
+          ]
+        },
+        {
+          "question_tr": "Proje alanının yaklaşık 4,60 km kuzeybatısında bulunan Hacetderesi Tabiat Parkı [s. 65] ile İstanbul Tuzla Kimya Sanayicileri OSB'nin mevcut kirlilik yükü dikkate alındığında, raporun AERMOD hava kalitesi modellemesi (Bölüm II.11.5) ve Kümülatif Çevresel Etki Değerlendirmesi (Bölüm 4) [s. 6, s. 9] bölümlerinde ağır metal, asit buharı ve partikül madde birikimi açısından hangi sınır değerler ve izleme sıklıkları esas alınmıştır?",
+          "pages": [
+            6,
+            9,
+            65
+          ]
+        }
+      ],
+      "data_limitations": "Toplam 603 sayfalık Nihai ÇED Raporu dosyasının 140 sayfası taranmış/görüntü formatında olup metin çıkarılamamaktadır. Bu teknik inceleme yalnızca sunulan 20 sayfalık kesit [s. 1, 2, 4-17, 45, 50, 65, 66] üzerinden yürütülmüştür. İçindekiler listesinde görülen kabul edilecek atık kodları (Tablo 1), proses akım şemaları (Bölüm I.2), SEVESO/kimyasal envanteri (Tablo 7-9), Flora-Fauna (Bölüm II.3), Depremsellik (Bölüm II.7), Hidroloji/Hidrojeoloji (Bölüm II.8-II.9), AERMOD emisyon modellemesi (Bölüm II.11.5), Bölgenin Mevcut Kirlilik Yükü (Bölüm II.14), atıksu ve katı atık detayları (Bölüm III.7-III.8), Kümülatif Çevresel Etki Değerlendirmesi (Bölüm 4), Çevre İzleme Planı (Bölüm 5), Paydaş Katılım Planı (Bölüm 6) ve kurum görüşü ekleri sunulan sayfa aralığı dışında kaldığından içerikleri doğrulanamamıştır."
+    }
+  }
+}

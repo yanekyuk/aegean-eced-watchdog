@@ -1,0 +1,895 @@
+{
+  "filing": {
+    "province": "BALIKESİR",
+    "district": "ERDEK",
+    "project_name": "GEMİ KURTARMA ARAÇLARI YANAŞMA RIHTIMI",
+    "project_owner": "ARAS SALVAGE ENKAZ KALDIRMA ACİL MÜDAHALE VE DENİZ TEKNOLOJİLERİ A.Ş.",
+    "sector": "Kıyı",
+    "sub_sector": "Limanlar (Yat Limanları Dahil)",
+    "decision_type": "ÇED Süreci Başlayan",
+    "announcement_date_tr": "16.11.2026",
+    "project_type": "Ek-1",
+    "detail_text": "BALIKESİR ili ERDEK,  ilcesinde BALIKESİR il ERDEK,  ilce TATLISU MAHALLESİ, KALINBURUN MEVKİİ (1537 ADA, 10 (ESKİ 885 NOLU) PARSEL ÖNÜNDEKİ DENİZ ALANI) mevkiinde ARAS SALVAGE ENKAZ KALDIRMA ACİL MÜDAHALE VE DENİZ TEKNOLOJİLERİ A.Ş. tarafından yapılması planlanan GEMİ KURTARMA ARAÇLARI YANAŞMA RIHTIMI projesi ile ilgili olarak Bakanlığımıza sunulan ÇED Başvuru Dosyası Çevresel Etki Değerlendirmesi Yönetmeliği'nin 8. maddesi doğrultusunda incelenmiş ve başvurunun ÇED Genel Formatına uygun hazırlandığı anlaşılmış olup, projeye ilişkin ÇED Süreci başlatılmıştır. Çevresel Etki Değerlendirmesi süreci tamamlanana kadar, süreç ile ilgili her türlü bilgiler ve projeye ilişkin görüş, soru ve öneriler BALIKESİR Valiliğine (Çevre, Şehircilik ve İklim Değişikliği İl Müdürlüğü) veya Çevre, Şehircilik ve İklim Değişikliği Bakanlığına gönderilebilir.İlgililere ve kamuoyuna duyurulur.",
+    "detail_links": [
+      {
+        "text": "ÇED Başvuru Dosyası",
+        "href": "http://eced.csb.gov.tr/jsp/ek1/61672"
+      }
+    ],
+    "documents": [
+      {
+        "portal_doc_url": "http://eced.csb.gov.tr/jsp/ek1/61672",
+        "filing_id": "61672",
+        "consulting_firm": "DOĞA-ÇED ÇEV. PRO. PLN. DAN. İNŞ.TUR. LTD. ŞTİ.",
+        "submitted_at": "13/11/2026 04:44:50",
+        "pdf_urls": [
+          {
+            "label": "Dosya Göster",
+            "url": "http://eced.csb.gov.tr/jsp/dosya/dosyaGoster.htm?tempAd=sign2423440940150480746.pdf&orjinalAd=e-imza.pdf&yuklemeTarihi=2026-11-13"
+          }
+        ]
+      }
+    ],
+    "announcement_date": "2026-11-16",
+    "statutory_clocks": [
+      {
+        "code": "aski_10d",
+        "kind": "10 günlük halkın görüş ve önerilerine açılma (askı) süresi",
+        "deadline": "2026-11-26",
+        "days_remaining": 6
+      }
+    ],
+    "filing_key": "61672:16.11.2026:ÇED Süreci Başlayan",
+    "first_seen_at": "2026-11-20T02:11:21"
+  },
+  "pdf_info": {
+    "filename": "61672.pdf",
+    "bytes": 48680362,
+    "sha256": "8d02236a3d61b39de416907b9101e5dfcf9625798be8d0d4b1e57766c34f85db",
+    "cached": false
+  },
+  "analysis": {
+    "page_count": 273,
+    "total_chars": 464796,
+    "text_pages": 239,
+    "scanned_or_blank_pages": 34,
+    "scanned_page_sample": [
+      89,
+      90,
+      91,
+      92,
+      146,
+      160,
+      164,
+      184,
+      190,
+      191,
+      192,
+      193,
+      194,
+      199,
+      200
+    ],
+    "headings": [
+      [
+        3,
+        "BÖLÜM III: PROJENİN İNŞAAT VE İŞLETME AŞAMASINDA ÇEVRESEL ETKİLERİ VE"
+      ],
+      [
+        3,
+        "BÖLÜM VI: HALKIN BİLGİLENDİRİLMESİ VE SÜRECE KATILIMI İLE PAYDAŞ KATILIM PLANI"
+      ],
+      [
+        7,
+        "PROJENİN TEKNİK OLMAYAN ÖZETİ"
+      ],
+      [
+        11,
+        "BÖLÜM I: PROJENİN TANIMI VE ÖZELLİKLERİ"
+      ],
+      [
+        26,
+        "BÖLÜM II: PROJE YERİ VE ETKİ ALANININ MEVCUT ÇEVRESEL ÖZELLİKLERİ"
+      ],
+      [
+        78,
+        "BÖLÜM IV: KÜMÜLATİF ÇEVRESEL ETKİ DEĞERLENDİRME"
+      ],
+      [
+        79,
+        "BÖLÜM V: ÇEVRESEL VE SOSYAL EYLEM PLANI"
+      ],
+      [
+        84,
+        "BÖLÜM VII: NOTLAR, KAYNAKLAR VE EKLER"
+      ],
+      [
+        174,
+        "ÇEVRESEL VE SOSYAL YÖNETİM PLANI"
+      ]
+    ],
+    "geo": {
+      "precision": "exact_pdf",
+      "lat": 40.42809,
+      "lon": 27.94391,
+      "point_count": 46,
+      "points": [
+        [
+          40.41389,
+          27.94155
+        ],
+        [
+          40.41479,
+          27.94363
+        ],
+        [
+          40.41427,
+          27.94385
+        ],
+        [
+          40.4133,
+          27.94178
+        ],
+        [
+          40.4288,
+          27.94316
+        ],
+        [
+          40.42883,
+          27.94314
+        ],
+        [
+          40.42886,
+          27.94312
+        ],
+        [
+          40.42886,
+          27.94314
+        ],
+        [
+          40.42885,
+          27.94314
+        ],
+        [
+          40.4289,
+          27.94329
+        ],
+        [
+          40.42891,
+          27.94328
+        ],
+        [
+          40.42892,
+          27.9433
+        ],
+        [
+          40.42892,
+          27.94328
+        ],
+        [
+          40.42895,
+          27.94327
+        ],
+        [
+          40.42904,
+          27.94335
+        ],
+        [
+          40.42912,
+          27.94349
+        ],
+        [
+          40.42913,
+          27.94352
+        ],
+        [
+          40.42918,
+          27.94357
+        ],
+        [
+          40.42921,
+          27.94368
+        ],
+        [
+          40.42916,
+          27.94371
+        ],
+        [
+          40.42925,
+          27.94386
+        ],
+        [
+          40.42923,
+          27.94388
+        ],
+        [
+          40.4292,
+          27.94392
+        ],
+        [
+          40.42845,
+          27.94447
+        ],
+        [
+          40.42814,
+          27.94388
+        ],
+        [
+          40.42975,
+          27.94421
+        ],
+        [
+          40.42978,
+          27.94419
+        ],
+        [
+          40.42981,
+          27.94417
+        ],
+        [
+          40.42981,
+          27.94419
+        ],
+        [
+          40.4298,
+          27.94419
+        ],
+        [
+          40.42985,
+          27.94434
+        ],
+        [
+          40.42986,
+          27.94433
+        ],
+        [
+          40.42987,
+          27.94435
+        ],
+        [
+          40.42987,
+          27.94433
+        ],
+        [
+          40.4299,
+          27.94432
+        ],
+        [
+          40.42999,
+          27.9444
+        ],
+        [
+          40.43007,
+          27.94454
+        ],
+        [
+          40.43008,
+          27.94457
+        ],
+        [
+          40.43013,
+          27.94462
+        ],
+        [
+          40.43016,
+          27.94473
+        ]
+      ],
+      "datum": "UTM-Z35/WGS84",
+      "pages": [
+        187,
+        188
+      ]
+    },
+    "signals": {
+      "coordinates_and_footprint": {
+        "label": "Coordinates, Parcel & Footprint",
+        "page_count": 50,
+        "pages": [
+          3,
+          7,
+          8,
+          9,
+          11,
+          12,
+          13,
+          14,
+          16,
+          17,
+          18,
+          25,
+          26,
+          45,
+          47,
+          50,
+          51,
+          52,
+          53,
+          67,
+          72,
+          84,
+          86,
+          96,
+          110
+        ],
+        "samples": [
+          {
+            "page": 3,
+            "match": "koordinat",
+            "snippet": "…___________________________________________ 10 1.b) Projenin yer ve teknoloji alternatifleri, proje için seçilen yerin koordinatları ______________ 24 BÖLÜM II: PROJE YERİ VE ETKİ ALANININ MEVCUT ÇEVRESEL ÖZELLİKLERİ ________ 25 Proje alanının ve…"
+          },
+          {
+            "page": 7,
+            "match": "347,82 m2",
+            "snippet": "…885 nolu) parselin önünde ARAS Salvage Enkaz Kaldırma Acil Müdahale ve Deniz Teknolojileri A.Ş. tarafından, toplam 7.347,82 m2’lik alanda “Gemi kurtarma araçları yanaşma rıhtımı” yapılması işidir. Yapılması planlanan Gemi kurtarma araçları yanaş…"
+          },
+          {
+            "page": 8,
+            "match": "12.851 m2",
+            "snippet": "…ni yitirmesi sebebi ile iş bu ÇED Başvuru Dosyası hazırlanmıştır. 2014 yılında alınan ÇED Olumlu Kararına göre; • 12.851 m2 dolgu alanı yapılması, • Bu dolgu alanı önünde 206,5 m rıhtım yapılması • Dolgu üzerinde ise Depo: 1600–2000 m2, O…"
+          },
+          {
+            "page": 8,
+            "match": "755,82 m2",
+            "snippet": "…ılardan bu aşamaya kadar herhangi bir yapı yapılmamıştır. İş bu proje alanı ise rıhtım alanı ve geri sahası toplam 755,82 m2’lik alanı kapsayacaktır. Bu alanında 674,70 m2’lik alanı dolgu alanı, 81,12(55,54 m2 + 25,58 m2) m2’lik kısmı 2014 yıl…"
+          },
+          {
+            "page": 8,
+            "match": "674,70 m2",
+            "snippet": "…mamıştır. İş bu proje alanı ise rıhtım alanı ve geri sahası toplam 755,82 m2’lik alanı kapsayacaktır. Bu alanında 674,70 m2’lik alanı dolgu alanı, 81,12(55,54 m2 + 25,58 m2) m2’lik kısmı 2014 yılı öncesinden kalma mevcut betonarme yapıdır. Ay…"
+          },
+          {
+            "page": 8,
+            "match": "55,54 m2",
+            "snippet": "…htım alanı ve geri sahası toplam 755,82 m2’lik alanı kapsayacaktır. Bu alanında 674,70 m2’lik alanı dolgu alanı, 81,12(55,54 m2 + 25,58 m2) m2’lik kısmı 2014 yılı öncesinden kalma mevcut betonarme yapıdır. Ayrıca, proje kapsamında yanaşacak deniz…"
+          },
+          {
+            "page": 8,
+            "match": "25,58 m2",
+            "snippet": "…ve geri sahası toplam 755,82 m2’lik alanı kapsayacaktır. Bu alanında 674,70 m2’lik alanı dolgu alanı, 81,12(55,54 m2 + 25,58 m2) m2’lik kısmı 2014 yılı öncesinden kalma mevcut betonarme yapıdır. Ayrıca, proje kapsamında yanaşacak deniz araçlarını…"
+          },
+          {
+            "page": 8,
+            "match": "6591,99 m2",
+            "snippet": "…çlarının planlanan rıhtıma bağlandıklarında kullanacakları deniz alanının da sınırları belirlenmiştir. Bu alan toplam 6591,99 m2’dir. Dolayısı ile proje kapsamında kara ve deniz alanı dahil toplam alan 7.347,82 m2 olması planlanmıştır. Proje alanı…"
+          }
+        ]
+      },
+      "water_and_discharge": {
+        "label": "Water Use, Hydrogeology & Discharge",
+        "page_count": 15,
+        "pages": [
+          6,
+          45,
+          54,
+          56,
+          57,
+          58,
+          59,
+          73,
+          85,
+          154,
+          168,
+          179,
+          181,
+          234,
+          237
+        ],
+        "samples": [
+          {
+            "page": 6,
+            "match": "Yeraltı Suyu",
+            "snippet": "…misyonu MGM : Meteoroloji İşleri Genel Müdürlüğü PETDER : Petrol Sanayi Derneği RDB : Red Data Book YAS : Yeraltı Suyu YHL : Yaban Hayvanları Listesi mm : Milimetre NOx : Azot Oksitler Proje…"
+          },
+          {
+            "page": 45,
+            "match": "yeraltı suyu",
+            "snippet": "…itleri Kuvaterner yaşlı alüvyon çökellerden oluşur. Taneli ve gevşek malzemeden oluşan bu alüvyon tabakaları, bölgenin yeraltı suyu potansiyeli en yüksek olan gözenekli akiferlerini meydana getirir Proje alanının bulunduğu Kapıdağ yarımadası Susur…"
+          },
+          {
+            "page": 45,
+            "match": "7,2 l/s",
+            "snippet": "…n bir kısmını içine alır. Havzanın yağış alanı 22.399 km2, yıllık ortalama yağış 5,43 km3, ortalama yıllık verimi ise 7,2 l/s/km2 dir. Susurluk Havzası’nda 156 yerüstü su kütlesi bulunmakta olup, bunların 107 si Nehir Su Kütlesi, 37 si Göl…"
+          },
+          {
+            "page": 54,
+            "match": "sulak alan",
+            "snippet": "…r, bataklık sazlık ve turbiyeler ile bu alanların kıyı kenar çizgisinden itibaren kara tarafına doğru ekolojik açıdan sulak alan kalan yerler, içerisinde bulunmamaktadır. ç) Göller, akarsular, yeraltı suyu işletme sahaları; Proje alanı; Gölle…"
+          },
+          {
+            "page": 54,
+            "match": "yeraltı suyu",
+            "snippet": "…aren kara tarafına doğru ekolojik açıdan sulak alan kalan yerler, içerisinde bulunmamaktadır. ç) Göller, akarsular, yeraltı suyu işletme sahaları; Proje alanı; Göller, akarsular, yeraltı suyu işletme sahaları içerisinde yer almamaktadır. Faaliy…"
+          },
+          {
+            "page": 54,
+            "match": "deşarj",
+            "snippet": "…nde yer almamaktadır. Faaliyet sırasında gerçekleştirilecek işlemlerde, hiçbir dereye katı atık atılmayacak, sıvı atık deşarj edilmeyecek, herhangi bir müdahalede bulunulmayacak ve yatak kesitleri daraltılmayacaktır. 31.12.2004 tarih ve 25687…"
+          },
+          {
+            "page": 56,
+            "match": "5.80 m3/gün",
+            "snippet": "…tüketimi = 290 lt/ kişi-gün Gerekli Su miktarı = 290 lt/ kişi-gün x 20 kişi = 5.800 lt/gün = 5.80 m3/gün Tozumayı Önlemek İçin Su Kullanımı; Projenin inşaat faaliyetleri sırasında oluşabilecek tozumanın önlenmesi amacıyla su…"
+          },
+          {
+            "page": 56,
+            "match": "3 m3/gün",
+            "snippet": "…in inşaat faaliyetleri sırasında oluşabilecek tozumanın önlenmesi amacıyla sulamada kullanılacak su miktarı da yaklaşık 3 m3/gün olacağı öngörülmektedir. İşletme aşaması: Projenin işletme aşamasında deniz araçları proje alanını sadece…"
+          }
+        ]
+      },
+      "protected_land_and_olive": {
+        "label": "Protected Zones, Forests & Olive Groves",
+        "page_count": 38,
+        "pages": [
+          8,
+          9,
+          13,
+          17,
+          18,
+          19,
+          37,
+          45,
+          48,
+          50,
+          51,
+          53,
+          54,
+          59,
+          75,
+          172,
+          178,
+          182,
+          214,
+          220,
+          228,
+          230,
+          232,
+          233,
+          234
+        ],
+        "samples": [
+          {
+            "page": 8,
+            "match": "kıyı kenar",
+            "snippet": "…dir. Dolayısı ile proje kapsamında kara ve deniz alanı dahil toplam alan 7.347,82 m2 olması planlanmıştır. Proje alanı kıyı kenar çizgisinin deniz tarafında yer almakta olup, proje kapsamında devletin hüküm ve tasarrufunda olan alanlar kullanılacak…"
+          },
+          {
+            "page": 9,
+            "match": "kıyı kenar",
+            "snippet": "…ildirim yazısı EK: 4.1’de, ÇED Yer İnceleme Raporu ise EK:4.2’de sunulmuştur. Proje kapsamındaki kullanılacak alan kıyı kenar çizgisinin deniz tarafında yer aldığı için Devletin hüküm ve tasarrufu altındaki alanlardan oluşmaktadır. Proje alanı…"
+          },
+          {
+            "page": 9,
+            "match": "Özel Çevre Koruma",
+            "snippet": "…sayılı Cumhurbaşkanı kararı ile 05.11.2021 tarih ve 31650 sayılı Resmî Gazete’de yayımlanan “Marmara Denizi ve Adalar Özel Çevre Koruma Bölgesi” ve 06.09.2024 tarih ve 8948 sayılı Cumhurbaşkanı kararı ile 07.09.2024 tarih ve 32655 sayılı Resmî Gazete'de…"
+          },
+          {
+            "page": 13,
+            "match": "kıyı kenar",
+            "snippet": "…dir. Dolayısı ile proje kapsamında kara ve deniz alanı dahil toplam alan 7.347,82 m2 olması planlanmıştır. Proje alanı kıyı kenar çizgisinin deniz tarafında yer almakta olup, proje kapsamında devletin hüküm ve tasarrufunda olan alanlar kullanılacak…"
+          },
+          {
+            "page": 17,
+            "match": "kıyı kenar",
+            "snippet": "…ERİ A.Ş. RIHTIMI PROJESİ ÇED BAŞVURU DOSYASI 16 1.5 Mülkiyet Bilgileri Proje kapsamındaki kullanılacak alan kıyı kenar çizgisinin deniz tarafında yer aldığı için Devletin hüküm ve tasarrufu altındaki alanlardan oluşmaktadır. Proje alanı…"
+          },
+          {
+            "page": 17,
+            "match": "Özel Çevre Koruma",
+            "snippet": "…sayılı Cumhurbaşkanı kararı ile 05.11.2021 tarih ve 31650 sayılı Resmî Gazete’de yayımlanan “Marmara Denizi ve Adalar Özel Çevre Koruma Bölgesi” ve 06.09.2024 tarih ve 8948 sayılı Cumhurbaşkanı kararı ile 07.09.2024 tarih ve 32655 sayılı Resmî Gazete'de…"
+          },
+          {
+            "page": 18,
+            "match": "Kıyı kenar",
+            "snippet": "…ALE VE DENİZ TEKNOLOJİLERİ A.Ş. RIHTIMI PROJESİ ÇED BAŞVURU DOSYASI 17 1.6 Planlama Bilgileri Proje alanının (Kıyı kenar çizgisinin deniz tarafındaki Devletin Hüküm ve Tasarrufu Altındaki alanın) kuzeyinde yer alan kara alanında (Tatlısu M…"
+          },
+          {
+            "page": 19,
+            "match": "Özel Çevre Koruma",
+            "snippet": "…sayılı Cumhurbaşkanı kararı ile 05.11.2021 tarih ve 31650 sayılı Resmî Gazete’de yayımlanan “Marmara Denizi ve Adalar Özel Çevre Koruma Bölgesi” olarak ilan edilmiştir. Söz konusu alanda planlama yetkisi Tabiat Varlıklarını Koruma Genel Müdürlüğü’ne ait…"
+          }
+        ]
+      },
+      "ecology_and_baseline": {
+        "label": "Flora, Fauna & Baseline Methodology",
+        "page_count": 13,
+        "pages": [
+          6,
+          28,
+          35,
+          37,
+          39,
+          45,
+          49,
+          53,
+          54,
+          85,
+          179,
+          220,
+          221
+        ],
+        "samples": [
+          {
+            "page": 6,
+            "match": "IUCN",
+            "snippet": "…Etki Değerlendirmesi dBA : Desibel-A DSİ : Devlet Su İşleri Genel Müdürlüğü END : Endemizm IUCN : International Union for Conservation of Nature and Natural Resources kg : Kilogram km…"
+          },
+          {
+            "page": 28,
+            "match": "FLORA VE FAUNA",
+            "snippet": "…GEMİ KURTARMA ARAÇLARI YANAŞMA MÜDAHALE VE DENİZ TEKNOLOJİLERİ A.Ş. RIHTIMI PROJESİ ÇED BAŞVURU DOSYASI 27 2- FLORA VE FAUNA Proje alanı için bu aşamaya kadar 1 adet ÇED Kararı alınmıştır. Proje alanının büyük bir kısmını da içine alan, ala…"
+          },
+          {
+            "page": 28,
+            "match": "Örnekleme",
+            "snippet": "…de gerçekleştirilmiştir. Araştırma alanı içerisinde 7 ayrı alg divizyosuna ait toplam 170 takson kaydı verilmiştir. Örnekleme sonucunda elde etmiş olduğumuz verilere göre fitoplanktonik organizmaların tür çeşitliliği bakımından daha baskın oldu…"
+          },
+          {
+            "page": 35,
+            "match": "IUCN",
+            "snippet": "…İZ TEKNOLOJİLERİ A.Ş. RIHTIMI PROJESİ ÇED BAŞVURU DOSYASI 34 Tablo 13. Balıklar Türkçe İsmi Endemizm Bern IUCN Literatür/ Gözlem Family: Belonidae Belone belone euxini Zargana - - - G Blennius ocellaris Horozbina -…"
+          },
+          {
+            "page": 37,
+            "match": "Flora ve Fauna",
+            "snippet": "…proje kapsamında kara alanı kullanımı söz konusu değildir. Bununla birlikte proje etki alanı içerisindeki karasal Flora ve Fauna için arazi gözlemleri ve literatür araştırmalarıyla beraber verilen formata göre tablolar halinde ÇED Raporunda verile…"
+          },
+          {
+            "page": 39,
+            "match": "IUCN",
+            "snippet": "…İL GEMİ KURTARMA ARAÇLARI YANAŞMA MÜDAHALE VE DENİZ TEKNOLOJİLERİ A.Ş. RIHTIMI PROJESİ ÇED BAŞVURU DOSYASI 38 IUCN Kategorileri; CR (Crıtıcally Endangered)-Çok Tehlikede: Bir takson çok yakın bir gelecekte yok olma riski altında i…"
+          },
+          {
+            "page": 39,
+            "match": "Bern Sözleşmesi",
+            "snippet": "…. • LR (lc) (Least Concern)-En Az Endişe Verici: Herhangi bir koruma gerektirmeyen ve tehdit altında olmayanlar. Bern Sözleşmesi İle Koruma Altındaki Bitki Türleri Türkiye, “Bern Sözleşmesi” olarak bilinen “Avrupa’nın Yaban Hayatı ve Yaşam Ortam…"
+          },
+          {
+            "page": 45,
+            "match": "mevsimsel",
+            "snippet": "…risinde herhangi bir baraj, göl veya gölet bulunmamaktadır. Proje alanı içinde ve yakın çevresinde sürekli akışa ve mevsimsel akışa sahip herhangi bir yüzey suyu bulunmamakta olup, proje alanı Marmara denizi içerisindedir.…"
+          }
+        ]
+      },
+      "pollutants_and_hazards": {
+        "label": "Emissions, Geochemistry & Waste",
+        "page_count": 42,
+        "pages": [
+          3,
+          46,
+          47,
+          48,
+          55,
+          60,
+          63,
+          64,
+          66,
+          67,
+          68,
+          71,
+          75,
+          76,
+          77,
+          78,
+          80,
+          82,
+          85,
+          97,
+          114,
+          116,
+          117,
+          122,
+          123
+        ],
+        "samples": [
+          {
+            "page": 3,
+            "match": "kümülatif",
+            "snippet": "…____ 54 3.a) Çevreyi etkileyebilecek olası sorunların belirlenmesi, kirleticilerin miktarı, alıcı ortamla etkileşimi, kümülatif etkilerin belirlenmesi ____________________________________________________ 54 3.b) Projenin iklim üzerindeki etkisi (…"
+          },
+          {
+            "page": 3,
+            "match": "KÜMÜLATİF",
+            "snippet": "…____ 65 3.ç) Projenin çevreye olabilecek olumsuz etkilerinin azaltılması için alınacak önlemler ________ 72 BÖLÜM IV: KÜMÜLATİF ÇEVRESEL ETKİ DEĞERLENDİRME ________________________ 77 BÖLÜM V: ÇEVRESEL VE SOSYAL EYLEM PLANI ______________________…"
+          },
+          {
+            "page": 46,
+            "match": "Deprem",
+            "snippet": "…UMU 18.03.2018 tarih ve 30364 sayılı (mükerrer) Resmî Gazete’ de yayımlanarak yürürlüğe giren 2018/11275 “Türkiye Deprem Tehlike Haritası ve Parametre Değerleri Hakkında Karar” uyarınca 1.1.2019 tarihinden itibaren AFAD Deprem Dairesi Başk…"
+          },
+          {
+            "page": 47,
+            "match": "deprem",
+            "snippet": "…al Afet Potansiyeli 30.09.2026 tarihli sorguda 1900 yılında günümüze kadar sadece büyüklüğü 4.0-4.9 aralığında 3 adet deprem meydana gelmiştir. Bunlardan yakın olanı 4,2 km mesafede 18.03.1993 tarihinde meydana gelen ve 4,1 şiddetinde depremdi…"
+          },
+          {
+            "page": 48,
+            "match": "Deprem",
+            "snippet": "…Gazete’de yayımlanarak 01.01.2019 tarihinde yürürlüğe giren Afet ve Acil Durum Yönetimi Başkanlığı’nın \"Türkiye Bina Deprem Yönetmeliği\" hükümlerine uyulacaktır. 6- TOPRAK, SU, HAVA, ATMOSFERİK KOŞULLAR VE İKLİMSEL ÖZELLİKLER Genel Topra…"
+          },
+          {
+            "page": 55,
+            "match": "kümülatif",
+            "snippet": "…n ; 3.a) Çevreyi etkileyebilecek olası sorunların belirlenmesi, kirleticilerin miktarı, alıcı ortamla etkileşimi, kümülatif etkilerin belirlenmesi Proje kapsamında çevreyi etkileyebilecek olası etkiler inşaat ve işletme aşaması olarak değe…"
+          },
+          {
+            "page": 55,
+            "match": "Gürültü",
+            "snippet": "…✓ ✓ Ömrünü Tamamlamış Lastikler ✓ ✓ Bitkisel Atık Yağlar - - Atık Yağlar ✓ ✓ Toz Emisyonu ✓ - Gürültü ✓ ✓"
+          },
+          {
+            "page": 60,
+            "match": "tehlikeli atık",
+            "snippet": "…kontamine (yağlı üstüpü, boş yağlama yağı tenekeleri, iş makinelerinden çıkmış eski filtreler vb.) tehlikeli atık olarak nitelendirilebilir. Balıkesir İl Çevre Durum Raporu, 2025 verilerine göre Balıkesir İl’inde 2023…"
+          }
+        ]
+      },
+      "cost_and_capacity": {
+        "label": "Project Cost, Power & Capacity",
+        "page_count": 9,
+        "pages": [
+          2,
+          9,
+          12,
+          13,
+          15,
+          49,
+          151,
+          154,
+          181
+        ],
+        "samples": [
+          {
+            "page": 2,
+            "match": "PROJE BEDELİ",
+            "snippet": "…SM: 0533 352 82 00 E-POSTA evrimkoru@aras-marine.com PROJENİN ADI GEMİ KURTARMA ARAÇLARI YANAŞMA RIHTIMI PROJESİ PROJE BEDELİ 104.475.300,00 TL PROJE İÇİN SEÇİLEN YERİN AÇIK ADRESİ (İLİ, İLÇESİ, MEVKİİ) BALIKESİR İLİ, ERDEK İLÇESİ, TATLIS…"
+          },
+          {
+            "page": 9,
+            "match": "kapasite",
+            "snippet": "…a alacağı (acil müdahale, dip tarama vb.) gemilerinde proje alanında bulunması planlanmaktadır. Dolayısı ile projenin kapasitesi sadece yanaşacak gemi kurma/acil müdahale ve tarama gemilerinin boyutları ile ilgili olup, proje alanında yanaşacak…"
+          },
+          {
+            "page": 12,
+            "match": "Kapasite",
+            "snippet": "…apıları ve planlanan durumun karşılaştırılması aşağıdaki tabloda verilmiştir. Tablo 1. 2018 yılı ve Mevcut Üretim Kapasiteleri 2014 ÇED Olumlu Kararı Planlanan Proje Toplam Dolgu/Proje Alanı 12.851 m2 755,82 m2 Deniz Alanı Kullanım…"
+          },
+          {
+            "page": 13,
+            "match": "kapasite",
+            "snippet": "…Şekil 4. Proje Alan Kullanımlarını Gösterir Harita Proje kapsamında planlan yapılar, proje kapasitesi, imar planlarına göre durumu ve iş akımı aşağıdaki başlıklar altında açıklanmıştır. 1.1 Dolgu alanı ve Rıhtım…"
+          },
+          {
+            "page": 15,
+            "match": "Kapasite",
+            "snippet": "…URTARMA ARAÇLARI YANAŞMA MÜDAHALE VE DENİZ TEKNOLOJİLERİ A.Ş. RIHTIMI PROJESİ ÇED BAŞVURU DOSYASI 14 1.4. Proje Kapasitesi Proje “Gemi kurtarma araçları yanaşma rıhtımı” olup, yanaşacak gemiler proje konusu rıhtımı ve geri sahasını sad…"
+          },
+          {
+            "page": 49,
+            "match": "kapasite",
+            "snippet": "…barajı İkizcetepeler Barajı'dır. Ayrıca Gönen Muratlar Barajı ve İvrindi Çukurlar Barajı gibi projelerle su depolama kapasitesi artırılmaktadır Proje alanı Kapıdağ Yarımadasının doğusunda deniz içerisinde yer almakta olup proje alanı ve 1.00…"
+          },
+          {
+            "page": 151,
+            "match": "kapasite",
+            "snippet": "…ek ve araç ve ekipmanların manevra sınırlamalarını anlamak üzere gerekli eğitimleri alacaklardır. ✓ Araçların yükleme kapasitesi kontrol edilecek, izin verilen yükten fazları yüklenmeyecektir. ✓ Saha içerisinde hız limitlerini uyulması için ger…"
+          },
+          {
+            "page": 154,
+            "match": "kapasite",
+            "snippet": "…ınacak dolgu malzemesi miktarı = 41,67 ton Saatlik taşınacak dolgu malzemesi miktarı = 4,17 ton 1 kamyonun taşıma kapasitesi yaklaşık olarak 25 ton olduğundan dolayı günlük yapılacak sefer sayısı yaklaşık olarak; Sefer Sayısı =(41,67 ton/…"
+          }
+        ]
+      }
+    },
+    "audit_checks": {
+      "mentions_field_survey": true,
+      "mentions_literature_only_cue": false,
+      "mentions_seasonal_sampling": true,
+      "mentions_cumulative_impact": true,
+      "mentions_olive_law_3573": true,
+      "mentions_groundwater_or_aquifer": true,
+      "mentions_iucn_or_endemic": true
+    }
+  },
+  "llm_synthesis": {
+    "model": "gemini-4-hydrogen",
+    "generated_at": "2026-11-20T10:55:03",
+    "pages_sent": [
+      1,
+      2,
+      3,
+      4,
+      6,
+      8,
+      9,
+      11,
+      12,
+      13,
+      17,
+      26,
+      27,
+      28,
+      35,
+      37,
+      45,
+      46,
+      47,
+      48,
+      54,
+      56,
+      79,
+      80,
+      174,
+      175
+    ],
+    "usage": {
+      "prompt_tokens": 23455,
+      "output_tokens": 3376,
+      "thoughts_tokens": 6618,
+      "total_tokens": 33449
+    },
+    "result": {
+      "executive_summary_tr": "ARAS Salvage Enkaz Kaldırma Acil Müdahale ve Deniz Teknolojileri A.Ş. tarafından Balıkesir İli, Erdek İlçesi, Tatlısu Mahallesi, Kalınburun Mevkii'nde (1537 ada, 10 parsel önündeki deniz alanı) 104.475.300,00 TL bedelle Gemi Kurtarma Araçları Yanaşma Rıhtımı Projesi planlanmaktadır [s. 2, s. 11]. Daha önce 2014 yılında alınan ÇED Olumlu kararının yatırıma başlanmadığı için geçerliliğini yitirmesi üzerine hazırlanan bu ÇED Başvuru Dosyası, kıyı kenar çizgisinin deniz tarafında 674,70 m2 dolgu ve 81,12 m2 mevcut yapıdan oluşan 755,82 m2 rıhtım/geri saha (78,36 m rıhtım uzunluğu) ile 6.591,99 m2 deniz yüzeyi olmak üzere toplam 7.347,82 m2 alanı ve en fazla 95 m boyundaki kurtarma/tarama gemilerinin bağlanmasını kapsamaktadır [s. 8, s. 9, s. 12, s. 13]. Proje alanının tamamı Marmara Denizi ve Adalar Özel Çevre Koruma Bölgesi (ÖÇK) sınırları içinde yer almakta olup [s. 9, s. 17], 220 m batısında Balta Deresi denize dökülmekte [s. 45] ve alan 0,381 g yer ivmesiyle 2. derece deprem bölgesinde (faya 1,1 km mesafede) bulunmaktadır [s. 46, s. 47]. Dosya ÇED Başvuru Dosyası aşamasında olduğundan detaylı arazi etütleri ve karasal/denizel biyolojik değerlendirmeler sonraki ÇED Raporu aşamasına bırakılmıştır [s. 28, s. 37, s. 54].",
+      "executive_summary_en": "ARAS Salvage Enkaz Kaldırma Acil Müdahale ve Deniz Teknolojileri A.Ş. proposes a Ship Rescue Vessels Berthing Dock project in Kalınburun, Tatlısu Neighborhood, Erdek District, Balıkesir, with an estimated cost of 104,475,300.00 TL following the expiration of an unimplemented 2014 EIA positive decision [s. 2, s. 8, s. 11]. Located seaward of the shoreline, the project covers 7,347.82 m2 in total, comprising 674.70 m2 of coastal fill, 81.12 m2 of existing concrete structures, a 78.36 m dock, and 6,591.99 m2 of leased sea surface for berthing emergency response, salvage, and dredging vessels up to 95 m in length [s. 8, s. 9, s. 12, s. 13]. The entire site lies within the Marmara Sea and Islands Special Environmental Protection Area (ÖÇK), approximately 220 m east of Balta Creek, and in a high-seismic hazard zone (PGA 0.381 g, 1.1 km from a mapped Holocene fault) [s. 9, s. 17, s. 45, s. 46, s. 47]. Because this is an EIA Application File, detailed field surveys and terrestrial/endangered species investigations are deferred to the subsequent EIA Report stage [s. 28, s. 37, s. 54].",
+      "key_facts": [
+        {
+          "label": "Proje Bedeli",
+          "value": "104.475.300,00 TL",
+          "page": 2
+        },
+        {
+          "label": "Toplam Proje ve Kiralama Alanı",
+          "value": "7.347,82 m2 (755,82 m2 rıhtım/geri saha + 6.591,99 m2 deniz yüzeyi)",
+          "page": 11
+        },
+        {
+          "label": "Planlanan Dolgu Alanı",
+          "value": "674,70 m2 (mevcut 81,12 m2 betonarme yapı hariç)",
+          "page": 8
+        },
+        {
+          "label": "Rıhtım Uzunluğu",
+          "value": "78,36 m",
+          "page": 13
+        },
+        {
+          "label": "Yanaşabilecek En Büyük Gemi Boyu",
+          "value": "95 m",
+          "page": 9
+        },
+        {
+          "label": "Planlanan Üst Yapılar",
+          "value": "Güvenlik Kulübesi 13,86 m2, Atık Kabul Tesisi 50 m2, Geçici Atık Depo Alanı 12 m2",
+          "page": 12
+        },
+        {
+          "label": "En Yakın Yerleşim Nüfusu (2025 ADNKS)",
+          "value": "Tatlısu Mahallesi 1.000 kişi; Erdek İlçesi 32.080 kişi",
+          "page": 27
+        },
+        {
+          "label": "En Yakın Akarsu Mesafesi",
+          "value": "Balta Deresi proje alanının yaklaşık 220 m batısında",
+          "page": 45
+        },
+        {
+          "label": "Deprem Tehlikesi ve Diri Fay Mesafesi",
+          "value": "2. derece deprem bölgesi (PGA 475: 0,381 g); 1,1 km mesafede Halosen fayı",
+          "page": 46
+        },
+        {
+          "label": "Su Kullanımı (İnşaat / İşletme)",
+          "value": "İnşaatta 5,80 m3/gün (20 personel) + 3 m3/gün tozuma sulaması; işletmede 1,45 m3/gün (5 personel)",
+          "page": 56
+        }
+      ],
+      "baseline_assessment": {
+        "field_survey_status": "mixed_or_unclear",
+        "seasonal_sampling_status": "not_found",
+        "cumulative_impact_status": "omitted_or_not_found",
+        "olive_and_protected_status": "Proje alanı tamamen Marmara Denizi ve Adalar Özel Çevre Koruma Bölgesi (ÖÇK) sınırları içinde yer almakta olup Tabiat Varlıklarını Koruma Genel Müdürlüğünden ön izin alınmıştır [s. 9, s. 17]. Raporda alanın zeytin üretim sahaları ve 4342 sayılı Mera Kanunu kapsamındaki alanlar içinde kalmadığı, etki alanında zeytin üretimi bulunmadığı belirtilmiştir [s. 48]. Ayrıca RAMSAR alanları, Avrupa Peyzaj Sözleşmesi alanları, I-IV. sınıf tarım alanları, sulak alanlar, göl/akarsular ve içme-kullanma suyu havzaları koruma alanları kapsamında olmadığı beyan edilmiştir [s. 54].",
+        "explanation": "Denizel flora ve fauna bölümünde kıyıdan 200 m açıklığa kadar yapılan taramalara, iki istasyonluk fitoplankton verilerine ve gözlem/literatür ayrımlı balık listesine (IUCN CR statüsündeki Anguilla anguilla ve Bern Ek-III kapsamındaki Alosa fallax nilotica gözlem kaydı dahil) yer verilmekle birlikte, örnekleme tarihleri ve yöntem detayları sunulan sayfalarda bulunmamaktadır [s. 28, s. 35]. Karasal flora-fauna çalışmaları, nesli tehlikede veya endemik türlere ilişkin araştırmalar ile detaylı denizel arazi raporları ise ÇED Raporu aşamasına ertelenmiştir [s. 28, s. 37, s. 54]. Başvuru öncesi çok mevsimli bir temel durum örneklemesi dosyada belgelenmemiş olup periyodik izleme faaliyetleri ekteki Çevre İzleme Planına (EK 1.6) atfedilmiştir [s. 79]. Bölüm IV Kümülatif Çevresel Etki Değerlendirmesi (s. 77) incelenen sayfa alıntıları dışında kaldığından değerlendirilememiştir [s. 3]."
+      },
+      "red_flags": [
+        {
+          "severity": "high",
+          "title": "Yenilenebilir Enerji İddiası ve İşletme Emisyonlarının Yok Sayılması",
+          "detail": "Sera Gazı Azaltım Planı başlığında proje bir gemi kurtarma araçları yanaşma rıhtımı olmasına rağmen 'Proje yenilenebilir enerji projesi olduğundan sera gazı azaltımına katkısı bulunacaktır' ifadesi kullanılmıştır. Ayrıca boyu 95 m'ye kadar çıkan acil müdahale, römorkör ve dip tarama gemilerinin yanaşacağı belirtilmesine karşın işletme aşamasında sera gazı oluşumuna neden olabilecek hiçbir çalışma yapılmayacağı ileri sürülmüştür.",
+          "pages": [
+            9,
+            11,
+            80
+          ]
+        },
+        {
+          "severity": "high",
+          "title": "ÖÇK Bölgesi ve Kritik Türlere Rağmen Saha Etütlerinin Ertelenmesi",
+          "detail": "Projenin tamamı Marmara Denizi ve Adalar ÖÇK Bölgesi içinde kalmasına ve Tablo 13'te IUCN CR kategorisindeki Anguilla anguilla ile Bern Ek-III türlerinin varlığına işaret edilmesine rağmen, detaylı denizel raporlar, karasal flora-fauna gözlemleri ve tehdit altındaki türlere yönelik araştırmalar ÇED Raporu aşamasına bırakılmış; verilen denizel örnekleme tablolarında tarih ve mevsim bilgisi sunulmamıştır.",
+          "pages": [
+            9,
+            28,
+            35,
+            37,
+            54
+          ]
+        },
+        {
+          "severity": "medium",
+          "title": "Dolgu Alanında Kalıcı Yapı Beyanı ile Üst Yapı Planı Çelişkisi",
+          "detail": "Proje tanımında dolgu üzerinde kalıcı bir yapı olmayacağı ve yalnızca gemilerin boş bağlanacağı ifade edilirken, Tablo 1 ve su kullanımı bölümünde 50 m2 Atık Kabul Tesisi, 12 m2 Geçici Atık Depo Alanı ve 13,86 m2 Güvenlik Kulübesi ile sürekli 5 personel istihdamı planlandığı belirtilmiştir.",
+          "pages": [
+            11,
+            12,
+            17,
+            56
+          ]
+        },
+        {
+          "severity": "medium",
+          "title": "Yüksek Sismik Tehlike Bölgesinde Sahaya Özel Jeoteknik Veri Eksikliği",
+          "detail": "Proje alanı 0,381 g yer ivmesiyle 2. derece deprem bölgesinde ve Halosen fayına 1,1 km mesafede yer almasına, kıyı şeridinin Kuvaterner alüvyon ve kumul/taş dolgu içermesine karşın sunulan sayfalarda zemin sıvılaşması, dolgu şev stabilitesi veya dalga/tsunami analizleri yerine yalnızca genel yönetmeliklere uyulacağı taahhüdü verilmiştir.",
+          "pages": [
+            45,
+            46,
+            47,
+            48
+          ]
+        },
+        {
+          "severity": "medium",
+          "title": "Tablo Başlıkları, Alan Değerleri ve Ek Numaralarında Tutarsızlıklar",
+          "detail": "Tablo 1'in başlığı ilgisiz biçimde '2018 yılı ve Mevcut Üretim Kapasiteleri' olarak yazılmış; mevcut betonarme yapı alanı metin içinde 81,12 m2 ve 81,18 m2 olarak farklı verilmiş; toplam alan haritada 7.347,81 m2, metinlerde 7.347,82 m2 gösterilmiş; ayrıca hem Sıfır Atık Yönetim Planı hem de Sera Gazı Azaltım Planı için EK: 1.5 referansı verilmiştir.",
+          "pages": [
+            9,
+            12,
+            13,
+            17,
+            79,
+            80
+          ]
+        }
+      ],
+      "hkt_and_petition_questions": [
+        {
+          "question_tr": "Proje alanı Marmara Denizi ve Adalar Özel Çevre Koruma Bölgesi içinde bulunurken ve denizel balık listesinde IUCN CR statüsündeki Anguilla anguilla ile Bern Ek-III türleri kayıtlıyken, ÇED Raporu aşamasında kaç mevsimi kapsayan, hangi istasyon koordinatları ve derinliklerde denizel/bentik ve karasal ekolojik örnekleme yapılacaktır?",
+          "pages": [
+            9,
+            28,
+            35,
+            37,
+            54
+          ]
+        },
+        {
+          "question_tr": "Dolgu üzerinde kalıcı yapı olmayacağı belirtilmesine karşın Tablo 1'de yer verilen 50 m2 Atık Kabul Tesisi ve 12 m2 Geçici Atık Depo Alanı kapsamında, 95 m boya kadar kurtarma ve dip tarama gemilerinden kabul edilecek atık türleri, günlük/yıllık kapasiteleri ve bertaraf yöntemleri nelerdir?",
+          "pages": [
+            9,
+            11,
+            12,
+            56
+          ]
+        },
+        {
+          "question_tr": "Sera Gazı Azaltım Planı bölümünde projenin 'yenilenebilir enerji projesi' olarak nitelendirilmesi ve işletme aşamasında sera gazı oluşmayacağının beyan edilmesi teknik bir hata mıdır; rıhtıma yanaşacak acil müdahale, römorkör ve dip tarama gemilerinin manevra ve jeneratör emisyonları ÇED Raporunda hesaplanacak mıdır?",
+          "pages": [
+            9,
+            11,
+            80
+          ]
+        },
+        {
+          "question_tr": "Alanın 0,381 g PGA değeriyle 2. derece deprem bölgesinde ve Halosen fayına 1,1 km mesafede bulunması nedeniyle, 674,70 m2'lik kıyı dolgusu ile 78,36 m'lik rıhtım için sondajlı deniz/kıyı zemin etüdü, sıvılaşma analizi ve aşırı dalga/fırtına yükü hesapları ÇED Raporuna eklenecek midir?",
+          "pages": [
+            13,
+            45,
+            46,
+            47
+          ]
+        }
+      ],
+      "data_limitations": "273 sayfalık PDF dosyasının 34 sayfası taranmış/görüntü formatında olup, inceleme yalnızca sağlanan 26 sayfa alıntısıyla sınırlıdır. Bölüm I'deki yer/teknoloji alternatifleri ve koordinatlar, Bölüm II'deki arkeolojik SİT ve sosyoekonomik/atmosferik bölümler, Bölüm III'teki kirletici yükleri ve etki azaltım tedbirleri (s. 54-76), Bölüm IV Kümülatif Çevresel Etki Değerlendirmesi (s. 77) ve Çevre İzleme Planı dahil eklerin (EK 1.1-1.6, EK 4, EK 5) içeriği sunulan alıntılar dışında kaldığından doğrulanamamıştır [s. 3, s. 4]."
+    }
+  }
+}

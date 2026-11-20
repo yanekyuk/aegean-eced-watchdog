@@ -1,0 +1,967 @@
+{
+  "filing": {
+    "province": "EDİRNE",
+    "district": "KEŞAN",
+    "project_name": "Subaşı Rüzgâr Enerji Santrali (22,5 MWm / 21,00 MWe / 3 Adet Türbin) ve Elektrik Depolama Tesisi (21,00 MWe / 21,00 MWh)",
+    "project_owner": "MAKSİMA ELEKTRİK İNŞAAT TİCARET A.Ş.",
+    "sector": "Enerji",
+    "sub_sector": "Rüzgar Enerji Santralleri",
+    "decision_type": "Nihai Karar",
+    "announcement_date_tr": "13.11.2026",
+    "project_type": "Ek-1",
+    "detail_text": "EDİRNE ili KEŞAN,  ilcesinde EDİRNE İli KEŞAN,  ilcesinde MAKSİMA ELEKTRİK İNŞAAT TİCARET A.Ş. tarafından yapılması planlanan Subaşı Rüzgâr Enerji Santrali (22,5 MWm / 21,00 MWe / 3 Adet Türbin) ve Elektrik Depolama Tesisi (21,00 MWe / 21,00 MWh) projesi ile ilgili olarak hazırlanan ÇED Raporu , İnceleme ve Değerlendirme Komisyonu (İDK) tarafından incelenerek son şekli verilmiş olup, söz konusu rapor halkın görüş ve önerilerini almak üzere ÇED Yönetmeliği'nin 14.Maddesi (1) no'lu bendi kapsamında Bakanlıkta ve Çevre, Şehircilik ve İklim Değişikliği İl Müdürlüğü'nde on (10) takvim günü görüşe açılmıştır. Bakanlığa/Çevre, Şehircilik ve İklim Değişikliği İl Müdürlüğü'ne iletilen görüşler projeyle ilgili karar alma sürecinde dikkate alınacaktır. Görüş ve öneriler için bu süreç içerisinde Çevre, Şehircilik ve İklim Değişikliği Bakanlığı'na veya EDİRNE Çevre ve Şehircilik İl Müdürlüklerine müracaat edilebilir. İlgililere ve kamuoyuna duyurulur.",
+    "detail_links": [
+      {
+        "text": "ÇED Raporu",
+        "href": "http://eced.csb.gov.tr/jsp/ek1/54485"
+      }
+    ],
+    "documents": [
+      {
+        "portal_doc_url": "http://eced.csb.gov.tr/jsp/ek1/54485",
+        "filing_id": "54485",
+        "consulting_firm": "LEORA ÇEVRE VE ENERJİ YATIRIMLARI A.Ş.",
+        "submitted_at": "05/02/2025 01:48:50",
+        "pdf_urls": [
+          {
+            "label": "54485_Son_Sekli_Verilen_Rapor.pdf",
+            "url": "http://eced.csb.gov.tr/jsp/dosya/dosyaGoster.htm?tempAd=sign3469674738849372663.pdf&orjinalAd=54485_Son_Sekli_Verilen_Rapor.pdf&yuklemeTarihi=2026-11-10"
+          }
+        ]
+      }
+    ],
+    "announcement_date": "2026-11-13",
+    "statutory_clocks": [
+      {
+        "code": "aski_10d",
+        "kind": "10 günlük halkın görüş ve önerilerine açılma (askı) süresi",
+        "deadline": "2026-11-23",
+        "days_remaining": 3
+      }
+    ],
+    "filing_key": "54485:13.11.2026:Nihai Karar",
+    "first_seen_at": "2026-11-20T09:02:21"
+  },
+  "pdf_info": {
+    "filename": "54485.pdf",
+    "bytes": 65927762,
+    "sha256": "c0b5ae5feae567942cd9b3ee6d97043f022642490333ac35586fb1af5dec39bb",
+    "cached": false
+  },
+  "analysis": {
+    "page_count": 1039,
+    "total_chars": 1693343,
+    "text_pages": 957,
+    "scanned_or_blank_pages": 82,
+    "scanned_page_sample": [
+      282,
+      283,
+      284,
+      287,
+      288,
+      289,
+      290,
+      301,
+      303,
+      304,
+      305,
+      306,
+      307,
+      308,
+      309
+    ],
+    "headings": [
+      [
+        3,
+        "BÖLÜM II : PROJE YERİ VE ETKİ ALANININ MEVCUT ÇEVRESEL ÖZELLİKLERİN"
+      ],
+      [
+        5,
+        "BÖLÜM III: PROJENİN İNŞAAT ÖNCESİ, İNŞAAT VE İŞLETME AŞAMASINDA"
+      ],
+      [
+        11,
+        "BÖLÜM VI HALKIN BİLGİLENDİRİLMESİ VE SÜRECE KATILIMI İLE PAYDAŞ KATILIM"
+      ],
+      [
+        213,
+        "BÖLÜM IV: KÜMÜLATİF ÇEVRESEL ETKİ DEĞERLENDİRME"
+      ],
+      [
+        217,
+        "BÖLÜM V: ÇEVRESEL VE SOSYAL EYLEM PLANI"
+      ],
+      [
+        241,
+        "BÖLÜM VI HALKIN BİLGİLENDİRİLMESİ VE SÜRECE KATILIMI İLE PAYDAŞ"
+      ],
+      [
+        247,
+        "BÖLÜM VII: SONUÇLAR"
+      ],
+      [
+        258,
+        "BÖLÜM VIII:"
+      ],
+      [
+        259,
+        "BÖLÜM VIII: NOTLAR, KAYNAKLAR VE EKLER"
+      ],
+      [
+        532,
+        "BÖLÜM I"
+      ],
+      [
+        603,
+        "BÖLÜM II"
+      ],
+      [
+        999,
+        "ÇEVRESEL VE SOSYAL YÖNETİM PLANI"
+      ],
+      [
+        1000,
+        "ÇEVRESEL VE SOSYAL"
+      ]
+    ],
+    "geo": {
+      "precision": "exact_pdf",
+      "lat": 40.6781,
+      "lon": 26.7151,
+      "point_count": 80,
+      "points": [
+        [
+          40.68396,
+          26.7377
+        ],
+        [
+          40.68414,
+          26.73297
+        ],
+        [
+          40.68631,
+          26.72903
+        ],
+        [
+          40.68397,
+          26.73523
+        ],
+        [
+          40.68402,
+          26.73598
+        ],
+        [
+          40.68375,
+          26.73601
+        ],
+        [
+          40.6837,
+          26.73526
+        ],
+        [
+          40.68394,
+          26.73471
+        ],
+        [
+          40.68368,
+          26.73473
+        ],
+        [
+          40.68464,
+          26.7372
+        ],
+        [
+          40.68481,
+          26.73248
+        ],
+        [
+          40.68699,
+          26.72854
+        ],
+        [
+          40.68465,
+          26.73474
+        ],
+        [
+          40.68469,
+          26.73549
+        ],
+        [
+          40.68442,
+          26.73551
+        ],
+        [
+          40.68438,
+          26.73477
+        ],
+        [
+          40.68462,
+          26.73422
+        ],
+        [
+          40.68435,
+          26.73424
+        ],
+        [
+          40.69123,
+          26.7296
+        ],
+        [
+          40.69004,
+          26.73551
+        ],
+        [
+          40.68676,
+          26.73985
+        ],
+        [
+          40.68362,
+          26.74096
+        ],
+        [
+          40.68181,
+          26.74336
+        ],
+        [
+          40.67732,
+          26.74495
+        ],
+        [
+          40.67282,
+          26.74339
+        ],
+        [
+          40.66953,
+          26.73908
+        ],
+        [
+          40.66881,
+          26.73561
+        ],
+        [
+          40.66868,
+          26.73557
+        ],
+        [
+          40.66539,
+          26.73127
+        ],
+        [
+          40.66417,
+          26.72537
+        ],
+        [
+          40.66483,
+          26.72209
+        ],
+        [
+          40.66429,
+          26.71946
+        ],
+        [
+          40.66548,
+          26.71356
+        ],
+        [
+          40.66875,
+          26.70923
+        ],
+        [
+          40.67324,
+          26.70763
+        ],
+        [
+          40.67774,
+          26.70919
+        ],
+        [
+          40.68104,
+          26.71349
+        ],
+        [
+          40.68195,
+          26.71792
+        ],
+        [
+          40.68221,
+          26.71783
+        ],
+        [
+          40.68671,
+          26.71939
+        ]
+      ],
+      "datum": "UTM-Z35/ED50",
+      "pages": [
+        39,
+        40,
+        90,
+        94,
+        95
+      ]
+    },
+    "signals": {
+      "coordinates_and_footprint": {
+        "label": "Coordinates, Parcel & Footprint",
+        "page_count": 125,
+        "pages": [
+          8,
+          20,
+          24,
+          28,
+          31,
+          35,
+          39,
+          40,
+          56,
+          80,
+          90,
+          91,
+          94,
+          95,
+          103,
+          104,
+          110,
+          123,
+          134,
+          135,
+          136,
+          137,
+          139,
+          147,
+          148
+        ],
+        "samples": [
+          {
+            "page": 8,
+            "match": "utm",
+            "snippet": "…minin ve bataryaların nereden temin edileceği, sistemin nasıl kurulacağı, depolama yönteminin nasıl olacağı, hangi soğutma sisteminin kullanılacağı, türbinler arası mesafe ve depolama tesislerinin nasıl konumlandırılacağı, kullanılacak türb…"
+          },
+          {
+            "page": 20,
+            "match": "koordinat",
+            "snippet": "…ojenin verimliliğini arttırmak ve çevre ile uyumunu geliştirmek adına projede revizyon planlanmış olup, santral sahası koordinatlarında herhangi bir değişiklik yapılmaksızın toplam 3 adet türbin ile 22,5 MWm/21 MWe kurulu güce ulaşılması planlanm…"
+          },
+          {
+            "page": 24,
+            "match": "utm",
+            "snippet": "…itch): Pervane kanatları elektrik üretmek için çok düşük veya çok yüksek olan hızlarda, rotor hızını kontrol altında tutmak amacı ile bazen durdurulup bazen de durdurulur. Çark (Rotor): Pervane kanatları ve göbek bölümüne rotor yani çark…"
+          },
+          {
+            "page": 28,
+            "match": "1.902 m2",
+            "snippet": "…urumunda depolamak üzere entegre elektrik depolama sistemi kurulacaktır. Söz konusu elektrik depolama alanı, yaklaşık 1.902 m2’lik alan üzerinde kurulacaktır. Proje kapsamında ayrıca yaklaşık 1.333 m2’lik alan üzerinde şalt sahası yer alacaktır.…"
+          },
+          {
+            "page": 28,
+            "match": "1.333 m2",
+            "snippet": "…öz konusu elektrik depolama alanı, yaklaşık 1.902 m2’lik alan üzerinde kurulacaktır. Proje kapsamında ayrıca yaklaşık 1.333 m2’lik alan üzerinde şalt sahası yer alacaktır."
+          },
+          {
+            "page": 31,
+            "match": "1.902 m2",
+            "snippet": "…urumunda depolamak üzere entegre elektrik depolama sistemi kurulacaktır. Söz konusu elektrik depolama alanı, yaklaşık 1.902 m2’lik alan üzerinde kurulacaktır. Proje kapsamında ayrıca yaklaşık 1.333 m2’lik alan üzerinde şalt sahası yer alacaktır.…"
+          },
+          {
+            "page": 31,
+            "match": "1.333 m2",
+            "snippet": "…öz konusu elektrik depolama alanı, yaklaşık 1.902 m2’lik alan üzerinde kurulacaktır. Proje kapsamında ayrıca yaklaşık 1.333 m2’lik alan üzerinde şalt sahası yer alacaktır. Proje kapsamında gerçekleştirilecek idari faaliyetler, şalt sahası içer…"
+          },
+          {
+            "page": 31,
+            "match": "1,8 km",
+            "snippet": "…n yolları kullanılarak ulaşım sağlanacaktır. Santral sahası içerisinde, türbinler arasında servis yolu olarak yaklaşık 1,8 km yol kullanılacaktır. Servis yolunun yaklaşık olarak 1,5 km’lik kısmı mevcut yol olup 300 metrelik kısmı için yeni yol…"
+          }
+        ]
+      },
+      "water_and_discharge": {
+        "label": "Water Use, Hydrogeology & Discharge",
+        "page_count": 71,
+        "pages": [
+          6,
+          7,
+          21,
+          33,
+          34,
+          76,
+          86,
+          87,
+          92,
+          93,
+          110,
+          113,
+          116,
+          144,
+          164,
+          165,
+          166,
+          179,
+          194,
+          195,
+          221,
+          228,
+          236,
+          251,
+          253
+        ],
+        "samples": [
+          {
+            "page": 6,
+            "match": "yeraltı suyu",
+            "snippet": "…emniyeti için yapılacak işlemler, alınacak önlemler; taşkın ve heyelan riski; yüzeysel (kuru dere yatakları dahil) ve yeraltı suyu kaynaklarının etkilenme durumları ve alınacak önlemler; “Dere Yatakları ve Taşkınlar” konulu 2006/27 sayılı Başbakanlı…"
+          },
+          {
+            "page": 7,
+            "match": "deşarj",
+            "snippet": "…nım amaçlarına göre miktarların ayrı ayrı belirtilmesi; oluşacak atık suların cins ve miktarları, bertaraf yöntemleri, deşarj edileceği ortamlar, çevreyi etkileyebilecek olası sorunların belirlenmesi, alıcı ortamla etkileşimi, kümülatif etkiler…"
+          },
+          {
+            "page": 21,
+            "match": "deşarj",
+            "snippet": "…. Enerji depolama sistemleri, enerji maliyetlerini düşürmek ve talep yükünü kontrol etmek adına kendi kendini şarj ve deşarj edebilmektedir. Proje konusu faaliyet; 29.07.2022 tarih ve 31907 sayılı Resmî Gazete’de yayımlanarak yürürlüğe gire…"
+          },
+          {
+            "page": 33,
+            "match": "deşarj",
+            "snippet": "…rlama, inşaat ve işletme aşamalarında tesisten kaynaklanacak her türlü atık/atıksuyun derelere/kanallara ulaşması veya deşarj edilmesi önlenecektir. Bu atıkların mevzuata uygun biçimde bertarafı sağlanarak, suyun serbest akışına müdahale edilm…"
+          },
+          {
+            "page": 34,
+            "match": "atıksu",
+            "snippet": "…İ (22,5 MWm / 21,00 MWe / 3 Adet Türbin) VE ELEKTRİK DEPOLAMA TESİSİ (21,00 MWe / 21,00 MWh) ÇED RAPORU 12 Atık/atıksu depolama ve benzeri birimlerde sızdırmazlık (geçirimsizlik) önlemleri alınarak yüzey ve yeraltısuyu kaynaklarının kirl…"
+          },
+          {
+            "page": 34,
+            "match": "yeraltısuyu",
+            "snippet": "…ED RAPORU 12 Atık/atıksu depolama ve benzeri birimlerde sızdırmazlık (geçirimsizlik) önlemleri alınarak yüzey ve yeraltısuyu kaynaklarının kirlenmesi engellenecektir. Proje kapsamındaki faaliyetler sırasında 167 Sayılı Yeraltısuları Hakkınd…"
+          },
+          {
+            "page": 76,
+            "match": "Yeraltısuyu",
+            "snippet": "…k Etüt Raporundan ilgili bölümlerin eklenmesi), II.2.2.1. Genel Jeoloji1 Proje alanı, Meriç-Ergene Havzası Meriç Yeraltısuyu Alt Havzası ve Marmara Havzası Kuzey Marmara Yeraltısuyu Alt Havzası içinde kalmaktadır. Üst Kretase yaşta Yeniköy…"
+          },
+          {
+            "page": 86,
+            "match": "Yeraltısuyu",
+            "snippet": "…4.1.1. Hidrolojik Havza Özellikleri Proje alanı ülke genelinde ayrılmış olan havzalardan Meriç-Ergene Havzası Meriç Yeraltısuyu Alt Havzası ve Marmara Havzası Kuzey Marmara Yeraltısuyu Alt Havzası içinde kalmaktadır. Aşağıda bahsi geçen havza ve…"
+          }
+        ]
+      },
+      "protected_land_and_olive": {
+        "label": "Protected Zones, Forests & Olive Groves",
+        "page_count": 68,
+        "pages": [
+          5,
+          18,
+          20,
+          23,
+          30,
+          34,
+          50,
+          54,
+          57,
+          96,
+          97,
+          101,
+          102,
+          103,
+          104,
+          106,
+          107,
+          109,
+          110,
+          112,
+          113,
+          116,
+          124,
+          132,
+          169
+        ],
+        "samples": [
+          {
+            "page": 5,
+            "match": "doğal sit",
+            "snippet": "…t anıtları, tabiatı koruma alanları, yaban hayatı korunma alanları, biyogenetik rezerv alanları, biyosfer rezervleri, doğal sit ve anıtlar, arkeolojik, tarihi, kültürel sitler, özel çevre koruma bölgeleri, özel koruma alanları, turizm alan ve mer…"
+          },
+          {
+            "page": 5,
+            "match": "özel çevre koruma",
+            "snippet": "…alanları, biyogenetik rezerv alanları, biyosfer rezervleri, doğal sit ve anıtlar, arkeolojik, tarihi, kültürel sitler, özel çevre koruma bölgeleri, özel koruma alanları, turizm alan ve merkezleri, mer'a kanunu kapsamındaki vb. alanlar, hassasiyet dereces…"
+          },
+          {
+            "page": 18,
+            "match": "Özel Çevre Koruma",
+            "snippet": "…oruma Alanları .......................................................... 86 Şekil 72. Santral Alanının Saros Körfezi, Özel Çevre Koruma Bölgesine Göre Konumu . 86 Şekil 73. Türkiye’deki RAMSAR Alanları, ...................................................…"
+          },
+          {
+            "page": 20,
+            "match": "orman alanı",
+            "snippet": "…acaktır. Proje alanının 1/100.000 ölçekli çevre düzeni planı üzerindeki konumuna bakıldığında, 3 adet türbinin tamamı “orman alanı” olarak belirlenmiş alanlar içerisinde kaldığı görülmektedir. Türbin noktalarından T2 nolu türbin, Edirne ili idar…"
+          },
+          {
+            "page": 23,
+            "match": "orman alanı",
+            "snippet": "…adır. Proje alanının 1/100.000 ölçekli çevre düzeni planı üzerindeki konumuna bakıldığında, 3 adet türbinin tamamı “orman alanı” olarak belirlenmiş alanlar içerisinde kaldığı görülmektedir. Türbin noktalarından T2 nolu türbin, Edirne ili idar…"
+          },
+          {
+            "page": 30,
+            "match": "orman alanı",
+            "snippet": "…Bölgesi Ergene Havzası 1/100.000 ölçekli çevre düzeni planı üzerindeki konumuna bakıldığında, 3 adet türbinin tamamı “orman alanı” olarak belirlenmiş alanlar içerisinde kaldığı görülmektedir (Bkz. Ek-2). Bununla birlikte Çevre, Şehircilik ve İk…"
+          },
+          {
+            "page": 34,
+            "match": "Doğal Sit",
+            "snippet": "…sonucunda proje alan sınırlarının bir kısmının \"Edirne İli, Keşan İlçesi, Saros Körfezi 1. Etap (Mecidiye- Kocaçeşme) Doğal Sit Alanı (Nitelikli Doğal Koruma Alanı) sınırları içinde kaldığı\" ancak trübin noktalarının Doğal Sit Alanı veya Potansiy…"
+          },
+          {
+            "page": 50,
+            "match": "orman alanı",
+            "snippet": "…çevre düzeni planı üzerindeki konumuna bakıldığında, tesis edilecek 3 adet türbinin tamamının hakim fonksiyon olarak “orman alanı” olarak belirlenmiş alanlar içerisinde kaldığı görülmektedir (Bkz. Ek-2). Bu doğrultuda “Orman Kanunu’nun 17nci Ma…"
+          }
+        ]
+      },
+      "ecology_and_baseline": {
+        "label": "Flora, Fauna & Baseline Methodology",
+        "page_count": 143,
+        "pages": [
+          5,
+          89,
+          100,
+          111,
+          113,
+          116,
+          119,
+          120,
+          121,
+          122,
+          123,
+          167,
+          168,
+          200,
+          201,
+          202,
+          204,
+          224,
+          231,
+          256,
+          264,
+          335,
+          337,
+          354,
+          376
+        ],
+        "samples": [
+          {
+            "page": 5,
+            "match": "Flora ve Fauna",
+            "snippet": "….......................................................................................................... 80 II.2.10. Flora ve Fauna (türlerin belirlenmesi; belirlenen türlerin tehlike kategorileri, endemiklik durumları, nispi bolluk dereceleri, Ulusl…"
+          },
+          {
+            "page": 5,
+            "match": "Bern Sözleşmesi",
+            "snippet": "…i; belirlenen türlerin tehlike kategorileri, endemiklik durumları, nispi bolluk dereceleri, Uluslararası anlaşmalarla (Bern Sözleşmesi vb.) koruma altına alınan türler; nadir ve nesli tehlikeye düşmüş türler ve bunların yaşama ortamları, av hayvanları,…"
+          },
+          {
+            "page": 89,
+            "match": "mevsimsel",
+            "snippet": "…ik Değerlendirme Raporu (Ek-15) II.2.4.1.3. Su Noktaları ●Akarsular Proje alanı ve yakın çevresinde çok sayıda mevsimsel dere ve sürekli akış gösteren dere bulunmaktadır. Proje alanı içinde mevsimsel dereler arasında Kapaklıyazma Deresi y…"
+          },
+          {
+            "page": 100,
+            "match": "mevsimsel",
+            "snippet": "…temel en önemli etkiler gürültü ve toz emisyonları olacaktır. Sahada gerçekleştirilecek inşaat çalışmalarının optimum mevsimsel koşullara göre planlanarak yapılması halinde, toprağın/atığın doğal olarak nemli olması sayesinde tozumanın önemli ora…"
+          },
+          {
+            "page": 111,
+            "match": "BERN Sözleşmesi",
+            "snippet": "…özleşmeler uyarınca korunması gerekli alanlar a) \"Avrupa’nın Yaban Hayatı ve Yaşama Ortamlarını Koruma Sözleşmesi\" (BERN Sözleşmesi) uyarınca koruma altına alınmış alanlardan \"Önemli Deniz Kaplumbağası Üreme Alanlarında belirtilen I. ve II. Koruma Bö…"
+          },
+          {
+            "page": 113,
+            "match": "endemik",
+            "snippet": "…. d) Bilimsel araştırmalar için önem arz eden ve/veya nesli tehlikeye düşmüş veya düşebilir türler ve ülkemiz için endemik olan türlerin yaşama ortamı olan alanlar, biyosfer rezervi, biyotoplar, biyogenetik rezerv alanları, benzersiz özellik…"
+          },
+          {
+            "page": 116,
+            "match": "Biyoçeşitlilik",
+            "snippet": "…herpetofauna (amfibi ve sürüngen) yapısına sahiptir. Doğa Koruma ve Milli Parklar Genel Müdürlüğünden temin edilen “Biyoçeşitlilik Raporu” içerisinde belirtilen “Koru Dağları ve Saros Körfezi Özellikli Alanı”na ilişkin Risk- Etki-Tedbir Matrisi oluş…"
+          },
+          {
+            "page": 119,
+            "match": "biyoçeşitlilik",
+            "snippet": "…bertaraf sistemine verilerek bertarafı sağlanacaktır. ●Proje kapsamında gerçekleştirilecek tüm çalışmalar, bölgedeki biyoçeşitlilik dikkate alınarak yapılacaktır. ●Projenin arazi hazırlık aşamasından başlayarak “biyorestorasyon koşulları” belirlene…"
+          }
+        ]
+      },
+      "pollutants_and_hazards": {
+        "label": "Emissions, Geochemistry & Waste",
+        "page_count": 129,
+        "pages": [
+          4,
+          6,
+          7,
+          8,
+          9,
+          10,
+          37,
+          52,
+          53,
+          56,
+          80,
+          81,
+          82,
+          83,
+          84,
+          86,
+          100,
+          125,
+          134,
+          144,
+          146,
+          152,
+          153,
+          156,
+          159
+        ],
+        "samples": [
+          {
+            "page": 4,
+            "match": "deprem",
+            "snippet": "…, çığ, su baskını vb.), duyarlılık analizi; heyelan yağış ilişkisi, yamaç stabilitesi, kayma analizi; depremsellik ve deprem riski; heyelan risk haritası, faaliyet alanını da içine alan büyük ölçekli diri fay haritası ile Türkiye Deprem Tehlik…"
+          },
+          {
+            "page": 6,
+            "match": "kümülatif",
+            "snippet": "…ğın hangi amaçlar için kullanılacağı, çevreyi etkileyebilecek olası sorunların belirlenmesi, alıcı ortamla etkileşimi, kümülatif etkilerin belirlenmesi, çevreye olabilecek olumsuz etkilerinin azaltılması için alınacak önlemler, düzenleme ve restor…"
+          },
+          {
+            "page": 7,
+            "match": "kümülatif",
+            "snippet": "…ek gürültünün kaynakları ve seviyesi, çevreyi etkileyebilecek olası sorunların belirlenmesi, alıcı ortamla etkileşimi, kümülatif etkilerin belirlenmesi, çevreye olabilecek olumsuz etkilerinin azaltılması için alınacak önlemler, ...................…"
+          },
+          {
+            "page": 8,
+            "match": "kümülatif",
+            "snippet": "…için riskli ve tehlikeli olan işler, çevreyi etkileyebilecek olası sorunların belirlenmesi, alıcı ortamla etkileşimi, kümülatif etkilerin belirlenmesi, çevreye olabilecek olumsuz etkilerinin azaltılması için alınacak önlemler, . 149 III.1.17. Pr…"
+          },
+          {
+            "page": 9,
+            "match": "kümülatif",
+            "snippet": "…mler, orman ve tarım alanları üzerine Çevreyi etkileyebilecek olası sorunların belirlenmesi, alıcı ortamla etkileşimi, kümülatif etkilerin belirlenmesi, çevreye olabilecek olumsuz etkilerinin azaltılması için alınacak önlemler, ...................…"
+          },
+          {
+            "page": 9,
+            "match": "gürültü",
+            "snippet": "…r, .................................................... 168 III.2.7. Proje ünitelerinin işletilmesi sırasında oluşacak gürültü kaynak seviyesi, arka plan ölçümleri çevreyi etkileyebilecek olası sorunların belirlenmesi, alıcı ortamla etkileşimi,…"
+          },
+          {
+            "page": 10,
+            "match": "kümülatif",
+            "snippet": "…taryaların bertarafına ilişkin bilgi, çevreyi etkileyebilecek olası sorunların belirlenmesi, alıcı ortamla etkileşimi, kümülatif etkilerin belirlenmesi, çevreye olabilecek olumsuz etkilerinin azaltılması için alınacak önlemler, ..................…"
+          },
+          {
+            "page": 37,
+            "match": "Gürültü",
+            "snippet": "…eristikleri, x Kullanılan türbin karakteristikleri, performansı ve ekonomik ömürleri, x Servis ve bakım kolaylığı, x Gürültü kirliliği açısından etkisinin minimum düzeyde olması, x Projeden kaynaklanabilecek herhangi bir sera gazının olmaması,…"
+          }
+        ]
+      },
+      "cost_and_capacity": {
+        "label": "Project Cost, Power & Capacity",
+        "page_count": 54,
+        "pages": [
+          2,
+          3,
+          8,
+          20,
+          21,
+          23,
+          24,
+          26,
+          29,
+          30,
+          34,
+          36,
+          37,
+          39,
+          40,
+          49,
+          56,
+          57,
+          92,
+          138,
+          141,
+          142,
+          143,
+          144,
+          161
+        ],
+        "samples": [
+          {
+            "page": 2,
+            "match": "Proje bedeli",
+            "snippet": "…ŞI RÜZGÂR ENERJİ SANTRALİ (22,5 MWm / 21,00 MWe / 3 Adet Türbin) VE ELEKTRİK DEPOLAMA TESİSİ (21,00 MWe / 21,00 MWh) Proje bedeli (TL): 455.700.000 TL Proje için seçilen yerin açık adresi (İli, İlçesi, Mevkii): Edirne İli, Keşan İlçesi, Sazlıdere…"
+          },
+          {
+            "page": 2,
+            "match": "455.700.000 TL",
+            "snippet": "…NTRALİ (22,5 MWm / 21,00 MWe / 3 Adet Türbin) VE ELEKTRİK DEPOLAMA TESİSİ (21,00 MWe / 21,00 MWh) Proje bedeli (TL): 455.700.000 TL Proje için seçilen yerin açık adresi (İli, İlçesi, Mevkii): Edirne İli, Keşan İlçesi, Sazlıdere Köyü Mevkii Çanakkale…"
+          },
+          {
+            "page": 3,
+            "match": "proje bedeli",
+            "snippet": "…andartlar) proje için seçilen yerin koordinatları ............................. 13 I.5. Projenin ekonomik özellikleri (proje bedelinin hesaplanma şeklinin bilgi ve belgelerle güncel, açıklayıcı olması) (ilgili yatırım programı, finans kaynakları, bu…"
+          },
+          {
+            "page": 8,
+            "match": "kapasite",
+            "snippet": "…, (modeli, kule yüksekli, kanat çapı-boyu, süpürme alanı, EDT boyutları ve kurulacağı alan büyüklüğü, batarya sayısı, kapasitesi vb. teknik özelliklerin verilmesi), tesisin faaliyet aşamasındaki ana üretim kapasitesi, elektrik bağlantı hattı vb.…"
+          },
+          {
+            "page": 20,
+            "match": "kurulu güç",
+            "snippet": "…e Köyü mevkii ile Çanakkale İli, Gelibolu İlçesi, Adilhan Köyü mevkiinde toplam 4 adet türbin ve 21,00 MWm / 21,00 MWe kurulu güç için ÇED süreci başlatılmıştır. Sonrasında projenin verimliliğini arttırmak ve çevre ile uyumunu geliştirmek adına…"
+          },
+          {
+            "page": 21,
+            "match": "kapasite",
+            "snippet": "…esi açısından rüzgar enerjisi üretimi büyük önem arz etmektedir. SUBAŞI DEPRES projesi kapsamında; her biri 7,5 MWm kapasiteli 3 adet türbin ile 22,5 MWm kurulu güç kapasiteli enerji üretiminin gerçekleştirilmesi ve ayrıca 21,0 MWe elektrik d…"
+          },
+          {
+            "page": 21,
+            "match": "kurulu güç",
+            "snippet": "…büyük önem arz etmektedir. SUBAŞI DEPRES projesi kapsamında; her biri 7,5 MWm kapasiteli 3 adet türbin ile 22,5 MWm kurulu güç kapasiteli enerji üretiminin gerçekleştirilmesi ve ayrıca 21,0 MWe elektrik depolama ünitesinin de santral alanında ku…"
+          },
+          {
+            "page": 21,
+            "match": "proje bedeli",
+            "snippet": "…kipmanların bedeli, arazi edinimi, etüt/proje giderleri, harçlar ve diğer giderler göz önünde bulundurulduğunda toplam proje bedeli 455.700.000 TL olarak hesaplanmıştır. Proje kapsamında inşaat çalışmaları gerçekleştirilecek olup tesis kurulumuyla…"
+          }
+        ]
+      }
+    },
+    "audit_checks": {
+      "mentions_field_survey": true,
+      "mentions_literature_only_cue": true,
+      "mentions_seasonal_sampling": true,
+      "mentions_cumulative_impact": true,
+      "mentions_olive_law_3573": true,
+      "mentions_groundwater_or_aquifer": true,
+      "mentions_iucn_or_endemic": true
+    }
+  },
+  "llm_synthesis": {
+    "model": "gemini-4-hydrogen",
+    "generated_at": "2026-11-20T10:50:04",
+    "pages_sent": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      18,
+      20,
+      21,
+      23,
+      24,
+      28,
+      33,
+      89,
+      100,
+      111,
+      217,
+      218,
+      603,
+      604,
+      999,
+      1000,
+      1001
+    ],
+    "usage": {
+      "prompt_tokens": 23749,
+      "output_tokens": 4438,
+      "thoughts_tokens": 6552,
+      "total_tokens": 34739
+    },
+    "result": {
+      "executive_summary_tr": "Maksima Elektrik İnşaat Ticaret A.Ş. tarafından Edirne ili Keşan ilçesi Sazlıdere Köyü mevkii ile Çanakkale ili Gelibolu ilçesi Adilhan Köyü mevkiinde 22,5 MWm / 21,00 MWe kurulu gücünde 3 türbinli Subaşı Rüzgâr Enerji Santrali ve 21,00 MWe / 21,00 MWh kapasiteli Elektrik Depolama Tesisi (EDT) kurulması planlanmaktadır [s. 1, 2, 20]. Toplam 455.700.000 TL proje bedelli yatırım kapsamında her biri 7,5 MWm gücünde Goldwind GWH182 model 3 türbinin tamamı 1/100.000 ölçekli Çevre Düzeni Planı'nda orman alanı içinde kalmakta olup T2 türbini Edirne, T1 ve T3 türbinleri ise Çanakkale il sınırları içerisindedir [s. 2, 20, 24]. Proje sahasına en yakın yerleşim yeri 2.000 m mesafedeki Adilhan Köyü olup, saha yakın çevresinde Kapaklıyazma ve Manastır dereleri ile Meriç-Ergene ve Marmara havzalarına ait yüzey suları bulunmaktadır [s. 33, 89]. Şekiller Dizini ve ilgili bölümlerde Saros Körfezi Özel Çevre Koruma Bölgesi, Kavak Deltası, Nitelikli Doğal Koruma Alanı, Sit Alanları ve yarasalara ilişkin değerlendirmelere atıf yapılmakla birlikte, sunulan sayfalarda çok mevsimli arazi örneklemesi ve kümülatif etki sonuçları doğrulanamamaktadır [s. 18, 111, 603, 604].",
+      "executive_summary_en": "Maksima Elektrik İnşaat Ticaret A.Ş. proposes the Subaşı Wind Power Plant (22.5 MWm / 21.00 MWe, 3 turbines) and an integrated Electricity Storage Facility (21.00 MWe / 21.00 MWh) spanning Sazlıdere Village (Keşan, Edirne) and Adilhan Village (Gelibolu, Çanakkale) [s. 1, 2, 20]. With an estimated investment cost of 455,700,000 TL, the three 7.5 MWm Goldwind GWH182 turbines are entirely sited within areas designated as forest land in the 1/100,000 Environmental Plan, with Turbine T2 located in Edirne Province and Turbines T1 and T3 in Çanakkale Province [s. 2, 20, 24]. The nearest settlement is Adilhan Village at 2,000 m from T1, and local seasonal and perennial streams (Kapaklıyazma and Manastır streams) drain toward the Meriç-Ergene Basin and southward to the Gulf of Saros [s. 33, 89]. Although the report indexes maps for sensitive zones such as the Saros Bay Special Environmental Protection Area, Kavak Delta, Qualified Natural Protection Area, and archaeological/natural sites as well as a revised Ecosystem Assessment Report covering bats, the supplied excerpts do not allow verification of multi-season pre-project field survey results or quantitative cumulative impact assessments [s. 18, 111, 603, 604].",
+      "key_facts": [
+        {
+          "label": "Kurulu Güç ve Türbin Sayısı",
+          "value": "22,5 MWm / 21,00 MWe (3 adet 7,5 MWm GOLDWIND GWH182 türbin) ve 21,00 MWe / 21,00 MWh EDT",
+          "page": 24
+        },
+        {
+          "label": "Proje Bedeli",
+          "value": "455.700.000 TL",
+          "page": 2
+        },
+        {
+          "label": "ÇED Raporu Sunum Tarihi",
+          "value": "10/11/2026",
+          "page": 2
+        },
+        {
+          "label": "Arazi Kullanımı ve İl Dağılımı",
+          "value": "3 türbinin tamamı 1/100.000 planda orman alanında; T2 Edirne ilinde, T1 ve T3 Çanakkale ilinde",
+          "page": 20
+        },
+        {
+          "label": "Elektrik Depolama Tesisi (EDT) Alanı",
+          "value": "Yaklaşık 1.902 m2",
+          "page": 28
+        },
+        {
+          "label": "Şalt Sahası Alanı",
+          "value": "Yaklaşık 1.333 m2",
+          "page": 28
+        },
+        {
+          "label": "En Yakın Yerleşim (Adilhan Köyü)",
+          "value": "T1: 2.000 m, T2: 2.400 m, T3: 2.750 m, EDT: 2.100 m, Şalt Sahası: 2.200 m",
+          "page": 33
+        },
+        {
+          "label": "Sazlıdere Köyüne Mesafeler",
+          "value": "T1: 5.000 m, T2: 4.750 m, T3: 4.650 m, EDT: 4.850 m, Şalt Sahası: 4.750 m",
+          "page": 33
+        },
+        {
+          "label": "Saha İnceleme Tarihi",
+          "value": "20.01.2025 (Yer Görme Bildirim dilekçesi: 10.01.2025)",
+          "page": 21
+        },
+        {
+          "label": "EPDK Önlisans ve Tadil Süreci",
+          "value": "İlk önlisans 11.05.2023 (Çatalca); Çorlu tadili 17.01.2024; Keşan tadili 10.12.2024; 3 türbin revizyonu 22.04.2026",
+          "page": 20
+        }
+      ],
+      "baseline_assessment": {
+        "field_survey_status": "mixed_or_unclear",
+        "seasonal_sampling_status": "unclear",
+        "cumulative_impact_status": "omitted_or_not_found",
+        "olive_and_protected_status": "Sunulan sayfalarda 3573 sayılı Kanun kapsamında zeytinlik varlığına dair bir bilgi yer almamaktadır. Proje alanındaki 3 türbinin tamamı 1/100.000 ölçekli Çevre Düzeni Planı'nda orman alanında ve orman vasıflı arazilerde kalmaktadır [s. 20, 23, 100]. Proje alanında 1380 sayılı Su Ürünleri Kanunu kapsamına giren alanlar ile BERN Sözleşmesi uyarınca korunan Deniz Kaplumbağası Üreme Alanları (I. ve II. Koruma Bölgeleri) ve Akdeniz Foku Yaşama ve Üreme Alanlarının bulunmadığı ifade edilmektedir [s. 100, 111]. Öte yandan Şekiller Dizini'nde Tabiat Parkları, Sit Alanları, Nitelikli Doğal Koruma Alanı, Saroz Kültür ve Turizm Koruma Gelişim Bölgesi, Saros Körfezi Özel Çevre Koruma Bölgesi ve Kavak Deltası haritaları listelenmiş ancak mesafe ve etki metinleri sunulan sayfalarda yer almamıştır [s. 18, 111].",
+        "explanation": "Teknik Olmayan Özet bölümünde ÇED Yeterlik Belgesi Tebliği uyarınca 20.01.2025 tarihinde saha inceleme çalışması yapıldığı belirtilmekte [s. 21], ayrıca Ekosistem Değerlendirme Raporu (Revize III) ve Hidrojeolojik Değerlendirme Raporu (Ek-15) gibi uzmanlık raporlarına atıf yapılmaktadır [s. 89, 603, 604]. Ancak sunulan sayfalarda flora, fauna, ornitoloji ve yarasa arazi örnekleme tarihleri, gözlem süreleri ve tür listeleri yer almayıp yalnızca hayvancılık için TÜİK istatistikleri [s. 100] ve yarasa bölümünün genel literatür girişi [s. 604] görülmektedir. İçindekiler ve Şekiller Dizini'nde yer alan kümülatif RES/EDT değerlendirme bölümleri (II.1.3, III.2.7, Şekil 87) sunulan sayfalarda bulunmadığından kümülatif etki değerlendirmesi doğrulanamamış, Çevre İzleme Planı bölümünde ise ÇED Olumlu kararı sonrası hazırlanacak Proje İlerleme Raporu yükümlülüklerine odaklanılmıştır [s. 4, 9, 18, 217, 218]."
+      },
+      "red_flags": [
+        {
+          "severity": "high",
+          "title": "Türbinlerin Tamamının Orman Alanında Yer Alması",
+          "detail": "1/100.000 ölçekli Çevre Düzeni Planı'na göre 3 adet türbinin tamamı orman alanı içerisinde kalmakta olup santral sahası orman vasıflı arazilerden oluşmaktadır [s. 20, 23, 100]. Türbin lokasyon hazırlığında çıkacak bitkisel toprak ve hafriyat toprağının da türbin alanı çevresinde geçici olarak depolanacağı belirtilmekte ancak orman dokusu kaybı, kesilecek ağaç sayısı ve yangın riski verileri sunulan sayfalarda görülmemektedir [s. 5, 7, 33].",
+          "pages": [
+            20,
+            23,
+            33,
+            100
+          ]
+        },
+        {
+          "severity": "high",
+          "title": "Hassas Koruma Alanları ve Saros Havzası ile Hidrolojik Bağlantı",
+          "detail": "Raporda Saros Körfezi Özel Çevre Koruma Bölgesi, Kavak Deltası, Nitelikli Doğal Koruma Alanı, Sit Alanları, Tabiat Parkları ve Saroz Kültür ve Turizm Koruma Gelişim Bölgesi haritaları dizinde yer almasına rağmen [s. 18, 111], proje sahasının bu alanlara kesin mesafeleri sunulan sayfalarda bulunmamaktadır. Ayrıca proje sahasındaki Marmara Havzası yüzey sularının kuzey-güney yönünde akarak Saros Körfezi'ne ve Ege Denizi'ne ulaştığı öngörülmektedir [s. 89].",
+          "pages": [
+            18,
+            89,
+            111
+          ]
+        },
+        {
+          "severity": "high",
+          "title": "Yarasa ve Kuş Arazi Verilerinin Mevcut Sayfalarda Doğrulanamaması",
+          "detail": "Sunulan sayfalarda belirtilen tek saha inceleme tarihi kış ortasına denk gelen 20.01.2025 tarihidir [s. 21]. Ekosistem Değerlendirme Raporu (Revize III) kapsamındaki Yarasa bölümünün yalnızca genel literatür girişi sunulmuş olup [s. 603, 604], yarasalar ve kuşlar açısından aktif dönemleri kapsayan çok mevsimli saha gözlem metodolojisi ve tür bulguları mevcut sayfalardan teyit edilememektedir.",
+          "pages": [
+            21,
+            603,
+            604
+          ]
+        },
+        {
+          "severity": "medium",
+          "title": "İki İli Kapsayan Proje Alanı ve Çoklu Yer Değişikliği Geçmişi",
+          "detail": "T2 türbini Edirne ili Keşan ilçesi sınırlarında, T1 ve T3 türbinleri ise Çanakkale ili Gelibolu ilçesi sınırlarında yer almasına karşın resmi duyuru başlığı yalnızca Edirne/Keşan olarak verilmiştir [s. 1, 2, 20, 23]. Ayrıca proje önlisansı ilk olarak İstanbul/Çatalca için alınmış, ardından Tekirdağ/Çorlu ve Edirne/Keşan'a tadil edilmiş, son olarak 4 türbinden 3 adet 7,5 MWm türbine revize edilmiştir [s. 20, 24].",
+          "pages": [
+            1,
+            2,
+            20,
+            23,
+            24
+          ]
+        },
+        {
+          "severity": "medium",
+          "title": "Kümülatif Etki ve İzleme Tablosunun Sunulan Sayfalarda Yer Almaması",
+          "detail": "Bölgede kurulu veya planlanan diğer RES/EDT projeleriyle kümülatif etkilerin incelendiği bölümler (II.1.3, III.2.7 ve Şekil 87) ile Çevre İzleme Planı tablosu sunulan sayfa aralığı dışında kaldığından [s. 4, 9, 18, 218], kümülatif değerlendirmenin nicel niteliği ve işletme dönemi izleme parametreleri doğrulanamamaktadır.",
+          "pages": [
+            4,
+            9,
+            18,
+            217,
+            218
+          ]
+        },
+        {
+          "severity": "low",
+          "title": "Hayvancılık Verileri ile Saha İddiası Arasındaki Belirsizlik",
+          "detail": "Raporda TÜİK verilerine göre yörede yüksek sayıda küçükbaş hayvan varlığı (örneğin 18.198 baş Merinos dişi koyun ve 15.760 baş dişi keçi) listelenmesine karşın, hemen ardından herhangi bir parsel bazlı mera veya otlatma etüdü sunulmadan faaliyet alanında mevcut durumda tarım ve hayvancılık yürütülmediği ifade edilmektedir [s. 100].",
+          "pages": [
+            100
+          ]
+        }
+      ],
+      "hkt_and_petition_questions": [
+        {
+          "question_tr": "Projenin T1 ve T3 numaralı türbinleri Çanakkale ili Gelibolu ilçesi Adilhan Köyü sınırlarında, T2 numaralı türbini ise Edirne ili Keşan ilçesi Sazlıdere Köyü sınırlarında yer almasına rağmen [s. 2, 20, 23], 14. madde askı ve bilgilendirme süreçleri her iki il ve etkilenen yerleşimler bakımından eşzamanlı ve eksiksiz yürütülmüş müdür?",
+          "pages": [
+            2,
+            18,
+            20,
+            23
+          ]
+        },
+        {
+          "question_tr": "1/100.000 ölçekli Çevre Düzeni Planı'nda tamamı orman alanı içinde kalan 3 türbin, şalt sahası, 21,00 MWh kapasiteli EDT ünitesi ve geçici hafriyat depolama alanları için [s. 20, 28, 33] kesilecek ağaç sayısı, meşcere kapalılığı ve batarya kaynaklı orman yangını riskine karşı alınacak mühendislik önlemleri nelerdir?",
+          "pages": [
+            5,
+            20,
+            28,
+            33,
+            100
+          ]
+        },
+        {
+          "question_tr": "Proje alanındaki Marmara Havzası yüzey sularının Saros Körfezi'ne ulaştığı belirtilirken [s. 89], Şekiller Dizini'nde yer alan Saros Körfezi Özel Çevre Koruma Bölgesi, Kavak Deltası, Nitelikli Doğal Koruma Alanı ve Sit Alanlarına [s. 18, 111] olan kuş uçuşu mesafeler ve olası hidrolojik/ekolojik etkiler nicel olarak nasıl değerlendirilmiştir?",
+          "pages": [
+            18,
+            89,
+            111
+          ]
+        },
+        {
+          "question_tr": "Saha inceleme çalışmasının kış dönemine denk gelen 20.01.2025 tarihinde yapıldığı belirtildiğine göre [s. 21], Ekosistem Değerlendirme Raporu (Revize III) kapsamındaki yarasa ve kuş (ornitoloji) saha çalışmaları hangi mevsimlerde, kaç gün/saat süreyle gerçekleştirilmiş ve çarpışma/barotravma riskine karşı hangi türbin durdurma eşikleri belirlenmiştir [s. 603, 604]?",
+          "pages": [
+            5,
+            21,
+            603,
+            604
+          ]
+        },
+        {
+          "question_tr": "Yakın çevrede kurulu veya planlanan diğer rüzgâr enerji santrali ve elektrik depolama tesisi projeleriyle birlikte [s. 4, 9, 18] kümülatif gürültü, gölge titreşimi, habitat parçalanması ve kuş/yarasa göç koridorları üzerindeki toplam etki nicel modellemelerle ortaya konulmuş mudur?",
+          "pages": [
+            4,
+            9,
+            18,
+            604
+          ]
+        }
+      ],
+      "data_limitations": "Toplam 1.039 sayfalık Nihai ÇED Raporu PDF dosyasının 957 sayfası metin çıkarılabilir, 82 sayfası ise yalnızca taranmış görsel niteliğinde olup bu inceleme yalnızca sağlanan 26 sayfalık kesite ([1, 2, 3, 4, 5, 6, 7, 8, 9, 18, 20, 21, 23, 24, 28, 33, 89, 100, 111, 217, 218, 603, 604, 999, 1000, 1001]) dayanmaktadır. İçindekiler ve Şekiller Dizini'nde yer alan kümülatif proje mesafeleri (Bölüm II.1.3, Şekil 87), orman alanları ve ağaç kesim verileri (Bölüm II.2.8, III.1.13), koruma alanları mesafe metinleri ve haritaları (Bölüm II.2.9, Şekil 67-75), flora-fauna ve ornitoloji arazi verileri (Bölüm II.2.10), Bölüm III etki analizleri, Bölüm V.1 izleme tablosu ile Ekosistem Değerlendirme Raporu ve Çevresel/Sosyal Yönetim Planı içerikleri sunulan sayfalarda bulunmadığından doğrulanamamıştır."
+    }
+  }
+}

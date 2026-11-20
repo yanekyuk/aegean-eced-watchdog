@@ -1,0 +1,286 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>e-ÇED Ön Özet #61491 — GAZİANTEP / ŞAHİNBEY</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <style>
+:root {
+  --bg: #0f1216;
+  --surface: #171c22;
+  --border: #262e38;
+  --text: #e6edf3;
+  --muted: #8b949e;
+  --accent: #58a6ff;
+  --red: #f85149;
+  --amber: #d29922;
+  --green: #3fb950;
+  --badge-bg: #212830;
+}
+@media (prefers-color-scheme: light) {
+  :root {
+    --bg: #f6f8fa;
+    --surface: #ffffff;
+    --border: #d0d7de;
+    --text: #1f2328;
+    --muted: #656d76;
+    --accent: #0969da;
+    --red: #cf222e;
+    --amber: #9a6700;
+    --green: #1a7f37;
+    --badge-bg: #eef2f6;
+  }
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+}
+.wrap { max-width: 1240px; margin: 0 auto; padding: 24px 18px 64px; }
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+header { border-bottom: 1px solid var(--border); padding-bottom: 16px; margin-bottom: 20px; }
+h1 { margin: 0 0 6px; font-size: 1.55rem; }
+h2 { margin: 26px 0 10px; font-size: 1.2rem; }
+h3 { margin: 16px 0 8px; font-size: 1rem; }
+.sub { color: var(--muted); font-size: 0.92rem; margin: 0; }
+.meta-bar { display: flex; flex-wrap: wrap; gap: 14px; margin-top: 12px; font-size: 0.85rem; color: var(--muted); }
+.stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 10px; margin: 16px 0 18px; }
+.stat { background: var(--surface); border: 1px solid var(--border); border-radius: 8px; padding: 12px 14px; }
+.stat .num { font-size: 1.45rem; font-weight: 700; }
+.stat .lbl { font-size: 0.78rem; color: var(--muted); }
+.map-box {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 18px;
+}
+#map { width: 100%; height: 420px; background: var(--badge-bg); }
+#digest-map { width: 100%; height: 320px; background: var(--badge-bg); }
+.map-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  padding: 9px 14px;
+  font-size: 0.8rem;
+  color: var(--muted);
+  border-top: 1px solid var(--border);
+}
+.dot { display: inline-block; width: 10px; height: 10px; border-radius: 50%; margin-right: 5px; vertical-align: middle; }
+.controls { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; margin-bottom: 16px; }
+input[type="search"], select.filter-select {
+  padding: 8px 12px;
+  border-radius: 6px;
+  border: 1px solid var(--border);
+  background: var(--surface);
+  color: var(--text);
+  font-size: 0.9rem;
+}
+input[type="search"] { flex: 1 1 240px; }
+select.filter-select { min-width: 170px; }
+button.pill {
+  padding: 7px 12px;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: var(--surface);
+  color: var(--text);
+  cursor: pointer;
+  font-size: 0.82rem;
+}
+button.pill.active { background: var(--accent); border-color: var(--accent); color: #fff; font-weight: 600; }
+.cards { display: flex; flex-direction: column; gap: 10px; }
+.card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 15px 17px;
+}
+.card.ek1 { border-left: 4px solid var(--accent); }
+.row-top { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px; align-items: baseline; }
+.title { font-weight: 600; font-size: 0.98rem; }
+.badges { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 7px; }
+.badge {
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  background: var(--badge-bg);
+  border: 1px solid var(--border);
+}
+.badge.urgent { border-color: var(--red); color: var(--red); font-weight: 600; }
+.badge.warn { border-color: var(--amber); color: var(--amber); font-weight: 600; }
+.badge.ok { border-color: var(--green); color: var(--green); }
+.badge.muted { color: var(--muted); }
+.detail { font-size: 0.87rem; color: var(--muted); margin: 8px 0; }
+.actions { display: flex; flex-wrap: wrap; gap: 12px; font-size: 0.84rem; margin-top: 8px; }
+.notice {
+  margin-top: 28px;
+  padding: 14px 16px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  font-size: 0.84rem;
+  color: var(--muted);
+}
+table.kv { width: 100%; border-collapse: collapse; margin: 12px 0; font-size: 0.9rem; }
+table.kv th, table.kv td { border: 1px solid var(--border); padding: 8px 11px; text-align: left; vertical-align: top; }
+table.kv th { width: 240px; background: var(--badge-bg); }
+code { background: var(--badge-bg); padding: 1px 5px; border-radius: 4px; font-size: 0.85em; }
+blockquote { margin: 10px 0; padding: 11px 15px; border-left: 3px solid var(--accent); background: var(--surface); font-size: 0.9rem; }
+.hit { margin: 7px 0; font-size: 0.88rem; }
+.pno { font-weight: 700; color: var(--accent); }
+.leaflet-popup-content { color: #1f2328; font-size: 0.85rem; line-height: 1.45; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div style="font-size:0.85rem;margin-bottom:8px;"><a href="../index.html">← Türkiye e-ÇED İzleme listesine dön</a> · <a href="../rehber.html">Kullanım ve İnceleme Rehberi</a> · <a href="61491.md">Ham Markdown (.md)</a></div>
+    <h1>e-ÇED Ön Özet #61491 — GAZİANTEP / ŞAHİNBEY</h1>
+    <p class="sub">Mekanik Ayırma, Biyometanizasyon ve Biyogaz Tesisi İle Atıktan Türetilmiş Yakıt Hazırlama Tesisinde Yer Değişikliği</p>
+    <div class="badges" style="margin-top:10px;">
+      <span class="badge">IDK</span>
+      <span class="badge">Ek-1</span>
+      <span class="badge warn">İDK İncelemesi · Tarih duyuru metnindedir</span>
+    </div>
+  </header>
+
+  <table class="kv">
+    <tr><th>Proje Sahibi</th><td>Gaziantep Büyükşehir Belediye Başkanlığı</td></tr>
+    <tr><th>Hazırlayan Kuruluş</th><td>ONLİNE ÇEVRE PROJE İNŞAAT MÜH. DAN. YAZILIM BİLİŞİM VE TEKNOLOJİLERİ SAN. TİC.LTD.ŞTİ.</td></tr>
+    <tr><th>Sektör / Alt Sektör</th><td>Atık / Atık Bertaraf /Geri Kazanım/ Depolama Tesisi Projeleri</td></tr>
+    <tr><th>Duyuru Tarihi</th><td><code>17.11.2026</code> (belge yükleme tarihi: <code>19/10/2026 05:34:08</code>)</td></tr>
+    <tr><th>PDF Kapsamı</th><td>110.72 MB · 658 sayfa (435 metin sayfası / 223 taranmış veya görüntü sayfası) · SHA-256 <code>8858e9661ef47f4d…</code></td></tr>
+    <tr><th>Resmi Bağlantılar</th><td><a href="http://eced.csb.gov.tr/jsp/ek1/61491" target="_blank" rel="noopener">e-ÇED Portal Kaydı</a> · <a href="http://eced.csb.gov.tr/jsp/dosya/dosyaGoster.htm?tempAd=sign1290899153394585950.pdf&amp;orjinalAd=61491_CED_Raporu.pdf&amp;yuklemeTarihi=2026-11-17" target="_blank" rel="noopener">Resmi PDF Dosyası</a> · <a href="https://www.openstreetmap.org/?mlat=36.9914&amp;mlon=37.39825#map=12/36.9914/37.39825" target="_blank" rel="noopener">OpenStreetMap</a> · <a href="https://www.google.com/maps/search/?api=1&amp;query=36.9914,37.39825" target="_blank" rel="noopener">Google Haritalar</a></td></tr>
+  </table>
+
+  <h2>Konum Haritası</h2>
+  <div class="map-box">
+    <div id="digest-map"></div>
+    <div class="map-legend"><span>PDF metninden çıkarılan kesin proje koordinatları (49 nokta, datum: UTM-Z37/ED50, sayfa: s.74, s.75, s.76).</span></div>
+  </div>
+
+  
+  <h2>Yapay Zeka Destekli Bilimsel Ön Değerlendirme <span class="badge">gemini-4-hydrogen</span></h2>
+  <p class="sub">Bu değerlendirme, resmi PDF dosyasından seçilen 22 sayfa (s.1, s.2, s.3, s.4, s.5, s.6, s.7, s.8, s.9, s.10, s.11, s.12, s.13, s.14, s.15, s.22, s.23, s.25, s.38, s.46, s.81, s.82) esas alınarak hazırlanmıştır. Tüm sayısal verilerin ve tespitlerin resmi PDF belgesindeki ilgili <code>[s. N]</code> sayfalarından doğrulanması gerekir.</p>
+  <section class="card ek1">
+    <p><strong>Özet:</strong> Gaziantep Büyükşehir Belediye Başkanlığı tarafından Gaziantep ili Şahinbey ilçesi Bağlarbaşı Mahallesi 9122 Ada 1 Nolu Parsel üzerinde yürütülen mevcut Mekanik Ayırma, Biyometanizasyon ve Biyogaz Tesisi ile Atıktan Türetilmiş Yakıt (ATY) Hazırlama Tesisi projesinde yer değişikliği ve parsel genişletmesi planlanmaktadır [s. 1, 14]. Daha önce 07.11.2019 tarih ve 5681 sayılı ÇED Olumlu Kararı alınan 82.891,55 m² büyüklüğündeki saha 93.002 m²&#x27;ye çıkarılmakta olup, 52.560 ton/yıl kapasiteli ve 5.262 m² alanlı ATY Hazırlama Tesisi genişletilen alana konumlandırılmaktadır [s. 14, 15]. İlk aşaması 2023 yılında kurulan tesiste ikinci etapla birlikte toplam 300.000 ton/yıl mekanik ayırma, 130.100 ton/yıl biyometanizasyon ve 24.351 MWh/yıl elektrik üretimi hedeflenmektedir [s. 15, 46]. Başlıca çevresel konular; alanın Mera Kanunu kapsamındaki alanlar içerisinde kalması, mevcut düzenli depolama sızıntı suyu arıtma tesisiyle ortak atıksu yükü, fermente ürün ve koku/emisyon yönetimi ile imar planı güncellemeleridir [s. 14, 23, 38, 82].</p>
+    <details style="margin-top:8px;font-size:0.86rem;color:var(--muted);"><summary style="cursor:pointer;">İngilizce özet (English summary)</summary><p style="margin:6px 0 0;">Gaziantep Metropolitan Municipality proposes a site modification and boundary expansion for the Mechanical Separation, Biomethanization, Biogas, and Refuse-Derived Fuel (RDF/ATY) Preparation Facility on Parcel 9122/1 in Bağlarbaşı Neighborhood, Şahinbey District, Gaziantep [s. 1, 14]. Previously granted an EIA Positive Decision on 07.11.2019 for 82,891.55 m², the project footprint is expanded to 93,002 m² so that the 52,560 tonnes/year RDF unit (5,262 m²) can be relocated to the expanded zone [s. 14, 15]. Following Phase A (installed in 2023), Phase B will bring total capacity to 300,000 tonnes/year mechanical separation, 130,100 tonnes/year biomethanization, and 24,351 MWh/year electricity generation [s. 15, 46]. Key environmental stakes documented in the excerpts include overlap with Pasture Law (Law No. 4342) areas, shared wastewater loading on the existing landfill leachate treatment plant, odor/air emissions, and zoning plan alignment [s. 14, 23, 38, 82].</p></details>
+    <div class="badges" style="margin-top:10px;">
+      <span class="badge">Saha çalışması: İncelenen sayfalarda tespit edilemedi</span>
+      <span class="badge">Mevsimsel örnekleme: İncelenen sayfalarda tespit edilemedi</span>
+      <span class="badge">Kümülatif etki: Eksik veya tespit edilemedi</span>
+    </div>
+    <p class="detail" style="margin-top:10px;"><strong>Zeytinlik ve Korunan Alanlar:</strong> Proje alanı 3573 sayılı Zeytinciliğin Islahı Kanunu kapsamındaki alanlar, orman alanları, sulak alanlar, ÖÇK, sit alanları, içme-kullanma suyu havzaları, milli park ve tabiat parkları içerisinde kalmamaktadır; en yakın korunan alan 9,7 km mesafedeki Burç Tabiat Parkı&#x27;dır [s. 81, 82]. Buna karşılık raporun korunan/duyarlı alanlar listesinin (i) bendinde proje alanının &#x27;Mera Kanununda belirtilen alanlar, içerisinde kalmaktadır&#x27; ifadesiyle mera alanlarıyla çakıştığı beyan edilmektedir [s. 82].<br/>Sunulan sayfalarda korunan alan tespiti için Bakanlık coğrafi veri portalları üzerinden yapılan taramaya [s. 81] ve mevcut tesise ait 3 yeraltı suyu gözlem kuyusunda altı ayda bir kalite/seviye ölçümü yapıldığına [s. 23] yer verilmiş; ancak flora-fauna saha çalışması veya mevsimsel örnekleme verisi sunulmamıştır. İçindekiler dizininde tarım-hayvancılık, mevcut kirlilik yükü, flora-fauna ve kümülatif etki değerlendirmesi bölümlerinin yer aldığı görülmekle birlikte [s. 4, 5], bu bölümler incelenen sayfa aralığının dışında kaldığından saha çalışması ve kümülatif etkinin niteliği doğrulanamamıştır.</p>
+  </section>
+  <h3>Öne Çıkan Sayısal Bulgular</h3><table class="kv"><tr><th>Planlanan Toplam Proje Sahası</th><td>93.002 m² (önceki ÇED Olumlu alanı 82.891,55 m² / 82.802 m²) <span class="pno">[s. 15]</span></td></tr>
+<tr><th>Yer Değişikliğine Konu ATY Tesisi Alanı</th><td>5.262 m² (üretim ve depolama alanı) <span class="pno">[s. 15]</span></td></tr>
+<tr><th>ATY Hazırlama Tesisi Kapasitesi</th><td>52.560 ton/yıl (19.12.12 atık kodu) <span class="pno">[s. 15]</span></td></tr>
+<tr><th>Aşama-A Kurulu Kapasite (2023)</th><td>100.000 ton/yıl Mekanik Ayırma; 22.000 ton/yıl Biyometanizasyon <span class="pno">[s. 15]</span></td></tr>
+<tr><th>Aşama-B Planlanan İlave Kapasite</th><td>200.000 ton/yıl Mekanik Ayırma; 108.100 ton/yıl Biyometanizasyon ve Biyogaz-CHP <span class="pno">[s. 15]</span></td></tr>
+<tr><th>Biyometanizasyon Çıktı Projeksiyonu (130.100 ton/yıl girdi ile)</th><td>96.000 ton/yıl katı fermente ürün, 39.300 m³/yıl sıvı fermente ürün, 24.351 MWh/yıl elektrik <span class="pno">[s. 46]</span></td></tr>
+<tr><th>Beyan Edilen Proje Bedeli</th><td>9.950.000,00 TL <span class="pno">[s. 2]</span></td></tr>
+<tr><th>Su Depoları ve Yeraltı Suyu Gözlem Kuyuları</th><td>1.000 m³ ve 200 m³ iki su deposu; 3 gözlem kuyusu (her 6 ayda bir ölçüm) <span class="pno">[s. 23]</span></td></tr>
+<tr><th>En Yakın Korunan Alan</th><td>9,7 km uzaklıkta Burç Tabiat Parkı <span class="pno">[s. 81]</span></td></tr>
+<tr><th>Arazi Tesviyesi ve Yapı Ömrü</th><td>Yaklaşık 1 m derinliğinde kazı; betonarme yapılar için 40 yıl ömür <span class="pno">[s. 25]</span></td></tr></table>
+  <h3>Bilimsel ve Metodolojik Bulgular</h3><section class="card"><div class="hit"><span class="badge urgent">YÜKSEK</span> <strong>Proje Alanının Mera Kanunu Kapsamındaki Alanlarda Kalması</strong> <span class="pno">[s. 14, s. 81, s. 82]</span> — Korunan ve duyarlı alanlar değerlendirmesinde proje alanının açıkça &#x27;Mera Kanununda belirtilen alanlar, içerisinde kalmaktadır&#x27; şeklinde beyan edildiği görülmektedir [s. 82]. Buna karşın raporun özet bölümünde alanın Maliye Hazinesinden tahsisli Belediye Hizmet Alanı olduğu ifade edilmekte [s. 14, 81], ancak 4342 sayılı Mera Kanunu uyarınca tahsis amacı değişikliği veya mera vasfının kaldırılmasına dair herhangi bir izin bilgisi sunulan sayfalarda yer almamaktadır.</div>
+<div class="hit"><span class="badge warn">ORTA</span> <strong>Alan Büyüklüğü ve İmar Planı Onay Tarihlerinde Çelişkili Beyanlar</strong> <span class="pno">[s. 14, s. 81]</span> — Teknik Olmayan Özet bölümünde mevcut ÇED Olumlu alanının bir yerde 82.891,55 m², hemen altında tevhit öncesi/sonrası toplamı olarak 82.802 m² verildiği ve genişletme için 11.06.2026 tarih ve 375 sayılı Büyükşehir Belediye Meclis Kararı alındığı belirtilmektedir [s. 14]. Ancak Bölüm II.1&#x27;de yalnızca 17.05.2019 gün ve 145 sayılı eski meclis kararına atıf yapılmakta, ayrıca il genelinde yürürlükte 1/100.000 ölçekli Çevre Düzeni Planı bulunmadığı ifade edilmektedir [s. 81].</div>
+<div class="hit"><span class="badge warn">ORTA</span> <strong>Mevcut Sızıntı Suyu Arıtma Tesisinin Artan Kapasiteye Yeterliliğinin Belirsizliği</strong> <span class="pno">[s. 15, s. 23, s. 46]</span> — Mekanik ayırma tesisindeki zemin ve tekerlek yıkama suları ile bertarafı gereken sıvı fermente atığın, düzenli depolama tesisine hizmet veren mevcut sızıntı suyu arıtma tesisine verileceği belirtilmektedir [s. 23]. Faz-B ile birlikte biyometanizasyon kapasitesi 22.000 ton/yıldan 130.100 ton/yıla ve yıllık sıvı fermente ürün miktarı 39.300 m³/yıla ulaşacak olmasına rağmen [s. 15, 46], sunulan sayfalarda mevcut arıtma tesisinin ek hidrolik ve organik yükü karşılama kapasitesine dair sayısal veri bulunmamaktadır.</div>
+<div class="hit"><span class="badge warn">ORTA</span> <strong>Bitkisel Toprak Bulunmadığı Beyanı ile Mera Beyanı Arasındaki Uyumsuzluk</strong> <span class="pno">[s. 25, s. 82]</span> — Projede arazi tesviyesi için yaklaşık 1 m derinliğinde kazı yapılacağı belirtilirken, &#x27;proje alanı içerisinde bitkisel toprak niteliğinde malzeme yer almadığından arazi hazırlık faaliyetleri yapılmayacaktır&#x27; ifadesine yer verilmiştir [s. 25]. Alanın Mera Kanunu kapsamında kalması [s. 82] ile bitkisel toprak bulunmadığı iddiası arasındaki çelişki ve 1 m kazıdan çıkacak malzemenin yönetimi sunulan sayfalarda açıklanmamıştır.</div>
+<div class="hit"><span class="badge muted">DÜŞÜK</span> <strong>Proje Bedeli Kapsamı ve Yatırım Zamanlama Çizelgesindeki Belirsizlikler</strong> <span class="pno">[s. 2, s. 15, s. 25]</span> — Faz-B kapsamında 200.000 ton/yıl mekanik ayırma, 108.100 ton/yıl biyometanizasyon, 52.560 ton/yıl ATY tesisi ve biyogaz-CHP ünitesi kurulacak olmasına karşın proje bedeli yalnızca 9.950.000,00 TL olarak bildirilmiştir [s. 2, 15]. Ayrıca Tablo 2 Yatırıma Ait Zamanlama Tablosunda üst yıl başlığı yalnızca &#x27;2026&#x27; olmasına karşın aylar Ekim&#x27;den Mayıs&#x27;a kadar sıralanarak yıl geçişi hatalı gösterilmiştir [s. 25].</div>
+<div class="hit"><span class="badge muted">DÜŞÜK</span> <strong>İDK İnceleme Aşamasındaki Raporun Kapak ve Zamanlama Uyuşmazlıkları</strong> <span class="pno">[s. 1, s. 2]</span> — ÇED Yönetmeliği&#x27;nin 11. maddesi kapsamında 17.11.2026 tarihinde sunulan [s. 2] raporun kapağında &#x27;ÇED RAPORU / SON ŞEKLİ VERİLEN ÇED RAPORU / ÇED BAŞVURU DOSYASI / NİHAİ ÇED RAPORU&#x27; ifadelerinin tamamı ayıklanmadan bırakılmıştır [s. 1].</div></section>
+  <h3>HKT Tutanakları ve İdari Başvurular İçin Taslak Teknik Sorular</h3><ul><li>Raporun korunan/duyarlı alanlar listesinde proje sahasının &#x27;Mera Kanununda belirtilen alanlar, içerisinde kalmaktadır&#x27; şeklinde beyan edilmesi karşısında, 9122 Ada 1 Nolu Parselin genişletilen kısmı için 4342 sayılı Mera Kanunu uyarınca tahsis amacı değişikliği izni alınıp alınmadığı ve bunun Mera Komisyonu kararıyla belgelenip belgelenmediği açıklanmalıdır. <span class="pno">[s. 14, s. 82]</span></li>
+<li>Faz-B kapsamında biyometanizasyon kapasitesinin 130.100 ton/yıla ve sıvı fermente ürün oluşumunun 39.300 m³/yıla ulaşması durumunda, düzenli depolama tesisinin mevcut sızıntı suyu arıtma tesisinin ilave debi ve kirlilik yükünü (KOİ, azot, tuzluluk) deşarj standartlarını bozmadan karşılayıp karşılayamayacağına dair tasarım kapasitesi hesabı sunulmalıdır. <span class="pno">[s. 15, s. 23, s. 46]</span></li>
+<li>Genişletilen saha için 11.06.2026 tarih ve 375 sayılı Büyükşehir Belediye Meclis Kararı ile 1/5.000 ve 1/1.000 ölçekli imar planı değişikliği yapıldığı belirtilirken Bölüm II.1&#x27;de neden hâlâ 17.05.2019 tarih ve 145 sayılı meclis kararına atıf yapıldığı ve mevcut 82.891,55 m² / 82.802 m² alan farkının tapu/kadastro dayanağı netleştirilmelidir. <span class="pno">[s. 14, s. 81]</span></li>
+<li>Proje alanında 1 m derinliğinde tesviye kazısı öngörülürken neden &#x27;bitkisel toprak niteliğinde malzeme yer almadığı&#x27; kabulünün yapıldığı, bu kabulün saha gözlemi veya toprak etüdüne dayanıp dayanmadığı ve ortaya çıkacak kazı fazlası malzemenin nerede depolanacağı açıklanmalıdır. <span class="pno">[s. 25, s. 82]</span></li>
+<li>Koku giderimi için kullanılacak torbalı filtre, sülfürik asit dozajlı scrubber ve biyofiltre sisteminin işletme koşulları (asit tüketimi, atık yıkama suyunun arıtımı) ile 52.560 ton/yıl kapasiteli yeni ATY ünitesindeki yanıcı atık depolama alanlarının yangın güvenlik önlemleri detaylandırılmalıdır. <span class="pno">[s. 15, s. 38]</span></li></ul>
+  <p class="sub"><em>İnceleme sınırları:</em> Toplam 658 sayfalık dosyanın (435 metin, 223 taranmış/görüntü sayfası) yalnızca 22 seçili sayfası incelenebilmiştir. İçindekiler ve Ekler dizininde listelenen Hidroloji, Hidrojeoloji, Toprak, Meteoroloji, Tarım-Hayvancılık, Mevcut Kirlilik Yükü, Emisyon/Gürültü Modellemesi, Flora-Fauna, Kümülatif Etki Değerlendirmesi, Çevre İzleme Planı ile yer tahsis ve meclis kararı ekleri incelemeye sunulan sayfalar arasında yer almadığından bu bölümlerdeki teknik analizler doğrulanamamıştır [s. 4, 5, 12].</p>
+
+
+  <h2>Resmi Duyuru Metni</h2>
+  <blockquote>GAZİANTEP ili ŞAHİNBEY,  ilcesinde GAZİANTEP ili ŞAHİNBEY ilçesi sınırları içerisinde Gaziantep Büyükşehir Belediye Başkanlığı tarafından yapılması planlanan Mekanik Ayırma, Biyometanizasyon ve Biyogaz Tesisi İle Atıktan Türetilmiş Yakıt Hazırlama Tesisinde Yer Değişikliği  projesi ile ilgili olarak hazırlanan ÇED Raporu, ÇED Yönetmeliği&#x27;nin 11. maddesi kapsamında Bakanlığımıza sunulmuş olup, inceleme değerlendirme süreci başlamıştır. Proje ile ilgili olarak 01/12/2026 tarihinde İDK toplantısı gerçekleştirilecektir. Bakanlığımıza sunulan ÇED Raporu https://eced-duyuru.csb.gov.tr/eced-prod/duyurular.xhtml adresinde yer almaktadır. ÇED Raporu ilgililere ve kamuoyuna duyurulur.</blockquote>
+
+  <h2>Otomatik Metin Taraması (Deterministik)</h2>
+  <table class="kv"><tr><th>Saha veya arazi çalışması ifadesi</th><td><span class="badge ok">Metinde yer almaktadır</span></td></tr>
+<tr><th>Literatür taraması ifadesi</th><td><span class="badge urgent">Metinde tespit edilemedi; doğrudan PDF üzerinden kontrol ediniz</span></td></tr>
+<tr><th>Mevsimsel örnekleme ifadesi</th><td><span class="badge ok">Metinde yer almaktadır</span></td></tr>
+<tr><th>Kümülatif etki değerlendirmesi ifadesi</th><td><span class="badge ok">Metinde yer almaktadır</span></td></tr>
+<tr><th>3573 sayılı Zeytincilik Kanunu veya zeytinlik ifadesi</th><td><span class="badge urgent">Metinde tespit edilemedi; doğrudan PDF üzerinden kontrol ediniz</span></td></tr>
+<tr><th>Yeraltı suyu, akifer veya hidrojeoloji ifadesi</th><td><span class="badge ok">Metinde yer almaktadır</span></td></tr>
+<tr><th>Endemik tür, IUCN veya Bern Sözleşmesi ifadesi</th><td><span class="badge ok">Metinde yer almaktadır</span></td></tr></table>
+  <p class="sub">Metin katmanı (OCR) bulunmayan taranmış harita ve kurum görüşü ekleri otomatik metin taramasına dahil edilmemiştir.</p>
+
+  <h2>Sayfa Kaynaklı Çıkarılan Bulgular</h2>
+  <div class="cards"><section class="card"><h3>Koordinatlar, Parsel ve Alan Büyüklüğü <span style="color:var(--muted);font-weight:400;font-size:0.85rem">(94 sayfa: s.1, s.2, s.4, s.12, s.14, s.15, s.19, s.21, s.24, s.39, s.46, s.47, s.53, s.54 (+80 sayfa))</span></h3><div class="hit"><span class="pno">[s. 1]</span> <code>Ada /1 Nolu Parsel</code> — …Ş YAKIT HAZIRLAMA TESİSİNDE YER DEĞİŞİKLİĞİ PROJESİ Gaziantep İli, Şahinbey İlçesi, Bağlarbaşı Mahallesi (9122 Ada /1 Nolu Parsel) ÇED RAPORU / SON ŞEKLİ VERİLEN ÇED RAPORU / ÇED BAŞVURU DOSYASI / NİHAİ ÇED RAPORU</div>
+<div class="hit"><span class="pno">[s. 2]</span> <code>Ada /1 Nolu Parsel</code> — …roje İçin Seçilen Yerin Açık Adresi (İli, İlçesi, Mevki): Gaziantep İli, Şahinbey İlçesi, Bağlarbaşı Mahallesi (9122 Ada /1 Nolu Parsel) Projenin ÇED Yönetmeliği Kapsamındaki Yeri (Sektörü, Alt Sektörü): Sektör: Atık Alt Sektör: Atık Bertaraf /Geri K…</div>
+<div class="hit"><span class="pno">[s. 2]</span> <code>utm</code> — …likesiz atıklar ve/veya belediye atıklarının geri kazanıldığı ve/veya biyobozunur atık işleme (mekanik ayırma, biyokurutma, biyometanizasyon, kompost) tesisleri (Mülga ibare:RG-5/3/2026-33187), Ek-2 Listesi Madde 5- Atık Geri Kazanım ve /…</div>
+<div class="hit"><span class="pno">[s. 4]</span> <code>koordinat</code> — …Depolanacakları veya Hangi Amaçlar İçin Kullanılacakları (kazı fazlası malzeme ve bitkisel toprak depo alanlarının koordinatlarıyla birlikte gösterilmesi, bitkisel toprağın nasıl değerlendirileceğinin açıklanması), Şantiye Çalışmaları Son…</div>
+<div class="hit"><span class="pno">[s. 12]</span> <code>Koordinat</code> — …tim Planı Ek-1.D : Çevresel ve Sosyal Yönetim Planı Ek-1.E : Paydaş Katılım Planı EK-2 : Proje İçin Seçilen Yerin Koordinatları, Proje Sahasına Ait Güncel Fotoğraflar EK-3 : Fizibilite Raporu Onay Yazısı EK-4 : Proje İçin Belirlenen Yer ve…</div>
+<div class="hit"><span class="pno">[s. 14]</span> <code>Ada /1 Nolu Parsel</code> — …KŞEHİR BELEDİYE BAŞKANLIĞI tarafından; Gaziantep İli, Şahinbey İlçesi, Bağlarbaşı Mahallesi sınırları içerisinde, 9122 Ada /1 Nolu Parselde; Mekanik Biyolojik Ayrıştırma Tesisi 2. Etap Yapım İşi kapsamında ‘’MEKANİK AYIRMA, BİYOMETANİZASYON VE BİYOGAZ TES…</div></section><section class="card"><h3>Su Kullanımı, Hidrojeoloji ve Deşarj <span style="color:var(--muted);font-weight:400;font-size:0.85rem">(39 sayfa: s.4, s.5, s.38, s.46, s.47, s.53, s.57, s.65, s.83, s.91, s.95, s.124, s.125, s.133 (+25 sayfa))</span></h3><div class="hit"><span class="pno">[s. 4]</span> <code>deşarj</code> — ….......... 145 III.9. Arıtım sonucu ulaşılacak atık su değerleri, arıtılan suyun hangi alıcı ortama nasıl verileceği, deşarj noktası yapıları, deşarj öncesi alıcı ortama ait bilgiler, deşarj sonrası alıcı ortamda olabilecek değişimler, deşarj…</div>
+<div class="hit"><span class="pno">[s. 5]</span> <code>Yeraltı Suyu</code> — …DEĞİŞİKLİĞİ PROJESİ ÇED RAPORU iii III.12. Proje Kapsamında Gerçekleştirilecek Faaliyetler Sonucunda Yüzeysel ve Yeraltı Suyu Kaynaklarının Etkilenme Durumları ve Alınacak Tedbirler ........................................................ 154…</div>
+<div class="hit"><span class="pno">[s. 38]</span> <code>deşarj</code> — …oplanan havanın koku giderimi için biyofiltre bölmü yer almaktadır. Toplanan havadan kokunun giderilerek dış ortama deşarj edilmesi işlemi Biyofiltre bölümünde gerçekleşmektedir. Biyofiltre, iki katlı beton havuz barındırır. Biyofiltre h…</div>
+<div class="hit"><span class="pno">[s. 46]</span> <code>39.300 m3/yıl</code> — …k ürün değişecek olup, tesise toplamda 130.100 ton/yıl atık gireceği öngörüldüğünde 96.000 ton/yıl katı fermente ürün, 39.300 m3/yıl sıvı fermente ürün ve 24.351 MWh/yıl elektrik enerjisi üretilmesi beklenmektedir. Fermantasyon tünellerinden birin…</div>
+<div class="hit"><span class="pno">[s. 47]</span> <code>160.000 m³/yıl</code> — …ürün miktarı 96.000 ton/yıl Fermente ürün yoğunluğu 0,60 ton/m³ Yıllık üretilen toplam katı fermente ürün hacmi 160.000 m³/yıl Depolama ihtiyaçları için gün sayısı 13,333 gün Aylık üretilen fermente ürün miktarı 13.333 m³/ay Toplam depolam…</div>
+<div class="hit"><span class="pno">[s. 53]</span> <code>1.500 m3/saat</code> — …asından ve tesis ana kontrol ekranından izlenebilecektir. Mevcut projenin amacı doğrultusunda, flare kapasitesinin 1.500 m3/saat olması öngörülmektedir. Tesiste kullanılacak flare ünitesinin teknik özellikleri aşağıda verilmiştir. Yanma sı…</div></section><section class="card"><h3>Korunan Alanlar, Orman ve Zeytinlikler <span style="color:var(--muted);font-weight:400;font-size:0.85rem">(7 sayfa: s.81, s.82, s.83, s.85, s.120, s.168, s.169)</span></h3><div class="hit"><span class="pno">[s. 81]</span> <code>özel çevre koruma</code> — …oruma alanları, Boğaziçi Kanununa göre koruma altına alınan alanlar, biyogenetik rezerv alanları, biyosfer rezervleri, özel çevre koruma bölgeleri, özel koruma alanları, içme ve kullanma su kaynakları ile ilgili koruma alanları, turizm alan ve merkezleri…</div>
+<div class="hit"><span class="pno">[s. 81]</span> <code>Tabiat Parkı</code> — …anların gösterildiği çizim aşağıdaki şekilde verilmiş olup; proje için; en yakın korunan alan 9,7 km uzaklıktaki Burç Tabiat Parkı‘dır. Şekil 33. Korunan Alanlar Haritası Proje Alanı Burç TP Proje Alanı</div>
+<div class="hit"><span class="pno">[s. 82]</span> <code>Özel Çevre Koruma</code> — …tanımlanan alanlar; içerisinde kalmamaktadır. f) Çevre Kanununun 9 uncu maddesi uyarınca Cumhurbaşkanı tarafından &quot;Özel Çevre Koruma Bölgeleri&quot; olarak tespit ve ilan edilen alanlar; içerisinde kalmamaktadır. g) Boğaziçi Kanununa göre koruma altına al…</div>
+<div class="hit"><span class="pno">[s. 82]</span> <code>orman alanı</code> — …aktadır. g) Boğaziçi Kanununa göre koruma altına alınan alanlar; içerisinde kalmamaktadır. ğ) Orman Kanunu uyarınca orman alanı sayılan yerler, içerisinde kalmamaktadır. h) Kıyı Kanunu gereğince yapı yasağı getirilen alanlar, içerisinde kalmama…</div>
+<div class="hit"><span class="pno">[s. 83]</span> <code>kıyı kenar</code> — …ı olmak üzere canlıların yaşama ortamı olarak önem taşıyan bütün sular, bataklık sazlık ve turbiyeler ile bu alanların kıyı kenar çizgisinden itibaren kara tarafına doğru ekolojik açıdan sulak alan kalan yerler; içerisinde kalmamaktadır. ç) Göll…</div>
+<div class="hit"><span class="pno">[s. 83]</span> <code>sulak alan</code> — …r, bataklık sazlık ve turbiyeler ile bu alanların kıyı kenar çizgisinden itibaren kara tarafına doğru ekolojik açıdan sulak alan kalan yerler; içerisinde kalmamaktadır. ç) Göller, akarsular, yeraltı suyu işletme sahaları, içerisinde kalmamaktadı…</div></section><section class="card"><h3>Flora, Fauna ve Saha Metodolojisi <span style="color:var(--muted);font-weight:400;font-size:0.85rem">(12 sayfa: s.5, s.25, s.82, s.83, s.84, s.95, s.131, s.167, s.168, s.227, s.357, s.362)</span></h3><div class="hit"><span class="pno">[s. 5]</span> <code>endemik</code> — …......................................... 155 III.14. Projenin İnşaat ve İşletme Döneminde Flora-Fauna (Mevcut türler, endemik türlerin bulunduğu yerler, önemli bitki alanı bulunan yerler ve varsa nesli tehlike altında olan fauna türlerinin yaş…</div>
+<div class="hit"><span class="pno">[s. 25]</span> <code>Arazi Çalışması</code> — …atırıma Ait Zamanlama Tablosu YILLAR 2026 AYLAR Ekim Kasım Aralık Ocak Şubat Mart Nisan Mayıs Faaliyet Yeri Arazi Çalışması ÇED Başvuru Dosyası hazırlanması ve Sunumu ÇED Raporu Proje Özel Formatının Alınması…</div>
+<div class="hit"><span class="pno">[s. 82]</span> <code>BERN Sözleşmesi</code> — …sözleşmeler uyarınca korunması gerekli alanlar a) &quot;Avrupa’nın Yaban Hayatı ve Yaşama Ortamlarını Koruma Sözleşmesi&quot; (BERN Sözleşmesi) uyarınca koruma altına alınmış alanlardan &quot;Önemli Deniz Kaplumbağası Üreme Alanlarında belirtilen I. ve II. Koruma B…</div>
+<div class="hit"><span class="pno">[s. 83]</span> <code>endemik</code> — …r. d) Bilimsel araştırmalar için önem arz eden ve/veya nesli tehlikeye düşmüş veya düşebilir türler ve ülkemiz için endemik olan türlerin yaşama ortamı olan alanlar, biyosfer rezervi, biyotoplar, biyogenetik rezerv alanları, benzersiz özellik…</div>
+<div class="hit"><span class="pno">[s. 83]</span> <code>Flora ve Fauna</code> — …, benzersiz özelliklerdeki jeolojik ve jeomorfolojik oluşumların bulunduğu alanlar, içerisinde kalmamaktadır. II.3. Flora ve Fauna (proje alanı ve etki alanında bulunan flora türleri, etkilenecek alandaki türler, bu çalışmaların hangi dönemde yapı…</div>
+<div class="hit"><span class="pno">[s. 83]</span> <code>Bern Sözleşmesi</code> — …incelenmesi, faunanın uygun formda düzenlenmesi, Kara Avcılığı Kanunu ve Yönetmelikleri kapsamında yapılacak işlemler, Bern Sözleşmesi kapsamında bulunan türlerin belirlenmesi, proje faaliyetlerinden etkilenecek canlılar için alınması gereken koruma önl…</div></section><section class="card"><h3>Emisyonlar, Jeokimya ve Atıklar <span style="color:var(--muted);font-weight:400;font-size:0.85rem">(101 sayfa: s.3, s.13, s.22, s.23, s.28, s.31, s.32, s.33, s.34, s.45, s.46, s.56, s.66, s.77 (+87 sayfa))</span></h3><div class="hit"><span class="pno">[s. 3]</span> <code>Deprem</code> — ….................. 63 II.1.3. Proje Alanı ve Yakın Çevresinde Bulunan Tarım Arazilerinin, Yeraltı ve Yüzey Sularının, Deprem Kuşaklarının, Jeolojik Yapının, Yerleşim Alanlarının, Ulaşım Ağının, Enerji İletim Hatlarının, Boru Hatlarının, Arazi…</div>
+<div class="hit"><span class="pno">[s. 13]</span> <code>Gürültü</code> — …i TİC Ticaret Ltd. Limited Şti. Şirketi RG Resmi Gazete İDK İnceleme Değerlendirme Komisyonu ÇGKY Çevresel Gürültü Kontrolü Yönetmeliği SKHKKY Sanayi Kaynaklı Hava Kirliliği Kontrolü Yönetmeliği SKKY Su Kirliliği Kontrolü Yönetmel…</div>
+<div class="hit"><span class="pno">[s. 22]</span> <code>H2S</code> — …ma Kazanı Bölümü  Elektrik Üretim Motoru  Çıkan Atık Depolama Bölümü  Acil Gaz Yakma Bölümü (Flare)  Biyogazdan H2S Giderme Bölümü  Biyofiltre Bölümü  Tekerlek Yıkama Ünitesi Altyapı  İçme ve Kullanma Suyu Sistemi  Atık su…</div>
+<div class="hit"><span class="pno">[s. 23]</span> <code>tehlikeli atık</code> — …da yangın tüpleri ikame edilmiştir. Atık Geçici Depolama Alanı Atık Yönetimi Yönetmeliği hükümlerine uygun olarak tehlikeli atık geçici depolama alanı inşa edilmiştir. Geçici Atık Depolama Alanı tesis ve binalardan ayrı ve insan trafiğinden uzak,…</div>
+<div class="hit"><span class="pno">[s. 28]</span> <code>H2S</code> — …ma Kazanı Bölümü  Elektrik Üretim Motoru  Çıkan Atık Depolama Bölümü  Acil Gaz Yakma Bölümü (Flare)  Biyogazdan H2S Giderme Bölümü  Biyofiltre Bölümü  Tekerlek Yıkama Ünitesi Altyapı  İçme ve Kullanma Suyu Sistemi  Atık su…</div>
+<div class="hit"><span class="pno">[s. 31]</span> <code>tehlikeli atık</code> — …idrant Sistemi – Söndürme Cihazları Atık Geçici Depolama Alanı Atık Yönetimi Yönetmeliği hükümlerine uygun olarak tehlikeli atık geçici depolama alanı inşa edilmiştir. Geçici Atık Depolama Alanı tesis ve binalardan ayrı ve insan trafiğinden uzak,…</div></section><section class="card"><h3>Proje Bedeli, Güç ve Kapasite <span style="color:var(--muted);font-weight:400;font-size:0.85rem">(59 sayfa: s.2, s.3, s.14, s.15, s.16, s.17, s.19, s.21, s.23, s.24, s.26, s.27, s.29, s.30 (+45 sayfa))</span></h3><div class="hit"><span class="pno">[s. 2]</span> <code>kapasite</code> — …ikesiz atık geri kazanım, bertaraf ve/veya düzenli depolama tesisleri (Hafriyat toprağı hariç olmak üzere); c) Günlük kapasitesi 100 ton ve üzeri olan tehlikesiz atıklar ve/veya belediye atıklarının geri kazanıldığı ve/veya biyobozunur atık işl…</div>
+<div class="hit"><span class="pno">[s. 2]</span> <code>1.000 ton/yıl</code> — …-33187), Ek-2 Listesi Madde 5- Atık Geri Kazanım ve /veya Bertaraf Tesisleri (hafriyat toprağı hariç olmak üzere);2) 1.000 ton/yıl ve üzeri tehlikesiz atıkların fiziksel yöntemlerle geri kazanıldığı tesisler (metal, kâğıt, plastik, tekstil, cam, ah…</div>
+<div class="hit"><span class="pno">[s. 2]</span> <code>Proje Bedeli</code> — …dilmesi 38.21.01 Tehlikesiz atıkların ıslahı ve bertaraf edilmesi ve bertarafı için depolama alanlarının işletilmesi Proje Bedeli: 9.950.000,00 TL Proje Sahibinin Adı: GAZİANTEP BÜYÜKŞEHİR BELEDİYE BAŞKANLIĞI Adresi: Değirmiçem Mah. Şehit Yusuf…</div>
+<div class="hit"><span class="pno">[s. 3]</span> <code>kapasite</code> — …........................................................................................................ 14 (mevcut ve kapasite artışı projesi kapsamındaki faaliyet ünitelerinin konumu, özellikleri ve kapasiteleri (bütün idari ve sosyal üniteler…</div>
+<div class="hit"><span class="pno">[s. 14]</span> <code>kapasite</code> — …HAZIRLAMA TESİSİNDE YER DEĞİŞİKLİĞİ PROJESİ ÇED RAPORU 1 PROJENİN TEKNİK OLMAYAN ÖZETİ Mevcut tesisin durumu ve kapasite artışı sonrasındaki durumunun mukayeseli izahı ile proje hakkında inşaat ve işletme aşamalarında yapılması planlanan t…</div>
+<div class="hit"><span class="pno">[s. 15]</span> <code>kapasite</code> — …Sİ İLE ATIKTAN TÜRETİLMİŞ YAKIT HAZIRLAMA TESİSİNDE YER DEĞİŞİKLİĞİ PROJESİ ÇED RAPORU 2 ATY tesisi için proje kapasitesinde (52.560 ton/yıl) atık kodu 19.12.12 olan (19 12 11 dışında atıkların mekanik işlenmesinden kaynaklanan diğer atık…</div></section></div>
+
+  <h2>Belge Bölüm Haritası</h2>
+  <ul><li><span class="pno">[s. 14]</span> PROJENİN TEKNİK OLMAYAN ÖZETİ</li></ul>
+
+  <div class="notice">
+    Bu sayfa, T.C. Çevre, Şehircilik ve İklim Değişikliği Bakanlığı'nın kamuya açık <code>eced-duyuru.csb.gov.tr</code> duyuru portalındaki kayıtlar esas alınarak bilgilendirme amacıyla hazırlanmıştır. Alıntıların tamamı 1 tabanlı PDF sayfa numarasıyla (<code>[s. N]</code>) gösterilmektedir. Yasal süreler otomatik olarak hesaplanır; kesin sürelerin ve hukuki başvuru yollarının yetkili hukukçular tarafından teyit edilmesi gerekir.
+  </div>
+</div>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script>
+(() => {
+  if (typeof L === 'undefined') return;
+  const g = {"lat": 36.9914, "lon": 37.39825, "zoom": 12, "precision": "exact_pdf", "points": [[36.9935, 37.39809], [36.99339, 37.39908], [36.99338, 37.39921], [36.99337, 37.39925], [36.99332, 37.39972], [36.99289, 37.40043], [36.99278, 37.40113], [36.99105, 37.40058], [36.99053, 37.39975], [36.99039, 37.39954], [36.99009, 37.3991], [36.9901, 37.39908], [36.99012, 37.39905], [36.99015, 37.399], [36.99017, 37.39895], [36.9902, 37.3989], [36.99022, 37.39884], [36.99046, 37.39809], [36.99049, 37.39801], [36.99052, 37.39793], [36.99055, 37.39785], [36.99059, 37.39778], [36.99063, 37.39771], [36.99067, 37.39764], [36.99072, 37.39757], [36.99077, 37.3975], [36.99082, 37.39744], [36.99087, 37.39739], [36.99092, 37.39733], [36.99121, 37.39706], [36.99145, 37.39684], [36.99152, 37.39678], [36.99168, 37.39663], [36.9917, 37.39661], [36.99181, 37.39679], [36.99242, 37.39778], [36.99243, 37.3978], [36.99244, 37.39781], [36.99245, 37.39782], [36.99246, 37.39782]], "label": "GAZİANTEP / ŞAHİNBEY — Mekanik Ayırma, Biyometanizasyon ve Biyogaz Tesisi İle Atıktan Türetilmiş Yakıt Hazırlama "};
+  const map = L.map('digest-map').setView([g.lat, g.lon], g.zoom);
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    maxZoom: 18,
+    attribution: '&copy; OpenStreetMap katkıda bulunanları'
+  }).addTo(map);
+  if (g.precision === 'exact_pdf' && g.points.length > 1) {
+    const latlngs = g.points.map(p => [p[0], p[1]]);
+    const poly = L.polyline(latlngs, { color: '#58a6ff', weight: 3, opacity: 0.85 }).addTo(map);
+    for (const ll of latlngs.slice(0, 30)) {
+      L.circleMarker(ll, { radius: 4, color: '#ffffff', fillColor: '#f85149', fillOpacity: 0.9, weight: 1 }).addTo(map);
+    }
+    map.fitBounds(poly.getBounds().pad(0.25));
+  } else {
+    L.circleMarker([g.lat, g.lon], {
+      radius: g.precision === 'exact_pdf' ? 8 : 11,
+      color: '#ffffff',
+      fillColor: g.precision === 'exact_pdf' ? '#f85149' : '#58a6ff',
+      fillOpacity: g.precision === 'exact_pdf' ? 0.9 : 0.45,
+      weight: 2
+    }).bindPopup(g.label).addTo(map).openPopup();
+  }
+})();
+</script>
+</body>
+</html>
